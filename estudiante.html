@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Mi panel — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- Driver.js para onboarding -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <!-- ExcelJS y pdf-lib NO se cargan aquí: solo se necesitan al descargar y se cargan bajo demanda, así el panel abre de inmediato. -->
+  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css"></head>
+<body class="rol-estudiante">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="estudiante.html" class="logo-home" title="Inicio (volver al panel)">
+      <img src="assets/logo-idea.png" class="logo" alt="IDEA">
+      <div class="nombre-app">IDEA — Panel del Estudiante</div>
+    </a>
+    <div class="user-info">
+      <span class="rol-chip">Estudiante</span>
+      <span id="nombre-usuario"></span>
+      <button id="btn-campana" class="relative bg-transparent border-0 text-2xl cursor-pointer text-white" title="Mensajes">
+        🔔<span id="badge-mensajes" class="hidden absolute -top-1 -right-1 bg-amber-400 text-black text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+      </button>
+      <button class="salir-btn" id="btn-salir">Salir</button>
+    </div>
+  </header>
+
+  <!-- Modal de mensajes (estudiante) -->
+  <div id="modal-msgs" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full shadow-2xl max-h-[80vh] flex flex-col">
+      <div class="p-5 border-b flex items-center justify-between">
+        <h3 class="text-lg font-bold" style="font-family:'Plus Jakarta Sans'">📨 Mensajes de tu docente</h3>
+        <button id="cerrar-msgs" class="text-slate-500 hover:text-red-500 text-2xl">&times;</button>
+      </div>
+      <div class="p-5 overflow-y-auto" id="lista-msgs"></div>
+    </div>
+  </div>
+
+  <main id="contenido" class="max-w-6xl mx-auto px-6 py-10">
+
+    <!-- ====== HERO: Sabio + saludo personalizado + KPIs globales ====== -->
+    <section class="panel-hero-est animate-fade-in">
+      <div class="panel-hero-est__sabio" id="hero-sabio"></div>
+      <div class="panel-hero-est__mensaje">
+        <div class="panel-hero-est__greeting" id="hero-greeting">¡Hola!</div>
+        <div class="panel-hero-est__sub" id="hero-sub">Tu camino IDEA empieza aquí.</div>
+      </div>
+      <div class="panel-hero-est__stats">
+        <div class="kpi-card kpi-card--rojo">
+          <div class="kpi-card__valor" id="kpi-promedio">—</div>
+          <div class="kpi-card__label">Promedio<br>global</div>
+        </div>
+        <div class="kpi-card kpi-card--dorado">
+          <div class="kpi-card__valor"><span id="kpi-completados">0</span>/<span id="kpi-total">—</span></div>
+          <div class="kpi-card__label">Cuadernillos<br>completados</div>
+        </div>
+        <div class="kpi-card kpi-card--verde">
+          <div class="kpi-card__valor" id="kpi-intentos-total">0</div>
+          <div class="kpi-card__label">Intentos<br>totales</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CUADERNILLOS: lista con info enriquecida por materia ====== -->
+    <section class="idea-card animate-fade-in" style="animation-delay:100ms">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="card-title m-0">Tus cuadernillos</h2>
+        <div class="text-xs text-slate-500">Cada materia es independiente. Tu docente habilita los reintentos.</div>
+      </div>
+      <div id="lista-cuadernillos" class="cuad-grid">
+        <div class="text-slate-400 text-sm italic" style="grid-column:1/-1;">Cargando cuadernillos…</div>
+      </div>
+    </section>
+
+    <!-- ====== EVOLUCIÓN: vista por materia o global, con tabs ====== -->
+    <section class="idea-card animate-fade-in" id="card-historico" style="animation-delay:200ms;display:none">
+      <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+        <h2 class="card-title m-0">Tu evolución</h2>
+        <div class="tabs-evolucion" role="tablist">
+          <button id="tab-materia" class="tab-evolucion tab-evolucion--active" role="tab">Por materia</button>
+          <button id="tab-global" class="tab-evolucion" role="tab">Global combinado</button>
+        </div>
+      </div>
+
+      <!-- Vista POR MATERIA -->
+      <div id="vista-materia" class="vista-evolucion">
+        <div id="grid-materias-evolucion" class="mat-evol-grid"></div>
+      </div>
+
+      <!-- Vista GLOBAL combinado -->
+      <div id="vista-global" class="vista-evolucion hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div class="lg:col-span-2">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+              <div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Evolución por intento</div>
+              <!-- Toggle: ver TODAS las materias o solo el PROMEDIO (default = promedio) -->
+              <div class="inline-flex items-center bg-slate-100 rounded-lg p-1 text-xs font-semibold">
+                <button id="toggle-vista-promedio" class="px-3 py-1.5 rounded-md transition-all" style="background:#1F1F23;color:#FFFFFF">Solo promedio</button>
+                <button id="toggle-vista-todas" class="px-3 py-1.5 rounded-md transition-all text-slate-600 hover:text-slate-900">Todas las materias</button>
+              </div>
+            </div>
+            <div style="height:420px;background:#FFFFFF;border-radius:10px;padding:14px 8px 4px 6px;border:1px solid #F1F5F9"><canvas id="chart-global"></canvas></div>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-500 mb-3">Promedio por materia <span class="text-slate-400 normal-case tracking-normal">· clic para resaltar en el gráfico</span></div>
+            <div id="lista-intentos" class="max-h-[440px] overflow-y-auto pr-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sin intentos: motivación inicial ====== -->
+    <section class="idea-card animate-fade-in" id="card-sin-intentos" style="animation-delay:200ms">
+      <div class="text-center py-10">
+        <div id="sabio-motivacional"></div>
+        <p class="text-base text-slate-600 mt-2">Aún no has presentado ninguna prueba.</p>
+        <p class="text-sm text-slate-500">Cuando completes tu primera prueba aparecerá aquí tu evolución por materia.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { requerirSesion, cerrarSesion } from './js/auth.js';
+    import { puedeEstudianteIniciarPrueba } from './js/permisos.js';
+    import { lineaEvolucion } from './js/graficos.js';
+    import { formatDateTime, escapeHtml } from './js/utils.js';
+    import { sabioConBurbuja } from './js/sabio.js';
+    import { iniciarTour, debeAutoIniciar, botonAyudaFlotante } from './js/tour.js';
+    import { listarMensajesPara, contarNoLeidos, marcarTodosLeidos, responderEnHilo } from './js/mensajes.js';
+    import { exportarCuadernilloOriginalPDF } from './js/cuadernillo-pdf-original.js';
+    import { evaluarGrupoExcelencia, generarCertificadoExcelenciaPDF } from './js/certificado.js';
+    import { construirBarraFiltros, normPeriodo } from './js/filtros-navegacion.js';
+    import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
+
+    const ses = await requerirSesion('estudiante');
+    if (!ses) throw new Error('redirigiendo');
+
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    document.getElementById('btn-salir').addEventListener('click', async () => {
+      await cerrarSesion();
+      window.location.href = 'index.html';
+    });
+
+    await db.inicializar();
+    // Pedagogía por grado para el Sabio (con fallback si falta el JSON): el panel del estudiante
+    // sabe su grado; el área la fija resultado.html al ver una prueba concreta.
+    await cargarPedagogiaGrado().catch(() => {});
+    if (ses.grado) window.SABIO_CTX = Object.assign({}, window.SABIO_CTX, { grado: ses.grado });
+
+    // === Cargar y renderizar los cuadernillos disponibles ===
+    // ADITIVO: un estudiante solo ve los cuadernillos de SU grado (3 periodos).
+    // Si la sesión no trae grado (dato faltante), no filtramos por grado para no
+    // dejarlo sin nada. 11°P1 sigue intacto: un estudiante de grado 11 sigue viéndolo.
+    const _cuadernillosTodos = await db.lista('idea_cuadernillos');
+    const cuadernillos = (ses.grado != null && ses.grado !== '')
+      ? _cuadernillosTodos.filter(c => String(c.grado) === String(ses.grado))
+      : _cuadernillosTodos;
+    // Periodos disponibles para este grado (normalizados, ordenados). El estudiante SIEMPRE
+    // ve UN solo periodo a la vez (nunca "Todos"): así no aparecen los cuadernillos de P1 y P2
+    // mezclados. Por defecto, el primer periodo disponible (preferir el 1).
+    const _periodosDisp = [...new Set(cuadernillos.map(c => normPeriodo(c.periodo)))]
+      .sort((a, b) => Number(a) - Number(b));
+    let _periodoFiltro = _periodosDisp[0] || '1';
+    const _pasaPeriodo = (c) => normPeriodo(c.periodo) === normPeriodo(_periodoFiltro);
+    const listaCuad = document.getElementById('lista-cuadernillos');
+    listaCuad.innerHTML = '';
+
+    // Cada área lleva un código corto + paleta propia (sin emojis genéricos).
+    const AREA_CHIP = {
+      'Matemáticas':           { sigla: 'MAT', color: '#0EA5E9' },  // azul
+      'Lectura Crítica':       { sigla: 'LC',  color: '#E11D48' },  // rojo IDEA
+      'Sociales y Ciudadanas': { sigla: 'SC',  color: '#B5775E' },  // terracota
+      'Ciencias Naturales':    { sigla: 'CN',  color: '#10B981' },  // verde
+      'Inglés':                { sigla: 'ING', color: '#7C3AED' }   // violeta
+    };
+
+    // === Render INMEDIATO de las tarjetas desde los cuadernillos (ya en caché local) ===
+    // No esperamos NINGUNA lectura en vivo: las tarjetas aparecen al instante y son
+    // usables aunque Firestore tarde o la conexión móvil esté floja. El estado real
+    // (intentos previos, "Ver resultado", reintentos) se enriquece justo después en
+    // segundo plano y reemplaza cada tarjeta en su sitio. Si ya presentó, cuadernillo.html
+    // igual bloquea el reintento, así que mostrar "Iniciar" de entrada es seguro.
+    for (const cuad of cuadernillos.filter(_pasaPeriodo)) {
+      const chip = AREA_CHIP[cuad.area] || { sigla: 'IDE', color: '#475569' };
+      const nPreg = cuad.preguntas?.length || 0;
+      const base = document.createElement('div');
+      base.className = 'cuad-card cuad-card--disponible';
+      base.dataset.cuadId = cuad.id;
+      base.innerHTML = `
+        <div class="cuad-card__head">
+          <div class="cuad-chip" style="background:${chip.color}">
+            <span class="cuad-chip-sigla">${chip.sigla}</span>
+            <span class="cuad-chip-grado">${cuad.grado}°</span>
+          </div>
+          <div class="cuad-card__estado-wrap"><span class="cuad-chip-estado cuad-chip-estado--disponible">✓ Disponible</span></div>
+        </div>
+        <div class="cuad-card__body">
+          <div class="cuad-card__titulo">${escapeHtml(cuad.area)}</div>
+          <div class="cuad-card__sub">Período ${cuad.periodo} · ${nPreg} preguntas</div>
+          <div class="cuad-card__placeholder">${nPreg} preguntas por presentar</div>
+        </div>
+        <div class="cuad-card__footer">
+          <a href="cuadernillo.html?id=${cuad.id}" class="btn-idea cuad-card__btn">Iniciar →</a>
+        </div>
+      `;
+      listaCuad.appendChild(base);
+    }
+    if (cuadernillos.length === 0) {
+      listaCuad.innerHTML = '<p class="text-slate-400 italic text-sm">No hay cuadernillos cargados todavía.</p>';
+    }
+
+    // === Cargar SOLO las pruebas y permisos de ESTE estudiante (lectura DIRIGIDA) ===
+    // Por estudiante_id: descarga únicamente sus documentos, no toda la colección. Escala
+    // con muchos usuarios sin que crezca el tamaño de la lectura. Se cargan una vez y se
+    // reutilizan en el bucle (no se relee por cuadernillo).
+    const todas = await db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', ses.user_id);
+    const _permisosEst = await db.consultarPorCampo('idea_permisos_reintento', 'estudiante_id', ses.user_id);
+    const mias = todas
+      .filter(a => a.estudiante_id === ses.user_id && a.estado === 'enviada')
+      .sort((a, b) => new Date(a.fecha_envio || a.fecha_fin) - new Date(b.fecha_envio || b.fecha_fin));
+
+    // Agrupar por cuadernillo_id
+    const porCuad = {};
+    for (const a of mias) {
+      (porCuad[a.cuadernillo_id] = porCuad[a.cuadernillo_id] || []).push(a);
+    }
+    const nivelColor = (n) => ({ BAJO: '#EF4444', 'BÁSICO': '#F59E0B', ALTO: '#FBBF24', SUPERIOR: '#10B981' }[n] || '#94A3B8');
+
+    // Render ENRIQUECIDO de tarjetas (estado real, permisos, mini-stats). Se envuelve en una
+    // función para poder re-renderizar al cambiar el filtro ADITIVO de periodo. Respeta
+    // _pasaPeriodo: solo pinta las tarjetas del periodo seleccionado ('' = todas).
+    async function renderCuadernillosEnriquecidos() {
+    listaCuad.innerHTML = '';
+    const _visibles = cuadernillos.filter(_pasaPeriodo);
+    if (_visibles.length === 0) {
+      listaCuad.innerHTML = '<p class="text-slate-400 italic text-sm" style="grid-column:1/-1;">No hay cuadernillos para el periodo seleccionado.</p>';
+      return;
+    }
+    for (const cuad of _visibles) {
+      const v = await puedeEstudianteIniciarPrueba(ses.user_id, cuad.id, { appsEstudiante: todas, permisosEstudiante: _permisosEst });
+      const chip = AREA_CHIP[cuad.area] || { sigla: 'IDE', color: '#475569' };
+      const nPreg = cuad.preguntas?.length || 0;
+      const apsMat = porCuad[cuad.id] || [];
+      const nInt = apsMat.length;
+      const mejor = apsMat.length ? apsMat.reduce((a, b) => a.puntaje > b.puntaje ? a : b) : null;
+      const ultimo = apsMat.length ? apsMat[apsMat.length - 1] : null;
+
+      // El botón PDF solo aparece DESPUÉS de presentar la prueba al menos una vez.
+      const yaPresentada = nInt > 0;
+      let ctaHtml = '';
+      let estadoHtml = '';
+      let estadoClase = '';
+      if (v.permitido && v.razon === 'retomar') {
+        ctaHtml = `<a href="cuadernillo.html?id=${cuad.id}" class="btn-idea cuad-card__btn">Retomar →</a>`;
+        estadoHtml = `<span class="cuad-chip-estado cuad-chip-estado--curso">⏱ En curso</span>`;
+        estadoClase = 'cuad-card--curso';
+      } else if (v.permitido && v.razon === 'primer_intento') {
+        ctaHtml = `<a href="cuadernillo.html?id=${cuad.id}" class="btn-idea cuad-card__btn">Iniciar →</a>`;
+        estadoHtml = `<span class="cuad-chip-estado cuad-chip-estado--disponible">✓ Disponible</span>`;
+        estadoClase = 'cuad-card--disponible';
+      } else if (v.permitido && v.razon === 'permiso_vigente') {
+        ctaHtml = `<a href="cuadernillo.html?id=${cuad.id}" class="btn-dorado cuad-card__btn">✨ Nuevo intento →</a>`;
+        estadoHtml = `<span class="cuad-chip-estado cuad-chip-estado--habilitado">★ Intento habilitado</span>`;
+        estadoClase = 'cuad-card--habilitado';
+      } else {
+        // Ver resultado con color brand para destacarlo (post-presentación)
+        ctaHtml = ultimo
+          ? `<a href="resultado.html?id=${ultimo.id}" class="btn-idea cuad-card__btn">Ver resultado →</a>`
+          : `<button class="btn-secundario cuad-card__btn cursor-not-allowed opacity-60" disabled>Enviado</button>`;
+        estadoHtml = `<span class="cuad-chip-estado cuad-chip-estado--enviado">🔒 Enviado</span>`;
+        estadoClase = 'cuad-card--enviado';
+      }
+      // Botón PDF eliminado de la card — ahora vive en resultado.html tras presentar
+      const pdfBtnHtml = '';
+
+      const miniStatsCompacto = nInt > 0
+        ? `<div class="cuad-card__stats">
+             <span class="cuad-card__stat" title="Intentos presentados">
+               <span class="cuad-card__stat-val">${nInt}</span>
+               <span class="cuad-card__stat-lbl">${nInt === 1 ? 'intento' : 'intentos'}</span>
+             </span>
+             <span class="cuad-card__stat" title="Mejor puntaje · ${mejor.nivel}">
+               <span class="cuad-card__stat-val" style="color:${nivelColor(mejor.nivel)}">${mejor.puntaje}</span>
+               <span class="cuad-card__stat-lbl">mejor</span>
+             </span>
+             <span class="cuad-card__stat" title="Último puntaje">
+               <span class="cuad-card__stat-val">${ultimo.puntaje}</span>
+               <span class="cuad-card__stat-lbl">último</span>
+             </span>
+           </div>`
+        : `<div class="cuad-card__placeholder">${nPreg} preguntas por presentar</div>`;
+
+      const item = document.createElement('div');
+      item.className = `cuad-card ${estadoClase}`;
+      item.dataset.cuadId = cuad.id;
+      item.innerHTML = `
+        <div class="cuad-card__head">
+          <div class="cuad-chip" style="background:${chip.color}">
+            <span class="cuad-chip-sigla">${chip.sigla}</span>
+            <span class="cuad-chip-grado">${cuad.grado}°</span>
+          </div>
+          <div class="cuad-card__estado-wrap">${estadoHtml}</div>
+        </div>
+        <div class="cuad-card__body">
+          <div class="cuad-card__titulo">${escapeHtml(cuad.area)}</div>
+          <div class="cuad-card__sub">Período ${cuad.periodo} · ${nPreg} preguntas</div>
+          ${miniStatsCompacto}
+        </div>
+        <div class="cuad-card__footer">
+          ${ctaHtml}
+          ${pdfBtnHtml}
+        </div>
+      `;
+      // Reemplazar la tarjeta BASE (ya pintada) por la enriquecida, en su mismo sitio.
+      const _base = listaCuad.querySelector(`[data-cuad-id="${cuad.id}"]`);
+      if (_base) _base.replaceWith(item); else listaCuad.appendChild(item);
+    }
+    } // fin renderCuadernillosEnriquecidos
+    await renderCuadernillosEnriquecidos();
+
+    // === Selector de Periodo OBLIGATORIO (sin "Todos"): solo P1 o P2, nunca mezclados ===
+    // Se inserta en el header de "Tus cuadernillos". Al cambiar, re-renderiza solo la
+    // LISTA de tarjetas (no toca KPIs, permisos, estado ni evolución).
+    {
+      const headerCuad = listaCuad.closest('section')?.querySelector('.flex.items-center.justify-between');
+      // Solo mostramos el selector si hay más de un periodo (para poder elegir P1 / P2).
+      // Con un solo periodo no hace falta elegir: ya quedó fijado arriba como _periodoFiltro.
+      if (headerCuad && _periodosDisp.length > 1) {
+        const cont = document.createElement('div');
+        cont.style.cssText = 'width:100%;margin-top:10px';
+        headerCuad.insertAdjacentElement('afterend', cont);
+        construirBarraFiltros(
+          cont,
+          { periodo: true },
+          { periodos: cuadernillos.map(c => c.periodo) },
+          async (f) => {
+            // Campo obligatorio: f.periodo siempre trae un valor (1 o 2). Si por alguna razón
+            // llegara vacío, conservamos el actual para no mostrar todo.
+            _periodoFiltro = f.periodo || _periodoFiltro;
+            await renderCuadernillosEnriquecidos();
+          },
+          { sinTodos: ['periodo'], valoresIniciales: { periodo: _periodoFiltro } }
+        );
+      }
+    }
+
+    // El certificado de reconocimiento se gestiona ÚNICAMENTE desde el panel del DIRECTIVO
+    // (solo el primer puesto de cada grupo). Por eso ya no se muestra en el panel del estudiante.
+
+    // Listener delegado: botón "📄 PDF" descarga el cuadernillo original
+    listaCuad.addEventListener('click', async (e) => {
+      const btn = e.target.closest('.cuad-pdf-original');
+      if (!btn) return;
+      const cuadId = btn.dataset.cuadId;
+      const cuad = cuadernillos.find(c => c.id === cuadId);
+      if (!cuad) return;
+      btn.disabled = true;
+      btn.textContent = '⏳ Generando...';
+      try {
+        await exportarCuadernilloOriginalPDF(cuad);
+        btn.textContent = '✓ Descargado';
+        setTimeout(() => { btn.textContent = '📄 PDF'; btn.disabled = false; }, 2000);
+      } catch (err) {
+        console.error('[IDEA] Error generando PDF del cuadernillo:', err);
+        btn.textContent = '❌ Error';
+        setTimeout(() => { btn.textContent = '📄 PDF'; btn.disabled = false; }, 2000);
+      }
+    });
+
+    // === KPIs globales y saludo Sabio (ahora reflejan por materia, no por suma total) ===
+    const totalCuad = cuadernillos.length;
+    const cuadConIntentos = Object.keys(porCuad).length;
+    const completadosOficial = cuadernillos.filter(c => {
+      const aps = porCuad[c.id] || [];
+      // Una materia se considera "completada" cuando al menos una aplicación está enviada
+      return aps.length > 0;
+    }).length;
+    // Promedio global = promedio de los ÚLTIMOS puntajes por materia (no de todos los intentos)
+    const ultimosPorMat = cuadernillos
+      .map(c => (porCuad[c.id] || []).slice(-1)[0])
+      .filter(Boolean);
+    const promedioGlobal = ultimosPorMat.length
+      ? Math.round(ultimosPorMat.reduce((s, a) => s + a.puntaje, 0) / ultimosPorMat.length)
+      : null;
+
+    document.getElementById('kpi-promedio').textContent = promedioGlobal !== null ? promedioGlobal : '—';
+    document.getElementById('kpi-completados').textContent = completadosOficial;
+    document.getElementById('kpi-total').textContent = totalCuad;
+    document.getElementById('kpi-intentos-total').textContent = mias.length;
+
+    // Saludo personalizado con Sabio según el progreso
+    const primerNombre = (ses.nombre_completo || '').split(' ')[0] || 'estudiante';
+    let saludo, sub, expresion;
+    if (completadosOficial === 0) {
+      saludo = `¡Hola, ${escapeHtml(primerNombre)}! 👋`;
+      sub = `Tienes ${totalCuad} cuadernillos por presentar. Tómalos con calma — estoy contigo en cada uno.`;
+      expresion = 'saludando';
+    } else if (completadosOficial < totalCuad) {
+      saludo = `¡Vas muy bien, ${escapeHtml(primerNombre)}!`;
+      sub = `Llevas ${completadosOficial} de ${totalCuad} cuadernillos. Tu promedio actual es <strong>${promedioGlobal}/100</strong>.`;
+      expresion = 'animando';
+    } else if (promedioGlobal >= 79) {
+      saludo = `¡Excelente trabajo, ${escapeHtml(primerNombre)}!`;
+      sub = `Has completado los ${totalCuad} cuadernillos con un promedio de <strong>${promedioGlobal}/100</strong>. ¡Sigue así!`;
+      expresion = 'celebrando';
+    } else {
+      saludo = `Lo lograste, ${escapeHtml(primerNombre)}.`;
+      sub = `Has completado los ${totalCuad} cuadernillos. Tu promedio es <strong>${promedioGlobal}/100</strong>. Si tu docente te habilita un nuevo intento, podrás mejorarlo.`;
+      expresion = 'feliz';
+    }
+    document.getElementById('hero-greeting').textContent = saludo;
+    document.getElementById('hero-sub').innerHTML = sub;
+    document.getElementById('hero-sabio').innerHTML = `<div style="display:flex;justify-content:center">${
+      // Mostrar Sabio sin burbuja, queda más limpio en el hero
+      (await import('./js/sabio.js')).sabioSVG(expresion, 140)
+    }</div>`;
+
+    // === Evolución: vista por materia + vista global combinada ===
+    if (mias.length > 0) {
+      document.getElementById('card-sin-intentos').style.display = 'none';
+      document.getElementById('card-historico').style.display = '';
+
+      // --- Vista POR MATERIA: una mini-card por cuadernillo con sus intentos ---
+      const grid = document.getElementById('grid-materias-evolucion');
+      grid.innerHTML = '';
+      for (const cuad of cuadernillos) {
+        const aps = porCuad[cuad.id] || [];
+        if (aps.length === 0) continue;
+        const chip = AREA_CHIP[cuad.area] || { sigla: 'IDE', color: '#475569' };
+        const mejor = aps.reduce((a, b) => a.puntaje > b.puntaje ? a : b);
+        const ultimo = aps[aps.length - 1];
+        const trend = aps.length > 1
+          ? (ultimo.puntaje > aps[aps.length - 2].puntaje ? 'subiendo' : (ultimo.puntaje < aps[aps.length - 2].puntaje ? 'bajando' : 'estable'))
+          : 'inicial';
+        const arrow = { subiendo: '↗', bajando: '↘', estable: '→', inicial: '✦' }[trend];
+        const arrowColor = { subiendo: '#10B981', bajando: '#EF4444', estable: '#94A3B8', inicial: '#FBBF24' }[trend];
+        const card = document.createElement('div');
+        card.className = 'mat-evol-card';
+        card.innerHTML = `
+          <div class="mat-evol-card__head">
+            <div class="cuad-chip cuad-chip--mini" style="background:${chip.color}">
+              <span class="cuad-chip-sigla">${chip.sigla}</span>
+            </div>
+            <div class="mat-evol-card__head-info">
+              <div class="mat-evol-card__titulo">${escapeHtml(cuad.area)}</div>
+              <div class="mat-evol-card__sub">${aps.length} ${aps.length === 1 ? 'intento' : 'intentos'} · mejor <strong>${mejor.puntaje}</strong>/100</div>
+            </div>
+            <div class="mat-evol-card__trend" style="color:${arrowColor}" title="Tendencia">${arrow}</div>
+          </div>
+          <div class="mat-evol-card__chart-wrap"><canvas data-cuad-id="${cuad.id}" class="mat-evol-card__chart"></canvas></div>
+          <div class="mat-evol-card__intentos">
+            ${aps.map((a, i) => `
+              <a href="resultado.html?id=${a.id}" class="mat-evol-card__intento" title="${formatDateTime(a.fecha_envio || a.fecha_fin)}">
+                <span class="mat-evol-card__intento-n">Intento ${i + 1}</span>
+                <span class="mat-evol-card__intento-pt" style="color:${nivelColor(a.nivel)}">${a.puntaje}</span>
+              </a>
+            `).join('')}
+          </div>
+        `;
+        grid.appendChild(card);
+        // Mini-chart de intentos de esa materia
+        const canvas = card.querySelector('canvas');
+        if (typeof Chart !== 'undefined') {
+          new Chart(canvas, {
+            type: 'line',
+            data: {
+              labels: aps.map((_, i) => `I${i+1}`),
+              datasets: [{
+                data: aps.map(a => a.puntaje),
+                borderColor: chip.color,
+                backgroundColor: chip.color + '22',
+                pointBackgroundColor: chip.color,
+                pointBorderColor: '#fff',
+                pointBorderWidth: 2,
+                pointRadius: 4,
+                tension: 0.3,
+                fill: true
+              }]
+            },
+            options: {
+              responsive: true, maintainAspectRatio: false,
+              plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.parsed.y}/100` } } },
+              scales: {
+                y: { min: 0, max: 100, ticks: { stepSize: 25, font: { size: 9 } }, grid: { color: '#E5E7EB' } },
+                x: { ticks: { font: { size: 9 } }, grid: { display: false } }
+              }
+            }
+          });
+        }
+      }
+
+      // --- Vista GLOBAL: chart con fill tenue + toggle vista + resaltado al click ---
+      // v13.9:
+      //  - Cada línea con fill tenue (área debajo coloreada al ~12% opacidad), igual
+      //    que las gráficas "Por materia".
+      //  - Toggle: ver "Todas las materias" (5 + promedio) o "Solo promedio global".
+      //  - Click en una aplicación del panel lateral resalta esa materia en el chart
+      //    (su línea queda opaca + área 25%, las demás bajan a 15% opacidad).
+      const globalCanvas = document.getElementById('chart-global');
+      let chartGlobalInstance = null;
+      let seriesMateriasGlobal = [];
+      let promediosGlobal = [];
+      let labelsGlobal = [];
+      let materiaResaltada = null;   // string area | null
+      let modoVista = 'promedio';     // 'todas' | 'promedio' — default = promedio
+
+      // Helper hex → rgba con alpha
+      function hexAlpha(hex, alpha) {
+        const m = String(hex).replace('#', '').match(/^([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
+        if (!m) return hex;
+        return `rgba(${parseInt(m[1],16)},${parseInt(m[2],16)},${parseInt(m[3],16)},${alpha})`;
+      }
+
+      // Construye los datasets según vista + materia resaltada.
+      // - modo 'todas': SOLO las 5 materias (con fill tenue). El promedio NO se dibuja
+      //   aquí porque tiene su propia vista 'Solo promedio'.
+      // - modo 'promedio': SOLO la línea dorada del promedio global.
+      function construirDatasetsGlobal() {
+        const datasets = [];
+        if (modoVista === 'todas') {
+          seriesMateriasGlobal.forEach(s => {
+            const esResaltada = materiaResaltada === s.label;
+            const opacFill   = materiaResaltada == null ? 0.12 : (esResaltada ? 0.28 : 0.05);
+            const opacBorder = materiaResaltada == null ? 1     : (esResaltada ? 1    : 0.25);
+            const opacPunto  = materiaResaltada == null ? 1     : (esResaltada ? 1    : 0.30);
+            datasets.push({
+              label: s.label,
+              data: s.data,
+              borderColor: hexAlpha(s.color, opacBorder),
+              backgroundColor: hexAlpha(s.color, opacFill),
+              pointBackgroundColor: hexAlpha(s.color, opacPunto),
+              pointBorderColor: '#FFFFFF',
+              pointBorderWidth: 2,
+              pointRadius: esResaltada ? 7 : 5,
+              pointHoverRadius: esResaltada ? 9 : 7,
+              borderWidth: esResaltada ? 3 : 2.5,
+              tension: 0,
+              fill: true,
+              spanGaps: true
+            });
+          });
+        } else {
+          // modo 'promedio': solo línea dorada del promedio global con fill 18%
+          datasets.push({
+            label: 'Promedio global',
+            data: promediosGlobal,
+            borderColor: '#1F1F23',
+            backgroundColor: hexAlpha('#FBBF24', 0.20),
+            pointBackgroundColor: '#FBBF24',
+            pointBorderColor: '#1F1F23',
+            pointBorderWidth: 2,
+            pointRadius: 7,
+            pointHoverRadius: 9,
+            borderWidth: 3,
+            tension: 0,
+            fill: true,
+            spanGaps: true
+          });
+        }
+        return datasets;
+      }
+
+      // Aplica nueva config sin recrear el chart
+      function refrescarChartGlobal() {
+        if (!chartGlobalInstance) return;
+        chartGlobalInstance.data.datasets = construirDatasetsGlobal();
+        chartGlobalInstance.update('none');
+      }
+
+      if (globalCanvas && typeof Chart !== 'undefined') {
+        const maxInt = Math.max(...Object.values(porCuad).map(arr => arr.length));
+        labelsGlobal = Array.from({ length: maxInt }, (_, i) => `Intento ${i + 1}`);
+        seriesMateriasGlobal = cuadernillos
+          .map(c => {
+            const aps = porCuad[c.id] || [];
+            if (aps.length === 0) return null;
+            const chip = AREA_CHIP[c.area] || { sigla: 'IDE', color: '#475569' };
+            return {
+              label: c.area,
+              sigla: chip.sigla,
+              color: chip.color,
+              data: aps.map(a => a.puntaje)
+            };
+          })
+          .filter(Boolean);
+        promediosGlobal = labelsGlobal.map((_, i) => {
+          const vals = cuadernillos
+            .map(c => (porCuad[c.id] || [])[i])
+            .filter(Boolean)
+            .map(a => a.puntaje);
+          return vals.length ? Math.round(vals.reduce((s, v) => s + v, 0) / vals.length) : null;
+        });
+
+        chartGlobalInstance = new Chart(globalCanvas, {
+          type: 'line',
+          data: { labels: labelsGlobal, datasets: construirDatasetsGlobal() },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            layout: { padding: { top: 10, right: 12, bottom: 4, left: 4 } },
+            interaction: { mode: 'nearest', intersect: false },
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: { font: { size: 12 }, boxWidth: 10, boxHeight: 10, padding: 12, usePointStyle: true, pointStyle: 'circle' },
+                onClick: (e, legendItem, legend) => {
+                  // Al hacer click en una serie de la leyenda: la resalta (toggle).
+                  // Reusa la misma materiaResaltada que usa el panel lateral.
+                  const nombre = legendItem.text;
+                  if (nombre === 'Promedio global') return; // no resaltable
+                  materiaResaltada = (materiaResaltada === nombre) ? null : nombre;
+                  refrescarChartGlobal();
+                }
+              },
+              tooltip: {
+                backgroundColor: 'rgba(15, 15, 18, 0.92)',
+                titleFont: { size: 12, weight: 'bold' },
+                bodyFont: { size: 12 },
+                padding: 10,
+                cornerRadius: 6,
+                displayColors: true,
+                callbacks: {
+                  label: (ctx) => ctx.parsed.y == null ? null : `${ctx.dataset.label}: ${ctx.parsed.y}/100`
+                }
+              }
+            },
+            scales: {
+              y: {
+                min: 0, max: 100,
+                ticks: { stepSize: 20, font: { size: 11 }, color: '#64748B', padding: 6 },
+                grid: { color: '#F1F5F9', drawBorder: false }
+              },
+              x: {
+                ticks: { font: { size: 12, weight: '600' }, color: '#1F1F23', padding: 6 },
+                grid: { display: false }
+              }
+            }
+          }
+        });
+
+        // Toggle Todas / Solo promedio
+        const togTodas = document.getElementById('toggle-vista-todas');
+        const togProm  = document.getElementById('toggle-vista-promedio');
+        function setModo(modo) {
+          modoVista = modo;
+          if (modo === 'todas') {
+            togTodas.style.background = '#1F1F23';
+            togTodas.style.color = '#FFFFFF';
+            togProm.style.background = 'transparent';
+            togProm.style.color = '#475569';
+          } else {
+            togProm.style.background = '#1F1F23';
+            togProm.style.color = '#FFFFFF';
+            togTodas.style.background = 'transparent';
+            togTodas.style.color = '#475569';
+            materiaResaltada = null;  // no tiene sentido tener resaltado si solo se ve promedio
+          }
+          refrescarChartGlobal();
+        }
+        togTodas.addEventListener('click', () => setModo('todas'));
+        togProm.addEventListener('click', () => setModo('promedio'));
+      }
+
+      // --- Lista lateral: PROMEDIO por MATERIA (no por aplicación individual) ---
+      // v13.10: una sola fila por materia con: chip + nombre + N intentos + promedio.
+      // Click = resalta esa materia en el chart (toggle).
+      // Doble-click = navega al último resultado de esa materia.
+      const listaAps = document.getElementById('lista-intentos');
+      const promedioPorMateria = cuadernillos
+        .map(c => {
+          const aps = porCuad[c.id] || [];
+          if (aps.length === 0) return null;
+          const chip = AREA_CHIP[c.area] || { sigla: 'IDE', color: '#475569' };
+          const prom = Math.round(aps.reduce((s, a) => s + a.puntaje, 0) / aps.length);
+          const nivelProm = prom < 60 ? 'BAJO' : prom < 79 ? 'BÁSICO' : prom <= 90 ? 'ALTO' : 'SUPERIOR';
+          const ultimaApp = aps[aps.length - 1];
+          return {
+            area: c.area,
+            sigla: chip.sigla,
+            color: chip.color,
+            nIntentos: aps.length,
+            promedio: prom,
+            nivel: nivelProm,
+            ultimaAppId: ultimaApp.id
+          };
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.promedio - a.promedio);  // mejor promedio arriba
+
+      listaAps.innerHTML = promedioPorMateria.map(m => `
+        <button class="aplicacion-fila aplicacion-fila--btn" data-area="${escapeHtml(m.area)}" data-aplicacion-id="${m.ultimaAppId}" title="Click: resalta esta materia en el gráfico · Doble-click: ver último resultado">
+          <div class="aplicacion-fila__chip" style="background:${m.color}">${m.sigla}</div>
+          <div class="aplicacion-fila__info">
+            <div class="aplicacion-fila__titulo">${escapeHtml(m.area)}</div>
+            <div class="aplicacion-fila__fecha">${m.nIntentos} ${m.nIntentos === 1 ? 'intento' : 'intentos'} · promedio</div>
+          </div>
+          <div class="aplicacion-fila__puntaje" style="color:${nivelColor(m.nivel)}">${m.promedio}</div>
+        </button>
+      `).join('');
+
+      // Click en materia → resalta en chart (toggle). Doble-click → resultado del último intento.
+      listaAps.addEventListener('click', (e) => {
+        const btn = e.target.closest('.aplicacion-fila--btn');
+        if (!btn) return;
+        const area = btn.dataset.area;
+        materiaResaltada = (materiaResaltada === area) ? null : area;
+        // Al resaltar una materia debe verse — si está en "Solo promedio", pasar a "Todas"
+        if (materiaResaltada && modoVista !== 'todas') {
+          const tT = document.getElementById('toggle-vista-todas');
+          if (tT) tT.click();
+        } else {
+          refrescarChartGlobal();
+        }
+        listaAps.querySelectorAll('.aplicacion-fila--btn').forEach(b => {
+          b.classList.toggle('aplicacion-fila--activa', materiaResaltada && b.dataset.area === materiaResaltada);
+        });
+      });
+      listaAps.addEventListener('dblclick', (e) => {
+        const btn = e.target.closest('.aplicacion-fila--btn');
+        if (!btn) return;
+        const id = btn.dataset.aplicacionId;
+        if (id) location.href = `resultado.html?id=${id}`;
+      });
+
+      // --- Tabs ---
+      const tabMat = document.getElementById('tab-materia');
+      const tabGlob = document.getElementById('tab-global');
+      const vistaMat = document.getElementById('vista-materia');
+      const vistaGlob = document.getElementById('vista-global');
+      tabMat.addEventListener('click', () => {
+        tabMat.classList.add('tab-evolucion--active');
+        tabGlob.classList.remove('tab-evolucion--active');
+        vistaMat.classList.remove('hidden');
+        vistaGlob.classList.add('hidden');
+      });
+      tabGlob.addEventListener('click', () => {
+        tabGlob.classList.add('tab-evolucion--active');
+        tabMat.classList.remove('tab-evolucion--active');
+        vistaGlob.classList.remove('hidden');
+        vistaMat.classList.add('hidden');
+      });
+    } else {
+      // Sabio motivacional cuando no hay intentos aún
+      const cardSin = document.getElementById('sabio-motivacional');
+      cardSin.innerHTML = sabioConBurbuja(
+        `¡Hola, ${escapeHtml(primerNombre)}! Cuando presentes tu primera prueba aparecerán aquí tus resultados por materia. Empieza por la que te llame más la atención.`,
+        'saludando',
+        { lado: 'derecha', tamano: 130 }
+      );
+    }
+
+    // Tour de onboarding
+    botonAyudaFlotante('estudiante');
+    if (debeAutoIniciar('estudiante')) {
+      setTimeout(() => iniciarTour('estudiante'), 600);
+    }
+
+    // === Mensajería (campana) ===
+    async function refrescarCampana() {
+      const c = await contarNoLeidos(ses.user_id);
+      const b = document.getElementById('badge-mensajes');
+      if (c > 0) { b.textContent = c; b.classList.remove('hidden'); }
+      else { b.classList.add('hidden'); }
+    }
+    let msgsCacheEst = [];
+    function renderMensajesEstudiante() {
+      const lista = document.getElementById('lista-msgs');
+      if (msgsCacheEst.length === 0) {
+        lista.innerHTML = '<p class="text-slate-500 italic text-center py-8">No tienes mensajes todavía.</p>';
+        return;
+      }
+      lista.innerHTML = msgsCacheEst.map(m => `
+        <div class="border-l-4 ${m.leido ? 'border-slate-300' : 'border-amber-500'} bg-slate-50 rounded-r-lg p-4 mb-3">
+          <div class="flex justify-between items-start mb-1">
+            <strong class="text-sm">${escapeHtml(m.de_nombre)}</strong>
+            <span class="text-xs text-slate-400">${formatDateTime(m.fecha)}</span>
+          </div>
+          ${m.asunto ? `<div class="text-xs uppercase tracking-wider text-amber-700 font-semibold mb-1">${escapeHtml(m.asunto)}</div>` : ''}
+          <div class="text-sm text-slate-700 whitespace-pre-line mb-2">${escapeHtml(m.texto)}</div>
+          <button class="btn-responder text-xs text-sky-700 underline" data-id="${m.id}">↩ Responder</button>
+          <div class="hidden mt-2 form-responder" data-form="${m.id}">
+            <textarea class="input-idea text-xs" rows="2" maxlength="2000" placeholder="Escribe tu respuesta..."></textarea>
+            <div class="flex justify-end gap-2 mt-1">
+              <button class="btn-secundario text-xs cancelar-resp" data-id="${m.id}">Cancelar</button>
+              <button class="btn-idea text-xs enviar-resp" data-id="${m.id}">Enviar respuesta</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // Wire up respondee buttons
+      lista.querySelectorAll('.btn-responder').forEach(b => {
+        b.addEventListener('click', () => {
+          lista.querySelectorAll('.form-responder').forEach(f => f.classList.add('hidden'));
+          lista.querySelector(`[data-form="${b.dataset.id}"]`).classList.remove('hidden');
+          lista.querySelector(`[data-form="${b.dataset.id}"] textarea`).focus();
+        });
+      });
+      lista.querySelectorAll('.cancelar-resp').forEach(b => {
+        b.addEventListener('click', () => lista.querySelector(`[data-form="${b.dataset.id}"]`).classList.add('hidden'));
+      });
+      lista.querySelectorAll('.enviar-resp').forEach(b => {
+        b.addEventListener('click', async () => {
+          const form = lista.querySelector(`[data-form="${b.dataset.id}"]`);
+          const texto = form.querySelector('textarea').value.trim();
+          if (!texto) return;
+          const original = msgsCacheEst.find(m => m.id === b.dataset.id);
+          try {
+            await responderEnHilo(ses.user_id, ses.nombre_completo, original, texto);
+            form.querySelector('textarea').value = '';
+            form.classList.add('hidden');
+            alert('Respuesta enviada a ' + original.de_nombre);
+          } catch (e) {
+            alert('Error: ' + e.message);
+          }
+        });
+      });
+    }
+
+    document.getElementById('btn-campana').addEventListener('click', async () => {
+      const m = document.getElementById('modal-msgs');
+      msgsCacheEst = await listarMensajesPara(ses.user_id);
+      renderMensajesEstudiante();
+      m.classList.remove('hidden'); m.classList.add('flex');
+      await marcarTodosLeidos(ses.user_id);
+      setTimeout(refrescarCampana, 300);
+    });
+    document.getElementById('cerrar-msgs').addEventListener('click', () => {
+      const m = document.getElementById('modal-msgs');
+      m.classList.add('hidden'); m.classList.remove('flex');
+    });
+    await refrescarCampana();
+  </script>
+</body>
+</html>

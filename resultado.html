@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Mi resultado — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- ExcelJS NO se carga aquí: pesa ~1 MB y solo se necesita al descargar; se carga bajo demanda (js/cargar-libs.js). -->
+    <!-- Driver.js para onboarding -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <!-- Confetti (solo al celebrar) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <!-- pdf-lib se carga BAJO DEMANDA desde el módulo de descarga; no bloquea aquí. -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/idea-custom.css">
+  <link rel="stylesheet" href="css/idea-v2.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="rol-estudiante">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="estudiante.html" class="logo-home" title="Volver al panel del estudiante">
+      <img src="assets/logo-idea.png" class="logo">
+      <div class="nombre-app">IDEA — Resultado individual</div>
+    </a>
+    <div class="user-info">
+      <span class="rol-chip">Estudiante</span>
+      <span id="nombre-usuario"></span>
+      <button class="salir-btn" id="btn-salir">Salir</button>
+    </div>
+  </header>
+
+  <main id="contenido" class="max-w-5xl mx-auto px-6 py-10">
+    <!-- Header del resultado -->
+    <div class="text-center mb-10 animate-fade-in">
+      <div class="text-4xl mb-3">🎯</div>
+      <h1 class="text-3xl font-bold mb-2" style="font-family:'Plus Jakarta Sans'">¡Has finalizado tu prueba!</h1>
+      <p class="text-slate-600" id="resumen-meta"></p>
+    </div>
+
+    <!-- Tarjeta principal: puntaje, nivel, aciertos -->
+    <div class="idea-card mb-6 animate-fade-in" style="animation-delay:100ms">
+      <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+        <div>
+          <div class="circulo-puntaje" id="circulo-puntaje" style="--prog:0%">
+            <div class="valor" id="valor-puntaje">0</div>
+            <div class="label">de 100</div>
+          </div>
+        </div>
+        <div class="text-center md:text-left">
+          <div class="text-sm uppercase tracking-wider text-slate-500 mb-1">Nivel de desempeño</div>
+          <div class="text-3xl font-bold mb-3" id="nivel-texto" style="font-family:'Plus Jakarta Sans'"></div>
+          <span class="chip-nivel" id="chip-nivel" style="font-size:13px;padding:6px 16px"></span>
+          <div class="mt-4 text-slate-600">
+            <span id="texto-aciertos"></span>
+          </div>
+        </div>
+        <div style="height:200px"><canvas id="donut-aciertos"></canvas></div>
+      </div>
+    </div>
+
+    <!-- Resumen por competencia -->
+    <div class="idea-card mb-6 animate-fade-in" style="animation-delay:200ms">
+      <h2 class="card-title">Tu desempeño por competencia</h2>
+      <div style="height:280px"><canvas id="barras-competencias"></canvas></div>
+    </div>
+
+    <!-- Evolución (si hay >1 intento) -->
+    <div class="idea-card mb-6 animate-fade-in" id="card-evolucion" style="animation-delay:250ms;display:none">
+      <h2 class="card-title">Tu evolución entre intentos</h2>
+      <div style="height:260px"><canvas id="grafico-evolucion"></canvas></div>
+      <p id="texto-delta" class="text-center mt-4 text-sm"></p>
+    </div>
+
+    <!-- Cómo se compara tu resultado -->
+    <div class="idea-card mb-6 animate-fade-in" id="card-comparativos" style="animation-delay:270ms;display:none">
+      <h2 class="card-title">Cómo se compara tu resultado</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="comparativos-container"></div>
+    </div>
+
+    <!-- Tus 3 fortalezas y 3 oportunidades -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="idea-card animate-fade-in" style="animation-delay:280ms">
+        <h2 class="card-title" style="color:#10B981">✅ Tus fortalezas</h2>
+        <div id="lista-fortalezas" class="space-y-2"></div>
+      </div>
+      <div class="idea-card animate-fade-in" style="animation-delay:290ms">
+        <h2 class="card-title" style="color:#F59E0B">⚠ Tus oportunidades</h2>
+        <div id="lista-oportunidades" class="space-y-2"></div>
+      </div>
+    </div>
+
+    <!-- Estrategias y recursos -->
+    <div class="idea-card mb-6 animate-fade-in" style="animation-delay:295ms">
+      <h2 class="card-title">🎯 Estrategias y recursos para tu estudio</h2>
+      <div id="recursos-estudio" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
+    </div>
+
+    <!-- Disclaimer de reintento -->
+    <div id="disclaimer-reintento" class="hidden mb-6"></div>
+
+    <!-- Detalle por pregunta -->
+    <div class="idea-card mb-6 animate-fade-in" style="animation-delay:300ms">
+      <h2 class="card-title">Detalle por pregunta</h2>
+      <p class="text-sm text-slate-500 mb-4">Haz clic en cada pregunta para ver tu respuesta, la respuesta correcta y la justificación.</p>
+      <div class="grid grid-cols-5 md:grid-cols-10 gap-2 mb-4" id="grid-preguntas"></div>
+      <div id="detalle-pregunta" class="bg-slate-50 rounded-xl p-5 hidden"></div>
+    </div>
+
+    <!-- Acciones principales: continuar (grandes y visibles) -->
+    <div class="flex flex-col sm:flex-row gap-3 justify-center mt-8">
+      <a href="estudiante.html" id="btn-volver-inicio" class="btn-idea" style="flex:1;max-width:360px;justify-content:center;font-size:1.05rem;padding:16px 24px;">🏠 Volver al inicio y elegir otra prueba</a>
+      <a href="#" id="btn-presentar-otra" class="btn-dorado" style="flex:1;max-width:300px;justify-content:center;font-size:1.05rem;padding:16px 24px;">🔄 Presentar otra vez</a>
+    </div>
+    <!-- Acciones secundarias: descargas -->
+    <div class="flex flex-wrap gap-3 justify-center mt-4">
+      <button id="btn-descargar-excel" class="btn-secundario text-sm">⬇ Descargar resultado (Excel)</button>
+      <button id="btn-descargar-cuadernillo-pdf" class="btn-secundario text-sm" title="Descargar el cuadernillo original en PDF">📄 Descargar cuadernillo (PDF)</button>
+    </div>
+  </main>
+
+  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { requerirSesion, cerrarSesion } from './js/auth.js';
+    import { donutAciertos, barrasHorizontalesLogro, lineaEvolucion } from './js/graficos.js';
+    import { logroPorCompetencia, COLOR_NIVEL } from './js/calculo.js';
+    import { etiquetasMarco } from './js/area-config.js';
+    import { formatDateTime, escapeHtml, segundosAReloj, toast, renderMath } from './js/utils.js';
+    import { srcImagenPregunta, onerrorPlaceholder } from './js/extractor-imagenes.js';
+    import { exportarResultadoEstudianteExcel } from './js/export-excel.js';
+    import { sabioConBurbuja, mensajeSabioPorNivel } from './js/sabio.js';
+    import { cargarPedagogiaGrado, esVivoProtegido } from './js/pedagogia-grado.js';
+
+    const params = new URLSearchParams(location.search);
+    const aplicacionId = params.get('id');
+    // Paralelizar: la restauración de sesión (auth) y la lectura del resultado se resuelven
+    // a la vez, en vez de una tras otra. Es el grueso del tiempo hasta ver el dashboard.
+    const _sesP = requerirSesion('estudiante');
+    const _apP = db.obtener('idea_aplicaciones', aplicacionId);
+    const ses = await _sesP;
+    if (!ses) throw new Error('redir');
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href='index.html'; });
+
+    const aplicacion = await _apP;
+    if (!aplicacion) { toast('Resultado no encontrado', 'error'); throw new Error('no app'); }
+    const cuadernillo = await db.obtener('idea_cuadernillos', aplicacion.cuadernillo_id);
+    // Pedagogía por grado×asignatura: el análisis/Sabio de esta página usa el grado y área
+    // del cuadernillo presentado (no el del perfil). Aditivo: si no hay celda, cae al contenido por área.
+    await cargarPedagogiaGrado().catch(() => {});
+    // Para los 5 vivos (11° P1) NO se pasa grado: el Sabio conserva su comportamiento validado
+    // por área (sin override por grado, que comparte celda con el P2 de 11°). Los P2 sí llevan grado.
+    window.SABIO_CTX = Object.assign({}, window.SABIO_CTX,
+      esVivoProtegido(cuadernillo)
+        ? { area: cuadernillo.area, cuadernillo_id: cuadernillo.id }
+        : { area: cuadernillo.area, grado: cuadernillo.grado, cuadernillo_id: cuadernillo.id });
+
+    // "Presentar otra vez" lleva al MISMO cuadernillo recién presentado (antes iba fijo a Matemáticas).
+    document.getElementById('btn-presentar-otra').href = 'cuadernillo.html?id=' + aplicacion.cuadernillo_id;
+
+    document.getElementById('resumen-meta').textContent =
+      `${cuadernillo.nombre} · ${formatDateTime(aplicacion.fecha_fin)} · Tiempo invertido: ${segundosAReloj(aplicacion.duracion_segundos)}`;
+
+    // Puntaje y nivel
+    const p = aplicacion.puntaje;
+    document.getElementById('circulo-puntaje').style.setProperty('--prog', `${p}%`);
+    animarConteo(document.getElementById('valor-puntaje'), 0, p, 1500);
+    document.getElementById('nivel-texto').textContent = aplicacion.nivel;
+    document.getElementById('nivel-texto').style.color = COLOR_NIVEL[aplicacion.nivel];
+    const chip = document.getElementById('chip-nivel');
+    chip.textContent = aplicacion.nivel;
+    chip.classList.add(aplicacion.nivel.toLowerCase().replace('á', 'a'));
+    document.getElementById('texto-aciertos').innerHTML =
+      `Acertaste <strong class="text-2xl">${aplicacion.total_correctas}</strong> de ${cuadernillo.preguntas.length} preguntas.`;
+
+    // Donut
+    donutAciertos(document.getElementById('donut-aciertos'), aplicacion.total_correctas, cuadernillo.preguntas.length);
+
+    // Mensaje de Sabio según nivel + confeti si excelente (luego se enriquece con delta)
+    const msgSabio = mensajeSabioPorNivel(aplicacion.nivel);
+    const sabioBloque = document.createElement('div');
+    sabioBloque.className = 'idea-card mb-6 animate-fade-in';
+    sabioBloque.id = 'mensaje-sabio';
+    sabioBloque.style.animationDelay = '180ms';
+    sabioBloque.innerHTML = sabioConBurbuja(msgSabio.msg, msgSabio.expr, { lado: 'izquierda', tamano: 140 });
+    document.querySelector('main').insertBefore(sabioBloque, document.querySelector('main').children[2]);
+
+    if (['ALTO', 'SUPERIOR'].includes(aplicacion.nivel) && typeof confetti === 'function') {
+      setTimeout(() => {
+        confetti({ particleCount: 120, spread: 80, origin: { y: 0.55 }, colors: ['#E11D48', '#FBBF24', '#34D399', '#A78BFA'] });
+      }, 600);
+    }
+
+    // === Comparativos contra grupo (en segundo plano, no bloquea el dashboard) ===
+    (async () => {
+    const _normGrupo = (g) => String(g ?? '').trim().toUpperCase();
+    // Lectura DIRIGIDA por institución (no toda la colección) y luego se acota al grupo.
+    const _enviadasGrupo = (await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id)).filter(a =>
+      a.cuadernillo_id === cuadernillo.id &&
+      a.grado === ses.grado &&
+      _normGrupo(a.grupo) === _normGrupo(ses.grupo) &&
+      a.estado === 'enviada'
+    );
+    // UNA entrega válida por estudiante (la más reciente con permiso autorizado; si no,
+    // la primera). Evita que un reintento no autorizado infle o distorsione el promedio.
+    const _tsR = (a) => new Date(a.fecha_envio || a.fecha_fin || a.fecha_creacion || 0).getTime();
+    const _mapaGrupo = new Map();
+    for (const a of _enviadasGrupo) {
+      const ek = a.estudiante_id || a.estudiante_nombre;
+      if (!_mapaGrupo.has(ek)) _mapaGrupo.set(ek, []);
+      _mapaGrupo.get(ek).push(a);
+    }
+    const todasGrupo = [..._mapaGrupo.values()].map(lista => {
+      const cp = lista.filter(a => a.permiso_usado);
+      if (cp.length) return cp.sort((x, y) => _tsR(y) - _tsR(x))[0];
+      return lista.slice().sort((x, y) => _tsR(x) - _tsR(y))[0];
+    });
+    if (todasGrupo.length > 1) {
+      const cardComp = document.getElementById('card-comparativos');
+      cardComp.style.display = '';
+      const puntajes = todasGrupo.map(a => a.puntaje);
+      const promGrupo = Math.round(puntajes.reduce((s,v)=>s+v,0)/puntajes.length);
+      const mejorGrupo = Math.max(...puntajes);
+      const mias = todasGrupo.filter(a => a.estudiante_id === ses.user_id).sort((a,b)=>new Date(a.fecha_envio)-new Date(b.fecha_envio));
+      const miMejor = Math.max(...mias.map(a => a.puntaje));
+
+      const cont = document.getElementById('comparativos-container');
+      cont.innerHTML = `
+        <div class="text-center bg-slate-50 rounded-xl p-4">
+          <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Tu puntaje</div>
+          <div class="text-3xl font-bold" style="color:${COLOR_NIVEL[aplicacion.nivel]}">${aplicacion.puntaje}</div>
+        </div>
+        <div class="text-center bg-blue-50 rounded-xl p-4">
+          <div class="text-xs uppercase tracking-wider text-blue-700 mb-1">Promedio del grupo</div>
+          <div class="text-3xl font-bold text-blue-700">${promGrupo}</div>
+          <div class="text-xs text-slate-500 mt-1">${aplicacion.puntaje > promGrupo ? `+${aplicacion.puntaje - promGrupo} pts por encima` : aplicacion.puntaje < promGrupo ? `${aplicacion.puntaje - promGrupo} pts por debajo` : 'Igual al promedio'}</div>
+        </div>
+        <div class="text-center bg-emerald-50 rounded-xl p-4">
+          <div class="text-xs uppercase tracking-wider text-emerald-700 mb-1">Mejor del grupo</div>
+          <div class="text-3xl font-bold text-emerald-700">${mejorGrupo}</div>
+          <div class="text-xs text-slate-500 mt-1">${aplicacion.puntaje >= mejorGrupo ? '¡Eres el mejor del grupo!' : `${mejorGrupo - aplicacion.puntaje} pts de diferencia`}</div>
+        </div>
+      `;
+    }
+    })().catch(e => console.warn('[resultado] comparativos:', e));
+
+    // === Tus 3 fortalezas y oportunidades específicas ===
+    const aciertos = aplicacion.aciertos_por_pregunta || [];
+    const fortPreg = cuadernillo.preguntas
+      .map((p, i) => ({ p, acertada: aciertos[i] === 1 }))
+      .filter(x => x.acertada)
+      .slice(0, 3);
+    const oppPreg = cuadernillo.preguntas
+      .map((p, i) => ({ p, acertada: aciertos[i] === 1 }))
+      .filter(x => !x.acertada)
+      .slice(0, 3);
+
+    const dificultadColor = d => d === 'BAJA' ? '#10B981' : d === 'MEDIA' ? '#F59E0B' : '#EF4444';
+
+    document.getElementById('lista-fortalezas').innerHTML = fortPreg.length
+      ? fortPreg.map(x => `
+          <div class="border-l-4 border-emerald-500 bg-emerald-50 rounded-r-lg p-3 text-sm">
+            <div class="font-semibold text-emerald-800">P${x.p.numero} · ${escapeHtml(x.p.competencia.charAt(0) + '. ' + cuadernillo.competencias[x.p.competencia])}</div>
+            <div class="text-xs text-emerald-700 mt-1">${escapeHtml(x.p.que_evalua)}</div>
+            <div class="text-[10px] text-slate-500 mt-1">Dificultad <span style="color:${dificultadColor(x.p.dificultad)};font-weight:700">${x.p.dificultad}</span></div>
+          </div>
+        `).join('')
+      : '<p class="text-sm text-slate-500 italic">Aún no tienes preguntas correctas. ¡La próxima vez será mejor!</p>';
+
+    document.getElementById('lista-oportunidades').innerHTML = oppPreg.length
+      ? oppPreg.map(x => `
+          <div class="border-l-4 border-amber-500 bg-amber-50 rounded-r-lg p-3 text-sm">
+            <div class="font-semibold text-amber-800">P${x.p.numero} · ${escapeHtml(x.p.competencia.charAt(0) + '. ' + cuadernillo.competencias[x.p.competencia])}</div>
+            <div class="text-xs text-amber-700 mt-1">${escapeHtml(x.p.que_evalua)}</div>
+            <div class="text-[10px] text-slate-500 mt-1">Dificultad <span style="color:${dificultadColor(x.p.dificultad)};font-weight:700">${x.p.dificultad}</span></div>
+          </div>
+        `).join('')
+      : '<p class="text-sm text-emerald-600 italic">¡Acertaste todo! Increíble trabajo.</p>';
+
+    // === Recursos de estudio curados por ÁREA + competencia más débil ===
+    // Cada cuadernillo (área) trae su propio catálogo de recursos, alineado con su
+    // guía de orientación ICFES. Si no hay match exacto se cae a un set genérico
+    // del área. Nunca aparecen recursos de Matemáticas en un informe de Lectura
+    // Crítica (ni viceversa).
+    const logroPorComp = logroPorCompetencia(aplicacion.aciertos_por_pregunta || [], cuadernillo);
+    const compDebil = Object.keys(logroPorComp).reduce((a, b) => logroPorComp[a] <= logroPorComp[b] ? a : b);
+    const areaSlug = (cuadernillo.area || '').toLowerCase();
+    const recursosPorArea = {
+      'matemáticas': {
+        a: [
+          { ico: '📊', titulo: 'Khan · Estadística y datos', url: 'https://es.khanacademy.org/math/statistics-probability', desc: 'Lectura de gráficas, distribuciones y tablas con ejercicios graduados.' },
+          { ico: '📈', titulo: 'GeoGebra · Lectura de gráficos', url: 'https://www.geogebra.org/m/start', desc: 'Manipula gráficas y observa cómo cambian los datos en tiempo real.' },
+          { ico: '🎯', titulo: 'ICFES · Guía de Matemáticas', url: 'https://www.icfes.gov.co/', desc: 'Marco de referencia para interpretación cuantitativa.' }
+        ],
+        b: [
+          { ico: '🧠', titulo: 'Khan · Resolución de problemas', url: 'https://es.khanacademy.org/math/cc-eighth-grade-math', desc: 'Estrategias paso a paso usando el método Pólya.' },
+          { ico: '📐', titulo: 'GeoGebra · Modelado', url: 'https://www.geogebra.org/m/start', desc: 'Modela situaciones del mundo real con figuras dinámicas.' },
+          { ico: '🎯', titulo: 'ICFES · SABER 11° guías', url: 'https://www.icfes.gov.co/', desc: 'Problemas oficiales contextualizados para practicar formulación.' }
+        ],
+        c: [
+          { ico: '💭', titulo: 'Khan · Demostraciones', url: 'https://es.khanacademy.org/math/geometry-home', desc: 'Aprende a justificar y construir argumentos matemáticos.' },
+          { ico: '🗣️', titulo: 'YouTube · El Traductor de Mates', url: 'https://www.youtube.com/@eltraductordemates', desc: 'Canal en español que explica el "porqué" detrás de cada propiedad.' },
+          { ico: '🎯', titulo: 'ICFES · Marco de Argumentación', url: 'https://www.icfes.gov.co/', desc: 'Comprende cómo se evalúa la justificación en SABER.' }
+        ]
+      },
+      'lectura crítica': {
+        // Afirmación 1: identifica y entiende contenidos locales del texto
+        a: [
+          { ico: '📚', titulo: 'Lectura veloz con propósito', url: 'https://www.cerlalc.org/', desc: 'Practica subrayar las ideas principales y los conectores en textos cortos del CERLALC y del Banco de la República.' },
+          { ico: '🔍', titulo: 'Diccionario de la RAE', url: 'https://dle.rae.es/', desc: 'Resuelve dudas de léxico (significados literal y figurado, sinónimos, derivados).' },
+          { ico: '🎯', titulo: 'ICFES · Guía de Lectura Crítica', url: 'https://www.icfes.gov.co/documents/39286/2229361/Guia+de+orientacion+lectura+critica+saber+11+2023-1.pdf', desc: 'Marco oficial de la prueba: competencias, afirmaciones y evidencias.' }
+        ],
+        // Afirmación 2: comprende cómo se articulan las partes del texto
+        b: [
+          { ico: '🧩', titulo: 'Coursera · Lectura crítica para estudiantes', url: 'https://www.coursera.org/learn/lectura-critica', desc: 'Curso gratuito que enseña a relacionar párrafos, identificar tesis y reconocer estructura.' },
+          { ico: '📰', titulo: 'Revista Arcadia / El Espectador · Análisis', url: 'https://www.elespectador.com/cromos/cultura/', desc: 'Lee columnas de opinión y reconstruye su esquema argumentativo (introducción, tesis, ejemplos, conclusión).' },
+          { ico: '🎯', titulo: 'ICFES · Cuadernillos previos LC', url: 'https://www.icfes.gov.co/', desc: 'Practica con preguntas oficiales liberadas para reconocer la cohesión y coherencia textual.' }
+        ],
+        // Afirmación 3: reflexiona y evalúa el texto
+        c: [
+          { ico: '🧠', titulo: 'BBC Mundo · Verificación de noticias', url: 'https://www.bbc.com/mundo/temas/cpzd09mvgvnt', desc: 'Aprende a evaluar fuentes, distinguir hechos de opiniones y detectar sesgos en el discurso público.' },
+          { ico: '🗣️', titulo: 'TED Ed · Lectura crítica y argumentación', url: 'https://ed.ted.com/lessons?direction=desc&sort=featured-position&user_by_click=&category=thinking-learning', desc: 'Videos cortos que ejercitan el pensamiento crítico y la evaluación de argumentos.' },
+          { ico: '🎯', titulo: 'Colombia Aprende · Prácticas de inferencia', url: 'https://contenidosparaaprender.colombiaaprende.edu.co/', desc: 'Talleres para identificar intención del autor, tono y posicionamiento ideológico.' }
+        ]
+      },
+      'sociales y ciudadanas': {
+        a: [
+          { ico: '🌎', titulo: 'Banrep · Cultural y memoria histórica', url: 'https://www.banrepcultural.org/', desc: 'Explora colecciones digitales para entender los contextos sociales, políticos y económicos de Colombia.' },
+          { ico: '📜', titulo: 'CNMH · Comisión de la Verdad', url: 'https://www.comisiondelaverdad.co/', desc: 'Informes oficiales para comprender el conflicto, los actores y sus consecuencias.' },
+          { ico: '🎯', titulo: 'ICFES · Guía Sociales y Ciudadanas', url: 'https://www.icfes.gov.co/', desc: 'Marco oficial de la prueba y ejemplos resueltos.' }
+        ],
+        b: [
+          { ico: '⚖️', titulo: 'Constitución Política de Colombia 1991', url: 'https://www.constitucioncolombia.com/', desc: 'Texto íntegro comentado: derechos, deberes y mecanismos de participación.' },
+          { ico: '🏛️', titulo: 'Colombia Aprende · Cátedra de Paz', url: 'https://aprende.colombiaaprende.edu.co/catedradepaz', desc: 'Recursos sobre cultura ciudadana, resolución pacífica de conflictos y memoria histórica.' },
+          { ico: '🎯', titulo: 'ICFES · Cuadernillos previos SC', url: 'https://www.icfes.gov.co/', desc: 'Práctica con preguntas oficiales de SABER 11.' }
+        ],
+        c: [
+          { ico: '💬', titulo: 'Razón Pública · Análisis ciudadano', url: 'https://razonpublica.com/', desc: 'Columnas con argumentos confrontados para ejercitar la reflexión crítica sobre asuntos públicos.' },
+          { ico: '📊', titulo: 'DANE · Indicadores sociales', url: 'https://www.dane.gov.co/', desc: 'Datos oficiales para construir y evaluar argumentos sobre realidades colombianas.' },
+          { ico: '🎯', titulo: 'Misión Electoral · Participación', url: 'https://www.registraduria.gov.co/', desc: 'Mecanismos de participación democrática y herramientas para evaluarlos.' }
+        ]
+      },
+      'ciencias naturales': {
+        a: [
+          { ico: '🔬', titulo: 'Khan · Ciencias naturales', url: 'https://es.khanacademy.org/science', desc: 'Biología, química y física con ejercicios paso a paso para uso comprensivo del conocimiento.' },
+          { ico: '🧪', titulo: 'PhET · Simulaciones interactivas', url: 'https://phet.colorado.edu/es/', desc: 'Laboratorios virtuales gratuitos de la Universidad de Colorado en español.' },
+          { ico: '🎯', titulo: 'ICFES · Guía Ciencias Naturales', url: 'https://www.icfes.gov.co/', desc: 'Marco oficial: componentes (vivos, físicos, químicos, CTS) y competencias.' }
+        ],
+        b: [
+          { ico: '🧬', titulo: 'CK-12 · Explicaciones científicas', url: 'https://www.ck12.org/student/', desc: 'Recursos para explicar fenómenos con base en modelos y teorías.' },
+          { ico: '🌡️', titulo: 'BBC Earth en español', url: 'https://www.youtube.com/@BBCEarth', desc: 'Documentales cortos que ejemplifican fenómenos naturales para construir explicaciones.' },
+          { ico: '🎯', titulo: 'ICFES · Cuadernillos previos CN', url: 'https://www.icfes.gov.co/', desc: 'Preguntas oficiales para practicar la explicación de fenómenos.' }
+        ],
+        c: [
+          { ico: '🔎', titulo: 'PhET · Diseño experimental', url: 'https://phet.colorado.edu/es/', desc: 'Plantea hipótesis, controla variables y obtén datos en simulaciones.' },
+          { ico: '🌍', titulo: 'National Geographic Education', url: 'https://education.nationalgeographic.org/', desc: 'Indagación científica con casos reales: clima, biodiversidad, energía.' },
+          { ico: '🎯', titulo: 'OECD · PISA Ciencias liberadas', url: 'https://www.oecd.org/pisa/test/', desc: 'Preguntas internacionales para practicar la indagación.' }
+        ]
+      },
+      'inglés': {
+        // En inglés las "competencias" mapean a léxico / pragmático / comprensión literal / inferencial
+        a: [
+          { ico: '📖', titulo: 'British Council · LearnEnglish Teens', url: 'https://learnenglishteens.britishcouncil.org/', desc: 'Vocabulario por temas con audio y ejercicios autoevaluables.' },
+          { ico: '🗂️', titulo: 'Quizlet · Vocabulario SABER 11', url: 'https://quizlet.com/subject/saber-11-ingles/', desc: 'Sets de tarjetas con el léxico recurrente de la prueba.' },
+          { ico: '🎯', titulo: 'ICFES · Guía de Inglés', url: 'https://www.icfes.gov.co/', desc: 'Marco oficial: niveles del MCER (Pre-A1 a B1) y descriptores.' }
+        ],
+        b: [
+          { ico: '💬', titulo: 'Cambridge English · Practice Tests', url: 'https://www.cambridgeenglish.org/learning-english/free-resources/', desc: 'Práctica de situaciones comunicativas formales e informales.' },
+          { ico: '🎬', titulo: 'BBC Learning English', url: 'https://www.bbc.co.uk/learningenglish/', desc: 'Videos cortos con foco en uso pragmático y sociolingüístico del idioma.' },
+          { ico: '🎯', titulo: 'British Council · Functional Language', url: 'https://learnenglish.britishcouncil.org/general-english/everyday-english', desc: 'Frases y registros para diferentes intenciones comunicativas.' }
+        ],
+        c: [
+          { ico: '📰', titulo: 'BBC News · Easy English', url: 'https://www.bbc.co.uk/news', desc: 'Noticias breves nivel A2-B1 para entrenar comprensión literal.' },
+          { ico: '🎧', titulo: 'ESL Lab · Listening', url: 'https://www.esl-lab.com/', desc: 'Audios con preguntas de comprensión de información explícita.' },
+          { ico: '🎯', titulo: 'Cambridge · A2 Key for Schools', url: 'https://www.cambridgeenglish.org/exams-and-tests/key-for-schools/', desc: 'Modelo de examen oficial con secciones de lectura literal.' }
+        ],
+        d: [
+          { ico: '🧠', titulo: 'Read Theory · Inference', url: 'https://readtheory.org/', desc: 'Lectura adaptativa que entrena inferencias y deducciones.' },
+          { ico: '📚', titulo: 'British Council · LearnEnglish Reading B1', url: 'https://learnenglish.britishcouncil.org/skills/reading/b1-reading', desc: 'Textos con preguntas de inferencia explicadas.' },
+          { ico: '🎯', titulo: 'Cambridge · Preliminary (PET)', url: 'https://www.cambridgeenglish.org/exams-and-tests/preliminary/', desc: 'Modelo B1 con comprensión inferencial.' }
+        ],
+        e: [
+          { ico: '✍️', titulo: 'British Council · Grammar', url: 'https://learnenglish.britishcouncil.org/grammar', desc: 'Gramática y léxico explicados por nivel.' },
+          { ico: '🗣️', titulo: 'Duolingo · English from Spanish', url: 'https://es.duolingo.com/course/en/es/Aprende-ingl%C3%A9s', desc: 'Microlecciones diarias que combinan vocabulario y estructuras.' },
+          { ico: '🎯', titulo: 'Oxford Online · Placement Test', url: 'https://elt.oup.com/student/oxfordonlineplacementtest/', desc: 'Diagnóstico de nivel para enfocar el repaso.' }
+        ]
+      }
+    };
+    const setArea = recursosPorArea[areaSlug] || recursosPorArea['matemáticas'];
+    let recursos = setArea[compDebil];
+    if (!recursos) {
+      // Si la competencia débil no tiene entrada en este área, usa la primera disponible.
+      const primera = Object.keys(setArea)[0];
+      recursos = setArea[primera] || [];
+    }
+    document.getElementById('recursos-estudio').innerHTML = `
+      <div class="col-span-full mb-2 text-xs text-slate-500">Recursos sugeridos para reforzar tu competencia más débil en <strong>${escapeHtml(cuadernillo.area || '')}</strong>: <strong>${escapeHtml(cuadernillo.competencias[compDebil] || '')}</strong></div>
+      ${recursos.map(r => `
+        <a href="${r.url}" target="_blank" rel="noopener" class="block p-4 bg-sky-50 rounded-xl border border-sky-200 hover:shadow-md transition">
+          <div class="text-2xl mb-1">${r.ico}</div>
+          <div class="font-semibold text-sky-800">${escapeHtml(r.titulo)}</div>
+          <div class="text-xs text-sky-700 mt-1">${escapeHtml(r.desc)}</div>
+        </a>
+      `).join('')}
+    `;
+
+    // === Disclaimer de reintento (en segundo plano) ===
+    (async () => {
+    const { puedeEstudianteIniciarPrueba } = await import('./js/permisos.js');
+    const verif = await puedeEstudianteIniciarPrueba(ses.user_id, cuadernillo.id);
+    if (!verif.permitido) {
+      const disc = document.getElementById('disclaimer-reintento');
+      disc.classList.remove('hidden');
+      disc.innerHTML = `
+        <div class="idea-card bg-amber-50 border-l-4 border-amber-500">
+          <div class="flex items-start gap-3">
+            <div class="text-2xl">🔒</div>
+            <div>
+              <h3 class="font-bold text-amber-800 mb-1">Esta es tu presentación oficial</h3>
+              <p class="text-sm text-amber-900">Si tu docente habilita un nuevo intento, podrás presentarlo desde tu panel. Mientras tanto, aprovecha los recursos de estudio para reforzar tus oportunidades de mejora.</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    })().catch(e => console.warn('[resultado] disclaimer:', e));
+
+    // Barras competencias
+    const logroComp = logroPorCompetencia(aplicacion.aciertos_por_pregunta || [], cuadernillo);
+    const etiquetasComp = {};
+    for (const k of Object.keys(cuadernillo.competencias)) etiquetasComp[k] = `${k}. ${cuadernillo.competencias[k]}`;
+    barrasHorizontalesLogro(document.getElementById('barras-competencias'), logroComp, {
+      titulo: 'Logro por competencia (%)',
+      etiquetasFull: etiquetasComp
+    });
+
+    // Evolución + narrativa del Sabio (en segundo plano, no bloquea el dashboard)
+    (async () => {
+    const todas = (await db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', ses.user_id))
+      .filter(a => a.cuadernillo_id === cuadernillo.id);
+    let deltaPrevio = null;
+    if (todas.length > 1) {
+      const ord = todas.sort((a, b) => new Date(a.fecha_fin) - new Date(b.fecha_fin));
+      document.getElementById('card-evolucion').style.display = '';
+      lineaEvolucion(document.getElementById('grafico-evolucion'),
+        ord.map((a, i) => ({ label: `Intento ${i + 1}`, valor: a.puntaje })),
+        { titulo: 'Tu puntaje en cada intento' });
+
+      // Mejor intento histórico (excluyendo el actual)
+      const otrosIntentos = ord.filter(a => a.id !== aplicacion.id);
+      const mejor = otrosIntentos.reduce((acc, a) => a.puntaje > (acc?.puntaje ?? -1) ? a : acc, null);
+      const txt = document.getElementById('texto-delta');
+      const idxEste = ord.findIndex(a => a.id === aplicacion.id);
+      let bloques = [];
+
+      if (idxEste > 0) {
+        const anterior = ord[idxEste - 1];
+        deltaPrevio = aplicacion.puntaje - anterior.puntaje;
+        if (deltaPrevio > 0) bloques.push(`<div>📈 <strong class="text-emerald-600">+${deltaPrevio} puntos</strong> respecto a tu intento anterior.</div>`);
+        else if (deltaPrevio < 0) bloques.push(`<div>📉 <strong class="text-red-600">${deltaPrevio} puntos</strong> respecto a tu intento anterior.</div>`);
+        else bloques.push(`<div>➡ Igualaste tu intento anterior.</div>`);
+      }
+      if (mejor && mejor.id !== aplicacion.id) {
+        const deltaMejor = aplicacion.puntaje - mejor.puntaje;
+        if (deltaMejor > 0) bloques.push(`<div>🏆 <strong class="text-emerald-600">Nuevo mejor puntaje</strong> (superas tu récord por ${deltaMejor} puntos).</div>`);
+        else if (deltaMejor === 0) bloques.push(`<div>🤝 Empataste tu mejor puntaje histórico (${mejor.puntaje}).</div>`);
+        else bloques.push(`<div>📊 Tu mejor puntaje sigue siendo <strong>${mejor.puntaje}</strong> del intento del ${formatDateTime(mejor.fecha_fin).split(' ')[0]}.</div>`);
+      }
+      if (bloques.length) txt.innerHTML = bloques.join('');
+    }
+
+    // Narrativa del Sabio adaptada al nivel exacto Y delta de mejora
+    const sabioBox = document.getElementById('mensaje-sabio');
+    if (sabioBox) {
+      const base = mensajeSabioPorNivel(aplicacion.nivel);
+      let extra = '';
+      if (deltaPrevio !== null) {
+        if (deltaPrevio >= 10) extra = ' ¡Y mejoraste de manera notable respecto al intento anterior! Sigue con esa misma dedicación.';
+        else if (deltaPrevio > 0) extra = ' Avanzaste respecto al intento anterior, vas en buena dirección.';
+        else if (deltaPrevio < 0) extra = ' Hubo una pequeña baja respecto al intento anterior, no te preocupes: revisa con calma el detalle por pregunta para identificar qué reforzar.';
+      }
+      sabioBox.innerHTML = sabioConBurbuja(`${base.msg}${extra}`, base.expr, { lado: 'izquierda', tamano: 130 });
+    }
+    })().catch(e => console.warn('[resultado] evolución:', e));
+
+    // Grid de preguntas — tooltip con competencia (post-prueba, modo review)
+    const grid = document.getElementById('grid-preguntas');
+    cuadernillo.preguntas.forEach((preg, i) => {
+      const acierto = aplicacion.aciertos_por_pregunta[i] === 1;
+      const b = document.createElement('button');
+      b.className = `aspect-square rounded-lg font-bold text-sm transition border-2 ${acierto ? 'bg-emerald-100 border-emerald-500 text-emerald-700' : 'bg-red-100 border-red-500 text-red-700'} hover:scale-105`;
+      b.textContent = preg.numero;
+      const nomComp = cuadernillo.competencias[preg.competencia] || preg.competencia;
+      b.title = `P${preg.numero} · ${acierto ? '✓ Correcta' : '✗ Incorrecta'}\n${etiquetasMarco(cuadernillo).competencia_singular}: ${preg.competencia}. ${nomComp}\nDificultad: ${preg.dificultad}`;
+      b.setAttribute('aria-label', `Pregunta ${preg.numero}, ${acierto ? 'correcta' : 'incorrecta'}, competencia ${nomComp}`);
+      b.addEventListener('click', () => mostrarDetalle(preg, i));
+      grid.appendChild(b);
+    });
+
+    function mostrarDetalle(preg, idx) {
+      const respUsuario = aplicacion.respuestas.find(r => r.pregunta_id === preg.id);
+      const elegida = respUsuario?.opcion_elegida_real || '—';
+      const correcta = preg.clave;
+      const acierto = elegida === correcta;
+      const det = document.getElementById('detalle-pregunta');
+      det.classList.remove('hidden');
+
+      // Modo v4: figura recortada + texto del enunciado + opciones como texto
+      const figura = preg.imagen_figura;
+      const opcImgs = preg.opciones_imagenes || null;
+      const figHtml = figura
+        ? `<div class="bg-white rounded-lg p-3 border mb-3 text-center"><img src="${figura}" alt="Figura pregunta ${preg.numero}" loading="lazy" style="max-width:100%;max-height:340px;margin:0 auto;border-radius:6px" onerror="${onerrorPlaceholder}"></div>`
+        : '';
+      const ctxHtml = preg.contexto_compartido_imagen
+        ? `<div class="card-contexto-compartido mb-3">
+            <div class="text-xs uppercase tracking-wider text-amber-700 mb-2 font-semibold">📋 Contexto</div>
+            <p class="italic text-amber-900 text-sm mb-2">${escapeHtml(preg.contexto_compartido_texto || '')}</p>
+            <div class="bg-white rounded-lg p-2 text-center"><img src="${preg.contexto_compartido_imagen}" alt="Contexto" loading="lazy" style="max-width:100%;max-height:280px;border-radius:4px" onerror="${onerrorPlaceholder}"></div>
+          </div>`
+        : '';
+      const renderLetra = (letra) => {
+        if (letra === '—') return '<em class="text-slate-400">No respondida</em>';
+        const tx = preg.opciones[letra] || '';
+        if (opcImgs && opcImgs[letra]) {
+          return `<div><strong>${letra}.</strong> ${tx}</div><img src="${opcImgs[letra]}" alt="Opción ${letra}" style="max-width:100%;height:auto;max-height:280px;object-fit:contain;margin-top:6px;border-radius:4px;border:1px solid #E5E7EB">`;
+        }
+        return `<strong>${letra}.</strong> ${tx}`;
+      };
+
+      det.innerHTML = `
+        <div class="flex items-center justify-between mb-3">
+          <div class="font-bold text-lg" style="font-family:'Plus Jakarta Sans'">Pregunta ${preg.numero}</div>
+          <span class="chip-nivel ${acierto ? 'alto' : 'bajo'}">${acierto ? 'Correcta' : 'Incorrecta'}</span>
+        </div>
+        ${ctxHtml}
+        <p class="text-sm mb-3">${preg.enunciado}</p>
+        ${figHtml}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm mb-3">
+          <div class="bg-white rounded-lg p-3 border">
+            <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Tu respuesta</div>
+            <div class="${acierto ? 'text-emerald-600' : 'text-red-600'}">${renderLetra(elegida)}</div>
+          </div>
+          <div class="bg-white rounded-lg p-3 border">
+            <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Respuesta correcta</div>
+            <div class="text-emerald-600">${renderLetra(correcta)}</div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-3 border mb-3">
+          <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">¿Por qué es la correcta?</div>
+          <div class="text-sm">${preg.justificacion_correcta}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="bg-slate-100 rounded p-2"><strong>Habilidad:</strong> ${preg.competencia}</div>
+          <div class="bg-slate-100 rounded p-2"><strong>Dificultad:</strong> ${preg.dificultad}</div>
+        </div>
+      `;
+      renderMath(det);
+      det.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    document.getElementById('btn-descargar-excel').addEventListener('click', () => {
+      exportarResultadoEstudianteExcel(aplicacion, cuadernillo);
+    });
+
+    // Descargar el cuadernillo original (PDF) — disponible aquí tras presentar la prueba
+    document.getElementById('btn-descargar-cuadernillo-pdf').addEventListener('click', async (e) => {
+      const btn = e.currentTarget;
+      const labelOrig = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '⏳ Generando...';
+      try {
+        const mod = await import('./js/cuadernillo-pdf-original.js');
+        await mod.exportarCuadernilloOriginalPDF(cuadernillo);
+        btn.innerHTML = '✓ Descargado';
+        setTimeout(() => { btn.innerHTML = labelOrig; btn.disabled = false; }, 2000);
+      } catch (err) {
+        console.error('[IDEA] Error generando PDF del cuadernillo:', err);
+        btn.innerHTML = '❌ Error';
+        setTimeout(() => { btn.innerHTML = labelOrig; btn.disabled = false; }, 2000);
+      }
+    });
+
+    function animarConteo(el, from, to, dur) {
+      const inicio = performance.now();
+      function paso(t) {
+        const p = Math.min(1, (t - inicio) / dur);
+        const v = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3)));
+        el.textContent = v;
+        if (p < 1) requestAnimationFrame(paso);
+      }
+      requestAnimationFrame(paso);
+    }
+  </script>
+</body>
+</html>

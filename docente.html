@@ -1,0 +1,2867 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Panel del Docente — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- ExcelJS, jsPDF, pdf-lib y html2canvas se cargan BAJO DEMANDA al exportar (js/cargar-libs.js); no bloquean el arranque. -->
+    <!-- Driver.js para onboarding -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <!-- Confetti (solo al celebrar) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">
+  <style>
+  /* === Panel Docente — diseño CLARO en tarjetas (mismo lenguaje que el panel del estudiante) === */
+  .doc-wrap { max-width: 1120px; margin: 0 auto; padding: 26px 22px 56px; }
+  .doc-wrap > section, .doc-wrap > #vista-inicial, .doc-wrap > #vista-grupo { margin-bottom: 18px; }
+
+  /* Hero compacto */
+  .panel-hero-doc {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px;
+    background: linear-gradient(120deg, #FFFFFF 0%, #FFF6F2 100%);
+    border: 1px solid var(--idea-borde, #ECE6E1); border-radius: 18px;
+    padding: 20px 24px; box-shadow: 0 8px 24px rgba(31,31,35,0.05);
+  }
+  .panel-hero-doc__chip { display:inline-flex; align-items:center; gap:8px; font-size:11px; font-weight:700; letter-spacing:.04em; color:#9F1239; }
+  .panel-hero-doc__chip .fase-mini-chip { font-size:9px; font-weight:800; letter-spacing:.08em; background:var(--idea-rojo,#E11D48); color:#fff; padding:2px 8px; border-radius:999px; }
+  .panel-hero-doc__greeting { font-family:'Fraunces', serif; font-size:29px; font-weight:600; color:var(--idea-grafito,#1F1F23); margin:7px 0 3px; line-height:1.08; }
+  .panel-hero-doc__sub { color:#6B7280; font-size:14px; max-width:540px; }
+  .panel-hero-doc__stats { display:flex; gap:12px; }
+
+  /* Acciones — tarjetas centradas con ícono en insignia (premium) */
+  .doc-acciones-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+  .doc-acciones-grid > .doc-accion { flex:1 1 150px; max-width:210px; }
+  .doc-acciones-grid > .doc-accion--destacada { flex:1 1 100%; max-width:none; }
+  .doc-accion {
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:9px;
+    padding:16px 12px; border-radius:16px; border:1px solid var(--idea-borde,#ECE6E1);
+    background:#fff; color:var(--idea-grafito,#1F1F23); font-weight:600; font-size:13px;
+    cursor:pointer; text-align:center; line-height:1.2; min-height:98px;
+    transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+  }
+  .doc-accion > span { display:block; }
+  .doc-accion__ic {
+    display:grid; place-items:center; width:46px; height:46px; border-radius:14px;
+    font-size:21px; line-height:1; color:#7c4a32;
+    background:linear-gradient(135deg,#FBF1EC,#F5E6DD);
+    box-shadow:inset 0 0 0 1px rgba(181,119,94,.14);
+    transition:transform .18s ease, background .18s ease, color .18s ease, box-shadow .18s ease;
+  }
+  .doc-accion:hover { transform:translateY(-3px); border-color:#B5775E; box-shadow:0 12px 24px rgba(31,31,35,.10); }
+  .doc-accion:hover .doc-accion__ic { background:linear-gradient(135deg,#B5775E,#C9A89A); color:#fff; transform:scale(1.06); box-shadow:0 6px 14px rgba(181,119,94,.35); }
+  .doc-accion:active { transform:translateY(-1px); }
+  .doc-accion--destacada {
+    grid-column:1 / -1; flex-direction:row; gap:12px; min-height:0;
+    background:linear-gradient(135deg,#FBBF24,#F59E0B); color:#1F1F23; border:none;
+    font-size:15.5px; font-weight:700; padding:16px;
+  }
+  .doc-accion--destacada .doc-accion__ic { width:38px; height:38px; border-radius:11px; font-size:18px; color:#7c5310; background:rgba(255,255,255,.42); box-shadow:none; }
+  .doc-accion--destacada:hover { transform:translateY(-3px); box-shadow:0 14px 28px rgba(245,158,11,.42); }
+  .doc-accion--destacada:hover .doc-accion__ic { background:rgba(255,255,255,.62); color:#7c5310; transform:scale(1.06); }
+
+  /* Grupos: acordeón claro + áreas en cuadrícula */
+  .grupo-acordeon { margin-bottom:10px; border-radius:14px; overflow:hidden; background:#FBF9F7; border:1px solid var(--idea-borde,#ECE6E1); }
+  .grupo-acordeon[open] { background:#fff; border-color:#F4C9B8; box-shadow:0 4px 14px rgba(31,31,35,.05); }
+  .grupo-acordeon-summary { list-style:none; cursor:pointer; padding:12px 16px; display:grid; grid-template-columns:1fr auto auto; align-items:center; gap:10px; color:var(--idea-grafito,#1F1F23); }
+  .grupo-acordeon-summary::-webkit-details-marker{ display:none; }
+  .grupo-acordeon-summary:hover { background:rgba(225,29,72,.03); }
+  .grupo-acordeon-titulo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:16px; }
+  .grupo-acordeon-letra { display:inline-block; background:#FCE7D6; color:#B5775E; padding:2px 9px; border-radius:7px; margin-left:4px; font-size:13px; }
+  .grupo-acordeon-meta { font-size:11px; color:#9CA3AF; font-weight:500; white-space:nowrap; }
+  .grupo-acordeon-chevron { font-size:12px; color:#9CA3AF; transition:transform .2s ease; }
+  .grupo-acordeon[open] .grupo-acordeon-chevron { transform:rotate(180deg); color:#E11D48; }
+  .grupo-acordeon-body { padding:6px 12px 14px; display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:8px; }
+
+  .grupo-item { display:grid; grid-template-columns:38px 1fr; align-items:center; gap:10px; padding:10px 12px; background:#fff; border:1px solid var(--idea-borde,#ECE6E1); border-radius:12px; cursor:pointer; transition:all .16s ease; text-align:left; }
+  .grupo-item:hover { border-color:#E11D48; transform:translateY(-2px); box-shadow:0 6px 16px rgba(225,29,72,.1); }
+  .grupo-item.activo { border-color:#E11D48; background:#FFF1F3; box-shadow:0 4px 12px rgba(225,29,72,.18); }
+  .grupo-item-chip { display:grid; place-items:center; width:38px; height:38px; border-radius:10px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:11px; color:#fff; letter-spacing:.05em; box-shadow:0 2px 6px rgba(0,0,0,.18); }
+  .grupo-item-texto { display:flex; flex-direction:column; }
+  .grupo-item-area { font-weight:600; font-size:13.5px; color:var(--idea-grafito,#1F1F23); }
+  .grupo-item-stats { font-size:11px; color:#9CA3AF; }
+
+  /* Quickstart compacto */
+  .doc-pasos { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+  .doc-paso { display:flex; gap:12px; align-items:flex-start; }
+  .doc-paso__num { flex:none; width:30px; height:30px; border-radius:50%; background:#FFF1F3; color:#E11D48; font-weight:800; display:grid; place-items:center; font-size:14px; }
+  .doc-paso__t { font-weight:700; font-size:14px; color:var(--idea-grafito,#1F1F23); margin-bottom:2px; }
+  .doc-paso__d { font-size:12.5px; color:#6B7280; line-height:1.4; }
+
+  /* Pie del análisis de grupo */
+  .grupo-footer { margin-top:24px; padding-top:20px; border-top:1px dashed var(--idea-borde,#ECE6E1); display:flex; flex-direction:column; gap:18px; }
+  .grupo-footer__nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+  .grupo-footer__nav .doc-accion { flex:1 1 240px; max-width:360px; flex-direction:row; gap:12px; font-size:14px; padding:14px; min-height:0; }
+  .grupo-footer__nav .doc-accion .doc-accion__ic { width:36px; height:36px; font-size:18px; }
+  .grupo-footer__titulo { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#9CA3AF; margin-bottom:10px; }
+
+  @media (max-width:640px){ .panel-hero-doc__stats{ width:100%; } .panel-hero-doc__greeting{ font-size:24px; } }
+  </style>
+  <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="rol-docente">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="docente.html" class="logo-home" title="Inicio (volver al panel)">
+      <img src="assets/logo-idea.png" class="logo">
+      <div class="nombre-app">IDEA — Panel del Docente</div>
+    </a>
+    <div class="user-info">
+      <span class="rol-chip">Docente</span>
+      <span id="nombre-usuario"></span>
+      <button class="salir-btn" id="btn-salir">Salir</button>
+    </div>
+  </header>
+
+  <main class="doc-wrap" id="contenido">
+
+    <!-- HERO compacto del docente -->
+    <section class="panel-hero-doc animate-fade-in">
+      <div class="panel-hero-doc__info">
+        <span class="panel-hero-doc__chip"><span class="fase-mini-chip">FASE II</span> Análisis y Planeación</span>
+        <h1 class="panel-hero-doc__greeting" id="hero-doc-greeting">¡Hola, docente!</h1>
+        <p class="panel-hero-doc__sub">Convierte los resultados de la prueba IDEA en decisiones pedagógicas concretas para tu aula.</p>
+      </div>
+      <div class="panel-hero-doc__stats">
+        <div class="kpi-card kpi-card--rojo"><div class="kpi-card__valor" id="kpi-doc-cursos">0</div><div class="kpi-card__label">Cursos</div></div>
+        <div class="kpi-card kpi-card--dorado"><div class="kpi-card__valor" id="kpi-doc-areas">0</div><div class="kpi-card__label">Áreas<br>evaluadas</div></div>
+        <div class="kpi-card kpi-card--verde"><div class="kpi-card__valor" id="kpi-doc-est">0</div><div class="kpi-card__label">Pruebas<br>presentadas</div></div>
+      </div>
+    </section>
+
+    <!-- ZONA INICIO (se oculta al abrir el análisis de un área) -->
+    <div id="zona-landing">
+
+      <!-- MIS GRUPOS — primero, áreas en cuadrícula -->
+      <section class="idea-card animate-fade-in" id="card-mis-grupos">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="card-title m-0">Mis grupos</h2>
+          <span class="text-xs text-slate-500">Elige un área para abrir su análisis</span>
+        </div>
+        <div id="lista-grupos"></div>
+      </section>
+
+      <!-- ACCIONES Y HERRAMIENTAS -->
+      <section class="idea-card animate-fade-in" style="animation-delay:60ms">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="card-title m-0">Acciones y herramientas</h2>
+          <span class="text-xs text-slate-500">Disponibles en todo momento</span>
+        </div>
+        <div class="doc-acciones-grid">
+          <button id="btn-plan-mejora" class="doc-accion doc-accion--destacada"><span class="doc-accion__ic">📋</span><span>Crear Plan de Mejora</span></button>
+          <button id="btn-exportar-excel" class="doc-accion"><span class="doc-accion__ic">📊</span><span>Excel</span></button>
+          <button id="btn-exportar-pdf" class="doc-accion"><span class="doc-accion__ic">📕</span><span>PDF</span></button>
+          <button id="btn-descargar-cuadernillo" class="doc-accion" title="Descarga el cuadernillo original del grupo activo en PDF para imprimir o consultar"><span class="doc-accion__ic">📘</span><span>Cuadernillo</span></button>
+          <button id="btn-panel-permisos" class="doc-accion"><span class="doc-accion__ic">🔑</span><span>Permisos</span><span id="badge-permisos" class="ml-1 hidden text-xs bg-amber-400 text-black rounded-full px-1.5">0</span></button>
+          <button id="btn-backup" class="doc-accion" title="Descargar respaldo JSON de todas las aplicaciones, usuarios y configuraciones"><span class="doc-accion__ic">💾</span><span>Respaldar</span></button>
+          <button id="btn-restore" class="doc-accion" title="Restaurar desde un respaldo JSON previamente descargado"><span class="doc-accion__ic">📂</span><span>Restaurar</span></button>
+        </div>
+        <input type="file" id="input-restore" accept="application/json" class="hidden">
+      </section>
+
+      <!-- Bienvenida compacta -->
+      <div id="vista-inicial">
+        <section class="idea-card doc-quickstart animate-fade-in" style="animation-delay:120ms">
+          <h2 class="card-title">Cómo funciona la Fase II — Análisis y Planeación</h2>
+          <div class="doc-pasos">
+            <div class="doc-paso"><div class="doc-paso__num">1</div><div><div class="doc-paso__t">👀 Observa</div><div class="doc-paso__d">Revisa el desempeño global del grupo, su nivel y las preguntas más difíciles.</div></div></div>
+            <div class="doc-paso"><div class="doc-paso__num">2</div><div><div class="doc-paso__t">🎯 Diagnostica</div><div class="doc-paso__d">Identifica fortalezas y oportunidades por competencia, afirmación y evidencia.</div></div></div>
+            <div class="doc-paso"><div class="doc-paso__num">3</div><div><div class="doc-paso__t">📋 Planea</div><div class="doc-paso__d">Construye tu Plan de Mejora alineado al marco DCE para la Fase III en el aula.</div></div></div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+      <!-- Vista de grupo (oculta al inicio) -->
+      <div id="vista-grupo" class="hidden animate-fade-in">
+        <!-- Encabezado del grupo -->
+        <div class="mb-6">
+          <h1 class="text-2xl font-bold" style="font-family:'Plus Jakarta Sans'" id="titulo-grupo"></h1>
+          <p class="text-slate-600 text-sm" id="meta-grupo"></p>
+        </div>
+
+        <!-- Sabio + mensaje contextual -->
+        <div id="sabio-hero" class="mb-4"></div>
+
+        <!-- KPIs ampliados (6 indicadores) -->
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-3 mb-6" id="kpis"></div>
+
+        <!-- Sección B: Distribución por niveles (v11 - panel ámbar) -->
+        <section class="idea-card panel-distribucion mb-6">
+          <h2 class="card-title">Distribución por niveles del grupo</h2>
+          <p class="text-sm text-slate-500 mb-4">Diagrama interactivo de niveles. Pasa el cursor sobre cada segmento para ver cantidades y porcentajes. Click en un nivel para resaltar.</p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div style="height:280px"><canvas id="chart-niveles-donut"></canvas></div>
+            </div>
+            <div>
+              <table class="w-full text-sm" id="tabla-niveles-distribucion" style="border-collapse:separate; border-spacing:0;">
+                <thead>
+                  <tr style="background:#1F1F23;color:white">
+                    <th class="px-3 py-2 text-left rounded-tl-lg">Nivel</th>
+                    <th class="px-3 py-2 text-center">Estudiantes</th>
+                    <th class="px-3 py-2 text-center">Porcentaje</th>
+                    <th class="px-3 py-2 text-left rounded-tr-lg">Rango</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-niveles-distribucion"></tbody>
+                <tfoot>
+                  <tr id="footer-niveles-distribucion" style="background:#F1F5F9;font-weight:700;border-top:2px solid #1F1F23"></tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 1: Tabla aciertos/desaciertos (v11 - panel gris pizarra) -->
+        <section id="seccion-tabla" class="idea-card panel-tabla mb-6">
+          <h2 class="card-title">Tabla de aciertos y desaciertos</h2>
+          <div class="overflow-x-auto">
+            <table class="tabla-aciertos" id="tabla-aciertos"></table>
+          </div>
+        </section>
+
+        <!-- v13: Alineación curricular MBE va ANTES del desglose para mostrar
+             primero la visión articulada (competencia → afirmación → evidencia)
+             y luego la tabla detallada pregunta por pregunta. -->
+        <section id="seccion-alineacion" class="idea-card panel-alineacion mb-6">
+          <h2 class="card-title">Alineación curricular entre competencias y aprendizajes (MBE)</h2>
+          <p class="text-sm text-slate-500 mb-5">Cada competencia tiene un color que se propaga a sus afirmaciones y evidencias, mostrando la linealidad del marco DCE de izquierda a derecha. Despliega cada caja para ver la descripción completa de los códigos.</p>
+          <!-- Primera fila: competencia → afirmación → evidencia (3 columnas para
+               mostrar la linealidad del proceso. En áreas que ocultan competencia
+               o evidencia (Inglés) las cajas se ocultan vía JS y la fila se reflow). -->
+          <div class="grid-mbe-linea grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div class="caja-mbe caja-mbe-comp">
+              <h3 class="caja-mbe-titulo">📘 Competencias</h3>
+              <div class="caja-mbe-chart" style="height:200px"><canvas id="chart-comp"></canvas></div>
+              <details class="caja-mbe-detalle">
+                <summary>Ver detalle de códigos y títulos</summary>
+                <div id="legend-comp" class="mt-2"></div>
+              </details>
+            </div>
+            <div class="caja-mbe caja-mbe-afir">
+              <h3 class="caja-mbe-titulo">📗 Afirmaciones</h3>
+              <div class="caja-mbe-chart" style="height:200px"><canvas id="chart-afir"></canvas></div>
+              <details class="caja-mbe-detalle">
+                <summary>Ver detalle de códigos y títulos</summary>
+                <div id="legend-afir" class="mt-2"></div>
+              </details>
+            </div>
+            <div class="caja-mbe caja-mbe-evid">
+              <h3 class="caja-mbe-titulo">📙 Evidencias de aprendizaje</h3>
+              <div class="caja-mbe-chart" style="height:200px"><canvas id="chart-evid"></canvas></div>
+              <details class="caja-mbe-detalle">
+                <summary>Ver detalle de códigos y títulos</summary>
+                <div id="legend-evid" class="mt-2"></div>
+              </details>
+            </div>
+          </div>
+          <!-- Segunda fila: dim secundaria CENTRADA y ocupando solo el espacio
+               necesario (no se estira a todo el ancho). Solo se muestra si el
+               área tiene CMC/Componente/MCER. -->
+          <div class="grid-mbe-dim2 mt-5">
+            <div class="caja-mbe caja-mbe-cmc">
+              <h3 class="caja-mbe-titulo">📕 Contenidos Matemáticos Curriculares</h3>
+              <div class="caja-mbe-chart" style="height:220px"><canvas id="chart-cmc"></canvas></div>
+              <details class="caja-mbe-detalle">
+                <summary>Ver detalle de códigos y títulos</summary>
+                <div id="legend-cmc" class="mt-2"></div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección 2: Desglose pedagógico (v11 - panel verde esmeralda) -->
+        <section id="seccion-desglose" class="idea-card panel-desglose mb-6">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="card-title mb-0">Desglose de la intencionalidad pedagógica</h2>
+            <label class="text-xs flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" id="toggle-lenguaje-claro"> Mostrar en lenguaje claro
+            </label>
+          </div>
+          <p class="text-xs text-slate-500 mb-3">Pasa el cursor sobre cualquier celda para ver su significado, haz clic en una fila para ver el detalle completo, o abre el glosario flotante 📖 para la taxonomía DCE.</p>
+          <div class="overflow-x-auto">
+            <table class="tabla-aciertos" id="tabla-desglose"></table>
+          </div>
+        </section>
+
+        <!-- Sección 4: Histórico -->
+        <section id="seccion-historico" class="idea-card mb-6 hidden">
+          <h2 class="card-title">Histórico y comparativos del grupo</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div style="height:280px"><canvas id="chart-evolucion-grupo"></canvas></div>
+            <div style="height:280px"><canvas id="chart-comp-agrupadas"></canvas></div>
+          </div>
+        </section>
+
+        <!-- Sección 5: Comparativo individual (v11 - panel rosa) -->
+        <section id="seccion-individual" class="idea-card panel-individual mb-6">
+          <h2 class="card-title">Comparativo individual</h2>
+          <div class="flex items-center gap-3 mb-4">
+            <label for="select-estudiante" class="label-idea mb-0">Estudiante:</label>
+            <select id="select-estudiante" name="estudiante" class="input-idea" style="max-width:300px"></select>
+          </div>
+          <div id="detalle-individual"></div>
+        </section>
+
+        <!-- v10: Sección de Mapa de calor ELIMINADA por feedback del jefe -->
+
+        <!-- Sección H: Proyección SABER 11 (v11 - panel cian) -->
+        <section class="idea-card panel-conclusiones mb-6">
+          <h2 class="card-title">Proyección parcial SABER 11°</h2>
+          <p class="text-sm text-slate-500 mb-3">Estimación usando la fórmula ICFES del Índice Global, asumiendo desempeño análogo en las áreas pendientes (proyección parcial).</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="proyeccion-saber"></div>
+          <div class="mt-4 p-4 bg-amber-50 rounded-lg text-xs text-amber-800" id="formula-saber"></div>
+        </section>
+
+        <!-- Sección I: Estudiantes en riesgo (v13 - panel rosa plegable) -->
+        <section class="idea-card panel-individual mb-6">
+          <details class="seccion-plegable">
+            <summary class="seccion-plegable-summary">
+              <h2 class="card-title mb-0">🚨 Estudiantes en riesgo (nivel BAJO)</h2>
+              <span class="seccion-plegable-hint">Clic para expandir</span>
+            </summary>
+            <div class="seccion-plegable-body">
+              <p class="text-sm text-slate-500 mb-3 mt-3">Requieren intervención prioritaria. Considera otorgar tutoría focalizada o un permiso de reintento si fue por causa externa.</p>
+              <div class="overflow-x-auto"><table class="tabla-aciertos w-full" id="tabla-riesgo"></table></div>
+            </div>
+          </details>
+        </section>
+
+        <!-- v4: Recomendaciones pedagógicas personalizables (v11 - panel ámbar oscuro) -->
+        <section class="idea-card panel-recomendaciones mb-6">
+          <h2 class="card-title">🎯 Recomendaciones pedagógicas personalizables</h2>
+          <p class="text-sm text-slate-600 mb-3">Selecciona las acciones que vas a aplicar este período. Cada recomendación se articula con la afirmación y evidencia específica del marco DCE.</p>
+          <div id="sabio-ia-insight" class="hidden mb-4"></div>
+          <div class="flex flex-wrap gap-2 mb-4 text-xs" id="filtros-rec">
+            <button data-fr="todos" class="chip-filtro activo">Todas</button>
+            <button data-fr="bajo" class="chip-filtro">Esfuerzo bajo</button>
+            <button data-fr="medio" class="chip-filtro">Esfuerzo medio</button>
+            <button data-fr="alto-impacto" class="chip-filtro">Alto impacto</button>
+          </div>
+          <div id="lista-recomendaciones" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+        </section>
+
+        <!-- v10: Sección de Estadística Avanzada ELIMINADA por feedback del jefe -->
+
+        <!-- v9: Mira tu grupo en profundidad (v11 - panel púrpura) -->
+        <section class="idea-card panel-mira mb-6">
+          <h2 class="card-title" style="color:#6D28D9">🎯 Mira tu grupo en profundidad</h2>
+          <p class="text-sm text-slate-600 mb-4">Visualizaciones interactivas para entender de forma clara el desempeño del grupo. Pasa el mouse sobre los gráficos para detalles, haz click en barras para filtrar.</p>
+
+          <!-- KPIs amigables -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-6" id="kpi-amigables"></div>
+
+          <!-- Caja insights lenguaje natural -->
+          <div class="rounded-lg p-4 mb-6" style="background:linear-gradient(135deg,#FFFBEB 0%,#FEF3C7 100%); border-left:4px solid #FBBF24">
+            <h3 class="font-bold text-sm mb-2 text-amber-800">💡 Lo que destaca de tu grupo</h3>
+            <ul id="insights-naturales" class="space-y-2 text-sm text-slate-800"></ul>
+          </div>
+
+          <!-- v10b: Grid restaurado con 4 gráficos (aciertos + tendencia + radar + scatter) -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
+            <div>
+              <h3 class="text-sm font-semibold mb-2 text-slate-700">📊 Aciertos y dificultad por pregunta</h3>
+              <p class="text-xs text-slate-500 mb-2">La altura es el % de aciertos del grupo y el color refleja la dificultad: <span style="color:#EF4444;font-weight:600">rojo = ALTA (≤35% acertó)</span>, <span style="color:#F59E0B;font-weight:600">naranja = MEDIA (35–65%)</span>, <span style="color:#10B981;font-weight:600">verde = BAJA (≥65%)</span>.</p>
+              <div style="height:240px"><canvas id="chart-aciertos-pregunta"></canvas></div>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold mb-2 text-slate-700">🎯 Radar de competencias</h3>
+              <p class="text-xs text-slate-500 mb-2">% de logro por competencia evaluada.</p>
+              <div style="height:240px"><canvas id="chart-radar-comp"></canvas></div>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold mb-2 text-slate-700">📈 Tendencia por período</h3>
+              <p class="text-xs text-slate-500 mb-2">Evolución del promedio del grupo en aplicaciones sucesivas.</p>
+              <div style="height:240px"><canvas id="chart-tendencia-grupo"></canvas></div>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold mb-2 text-slate-700">👥 Puntajes por estudiante</h3>
+              <p class="text-xs text-slate-500 mb-2">Cada punto es un estudiante. Coloreado por nivel.</p>
+              <div style="height:240px"><canvas id="chart-scatter-est"></canvas></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- v11: Sección 'Hallazgos automáticos del grupo' SUPRIMIDA por feedback del usuario. -->
+
+        <!-- Sección G: Conclusiones pedagógicas profundas en 4 bloques (v11 - panel cian claro) -->
+        <section class="idea-card panel-conclusiones">
+          <h2 class="card-title">Conclusiones e interpretación pedagógica</h2>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="bg-slate-50 rounded-xl p-5 border-l-4 border-slate-400">
+              <h3 class="font-bold text-slate-800 mb-2">📊 Diagnóstico</h3>
+              <div id="bloque-diagnostico" class="text-sm text-slate-700 leading-relaxed"></div>
+            </div>
+            <div class="bg-emerald-50 rounded-xl p-5 border-l-4 border-emerald-500">
+              <h3 class="font-bold text-emerald-800 mb-2">✅ Fortalezas</h3>
+              <div id="bloque-fortalezas" class="text-sm text-emerald-900 leading-relaxed"></div>
+            </div>
+            <div class="bg-amber-50 rounded-xl p-5 border-l-4 border-amber-500">
+              <h3 class="font-bold text-amber-800 mb-2">⚠️ Oportunidades de mejora</h3>
+              <div id="bloque-oportunidades" class="text-sm text-amber-900 leading-relaxed"></div>
+            </div>
+            <div class="bg-red-50 rounded-xl p-5 border-l-4 border-red-500">
+              <h3 class="font-bold text-red-800 mb-2">🎯 Recomendaciones de acción inmediata</h3>
+              <div id="bloque-recomendaciones" class="text-sm text-red-900 leading-relaxed"></div>
+            </div>
+            <div class="bg-sky-50 rounded-xl p-5 border-l-4 border-sky-500">
+              <h3 class="font-bold text-sky-800 mb-2">🔭 Proyección y seguimiento</h3>
+              <div id="bloque-proyeccion" class="text-sm text-sky-900 leading-relaxed"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pie del análisis: navegación + descargables de esta materia -->
+        <div class="grupo-footer">
+          <div class="grupo-footer__nav">
+            <button id="btn-volver-panel" class="doc-accion"><span class="doc-accion__ic">🏠</span><span>Volver al panel principal</span></button>
+            <button id="btn-continuar-materia" class="doc-accion"><span class="doc-accion__ic">🔁</span><span>Continuar con otra área</span></button>
+          </div>
+          <div class="grupo-footer__acciones">
+            <div class="grupo-footer__titulo">Descargables de esta materia</div>
+            <div class="doc-acciones-grid">
+              <button id="btn-grupo-plan" class="doc-accion doc-accion--destacada"><span class="doc-accion__ic">📋</span><span>Crear Plan de Mejora</span></button>
+              <button id="btn-grupo-excel" class="doc-accion"><span class="doc-accion__ic">📊</span><span>Excel</span></button>
+              <button id="btn-grupo-pdf" class="doc-accion"><span class="doc-accion__ic">📕</span><span>PDF</span></button>
+              <button id="btn-grupo-cuadernillo" class="doc-accion"><span class="doc-accion__ic">📘</span><span>Cuadernillo</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  <!-- Modal Enviar mensaje a estudiante -->
+  <div id="modal-mensaje" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full shadow-2xl max-h-[88vh] flex flex-col">
+      <div class="p-5 border-b flex items-center justify-between">
+        <div>
+          <h3 class="text-lg font-bold" style="font-family:'Plus Jakarta Sans'">💬 Enviar mensaje</h3>
+          <p class="text-xs text-slate-500" id="msg-destinatario"></p>
+        </div>
+        <button id="cerrar-mensaje" class="text-slate-500 hover:text-red-500 text-2xl">&times;</button>
+      </div>
+      <div class="p-5 space-y-3 overflow-y-auto">
+        <div>
+          <span class="label-idea">Plantilla rápida</span>
+          <div id="plantillas-rapidas" class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs"></div>
+        </div>
+        <div>
+          <label for="msg-asunto" class="label-idea">Asunto (opcional)</label>
+          <input type="text" id="msg-asunto" name="msg-asunto" class="input-idea" maxlength="200" placeholder="Ej: Sobre tu desempeño en la prueba IDEA">
+        </div>
+        <div>
+          <label for="msg-texto" class="label-idea">Mensaje</label>
+          <textarea id="msg-texto" name="msg-texto" class="input-idea" rows="5" maxlength="2000" placeholder="Escribe aquí tu mensaje al estudiante..."></textarea>
+          <div class="text-xs text-slate-400 mt-1"><span id="msg-contador">0</span>/2000</div>
+        </div>
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-3 rounded-r text-xs text-amber-800">
+          El estudiante verá este mensaje al ingresar a su panel. Úsalo para retroalimentación pedagógica, sugerencias de estudio o información sobre permisos de reintento.
+        </div>
+      </div>
+      <div class="p-5 border-t flex justify-between items-center gap-2">
+        <button id="ver-enviados" class="text-sm text-sky-700 underline">📤 Ver bandeja de salida</button>
+        <div class="flex gap-2">
+          <button id="cancelar-mensaje" class="btn-secundario">Cancelar</button>
+          <button id="enviar-mensaje" class="btn-idea">Enviar →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bandeja de salida -->
+  <div id="modal-enviados" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full shadow-2xl max-h-[85vh] flex flex-col">
+      <div class="p-5 border-b flex items-center justify-between">
+        <h3 class="text-lg font-bold" style="font-family:'Plus Jakarta Sans'">📤 Bandeja de salida</h3>
+        <button id="cerrar-enviados" class="text-slate-500 hover:text-red-500 text-2xl">&times;</button>
+      </div>
+      <div class="p-3 border-b flex gap-2 items-center text-xs">
+        <input type="text" id="filtro-enviados" class="input-idea flex-1 text-xs" placeholder="Filtrar por destinatario o texto..." style="margin:0;padding:6px 10px">
+        <select id="filtro-leido" class="input-idea text-xs" style="margin:0;padding:6px 10px">
+          <option value="">Todos</option>
+          <option value="leido">Leídos</option>
+          <option value="no_leido">Sin leer</option>
+        </select>
+      </div>
+      <div class="p-5 overflow-y-auto" id="lista-enviados"></div>
+    </div>
+  </div>
+
+  <!-- Modal Permisos de reintento -->
+  <div id="modal-permisos" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full shadow-2xl animate-fade-in max-h-[85vh] flex flex-col">
+      <div class="p-6 border-b flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold" style="font-family:'Plus Jakarta Sans'">🔑 Gestión de permisos de reintento</h3>
+          <p class="text-sm text-slate-500">Autoriza a estudiantes específicos para que presenten una nueva vez el cuadernillo.</p>
+        </div>
+        <button id="cerrar-permisos" class="text-slate-500 hover:text-red-500 text-2xl">&times;</button>
+      </div>
+      <div class="p-6 overflow-y-auto flex-1">
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r mb-5 text-sm">
+          Por defecto, cada estudiante puede presentar el cuadernillo <strong>una sola vez</strong>. Si necesita presentar de nuevo (por error técnico, ausencia, ajuste pedagógico), debes habilitárselo aquí. El próximo envío del estudiante consumirá el permiso automáticamente.
+        </div>
+
+        <h4 class="font-semibold mb-2">Otorgar nuevo permiso</h4>
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3 mb-6">
+          <select id="sel-estudiante-permiso" class="input-idea"></select>
+          <button id="btn-otorgar-permiso" class="btn-idea whitespace-nowrap">Otorgar permiso →</button>
+        </div>
+        <textarea id="razon-permiso" class="input-idea mb-6" rows="2" placeholder="Razón (opcional): por ejemplo, problema técnico durante la primera aplicación..."></textarea>
+
+        <h4 class="font-semibold mb-2">Permisos vigentes</h4>
+        <div id="lista-permisos-vigentes" class="space-y-2 mb-4"></div>
+
+        <h4 class="font-semibold mb-2 mt-6">Historial de permisos</h4>
+        <div id="lista-permisos-historico" class="space-y-2 text-sm"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- v4: Boton flotante glosario -->
+  <button id="btn-glosario" class="fixed bottom-6 right-6 bg-amber-400 hover:bg-amber-500 text-black w-14 h-14 rounded-full shadow-xl text-2xl flex items-center justify-center z-40 transition" title="Abrir glosario DCE">📖</button>
+
+  <!-- v4: Drawer glosario lateral -->
+  <div id="drawer-glosario" class="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 overflow-y-auto">
+    <div class="p-5 border-b sticky top-0 bg-white z-10">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-bold text-lg" style="font-family:'Plus Jakarta Sans'">📖 Glosario DCE</h3>
+        <button id="cerrar-glosario" class="text-slate-500 hover:text-red-500 text-2xl">&times;</button>
+      </div>
+      <input type="text" id="busca-glosario" class="input-idea text-sm" placeholder="Buscar competencia, afirmación, evidencia..." style="margin:0">
+      <div class="text-xs mt-2 flex gap-3 flex-wrap">
+        <a href="#g-comp" class="text-sky-700 underline">Competencias</a>
+        <a href="#g-afir" class="text-sky-700 underline">Afirmaciones</a>
+        <a href="#g-evid" class="text-sky-700 underline">Evidencias</a>
+        <a href="#g-dif" class="text-sky-700 underline">Dificultad</a>
+      </div>
+    </div>
+    <div class="p-5" id="contenido-glosario"></div>
+  </div>
+
+  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { requerirSesion, cerrarSesion } from './js/auth.js';
+    import { barrasHorizontalesLogro, lineaEvolucion, barrasAgrupadas, PALETA } from './js/graficos.js';
+    import {
+      logroGrupoPor, logroPorCompetencia, logroPorAfirmacion, logroPorEvidencia, logroPorCMC, logroPorDimensionSecundaria,
+      promedioGrupo, correctasPorPreguntaGrupo, generarConclusiones, calcularNivel, COLOR_NIVEL
+    } from './js/calculo.js';
+    import { configArea, tieneDimensionSecundaria, ordenCategoriasDim, valorDimSecundaria, etiquetasMarco, panelesVisibles, codigoAfirmacion, semaforoDesempeno, SEMAFORO_CORTES } from './js/area-config.js';
+    import { exportarReporteGrupoExcel } from './js/export-excel.js';
+    import { exportarReporteGrupoPDF } from './js/export-pdf.js';
+    import { otorgarPermisoReintento, listarPermisosVigentes, revocarPermiso } from './js/permisos.js';
+    import { formatDateTime, escapeHtml, toast, renderMath, nowIso } from './js/utils.js';
+    import { iniciarTour, debeAutoIniciar, botonAyudaFlotante } from './js/tour.js';
+    import { kpiGrupo, histogramaPuntajes, matrizHeatmap, estudiantesEnRiesgo, proyeccionSaber11Parcial, conclusionesProfundas, comparativoIndividual, coefVariacion, asimetria, tasaPorDificultad, tiempoPromedio, discriminacionPorPregunta, datosBoxPlot, datosScatter, datosRadar, generarRecomendacionesPersonalizables, indiceDificultadPorPregunta, correlacionPuntoBiserial, kr20, analisisDistractores, errorEstandarMedida, insightsAutomaticos } from './js/analisis.js';
+    import { sabioConBurbuja, mensajeSabioPorNivel, sabioSVG } from './js/sabio.js';
+    import { insightSabioIA } from './js/sabio-ia.js';
+    import { enviarMensaje, listarMensajesEnviados, listarHilo, PLANTILLAS_DOCENTE } from './js/mensajes.js';
+    import { evaluarGrupoExcelencia, generarCertificadoExcelenciaPDF } from './js/certificado.js';
+    import { construirBarraFiltros, normPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
+    // Capa pedagogica POR GRADO (aditiva): se precarga en el cache de modulo ANTES de
+    // renderizar, para que analisis.js (sincrono) la lea con pedagogiaDeSync. Si el JSON
+    // esta vacio o falla, el cache queda {} y todo cae al comportamiento por area (11 P1 intacto).
+    import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
+
+    const ses = await requerirSesion(['docente', 'directivo', 'funcionario', 'manager']);
+    if (!ses) throw new Error('redir');
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    { const g = document.getElementById('hero-doc-greeting'); if (g) g.textContent = '¡Hola, ' + ((ses.nombre_completo || 'docente').split(' ')[0]) + '!'; }
+    document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href='index.html'; });
+
+    await db.inicializar();
+    // Precarga de la capa pedagogica por grado (tolerante a error; no bloquea si falla).
+    await cargarPedagogiaGrado();
+    const cuadernillos = await db.lista('idea_cuadernillos');
+    const instituciones = await db.lista('idea_instituciones');
+    // Lectura DIRIGIDA: solo las aplicaciones de la institución de este usuario (no toda
+    // la colección). Escala con muchos usuarios. Si no tiene institución asignada
+    // (administrador/manager), trae todas. La bandera `oficial` no se usa (el flujo viejo
+    // la ponía en el último intento); más abajo se elige UNA entrega válida por integridad.
+    const todasAppsRaw = await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id);
+    const todasApps = todasAppsRaw.filter(a => a.estado === 'enviada');
+
+    // Normaliza el grupo para que mayúsculas/espacios NO creen grupos fantasma
+    // ("a" vs "A"). "a" → "A", "1° " → "1°".
+    const normGrupo = (g) => String(g ?? '').trim().toUpperCase();
+
+    // Regla de integridad: de varias entregas del MISMO estudiante+cuadernillo, la válida
+    // es la más reciente que usó un permiso de reintento AUTORIZADO; si ninguna usó
+    // permiso, la PRIMERA presentada (los reintentos sin permiso no cuentan ni se muestran).
+    const _ts = (a) => new Date(a.fecha_envio || a.fecha_fin || a.fecha_creacion || 0).getTime();
+    const elegirOficial = (lista) => {
+      const conPermiso = lista.filter(a => a.permiso_usado);
+      if (conPermiso.length) return conPermiso.sort((x, y) => _ts(y) - _ts(x))[0];
+      return lista.slice().sort((x, y) => _ts(x) - _ts(y))[0];
+    };
+    const dedupePorEstudiante = (lista) => {
+      const m = new Map();
+      for (const a of lista) {
+        const ek = `${a.estudiante_id || a.estudiante_nombre}-${a.cuadernillo_id}`;
+        if (!m.has(ek)) m.set(ek, []);
+        m.get(ek).push(a);
+      }
+      return [...m.values()].map(elegirOficial);
+    };
+
+    // Filtrar apps según rol
+    let appsVisibles = todasApps;
+    if (ses.rol === 'docente') {
+      const gruposAsig = (ses.grupos_asignados || []).map(s => String(s).toUpperCase());
+      appsVisibles = todasApps.filter(a => {
+        if (a.institucion_id !== ses.institucion_id) return false;
+        const claveGrupo = `${a.grado}-${normGrupo(a.grupo)}`;
+        return gruposAsig.length === 0 || gruposAsig.includes(claveGrupo.toUpperCase());
+      });
+    } else if ((ses.rol === 'directivo' || ses.rol === 'funcionario') && ses.institucion_id) {
+      // Directivo o funcionario CON institución asignada: solo su institución.
+      appsVisibles = todasApps.filter(a => a.institucion_id === ses.institucion_id);
+    }
+
+    // UNA sola entrega válida por estudiante+cuadernillo (evita filas duplicadas en las
+    // tablas y que un reintento no autorizado reemplace al intento real).
+    appsVisibles = dedupePorEstudiante(appsVisibles);
+
+    // Mapa área → color/sigla (debe coincidir con area-config sigla/color_chip)
+    const AREA_META = {
+      'Matemáticas': { sigla: 'MAT', color: '#3B82F6' },
+      'Lectura Crítica': { sigla: 'LC', color: '#EF4444' },
+      'Sociales y Ciudadanas': { sigla: 'SC', color: '#B5775E' },
+      'Ciencias Naturales': { sigla: 'CN', color: '#10B981' },
+      'Inglés': { sigla: 'IN', color: '#8B5CF6' }
+    };
+
+    // `grupos` y `cursos` se mantienen como referencias estables (let) porque
+    // seleccionarGrupo() las consulta por clausura (grupos.get(k)). renderAcordeones()
+    // las VACÍA y RELLENA en sitio, sin cambiar la referencia.
+    let grupos = new Map();
+    let cursos = new Map();
+    let grupoActivo = null;
+    const lista = document.getElementById('lista-grupos');
+
+    // Periodo de una app = el del cuadernillo que respondió (cruce por cuadernillo_id).
+    const _periodoDeApp = (a) => {
+      const c = cuadernillos.find(c => c.id === a.cuadernillo_id);
+      return c ? c.periodo : (a.periodo ?? '');
+    };
+
+    // Render ADITIVO de la lista de grupos (acordeones por curso). Recibe el subconjunto
+    // de apps ya filtrado por la barra. Reconstruye `grupos`/`cursos`, pinta los acordeones
+    // y actualiza los KPIs del hero — todo derivado de las apps recibidas.
+    function renderAcordeones(apps) {
+      grupos = new Map();
+      cursos = new Map();
+      // Agrupar por grado+grupo+cuadernillo (grupo normalizado → un solo grupo por letra)
+      for (const a of apps) {
+        const g = normGrupo(a.grupo);
+        const k = `${a.grado}-${g}-${a.cuadernillo_id}`;
+        if (!grupos.has(k)) grupos.set(k, { grado: a.grado, grupo: g, cuadernillo_id: a.cuadernillo_id, area: a.area, apps: [] });
+        grupos.get(k).apps.push(a);
+      }
+
+      lista.innerHTML = '';
+      if (grupos.size === 0) {
+        lista.innerHTML = '<div class="text-xs text-slate-400 px-2">Sin aplicaciones para los filtros seleccionados. Cuando los estudiantes presenten la prueba, aparecerán aquí.</div>';
+      }
+
+      // Agrupar por curso (grado + grupo) para construir los acordeones
+      for (const [k, g] of grupos) {
+        const cursoKey = `${g.grado}-${g.grupo}`;
+        if (!cursos.has(cursoKey)) cursos.set(cursoKey, { grado: g.grado, grupo: g.grupo, items: [] });
+        cursos.get(cursoKey).items.push({ k, ...g });
+      }
+      // Orden estable: grado asc, grupo asc
+      const cursosOrdenados = [...cursos.entries()].sort((a, b) => {
+        const [ga, la] = a[0].split('-'); const [gb, lb] = b[0].split('-');
+        return (parseInt(ga) - parseInt(gb)) || la.localeCompare(lb);
+      });
+      cursosOrdenados.forEach(([cursoKey, curso], idx) => {
+        const det = document.createElement('details');
+        det.className = 'grupo-acordeon';
+        // El primer curso queda abierto por defecto para evitar pantalla vacía
+        if (idx === 0) det.open = true;
+        det.dataset.curso = cursoKey;
+        const totalEst = curso.items.reduce((s, it) => s + it.apps.length, 0);
+        det.innerHTML = `
+          <summary class="grupo-acordeon-summary">
+            <span class="grupo-acordeon-titulo">${curso.grado}° <span class="grupo-acordeon-letra">${curso.grupo}</span></span>
+            <span class="grupo-acordeon-meta">${curso.items.length} ${curso.items.length === 1 ? 'área' : 'áreas'} · ${totalEst} ${totalEst === 1 ? 'app' : 'apps'}</span>
+            <span class="grupo-acordeon-chevron">▾</span>
+          </summary>
+          <div class="grupo-acordeon-body"></div>
+        `;
+        const body = det.querySelector('.grupo-acordeon-body');
+        // Ordenar las áreas dentro del curso por orden canónico Saber 11
+        const ORDEN_AREAS = ['Matemáticas','Lectura Crítica','Sociales y Ciudadanas','Ciencias Naturales','Inglés'];
+        const items = curso.items.sort((a, b) => ORDEN_AREAS.indexOf(a.area) - ORDEN_AREAS.indexOf(b.area));
+        items.forEach(it => {
+          const meta = AREA_META[it.area] || { sigla: it.area.slice(0,3).toUpperCase(), color: '#64748B' };
+          const btn = document.createElement('button');
+          btn.dataset.k = it.k;
+          btn.className = 'grupo-item';
+          btn.innerHTML = `
+            <span class="grupo-item-chip" style="background:${meta.color}">${meta.sigla}</span>
+            <span class="grupo-item-texto">
+              <span class="grupo-item-area">${it.area}</span>
+              <span class="grupo-item-stats">${it.apps.length} estudiante${it.apps.length !== 1 ? 's' : ''}</span>
+            </span>
+          `;
+          btn.addEventListener('click', () => seleccionarGrupo(it.k));
+          body.appendChild(btn);
+        });
+        lista.appendChild(det);
+      });
+
+      // KPIs del hero del docente (datos reales, derivados de las apps mostradas)
+      const setK = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+      let totApps = 0; for (const [, g] of grupos) totApps += (g.apps?.length || 0);
+      setK('kpi-doc-cursos', cursos.size);
+      setK('kpi-doc-areas', grupos.size);
+      setK('kpi-doc-est', totApps);
+    }
+
+    // Render inicial: TODAS las apps visibles (sin filtro → 11°P1 incluido).
+    renderAcordeones(appsVisibles);
+
+    // === Barra de filtros ADITIVA: Grado / Periodo / Asignatura (Todos por defecto) ===
+    // Valores posibles = derivados de las apps visibles. Al cambiar, filtra appsVisibles
+    // y re-renderiza SOLO los acordeones (no toca grupos_asignados, SABIO_CTX ni el
+    // análisis por grupo, que se dispara recién al hacer clic en un área).
+    {
+      const cardGrupos = document.getElementById('card-mis-grupos');
+      if (cardGrupos && appsVisibles.length > 0) {
+        const contFiltros = document.createElement('div');
+        cardGrupos.insertBefore(contFiltros, lista);
+        const gradosPos = [...new Set(appsVisibles.map(a => String(a.grado)))];
+        const periodosPos = [...new Set(appsVisibles.map(a => _periodoDeApp(a)))];
+        const asigsPos = [...new Set(appsVisibles.map(a => a.area).filter(Boolean))];
+        // Solo mostramos cada select si hay más de un valor distinto (si no, no aporta).
+        const campos = {
+          grado: gradosPos.length > 1,
+          periodo: periodosPos.map(normPeriodo).filter((v,i,a)=>a.indexOf(v)===i).length > 1,
+          asignatura: asigsPos.length > 1
+        };
+        if (campos.grado || campos.periodo || campos.asignatura) {
+          construirBarraFiltros(
+            contFiltros,
+            campos,
+            { grados: gradosPos, periodos: periodosPos, asignaturas: asigsPos },
+            (f) => {
+              const sub = appsVisibles.filter(a =>
+                pasaFiltro(a, f, _periodoDeApp, (x) => x.area, (x) => x.grado)
+              );
+              renderAcordeones(sub);
+            }
+          );
+        }
+      }
+    }
+
+    let cuadActual = null;
+    let aplicacionesActuales = [];
+
+    async function seleccionarGrupo(k) {
+      document.querySelectorAll('#lista-grupos .grupo-item').forEach(b => b.classList.toggle('activo', b.dataset.k === k));
+      // Asegurar que el acordeón del curso seleccionado esté abierto
+      const itemActivo = document.querySelector(`#lista-grupos .grupo-item[data-k="${k}"]`);
+      if (itemActivo) {
+        const det = itemActivo.closest('details');
+        if (det) det.open = true;
+      }
+      grupoActivo = grupos.get(k);
+      cuadActual = cuadernillos.find(c => c.id === grupoActivo.cuadernillo_id);
+      aplicacionesActuales = grupoActivo.apps;
+      // Contexto para personalizar las sugerencias de Sabio (área y grado del grupo abierto).
+      window.SABIO_CTX = { area: (cuadActual?.area || grupoActivo.area || ''), grado: grupoActivo.grado };
+
+      document.getElementById('vista-inicial').classList.add('hidden');
+      { const _zl = document.getElementById('zona-landing'); if (_zl) _zl.classList.add('hidden'); }
+      document.getElementById('vista-grupo').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // v9 fix critico: esperar 2 frames para que el navegador termine de aplicar
+      // el cambio de display y los wrappers de canvas tengan altura real ANTES de Chart.js.
+      await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+      // v9: cada render aislado en try/catch para que un error en uno no aborte los demas
+      const safeRun = (name, fn) => { try { fn(); } catch (e) { console.error(`[IDEA] ${name} FAIL:`, e); } };
+      // Fluidez (2026-06-04): en vez de dibujar las ~13 secciones de golpe (lo que congela
+      // un momento al abrir un grupo), se escalonan en lotes con una pausa de un frame entre
+      // ellos. Así la VISTA PRINCIPAL (encabezado, KPIs, distribución y la tabla de aciertos)
+      // aparece de inmediato y las secciones profundas se rellenan enseguida, manteniendo la
+      // página responsiva. Son independientes entre sí (cada una pinta en su propio
+      // contenedor), así que el orden de finalización no importa.
+      const _ceder = () => new Promise(r => requestAnimationFrame(r));
+      // Lote 1 — lo esencial que el docente mira primero
+      safeRun('renderEncabezado', renderEncabezado);
+      // El certificado de reconocimiento ahora se gestiona SOLO en el panel del directivo.
+      safeRun('renderKPIs', renderKPIs);
+      safeRun('renderDistribucion', renderDistribucion);
+      safeRun('renderTablaAciertos', renderTablaAciertos);
+      await _ceder();
+      // Lote 2 — análisis pedagógico
+      safeRun('renderDesglose', renderDesglose);
+      safeRun('renderAlineacion', renderAlineacion);
+      safeRun('renderProyeccionSaber', renderProyeccionSaber);
+      safeRun('renderRiesgo', renderRiesgo);
+      await _ceder();
+      // Lote 3 — secciones complementarias
+      safeRun('renderHistorico', renderHistorico);
+      safeRun('renderIndividual', renderIndividual);
+      safeRun('renderConclusionesProfundas', renderConclusionesProfundas);
+      safeRun('renderSabioIAInsight', renderSabioIAInsight);
+      safeRun('renderRecomendacionesV4', renderRecomendacionesV4);
+      safeRun('renderMiraGrupo', renderMiraGrupo);
+      // v11: renderInsights eliminado — sección Hallazgos automáticos suprimida.
+
+      // v9 final fix: red de seguridad - si los charts se crearon con dimensiones 0
+      // (porque el layout aun no estaba listo), reintentar a los 500ms con dimensiones correctas
+      setTimeout(() => {
+        console.log('[IDEA] safety retry render at 500ms');
+        safeRun('renderDistribucion retry', renderDistribucion);
+        safeRun('renderMiraGrupo retry', renderMiraGrupo);
+      }, 500);
+    }
+
+    // Certificados de RECONOCIMIENTO del grupo: lista a los estudiantes que aprobaron TODAS
+    // sus áreas con 60 o más en cada una y permite descargar su certificado (uno o todos).
+    // El certificado lo firma el directivo docente. Se inyecta arriba de la vista del grupo.
+    function renderExcelencia() {
+      const old = document.getElementById('bloque-excelencia');
+      if (old) old.remove();
+      if (!cuadActual || !grupoActivo) return;
+      const institucionId = (grupoActivo.apps[0] && grupoActivo.apps[0].institucion_id) || ses.institucion_id;
+      const evalG = evaluarGrupoExcelencia({
+        institucionId, grado: grupoActivo.grado, grupo: grupoActivo.grupo,
+        cuadernillos, apps: todasApps
+      });
+      const inst = instituciones.find(i => i.id === institucionId) || {};
+      const sec = document.createElement('div');
+      sec.id = 'bloque-excelencia';
+      sec.className = 'idea-card';
+      sec.style.marginBottom = '1.4rem';
+      if (evalG.excelentes.length === 0) {
+        sec.innerHTML = `<div style="display:flex;align-items:center;gap:14px">
+          <div style="font-size:30px">🏅</div>
+          <div><h3 class="card-title" style="margin:0">Certificados de reconocimiento</h3>
+          <p style="color:#78716c;margin:.2rem 0 0;font-size:14px">Aún no hay estudiantes que aprueben todas las áreas evaluadas (60 o más en cada una). Aparecerán aquí cuando completen sus pruebas.</p></div></div>`;
+      } else {
+        sec.style.border = '2px solid #C9A23A';
+        sec.style.background = 'linear-gradient(135deg,#FFFDF5,#FBF3DD)';
+        sec.innerHTML = `
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:.8rem">
+            <div style="font-size:34px">🏅</div>
+            <div style="flex:1;min-width:220px"><div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#B8860B;font-weight:700">Reconocimiento</div>
+            <h3 class="card-title" style="margin:0">Estudiantes con certificado de reconocimiento</h3>
+            <p style="color:#78716c;margin:.15rem 0 0;font-size:13px">${evalG.excelentes.length} estudiante(s) aprobaron todas las áreas evaluadas (60 o más en cada una). El certificado lo firma el directivo docente.</p></div>
+            <button id="btn-cert-todos" class="btn-dorado" style="white-space:nowrap">✨ Descargar todos</button>
+          </div>
+          <div id="lista-excelentes" style="display:flex;flex-direction:column;gap:8px"></div>`;
+      }
+      const vg = document.getElementById('vista-grupo');
+      if (vg) vg.insertBefore(sec, vg.firstChild);
+      if (evalG.excelentes.length) {
+        const cont = sec.querySelector('#lista-excelentes');
+        cont.innerHTML = evalG.excelentes.map((e, i) => `
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #EADFC0;border-radius:10px;padding:10px 14px">
+            <div><strong>${escapeHtml(e.nombre || '—')}</strong> <span style="color:#78716c;font-size:13px">· promedio ${e.promedio}/100</span></div>
+            <button class="btn-secundario btn-cert-uno" data-i="${i}" style="white-space:nowrap">📄 Certificado</button>
+          </div>`).join('');
+        const _perDoc = (cuadActual?.periodo) || 'I';
+        const genCert = (e) => generarCertificadoExcelenciaPDF({
+          estudiante: { nombre: e.nombre, tipo_documento: e.tipo_documento, documento: e.documento, grado: grupoActivo.grado, grupo: grupoActivo.grupo },
+          institucion: inst, promedio: e.promedio, nivel: e.nivel, periodo: _perDoc, fecha: new Date()
+        });
+        cont.querySelectorAll('.btn-cert-uno').forEach(b => b.addEventListener('click', async () => {
+          b.disabled = true; const t = b.textContent; b.textContent = '⏳'; try { await genCert(evalG.excelentes[+b.dataset.i]); } catch (err) { console.error(err); } b.disabled = false; b.textContent = t;
+        }));
+        const btnTodos = sec.querySelector('#btn-cert-todos');
+        if (btnTodos) btnTodos.addEventListener('click', async () => {
+          btnTodos.disabled = true; const t = btnTodos.textContent; btnTodos.textContent = '⏳ Generando…';
+          for (const e of evalG.excelentes) { try { await genCert(e); await new Promise(r => setTimeout(r, 400)); } catch (err) { console.error(err); } }
+          btnTodos.disabled = false; btnTodos.textContent = t;
+        });
+      }
+    }
+
+    // v9: renderMiraGrupo - dashboard amigable que reemplaza al psicometrico tecnico
+    function renderMiraGrupo() {
+      if (!aplicacionesActuales || !aplicacionesActuales.length || !cuadActual) return;
+      const total = aplicacionesActuales.length;
+      const puntajes = aplicacionesActuales.map(a => a.puntaje);
+      const promedio = Math.round(puntajes.reduce((s, v) => s + v, 0) / total);
+      const logComp = logroGrupoPor(logroPorCompetencia, aplicacionesActuales, cuadActual);
+      const compKeys = Object.keys(logComp);
+      const maxComp = compKeys.reduce((a, b) => logComp[a] >= logComp[b] ? a : b);
+      const minComp = compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b);
+      const correctas = correctasPorPreguntaGrupo(aplicacionesActuales, cuadActual);
+      const pctPorPreg = correctas.map(c => Math.round((c / total) * 100));
+      const pregMasDificil = pctPorPreg.indexOf(Math.min(...pctPorPreg)) + 1;
+      const pctMasDificil = Math.min(...pctPorPreg);
+      const enRiesgo = aplicacionesActuales.filter(a => a.nivel === 'BAJO').length;
+      const proy = proyeccionSaber11Parcial(promedio);
+
+      // 1. KPIs amigables
+      const kpiCont = document.getElementById('kpi-amigables');
+      if (kpiCont) {
+        const niv = calcularNivel(promedio);
+        const colorN = COLOR_NIVEL[niv] || '#888';
+        kpiCont.innerHTML = `
+          <div class="idea-card p-3 text-center" style="background:linear-gradient(180deg,#fff,#FEF9F3)">
+            <div class="text-[10px] uppercase text-slate-500 font-semibold">Promedio</div>
+            <div class="text-2xl font-bold" style="color:${colorN}">${promedio}</div>
+            <div class="text-[10px] mt-1"><span class="chip-nivel ${niv.toLowerCase().replace('á','a')}">${niv}</span></div>
+          </div>
+          <div class="idea-card p-3 text-center">
+            <div class="text-[10px] uppercase text-slate-500 font-semibold">Pregunta más difícil</div>
+            <div class="text-2xl font-bold text-rose-600">P${pregMasDificil}</div>
+            <div class="text-[10px] text-slate-500 mt-1">${pctMasDificil}% de aciertos</div>
+          </div>
+          <div class="idea-card p-3 text-center">
+            <div class="text-[10px] uppercase text-slate-500 font-semibold">Competencia fuerte</div>
+            <div class="text-lg font-bold text-emerald-600">${maxComp}.</div>
+            <div class="text-[10px] text-slate-500 mt-1">${logComp[maxComp]}% logro</div>
+          </div>
+          <div class="idea-card p-3 text-center">
+            <div class="text-[10px] uppercase text-slate-500 font-semibold">Competencia a fortalecer</div>
+            <div class="text-lg font-bold text-amber-600">${minComp}.</div>
+            <div class="text-[10px] text-slate-500 mt-1">${logComp[minComp]}% logro</div>
+          </div>
+          <div class="idea-card p-3 text-center">
+            <div class="text-[10px] uppercase text-slate-500 font-semibold">En riesgo</div>
+            <div class="text-2xl font-bold text-rose-600">${enRiesgo}</div>
+            <div class="text-[10px] text-slate-500 mt-1">estudiantes en BAJO</div>
+          </div>
+          <div class="idea-card p-3 text-center">
+            <div class="text-[10px] uppercase text-slate-500 font-semibold">Proy. SABER 11</div>
+            <div class="text-2xl font-bold text-sky-600">${proy?.realista?.puntaje_global || '—'}</div>
+            <div class="text-[10px] text-slate-500 mt-1">escenario realista</div>
+          </div>
+        `;
+      }
+
+      // 2. Insights en lenguaje natural
+      const ins = document.getElementById('insights-naturales');
+      if (ins) {
+        const insights = [];
+        const niveles = { BAJO: 0, 'BÁSICO': 0, ALTO: 0, SUPERIOR: 0 };
+        aplicacionesActuales.forEach(a => { niveles[a.nivel] = (niveles[a.nivel] || 0) + 1; });
+        const pctBajo = Math.round((niveles.BAJO / total) * 100);
+        const pctAlto = Math.round(((niveles.ALTO + niveles.SUPERIOR) / total) * 100);
+        const nivMayor = Object.keys(niveles).reduce((a, b) => niveles[a] >= niveles[b] ? a : b);
+        insights.push(`El grupo se concentra en nivel <strong>${nivMayor}</strong> con ${Math.round((niveles[nivMayor]/total)*100)}% de los estudiantes. ${pctBajo > 0 ? `La intervención prioritaria es elevar al ${pctBajo}% que está en BAJO.` : 'No hay estudiantes en BAJO.'}`);
+        insights.push(`La competencia <strong>${cuadActual.competencias?.[minComp] || minComp}</strong> es la más débil del grupo (${logComp[minComp]}% de logro) y es la palanca principal para mejorar el resultado global.`);
+        if (enRiesgo > 0) insights.push(`${enRiesgo} estudiante${enRiesgo>1?'s':''} en riesgo necesita${enRiesgo>1?'n':''} tutoría individualizada esta semana.`);
+        const pctMejorPreg = Math.max(...pctPorPreg);
+        const idxMejor = pctPorPreg.indexOf(pctMejorPreg) + 1;
+        insights.push(`La pregunta con mejor desempeño es <strong>P${idxMejor}</strong> con ${pctMejorPreg}% de aciertos; la más difícil es <strong>P${pregMasDificil}</strong> con ${pctMasDificil}%.`);
+        insights.push(`Si el grupo mantiene este desempeño en SABER 11 ${cuadActual.area || ''}, proyectaría <strong>${proy?.realista?.puntaje_global || '—'} puntos</strong>. Para subir al rango ${proy?.optimista?.puntaje_global || '—'} se necesita fortalecer la competencia <strong>${minComp}.</strong> (${cuadActual.competencias?.[minComp] || ''}).`);
+        ins.innerHTML = insights.map(t => `<li class="flex gap-2"><span class="text-amber-600">●</span><span>${t}</span></li>`).join('');
+      }
+
+      if (typeof Chart === 'undefined') return;
+      const PALC = { bajo: '#EF4444', basico: '#F59E0B', alto: '#FBBF24', superior: '#10B981' };
+      // v9: helper para forzar altura del wrapper de canvas si esta colapsado
+      const fixCanvasHeight = (canvas) => {
+        if (!canvas) return false;
+        const w = canvas.parentElement;
+        if (w && w.offsetHeight < 50) { w.style.height = '240px'; w.style.width = '100%'; }
+        return true;
+      };
+
+      // 3. Barras de aciertos por pregunta
+      const c1 = document.getElementById('chart-aciertos-pregunta');
+      if (c1) {
+        fixCanvasHeight(c1);
+        charts.aciertosPreg?.destroy();
+        charts.aciertosPreg = new Chart(c1, {
+          type: 'bar',
+          data: {
+            labels: pctPorPreg.map((_, i) => `P${i+1}`),
+            datasets: [{
+              label: '% aciertos',
+              data: pctPorPreg,
+              backgroundColor: pctPorPreg.map(v => semaforoDesempeno(v).color),
+              borderRadius: 4
+            }]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.parsed.y}% de aciertos` } } },
+            scales: { y: { beginAtZero: true, max: 100, ticks: { stepSize: 20, callback: v => v + '%' } } }
+          }
+        });
+      }
+
+      // v10b: 4. Radar de competencias RESTAURADO
+      // Etiquetas: letra + nombre corto (primeras 2-3 palabras del nombre oficial).
+      // El tooltip muestra el nombre completo para evitar perder información.
+      const c2 = document.getElementById('chart-radar-comp');
+      if (c2) {
+        fixCanvasHeight(c2);
+        charts.radarComp?.destroy();
+        const _resumirComp = (nombre) => {
+          if (!nombre) return '';
+          // Tomar las primeras 3 palabras o cortar a 22 caracteres lo que ocurra primero
+          const palabras = nombre.split(/\s+/);
+          let s = palabras.slice(0, 3).join(' ');
+          if (s.length > 22) s = s.slice(0, 20) + '…';
+          return s;
+        };
+        const compNames = compKeys.map(k => {
+          const nom = cuadActual.competencias?.[k] || '';
+          return `${k}. ${_resumirComp(nom)}`;
+        });
+        const compNamesFull = compKeys.map(k => `${k}. ${cuadActual.competencias?.[k] || ''}`);
+        const compValues = compKeys.map(k => logComp[k]);
+        charts.radarComp = new Chart(c2, {
+          type: 'radar',
+          data: {
+            labels: compNames,
+            datasets: [{
+              label: 'Grupo actual',
+              data: compValues,
+              backgroundColor: 'rgba(139,92,246,0.20)',
+              borderColor: '#7C3AED',
+              borderWidth: 2,
+              pointBackgroundColor: '#7C3AED',
+              pointRadius: 4
+            }]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: { r: { beginAtZero: true, max: 100, ticks: { stepSize: 25, callback: v => v + '%' }, pointLabels: { font: { size: 10 } } } },
+            plugins: {
+              legend: { position: 'bottom' },
+              tooltip: {
+                callbacks: {
+                  // El título del tooltip muestra el nombre completo de la competencia
+                  title: (items) => items.length ? compNamesFull[items[0].dataIndex] : ''
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // 5. Tendencia por período
+      const c3 = document.getElementById('chart-tendencia-grupo');
+      if (c3) {
+        fixCanvasHeight(c3);
+        charts.tendencia?.destroy();
+        // Tendencia con datos REALES por período (NO se fabrican períodos).
+        // Con un solo período presentado se muestra un único punto real.
+        const porPerTend = {};
+        aplicacionesActuales.forEach(a => { const k = a.periodo || 'I'; (porPerTend[k] = porPerTend[k] || []).push(a); });
+        const persTend = Object.keys(porPerTend).sort();
+        const labels = persTend.map(p => `Período ${p}`);
+        const datos = persTend.map(p => promedioGrupo(porPerTend[p]));
+        charts.tendencia = new Chart(c3, {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [{
+              label: 'Promedio del grupo',
+              data: datos,
+              borderColor: '#8B5CF6',
+              backgroundColor: 'rgba(139,92,246,0.14)',
+              borderWidth: 3,
+              fill: true,
+              tension: 0.35,
+              pointRadius: 6,
+              pointBackgroundColor: '#8B5CF6'
+            }]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + ' pts' } } },
+            plugins: { legend: { display: false } }
+          }
+        });
+      }
+
+      // v10b: 6. Scatter de estudiantes RESTAURADO
+      const c4 = document.getElementById('chart-scatter-est');
+      if (c4) {
+        fixCanvasHeight(c4);
+        charts.scatterEst?.destroy();
+        const puntos = aplicacionesActuales.map((a, i) => ({ x: i + 1, y: a.puntaje, nombre: a.estudiante_nombre, nivel: a.nivel }));
+        charts.scatterEst = new Chart(c4, {
+          type: 'scatter',
+          data: {
+            datasets: [{
+              label: 'Estudiantes',
+              data: puntos,
+              backgroundColor: puntos.map(p => PALC[(p.nivel || 'basico').toLowerCase().replace('á','a')] || '#888'),
+              pointRadius: 7,
+              pointHoverRadius: 10
+            }]
+          },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: {
+              x: { title: { display: true, text: 'Estudiante #' } },
+              y: { beginAtZero: true, max: 100, title: { display: true, text: 'Puntaje' } }
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: { callbacks: { label: ctx => `${ctx.raw.nombre}: ${ctx.raw.y} pts (${ctx.raw.nivel})` } }
+            }
+          }
+        });
+      }
+    }
+
+    function renderPsicometrico() {
+      try {
+        const r = kr20(aplicacionesActuales, cuadActual);
+        const sem = errorEstandarMedida(aplicacionesActuales, cuadActual);
+        const dif = indiceDificultadPorPregunta(aplicacionesActuales, cuadActual);
+        const rpb = correlacionPuntoBiserial(aplicacionesActuales, cuadActual);
+        const dist = analisisDistractores(aplicacionesActuales, cuadActual);
+        const dif_prom = dif.length ? (dif.reduce((s,v)=>s+v,0)/dif.length).toFixed(2) : 0;
+        const rpb_prom = rpb.length ? (rpb.reduce((s,v)=>s+v,0)/rpb.length).toFixed(2) : 0;
+
+        const kp = document.getElementById('kpi-psicometrico');
+        if (kp) {
+          const interpR = r > 0.8 ? 'alta' : (r > 0.7 ? 'aceptable' : (r > 0.5 ? 'baja' : 'muy baja'));
+          kp.innerHTML = `
+            <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">KR-20</div><div class="text-lg font-bold">${r}</div><div class="text-[10px] text-slate-500">${interpR}</div></div>
+            <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">SEM</div><div class="text-lg font-bold">${sem}</div><div class="text-[10px] text-slate-500">error de medida</div></div>
+            <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">Dif. media</div><div class="text-lg font-bold">${dif_prom}</div><div class="text-[10px] text-slate-500">ideal 0.5</div></div>
+            <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">r-pb media</div><div class="text-lg font-bold">${rpb_prom}</div><div class="text-[10px] text-slate-500">discriminación</div></div>
+          `;
+        }
+        if (typeof Chart === 'undefined') return;
+        const labels = cuadActual.preguntas.map(p => 'P' + p.numero);
+
+        const c1 = document.getElementById('chart-dificultad-item');
+        if (c1) {
+          charts.difItem?.destroy();
+          charts.difItem = new Chart(c1, {
+            type: 'bar',
+            data: { labels, datasets: [{ label: 'p (dificultad)', data: dif, backgroundColor: dif.map(v => v < 0.2 || v > 0.8 ? '#EF4444' : '#10B981') }] },
+            options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: 0, max: 1 } } }
+          });
+        }
+        const c2 = document.getElementById('chart-puntobiserial');
+        if (c2) {
+          charts.rpb?.destroy();
+          charts.rpb = new Chart(c2, {
+            type: 'bar',
+            data: { labels, datasets: [{ label: 'r punto-biserial', data: rpb, backgroundColor: rpb.map(v => v < 0.1 ? '#EF4444' : (v < 0.3 ? '#F59E0B' : '#10B981')) }] },
+            options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -0.5, max: 1 } } }
+          });
+        }
+        // Tabla de distractores
+        const td = document.getElementById('tabla-distractores');
+        if (td) {
+          let html = '<thead><tr style="background:#1F1F22;color:#fff"><th class="px-2 py-1 text-left">Pregunta</th><th>A</th><th>B</th><th>C</th><th>D</th><th>Sin resp.</th><th>Clave</th></tr></thead><tbody>';
+          dist.forEach(d => {
+            html += `<tr class="border-b"><td class="px-2 py-1">P${d.pregunta}</td>`;
+            for (const k of ['A','B','C','D']) {
+              const pct = d.distribucion[k] || 0;
+              const tickClave = (k === d.clave) ? ' ✓' : '';
+              const bg = (k === d.clave) ? 'background:#DCFCE7' : (pct > 30 && k !== d.clave ? 'background:#FEE2E2' : '');
+              html += `<td class="text-center" style="${bg}">${pct}%${tickClave}</td>`;
+            }
+            html += `<td class="text-center text-slate-400">${d.distribucion['—'] || 0}%</td>`;
+            html += `<td class="text-center font-bold">${d.clave}</td></tr>`;
+          });
+          html += '</tbody>';
+          td.innerHTML = html;
+        }
+      } catch (e) { console.error('renderPsicometrico FAIL:', e); }
+    }
+
+    // v11: renderInsights ELIMINADO — sección 'Hallazgos automáticos' suprimida por feedback del usuario.
+
+    function renderEncabezado() {
+      const inst = instituciones.find(i => i.id === aplicacionesActuales[0]?.institucion_id);
+      document.getElementById('titulo-grupo').textContent =
+        `${cuadActual.area} — Grado ${grupoActivo.grado}° ${grupoActivo.grupo}`;
+      document.getElementById('meta-grupo').textContent =
+        `${inst?.nombre || ''} · Período ${cuadActual.periodo} · ${aplicacionesActuales.length} aplicaciones`;
+    }
+
+    function renderKPIs() {
+      const k = kpiGrupo(aplicacionesActuales);
+      const prom = k.promedio;
+      const nivelGrupo = calcularNivel(prom);
+
+      // Sabio contextual
+      const msg = mensajeSabioPorNivel(nivelGrupo);
+      document.getElementById('sabio-hero').innerHTML = sabioConBurbuja(
+        `<strong>${nivelGrupo === 'BAJO' ? 'Este grupo necesita refuerzo urgente.' : nivelGrupo === 'BÁSICO' ? 'Hay oportunidad clara de mejora.' : '¡Buen trabajo grupal!'}</strong> ${msg.msg}`,
+        msg.expr, { lado: 'izquierda', tamano: 110 }
+      );
+
+      const kpis = document.getElementById('kpis');
+      kpis.innerHTML = `
+        <div class="idea-card text-center">
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Estudiantes</div>
+          <div class="text-2xl font-bold" style="font-family:'Plus Jakarta Sans'">${k.total}</div>
+        </div>
+        <div class="idea-card text-center">
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Promedio</div>
+          <div class="text-2xl font-bold" style="font-family:'Plus Jakarta Sans';color:${COLOR_NIVEL[nivelGrupo]}">${k.promedio}</div>
+          <span class="chip-nivel ${nivelGrupo.toLowerCase().replace('á','a')}" style="font-size:9px">${nivelGrupo}</span>
+        </div>
+        <div class="idea-card text-center">
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Mediana</div>
+          <div class="text-2xl font-bold" style="font-family:'Plus Jakarta Sans'">${k.mediana}</div>
+        </div>
+        <div class="idea-card text-center">
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Desv. estándar</div>
+          <div class="text-2xl font-bold" style="font-family:'Plus Jakarta Sans'">${k.desviacion}</div>
+        </div>
+        <div class="idea-card text-center">
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">En BAJO</div>
+          <div class="text-2xl font-bold text-red-600" style="font-family:'Plus Jakarta Sans'">${k.en_bajo}</div>
+        </div>
+        <div class="idea-card text-center">
+          <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Alto o Superior</div>
+          <div class="text-2xl font-bold text-emerald-600" style="font-family:'Plus Jakarta Sans'">${k.en_alto_o_superior}</div>
+        </div>
+      `;
+    }
+
+    // v9 final fix: helper que GARANTIZA dimensiones del canvas antes de Chart.js
+    function _prepareCanvas(id) {
+      const c = document.getElementById(id);
+      if (!c) { console.error('[IDEA] canvas no encontrado:', id); return null; }
+      const w = c.parentElement;
+      if (w) {
+        // Forzar dimensiones del wrapper si estan colapsadas
+        if (w.offsetHeight < 50) w.style.height = '240px';
+        if (w.offsetWidth < 50) w.style.width = '100%';
+      }
+      // Set explicit canvas attributes (CSS pixels) para que Chart.js no calcule mal
+      const rect = w ? w.getBoundingClientRect() : { width: 400, height: 240 };
+      c.width = Math.max(200, Math.round(rect.width));
+      c.height = Math.max(180, Math.round(rect.height));
+      return c;
+    }
+
+    function renderDistribucion() {
+      try {
+      console.log('[IDEA] renderDistribucion: aplicacionesActuales.length =', aplicacionesActuales?.length);
+      if (typeof Chart === 'undefined') { console.error('[IDEA] Chart.js no cargado!'); return; }
+      if (!aplicacionesActuales || !aplicacionesActuales.length) { console.warn('[IDEA] renderDistribucion: sin aplicaciones'); return; }
+      if (charts.donutNiveles) { charts.donutNiveles.destroy(); charts.donutNiveles = null; }
+      // Contar niveles
+      const niveles = { BAJO: 0, 'BÁSICO': 0, ALTO: 0, SUPERIOR: 0 };
+      aplicacionesActuales.forEach(a => { niveles[a.nivel] = (niveles[a.nivel] || 0) + 1; });
+      const total = aplicacionesActuales.length;
+      // v13.6 fix: hex hardcoded vivos clásicos para garantizar que NUNCA se vean
+      // los tonos oscuros editoriales v14 aunque haya cache de PALETA viejo.
+      const colores = { BAJO: '#EF4444', 'BÁSICO': '#F59E0B', ALTO: '#FBBF24', SUPERIOR: '#10B981' };
+      const rangos = { BAJO: '0 - 59', 'BÁSICO': '60 - 78', ALTO: '79 - 90', SUPERIOR: '91 - 100' };
+
+      // v10: Donut interactivo de niveles
+      const canvasDonut = _prepareCanvas('chart-niveles-donut');
+      if (!canvasDonut) return;
+      // v11: filtrar niveles con count=0 para evitar hueco vacío en el donut
+      const nivelesNoVacios = Object.keys(niveles).filter(k => niveles[k] > 0);
+      charts.donutNiveles = new Chart(canvasDonut, {
+        type: 'doughnut',
+        data: {
+          labels: nivelesNoVacios,
+          datasets: [{
+            data: nivelesNoVacios.map(k => niveles[k]),
+            backgroundColor: nivelesNoVacios.map(k => colores[k]),
+            borderColor: '#FFFFFF',
+            borderWidth: 3,
+            hoverOffset: 14
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, cutout: '62%',
+          plugins: {
+            legend: { position: 'bottom', labels: { font: { size: 12, weight: 'bold' }, padding: 14, usePointStyle: true, pointStyle: 'circle' } },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const valor = ctx.parsed;
+                  const pct = total > 0 ? Math.round((valor/total)*100) : 0;
+                  return `${ctx.label}: ${valor} estudiantes (${pct}%)`;
+                }
+              },
+              padding: 12, titleFont: { size: 13, weight: 'bold' }, bodyFont: { size: 12 }
+            }
+          },
+          animation: { animateRotate: true, animateScale: true, duration: 900, easing: 'easeOutQuart' }
+        }
+      });
+
+      // v10: Llenar la tabla de niveles con porcentajes y rangos
+      const tbody = document.getElementById('tbody-niveles-distribucion');
+      const footer = document.getElementById('footer-niveles-distribucion');
+      if (tbody) {
+        tbody.innerHTML = Object.keys(niveles).map(k => {
+          const v = niveles[k]; const pct = total > 0 ? Math.round((v/total)*100) : 0;
+          return `
+            <tr style="border-bottom:1px solid #E5E7EB">
+              <td class="px-3 py-2" style="border-left:5px solid ${colores[k]}; font-weight:600">
+                <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:${colores[k]}; margin-right:8px"></span>${k}
+              </td>
+              <td class="px-3 py-2 text-center" style="font-size:18px; font-weight:700; color:${colores[k]}">${v}</td>
+              <td class="px-3 py-2 text-center" style="font-weight:600">${pct}%</td>
+              <td class="px-3 py-2 text-slate-600">${rangos[k]}</td>
+            </tr>`;
+        }).join('');
+      }
+      if (footer) {
+        footer.innerHTML = `
+          <td class="px-3 py-2 rounded-bl-lg">TOTAL</td>
+          <td class="px-3 py-2 text-center" style="font-size:18px">${total}</td>
+          <td class="px-3 py-2 text-center">100%</td>
+          <td class="px-3 py-2 text-slate-500 rounded-br-lg">Todos los rangos</td>`;
+      }
+      console.log('[IDEA] donut + tabla niveles OK');
+
+      // v10: Histograma de puntajes ELIMINADO por feedback del jefe.
+      } catch (err) { console.error('renderDistribucion FAIL:', err); }
+    }
+
+    function renderHeatmap() {
+      const m = matrizHeatmap(aplicacionesActuales, cuadActual);
+      const cont = document.getElementById('heatmap-container');
+      let html = '<table class="text-xs" style="border-collapse:collapse">';
+      html += '<thead><tr><th style="position:sticky;left:0;background:#1F1F22;color:#fff;padding:6px 8px;text-align:left;min-width:200px">Estudiante</th>';
+      m.preguntas.forEach(p => { html += `<th style="background:#1F1F22;color:#fff;padding:4px 6px;font-size:10px">${p}</th>`; });
+      html += '</tr></thead><tbody>';
+      m.estudiantes.forEach((est, idx) => {
+        html += `<tr><td style="position:sticky;left:0;background:white;padding:4px 8px;border:1px solid #E5E7EB;white-space:nowrap;font-size:11px">${escapeHtml(est)}</td>`;
+        m.matriz[idx].forEach((v, j) => {
+          const det = m.detalles[idx][j];
+          const color = v === 1 ? '#86EFAC' : (v === 0 ? '#FCA5A5' : '#E5E7EB');
+          const tip = det.respondida
+            ? `${m.preguntas[j]}: eligió ${det.elegida} · correcta ${det.correcta}`
+            : `${m.preguntas[j]}: sin responder · correcta ${det.correcta}`;
+          html += `<td title="${escapeHtml(tip)}" style="background:${color};border:1px solid white;width:22px;height:22px;text-align:center;font-size:10px;font-weight:700;cursor:help">${v === 1 ? '✓' : '✗'}</td>`;
+        });
+        html += '</tr>';
+      });
+      html += '</tbody></table>';
+      cont.innerHTML = html;
+    }
+
+    function renderProyeccionSaber() {
+      const prom = promedioGrupo(aplicacionesActuales);
+      const py = proyeccionSaber11Parcial(prom);
+      const cont = document.getElementById('proyeccion-saber');
+      cont.innerHTML = `
+        <div class="text-center p-4 bg-red-50 rounded-xl border-2 border-red-100">
+          <div class="text-xs uppercase tracking-wider text-red-700 mb-1">⚠️ Escenario pesimista</div>
+          <div class="text-3xl font-bold text-red-800" style="font-family:'Plus Jakarta Sans'">${py.pesimista.puntaje_global}</div>
+          <div class="text-[10px] text-red-600 mt-1">Otras áreas a -10 puntos · Índice ${py.pesimista.indice}</div>
+        </div>
+        <div class="text-center p-4 bg-amber-50 rounded-xl border-2 border-amber-200">
+          <div class="text-xs uppercase tracking-wider text-amber-700 mb-1">📊 Escenario realista</div>
+          <div class="text-3xl font-bold text-amber-800" style="font-family:'Plus Jakarta Sans'">${py.realista.puntaje_global}</div>
+          <div class="text-[10px] text-amber-600 mt-1">Otras áreas iguales a Mat · Índice ${py.realista.indice}</div>
+        </div>
+        <div class="text-center p-4 bg-emerald-50 rounded-xl border-2 border-emerald-100">
+          <div class="text-xs uppercase tracking-wider text-emerald-700 mb-1">🚀 Escenario optimista</div>
+          <div class="text-3xl font-bold text-emerald-700" style="font-family:'Plus Jakarta Sans'">${py.optimista.puntaje_global}</div>
+          <div class="text-[10px] text-emerald-600 mt-1">Otras áreas a +10 puntos · Índice ${py.optimista.indice}</div>
+        </div>
+      `;
+      document.getElementById('formula-saber').innerHTML =
+        '<strong>Fórmula:</strong> $\\;\\text{Índice Global} = \\dfrac{Mat\\cdot 3 + LC\\cdot 3 + Soc\\cdot 3 + CN\\cdot 3 + Ing\\cdot 1}{13}\\;\\Rightarrow\\;\\text{Puntaje SABER} = \\text{Índice Global}\\times 5$. ' +
+        `Promedio ${cuadActual.area || 'del área'} actual del grupo: <strong>${prom}/100</strong>. Los tres escenarios suponen distintos rendimientos en las áreas restantes.`;
+      renderMath(cont.parentElement);
+    }
+
+    function renderRiesgo() {
+      const enR = estudiantesEnRiesgo(aplicacionesActuales, cuadActual);
+      const t = document.getElementById('tabla-riesgo');
+      if (enR.length === 0) {
+        t.innerHTML = '<thead><tr><th colspan="4">Sin estudiantes en nivel BAJO. ¡Felicitaciones!</th></tr></thead>';
+        return;
+      }
+      let html = '<thead><tr><th>Estudiante</th><th>Puntaje</th><th>Competencia más débil</th><th style="min-width:340px">3 acciones recomendadas</th></tr></thead><tbody>';
+      enR.forEach(e => {
+        const lista = (e.sugerencias || [e.sugerencia]).map((s, i) =>
+          `<div class="text-[11px] leading-snug mb-1.5"><strong class="text-red-700">${i+1}.</strong> ${escapeHtml(s)}</div>`
+        ).join('');
+        html += `<tr>
+          <td class="nombre">${escapeHtml(e.estudiante)}</td>
+          <td><strong class="text-red-600">${e.puntaje}</strong></td>
+          <td><strong>${e.competencia_debil}.</strong> ${escapeHtml(e.nombre_competencia)}<br><span class="text-[10px] text-slate-500">Logro ${e.logro_competencia}%</span></td>
+          <td style="text-align:left;padding:8px 10px">${lista}</td>
+        </tr>`;
+      });
+      html += '</tbody>';
+      t.innerHTML = html;
+    }
+
+    function renderConclusionesProfundas() {
+      const c = conclusionesProfundas(aplicacionesActuales, cuadActual);
+      document.getElementById('bloque-diagnostico').innerHTML = c.diagnostico;
+      document.getElementById('bloque-fortalezas').innerHTML = c.fortalezas;
+      document.getElementById('bloque-oportunidades').innerHTML = c.oportunidades;
+      document.getElementById('bloque-recomendaciones').innerHTML = c.recomendaciones;
+      document.getElementById('bloque-proyeccion').innerHTML = c.proyeccion || '';
+      renderMath(document.getElementById('bloque-proyeccion').parentElement);
+    }
+
+    function renderTablaAciertos() {
+      const claves = cuadActual.preguntas.map(p => p.clave);
+      const correctasGrupo = correctasPorPreguntaGrupo(aplicacionesActuales, cuadActual);
+      const ordenadas = [...aplicacionesActuales].sort((a, b) => a.estudiante_nombre.localeCompare(b.estudiante_nombre));
+      const tabla = document.getElementById('tabla-aciertos');
+      const nPregs = cuadActual.preguntas.length;
+      let html = `
+        <thead>
+          <tr><th colspan="4">CLAVES</th>${claves.map(c => `<td class="claves">${c}</td>`).join('')}<th>#</th><th></th></tr>
+          <tr><th>N°</th><th>Apellidos y Nombres</th><th>Puntaje</th><th>Nivel</th>${[...Array(nPregs).keys()].map(i => `<th>${i+1}</th>`).join('')}<th>Total</th><th>Acción</th></tr>
+        </thead>
+        <tbody>
+      `;
+      ordenadas.forEach((a, i) => {
+        html += `<tr><td>${i+1}</td><td class="nombre">${escapeHtml(a.estudiante_nombre)}</td><td><strong>${a.puntaje}</strong></td><td><span class="chip-nivel ${a.nivel.toLowerCase().replace('á','a')}">${a.nivel}</span></td>`;
+        for (let q = 0; q < nPregs; q++) {
+          const r = a.respuestas.find(x => x.pregunta_id === cuadActual.preguntas[q].id);
+          const elegida = r?.opcion_elegida_real || '';
+          const acertada = a.aciertos_por_pregunta[q] === 1;
+          html += `<td class="${elegida ? (acertada ? 'acierto' : 'error') : 'vacio'}">${elegida || '—'}</td>`;
+        }
+        html += `<td><strong>${a.total_correctas}</strong></td>`;
+        html += `<td><button class="btn-msg-estudiante text-xs px-2 py-1 rounded-md bg-slate-100 hover:bg-amber-100 border border-slate-200 transition" data-id="${a.estudiante_id}" data-nombre="${escapeHtml(a.estudiante_nombre)}" title="Enviar mensaje">💬</button></td>`;
+        html += `</tr>`;
+      });
+      html += `<tr class="total-fila"><td colspan="4">TOTAL NÚMERO DE RESPUESTAS CORRECTAS</td>${correctasGrupo.map(c => `<td>${c}</td>`).join('')}<td>${correctasGrupo.reduce((a,b)=>a+b,0)}</td><td></td></tr>`;
+      html += '</tbody>';
+      tabla.innerHTML = html;
+
+      // Conectar botones de mensaje
+      tabla.querySelectorAll('.btn-msg-estudiante').forEach(b => {
+        b.addEventListener('click', () => abrirMensaje(b.dataset.id, b.dataset.nombre));
+      });
+    }
+
+    let modoLenguajeClaro = false;
+    function renderDesglose() {
+      const t = document.getElementById('tabla-desglose');
+      const claro = modoLenguajeClaro;
+      const cfg = configArea(cuadActual);
+      const ET_T = etiquetasMarco(cuadActual);
+      const PV_T = panelesVisibles(cuadActual);
+      const mostrarDim2 = tieneDimensionSecundaria(cuadActual);
+      const tituloDim2 = cfg.dimension_secundaria?.etiqueta_corta || 'CMC';
+      // Para áreas que ocultan dimensiones (Inglés oculta competencia y evidencia)
+      // omitimos esas columnas de la tabla para evitar redundancia con el panel
+      // MBE y alinearse con la presentación de la guía oficial ICFES.
+      const mostrarComp = PV_T.competencia !== false;
+      const mostrarAfir = PV_T.afirmacion !== false;
+      const mostrarEvid = PV_T.evidencia !== false;
+      // Calcular % de aciertos del grupo por pregunta para el semáforo empírico.
+      const correctasPorPreg = correctasPorPreguntaGrupo(aplicacionesActuales, cuadActual);
+      const totalEstud = aplicacionesActuales.length || 1;
+      // Valores distintos por columna para el FILTRO tipo Excel (un desplegable por columna).
+      const _difLabel = (pct) => pct < 35 ? 'ALTA' : (pct < 65 ? 'MEDIA' : 'BAJA');
+      const _vf = { comp: new Set(), afir: new Set(), evid: new Set(), cmc: new Set(), dif: new Set() };
+      cuadActual.preguntas.forEach((p, idx) => {
+        _vf.comp.add((p.competencia || 'a').charAt(0));
+        _vf.afir.add(String(codigoAfirmacion(cuadActual, p.afirmacion)));
+        _vf.evid.add(String(p.evidencia));
+        const _vd = mostrarDim2 ? (valorDimSecundaria(p, cuadActual) || '') : '';
+        if (_vd) _vf.cmc.add(_vd);
+        _vf.dif.add(_difLabel(Math.round((correctasPorPreg[idx] / totalEstud) * 100)));
+      });
+      const _ordenarVals = (col, arr) => col === 'dif'
+        ? arr.sort((a, b) => ['ALTA', 'MEDIA', 'BAJA'].indexOf(a) - ['ALTA', 'MEDIA', 'BAJA'].indexOf(b))
+        : arr.sort((a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }));
+      const _selFiltro = (col) => `<td><select class="filtro-desg" data-col="${col}"><option value="">Todas</option>${_ordenarVals(col, [..._vf[col]]).map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('')}</select></td>`;
+      let html = `<thead><tr>
+        <th style="width:4%">PREGUNTA</th><th style="width:${claro ? '30' : '40'}%">¿QUÉ EVALÚA?</th>
+        ${mostrarComp ? `<th style="width:${claro ? '20' : '8'}%">${escapeHtml(ET_T.competencia_singular.toUpperCase())}</th>` : ''}
+        ${mostrarAfir ? `<th style="width:${claro ? '20' : '8'}%">${escapeHtml(ET_T.afirmacion_singular.toUpperCase())}</th>` : ''}
+        ${mostrarEvid ? `<th style="width:${claro ? '18' : '8'}%">${escapeHtml(ET_T.evidencia_singular.toUpperCase())}</th>` : ''}
+        ${mostrarDim2 ? `<th>${escapeHtml(tituloDim2.toUpperCase())}</th>` : ''}<th title="Dificultad empírica de la pregunta según el % de aciertos del grupo. ALTA (rojo) si ≤35% acertó · MEDIA (naranja) entre 35–65% · BAJA (verde) si ≥65%.">DIFICULTAD</th>
+      </tr>
+      <tr class="fila-filtros-desg">
+        <td></td><td style="text-align:right;font-size:10px;color:#475569;font-weight:800;padding-right:8px">FILTRAR ▾</td>
+        ${mostrarComp ? _selFiltro('comp') : ''}
+        ${mostrarAfir ? _selFiltro('afir') : ''}
+        ${mostrarEvid ? _selFiltro('evid') : ''}
+        ${mostrarDim2 ? _selFiltro('cmc') : ''}
+        ${_selFiltro('dif')}
+      </tr></thead><tbody>`;
+      cuadActual.preguntas.forEach((p, idx) => {
+        // % de aciertos del grupo en esta pregunta → color del semáforo (rojo/ámbar/verde)
+        const pctGrupoPreg = Math.round((correctasPorPreg[idx] / totalEstud) * 100);
+        const sem = semaforoDesempeno(pctGrupoPreg);
+        // DIFICULTAD empírica (vista inversa: pocos aciertos = pregunta más difícil).
+        // Cortes ICFES: ≤35% → ALTA (rojo) · 35–65% → MEDIA (naranja) · ≥65% → BAJA (verde).
+        const dif = pctGrupoPreg < 35
+          ? { label: 'ALTA', titulo: `Dificultad alta — solo el ${pctGrupoPreg}% del grupo acertó (≤35%)` }
+          : (pctGrupoPreg < 65
+            ? { label: 'MEDIA', titulo: `Dificultad media — el ${pctGrupoPreg}% del grupo acertó (35–65%)` }
+            : { label: 'BAJA', titulo: `Dificultad baja — el ${pctGrupoPreg}% del grupo acertó (≥65%)` });
+        const compLetra = (p.competencia || 'a').charAt(0);
+        const compNom = cuadActual.competencias[compLetra] || '';
+        const afirTxt = cuadActual.afirmaciones?.[p.afirmacion] || `Afirmación ${p.afirmacion}`;
+        const evidTxt = cuadActual.evidencias?.[p.evidencia] || `Evidencia ${p.evidencia}`;
+        const compCell = claro ? `${compLetra}. ${compNom}` : `<strong>${compLetra}</strong>`;
+        const _codAfir = codigoAfirmacion(cuadActual, p.afirmacion);  // "1" para DCE, "Pre A1" para IN
+        const afirCell = claro ? afirTxt : `<strong>${escapeHtml(_codAfir)}</strong>`;
+        const evidCell = claro ? evidTxt : p.evidencia;
+        const valDim2 = mostrarDim2 ? (valorDimSecundaria(p, cuadActual) || '') : null;
+        html += `<tr data-pregunta-numero="${p.numero}" class="fila-desglose" data-f-comp="${escapeHtml(compLetra)}" data-f-afir="${escapeHtml(String(_codAfir))}" data-f-evid="${escapeHtml(String(p.evidencia))}" data-f-cmc="${escapeHtml(valDim2 || '')}" data-f-dif="${dif.label}">
+          <td>
+            <button class="btn-ver-pregunta" data-pnum="${p.numero}" title="Click para ver la pregunta completa"
+              style="background:linear-gradient(135deg,#E11D48,#9F1239); color:white; border:none; border-radius:50%; width:36px; height:36px; font-weight:800; cursor:pointer; box-shadow:0 4px 12px rgba(225,29,72,0.35); transition:transform 200ms;">
+              ${p.numero}
+            </button>
+          </td>
+          <td class="nombre" style="font-size:11px">${p.que_evalua}</td>
+          ${mostrarComp ? `<td data-tooltip="${escapeHtml(compNom)}" title="${escapeHtml(ET_T.competencia_codigo + ' ' + compLetra + '. ' + compNom)}">${compCell}</td>` : ''}
+          ${mostrarAfir ? `<td data-tooltip="${escapeHtml(afirTxt)}" title="${escapeHtml(ET_T.afirmacion_codigo + ' ' + _codAfir + ': ' + afirTxt)}">${afirCell}</td>` : ''}
+          ${mostrarEvid ? `<td data-tooltip="${escapeHtml(evidTxt)}" title="${escapeHtml(ET_T.evidencia_codigo + ' ' + p.evidencia + ': ' + evidTxt)}">${evidCell}</td>` : ''}
+          ${mostrarDim2 ? `<td data-tooltip="${escapeHtml(valDim2)}" style="font-size:10px">${escapeHtml(valDim2)}</td>` : ''}
+          <td><span class="chip-nivel" style="background:${sem.color};color:${sem.colorTexto}" title="${escapeHtml(dif.titulo)}">${dif.label}</span></td>
+        </tr>`;
+      });
+      html += '</tbody>';
+      t.innerHTML = html;
+      // Filtro tipo Excel por columna del desglose (desplegables del encabezado). Se
+      // combinan entre sí (Competencia + Dificultad, etc.); "Todas" quita ese filtro.
+      const _aplicarFiltrosDesglose = () => {
+        const filtros = {};
+        t.querySelectorAll('select.filtro-desg').forEach(s => {
+          s.setAttribute('data-activo', s.value ? '1' : '0');
+          if (s.value) filtros[s.dataset.col] = s.value;
+        });
+        t.querySelectorAll('tr.fila-desglose').forEach(r => {
+          const vis = Object.entries(filtros).every(([col, val]) => (r.getAttribute('data-f-' + col) || '') === val);
+          r.style.display = vis ? '' : 'none';
+          const nx = r.nextElementSibling;
+          if (nx && nx.classList.contains('fila-expandida')) nx.style.display = vis ? '' : 'none';
+        });
+      };
+      t.querySelectorAll('select.filtro-desg').forEach(s => s.addEventListener('change', _aplicarFiltrosDesglose));
+      // v10: Click en el BOTON del numero abre modal con la pregunta completa
+      t.querySelectorAll('.btn-ver-pregunta').forEach(btn => {
+        btn.addEventListener('mouseenter', () => { btn.style.transform = 'scale(1.15)'; });
+        btn.addEventListener('mouseleave', () => { btn.style.transform = 'scale(1)'; });
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          mostrarPreguntaModal(+btn.dataset.pnum);
+        });
+      });
+      // Click en el resto de la fila expande con bloque detallado (no en el boton)
+      t.querySelectorAll('tr.fila-desglose').forEach(tr => {
+        tr.style.cursor = 'pointer';
+        tr.addEventListener('click', (e) => {
+          if (e.target.closest('.btn-ver-pregunta')) return; // ignorar clicks en el boton
+          const num = +tr.dataset.preguntaNumero;
+          const p = cuadActual.preguntas.find(x => x.numero === num);
+          if (!p) return;
+          const next = tr.nextElementSibling;
+          if (next && next.classList.contains('fila-expandida')) {
+            next.remove();
+            return;
+          }
+          const compNom = cuadActual.competencias[p.competencia.charAt(0)] || '';
+          const afirTxt = cuadActual.afirmaciones?.[p.afirmacion] || '';
+          const evidTxt = cuadActual.evidencias?.[p.evidencia] || '';
+          const cfgExp = configArea(cuadActual);
+          const ET_E = etiquetasMarco(cuadActual);
+          const PV_E = panelesVisibles(cuadActual);
+          const valDim2Exp = valorDimSecundaria(p, cuadActual);
+          const labelDim2Exp = cfgExp.dimension_secundaria?.etiqueta_singular || 'CMC';
+          // colspan dinámico: 1 (pregunta) + 1 (qué evalúa) + paneles visibles + opcional dim2 + 1 (dificultad)
+          const _colsBase = 2 + (PV_E.competencia !== false ? 1 : 0) + (PV_E.afirmacion !== false ? 1 : 0) + (PV_E.evidencia !== false ? 1 : 0);
+          const colSpanExp = _colsBase + (tieneDimensionSecundaria(cuadActual) ? 1 : 0) + 1;
+          const exp = document.createElement('tr');
+          exp.className = 'fila-expandida';
+          exp.innerHTML = `<td colspan="${colSpanExp}" style="background:#FEF9F3;padding:14px 18px">
+            <div class="text-xs">
+              ${PV_E.competencia !== false ? `<div class="mb-2"><strong>${escapeHtml(ET_E.competencia_codigo)} ${p.competencia.charAt(0)}.</strong> ${escapeHtml(compNom)}</div>` : ''}
+              ${PV_E.afirmacion !== false ? `<div class="mb-2"><strong>${escapeHtml(ET_E.afirmacion_codigo)} ${escapeHtml(codigoAfirmacion(cuadActual, p.afirmacion))}:</strong> ${escapeHtml(afirTxt)}</div>` : ''}
+              ${PV_E.evidencia !== false ? `<div class="mb-2"><strong>${escapeHtml(ET_E.evidencia_codigo)} ${p.evidencia}:</strong> ${escapeHtml(evidTxt)}</div>` : ''}
+              ${valDim2Exp ? `<div class="mb-2"><strong>${labelDim2Exp.charAt(0).toUpperCase() + labelDim2Exp.slice(1)}:</strong> ${escapeHtml(valDim2Exp)}</div>` : ''}
+              <div class="text-slate-600 italic">Esta pregunta evalúa: ${escapeHtml(p.que_evalua || (PV_E.afirmacion !== false ? afirTxt : compNom))}</div>
+            </div>
+          </td>`;
+          tr.parentNode.insertBefore(exp, tr.nextSibling);
+        });
+      });
+      renderMath(t);
+    }
+
+    // v10: Modal con la pregunta completa (enunciado + figura + opciones + clave)
+    function mostrarPreguntaModal(numero) {
+      const p = cuadActual.preguntas.find(x => x.numero === numero);
+      if (!p) return;
+      const compNom = cuadActual.competencias[p.competencia.charAt(0)] || '';
+      const afirTxt = cuadActual.afirmaciones?.[p.afirmacion] || '';
+      const evidTxt = cuadActual.evidencias?.[p.evidencia] || '';
+      // Semáforo empírico del grupo en esta pregunta (en lugar de dificultad declarada)
+      const _idxPreg = cuadActual.preguntas.indexOf(p);
+      const _correctas = correctasPorPreguntaGrupo(aplicacionesActuales, cuadActual);
+      const _totalE = aplicacionesActuales.length || 1;
+      const _pctGrupo = Math.round((_correctas[_idxPreg] / _totalE) * 100);
+      const semModal = semaforoDesempeno(_pctGrupo);
+
+      // Construir opciones HTML
+      let opcionesHTML = '';
+      const claves = ['A','B','C','D'];
+      claves.forEach(k => {
+        const esCorrecta = p.clave === k;
+        const textoOpcion = p.opciones?.[k] || '';
+        const imgPath = p.opciones_imagenes?.[k];
+        let contenidoOpcion = '';
+        if (imgPath) {
+          contenidoOpcion = `<img src="${imgPath}" alt="Opción ${k}" style="max-width:100%; max-height:180px; display:block; margin:6px 0">`;
+        } else {
+          contenidoOpcion = `<span style="font-size:14px">${escapeHtml(textoOpcion)}</span>`;
+        }
+        opcionesHTML += `
+          <div style="display:flex; gap:12px; align-items:flex-start; padding:12px 14px; background:${esCorrecta ? '#ECFDF5' : '#FAFAFA'}; border:2px solid ${esCorrecta ? '#10B981' : '#E5E7EB'}; border-radius:12px; margin-bottom:10px;">
+            <div style="flex-shrink:0; width:32px; height:32px; border-radius:50%; background:${esCorrecta ? '#10B981' : '#1F1F23'}; color:white; display:grid; place-items:center; font-weight:800;">${k}</div>
+            <div style="flex:1;">
+              ${contenidoOpcion}
+              ${esCorrecta ? '<div style="margin-top:6px; font-size:11px; color:#10B981; font-weight:700;">✓ CLAVE CORRECTA</div>' : ''}
+            </div>
+          </div>`;
+      });
+
+      // Imagen del enunciado si existe
+      const imgEnunciado = p.imagen_figura ? `<div style="text-align:center; margin:14px 0;"><img src="${p.imagen_figura}" alt="Figura pregunta ${numero}" style="max-width:100%; max-height:320px; border:1px solid #E5E7EB; border-radius:8px;"></div>` : '';
+
+      // Contexto compartido (P6)
+      const ctxComp = p.contexto_compartido ? `<div style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7); border-left:5px solid #FBBF24; padding:14px 18px; border-radius:8px; margin-bottom:14px; font-size:14px;">${p.contexto_compartido}${p.contexto_imagen ? `<div style="text-align:center; margin-top:10px;"><img src="${p.contexto_imagen}" style="max-width:100%; max-height:250px;"></div>` : ''}</div>` : '';
+
+      const overlay = document.createElement('div');
+      overlay.className = 'modal-pregunta-overlay';
+      overlay.style.cssText = 'position:fixed; inset:0; background:rgba(15,15,18,0.65); backdrop-filter:blur(4px); z-index:200; display:grid; place-items:center; padding:24px; animation:fadeInModal 240ms ease-out;';
+      overlay.innerHTML = `
+        <div style="background:white; border-radius:18px; max-width:840px; width:100%; max-height:92vh; overflow-y:auto; box-shadow:0 25px 80px rgba(0,0,0,0.35); animation:slideInModal 320ms cubic-bezier(0.16,1,0.3,1);">
+          <div style="position:sticky; top:0; background:linear-gradient(135deg,#1F1F23,#0F0F12); color:white; padding:18px 24px; display:flex; align-items:center; justify-content:space-between; border-radius:18px 18px 0 0; z-index:1;">
+            <div>
+              <div style="font-size:12px; opacity:0.7; text-transform:uppercase; letter-spacing:0.1em; font-weight:600;">Pregunta</div>
+              <h2 style="margin:2px 0 0 0; font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:24px;">N° ${numero}</h2>
+            </div>
+            <div style="display:flex; gap:8px; align-items:center;">
+              <span style="background:${semModal.color}; color:${semModal.colorTexto}; padding:4px 12px; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:0.05em;" title="${escapeHtml(semModal.labelLargo)} — ${_pctGrupo}% de aciertos del grupo">${semModal.label}</span>
+              <button class="cerrar-modal-pregunta" style="background:transparent; border:1px solid rgba(255,255,255,0.3); color:white; padding:6px 14px; border-radius:8px; cursor:pointer; font-size:13px;">Cerrar ×</button>
+            </div>
+          </div>
+          <div style="padding:24px 28px;">
+            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;">
+              ${(() => { const _ET = etiquetasMarco(cuadActual); const _PV = panelesVisibles(cuadActual); return [
+                _PV.competencia !== false ? `<span style="background:#EFF6FF; color:#1E40AF; padding:4px 12px; border-radius:6px; font-size:11px; font-weight:600;">${escapeHtml(_ET.competencia_codigo)} ${p.competencia.charAt(0)}. ${escapeHtml(compNom)}</span>` : '',
+                _PV.afirmacion !== false ? `<span style="background:#FEF3C7; color:#92400E; padding:4px 12px; border-radius:6px; font-size:11px; font-weight:600;">${escapeHtml(_ET.afirmacion_codigo)} ${escapeHtml(codigoAfirmacion(cuadActual, p.afirmacion))}</span>` : '',
+                _PV.evidencia !== false ? `<span style="background:#F3E8FF; color:#6B21A8; padding:4px 12px; border-radius:6px; font-size:11px; font-weight:600;">${escapeHtml(_ET.evidencia_codigo)} ${p.evidencia}</span>` : ''
+              ].filter(Boolean).join(''); })()}
+              ${(() => { const v = valorDimSecundaria(p, cuadActual); return v ? `<span style="background:#F1F5F9; color:#475569; padding:4px 12px; border-radius:6px; font-size:11px; font-weight:600;">${escapeHtml(v)}</span>` : ''; })()}
+            </div>
+            ${ctxComp}
+            <div style="font-size:15px; line-height:1.65; margin-bottom:14px; color:#1F1F23;">${p.enunciado}</div>
+            ${imgEnunciado}
+            <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.1em; color:#94A3B8; font-weight:700; margin:18px 0 12px 0;">Opciones de respuesta</h3>
+            ${opcionesHTML}
+            ${p.justificacion_correcta ? `<div style="margin-top:18px; padding:14px 18px; background:#ECFDF5; border-left:5px solid #10B981; border-radius:8px;"><div style="font-size:11px; text-transform:uppercase; color:#10B981; font-weight:700; margin-bottom:6px;">Justificación de la clave</div><div style="font-size:13px; line-height:1.5;">${escapeHtml(p.justificacion_correcta)}</div></div>` : ''}
+            <div style="margin-top:18px; padding:12px 16px; background:#FAFAFA; border-radius:8px; font-size:12px; color:#64748B;"><strong>¿Qué evalúa?</strong> ${escapeHtml(p.que_evalua || '')}</div>
+          </div>
+        </div>`;
+      document.body.appendChild(overlay);
+      const cerrar = () => overlay.remove();
+      overlay.querySelector('.cerrar-modal-pregunta').addEventListener('click', cerrar);
+      overlay.addEventListener('click', (e) => { if (e.target === overlay) cerrar(); });
+      // Cerrar con Escape
+      const onEsc = (e) => { if (e.key === 'Escape') { cerrar(); document.removeEventListener('keydown', onEsc); } };
+      document.addEventListener('keydown', onEsc);
+      // Renderizar matemáticas si las hay
+      try { renderMath(overlay); } catch (e) {}
+    }
+    // Toggle lenguaje claro
+    document.body.addEventListener('click', (e) => {
+      if (e.target.id === 'toggle-lenguaje-claro') {
+        modoLenguajeClaro = e.target.checked;
+        if (cuadActual) renderDesglose();
+      }
+    });
+
+    // Mantener referencia a charts para destruirlos al cambiar grupo
+    const charts = {};
+    function destruirCharts() {
+      Object.values(charts).forEach(c => c?.destroy?.());
+      Object.keys(charts).forEach(k => delete charts[k]);
+    }
+
+    // v10: Alineación curricular completamente rediseñada
+    // - Orden: a, b, c → 1, 2, 3 → 1.1, 1.2, 2.1, 2.2, 2.3, 3.1...
+    // - Color por competencia propagado a sus afirmaciones y evidencias
+    // - Tabla dinámica de leyenda con títulos completos debajo de cada gráfica
+    function renderAlineacion() {
+      if (typeof Chart === 'undefined') return;
+      if (charts.comp) { charts.comp.destroy(); charts.comp = null; }
+      if (charts.afir) { charts.afir.destroy(); charts.afir = null; }
+      if (charts.evid) { charts.evid.destroy(); charts.evid = null; }
+      if (charts.cmc)  { charts.cmc.destroy();  charts.cmc  = null; }
+
+      const logComp = logroGrupoPor(logroPorCompetencia, aplicacionesActuales, cuadActual);
+      const logAfir = logroGrupoPor(logroPorAfirmacion, aplicacionesActuales, cuadActual);
+      const logEvid = logroGrupoPor(logroPorEvidencia, aplicacionesActuales, cuadActual);
+      // Dimensión secundaria: agnóstica del área. Para MAT lee p.cmc, para CN p.componente, para Inglés p.nivel_mcer.
+      const logDim2 = logroGrupoPor(logroPorDimensionSecundaria, aplicacionesActuales, cuadActual);
+      const cfgArea = configArea(cuadActual);
+      const dim2Activa = tieneDimensionSecundaria(cuadActual);
+      // Etiquetas del marco: "Competencias/Afirmaciones/Evidencias" para DCE,
+      // "Partes del cuadernillo/Niveles MCER/Habilidades..." para Inglés.
+      const ET = etiquetasMarco(cuadActual);
+      const PV = panelesVisibles(cuadActual);
+      // Actualizar títulos de las 3 cajas MBE estáticas según el área y
+      // OCULTAR las cajas que el área haya marcado como no visibles. Para
+      // Inglés solo se muestra el panel de afirmación (Niveles MCER); las
+      // cajas de competencia (Partes) y evidencia (Habilidades) se ocultan
+      // para alinearse con la presentación de la guía oficial ICFES.
+      const _ajustarCaja = (sel, etiqueta, icono, visible) => {
+        const caja = document.querySelector(sel);
+        if (!caja) return;
+        caja.style.display = visible ? '' : 'none';
+        const tit = caja.querySelector('.caja-mbe-titulo');
+        if (tit) tit.textContent = `${icono} ${etiqueta}`;
+      };
+      _ajustarCaja('.caja-mbe-comp', ET.competencia_plural, ET.icono_competencia, PV.competencia !== false);
+      _ajustarCaja('.caja-mbe-afir', ET.afirmacion_plural, ET.icono_afirmacion, PV.afirmacion !== false);
+      _ajustarCaja('.caja-mbe-evid', ET.evidencia_plural, ET.icono_evidencia, PV.evidencia !== false);
+
+      // Construir mapeo competencia → afirmaciones → evidencias desde preguntas
+      const mapaCAE = {}; // { a: { afir: Set, evid: Set } ... }
+      const mapaDim2Comp = {}; // { categoria secundaria -> competencia letra }
+      cuadActual.preguntas.forEach(p => {
+        const c = (p.competencia || 'a').charAt(0);
+        mapaCAE[c] = mapaCAE[c] || { afir: new Set(), evid: new Set() };
+        mapaCAE[c].afir.add(String(p.afirmacion));
+        mapaCAE[c].evid.add(String(p.evidencia));
+        const valDim2 = valorDimSecundaria(p, cuadActual);
+        if (valDim2) mapaDim2Comp[valDim2] = c;
+      });
+
+      // Encontrar a qué competencia pertenece una afirmacion/evidencia
+      const compDeAfir = (aNum) => {
+        for (const [c, m] of Object.entries(mapaCAE)) if (m.afir.has(String(aNum))) return c;
+        return null;
+      };
+      const compDeEvid = (eNum) => {
+        for (const [c, m] of Object.entries(mapaCAE)) if (m.evid.has(String(eNum))) return c;
+        return null;
+      };
+
+      // v12: Paleta POR AFIRMACIÓN (no por competencia). Razón: hay áreas con una
+      // sola competencia (Lectura Crítica) pero varias afirmaciones — antes todo
+      // se coloreaba del mismo tono. Ahora cada afirmación tiene su color y sus
+      // evidencias lo heredan: linaje visual desde el grupo más fino del marco DCE.
+      const PALETA_AFIR = [
+        '#3B82F6', // azul
+        '#F59E0B', // ámbar
+        '#8B5CF6', // violeta
+        '#10B981', // verde esmeralda
+        '#EC4899', // rosa magenta
+        '#06B6D4', // cian
+        '#84CC16', // lima
+        '#EF4444'  // rojo coral
+      ];
+      // Orden canónico de afirmaciones (1, 2, 3...) para asignar colores estables.
+      // La paleta SIEMPRE se asigna sobre el orden completo declarado en el JSON
+      // (para que los colores no se desplacen entre cuadernillos), pero los charts
+      // y leyendas solo muestran las afirmaciones EFECTIVAMENTE evaluadas.
+      const afirOrdenCompleto = Object.keys(cuadActual.afirmaciones).sort((a, b) => +a - +b);
+      const COLOR_BY_AFIR = {};
+      afirOrdenCompleto.forEach((k, i) => { COLOR_BY_AFIR[k] = PALETA_AFIR[i % PALETA_AFIR.length]; });
+      // Set de afirmaciones y evidencias que tienen al menos UNA pregunta en este
+      // cuadernillo. SC trae 6 afirmaciones oficiales en su marco pero el P1 solo
+      // evalúa 5 (la #2 "Dimensiones espaciales y temporales" no aparece). Para
+      // evitar mostrar 0% engañoso, filtramos solo las usadas.
+      const afirsConPreguntas = new Set(cuadActual.preguntas.map(p => String(p.afirmacion)));
+      const evidsConPreguntas = new Set(cuadActual.preguntas.map(p => String(p.evidencia)));
+      const afirOrden = afirOrdenCompleto.filter(k => afirsConPreguntas.has(k));
+
+      // Color de competencia = color de su PRIMERA afirmación (visualmente la "agrupa")
+      const colorDeComp = (compKey) => {
+        if (!compKey) return null;
+        const afirsDeComp = afirOrden.filter(a => compDeAfir(a) === compKey);
+        return afirsDeComp.length ? COLOR_BY_AFIR[afirsDeComp[0]] : '#64748B';
+      };
+      // Resolver color de evidencia desde su afirmación padre (parseando el código "afir.evid").
+      // Si la evidencia no usa código numérico (ej. "A1"), cae al mapeo competencia → primera afir.
+      const colorDeEvid = (evidKey) => {
+        const m = String(evidKey).match(/^(\d+)/);
+        if (m && COLOR_BY_AFIR[m[1]]) return COLOR_BY_AFIR[m[1]];
+        const c = compDeEvid(evidKey);
+        return colorDeComp(c) || '#64748B';
+      };
+
+      // === COMPETENCIAS === (orden alfabético: a, b, c, d, e...).
+      // Para áreas con UNA SOLA competencia (Lectura Crítica oficialmente) ocultamos
+      // este panel: una sola barra es redundante con el promedio global. Las
+      // afirmaciones cargan el peso diagnóstico para LC.
+      const compsOrden = Object.keys(cuadActual.competencias).sort();
+      const cajaCompUni = document.querySelector('.caja-mbe-comp');
+      const ocultarCompUnica = compsOrden.length <= 1;
+      if (cajaCompUni) cajaCompUni.style.display = ocultarCompUnica ? 'none' : '';
+      if (!ocultarCompUnica) {
+        // INGLÉS: la herencia "primera afirmación" produce colores duplicados
+        // (Partes d y e caen al mismo nivel MCER o al fallback gris). Para Inglés
+        // usamos directamente PALETA.inglesPartes — 5 colores distintos por Parte.
+        const _esIngles = (cuadActual.area || '').toLowerCase() === 'inglés';
+        const compLabels = compsOrden.map(k => `${k}.`);
+        const compData = compsOrden.map(k => logComp[k] || 0);
+        const compColors = _esIngles
+          ? compsOrden.map((k, i) => PALETA.inglesPartes[i % PALETA.inglesPartes.length])
+          : compsOrden.map(k => colorDeComp(k) || '#64748B');
+        const compFullTitles = compsOrden.map(k => cuadActual.competencias[k]);
+        charts.comp = crearChartLogro('chart-comp', compLabels, compData, compColors, compFullTitles);
+        renderLeyendaAlineacion('legend-comp', compsOrden.map((k, i) => ({
+          codigo: `${k}.`,
+          titulo: cuadActual.competencias[k],
+          valor: compData[i],
+          color: compColors[i]
+        })));
+      }
+
+      // === AFIRMACIONES === ordenadas por su número (1, 2, 3, ...).
+      // Color AGRUPADO POR COMPETENCIA: cada afirmación toma el color de SU competencia
+      // (afir 1,2,3 → comp a; 4,5 → comp b; ...), igual que en Matemáticas, para tener
+      // SOLO los 3 colores de las competencias y no uno distinto por afirmación. Inglés
+      // (sin panel de competencia) conserva un color por nivel MCER.
+      const _esInglesAE = (cuadActual.area || '').toLowerCase() === 'inglés';
+      const afirLabels = afirOrden.map(k => codigoAfirmacion(cuadActual, k));
+      const afirData = afirOrden.map(k => logAfir[k] || 0);
+      const afirColors = afirOrden.map(k => _esInglesAE ? (COLOR_BY_AFIR[k] || '#64748B') : (colorDeComp(compDeAfir(k)) || '#64748B'));
+      const afirFullTitles = afirOrden.map(k => cuadActual.afirmaciones[k]);
+      charts.afir = crearChartLogro('chart-afir', afirLabels, afirData, afirColors, afirFullTitles);
+      renderLeyendaAlineacion('legend-afir', afirOrden.map((k, i) => ({
+        codigo: `${ET.afirmacion_codigo} ${codigoAfirmacion(cuadActual, k)}`,
+        titulo: cuadActual.afirmaciones[k],
+        valor: afirData[i],
+        color: afirColors[i],
+        comp: compDeAfir(k)
+      })));
+
+      // === EVIDENCIAS === Cada evidencia HEREDA el color de SU AFIRMACIÓN padre
+      // (parseando el primer número del código "1.1" → afirmación 1).
+      // Solo se muestran las evidencias EFECTIVAMENTE evaluadas en el cuadernillo
+      // (evita mostrar evidencias declaradas en el marco pero sin preguntas).
+      const evidOrden = Object.keys(cuadActual.evidencias)
+        .filter(k => evidsConPreguntas.has(String(k)))
+        .sort((a, b) => {
+          const ma = String(a).match(/^(\d+)\.?(\d+)?/);
+          const mb = String(b).match(/^(\d+)\.?(\d+)?/);
+          if (!ma || !mb) return String(a).localeCompare(String(b));
+          const [, a1, a2 = '0'] = ma;
+          const [, b1, b2 = '0'] = mb;
+          return +a1 !== +b1 ? +a1 - +b1 : +a2 - +b2;
+        });
+      const evidLabels = evidOrden.map(k => k);
+      const evidData = evidOrden.map(k => logEvid[k] || 0);
+      // Cada evidencia hereda el color de SU competencia (mismos 3 colores). Inglés: por nivel.
+      const evidColors = evidOrden.map(k => _esInglesAE ? colorDeEvid(k) : (colorDeComp(compDeEvid(k)) || '#64748B'));
+      const evidFullTitles = evidOrden.map(k => cuadActual.evidencias[k]);
+      charts.evid = crearChartLogro('chart-evid', evidLabels, evidData, evidColors, evidFullTitles);
+      renderLeyendaAlineacion('legend-evid', evidOrden.map((k, i) => ({
+        codigo: `${ET.evidencia_codigo} ${k}`,
+        titulo: cuadActual.evidencias[k],
+        valor: evidData[i],
+        color: evidColors[i],
+        comp: compDeEvid(k)
+      })));
+
+      // === DIMENSIÓN SECUNDARIA === (CMC en MAT, componente en CN, nivel MCER en Inglés)
+      // Mostrar solo si el área la tiene definida. Lectura Crítica y Sociales y
+      // Ciudadanas no tienen dimensión secundaria oficial, por lo que la caja se oculta.
+      const cajaDim2 = document.querySelector('.caja-mbe-cmc');  // ID estable, contenido dinámico
+      if (cajaDim2) {
+        cajaDim2.style.display = dim2Activa ? '' : 'none';
+        const tituloDim2 = cajaDim2.querySelector('.caja-mbe-titulo');
+        if (tituloDim2 && cfgArea.dimension_secundaria) {
+          tituloDim2.textContent = `${cfgArea.dimension_secundaria.icono} ${cfgArea.dimension_secundaria.etiqueta}`;
+        }
+      }
+      if (dim2Activa) {
+        const paletaDim2 = cfgArea.dimension_secundaria.paleta;
+        const ordenCanonico = ordenCategoriasDim(cuadActual);  // orden Pre A1→A1→A2→B1 para Inglés
+        const dim2Orden = ordenCanonico
+          ? ordenCanonico.filter(c => c in logDim2)
+          : Object.keys(logDim2).sort();
+        const dim2Labels = dim2Orden.map(k => k.length > 22 ? k.substring(0, 20) + '...' : k);
+        const dim2Data = dim2Orden.map(k => logDim2[k] || 0);
+        const dim2Colors = dim2Orden.map((k, i) => paletaDim2[i % paletaDim2.length]);
+        charts.cmc = crearChartLogro('chart-cmc', dim2Labels, dim2Data, dim2Colors, dim2Orden);
+        renderLeyendaAlineacion('legend-cmc', dim2Orden.map((k, i) => ({
+          codigo: k,
+          titulo: k,
+          valor: dim2Data[i],
+          color: dim2Colors[i],
+          comp: mapaDim2Comp[k]
+        })));
+      } else {
+        document.getElementById('legend-cmc').innerHTML = '';
+      }
+
+      // v13: Centrar automáticamente la primera fila MBE cuando solo 1 o 2
+      // cajas están visibles (LC oculta competencia, IN oculta competencia+evidencia).
+      // Este reconteo va AL FINAL porque la visibilidad de cada caja se calcula
+      // arriba (PV + ocultarCompUnica), y aquí se sabe el estado final.
+      const _gridLineaMBE = document.querySelector('.grid-mbe-linea');
+      if (_gridLineaMBE) {
+        const _visiblesMBE = ['.caja-mbe-comp', '.caja-mbe-afir', '.caja-mbe-evid']
+          .filter(sel => {
+            const el = document.querySelector(sel);
+            return el && el.style.display !== 'none' && getComputedStyle(el).display !== 'none';
+          }).length;
+        _gridLineaMBE.classList.remove('mbe-centrar-1', 'mbe-centrar-2');
+        if (_visiblesMBE === 1) _gridLineaMBE.classList.add('mbe-centrar-1');
+        else if (_visiblesMBE === 2) _gridLineaMBE.classList.add('mbe-centrar-2');
+      }
+    }
+
+    // v10: Helper - crea chart de barras horizontales con colores individuales y tooltip de titulo completo
+    function crearChartLogro(canvasId, labels, data, colors, fullTitles) {
+      const canvas = _prepareCanvas(canvasId);
+      if (!canvas) return null;
+      return new Chart(canvas, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: '% de logro',
+            data,
+            backgroundColor: colors,
+            borderColor: colors,
+            borderWidth: 0,
+            borderRadius: 6,
+            barThickness: 'flex',
+            maxBarThickness: 38
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                title: (ctx) => labels[ctx[0].dataIndex],
+                label: (ctx) => `${ctx.parsed.x}% de logro`,
+                afterLabel: (ctx) => fullTitles && fullTitles[ctx.dataIndex] ? '\n' + fullTitles[ctx.dataIndex] : ''
+              },
+              padding: 12, titleFont: { size: 13, weight: 'bold' }, bodyFont: { size: 11 }
+            }
+          },
+          scales: {
+            x: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%', font: { size: 10 } } },
+            y: { ticks: { font: { size: 11, weight: 'bold' } } }
+          },
+          animation: { duration: 700, easing: 'easeOutQuart' }
+        }
+      });
+    }
+
+    // v10: Helper - dibuja tabla dinámica con códigos coloreados + títulos completos + porcentajes
+    function renderLeyendaAlineacion(contId, items) {
+      const cont = document.getElementById(contId);
+      if (!cont) return;
+      if (!items.length) { cont.innerHTML = ''; return; }
+      cont.innerHTML = `
+        <table style="width:100%; border-collapse:collapse; font-size:11px;">
+          <thead>
+            <tr style="background:#F8FAFC; border-bottom:1px solid #E2E8F0;">
+              <th style="padding:6px 8px; text-align:left; width:90px; font-weight:600; color:#475569;">CÓDIGO</th>
+              <th style="padding:6px 8px; text-align:left; font-weight:600; color:#475569;">TÍTULO COMPLETO</th>
+              <th style="padding:6px 8px; text-align:right; width:60px; font-weight:600; color:#475569;">%</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${items.map(it => `
+              <tr style="border-bottom:1px solid #F1F5F9;">
+                <td style="padding:6px 8px; font-weight:700;">
+                  <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:${it.color}; margin-right:6px; vertical-align:middle;"></span>
+                  <span style="color:${it.color};">${escapeHtml(it.codigo)}</span>
+                </td>
+                <td style="padding:6px 8px; color:#1F1F23; line-height:1.4;">${escapeHtml(it.titulo || '—')}</td>
+                <td style="padding:6px 8px; text-align:right; font-weight:700; color:${semaforoDesempeno(it.valor).color};">${it.valor}%</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>`;
+    }
+
+    function renderHistorico() {
+      // CRÍTICO: destruir los charts previos ANTES de re-crear. Si no se destruyen,
+      // Chart.js falla silenciosamente al intentar reutilizar el canvas y el chart
+      // del cuadernillo anterior (otra materia) sigue mostrándose. Bug visto al
+      // cambiar de Matemáticas a otra área: aparecían las competencias de Mat
+      // (Interpretación / Formulación / Argumentación) en todas las materias.
+      if (charts.evol)    { charts.evol.destroy();    charts.evol    = null; }
+      if (charts.compAgr) { charts.compAgr.destroy(); charts.compAgr = null; }
+
+      // Agrupar aplicaciones por periodo, o por intento si todos son del mismo periodo
+      const porPeriodo = {};
+      aplicacionesActuales.forEach(a => {
+        const k = a.periodo || 'I';
+        if (!porPeriodo[k]) porPeriodo[k] = [];
+        porPeriodo[k].push(a);
+      });
+      const periodos = Object.keys(porPeriodo).sort();
+      const seccion = document.getElementById('seccion-historico');
+      // Mostrar SIEMPRE la sección con datos reales (antes se ocultaba con 1 período,
+      // por eso el panel "desaparecía"). Un período → un punto / un grupo de barras;
+      // más períodos → evolución real entre ellos.
+      seccion.classList.remove('hidden');
+      let notaHist = document.getElementById('historico-nota');
+      if (!notaHist) {
+        notaHist = document.createElement('p');
+        notaHist.id = 'historico-nota';
+        notaHist.className = 'text-xs text-slate-500 italic mb-3';
+        seccion.querySelector('h2').insertAdjacentElement('afterend', notaHist);
+      }
+      if (periodos.length <= 1) {
+        notaHist.textContent = 'Mostrando el período actual con datos reales. La evolución entre períodos se completa a medida que el grupo presenta pruebas en más de un período.';
+        notaHist.style.display = '';
+      } else {
+        notaHist.style.display = 'none';
+      }
+
+      const serie = periodos.map(p => ({ label: `Período ${p}`, valor: promedioGrupo(porPeriodo[p]) }));
+      charts.evol = lineaEvolucion(document.getElementById('chart-evolucion-grupo'), serie, { titulo: 'Promedio del grupo por período' });
+
+      const competenciasKeys = Object.keys(cuadActual.competencias);
+      // Etiquetas del eje X = letras de competencia (a, b, c...) para mantener
+      // el chart legible. El tooltip muestra el nombre completo via etiquetasCompletas.
+      const etiquetasCompletas = competenciasKeys.map(k => cuadActual.competencias[k] || k);
+      const categorias = competenciasKeys.map(k => `${k}.`);
+      const grupos = periodos.map(p => ({
+        label: `Período ${p}`,
+        valores: competenciasKeys.map(c => logroGrupoPor(logroPorCompetencia, porPeriodo[p], cuadActual)[c] || 0)
+      }));
+      // Color por competencia (mismo criterio que el panel "Competencias"): cada barra
+      // toma el color de su competencia para que NO sean todas del mismo tono.
+      const _palAfir = ['#3B82F6', '#F59E0B', '#8B5CF6', '#10B981', '#EC4899', '#06B6D4', '#84CC16', '#EF4444'];
+      const _afirOrdComp = Object.keys(cuadActual.afirmaciones || {}).sort((a, b) => +a - +b);
+      const _colorByAfir = {};
+      _afirOrdComp.forEach((k, i) => { _colorByAfir[k] = _palAfir[i % _palAfir.length]; });
+      const _afirsConPreg = new Set((cuadActual.preguntas || []).map(p => String(p.afirmacion)));
+      const _afirOrd = _afirOrdComp.filter(k => _afirsConPreg.has(k));
+      const _mapaComp = {};
+      (cuadActual.preguntas || []).forEach(p => { const c = (p.competencia || 'a').charAt(0); (_mapaComp[c] = _mapaComp[c] || new Set()).add(String(p.afirmacion)); });
+      const _esInglesHist = (cuadActual.area || '').toLowerCase() === 'inglés';
+      const coloresPorBarra = competenciasKeys.map((k, i) => {
+        if (_esInglesHist) return PALETA.inglesPartes[i % PALETA.inglesPartes.length];
+        const c = k.charAt(0);
+        const a = _afirOrd.filter(x => _mapaComp[c] && _mapaComp[c].has(x));
+        return a.length ? _colorByAfir[a[0]] : '#64748B';
+      });
+      charts.compAgr = barrasAgrupadas(
+        document.getElementById('chart-comp-agrupadas'),
+        categorias, grupos,
+        { etiquetasCompletas, coloresPorBarra }
+      );
+    }
+
+    function renderIndividual() {
+      const sel = document.getElementById('select-estudiante');
+      const detalle = document.getElementById('detalle-individual');
+      // FIX bug cambio de materia: limpiar select y detalle ANTES de repoblar para
+      // que no quede mostrando lo del grupo anterior hasta que el usuario actúe.
+      detalle.innerHTML = '<p class="text-sm text-slate-500 italic">Selecciona un estudiante para ver su detalle individual.</p>';
+      const unicos = new Map();
+      for (const a of aplicacionesActuales) {
+        if (!unicos.has(a.estudiante_id)) unicos.set(a.estudiante_id, a.estudiante_nombre);
+      }
+      sel.innerHTML = '<option value="">— Selecciona —</option>' +
+        [...unicos.entries()].map(([id, n]) => `<option value="${id}">${escapeHtml(n)}</option>`).join('');
+      sel.value = '';
+      // Usar onchange (no addEventListener) para REEMPLAZAR el handler anterior
+      // y evitar que se acumule un listener por cada cambio de grupo/materia.
+      sel.onchange = () => {
+        const id = sel.value;
+        if (!id) { detalle.innerHTML = '<p class="text-sm text-slate-500 italic">Selecciona un estudiante para ver su detalle individual.</p>'; return; }
+        const apps = aplicacionesActuales.filter(a => a.estudiante_id === id)
+          .sort((a, b) => new Date(a.fecha_fin) - new Date(b.fecha_fin));
+        let html = `<div class="grid grid-cols-1 md:grid-cols-${Math.min(apps.length, 4)} gap-3 mb-4">`;
+        apps.forEach((a, i) => {
+          html += `<div class="text-center border rounded-lg p-3">
+            <div class="text-xs text-slate-500">Intento ${i+1}</div>
+            <div class="text-2xl font-bold" style="color:${COLOR_NIVEL[a.nivel]}">${a.puntaje}</div>
+            <span class="chip-nivel ${a.nivel.toLowerCase().replace('á','a')}" style="font-size:9px">${a.nivel}</span>
+            <div class="text-xs text-slate-400 mt-1">${formatDateTime(a.fecha_fin)}</div>
+          </div>`;
+        });
+        html += '</div>';
+
+        // Delta entre primer y último intento
+        if (apps.length > 1) {
+          const delta = apps[apps.length - 1].puntaje - apps[0].puntaje;
+          const color = delta > 0 ? 'text-emerald-600' : (delta < 0 ? 'text-red-600' : 'text-slate-600');
+          html += `<p class="text-sm ${color} mb-3">Variación entre primer y último intento: <strong>${delta > 0 ? '+' : ''}${delta} puntos</strong>.</p>`;
+        }
+
+        // Comparativo de delta por competencia y por CMC respecto al grupo (último intento)
+        const ultimo = apps[apps.length - 1];
+        const comp = comparativoIndividual(ultimo, aplicacionesActuales, cuadActual);
+        const flecha = d => d > 0 ? `<span class="text-emerald-600">▲ +${d}</span>` : (d < 0 ? `<span class="text-red-600">▼ ${d}</span>` : '<span class="text-slate-400">▶ 0</span>');
+
+        const ET_C = etiquetasMarco(cuadActual);
+        const PV_C = panelesVisibles(cuadActual);
+        // En Inglés (donde competencia=Parte) preferimos mostrar el delta por
+        // afirmación (Niveles MCER) ya que es la unidad pedagógica oficial.
+        const _usarAfirComoPrincipal = PV_C.competencia === false && PV_C.afirmacion !== false;
+        // Calcular delta por afirmación cuando aplique (caso Inglés)
+        let _bloqueAfir = '';
+        if (_usarAfirComoPrincipal) {
+          const _indLogAfir = logroPorAfirmacion(ultimo.aciertos_por_pregunta || [], cuadActual);
+          const _grpLogAfir = logroGrupoPor(logroPorAfirmacion, aplicacionesActuales, cuadActual);
+          const _afirsUsadas = new Set((cuadActual.preguntas || []).map(p => String(p.afirmacion)));
+          const _keys = Object.keys(_grpLogAfir).filter(k => _afirsUsadas.has(String(k))).sort((a,b)=>+a-+b);
+          _bloqueAfir = `<div class="border rounded-xl p-4 bg-slate-50">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-700 mb-2">Delta por ${escapeHtml(ET_C.afirmacion_singular.toLowerCase())} (respecto al grupo)</h4>
+            <table class="w-full text-xs">
+              <thead><tr><th class="text-left">${escapeHtml(ET_C.afirmacion_singular)}</th><th class="text-right">Tú</th><th class="text-right">Grupo</th><th class="text-right">Δ</th></tr></thead>
+              <tbody>${_keys.map(k => {
+                const ind = _indLogAfir[k] ?? 0;
+                const grp = _grpLogAfir[k] ?? 0;
+                const d = Math.round(ind - grp);
+                const cod = codigoAfirmacion(cuadActual, k);
+                const desc = (cuadActual.afirmaciones && cuadActual.afirmaciones[k]) || '';
+                return `<tr><td>${escapeHtml(cod)}${desc ? ' — ' + escapeHtml(String(desc).slice(0, 40)) : ''}</td><td class="text-right font-semibold">${ind}%</td><td class="text-right text-slate-500">${grp}%</td><td class="text-right">${flecha(d)}</td></tr>`;
+              }).join('')}</tbody>
+            </table>
+          </div>`;
+        }
+        html += `<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          ${_bloqueAfir}
+          ${PV_C.competencia !== false ? `<div class="border rounded-xl p-4 bg-slate-50">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-700 mb-2">Delta por ${escapeHtml(ET_C.competencia_singular.toLowerCase())} (respecto al grupo)</h4>
+            <table class="w-full text-xs">
+              <thead><tr><th class="text-left">${escapeHtml(ET_C.competencia_singular)}</th><th class="text-right">Tú</th><th class="text-right">Grupo</th><th class="text-right">Δ</th></tr></thead>
+              <tbody>${Object.entries(comp.competencias).map(([k, v]) =>
+                `<tr><td>${k}. ${escapeHtml(cuadActual.competencias[k] || '').slice(0, 30)}</td><td class="text-right font-semibold">${v.individual}%</td><td class="text-right text-slate-500">${v.grupo}%</td><td class="text-right">${flecha(v.delta)}</td></tr>`
+              ).join('')}</tbody>
+            </table>
+          </div>` : ''}
+          ${(() => {
+            // FIX URGENTE: la dim secundaria del COMPARATIVO INDIVIDUAL debe
+            // tomar siempre la del área del cuadernillo activo (componentes
+            // temáticos para CN, MCER para Inglés, CMC para MAT, etc.). Antes
+            // mostraba "CMC" para todas las áreas porque comp.cmc se llamaba
+            // así por compatibilidad, pero el título debe ser dinámico.
+            if (!tieneDimensionSecundaria(cuadActual)) return '';
+            const _cfgInd = configArea(cuadActual);
+            const _ds = _cfgInd.dimension_secundaria;
+            if (!_ds) return '';
+            const _tit = _ds.etiqueta_corta || 'Categoría';
+            const _ttitulo = _ds.etiqueta || 'Categorías';
+            return `<div class="border rounded-xl p-4 bg-slate-50">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-slate-700 mb-2">Delta por ${escapeHtml(_ttitulo.toLowerCase())}</h4>
+            <table class="w-full text-xs">
+              <thead><tr><th class="text-left">${escapeHtml(_tit)}</th><th class="text-right">Tú</th><th class="text-right">Grupo</th><th class="text-right">Δ</th></tr></thead>
+              <tbody>${Object.entries(comp.cmc || {}).map(([k, v]) =>
+                `<tr><td>${escapeHtml(k)}</td><td class="text-right font-semibold">${v.individual}%</td><td class="text-right text-slate-500">${v.grupo}%</td><td class="text-right">${flecha(v.delta)}</td></tr>`
+              ).join('')}</tbody>
+            </table>
+          </div>`;
+          })()}
+        </div>`;
+
+        detalle.innerHTML = html;
+      };
+    }
+
+    function renderConclusiones() {
+      const conclusiones = generarConclusiones(aplicacionesActuales, cuadActual);
+      // Las conclusiones pueden traer LaTeX → innerHTML directo (contenido controlado del backend)
+      const cont = document.getElementById('conclusiones');
+      cont.innerHTML = conclusiones.map(c => `<p class="mb-2">${c}</p>`).join('');
+      renderMath(cont);
+    }
+
+    // Botones de exportación
+    document.getElementById('btn-exportar-excel').addEventListener('click', () => {
+      if (!grupoActivo) { toast('Selecciona un grupo primero', 'aviso'); return; }
+      const inst = instituciones.find(i => i.id === aplicacionesActuales[0].institucion_id);
+      const sede = inst?.sedes.find(s => s.id === aplicacionesActuales[0].sede_id);
+      exportarReporteGrupoExcel(aplicacionesActuales, cuadActual, {
+        institucion: inst?.nombre || '',
+        sede: sede?.nombre || '',
+        grado: grupoActivo.grado,
+        grupo: grupoActivo.grupo,
+        periodo: cuadActual.periodo
+      });
+      toast('Excel descargado', 'exito');
+    });
+
+    document.getElementById('btn-exportar-pdf').addEventListener('click', async () => {
+      if (!grupoActivo) { toast('Selecciona un grupo primero', 'aviso'); return; }
+      try {
+        toast('Generando PDF, espera un momento...', 'info');
+        const inst = instituciones.find(i => i.id === aplicacionesActuales[0].institucion_id);
+        const sede = inst?.sedes.find(s => s.id === aplicacionesActuales[0].sede_id);
+        await exportarReporteGrupoPDF(aplicacionesActuales, cuadActual, {
+          institucion: inst?.nombre || '',
+          sede: sede?.nombre || '',
+          grado: grupoActivo.grado,
+          grupo: grupoActivo.grupo,
+          periodo: cuadActual.periodo
+        });
+        toast('PDF descargado', 'exito');
+      } catch (e) {
+        console.error('Error generando el PDF del grupo:', e);
+        toast('No se pudo generar el PDF. Intenta de nuevo.', 'error');
+      }
+    });
+
+    const _irAPlan = (g) => { location.href = `plan-mejora.html?grado=${g.grado}&grupo=${encodeURIComponent(g.grupo)}&cuadernillo=${g.cuadernillo_id}`; };
+    function abrirSelectorPlan() {
+      if (!grupos || grupos.size === 0) { toast('Aún no hay materias con resultados para crear un plan.', 'aviso'); return; }
+      document.getElementById('ov-selector-plan')?.remove();
+      const items = [...grupos.values()].sort((a, b) => (parseInt(a.grado) - parseInt(b.grado)) || String(a.grupo).localeCompare(String(b.grupo)) || String(a.area).localeCompare(String(b.area)));
+      const ov = document.createElement('div');
+      ov.id = 'ov-selector-plan';
+      ov.style.cssText = 'position:fixed;inset:0;z-index:120;background:rgba(20,15,25,.5);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:20px';
+      const filas = items.map((g, i) => {
+        const meta = AREA_META[g.area] || { sigla: '·', color: '#9A3412' };
+        return `<button class="sel-plan-item" data-i="${i}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 14px;border:1px solid #ECEAF3;border-radius:12px;background:#fff;cursor:pointer">
+          <span style="flex-shrink:0;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:12px;color:#fff;background:${meta.color}">${meta.sigla}</span>
+          <span style="flex:1"><span style="font-weight:700;color:#241B33">${g.grado}° ${escapeHtml(String(g.grupo))} · ${escapeHtml(g.area || '')}</span><br><span style="font-size:12px;color:#6B6478">${g.apps.length} ${g.apps.length === 1 ? 'estudiante' : 'estudiantes'}</span></span>
+          <span style="color:#C2410C;font-weight:700">→</span>
+        </button>`;
+      }).join('');
+      ov.innerHTML = `<div style="background:#fff;border-radius:20px;max-width:460px;width:100%;max-height:82vh;overflow:auto;box-shadow:0 40px 90px -30px rgba(20,15,25,.5)">
+        <div style="padding:20px 22px 6px"><h3 style="font-weight:800;font-size:20px;letter-spacing:-.02em;color:#241B33;margin:0 0 3px">¿Para qué materia?</h3><p style="font-size:13px;color:#6B6478;margin:0">Elige el grupo y la materia para crear su Plan de mejora.</p></div>
+        <div style="padding:10px 16px 18px;display:flex;flex-direction:column;gap:8px">${filas}</div>
+      </div>`;
+      document.body.appendChild(ov);
+      ov.addEventListener('click', e => { if (e.target === ov) ov.remove(); });
+      ov.querySelectorAll('.sel-plan-item').forEach(b => b.addEventListener('click', () => { ov.remove(); _irAPlan(items[+b.dataset.i]); }));
+    }
+    document.getElementById('btn-plan-mejora').addEventListener('click', () => {
+      if (grupoActivo) { _irAPlan(grupoActivo); return; }
+      abrirSelectorPlan();
+    });
+
+    // Botón: descargar el cuadernillo original del grupo activo en PDF
+    document.getElementById('btn-descargar-cuadernillo').addEventListener('click', async () => {
+      if (!cuadActual) { toast('Selecciona un grupo primero', 'aviso'); return; }
+      const btn = document.getElementById('btn-descargar-cuadernillo');
+      const originalHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<span class="sb-icon">⏳</span> Generando PDF...';
+      try {
+        const { exportarCuadernilloOriginalPDF } = await import('./js/cuadernillo-pdf-original.js');
+        await exportarCuadernilloOriginalPDF(cuadActual);
+        toast('Cuadernillo descargado', 'exito');
+      } catch (err) {
+        console.error('[IDEA] Error generando PDF del cuadernillo:', err);
+        toast('Error al generar el cuadernillo PDF', 'error');
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = originalHtml;
+      }
+    });
+
+    // === Panel de Permisos de Reintento ===
+    const CUAD_ID_DEFAULT = 'math-11-p1-2023';
+    const allUsers = await db.lista('idea_usuarios');
+
+    async function refrescarPermisos() {
+      const vigentes = await listarPermisosVigentes({ solo_vigentes: true });
+      const historico = await listarPermisosVigentes({});
+      const consumidosORevocados = historico.filter(p => p.consumido || p.fecha_revocado);
+
+      // Badge en el sidebar
+      const badge = document.getElementById('badge-permisos');
+      if (vigentes.length > 0) {
+        badge.textContent = vigentes.length;
+        badge.classList.remove('hidden');
+      } else {
+        badge.classList.add('hidden');
+      }
+
+      // Lista vigentes
+      const vCont = document.getElementById('lista-permisos-vigentes');
+      if (vigentes.length === 0) {
+        vCont.innerHTML = '<p class="text-sm text-slate-400 italic">No hay permisos vigentes en este momento.</p>';
+      } else {
+        vCont.innerHTML = vigentes.map(p => {
+          const est = allUsers.find(u => u.id === p.estudiante_id);
+          return `<div class="border rounded-lg p-3 flex items-center justify-between gap-3 bg-emerald-50">
+            <div class="flex-1">
+              <div class="font-semibold">${escapeHtml(est?.nombre_completo || '—')}</div>
+              <div class="text-xs text-slate-600">Otorgado el ${formatDateTime(p.fecha_otorgado)} · ${escapeHtml(p.razon || 'Sin razón especificada')}</div>
+            </div>
+            <button data-id="${p.id}" class="btn-revocar btn-secundario text-xs">Revocar</button>
+          </div>`;
+        }).join('');
+        vCont.querySelectorAll('.btn-revocar').forEach(b => {
+          b.addEventListener('click', async () => {
+            if (!confirm('¿Revocar este permiso?')) return;
+            await revocarPermiso(b.dataset.id);
+            toast('Permiso revocado', 'aviso');
+            await refrescarPermisos();
+          });
+        });
+      }
+
+      // Histórico
+      const hCont = document.getElementById('lista-permisos-historico');
+      if (consumidosORevocados.length === 0) {
+        hCont.innerHTML = '<p class="text-slate-400 italic">Sin historial todavía.</p>';
+      } else {
+        hCont.innerHTML = consumidosORevocados.map(p => {
+          const est = allUsers.find(u => u.id === p.estudiante_id);
+          const estado = p.consumido ? '<span class="chip-nivel alto" style="font-size:9px">CONSUMIDO</span>' : '<span class="chip-nivel bajo" style="font-size:9px">REVOCADO</span>';
+          return `<div class="border rounded-lg p-2 flex items-center justify-between gap-2 text-xs">
+            <div>${escapeHtml(est?.nombre_completo || '—')} · ${formatDateTime(p.fecha_otorgado)}</div>
+            ${estado}
+          </div>`;
+        }).join('');
+      }
+    }
+
+    // Llenar selector de estudiantes con los del grupo del docente
+    function poblarSelectorEstudiantes() {
+      const sel = document.getElementById('sel-estudiante-permiso');
+      // Filtrar estudiantes según rol
+      let candidatos = allUsers.filter(u => u.rol === 'estudiante');
+      if (ses.rol === 'docente') {
+        const gruposAsig = ses.grupos_asignados || [];
+        candidatos = candidatos.filter(u =>
+          u.institucion_id === ses.institucion_id &&
+          (gruposAsig.length === 0 || gruposAsig.includes(`${u.grado}-${u.grupo}`))
+        );
+      } else if (ses.rol === 'directivo') {
+        candidatos = candidatos.filter(u => u.institucion_id === ses.institucion_id);
+      }
+      sel.innerHTML = '<option value="">— Selecciona un estudiante —</option>' +
+        candidatos.map(u => `<option value="${u.id}">${escapeHtml(u.nombre_completo)} (${u.grado}°${u.grupo || ''})</option>`).join('');
+    }
+
+    document.getElementById('btn-panel-permisos').addEventListener('click', async () => {
+      poblarSelectorEstudiantes();
+      await refrescarPermisos();
+      const m = document.getElementById('modal-permisos');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    });
+
+    document.getElementById('cerrar-permisos').addEventListener('click', () => {
+      const m = document.getElementById('modal-permisos');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    });
+
+    document.getElementById('btn-otorgar-permiso').addEventListener('click', async () => {
+      const estId = document.getElementById('sel-estudiante-permiso').value;
+      const razon = document.getElementById('razon-permiso').value;
+      if (!estId) { toast('Selecciona un estudiante', 'aviso'); return; }
+      try {
+        await otorgarPermisoReintento(estId, CUAD_ID_DEFAULT, ses.user_id, razon);
+        toast('Permiso otorgado correctamente', 'exito');
+        document.getElementById('razon-permiso').value = '';
+        document.getElementById('sel-estudiante-permiso').value = '';
+        await refrescarPermisos();
+      } catch (e) {
+        toast(e.message, 'error');
+      }
+    });
+
+    // Inicializar badge al cargar
+    await refrescarPermisos();
+
+    // === v4: Glosario flotante ===
+    function abrirGlosario() {
+      const drawer = document.getElementById('drawer-glosario');
+      drawer.style.transform = 'translateX(0)';
+      llenarGlosario();
+    }
+    function cerrarGlosario() {
+      document.getElementById('drawer-glosario').style.transform = 'translateX(100%)';
+    }
+    function llenarGlosario(filtro = '') {
+      if (!cuadActual) {
+        document.getElementById('contenido-glosario').innerHTML = '<p class="text-slate-400 italic">Selecciona un grupo primero para ver la taxonomía del cuadernillo.</p>';
+        return;
+      }
+      const q = (filtro || '').toLowerCase();
+      const coincide = (s) => !q || (s || '').toLowerCase().includes(q);
+      // El glosario muestra solo afirmaciones y evidencias EVALUADAS en este
+      // cuadernillo (evita listar entradas del marco con 0 preguntas como la
+      // afirmación 2 de SC que no aparece en P1).
+      const _afirsUsadasGl = new Set(cuadActual.preguntas.map(p => String(p.afirmacion)));
+      const _evidsUsadasGl = new Set(cuadActual.preguntas.map(p => String(p.evidencia)));
+      const comps = Object.entries(cuadActual.competencias || {});
+      const afirs = Object.entries(cuadActual.afirmaciones || {}).filter(([k]) => _afirsUsadasGl.has(String(k)));
+      const evids = Object.entries(cuadActual.evidencias || {}).filter(([k]) => _evidsUsadasGl.has(String(k)));
+      const _cfgGloss = configArea(cuadActual);
+      const cmcUnicos = [...new Set(cuadActual.preguntas.map(p => valorDimSecundaria(p, cuadActual)).filter(Boolean))];
+      const compHtml = comps.filter(([k,v]) => coincide(k+' '+v)).map(([k,v]) =>
+        `<div class="border-l-4 border-sky-500 pl-3 py-2 mb-2 bg-sky-50 rounded-r"><strong>${k}.</strong> ${escapeHtml(v)}</div>`
+      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+      const _ETgl = etiquetasMarco(cuadActual);
+      const afirHtml = afirs.filter(([k,v]) => coincide(k+' '+v)).map(([k,v]) =>
+        `<div class="border-l-4 border-amber-500 pl-3 py-2 mb-2 bg-amber-50 rounded-r"><strong>${escapeHtml(_ETgl.afirmacion_codigo)} ${escapeHtml(codigoAfirmacion(cuadActual, k))}:</strong> ${escapeHtml(v)}</div>`
+      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+      const evidHtml = evids.filter(([k,v]) => coincide(k+' '+v)).map(([k,v]) =>
+        `<div class="border-l-4 border-emerald-500 pl-3 py-2 mb-2 bg-emerald-50 rounded-r"><strong>${escapeHtml(_ETgl.evidencia_codigo)} ${k}:</strong> ${escapeHtml(v)}</div>`
+      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+      const cmcHtml = cmcUnicos.filter(c => coincide(c)).map(c =>
+        `<div class="border-l-4 border-purple-500 pl-3 py-2 mb-2 bg-purple-50 rounded-r">${escapeHtml(c)}</div>`
+      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+      const difHtml = `
+        <div class="border-l-4 border-emerald-500 pl-3 py-2 mb-2 bg-emerald-50 rounded-r"><strong>BAJA:</strong> Pregunta accesible para la mayoría. Mide aprendizajes consolidados.</div>
+        <div class="border-l-4 border-amber-500 pl-3 py-2 mb-2 bg-amber-50 rounded-r"><strong>MEDIA:</strong> Pregunta de desempeño esperado para el grado. Requiere integrar varios conceptos.</div>
+        <div class="border-l-4 border-red-500 pl-3 py-2 mb-2 bg-red-50 rounded-r"><strong>ALTA:</strong> Pregunta de mayor exigencia. Requiere análisis profundo o razonamiento complejo.</div>
+      `;
+      const _PVgl = panelesVisibles(cuadActual);
+      document.getElementById('contenido-glosario').innerHTML = `
+        ${_PVgl.competencia !== false ? `<h4 id="g-comp" class="font-bold text-sm mt-4 mb-2 text-sky-700 uppercase tracking-wider">${escapeHtml(_ETgl.competencia_plural)}</h4>${compHtml}` : ''}
+        ${_PVgl.afirmacion !== false ? `<h4 id="g-afir" class="font-bold text-sm mt-4 mb-2 text-amber-700 uppercase tracking-wider">${escapeHtml(_ETgl.afirmacion_plural)}</h4>${afirHtml}` : ''}
+        ${_PVgl.evidencia !== false ? `<h4 id="g-evid" class="font-bold text-sm mt-4 mb-2 text-emerald-700 uppercase tracking-wider">${escapeHtml(_ETgl.evidencia_plural)}</h4>${evidHtml}` : ''}
+        ${cmcUnicos.length ? `<h4 class="font-bold text-sm mt-4 mb-2 text-purple-700 uppercase tracking-wider">${escapeHtml(_cfgGloss.dimension_secundaria?.etiqueta || 'Dimensión secundaria')}${_cfgGloss.dimension_secundaria?.etiqueta_corta && _cfgGloss.dimension_secundaria.etiqueta_corta !== _cfgGloss.dimension_secundaria.etiqueta ? ' (' + escapeHtml(_cfgGloss.dimension_secundaria.etiqueta_corta) + ')' : ''}</h4>${cmcHtml}` : ''}
+        <h4 id="g-dif" class="font-bold text-sm mt-4 mb-2 text-slate-700 uppercase tracking-wider">Niveles de dificultad</h4>${difHtml}
+      `;
+    }
+    document.getElementById('btn-glosario').addEventListener('click', abrirGlosario);
+    document.getElementById('cerrar-glosario').addEventListener('click', cerrarGlosario);
+    document.getElementById('busca-glosario').addEventListener('input', (e) => llenarGlosario(e.target.value));
+
+    // === v4: Recomendaciones personalizables ===
+    let filtroRec = 'todos';
+    // Asistente "Sabio IA": insight contextual sobre los resultados del grupo (la IA viva en el panel).
+    function renderSabioIAInsight() {
+      const cont = document.getElementById('sabio-ia-insight');
+      if (!cont) return;
+      if (!aplicacionesActuales || !aplicacionesActuales.length || !cuadActual) { cont.classList.add('hidden'); return; }
+      let ins; try { ins = insightSabioIA(aplicacionesActuales, cuadActual); } catch (e) { console.warn('[sabio-ia]', e); cont.classList.add('hidden'); return; }
+      const linkPlan = grupoActivo ? `plan-mejora.html?grado=${grupoActivo.grado}&grupo=${encodeURIComponent(grupoActivo.grupo)}&cuadernillo=${grupoActivo.cuadernillo_id}` : '#';
+      cont.classList.remove('hidden');
+      cont.innerHTML = `
+        <div class="flex items-start gap-3 rounded-xl p-3" style="background:linear-gradient(135deg,#FBEAEF,#FFF4EC);border:1px solid #F0D3C7">
+          <div class="flex-shrink-0">${sabioSVG(ins.expr || 'animando', 54)}</div>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm leading-relaxed"><span class="font-bold" style="color:#9A3412">Sabio IA:</span> ${escapeHtml(ins.texto)}</div>
+            ${ins.accion ? `<a href="${linkPlan}" class="inline-flex items-center gap-1 mt-2 text-xs font-semibold text-white rounded-lg px-3 py-1.5" style="background:linear-gradient(118deg,#7E1D33,#C2410C)">Generar el plan de acción →</a>` : ''}
+          </div>
+        </div>`;
+    }
+
+    async function renderRecomendacionesV4() {
+      const recs = generarRecomendacionesPersonalizables(aplicacionesActuales, cuadActual);
+      // idea_planes_seleccionados no está en las reglas de Firestore → su lectura puede
+      // lanzar PERMISSION_DENIED. Si falla, seguimos con [] para NO perder el render de
+      // las recomendaciones (que es lo importante; las selecciones son secundarias).
+      const seleccionadas = (await db.lista('idea_planes_seleccionados').catch(() => [])).filter(s => s.cuadernillo_id === cuadActual.id);
+      const seleccionadasIds = new Set(seleccionadas.map(s => s.id_recomendacion));
+      let filtradas = recs;
+      if (filtroRec === 'bajo') filtradas = recs.filter(r => r.esfuerzo === 'bajo');
+      else if (filtroRec === 'medio') filtradas = recs.filter(r => r.esfuerzo === 'medio');
+      else if (filtroRec === 'alto-impacto') filtradas = recs.filter(r => r.impacto === 'alto');
+      const colorEsf = { bajo: 'text-emerald-700 bg-emerald-50', medio: 'text-amber-700 bg-amber-50', alto: 'text-red-700 bg-red-50' };
+      const colorImp = { alto: 'text-emerald-700 bg-emerald-100', medio: 'text-amber-700 bg-amber-100', bajo: 'text-slate-600 bg-slate-100' };
+      const cont = document.getElementById('lista-recomendaciones');
+      cont.innerHTML = filtradas.map(r => {
+        const compNombre = r.articula_con.competencia ? `${r.articula_con.competencia}. ${cuadActual.competencias[r.articula_con.competencia] || ''}` : null;
+        const _ETrec = etiquetasMarco(cuadActual);
+        const _afirCod = r.articula_con.afirmacion ? codigoAfirmacion(cuadActual, r.articula_con.afirmacion) : '';
+        const afirChip = r.articula_con.afirmacion ? `<span class="chip-glosario" title="${escapeHtml(_ETrec.afirmacion_codigo)} ${escapeHtml(_afirCod)}">${escapeHtml(_ETrec.afirmacion_codigo)} ${escapeHtml(_afirCod)}</span>` : '';
+        const evidChip = r.articula_con.evidencia ? `<span class="chip-glosario" title="${escapeHtml(_ETrec.evidencia_codigo)} ${r.articula_con.evidencia}">${escapeHtml(_ETrec.evidencia_codigo)} ${r.articula_con.evidencia}</span>` : '';
+        const _siglaDimRec = configArea(cuadActual).dimension_secundaria?.etiqueta_corta || 'Cat';
+        const cmcChip = r.articula_con.cmc ? `<span class="chip-glosario" title="${escapeHtml(_siglaDimRec)}: ${escapeHtml(r.articula_con.cmc)}">${escapeHtml(_siglaDimRec)} ${escapeHtml(r.articula_con.cmc)}</span>` : '';
+        const checked = seleccionadasIds.has(r.id) ? 'checked' : '';
+        // v9: checkbox FUERA del summary para satisfacer accesibilidad (no interactive inside summary).
+        const recId = `rec-input-${r.id}`;
+        return `<div class="border rounded-xl p-3 bg-white flex items-start gap-3">
+          <input type="checkbox" id="${recId}" data-rec-id="${r.id}" ${checked} class="mt-1 cursor-pointer flex-shrink-0" aria-label="Seleccionar ${escapeHtml(r.titulo)}">
+          <details class="flex-1">
+            <summary class="cursor-pointer">
+              <span class="font-semibold text-sm">${escapeHtml(r.titulo)}</span>
+              <span class="flex flex-wrap gap-1 mt-1">
+                <span class="px-2 py-0.5 rounded text-[10px] ${colorEsf[r.esfuerzo]}">Esfuerzo ${r.esfuerzo}</span>
+                <span class="px-2 py-0.5 rounded text-[10px] ${colorImp[r.impacto]}">Impacto ${r.impacto}</span>
+                <span class="px-2 py-0.5 rounded text-[10px] text-slate-600 bg-slate-100">${r.duracion}</span>
+                ${compNombre ? `<span class="px-2 py-0.5 rounded text-[10px] text-sky-700 bg-sky-50">${escapeHtml(compNombre)}</span>` : ''}
+                ${afirChip}${evidChip}${cmcChip}
+              </span>
+            </summary>
+            <div class="mt-3 text-xs text-slate-700 leading-relaxed">
+              <strong>Acción detallada:</strong> ${escapeHtml(r.accion_detallada)}
+              ${r.articula_con.evidencia ? `<div class="mt-2 p-2 bg-amber-50 rounded text-[11px]"><strong>Articulación:</strong> Esta acción refuerza específicamente la ${escapeHtml(_ETrec.evidencia_singular.toLowerCase())} ${r.articula_con.evidencia} de la ${escapeHtml(_ETrec.afirmacion_singular.toLowerCase())} ${escapeHtml(_afirCod || r.articula_con.afirmacion)} (${escapeHtml(_ETrec.competencia_singular.toLowerCase())} ${r.articula_con.competencia}. ${escapeHtml(cuadActual.competencias[r.articula_con.competencia] || '')}).</div>` : ''}
+            </div>
+          </details>
+        </div>`;
+      }).join('');
+      // Wire up checkboxes
+      cont.querySelectorAll('input[type=checkbox][data-rec-id]').forEach(cb => {
+        cb.addEventListener('change', async (e) => {
+          e.stopPropagation();
+          const id = cb.dataset.recId;
+          try {
+            const existente = (await db.lista('idea_planes_seleccionados').catch(() => [])).find(s => s.id_recomendacion === id);
+            if (cb.checked && !existente) {
+              await db.crear('idea_planes_seleccionados', {
+                id_recomendacion: id, cuadernillo_id: cuadActual.id, fecha_inicio: nowIso(), fecha_fin: null, observaciones_docente: ''
+              });
+              toast('Recomendación añadida al plan', 'exito');
+            } else if (!cb.checked && existente) {
+              await db.eliminar('idea_planes_seleccionados', existente.id);
+              toast('Recomendación quitada del plan', 'aviso');
+            }
+          } catch (err) {
+            // La colección puede no estar habilitada en reglas: no rompemos la UI.
+            console.warn('[docente] no se pudo guardar la selección del plan:', err);
+            toast('No se pudo guardar la selección (revisa permisos), pero la recomendación sigue disponible.', 'aviso');
+          }
+        });
+      });
+    }
+    document.body.addEventListener('click', (e) => {
+      const b = e.target.closest('#filtros-rec .chip-filtro');
+      if (!b) return;
+      document.querySelectorAll('#filtros-rec .chip-filtro').forEach(x => x.classList.remove('activo'));
+      b.classList.add('activo');
+      filtroRec = b.dataset.fr;
+      renderRecomendacionesV4();
+    });
+
+    // === v4: Estadística avanzada dashboard ===
+    let filtroActivo = 'todos';
+    function aplicarFiltroDashboard(apps) {
+      if (filtroActivo === 'todos') return apps;
+      if (filtroActivo === 'bajo') return apps.filter(a => a.nivel === 'BAJO');
+      if (filtroActivo === 'alto') return apps.filter(a => ['ALTO', 'SUPERIOR'].includes(a.nivel));
+      if (filtroActivo === 'f') return apps.filter(a => {
+        const est = allUsers.find(u => u.id === a.estudiante_id);
+        return est?.sexo === 'F';
+      });
+      if (filtroActivo === 'm') return apps.filter(a => {
+        const est = allUsers.find(u => u.id === a.estudiante_id);
+        return est?.sexo === 'M';
+      });
+      return apps;
+    }
+    function renderEstadisticaAvanzada() {
+      const apps = aplicarFiltroDashboard(aplicacionesActuales);
+      if (!apps.length) return;
+      // KPIs
+      const cv = coefVariacion(apps);
+      const sk = asimetria(apps);
+      const tp = tiempoPromedio(apps);
+      const td = tasaPorDificultad(apps, cuadActual);
+      const kpiCont = document.getElementById('kpi-extendidos');
+      if (kpiCont) {
+        kpiCont.innerHTML = `
+          <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">Coef. variación</div><div class="text-lg font-bold">${cv}%</div></div>
+          <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">Asimetría</div><div class="text-lg font-bold">${sk}</div></div>
+          <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">Tiempo prom.</div><div class="text-lg font-bold">${Math.round(tp.promedio/60)} min</div></div>
+          <div class="idea-card p-3"><div class="text-[10px] uppercase text-slate-500">Aciertos dif. ALTA</div><div class="text-lg font-bold">${td.ALTA || 0}%</div></div>
+        `;
+      }
+      // Boxplot manual (barras horizontales)
+      const bp = datosBoxPlot(apps);
+      if (bp) {
+        charts.boxplot?.destroy();
+        charts.boxplot = new Chart(document.getElementById('chart-boxplot'), {
+          type: 'bar',
+          data: {
+            labels: ['Distribución'],
+            datasets: [
+              { label: 'Mín', data: [bp.min], backgroundColor: '#FCA5A5' },
+              { label: 'Q1', data: [bp.q1 - bp.min], backgroundColor: '#FEE2E2' },
+              { label: 'Mediana', data: [bp.mediana - bp.q1], backgroundColor: '#FBBF24' },
+              { label: 'Q3', data: [bp.q3 - bp.mediana], backgroundColor: '#FEF3C7' },
+              { label: 'Máx', data: [bp.max - bp.q3], backgroundColor: '#86EFAC' }
+            ]
+          },
+          options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true } } }
+        });
+      }
+      // Scatter
+      const sc = datosScatter(apps);
+      charts.scatter?.destroy();
+      charts.scatter = new Chart(document.getElementById('chart-scatter'), {
+        type: 'scatter',
+        data: {
+          datasets: [{
+            label: 'Estudiantes',
+            data: sc,
+            backgroundColor: sc.map(p => ({ BAJO: '#EF4444', 'BÁSICO': '#F59E0B', ALTO: '#FBBF24', SUPERIOR: '#10B981' })[p.nivel] || '#9CA3AF'),
+            pointRadius: 6
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { tooltip: { callbacks: { label: (c) => `${c.raw.nombre}: ${c.raw.y} pts en ${c.raw.x} min` } } },
+          scales: { x: { title: { display: true, text: 'Tiempo (min)' } }, y: { title: { display: true, text: 'Puntaje' }, min: 0, max: 100 } }
+        }
+      });
+      // Radar
+      const rd = datosRadar(apps, cuadActual);
+      charts.radar?.destroy();
+      charts.radar = new Chart(document.getElementById('chart-radar'), {
+        type: 'radar',
+        data: {
+          labels: rd.competencias,
+          datasets: [
+            { label: 'Grupo', data: rd.grupo, backgroundColor: 'rgba(225,29,72,0.2)', borderColor: '#E11D48' },
+            { label: 'Baseline nacional', data: rd.baseline, backgroundColor: 'rgba(251,191,36,0.15)', borderColor: '#FBBF24' }
+          ]
+        },
+        options: { responsive: true, maintainAspectRatio: false, scales: { r: { min: 0, max: 100 } } }
+      });
+      // Dificultad
+      charts.dificultad?.destroy();
+      charts.dificultad = new Chart(document.getElementById('chart-dificultad'), {
+        type: 'bar',
+        data: {
+          labels: ['BAJA', 'MEDIA', 'ALTA'],
+          datasets: [{ label: '% Aciertos', data: [td.BAJA || 0, td.MEDIA || 0, td.ALTA || 0], backgroundColor: ['#86EFAC', '#FCD34D', '#FCA5A5'] }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: 0, max: 100 } } }
+      });
+      // Discriminación
+      const disc = discriminacionPorPregunta(apps, cuadActual);
+      charts.discriminacion?.destroy();
+      charts.discriminacion = new Chart(document.getElementById('chart-discriminacion'), {
+        type: 'line',
+        data: {
+          labels: cuadActual.preguntas.map(p => `P${p.numero}`),
+          datasets: [{
+            label: 'Índice de discriminación %',
+            data: disc,
+            borderColor: '#A78BFA',
+            backgroundColor: 'rgba(167,139,250,0.15)',
+            tension: 0.3,
+            fill: true
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: -50, max: 100 } } }
+      });
+    }
+    // Wire up filtros (delegado al body porque los elementos se crean al cargar)
+    document.body.addEventListener('click', (e) => {
+      const b = e.target.closest('.chip-filtro');
+      if (!b) return;
+      document.querySelectorAll('.chip-filtro').forEach(x => x.classList.remove('activo'));
+      b.classList.add('activo');
+      filtroActivo = b.dataset.filtro;
+      renderEstadisticaAvanzada();
+    });
+    // Llamar render al expandir el details de Estadística avanzada
+    document.body.addEventListener('toggle', (e) => {
+      if (e.target.tagName === 'DETAILS' && e.target.open) {
+        renderEstadisticaAvanzada();
+      }
+    }, true);
+
+    // === Mensajería docente → estudiante ===
+    let destinatarioActual = null;
+    let plantillaSeleccionada = null;
+
+    function renderPlantillas() {
+      const cont = document.getElementById('plantillas-rapidas');
+      cont.innerHTML = PLANTILLAS_DOCENTE.map(p =>
+        `<button class="btn-plantilla border border-slate-200 rounded-lg p-2 text-left hover:bg-amber-50 hover:border-amber-300 transition" data-id="${p.id}">
+           <div class="text-xl">${p.icono}</div>
+           <div class="font-semibold text-[11px] mt-1">${escapeHtml(p.asunto)}</div>
+         </button>`).join('');
+      cont.querySelectorAll('.btn-plantilla').forEach(b => {
+        b.addEventListener('click', () => {
+          const pl = PLANTILLAS_DOCENTE.find(x => x.id === b.dataset.id);
+          if (!pl) return;
+          document.getElementById('msg-asunto').value = pl.asunto;
+          document.getElementById('msg-texto').value = pl.texto;
+          document.getElementById('msg-contador').textContent = pl.texto.length;
+          plantillaSeleccionada = pl.id;
+          cont.querySelectorAll('.btn-plantilla').forEach(x => x.classList.remove('bg-amber-100', 'border-amber-400'));
+          b.classList.add('bg-amber-100', 'border-amber-400');
+        });
+      });
+    }
+
+    function abrirMensaje(estId, estNombre) {
+      destinatarioActual = { id: estId, nombre: estNombre };
+      plantillaSeleccionada = null;
+      document.getElementById('msg-destinatario').textContent = `Para: ${estNombre}`;
+      document.getElementById('msg-asunto').value = '';
+      document.getElementById('msg-texto').value = '';
+      document.getElementById('msg-contador').textContent = '0';
+      renderPlantillas();
+      const m = document.getElementById('modal-mensaje');
+      m.classList.remove('hidden'); m.classList.add('flex');
+      setTimeout(() => document.getElementById('msg-texto').focus(), 100);
+    }
+    function cerrarMensaje() {
+      const m = document.getElementById('modal-mensaje');
+      m.classList.add('hidden'); m.classList.remove('flex');
+      destinatarioActual = null;
+    }
+    document.getElementById('cerrar-mensaje').addEventListener('click', cerrarMensaje);
+    document.getElementById('cancelar-mensaje').addEventListener('click', cerrarMensaje);
+    document.getElementById('msg-texto').addEventListener('input', (e) => {
+      document.getElementById('msg-contador').textContent = e.target.value.length;
+    });
+    document.getElementById('enviar-mensaje').addEventListener('click', async () => {
+      if (!destinatarioActual) return;
+      const asunto = document.getElementById('msg-asunto').value.trim();
+      const texto = document.getElementById('msg-texto').value.trim();
+      if (!texto) { toast('Escribe un mensaje', 'aviso'); return; }
+      try {
+        await enviarMensaje(ses.user_id, ses.nombre_completo, destinatarioActual.id, texto, asunto, { plantilla: plantillaSeleccionada });
+        toast(`Mensaje enviado a ${destinatarioActual.nombre}`, 'exito');
+        cerrarMensaje();
+      } catch (e) {
+        toast('Error al enviar: ' + e.message, 'error');
+      }
+    });
+
+    // Bandeja de salida
+    document.getElementById('ver-enviados').addEventListener('click', () => abrirEnviados());
+    document.getElementById('cerrar-enviados').addEventListener('click', () => {
+      const m = document.getElementById('modal-enviados');
+      m.classList.add('hidden'); m.classList.remove('flex');
+    });
+    document.getElementById('filtro-enviados').addEventListener('input', renderEnviados);
+    document.getElementById('filtro-leido').addEventListener('change', renderEnviados);
+
+    let enviadosCache = [];
+    async function abrirEnviados() {
+      enviadosCache = await listarMensajesEnviados(ses.user_id);
+      renderEnviados();
+      const m = document.getElementById('modal-enviados');
+      m.classList.remove('hidden'); m.classList.add('flex');
+    }
+
+    function renderEnviados() {
+      const q = (document.getElementById('filtro-enviados').value || '').toLowerCase();
+      const estado = document.getElementById('filtro-leido').value;
+      const list = enviadosCache.filter(m => {
+        if (q && !((m.texto || '').toLowerCase().includes(q) || (m.asunto || '').toLowerCase().includes(q))) return false;
+        const dest = allUsers.find(u => u.id === m.para_id);
+        if (q && dest && !dest.nombre_completo.toLowerCase().includes(q)) {
+          // Allow filtering by destinatario nombre as well
+        }
+        if (estado === 'leido' && !m.leido) return false;
+        if (estado === 'no_leido' && m.leido) return false;
+        return true;
+      });
+      const cont = document.getElementById('lista-enviados');
+      if (list.length === 0) {
+        cont.innerHTML = '<p class="text-slate-400 italic text-center py-6">Sin mensajes enviados que coincidan con el filtro.</p>';
+        return;
+      }
+      cont.innerHTML = list.map(m => {
+        const dest = allUsers.find(u => u.id === m.para_id);
+        const leidoChip = m.leido
+          ? '<span class="chip-nivel alto" style="font-size:9px">LEÍDO</span>'
+          : '<span class="chip-nivel basico" style="font-size:9px">SIN LEER</span>';
+        return `<div class="border-l-4 ${m.leido ? 'border-emerald-400' : 'border-amber-400'} bg-slate-50 rounded-r-lg p-3 mb-3">
+          <div class="flex justify-between items-start mb-1">
+            <div>
+              <strong class="text-sm">Para: ${escapeHtml(dest?.nombre_completo || '—')}</strong>
+              ${leidoChip}
+            </div>
+            <span class="text-xs text-slate-400">${formatDateTime(m.fecha)}</span>
+          </div>
+          ${m.asunto ? `<div class="text-xs uppercase tracking-wider text-amber-700 font-semibold mb-1">${escapeHtml(m.asunto)}</div>` : ''}
+          <div class="text-sm text-slate-700 whitespace-pre-line">${escapeHtml(m.texto)}</div>
+        </div>`;
+      }).join('');
+    }
+
+    // === Backup / Restore ===
+    document.getElementById('btn-backup').addEventListener('click', async () => {
+      if (!confirm('Se descargará un archivo JSON con todas las aplicaciones, usuarios y configuraciones. ¿Continuar?')) return;
+      try {
+        await db.exportarBackup();
+        toast('Respaldo descargado correctamente', 'exito');
+      } catch (e) {
+        toast('Error al respaldar: ' + e.message, 'error');
+      }
+    });
+
+    document.getElementById('btn-restore').addEventListener('click', () => {
+      document.getElementById('input-restore').click();
+    });
+
+    // Pie del análisis del grupo: navegación + descargables (reutiliza los handlers existentes).
+    (function wirePieGrupo() {
+      const proxy = (id) => { const b = document.getElementById(id); if (b) b.click(); };
+      const volverAlPanel = (scrollA) => {
+        const vg = document.getElementById('vista-grupo'); if (vg) vg.classList.add('hidden');
+        const zl = document.getElementById('zona-landing'); if (zl) zl.classList.remove('hidden');
+        const dest = scrollA ? document.getElementById(scrollA) : null;
+        if (dest) dest.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        else window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+      document.getElementById('btn-volver-panel')?.addEventListener('click', () => volverAlPanel(null));
+      document.getElementById('btn-continuar-materia')?.addEventListener('click', () => volverAlPanel('card-mis-grupos'));
+      document.getElementById('btn-grupo-plan')?.addEventListener('click', () => proxy('btn-plan-mejora'));
+      document.getElementById('btn-grupo-excel')?.addEventListener('click', () => proxy('btn-exportar-excel'));
+      document.getElementById('btn-grupo-pdf')?.addEventListener('click', () => proxy('btn-exportar-pdf'));
+      document.getElementById('btn-grupo-cuadernillo')?.addEventListener('click', () => proxy('btn-descargar-cuadernillo'));
+    })();
+
+    document.getElementById('input-restore').addEventListener('change', async (e) => {
+      const f = e.target.files?.[0];
+      if (!f) return;
+      try {
+        const text = await f.text();
+        const a = await db.analizarBackup(text);
+        // Construir preview
+        const fila = (r) => `<tr>
+          <td class="px-2 py-1">${escapeHtml(r.coleccion)}</td>
+          <td class="px-2 py-1 text-right">${r.actuales}</td>
+          <td class="px-2 py-1 text-right ${r.sera_sobreescrita ? 'text-amber-700 font-bold' : 'text-slate-400'}">${r.nuevos}</td>
+        </tr>`;
+        const html = `Vas a SOBRESCRIBIR los datos actuales con el contenido del archivo "${f.name}".\n\nBackup fechado: ${a.fecha || 'no especificado'}\n\nResumen:\n` +
+          a.resumen.map(r => `  ${r.coleccion}: actual ${r.actuales} → backup ${r.nuevos}${r.sera_sobreescrita ? ' (se sobreescribirá)' : ''}`).join('\n') +
+          (a.errores.length ? `\n\n❌ ERRORES DETECTADOS:\n${a.errores.join('\n')}` : '\n\n✅ Backup válido.') +
+          '\n\n¿Continuar?';
+        if (!a.es_valido) {
+          toast('Backup inválido: ' + a.errores[0], 'error');
+          e.target.value = '';
+          return;
+        }
+        if (!confirm(html)) {
+          e.target.value = '';
+          return;
+        }
+        const r = await db.importarBackup(text);
+        toast(`Respaldo restaurado: ${r.restauradas} colecciones`, 'exito');
+        setTimeout(() => location.reload(), 1200);
+      } catch (err) {
+        toast('Error al restaurar: ' + err.message, 'error');
+      }
+      e.target.value = '';
+    });
+
+    // Tour de onboarding
+    botonAyudaFlotante(ses.rol === 'directivo' ? 'directivo' : 'docente');
+    if (debeAutoIniciar(ses.rol)) {
+      setTimeout(() => iniciarTour(ses.rol === 'directivo' ? 'directivo' : 'docente'), 600);
+    }
+  </script>
+</body>
+</html>

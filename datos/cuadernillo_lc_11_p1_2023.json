@@ -1,0 +1,635 @@
+{
+  "id": "lc-11-p1-2023",
+  "area": "Lectura Crítica",
+  "area_slug": "lectura_critica",
+  "grado": "11",
+  "periodo": "I",
+  "version": "2023.mbe-comp",
+  "nombre": "Cuadernillo de Lectura Crítica — Grado 11° — Período I",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada texto y las preguntas asociadas. Elige una única respuesta para cada pregunta. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "1": "Identificar y entender los contenidos locales que conforman un texto.",
+    "2": "Comprender cómo se articulan las partes de un texto para darle un sentido global.",
+    "3": "Reflexionar a partir de un texto y evaluar su contenido."
+  },
+  "afirmaciones": {
+    "1": "Reconoce información explícita: vocabulario, datos, eventos y elementos básicos del texto.",
+    "2": "Establece relaciones entre las partes del texto (causa-efecto, secuencia, comparación, propósito).",
+    "3": "Evalúa el contenido del texto: contrasta con sus saberes, juzga validez y reconoce intenciones."
+  },
+  "evidencias": {
+    "1.1": "Entiende el significado de los elementos locales que constituyen un texto.",
+    "1.2": "Identifica los eventos narrados de manera explícita en un texto y los personajes involucrados.",
+    "2.1": "Identifica y caracteriza las diferentes voces o situaciones presentes en un texto.",
+    "2.2": "Comprende las relaciones entre diferentes partes o enunciados de un texto.",
+    "2.3": "Identifica y caracteriza las ideas o afirmaciones presentes en un texto informativo.",
+    "3.1": "Establece relaciones entre un texto y otros textos o enunciados.",
+    "3.2": "Establece la validez e implicaciones de un enunciado de un texto argumentativo o expositivo.",
+    "3.3": "Reconoce las estrategias discursivas en un texto.",
+    "3.4": "Contextualiza adecuadamente un texto o la información contenida en este."
+  },
+  "cmc": [],
+  "contextos": {
+    "insectos": {
+      "titulo": "Insectos a la carta — Lectura para las preguntas 1 a 4",
+      "imagen": "assets/cuadernillo-lc-11-p1/contexto-insectos.png",
+      "alt": "Infografía completa 'INSECTOS A LA CARTA': consumo humano de insectos, producción de carne comparada, anatomía de un insecto, beneficios proteínicos, sostenibilidad.",
+      "rango_preguntas": "1-4"
+    },
+    "grafeno": {
+      "titulo": "Premio Nobel de Física por el grafeno — Lectura para las preguntas 5 a 8",
+      "imagen": "assets/cuadernillo-lc-11-p1/contexto-grafeno.png",
+      "alt": "Artículo periodístico completo sobre Andre Geim y Konstantin Novoselov, ganadores del Premio Nobel de Física por sus trabajos sobre el grafeno.",
+      "rango_preguntas": "5-8"
+    },
+    "contaminacion": {
+      "titulo": "La contaminación marina — Lectura para las preguntas 9 a 11",
+      "imagen": "assets/cuadernillo-lc-11-p1/contexto-contaminacion.png",
+      "alt": "Artículo expositivo completo sobre la contaminación marina y las zonas muertas oceánicas, tomado de National Geographic.",
+      "rango_preguntas": "9-11"
+    },
+    "fermina": {
+      "titulo": "El amor en los tiempos del cólera (García Márquez) — Lectura para las preguntas 12 a 14",
+      "imagen": "assets/cuadernillo-lc-11-p1/contexto-fermina.png",
+      "alt": "Fragmento de la novela 'El amor en los tiempos del cólera' de Gabriel García Márquez, sobre la crisis de Fermina Daza tras la muerte de su esposo.",
+      "rango_preguntas": "12-14"
+    },
+    "origen_mal": {
+      "titulo": "El origen del mal (Tolstoi) — Lectura para las preguntas 15 a 17",
+      "imagen": "assets/cuadernillo-lc-11-p1/contexto-origen-mal.png",
+      "alt": "Cuento 'El origen del mal' de León Tolstoi: un ermitaño dialoga con un cuervo, un palomo, una serpiente y un ciervo sobre el origen del mal.",
+      "rango_preguntas": "15-17"
+    },
+    "condon": {
+      "titulo": "Del condón y otros demonios + anuncio publicitario — Lectura para las preguntas 18 a 20",
+      "imagen": "assets/cuadernillo-lc-11-p1/contexto-condon.png",
+      "alt": "TEXTO 1: artículo argumentativo del periódico El Tiempo sobre el condón. TEXTO 2: anuncio publicitario panfletario titulado 'En defensa de los valores' firmado por el Dr. J. G.",
+      "rango_preguntas": "18-20"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "I_1380387",
+      "numero": 1,
+      "enunciado": "De acuerdo con el texto anterior, el ícono <img src=\"assets/cuadernillo-lc-11-p1/icono-sostenibilidad.png\" alt=\"\" aria-hidden=\"true\" style=\"display:inline-block;height:1.5em;vertical-align:middle;margin:0 2px\"> de sostenibilidad da a entender que la producción y el consumo de insectos",
+      "imagen": null,
+      "opciones": {
+        "A": "forman parte de un programa de seguridad alimentaria que proveerá los alimentos que se demandarán a nivel mundial.",
+        "B": "forman parte de un proceso de reciclaje exitoso: recolección, remanufacturación y circulación del producto para la venta.",
+        "C": "emplean tecnologías limpias y respetuosas con el medio ambiente que generan menos contaminación durante el proceso de fabricación.",
+        "D": "dan lugar a un uso más eficiente de los recursos naturales y a una reducción de la emisión de contaminantes ambientales."
+      },
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Doy cuenta del uso del lenguaje verbal o no verbal en manifestaciones humanas como los graffiti, la publicidad, los símbolos patrios, entre otros.",
+      "que_evalua": "La capacidad para identificar una descripción verbal a partir de elementos visuales del texto.",
+      "justificacion_correcta": "La opción D es correcta porque el ícono de sostenibilidad señala dos ideas presentes en el texto: se emplean menos recursos para producir carne de insectos (la cuarta parte del alimento respecto a una vaca) y los insectos no necesitan refrigeración. Por tanto, el ícono hace referencia a un uso eficiente de recursos y una reducción de la emisión de contaminantes.",
+      "opciones_incorrectas": {
+        "A": "El texto no presenta evidencia de que esto sea parte de un programa formal de seguridad alimentaria.",
+        "B": "El texto no habla de reciclaje; el ícono de reciclaje tiene tres flechas en triángulo, que no es el descrito.",
+        "C": "El texto más bien indica lo contrario: no se necesita tecnología (como refrigeración), no que se usen tecnologías limpias de fabricación."
+      },
+      "imagen_figura": null,
+      "contexto_id": "insectos",
+      "contexto_titulo": "Insectos a la carta (preguntas 1 a 4)"
+    },
+    {
+      "id": "I_1380373",
+      "numero": 2,
+      "enunciado": "Los datos que se presentan en el texto 'INSECTOS A LA CARTA' se han tomado de",
+      "imagen": null,
+      "opciones": {
+        "A": "Mario Chumpitazi.",
+        "B": "la FAO.",
+        "C": "Rumpold y Schlüter.",
+        "D": "Infografías S.O.S."
+      },
+      "clave": "B",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Diseño un esquema de interpretación, teniendo en cuenta el tipo de texto, tema, interlocutor e intención comunicativa.",
+      "que_evalua": "La capacidad para identificar las voces o fuentes de información en un texto.",
+      "justificacion_correcta": "La opción B es correcta porque en la referencia del texto, ubicada en la parte inferior, aparece la expresión 'Tomado y adaptado de: Chumpitazi, M. (2014)... con datos de Archivos FAO (Food and Agriculture Organization)'. La institución fuente de los datos es la FAO.",
+      "opciones_incorrectas": {
+        "A": "Mario Chumpitazi es el creador de la infografía, no la fuente de los datos.",
+        "C": "Rumpold y Schlüter son citados sobre el primer estudio sobre insectos en la alimentación del futuro, no como fuente general de los datos.",
+        "D": "Infografías S.O.S. es la empresa que financia la creación de infografías, no la fuente de los datos."
+      },
+      "imagen_figura": null,
+      "contexto_id": "insectos",
+      "contexto_titulo": "Insectos a la carta (preguntas 1 a 4)"
+    },
+    {
+      "id": "I_1380432",
+      "numero": 3,
+      "enunciado": "Considere la siguiente información que no está en el texto anterior: 'No se conocen casos de transmisión de enfermedades o parásitos a humanos derivados del consumo de insectos (siempre que los insectos hayan sido manipulados en las mismas condiciones de higiene que cualquier otro alimento)' [FAO, 2013]. ¿Con cuál de los apartados del texto 'INSECTOS A LA CARTA' está relacionada la anterior información?",
+      "imagen": null,
+      "opciones": {
+        "A": "\"¿Cuántas especies de insectos podemos consumir?\"",
+        "B": "\"Producción de carne\".",
+        "C": "\"Anatomía de un insecto\".",
+        "D": "\"Beneficios para los humanos\"."
+      },
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "ALTA",
+      "estandar": "Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.",
+      "que_evalua": "La capacidad para establecer relaciones entre un texto externo y los apartados de un texto dado.",
+      "justificacion_correcta": "La opción C es correcta porque en el apartado 'Anatomía de un insecto' se mencionan las precauciones que se deben tener al momento de consumir insectos ('hay insectos que pueden tener efectos tóxicos o ser hospedadores de parásitos'), y el texto de la pregunta complementa esa información al afirmar que no se conocen casos de transmisión de enfermedades si se siguen condiciones de higiene.",
+      "opciones_incorrectas": {
+        "A": "El apartado sobre cuántas especies se pueden consumir no está relacionado con la inexistencia de transmisión de enfermedades.",
+        "B": "El apartado de producción de carne habla sobre eficiencia alimentaria, no sobre enfermedades.",
+        "D": "El apartado de beneficios habla sobre proteínas y vitaminas. Aunque la ausencia de enfermedades es un beneficio, el apartado específico sobre ese tema es 'Anatomía de un insecto'."
+      },
+      "imagen_figura": null,
+      "contexto_id": "insectos",
+      "contexto_titulo": "Insectos a la carta (preguntas 1 a 4)"
+    },
+    {
+      "id": "I_1380414",
+      "numero": 4,
+      "enunciado": "Suponga que van a publicarse cuatro informes que tienen los títulos de las opciones de respuesta. ¿Dentro de cuál podría incluirse el texto 'INSECTOS A LA CARTA', de manera que el título resulte pertinente?",
+      "imagen": null,
+      "opciones": {
+        "A": "De la sobreexplotación a la gestión inteligente de los recursos naturales.",
+        "B": "Saciedad y obesidad, hambruna y malnutrición: una paradoja global.",
+        "C": "Salud y cultura: biología y antropología del desarrollo de hábitos alimentarios.",
+        "D": "Nutrición y seguridad alimentaria: una estrategia de cambio."
+      },
+      "clave": "D",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "ALTA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para identificar relaciones y funciones entre dos partes de un texto y evaluar su pertinencia temática.",
+      "justificacion_correcta": "La opción D es correcta porque el texto presenta a los insectos como alternativa proteínica que tiene garantías sanitarias ('estrategia de cambio') y aborda tanto el aspecto nutricional (proteínas, vitaminas) como la seguridad alimentaria (producción eficiente, conservación sin refrigeración). Estos elementos corresponden al título 'Nutrición y seguridad alimentaria: una estrategia de cambio'.",
+      "opciones_incorrectas": {
+        "A": "El texto no menciona la sobreexplotación de recursos naturales.",
+        "B": "El texto no aborda la obesidad ni la hambruna como paradoja; propone una alternativa alimentaria.",
+        "C": "Aunque el texto menciona que los insectos son repulsivos en la cultura occidental, no desarrolla conceptos de antropología ni hábitos alimentarios culturales."
+      },
+      "imagen_figura": null,
+      "contexto_id": "insectos",
+      "contexto_titulo": "Insectos a la carta (preguntas 1 a 4)"
+    },
+    {
+      "id": "I_1391953",
+      "numero": 5,
+      "enunciado": "¿Cuál es el aporte de la agencia Reuters al contenido del artículo sobre el Premio Nobel de Física?",
+      "imagen": null,
+      "opciones": {
+        "A": "Informar que Novoselov es el físico más joven desde 1973 premiado con un Nobel de Física por el Comité Nobel.",
+        "B": "Informar que el Comité Nobel ha determinado que Novoselov es el físico más joven premiado con un Nobel desde 1973.",
+        "C": "Informar que Geim es el físico más joven desde 1973 premiado con un Nobel de Física por el Comité Nobel.",
+        "D": "Informar que el Comité Nobel ha determinado que Geim es el físico más joven premiado con un Nobel desde 1973."
+      },
+      "clave": "B",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para identificar las voces en un texto y distinguir quién dice qué.",
+      "justificacion_correcta": "La opción B es correcta. El texto afirma: 'El Comité Nobel ha informado que Novoselov, de 36 años, es el físico más joven premiado con un Nobel desde 1973, informa la agencia Reuters'. Reuters transmite la información del Comité Nobel sobre Novoselov.",
+      "opciones_incorrectas": {
+        "A": "La opción A confunde el sujeto: dice que Novoselov es el más joven 'desde 1973 premiado con un Nobel de Física', cuando el texto dice 'premiado con un Nobel desde 1973'.",
+        "C": "Reuters informa sobre Novoselov, no sobre Geim.",
+        "D": "El texto se refiere a Novoselov como el más joven, no a Geim."
+      },
+      "imagen_figura": null,
+      "contexto_id": "grafeno",
+      "contexto_titulo": "El Nobel de Física y el grafeno (preguntas 5 a 8)"
+    },
+    {
+      "id": "I_1391961",
+      "numero": 6,
+      "enunciado": "Según el texto, el grafeno es diferente del material de las minas de los lápices porque",
+      "imagen": null,
+      "opciones": {
+        "A": "proviene del carbono y la mina de lápiz está hecha de grafito.",
+        "B": "puede conducir la corriente y las minas de lápiz son aislantes.",
+        "C": "está hecho de grafito y las minas de lápiz son de carbono.",
+        "D": "consiste de una sola capa de grafito y la mina de lápiz tiene varias capas."
+      },
+      "clave": "D",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "ALTA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para inferir implicaciones implícitas a partir de la lectura global de un texto.",
+      "justificacion_correcta": "La opción D es correcta. El texto afirma que Geim y Novoselov 'obtuvieron el grafeno a partir del grafito normal, el material de las minas de los lápices, y lograron una lámina de un grosor de solo un átomo'. Esto implica que la diferencia es que el grafeno es una sola capa de grafito, mientras que las minas de lápiz tienen múltiples capas.",
+      "opciones_incorrectas": {
+        "A": "Tanto el grafeno como el grafito (minas de lápiz) provienen del carbono; el texto dice que el grafeno es carbono en 'configuración plana'.",
+        "B": "El texto no afirma que las minas de lápiz sean aislantes.",
+        "C": "Es al revés: tanto el grafeno como las minas son configuraciones del carbono (grafito)."
+      },
+      "imagen_figura": null,
+      "contexto_id": "grafeno",
+      "contexto_titulo": "El Nobel de Física y el grafeno (preguntas 5 a 8)"
+    },
+    {
+      "id": "I_1391978",
+      "numero": 7,
+      "enunciado": "En el texto, se comprende que el grafeno se considera un material 'bidimensional' porque",
+      "imagen": null,
+      "opciones": {
+        "A": "tiene una alta densidad.",
+        "B": "es estable y resistente.",
+        "C": "tiene un átomo de grosor.",
+        "D": "es casi transparente."
+      },
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "ALTA",
+      "estandar": "Diseño un esquema de interpretación, teniendo en cuenta el tipo de texto, tema, interlocutor e intención comunicativa.",
+      "que_evalua": "La capacidad para inferir implicaciones implícitas a partir de la lectura global de un texto.",
+      "justificacion_correcta": "La opción C es correcta. El texto afirma que Geim y Novoselov 'lograron una lámina de un grosor de solo un átomo' y que los físicos pueden estudiar 'materiales bidimensionales con propiedades únicas'. Tener un solo átomo de grosor implica tener solo dos dimensiones (largo y ancho, sin profundidad apreciable), de ahí el término 'bidimensional'.",
+      "opciones_incorrectas": {
+        "A": "La alta densidad no implica bidimensionalidad; algo puede ser muy denso y tener tres dimensiones.",
+        "B": "La estabilidad y resistencia no son atributos que determinen el número de dimensiones.",
+        "D": "La transparencia no implica bidimensionalidad; hay objetos tridimensionales transparentes."
+      },
+      "imagen_figura": null,
+      "contexto_id": "grafeno",
+      "contexto_titulo": "El Nobel de Física y el grafeno (preguntas 5 a 8)"
+    },
+    {
+      "id": "I_1391980",
+      "numero": 8,
+      "enunciado": "De acuerdo con la información acerca de los ganadores del premio Nobel de Física, ¿cuál de los siguientes sería el título más adecuado para este artículo?",
+      "imagen": null,
+      "opciones": {
+        "A": "Nobel de Física para dos científicos europeos por sus trabajos sobre el grafeno.",
+        "B": "Nobel de Física para dos científicos holandeses por sus trabajos sobre el grafeno.",
+        "C": "Nobel de Física para dos científicos británicos por sus trabajos sobre el grafeno.",
+        "D": "Nobel de Física para dos científicos suecos por sus trabajos sobre el grafeno."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "BAJA",
+      "estandar": "Reconozco las características de los diversos tipos de texto que leo.",
+      "que_evalua": "La capacidad para identificar características de los personajes del texto presentadas de manera explícita.",
+      "justificacion_correcta": "La opción A es correcta. El texto afirma: 'Geim y Novoselov, dos científicos europeos —Geim tiene nacionalidad holandesa y Novoselov es ruso-británico—'. Como son europeos pero no de la misma nacionalidad, la única descripción correcta que abarca a ambos es 'científicos europeos'.",
+      "opciones_incorrectas": {
+        "B": "Solo Geim es holandés; Novoselov es ruso-británico.",
+        "C": "Novoselov tiene una de sus nacionalidades como británico, pero Geim es holandés.",
+        "D": "Ninguno de los dos es sueco; el Comité Nobel que los premió sí es sueco."
+      },
+      "imagen_figura": null,
+      "contexto_id": "grafeno",
+      "contexto_titulo": "El Nobel de Física y el grafeno (preguntas 5 a 8)"
+    },
+    {
+      "id": "I_1473686",
+      "numero": 9,
+      "enunciado": "¿Cuál de los siguientes enunciados puede considerarse la antítesis del argumento central del texto 'La contaminación marina'?",
+      "imagen": null,
+      "opciones": {
+        "A": "La respuesta al problema de la contaminación es la dilución.",
+        "B": "Las iniciativas dirigidas a la protección marítima son casi inexistentes.",
+        "C": "Los océanos han sido contaminados por los humanos durante miles de años.",
+        "D": "Los humanos han comenzado a advertir la insostenibilidad de la filosofía de la dilución."
+      },
+      "clave": "A",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "ALTA",
+      "estandar": "Diseño un esquema de interpretación, teniendo en cuenta el tipo de texto, tema, interlocutor e intención comunicativa.",
+      "que_evalua": "La capacidad para inferir la tesis contraria a la tesis principal de un texto.",
+      "justificacion_correcta": "La opción A es correcta. El texto argumenta que la ideología de la 'dilución' ha llevado al colapso de los ecosistemas oceánicos, con 400 zonas muertas como evidencia. La antítesis de este argumento es precisamente el eslogan que critica el texto: 'La solución a la contaminación es la dilución'.",
+      "opciones_incorrectas": {
+        "B": "La tesis contraria a que las iniciativas de protección son casi inexistentes sería que abundan; el texto no argumenta esto.",
+        "C": "Esta afirmación es parte de lo que el texto dice, no su antítesis.",
+        "D": "Esta afirmación también es parte del argumento del texto, no su contrario."
+      },
+      "imagen_figura": null,
+      "contexto_id": "contaminacion",
+      "contexto_titulo": "La contaminación marina (preguntas 9 a 11)"
+    },
+    {
+      "id": "I_1473693",
+      "numero": 10,
+      "enunciado": "El enunciado 'Los científicos han descubierto 400 zonas muertas con estas características por todo el planeta'",
+      "imagen": null,
+      "opciones": {
+        "A": "refuerza la postura de aquellos que promueven la ideología de la 'dilución'.",
+        "B": "controvierte la tesis sobre el incremento alarmante de la contaminación marítima.",
+        "C": "apoya el argumento de la contaminación marítima a causa de la actividad humana.",
+        "D": "refuta la creencia popular de que la contaminación marítima es un fenómeno reciente."
+      },
+      "clave": "C",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para identificar la función que cumple un enunciado dentro del argumento de un texto.",
+      "justificacion_correcta": "La opción C es correcta. Las 400 zonas muertas son evidencia de los daños causados por los vertidos industriales y los contaminantes de la actividad humana, apoyando así la tesis central del texto.",
+      "opciones_incorrectas": {
+        "A": "Las zonas muertas prueban que la ideología de la dilución es incorrecta, no la refuerzan.",
+        "B": "Las zonas muertas muestran exactamente lo contrario: que la contaminación sí ha crecido de forma alarmante.",
+        "D": "Las zonas muertas apoyan que la contaminación ha crecido recientemente, no la refutan."
+      },
+      "imagen_figura": null,
+      "contexto_id": "contaminacion",
+      "contexto_titulo": "La contaminación marina (preguntas 9 a 11)"
+    },
+    {
+      "id": "I_1473719",
+      "numero": 11,
+      "enunciado": "¿Qué recurso emplean los autores del texto 'La contaminación marina' para reforzar su tesis principal?",
+      "imagen": null,
+      "opciones": {
+        "A": "Evidencia científica.",
+        "B": "Un estudio de caso.",
+        "C": "Datos gubernamentales.",
+        "D": "Investigaciones propias."
+      },
+      "clave": "A",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "ALTA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para reconocer recursos argumentativos en un texto.",
+      "justificacion_correcta": "La opción A es correcta. Los autores usan evidencia científica para probar que la filosofía de la dilución no tiene mayor sentido. En el segundo párrafo se explica detalladamente el efecto de los contaminantes en el océano, con referencias a estudios científicos (400 zonas muertas, efectos en la cadena alimentaria).",
+      "opciones_incorrectas": {
+        "B": "Un estudio de caso se centra en un único ejemplo para llegar a conclusiones generales; el texto usa múltiples evidencias.",
+        "C": "El texto no cita entidades gubernamentales como fuentes.",
+        "D": "El texto es de National Geographic y no menciona investigaciones propias de los autores."
+      },
+      "imagen_figura": null,
+      "contexto_id": "contaminacion",
+      "contexto_titulo": "La contaminación marina (preguntas 9 a 11)"
+    },
+    {
+      "id": "I_1479575",
+      "numero": 12,
+      "enunciado": "Según el texto de García Márquez, Fermina Daza",
+      "imagen": null,
+      "opciones": {
+        "A": "tiene exactamente 50 años de edad.",
+        "B": "debe tener más de 50 años de edad.",
+        "C": "debe tener menos de 50 años de edad.",
+        "D": "tiene la misma edad que tenía su esposo."
+      },
+      "clave": "B",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para realizar una inferencia simple a partir de la información explícita en un texto.",
+      "justificacion_correcta": "La opción B es correcta. El texto afirma que Fermina Daza quería 'recuperar todo cuanto había tenido que ceder en medio siglo de una servidumbre'. Esto indica que estuvo casada 50 años. Dado que el matrimonio no ocurre al nacer, ella debe tener más de 50 años.",
+      "opciones_incorrectas": {
+        "A": "El texto indica que duró 50 años casada, no que tenga exactamente 50 años; nadie se casa al nacer.",
+        "C": "Si estuvo casada 50 años, es imposible que tenga menos de esa edad.",
+        "D": "No hay información en el texto que indique que ella y su esposo tenían la misma edad."
+      },
+      "imagen_figura": null,
+      "contexto_id": "fermina",
+      "contexto_titulo": "El amor en los tiempos del cólera — García Márquez (preguntas 12 a 14)"
+    },
+    {
+      "id": "I_1479564",
+      "numero": 13,
+      "enunciado": "Según el texto de García Márquez, Fermina Daza atraviesa una crisis provocada por",
+      "imagen": null,
+      "opciones": {
+        "A": "la reciente muerte de su marido.",
+        "B": "la presencia de un fantasma en su casa.",
+        "C": "una enorme ofensa de la que fue víctima.",
+        "D": "no hallar respuesta a las preguntas que la atormentan."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "BAJA",
+      "estandar": "Identifico en obras de la literatura universal el lenguaje, las características formales, las épocas y escuelas, estilos, tendencias, temáticas, géneros y autores, entre otros aspectos.",
+      "que_evalua": "La capacidad para ubicar información explícita en un texto literario.",
+      "justificacion_correcta": "La opción A es correcta. El texto afirma: 'una servidumbre que la había hecho feliz, sin duda, pero que una vez muerto el esposo no le dejaba a ella ni los vestigios de su identidad'. La causa de la crisis es la muerte del esposo.",
+      "opciones_incorrectas": {
+        "B": "El 'fantasma' es una metáfora de Fermina sintiéndose perdida en su propia casa; no hay un fantasma real.",
+        "C": "La 'ofensa' mencionada es la que Fermina le envió a Florentino en la carta rabiosa, no la que ella sufrió.",
+        "D": "Las preguntas sin respuesta son consecuencia de la muerte del esposo, no la causa de la crisis."
+      },
+      "imagen_figura": null,
+      "contexto_id": "fermina",
+      "contexto_titulo": "El amor en los tiempos del cólera — García Márquez (preguntas 12 a 14)"
+    },
+    {
+      "id": "I_1479582",
+      "numero": 14,
+      "enunciado": "De acuerdo con el primer párrafo del fragmento de García Márquez, Fermina Daza quiere",
+      "imagen": null,
+      "opciones": {
+        "A": "recobrar su propia identidad.",
+        "B": "reconciliarse con su antiguo amante.",
+        "C": "hallar respuesta a las preguntas de su marido.",
+        "D": "alcanzar la felicidad que siempre le fue esquiva."
+      },
+      "clave": "A",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "BAJA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para caracterizar las voces y motivaciones en un texto literario.",
+      "justificacion_correcta": "La opción A es correcta. El texto afirma: 'Quería ser otra vez ella misma, recuperar todo cuanto había tenido que ceder en medio siglo de una servidumbre que... no le dejaba a ella ni los vestigios de su identidad'. Recuperar su identidad es el deseo central.",
+      "opciones_incorrectas": {
+        "B": "No hay evidencia en el primer párrafo de que Fermina desee reconciliarse con nadie.",
+        "C": "Fermina no halla respuestas a sus propias preguntas cotidianas (no las del marido) porque él ya no está.",
+        "D": "El texto dice que la servidumbre 'la había hecho feliz'; es decir, sí fue feliz, no que la felicidad le fuera esquiva."
+      },
+      "imagen_figura": null,
+      "contexto_id": "fermina",
+      "contexto_titulo": "El amor en los tiempos del cólera — García Márquez (preguntas 12 a 14)"
+    },
+    {
+      "id": "I_1487569",
+      "numero": 15,
+      "enunciado": "De acuerdo con expresiones del texto anterior como '¡Qué intranquilidad siente uno!', '¡Cuántos perecemos víctimas del hambre!' y '¡Cuántos mueren así entre nosotros!', el narrador pretende principalmente",
+      "imagen": null,
+      "opciones": {
+        "A": "alarmar a los interlocutores.",
+        "B": "despertar la ira de los interlocutores.",
+        "C": "llamar la atención de los interlocutores.",
+        "D": "hacer partícipes de sus ideas a los interlocutores."
+      },
+      "clave": "D",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "ALTA",
+      "estandar": "Elaboro hipótesis de interpretación atendiendo a la intención comunicativa y al sentido global del texto que leo.",
+      "que_evalua": "La capacidad para reconocer recursos retóricos en un texto literario.",
+      "justificacion_correcta": "La opción D es correcta. Las exclamaciones son una estrategia para hacer al lector partícipe de la historia, compartiendo los pensamientos y perspectivas de los personajes. El narrador busca que el interlocutor se identifique con las ideas que defiende cada animal.",
+      "opciones_incorrectas": {
+        "A": "Las exclamaciones buscan generar empatía y participación, no alarmar.",
+        "B": "Las exclamaciones expresan angustia, no ira.",
+        "C": "Llamar la atención sería una consecuencia superficial; el propósito más profundo es hacer partícipes de los pensamientos."
+      },
+      "imagen_figura": null,
+      "contexto_id": "origen_mal",
+      "contexto_titulo": "El origen del mal — Tolstoi (preguntas 15 a 17)"
+    },
+    {
+      "id": "I_1487610",
+      "numero": 16,
+      "enunciado": "De acuerdo con el texto 'El origen del mal' de Tolstoi, los personajes de la historia son",
+      "imagen": null,
+      "opciones": {
+        "A": "el ermitaño, la serpiente, los lobos y el árbol.",
+        "B": "el ermitaño, el cuervo, la serpiente, el gavilán y el árbol.",
+        "C": "el ermitaño, el cuervo, el palomo y la serpiente.",
+        "D": "el ermitaño, el cuervo, el palomo, la serpiente y el ciervo."
+      },
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "BAJA",
+      "estandar": "Leo textos literarios de diversa índole, género, temática y origen.",
+      "que_evalua": "La capacidad para identificar los personajes del texto presentados de manera explícita.",
+      "justificacion_correcta": "La opción D es correcta. El primer párrafo del texto enuncia: 'se cobijaron allí un cuervo, un palomo, un ciervo y una serpiente'; además está el ermitaño. Son exactamente cinco personajes.",
+      "opciones_incorrectas": {
+        "A": "Los lobos y el árbol son mencionados incidentalmente pero no son personajes de la historia.",
+        "B": "El gavilán y el árbol son mencionados pero no participan como personajes activos.",
+        "C": "Falta el ciervo, que sí es un personaje activo con su propia intervención."
+      },
+      "imagen_figura": null,
+      "contexto_id": "origen_mal",
+      "contexto_titulo": "El origen del mal — Tolstoi (preguntas 15 a 17)"
+    },
+    {
+      "id": "I_1487609",
+      "numero": 17,
+      "enunciado": "Según el texto 'El origen del mal', la serpiente intervino luego de que lo hicieran",
+      "imagen": null,
+      "opciones": {
+        "A": "el cuervo y el palomo.",
+        "B": "el cuervo y el ciervo.",
+        "C": "el palomo y el ermitaño.",
+        "D": "el palomo y el ciervo."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "BAJA",
+      "estandar": "Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes.",
+      "que_evalua": "La capacidad para reconocer el orden temporal en el que ocurren las acciones o hechos en un texto.",
+      "justificacion_correcta": "La opción A es correcta. En el texto el orden de intervención es: primero el cuervo (párrafo 2), luego el palomo (párrafo 3), después la serpiente (párrafo 4), el ciervo (párrafo 5) y finalmente el ermitaño (último párrafo). La serpiente intervino después del cuervo y el palomo.",
+      "opciones_incorrectas": {
+        "B": "El ciervo interviene después de la serpiente, no antes.",
+        "C": "El ermitaño interviene al final, después de la serpiente.",
+        "D": "El ciervo interviene después de la serpiente, en el párrafo 5."
+      },
+      "imagen_figura": null,
+      "contexto_id": "origen_mal",
+      "contexto_titulo": "El origen del mal — Tolstoi (preguntas 15 a 17)"
+    },
+    {
+      "id": "I_1122804",
+      "numero": 18,
+      "enunciado": "Lo que permite entender que el texto 1 ('Del condón y otros demonios') es una respuesta al texto 2 (el anuncio publicitario) es la alusión",
+      "imagen": null,
+      "opciones": {
+        "A": "directa al doctor J. G.",
+        "B": "directa a los condones.",
+        "C": "indirecta al machismo.",
+        "D": "indirecta a los valores morales."
+      },
+      "clave": "A",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "ALTA",
+      "estandar": "Relaciono el significado de los textos que leo con los contextos sociales, culturales y políticos en los cuales se han producido.",
+      "que_evalua": "La capacidad para establecer relaciones entre dos textos e identificar lo que permite comprender su vínculo.",
+      "justificacion_correcta": "La opción A es correcta. El texto 1 menciona directamente al 'doctor J. G.' como líder de grupos laicos que publican anuncios cuestionando el condón, y el texto 2 es precisamente uno de esos anuncios firmado por el 'Dr. J. G.'. Esta mención directa establece el vínculo entre ambos textos.",
+      "opciones_incorrectas": {
+        "B": "Que dos textos hablen del mismo tema (condones) no establece que uno es respuesta del otro.",
+        "C": "El machismo se menciona en el texto 1, pero no aparece en el texto 2.",
+        "D": "Los valores morales aparecen en el título del texto 2, pero el texto 1 no los menciona directamente."
+      },
+      "imagen_figura": null,
+      "contexto_id": "condon",
+      "contexto_titulo": "Del condón y otros demonios (textos 1 y 2, preguntas 18 a 20)"
+    },
+    {
+      "id": "I_1122793",
+      "numero": 19,
+      "enunciado": "Respectivamente, los textos 1 y 2 son de carácter",
+      "imagen": null,
+      "opciones": {
+        "A": "científico y panfletario.",
+        "B": "argumentativo y panfletario.",
+        "C": "científico y narrativo.",
+        "D": "narrativo y científico."
+      },
+      "clave": "B",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.4",
+      "dificultad": "ALTA",
+      "estandar": "Asumo una actitud crítica frente a los textos que leo y elaboro.",
+      "que_evalua": "La capacidad para reconocer los tipos de texto a partir de sus características discursivas.",
+      "justificacion_correcta": "La opción B es correcta. El texto 1 es argumentativo: el autor defiende una tesis (el uso del condón) usando cifras y razones en lenguaje no técnico. El texto 2 es panfletario: usa lenguaje alarmista ('Abominable concurso'), estadísticas de dudosa procedencia y fuentes no especializadas para persuadir contra el condón.",
+      "opciones_incorrectas": {
+        "A": "El texto 1 no es científico; usa razones y datos pero no es técnico ni especializado.",
+        "C": "El texto 2 no es narrativo; no cuenta una historia.",
+        "D": "El texto 1 no es narrativo y el texto 2 no es científico (sus estadísticas no son confiables)."
+      },
+      "imagen_figura": null,
+      "contexto_id": "condon",
+      "contexto_titulo": "Del condón y otros demonios (textos 1 y 2, preguntas 18 a 20)"
+    },
+    {
+      "id": "I_1122887",
+      "numero": 20,
+      "enunciado": "El autor del texto 2 (anuncio publicitario) recurre a datos estadísticos para",
+      "imagen": null,
+      "opciones": {
+        "A": "inducir el uso del condón entre los lectores homosexuales.",
+        "B": "convencer a los lectores de que el uso del condón es seguro.",
+        "C": "estimular el uso del preservativo entre los lectores heterosexuales.",
+        "D": "persuadir a los lectores de que el uso del condón es inseguro."
+      },
+      "clave": "D",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "ALTA",
+      "estandar": "Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.",
+      "que_evalua": "La capacidad para inferir el propósito comunicativo de un texto panfletario.",
+      "justificacion_correcta": "La opción D es correcta. El texto 2 es un anuncio panfletario que usa estadísticas (tasas de falla del 10-33%) para reforzar la tesis de que el condón no es seguro, con la intención última de persuadir a los lectores de dejar de usarlo y promover la abstinencia sexual.",
+      "opciones_incorrectas": {
+        "A": "El texto busca lo contrario: disuadir del uso del condón.",
+        "B": "El texto busca demostrar que el condón NO es seguro.",
+        "C": "El texto busca disuadir a todos los lectores del uso del condón, no estimularlo."
+      },
+      "imagen_figura": null,
+      "contexto_id": "condon",
+      "contexto_titulo": "Del condón y otros demonios (textos 1 y 2, preguntas 18 a 20)"
+    }
+  ],
+  "preservar_orden_preguntas": true
+}

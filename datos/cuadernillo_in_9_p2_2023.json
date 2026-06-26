@@ -1,0 +1,610 @@
+{
+  "id": "ingl-9-p2-2023",
+  "area": "Inglés",
+  "area_slug": "ingles",
+  "grado": "9",
+  "periodo": "II",
+  "version": "2023",
+  "nombre": "Cuadernillo de Inglés — Grado 9° — Período II",
+  "tiempo_minutos": 60,
+  "num_preguntas": 22,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "nota": "Inglés se rige por el Marco Común Europeo (MCER): Pre A1, A1, A2, B1. Cada Parte comparte un contexto (banco de palabras o texto). Estructura igual al cuadernillo de 11° validado.",
+  "competencias": {
+    "a": "Parte 1 — Conocimiento léxico — emparejar vocabulario con su descripción",
+    "b": "Parte 2 — Comprensión de lectura — localizar e inferir información en un texto",
+    "c": "Parte 3 — Conocimiento pragmático — intervención adecuada en conversaciones breves",
+    "d": "Parte 4 — Conocimiento léxico-gramatical — completar un texto con espacios"
+  },
+  "afirmaciones": {
+    "1": "Pre A1 — Reconoce palabras y expresiones básicas, con apoyo visual",
+    "2": "A1 — Comprende frases sencillas y vocabulario cotidiano",
+    "3": "A2 — Identifica información explícita en textos cotidianos breves"
+  },
+  "evidencias": {
+    "2.a": "A1 en Parte 1",
+    "1.b": "Pre A1 en Parte 2",
+    "3.b": "A2 en Parte 2",
+    "3.c": "A2 en Parte 3",
+    "3.d": "A2 en Parte 4"
+  },
+  "cmc": [],
+  "contextos": {
+    "ctx-parte1": {
+      "titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5 DE ACUERDO CON EL EJEMPLO Lee las descripciones de la columna de la izquierda (1 - 5). ¿Cuál palabra de la columna de la derecha (A - G) concuerda con cada descripción? La opción H se usa para el ejemplo. Sobran dos palabras más. En las preguntas 1 - 5, marca la letra correcta A - G en tu hoja de respuestas. Ejemplo:",
+      "rango_preguntas": "1 a 5"
+    },
+    "ctx-parte2": {
+      "titulo": "Texto de comprensión de lectura",
+      "texto": "RESPONDE LAS PREGUNTAS 6 A 10 DE ACUERDO CON EL EJEMPLO ¿Dónde puedes ver estos avisos? En las preguntas 6 - 10, marca A, B o C en tu hoja de respuestas. Ejemplo: Respuesta: 0. A B C",
+      "rango_preguntas": "6 a 10"
+    },
+    "ctx-parte3": {
+      "titulo": "Conversaciones breves",
+      "texto": "RESPONDE LAS PREGUNTAS 11 A 15 DE ACUERDO CON EL EJEMPLO Completa las cinco conversaciones. En las preguntas 11 - 15, marca A, B o C en tu hoja de respuestas. Ejemplo:",
+      "rango_preguntas": "11 a 15"
+    },
+    "ctx-parte4": {
+      "titulo": "that has ever lived.",
+      "texto": "Whales can be gray or white and (20)________ kinds are beautiful. Whales are fat (21)________ this allows them to live in cold waters. Many kinds of whales, especially the biggest ones, swim in groups. These groups can have different quantities of members, from a few animals to more than 1,000, but one type of whale, called the Baleen whale, often (22)________ alone.",
+      "rango_preguntas": "16 a 22"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "I_103863R",
+      "numero": 1,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You do this when someone hits you.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cry",
+        "C": "dentist",
+        "D": "doctor",
+        "E": "hospital",
+        "F": "hurt",
+        "G": "stomachache"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, dado que llorar es la consecuencia más probable luego de que alguien le pegue o golpee a alguien más.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_103864R",
+      "numero": 2,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You are tired and have a cough when you get this.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cry",
+        "C": "dentist",
+        "D": "doctor",
+        "E": "hospital",
+        "F": "hurt",
+        "G": "stomachache"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción A, dado que esta es la única enfermedad de la lista cuyos síntomas incluyen tos y sensación de cansancio.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_103865R",
+      "numero": 3,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You see this person when you are not well.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cry",
+        "C": "dentist",
+        "D": "doctor",
+        "E": "hospital",
+        "F": "hurt",
+        "G": "stomachache"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción D, dado que un doctor es el profesional que uno ve cuando no se siente bien o está enfermo en general.",
+      "opciones_incorrectas": {
+        "C": ") también son profesionales de la salud, pero a estos solamente se acude cuando se tienen enfermedades dentales, no para enfermedades generales"
+      }
+    },
+    {
+      "id": "I_1038665",
+      "numero": 4,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You can go to this place when your body isn’t O.K. Descripciones palabras ===== PÁGINA 3 ===== Inglés - Cuadernillo 2 Saber 9.° 3</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cry",
+        "C": "dentist",
+        "D": "doctor",
+        "E": "hospital",
+        "F": "hurt",
+        "G": "stomachache"
+      },
+      "clave": "E",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción E, hospital, dado que este es único lugar de la lista a donde uno puede acudir cuando no se está bien.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_1038679",
+      "numero": 5,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You can have this when you eat too much.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cry",
+        "C": "dentist",
+        "D": "doctor",
+        "E": "hospital",
+        "F": "hurt",
+        "G": "stomachache"
+      },
+      "clave": "G",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción G, dado que un dolor de estómago es la única enfermedad de la lista que se produce por una gran ingesta de comida.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_1083187",
+      "numero": 6,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Texto de comprensión de lectura",
+      "enunciado": "",
+      "opciones": {
+        "A": "in a living room",
+        "B": "in a bathroom",
+        "C": "in a classroom"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción C, dado que el salón de clase es el único lugar de la lista en el que se podría encontrar un aviso que contenga la hora de inicio de un examen.",
+      "opciones_incorrectas": {},
+      "imagen_figura": "assets/cuadernillo-in-9-p2/q06.png"
+    },
+    {
+      "id": "I_1083193",
+      "numero": 7,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Texto de comprensión de lectura",
+      "enunciado": "",
+      "opciones": {
+        "A": "in a flat",
+        "B": "in a shop",
+        "C": "in a kitchen"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción A, dado que solamente en una tienda se pueden vender camisetas y fotos.",
+      "opciones_incorrectas": {},
+      "imagen_figura": "assets/cuadernillo-in-9-p2/q07.png"
+    },
+    {
+      "id": "I_1083207",
+      "numero": 8,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Texto de comprensión de lectura",
+      "enunciado": "",
+      "opciones": {
+        "A": "on a bike",
+        "B": "on a boat",
+        "C": "on a bus"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción C, dado que en un bus es posible encontrar un aviso en el que se prohíba hablar con el conductor.",
+      "opciones_incorrectas": {},
+      "imagen_figura": "assets/cuadernillo-in-9-p2/q08.png"
+    },
+    {
+      "id": "I_1083218",
+      "numero": 9,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Texto de comprensión de lectura",
+      "enunciado": "",
+      "opciones": {
+        "A": "in a store",
+        "B": "on a beach",
+        "C": "at a playground ===== PÁGINA 4 ===== 4 Inglés - Cuadernillo 2 Saber 9.° I love my grandma Sue!"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción A, dado que una tienda es el lugar donde normalmente se encontraría un pasillo dotado de juguetes, muñecos y pelotas.",
+      "opciones_incorrectas": {},
+      "imagen_figura": "assets/cuadernillo-in-9-p2/q09.png"
+    },
+    {
+      "id": "I_1083221",
+      "numero": 10,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Texto de comprensión de lectura",
+      "enunciado": "",
+      "opciones": {
+        "A": "at a park",
+        "B": "at a school",
+        "C": "at a zoo"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, dado que un colegio o centro educativo es el lugar en donde se esperaría encontrar avisos acerca de que una clase fue cancelada.",
+      "opciones_incorrectas": {},
+      "imagen_figura": "assets/cuadernillo-in-9-p2/q10.png"
+    },
+    {
+      "id": "I_1628090",
+      "numero": 11,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">I know Jane’s a very good teacher.</p>",
+      "opciones": {
+        "A": "Yes, it is.",
+        "B": "Isn´t she?",
+        "C": "That's a lot"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, dado que el interlocutor 2 hace uso de una pregunta de confirmación (tag question) para poder expresar acuerdo con el enunciado emitido por el interlocutor 1, en donde se dice que Jane es muy buena profesora. Siguiendo las reglas de los tags questions, la oración del interlocutor 1 está en modo afirmativo, por lo que la pregunta de confirmación del interlocutor 2 está en modo negativo.",
+      "opciones_incorrectas": {
+        "A": "el interlocutor 2 está haciendo una afirmación de un sujeto no humano al usar el pronombre it, mientras que la",
+        "C": "menciona que algo representa una cantidad enorme. Ninguna de estas opciones responde al enunciado del interlocutor 1, quien asegura que Jane es muy buena profesora"
+      }
+    },
+    {
+      "id": "I_1628108",
+      "numero": 12,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">Why don’t we go shopping after school?</p>",
+      "opciones": {
+        "A": "Yes, I can send it.",
+        "B": "That’s a good idea.",
+        "C": "I’ve got one, thanks."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, qué buena idea, dado que esta es la única en la que el interlocutor 2 expresa de manera apropiada estar de acuerdo con la propuesta del interlocutor 1; en este caso, ir de compras.",
+      "opciones_incorrectas": {
+        "A": "el interlocutor 2 habla de la posibilidad que tiene de enviar algo y, en la",
+        "C": "relata ya contar con un objeto. Ninguna de estas respuestas es apropiada para la situación planteada por el interlocutor 1 en la que se sugiere ir de compras después de la jornada en el colegio. ===== PÁGINA 30 ===== 30 Inglés 9.º"
+      }
+    },
+    {
+      "id": "I_1628111",
+      "numero": 13,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">Thanks for helping with my homework.</p>",
+      "opciones": {
+        "A": "No way.",
+        "B": "No problem.",
+        "C": "No, it wasn’t."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, no hay problema, dado que esta es la única opción en la que el interlocutor 2 expresa empatía ante el agradecimiento hecho por el interlocutor 1.",
+      "opciones_incorrectas": {
+        "A": "el interlocutor 2 demuestra sorpresa de forma negativa, mencionando que la situación no es posible. La expresión de la",
+        "C": "se utiliza para aclarar, en este caso de manera negativa, que algo no era lo que se esperaba o de lo que se estaba hablando, lo cual no tiene concordancia con el agradecimiento emitido. Ninguna de estas expresiones responde apropiadamente a las palabras del interlocutor 1 en su enunciado"
+      }
+    },
+    {
+      "id": "I_1628124",
+      "numero": 14,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">Please answer the phone.</p>",
+      "opciones": {
+        "A": "How are you?",
+        "B": "Why can´t you?",
+        "C": "Who are you? ===== PÁGINA 5 ===== Inglés - Cuadernillo 2 Saber 9.° 5"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, dado que, solo en esta, el interlocutor 2 pide la razón por la cual el interlocutor 1 no puede contestar el teléfono.",
+      "opciones_incorrectas": {
+        "A": "pregunta por el estado de ánimo del interlocutor 1. La",
+        "C": "pregunta por quién es el interlocutor 1. Ninguna de estas opciones responde a la petición del interlocutor 1 sobre contestar el teléfono. ===== PÁGINA 31 ===== 31 Inglés 9.º"
+      }
+    },
+    {
+      "id": "I_1628137",
+      "numero": 15,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">I’ll leave now.</p>",
+      "opciones": {
+        "A": "Are you sure?",
+        "B": "She's all right!",
+        "C": "It's big enough."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción A, dado que esta es la única en la que el interlocutor 2 invita a que el interlocutor 1 reflexione acerca de su partida de ese lugar. El interlocutor 2 pretende que, por medio de esa pregunta, el interlocutor 1 evalúe si realmente se irá.",
+      "opciones_incorrectas": {
+        "B": "expresa que una mujer se encuentra bien, la cual no es apropiada para el enunciado que expresa el interlocutor 1. La",
+        "C": "trata de un objeto que es suficientemente grande; sin embargo, el interlocutor 1 no está hablando de ningún objeto, sino expresando el deseo irse de allí. ===== PÁGINA 32 ===== 32 ¿Qué se evalúa en la parte 4 de Inglés? La parte 4 tiene siete preguntas, un ejemplo y tres opciones de respuesta en cad"
+      }
+    },
+    {
+      "id": "I_1950317",
+      "numero": 16,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (16) del texto.</p>",
+      "opciones": {
+        "A": "shall",
+        "B": "must",
+        "C": "may"
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción C, dado que este es el verbo modal que se utiliza para expresar posibilidad, en este caso la de encontrar un parecido entre peces y ballenas. El estudiante debe conocer el uso de los verbos modales para contestar apropiadamente esta pregunta.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_1950326",
+      "numero": 17,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (17) del texto.</p>",
+      "opciones": {
+        "A": "else",
+        "B": "just",
+        "C": "well"
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción C, dado que este es la única palabra para completar la frase preposicional que funciona como conjunción, significando “también”. En este caso, la conjunción equipara a las ballenas que viven en los océanos con las que viven en algunos ríos. Para responder esta pregunta, el estudiante debe conocer el uso de las conjunciones.",
+      "opciones_incorrectas": {
+        "A": "else, y la",
+        "B": "just, son también adverbios, pero estos no se utilizan para expresar adición o agregar información. ===== PÁGINA 35 ===== 35 Inglés 9.º"
+      }
+    },
+    {
+      "id": "I_1950338",
+      "numero": 18,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (18) del texto.</p>",
+      "opciones": {
+        "A": "once",
+        "B": "usually",
+        "C": "soon"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, dado que el adverbio generalmente es la única opción que completa la noción del texto acerca del tamaño que por lo general tienen las ballenas. El estudiante debe conocer el uso de los adverbios de tiempo para contestar esta pregunta.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_1950343",
+      "numero": 19,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (19) del texto.</p>",
+      "opciones": {
+        "A": "largest",
+        "B": "larger",
+        "C": "large"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción A, dado que, en esta, el adjetivo está en su forma superlativa y es la única opción que permite destacar el tamaño de la ballena azul como el más grande entre las demás ballenas. El estudiante debe conocer el uso de las formas comparativas y superlativas de los adjetivos para contestar apropiadamente esta pregunta.",
+      "opciones_incorrectas": {
+        "B": "el adjetivo está en forma comparativa y esto no permite calificar a la ballena azul como el animal más grande que haya vivido; de igual manera, la forma base del adjetivo en la",
+        "C": "tampoco permite expresar esta idea. ===== PÁGINA 36 ===== 36 Inglés 9.º"
+      }
+    },
+    {
+      "id": "I_1950355",
+      "numero": 20,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (20) del texto.</p>",
+      "opciones": {
+        "A": "every",
+        "B": "both",
+        "C": "another"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción B, dado que este determinante permite referirse a los dos tipos de ballenas: Las grises y las blancas. Esta opción se utiliza seguido de un sustantivo para referirse a ambos tipos de animales. Para responder esta pregunta acertadamente, el estudiante debe conocer el uso de los determinantes.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_1950363",
+      "numero": 21,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (21) del texto.</p>",
+      "opciones": {
+        "A": "so",
+        "B": "than",
+        "C": "when"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción A, dado que la conjunción “so” es utilizada como equivalente de “por lo tanto”, es decir, como resultado de algo. En el texto, las ballenas son aptas para vivir en aguas frías debido a su peso corporal. El estudiante debe conocer el uso de las conjunciones para responder esta pregunta acertadamente.",
+      "opciones_incorrectas": {}
+    },
+    {
+      "id": "I_1950370",
+      "numero": 22,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "that has ever lived.",
+      "enunciado": "<p class=\"en-stem\">Selecciona la palabra correcta para el espacio (22) del texto.</p>",
+      "opciones": {
+        "A": "traveling",
+        "B": "travel",
+        "C": "travels"
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "",
+      "justificacion_correcta": "Opción C, dado que, en esta oración, el sujeto es equivalente a la tercera persona del singular (la ballena barbada) y, por esto, se debe conjugar el verbo en tercera persona, es decir, con una “s” al final para generar la forma travels. El estudiante debe conocer la conjugación de los verbos en tercera persona del presente simple, en particular en oraciones en las que el sujeto no es un pronombre sino un nombre, para contestar esta pregunta apropiadamente.",
+      "opciones_incorrectas": {}
+    }
+  ]
+}

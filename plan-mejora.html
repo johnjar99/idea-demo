@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Plan de Mejora — Fase II — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <!-- jsPDF y html2canvas se cargan BAJO DEMANDA al exportar (js/cargar-libs.js); no bloquean el arranque. -->
+  <!-- Driver.js para guia Sabio interactiva -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css"></head>
+<body class="rol-docente">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="docente.html" class="logo-home" title="Volver al panel del docente">
+      <img src="assets/logo-idea.png" class="logo">
+      <div class="nombre-app">IDEA — Plan de Mejora · Fase II</div>
+    </a>
+    <div class="user-info">
+      <span class="rol-chip" id="chip-rol"></span>
+      <span id="nombre-usuario"></span>
+      <button class="salir-btn" id="btn-salir">Salir</button>
+    </div>
+  </header>
+
+  <main id="contenido" class="max-w-5xl mx-auto px-6 py-8">
+    <!-- v9: Encabezado pedagógico compacto -->
+    <div class="text-center mb-6">
+      <div class="inline-block px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+        Fase II — Análisis y Planeación
+      </div>
+      <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Constructor del Plan de Mejora</h1>
+      <p class="text-slate-600 text-sm max-w-2xl mx-auto">Sigue los pasos guiados para construir un plan accionable. El plan que generes aquí es la planeación; la implementación corresponde a la Fase III en tu aula.</p>
+    </div>
+
+    <!-- v9: Barra de progreso del wizard -->
+    <div class="idea-card mb-6 sticky top-2 z-10" style="padding:16px 22px; background:rgba(255,255,255,0.96); backdrop-filter:blur(8px);">
+      <div class="flex items-center justify-between gap-2" id="wizard-progress">
+        <div class="paso-pill flex-1 flex items-center gap-2 cursor-pointer" data-goto="1">
+          <div class="paso-num w-8 h-8 rounded-full grid place-items-center font-bold text-sm">1</div>
+          <div class="hidden md:block text-xs font-semibold text-slate-600">Diagnóstico</div>
+        </div>
+        <div class="h-0.5 flex-1 bg-slate-200 paso-conector"></div>
+        <div class="paso-pill flex-1 flex items-center gap-2 cursor-pointer" data-goto="2">
+          <div class="paso-num w-8 h-8 rounded-full grid place-items-center font-bold text-sm">2</div>
+          <div class="hidden md:block text-xs font-semibold text-slate-600">Prioridades</div>
+        </div>
+        <div class="h-0.5 flex-1 bg-slate-200 paso-conector"></div>
+        <div class="paso-pill flex-1 flex items-center gap-2 cursor-pointer" data-goto="3">
+          <div class="paso-num w-8 h-8 rounded-full grid place-items-center font-bold text-sm">3</div>
+          <div class="hidden md:block text-xs font-semibold text-slate-600">Acciones</div>
+        </div>
+        <div class="h-0.5 flex-1 bg-slate-200 paso-conector"></div>
+        <div class="paso-pill flex-1 flex items-center gap-2 cursor-pointer" data-goto="4">
+          <div class="paso-num w-8 h-8 rounded-full grid place-items-center font-bold text-sm">4</div>
+          <div class="hidden md:block text-xs font-semibold text-slate-600">Cronograma</div>
+        </div>
+        <div class="h-0.5 flex-1 bg-slate-200 paso-conector"></div>
+        <div class="paso-pill flex-1 flex items-center gap-2 cursor-pointer" data-goto="5">
+          <div class="paso-num w-8 h-8 rounded-full grid place-items-center font-bold text-sm">5</div>
+          <div class="hidden md:block text-xs font-semibold text-slate-600">Descargar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- v9: Panel de asesoría Sabio -->
+    <div class="idea-card mb-6 animate-fade-in" id="asesoria-sabio" style="background:linear-gradient(135deg,#FFFBEB 0%,#FEF3C7 100%); border-left:4px solid #FBBF24; padding:14px 18px;">
+      <div class="flex items-start gap-3">
+        <div class="text-3xl flex-shrink-0">🦉</div>
+        <div class="text-sm text-slate-800" id="sabio-mensaje">Bienvenido. Empecemos por el Paso 1: diagnóstico de tu grupo.</div>
+      </div>
+    </div>
+
+    <!-- ====== PASO 1: Diagnóstico inicial ====== -->
+    <section class="paso-wizard" data-paso="1">
+      <div class="idea-card mb-6 animate-fade-in">
+        <h2 class="card-title">Información general</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+          <div>
+            <label for="f-docente" class="label-idea">Docente</label>
+            <input type="text" id="f-docente" name="docente" autocomplete="name" class="input-idea" readonly>
+          </div>
+          <div>
+            <label for="f-area" class="label-idea">Área</label>
+            <input type="text" id="f-area" name="area" class="input-idea" value="Matemáticas">
+          </div>
+          <div>
+            <label for="f-grado" class="label-idea">Grado</label>
+            <input type="text" id="f-grado" name="grado" class="input-idea">
+          </div>
+          <div>
+            <label for="f-grupo" class="label-idea">Grupo</label>
+            <input type="text" id="f-grupo" name="grupo" class="input-idea">
+          </div>
+          <div>
+            <label for="f-periodo" class="label-idea">Período</label>
+            <select id="f-periodo" name="periodo" class="input-idea">
+              <option value="I">I</option><option value="II">II</option><option value="III">III</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="idea-card mb-6 animate-fade-in" style="animation-delay:100ms">
+        <h2 class="card-title">Trayectoria histórica</h2>
+        <p class="text-sm text-slate-500 mb-4">Esta tabla muestra automáticamente el promedio del grupo en cada período donde se ha aplicado la prueba.</p>
+        <table class="tabla-aciertos w-full">
+          <thead>
+            <tr><th>Puntaje</th><th>PERÍODO I</th><th>PERÍODO II</th><th>PERÍODO III</th></tr>
+          </thead>
+          <tbody id="tabla-trayectoria"></tbody>
+        </table>
+      </div>
+
+      <div class="idea-card mb-6 animate-fade-in" style="animation-delay:200ms">
+        <h2 class="card-title">Diagnóstico automático del grupo</h2>
+        <p class="text-sm text-slate-500 mb-3">Lectura inicial generada con base en los resultados de la aplicación.</p>
+        <div id="diagnostico-auto" class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4"></div>
+        <label for="f-observaciones" class="label-idea">Observaciones del docente</label>
+        <textarea id="f-observaciones" name="observaciones" class="input-idea" rows="3" placeholder="Agrega cualquier observación cualitativa que complemente el diagnóstico cuantitativo."></textarea>
+      </div>
+
+      <div class="flex justify-end gap-3 mt-4 no-print">
+        <button class="btn-idea" data-nav-next="2">Confirmar y continuar →</button>
+      </div>
+    </section>
+
+    <!-- ====== PASO 2: Priorizar competencias y evidencias ====== -->
+    <section class="paso-wizard hidden" data-paso="2">
+      <div class="idea-card mb-6 animate-fade-in">
+        <h2 class="card-title">Priorizar competencias y evidencias</h2>
+        <p class="text-sm text-slate-500 mb-4">Las competencias con menor logro vienen pre-marcadas. Desmarca las que ya estés trabajando por otra vía y marca otras que consideres prioritarias.</p>
+        <div id="prioridades-comp" class="space-y-3"></div>
+      </div>
+
+      <div class="flex justify-between gap-3 mt-4 no-print">
+        <button class="btn-secundario" data-nav-prev="1">← Atrás</button>
+        <button class="btn-idea" data-nav-next="3">Continuar →</button>
+      </div>
+    </section>
+
+    <!-- ====== PASO 3: Plan de acción + catálogo de recomendaciones ====== -->
+    <section class="paso-wizard hidden" data-paso="3">
+
+      <!-- Bloque FORTALEZAS detectadas automáticamente (no editable, viene de los resultados). -->
+      <div class="idea-card mb-6 animate-fade-in" style="border-left:4px solid #10B981;background:linear-gradient(135deg,#F0FDF4 0%,#ECFDF5 100%);">
+        <div class="flex items-center gap-2 mb-2">
+          <span style="font-size:22px">💪</span>
+          <h2 class="card-title m-0" style="color:#047857">Fortalezas detectadas en el grupo</h2>
+        </div>
+        <p class="text-sm text-slate-600 mb-4">
+          Identificadas automáticamente a partir de los resultados del grupo en <strong id="fortalezas-meta-area">esta materia</strong> y grado.
+          No requieren intervención inmediata — son la base sobre la cual construir.
+        </p>
+        <div id="fortalezas-auto-lista" class="space-y-2">
+          <div class="text-sm text-slate-400 italic">Cargando fortalezas detectadas…</div>
+        </div>
+      </div>
+
+      <!-- Tabla 3 columnas: OPORTUNIDADES + ESTRATEGIAS + SEGUIMIENTO (sin Fortalezas, ya están arriba). -->
+      <div class="idea-card mb-6 animate-fade-in" style="animation-delay:80ms">
+        <h2 class="card-title">Plan de acción pedagógica</h2>
+        <p class="text-sm text-slate-500 mb-3">Para cada oportunidad de mejora detectada, define la estrategia didáctica y el seguimiento que vas a aplicar.</p>
+        <div class="flex flex-wrap items-center gap-3 mb-3">
+          <button id="btn-sabio-ia" type="button" class="inline-flex items-center gap-2 text-white font-semibold text-sm rounded-xl px-4 py-2.5 shadow" style="background:linear-gradient(118deg,#7E1D33,#C2410C)">
+            <span id="sabio-ia-ic" class="inline-flex"></span> Autocompletar con Sabio IA
+          </button>
+          <span class="text-xs text-slate-500">Sabio IA analiza los resultados reales del grupo y propone el plan; tú lo revisas y editas.</span>
+        </div>
+        <div id="sabio-ia-msg" class="hidden border-l-4 p-3 rounded-r mb-4 text-sm text-slate-700" style="background:#FBEAEF;border-color:#C2410C"></div>
+        <div id="sugerencias-auto" class="hidden bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r mb-4 text-sm"></div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm" id="tabla-acciones">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="border p-3" style="width:28%;color:#F59E0B">OPORTUNIDADES DE MEJORA</th>
+                <th class="border p-3" style="width:38%;color:#DC2626">ESTRATEGIAS DIDÁCTICAS</th>
+                <th class="border p-3" style="width:26%;color:#0EA5E9">SEGUIMIENTO</th>
+                <th class="border p-2" style="width:8%"></th>
+              </tr>
+            </thead>
+            <tbody id="filas-acciones"></tbody>
+          </table>
+        </div>
+        <button id="btn-agregar-fila" class="btn-secundario mt-4">+ Agregar fila</button>
+      </div>
+
+      <div class="idea-card mb-6 animate-fade-in" style="animation-delay:100ms">
+        <h2 class="card-title">Catálogo experto de recomendaciones</h2>
+        <p class="text-sm text-slate-500 mb-3" id="subtitulo-catalogo-recs">Recomendaciones articuladas al marco evaluativo del área. Marca entre 3 y 8 para integrarlas al plan.</p>
+        <div class="flex gap-2 flex-wrap mb-4" id="filtros-catalogo">
+          <button class="chip-filtro activo" data-filtro="todas">Todas</button>
+          <button class="chip-filtro" data-filtro="bajo">Esfuerzo bajo</button>
+          <button class="chip-filtro" data-filtro="medio">Esfuerzo medio</button>
+          <button class="chip-filtro" data-filtro="impacto">Alto impacto</button>
+        </div>
+        <div id="catalogo-recs" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+        <p class="text-xs text-slate-500 mt-3"><strong id="contador-recs">0</strong> de 8 acciones seleccionadas (mínimo 3 recomendado).</p>
+      </div>
+
+      <div class="flex justify-between gap-3 mt-4 no-print">
+        <button class="btn-secundario" data-nav-prev="2">← Atrás</button>
+        <button class="btn-idea" data-nav-next="4">Continuar →</button>
+      </div>
+    </section>
+
+    <!-- ====== PASO 4: Cronograma y responsables ====== -->
+    <!-- v13: Bloque "Vinculación curricular institucional" REMOVIDO. La articulación
+         con el SIEE, las mallas de aprendizaje y el PEI es autonomía del docente y
+         de su institución educativa; no corresponde al instrumento IDEA gestionar
+         ese vínculo desde el wizard. -->
+    <section class="paso-wizard hidden" data-paso="4">
+      <div class="idea-card mb-6 animate-fade-in">
+        <h2 class="card-title">Cronograma de implementación</h2>
+        <p class="text-sm text-slate-500 mb-3">Asigna semanas de inicio e indicadores de seguimiento a cada acción del plan.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm" id="tabla-cronograma">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="border p-2" style="width:28%">Acción</th>
+                <th class="border p-2" style="width:12%">Semana inicio</th>
+                <th class="border p-2" style="width:20%">Responsable</th>
+                <th class="border p-2" style="width:28%">Indicador de seguimiento</th>
+                <th class="border p-2" style="width:12%">Estado</th>
+              </tr>
+            </thead>
+            <tbody id="filas-cronograma"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flex justify-between gap-3 mt-4 no-print">
+        <button class="btn-secundario" data-nav-prev="3">← Atrás</button>
+        <button class="btn-idea" data-nav-next="5">Continuar →</button>
+      </div>
+    </section>
+
+    <!-- ====== PASO 5: Resumen y descarga ====== -->
+    <section class="paso-wizard hidden" data-paso="5">
+      <div class="idea-card mb-6 animate-fade-in">
+        <h2 class="card-title">Resumen del Plan de Mejora</h2>
+        <div id="resumen-plan" class="text-sm space-y-4"></div>
+      </div>
+
+      <div class="idea-card mb-6 animate-fade-in" style="animation-delay:100ms;text-align:center;">
+        <h3 class="card-title mb-3">Descargar el plan</h3>
+        <p class="text-sm text-slate-500 mb-4">Comparte el plan con la coordinación académica en PDF o Word, y guárdalo en la plataforma para hacer seguimiento.</p>
+        <div class="flex flex-wrap gap-3 justify-center no-print">
+          <button id="btn-guardar" class="btn-secundario">💾 Guardar borrador</button>
+          <button id="btn-pdf" class="btn-idea">📄 Generar PDF</button>
+          <button id="btn-docx" class="btn-secundario">📝 Descargar Word</button>
+          <button id="btn-marcar-implementado" class="btn-dorado">✓ Marcar como implementado</button>
+        </div>
+      </div>
+
+      <!-- v13: Cierre motivacional Fase II → Fase III. La Fase III (implementación
+           en aula) es autonomía del docente; este mensaje promueve activamente
+           que la lleve adelante. -->
+      <div class="fase3-motivacional animate-fade-in" style="animation-delay:200ms">
+        <div class="fase3-cinta">FASE III — IMPLEMENTACIÓN Y ACCIÓN</div>
+        <div class="fase3-icono">🌱</div>
+        <h3 class="fase3-titulo">Ahora viene lo más importante: tu aula.</h3>
+        <p class="fase3-parrafo">
+          Acabas de completar la <strong>Fase II — Análisis y Planeación</strong>. El plan que construiste es un mapa, no un destino: cobra vida cuando lo llevas a tus estudiantes. La <strong>Fase III — Implementación y Acción</strong> es enteramente tuya, sucede en el aula, con tus secuencias didácticas, tu seguimiento día a día y tu juicio profesional ajustando la ruta según lo que veas.
+        </p>
+        <div class="fase3-acciones">
+          <div class="fase3-accion">
+            <span class="fase3-accion-num">1</span>
+            <div>
+              <strong>Empieza esta semana.</strong> Toma la primera estrategia del plan y prográmala para tu próxima clase. No esperes el lunes "perfecto" — el mejor día es hoy.
+            </div>
+          </div>
+          <div class="fase3-accion">
+            <span class="fase3-accion-num">2</span>
+            <div>
+              <strong>Lleva un registro corto.</strong> Anota qué funcionó, qué tuviste que ajustar y cómo respondieron los estudiantes. Esa bitácora será tu insumo para la próxima Fase I.
+            </div>
+          </div>
+          <div class="fase3-accion">
+            <span class="fase3-accion-num">3</span>
+            <div>
+              <strong>Comparte con un par.</strong> Conversa una vez por semana con otro docente del área. La mejora pedagógica más sostenible nace del diálogo profesional honesto.
+            </div>
+          </div>
+        </div>
+        <p class="fase3-cierre">
+          Cuando termines el período, vuelve a aplicar el cuadernillo IDEA y compara: verás el impacto concreto del trabajo que estás a punto de iniciar. <strong>Confía en tu juicio profesional. Tu aula te necesita.</strong>
+        </p>
+      </div>
+
+      <div class="flex justify-start gap-3 mt-4 no-print">
+        <button class="btn-secundario" data-nav-prev="4">← Atrás</button>
+      </div>
+    </section>
+
+    <style>
+      .paso-wizard.hidden { display: none; }
+      .paso-pill .paso-num { background: #E5E7EB; color: #6B7280; transition: all 200ms; }
+      .paso-pill.activo .paso-num { background: var(--idea-rojo, #E11D48); color: white; transform: scale(1.1); box-shadow: 0 4px 12px rgba(225,29,72,0.35); }
+      .paso-pill.completado .paso-num { background: #10B981; color: white; }
+      .paso-pill.completado .paso-num::after { content: '✓'; }
+      .paso-pill.completado .paso-num span { display: none; }
+      .paso-pill.activo .text-xs { color: var(--idea-rojo, #E11D48) !important; }
+      .paso-conector.completado { background: #10B981; }
+      .rec-card { transition: all 200ms; cursor: pointer; }
+      .rec-card.seleccionada { border-color: #10B981 !important; background: #ECFDF5; }
+    </style>
+  </main>
+
+  <footer class="idea-footer no-print">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { requerirSesion, cerrarSesion } from './js/auth.js';
+    import { promedioGrupo, logroGrupoPor, logroPorCompetencia, logroPorCMC, logroPorAfirmacion, logroPorDimensionSecundaria, calcularNivel } from './js/calculo.js';
+    import { configArea, tieneDimensionSecundaria, slugRecomendaciones, etiquetasMarco } from './js/area-config.js';
+    import { exportarPlanMejoraPDF } from './js/export-pdf.js';
+    import { uuid, nowIso, toast, escapeHtml } from './js/utils.js';
+    import { generarRecomendacionesPersonalizables, estudiantesEnRiesgo } from './js/analisis.js';
+    import { construirWordHtml } from './js/plan-mejora-word.js';
+    import { generarPlanAccionIA } from './js/sabio-ia.js';
+    import { sabioSVG } from './js/sabio.js';
+    // Capa pedagogica POR GRADO (aditiva): precarga del cache antes de generar el plan,
+    // para que sabio-ia.js (sincrono) la lea. Si falta, cae a la plantilla por area.
+    import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
+
+    const ses = await requerirSesion(['docente', 'directivo', 'funcionario', 'manager']);
+    if (!ses) throw new Error('redir');
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    document.getElementById('chip-rol').textContent = ses.rol.charAt(0).toUpperCase() + ses.rol.slice(1);
+    document.getElementById('f-docente').value = ses.nombre_completo;
+    document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href='index.html'; });
+
+    await db.inicializar();
+    await cargarPedagogiaGrado();
+    const plantilla = await fetch('datos/plan_mejora_plantilla.json').then(r => r.json());
+
+    const params = new URLSearchParams(location.search);
+    const grado = params.get('grado') || '11';
+    const grupo = params.get('grupo') || 'A';
+    const cuadernilloId = params.get('cuadernillo') || 'math-11-p1-2023';
+    document.getElementById('f-grado').value = grado;
+    document.getElementById('f-grupo').value = grupo;
+
+    // Cargar trayectoria histórica — lectura DIRIGIDA por institución (no toda la colección).
+    // Al limitar a la IE del usuario, además se evita mezclar grupos homónimos de otras IE.
+    const _normG = (g) => String(g ?? '').trim().toUpperCase();
+    const todas = await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id);
+    const apsGrupo = todas.filter(a => a.grado != null && String(a.grado) === String(grado) && _normG(a.grupo) === _normG(grupo) && a.cuadernillo_id === cuadernilloId);
+    const cuadernillo = await db.obtener('idea_cuadernillos', cuadernilloId);
+
+    // Actualizar títulos estáticos del wizard según el área (Inglés usa "Partes" en vez de "Competencias")
+    if (cuadernillo) {
+      // El ÁREA del plan/portada/PDF/nombre de archivo viene del cuadernillo real, no del valor fijo "Matemáticas".
+      const _fa = document.getElementById('f-area'); if (_fa && cuadernillo.area) { _fa.value = cuadernillo.area; _fa.readOnly = true; }
+      const _ETw = etiquetasMarco(cuadernillo);
+      const _setTxt = (sel, txt) => { const el = document.querySelector(sel); if (el) el.textContent = txt; };
+      _setTxt('[data-paso="2"] .card-title', `Priorizar ${_ETw.competencia_plural.toLowerCase()} y ${_ETw.evidencia_plural.toLowerCase()}`);
+      // Subtítulo dinámico de las recomendaciones del catálogo experto
+      const subt = document.getElementById('subtitulo-catalogo-recs');
+      if (subt) subt.textContent = `Recomendaciones articuladas al marco evaluativo del área (${_ETw.competencia_plural} · ${_ETw.afirmacion_plural} · ${_ETw.evidencia_plural}). Marca entre 3 y 8 para integrarlas al plan.`;
+    }
+
+    const trayectoria = { I: null, II: null, III: null };
+    for (const a of apsGrupo) {
+      const p = a.periodo || 'I';
+      if (!trayectoria[p]) trayectoria[p] = [];
+      trayectoria[p].push(a);
+    }
+    const filaTr = document.getElementById('tabla-trayectoria');
+    filaTr.innerHTML = `<tr>
+      <td><strong>Promedio</strong></td>
+      <td>${trayectoria.I ? promedioGrupo(trayectoria.I) : '—'}</td>
+      <td>${trayectoria.II ? promedioGrupo(trayectoria.II) : '—'}</td>
+      <td>${trayectoria.III ? promedioGrupo(trayectoria.III) : '—'}</td>
+    </tr>`;
+
+    // Sugerencias automáticas — articuladas con el marco evaluativo del área
+    // específica (competencias + dim secundaria propia: CMC en MAT, componentes en
+    // CN, niveles MCER en Inglés, afirmaciones en LC y SC).
+    if (apsGrupo.length > 0 && cuadernillo) {
+      const cfgArea = configArea(cuadernillo);
+      const ET_pm = etiquetasMarco(cuadernillo);
+      const slugArea = slugRecomendaciones(cuadernillo);
+      const catalogoArea = (plantilla.sugerencias_automaticas_por_area || {})[slugArea] || {};
+      const sugerencias = [];
+      const fuentes = [];  // para trazabilidad
+
+      // 1. Competencia (o Parte en Inglés) con menor logro
+      const logComp = logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo);
+      const compKeys = Object.keys(logComp);
+      if (compKeys.length) {
+        const minComp = compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b);
+        if (logComp[minComp] < 60 && catalogoArea.competencia && catalogoArea.competencia[minComp]) {
+          const nomComp = cuadernillo.competencias[minComp] || `${ET_pm.competencia_codigo} ${minComp.toUpperCase()}`;
+          sugerencias.push(...catalogoArea.competencia[minComp]);
+          fuentes.push(`${ET_pm.competencia_codigo} ${minComp.toUpperCase()} (${nomComp}) con ${logComp[minComp]}% de logro`);
+        }
+      }
+
+      // 2. Dimensión secundaria (CMC/componente/MCER) con menor logro, si aplica
+      if (tieneDimensionSecundaria(cuadernillo) && catalogoArea.dim_secundaria) {
+        const logDim2 = logroGrupoPor(logroPorDimensionSecundaria, apsGrupo, cuadernillo);
+        const dim2Keys = Object.keys(logDim2);
+        if (dim2Keys.length) {
+          const minDim2 = dim2Keys.reduce((a, b) => logDim2[a] <= logDim2[b] ? a : b);
+          if (logDim2[minDim2] < 60 && catalogoArea.dim_secundaria[minDim2]) {
+            sugerencias.push(...catalogoArea.dim_secundaria[minDim2]);
+            fuentes.push(`${cfgArea.dimension_secundaria.etiqueta_singular} "${minDim2}" con ${logDim2[minDim2]}% de logro`);
+          }
+        }
+      }
+
+      // 3. Afirmación con menor logro (en áreas sin dim secundaria como LC y SC,
+      // la afirmación ES la dimensión clave para diagnóstico).
+      if (!tieneDimensionSecundaria(cuadernillo) && catalogoArea.afirmacion) {
+        const logAfir = logroGrupoPor(logroPorAfirmacion, apsGrupo, cuadernillo);
+        const afirKeys = Object.keys(logAfir);
+        if (afirKeys.length) {
+          const minAfir = afirKeys.reduce((a, b) => logAfir[a] <= logAfir[b] ? a : b);
+          if (logAfir[minAfir] < 60 && catalogoArea.afirmacion[minAfir]) {
+            const nomAfir = cuadernillo.afirmaciones?.[minAfir] || `${ET_pm.afirmacion_codigo} ${minAfir}`;
+            sugerencias.push(...catalogoArea.afirmacion[minAfir]);
+            fuentes.push(`${ET_pm.afirmacion_codigo} ${minAfir} (${nomAfir.slice(0, 60)}${nomAfir.length > 60 ? '…' : ''}) con ${logAfir[minAfir]}% de logro`);
+          }
+        }
+      }
+
+      if (sugerencias.length > 0) {
+        const div = document.getElementById('sugerencias-auto');
+        div.classList.remove('hidden');
+        div.innerHTML = `<strong>💡 Sugerencias automáticas para ${escapeHtml(cfgArea.nombre_display)} basadas en los resultados del grupo:</strong>
+          <ul class="list-disc pl-6 mt-2 space-y-1">${sugerencias.map(s => `<li>${escapeHtml(s)}</li>`).join('')}</ul>
+          <p class="text-xs text-slate-500 mt-2">Fuente: ${fuentes.map(escapeHtml).join(' · ')}. Puedes copiar estas sugerencias a la columna "Estrategias didácticas".</p>`;
+      }
+    }
+
+    // Filas dinámicas (sin columna FORTALEZAS — ahora se autocompletan arriba)
+    const tbody = document.getElementById('filas-acciones');
+    function nuevaFila(data = {}) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="border p-2"><textarea class="input-idea" rows="3" data-campo="oportunidades">${escapeHtml(data.oportunidades || '')}</textarea></td>
+        <td class="border p-2"><textarea class="input-idea" rows="3" data-campo="estrategias">${escapeHtml(data.estrategias || '')}</textarea></td>
+        <td class="border p-2"><textarea class="input-idea" rows="3" data-campo="seguimiento">${escapeHtml(data.seguimiento || '')}</textarea></td>
+        <td class="border p-2 text-center"><button class="text-red-600 hover:bg-red-50 rounded p-1" onclick="this.closest('tr').remove()">🗑</button></td>
+      `;
+      tbody.appendChild(tr);
+    }
+    for (let i = 0; i < 3; i++) nuevaFila();
+    document.getElementById('btn-agregar-fila').addEventListener('click', () => nuevaFila());
+
+    // ====== Sabio IA: autocompletar el Plan de acción según los resultados del grupo ======
+    const _icIA = document.getElementById('sabio-ia-ic');
+    if (_icIA) _icIA.innerHTML = sabioSVG('animando', 22);
+    const _btnIA = document.getElementById('btn-sabio-ia');
+    if (_btnIA) _btnIA.addEventListener('click', () => {
+      if (!apsGrupo || !apsGrupo.length || !cuadernillo) { toast('Aún no hay resultados del grupo para que Sabio IA los analice.', 'aviso'); return; }
+      const algoEscrito = Array.from(tbody.querySelectorAll('textarea')).some(t => t.value.trim());
+      if (algoEscrito && !confirm('Sabio IA reemplazará las filas actuales del plan con su propuesta basada en los resultados. ¿Continuar?')) return;
+      const { filas, resumen } = generarPlanAccionIA(apsGrupo, cuadernillo);
+      if (!filas.length) { toast('No pude generar el plan con los datos actuales.', 'aviso'); return; }
+      tbody.innerHTML = '';
+      filas.forEach(f => nuevaFila(f));
+      const box = document.getElementById('sabio-ia-msg');
+      if (box && resumen) { box.classList.remove('hidden'); box.innerHTML = `<strong>Sabio IA:</strong> ${escapeHtml(resumen.mensaje)}`; }
+      const _sm = document.getElementById('sabio-mensaje');
+      if (_sm && resumen) _sm.textContent = resumen.mensaje;
+      toast('Plan autocompletado por Sabio IA. Revísalo y edítalo a tu criterio.', 'exito');
+    });
+
+    // ====== FORTALEZAS AUTO-DETECTADAS por materia/grado ======
+    // Identifica competencias/afirmaciones/dimensión secundaria con logro ≥ 65%
+    // (umbral verde del semáforo unificado de la plataforma) y las muestra como
+    // "fortalezas del grupo", NO editables. Se calcula con los mismos helpers de
+    // logro grupal que el resto del wizard, sobre las aplicaciones del grupo.
+    function renderFortalezasAuto() {
+      const cont = document.getElementById('fortalezas-auto-lista');
+      const metaArea = document.getElementById('fortalezas-meta-area');
+      if (!cont) return;
+      const _cfgArea = configArea(cuadernillo);
+      if (metaArea) metaArea.textContent = `${_cfgArea.nombre_display} · Grado ${grado || '—'}°`;
+
+      if (!cuadernillo || !apsGrupo || !apsGrupo.length) {
+        cont.innerHTML = `<div class="text-sm text-slate-500 italic">Necesitas tener al menos una aplicación del grupo para que se detecten fortalezas automáticamente.</div>`;
+        return;
+      }
+
+      const UMBRAL = 65;
+      const fortalezas = [];
+      const ET_f = etiquetasMarco(cuadernillo);
+      const _logComp = logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo);
+      const _logAfir = logroGrupoPor(logroPorAfirmacion, apsGrupo, cuadernillo);
+      const _hayDim2 = tieneDimensionSecundaria(cuadernillo);
+      const _logDim2 = _hayDim2 ? logroGrupoPor(logroPorDimensionSecundaria, apsGrupo, cuadernillo) : null;
+
+      // Competencias con logro >= 65%
+      Object.entries(_logComp || {})
+        .filter(([k, v]) => v >= UMBRAL)
+        .sort((a, b) => b[1] - a[1])
+        .forEach(([k, v]) => {
+          const nombre = cuadernillo.competencias?.[k] || `${ET_f.competencia_codigo} ${k}`;
+          fortalezas.push({
+            tipo: ET_f.competencia_singular,
+            codigo: `${k}.`,
+            nombre,
+            logro: v,
+            color: '#10B981'
+          });
+        });
+
+      // Afirmaciones con logro >= 65%
+      Object.entries(_logAfir || {})
+        .filter(([k, v]) => v >= UMBRAL)
+        .sort((a, b) => b[1] - a[1])
+        .forEach(([k, v]) => {
+          const nombre = cuadernillo.afirmaciones?.[k] || `${ET_f.afirmacion_codigo} ${k}`;
+          fortalezas.push({
+            tipo: ET_f.afirmacion_singular,
+            codigo: `${ET_f.afirmacion_codigo} ${k}`,
+            nombre,
+            logro: v,
+            color: '#0E7A52'
+          });
+        });
+
+      // Dimensión secundaria (CMC/componente/MCER) con logro >= 65%
+      if (_logDim2) {
+        Object.entries(_logDim2)
+          .filter(([k, v]) => v >= UMBRAL)
+          .sort((a, b) => b[1] - a[1])
+          .forEach(([k, v]) => {
+            fortalezas.push({
+              tipo: _cfgArea.dimension_secundaria?.etiqueta_singular || 'componente',
+              codigo: '',
+              nombre: k,
+              logro: v,
+              color: '#047857'
+            });
+          });
+      }
+
+      if (fortalezas.length === 0) {
+        cont.innerHTML = `<div class="p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r text-sm">
+          <strong>Aún no se han detectado fortalezas con logro ≥ 65% en este grupo.</strong>
+          Esto puede indicar que el grupo necesita refuerzo generalizado. Concéntrate en las oportunidades de mejora abajo.
+        </div>`;
+        return;
+      }
+
+      cont.innerHTML = fortalezas.map(f => `
+        <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-emerald-100" style="border-left:3px solid ${f.color}">
+          <div class="flex-shrink-0 text-xs font-bold uppercase tracking-wider px-2 py-1 rounded" style="background:${f.color}20;color:${f.color}">${escapeHtml(f.tipo)}</div>
+          <div class="flex-1 text-sm text-slate-800">
+            ${f.codigo ? `<strong>${escapeHtml(f.codigo)}</strong> ` : ''}${escapeHtml(f.nombre)}
+          </div>
+          <div class="flex-shrink-0 font-bold text-base" style="color:${f.color}">${f.logro}%</div>
+        </div>
+      `).join('');
+    }
+    renderFortalezasAuto();
+
+    // v13: Bloque "Vinculación curricular institucional" (SIEE/Mallas/PEI)
+    // ELIMINADO. La articulación con SIEE, mallas y PEI es autonomía del
+    // docente y de la IE; no se gestiona desde el instrumento IDEA.
+
+    function recolectar() {
+      const filas = [...document.querySelectorAll('#filas-acciones tr')].map(tr => {
+        const fila = {};
+        tr.querySelectorAll('[data-campo]').forEach(ta => { fila[ta.dataset.campo] = ta.value.trim(); });
+        return fila;
+      }).filter(f => Object.values(f).some(v => v));
+      // vinc se mantiene vacío para retro-compatibilidad con el schema de aplicaciones guardadas
+      const vinc = {};
+      // Fortalezas autodetectadas (logro >= 65%) — viaja con el plan para exports y persistencia
+      const fortalezasAuto = [];
+      if (cuadernillo && apsGrupo.length) {
+        const _cfg = configArea(cuadernillo);
+        const _ET = etiquetasMarco(cuadernillo);
+        const _logComp = logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo);
+        const _logAfir = logroGrupoPor(logroPorAfirmacion, apsGrupo, cuadernillo);
+        const _logDim2 = tieneDimensionSecundaria(cuadernillo) ? logroGrupoPor(logroPorDimensionSecundaria, apsGrupo, cuadernillo) : null;
+        Object.entries(_logComp).filter(([, v]) => v >= 65).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
+          fortalezasAuto.push({ tipo: _ET.competencia_singular, codigo: `${k}.`, nombre: cuadernillo.competencias?.[k] || k, logro: v, color: '#10B981' });
+        });
+        Object.entries(_logAfir).filter(([, v]) => v >= 65).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
+          fortalezasAuto.push({ tipo: _ET.afirmacion_singular, codigo: `${_ET.afirmacion_codigo} ${k}`, nombre: cuadernillo.afirmaciones?.[k] || k, logro: v, color: '#0E7A52' });
+        });
+        if (_logDim2) {
+          Object.entries(_logDim2).filter(([, v]) => v >= 65).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
+            fortalezasAuto.push({ tipo: _cfg.dimension_secundaria?.etiqueta_singular || 'componente', codigo: '', nombre: k, logro: v, color: '#047857' });
+          });
+        }
+      }
+      return {
+        id: uuid(),
+        docente_id: ses.user_id,
+        docente_nombre: ses.nombre_completo,
+        institucion_id: ses.institucion_id,
+        area: document.getElementById('f-area').value,
+        grado: document.getElementById('f-grado').value,
+        grupo: document.getElementById('f-grupo').value,
+        periodo: document.getElementById('f-periodo').value,
+        puntajes_periodos: Object.keys(trayectoria).map(p => ({ periodo: p, puntaje: trayectoria[p] ? promedioGrupo(trayectoria[p]) : null })),
+        acciones: filas,
+        fortalezasAuto,
+        vinculacion: vinc,
+        responsable: '',
+        fecha_implementacion: '',
+        estado: 'borrador',
+        fecha_creacion: nowIso()
+      };
+    }
+
+    document.getElementById('btn-guardar').addEventListener('click', async () => {
+      const plan = recolectar();
+      await db.crear('idea_planes_mejora', plan);
+      toast('Plan guardado como borrador', 'exito');
+    });
+
+    document.getElementById('btn-pdf').addEventListener('click', async () => {
+      const plan = recolectar();
+      toast('Generando PDF del Plan...', 'info');
+      await exportarPlanMejoraPDF(plan, cuadernillo);
+      toast('PDF descargado', 'exito');
+    });
+
+    document.getElementById('btn-marcar-implementado').addEventListener('click', async () => {
+      if (!confirm('¿Marcar este plan como implementado? Esto lo bloquea para edición.')) return;
+      const plan = recolectar();
+      plan.estado = 'implementado';
+      plan.fecha_implementacion_real = nowIso();
+      await db.crear('idea_planes_mejora', plan);
+      toast('Plan marcado como implementado', 'exito');
+    });
+
+    // ===================== v9: WIZARD 5 PASOS =====================
+    const SABIO_MENSAJES = {
+      1: '🦉 Te muestro lo que vi en tu grupo. Lee con atención el porcentaje en nivel BAJO y la competencia más débil — eso será el foco de tu plan.',
+      2: '🦉 Las competencias marcadas son las que tu grupo dominó menos. Desmárcalas si ya las estás trabajando, o agrega otras prioridades.',
+      3: '🦉 Estas recomendaciones se generan del Marco DCE. Selecciona entre 3 y 8 acciones balanceando esfuerzo e impacto.',
+      4: '🦉 Asigna responsables reales y semanas concretas. Este cronograma se descargará en el Word y el PDF.',
+      5: '🦉 Tu plan está listo. Descárgalo y guárdalo en la plataforma para hacer seguimiento al cierre del próximo período.'
+    };
+    let pasoActual = 1;
+    let recomendacionesSeleccionadas = new Set();
+    let catalogoActual = [];
+
+    function mostrarPaso(n) {
+      pasoActual = n;
+      document.querySelectorAll('.paso-wizard').forEach(s => s.classList.toggle('hidden', s.dataset.paso !== String(n)));
+      document.querySelectorAll('.paso-pill').forEach(p => {
+        const num = parseInt(p.dataset.goto);
+        p.classList.toggle('activo', num === n);
+        p.classList.toggle('completado', num < n);
+      });
+      document.querySelectorAll('.paso-conector').forEach((c, idx) => c.classList.toggle('completado', idx + 1 < n));
+      const msg = document.getElementById('sabio-mensaje');
+      if (msg) msg.innerHTML = SABIO_MENSAJES[n] || '';
+      if (n === 4) renderCronograma();
+      if (n === 5) renderResumen();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('[data-nav-next]').forEach(b => b.addEventListener('click', () => mostrarPaso(parseInt(b.dataset.navNext))));
+    document.querySelectorAll('[data-nav-prev]').forEach(b => b.addEventListener('click', () => mostrarPaso(parseInt(b.dataset.navPrev))));
+    document.querySelectorAll('.paso-pill').forEach(p => p.addEventListener('click', () => {
+      const dest = parseInt(p.dataset.goto);
+      if (dest <= pasoActual + 1) mostrarPaso(dest);
+    }));
+
+    // PASO 1: Diagnóstico automático
+    function renderDiagnosticoAuto() {
+      const cont = document.getElementById('diagnostico-auto');
+      if (!cont) return;
+      if (!apsGrupo.length) {
+        cont.innerHTML = '<div class="col-span-full text-center text-slate-500 py-6">Aún no hay aplicaciones del grupo. El diagnóstico aparecerá tras la primera aplicación.</div>';
+        return;
+      }
+      const prom = promedioGrupo(apsGrupo);
+      const niv = calcularNivel(prom);
+      const enRiesgo = apsGrupo.filter(a => a.nivel === 'BAJO').length;
+      const logComp = cuadernillo ? logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo) : {};
+      const compKeys = Object.keys(logComp);
+      const minComp = compKeys.length ? compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b) : '—';
+      const minCompName = cuadernillo?.competencias?.[minComp] || minComp;
+      cont.innerHTML = `
+        <div class="idea-card p-3 text-center">
+          <div class="text-[10px] uppercase text-slate-500 font-semibold">Promedio del grupo</div>
+          <div class="text-2xl font-bold">${prom}</div>
+          <div class="text-[10px] mt-1"><span class="chip-nivel ${niv.toLowerCase().replace('á','a')}">${niv}</span></div>
+        </div>
+        <div class="idea-card p-3 text-center">
+          <div class="text-[10px] uppercase text-slate-500 font-semibold">Estudiantes evaluados</div>
+          <div class="text-2xl font-bold">${apsGrupo.length}</div>
+        </div>
+        <div class="idea-card p-3 text-center">
+          <div class="text-[10px] uppercase text-slate-500 font-semibold">En riesgo (BAJO)</div>
+          <div class="text-2xl font-bold text-rose-600">${enRiesgo}</div>
+        </div>
+        <div class="idea-card p-3 text-center">
+          <div class="text-[10px] uppercase text-slate-500 font-semibold">${escapeHtml(etiquetasMarco(cuadernillo).competencia_singular)} a fortalecer</div>
+          <div class="text-sm font-bold text-amber-600 mt-1">${escapeHtml(minCompName)}</div>
+          <div class="text-[10px] text-slate-500">${logComp[minComp] || 0}% logro</div>
+        </div>
+      `;
+    }
+
+    // PASO 2: Priorización de competencias
+    function renderPrioridades() {
+      const cont = document.getElementById('prioridades-comp');
+      if (!cont || !cuadernillo) return;
+      const logComp = apsGrupo.length ? logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo) : {};
+      const compKeys = Object.keys(cuadernillo.competencias || {});
+      cont.innerHTML = compKeys.map(k => {
+        const logro = logComp[k] || 0;
+        const marcado = logro < 70 ? 'checked' : '';
+        const colorBg = logro < 50 ? '#FEE2E2' : logro < 70 ? '#FEF3C7' : '#DCFCE7';
+        return `
+          <label class="flex items-center gap-3 cursor-pointer p-3 rounded-lg" style="background:${colorBg};">
+            <input type="checkbox" class="w-5 h-5" data-prioridad="${k}" ${marcado}>
+            <div class="flex-1">
+              <div class="font-semibold text-sm">${escapeHtml(cuadernillo.competencias[k])}</div>
+              <div class="text-xs text-slate-600">Logro del grupo: <strong>${logro}%</strong> ${logro < 50 ? '· Crítico' : logro < 70 ? '· Por fortalecer' : '· Consolidada'}</div>
+            </div>
+          </label>
+        `;
+      }).join('');
+    }
+
+    // PASO 3: Catálogo de recomendaciones
+    function renderCatalogo() {
+      const cont = document.getElementById('catalogo-recs');
+      const cnt = document.getElementById('contador-recs');
+      if (!cont || !cuadernillo || !apsGrupo.length) {
+        if (cont) cont.innerHTML = '<div class="col-span-2 text-center text-slate-500 py-4">No hay datos suficientes para generar el catálogo.</div>';
+        return;
+      }
+      try {
+        catalogoActual = generarRecomendacionesPersonalizables(apsGrupo, cuadernillo);
+      } catch (e) { catalogoActual = []; }
+      _filtrarCatalogo('todas');
+      if (cnt) cnt.textContent = recomendacionesSeleccionadas.size;
+    }
+    function _filtrarCatalogo(filtro) {
+      const cont = document.getElementById('catalogo-recs');
+      if (!cont) return;
+      let lista = catalogoActual;
+      if (filtro === 'bajo') lista = lista.filter(r => r.esfuerzo === 'bajo');
+      else if (filtro === 'medio') lista = lista.filter(r => r.esfuerzo === 'medio');
+      else if (filtro === 'impacto') lista = lista.filter(r => r.impacto === 'alto');
+      const colorEsf = { bajo: '#10B981', medio: '#F59E0B', alto: '#EF4444' };
+      const colorImp = { alto: '#10B981', medio: '#F59E0B', bajo: '#94A3B8' };
+      cont.innerHTML = lista.map((r, i) => {
+        const sel = recomendacionesSeleccionadas.has(r.id) ? 'seleccionada' : '';
+        const articula = r.articula_con || {};
+        const _cfgRec = configArea(cuadernillo);
+        const _siglaDim2 = _cfgRec.dimension_secundaria?.etiqueta_corta || 'Cat';
+        const articuladaTxt = [
+          articula.competencia ? `Comp. ${articula.competencia}` : null,
+          articula.evidencia ? `Ev. ${articula.evidencia}` : null,
+          articula.cmc ? `${_siglaDim2} ${articula.cmc}` : null
+        ].filter(Boolean).join(' · ');
+        return `
+          <div class="rec-card idea-card p-4 ${sel}" data-rec-id="${escapeHtml(r.id)}" style="border:2px solid #E5E7EB;">
+            <div class="flex justify-between items-start mb-2">
+              <div class="font-bold text-sm">${escapeHtml(r.titulo)}</div>
+              <input type="checkbox" class="w-5 h-5 cursor-pointer" ${sel ? 'checked' : ''} data-rec-check="${escapeHtml(r.id)}">
+            </div>
+            <p class="text-xs text-slate-700 mb-3">${escapeHtml(r.accion_detallada)}</p>
+            ${articuladaTxt ? `<p class="text-[10px] text-slate-500 mb-2">📌 ${escapeHtml(articuladaTxt)}</p>` : ''}
+            <div class="flex gap-2 flex-wrap">
+              <span class="text-[10px] px-2 py-0.5 rounded-full font-semibold text-white" style="background:${colorEsf[r.esfuerzo] || '#94A3B8'}">Esfuerzo ${r.esfuerzo}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full font-semibold text-white" style="background:${colorImp[r.impacto] || '#94A3B8'}">Impacto ${r.impacto}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">${escapeHtml(r.duracion || '')}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+      cont.querySelectorAll('[data-rec-check]').forEach(cb => {
+        cb.addEventListener('change', () => {
+          const id = cb.dataset.recCheck;
+          if (cb.checked) {
+            if (recomendacionesSeleccionadas.size >= 8) { cb.checked = false; toast('Máximo 8 acciones seleccionadas', 'aviso'); return; }
+            recomendacionesSeleccionadas.add(id);
+          } else recomendacionesSeleccionadas.delete(id);
+          document.getElementById('contador-recs').textContent = recomendacionesSeleccionadas.size;
+          cb.closest('.rec-card').classList.toggle('seleccionada', cb.checked);
+        });
+      });
+    }
+    document.querySelectorAll('#filtros-catalogo .chip-filtro').forEach(c => c.addEventListener('click', () => {
+      document.querySelectorAll('#filtros-catalogo .chip-filtro').forEach(x => x.classList.remove('activo'));
+      c.classList.add('activo');
+      _filtrarCatalogo(c.dataset.filtro);
+    }));
+
+    // PASO 4: Cronograma
+    function renderCronograma() {
+      const cont = document.getElementById('filas-cronograma');
+      if (!cont) return;
+      const seleccionadas = catalogoActual.filter(r => recomendacionesSeleccionadas.has(r.id));
+      const filasManuales = [...document.querySelectorAll('#filas-acciones tr')].map(tr => {
+        const fila = {};
+        tr.querySelectorAll('[data-campo]').forEach(ta => { fila[ta.dataset.campo] = ta.value.trim(); });
+        return fila;
+      }).filter(f => f.estrategias);
+      const todas = [
+        ...seleccionadas.map(r => ({ titulo: r.titulo, estrategia: r.accion_detallada })),
+        ...filasManuales.map(f => ({ titulo: f.fortalezas || f.oportunidades || 'Acción manual', estrategia: f.estrategias }))
+      ];
+      if (!todas.length) {
+        cont.innerHTML = '<tr><td colspan="5" class="text-center text-slate-500 p-4">Selecciona recomendaciones en el Paso 3 o agrega filas en el Plan de acción.</td></tr>';
+        return;
+      }
+      cont.innerHTML = todas.map((a, i) => `
+        <tr>
+          <td class="border p-2 text-xs">${escapeHtml(a.titulo)}</td>
+          <td class="border p-1"><select class="input-idea text-xs" data-crono-sem="${i}"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>10</option><option>12</option></select></td>
+          <td class="border p-1"><input class="input-idea text-xs" placeholder="Docente del área" data-crono-resp="${i}"></td>
+          <td class="border p-1"><input class="input-idea text-xs" placeholder="Indicador medible" data-crono-ind="${i}"></td>
+          <td class="border p-1"><select class="input-idea text-xs" data-crono-est="${i}"><option>pendiente</option><option>en proceso</option><option>cumplido</option></select></td>
+        </tr>
+      `).join('');
+    }
+
+    // PASO 5: Resumen
+    function renderResumen() {
+      const cont = document.getElementById('resumen-plan');
+      if (!cont) return;
+      const plan = recolectar();
+      const numAcc = (plan.acciones || []).length + recomendacionesSeleccionadas.size;
+      const numRecs = recomendacionesSeleccionadas.size;
+      const numCron = (plan.cronograma || []).length;
+      cont.innerHTML = `
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+          <div class="text-center p-3 rounded-lg bg-purple-50"><div class="text-xs text-slate-600">Grado-grupo</div><div class="text-lg font-bold">${escapeHtml(plan.grado)}° ${escapeHtml(plan.grupo)}</div></div>
+          <div class="text-center p-3 rounded-lg bg-sky-50"><div class="text-xs text-slate-600">Acciones</div><div class="text-lg font-bold">${numAcc}</div></div>
+          <div class="text-center p-3 rounded-lg bg-emerald-50"><div class="text-xs text-slate-600">Del catálogo</div><div class="text-lg font-bold">${numRecs}</div></div>
+          <div class="text-center p-3 rounded-lg bg-amber-50"><div class="text-xs text-slate-600">En cronograma</div><div class="text-lg font-bold">${numCron}</div></div>
+        </div>
+        <p class="text-sm text-slate-700">El plan reúne <strong>${numAcc}</strong> acciones pedagógicas articuladas al marco evaluativo del área. Las recomendaciones del catálogo experto se alinean con las competencias, afirmaciones y evidencias del marco DCE. Al descargar, recibirás el documento listo para llevar a tu aula durante la Fase III.</p>
+      `;
+    }
+
+    // Inicializar paso 1 al cargar
+    try {
+      renderDiagnosticoAuto();
+      renderPrioridades();
+      renderCatalogo();
+      mostrarPaso(1);
+    } catch (e) {
+      console.error('[wizard init FAIL]', e);
+      // Aun si los renders fallan, intentar mostrar el paso 1
+      try { mostrarPaso(1); } catch (e2) {}
+    }
+    // ===================== fin v9 wizard =====================
+
+    // v9: Descargar plan como Word con 7 secciones expertas + anexo de rúbricas
+    document.getElementById('btn-docx').addEventListener('click', () => {
+      const plan = recolectar();
+      const fecha = new Date().toLocaleDateString('es-CO', { day: '2-digit', month: 'long', year: 'numeric' });
+
+      // Datos del wizard
+      const prioridadesMarcadas = [...document.querySelectorAll('[data-prioridad]:checked')].map(c => c.dataset.prioridad);
+      const recsSel = catalogoActual.filter(r => recomendacionesSeleccionadas.has(r.id));
+      const cronograma = [...document.querySelectorAll('#filas-cronograma tr')].map((tr, i) => ({
+        accion: tr.querySelector('td:first-child')?.textContent?.trim() || '',
+        semana: tr.querySelector(`[data-crono-sem="${i}"]`)?.value || '—',
+        responsable: tr.querySelector(`[data-crono-resp="${i}"]`)?.value || '—',
+        indicador: tr.querySelector(`[data-crono-ind="${i}"]`)?.value || '—',
+        estado: tr.querySelector(`[data-crono-est="${i}"]`)?.value || 'pendiente'
+      })).filter(c => c.accion);
+      const observaciones = document.getElementById('f-observaciones')?.value || '';
+
+      // Diagnóstico texto experto
+      const prom = apsGrupo.length ? promedioGrupo(apsGrupo) : 0;
+      const niv = calcularNivel(prom);
+      const enRiesgo = apsGrupo.filter(a => a.nivel === 'BAJO').length;
+      const logComp = cuadernillo && apsGrupo.length ? logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo) : {};
+      const compKeys = Object.keys(logComp);
+      const minComp = compKeys.length ? compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b) : null;
+      const maxComp = compKeys.length ? compKeys.reduce((a, b) => logComp[a] >= logComp[b] ? a : b) : null;
+
+      // Tabla v14: ya no incluye Fortalezas (se muestran arriba como bloque autodetectado).
+      const accionesHTML = plan.acciones.map(a => `
+        <tr>
+          <td>${escapeHtml(a.oportunidades || '')}</td>
+          <td>${escapeHtml(a.estrategias || '')}</td>
+          <td>${escapeHtml(a.seguimiento || '')}</td>
+        </tr>`).join('');
+
+      // Fortalezas autodetectadas (mismo cálculo que renderFortalezasAuto en la UI):
+      // dimensiones con logro >= 65% se consideran fortalezas y NO se pueden editar.
+      const fortalezasAuto = [];
+      if (cuadernillo && apsGrupo.length) {
+        const _cfgArea = configArea(cuadernillo);
+        const _ET = etiquetasMarco(cuadernillo);
+        const _logComp = logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo);
+        const _logAfir = logroGrupoPor(logroPorAfirmacion, apsGrupo, cuadernillo);
+        const _logDim2 = tieneDimensionSecundaria(cuadernillo) ? logroGrupoPor(logroPorDimensionSecundaria, apsGrupo, cuadernillo) : null;
+        Object.entries(_logComp).filter(([, v]) => v >= 65).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
+          fortalezasAuto.push({ tipo: _ET.competencia_singular, codigo: `${k}.`, nombre: cuadernillo.competencias?.[k] || k, logro: v, color: '#10B981' });
+        });
+        Object.entries(_logAfir).filter(([, v]) => v >= 65).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
+          fortalezasAuto.push({ tipo: _ET.afirmacion_singular, codigo: `${_ET.afirmacion_codigo} ${k}`, nombre: cuadernillo.afirmaciones?.[k] || k, logro: v, color: '#0E7A52' });
+        });
+        if (_logDim2) {
+          Object.entries(_logDim2).filter(([, v]) => v >= 65).sort((a, b) => b[1] - a[1]).forEach(([k, v]) => {
+            fortalezasAuto.push({ tipo: _cfgArea.dimension_secundaria?.etiqueta_singular || 'componente', codigo: '', nombre: k, logro: v, color: '#047857' });
+          });
+        }
+      }
+      const trayectoriaHTML = plan.puntajes_periodos.map(p =>
+        `<tr><td><b>${p.periodo}</b></td><td style="text-align:center">${p.puntaje != null ? p.puntaje : '—'}</td></tr>`).join('');
+      const vincHTML = '';  // v13: Vinculación curricular institucional removida
+      const recsHTML = recsSel.map(r => `
+        <tr>
+          <td><b>${escapeHtml(r.titulo)}</b></td>
+          <td>${escapeHtml(r.accion_detallada)}</td>
+          <td style="text-align:center;text-transform:uppercase;font-size:9pt">${escapeHtml(r.esfuerzo)}</td>
+          <td style="text-align:center;text-transform:uppercase;font-size:9pt">${escapeHtml(r.impacto)}</td>
+          <td style="text-align:center;font-size:9pt">${escapeHtml(r.duracion || '—')}</td>
+        </tr>`).join('');
+      const cronoHTML = cronograma.map(c => `
+        <tr>
+          <td>${escapeHtml(c.accion)}</td>
+          <td style="text-align:center">Sem. ${escapeHtml(c.semana)}</td>
+          <td>${escapeHtml(c.responsable)}</td>
+          <td>${escapeHtml(c.indicador)}</td>
+          <td style="text-align:center;text-transform:uppercase;font-size:9pt">${escapeHtml(c.estado)}</td>
+        </tr>`).join('');
+      const prioridadesHTML = prioridadesMarcadas.map(k =>
+        `<li><b>${escapeHtml(cuadernillo?.competencias?.[k] || k)}</b>: ${logComp[k] || 0}% de logro grupal</li>`).join('');
+
+      const diagnosticoExperto = apsGrupo.length ? `
+        <p>El grupo conformado por <b>${apsGrupo.length} estudiantes</b> evaluados con el Instrumento IDEA obtuvo un promedio de <b>${prom} puntos</b> sobre 100, ubicándose en el nivel <b>${niv}</b> de desempeño. ${enRiesgo > 0 ? `Se identifican <b>${enRiesgo} estudiantes en nivel BAJO</b> que requieren intervención focalizada.` : 'No hay estudiantes en nivel BAJO en esta aplicación.'}</p>
+        ${maxComp ? `<p>La competencia <b>${escapeHtml(cuadernillo?.competencias?.[maxComp] || maxComp)}</b> constituye la fortaleza más consolidada del grupo, con un logro promedio del <b>${logComp[maxComp]}%</b>. Este resultado sugiere internalización satisfactoria de las evidencias asociadas y abre la posibilidad de capitalizarla como palanca pedagógica.</p>` : ''}
+        ${minComp ? `<p>La principal oportunidad de fortalecimiento se localiza en <b>${escapeHtml(cuadernillo?.competencias?.[minComp] || minComp)}</b>, cuyo logro promedio alcanza apenas el <b>${logComp[minComp]}%</b>. Este hallazgo, lejos de constituir un déficit aislado, debe leerse como una oportunidad pedagógica para focalizar la intervención de manera articulada con el marco de referencia del DCE.</p>` : ''}
+        ${observaciones ? `<p><b>Observaciones del docente:</b> ${escapeHtml(observaciones)}</p>` : ''}
+      ` : '<p>Sin aplicaciones registradas para este grupo.</p>';
+
+      // v9 FIX: generador de Word movido a modulo externo para evitar bug del parser HTML
+      // que confundia la presencia de HTML denso dentro de un template literal del modulo.
+      const wordHtml = construirWordHtml({
+        plan, fecha, recsSel, cronograma, observaciones, prom, niv, enRiesgo,
+        logComp, compKeys, minComp, maxComp,
+        accionesHTML, trayectoriaHTML, vincHTML, recsHTML, cronoHTML, prioridadesHTML,
+        diagnosticoExperto, cuadernillo,
+        fortalezasAuto
+      });
+
+      const blob = new Blob(['\uFEFF', wordHtml], { type: 'application/msword' });
+      const link = document.createElement('a');
+      const slug = `${(plan.docente_nombre || '').slice(0, 12)}_${plan.grado}${plan.grupo}_${plan.area}`.replace(/\s+/g, '_');
+      link.href = URL.createObjectURL(blob);
+      link.download = `Plan_Mejora_IDEA_${slug}.doc`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(() => URL.revokeObjectURL(link.href), 4000);
+      toast('Plan descargado en formato Word', 'exito');
+    });
+  </script>
+</body>
+</html>

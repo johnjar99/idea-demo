@@ -1,0 +1,37 @@
+/* tokens.css — Sistema de design tokens IDEA v14. Mirror en js/tema.js. */
+:root {
+  --ink-900:#1A1613; --ink-700:#3D332C; --ink-500:#6B5F54; --ink-400:#8E8276;
+  --ink-300:#C2B8AD; --ink-200:#E5DDD2; --ink-100:#F1ECE3; --ink-50:#FBF8F2;
+  --paper:#FFFFFF; --zebra:#FAF6EE;
+  --brand-700:#A8132F; --brand-600:#C7163C; --brand-500:#E11D48;
+  --brand-400:#EE6B7E; --brand-100:#FCE7EC; --brand-50:#FDF2F5;
+  --gold-700:#946B11; --gold-600:#B8861A; --gold-500:#FBBF24; --gold-100:#FEF3C7; --gold-50:#FEF9E7;
+  --ok-700:#0A6243; --ok-600:#0E7A52; --ok-100:#D6EFE2;
+  --warn-700:#935B16; --warn-600:#B5751C; --warn-100:#FBEED0;
+  --err-700:#95172F; --err-600:#B91C3C; --err-100:#FBE0E4;
+  --info-700:#1A4F8F; --info-600:#1F5FA8; --info-100:#DBE8F7;
+  /* v13.3 fix: niveles y semáforo apuntan a vivos clásicos v11.9, NO a los oscuros editoriales v14
+     (B91C3C/B5751C/0E7A52/B8861A) que el usuario calificó como "difíciles de identificar". */
+  --nivel-bajo:#EF4444; --nivel-basico:#F59E0B; --nivel-alto:#FBBF24; --nivel-superior:#10B981;
+  --sem-rojo:#EF4444; --sem-ambar:#F59E0B; --sem-verde:#10B981;
+  --font-serif:'Fraunces','Source Serif Pro',Georgia,serif;
+  --font-sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-mono:'JetBrains Mono',Consolas,ui-monospace,monospace;
+  --text-xs:12px; --text-sm:14px; --text-base:16px; --text-md:18px; --text-lg:22px; --text-xl:28px;
+  --text-2xl:36px; --text-3xl:48px; --text-4xl:64px; --text-5xl:84px;
+  --lh-tight:1.05; --lh-snug:1.2; --lh-normal:1.45; --lh-relaxed:1.65; --lh-loose:1.8;
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px; --s-6:32px; --s-7:48px; --s-8:64px; --s-9:96px; --s-10:128px;
+  --r-xs:6px; --r-sm:10px; --r-md:14px; --r-lg:22px; --r-full:9999px;
+  --shadow-xs:0 1px 2px rgba(60,40,25,0.04);
+  --shadow-sm:0 2px 4px rgba(60,40,25,0.05),0 1px 2px rgba(60,40,25,0.03);
+  --shadow-md:0 6px 16px -4px rgba(60,40,25,0.08),0 2px 4px rgba(60,40,25,0.04);
+  --shadow-lg:0 14px 32px -8px rgba(60,40,25,0.10),0 4px 8px rgba(60,40,25,0.04);
+  --shadow-xl:0 28px 60px -16px rgba(60,40,25,0.16),0 8px 16px rgba(60,40,25,0.06);
+  --shadow-2xl:0 48px 100px -24px rgba(60,40,25,0.22);
+  --ring-brand:0 0 0 3px rgba(199,22,60,0.18);
+  --ring-gold:0 0 0 3px rgba(184,134,26,0.20);
+  --dur-1:150ms; --dur-2:250ms; --dur-3:400ms; --dur-4:600ms;
+  --ease-standard:cubic-bezier(0.2,0,0,1); --ease-emphasized:cubic-bezier(0.3,0,0,1); --ease-decelerate:cubic-bezier(0,0,.2,1);
+  --container-narrow:720px; --container-base:960px; --container-wide:1200px; --container-fluid:1440px;
+  --sidebar-w:260px; --header-h:64px; --footer-h:56px;
+}

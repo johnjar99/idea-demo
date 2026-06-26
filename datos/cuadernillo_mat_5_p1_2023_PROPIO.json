@@ -1,0 +1,579 @@
+{
+  "id": "math-5-p1-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "5",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 5° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Razonamiento",
+    "b": "Resolución de problemas",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Analiza datos representados de diferentes formas",
+    "2": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "3": "Resuelve problemas de medición de perímetro, de área y superficie, de capacidad y volumen de diversos objetos",
+    "4": "Reconoce las propiedades de las fracciones, los números naturales, la representación decimal, las operaciones y las relaciones en distintos contextos",
+    "5": "Resuelve problemas aditivos, multiplicativos y de proporción",
+    "6": "Descubre regularidades de las secuencias, la ordenación y sobre las equivalencias entre las situaciones aditivas y multiplicativas (arreglos rectangulares, producto cartesiano, adición repetida)",
+    "7": "Comprende las condiciones de semejanza y congruencia en figuras poligonales",
+    "8": "Interpreta la naturaleza y posibilidad de ocurrencia de eventos aleatorios simples",
+    "9": "Explica las características y las propiedades de secuencias (numéricas o geométricas) y expresiones numéricas",
+    "10": "Resuelve problemas de medición que requieran el uso de patrones estandarizados o no estandarizados",
+    "11": "Explica las características y las propiedades de secuencias, numéricas o geométricas, y expresiones numéricas"
+  },
+  "evidencias": {
+    "1.1": "Determina diferencias y similitudes en distintas representaciones de conjuntos de datos de una misma situación",
+    "2.1": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "3.1": "Utiliza estrategias no estandarizadas (recubrimientos y patrones no convencionales) para encontrar perímetro, área, o volumen de diferentes objetos, en contextos escolares y extraescolares",
+    "4.1": "Representa fracciones y decimales de distintas formas",
+    "5.1": "Utiliza la proporcionalidad en contextos de relacionamiento de magnitudes",
+    "6.1": "Determina equivalencias entre modelos aditivos o multiplicativos, considerando los procesos de transformación y composición",
+    "7.1": "Determina figuras semejantes o las condiciones para que se dé la semejanza",
+    "4.2": "Describe propiedades y relaciones entre cantidades y magnitudes y sus operaciones",
+    "2.2": "Determina cuándo un evento es posible, imposible o seguro",
+    "8.1": "Clasifica los eventos aleatorios según los casos favorables observados en un mismo experimento",
+    "5.2": "Usa adiciones y productos en contextos escolares y extraescolares",
+    "9.1": "Determina patrones y propiedades de las secuencias numéricas o geométricas",
+    "10.1": "Usa patrones estandarizados para enfrentar situaciones de medición",
+    "7.2": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "11.1": "Establece equivalencias a partir de las relaciones, propiedades o dependencia entre magnitudes y expresiones numéricas"
+  },
+  "cmc": [
+    "Aleatorio",
+    "Espacial - métrico",
+    "Numérico - variacional"
+  ],
+  "preguntas": [
+    {
+      "id": "P-math-5-p1-01",
+      "numero": 1,
+      "enunciado": "<p>El pictograma muestra la cantidad de libros que leyeron cuatro estudiantes durante las vacaciones. Cada libro del dibujo representa <b>\\(2\\) libros leídos</b>. ¿Cuál de las siguientes tablas representa la misma información del pictograma?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de libros</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Beto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Caro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Dani</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de libros</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Beto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Caro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Dani</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de libros</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Beto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Caro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Dani</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de libros</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Beto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Caro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Dani</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
+      "que_evalua": "La capacidad para relacionar dos representaciones de un mismo conjunto de datos, en este caso: pictogramas y tablas.",
+      "justificacion_correcta": "Cada dibujo equivale a \\(2\\) libros, así que se multiplica por \\(2\\) la cantidad de dibujos: Ana \\(6\\times 2 = 12\\), Beto \\(3\\times 2 = 6\\), Caro \\(5\\times 2 = 10\\) y Dani \\(2\\times 2 = 4\\). Esto corresponde a la tabla B.",
+      "opciones_incorrectas": {
+        "A": "Toma la cantidad de dibujos como total de libros, sin multiplicarla por \\(2\\).",
+        "C": "Multiplica bien por \\(2\\) pero ubica los valores de derecha a izquierda, asignándolos al estudiante equivocado.",
+        "D": "Cuenta los dibujos de derecha a izquierda y los multiplica por \\(2\\), invirtiendo el orden de los estudiantes."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q01.png"
+    },
+    {
+      "id": "P-math-5-p1-02",
+      "numero": 2,
+      "enunciado": "<p>Para un juego en la clase de Matemáticas hay \\(4\\) bolsas con fichas de varios colores. Cada estudiante mete la mano en una bolsa y, si saca una ficha <b>roja</b>, paga una prenda. La figura indica cuántas fichas rojas y cuántas fichas en total tiene cada bolsa. ¿En cuál de las \\(4\\) bolsas un estudiante tiene <b>menos</b> posibilidad de pagar una prenda?</p>",
+      "opciones": {
+        "A": "En la bolsa 1.",
+        "B": "En la bolsa 2.",
+        "C": "En la bolsa 3.",
+        "D": "En la bolsa 4."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para comparar los casos posibles de los eventos dados en un experimento aleatorio.",
+      "justificacion_correcta": "La posibilidad de sacar ficha roja en cada bolsa es: bolsa 1 \\(=\\dfrac{8}{8}\\), bolsa 2 \\(=\\dfrac{8}{10}\\), bolsa 3 \\(=\\dfrac{1}{8}\\) y bolsa 4 \\(=\\dfrac{1}{3}\\). La menor de todas es \\(\\dfrac{1}{8}\\), de la bolsa 3.",
+      "opciones_incorrectas": {
+        "A": "En la bolsa 1 todas las fichas son rojas \\(\\left(\\dfrac{8}{8}\\right)\\): es el evento seguro, la mayor posibilidad, no la menor.",
+        "B": "En la bolsa 2 hay muchas rojas \\(\\left(\\dfrac{8}{10}\\right)\\): la posibilidad es alta.",
+        "D": "Elige la bolsa con menos fichas en total, pero \\(\\dfrac{1}{3}\\) es mayor que \\(\\dfrac{1}{8}\\), así que la posibilidad no es la menor."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q02.png"
+    },
+    {
+      "id": "P-math-5-p1-03",
+      "numero": 3,
+      "enunciado": "<p>Daniela quiere construir por completo el <b>bloque grande</b> de la figura juntando varias fichas iguales a la <b>ficha pequeña</b> que aparece rotulada al lado. Las dos figuras están armadas con los mismos cubitos. ¿Cuántas fichas como la pequeña necesita Daniela para construir el bloque grande?</p>",
+      "opciones": {
+        "A": "\\(12\\) fichas.",
+        "B": "\\(24\\) fichas.",
+        "C": "\\(9\\) fichas.",
+        "D": "\\(18\\) fichas."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir (longitudes, distancias, áreas de superficies, volúmenes de cuerpos sólidos, volúmenes de líquidos y capacidades de recipientes).",
+      "que_evalua": "La capacidad para componer o descomponer sólidos regulares de acuerdo con sus medidas y forma.",
+      "justificacion_correcta": "El bloque grande tiene \\(4\\) cubitos de ancho, \\(3\\) de alto y \\(2\\) de profundidad, es decir \\(4\\times 3\\times 2 = 24\\) cubitos. Cada ficha pequeña tiene \\(2\\times 1 \\times 1 = 2\\) cubitos. Por lo tanto se necesitan \\(24 \\div 2 = 12\\) fichas.",
+      "opciones_incorrectas": {
+        "B": "Cuenta el total de cubitos del bloque \\((24)\\) y olvida que cada ficha ocupa \\(2\\) cubitos.",
+        "C": "Suma las dimensiones \\(4+3+2 = 9\\) en lugar de multiplicarlas.",
+        "D": "Cuenta solo las fichas que se ven en la cara frontal y agrega unas pocas de la profundidad, llegando a \\(18\\)."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q03.png"
+    },
+    {
+      "id": "P-math-5-p1-04",
+      "numero": 4,
+      "enunciado": "<p>En una huerta escolar, la <b>quinta parte</b> del terreno se usa para sembrar tomate. ¿Qué porcentaje del terreno de la huerta se usa para sembrar tomate?</p>",
+      "opciones": {
+        "A": "\\(20\\,\\%\\)",
+        "B": "\\(15\\,\\%\\)",
+        "C": "\\(25\\,\\%\\)",
+        "D": "\\(50\\,\\%\\)"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte todo, cociente, razones y proporciones.",
+      "que_evalua": "La capacidad para resolver una situación de proporcionalidad en problema del todo y la parte en representación porcentual.",
+      "justificacion_correcta": "La quinta parte corresponde a la fracción \\(\\dfrac{1}{5}\\). Como el total es el \\(100\\,\\%\\), se tiene \\(\\dfrac{1}{5}\\times 100\\,\\% = 20\\,\\%\\).",
+      "opciones_incorrectas": {
+        "B": "Asocia la fracción \\(\\dfrac{1}{5}\\) directamente con el \\(15\\,\\%\\), sin calcular.",
+        "C": "Confunde la quinta parte con la cuarta parte \\(\\left(\\dfrac{1}{4} = 25\\,\\%\\right)\\).",
+        "D": "Asume que una parte del terreno corresponde a la mitad, tomando el \\(50\\,\\%\\)."
+      }
+    },
+    {
+      "id": "P-math-5-p1-05",
+      "numero": 5,
+      "enunciado": "<p>Tres botellas de jugo iguales cuestan <b>$2.100</b> y cada botella cuesta lo mismo. ¿Cuánto cuestan \\(7\\) botellas de jugo del mismo tipo?</p>",
+      "opciones": {
+        "A": "$4.900",
+        "B": "$4.200",
+        "C": "$2.800",
+        "D": "$2.100"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad para determinar los valores asociados a una situación de proporcionalidad directa.",
+      "justificacion_correcta": "Si \\(3\\) botellas cuestan $2.100, cada botella cuesta \\(2100 \\div 3 = 700\\). Entonces \\(7\\) botellas cuestan \\(700 \\times 7 = 4900\\), es decir $4.900.",
+      "opciones_incorrectas": {
+        "B": "Multiplica \\(2100 \\times 2\\) sin hallar primero el precio de una botella, obteniendo $4.200.",
+        "C": "Suma una vez el precio unitario al total \\((2100 + 700)\\), llegando a $2.800.",
+        "D": "Repite el precio de las \\(3\\) botellas como si no cambiara la cantidad."
+      }
+    },
+    {
+      "id": "P-math-5-p1-06",
+      "numero": 6,
+      "enunciado": "<p>Para indicar la cantidad de balones que hay en la figura se utilizó la expresión \\(5 \\times 3\\). ¿Cuál de las siguientes es otra forma correcta de indicar esa misma cantidad de balones?</p>",
+      "opciones": {
+        "A": "\\(5 + 5 + 5 + 5 + 5\\)",
+        "B": "\\(5 + 5 + 5\\)",
+        "C": "\\(5 + 5 + 5 + 3 + 3 + 3 + 3 + 3\\)",
+        "D": "\\(3 + 3 + 3\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
+      "que_evalua": "La capacidad para relacionar diferentes formas de describir arreglos multiplicativos.",
+      "justificacion_correcta": "La expresión \\(5 \\times 3\\) significa sumar el \\(5\\) tres veces: \\(5 + 5 + 5 = 15\\), que es el total de balones del arreglo \\((5\\) columnas con \\(3\\) filas\\()\\).",
+      "opciones_incorrectas": {
+        "A": "Suma el \\(5\\) cinco veces, intercambiando el papel de los dos factores.",
+        "C": "Mezcla las dos lecturas posibles del producto: suma el \\(5\\) y también el \\(3\\).",
+        "D": "Suma el \\(3\\) tres veces, tomando el número de veces como el sumando."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q06.png"
+    },
+    {
+      "id": "P-math-5-p1-07",
+      "numero": 7,
+      "enunciado": "<p>La profesora de Matemáticas dibujó en el tablero las dos figuras que se muestran sobre la cuadrícula. Si las dos figuras son <b>semejantes</b>, ¿cuál de las siguientes características se cumple?</p>",
+      "opciones": {
+        "A": "Tienen el mismo tamaño pero diferente altura.",
+        "B": "Tienen la misma altura y diferente forma.",
+        "C": "Tienen el mismo tamaño pero diferente forma.",
+        "D": "Tienen la misma forma y diferente tamaño."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad para explicar las características que se cumplen cuando dos figuras son semejantes.",
+      "justificacion_correcta": "Dos figuras semejantes tienen la misma forma porque sus lados son proporcionales \\((6\\) es a \\(3\\) como \\(2\\) es a \\(1)\\), pero pueden tener distinto tamaño, como ocurre con la figura grande y la pequeña.",
+      "opciones_incorrectas": {
+        "A": "Las figuras semejantes pueden tener distinto tamaño y, en este caso, su altura sí es diferente.",
+        "B": "Las dos figuras no tienen la misma altura ni distinta forma: conservan la forma.",
+        "C": "Si la forma fuera distinta, las figuras no serían semejantes."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q07.png"
+    },
+    {
+      "id": "P-math-5-p1-08",
+      "numero": 8,
+      "enunciado": "<p>La caja registradora de una tienda muestra en su visor el valor total a pagar como \\(300 + 500 + 300\\). ¿Con cuál de las siguientes operaciones también se puede calcular correctamente ese valor total a pagar?</p>",
+      "opciones": {
+        "A": "\\((2 \\times 300) + (2 \\times 500)\\)",
+        "B": "\\((2 \\times 300) + 500\\)",
+        "C": "\\((2 \\times 300) + 800\\)",
+        "D": "\\((2 \\times 300) + (2 \\times 800)\\)"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
+      "que_evalua": "La capacidad para establecer relaciones entre expresiones.",
+      "justificacion_correcta": "El sumando \\(300\\) aparece dos veces, así que \\(300 + 300 = 2 \\times 300\\), y queda el \\(500\\) una sola vez: \\((2 \\times 300) + 500\\).",
+      "opciones_incorrectas": {
+        "A": "Duplica también el \\(500\\), aunque en el visor el \\(500\\) aparece una sola vez.",
+        "C": "Reconoce que el \\(300\\) está dos veces, pero además suma \\(300 + 500 = 800\\), agregando un \\(300\\) de más.",
+        "D": "Duplica el \\(300\\) y también el resultado de \\(300 + 500 = 800\\), contando los sumandos varias veces."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q08.png"
+    },
+    {
+      "id": "P-math-5-p1-09",
+      "numero": 9,
+      "enunciado": "<p>Observa los \\(4\\) acuarios de la figura, que contienen peces blancos y peces negros. Si se saca un pez al azar de algún acuario, ¿en cuál de los acuarios es <b>seguro</b> sacar un pez negro?</p>",
+      "opciones": {
+        "A": "En el acuario 1.",
+        "B": "En el acuario 2.",
+        "C": "En el acuario 3.",
+        "D": "En el acuario 4."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para diferenciar los eventos posibles de los imposibles.",
+      "justificacion_correcta": "En el acuario 2 todos los peces son negros, por lo que sacar un pez negro al azar es un evento <b>seguro</b>: siempre ocurre.",
+      "opciones_incorrectas": {
+        "A": "En el acuario 1 solo hay peces blancos, así que sacar un pez negro es imposible.",
+        "C": "En el acuario 3 hay peces blancos y negros: sacar un negro es solo posible, no seguro.",
+        "D": "En el acuario 4 hay más blancos que negros: sacar un negro es posible, pero no seguro."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q09.png"
+    },
+    {
+      "id": "P-math-5-p1-10",
+      "numero": 10,
+      "enunciado": "<p>En una fiesta, los niños sacan al azar un papel con un juguete para un sorteo. Los papeles disponibles son los que muestra la figura. ¿Cuáles dos juguetes tienen la <b>misma</b> probabilidad de ser elegidos al azar?</p>",
+      "opciones": {
+        "A": "La pelota y la raqueta.",
+        "B": "El lazo y la raqueta.",
+        "C": "La pelota y el tambor.",
+        "D": "El lazo y el tambor."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad para reconocer y comparar casos favorables en un experimento aleatorio simple.",
+      "justificacion_correcta": "Hay \\(3\\) papeles con pelota, \\(2\\) con lazo, \\(2\\) con raqueta y \\(1\\) con tambor. El lazo y la raqueta tienen \\(2\\) papeles cada uno, así que tienen la misma probabilidad de ser elegidos.",
+      "opciones_incorrectas": {
+        "A": "La pelota \\((3\\) papeles\\()\\) y la raqueta \\((2\\) papeles\\()\\) no tienen la misma cantidad.",
+        "C": "La pelota \\((3)\\) y el tambor \\((1)\\) tienen cantidades distintas.",
+        "D": "El lazo \\((2)\\) y el tambor \\((1)\\) tienen cantidades distintas."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q10.png"
+    },
+    {
+      "id": "P-math-5-p1-11",
+      "numero": 11,
+      "enunciado": "<p>Para medir el borde de una ventana se usaron lápices iguales, como muestra la figura: a lo alto caben \\(6\\) lápices y a lo ancho caben \\(2\\) lápices. ¿Cuál es el <b>perímetro</b> de la ventana, medido en lápices?</p>",
+      "opciones": {
+        "A": "\\(16\\) lápices.",
+        "B": "\\(12\\) lápices.",
+        "C": "\\(8\\) lápices.",
+        "D": "\\(4\\) lápices."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir (longitudes, distancias, áreas de superficies, volúmenes de cuerpos sólidos, volúmenes de líquidos y capacidades de recipientes).",
+      "que_evalua": "La capacidad para calcular perímetros, utilizando unidades de medida no estandarizadas.",
+      "justificacion_correcta": "El perímetro suma los cuatro lados. Los dos lados largos miden \\(6\\) lápices cada uno y los dos cortos \\(2\\) lápices cada uno: \\(6 + 6 + 2 + 2 = 16\\) lápices.",
+      "opciones_incorrectas": {
+        "B": "Suma solo un lado largo y un lado corto \\((6 + 6\\) o \\(6 + 2 + ...)\\), tomando \\(12\\) lápices.",
+        "C": "Suma solo los lápices que se ven en la figura \\((6 + 2)\\), sin tener en cuenta los lados opuestos.",
+        "D": "Resta los lápices observados \\((6 - 2)\\) en lugar de sumar los cuatro lados."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q11.png"
+    },
+    {
+      "id": "P-math-5-p1-12",
+      "numero": 12,
+      "enunciado": "<p>La tabla muestra la cantidad de personas que asistieron cada día a un parque.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de personas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">136</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">44</td></tr></table><p>¿Cuántas personas asistieron en total al parque estos dos días?</p>",
+      "opciones": {
+        "A": "\\(170\\) personas.",
+        "B": "\\(180\\) personas.",
+        "C": "\\(270\\) personas.",
+        "D": "\\(576\\) personas."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La capacidad para modelar y resolver una situación aditiva.",
+      "justificacion_correcta": "Se suman los asistentes de los dos días: \\(136 + 44 = 180\\). Las \\(6\\) unidades y las \\(4\\) unidades dan \\(10\\), que se reagrupa como una decena.",
+      "opciones_incorrectas": {
+        "A": "Suma sin reagrupar la decena que se forma con \\(6 + 4\\), obteniendo \\(170\\).",
+        "C": "Suma de forma incorrecta las centenas, ubicando el \\(44\\) en el lugar equivocado y llegando a \\(270\\).",
+        "D": "Ubica el \\(44\\) de izquierda a derecha y mezcla las cifras, obteniendo \\(576\\)."
+      }
+    },
+    {
+      "id": "P-math-5-p1-13",
+      "numero": 13,
+      "enunciado": "<p>La tabla muestra la cantidad de puntos que obtuvo cada niño que participó en un concurso.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nombre</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntos obtenidos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sofía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Manuel</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Stefany</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Leonardo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr></table><p>¿Cuál de las siguientes opciones muestra los puntos obtenidos por cada niño, organizados de <b>menor a mayor</b>?</p>",
+      "opciones": {
+        "A": "\\(7,\\ 9,\\ 11,\\ 12\\)",
+        "B": "\\(9,\\ 11,\\ 7,\\ 12\\)",
+        "C": "\\(11,\\ 9,\\ 7,\\ 12\\)",
+        "D": "\\(12,\\ 7,\\ 9,\\ 11\\)"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico regularidades y propiedades de los números, sus relaciones y operaciones.",
+      "que_evalua": "La capacidad para ordenar números que se encuentran asociados a un conjunto de datos.",
+      "justificacion_correcta": "Los puntos \\(12,\\ 7,\\ 9\\) y \\(11\\) ordenados de menor a mayor son \\(7,\\ 9,\\ 11\\) y \\(12\\).",
+      "opciones_incorrectas": {
+        "B": "Ordena los números en parejas, sin comparar todo el conjunto.",
+        "C": "Ubica los valores como aparecen en la tabla, pero de abajo hacia arriba.",
+        "D": "Copia los valores tal como están en la tabla, sin ordenarlos."
+      }
+    },
+    {
+      "id": "P-math-5-p1-14",
+      "numero": 14,
+      "enunciado": "<p>Ramiro es pizzero y, para preparar la masa, sigue una tabla que relaciona la cantidad de vasos de agua con la cantidad de huevos que debe usar.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de vasos de agua</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de huevos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table><p>Si la relación entre las cantidades se mantiene y Ramiro planea utilizar \\(12\\) vasos de agua, ¿cuántos huevos deberá usar en la receta?</p>",
+      "opciones": {
+        "A": "\\(2\\)",
+        "B": "\\(3\\)",
+        "C": "\\(12\\)",
+        "D": "\\(24\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad de resolver situaciones que asocian magnitudes discretas inversamente proporcionales en contextos familiares como el uso adecuado de recetas culinarias.",
+      "justificacion_correcta": "La relación es inversamente proporcional: el producto vasos \\(\\times\\) huevos siempre da \\(36\\) \\((1\\times 36,\\ 2\\times 18,\\ 6\\times 6,\\ 9\\times 4)\\). Para \\(12\\) vasos: \\(36 \\div 12 = 3\\) huevos.",
+      "opciones_incorrectas": {
+        "A": "Observa que al pasar de \\(6\\) a \\(9\\) vasos los huevos bajan de \\(6\\) a \\(4\\) y resta de forma constante, llegando a \\(2\\).",
+        "C": "Supone una relación directa: si \\(6\\) vasos usan \\(6\\) huevos, \\(12\\) vasos usarían \\(12\\) huevos.",
+        "D": "Cree que entre vasos y huevos se debe completar \\(36\\), de modo que para \\(12\\) vasos usaría \\(24\\) huevos."
+      }
+    },
+    {
+      "id": "P-math-5-p1-15",
+      "numero": 15,
+      "enunciado": "<p>Camilo pintó un cuadro en su cuaderno usando tres colores: amarillo, rojo y azul, como se muestra en la figura (las medidas están en centímetros). ¿Cuál es el <b>área total</b> que Camilo pintó?</p>",
+      "opciones": {
+        "A": "\\(38\\ \\text{cm}^2\\)",
+        "B": "\\(34\\ \\text{cm}^2\\)",
+        "C": "\\(19\\ \\text{cm}^2\\)",
+        "D": "\\(17\\ \\text{cm}^2\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
+      "que_evalua": "La capacidad para determinar el área total de una región compuesta por tres rectángulos de diferentes medidas.",
+      "justificacion_correcta": "Se halla el área de cada rectángulo y se suman: amarillo \\(2 \\times 4 = 8\\ \\text{cm}^2\\), rojo \\(4 \\times 6 = 24\\ \\text{cm}^2\\) y azul \\(2 \\times 1 = 2\\ \\text{cm}^2\\). El área total es \\(8 + 24 + 2 = 34\\ \\text{cm}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Calcula perímetros en lugar de áreas y los suma, obteniendo un valor cercano de \\(38\\).",
+        "C": "Suma los lados de cada rectángulo en vez de multiplicarlos \\((2+4)+(4+6)+(2+1) = 19\\).",
+        "D": "Usa la fórmula del área del triángulo \\(\\left(\\dfrac{b\\times h}{2}\\right)\\) en cada rectángulo, llegando a \\(17\\)."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q15.png"
+    },
+    {
+      "id": "P-math-5-p1-16",
+      "numero": 16,
+      "enunciado": "<p>Eliana tiene un rompecabezas rectangular al que le falta una ficha para quedar completo: el hueco tiene la forma de cruz que se muestra arriba, con todos sus brazos de \\(2\\ \\text{cm}\\). ¿Cuál de las fichas A, B, C o D es <b>congruente</b> con el hueco, es decir, encaja exactamente?</p>",
+      "opciones": {
+        "A": "Ficha A.",
+        "B": "Ficha B.",
+        "C": "Ficha C.",
+        "D": "Ficha D."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad para establecer relaciones de congruencia entre dos polígonos dadas las medidas de sus segmentos.",
+      "justificacion_correcta": "Dos figuras son congruentes si tienen exactamente la misma forma y las mismas medidas. La ficha A es una cruz con los cuatro brazos de \\(2\\ \\text{cm}\\), igual que el hueco, por lo que encaja perfectamente.",
+      "opciones_incorrectas": {
+        "B": "Su brazo derecho mide \\(3\\ \\text{cm}\\) y el inferior \\(1\\ \\text{cm}\\): las medidas no coinciden con el hueco.",
+        "C": "Su brazo inferior es más largo \\((3\\ \\text{cm})\\) y termina en \\(1\\ \\text{cm}\\): no es congruente con el hueco.",
+        "D": "Tiene la misma forma de cruz, pero su brazo inferior mide \\(3\\ \\text{cm}\\), distinto de los \\(2\\ \\text{cm}\\) del hueco."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q16.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-5-p1/q16_opA.png",
+        "B": "assets/banco-mat-5-p1/q16_opB.png",
+        "C": "assets/banco-mat-5-p1/q16_opC.png",
+        "D": "assets/banco-mat-5-p1/q16_opD.png"
+      }
+    },
+    {
+      "id": "P-math-5-p1-17",
+      "numero": 17,
+      "enunciado": "<p>Luis trabaja en una veterinaria y registró en la tabla la cantidad de servicios que realizó en un mes.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Servicio</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de servicios</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peluquería</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Guardería</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Médico</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vacunación</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table><p>¿Cuál de los siguientes gráficos de barras representa la misma información registrada en la tabla?</p>",
+      "opciones": {
+        "A": "Gráfico A.",
+        "B": "Gráfico B.",
+        "C": "Gráfico C.",
+        "D": "Gráfico D."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo diferentes representaciones del mismo conjunto de datos.",
+      "que_evalua": "La capacidad para elaborar una gráfica que contenga la misma información que aparece en una tabla.",
+      "justificacion_correcta": "Cada barra debe tener la altura indicada en la tabla y respetar el mismo orden de los servicios: Peluquería \\(20\\), Guardería \\(10\\), Médico \\(25\\) y Vacunación \\(15\\). Esto corresponde al gráfico C.",
+      "opciones_incorrectas": {
+        "A": "Ordena las barras de mayor a menor, sin respetar el orden de los servicios de la tabla.",
+        "B": "Ordena las barras de menor a mayor, cambiando el orden de los servicios.",
+        "D": "Cambia el orden de los servicios y, además, intercambia las alturas de Peluquería y Médico."
+      },
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-5-p1/q17_opA.png",
+        "B": "assets/banco-mat-5-p1/q17_opB.png",
+        "C": "assets/banco-mat-5-p1/q17_opC.png",
+        "D": "assets/banco-mat-5-p1/q17_opD.png"
+      }
+    },
+    {
+      "id": "P-math-5-p1-18",
+      "numero": 18,
+      "enunciado": "<p>Nicol lleva el registro de cuántas personas visitan un pueblo en época de fiestas. La tabla muestra el número de visitantes por día.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de visitantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2.415</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1.850</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">770</td></tr></table><p>¿En total cuántas personas visitaron el pueblo durante los tres días de fiestas?</p>",
+      "opciones": {
+        "A": "\\(5.035\\)",
+        "B": "\\(3.946\\)",
+        "C": "\\(3.935\\)",
+        "D": "\\(1.965\\)"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La capacidad para resolver situaciones aditivas de composición que involucran más de dos cantidades.",
+      "justificacion_correcta": "Se suman los visitantes de los tres días: \\(2415 + 1850 + 770 = 5035\\), reagrupando correctamente unidades, decenas y centenas.",
+      "opciones_incorrectas": {
+        "B": "Realiza la suma de izquierda a derecha (empezando por las unidades de mil) y se equivoca al reagrupar, obteniendo \\(3.946\\).",
+        "C": "Suma sin reagrupar las decenas y centenas que pasan al siguiente lugar, llegando a \\(3.935\\).",
+        "D": "Ubica el \\(770\\) a la izquierda en lugar de a la derecha y olvida una reagrupación, obteniendo \\(1.965\\)."
+      }
+    },
+    {
+      "id": "P-math-5-p1-19",
+      "numero": 19,
+      "enunciado": "<p>Manuel vende fresas con chocolate en dos cajas: la caja <b>pequeña</b> trae \\(4\\) fresas y la caja <b>grande</b> trae \\(6\\) fresas (ver figura). Manuel vendió \\(3\\) cajas pequeñas y \\(4\\) cajas grandes y escribió esta operación para hallar el total de fresas: \\[(3 \\times 4) + (4 \\times 6)\\] ¿Cuál de las siguientes operaciones es <b>equivalente</b> a la que escribió Manuel?</p>",
+      "opciones": {
+        "A": "\\((3 + 4) \\times (4 + 6)\\)",
+        "B": "\\(4 \\times (3 + 6)\\)",
+        "C": "\\(4 \\times (3 \\times 6)\\)",
+        "D": "\\((3 \\times 6) + (4 \\times 4)\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas cuya estrategia de solución requiera de las relaciones y propiedades de los números naturales y sus operaciones.",
+      "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales como la conmutativa y la distributiva del producto sobre la suma.",
+      "justificacion_correcta": "En el primer producto, por la propiedad conmutativa, \\(3 \\times 4 = 4 \\times 3\\). Así, el factor \\(4\\) es común a los dos productos \\((4 \\times 3)\\) y \\((4 \\times 6)\\) y, como la multiplicación se distribuye sobre la suma, la operación equivale a \\(4 \\times (3 + 6)\\).",
+      "opciones_incorrectas": {
+        "A": "Suma los factores dentro de cada paréntesis en lugar de aplicar la propiedad distributiva.",
+        "C": "Multiplica \\(3 \\times 6\\) dentro del paréntesis en vez de sumar \\(3 + 6\\).",
+        "D": "Intercambia los factores que acompañan a cada caja \\((3\\) con \\(6)\\), de modo que altera la operación y ya no da el mismo total."
+      },
+      "imagen_figura": "assets/banco-mat-5-p1/q19.png"
+    },
+    {
+      "id": "P-math-5-p1-20",
+      "numero": 20,
+      "enunciado": "<p>Un periodista analizó un partido de fútbol y, al terminar, afirmó: <i>«el <b>\\(20\\%\\)</b> de los lanzamientos al arco del equipo azul se convirtieron en gol»</i>. ¿Cuál de las siguientes afirmaciones expresa ese mismo porcentaje de otra forma correcta?</p>",
+      "opciones": {
+        "A": "De los lanzamientos al arco del equipo azul, \\(20\\) se convirtieron en gol.",
+        "B": "De los lanzamientos al arco del equipo azul, \\(2\\) se convirtieron en gol.",
+        "C": "La parte de los lanzamientos que terminó en gol es \\(0{,}02\\).",
+        "D": "La parte de los lanzamientos que terminó en gol es \\(0{,}2\\)."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo la notación decimal para expresar fracciones en diferentes contextos y relaciono estas dos notaciones con la de los porcentajes.",
+      "que_evalua": "La capacidad de encontrar una expresión equivalente, que incluye porcentajes en diferentes contextos.",
+      "justificacion_correcta": "El \\(20\\,\\%\\) equivale a la fracción \\(\\dfrac{20}{100}\\), que en notación decimal es \\(0{,}2\\). El porcentaje expresa una parte del total, no una cantidad exacta de goles, por eso la forma equivalente correcta es \\(0{,}2\\).",
+      "opciones_incorrectas": {
+        "A": "Interpreta el \\(20\\,\\%\\) como \\(20\\) goles, confundiendo el porcentaje con una cantidad absoluta.",
+        "B": "Toma el dígito \\(2\\) del \\(20\\) como la cantidad de goles, sin relacionarlo con el total.",
+        "C": "Corre la coma un lugar de más: \\(0{,}02\\) corresponde al \\(2\\,\\%\\), no al \\(20\\,\\%\\)."
+      }
+    }
+  ]
+}

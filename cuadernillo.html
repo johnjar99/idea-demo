@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Cuadernillo de Matemáticas — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- KaTeX para renderizado matemático -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <!-- Driver.js para onboarding -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <!-- Confetti (solo al enviar) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <!-- ExcelJS no se usa aquí; retirado para acelerar la carga -->
+  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css"></head>
+<body class="rol-estudiante">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="javascript:void(0)" class="logo-home" onclick="if(confirm('¿Salir del cuadernillo? Se perderán las respuestas no enviadas.')) location.href='estudiante.html'" title="Volver al inicio (con confirmación)">
+      <img src="assets/logo-idea.png" class="logo" alt="IDEA">
+      <div class="nombre-app" id="titulo-cuad">Cuadernillo</div>
+    </a>
+    <div class="user-info">
+      <div id="cronometro" class="cronometro">60:00</div>
+      <span id="nombre-usuario" class="text-sm"></span>
+    </div>
+  </header>
+
+  <!-- Pantalla previa (antes de iniciar) -->
+  <section id="pantalla-previa" class="max-w-3xl mx-auto px-6 py-16 text-center animate-fade-in" tabindex="-1">
+    <a id="contenido" tabindex="-1"></a>
+    <div class="idea-card text-left p-10">
+      <div class="text-center mb-8">
+        <img src="assets/logo-idea.png" style="height:80px;margin:0 auto 16px">
+        <h1 id="titulo-previa" class="text-3xl font-bold mb-2" style="font-family:'Plus Jakarta Sans'">Cuadernillo</h1>
+        <p id="subtitulo-previa" class="text-xl text-slate-600">Grado — Período</p>
+      </div>
+
+      <!-- Banner de estado: bloqueado, retomar o primer intento -->
+      <div id="banner-estado" class="hidden mb-6"></div>
+
+      <div class="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-r-lg mb-6">
+        <h3 class="font-bold text-emerald-800 mb-3">Apreciado estudiante</h3>
+        <p class="text-emerald-900 mb-3">Valoramos tu participación en este proceso. Antes de iniciar con tus respuestas, es importante que tengas en cuenta estas indicaciones:</p>
+        <ul id="lista-indicaciones-previa" class="space-y-2 text-emerald-900 list-disc pl-5">
+          <li>Lee detenidamente cada pregunta y elige una única respuesta.</li>
+          <li>Es importante que no dejes ninguna pregunta sin responder.</li>
+          <li id="li-tiempo-previa">Organiza tu tiempo: cuentas con una (1) hora para terminar.</li>
+          <li id="li-orden-previa">Las preguntas y opciones se presentan en orden aleatorio.</li>
+          <li><strong>Una vez envíes tus respuestas, no podrás modificarlas.</strong> Si necesitas presentar de nuevo, deberás solicitarlo a tu docente.</li>
+        </ul>
+      </div>
+      <table class="w-full text-center mb-8 border-collapse">
+        <thead>
+          <tr class="bg-slate-100">
+            <th class="p-3 border">TIEMPO DE APLICACIÓN</th>
+            <th class="p-3 border">N.° DE PREGUNTAS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="td-tiempo-previa" class="p-3 border font-bold text-lg">—</td>
+            <td id="td-num-preg-previa" class="p-3 border font-bold text-lg">—</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Mensaje de Sabio antes de iniciar -->
+      <div id="sabio-previa" class="mb-6"></div>
+
+      <div class="bg-slate-50 p-5 rounded-lg mb-6">
+        <h4 class="font-semibold mb-3">Confirma tus datos</h4>
+        <div class="text-sm space-y-1" id="datos-confirmar"></div>
+      </div>
+
+      <button id="btn-iniciar" class="btn-idea w-full justify-center text-lg py-4 pulse-idea">
+        Comenzar prueba →
+      </button>
+      <a id="btn-volver" href="estudiante.html" class="hidden btn-secundario w-full justify-center text-lg py-4 text-center block">
+        Volver a mi panel
+      </a>
+    </div>
+  </section>
+
+  <!-- Pantalla de la prueba -->
+  <section id="pantalla-prueba" class="hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_200px] gap-6 max-w-[1400px] mx-auto p-6">
+      <!-- Pregunta actual -->
+      <div class="idea-card" id="contenedor-pregunta" role="region" aria-label="Pregunta del cuadernillo" aria-live="polite" style="padding:32px;">
+        <div class="flex items-center justify-between mb-3">
+          <div class="text-sm uppercase tracking-wider text-slate-500" id="indicador-pregunta">Pregunta 1 de 20</div>
+          <div class="text-xs text-slate-400" id="codigo-pregunta"></div>
+        </div>
+        <div class="progreso-prueba mb-6" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5" id="barra-progreso-wrap"><div class="barra" id="barra-progreso" style="width:5%"></div></div>
+
+        <!-- Vista de página de contexto (lectura previa antes del bloque de preguntas) -->
+        <div id="contexto-pagina" class="hidden"></div>
+
+        <!-- Vista de pregunta -->
+        <div id="bloque-pregunta">
+          <div id="contexto-pregunta" class="hidden bg-orange-50 border-l-4 border-orange-400 p-4 rounded-r mb-5 text-base" style="font-size:16px;line-height:1.7;"></div>
+          <p id="enunciado" class="leading-relaxed mb-5" style="font-size:19px;line-height:1.65;color:#1F1F23;"></p>
+          <div id="imagen-pregunta" class="mb-5"></div>
+          <p id="instruccion-respuesta" class="hidden text-sm text-slate-500 uppercase tracking-wider mb-3">Selecciona tu respuesta</p>
+
+          <div id="opciones-container" role="radiogroup" aria-label="Opciones de respuesta"></div>
+
+          <div class="text-xs text-slate-400 mt-3" aria-hidden="true">💡 Atajos: ← → para navegar, 1-4 para responder</div>
+        </div>
+
+        <div class="flex justify-between mt-6 pt-6 border-t">
+          <button id="btn-anterior" class="btn-secundario" aria-label="Anterior">← Anterior</button>
+          <div class="flex gap-2">
+            <button id="btn-saltar" class="btn-secundario" aria-label="Saltar pregunta">Saltar</button>
+            <button id="btn-siguiente" class="btn-idea" aria-label="Siguiente">Siguiente →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa lateral -->
+      <aside>
+        <div class="idea-card p-4 sticky top-24">
+          <h3 class="text-sm uppercase tracking-wider font-semibold text-slate-500 mb-3">Mapa de preguntas</h3>
+          <div class="mapa-preguntas" id="mapa"></div>
+          <div class="mt-5 text-xs space-y-1.5">
+            <div class="flex items-center gap-2"><div class="w-3 h-3 rounded bg-emerald-100 border-2 border-emerald-500"></div> Respondida</div>
+            <div class="flex items-center gap-2"><div class="w-3 h-3 rounded bg-amber-100 border-2 border-amber-500"></div> Saltada</div>
+            <div class="flex items-center gap-2"><div class="w-3 h-3 rounded bg-white border-2 border-slate-200"></div> Sin visitar</div>
+          </div>
+          <button id="btn-finalizar" class="btn-dorado w-full mt-6">Enviar prueba</button>
+          <p class="text-xs text-slate-500 mt-2 text-center">Tu progreso se guarda automáticamente.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Modal de doble confirmación -->
+  <div id="modal-confirmar" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl p-8 max-w-lg shadow-2xl animate-fade-in">
+      <div class="text-center mb-5">
+        <div class="text-5xl mb-3">⚠️</div>
+        <h3 class="text-2xl font-bold mb-2" style="font-family:'Plus Jakarta Sans'">¿Estás seguro de enviar tu prueba?</h3>
+        <p class="text-slate-600 text-sm" id="msg-confirmar"></p>
+      </div>
+
+      <div id="lista-sin-responder" class="hidden bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r mb-5 text-sm">
+        <strong>Preguntas sin responder:</strong>
+        <div id="lista-pendientes" class="mt-2"></div>
+      </div>
+
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-5">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" id="check-confirmar" class="w-5 h-5 mt-0.5 flex-shrink-0">
+          <span class="text-sm text-red-900 font-medium">
+            <strong>Entiendo que una vez enviada no podré modificar mis respuestas.</strong>
+            Para presentar de nuevo este cuadernillo, deberé pedir autorización a mi docente.
+          </span>
+        </label>
+      </div>
+
+      <div class="flex gap-3 justify-center">
+        <button id="btn-cancelar-final" class="btn-secundario">Continuar respondiendo</button>
+        <button id="btn-confirmar-final" class="btn-idea opacity-50 cursor-not-allowed" disabled>
+          ENVIAR DEFINITIVAMENTE
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { requerirSesion } from './js/auth.js';
+    import { generarPlanAplicacion } from './js/shuffle.js';
+    import { calcularResultados } from './js/calculo.js';
+    import {
+      puedeEstudianteIniciarPrueba, consumirPermiso,
+      marcarAplicacionOficial, ESTADOS_APLICACION
+    } from './js/permisos.js';
+    import { uuid, nowIso, segundosAReloj, toast, escapeHtml, renderMath } from './js/utils.js';
+    import { srcImagenPregunta, onerrorPlaceholder } from './js/extractor-imagenes.js';
+    import { sabioConBurbuja } from './js/sabio.js';
+
+    const ses = await requerirSesion('estudiante');
+    if (!ses) throw new Error('redir');
+
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    await db.inicializar();
+
+    // Cuadernillo
+    const params = new URLSearchParams(location.search);
+    const cuadId = params.get('id') || 'math-11-p1-2023';
+    const cuadernillo = await db.obtener('idea_cuadernillos', cuadId);
+    if (!cuadernillo) { toast('Cuadernillo no encontrado', 'error'); throw new Error('no cuad'); }
+    document.getElementById('titulo-cuad').textContent = cuadernillo.nombre;
+
+    // Rellenar pantalla previa con datos del cuadernillo activo (antes era hardcoded a Matemáticas)
+    document.title = `${cuadernillo.nombre || 'Cuadernillo'} — IDEA`;
+    const tituloPrevia = document.getElementById('titulo-previa');
+    const subtituloPrevia = document.getElementById('subtitulo-previa');
+    if (tituloPrevia) tituloPrevia.textContent = `Cuadernillo de ${cuadernillo.area || ''}`.trim();
+    if (subtituloPrevia) subtituloPrevia.textContent = `Grado ${cuadernillo.grado}° — Período ${cuadernillo.periodo}`;
+    const minutos = Number(cuadernillo.tiempo_minutos) || 60;
+    const horas = Math.floor(minutos / 60);
+    const minsResto = minutos % 60;
+    const textoTiempo = horas > 0
+      ? (minsResto === 0 ? `${horas} ${horas === 1 ? 'hora' : 'horas'}` : `${horas} h ${minsResto} min`)
+      : `${minutos} minutos`;
+    const tdTiempo = document.getElementById('td-tiempo-previa');
+    const tdNumPreg = document.getElementById('td-num-preg-previa');
+    if (tdTiempo) tdTiempo.textContent = textoTiempo;
+    if (tdNumPreg) tdNumPreg.textContent = (cuadernillo.preguntas || []).length;
+    const liTiempo = document.getElementById('li-tiempo-previa');
+    if (liTiempo) liTiempo.textContent = `Organiza tu tiempo: cuentas con ${textoTiempo} para terminar.`;
+    const liOrden = document.getElementById('li-orden-previa');
+    if (liOrden) {
+      if (cuadernillo.preservar_orden_preguntas) {
+        liOrden.innerHTML = 'Las preguntas siguen el orden del cuadernillo: <strong>varias se responden a partir de un mismo texto o infografía</strong>. Las opciones de respuesta se presentan en orden aleatorio.';
+      } else {
+        liOrden.textContent = 'Las preguntas y opciones se presentan en orden aleatorio.';
+      }
+    }
+
+    // === GUARD: verificar si el estudiante puede presentar ===
+    const verificacion = await puedeEstudianteIniciarPrueba(ses.user_id, cuadId);
+    let aplicacionEnCurso = verificacion.retomar || null;
+    let permisoConsumir = verificacion.permisoId || null;
+    const banner = document.getElementById('banner-estado');
+
+    if (!verificacion.permitido) {
+      // Bloqueado: ya envió y no tiene permiso
+      banner.className = 'bg-red-50 border-l-4 border-red-500 p-5 rounded-r-lg mb-6 animate-fade-in';
+      banner.innerHTML = `
+        <h4 class="font-bold text-red-800 mb-2">Prueba ya enviada</h4>
+        <p class="text-red-900 text-sm">${escapeHtml(verificacion.detalle || 'No tienes habilitado un nuevo intento.')}</p>
+        <p class="text-red-800 text-xs mt-2">Si crees que esto es un error, conversa con tu docente.</p>
+      `;
+      banner.classList.remove('hidden');
+      document.getElementById('btn-iniciar').classList.add('hidden');
+      document.getElementById('btn-volver').classList.remove('hidden');
+    } else if (verificacion.razon === 'retomar') {
+      banner.className = 'bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg mb-6 animate-fade-in';
+      banner.innerHTML = `
+        <h4 class="font-bold text-amber-800 mb-1">Continuemos tu prueba</h4>
+        <p class="text-amber-900 text-sm">Detectamos una prueba en curso. Puedes retomarla justo donde la dejaste.</p>
+      `;
+      banner.classList.remove('hidden');
+      document.getElementById('btn-iniciar').textContent = 'Retomar prueba →';
+    } else if (verificacion.razon === 'permiso_vigente') {
+      banner.className = 'bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-r-lg mb-6 animate-fade-in';
+      banner.innerHTML = `
+        <h4 class="font-bold text-emerald-800 mb-1">Nuevo intento autorizado</h4>
+        <p class="text-emerald-900 text-sm">Tu docente te habilitó un nuevo intento. Tómalo con calma y enfoca tu esfuerzo en mejorar.</p>
+      `;
+      banner.classList.remove('hidden');
+    }
+
+    // Mostrar datos a confirmar
+    const instituciones = await db.lista('idea_instituciones');
+    const inst = instituciones.find(i => i.id === ses.institucion_id);
+    document.getElementById('datos-confirmar').innerHTML = `
+      <div><strong>Estudiante:</strong> ${ses.nombre_completo}</div>
+      <div><strong>Institución:</strong> ${inst?.nombre || '—'}</div>
+      <div><strong>Grado:</strong> ${ses.grado || '—'} - ${ses.grupo || '—'}</div>
+      <div><strong>Área:</strong> ${cuadernillo.area} · Período ${cuadernillo.periodo}</div>
+    `;
+
+    // Sabio acompañando
+    document.getElementById('sabio-previa').innerHTML = sabioConBurbuja(
+      'Hola, soy <strong>Sabio</strong>. Te acompañaré durante tu prueba. Recuerda: lee con calma, responde lo que sepas con seguridad y revisa antes de enviar.',
+      'animando', { lado: 'izquierda', tamano: 130 }
+    );
+
+    // ===== Estado de la aplicación (en memoria) =====
+    let aplicacionId = null;
+    let plan = null;
+    let posicionActual = 0;       // índice 0..N-1 en plan.ordenPreguntas (posición visual de la pregunta)
+    let flow = [];                // secuencia [{type:'context', contextoId} | {type:'q', preguntaIdx, posVisual}]
+    let flowIndex = 0;            // posición actual dentro de flow
+    let respuestas = {};
+    let saltadas = new Set();
+    let tiempoInicio = null;
+    let intervaloCronometro = null;
+    let intervaloAutosave = null;
+    let tiempoPorPregunta = {};
+    let tInicioPregunta = null;
+    let prevEnvio = false;
+
+    document.getElementById('btn-iniciar').addEventListener('click', iniciar);
+
+    // Dev: ?autoinicia=1 dispara el inicio automáticamente para QA/screenshots
+    if (params.get('autoinicia') === '1') {
+      setTimeout(() => {
+        const btn = document.getElementById('btn-iniciar');
+        if (btn && !btn.classList.contains('hidden')) btn.click();
+        const gotoQ = parseInt(params.get('goto') || '0', 10);
+        const flowAt = parseInt(params.get('flow') || '-1', 10);
+        if (flowAt >= 0) {
+          setTimeout(() => { try { mostrarFlowItem(flowAt); } catch (e) {} }, 800);
+        } else if (gotoQ >= 1) {
+          setTimeout(() => {
+            try {
+              const idx = flowIdxDePregunta(gotoQ - 1);
+              if (idx >= 0) mostrarFlowItem(idx);
+            } catch (e) {}
+          }, 800);
+        }
+      }, 400);
+    }
+
+    async function iniciar() {
+      if (aplicacionEnCurso) {
+        // Retomar
+        aplicacionId = aplicacionEnCurso.id;
+        plan = {
+          ordenPreguntas: aplicacionEnCurso.orden_preguntas,
+          ordenesOpciones: aplicacionEnCurso.orden_opciones
+        };
+        // Detección de plan stale: si el cuadernillo cambió (ej. se ajustó el
+        // número de opciones de Q6-Q8 de A-D a A-C, o se agregó/quitó alguna
+        // pregunta), el plan guardado quedó desfasado. Lo regeneramos.
+        const nPreguntasActual = cuadernillo.preguntas.length;
+        if ((plan.ordenPreguntas || []).length !== nPreguntasActual) {
+          console.warn(`[IDEA] Plan stale: orden_preguntas tiene ${plan.ordenPreguntas?.length} pero cuadernillo tiene ${nPreguntasActual}. Regenerando.`);
+          plan = generarPlanAplicacion(cuadernillo);
+        } else {
+          // Verificar tamaños de orden_opciones por pregunta y reajustar los
+          // que no coincidan con las opciones reales actuales.
+          plan.ordenesOpciones = (plan.ordenesOpciones || []).map((mapeo, i) => {
+            const realKeys = Object.keys(cuadernillo.preguntas[i].opciones || {}).sort();
+            const okSize = (mapeo?.original || []).length === realKeys.length
+              && realKeys.every(k => mapeo.original.includes(k));
+            if (okSize) return mapeo;
+            // Regenerar este mapeo: barajar las llaves reales
+            const mostrada = [...realKeys];
+            for (let k = mostrada.length - 1; k > 0; k--) {
+              const j = Math.floor(Math.random() * (k + 1));
+              [mostrada[k], mostrada[j]] = [mostrada[j], mostrada[k]];
+            }
+            return { original: realKeys, mostrada };
+          });
+        }
+        // Reanudar cronómetro CONGELADO: usar duracion_segundos guardado (tiempo activo)
+        // en lugar de fecha_inicio real. Reconstruimos tiempoInicio para que
+        // Date.now() - tiempoInicio = duracion_segundos guardada.
+        const segActivosGuardados = aplicacionEnCurso.duracion_segundos || 0;
+        tiempoInicio = Date.now() - (segActivosGuardados * 1000);
+        // Reconstruir respuestas
+        for (const r of (aplicacionEnCurso.respuestas || [])) {
+          respuestas[r.pregunta_id] = {
+            opcion_visual: r.opcion_visual,
+            opcion_elegida_real: r.opcion_elegida_real
+          };
+          tiempoPorPregunta[r.pregunta_id] = r.tiempo_seg || 0;
+        }
+      } else {
+        // Nuevo intento
+        plan = generarPlanAplicacion(cuadernillo);
+        tiempoInicio = Date.now();
+        aplicacionId = uuid();
+        const nueva = {
+          id: aplicacionId,
+          estudiante_id: ses.user_id,
+          estudiante_nombre: ses.nombre_completo,
+          institucion_id: ses.institucion_id,
+          sede_id: ses.sede_id,
+          grado: ses.grado,
+          grupo: ses.grupo,
+          cuadernillo_id: cuadernillo.id,
+          area: cuadernillo.area,
+          periodo: cuadernillo.periodo,
+          fecha_inicio: new Date(tiempoInicio).toISOString(),
+          fecha_fin: null,
+          fecha_envio: null,
+          duracion_segundos: 0,
+          orden_preguntas: plan.ordenPreguntas,
+          orden_opciones: plan.ordenesOpciones,
+          respuestas: [],
+          estado: ESTADOS_APLICACION.EN_CURSO,
+          bloqueada: false,
+          oficial: false,
+          permiso_usado: permisoConsumir || null,
+          intento_numero: null
+        };
+        const apsPrevias = (await db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', ses.user_id))
+          .filter(a => a.cuadernillo_id === cuadernillo.id && a.estado === 'enviada');
+        nueva.intento_numero = apsPrevias.length + 1;
+        await db.crear('idea_aplicaciones', nueva);
+      }
+
+      construirFlow();
+      document.getElementById('pantalla-previa').classList.add('hidden');
+      document.getElementById('pantalla-prueba').classList.remove('hidden');
+      iniciarCronometro();
+      iniciarAutosave();
+      renderMapa();
+      mostrarFlowItem(0);
+    }
+
+    // Construye la secuencia visual del cuadernillo: una "página de contexto" antes
+    // del primer pregunta de cada bloque que comparte contexto_id, seguida de las
+    // preguntas en orden. Para preguntas sin contexto, solo se agrega la pregunta.
+    function construirFlow() {
+      flow = [];
+      let lastCtx = null;
+      plan.ordenPreguntas.forEach((preguntaIdx, posVisual) => {
+        const p = cuadernillo.preguntas[preguntaIdx];
+        if (p.contexto_id && p.contexto_id !== lastCtx) {
+          flow.push({ type: 'context', contextoId: p.contexto_id });
+          lastCtx = p.contexto_id;
+        } else if (!p.contexto_id) {
+          lastCtx = null;
+        }
+        flow.push({ type: 'q', preguntaIdx, posVisual });
+      });
+    }
+
+    // Devuelve el índice en flow correspondiente a una pregunta dada su posición visual.
+    function flowIdxDePregunta(posVisual) {
+      return flow.findIndex(f => f.type === 'q' && f.posVisual === posVisual);
+    }
+
+    // Punto único de dispatch de navegación: muestra el item flow[idx].
+    function mostrarFlowItem(idx) {
+      if (idx < 0 || idx >= flow.length) return;
+      flowIndex = idx;
+      const item = flow[idx];
+      if (item.type === 'context') {
+        mostrarContextoView(item.contextoId);
+      } else {
+        mostrarPregunta(item.posVisual);
+      }
+      actualizarBotonesNavegacion();
+      // Precargar las imágenes del SIGUIENTE item (y el anterior) para que avanzar sea
+      // instantáneo, sin parpadeo de carga. No bloquea: solo calienta la caché del navegador.
+      precargarImagenesFlow(idx + 1);
+      precargarImagenesFlow(idx - 1);
+    }
+
+    // Calienta la caché del navegador con las imágenes del item `idx` del flujo.
+    function precargarImagenesFlow(idx) {
+      try {
+        const it = flow[idx];
+        if (!it) return;
+        const urls = [];
+        if (it.type === 'context') {
+          const c = (cuadernillo.contextos || {})[it.contextoId];
+          if (c && c.imagen) urls.push(c.imagen);
+        } else {
+          const p = cuadernillo.preguntas[it.preguntaIdx];
+          if (p) {
+            if (p.imagen_figura) urls.push(p.imagen_figura);
+            if (p.contexto_compartido_imagen) urls.push(p.contexto_compartido_imagen);
+            if (p.opciones_imagenes) urls.push(...Object.values(p.opciones_imagenes));
+          }
+        }
+        for (const u of urls) { if (u) { const im = new Image(); im.decoding = 'async'; im.src = u; } }
+      } catch (_) { /* la precarga nunca debe romper la navegación */ }
+    }
+
+    function actualizarBotonesNavegacion() {
+      const btnAnt = document.getElementById('btn-anterior');
+      const btnSig = document.getElementById('btn-siguiente');
+      const btnSal = document.getElementById('btn-saltar');
+      btnAnt.disabled = flowIndex === 0;
+      const item = flow[flowIndex];
+      if (item && item.type === 'context') {
+        btnSig.textContent = 'Comenzar las preguntas →';
+        btnSal.classList.add('hidden');
+      } else {
+        btnSal.classList.remove('hidden');
+        btnSig.textContent = flowIndex === flow.length - 1 ? 'Última →' : 'Siguiente →';
+      }
+    }
+
+    // Muestra la página de contexto (lectura previa) — imagen del texto/infografía
+    // completos del cuadernillo original, sin preguntas en pantalla.
+    // Diseño personalizado IDEA: marca de agua, badge numerado, Sabio guía y banda dorada superior.
+    function mostrarContextoView(contextoId) {
+      document.getElementById('bloque-pregunta').classList.add('hidden');
+      const slot = document.getElementById('contexto-pagina');
+      slot.classList.remove('hidden');
+      const ctx = (cuadernillo.contextos || {})[contextoId];
+      if (!ctx) {
+        slot.innerHTML = '<p class="text-slate-500 italic">Contexto no disponible.</p>';
+        return;
+      }
+      // Numerar la lectura (1ª, 2ª, ... según el orden en que aparecen los contextos en flow)
+      const ctxIndexEnFlow = flow.filter((f, i) => f.type === 'context' && i <= flowIndex).length;
+      const totalCtx = flow.filter(f => f.type === 'context').length;
+      const imgHtml = ctx.imagen
+        ? `<figure class="contexto-figura">
+             <img src="${ctx.imagen}" alt="" aria-hidden="true" loading="eager" decoding="async" onerror="${onerrorPlaceholder}">
+           </figure>`
+        : '';
+      const textoHtml = ctx.texto
+        ? `<div class="contexto-texto-corpo">${escapeHtml(ctx.texto)}</div>`
+        : '';
+      // Tres tips de lectura crítica que aplican a cualquier dispositivo (pantalla,
+      // tablet, papel) y nunca asumen que el estudiante tenga lápiz o cuaderno.
+      const tipsLectura = [
+        'Léelo dos veces: la primera para entender de qué trata y la segunda para detenerte en los detalles.',
+        'Si una palabra te resulta nueva, fíjate en las que están alrededor: el contexto suele darte una pista.',
+        'Cuando avances a las preguntas, podrás regresar aquí en cualquier momento con el botón <em>“Ver lectura”</em>.'
+      ];
+      slot.innerHTML = `
+        <article class="contexto-pagina">
+          <div class="contexto-pagina__cinta-dorada"></div>
+
+          <header class="contexto-pagina__header">
+            <div class="contexto-pagina__badge" aria-hidden="true">
+              <span class="contexto-pagina__badge-num">${ctxIndexEnFlow}</span>
+              <span class="contexto-pagina__badge-total">/ ${totalCtx}</span>
+            </div>
+            <div class="contexto-pagina__titular">
+              <div class="contexto-pagina__eyebrow">Lectura previa · Preguntas ${escapeHtml(ctx.rango_preguntas || '')}</div>
+              <h2 class="contexto-pagina__titulo">${escapeHtml(ctx.titulo || 'Lectura previa')}</h2>
+            </div>
+          </header>
+
+          <div class="contexto-pagina__lienzo">
+            ${imgHtml}
+            ${textoHtml}
+          </div>
+
+          <footer class="contexto-pagina__pie">
+            <div class="contexto-pagina__pie-titulo">Antes de continuar</div>
+            <ul class="contexto-pagina__pie-lista">
+              ${tipsLectura.map(t => `<li>${t}</li>`).join('')}
+            </ul>
+          </footer>
+        </article>
+      `;
+      const total = cuadernillo.preguntas.length;
+      const completadas = flow.slice(0, flowIndex).filter(f => f.type === 'q').length;
+      const pct = (completadas / total) * 100;
+      document.getElementById('indicador-pregunta').textContent =
+        `Lectura previa · preguntas ${ctx.rango_preguntas || ''}`;
+      document.getElementById('codigo-pregunta').textContent = '';
+      document.getElementById('barra-progreso').style.width = `${pct}%`;
+      document.getElementById('barra-progreso-wrap').setAttribute('aria-valuenow', Math.round(pct));
+      actualizarEstadoMapa();
+    }
+
+    function iniciarCronometro() {
+      const totalSeg = cuadernillo.tiempo_minutos * 60;
+      const cronEl = document.getElementById('cronometro');
+      intervaloCronometro = setInterval(() => {
+        const transcurrido = Math.floor((Date.now() - tiempoInicio) / 1000);
+        const restante = totalSeg - transcurrido;
+        if (restante <= 0) {
+          cronEl.textContent = '00:00';
+          clearInterval(intervaloCronometro);
+          finalizar(true);
+          return;
+        }
+        cronEl.textContent = segundosAReloj(restante);
+        if (restante < 300) cronEl.classList.add('urgente');
+      }, 1000);
+
+      // ====== CONGELAR CRONÓMETRO al salir de la pestaña/ventana ======
+      // Cuando el estudiante cambia de pestaña, minimiza, o pierde foco, congelamos
+      // el reloj. Al volver, "movemos" tiempoInicio hacia adelante en la cantidad de
+      // segundos que estuvo ausente, así Date.now() - tiempoInicio sigue
+      // representando TIEMPO ACTIVO (no tiempo real transcurrido).
+      let tiempoSalida = null;
+      const onVisibilidad = () => {
+        if (prevEnvio) return;
+        if (document.visibilityState === 'hidden') {
+          tiempoSalida = Date.now();
+          cronEl.classList.add('cron-pausado');
+        } else if (document.visibilityState === 'visible' && tiempoSalida) {
+          const ausenteMs = Date.now() - tiempoSalida;
+          tiempoInicio += ausenteMs; // saltar el tiempo ausente
+          tiempoSalida = null;
+          cronEl.classList.remove('cron-pausado');
+          // Persistir el nuevo tiempoInicio en BD para reanudar correctamente
+          guardarProgreso(false);
+        }
+      };
+      document.addEventListener('visibilitychange', onVisibilidad);
+      window.addEventListener('blur', () => { if (document.visibilityState === 'visible') onVisibilidad(); });
+    }
+
+    function iniciarAutosave() {
+      // Guarda el progreso cada 10 segundos
+      intervaloAutosave = setInterval(() => guardarProgreso(false), 10000);
+    }
+
+    async function guardarProgreso(envioFinal) {
+      if (!aplicacionId || prevEnvio) return;
+      const respuestasArray = Object.keys(respuestas).map(qid => ({
+        pregunta_id: qid,
+        opcion_visual: respuestas[qid].opcion_visual,
+        opcion_elegida_real: respuestas[qid].opcion_elegida_real,
+        tiempo_seg: tiempoPorPregunta[qid] || 0
+      }));
+      const parche = {
+        respuestas: respuestasArray,
+        duracion_segundos: Math.floor((Date.now() - tiempoInicio) / 1000)
+      };
+      if (!envioFinal) {
+        // Escritura RÁPIDA (1 viaje, sin lecturas previas): autoguardado liviano que no
+        // recarga la base aunque haya muchos estudiantes guardando al mismo tiempo.
+        await db.actualizarRapido('idea_aplicaciones', aplicacionId, parche);
+      }
+    }
+
+    function renderMapa() {
+      const mapa = document.getElementById('mapa');
+      mapa.innerHTML = '';
+      for (let i = 0; i < cuadernillo.preguntas.length; i++) {
+        const b = document.createElement('button');
+        b.textContent = i + 1;
+        b.addEventListener('click', () => {
+          const idx = flowIdxDePregunta(i);
+          if (idx >= 0) mostrarFlowItem(idx);
+        });
+        mapa.appendChild(b);
+      }
+    }
+
+    function actualizarEstadoMapa() {
+      const botones = document.querySelectorAll('#mapa button');
+      botones.forEach((b, i) => {
+        const idxOriginal = plan.ordenPreguntas[i];
+        const pregunta = cuadernillo.preguntas[idxOriginal];
+        b.classList.remove('respondida', 'saltada', 'actual');
+        if (respuestas[pregunta.id]) b.classList.add('respondida');
+        else if (saltadas.has(pregunta.id)) b.classList.add('saltada');
+        if (i === posicionActual) b.classList.add('actual');
+      });
+    }
+
+    function mostrarPregunta(pos) {
+      if (tInicioPregunta != null) {
+        const preguntaAnterior = cuadernillo.preguntas[plan.ordenPreguntas[posicionActual]];
+        const tSeg = Math.floor((Date.now() - tInicioPregunta) / 1000);
+        tiempoPorPregunta[preguntaAnterior.id] = (tiempoPorPregunta[preguntaAnterior.id] || 0) + tSeg;
+      }
+
+      posicionActual = pos;
+      tInicioPregunta = Date.now();
+
+      // Vista: ocultar contexto-pagina, mostrar bloque de pregunta
+      document.getElementById('contexto-pagina').classList.add('hidden');
+      document.getElementById('bloque-pregunta').classList.remove('hidden');
+
+      const idxOriginal = plan.ordenPreguntas[pos];
+      const p = cuadernillo.preguntas[idxOriginal];
+      const mapeo = plan.ordenesOpciones[idxOriginal];
+
+      document.getElementById('indicador-pregunta').textContent = `Pregunta ${pos + 1} de ${cuadernillo.preguntas.length}`;
+      document.getElementById('codigo-pregunta').textContent = p.id;
+      const pct = ((pos + 1) / cuadernillo.preguntas.length) * 100;
+      document.getElementById('barra-progreso').style.width = `${pct}%`;
+      document.getElementById('barra-progreso-wrap').setAttribute('aria-valuenow', Math.round(pct));
+
+      const enunEl = document.getElementById('enunciado');
+      const imgCont = document.getElementById('imagen-pregunta');
+      const instruEl = document.getElementById('instruccion-respuesta');
+      const cont = document.getElementById('opciones-container');
+      const ctxCont = document.getElementById('contexto-pregunta');
+
+      // En el nuevo flujo, el contexto se ve como página independiente ANTES de la pregunta.
+      // Aquí mostramos un mini-recordatorio compacto con título y un botón para volver a la lectura.
+      if (p.contexto_id && cuadernillo.contextos && cuadernillo.contextos[p.contexto_id]) {
+        const ctx = cuadernillo.contextos[p.contexto_id];
+        const ctxFlowIdx = flow.findIndex(f => f.type === 'context' && f.contextoId === p.contexto_id);
+        ctxCont.classList.remove('hidden');
+        ctxCont.className = 'bg-amber-50 border-l-4 border-amber-400 p-3 rounded-r mb-4 flex items-center justify-between gap-3 text-xs';
+        ctxCont.innerHTML = `
+          <div class="text-amber-900">
+            <strong>📖 ${escapeHtml(ctx.titulo || 'Lectura asociada')}</strong>
+            ${ctx.rango_preguntas ? ` · preguntas ${escapeHtml(ctx.rango_preguntas)}` : ''}
+          </div>
+          ${ctxFlowIdx >= 0 ? `<button type="button" class="btn-secundario text-xs whitespace-nowrap" id="btn-ver-lectura">Ver lectura</button>` : ''}
+        `;
+        const btnVer = document.getElementById('btn-ver-lectura');
+        if (btnVer) btnVer.addEventListener('click', () => mostrarFlowItem(ctxFlowIdx));
+      } else if (p.contexto_compartido_imagen) {
+        // Contexto con imagen embebida en la pregunta (Matemáticas, Ciencias)
+        ctxCont.classList.remove('hidden');
+        ctxCont.className = 'card-contexto-compartido mb-5';
+        ctxCont.innerHTML = `
+          <div class="text-xs uppercase tracking-wider text-amber-700 mb-2 font-semibold">📋 Contexto</div>
+          <p class="italic text-amber-900 mb-3">${escapeHtml(p.contexto_compartido_texto || '')}</p>
+          <div class="bg-white rounded-lg p-3 text-center">
+            <img src="${p.contexto_compartido_imagen}" alt="Contexto compartido pregunta ${p.numero}" loading="lazy" decoding="async" style="max-width:100%;max-height:340px;margin:0 auto;border-radius:6px" onerror="${onerrorPlaceholder}">
+          </div>
+        `;
+      } else {
+        ctxCont.classList.add('hidden');
+        ctxCont.innerHTML = '';
+      }
+
+      // Modo v4: texto + figura recortada + opciones de texto (o de imagen para P8/P10)
+      enunEl.classList.remove('hidden');
+      instruEl.classList.add('hidden');
+      enunEl.innerHTML = p.enunciado;
+
+      // Figura recortada (si la pregunta la tiene)
+      if (p.imagen_figura) {
+        imgCont.innerHTML = `<div style="background:white;padding:16px;border-radius:12px;box-shadow:inset 0 0 0 1px #E5E7EB;text-align:center">
+          <img src="${p.imagen_figura}" alt="Figura de la pregunta ${p.numero}" loading="lazy" decoding="async" style="max-width:100%;max-height:420px;margin:0 auto;border-radius:8px" onerror="${onerrorPlaceholder}">
+        </div>`;
+      } else {
+        imgCont.innerHTML = '';
+      }
+
+      // Render de opciones (texto o imagen si la pregunta tiene opciones_imagenes).
+      // Para opciones con imagen el layout depende del área/pregunta:
+      //  - matemáticas (todas las preguntas con imagen): grid 2x2 — imágenes
+      //    compactas que se ven a la vez, mucho más fácil de comparar.
+      //  - CN pregunta I_1382062 (cruce genotipos MM/mm/Mm): también grid 2x2.
+      //  - resto (CN con figuras complejas, etc.): 1-columna para preservar
+      //    ejes y tablas grandes legibles.
+      const opcImgs = p.opciones_imagenes || null;
+      const areaActual = (cuadernillo.area || '').toLowerCase();
+      const usaGrid2x2 = !!opcImgs && (
+        areaActual === 'matemáticas' ||
+        p.id === 'I_1382062'
+      );
+      cont.className = opcImgs
+        ? (usaGrid2x2 ? 'grid grid-cols-1 md:grid-cols-2 gap-4' : 'flex flex-col gap-4')
+        : '';
+      cont.innerHTML = '';
+
+      mapeo.original.forEach((letraVisual, i) => {
+        const letraReal = mapeo.mostrada[i];
+        const textoOpcion = p.opciones[letraReal];
+        // Defensa: si por algún motivo el mapeo referencia una letra que ya no
+        // existe en las opciones reales de la pregunta (ej. plan stale en una
+        // aplicación retomada), simplemente no renderizamos esa opción.
+        if (textoOpcion === undefined && !(p.opciones_imagenes && p.opciones_imagenes[letraReal])) return;
+        const div = document.createElement('div');
+        const yaElegida = respuestas[p.id]?.opcion_visual === letraVisual;
+        div.className = 'opcion-respuesta';
+        div.setAttribute('role', 'radio');
+        div.setAttribute('tabindex', '0');
+        div.setAttribute('aria-checked', yaElegida ? 'true' : 'false');
+        div.setAttribute('aria-label', `Opción ${letraVisual}`);
+        div.dataset.letra = letraVisual;
+        if (yaElegida) div.classList.add('elegida');
+
+        if (opcImgs && opcImgs[letraReal]) {
+          // Opción con imagen recortada — alto adaptativo según layout
+          div.style.flexDirection = 'column';
+          div.style.alignItems = 'stretch';
+          const maxH = usaGrid2x2 ? 240 : 480;
+          const padH = usaGrid2x2 ? '10px 12px' : '14px 18px';
+          div.innerHTML = `
+            <div class="flex items-center gap-3 mb-2">
+              <div class="letra">${letraVisual}</div>
+              <div class="text-xs text-slate-500 uppercase tracking-wider">Opción ${letraVisual}</div>
+            </div>
+            <div style="background:white;padding:${padH};border-radius:8px;border:1px solid #E5E7EB;text-align:center">
+              <img src="${opcImgs[letraReal]}" alt="Opción ${letraReal}" loading="lazy" style="max-width:100%;height:auto;max-height:${maxH}px;object-fit:contain;border-radius:4px;margin:0 auto" onerror="${onerrorPlaceholder}">
+            </div>
+            ${textoOpcion ? `<div class="texto text-xs text-slate-600 mt-2">${textoOpcion}</div>` : ''}
+          `;
+        } else {
+          div.innerHTML = `
+            <div class="letra">${letraVisual}</div>
+            <div class="texto">${textoOpcion}</div>
+          `;
+        }
+
+        const elegir = () => {
+          respuestas[p.id] = {
+            opcion_visual: letraVisual,
+            opcion_elegida_real: letraReal
+          };
+          saltadas.delete(p.id);
+          mostrarPregunta(pos);
+        };
+        div.addEventListener('click', elegir);
+        div.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            elegir();
+          }
+        });
+        cont.appendChild(div);
+      });
+
+      actualizarEstadoMapa();
+
+      // Renderizar LaTeX (siempre, ahora todas las preguntas son texto+figura)
+      renderMath(document.getElementById('contenedor-pregunta'));
+    }
+
+    document.getElementById('btn-anterior').addEventListener('click', () => {
+      mostrarFlowItem(flowIndex - 1);
+    });
+    document.getElementById('btn-siguiente').addEventListener('click', () => {
+      mostrarFlowItem(flowIndex + 1);
+    });
+    document.getElementById('btn-saltar').addEventListener('click', () => {
+      const item = flow[flowIndex];
+      if (item && item.type === 'q') {
+        const p = cuadernillo.preguntas[plan.ordenPreguntas[item.posVisual]];
+        if (!respuestas[p.id]) saltadas.add(p.id);
+      }
+      mostrarFlowItem(flowIndex + 1);
+    });
+
+    // === Atajos de teclado (accesibilidad) ===
+    document.addEventListener('keydown', (e) => {
+      // Solo si la pantalla-prueba está visible y no hay un input/textarea enfocado
+      if (document.getElementById('pantalla-prueba').classList.contains('hidden')) return;
+      const tag = (document.activeElement?.tagName || '').toLowerCase();
+      if (tag === 'input' || tag === 'textarea') return;
+      // Si el modal de confirmación está abierto, no procesar atajos de prueba
+      if (!document.getElementById('modal-confirmar').classList.contains('hidden')) return;
+
+      if (e.key === 'ArrowLeft' && flowIndex > 0) {
+        e.preventDefault();
+        mostrarFlowItem(flowIndex - 1);
+      } else if (e.key === 'ArrowRight' && flowIndex < flow.length - 1) {
+        e.preventDefault();
+        mostrarFlowItem(flowIndex + 1);
+      } else if (['1','2','3','4'].includes(e.key)) {
+        e.preventDefault();
+        const idx = parseInt(e.key, 10) - 1;
+        const opciones = document.querySelectorAll('#opciones-container .opcion-respuesta');
+        if (opciones[idx]) opciones[idx].click();
+      }
+    });
+
+    // === FLUJO DE DOBLE CONFIRMACIÓN ===
+    document.getElementById('btn-finalizar').addEventListener('click', () => abrirModal());
+    document.getElementById('btn-cancelar-final').addEventListener('click', () => cerrarModal());
+
+    // El checkbox habilita el botón final
+    document.getElementById('check-confirmar').addEventListener('change', e => {
+      const btn = document.getElementById('btn-confirmar-final');
+      if (e.target.checked) {
+        btn.disabled = false;
+        btn.classList.remove('opacity-50', 'cursor-not-allowed');
+      } else {
+        btn.disabled = true;
+        btn.classList.add('opacity-50', 'cursor-not-allowed');
+      }
+    });
+
+    document.getElementById('btn-confirmar-final').addEventListener('click', () => finalizar(false));
+
+    function abrirModal() {
+      const respondidas = Object.keys(respuestas).length;
+      const total = cuadernillo.preguntas.length;
+      const sinResponder = total - respondidas;
+
+      document.getElementById('msg-confirmar').textContent =
+        sinResponder > 0
+          ? `Has respondido ${respondidas} de ${total} preguntas. Las preguntas sin responder se contarán como incorrectas.`
+          : `Has respondido las ${total} preguntas. Tu prueba está lista para enviar.`;
+
+      // Lista de pendientes
+      if (sinResponder > 0) {
+        const numeros = [];
+        cuadernillo.preguntas.forEach((p, i) => {
+          if (!respuestas[p.id]) numeros.push(i + 1);
+        });
+        document.getElementById('lista-sin-responder').classList.remove('hidden');
+        document.getElementById('lista-pendientes').textContent =
+          'P' + numeros.join(', P');
+      } else {
+        document.getElementById('lista-sin-responder').classList.add('hidden');
+      }
+
+      // Reset checkbox cada vez que abre
+      const chk = document.getElementById('check-confirmar');
+      chk.checked = false;
+      const btn = document.getElementById('btn-confirmar-final');
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+
+      document.getElementById('modal-confirmar').classList.remove('hidden');
+      document.getElementById('modal-confirmar').classList.add('flex');
+    }
+
+    function cerrarModal() {
+      document.getElementById('modal-confirmar').classList.add('hidden');
+      document.getElementById('modal-confirmar').classList.remove('flex');
+    }
+
+    async function finalizar(porTiempo) {
+      if (prevEnvio) return;
+      prevEnvio = true;
+      clearInterval(intervaloCronometro);
+      clearInterval(intervaloAutosave);
+
+      // Tiempo en última pregunta
+      if (tInicioPregunta != null && plan) {
+        const preguntaAnt = cuadernillo.preguntas[plan.ordenPreguntas[posicionActual]];
+        const tSeg = Math.floor((Date.now() - tInicioPregunta) / 1000);
+        tiempoPorPregunta[preguntaAnt.id] = (tiempoPorPregunta[preguntaAnt.id] || 0) + tSeg;
+      }
+
+      const respuestasArray = Object.keys(respuestas).map(qid => ({
+        pregunta_id: qid,
+        opcion_visual: respuestas[qid].opcion_visual,
+        opcion_elegida_real: respuestas[qid].opcion_elegida_real,
+        tiempo_seg: tiempoPorPregunta[qid] || 0
+      }));
+
+      const aplicacionActual = await db.obtener('idea_aplicaciones', aplicacionId);
+      const duracion_segundos = Math.floor((Date.now() - tiempoInicio) / 1000);
+
+      // === SEGURIDAD: una sola entrega válida por estudiante+cuadernillo ===
+      // Re-verificación FRESCA al enviar. Cierra carreras de doble pestaña/dispositivo y
+      // cualquier hueco: si ya existe una entrega previa de este estudiante para esta
+      // materia y este intento NO usó un permiso autorizado, la entrega se guarda pero
+      // NO es oficial (no reemplaza ni duplica la real, no cuenta en los paneles).
+      const _previas = (await db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', ses.user_id))
+        .filter(a =>
+          a.cuadernillo_id === cuadernillo.id &&
+          a.estado === ESTADOS_APLICACION.ENVIADA &&
+          a.id !== aplicacionId);
+      const esDuplicadoNoAutorizado = _previas.length > 0 && !permisoConsumir;
+
+      const datosBase = {
+        ...aplicacionActual,
+        respuestas: respuestasArray,
+        fecha_fin: nowIso(),
+        fecha_envio: nowIso(),
+        duracion_segundos,
+        estado: ESTADOS_APLICACION.ENVIADA,
+        bloqueada: true,
+        finalizado_por_tiempo: !!porTiempo,
+        oficial: !esDuplicadoNoAutorizado
+      };
+      const calc = calcularResultados(datosBase, cuadernillo);
+      const aplicacionFinal = { ...datosBase, ...calc };
+
+      // Escritura principal en UN solo viaje a la base (no se usa el documento devuelto).
+      await db.actualizarRapido('idea_aplicaciones', aplicacionId, aplicacionFinal);
+
+      // Si se usó un permiso, consumirlo
+      if (permisoConsumir) {
+        await consumirPermiso(permisoConsumir, aplicacionId);
+      }
+
+      // Marcar oficial SOLO si es una entrega válida (primer intento o reintento con
+      // permiso). Un duplicado no autorizado NO toca la entrega oficial existente.
+      if (!esDuplicadoNoAutorizado) {
+        await marcarAplicacionOficial(aplicacionId);
+      }
+
+      cerrarModal();
+      if (esDuplicadoNoAutorizado) {
+        toast('Ya tenías una entrega registrada para esta materia. Esta no la reemplaza.', 'aviso', 3500);
+      } else {
+        toast(`✓ Prueba enviada — ${calc.total_correctas}/${cuadernillo.preguntas.length} aciertos`, 'exito', 2500);
+      }
+      window.location.href = `resultado.html?id=${aplicacionId}`;
+    }
+
+    // Prevenir cierre accidental
+    window.addEventListener('beforeunload', e => {
+      if (tiempoInicio && !prevEnvio && !document.getElementById('pantalla-prueba').classList.contains('hidden')) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    });
+  </script>
+</body>
+</html>

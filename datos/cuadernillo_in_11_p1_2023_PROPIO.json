@@ -1,0 +1,786 @@
+{
+  "id": "in-11-p1-propio-2023",
+  "area": "Inglés",
+  "area_slug": "ingles",
+  "grado": "11",
+  "periodo": "1",
+  "version": "2023",
+  "nombre": "Cuadernillo de Inglés — Grado 11° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias y al MCER (marco público). NO reproduce ítems del Icfes.",
+  "nota": "Banco propio IDEA. Instrumento estructurado conforme a la guía oficial ICFES Saber 11 / EpA 2023 (Guia-PC-Ingles-11-1.pdf): Inglés se rige por el MCER con 4 niveles (Pre A1, A1, A2, B1) y se organiza en 5 Partes. La Parte 1 (1-5) es MATCHING con banco de 7 palabras A-G (más H = ejemplo). Las Partes 2 (6-8) y 3 (9-14) tienen 3 opciones (A, B, C). Las Partes 4 y 5 (15-25) tienen 4 opciones (A, B, C, D). Textos, diálogos y avisos ORIGINALES; NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 25,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Parte 1 — Conocimiento léxico (matching de vocabulario con palabras del banco A–G)",
+    "b": "Parte 2 — Conocimiento pragmático (intervención adecuada en conversaciones breves)",
+    "c": "Parte 3 — Comprensión de lectura literal (localización de información explícita)",
+    "d": "Parte 4 — Comprensión de lectura inferencial (sentido global e intención del autor)",
+    "e": "Parte 5 — Conocimiento léxico y gramatical (completar texto con espacios)"
+  },
+  "afirmaciones": {
+    "1": "Pre A1 — Conoce palabras, frases y expresiones fijas básicas; identifica vocabulario de altísima frecuencia con apoyo visual.",
+    "2": "A1 — Comprende y produce frases muy sencillas sobre temas familiares; reconoce vocabulario común del entorno cotidiano.",
+    "3": "A2 — Comprende información clara en contextos cotidianos; identifica detalles factuales explícitos en textos breves.",
+    "4": "B1 — Comprende ideas principales en textos cotidianos; infiere propósito, intención y conclusiones; aplica gramática en contexto."
+  },
+  "evidencias": {
+    "1.a": "Pre A1 — Asocia palabras de uso muy básico con su definición en inglés (vocabulario fundamental de salud y bienestar).",
+    "2.a": "A1 — Reconoce vocabulario común sobre salud, partes del cuerpo y entorno cotidiano para emparejar definición con palabra.",
+    "3.b": "A2 — Identifica la intervención adecuada (respuesta de cortesía, opinión, sugerencia) ante un turno conversacional en contextos cotidianos.",
+    "3.c": "A2 — Localiza información factual explícita (lugar, momento, cantidad, característica) en un texto descriptivo breve.",
+    "4.c": "B1 — Encuentra detalles puntuales que requieren conectar información dispersa en un texto informativo más extenso.",
+    "4.d": "B1 — Infiere la idea global, el propósito comunicativo y conclusiones a partir de pistas léxicas y contextuales del texto.",
+    "2.e": "A1 — Selecciona vocabulario muy básico adecuado al contexto y al campo semántico de un texto narrativo o expositivo simple.",
+    "3.e": "A2 — Identifica la forma verbal, el conector o la preposición más apropiada en una oración dentro de un texto coherente.",
+    "4.e": "B1 — Aplica reglas gramaticales y léxicas en contextos auténticos breves, integrando significado y forma."
+  },
+  "cmc": [],
+  "contextos": {
+    "ctx-parte1": {
+      "titulo": "Sports — Vocabulario de deporte (Parte 1)",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5 DE ACUERDO CON EL EJEMPLO.\n\nLee las descripciones de la columna de la izquierda (1 - 5). ¿Cuál palabra de la columna de la derecha (A - G) concuerda con cada descripción?\n\nLa opción H se usa para el ejemplo. Sobran dos palabras más.\n\nEn las preguntas 1 - 5, marca la letra correcta A - G en tu hoja de respuestas.\n\nBANCO DE PALABRAS (Sports)\nA. ball\nB. coach\nC. field\nD. run\nE. team\nF. tired\nG. water\nH. whistle (usada en el ejemplo)\n\nEjemplo:\n0. The referee blows this to start or stop the game.  →  H. whistle",
+      "rango_preguntas": "1 a 5",
+      "imagen": "assets/banco-in-11-p1/ejemplo_parte1.png"
+    },
+    "ctx-parte2": {
+      "titulo": "Parte 2 — Completa las conversaciones (Ejemplo)",
+      "rango_preguntas": "6 a 8",
+      "texto": "RESPONDE LAS PREGUNTAS 6 A 8 DE ACUERDO CON EL EJEMPLO.\n\nCompleta las conversaciones.\n\nEn las preguntas 6 - 8, marca A, B o C en tu hoja de respuestas.\n\nEn el ejemplo, un joven dice: “I passed all my exams!” La respuesta correcta del interlocutor es A. “Well done!”.",
+      "imagen": "assets/banco-in-11-p1/ejemplo_conversacion.png"
+    },
+    "ctx-parte3": {
+      "titulo": "The History of Chocolate",
+      "texto": "Chocolate is one of the most popular treats in the world. It is made from the seeds of the cacao tree, which first grew in the rainforests of Central and South America. Today, the country that produces the most cacao is Ivory Coast, in Africa, followed by Ghana and then Indonesia.\n\nPeople love chocolate because it tastes sweet and it gives you quick energy. Making a simple chocolate drink is not difficult: you only need cacao, sugar and warm milk. For this reason, hot chocolate became a favourite drink in many cold countries.\n\nThe Maya and the Aztecs drank chocolate long before Europeans did. They mixed it with water and spices, but they did not add sugar. Some people say that the explorer Christopher Columbus made chocolate famous in Europe, but this is not true. It was the Spanish who took cacao to Spain in the 16th century and added sugar to it.\n\nWhen chocolate arrived in Europe, both rich families and, later, ordinary people enjoyed it. Although many people only know about sweet chocolate bars, there are hundreds of recipes, and chocolate is used in cakes, drinks and sauces. Good chocolate has few ingredients, so it can be stored for a long time.",
+      "rango_preguntas": "9 a 14"
+    },
+    "ctx-parte4": {
+      "titulo": "Reading Every Day",
+      "imagen": "assets/banco-in-11-p1/q15.png",
+      "texto": "Reading every day has many benefits. People who read regularly can improve their memory and their imagination. Unfortunately, many young people do not read enough. It is a good idea to read more often in order to learn and to relax. Here are some reasons to read more often.\n\nReading brings benefits to the mind. It increases your vocabulary and helps you understand new ideas. Besides, reading before sleeping helps you rest better; combined with a quiet room, reading can make you feel calm and ready for the next day. Reading also helps you concentrate for longer periods of time.\n\nThere are emotional benefits to reading frequently, too. A good story can take you to other places almost immediately. Sometimes, when we feel worried, we find that a book helps us forget our problems for a while. Reading can also reduce stress, because the mind focuses on the story.\n\nReading more often can also make you a better student. In general, people who read well understand their classes more easily and write better. Reading in front of others, such as in a club, shows you enjoy learning, and you can share that feeling with them. People are naturally interested in good readers; therefore, reading frequently can help you make new friends.\n\nIf you don’t read much, find ways to read more often; try to make others read more too. Reading is a simple way to grow. Learning and helping others learn is very positive and will bring many benefits. Although it seems difficult at first, it is in fact very easy; all it takes is opening a book and a few quiet minutes.",
+      "rango_preguntas": "15 a 19"
+    },
+    "ctx-parte5": {
+      "titulo": "Coffee",
+      "texto": "Coffee is the world’s (0) favourite hot drink after tea. And yes, coffee is a drink, (20) __________ a fruit, although it comes from a small red berry. After water, coffee is one of the most popular drinks in the world; tea is the (21) _______ one in many countries.\n\nCoffee plants are (22) ______ on high mountains in warm countries. Traders carried coffee (23) _______ Europe in the 17th century. The Turkish called it “the wine of Arabia,” and the first coffee houses soon opened in many cities.\n\nCoffee is (24) ______ in antioxidants, and a black cup has very few calories. In addition, new medical (25) ______ suggests that drinking coffee may protect the heart.\n\nCoffee is used in many products, such as cakes and ice cream. According to a survey, most adults drink at least one cup of coffee a day, and this habit has not changed much over the years.",
+      "rango_preguntas": "20 a 25"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "P11I01",
+      "numero": 1,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de deporte — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You do this fast with your legs when you want to move quickly.</p>",
+      "opciones": {
+        "A": "ball",
+        "B": "coach",
+        "C": "field",
+        "D": "run",
+        "E": "team",
+        "F": "tired",
+        "G": "water"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante comprende el significado de una descripción sencilla en inglés relacionada con una acción física.",
+      "justificacion_correcta": "La opción D (run) es la correcta porque correr es la acción que se hace rápidamente con las piernas para desplazarse de prisa.",
+      "opciones_incorrectas": {
+        "A": "ball (pelota — objeto) no es una acción que se haga con las piernas para moverse rápido.",
+        "B": "coach (entrenador — persona) no corresponde a una acción de movimiento rápido.",
+        "C": "field (campo — lugar) no es una acción, sino el lugar donde se juega.",
+        "E": "team (equipo — grupo de personas) no es una acción física.",
+        "F": "tired (cansado — estado) no es una acción que se realice con las piernas.",
+        "G": "water (agua — sustancia) no corresponde a una acción de movimiento."
+      }
+    },
+    {
+      "id": "P11I02",
+      "numero": 2,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de deporte — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You drink this when you feel thirsty after exercise.</p>",
+      "opciones": {
+        "A": "ball",
+        "B": "coach",
+        "C": "field",
+        "D": "run",
+        "E": "team",
+        "F": "tired",
+        "G": "water"
+      },
+      "clave": "G",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce vocabulario común del entorno cotidiano asociado a la hidratación durante el ejercicio.",
+      "justificacion_correcta": "La opción G (water) es la correcta porque el agua es lo que se bebe cuando se siente sed después de hacer ejercicio.",
+      "opciones_incorrectas": {
+        "A": "ball (pelota — objeto) no es algo que se beba.",
+        "B": "coach (entrenador — persona) no es una bebida.",
+        "C": "field (campo — lugar) no es algo que se pueda beber.",
+        "D": "run (correr — acción) no corresponde a algo que se beba.",
+        "E": "team (equipo — grupo) no es una bebida.",
+        "F": "tired (cansado — estado) no es algo que se beba."
+      }
+    },
+    {
+      "id": "P11I03",
+      "numero": 3,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de deporte — Parte 1",
+      "enunciado": "<p class=\"en-stem\">This person teaches the players and helps the team get better.</p>",
+      "opciones": {
+        "A": "ball",
+        "B": "coach",
+        "C": "field",
+        "D": "run",
+        "E": "team",
+        "F": "tired",
+        "G": "water"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce el vocabulario de personas relacionadas con el deporte en inglés.",
+      "justificacion_correcta": "La opción B (coach) es la correcta porque el entrenador es la persona que enseña a los jugadores y ayuda al equipo a mejorar.",
+      "opciones_incorrectas": {
+        "A": "ball (pelota — objeto) no es una persona.",
+        "C": "field (campo — lugar) no es una persona.",
+        "D": "run (correr — acción) no es una persona.",
+        "E": "team (equipo — grupo) es un conjunto de jugadores, no la persona que los enseña.",
+        "F": "tired (cansado — estado) no es una persona.",
+        "G": "water (agua — sustancia) no es una persona."
+      }
+    },
+    {
+      "id": "P11I04",
+      "numero": 4,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de deporte — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You can go to this big green place to play football.</p>",
+      "opciones": {
+        "A": "ball",
+        "B": "coach",
+        "C": "field",
+        "D": "run",
+        "E": "team",
+        "F": "tired",
+        "G": "water"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce el vocabulario de lugares relacionados con el deporte en inglés.",
+      "justificacion_correcta": "La opción C (field) es la correcta porque el campo es el lugar grande y verde al que se va a jugar fútbol.",
+      "opciones_incorrectas": {
+        "A": "ball (pelota — objeto) no es un lugar.",
+        "B": "coach (entrenador — persona) no es un lugar.",
+        "D": "run (correr — acción) no es un lugar.",
+        "E": "team (equipo — grupo) no es un lugar.",
+        "F": "tired (cansado — estado) no es un lugar.",
+        "G": "water (agua — sustancia) no es un lugar."
+      }
+    },
+    {
+      "id": "P11I05",
+      "numero": 5,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de deporte — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You feel like this after running for a long time.</p>",
+      "opciones": {
+        "A": "ball",
+        "B": "coach",
+        "C": "field",
+        "D": "run",
+        "E": "team",
+        "F": "tired",
+        "G": "water"
+      },
+      "clave": "F",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce vocabulario sobre estados físicos del cuerpo en inglés.",
+      "justificacion_correcta": "La opción F (tired) es la correcta porque después de correr durante mucho tiempo uno se siente cansado.",
+      "opciones_incorrectas": {
+        "A": "ball (pelota — objeto) no describe un estado del cuerpo.",
+        "B": "coach (entrenador — persona) no describe un estado físico.",
+        "C": "field (campo — lugar) no describe un estado físico.",
+        "D": "run (correr — acción) es la acción, no el estado que produce.",
+        "E": "team (equipo — grupo) no describe un estado físico.",
+        "G": "water (agua — sustancia) no describe un estado del cuerpo."
+      }
+    },
+    {
+      "id": "P11I06",
+      "numero": 6,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Parte 2 — Completa las conversaciones",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I lost my new umbrella on the bus this morning.”</p><p class=\"en-turno en-turno--prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "Congratulations!",
+        "B": "Oh, that’s a shame.",
+        "C": "See you later."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "Participa en conversaciones haciendo solicitudes, agradeciendo, expresando empatía, entre otros.",
+      "que_evalua": "Si el estudiante identifica la respuesta más adecuada cuando el interlocutor 1 comparte una mala noticia personal.",
+      "justificacion_correcta": "La opción B (Oh, that’s a shame) es la correcta porque el interlocutor 1 cuenta una situación negativa (perdió su sombrilla) y esta respuesta expresa empatía o pesar ante esa noticia.",
+      "opciones_incorrectas": {
+        "A": "Congratulations! se usa para felicitar por algo bueno, no para responder a una pérdida.",
+        "C": "See you later. es una despedida, no una respuesta empática a la mala noticia."
+      }
+    },
+    {
+      "id": "P11I07",
+      "numero": 7,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Parte 2 — Completa las conversaciones",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “What do you think about the soup I cooked?”</p><p class=\"en-turno en-turno--prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "It needs more salt.",
+        "B": "Turn left here.",
+        "C": "I am twelve."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "Conversa con sus compañeros y profesor sobre aspectos cotidianos y da su opinión sobre temas familiares.",
+      "que_evalua": "Si el estudiante identifica la respuesta más adecuada cuando se le solicita una opinión sobre una comida.",
+      "justificacion_correcta": "La opción A (It needs more salt) es la correcta porque el interlocutor 1 pide una opinión sobre la sopa y esta opción expresa una valoración directa y pertinente sobre ella.",
+      "opciones_incorrectas": {
+        "B": "Turn left here. es una indicación para dar direcciones, no una opinión sobre la comida.",
+        "C": "I am twelve. informa una edad y no responde a la pregunta sobre la sopa."
+      }
+    },
+    {
+      "id": "P11I08",
+      "numero": 8,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Parte 2 — Completa las conversaciones",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “We still need to choose a topic for our science project.”</p><p class=\"en-turno en-turno--prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "It was delicious.",
+        "B": "He is my brother.",
+        "C": "Let’s decide together now."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "Conversa con sus compañeros sobre planes futuros y apoya en conocimientos generales del mundo para participar en conversaciones.",
+      "que_evalua": "Si el estudiante identifica la intervención más adecuada ante una propuesta de plan futuro expresada por el interlocutor 1.",
+      "justificacion_correcta": "La opción C (Let’s decide together now) es la correcta porque responde a la necesidad de elegir un tema, proponiendo actuar de inmediato y de forma colaborativa.",
+      "opciones_incorrectas": {
+        "A": "It was delicious. se usa para valorar una comida, no para responder a la elección de un tema.",
+        "B": "He is my brother. presenta a una persona y no responde a la propuesta del proyecto."
+      }
+    },
+    {
+      "id": "P11I09",
+      "numero": 9,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The History of Chocolate",
+      "enunciado": "<p>Lee el siguiente texto y responde las preguntas 9 a 14. El colegio también envió este aviso:</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center'><b>THE HISTORY OF CHOCOLATE</b></p><p>Chocolate is one of the most popular treats in the world. It is made from the seeds of the cacao tree, which first grew in the rainforests of Central and South America. Today, the country that produces the most cacao is Ivory Coast, in Africa, followed by Ghana and then Indonesia.</p><p>People love chocolate because it tastes sweet and it gives you quick energy. Making a simple chocolate drink is not difficult: you only need cacao, sugar and warm milk. For this reason, hot chocolate became a favourite drink in many cold countries.</p><p>The Maya and the Aztecs drank chocolate long before Europeans did. They mixed it with water and spices, but they did not add sugar. Some people say that the explorer Christopher Columbus made chocolate famous in Europe, but this is not true. It was the Spanish who took cacao to Spain in the 16th century and added sugar to it.</p><p>When chocolate arrived in Europe, both rich families and, later, ordinary people enjoyed it. Although many people only know about sweet chocolate bars, there are hundreds of recipes, and chocolate is used in cakes, drinks and sauces. Good chocolate has few ingredients, so it can be stored for a long time.</p></div><p class=\"en-stem\">The second country that produces the most cacao is</p>",
+      "opciones": {
+        "A": "Indonesia.",
+        "B": "Ghana.",
+        "C": "Ivory Coast."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Baja",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede localizar información específica sobre la producción de cacao en el primer párrafo.",
+      "justificacion_correcta": "La opción B (Ghana) es la correcta porque al final del primer párrafo se indica que el mayor productor es Ivory Coast, followed by Ghana, es decir, Ghana es el segundo.",
+      "opciones_incorrectas": {
+        "A": "Indonesia se menciona como tercer productor, no como el segundo.",
+        "C": "Ivory Coast es el primer productor, no el segundo."
+      },
+      "imagen_figura": "assets/banco-in-11-p1/q09.png"
+    },
+    {
+      "id": "P11I10",
+      "numero": 10,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The History of Chocolate",
+      "enunciado": "<p class=\"en-stem\">People love chocolate because it</p>",
+      "opciones": {
+        "A": "is hard to make.",
+        "B": "needs cold milk.",
+        "C": "tastes sweet."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Baja",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede identificar la razón por la que el chocolate es tan apreciado según el segundo párrafo.",
+      "justificacion_correcta": "La opción C (tastes sweet) es la correcta porque el segundo párrafo afirma que a la gente le gusta el chocolate porque sabe dulce: 'it tastes sweet'.",
+      "opciones_incorrectas": {
+        "A": "El texto dice lo contrario: preparar una bebida simple de chocolate no es difícil.",
+        "B": "El texto menciona leche tibia (warm milk), no leche fría."
+      }
+    },
+    {
+      "id": "P11I11",
+      "numero": 11,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The History of Chocolate",
+      "enunciado": "<p class=\"en-stem\">Hot chocolate became a favourite drink in cold countries because it</p>",
+      "opciones": {
+        "A": "gives quick energy.",
+        "B": "is sold everywhere.",
+        "C": "has no sugar."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "4",
+      "evidencia": "4.c",
+      "nivel_mcer": "B1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "Analiza textos para comprender ideas principales y específicas.",
+      "que_evalua": "Si el estudiante comprende por qué el chocolate caliente se volvió popular en ciertos países, conectando información del texto.",
+      "justificacion_correcta": "La opción A (gives quick energy) es la correcta porque el segundo párrafo explica que el chocolate da energía rápida ('gives you quick energy') y que, por esa razón, el chocolate caliente se hizo popular en países fríos.",
+      "opciones_incorrectas": {
+        "B": "El texto no afirma que el chocolate caliente se venda en todas partes.",
+        "C": "El que no lleve azúcar se dice de la bebida de los mayas y aztecas, no es la razón de su popularidad en países fríos."
+      }
+    },
+    {
+      "id": "P11I12",
+      "numero": 12,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The History of Chocolate",
+      "enunciado": "<p class=\"en-stem\">Chocolate became known in Europe because the Spanish</p>",
+      "opciones": {
+        "A": "grew cacao trees.",
+        "B": "took cacao to Spain.",
+        "C": "were very famous."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Baja",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede identificar quién llevó el cacao a España.",
+      "justificacion_correcta": "La opción B (took cacao to Spain) es la correcta porque el tercer párrafo afirma que fueron los españoles quienes llevaron el cacao a España en el siglo XVI: 'the Spanish who took cacao to Spain'.",
+      "opciones_incorrectas": {
+        "A": "El texto no dice que los españoles cultivaran árboles de cacao.",
+        "C": "El texto no menciona que los españoles fueran famosos."
+      }
+    },
+    {
+      "id": "P11I13",
+      "numero": 13,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The History of Chocolate",
+      "enunciado": "<p class=\"en-stem\">According to the text, who made chocolate famous in Europe?</p>",
+      "opciones": {
+        "A": "The Spanish",
+        "B": "The Maya",
+        "C": "Christopher Columbus"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante distingue la información verdadera del mito mencionado en el texto sobre quién hizo famoso el chocolate.",
+      "justificacion_correcta": "La opción A (The Spanish) es la correcta porque el texto aclara que no fue Columbus, sino los españoles, quienes llevaron el cacao a España y le añadieron azúcar.",
+      "opciones_incorrectas": {
+        "B": "Los mayas bebían chocolate antes que los europeos, pero no fueron ellos quienes lo hicieron famoso en Europa.",
+        "C": "Christopher Columbus se menciona como una creencia popular incorrecta; el texto dice 'this is not true'."
+      }
+    },
+    {
+      "id": "P11I14",
+      "numero": 14,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The History of Chocolate",
+      "enunciado": "<p class=\"en-stem\">Good chocolate can be kept for a long time because it</p>",
+      "opciones": {
+        "A": "is only sold in bars.",
+        "B": "is mixed with spices.",
+        "C": "has few ingredients."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "4",
+      "evidencia": "4.c",
+      "nivel_mcer": "B1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "Comprende las relaciones entre distintas partes del texto y la secuencia de los eventos mencionados.",
+      "que_evalua": "Si el estudiante conecta dos ideas separadas del último párrafo (pocos ingredientes y conservación) para inferir por qué el buen chocolate dura tanto.",
+      "justificacion_correcta": "La opción C (has few ingredients) es la correcta porque el estudiante debe conectar dos ideas del último párrafo: que el buen chocolate tiene pocos ingredientes y que, por esa razón ('so'), puede almacenarse mucho tiempo. La conservación es la consecuencia, no la causa.",
+      "opciones_incorrectas": {
+        "A": "Que se venda en barras no se afirma; el texto dice que el chocolate se usa también en pasteles, bebidas y salsas, y eso no explica su conservación.",
+        "B": "Mezclar con especias se dice de la bebida de mayas y aztecas, no del buen chocolate que se conserva."
+      }
+    },
+    {
+      "id": "P11I15",
+      "numero": 15,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Reading Every Day",
+      "enunciado": "<p>Lee el siguiente texto y observa el aviso de la biblioteca del colegio para responder las preguntas 15 a 19.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center'><b>READING EVERY DAY</b></p><p>Reading every day has many benefits. People who read regularly can improve their memory and their imagination. Unfortunately, many young people do not read enough. It is a good idea to read more often in order to learn and to relax. Here are some reasons to read more often.</p><p>Reading brings benefits to the mind. It increases your vocabulary and helps you understand new ideas. Besides, reading before sleeping helps you rest better; combined with a quiet room, reading can make you feel calm and ready for the next day. Reading also helps you concentrate for longer periods of time.</p><p>There are emotional benefits to reading frequently, too. A good story can take you to other places almost immediately. Sometimes, when we feel worried, we find that a book helps us forget our problems for a while. Reading can also reduce stress, because the mind focuses on the story.</p><p>Reading more often can also make you a better student. In general, people who read well understand their classes more easily and write better. Reading in front of others, such as in a club, shows you enjoy learning, and you can share that feeling with them. People are naturally interested in good readers; therefore, reading frequently can help you make new friends.</p><p>If you don’t read much, find ways to read more often; try to make others read more too. Reading is a simple way to grow. Learning and helping others learn is very positive and will bring many benefits. Although it seems difficult at first, it is in fact very easy; all it takes is opening a book and a few quiet minutes.</p></div><p class=\"en-stem\">What is the author doing in the text?</p>",
+      "opciones": {
+        "A": "explaining why some books are difficult to read",
+        "B": "describing the problems of reading at night",
+        "C": "comparing reading with other school activities",
+        "D": "encouraging people to read more often"
+      },
+      "clave": "D",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Identifica el punto de vista del autor y analiza textos argumentativos para comprender ideas principales.",
+      "que_evalua": "Si el estudiante puede identificar la intención general del autor en un texto argumentativo.",
+      "justificacion_correcta": "La opción D (encouraging people to read more often) es la correcta porque el primer párrafo dice que es buena idea leer más para aprender y relajarse, y todo el texto presenta beneficios de la lectura con la intención de motivar al lector.",
+      "opciones_incorrectas": {
+        "A": "El texto no se centra en libros difíciles, sino en los beneficios de leer.",
+        "B": "El texto presenta la lectura nocturna como algo positivo, no como un problema.",
+        "C": "El texto no compara la lectura con otras actividades escolares."
+      },
+      "imagen_figura": "assets/banco-in-11-p1/q15.png"
+    },
+    {
+      "id": "P11I16",
+      "numero": 16,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Reading Every Day",
+      "enunciado": "<p class=\"en-stem\">What can the reader find out about reading in paragraph 2?</p>",
+      "opciones": {
+        "A": "how reading helps the mind",
+        "B": "how reading helps people make friends",
+        "C": "how reading helps people forget problems",
+        "D": "how reading helps people share feelings"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Analiza textos descriptivos y argumentativos para comprender ideas principales y específicas.",
+      "que_evalua": "Si el estudiante puede identificar el tema principal del segundo párrafo del texto.",
+      "justificacion_correcta": "La opción A (how reading helps the mind) es la correcta porque el segundo párrafo se concentra en los beneficios para la mente: aumenta el vocabulario, ayuda a entender ideas nuevas y a concentrarse por más tiempo.",
+      "opciones_incorrectas": {
+        "B": "Hacer amigos se menciona en el cuarto párrafo, no en el segundo.",
+        "C": "Olvidar los problemas se menciona en el tercer párrafo, no en el segundo.",
+        "D": "Compartir sentimientos se menciona en el cuarto párrafo, no en el segundo."
+      }
+    },
+    {
+      "id": "P11I17",
+      "numero": 17,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Reading Every Day",
+      "enunciado": "<p class=\"en-stem\">According to paragraph 3, what can reading cause in people?</p>",
+      "opciones": {
+        "A": "It makes them read difficult books quickly.",
+        "B": "It helps them remember every class.",
+        "C": "It can take them to other places almost immediately.",
+        "D": "It makes them want to read in front of a club."
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Hace inferencias a partir de la información en un texto y comprende relaciones entre distintas partes.",
+      "que_evalua": "Si el estudiante puede identificar el efecto de leer en las personas según el tercer párrafo.",
+      "justificacion_correcta": "La opción C es la correcta porque el tercer párrafo menciona el beneficio emocional de que una buena historia puede llevarte a otros lugares casi de inmediato: 'can take you to other places almost immediately'.",
+      "opciones_incorrectas": {
+        "A": "El párrafo no habla de leer libros difíciles con rapidez.",
+        "B": "Recordar las clases no es el efecto descrito en el tercer párrafo.",
+        "D": "Leer ante un club se menciona en el cuarto párrafo, no en el tercero."
+      }
+    },
+    {
+      "id": "P11I18",
+      "numero": 18,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Reading Every Day",
+      "enunciado": "<p class=\"en-stem\">What does reading do in a social situation?</p>",
+      "opciones": {
+        "A": "It tells others you need help to study.",
+        "B": "It shows you enjoy learning and can help you make friends.",
+        "C": "It makes others read the same books as you.",
+        "D": "It makes you look older and more serious."
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Hace inferencias a partir de la información en un texto y comprende relaciones entre distintas partes.",
+      "que_evalua": "Si el estudiante puede inferir qué efecto tiene leer en una situación social según el cuarto párrafo.",
+      "justificacion_correcta": "La opción B es la correcta porque el cuarto párrafo señala que leer ante otros, como en un club, muestra que disfrutas aprender, y que la gente se interesa por los buenos lectores, lo que ayuda a hacer nuevos amigos.",
+      "opciones_incorrectas": {
+        "A": "El texto presenta leer como algo positivo, no como una señal de necesitar ayuda.",
+        "C": "El texto no afirma que leer haga que otros lean los mismos libros.",
+        "D": "El texto no menciona que leer haga ver a alguien más viejo o serio."
+      }
+    },
+    {
+      "id": "P11I19",
+      "numero": 19,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Reading Every Day",
+      "enunciado": "<p class=\"en-stem\">Which is the best advertisement for the author’s ideas about reading?</p>",
+      "opciones": {
+        "A": "Want to learn and relax at the same time? Read more often. It will improve your mind, reduce your stress, and help you make friends.",
+        "B": "Want to read difficult books fast? Read more. It will make you look older, busier, and more serious.",
+        "C": "Want to be popular? Read often. It helps you control others, win games, and avoid your classes.",
+        "D": "Want to sleep less? Read at night. It will make you tired, nervous, and lonely."
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Identifica palabras clave que permiten comprender el sentido global del texto y el punto de vista del autor.",
+      "que_evalua": "Si el estudiante puede seleccionar el anuncio que mejor resume las ideas principales del texto sobre leer.",
+      "justificacion_correcta": "La opción A es la correcta porque resume los efectos más importantes que el texto destaca: aprender y relajarse, mejorar la mente, reducir el estrés y hacer amigos.",
+      "opciones_incorrectas": {
+        "B": "Verse más viejo y ocupado no son ideas del texto; el texto destaca beneficios para la mente y las emociones.",
+        "C": "Controlar a otros o evitar las clases contradicen el texto, que dice que leer ayuda a entender las clases.",
+        "D": "El texto presenta la lectura nocturna como algo que ayuda a descansar, no que canse ni provoque nervios."
+      }
+    },
+    {
+      "id": "P11I20",
+      "numero": 20,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Coffee — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(20)</strong> en el texto <em>Coffee</em>.</p><p class=\"en-stem\">“Coffee is a drink, <span class=\"en-blank\">(20) __________</span> a fruit, although it comes from a small red berry.”</p>",
+      "opciones": {
+        "A": "neither",
+        "B": "nor",
+        "C": "not",
+        "D": "no"
+      },
+      "clave": "C",
+      "competencia": "e",
+      "afirmacion": "2",
+      "evidencia": "2.e",
+      "nivel_mcer": "A1",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Usa adecuadamente estructuras y patrones gramaticales de uso frecuente en inglés.",
+      "que_evalua": "Si el estudiante conoce el uso correcto del adverbio de negación 'not' para negar en inglés.",
+      "justificacion_correcta": "La opción C (not) es la correcta porque 'not' es el adverbio que se usa para negar: 'a drink, not a fruit'.",
+      "opciones_incorrectas": {
+        "A": "neither se usa en negaciones dobles ('neither... nor'), no para negar un solo elemento aquí.",
+        "B": "nor se usa junto con 'neither' para negar dos elementos a la vez.",
+        "D": "no se usa para negar sustantivos directamente ('no time'), no en esta estructura comparativa."
+      }
+    },
+    {
+      "id": "P11I21",
+      "numero": 21,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Coffee — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(21)</strong> en el texto <em>Coffee</em>.</p><p class=\"en-stem\">“After water, coffee is one of the most popular drinks in the world; tea is the <span class=\"en-blank\">(21) _______</span> one in many countries.”</p>",
+      "opciones": {
+        "A": "two",
+        "B": "both",
+        "C": "twice",
+        "D": "second"
+      },
+      "clave": "D",
+      "competencia": "e",
+      "afirmacion": "2",
+      "evidencia": "2.e",
+      "nivel_mcer": "A1",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Usa adecuadamente estructuras y patrones gramaticales de uso frecuente en inglés.",
+      "que_evalua": "Si el estudiante conoce el uso de los números ordinales en inglés para indicar posición en una lista.",
+      "justificacion_correcta": "La opción D (second) es la correcta porque la frase requiere un número ordinal para indicar la posición del té en la lista: 'the second one'.",
+      "opciones_incorrectas": {
+        "A": "two es un número cardinal, no indica posición en una lista.",
+        "B": "both se refiere a dos elementos juntos, no a una posición.",
+        "C": "twice indica que algo ocurre dos veces, no una posición en una lista."
+      }
+    },
+    {
+      "id": "P11I22",
+      "numero": 22,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Coffee — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(22)</strong> en el texto <em>Coffee</em>.</p><p class=\"en-stem\">“Coffee plants are <span class=\"en-blank\">(22) ______</span> on high mountains in warm countries.”</p>",
+      "opciones": {
+        "A": "grown",
+        "B": "done",
+        "C": "achieved",
+        "D": "invented"
+      },
+      "clave": "A",
+      "competencia": "e",
+      "afirmacion": "3",
+      "evidencia": "3.e",
+      "nivel_mcer": "A2",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Identifica y diferencia el significado adecuado de palabras según el contexto.",
+      "que_evalua": "Si el estudiante conoce el significado específico de verbos con campo semántico similar en inglés.",
+      "justificacion_correcta": "La opción A (grown) es la correcta porque 'grown' es el verbo que se usa para el cultivo de plantas, en este caso las plantas de café.",
+      "opciones_incorrectas": {
+        "B": "done (hecho) no es adecuado, pues una planta no se 'hace'.",
+        "C": "achieved (logrado) no es adecuado para referirse al cultivo de plantas.",
+        "D": "invented (inventado) no es adecuado, pues el café es un producto natural."
+      }
+    },
+    {
+      "id": "P11I23",
+      "numero": 23,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Coffee — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(23)</strong> en el texto <em>Coffee</em>.</p><p class=\"en-stem\">“Traders carried coffee <span class=\"en-blank\">(23) _______</span> Europe in the 17th century.”</p>",
+      "opciones": {
+        "A": "out",
+        "B": "on",
+        "C": "at",
+        "D": "into"
+      },
+      "clave": "D",
+      "competencia": "e",
+      "afirmacion": "4",
+      "evidencia": "4.e",
+      "nivel_mcer": "B1",
+      "parte": 5,
+      "dificultad": "Alta",
+      "estandar": "Reconoce los elementos de enlace de un texto para identificar su secuencia y comprende relaciones de orden temporal y espacial.",
+      "que_evalua": "Si el estudiante conoce el uso y significado de las preposiciones en inglés para indicar dirección hacia un lugar.",
+      "justificacion_correcta": "La opción D (into) es la correcta porque expresa movimiento hacia el interior de un lugar; el café fue llevado hacia y dentro de Europa.",
+      "opciones_incorrectas": {
+        "A": "out indica fuera de un lugar, lo contrario al sentido del texto.",
+        "B": "on indica sobre una superficie, no movimiento hacia el interior.",
+        "C": "at indica un punto específico, no movimiento hacia dentro de un lugar grande como Europa."
+      }
+    },
+    {
+      "id": "P11I24",
+      "numero": 24,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Coffee — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(24)</strong> en el texto <em>Coffee</em>.</p><p class=\"en-stem\">“Coffee is <span class=\"en-blank\">(24) ______</span> in antioxidants, and a black cup has very few calories.”</p>",
+      "opciones": {
+        "A": "charged",
+        "B": "rich",
+        "C": "loaded",
+        "D": "full"
+      },
+      "clave": "B",
+      "competencia": "e",
+      "afirmacion": "3",
+      "evidencia": "3.e",
+      "nivel_mcer": "A2",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Identifica y diferencia el significado adecuado de palabras según el contexto.",
+      "que_evalua": "Si el estudiante conoce el significado de adjetivos con campo semántico similar en inglés.",
+      "justificacion_correcta": "La opción B (rich) es la correcta porque 'rich in' es la expresión fija y positiva para indicar abundancia natural de algo nutritivo: 'rich in antioxidants'.",
+      "opciones_incorrectas": {
+        "A": "charged se usa para algo cargado de energía eléctrica, no para contenido nutricional.",
+        "C": "loaded sugiere peso o cantidad excesiva, no es apropiado aquí.",
+        "D": "full indica lleno en exceso, no se usa para describir riqueza natural de nutrientes."
+      }
+    },
+    {
+      "id": "P11I25",
+      "numero": 25,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Coffee — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(25)</strong> en el texto <em>Coffee</em>.</p><p class=\"en-stem\">“In addition, new medical <span class=\"en-blank\">(25) ______</span> suggests that drinking coffee may protect the heart.”</p>",
+      "opciones": {
+        "A": "operation",
+        "B": "prescription",
+        "C": "research",
+        "D": "drug"
+      },
+      "clave": "C",
+      "competencia": "e",
+      "afirmacion": "4",
+      "evidencia": "4.e",
+      "nivel_mcer": "B1",
+      "parte": 5,
+      "dificultad": "Alta",
+      "estandar": "Reconoce el significado de frases nominales que usan adjetivos especializados en contextos científicos.",
+      "que_evalua": "Si el estudiante conoce el significado de sustantivos con campo semántico médico-científico en inglés.",
+      "justificacion_correcta": "La opción C (research) es la correcta porque 'medical research' (investigación médica) es el sustantivo que describe el proceso científico que aporta nueva información sobre los efectos del café.",
+      "opciones_incorrectas": {
+        "A": "operation se refiere a una cirugía o procedimiento, no a la adquisición de conocimiento.",
+        "B": "prescription es la receta que da un médico, no un proceso de investigación.",
+        "D": "drug se refiere a una droga o medicina, no a un proceso científico."
+      }
+    }
+  ],
+  "preservar_orden_preguntas": true
+}

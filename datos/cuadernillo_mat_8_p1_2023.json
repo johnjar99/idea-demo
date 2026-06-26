@@ -1,0 +1,575 @@
+{
+  "id": "math-8-p1-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "8",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 8° — Período I",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Comunicación",
+    "b": "Resolución de problemas",
+    "c": "Razonamiento"
+  },
+  "afirmaciones": {
+    "1": "Expresa una misma información en diferentes lenguajes: natural, simbólico o textual, en contextos matemáticos o aplicados",
+    "2": "Reconoce distintos tipos de representación de uno o varios conjuntos de datos",
+    "3": "Resuelve problemas que requieren diferentes procedimientos de cálculo para hallar medidas de superficies y volúmenes",
+    "4": "Contrasta las equivalencias entre diferentes registros de relaciones de variación entre variables",
+    "5": "Resuelve problemas aditivos, multiplicativos, de proporcionalidad o de linealidad en contextos aplicados",
+    "6": "Resuelve problemas que requieren el uso de la distribución de los datos o medidas estadísticas: moda, mediana y promedio",
+    "7": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "8": "Reconoce el uso y las propiedades de los números reales y sus operaciones en distintos contextos aplicados",
+    "9": "Comprende las condiciones de semejanza y congruencia en figuras poligonales",
+    "10": "Conjetura sobre las propiedades de los objetos bidimensionales y tridimensionales relacionadas con sus atributos mensurables y de posición",
+    "11": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión"
+  },
+  "evidencias": {
+    "1.1": "Relaciona un fenómeno, o situación de variación, en diversas estructuras con el lenguaje gráfico o con algunos elementos que lo representan",
+    "2.1": "Elabora diversas representaciones de uno o varios conjuntos de datos",
+    "3.1": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello no se ofrecen en la situación",
+    "4.1": "Identifica propiedades de las gráficas de las funciones lineales, cuadráticas y exponenciales",
+    "5.1": "Usa adecuadamente las propiedades de las operaciones, la proporcionalidad directa o inversa en situaciones en las cuales las magnitudes están relacionadas",
+    "6.1": "Usa el promedio para enfrentar situaciones de centralización e interpretación del comportamiento de un conjunto de datos",
+    "7.1": "Determina cuándo un evento es posible, imposible o seguro",
+    "8.1": "Describe propiedades y relaciones de los números y sus operaciones",
+    "9.1": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "5.2": "Usa aproximaciones lineales o relaciones lineales en situaciones en las cuales las magnitudes están relacionadas",
+    "10.1": "Establece relaciones de paralelismo o perpendicularidad entre segmentos",
+    "8.2": "Establece relaciones de orden entre números reales dados criterios de ubicación o aproximación",
+    "6.2": "Usa la moda o la mediana para interpretar el comportamiento de un conjunto de datos de acuerdo con el ordenamiento de estos",
+    "7.2": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "11.1": "Identifica la imagen o la preimagen de una figura a partir de una transformación en un sistema de referencia cercano al contexto inmediato: arriba, abajo, derecha, izquierda",
+    "3.2": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello se ofrecen en la situación"
+  },
+  "cmc": [
+    "Numérico - variacional",
+    "Aleatorio",
+    "Espacial - métrico"
+  ],
+  "preguntas": [
+    {
+      "id": "I_1461244",
+      "numero": 1,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
+      "que_evalua": "La capacidad para identificar la gráfica que representa los datos de una tabla.",
+      "justificacion_correcta": "respuesta correcta Como el eje horizontal muestra la estatura en metros y el eje vertical, el peso en kilogramos, las parejas ordenadas correctas que representan la información de la tabla son: María (1,60, 65), Martha (1,65, 70), Juan (1,75, 75), Pedro (1,72, 80) y Luis (1,80, 79), que corresponden a los puntos rojos de la gráfica de la opción A.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción consideren que la gráfica presenta correctamente el peso de los 5 trabajadores. Posiblemente, los estudiantes que eligen la",
+        "C": "Es posible que el estudiante que elija esta opción consideren que la gráfica presenta correctamente la estatura de los 5 trabajadores, pero no la relación entre el peso y la estatura.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que las parejas ordenadas deben ir en orden ascendente de estatura y peso, así: María: (1,60, 65), Martha: (1,65, 70), Juan: (1,72, 75), Pedro: (1,75, 80) y Luis: (1,80, 79) que corresponden a los puntos rojos de la gráfica de la"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q01.png"
+    },
+    {
+      "id": "I_1460483",
+      "numero": 2,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Selecciono y uso algunos métodos estadísticos adecuados al tipo de problema, de información y al nivel de la escala en la que esta se representa (nominal, ordinal, de intervalo o de razón).",
+      "que_evalua": "La capacidad para identificar el diagrama de árbol que representa un conjunto de datos.",
+      "justificacion_correcta": "respuesta correcta En las 4 opciones de recorrido se inicia con la visita al Museo, seguido de dos opciones: Zoológico o Lago. Luego, en cualquiera de las dos opciones, le siguen otras dos opciones: Piscinas o Deportes. Por esta razón, el diagrama debe iniciar con Museo, ofrecer las opciones Zoológico y Lago y, para cada una de estas dos opciones, ofrecer Piscinas y Deportes. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que el primer lugar de visita es el Museo, seguido de dos opciones, Zoológico o Lago, y consideren que, si se elige Zoológico, luego debe estar la opción de visitar el Lago o las Piscinas o que, si se elige el Lago, debe estar la opción de visitar el Zoológico o las Piscinas, como muestran los recorridos 1 y 4. Posiblemente, los estudiantes que eligen la",
+        "B": "Es posible que el estudiante que elija esta opción consideren que los recorridos se inician de derecha a izquierda, primero con la visita a las Piscinas, seguido de la opción de visitar Deportes o el Zoológico y finalizando con la opción de visitar el Lago o el Museo, que son los lugares faltantes.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que se inician los recorridos de derecha a izquierda, primero con la visita a las Piscinas, seguido de la opción de visitar el Lago o el Zoológico, que son los lugares que están a la mitad del recorrido, y finalizando con la opción de visitar Deportes o el Museo, que son los lugares faltantes. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q02.png"
+    },
+    {
+      "id": "I_1751455",
+      "numero": 3,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para calcular el volumen de un sólido dadas sus dimensiones.",
+      "justificacion_correcta": "respuesta correcta Dado que las dimensiones del ladrillo son 1 cm, 2 cm y 13 cm, su volumen está dado por: 1 cm × 2 cm × 13 cm = 26 cm3.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que el volumen está dado por 13 cm ା 2 cm × 1 cm = 15 cm3. Posiblemente, los estudiantes que eligen la",
+        "B": "Es posible que el estudiante que elija esta opción consideren que el volumen está dado por (13 cm ା 1 cm) × 2 cm = 28 cm3.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que el volumen está dado por 13 cm × 3 cm = 39 cm3. Matemáticas 8.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q03.png"
+    },
+    {
+      "id": "I_1731170",
+      "numero": 4,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Modelo situaciones de variación con funciones polinómicas.",
+      "que_evalua": "La capacidad para determinar el punto en el que se presenta el valor máximo de una variable a partir de su representación gráfica.",
+      "justificacion_correcta": "respuesta correcta De los 7 puntos que aparecen en la gráfica, el punto que tiene la ordenada de mayor valor es (6 p.m., $ 105). Por tanto, a las 6 p.m. se paga el valor máximo por unidad.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren el primer punto de la gráfica: (3 p.m., $ 76). Por tanto, asumen que a las 3 p.m. se paga el valor máximo por unidad. Posiblemente, los estudiantes que eligen la",
+        "B": "Es posible que el estudiante que elija esta opción consideren que el primer punto en el que se alcanzan los $ 100 es (5 p.m., $ 100), por tanto, asumen que a las 5 p.m. se paga el valor máximo por unidad.",
+        "D": "Es posible que el estudiante que elija esta opción consideren el punto con un mayor valor de la abscisa: (9 p.m., $ 76). Por tanto, asumen que a las 9 p.m. se paga el valor máximo por unidad. Matemáticas 8.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q04.png"
+    },
+    {
+      "id": "I_136522R",
+      "numero": 5,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo problemas y simplifico cálculos, usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+      "que_evalua": "La capacidad para establecer los valores que al ser sumados dan un valor determinado.",
+      "justificacion_correcta": "respuesta correcta Dado que el total que se pagó por una entrada de niño y una de adulto es de $ 10.000, se verifica que en el cine 2 una entrada de adulto vale $ 6.800 y una de niño $ 3.200. Por tanto, la suma de los precios de las dos entradas es: $ 6.800 ା $ 3.200 = $ 10.000.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción no tengan en cuenta las decenas y centenas en los precios de las entradas para adultos y niños, concluyendo que $ 7.000 ା $ 3.000 = $ 10.000. Posiblemente, los estudiantes que eligen la",
+        "C": "Es posible que el estudiante que elija esta opción consideren que el valor de la suma de las entradas para un adulto y un niño ($ 5.000 ା $ 4.000 = $ 9.000) es el único que se encuentra por debajo de $ 10.000 y, por tanto, el único que se podrá pagar.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que, tanto con las centenas como con las unidades de mil, la suma es 10 (6 ା 4), concluyendo que el valor de la suma de las entradas para un adulto y un niño es: $ 6.600 ା $ 4.400 = $ 10.000. Matemáticas 8.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q05.png"
+    },
+    {
+      "id": "I_173116A",
+      "numero": 6,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas seleccionando información relevante en conjuntos de datos provenientes de fuentes diversas (prensa, revistas,televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para comparar promedios de distintos conjuntos de datos.",
+      "justificacion_correcta": "respuesta correcta Dado que, de acuerdo con la gráfica, el promedio de vida de los guepardos es de 10 años y el promedio de vida de los elefantes es de 70 años y 10 × 7 = 70, entonces 7 veces el promedio de vida de los guepardos es igual al promedio de vida de los elefantes. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que, como el promedio de vida de los guepardos es 10 años y el máximo valor de las abscisas de la gráfica es 80 años y 10 × 8 = 80, entonces 8 veces el promedio de vida de los guepardos es igual al promedio de vida de los elefantes. Posiblemente, los estudiantes que eligen la",
+        "C": "Es posible que el estudiante que elija esta opción consideren la diferencia entre el promedio de vida de los elefantes y el de los guepardos: 70 − 10 = 60, y dividen esa diferencia entre 10, concluyendo que 6 veces el promedio de vida de los guepardos es igual al promedio de vida de los elefantes.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que, como como el promedio de vida de los guepardos es 10 años y la segunda barra representa un promedio de 30 años, y 10 × 3 = 30, entonces 3 veces el promedio de vida de los guepardos es igual al promedio de vida de los elefantes. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q06.png"
+    },
+    {
+      "id": "I_1460774",
+      "numero": 7,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "dificultad": "MEDIA",
+      "estandar": "Uso conceptos básicos de probabilidad (espacio muestral, evento, independencia, etc.).",
+      "que_evalua": "La capacidad para decidir qué información se puede o no determinar a partir de un diagrama de árbol de un experimento aleatorio.",
+      "justificacion_correcta": "respuesta correcta Dado que la probabilidad de obtener cara o sello es la misma al realizar un lanzamiento de la moneda corriente, es imposible determinar previamente el resultado de un lanzamiento después de haber obtenido sello en el lanzamiento anterior.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que, al tener la misma probabilidad de obtener cara o sello con un lanzamiento de la moneda corriente, es imposible determinar cuándo se obtendrán dos sellos consecutivos. Posiblemente, los estudiantes que eligen la",
+        "B": "Es posible que el estudiante que elija esta opción consideren que es imposible determinar cuándo se obtendrán únicamente caras al realizar una serie de lanzamientos, dado que tiene la misma probabilidad de obtener cara o sello con un lanzamiento de la moneda corriente.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que, al tener todos los posibles resultados de lanzar la moneda tres veces, es imposible hallar la probabilidad de obtener solo una cara en los lanzamientos, pues, a medida que se realiza cada lanzamiento, existen más casos en los que se puede obtener cara. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q07.png"
+    },
+    {
+      "id": "I_1461103",
+      "numero": 8,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+      "que_evalua": "La capacidad para identificar qué relación existe entre los números de una secuencia dada.",
+      "justificacion_correcta": "respuesta correcta Al dividir la cantidad de mamíferos de un año entre la cantidad de mamíferos del año anterior se tiene: 32 ÷ 8 = 4, 128 ÷ 32 = 4 y 512 ÷ 128 = 4. Por tanto, la cantidad de mamíferos, a partir del año 2, aumentó 4 veces la cantidad de mamíferos del año anterior.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción consideren que los valores que aparecen en la fila de Población de mamíferos son todos múltiplos de 8. Por tanto, la población aumenta 8 veces la cantidad del año anterior. Posiblemente, los estudiantes que eligen la",
+        "C": "Es posible que el estudiante que elija esta opción consideren que la población de mamíferos para el segundo año se da al multiplicar el doble de la población de mamíferos para el año 1 por 2, es decir, 16 × 2 = 32. Por tanto, la población aumenta 16 veces la cantidad del año anterior.",
+        "D": "Es posible que el estudiante que elija esta opción consideren la diferencia entre la población del primer y el segundo año, es decir, 32 − 8 = 24. Por tanto, la población aumenta 24 veces la cantidad del año anterior. Matemáticas 8.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q08.png"
+    },
+    {
+      "id": "I_136487R",
+      "numero": 9,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
+      "que_evalua": "La capacidad para determinar características que se deben cumplir para que dos figuras bidimensionales sean congruentes.",
+      "justificacion_correcta": "respuesta correcta Para que dos cuadrados sean congruentes, es necesario que la longitud de sus lados sea la misma; por tanto, para que la longitud de los lados de la ficha 1 sea igual a la de los lados de la ficha 2 es necesario aumentar 2 cm en cada uno de ellos, ya que 2 cm ା 6 cm = 8 cm.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que, al disminuir 4 cm a cada uno de sus lados, obtendrán una ficha cuadrada de 2 cm de lado, que es semejante a la ficha 2. Posiblemente, los estudiantes que eligen la",
+        "C": "Es posible que el estudiante que elija esta opción consideren que se debe disminuir 2 cm solamente a dos lados de la ficha 2, ya que 8 cm − 2 cm = 6 cm para que los lados de la ficha 2 tengan la misma longitud de los lados de la ficha 1.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que, como el perímetro de la ficha 2 es 8 cm × 4 = 32 cm y el de la ficha 1 es 6 cm × 4 = 24 cm, se necesitan 32 cm − 24 cm = 8 cm para igualar el perímetro, que es equivalente a aumentar 4 cm a dos de los lados, ya que 4 cm ା 4 cm = 8 cm. Matemáticas 8.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q09.png"
+    },
+    {
+      "id": "I_1890699",
+      "numero": 10,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para describir el comportamiento de una variable que depende de otra, a partir de su representación gráfica.",
+      "justificacion_correcta": "respuesta correcta Hay una tarifa básica de 5.000, a partir de los 5 kg, el costo tiene una variación creciente y lineal, dado que, por cada kilogramo adicional después de los 5 kilogramos, la tarifa aumenta $ 200. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción asocien el aumento de $ 200 por cada kilogramo adicional después de los 5 kilogramos (200 × kilogramo adicional ା 4.000), con un comportamiento cuadrático, al tener múltiplos de 2, tanto en el cambio kilogramo a kilogramo como en el punto de inicio, cuando la cantidad de kilogramos es 0.",
+        "C": "Es posible que el estudiante que elija esta opción busquen el precio por kg y noten que, a medida que aumenta el peso total, disminuye el costo del envío por kg, y lo asocian con un comportamiento decreciente también gráficamente.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que hay la misma inclinación durante toda la gráfica (misma pendiente) y concluyen que eso significa ser constante. Matemáticas 8.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q10.png"
+    },
+    {
+      "id": "I_1890645",
+      "numero": 11,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "MEDIA",
+      "estandar": "Uso e interpreto la media (o promedio) y la mediana y comparo lo que indican.",
+      "que_evalua": "La capacidad para tomar una decisión basándose en la comparación de promedios presentados en una tabla.",
+      "justificacion_correcta": "respuesta correcta Se debe comparar el promedio de cada día de la semana y elegir el día cuyo promedio sea el más alto. En este caso, el promedio del martes. Esto porque el martes hay 12 ା 13 ା 11 = 36 pasajeros, es decir, un promedio de         = 12 pasajeros por ruta. Los demás promedios son: Lunes: 11. Miércoles: 10. Jueves: 9. Por lo que el del martes es el mayor y es en ese día que se debería agregar una ruta. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción debido a que es el promedio asociado a la primera fila de la tabla. Así mismo, se basan en que, al corresponder a la primera información presentada, asumen un orden descendente.",
+        "C": "Es posible que el estudiante que elija esta opción noten que no hay variación en los datos presentados entre las diferentes rutas y por eso asuman que este es el día para abrir una nueva ruta.",
+        "D": "Es posible que el estudiante que elija esta opción consideren jueves por ser el último día y asumir que acumula información de los días anteriores, por lo que habría más pasajeros, desestimando la información de la tabla. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q11.png"
+    },
+    {
+      "id": "I_1890729",
+      "numero": 12,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
+      "que_evalua": "La capacidad para identificar líneas paralelas en una figura geométrica.",
+      "justificacion_correcta": "respuesta correcta Los segmentos paralelos del octágono se muestran en la ilustración: Así, son paralelos: q con u. p con t. w con s. v con r. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción registren los lados contiguos de acuerdo con las manecillas del reloj.",
+        "C": "Es posible que el estudiante que elija esta opción observen algunos segmentos paralelos y otros que están reflejados, asumiendo esta variedad como lo solicitado.",
+        "D": "Es posible que el estudiante que elija esta opción tomen los segmentos pqr y los asocien como el reflejo de vut. Matemáticas 8.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q12.png"
+    },
+    {
+      "id": "I_1890653",
+      "numero": 13,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 8,
+      "evidencia": "8.2",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+      "que_evalua": "La capacidad para ordenar, de mayor a menor, un conjunto de números decimales.",
+      "justificacion_correcta": "respuesta correcta Al ordenar las distancias, de mayor a menor, que recorrieron los 4 estudiantes se obtiene el siguiente conjunto de datos {5,25; 5,134; 5,1; 5,07}. Por esto, la tabla que representa las tres primeras tres posiciones del concurso es la siguiente: Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción ordenen los números por la cantidad de números que hay después de la coma del número decimal; entre mayor cantidad de números después de la coma es mayor el número.",
+        "C": "Es posible que el estudiante que elija esta opción asuman que el orden de los números esté dado como se presentó en la información; es decir, se presentaron del primer al cuarto puesto de izquierda a derecha.",
+        "D": "Es posible que el estudiante que elija esta opción determinen que el orden está dado por la cantidad de números decimales de cada magnitud. En este caso, entre menos números haya “después de la coma”, el número es más grande. Matemáticas 8.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q13.png"
+    },
+    {
+      "id": "I_1890732",
+      "numero": 14,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco cómo diferentes maneras de presentación de información pueden originar distintas interpretaciones.",
+      "que_evalua": "La capacidad para relacionar información presentada de forma icónica con su correspondiente representación tabular.",
+      "justificacion_correcta": "respuesta correcta Para cada actividad se cuenta la cantidad de botellas tanto de 10 litros como de 5 litros. Se multiplica la cantidad de botellas de acuerdo con su equivalencia y, posteriormente, se suman los resultados en cada una de las actividades por separado: Ducharse: (9 × 10) ା (1 × 5) = 90 ା 5 = 95. Cocinar: 2 × 10 = 20. Usar el inodoro: (7 × 10) ା (1 × 5) = 70 ା 5 = 75. Lavar ropa: 11 × 10 = 110. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción solamente sumen, para cada actividad, las botellas que representan 10 litros, asumiendo que las más pequeñas se pueden desestimar en el conteo.",
+        "B": "Es posible que el estudiante que elija esta opción cuenten el número de botellas grandes en cada actividad sin prestar atención a las equivalencias de los íconos dadas en el enunciado.",
+        "D": "Es posible que el estudiante que elija esta opción cuenten la cantidad de botellas completas (parte entera) y complementen con las representaciones de medias botellas (parte decimal) para cada actividad, sin atender a las equivalencias dadas. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q14.png"
+    },
+    {
+      "id": "I_1890810",
+      "numero": 15,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La capacidad para descomponer una figura en sólidos cuyo volumen puede calcularse mediante procedimientos estandarizados.",
+      "justificacion_correcta": "respuesta correcta La figura que representa el empaque de jugo se puede obtener al unir un paralelepípedo y un prisma triangular. El volumen del paralelepípedo se calcula: 5 cm × 4 cm × 6 cm = 120 cm3. Matemáticas 8.º El prisma triangular está conformado por un triángulo rectángulo, por lo que su volumen se calcula con la operación: × 6 cm = 36 cm3 Finalmente, se suman los dos valores de los volúmenes 120 cm3 ା 36 cm3 = 156 cm3.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción calculen el volumen del empaque de jugo con ayuda del siguiente par de sólidos y sus respectivas medidas: En el caso del prisma triangular, los estudiantes podrían asumir que algunas medidas son iguales a las de la figura que representa el empaque del jugo, y calculan así: - Para el volumen del prisma triangular:                            × 6 cm = 96 cm3. - Para el volumen del paralelepípedo: 5 cm × 4 cm × 6 cm = 120 cm3. Finalmente, suman los dos valores, obteniendo: 96 cm3 ା 120 cm3 = 216 cm3.",
+        "B": "Es posible que el estudiante que elija esta opción identifiquen que la pieza se pudo obtener al realizar un corte de un paralelepípedo recto de dimensiones 8 cm, 6 cm y 4 cm y hallaron su respectivo volumen. Luego, calcularon el volumen con la operación: 8 cm × 4 cm × 6 cm = 192 cm3.",
+        "D": "Es posible que el estudiante que elija esta opción identifiquen dos sólidos por los que está compuesto la figura y luego suman todas las medidas de sus aristas. 4 cm × 3 cm 8 cm × 4 cm Matemáticas 8.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q15.png"
+    },
+    {
+      "id": "I_1890704",
+      "numero": 16,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
+      "que_evalua": "La capacidad para establecer el conjunto de datos que corresponde a una medida de tendencia central dada como es la moda.",
+      "justificacion_correcta": "respuesta correcta Para que un conjunto de datos tenga como moda 6,5 cm, este debe ser el dato con mayor frecuencia; de este modo, en la gráfica: 6,5 cm tiene frecuencia 2 (ocurre en el año 2 y en el año 5), a diferencia de los demás datos que tienen frecuencia 1. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que el valor de 6,5 cm hace referencia a la mediana, por ende, identifican en la gráfica que este dato se encuentra en la mitad.",
+        "B": "Es posible que el estudiante que elija esta opción observen que en los primeros cuatro datos se cumple con que 6,5 cm esté en la mitad de cada par de datos 6,3 cm y 6,7 cm, desestimando el último valor.",
+        "D": "Es posible que el estudiante que elija esta opción establezcan el promedio de los 5 datos que resulta de identificar la media de los primeros cuatro años y su igualdad con el quinto, confundiendo las medidas de tendencia central entre moda y media. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q16.png"
+    },
+    {
+      "id": "I_1890496",
+      "numero": 17,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "dificultad": "MEDIA",
+      "estandar": "Uso conceptos básicos de probabilidad (espacio muestral, evento, independencia, etc.).",
+      "que_evalua": "La capacidad para seleccionar el evento que menor probabilidad de ocurrencia presenta a partir de la representación en tablas de contingencia de la información.",
+      "justificacion_correcta": "respuesta correcta Se determina dentro de los datos indicados en la tabla, aquel que presenta una menor frecuencia dentro del conjunto, comparando la probabilidad de ocurrencia con los demás elementos teniendo como referente el color y el material ofrecidos en total. Concluyendo que las esferas rojas de caucho tienen una probabilidad de ser seleccionadas del          siendo este el menor valor de probabilidad, pues todas las demás tienen mayor cantidad de casos favorables. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción relacionen un criterio de orden para la elección, tomando como referente la presentación de los colores dentro de la tabla de datos. Por tanto, asocian el último elemento con aquel que menor probabilidad de elección tendrá dentro del conjunto y efectúan una comparación, en este caso, de los tamaños ofrecidos. De allí que sea menor la cantidad de elementos ofrecidos de esferas de caucho que de plástico de color verde.",
+        "B": "Es posible que el estudiante que elija esta opción no tengan en cuenta la probabilidad indicada dentro del enunciado y determinen aquel elemento que mayor frecuencia presenta dentro del conjunto de esferas dada la cantidad señalada en la tabla.",
+        "D": "Es posible que el estudiante que elija esta opción reordenen las frecuencias señaladas dentro de la tabla de valores de menor a mayor sin asociar el color correspondiente para dicha frecuencia, por lo que las esferas de color azul presentarían una menor probabilidad de selección. Adicionalmente, no discriminan el material asociado para este evento. Matemáticas 8.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q17.png"
+    },
+    {
+      "id": "I_1890302",
+      "numero": 18,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "dificultad": "MEDIA",
+      "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
+      "que_evalua": "La capacidad para identificar la transformación realizada a una figura.",
+      "justificacion_correcta": "respuesta correcta La transformación que desde la ubicación de la linterna se hace a la estrella es una homotecia, que preserva la forma al proyectar los vértices y los lados. Con esta referencia se garantiza la proporcionalidad entre los lados correspondientes.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que la traslación se da porque la linterna “se lleva” la imagen de la estrella a la pared.",
+        "B": "Es posible que el estudiante que elija esta opción asuman que la linterna “refleja” la imagen sobre la pared y, por tanto, esta fue la transformación hecha.",
+        "D": "Es posible que el estudiante que elija esta opción consideren el escenario completo de la estrella más pequeña con respecto a la sombra proyectada y asumen que la transformación es una reducción. Matemáticas 8.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q18.png"
+    },
+    {
+      "id": "I_1142383",
+      "numero": 19,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "MEDIA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La capacidad para hallar el área de un círculo usando la fórmula dada.",
+      "justificacion_correcta": "respuesta correcta En el círculo se observa que el radio es 4: Por tanto, el área del círculo es (4)2 π = 16 π. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción obtengan correctamente que el radio del círculo es 4 y con este valor calculen el área al multiplicar por π sin calcular el cuadrado del radio.",
+        "C": "Es posible que el estudiante que elija esta opción tomen como radio 8, que corresponde al diámetro. Luego, reemplacen en la fórmula: (8)2 π = 64 π.",
+        "D": "Es posible que el estudiante que elija esta opción tomen como radio 8, que corresponde al diámetro, y lo multiplican por π, desestimando el cuadrado indicado en la fórmula. Matemáticas 8.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q19.png"
+    },
+    {
+      "id": "I_1369112",
+      "numero": 20,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para comparar información de un par de gráficas e identificar el significado de la intersección entre ellas.",
+      "justificacion_correcta": "respuesta correcta El punto de intersección es un punto común a las dos gráficas. Esto significa que hay una proporción R de líquido P y también una proporción R de líquido Q; es decir, en ese punto tienen la misma proporción. Matemáticas 8.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción interpreten las gráficas como el movimiento de “ingreso al tazón” de cada líquido, lo que los lleva a concluir que, al cortarse, se han unificado los dos tipos, el P y el Q.",
+        "B": "Es posible que el estudiante que elija esta opción interpreten la gráfica como “cantidad” de líquido y, al cortarse, asumen igualdad como “mitad”.",
+        "D": "Es posible que el estudiante que elija esta opción asuman que se debe llenar el tazón y, como el líquido Q ya está allí, al agregar el líquido P el tazón se rebozará en algún momento, por lo que el punto de intersección representaría el momento en el que ya se llenó. 8. G R A D O Tiempo de aplicación: 1 hora N.° de preguntas: ¡Hola! Queremos agradecer tu participación. Antes de empezar a responder, es importante que tengas en cuenta lo siguiente: • Lee cada pregunta cuidadosamente y elige UNA opción. • En este cuadernillo encuentras las preguntas y la Hoja de respuestas. • Recuerda que tienes una (1) hora para responder este cuadernillo. • Por favor, responde TODAS las preguntas. • Si no entiendes algo o si tienes alguna inquietud sobre cómo llenar la Hoja de respuestas, pídele ayuda a tu docente. M081 G08.M.D Matemáticas Cuadernillo 1 Matemáticas - Cuadernillo 1 Saber 8.° María, Marta, Juan, Pedro y Luis se practicaron un control médico que incluía verificar su peso y estatura. La tabla muestra los resultados encontrados. ¿Cuál gráfica relaciona correctamente la estatura y el peso de cada uno de los cinco trabajadores? B. Trabajador Estatura (m) María Marta Juan Pedro Luis C. Trabajador Estatura (m) María 1,85 1,8 1,75 1,7 1,65 1,6 1,55 1,5 Marta Juan Pedro Luis A. Peso (kg) Estatura (m) 1,6 1,65 1,7 1,8 1,75 María Marta Juan Pedro Luis D. Peso (kg) Estatura (m) 1,6 1,65 1,7 1,8 1,75 María Marta Juan Pedro Luis Estatura (m) Peso (kg) María Marta Juan Pedro Luis 1,60 1,65 1,75 1,72 1,80 1. Matemáticas - Cuadernillo 1 Saber 8.° La figura corresponde al mapa de un parque natural. Cuando ingresan visitantes, se ofrecen las siguientes opciones de recorrido: Museo – Zoológico – Piscinas. Museo – Zoológico – Deportes. Museo – Lago – Deportes. Museo – Lago – Piscinas. ¿Cuál de los siguientes diagramas resume los recorridos que ofrece el parque? ENTRADA Piscinas Zoológico Deportes Lago Museo A. Zoológico Lago Piscinas Piscinas Lago Zoológico Museo B. Zoológico Deportes Lago Museo Lago Museo Piscinas D. Zoológico Lago Deportes Deportes Museo Museo Piscinas C. Zoológico Lago Piscinas Piscinas Deportes Deportes Museo 2. Matemáticas - Cuadernillo 1 Saber 8.° En la figura se muestra un ladrillo. ¿Cuál es el volumen de este ladrillo? A. 15 cm3 B. 28 cm3 C. 26 cm3 D. 39 cm3 1 cm 2 cm 13 cm El cobro de un servicio de transporte privado se hace teniendo en cuenta una “unidad”. El valor de la unidad varía según la hora del día, como se muestra en la gráfica. ¿Cuál es la hora del día en la que se paga el valor máximo por unidad? A. 3 p. m. B. 5 p. m. C. 6 p. m. D. 9 p. m. $120 $100 $80 $60 $40 $20 $0 3 p. m. 4 p. m. 5 p. m. 6 p. m. 7 p. m. 8 p. m. 9 p. m. $85 $100 $105 $100 $85 $76 Valor de la unidad Hora del día $76 3. 4. Matemáticas - Cuadernillo 1 Saber 8.° En la imagen, observa el valor de las entradas para adultos y niños en diferentes salas de cine. Si se pagó $10.000 en total por una boleta de niño y una de adulto, ¿en cuál cine se compraron las boletas? A. Cine 1. B. Cine 2. C. Cine 3. D. Cine 4. Cine 1 Adultos: $7.500 Niños: $3.350 Cine 4 Adultos: $6.600 Niños: $4.400 Cine 2 Adultos: $6.800 Niños: $3.200 Cine 3 Adultos: $5.000 Niños: $4.000 La gráfica muestra el promedio de vida, en años, de algunos animales salvajes en una región de un país. ¿Cuántas veces el promedio de vida de los guepardos es igual al promedio de vida de los elefantes? A. B. C. D. Animal Guepardo Babuino Elefante Promedio de vida (años) 5. 6. Matemáticas - Cuadernillo 1 Saber 8.° Se tiene una moneda corriente, es decir, con la misma probabilidad de obtener cara o sello. El diagrama muestra los posibles resultados de lanzar la moneda tres veces al aire. Según el diagrama, ¿cuál de las siguientes afirmaciones es falsa? A. Es posible hallar la cantidad de casos en los que se obtienen dos sellos consecutivos. B. Es posible determinar la cantidad de casos en los que se obtiene únicamente caras. C. Es posible determinar previamente si sale sello en el siguiente lanzamiento. D. Es posible hallar la probabilidad de obtener una cara en los lanzamientos. Cara Sello Cara Sello Cara Sello Cara Sello Cara Sello Cara Sello Cara Sello Un investigador quiere saber cómo aumenta la población de un tipo de mamífero. Para ello, ingresa una pareja de estos en un ecosistema limitado. El crecimiento de la población se registró en la tabla. Con los datos de la tabla, si se mantiene la relación entre el año y la cantidad, es correcto afirmar que la población de mamíferos A. aumentó 4 veces la cantidad del año anterior. B. aumentó 8 veces la cantidad del año anterior. C. aumentó 16 veces la cantidad del año anterior. D. aumentó 24 veces la cantidad del año anterior. Año Población 7. 8. Matemáticas - Cuadernillo 1 Saber 8.° En la figura, las fichas 1 y 2 son cuadradas. ¿Qué se le debe hacer a la ficha 1 para que sea congruente con la ficha 2? A. Disminuir 4 cm a cada uno de sus lados. B. Aumentar 2 cm a cada uno de sus lados. C. Disminuir 2 cm solamente a dos de sus lados. D. Aumentar 4 cm solamente a dos de sus lados. 6 cm 8 cm Ficha 1 Ficha 2 Un servicio de mensajería tiene un costo básico de $5.000 para los envíos que tengan un peso menor a 5 kg. Si el peso del paquete es mayor que 5 kg, el costo del envío aumenta, de la forma en que se muestra en la gráfica: De acuerdo con la gráfica, ¿cuál es el tipo de relación que hay entre el peso del paquete y el costo del envío cuando el paquete pesa entre 5 kg y 10 kg? A. Hay una relación cuadrática entre el peso del paquete y el costo del envío. B. Hay una relación lineal creciente entre el peso del paquete y el costo del envío. C. Hay una relación lineal decreciente entre el peso del paquete y el costo del envío. D. Hay una relación constante entre el peso del paquete y el costo del envío. Peso (kg) Costo ($) Costo de envío 6.200 6.000 5.800 5.600 5.400 5.200 5.000 4.800 9. 10. Matemáticas - Cuadernillo 1 Saber 8.° Una empresa de transporte ofrece 3 rutas para ir de una ciudad a otra. La tabla muestra la cantidad de pasajeros que transportó cada ruta en los cuatro primeros días de una semana. El jefe de transporte debe poner un bus adicional el día en el que se tenga el mayor promedio de pa- sajeros. ¿En qué día de la semana se debe poner el bus adicional? A. Lunes. B. Martes. C. Miércoles. D. Jueves. Día Pasajeros Ruta #1 Pasajeros Ruta #2 Pasajeros Ruta #3 Promedio diario de pasajeros Lunes Martes Miércoles Jueves En clase de Geometría el profesor está mencionando algunas características geométricas de las señales de tránsito. Él afirmó que la señal de “PARE” está construida en un polígono regular llamado octágono y que varios de los segmentos de este polígono son paralelos. ¿Cuáles son los segmentos paralelos del octágono? A. p y q; r y s; t y u; v y w. B. q y u; r y v; s y w; t y p. C. q y u; w y s; p y r; v y t. D. p, q y r; t, u y v. PARE q u r p t v w s 11. 12. Matemáticas - Cuadernillo 1 Saber 8.° El profesor de Educación Física hizo un concurso con 4 estudiantes, los puso a trotar durante media hora, y midió la distancia recorrida por cada uno. Observa las distancias recorridas. En el concurso, los puestos se ocuparon según la distancia recorrida, de mayor a menor. ¿Cuál de las siguientes tablas representa correctamente la posición que ocupó cada estudiante en el concurso? Leticia 5,1 kilómetros Viviana 5,25 kilómetros Eduardo 5 kilómetros Javier 5,134 kilómetros Puesto en el concurso Estudiante Primero Javier Segundo Viviana Tercero Leticia Cuarto Eduardo A. Puesto en el concurso Estudiante Primero Viviana Segundo Javier Tercero Leticia Cuarto Eduardo B. Puesto en el concurso Estudiante Primero Leticia Segundo Viviana Tercero Eduardo Cuarto Javier C. Puesto en el concurso Estudiante Primero Eduardo Segundo Leticia Tercero Viviana Cuarto Javier D. 13. Matemáticas - Cuadernillo 1 Saber 8.° La imagen muestra el diseño de un empaque para jugos. ¿Qué cantidad de jugo se necesita para llenar totalmente el empaque? A. 216 cm3 B. 192 cm3 C. 156 cm3 D. 102 cm3 8 cm 5 cm 6 cm 4 cm La imagen muestra los litros de agua que se utilizan diariamente para algunas actividades en la casa de Rosa. ¿Cuál de las siguientes tablas corresponde a la cantidad de agua que se utiliza diariamente en la casa de Rosa? Actividad Litros de agua Ducharse Cocinar Inodoro Lavar ropa A. Actividad Litros de agua Ducharse Cocinar Inodoro Lavar ropa C. Actividad Litros de agua Ducharse 9,0 Cocinar 2,0 Inodoro 7,0 Lavar ropa 11,0 B. Actividad Litros de agua Ducharse 9,5 Cocinar 2,0 Inodoro 7,5 Lavar ropa 11,0 D. Ducharse Cocinar Usar Inodoro Lavar ropa Cada equivale a 10 litros Cada equivale a 5 litros 15. 14. Matemáticas - Cuadernillo 1 Saber 8.° Lucia registró el aumento de su altura durante 5 años consecutivos y determinó que la moda es 6,5 cm. Teniendo en cuenta la anterior información, ¿cuál gráfica podría corresponder a la cantidad de centímetros que aumentó cada año la altura de Lucia durante los últimos 5 años? 6,2 6,5 6,2 Año Centímetros Centímetros de aumento en la altura A. 6,3 6,7 6,3 Año Centímetros Centímetros de aumento en la altura 6,7 6,3 B. Año Centímetros Centímetros de aumento en la altura 6,5 6,5 C. Año Centímetros Centímetros de aumento en la altura 6,5 6,5 D. 16. Matemáticas - Cuadernillo 1 Saber 8.° Para un juego se pone en una bolsa varias esferas de igual tamaño, unas son de caucho, otras de plástico y cada una está rellena de pintura. La tabla muestra la cantidad de esferas de cada tipo que hay en la bolsa y el color de pintura con la que están rellenas. Si se elige al azar una esfera de la bolsa, ¿cuál es el color y material que tiene menor probabilidad de ser elegido? A. Esferas             verdes de caucho. B. Esferas             amarillas de plástico. C. Esferas             rojas de caucho. D. Esferas             azules de plástico. Color de pintura Cantidad de esferas de caucho Cantidad de esferas de plástico azul rojo amarillo verde Liz ubicó una linterna detrás de una estrella de cartón para proyectar su sombra en la pared. ¿Qué tipo de transformación relaciona la estrella de cartón con su sombra en la pared? A. Traslación. B. Reflexión. C. Homotecia. D. Reducción. Estrella de cartón Sombra de la estrella 17. 18. Matemáticas - Cuadernillo 1 Saber 8.° Un estudiante dibujó un círculo como se muestra a continuación. Como el área de un círculo de radio r es πr2, ¿cuál es el área del círculo que dibujó el estudiante? A. 16π B. 4π C. 64π D. 8π y -4 -3 -2 -1 -2 -3 -4 -5 -6 -7 -8 x -1 -2 -3 -4 -5 Se va depositando gradualmente un líquido P en un tazón que ya contenía un líquido Q. La gráfica muestra la proporción que hay de cada líquido, a medida que se deposita el líquido P. ¿Qué representa el punto donde se intersecan las dos curvas? A. Es el punto en el que los líquidos P y Q se comienzan a mezclar en el tazón. B. Es el punto en el que se ha depositado la mitad del líquido P. C. Es el punto en el que el tazón contiene la misma proporción de los líquidos P y Q. D. Es el punto en el que se han depositado todos los litros del líquido P. Proporción de líquido Tiempo Q P 19. 20. FIN Matemáticas - Cuadernillo 1 A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D DATOS PERSONALES Tipo de documento Número de documento Nombres y apellidos Curso Sexo Niño - Hombre Niña - Mujer Para contestar en la Hoja de respuestas hazlo de la siguiente manera. Por ejemplo, si la respuesta es la B, MARCA ASÍ A B D C 8.° CUADERNILLO 1-2023 Calle 26 N.º 69-76, Torre 2, Piso 16, Edificio Elemento, Bogotá D.C., Colombia www.icfes.gov.co Línea de atención al usuario: Bogotá Tel.: 60 (1) 514 4370"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-8-p1/q20.png"
+    }
+  ]
+}

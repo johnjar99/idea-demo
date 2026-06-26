@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Panel del Manager — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- bcryptjs retirado: Firebase Auth gestiona contraseñas. Driver.js diferido para no bloquear. -->
+  <!-- Driver.js para la guía de Sabio y el tour -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/idea-custom.css">
+  <link rel="stylesheet" href="css/idea-v2.css">
+  <link rel="stylesheet" href="css/paneles-claros.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="rol-manager">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="manager.html" class="logo-home" title="Inicio (Manager)">
+      <img src="assets/logo-idea.png" class="logo">
+      <div class="nombre-app">IDEA — Panel del Manager</div>
+    </a>
+    <div class="user-info">
+      <span class="rol-chip">Manager</span>
+      <span id="nombre-usuario"></span>
+      <button class="salir-btn" id="btn-salir">Salir</button>
+    </div>
+  </header>
+
+  <main class="doc-wrap" id="contenido">
+
+    <section class="panel-hero-doc animate-fade-in">
+      <div class="panel-hero-doc__info">
+        <span class="panel-hero-doc__chip">PANEL DEL MANAGER</span>
+        <h1 class="panel-hero-doc__greeting">Administración</h1>
+        <p class="panel-hero-doc__sub">Asigna grupos a docentes, directivos a su institución y gestiona los reintentos.</p>
+      </div>
+    </section>
+
+    <nav class="panel-tabs animate-fade-in" style="animation-delay:60ms">
+      <button class="panel-tab activo" data-vista="grupos"><span class="panel-tab__ic">👥</span>Grupos → Docentes</button>
+      <button class="panel-tab" data-vista="directivos"><span class="panel-tab__ic">🏫</span>Directivos y funcionarios</button>
+      <button class="panel-tab" data-vista="estudiantes"><span class="panel-tab__ic">🎓</span>Estudiantes por IE</button>
+      <button class="panel-tab" data-vista="borrar-pruebas"><span class="panel-tab__ic">🗑️</span>Borrar pruebas</button>
+      <button class="panel-tab" data-vista="reintentos"><span class="panel-tab__ic">🔑</span>Reintentos</button>
+      <button class="panel-tab" data-vista="mantenimiento"><span class="panel-tab__ic">🧪</span>Datos demo</button>
+    </nav>
+
+    <div class="doc-acciones-grid animate-fade-in" style="animation-delay:120ms;margin-bottom:20px">
+      <a href="directivo.html" class="doc-accion"><span class="doc-accion__ic">🏛️</span><span>Ver panel directivo</span></a>
+      <a href="docente.html" class="doc-accion"><span class="doc-accion__ic">🧑‍🏫</span><span>Ver panel docente</span></a>
+    </div>
+
+      <!-- A. Grupos → Docentes -->
+      <div id="vista-grupos" class="vista animate-fade-in">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Asignar grupos a docentes</h1>
+        <p class="text-slate-600 text-sm mb-6">Marca los grupos que puede ver cada docente. Si no marcas ninguno, el docente ve <strong>todos</strong> los grupos de su institución.</p>
+        <div id="lista-docentes"></div>
+      </div>
+
+      <!-- B. Directivos → Institución -->
+      <div id="vista-directivos" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Asignar directivos y funcionarios a una institución</h1>
+        <p class="text-slate-600 text-sm mb-6">El <b>directivo</b> ve el consolidado y los grupos de la institución que le asignes. El <b>funcionario</b> (por ejemplo un rector) ve <b>todos los resultados de todas las instituciones</b>; la institución asignada es solo su afiliación.</p>
+        <div id="lista-directivos"></div>
+      </div>
+
+      <!-- B2. Estudiantes por IE -->
+      <div id="vista-estudiantes" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Estudiantes por institución</h1>
+        <p class="text-slate-600 text-sm mb-6">Elige una institución para ver sus estudiantes con nombre exacto. Puedes cambiarles el <b>grado</b>, el <b>grupo</b> o moverlos a otra <b>institución</b>, y guardar cada cambio.</p>
+        <div class="idea-card mb-4" style="max-width:560px">
+          <label class="label-idea">Institución</label>
+          <select id="sel-ie-est" class="input-idea"></select>
+        </div>
+        <div id="lista-estudiantes-ie"></div>
+      </div>
+
+      <!-- B3. Borrar pruebas (por IE y estudiante) -->
+      <div id="vista-borrar-pruebas" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Borrar pruebas de un estudiante</h1>
+        <p class="text-slate-600 text-sm mb-6">Elige la institución y el estudiante para ver las pruebas que ha presentado y eliminar una en concreto. Solo borra esa prueba; no toca ningún otro dato.</p>
+        <div class="idea-card mb-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div><label class="label-idea">Institución</label><select id="bp-ie" class="input-idea"></select></div>
+            <div><label class="label-idea">Estudiante</label><select id="bp-est" class="input-idea"></select></div>
+          </div>
+        </div>
+        <div id="bp-lista-pruebas"><p class="text-slate-500 text-sm">Selecciona una institución y un estudiante.</p></div>
+      </div>
+
+      <!-- C. Reintentos -->
+      <div id="vista-reintentos" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Gestionar reintentos</h1>
+        <p class="text-slate-600 text-sm mb-6">Habilita que un estudiante vuelva a presentar un cuadernillo que ya envió.</p>
+
+        <div class="idea-card mb-6">
+          <h2 class="card-title">Habilitar nuevo intento</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+            <div>
+              <label class="label-idea">Estudiante</label>
+              <select id="sel-estudiante" class="input-idea"></select>
+            </div>
+            <div>
+              <label class="label-idea">Cuadernillo</label>
+              <select id="sel-cuadernillo" class="input-idea"></select>
+            </div>
+          </div>
+          <label class="label-idea">Razón (opcional)</label>
+          <input type="text" id="razon-reintento" class="input-idea mb-3" placeholder="Ej: problema técnico en el primer intento">
+          <button id="btn-otorgar" class="btn-idea">Habilitar reintento</button>
+        </div>
+
+        <div class="idea-card">
+          <h2 class="card-title">Reintentos vigentes</h2>
+          <div id="lista-permisos"></div>
+        </div>
+      </div>
+
+      <!-- D. Mantenimiento: cargar / borrar datos de demostración -->
+      <div id="vista-mantenimiento" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Datos de demostración</h1>
+        <p class="text-slate-600 text-sm mb-6">Carga o borra las pruebas de demostración de la <strong>Institución Educativa Demostración (IE Demo)</strong>, que tiene estudiantes de todos los grados (3° a 11°) con sus docentes y directivo. Útil para mostrar la plataforma con datos, o para dejarla limpia y presentar las pruebas en vivo.</p>
+
+        <div class="idea-card" style="border-left:4px solid #10B981; background:#F0FDF4; margin-bottom:18px">
+          <h2 class="card-title">Cargar demos de todas las pruebas</h2>
+          <p class="text-sm text-slate-600 mb-4">Crea entregas YA presentadas (con resultados) de TODAS las pruebas, para todos los estudiantes de la IE Demo. Así los paneles de docente y directivo, el Sabio IA y los planes de mejora se ven con datos reales por grado y materia. Vuelve a empezar de cero cada vez (no duplica).</p>
+          <button id="btn-cargar-demos" class="btn-idea" style="background:#10B981">📥 Cargar demos de todas las pruebas</button>
+          <p id="msg-cargar" class="text-sm mt-3"></p>
+          <pre id="log-cargar" class="text-xs mt-2" style="display:none;max-height:38vh;overflow:auto;background:#0f172a;color:#e2e8f0;border-radius:10px;padding:12px;white-space:pre-wrap"></pre>
+        </div>
+
+        <div class="idea-card" style="border-left:4px solid #FBBF24; background:#FFFBEB">
+          <h2 class="card-title">Borrar demos (para presentar en vivo)</h2>
+          <p class="text-sm text-slate-600 mb-4">Borra las pruebas presentadas, los permisos de reintento, los mensajes y los planes de la IE Demo. <strong>Conserva</strong> las cuentas, los cuadernillos y los datos de cualquier institución real. Úsalo para presentar las pruebas manualmente desde cero.</p>
+          <button id="btn-reset-demo" class="btn-idea">🧹 Borrar demos de la IE Demo</button>
+          <p id="msg-reset" class="text-sm mt-3"></p>
+        </div>
+      </div>
+    </main>
+
+  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import { requerirSesion, cerrarSesion } from './js/auth.js';
+    import { otorgarPermisoReintento, revocarPermiso, listarPermisosVigentes } from './js/permisos.js';
+    import { escapeHtml, toast } from './js/utils.js';
+    import './js/guia-sabio.js';
+    import { iniciarTour, debeAutoIniciar, botonAyudaFlotante } from './js/tour.js';
+    import { cargarDemosTodas } from './js/sembrar-demos.js';
+
+    const ses = await requerirSesion('manager');
+    if (!ses) throw new Error('redir');
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href = 'index.html'; });
+
+    await db.inicializar();
+    let instituciones = await db.lista('idea_instituciones');
+    let usuarios = await db.lista('idea_usuarios');
+    const cuadernillos = await db.lista('idea_cuadernillos');
+
+    async function recargarUsuarios() { usuarios = await db.lista('idea_usuarios'); }
+
+    // Cambio de vistas (mismo patrón que el panel directivo)
+    document.querySelectorAll('[data-vista]').forEach(b => {
+      b.addEventListener('click', () => {
+        document.querySelectorAll('[data-vista]').forEach(x => x.classList.remove('activo'));
+        b.classList.add('activo');
+        document.querySelectorAll('.vista').forEach(v => v.classList.add('hidden'));
+        document.getElementById(`vista-${b.dataset.vista}`).classList.remove('hidden');
+      });
+    });
+
+    // ===== A. Grupos → Docentes =====
+    function gruposDisponibles(institucionId) {
+      const set = new Set();
+      usuarios
+        .filter(u => u.rol === 'estudiante' && u.institucion_id === institucionId && u.grado && u.grupo)
+        .forEach(u => set.add(`${u.grado}-${u.grupo}`));
+      return [...set].sort();
+    }
+
+    function renderDocentes() {
+      const cont = document.getElementById('lista-docentes');
+      const docentes = usuarios.filter(u => u.rol === 'docente');
+      if (!docentes.length) { cont.innerHTML = '<p class="text-slate-500 text-sm">No hay docentes registrados.</p>'; return; }
+      cont.innerHTML = docentes.map(d => {
+        const inst = instituciones.find(i => i.id === d.institucion_id);
+        const grupos = gruposDisponibles(d.institucion_id);
+        const asign = new Set(d.grupos_asignados || []);
+        const checks = grupos.length
+          ? grupos.map(g => `
+              <label class="flex items-center gap-2 text-sm cursor-pointer">
+                <input type="checkbox" data-docente="${d.id}" value="${g}" ${asign.has(g) ? 'checked' : ''}>
+                <span>${g.replace('-', '° ')}</span>
+              </label>`).join('')
+          : '<span class="text-xs text-slate-500">Aún no hay grupos con estudiantes en esta institución.</span>';
+        return `
+          <div class="idea-card mb-4">
+            <div class="flex items-center justify-between gap-3 flex-wrap mb-3">
+              <div>
+                <strong>${escapeHtml(d.nombre_completo || d.usuario || '—')}</strong>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 ml-2">${escapeHtml(inst?.abreviatura || d.institucion_id || 'Sin institución')}</span>
+                <div class="text-xs text-slate-400 mt-0.5">Usuario: ${escapeHtml(d.usuario || '—')}${d.numero_documento ? ' · ' + escapeHtml((d.tipo_documento || 'CC') + ' ' + d.numero_documento) : ''}${d.email ? ' · ' + escapeHtml(d.email) : ''}</div>
+              </div>
+              <button class="btn-idea btn-guardar-grupos" data-docente="${d.id}">Guardar</button>
+            </div>
+            <div class="text-xs text-slate-500 mb-2">Grupos asignados (sin marcar = ve todos):</div>
+            <div class="flex flex-wrap gap-4">${checks}</div>
+          </div>`;
+      }).join('');
+      cont.querySelectorAll('.btn-guardar-grupos').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const docId = btn.dataset.docente;
+          const seleccion = [...cont.querySelectorAll(`input[type=checkbox][data-docente="${docId}"]:checked`)].map(c => c.value);
+          await db.actualizar('idea_usuarios', docId, { grupos_asignados: seleccion });
+          await recargarUsuarios();
+          toast('Grupos actualizados para el docente', 'exito');
+        });
+      });
+    }
+
+    // ===== B. Directivos → Institución =====
+    function renderDirectivos() {
+      const cont = document.getElementById('lista-directivos');
+      const directivos = usuarios.filter(u => u.rol === 'directivo' || u.rol === 'funcionario');
+      if (!directivos.length) { cont.innerHTML = '<p class="text-slate-500 text-sm">No hay directivos ni funcionarios registrados.</p>'; return; }
+      const opts = instituciones.map(i => `<option value="${i.id}">${escapeHtml(i.nombre)}</option>`).join('');
+      cont.innerHTML = directivos.map(d => `
+        <div class="idea-card mb-4 flex items-center justify-between gap-3 flex-wrap">
+          <div><strong>${escapeHtml(d.usuario || d.nombre_completo)}</strong> <span class="text-xs px-2 py-0.5 rounded-full ${d.rol === 'funcionario' ? 'bg-amber-100 text-amber-700' : 'bg-sky-100 text-sky-700'}">${escapeHtml(d.rol)}</span><div class="text-xs text-slate-400">${escapeHtml(d.nombre_completo || '')}</div></div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <select class="input-idea sel-inst" data-directivo="${d.id}" style="max-width:340px">${opts}</select>
+            <button class="btn-idea btn-guardar-inst" data-directivo="${d.id}">Asignar</button>
+          </div>
+        </div>`).join('');
+      directivos.forEach(d => {
+        const sel = cont.querySelector(`select.sel-inst[data-directivo="${d.id}"]`);
+        if (sel && d.institucion_id) sel.value = d.institucion_id;
+      });
+      cont.querySelectorAll('.btn-guardar-inst').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const did = btn.dataset.directivo;
+          const sel = cont.querySelector(`select.sel-inst[data-directivo="${did}"]`);
+          await db.actualizar('idea_usuarios', did, { institucion_id: sel.value });
+          await recargarUsuarios();
+          toast('Institución asignada al directivo', 'exito');
+        });
+      });
+    }
+
+    // ===== B2. Estudiantes por IE (selector de IE + editar grado/grupo/institución) =====
+    function _ieConEstudiantes() {
+      const estudiantes = usuarios.filter(u => u.rol === 'estudiante');
+      return [...new Set(estudiantes.map(e => e.institucion_id || '__sin__'))];
+    }
+    function _nombreIE(id) {
+      const inst = instituciones.find(i => i.id === id);
+      return inst ? inst.nombre : 'Sin institución asignada';
+    }
+
+    function renderEstudiantesPorIE() {
+      const sel = document.getElementById('sel-ie-est');
+      const ieIds = _ieConEstudiantes();
+      const prev = sel.value;
+      sel.innerHTML = ieIds.length
+        ? ieIds.map(id => {
+            const n = usuarios.filter(e => e.rol === 'estudiante' && (e.institucion_id || '__sin__') === id).length;
+            return `<option value="${id}">${escapeHtml(_nombreIE(id))} (${n})</option>`;
+          }).join('')
+        : '<option value="">No hay estudiantes registrados</option>';
+      if (prev && ieIds.includes(prev)) sel.value = prev;
+      sel.onchange = renderListaEstudiantesIE;
+      renderListaEstudiantesIE();
+    }
+
+    function renderListaEstudiantesIE() {
+      const cont = document.getElementById('lista-estudiantes-ie');
+      const ieId = document.getElementById('sel-ie-est').value;
+      const lista = usuarios.filter(u => u.rol === 'estudiante' && (u.institucion_id || '__sin__') === ieId);
+      if (!lista.length) { cont.innerHTML = '<p class="text-slate-500 text-sm">No hay estudiantes en esta institución.</p>'; return; }
+      const filas = lista.slice().sort((a, b) =>
+        String(a.grado || '').localeCompare(String(b.grado || ''), undefined, { numeric: true })
+        || String(a.grupo || '').localeCompare(String(b.grupo || ''))
+        || String(a.nombre_completo || '').localeCompare(String(b.nombre_completo || '')))
+      .map(e => {
+        const gradosSet = [...new Set(['3', '4', '5', '6', '7', '8', '9', '10', '11', String(e.grado || '')].filter(Boolean))].sort((a, b) => +a - +b);
+        const gruposSet = [...new Set(['A', 'B', 'C', 'D', 'E', 'F', String(e.grupo || '')].filter(Boolean))].sort();
+        const gradoOpts = gradosSet.map(g => `<option value="${g}" ${String(e.grado) === g ? 'selected' : ''}>${g}°</option>`).join('');
+        const grupoOpts = gruposSet.map(g => `<option value="${g}" ${String(e.grupo) === g ? 'selected' : ''}>${g}</option>`).join('');
+        const instOpts = instituciones.map(i => `<option value="${i.id}" ${e.institucion_id === i.id ? 'selected' : ''}>${escapeHtml(i.abreviatura || i.nombre)}</option>`).join('');
+        return `<tr data-est="${e.id}" class="border-b border-slate-100">
+          <td class="p-2 text-sm"><strong>${escapeHtml(e.nombre_completo || '—')}</strong><div class="text-xs text-slate-400">${escapeHtml(e.usuario || '')}${e.numero_documento ? ' · ' + escapeHtml((e.tipo_documento || 'CC') + ' ' + e.numero_documento) : ''}</div></td>
+          <td class="p-2"><select class="input-idea est-grado" style="min-width:78px">${gradoOpts}</select></td>
+          <td class="p-2"><select class="input-idea est-grupo" style="min-width:66px">${grupoOpts}</select></td>
+          <td class="p-2"><select class="input-idea est-inst" style="min-width:170px">${instOpts}</select></td>
+          <td class="p-2 text-right"><button class="btn-idea btn-guardar-est">Guardar</button></td>
+        </tr>`;
+      }).join('');
+      cont.innerHTML = `<div class="idea-card"><div class="overflow-x-auto"><table class="w-full">
+        <thead><tr class="text-left text-xs text-slate-500 uppercase border-b border-slate-200">
+          <th class="p-2">Estudiante</th><th class="p-2">Grado</th><th class="p-2">Grupo</th><th class="p-2">Institución</th><th class="p-2"></th>
+        </tr></thead><tbody>${filas}</tbody></table></div></div>`;
+      cont.querySelectorAll('.btn-guardar-est').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const tr = btn.closest('tr[data-est]');
+          const id = tr.dataset.est;
+          const grado = tr.querySelector('.est-grado').value;
+          const grupo = tr.querySelector('.est-grupo').value;
+          const institucion_id = tr.querySelector('.est-inst').value;
+          btn.disabled = true;
+          try {
+            await db.actualizar('idea_usuarios', id, { grado, grupo, institucion_id });
+            await recargarUsuarios();
+            toast('Estudiante actualizado', 'exito');
+            renderEstudiantesPorIE();
+          } catch (err) { toast('No se pudo actualizar: ' + err.message, 'error'); btn.disabled = false; }
+        });
+      });
+    }
+
+    // ===== B3. Borrar pruebas (por IE y estudiante) =====
+    function poblarBorrarPruebas() {
+      const selIE = document.getElementById('bp-ie');
+      const ieIds = _ieConEstudiantes();
+      const prev = selIE.value;
+      selIE.innerHTML = ieIds.length
+        ? ieIds.map(id => `<option value="${id}">${escapeHtml(_nombreIE(id))}</option>`).join('')
+        : '<option value="">No hay estudiantes registrados</option>';
+      if (prev && ieIds.includes(prev)) selIE.value = prev;
+      selIE.onchange = poblarEstudiantesBorrar;
+      poblarEstudiantesBorrar();
+    }
+
+    function poblarEstudiantesBorrar() {
+      const ieId = document.getElementById('bp-ie').value;
+      const selEst = document.getElementById('bp-est');
+      const lista = usuarios.filter(u => u.rol === 'estudiante' && (u.institucion_id || '__sin__') === ieId)
+        .sort((a, b) => String(a.nombre_completo || '').localeCompare(String(b.nombre_completo || '')));
+      selEst.innerHTML = lista.length
+        ? lista.map(e => `<option value="${e.id}">${escapeHtml(e.nombre_completo || e.usuario)} · ${e.grado || '?'}°${e.grupo || ''}</option>`).join('')
+        : '<option value="">— Sin estudiantes —</option>';
+      selEst.onchange = renderPruebasEstudiante;
+      renderPruebasEstudiante();
+    }
+
+    async function renderPruebasEstudiante() {
+      const estId = document.getElementById('bp-est').value;
+      const cont = document.getElementById('bp-lista-pruebas');
+      if (!estId) { cont.innerHTML = '<p class="text-slate-500 text-sm">Selecciona un estudiante.</p>'; return; }
+      cont.innerHTML = '<p class="text-slate-400 text-sm italic">Cargando pruebas…</p>';
+      const apps = (await db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', estId))
+        .sort((a, b) => new Date(b.fecha_fin || b.fecha_envio || 0) - new Date(a.fecha_fin || a.fecha_envio || 0));
+      const est = usuarios.find(u => u.id === estId);
+      if (!apps.length) { cont.innerHTML = `<p class="text-slate-500 text-sm">${escapeHtml(est?.nombre_completo || 'Este estudiante')} no ha presentado pruebas.</p>`; return; }
+      cont.innerHTML = `<div class="idea-card"><h2 class="card-title">Pruebas de ${escapeHtml(est?.nombre_completo || '')} <span class="text-sm font-normal text-slate-400">· ${apps.length}</span></h2>` + apps.map(a => {
+        const cuad = cuadernillos.find(c => c.id === a.cuadernillo_id);
+        const fecha = a.fecha_fin || a.fecha_envio;
+        const estado = a.estado === 'enviada' ? 'enviada' : (a.estado || 'en curso');
+        return `<div class="flex items-center justify-between gap-3 flex-wrap py-2 border-b border-slate-100">
+          <div class="text-sm">
+            <strong>${escapeHtml(cuad ? (cuad.area + ' ' + cuad.grado + '°') : a.cuadernillo_id)}</strong>
+            <span class="text-xs text-slate-500"> · ${escapeHtml(estado)}${a.puntaje != null ? ' · ' + a.puntaje + '/100' : ''}${fecha ? ' · ' + new Date(fecha).toLocaleString('es-CO') : ''}</span>
+          </div>
+          <button class="btn-secundario btn-borrar-prueba" data-app="${a.id}" style="color:#b91c1c;border-color:#fecaca">Eliminar</button>
+        </div>`;
+      }).join('') + '</div>';
+      cont.querySelectorAll('.btn-borrar-prueba').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          if (!confirm('¿Eliminar esta prueba de forma permanente? Esta acción no se puede deshacer.')) return;
+          btn.disabled = true;
+          try {
+            await db.eliminar('idea_aplicaciones', btn.dataset.app);
+            toast('Prueba eliminada', 'aviso');
+            renderPruebasEstudiante();
+          } catch (err) { toast('No se pudo eliminar: ' + err.message, 'error'); btn.disabled = false; }
+        });
+      });
+    }
+
+    // ===== C. Reintentos =====
+    function poblarSelectoresReintento() {
+      const selEst = document.getElementById('sel-estudiante');
+      const selCuad = document.getElementById('sel-cuadernillo');
+      const estudiantes = usuarios.filter(u => u.rol === 'estudiante');
+      selEst.innerHTML = estudiantes
+        .map(e => `<option value="${e.id}">${escapeHtml(e.usuario || e.nombre_completo)} · ${e.grado}°${e.grupo}</option>`).join('');
+      selCuad.innerHTML = cuadernillos
+        .map(c => `<option value="${c.id}">${escapeHtml(c.area)} ${c.grado}°</option>`).join('');
+    }
+
+    async function refrescarPermisos() {
+      const vigentes = await listarPermisosVigentes({ solo_vigentes: true });
+      const cont = document.getElementById('lista-permisos');
+      if (!vigentes.length) { cont.innerHTML = '<p class="text-slate-500 text-sm">No hay reintentos vigentes.</p>'; return; }
+      cont.innerHTML = vigentes.map(p => {
+        const est = usuarios.find(u => u.id === p.estudiante_id);
+        const cuad = cuadernillos.find(c => c.id === p.cuadernillo_id);
+        return `
+          <div class="flex items-center justify-between gap-3 flex-wrap py-2 border-b border-slate-100">
+            <div class="text-sm">
+              <strong>${escapeHtml(est?.usuario || est?.nombre_completo || 'Estudiante')}</strong>
+              · ${escapeHtml(cuad?.area || p.cuadernillo_id)}
+              ${p.razon ? `<span class="text-xs text-slate-500"> — ${escapeHtml(p.razon)}</span>` : ''}
+            </div>
+            <button class="btn-secundario btn-revocar" data-permiso="${p.id}">Revocar</button>
+          </div>`;
+      }).join('');
+      cont.querySelectorAll('.btn-revocar').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          await revocarPermiso(btn.dataset.permiso);
+          toast('Reintento revocado', 'aviso');
+          refrescarPermisos();
+        });
+      });
+    }
+
+    document.getElementById('btn-otorgar').addEventListener('click', async () => {
+      const estId = document.getElementById('sel-estudiante').value;
+      const cuadId = document.getElementById('sel-cuadernillo').value;
+      const razon = document.getElementById('razon-reintento').value;
+      if (!estId || !cuadId) { toast('Selecciona estudiante y cuadernillo', 'error'); return; }
+      await otorgarPermisoReintento(estId, cuadId, ses.user_id, razon);
+      document.getElementById('razon-reintento').value = '';
+      toast('Reintento habilitado', 'exito');
+      refrescarPermisos();
+    });
+
+    // ===== D.0 Cargar demos de TODAS las pruebas (IE Demo, todos los grados) =====
+    document.getElementById('btn-cargar-demos').addEventListener('click', async () => {
+      if (!confirm('¿Crear entregas de demostración de TODAS las pruebas para todos los estudiantes de la IE Demo? Reemplaza las demos anteriores (no toca instituciones reales).')) return;
+      const msg = document.getElementById('msg-cargar');
+      const logEl = document.getElementById('log-cargar');
+      const btn = document.getElementById('btn-cargar-demos');
+      btn.disabled = true;
+      logEl.style.display = 'block'; logEl.textContent = '';
+      const onLog = (m) => { logEl.textContent += m + '\n'; logEl.scrollTop = logEl.scrollHeight; };
+      msg.className = 'text-sm mt-3 text-slate-600';
+      msg.textContent = 'Cargando demos… (puede tardar unos segundos)';
+      try {
+        const r = await cargarDemosTodas(onLog);
+        msg.className = 'text-sm mt-3 text-emerald-600';
+        msg.textContent = `✅ Listo: ${r.entregas} entregas en ${r.estudiantes} estudiantes. Entra como Docente1 / idea2026 o Directivo1 / idea2026 para verlas.`;
+        await recargarUsuarios();
+      } catch (e) {
+        msg.className = 'text-sm mt-3 text-red-600';
+        msg.textContent = '❌ Error al cargar demos: ' + e.message;
+      } finally { btn.disabled = false; }
+    });
+
+    // ===== D. Reiniciar datos de demostración (acotado SOLO a la IE Demo) =====
+    document.getElementById('btn-reset-demo').addEventListener('click', async () => {
+      if (!confirm('¿Borrar TODAS las pruebas, permisos, mensajes y planes de la demostración (IE Demo)? Las cuentas y los cuadernillos se conservan. Esta acción no se puede deshacer.')) return;
+      const msg = document.getElementById('msg-reset');
+      const btn = document.getElementById('btn-reset-demo');
+      btn.disabled = true;
+      msg.className = 'text-sm mt-3 text-slate-600';
+      msg.textContent = 'Reiniciando datos de demostración…';
+      try {
+        const us = await db.lista('idea_usuarios');
+        const demoIds = new Set(us.filter(u => u.institucion_id === 'ie-demo').map(u => u.id));
+        const esDemo = (doc) => {
+          if (doc.institucion_id === 'ie-demo') return true;
+          for (const k in doc) { if (k.endsWith('_id') && demoIds.has(doc[k])) return true; }
+          return false;
+        };
+        let total = 0;
+        for (const col of ['idea_aplicaciones', 'idea_permisos_reintento', 'idea_mensajes', 'idea_planes_mejora']) {
+          const items = await db.filtrar(col, esDemo);
+          for (const it of items) { await db.eliminar(col, it.id); total++; }
+        }
+        msg.className = 'text-sm mt-3 text-emerald-600';
+        msg.textContent = `✅ Listo. Se borraron ${total} registros de la demostración. La demo quedó limpia para la próxima.`;
+        await recargarUsuarios();
+        renderDocentes();
+        poblarSelectoresReintento();
+        refrescarPermisos();
+      } catch (e) {
+        msg.className = 'text-sm mt-3 text-red-600';
+        msg.textContent = '❌ Error al reiniciar: ' + e.message;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    // Render inicial
+    renderDocentes();
+    renderDirectivos();
+    renderEstudiantesPorIE();
+    poblarBorrarPruebas();
+    poblarSelectoresReintento();
+    refrescarPermisos();
+
+    // Ayuda de Sabio: botón "?" (tour) + auto-inicio en la primera visita del manager.
+    // El botón 📖 (guía completa) lo monta guia-sabio.js automáticamente al importarlo.
+    botonAyudaFlotante('manager');
+    if (debeAutoIniciar('manager')) {
+      setTimeout(() => iniciarTour('manager'), 600);
+    }
+  </script>
+</body>
+</html>

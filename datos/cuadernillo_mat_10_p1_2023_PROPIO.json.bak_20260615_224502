@@ -1,0 +1,553 @@
+{
+  "id": "math-10-p1-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "10",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 10° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Interpretación y Representación",
+    "b": "Formulación y Ejecución",
+    "c": "Argumentación"
+  },
+  "afirmaciones": {
+    "1": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "2": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "3": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas."
+  },
+  "evidencias": {
+    "1.1": "Da cuenta de las características básicas de la información presentada en distintos formatos.",
+    "1.2": "Transforma la representación de una o más piezas de información.",
+    "2.2": "Ejecuta un plan de solución para un problema que involucra información cuantitativa o esquemática.",
+    "2.3": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "3.1": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible.",
+    "3.3": "Establece la validez o pertinencia de una solución propuesta a un problema dado."
+  },
+  "cmc": [
+    "Álgebra y cálculo",
+    "Geometría",
+    "Estadística"
+  ],
+  "preguntas": [
+    {
+      "id": "P10M01",
+      "numero": 1,
+      "enunciado": "<p>La tabla muestra el costo y la vida útil de tres sistemas de iluminación que dan la misma luz. Una empresa promociona el bombillo <b>LED</b> comparando su vida útil con la del <b>halógeno</b> mediante la igualdad: <b>1 LED = (?) halógenos</b>. ¿Cuál igualdad debería aparecer en la publicidad?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Establezco relaciones y diferencias entre diferentes notaciones de números reales para decidir sobre su uso en una situación dada.",
+      "que_evalua": "La capacidad para identificar la representación correcta de la relación entre dos números.",
+      "justificacion_correcta": "La vida útil del LED es 40.000 horas y la del halógeno es 2.000 horas. Como 2.000 × 20 = 40.000, un LED dura lo mismo que 20 halógenos. La opción B usa la vida útil (correcta para comparar duración).",
+      "opciones_incorrectas": {
+        "A": "Compara LED con LFC por vida útil (40.000÷8.000=5), no LED con halógeno como se pide.",
+        "C": "Usa el costo (60.000÷2.000=30) y además lo asocia a la LFC: mezcla magnitudes y materiales.",
+        "D": "Confunde la vida útil con el costo (10.000÷2.000=5) y obtiene un valor que no corresponde."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q01.png"
+    },
+    {
+      "id": "P10M02",
+      "numero": 2,
+      "enunciado": "<p>Observa el prisma triangular de la figura. ¿Con cuál de los moldes (A, B, C o D) se puede armar exactamente ese prisma?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo curvas y/o lugares geométricos.",
+      "que_evalua": "La capacidad para determinar el desarrollo plano asociado a un objeto tridimensional dado.",
+      "justificacion_correcta": "El molde B tiene los 3 rectángulos de las caras laterales con el mismo ancho (los bordes que se unen miden igual) y los 2 triángulos de las bases, sin compartir vértices. Es el único que arma el prisma.",
+      "opciones_incorrectas": {
+        "A": "Los rectángulos tienen anchos distintos: los lados que se deben unir no miden lo mismo.",
+        "C": "Los dos triángulos comparten un vértice, así no pueden ubicarse en bases opuestas.",
+        "D": "Tiene un solo rectángulo y demasiados triángulos: no corresponde a un prisma."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q02.png"
+    },
+    {
+      "id": "P10M03",
+      "numero": 3,
+      "enunciado": "<p>En el triángulo XYZ se tiene <b>z = 6</b>, <b>x = 3</b> y el ángulo <b>Y = 60°</b> (recuerda que cos 60° = 1/2). Usando el teorema del coseno <i>y² = x² + z² − 2·x·z·cos(Y)</i>, ¿cuál es la medida del lado <b>y</b>?</p>",
+      "opciones": {
+        "A": "y = √63",
+        "B": "y = √45",
+        "C": "y = 27",
+        "D": "y = √27"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para calcular la longitud de un lado de un triángulo usando el Teorema del coseno.",
+      "justificacion_correcta": "y² = 3² + 6² − 2·3·6·cos(60°) = 9 + 36 − 36·(1/2) = 45 − 18 = 27, entonces y = √27.",
+      "opciones_incorrectas": {
+        "A": "Suma el término en vez de restarlo: 9 + 36 + 18 = 63.",
+        "B": "Olvida restar el término del coseno: 9 + 36 = 45.",
+        "C": "Confunde y² = 27 con y = 27 (no extrae la raíz cuadrada)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q03.png"
+    },
+    {
+      "id": "P10M04",
+      "numero": 4,
+      "enunciado": "<p>En un torneo participaron 7.500 deportistas y se sabe que el <b>4 %</b> compite en ciclismo. Para hallar cuántos compiten en ciclismo se sugiere multiplicar <b>0,04 × 7.500</b>. ¿Es correcto el procedimiento sugerido?</p>",
+      "opciones": {
+        "A": "No, porque se debe multiplicar por 0,4.",
+        "B": "Sí, solo si el resultado es un número par.",
+        "C": "No, porque falta dividir el resultado entre el número de disciplinas.",
+        "D": "Sí, porque calcular el 4 % equivale a multiplicar por 4/100 = 0,04."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
+      "que_evalua": "La capacidad para justificar la validez de un procedimiento en el que se debe calcular un porcentaje.",
+      "justificacion_correcta": "El 4 % es 4/100 = 0,04; por eso calcular el 4 % de una cantidad equivale a multiplicarla por 0,04. El procedimiento es correcto.",
+      "opciones_incorrectas": {
+        "A": "0,4 corresponde al 40 %, no al 4 %.",
+        "B": "La paridad del resultado no tiene relación con la validez del procedimiento.",
+        "C": "El 4 % se aplica al total de deportistas; no se divide entre disciplinas."
+      }
+    },
+    {
+      "id": "P10M05",
+      "numero": 5,
+      "enunciado": "<p>Un centro deportivo cobra por sesión y publica una gráfica con los <b>ingresos semanales</b> de cada curso. La gráfica multiplicó inscritos por precio de <b>una</b> sesión, pero los cursos de <b>2 y 3 sesiones</b> a la semana no se multiplicaron por el número de sesiones. ¿Por qué es inconsistente la gráfica?</p>",
+      "opciones": {
+        "A": "Porque Yoga, al tener más inscritos, debe tener el mayor ingreso.",
+        "B": "Porque los ingresos de 2 o 3 sesiones deberían ser mayores en todas las actividades.",
+        "C": "Porque Música y Natación deben tener ingresos iguales.",
+        "D": "Porque Natación y Robótica deben mostrar barras iguales."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad para identificar una inconsistencia de la información presentada en una gráfica.",
+      "justificacion_correcta": "Quien asiste a más sesiones paga más veces; al no multiplicar por el número de sesiones semanales, los ingresos de los cursos de 2 y 3 sesiones quedan subestimados y deberían ser mayores en todas las actividades.",
+      "opciones_incorrectas": {
+        "A": "Tener más inscritos no garantiza el mayor ingreso si el precio por sesión es menor.",
+        "C": "Precios iguales no implican ingresos iguales si difieren los inscritos.",
+        "D": "No hay razón para que esas dos barras sean iguales."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q05.png"
+    },
+    {
+      "id": "P10M06",
+      "numero": 6,
+      "enunciado": "<p>Un punto K se desplaza por el segmento QT. La distancia de P a K cumple <b>KP = h · csc(α)</b>, donde h = PT es la distancia mínima y QP la máxima. ¿Cuál gráfica (A, B, C o D) muestra cómo cambia KP a medida que crece el ángulo α?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
+      "que_evalua": "La capacidad para identificar la gráfica asociada a una expresión trigonométrica dada.",
+      "justificacion_correcta": "Cuando α es pequeño, csc(α) es grande y KP se acerca a QP (máximo); cuando α crece hacia 90°, csc(α)→1 y KP baja hasta h (mínimo). La curva decrece desde QP hasta h: gráfica B.",
+      "opciones_incorrectas": {
+        "A": "Muestra KP constante en h, ignorando que depende del ángulo.",
+        "C": "Hace que KP llegue a 0, pero el mínimo es h, no 0.",
+        "D": "Muestra KP creciente, contrario al comportamiento de la cosecante."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q06.png"
+    },
+    {
+      "id": "P10M07",
+      "numero": 7,
+      "enunciado": "<p>Un número es divisible por 4 cuando: sus <b>dos últimas cifras</b> forman un múltiplo de 4, o bien <b>termina en doble cero</b>. ¿Cuál de los siguientes números <b>NO</b> es múltiplo de 4?</p>",
+      "opciones": {
+        "A": "31.500",
+        "B": "52.116",
+        "C": "63.350",
+        "D": "48.728"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
+      "que_evalua": "La capacidad para determinar si un número cumple con condiciones de divisibilidad dadas.",
+      "justificacion_correcta": "63.350 termina en 50; 50 no es múltiplo de 4 y no termina en doble cero, así que NO es divisible por 4. Los otros sí (00, 16 y 28 son múltiplos de 4).",
+      "opciones_incorrectas": {
+        "A": "Termina en doble cero (00): sí es divisible por 4.",
+        "B": "Termina en 16, que es múltiplo de 4: sí es divisible.",
+        "D": "Termina en 28, que es múltiplo de 4: sí es divisible."
+      }
+    },
+    {
+      "id": "P10M08",
+      "numero": 8,
+      "enunciado": "<p>La gráfica circular muestra la composición de una lámina de empaque: <b>aluminio 4 %</b>, <b>polietileno 16 %</b> y <b>cartón 80 %</b>. ¿Cuál afirmación describe correctamente una relación entre estos materiales?</p>",
+      "opciones": {
+        "A": "Una relación de 1 a 20 entre el aluminio y el cartón.",
+        "B": "Una relación de 4 a 1 entre el aluminio y el polietileno.",
+        "C": "Una relación de 1 a 76 entre el aluminio y el cartón.",
+        "D": "Una relación de 4 a 16 entre el cartón y el polietileno."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Establezco relaciones y diferencias entre diferentes notaciones de números reales para decidir sobre su uso en una situación dada.",
+      "que_evalua": "La capacidad para identificar la relación correcta entre dos valores de porcentaje.",
+      "justificacion_correcta": "Aluminio 4 % y cartón 80 %: la razón es 4/80 = 1/20, es decir, una relación de 1 a 20 entre el aluminio y el cartón.",
+      "opciones_incorrectas": {
+        "B": "Invierte la razón aluminio:polietileno (4:16 = 1:4, no 4:1).",
+        "C": "Usa la diferencia 80 − 4 = 76 en vez del cociente.",
+        "D": "Toma los porcentajes sin simplificar y los asocia mal a los materiales."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q08.png"
+    },
+    {
+      "id": "P10M09",
+      "numero": 9,
+      "enunciado": "<p>Un jardín circular de <b>área 12 m²</b> está rodeado por una reja circular separada <b>8 m</b> del jardín mediante un camino (figura). ¿Es posible calcular el perímetro de la reja externa con esta información?</p>",
+      "opciones": {
+        "A": "Sí, basta calcular el área de un círculo de radio 8 m.",
+        "B": "No, porque hay dos radios posibles para el jardín y no se sabe cuál usar.",
+        "C": "Sí, porque el área determina el radio del jardín, y con la separación se halla el radio mayor.",
+        "D": "No, porque con el área del jardín no se puede conocer su radio."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para justificar la posibilidad de calcular un perímetro con la información dada.",
+      "justificacion_correcta": "Del área 12 = π·r² se despeja el radio del jardín r = √(12/π). El radio de la reja es r + 8, y con él se calcula el perímetro 2π(r+8). Sí es posible.",
+      "opciones_incorrectas": {
+        "A": "El área del camino no es la de un círculo de radio 8; falta el jardín interno.",
+        "B": "El área define un único radio positivo, no dos.",
+        "D": "De 12 = π·r² sí se despeja el radio del jardín."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q09.png"
+    },
+    {
+      "id": "P10M10",
+      "numero": 10,
+      "enunciado": "<p>Un láser cruza un nicho rectangular cuyos muros superior e inferior son paralelos (figura). Se conoce el ángulo <b>γ</b> y se quiere hallar <b>β</b>. El plan es: <b>α = 180° − γ</b> y luego <b>β = α</b>. Una persona afirma que con ese plan NO se puede hallar β. ¿Es verdadera esa afirmación?</p>",
+      "opciones": {
+        "A": "No, porque γ y α son complementarios y α y β son opuestos por el vértice.",
+        "B": "Sí, porque γ y α son suplementarios y suman 90°, no 180°.",
+        "C": "No, porque γ y α son suplementarios y α y β son alternos externos.",
+        "D": "Sí, porque α y β tienen distinta dirección y no pueden ser iguales."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para justificar la veracidad de una afirmación sobre una estrategia para determinar la medida de un ángulo.",
+      "justificacion_correcta": "γ y α forman un ángulo llano (180°), así que son suplementarios y α = 180° − γ. Como los muros son paralelos, α y β son alternos externos y por tanto iguales. El plan SÍ funciona; la afirmación es falsa.",
+      "opciones_incorrectas": {
+        "A": "γ y α suman 180° (suplementarios), no 90° (complementarios).",
+        "B": "Suplementarios suman 180°, no 90°.",
+        "D": "Por ser alternos externos entre paralelas, α y β sí son iguales."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q10.png"
+    },
+    {
+      "id": "P10M11",
+      "numero": 11,
+      "enunciado": "<p>Dos hogares hicieron mercado. La lista L1 = {Pan, Leche, Arroz, Azúcar} y la lista L2 = {Jugo, Huevos, Atún, Azúcar}. Sea <b>V</b> el conjunto de todos los alimentos básicos. Alguien dice que el total de alimentos básicos comprados se obtiene con <b>(L1 ∪ L2) ∩ V</b>. ¿Es válida esa operación?</p>",
+      "opciones": {
+        "A": "No, equivale a (L1 ∪ V) ∩ (L2 ∪ V), que da todo V y el azúcar.",
+        "B": "Sí, porque (L1 ∪ L2) toma solo los elementos comunes.",
+        "C": "No, debería ser (L1 ∩ L2) para tomar lo comprado por ambos.",
+        "D": "Sí, porque equivale a (L1 ∩ V) ∪ (L2 ∩ V): los básicos de cada lista, unidos."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco cómo diferentes maneras de presentación de información pueden originar distintas interpretaciones.",
+      "que_evalua": "La capacidad para argumentar, usando propiedades de las operaciones entre conjuntos.",
+      "justificacion_correcta": "(L1 ∪ L2) reúne todo lo comprado; al intersecar con V quedan solo los alimentos básicos comprados. Por distributividad, (L1 ∪ L2) ∩ V = (L1 ∩ V) ∪ (L2 ∩ V), exactamente los básicos de cada hogar unidos. Es válida.",
+      "opciones_incorrectas": {
+        "A": "Confunde la distributiva: la unión se distribuye con intersección, no al revés.",
+        "B": "(L1 ∪ L2) es la unión (todo lo comprado), no solo lo común.",
+        "C": "Usar la intersección dejaría solo lo comprado por ambos, perdiendo lo demás."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q11.png"
+    },
+    {
+      "id": "P10M12",
+      "numero": 12,
+      "enunciado": "<p>Para hallar la fracción de su salón que practica natación, un estudiante usó: 16 niños y 24 niñas; a <b>3/4</b> de los niños y a <b>1/2</b> de las niñas les gusta nadar. Siguió los pasos de la tabla. Su maestra dice que cometió un error. ¿En qué paso está el error?</p>",
+      "opciones": {
+        "A": "En el paso 4, porque no se deben sumar niños y niñas.",
+        "B": "En el paso 2, porque 16 × (3/4) = 12, no 13.",
+        "C": "En el paso 4, porque 13 + 12 = 30.",
+        "D": "En el paso 3, porque 24 × (1/2) = 13."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
+      "que_evalua": "La capacidad para identificar el error en un procedimiento dado.",
+      "justificacion_correcta": "El paso 2 está mal: 16 × (3/4) = 12, no 13. Ese es el error del procedimiento.",
+      "opciones_incorrectas": {
+        "A": "Sumar los que nadan (niños y niñas) sí es correcto en el paso 4.",
+        "C": "13 + 12 = 25, no 30.",
+        "D": "24 × (1/2) = 12, y el paso 3 reporta 12: está bien."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q12.png"
+    },
+    {
+      "id": "P10M13",
+      "numero": 13,
+      "enunciado": "<p>El trapecio EFGH es el reflejo del trapecio OPQR respecto a la recta <b>k</b> (figura). Se sabe que k es paralelo a los lados OR, PQ, FG y EH. Comparando ambos trapecios, ¿qué par de lados son <b>paralelos</b> entre sí?</p>",
+      "opciones": {
+        "A": "OP y EF.",
+        "B": "RQ y EH.",
+        "C": "OP y GH.",
+        "D": "RQ y GF."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo curvas y o lugares geométricos.",
+      "que_evalua": "La capacidad para identificar lados paralelos de dos trapecios cuando se presentan condiciones de paralelismo en su representación.",
+      "justificacion_correcta": "Las bases paralelas del trapecio (OP y su correspondiente) quedan, tras la reflexión, paralelas a GH. Por eso OP es paralelo a GH.",
+      "opciones_incorrectas": {
+        "A": "OP y EF son reflejos uno del otro, no paralelos.",
+        "B": "EH es paralelo al eje k, no a RQ.",
+        "D": "GF es paralelo al eje k, no a RQ."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q13.png"
+    },
+    {
+      "id": "P10M14",
+      "numero": 14,
+      "enunciado": "<p>El diagrama muestra el recaudo de 4 películas: <b>Aurora</b> $120 millones, <b>El faro</b> $60 millones, <b>Raíces</b> $60 millones y <b>Memoria</b> $40 millones. ¿Cuál fue el <b>promedio</b> de recaudo por película?</p>",
+      "opciones": {
+        "A": "$140 millones.",
+        "B": "$70 millones.",
+        "C": "$35 millones.",
+        "D": "$40 millones."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad para calcular el promedio en un conjunto de datos agrupados, presentados en un diagrama de barras.",
+      "justificacion_correcta": "Suma: 120 + 60 + 60 + 40 = 280 millones. Como son 4 películas, el promedio es 280 ÷ 4 = $70 millones.",
+      "opciones_incorrectas": {
+        "A": "Divide la suma entre 2 en vez de entre 4.",
+        "C": "Divide solo el mayor valor (120) entre 4 y aproxima.",
+        "D": "Toma el menor dato de la gráfica en vez de promediar."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q14.png"
+    },
+    {
+      "id": "P10M15",
+      "numero": 15,
+      "enunciado": "<p>En un comité hay <b>6 estudiantes</b> y se deben elegir <b>2</b> para representar al curso, sin importar el orden. ¿De cuántas formas distintas se puede hacer la elección?</p>",
+      "opciones": {
+        "A": "15",
+        "B": "12",
+        "C": "30",
+        "D": "720"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para realizar conteos simples utilizando combinaciones.",
+      "justificacion_correcta": "Como no importa el orden, es una combinación: 6C2 = 6! / (2!·4!) = (6×5)/2 = 15.",
+      "opciones_incorrectas": {
+        "B": "Multiplica los números que aparecen sin combinar.",
+        "C": "Cuenta con orden (permutación): 6 × 5 = 30.",
+        "D": "Calcula 6! = 720, organizando a los 6 en vez de elegir 2."
+      }
+    },
+    {
+      "id": "P10M16",
+      "numero": 16,
+      "enunciado": "<p>Tres ciclistas hicieron un recorrido. Uno marcó <b>42 minutos</b> y el <b>promedio</b> de los tres fue <b>45 minutos</b>. ¿Cuál par de tiempos podrían ser los de los otros dos ciclistas?</p>",
+      "opciones": {
+        "A": "41 min y 52 min.",
+        "B": "40 min y 45 min.",
+        "C": "45 min y 44 min.",
+        "D": "46 min y 50 min."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad para identificar los datos que están asociados con el valor promedio de estos.",
+      "justificacion_correcta": "La suma de los tres tiempos es 45 × 3 = 135 min. Como uno marcó 42, los otros dos suman 135 − 42 = 93. La pareja 41 y 52 suma 93.",
+      "opciones_incorrectas": {
+        "B": "40 + 45 = 85, no 93.",
+        "C": "45 + 44 = 89, no 93.",
+        "D": "46 + 50 = 96, no 93."
+      }
+    },
+    {
+      "id": "P10M17",
+      "numero": 17,
+      "enunciado": "<p>La parábola de la figura modela los usuarios de una app: tiene vértice en <b>(2, 4)</b> y pasa por <b>(0, 0)</b> y <b>(4, 0)</b>. ¿Qué ecuación corresponde a esa gráfica?</p>",
+      "opciones": {
+        "A": "y = x² + 2x − 4",
+        "B": "y = x² + 4x",
+        "C": "y = x² − 4x",
+        "D": "y = −x² + 4x"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La capacidad para relacionar la gráfica de una función cuadrática con su correspondiente representación algebraica.",
+      "justificacion_correcta": "Con raíces en 0 y 4, y = a·x·(x − 4). Como abre hacia abajo (vértice arriba) y pasa por (2,4): 4 = a·2·(−2) = −4a, de donde a = −1. Así y = −x(x − 4) = −x² + 4x.",
+      "opciones_incorrectas": {
+        "A": "Usa la coordenada del vértice como términos lineal y constante.",
+        "B": "Toma a = +1, lo que abre hacia arriba (no coincide con el vértice máximo).",
+        "C": "Tiene raíces correctas pero abre hacia arriba: vértice sería mínimo, no máximo."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q17.png"
+    },
+    {
+      "id": "P10M18",
+      "numero": 18,
+      "enunciado": "<p>Cuatro amigas comparan el dinero del martes y del miércoles (tabla). El promedio del martes fue <b>$7.000</b> y el del miércoles <b>$5.500</b>. ¿Cuánto dinero <b>en total</b> debieron reunir de más el miércoles para igualar el promedio del martes?</p>",
+      "opciones": {
+        "A": "$1.500",
+        "B": "$4.500",
+        "C": "$6.000",
+        "D": "$7.000"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad para determinar condiciones necesarias para que se dé un valor determinado de promedio a partir de varios datos.",
+      "justificacion_correcta": "La diferencia de promedios es 7.000 − 5.500 = $1.500. Como son 4 amigas, el faltante total es 1.500 × 4 = $6.000.",
+      "opciones_incorrectas": {
+        "A": "Reporta solo la diferencia de promedios, sin multiplicar por las 4 personas.",
+        "B": "Multiplica una diferencia individual incorrecta por 4.",
+        "D": "Confunde el faltante con el promedio del martes."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q18.png"
+    },
+    {
+      "id": "P10M19",
+      "numero": 19,
+      "enunciado": "<p>Para decorar, se apilaron <b>12 cajas iguales</b> como muestra la figura. Cada caja mide <b>20 cm de largo</b>, <b>20 cm de alto</b> y <b>40 cm de ancho</b>. ¿Cuál es el volumen total ocupado por las cajas?</p>",
+      "opciones": {
+        "A": "16.000 cm³",
+        "B": "32.000 cm³",
+        "C": "192.000 cm³",
+        "D": "1.920.000 cm³"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La capacidad para calcular el volumen de una figura tridimensional conformada por varios paralelepípedos.",
+      "justificacion_correcta": "Volumen de una caja: 20 × 20 × 40 = 16.000 cm³. Como hay 12 cajas iguales: 16.000 × 12 = 192.000 cm³.",
+      "opciones_incorrectas": {
+        "A": "Calcula el volumen de una sola caja, no de las 12.",
+        "B": "Multiplica el volumen de una caja solo por 2.",
+        "D": "Multiplica de más por 10, equivocando una potencia de 10."
+      },
+      "imagen_figura": "assets/banco-mat-10-p1/q19.png"
+    },
+    {
+      "id": "P10M20",
+      "numero": 20,
+      "enunciado": "<p>Un cultivo empieza con <b>2⁵</b> bacterias y su población se <b>duplica cada hora</b>. ¿Qué expresión representa la cantidad de bacterias al cabo de <b>3 horas</b>?</p>",
+      "opciones": {
+        "A": "2⁸",
+        "B": "2⁷",
+        "C": "2¹⁵",
+        "D": "2⁶⁴"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad para determinar la expresión que representa una situación a partir de una expresión inicial.",
+      "justificacion_correcta": "Duplicar cada hora durante 3 horas multiplica por 2³. Entonces 2⁵ × 2³ = 2^(5+3) = 2⁸.",
+      "opciones_incorrectas": {
+        "B": "Suma 2 al exponente en vez de 3: 2^(5+2) = 2⁷.",
+        "C": "Multiplica los exponentes (5 × 3 = 15) en vez de sumarlos.",
+        "D": "Eleva 2⁵ al cuadrado o confunde la operación, obteniendo 2⁶⁴."
+      }
+    }
+  ]
+}

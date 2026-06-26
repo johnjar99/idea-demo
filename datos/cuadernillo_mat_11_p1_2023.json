@@ -1,0 +1,598 @@
+{
+  "id": "math-11-p1-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "11",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 11° — Período I",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Interpretación y Representación",
+    "b": "Formulación y Ejecución",
+    "c": "Argumentación"
+  },
+  "afirmaciones": {
+    "1": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "2": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "3": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas."
+  },
+  "evidencias": {
+    "1.1": "Da cuenta de las características básicas de la información presentada en distintos formatos.",
+    "1.2": "Transforma la representación de una o más piezas de información.",
+    "2.1": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
+    "2.2": "Ejecuta un plan de solución para un problema que involucra información cuantitativa o esquemática.",
+    "2.3": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "3.1": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible.",
+    "3.3": "Establece la validez o pertinencia de una solución propuesta a un problema dado."
+  },
+  "cmc": [
+    "Estadística",
+    "Geometría",
+    "Álgebra y Cálculo"
+  ],
+  "preguntas": [
+    {
+      "id": "I_0978346",
+      "numero": 1,
+      "enunciado": "Un pequeño conjunto cerrado tiene cinco casas formando un pentágono como se ve en la figura. Las casas están representadas por círculos. En el conjunto viven los señores Gómez, Hernández, López, Pérez y Vélez. Todas las casas del conjunto tienen una cantidad diferente de pisos. El señor Pérez lamenta que su casa sea considerada, según la ley, un edificio por tener cinco pisos, aunque también se alegra de tener la casa más alta del conjunto y no estar \"a la sombra de los demás\". ¿Cuál es el total de pisos construidos en el conjunto?",
+      "imagen": "assets/img/p01.svg",
+      "opciones": {
+        "A": "$9$",
+        "B": "$15$",
+        "C": "$20$",
+        "D": "$25$"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad para resolver un problema en el que hay varias cantidades y condiciones entre estas.",
+      "justificacion_correcta": "La casa del señor Pérez tiene 5 pisos y es la más alta. Como todas las casas tienen cantidades diferentes de pisos y la del señor Pérez es la mayor, las otras cuatro casas tienen 4, 3, 2 y 1 pisos respectivamente. Por lo tanto, el total es 5+4+3+2+1 = 15 pisos.",
+      "opciones_incorrectas": {
+        "A": "Se obtiene al sumar 5+1+1+1+1, asumiendo erróneamente que todas las demás casas tienen un solo piso.",
+        "C": "Se obtiene al multiplicar 5×4, sin considerar que cada casa tiene cantidad diferente de pisos.",
+        "D": "Se obtiene al multiplicar 5×5, asumiendo que todas las casas tienen 5 pisos."
+      },
+      "imagen_figura": "assets/img/p01_fig.png"
+    },
+    {
+      "id": "I_1528956",
+      "numero": 2,
+      "enunciado": "Un profesor les asigna a tres estudiantes tres figuras distintas, y a cada uno le pide que rote la figura recibida $90°$ en el sentido en que giran las manecillas del reloj respecto al origen del sistema de coordenadas. La gráfica muestra las figuras recibidas por cada estudiante (sombreadas) y la figura obtenida (en blanco). ¿Cuáles estudiantes hicieron correctamente el trabajo asignado?",
+      "imagen": "assets/img/p02.svg",
+      "opciones": {
+        "A": "I y II solamente.",
+        "B": "II y III solamente.",
+        "C": "I y III solamente.",
+        "D": "I, II y III."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "BAJA",
+      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana y otros (polares, cilíndricos y esféricos) y en particular de las curvas y figuras cónicas.",
+      "que_evalua": "La capacidad para identificar las rotaciones de figuras geométricas que cumplen con una condición dada.",
+      "justificacion_correcta": "Una rotación de 90° en el sentido de las manecillas del reloj transforma el punto (x,y) en (y,-x). Los estudiantes I y II aplicaron correctamente esta transformación; el estudiante III rotó en sentido contrario.",
+      "opciones_incorrectas": {
+        "B": "Considera que el estudiante III rotó correctamente, pero rotó en sentido antihorario.",
+        "C": "Considera que el estudiante II no rotó correctamente.",
+        "D": "Considera que los tres rotaron correctamente sin notar la dirección equivocada del III."
+      },
+      "imagen_figura": "assets/img/p02_fig.png"
+    },
+    {
+      "id": "I_1427637",
+      "numero": 3,
+      "enunciado": "La tabla muestra las relaciones de comercio, venta y compra de productos entre varios países. De acuerdo con la información presentada, ¿cuál es la tabla que muestra las relaciones comerciales del país W?",
+      "imagen": "assets/img/p03.svg",
+      "opciones": {
+        "A": "Vende productos a: Ninguno / Compra productos de: Ninguno",
+        "B": "Vende productos a: Ninguno / Compra productos de: P, R",
+        "C": "Vende productos a: P, R / Compra productos de: Ninguno",
+        "D": "Vende productos a: R, V, Q / Compra productos de: T, R"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad para identificar los valores asociados a un dato en particular a partir de la información presentada en una tabla.",
+      "justificacion_correcta": "Buscando W en la columna 'Compra productos de' se encuentra que P y R compran de W (W vende a P y R). En 'Vende productos a' no aparece W, por lo que W no compra de ningún país de la tabla.",
+      "opciones_incorrectas": {
+        "A": "Asume incorrectamente que W no aparece en ninguna columna.",
+        "B": "Invierte las columnas de venta y compra.",
+        "D": "Confunde W con las relaciones de otro país."
+      },
+      "imagen_figura": "assets/img/p03_fig.png",
+      "opciones_imagenes": {
+        "A": "assets/img/p03_opA.png",
+        "B": "assets/img/p03_opB.png",
+        "C": "assets/img/p03_opC.png",
+        "D": "assets/img/p03_opD.png"
+      }
+    },
+    {
+      "id": "I_0886796",
+      "numero": 4,
+      "enunciado": "Un docente ha preseleccionado algunos estudiantes para realizar una actividad deportiva. Como todos cumplen los requisitos necesarios, el docente va a escoger al azar solamente a un grupo de 3 estudiantes y se encuentra que puede hacer 10 posibles selecciones. ¿Cuántos estudiantes conforman el grupo preseleccionado?",
+      "opciones": {
+        "A": "$13$",
+        "B": "$10$",
+        "C": "$6$",
+        "D": "$5$"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad para calcular el cardinal del conjunto del que se van a elegir elementos al azar a partir del número de elecciones y del total de combinaciones posibles.",
+      "justificacion_correcta": "Aplicando combinatoria C(n,3) = 10, entonces n!/(3!(n-3)!) = 10, lo que da n=5 estudiantes (C(5,3) = 10).",
+      "opciones_incorrectas": {
+        "A": "Suma 10+3, sin aplicar combinatoria.",
+        "B": "Asume que el total es igual al número de selecciones.",
+        "C": "Confunde combinaciones con permutaciones."
+      },
+      "imagen_figura": null
+    },
+    {
+      "id": "I_1382348",
+      "numero": 5,
+      "enunciado": "En una bolsa hay $3$ bolas rojas, $3$ negras y $12$ blancas. Una persona afirma que al sacar una bola al azar, los tres colores tienen la misma probabilidad de salir. ¿Es verdadera esta afirmación?",
+      "opciones": {
+        "A": "Sí, pues el número de bolas de cada color no importa.",
+        "B": "No, pues no se sabe el número total de bolas en la bolsa.",
+        "C": "No, pues hay más bolas de un color que de los otros dos.",
+        "D": "Sí, pues las bolas están repartidas de igual manera."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La capacidad para justificar la validez de una afirmación sobre una probabilidad a partir de la descripción de los elementos de un conjunto.",
+      "justificacion_correcta": "La probabilidad depende del número de eventos favorables sobre el total. Como hay 12 blancas (frente a 3 rojas y 3 negras), la probabilidad de blanca (12/18) es mayor que rojas o negras (3/18 cada una).",
+      "opciones_incorrectas": {
+        "A": "Ignora que la cantidad sí importa para calcular probabilidad.",
+        "B": "Confunde el cálculo de probabilidad con desconocimiento del total.",
+        "D": "Asume incorrectamente que las cantidades son iguales."
+      },
+      "imagen_figura": null
+    },
+    {
+      "id": "I_1329948",
+      "numero": 6,
+      "enunciado": "La torre de Pisa en Toscana es uno de los sitios turísticos más representativos de Italia. Con respecto a la vertical, la torre se ha inclinado $4°$ como se muestra en la gráfica. ¿Cuánto mide el otro ángulo?",
+      "imagen": "assets/img/p06.svg",
+      "opciones": {
+        "A": "$4°$",
+        "B": "$14°$",
+        "C": "$86°$",
+        "D": "$90°$"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "BAJA",
+      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana.",
+      "que_evalua": "La capacidad para identificar el ángulo complementario a un ángulo dado.",
+      "justificacion_correcta": "El ángulo recto entre la base horizontal y la vertical es 90°. Si la torre se inclina 4° respecto a la vertical, el ángulo entre la torre y la base es 90° - 4° = 86°.",
+      "opciones_incorrectas": {
+        "A": "Repite el ángulo de inclinación sin restarlo.",
+        "B": "Suma 10° al ángulo, error de cálculo.",
+        "D": "Da el ángulo recto sin restar la inclinación."
+      },
+      "imagen_figura": "assets/img/p06_fig.png",
+      "contexto_compartido_texto": "Con esta información responde la pregunta 6",
+      "contexto_compartido_imagen": "assets/img/p06_contexto.png"
+    },
+    {
+      "id": "I_0963827",
+      "numero": 7,
+      "enunciado": "El dueño de un parque recreativo planea construir tres piscinas y decorar sus bordes con baldosas blancas y azules, tal como se muestra en las figuras 1, 2 y 3. Según la observación de las figuras 1, 2 y 3, puede afirmarse correctamente que el número de baldosas:",
+      "imagen": "assets/img/p07.svg",
+      "opciones": {
+        "A": "azules se incrementa en seis de una piscina a la del siguiente tamaño.",
+        "B": "blancas aumenta en ocho a medida que crece el tamaño de las piscinas.",
+        "C": "azules es el doble de la cantidad de baldosas blancas en cada piscina.",
+        "D": "blancas es la tercera parte de la cantidad de baldosas azules."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Comparo y contrasto las propiedades de los números para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad para identificar un patrón a partir de un conjunto de figuras dadas.",
+      "justificacion_correcta": "Contando las baldosas azules en cada piscina se observa un incremento constante de 6 entre piscina y piscina, identificando un patrón aritmético.",
+      "opciones_incorrectas": {
+        "B": "Confunde el patrón de las baldosas blancas.",
+        "C": "No verifica la relación entre azules y blancas.",
+        "D": "Invierte la relación entre azules y blancas."
+      },
+      "imagen_figura": "assets/img/p07_fig.png"
+    },
+    {
+      "id": "I_1297075",
+      "numero": 8,
+      "enunciado": "El costo de la boleta en un cinema depende de la edad de la persona, como lo muestra la tabla: desde $0$ y hasta $8$ años: $\\$5\\,000$; más de $8$ y hasta $16$: $\\$7\\,000$; más de $16$ y hasta $56$: $\\$10\\,000$; más de $56$: $\\$6\\,000$. ¿Cuál es la gráfica que representa esta función?",
+      "imagen": "assets/img/p08.svg",
+      "opciones": {
+        "A": "Gráfica A (escalonada)",
+        "B": "Gráfica B (picos)",
+        "C": "Gráfica C (peldaños)",
+        "D": "Gráfica D (puntos dispersos)"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales.",
+      "que_evalua": "La capacidad para construir la gráfica asociada a una función a trozos descrita en una tabla.",
+      "justificacion_correcta": "La función es escalonada (función a trozos) con valores constantes por intervalo. La gráfica A muestra correctamente segmentos horizontales con extremos abiertos/cerrados según el intervalo.",
+      "opciones_incorrectas": {
+        "B": "Muestra una función continua, no escalonada.",
+        "C": "Tiene los intervalos en orden incorrecto.",
+        "D": "Representa puntos dispersos, no una función a trozos."
+      },
+      "imagen_figura": "assets/img/p08_fig.png",
+      "opciones_imagenes": {
+        "A": "assets/img/p08_opA.png",
+        "B": "assets/img/p08_opB.png",
+        "C": "assets/img/p08_opC.png",
+        "D": "assets/img/p08_opD.png"
+      }
+    },
+    {
+      "id": "I_0890863",
+      "numero": 9,
+      "enunciado": "Se realizó una encuesta a $200$ clientes de una empresa de telecomunicaciones para saber cómo califican la calidad del servicio que reciben. La siguiente gráfica muestra los porcentajes: Malo $15\\%$, Regular $10\\%$, Bueno $35\\%$, Excelente $40\\%$. ¿Cuál afirmación es verdadera acerca de los resultados de la encuesta?",
+      "imagen": "assets/img/p09.svg",
+      "opciones": {
+        "A": "Más de 30 clientes consideran que la calidad del servicio que ofrece la empresa es excelente.",
+        "B": "Menos de 50 clientes consideran que la calidad del servicio que ofrece la empresa es regular.",
+        "C": "Menos de 55 clientes están satisfechos con el servicio que ofrece la empresa.",
+        "D": "Más de 60 clientes consideran que la calidad del servicio que ofrece la empresa es bueno."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
+      "que_evalua": "La capacidad para establecer una afirmación verdadera a partir de la información presentada en una gráfica.",
+      "justificacion_correcta": "El 35% de 200 = 70 clientes consideran el servicio Bueno, que es más de 60. La afirmación D es verdadera.",
+      "opciones_incorrectas": {
+        "A": "40% de 200 = 80, sí es más de 30, pero la afirmación es trivialmente verdadera y menos precisa.",
+        "B": "10% de 200 = 20, sí es menos de 50, pero también trivial.",
+        "C": "Bueno+Excelente = 75% de 200 = 150 clientes satisfechos, no menos de 55."
+      },
+      "imagen_figura": "assets/img/p09_fig.png"
+    },
+    {
+      "id": "I_1307269",
+      "numero": 10,
+      "enunciado": "Para ambientar musicalmente una reunión, se cuenta con tres CD, cada uno de ellos tiene canciones de salsa ($S$) y merengue ($M$). ¿Cuál de los siguientes diagramas representa la situación de seleccionar al azar una canción del CD1, luego una del CD2 y finalmente una del CD3?",
+      "imagen": "assets/img/p10.svg",
+      "opciones": {
+        "A": "Diagrama de árbol con tres niveles ramificándose en $S/M$ en cada nivel.",
+        "B": "Diagrama con solo dos niveles.",
+        "C": "Diagrama con ramificaciones incorrectas.",
+        "D": "Diagrama con un único CD."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos.",
+      "que_evalua": "La capacidad para representar un experimento aleatorio mediante un diagrama de árbol.",
+      "justificacion_correcta": "El diagrama A muestra tres niveles de ramificación (uno por CD), cada uno con dos opciones (S, M), resultando en 2³=8 combinaciones posibles, correcto para el experimento.",
+      "opciones_incorrectas": {
+        "B": "Solo representa dos CD.",
+        "C": "Las ramificaciones no son completas.",
+        "D": "Solo representa un CD."
+      },
+      "imagen_figura": null,
+      "opciones_imagenes": {
+        "A": "assets/img/p10_opA.png",
+        "B": "assets/img/p10_opB.png",
+        "C": "assets/img/p10_opC.png",
+        "D": "assets/img/p10_opD.png"
+      }
+    },
+    {
+      "id": "I_1339340",
+      "numero": 11,
+      "enunciado": "Para observar los efectos de un medicamento, este se inyecta en un animal y se registra el comportamiento de la temperatura (°C) en función del tiempo (horas), como lo muestra la gráfica. ¿Cuál de las siguientes expresiones corresponde a la curva que describe la temperatura del animal en función del tiempo?",
+      "imagen": "assets/img/p11.svg",
+      "opciones": {
+        "A": "$F(t) = 2\\cos\\!\\left(\\dfrac{2\\pi}{3}\\,t\\right) + 36$",
+        "B": "$F(t) = 3\\cos\\!\\left(\\dfrac{2\\pi}{3}\\,t\\right) + 38$",
+        "C": "$F(t) = 2\\operatorname{sen}\\!\\left(\\dfrac{2\\pi}{3}\\,t\\right) + 36$",
+        "D": "$F(t) = 3\\operatorname{sen}\\!\\left(\\dfrac{2\\pi}{3}\\,t\\right) + 38$"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
+      "que_evalua": "La capacidad para construir la función trigonométrica que representa una curva en una gráfica dada.",
+      "justificacion_correcta": "La gráfica oscila entre 34 y 38°C (amplitud 2, eje central 36) y comienza en 36 subiendo, lo que corresponde a una función seno con amplitud 2, periodo 3 y desfase vertical 36: F(t) = 2sen(2πt/3) + 36.",
+      "opciones_incorrectas": {
+        "A": "Coseno no parte de la mitad subiendo sino del máximo.",
+        "B": "Amplitud y eje central no coinciden.",
+        "D": "Amplitud y eje central incorrectos."
+      },
+      "imagen_figura": "assets/img/p11_fig.png"
+    },
+    {
+      "id": "I_1382426",
+      "numero": 12,
+      "enunciado": "La velocidad máxima de un auto es $100\\,\\text{km/h}$. Pilar afirma que, a su velocidad máxima, en $100$ horas el auto avanzará $1\\,\\text{km}$. ¿Es verdadera la afirmación de Pilar?",
+      "opciones": {
+        "A": "No, porque a la velocidad máxima en una hora recorrerá $100\\,\\text{km}$.",
+        "B": "Sí, porque al dividir la velocidad máxima entre $100$ horas se obtiene $1\\,\\text{km}$.",
+        "C": "No, porque en $100$ horas el auto recorrerá $100\\,\\text{km}$.",
+        "D": "Sí, porque al dividir $100$ entre $1$, se obtiene el valor $100$."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva.",
+      "que_evalua": "La capacidad para analizar la validez de una afirmación sobre la interpretación de una razón de cambio.",
+      "justificacion_correcta": "Si la velocidad es 100 km/h, en 1 hora recorre 100 km, no 1 km. Pilar invirtió la relación. La afirmación es falsa por el razonamiento expuesto en A.",
+      "opciones_incorrectas": {
+        "B": "Acepta la afirmación falsa.",
+        "C": "Distancia en 100 horas a 100 km/h es 10.000 km, no 100 km.",
+        "D": "Razonamiento numérico sin sentido físico."
+      },
+      "imagen_figura": null
+    },
+    {
+      "id": "I_1746189",
+      "numero": 13,
+      "enunciado": "La siguiente figura está compuesta por los cuadrados $P$ y $R$ y el triángulo rectángulo $S$. Si el área del cuadrado $R$ es $36\\,\\text{m}^2$ y el área del cuadrado $P$ es $64\\,\\text{m}^2$, ¿cuál es el área total de la figura?",
+      "imagen": "assets/img/p13.svg",
+      "opciones": {
+        "A": "$48\\,\\text{m}^2$",
+        "B": "$100\\,\\text{m}^2$",
+        "C": "$124\\,\\text{m}^2$",
+        "D": "$148\\,\\text{m}^2$"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para hallar áreas de figuras compuestas, dadas algunas de sus medidas.",
+      "justificacion_correcta": "Lado de P = √64 = 8 m, lado de R = √36 = 6 m. El triángulo rectángulo S tiene catetos 8 y 6, área = (8×6)/2 = 24 m². Área total = 64 + 36 + 24 = 124 m².",
+      "opciones_incorrectas": {
+        "A": "Solo suma triángulo y un cuadrado.",
+        "B": "Solo suma los dos cuadrados.",
+        "D": "Calcula incorrectamente el área del triángulo como 48."
+      },
+      "imagen_figura": "assets/img/p13_fig.png"
+    },
+    {
+      "id": "I_1442702",
+      "numero": 14,
+      "enunciado": "La temperatura $T$, en grados centígrados, del motor de un camión durante los primeros $3$ minutos se comporta según la siguiente expresión: $$T = 3^{\\,x+1} + 10$$ donde $x$ es el tiempo en minutos que el motor está en funcionamiento desde que se enciende. ¿Cuál de las siguientes tablas muestra correctamente algunos valores del tiempo en funcionamiento y la temperatura del motor?",
+      "opciones": {
+        "A": "$x=1 \\to 13,\\; x=2 \\to 16,\\; x=3 \\to 19$",
+        "B": "$x=1 \\to 9,\\; x=2 \\to 27,\\; x=3 \\to 81$",
+        "C": "$x=1 \\to 16,\\; x=2 \\to 19,\\; x=3 \\to 22$",
+        "D": "$x=1 \\to 19,\\; x=2 \\to 37,\\; x=3 \\to 91$"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La capacidad para calcular parejas ordenadas, relacionadas mediante funciones exponenciales en contextos aplicados.",
+      "justificacion_correcta": "T(1) = 3^2+10 = 9+10 = 19; T(2) = 3^3+10 = 27+10 = 37; T(3) = 3^4+10 = 81+10 = 91. Tabla D es correcta.",
+      "opciones_incorrectas": {
+        "A": "Aplica la función lineal 3x+10 en lugar de exponencial.",
+        "B": "Olvida el +10 en la fórmula.",
+        "C": "Mezcla aritmética con error de cálculo."
+      },
+      "imagen_figura": null,
+      "opciones_imagenes": {
+        "A": "assets/img/p14_opA.png",
+        "B": "assets/img/p14_opB.png",
+        "C": "assets/img/p14_opC.png",
+        "D": "assets/img/p14_opD.png"
+      }
+    },
+    {
+      "id": "I_136928R",
+      "numero": 15,
+      "enunciado": "La cantidad de millones de bacterias vivas en un cultivo, después de aplicar un tratamiento, está dada por la expresión $$f(x) = 1 + \\sqrt{\\,10 - x\\,}$$ donde $x$ es el número de días que han pasado desde que se aplicó el tratamiento. ¿Cuál es el conjunto de todos los valores de $x$ para el cual $f(x)$ está definida?",
+      "opciones": {
+        "A": "$x \\geq 10$",
+        "B": "$x > 10$",
+        "C": "$0 \\leq x \\leq 10$",
+        "D": "$0 < x < 10$"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales.",
+      "que_evalua": "La capacidad para determinar el dominio de una función radical en un contexto aplicado.",
+      "justificacion_correcta": "La raíz cuadrada requiere 10-x ≥ 0, es decir x ≤ 10. Como x es número de días, x ≥ 0. Por tanto el dominio es 0 ≤ x ≤ 10.",
+      "opciones_incorrectas": {
+        "A": "Invierte el sentido de la desigualdad bajo la raíz.",
+        "B": "Excluye el valor x=10 sin razón.",
+        "D": "Excluye los extremos del intervalo sin razón."
+      },
+      "imagen_figura": null
+    },
+    {
+      "id": "I_1124256",
+      "numero": 16,
+      "enunciado": "En un juego se lanza un dado $2$ veces y se gana si en el segundo lanzamiento se obtiene el doble de lo obtenido en el primer lanzamiento. ¿Cuál es la probabilidad de ganar?",
+      "opciones": {
+        "A": "$\\dfrac{6}{36}$",
+        "B": "$\\dfrac{3}{36}$",
+        "C": "$\\dfrac{1}{9}$",
+        "D": "$\\dfrac{2}{9}$"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad.",
+      "que_evalua": "La capacidad para calcular la probabilidad de un evento en contextos usuales trabajados en el aula (dados, canicas, cartas, etc.).",
+      "justificacion_correcta": "Los pares válidos (primero, segundo) donde el segundo es el doble: (1,2), (2,4), (3,6). Son 3 casos favorables sobre 36 totales = 3/36.",
+      "opciones_incorrectas": {
+        "A": "Cuenta seis pares incorrectamente.",
+        "C": "Error de cálculo: 1/9 = 4/36, no corresponde.",
+        "D": "Doble de la respuesta C, error de razonamiento."
+      },
+      "imagen_figura": null
+    },
+    {
+      "id": "I_1730696",
+      "numero": 17,
+      "enunciado": "Un agente de negocios analiza la cantidad de ventas mensuales de dos productos durante seis meses (ver gráfica). De acuerdo con la información anterior, ¿cuál de las siguientes afirmaciones es verdadera?",
+      "imagen": "assets/img/p17.svg",
+      "opciones": {
+        "A": "Las ventas del producto 1 son directamente proporcionales al número del mes.",
+        "B": "Las ventas del producto 1 son inversamente proporcionales al número del mes.",
+        "C": "Las ventas del producto 2 son directamente proporcionales al número del mes.",
+        "D": "Las ventas del producto 2 son inversamente proporcionales al número del mes."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables.",
+      "que_evalua": "La capacidad para reconocer relaciones de proporcionalidad entre variables que representan situaciones cotidianas.",
+      "justificacion_correcta": "La gráfica del producto 1 decrece a medida que aumenta el mes, lo que indica relación inversamente proporcional.",
+      "opciones_incorrectas": {
+        "A": "Producto 1 decrece, no aumenta proporcionalmente.",
+        "C": "Producto 2 aumenta pero no es estrictamente proporcional.",
+        "D": "Producto 2 no decrece."
+      },
+      "imagen_figura": "assets/img/p17_fig.png"
+    },
+    {
+      "id": "I_1588613",
+      "numero": 18,
+      "enunciado": "En la recta se muestra la ubicación inicial de un pingüino. Las unidades de la recta se encuentran en metros. El pingüino se mueve $6$ metros al oriente, luego $2$ metros al occidente, y finalmente, $3$ metros al oriente. ¿Cuál de los siguientes procedimientos permite encontrar la posición final del pingüino?",
+      "imagen": "assets/img/p18.svg",
+      "opciones": {
+        "A": "Sumar $6$ metros y $3$ metros, y restarle a esto $2$ metros. Finalmente, restarle $5$ metros a este resultado.",
+        "B": "Sumar $6$ metros y $3$ metros, y restarle a esto $2$ metros. Finalmente, sumarle $5$ metros a este resultado.",
+        "C": "Sumar $6$ metros y $2$ metros, y restarle a esto $3$ metros. Finalmente, restarle $5$ metros a este resultado.",
+        "D": "Sumar $6$ metros y $2$ metros, y restarle a esto $3$ metros. Finalmente, sumarle $5$ metros a este resultado."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales).",
+      "que_evalua": "La capacidad para explicar las operaciones entre números enteros usando la recta numérica.",
+      "justificacion_correcta": "Movimiento oriente=positivo, occidente=negativo. Posición final desde 5: 5 + 6 - 2 + 3. El procedimiento correcto suma desplazamientos al oriente, resta los desplazamientos al occidente, y suma la posición inicial 5.",
+      "opciones_incorrectas": {
+        "A": "Resta la posición inicial en vez de sumarla.",
+        "C": "Invierte oriente y occidente.",
+        "D": "Mezcla operaciones incorrectamente."
+      },
+      "imagen_figura": "assets/img/p18_fig.png"
+    },
+    {
+      "id": "I_1368968",
+      "numero": 19,
+      "enunciado": "La figura muestra una construcción geométrica, con sus lados etiquetados. ¿Por qué los lados $Y$ y $W$ son paralelos?",
+      "imagen": "assets/img/p19.svg",
+      "opciones": {
+        "A": "Porque el lado $W$ mide lo mismo que el lado $X$.",
+        "B": "Porque el lado $Y$ es perpendicular a $X$ y el lado $W$ es perpendicular a $X$.",
+        "C": "Porque un cuadrilátero siempre tiene dos lados que son paralelos.",
+        "D": "Porque un cuadrilátero con un ángulo recto siempre tiene lados paralelos."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para justificar relaciones de paralelismo entre segmentos de recta utilizando propiedades de los ángulos que componen las figuras planas.",
+      "justificacion_correcta": "Si Y es perpendicular a X y W también es perpendicular a X, entonces Y y W son paralelos entre sí (propiedad: dos rectas perpendiculares a una tercera son paralelas).",
+      "opciones_incorrectas": {
+        "A": "La congruencia de medidas no implica paralelismo.",
+        "C": "No es verdad que todo cuadrilátero tenga lados paralelos.",
+        "D": "Un ángulo recto solo no garantiza paralelismo de dos lados."
+      },
+      "imagen_figura": "assets/img/p19_fig.png"
+    },
+    {
+      "id": "I_1552803",
+      "numero": 20,
+      "enunciado": "En una elipse, la medida del semieje mayor es la medida más grande de los segmentos que unen el centro con un punto de la elipse. Análogamente, el semieje menor es la medida más corta de estos segmentos (ver figura). Una persona afirma que si la medida del semieje mayor es igual a la del semieje menor, entonces la elipse es una circunferencia. ¿Es verdadera la afirmación de la persona?",
+      "imagen": "assets/img/p20.svg",
+      "opciones": {
+        "A": "Sí, porque una elipse en la cual la medida del semieje mayor es diferente de la medida del semieje menor no puede ser una circunferencia.",
+        "B": "No, porque con la igualdad de medida de los semiejes mayor y menor no puede garantizarse la igualdad de la medida de todos los segmentos que unen el centro con la elipse.",
+        "C": "Sí, porque la medida de cualquier segmento que une el centro con la elipse está entre las medidas de los semiejes menor y mayor; por tanto, todas esas medidas serían iguales.",
+        "D": "No, porque las medidas de los segmentos que unen el centro con la elipse son siempre distintas; por tanto, los semiejes también tendrán medidas diferentes."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo curvas y o lugares geométricos.",
+      "que_evalua": "La capacidad para deducir características de una cónica, dadas condiciones sobre su construcción.",
+      "justificacion_correcta": "Como el semieje menor tiene la medida más corta y el mayor la más grande, si ambas son iguales, cualquier otro segmento (que está entre estas dos medidas) debe ser también igual a ellas. Por tanto todos los segmentos del centro a la elipse son iguales y se trata de una circunferencia.",
+      "opciones_incorrectas": {
+        "A": "Identifica que con diferentes medidas no es circunferencia, pero no justifica el caso de igualdad.",
+        "B": "Considera que igualdad de semiejes no garantiza igualdad de todos los segmentos, ignorando la propiedad de orden.",
+        "D": "Asume que los segmentos son siempre distintos sin razón."
+      },
+      "imagen_figura": "assets/img/p20_fig.png"
+    }
+  ]
+}

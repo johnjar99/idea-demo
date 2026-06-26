@@ -1,0 +1,571 @@
+{
+  "id": "math-9-p2-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "9",
+  "periodo": "II",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 9° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Resolución de problemas",
+    "b": "Razonamiento",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Resuelve problemas con ecuaciones lineales, cuadráticas y sistemas de ecuaciones lineales",
+    "2": "Resuelve problemas que requieren la obtención o comparación de la probabilidad de eventos aleatorios",
+    "3": "Resuelve problemas que requieren el uso de la distribución de los datos o medidas estadísticas: moda, mediana y promedio",
+    "4": "Contrasta las equivalencias entre diferentes registros de relaciones de variación entre variables",
+    "5": "Conjetura sobre las propiedades de los objetos bidimensionales y tridimensionales relacionadas con sus atributos mensurables y de posición",
+    "6": "Reconoce el uso y las propiedades de los números reales y sus operaciones en distintos contextos aplicados",
+    "7": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión",
+    "8": "Interpreta la naturaleza y posibilidad de ocurrencia de eventos aleatorios simples",
+    "9": "Resuelve problemas aditivos, multiplicativos, de proporcionalidad o de linealidad en contextos aplicados",
+    "10": "Resuelve problemas que requieren diferentes procedimientos de cálculo para hallar medidas de superficies y volúmenes",
+    "11": "Analiza datos representados de diferentes formas",
+    "12": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "13": "Reconoce distintos tipos de representación de uno o varios conjuntos de datos"
+  },
+  "evidencias": {
+    "1.1": "Usa diferentes métodos de resolución de ecuaciones lineales y sistemas de ecuaciones lineales en contextos matemáticos o aplicados",
+    "2.1": "Usa combinaciones y permutaciones para calcular casos favorables o posibles en contextos aplicados",
+    "3.1": "Usa la moda o la mediana para interpretar el comportamiento de un conjunto de datos de acuerdo con el ordenamiento de los mismos",
+    "4.1": "Caracteriza las gráficas de funciones lineales, cuadráticas y exponenciales según las ecuaciones que las representan",
+    "5.1": "Establece relaciones de paralelismo o perpendicularidad entre segmentos",
+    "6.1": "Establece relaciones de orden entre números reales dados criterios de ubicación o aproximación",
+    "7.1": "Señala los atributos medibles de una figura junto con sus posibles unidades y magnitudes",
+    "8.1": "Clasifica los eventos aleatorios según los casos favorables observados en un mismo experimento",
+    "1.2": "Usa diferentes propiedades y estrategias de solución de las ecuaciones cuadráticas en contextos matemáticos o aplicados",
+    "9.1": "Usa aproximaciones lineales o relaciones lineales en situaciones en las cuales las magnitudes están relacionadas",
+    "10.1": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello se ofrecen en la situación",
+    "10.2": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello no se ofrecen en la situación",
+    "4.2": "Identifica propiedades de las gráficas de las funciones lineales, cuadráticas y exponenciales",
+    "11.1": "Toma decisiones sobre una situación a partir de representaciones de uno o más conjuntos de datos",
+    "12.1": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "13.1": "Elabora diversas representaciones de uno o varios conjuntos de datos"
+  },
+  "cmc": [
+    "Numérico - variacional",
+    "Aleatorio",
+    "Espacial - métrico"
+  ],
+  "preguntas": [
+    {
+      "id": "P-math-9-p2-01",
+      "numero": 1,
+      "enunciado": "<p>Un curso organiza una <b>rifa</b> para financiar su viaje de fin de año. Cada boleta se vende a <b>$4.000</b> y, al cerrar la jornada, reúnen en total <b>$2.180.000</b>, de los cuales <b>$980.000</b> provienen de aportes de los padres de familia. La ecuación que modela la situación es:</p>\\[ 2\\,180\\,000 = 4\\,000\\,x + 980\\,000 \\]<p>¿Cuántas boletas de la rifa se vendieron?</p>",
+      "opciones": {
+        "A": "\\(545\\)",
+        "B": "\\(790\\)",
+        "C": "\\(300\\)",
+        "D": "\\(3\\)"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo métodos informales (ensayo y error, complementación) en la solución de ecuaciones.",
+      "que_evalua": "La capacidad para solucionar una ecuación lineal.",
+      "justificacion_correcta": "Se despeja \\(x\\): \\(2\\,180\\,000 - 980\\,000 = 4\\,000\\,x\\), es decir \\(1\\,200\\,000 = 4\\,000\\,x\\), de donde \\(x = \\dfrac{1\\,200\\,000}{4\\,000} = 300\\). Se vendieron \\(300\\) boletas.",
+      "opciones_incorrectas": {
+        "A": "Suma en lugar de restar el aporte \\((2\\,180\\,000 + 980\\,000 = 3\\,180\\,000)\\) y luego divide aproximando, obteniendo \\(545\\).",
+        "B": "Olvida el aporte de los padres y divide directamente \\(2\\,180\\,000 \\div 4\\,000 \\approx 790\\).",
+        "D": "Tras hallar \\(1\\,200\\,000 = 4\\,000\\,x\\) cancela mal los ceros y toma \\(x = 3\\)."
+      }
+    },
+    {
+      "id": "P-math-9-p2-02",
+      "numero": 2,
+      "enunciado": "<p>Sara arma <b>pulseras</b> colocando <b>3 dijes en fila</b>, uno tras otro, de modo que el <b>orden</b> en que quedan ubicados los hace distintas. Dispone de dijes de <b>5 modelos diferentes</b> y en una misma pulsera no repite modelo. ¿Cuántas pulseras diferentes puede armar Sara?</p>",
+      "opciones": {
+        "A": "\\(15\\)",
+        "B": "\\(10\\)",
+        "C": "\\(120\\)",
+        "D": "\\(60\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad de identificar y usar una permutación para resolver una situación de conteo.",
+      "justificacion_correcta": "Como el orden de los dijes importa, se usa una permutación de \\(5\\) tomados de a \\(3\\): \\(P(5,3) = \\dfrac{5!}{(5-3)!} = 5 \\times 4 \\times 3 = 60\\). Se pueden armar \\(60\\) pulseras diferentes.",
+      "opciones_incorrectas": {
+        "A": "Calcula la combinación pero se equivoca en la cuenta y reporta \\(15\\) en lugar del valor correcto.",
+        "B": "Usa una combinación \\(C(5,3) = \\dfrac{5!}{3!\\,2!} = 10\\), ignorando que el orden de los dijes las diferencia.",
+        "C": "Toma todos los modelos y calcula \\(5! = 120\\), como si usara los cinco dijes en cada pulsera."
+      }
+    },
+    {
+      "id": "P-math-9-p2-03",
+      "numero": 3,
+      "enunciado": "<p>Una estación meteorológica registró durante varios días la <b>temperatura máxima</b> de una región. Al ordenar de menor a mayor los registros, se encontró que la <b>mediana</b> de las temperaturas fue de <b>\\(28\\ ^{\\circ}\\text{C}\\)</b>. ¿Cuál de las siguientes tablas puede corresponder a los datos que registró la estación?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Temperatura (°C)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de días</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">23</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">31</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Temperatura (°C)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de días</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">29</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Temperatura (°C)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de días</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">19</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Temperatura (°C)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de días</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">29</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
+      "que_evalua": "La capacidad para determinar el conjunto de datos que corresponde a un valor de mediana definido.",
+      "justificacion_correcta": "En la tabla B hay \\(6+4+3+5+9+8+6 = 41\\) días (cantidad impar), así que la mediana ocupa la posición \\(\\dfrac{41+1}{2} = 21\\). Las frecuencias acumuladas son \\(6, 10, 13, 18, 27, 35, 41\\): la posición \\(21\\) cae en el valor \\(28\\ ^{\\circ}\\text{C}\\) (la acumulada pasa de \\(18\\) a \\(27\\) en esa fila). Por eso la mediana es \\(28\\ ^{\\circ}\\text{C}\\).",
+      "opciones_incorrectas": {
+        "A": "Tiene solo cuatro valores; aunque \\(28\\) aparece con frecuencia alta, sus acumuladas no hacen que la posición central caiga en \\(28\\).",
+        "C": "Confunde la mediana con la moda: escoge la tabla donde \\(28\\ ^{\\circ}\\text{C}\\) tiene la mayor frecuencia \\((19)\\), pero la frecuencia más alta no determina la mediana.",
+        "D": "Tiene \\(8+7+6+5+6+5+4 = 41\\) datos; sus acumuladas \\((8, 15, 21, 26, 32, 37, 41)\\) hacen que la posición \\(21\\) caiga en \\(26\\ ^{\\circ}\\text{C}\\), de modo que su mediana es \\(26\\ ^{\\circ}\\text{C}\\), no \\(28\\)."
+      }
+    },
+    {
+      "id": "P-math-9-p2-04",
+      "numero": 4,
+      "enunciado": "<p>En una población, la cantidad de visitantes a un parque en un día se estima con la función</p>\\[ P(T) = -T^{2} - 8\\,T + 120 \\]<p>donde \\(P(T)\\) es el número de visitantes (en decenas) y \\(T\\) es la diferencia, en grados, entre la temperatura del día y la temperatura promedio. Si durante una semana \\(T\\) tomó los valores <b>\\(-6\\)</b>, <b>\\(0\\)</b>, <b>\\(4\\)</b> y <b>\\(7\\)</b>, ¿cuál de las siguientes tablas muestra correctamente la cantidad de visitantes?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">-6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">132</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">-6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">204</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">-6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">132</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">-6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">132</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">80</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td></tr></table>"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
+      "que_evalua": "La capacidad para identificar propiedades de expresiones algebraicas y encontrar valores de la variable dependiente, dados algunos de los valores de la variable independiente.",
+      "justificacion_correcta": "Se reemplaza cada \\(T\\): \\(P(-6) = -(-6)^2 - 8(-6) + 120 = -36 + 48 + 120 = 132\\); \\(P(0) = 120\\); \\(P(4) = -16 - 32 + 120 = 72\\); \\(P(7) = -49 - 56 + 120 = 15\\). La tabla correcta es la A.",
+      "opciones_incorrectas": {
+        "B": "Comete un error de signo en \\(-(-6)^2\\): toma \\(+36\\) en vez de \\(-36\\) y obtiene \\(P(-6) = 204\\).",
+        "C": "Supone que \\(P(0) = 0\\) sin reemplazar; en realidad \\(P(0) = 120\\) por la constante.",
+        "D": "Calcula \\(-T^2\\) como \\(-2T\\) (multiplica por \\(2\\) en vez de elevar al cuadrado), lo que altera \\(P(4)\\) y \\(P(7)\\)."
+      }
+    },
+    {
+      "id": "P-math-9-p2-05",
+      "numero": 5,
+      "enunciado": "<p>La figura muestra una cancha de práctica con forma de <b>trapecio rectángulo \\(ABCD\\)</b>. Uno de sus bordes, el lado <b>\\(AB\\)</b>, ya fue cubierto con una franja de plantas (parte verde de la figura). El encargado quiere cubrir también el borde de la cancha que es <b>paralelo</b> al que ya está cubierto. ¿Qué lado del trapecio debe cubrir?</p>",
+      "opciones": {
+        "A": "El lado DC.",
+        "B": "El lado BC.",
+        "C": "El lado AD.",
+        "D": "El lado AB."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas",
+      "que_evalua": "La capacidad de decir qué lados son paralelos a un lado dado de un polígono.",
+      "justificacion_correcta": "Los lados \\(AB\\) y \\(DC\\) forman ángulo recto con la base \\(AD\\) (cuadraditos de la figura), por lo que ambos son perpendiculares a \\(AD\\) y, en consecuencia, paralelos entre sí. Como \\(AB\\) ya está cubierto, el borde paralelo que falta cubrir es el lado \\(DC\\).",
+      "opciones_incorrectas": {
+        "B": "Elige el lado inclinado BC, que es secante a AB y no paralelo a él.",
+        "C": "Confunde paralelismo con perpendicularidad y elige el lado AD, que es perpendicular a AB.",
+        "D": "Repite el mismo lado AB, sin notar que ese borde ya está cubierto."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q05.png"
+    },
+    {
+      "id": "P-math-9-p2-06",
+      "numero": 6,
+      "enunciado": "<p>En una competencia de ciclismo se registra la posición de cuatro participantes en un instante dado, como muestra la figura. La <b>meta</b> está al lado derecho de la pista. Si se ordena desde <b>quien está más cerca de la meta</b> hasta <b>quien está más lejos</b>, ¿cómo quedan ubicados los ciclistas?</p>",
+      "opciones": {
+        "A": "Daniela, Gael, Renata y Bruno.",
+        "B": "Renata, Daniela, Gael y Bruno.",
+        "C": "Daniela, Renata, Gael y Bruno.",
+        "D": "Bruno, Gael, Renata y Daniela."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
+      "que_evalua": "La capacidad para ordenar información en orden ascendente según un criterio dado.",
+      "justificacion_correcta": "La cercanía a la meta se lee por la posición horizontal: cuanto más a la derecha, más cerca está. Daniela es la que va más adelante, después Renata, luego Gael y, de última, Bruno (el más rezagado). Así, de más cerca a más lejos de la meta el orden es Daniela, Renata, Gael y Bruno.",
+      "opciones_incorrectas": {
+        "A": "Cambia a Renata por Gael en el segundo lugar: Renata va más adelante que Gael.",
+        "B": "Pone a Renata de primera, pero Daniela está más adelantada que ella.",
+        "D": "Invierte por completo el orden: lista de la más lejana a la más cercana."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q06.png"
+    },
+    {
+      "id": "P-math-9-p2-07",
+      "numero": 7,
+      "enunciado": "<p>Don Hernán quiere comprar una parcela para sembrar. La tabla muestra información de cuatro parcelas disponibles.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parcela</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Área</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor de la hectárea</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30 ha</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$87.000.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$2.900.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 ha</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$108.000.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$2.700.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25 ha</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$77.500.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$3.100.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50 ha</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$125.000.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$2.500.000</td></tr></table><p>Si se ordenan las parcelas de <b>menor a mayor precio por hectárea</b>, ¿cuál es el orden definido?</p>",
+      "opciones": {
+        "A": "Parcela 3, Parcela 1, Parcela 2 y Parcela 4.",
+        "B": "Parcela 1, Parcela 2, Parcela 3 y Parcela 4.",
+        "C": "Parcela 4, Parcela 2, Parcela 1 y Parcela 3.",
+        "D": "Parcela 3, Parcela 4, Parcela 2 y Parcela 1."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
+      "que_evalua": "La capacidad para ordenar objetos a partir de valores asociados a atributos de los objetos.",
+      "justificacion_correcta": "Al ordenar el valor de la hectárea de menor a mayor: \\(\\$2\\,500\\,000 < \\$2\\,700\\,000 < \\$2\\,900\\,000 < \\$3\\,100\\,000\\), que corresponde a las parcelas \\(4, 2, 1\\) y \\(3\\).",
+      "opciones_incorrectas": {
+        "A": "Ordena el valor de la hectárea de mayor a menor (orden contrario al pedido).",
+        "B": "Ordena las parcelas por su número, sin mirar el valor de la hectárea.",
+        "D": "Ordena las parcelas por su área de menor a mayor (25, 30, 40, 50 ha), no por el precio por hectárea."
+      }
+    },
+    {
+      "id": "P-math-9-p2-08",
+      "numero": 8,
+      "enunciado": "<p>La figura muestra la forma y algunas medidas de una <b>mesa de juego</b>; todos sus lados miden lo mismo. ¿Cuál de las siguientes opciones describe correctamente la forma de la mesa?</p>",
+      "opciones": {
+        "A": "Es un polígono irregular de 6 lados, 6 vértices y 6 ángulos internos agudos.",
+        "B": "Es un polígono regular de 6 lados, 6 vértices y 6 ángulos internos obtusos.",
+        "C": "Es un polígono irregular de 6 lados, 12 vértices y 6 ángulos internos obtusos.",
+        "D": "Es un polígono regular de 6 lados, 12 vértices y 6 ángulos internos agudos."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
+      "que_evalua": "La capacidad de describir con un lenguaje natural las características medibles de polígonos regulares.",
+      "justificacion_correcta": "La figura es un hexágono: tiene \\(6\\) lados y \\(6\\) vértices. Como todos sus lados miden lo mismo, es un polígono regular, y sus ángulos internos miden \\(120^\\circ\\) cada uno, es decir, son obtusos (mayores de \\(90^\\circ\\)).",
+      "opciones_incorrectas": {
+        "A": "Lo toma como irregular pese a que todos los lados son iguales, y confunde los ángulos obtusos con agudos.",
+        "C": "Cuenta el doble de vértices (12) y supone, sin razón, que es irregular.",
+        "D": "Cuenta el doble de vértices (12) y confunde los ángulos obtusos con agudos."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q08.png"
+    },
+    {
+      "id": "P-math-9-p2-09",
+      "numero": 9,
+      "enunciado": "<p>La figura muestra una <b>placa conmemorativa</b> con forma de cuadrado. Para enmarcarla y cubrir su superficie, un artesano calculó dos medidas: el <b>perímetro</b> y el <b>área</b>. Al calcular una de ellas, obtuvo como resultado <b>\\(36\\)</b> centímetros. ¿Cuál de las dos medidas calculó y cuánto mide el lado del cuadrado?</p>",
+      "opciones": {
+        "A": "Calculó el área y el lado mide \\(9\\) cm.",
+        "B": "Calculó el perímetro y el lado mide \\(9\\) cm.",
+        "C": "Calculó el perímetro y el lado mide \\(18\\) cm.",
+        "D": "Calculó el área y el lado mide \\(6\\) cm."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco el uso de algunas magnitudes (longitud, área, volumen, capacidad, peso y masa, duración, rapidez, temperatura) y de algunas de las unidades que se usan para medir cantidades de la magnitud respectiva en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad del estudiante de diferenciar las magnitudes Área y Perímetro dada la medida de una de ellas, y de calcular la medida de los lados de la figura a partir de dicha magnitud.",
+      "justificacion_correcta": "El resultado está en centímetros (cm), no en cm\\(^2\\), así que la medida calculada es el perímetro. En un cuadrado el perímetro es \\(4\\) veces el lado, por lo que el lado es \\(\\dfrac{36}{4} = 9\\) cm.",
+      "opciones_incorrectas": {
+        "A": "Cree que el área se mide en cm; pero el área se da en cm\\(^2\\) y, además, \\(9 \\times 9 \\neq 36\\).",
+        "C": "Toma el perímetro como \\(\\text{lado} + \\text{lado}\\) (dos lados) y obtiene \\(36 \\div 2 = 18\\) cm.",
+        "D": "Interpreta los \\(36\\) como área en cm\\(^2\\) y calcula \\(\\sqrt{36} = 6\\) cm, pero la unidad indicada es cm, no cm\\(^2\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q09.png"
+    },
+    {
+      "id": "P-math-9-p2-10",
+      "numero": 10,
+      "enunciado": "<p>En una bolsa hay <b>cinco boletos</b>, cada uno marcado con un número, como muestra la figura. Si se saca un boleto al azar, ¿cuál es la probabilidad de que el número del boleto sea <b>par</b>?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{3}{11}\\)",
+        "B": "\\(\\dfrac{2}{5}\\)",
+        "C": "\\(\\dfrac{3}{5}\\)",
+        "D": "\\(\\dfrac{3}{2}\\)"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para calcular la probabilidad de un evento mediante casos favorables y casos posibles.",
+      "justificacion_correcta": "En la bolsa hay \\(5\\) boletos y los marcados con número par son \\(8\\), \\(2\\) y \\(4\\), es decir, \\(3\\) casos favorables. La probabilidad de sacar un boleto par es \\(\\dfrac{3}{5}\\).",
+      "opciones_incorrectas": {
+        "A": "Usa como total el mayor número impreso \\((11)\\) en lugar de la cantidad de boletos \\((5)\\): \\(\\dfrac{3}{11}\\).",
+        "B": "Cuenta solo dos boletos pares, olvidando uno de los tres que cumplen la condición: \\(\\dfrac{2}{5}\\).",
+        "D": "Invierte la fracción y pone los casos favorables sobre los desfavorables \\((3\\) pares y \\(2\\) impares\\()\\): \\(\\dfrac{3}{2}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q10.png"
+    },
+    {
+      "id": "P-math-9-p2-11",
+      "numero": 11,
+      "enunciado": "<p>Con triangulitos iguales se arman <b>figuras triangulares</b> de distintos tamaños. La tabla muestra las dos primeras.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Figura</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de triangulitos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><img src=\"assets/banco-mat-9-p2/q11_p1.png\" style=\"height:54px\"><br><span style=\"font-size:13px\">Figura 1</span></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><img src=\"assets/banco-mat-9-p2/q11_p2.png\" style=\"height:84px\"><br><span style=\"font-size:13px\">Figura 2</span></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr></table><p>La cantidad de triangulitos que se necesitan para armar la figura <b>\\(n\\)</b> está dada por la expresión \\((2n - 1)^{2}\\). ¿Qué figura se arma si se usan <b>\\(121\\)</b> triangulitos?</p>",
+      "opciones": {
+        "A": "La figura 6.",
+        "B": "La figura 11.",
+        "C": "La figura 60.",
+        "D": "La figura 5."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso procesos inductivos y lenguaje algebraico para formular y poner a prueba conjeturas.",
+      "que_evalua": "La capacidad para de determinar una ecuación cuadrática y resolverla. Además, escoger la respuesta que es acorde con el contexto de la situación en contexto que modela la ecuación.",
+      "justificacion_correcta": "Se plantea \\((2n - 1)^2 = 121\\). Como \\(\\sqrt{121} = 11\\), se tiene \\(2n - 1 = 11\\), de donde \\(2n = 12\\) y \\(n = 6\\). Se arma la figura \\(6\\).",
+      "opciones_incorrectas": {
+        "B": "Toma \\(\\sqrt{121} = 11\\) como si fuera directamente el número de la figura, sin despejar \\(n\\) en \\(2n - 1 = 11\\).",
+        "C": "Resuelve \\(2n - 1 = 121\\) sin sacar la raíz cuadrada, obteniendo \\(n = 61\\), y lo aproxima a \\(60\\).",
+        "D": "Llega a \\(2n - 1 = 11\\) pero divide \\(11\\) entre \\(2\\) y redondea, quedándose con \\(5\\) en lugar de despejar \\(n = 6\\)."
+      }
+    },
+    {
+      "id": "P-math-9-p2-12",
+      "numero": 12,
+      "enunciado": "<p>La gráfica muestra la cantidad de <b>suscriptores</b> que ganó un canal durante los últimos cuatro meses. ¿Qué comportamiento han tenido los suscriptores en esos cuatro meses?</p>",
+      "opciones": {
+        "A": "Los suscriptores han aumentado 240 cada 2 meses.",
+        "B": "Los suscriptores han aumentado 120 cada 2 meses.",
+        "C": "Los suscriptores se han duplicado cada mes.",
+        "D": "Los suscriptores se han cuadruplicado cada mes."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para identificar el tipo y el monto de la variación de una variable a medida que avanza el tiempo.",
+      "justificacion_correcta": "Los datos son \\((1, 120)\\), \\((2, 240)\\), \\((3, 360)\\) y \\((4, 480)\\): aumentan \\(120\\) cada mes, es decir, \\(240\\) cada dos meses, de forma constante (variación lineal).",
+      "opciones_incorrectas": {
+        "B": "Toma el aumento de un solo mes \\((120)\\) y lo asocia con un cambio de \\(120\\) cada dos meses.",
+        "C": "Cree que de \\(120\\) a \\(240\\) hay una duplicación y lo generaliza, pero el crecimiento es constante, no multiplicativo.",
+        "D": "Compara el primer mes \\((120)\\) con el cuarto \\((480)\\) y supone que se cuadruplica cada mes."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q12.png"
+    },
+    {
+      "id": "P-math-9-p2-13",
+      "numero": 13,
+      "enunciado": "<p>Néstor armó un <b>depósito</b> de agua compuesto por un <b>paralelepípedo</b> y, encima, un <b>prisma triangular</b> que hace de tapa, con las medidas de la figura. Para hallar la máxima cantidad de agua que cabe en el depósito se pueden emplear las fórmulas del paralelepípedo y del prisma triangular dadas como referencia en la figura:</p>\\[ V_{\\text{paralelepípedo}} = r \\times s \\times t \\]\\[ V_{\\text{prisma}} = \\dfrac{1}{2}\\, m \\times n \\times p \\]<p>¿Cuál es la máxima cantidad de agua que puede contener el depósito?</p>",
+      "opciones": {
+        "A": "\\(16\\ \\text{m}^3\\)",
+        "B": "\\(22\\ \\text{m}^3\\)",
+        "C": "\\(28\\ \\text{m}^3\\)",
+        "D": "\\(20\\ \\text{m}^3\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para descomponer una figura en dos solidos (un paralelepípedo recto y un prisma) para hallar su volumen con ayuda de fórmulas y patrones estandarizados.",
+      "justificacion_correcta": "Se calcula cada volumen y se suman. Paralelepípedo: \\(V = 4 \\times 2 \\times 2 = 16\\ \\text{m}^3\\). Prisma triangular: \\(V = \\dfrac{1}{2} \\times 4 \\times 2 \\times 1{,}5 = 6\\ \\text{m}^3\\). El total es \\(16 + 6 = 22\\ \\text{m}^3\\).",
+      "opciones_incorrectas": {
+        "A": "Halla solo el volumen del paralelepípedo \\((16\\ \\text{m}^3)\\) y olvida sumar la tapa.",
+        "C": "Calcula el prisma sin el factor \\(\\dfrac{1}{2}\\): \\(4 \\times 2 \\times 1{,}5 = 12\\), y suma \\(16 + 12 = 28\\ \\text{m}^3\\).",
+        "D": "Usa el prisma sin la altura \\(p\\): \\(\\dfrac{1}{2} \\times 4 \\times 2 = 4\\), y suma \\(16 + 4 = 20\\ \\text{m}^3\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q13.png"
+    },
+    {
+      "id": "P-math-9-p2-14",
+      "numero": 14,
+      "enunciado": "<p>Lorena tiene un estanque <b>circular</b> de <b>\\(4\\) metros de radio</b> en el centro de un patio. Alrededor del estanque, hasta completar un <b>cuadrado</b> que lo encierra justo (el círculo toca los cuatro lados), embaldosó el piso. La parte sombreada de la figura muestra la zona embaldosada. ¿Cuál es el área de la zona embaldosada?</p>",
+      "opciones": {
+        "A": "\\((16 - 16\\pi)\\ \\text{m}^2\\)",
+        "B": "\\((64 - 16\\pi)\\ \\text{m}^2\\)",
+        "C": "\\((64 - 8\\pi)\\ \\text{m}^2\\)",
+        "D": "\\((32 - 8\\pi)\\ \\text{m}^2\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 10,
+      "evidencia": "10.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La capacidad para descomponer una figura y utilizar adecuadamente las fórmulas para hallar áreas de figuras geométricas sencillas.",
+      "justificacion_correcta": "El área embaldosada es el área del cuadrado menos la del círculo. Como el círculo toca los cuatro lados, el lado del cuadrado es el diámetro: \\(2 \\times 4 = 8\\) m. Entonces el área es \\(8 \\times 8 - \\pi (4)^2 = (64 - 16\\pi)\\ \\text{m}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Toma el lado del cuadrado igual al radio \\((4)\\) en lugar del diámetro \\((8)\\): \\((16 - 16\\pi)\\).",
+        "C": "Calcula el área del círculo como \\(\\pi \\times 2r = 8\\pi\\) (usa \\(2r\\) en vez de \\(r^2\\)): \\((64 - 8\\pi)\\).",
+        "D": "Usa fórmulas de perímetro en vez de área: cuadrado \\(4 \\times 8 = 32\\) y círculo \\(2\\pi r = 8\\pi\\), dando \\((32 - 8\\pi)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q14.png"
+    },
+    {
+      "id": "P-math-9-p2-15",
+      "numero": 15,
+      "enunciado": "<p>En un comité de <b>7 personas</b> se debe elegir un <b>presidente</b> y un <b>secretario</b> (cargos distintos), y ninguna persona puede ocupar los dos cargos. ¿De cuántas formas diferentes se pueden asignar esos dos cargos?</p>",
+      "opciones": {
+        "A": "\\(49\\)",
+        "B": "\\(21\\)",
+        "C": "\\(14\\)",
+        "D": "\\(42\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad de decidir el uso de una permutación para resolver una situación de conteo.",
+      "justificacion_correcta": "Como los cargos son distintos, el orden importa y se usa una permutación: \\(P(7,2) = \\dfrac{7!}{(7-2)!} = 7 \\times 6 = 42\\) formas.",
+      "opciones_incorrectas": {
+        "A": "Calcula \\(7^2 = 49\\), como si cada cargo pudiera repetir persona.",
+        "B": "Usa una combinación \\(C(7,2) = \\dfrac{7!}{2!\\,5!} = 21\\), ignorando que los cargos son distintos (el orden importa).",
+        "C": "Multiplica \\(7 \\times 2 = 14\\) sin tener en cuenta cómo se combinan las elecciones."
+      }
+    },
+    {
+      "id": "P-math-9-p2-16",
+      "numero": 16,
+      "enunciado": "<p>Tomás arrancó trotando hacia el polideportivo. Tiempo después, su entrenador salió en patineta por el mismo camino para alcanzarlo. La gráfica muestra la <b>distancia recorrida</b> por cada uno en función del <b>tiempo</b>. ¿Cuántos kilómetros llevaba recorridos Tomás en el instante en que el entrenador lo alcanzó?</p>",
+      "opciones": {
+        "A": "\\(2\\) km",
+        "B": "\\(3\\) km",
+        "C": "\\(4\\) km",
+        "D": "\\(6\\) km"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico las características de las diversas gráficas cartesianas (de puntos, continuas, formadas por segmentos, etc.) en relación con la situación que representan.",
+      "que_evalua": "La capacidad de interpretar intersecciones entre funciones lineales como situaciones verosímiles de la cotidianidad.",
+      "justificacion_correcta": "El instante en que el entrenador alcanza a Tomás corresponde al punto donde se cruzan las dos rectas. Ese cruce está a la altura de \\(4\\) km en el eje vertical, de modo que Tomás llevaba recorridos \\(4\\) km.",
+      "opciones_incorrectas": {
+        "A": "Lee la distancia de Tomás en el momento en que el entrenador arranca \\((30\\) min\\()\\), que es \\(2\\) km, no donde se cruzan.",
+        "B": "Toma un punto intermedio de la recta de Tomás antes del cruce, sin ubicar la intersección.",
+        "D": "Escoge la distancia máxima de la gráfica \\((6\\) km, el destino\\()\\), no el punto donde las rectas se cruzan."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q16.png"
+    },
+    {
+      "id": "P-math-9-p2-17",
+      "numero": 17,
+      "enunciado": "<p>La figura muestra la trayectoria del <b>balón</b> en un saque de un partido de voleibol. ¿Cuál de las siguientes afirmaciones es <b>verdadera</b> respecto a las medidas y al recorrido observado del balón?</p>",
+      "opciones": {
+        "A": "El balón alcanza su altura mínima en la mitad de su recorrido.",
+        "B": "El balón alcanza su altura máxima a los \\(2{,}5\\) metros.",
+        "C": "El balón pasa por encima de la red justo cuando alcanza su altura máxima.",
+        "D": "El balón alcanza la altura de \\(2{,}5\\) metros en dos momentos distintos de su recorrido."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para reconocer valores específicos en una trayectoria parabólica.",
+      "justificacion_correcta": "En una trayectoria parabólica el balón sube y luego baja, así que toda altura menor que la máxima se alcanza dos veces: una al subir y otra al bajar. Como \\(2{,}5\\) metros es menor que la altura máxima \\((4\\) metros\\()\\), el balón pasa por esa altura en dos momentos distintos.",
+      "opciones_incorrectas": {
+        "A": "La altura mínima ocurre en los extremos del recorrido (al salir y al caer), no en la mitad; en la mitad está la máxima.",
+        "B": "La altura máxima del balón es \\(4\\) metros, no \\(2{,}5\\) metros.",
+        "C": "La altura máxima ocurre en el punto más alto del recorrido, que no coincide necesariamente con el paso por la red."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q17.png"
+    },
+    {
+      "id": "P-math-9-p2-18",
+      "numero": 18,
+      "enunciado": "<p>En un grupo se preguntó por el <b>género musical preferido</b>. La gráfica muestra las respuestas de las <b>mujeres</b> y la tabla, las de los <b>hombres</b>.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Género preferido</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de hombres</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pop</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Salsa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vallenato</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rock</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table><p>Al juntar las respuestas de hombres y mujeres, ¿cuál es el género que más personas eligieron como preferido?</p>",
+      "opciones": {
+        "A": "Salsa.",
+        "B": "Pop.",
+        "C": "Rock.",
+        "D": "Vallenato."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para juntar los datos de una tabla y de una gráfica para determinar una frecuencia total e identificar cuál elemento tiene la mayor frecuencia.",
+      "justificacion_correcta": "De la gráfica (mujeres): Rock \\(2\\), Pop \\(3\\), Salsa \\(4\\), Vallenato \\(1\\). De la tabla (hombres): Rock \\(4\\), Pop \\(2\\), Salsa \\(3\\), Vallenato \\(1\\). Sumando por género: Rock \\(6\\), Pop \\(5\\), Salsa \\(7\\), Vallenato \\(2\\). El mayor total es Salsa, con \\(7\\) personas.",
+      "opciones_incorrectas": {
+        "B": "Mira solo una de las dos fuentes (la gráfica) y se queda con Pop, que allí parece alto.",
+        "C": "Suma mal por no notar que el orden de la tabla es distinto al de la gráfica y obtiene un total inflado para Rock.",
+        "D": "Confunde el género con menor total (Vallenato, 2) con el de mayor preferencia."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q18.png"
+    },
+    {
+      "id": "P-math-9-p2-19",
+      "numero": 19,
+      "enunciado": "<p>En un salón de juegos hay cuatro <b>máquinas</b>. Al jugar en una, es posible ganar un premio. La tabla muestra cuántas veces jugó Tatiana en cada máquina y cuántas veces ganó premio.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Máquina</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Veces que jugó</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Veces que ganó premio</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Roja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">200</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">80</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">100</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Verde</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Amarilla</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">90</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td></tr></table><p>De acuerdo con los resultados de Tatiana, ¿en cuál máquina es <b>más probable</b> ganar un premio?</p>",
+      "opciones": {
+        "A": "Roja.",
+        "B": "Azul.",
+        "C": "Verde.",
+        "D": "Amarilla."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 12,
+      "evidencia": "12.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para calcular la probabilidad de un evento a partir de los casos favorables y totales cuando estos son diferentes para cada caso.",
+      "justificacion_correcta": "La probabilidad de ganar en cada máquina es premios entre veces jugadas: Roja \\(\\dfrac{80}{200} = 0{,}40\\); Azul \\(\\dfrac{30}{100} = 0{,}30\\); Verde \\(\\dfrac{36}{60} = 0{,}60\\); Amarilla \\(\\dfrac{18}{90} = 0{,}20\\). La mayor probabilidad es la de la máquina Verde.",
+      "opciones_incorrectas": {
+        "A": "Elige la máquina con más veces jugadas (Roja, 200), pero jugar más no implica mayor probabilidad de ganar.",
+        "B": "Escoge una máquina intermedia sin calcular el cociente premios entre jugadas.",
+        "D": "Elige la de menor probabilidad (Amarilla, 0,20), confundiendo más jugadas con más opción de premio."
+      }
+    },
+    {
+      "id": "P-math-9-p2-20",
+      "numero": 20,
+      "enunciado": "<p>En la entrada de una feria, un encargado anota cada <b>15 minutos</b> el <b>total acumulado</b> de personas que han ingresado desde la apertura. La <b>gráfica de barras</b> resume esos registros.</p><p>¿Cuál tabla representa la cantidad de personas que ingresaron <b>en cada intervalo</b> de tiempo?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Intervalo de tiempo (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Personas que ingresaron</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(0,15]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(15,30]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(30,45]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(45,60]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(60,75]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(75,90]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Intervalo de tiempo (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Personas que ingresaron</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(0,15]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(15,30]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(30,45]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(45,60]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(60,75]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(75,90]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Intervalo de tiempo (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Personas que ingresaron</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(0,15]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(15,30]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(30,45]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(45,60]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(60,75]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(75,90]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Intervalo de tiempo (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Personas que ingresaron</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(0,15]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(15,30]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(30,45]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(45,60]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(60,75]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">(75,90]</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">0</td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 13,
+      "evidencia": "13.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto, produzco y comparo representaciones gráficas adecuadas para presentar diversos tipos de datos (diagramas de barras, diagramas circulares.)",
+      "que_evalua": "La capacidad para relacionar tablas y diagramas de barras que representan un mismo conjunto de datos.",
+      "justificacion_correcta": "La gráfica muestra el total acumulado de personas \\((0, 1, 1, 2, 3, 5)\\). Las personas que ingresaron en cada intervalo son las diferencias entre un valor y el anterior: \\(0\\); \\(1-0=1\\); \\(1-1=0\\); \\(2-1=1\\); \\(3-2=1\\); \\(5-3=2\\). Por eso la tabla correcta es \\(0, 1, 0, 1, 1, 2\\).",
+      "opciones_incorrectas": {
+        "A": "Copia las alturas de las barras (los totales acumulados) como si fueran los ingresos de cada intervalo, contando varias veces a las mismas personas.",
+        "C": "Vuelve a acumular las diferencias y, además, las corre, en vez de dejar los ingresos por intervalo.",
+        "D": "Calcula las diferencias pero las corre una posición, asignando a cada intervalo los ingresos del siguiente."
+      },
+      "imagen_figura": "assets/banco-mat-9-p2/q20.png"
+    }
+  ],
+  "preservar_orden_preguntas": false
+}

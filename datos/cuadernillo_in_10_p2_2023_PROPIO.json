@@ -1,0 +1,663 @@
+{
+  "id": "in-10-p2-propio-2023",
+  "area": "Inglés",
+  "area_slug": "ingles",
+  "grado": "10",
+  "periodo": "II",
+  "version": "2023",
+  "nombre": "Cuadernillo de Inglés — Grado 10° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias y al Marco Común Europeo (MCER). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 22,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "nota": "Inglés se rige por el Marco Común Europeo (MCER): Pre A1, A1, A2, B1. Cada Parte comparte un contexto (banco de palabras o texto). Estructura igual al cuadernillo fuente de 10°.",
+  "competencias": {
+    "a": "Parte 1 — Conocimiento léxico — emparejar vocabulario con su descripción",
+    "b": "Parte 2 — Conocimiento pragmático — intervención adecuada en conversaciones breves",
+    "c": "Parte 3 — Conocimiento léxico-gramatical — completar un texto con espacios",
+    "d": "Parte 4 — Comprensión de lectura — localizar e inferir información en un texto"
+  },
+  "afirmaciones": {
+    "1": "Pre A1 — Reconoce palabras y expresiones básicas, con apoyo visual",
+    "2": "A1 — Comprende frases sencillas y vocabulario cotidiano",
+    "3": "A2 — Identifica información explícita en textos cotidianos breves",
+    "4": "B1 — Comprende ideas principales, infiere intención y aplica gramática en contexto"
+  },
+  "evidencias": {
+    "1.a": "Pre A1 en Parte 1",
+    "2.a": "A1 en Parte 1",
+    "1.b": "Pre A1 en Parte 2",
+    "3.b": "A2 en Parte 2",
+    "3.c": "A2 en Parte 3",
+    "2.c": "A1 en Parte 3",
+    "2.d": "A1 en Parte 4",
+    "4.d": "B1 en Parte 4",
+    "3.d": "A2 en Parte 4"
+  },
+  "cmc": [],
+  "contextos": {
+    "ctx-parte1": {
+      "titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee las descripciones de la izquierda (1 - 5). ¿Cuál palabra de la columna de la derecha (A - G) concuerda con cada descripción? Sobran dos palabras. En las preguntas 1 - 5, marca la letra correcta A - G. Banco de palabras: A) bakery  B) bookstore  C) hospital  D) library  E) market  F) pharmacy  G) post office.",
+      "rango_preguntas": "1 a 5",
+      "imagen": "assets/banco-in-10-p2/ejemplo_parte1.png"
+    },
+    "ctx-parte2": {
+      "titulo": "Conversaciones breves",
+      "texto": "RESPONDE LAS PREGUNTAS 6 A 10. Completa las cinco conversaciones. En las preguntas 6 - 10, marca A, B o C.",
+      "rango_preguntas": "6 a 10",
+      "imagen": "assets/banco-in-10-p2/ejemplo_conversacion.png"
+    },
+    "ctx-parte3": {
+      "titulo": "The Story of Chocolate",
+      "texto": "Get a cup of hot cocoa and relax. The story of chocolate has (11)______ begun on your screen. People have (12)______ chocolate for more than three thousand years. The cacao tree, (13)______ grows in warm and rainy places, gives the seeds used to make it. Today, dark chocolate is (14)______ for your heart than milk chocolate, doctors say. In a famous competition, the best cooks fight (15)______ each other to make the perfect dessert. (16)______ many hours of work, the winner shows a beautiful chocolate cake. So, stay on this channel and enjoy the sweet show.",
+      "rango_preguntas": "11 a 16"
+    },
+    "ctx-parte4": {
+      "titulo": "Greta Thunberg",
+      "texto": "Greta Thunberg is a young activist who was born in Sweden in 2003. When she was fifteen years old, she started to skip school on Fridays to protest in front of her country's parliament. She wanted adults to take care of the planet and to listen to scientists. Her idea grew quickly, and soon thousands of students in many countries joined her Friday protests. In 2019 she travelled to the United States on a sailing boat, because planes pollute the air too much. She has spoken at important meetings around the world, and many leaders now talk about climate change because of young people like her.",
+      "rango_preguntas": "17 a 22"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "P10I01",
+      "numero": 1,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You go to this place when you are sick and need a doctor.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> bakery  <b>B)</b> bookstore  <b>C)</b> hospital  <b>D)</b> library  <b>E)</b> market  <b>F)</b> pharmacy  <b>G)</b> post office</p></div>",
+      "opciones": {
+        "A": "bakery",
+        "B": "bookstore",
+        "C": "hospital",
+        "D": "library",
+        "E": "market",
+        "F": "pharmacy",
+        "G": "post office"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario básico de lugares del pueblo a partir de una descripción del servicio, sin apoyo de imagen.",
+      "justificacion_correcta": "Opción C, dado que «hospital» (hospital) es el lugar al que se va cuando se está enfermo y se necesita un médico.",
+      "opciones_incorrectas": {
+        "F": "«pharmacy» (farmacia) vende medicinas, pero no es donde te atiende un médico cuando estás enfermo.",
+        "E": "«market» (mercado) es donde se compra comida, no donde se atiende a los enfermos.",
+        "D": "«library» (biblioteca) es donde se leen y prestan libros, no donde te ve un médico."
+      }
+    },
+    {
+      "id": "P10I02",
+      "numero": 2,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You go to this place to buy fresh bread and cakes early in the morning.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> bakery  <b>B)</b> bookstore  <b>C)</b> hospital  <b>D)</b> library  <b>E)</b> market  <b>F)</b> pharmacy  <b>G)</b> post office</p></div>",
+      "opciones": {
+        "A": "bakery",
+        "B": "bookstore",
+        "C": "hospital",
+        "D": "library",
+        "E": "market",
+        "F": "pharmacy",
+        "G": "post office"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario básico de lugares del pueblo a partir de una descripción del servicio.",
+      "justificacion_correcta": "Opción A, dado que «bakery» (panadería) es el lugar donde se compra pan fresco y pasteles en la mañana.",
+      "opciones_incorrectas": {
+        "E": "«market» (mercado) vende frutas y verduras, pero no se especializa en pan y pasteles recién hechos.",
+        "B": "«bookstore» (librería) vende libros, no pan.",
+        "G": "«post office» (oficina de correos) envía cartas y paquetes, no vende pan."
+      }
+    },
+    {
+      "id": "P10I03",
+      "numero": 3,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You go to this place to send letters and parcels to other cities.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> bakery  <b>B)</b> bookstore  <b>C)</b> hospital  <b>D)</b> library  <b>E)</b> market  <b>F)</b> pharmacy  <b>G)</b> post office</p></div>",
+      "opciones": {
+        "A": "bakery",
+        "B": "bookstore",
+        "C": "hospital",
+        "D": "library",
+        "E": "market",
+        "F": "pharmacy",
+        "G": "post office"
+      },
+      "clave": "G",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario básico de lugares del pueblo a partir de una descripción del servicio.",
+      "justificacion_correcta": "Opción G, dado que «post office» (oficina de correos) es el lugar al que se va para enviar cartas y paquetes a otras ciudades.",
+      "opciones_incorrectas": {
+        "B": "«bookstore» (librería) vende libros, no envía cartas ni paquetes.",
+        "F": "«pharmacy» (farmacia) vende medicinas, no presta servicios de correo.",
+        "C": "«hospital» (hospital) atiende enfermos, no envía correspondencia."
+      }
+    },
+    {
+      "id": "P10I04",
+      "numero": 4,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You go to this place to buy medicine when you have a cold.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> bakery  <b>B)</b> bookstore  <b>C)</b> hospital  <b>D)</b> library  <b>E)</b> market  <b>F)</b> pharmacy  <b>G)</b> post office</p></div>",
+      "opciones": {
+        "A": "bakery",
+        "B": "bookstore",
+        "C": "hospital",
+        "D": "library",
+        "E": "market",
+        "F": "pharmacy",
+        "G": "post office"
+      },
+      "clave": "F",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario básico de lugares del pueblo a partir de una descripción del servicio.",
+      "justificacion_correcta": "Opción F, dado que «pharmacy» (farmacia) es el lugar donde se compra medicina cuando se tiene un resfriado.",
+      "opciones_incorrectas": {
+        "C": "«hospital» (hospital) es donde te atiende un médico, pero no es la tienda donde compras la medicina.",
+        "E": "«market» (mercado) vende alimentos, no medicinas.",
+        "A": "«bakery» (panadería) vende pan, no medicinas."
+      }
+    },
+    {
+      "id": "P10I05",
+      "numero": 5,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You go to this quiet place to read books and to borrow them for free.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> bakery  <b>B)</b> bookstore  <b>C)</b> hospital  <b>D)</b> library  <b>E)</b> market  <b>F)</b> pharmacy  <b>G)</b> post office</p></div>",
+      "opciones": {
+        "A": "bakery",
+        "B": "bookstore",
+        "C": "hospital",
+        "D": "library",
+        "E": "market",
+        "F": "pharmacy",
+        "G": "post office"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario de lugares del pueblo a partir de una descripción que combina lugar y acciones cotidianas (A1).",
+      "justificacion_correcta": "Opción D, dado que «library» (biblioteca) es el lugar tranquilo donde se leen y se prestan libros sin pagar.",
+      "opciones_incorrectas": {
+        "B": "«bookstore» (librería) también tiene libros, pero allí se compran, no se prestan gratis.",
+        "E": "«market» (mercado) es donde se compra comida, no donde se leen y prestan libros.",
+        "A": "«bakery» (panadería) vende pan, no presta libros."
+      }
+    },
+    {
+      "id": "P10I06",
+      "numero": 6,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">How do you like my new shoes?</p>",
+      "opciones": {
+        "A": "They look great!",
+        "B": "I bought them too.",
+        "C": "Yes, I like shopping."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para reaccionar a un cumplido sencillo sobre algo propio (Pre A1).",
+      "justificacion_correcta": "Opción A, ¡se ven geniales!, dado que el interlocutor 1 pide una opinión sobre sus zapatos nuevos y esta es la única respuesta que da una valoración del calzado.",
+      "opciones_incorrectas": {
+        "B": "«I bought them too.» (yo también los compré) habla de comprar, no opina sobre cómo lucen los zapatos del interlocutor 1.",
+        "C": "«Yes, I like shopping.» (sí, me gusta ir de compras) responde como si la pregunta fuera sobre gustos al comprar, no sobre la opinión de estos zapatos."
+      }
+    },
+    {
+      "id": "P10I07",
+      "numero": 7,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">I'm sorry, I broke your favorite cup.</p>",
+      "opciones": {
+        "A": "Of course not.",
+        "B": "Here you are.",
+        "C": "Don't worry about it."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para responder con empatía ante una disculpa (A2).",
+      "justificacion_correcta": "Opción C, no te preocupes, dado que ante una disculpa por haber roto la taza, esta es la respuesta empática que tranquiliza al interlocutor 1.",
+      "opciones_incorrectas": {
+        "A": "«Of course not.» (claro que no) sirve para negar algo, no para responder a una disculpa.",
+        "B": "«Here you are.» (aquí tienes) se usa al entregar un objeto a alguien."
+      }
+    },
+    {
+      "id": "P10I08",
+      "numero": 8,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p>Lee el aviso que el interlocutor 2 encuentra a la entrada del parque y luego completa la conversación.</p><p class=\"en-stem\">Look at this sign. Can I ride my bike inside the garden?</p><p>Según el aviso, ¿cuál es la respuesta adecuada del interlocutor 2?</p>",
+      "opciones": {
+        "A": "Yes, go ahead.",
+        "B": "No, you can't.",
+        "C": "Maybe next year."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada en una conversación a partir de la lectura comprensiva de un aviso del parque (A2).",
+      "justificacion_correcta": "Opción B, no, no puedes, dado que el aviso pide caminar y dice «do not ride bicycles inside the garden»; por eso no se puede montar en bicicleta allí en este momento.",
+      "opciones_incorrectas": {
+        "A": "«Yes, go ahead.» (sí, adelante) contradice la norma del aviso, que prohíbe montar en bicicleta dentro del jardín.",
+        "C": "«Maybe next year.» (tal vez el próximo año) no responde a la pregunta sobre si está permitido ahora."
+      },
+      "imagen_figura": "assets/banco-in-10-p2/q08.png"
+    },
+    {
+      "id": "P10I09",
+      "numero": 9,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">Could you help me carry these boxes upstairs?</p>",
+      "opciones": {
+        "A": "Sure, no problem.",
+        "B": "It's mine.",
+        "C": "Never mind."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para acceder a una petición de ayuda (A2).",
+      "justificacion_correcta": "Opción A, claro, no hay problema, dado que ante la petición de ayuda para subir las cajas, esta respuesta muestra disposición a colaborar.",
+      "opciones_incorrectas": {
+        "B": "«It's mine.» (es mío) indica posesión y no responde a una petición de ayuda.",
+        "C": "«Never mind.» (no importa) se usa para restar importancia a algo, no para aceptar ayudar."
+      }
+    },
+    {
+      "id": "P10I10",
+      "numero": 10,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-stem\">My team won the science fair yesterday!</p>",
+      "opciones": {
+        "A": "What a shame.",
+        "B": "I'm afraid not.",
+        "C": "Congratulations!"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para reaccionar ante una buena noticia (A2).",
+      "justificacion_correcta": "Opción C, ¡felicitaciones!, dado que el interlocutor 1 comparte una buena noticia y esta respuesta celebra apropiadamente su logro.",
+      "opciones_incorrectas": {
+        "A": "«What a shame.» (qué lástima) es una respuesta ante una mala noticia, no ante un triunfo.",
+        "B": "«I'm afraid not.» (me temo que no) expresa una negación y no felicita al interlocutor."
+      }
+    },
+    {
+      "id": "P10I11",
+      "numero": 11,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The Story of Chocolate",
+      "enunciado": "<p>Read the text and answer questions 11 to 16.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0 0 6px'><b>THE STORY OF CHOCOLATE</b></p><p style='margin:0'>Get a cup of hot cocoa and relax. The story of chocolate has (11)______ begun on your screen. People have (12)______ chocolate for more than three thousand years. The cacao tree, (13)______ grows in warm and rainy places, gives the seeds used to make it. Today, dark chocolate is (14)______ for your heart than milk chocolate, doctors say. In a famous competition, the best cooks fight (15)______ each other to make the perfect dessert. (16)______ many hours of work, the winner shows a beautiful chocolate cake. So, stay on this channel and enjoy the sweet show.</p></div><p>Choose the correct word for blank (11) in the text.</p>",
+      "opciones": {
+        "A": "still",
+        "B": "just",
+        "C": "yet"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar el adverbio del presente perfecto que indica una acción muy reciente (A2).",
+      "justificacion_correcta": "Opción B, just, puesto que en el presente perfecto se usa «just» para indicar que una acción ocurrió en un momento muy cercano al presente: la historia acaba de empezar en pantalla. El estudiante debe conocer el uso de los adverbios con el presente perfecto.",
+      "opciones_incorrectas": {
+        "A": "«still» (todavía) se usa para acciones que continúan; no indica que algo acaba de pasar.",
+        "C": "«yet» (todavía/ya) se usa en preguntas y negaciones, no en una afirmación como esta."
+      }
+    },
+    {
+      "id": "P10I12",
+      "numero": 12,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The Story of Chocolate",
+      "enunciado": "<p>Choose the correct word for blank (12) in the text.</p>",
+      "opciones": {
+        "A": "eat",
+        "B": "eating",
+        "C": "eaten"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar el participio pasado que completa la estructura del presente perfecto (A2).",
+      "justificacion_correcta": "Opción C, eaten, puesto que la oración está en presente perfecto («have ______ chocolate for more than three thousand years») y requiere el participio pasado del verbo eat para completar la estructura «have eaten». El estudiante debe conocer la estructura del presente perfecto.",
+      "opciones_incorrectas": {
+        "A": "«eat» es la forma base del verbo y no funciona como participio del presente perfecto.",
+        "B": "«eating» es el gerundio y no completa la estructura «have + participio»."
+      }
+    },
+    {
+      "id": "P10I13",
+      "numero": 13,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The Story of Chocolate",
+      "enunciado": "<p>Choose the correct word for blank (13) in the text.</p>",
+      "opciones": {
+        "A": "which",
+        "B": "who",
+        "C": "where"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar el pronombre relativo correcto para referirse a una cosa o concepto (A1).",
+      "justificacion_correcta": "Opción A, which, puesto que «which» es el pronombre relativo que se usa para referirse a objetos o conceptos; aquí remite al árbol de cacao (the cacao tree). El estudiante debe conocer el uso de los pronombres relativos.",
+      "opciones_incorrectas": {
+        "B": "«who» se usa para referirse a personas, no a un árbol.",
+        "C": "«where» se usa para referirse a lugares, no a un objeto o concepto."
+      }
+    },
+    {
+      "id": "P10I14",
+      "numero": 14,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The Story of Chocolate",
+      "enunciado": "<p>Choose the correct word for blank (14) in the text.</p>",
+      "opciones": {
+        "A": "good",
+        "B": "better",
+        "C": "best"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar el adjetivo comparativo correcto en una comparación con «than» (A1).",
+      "justificacion_correcta": "Opción B, better, puesto que se compara el chocolate oscuro con el de leche («better for your heart than»), lo que exige la forma comparativa irregular de good. El estudiante debe dominar los adjetivos comparativos.",
+      "opciones_incorrectas": {
+        "A": "«good» es el grado positivo del adjetivo; no expresa comparación con «than».",
+        "C": "«best» es el grado superlativo; no se usa con «than» para comparar dos cosas."
+      }
+    },
+    {
+      "id": "P10I15",
+      "numero": 15,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The Story of Chocolate",
+      "enunciado": "<p>Choose the correct word for blank (15) in the text.</p>",
+      "opciones": {
+        "A": "against",
+        "B": "across",
+        "C": "among"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar la preposición que indica enfrentamiento o competencia entre partes (A2).",
+      "justificacion_correcta": "Opción A, against, puesto que la preposición «against» indica enfrentamiento o competencia: los mejores cocineros compiten unos contra otros. El estudiante debe conocer el uso de las preposiciones.",
+      "opciones_incorrectas": {
+        "B": "«across» indica que algo está al otro lado de un punto de referencia, no enfrentamiento.",
+        "C": "«among» indica estar en medio de varios elementos, no competir contra alguien."
+      }
+    },
+    {
+      "id": "P10I16",
+      "numero": 16,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The Story of Chocolate",
+      "enunciado": "<p>Choose the correct word for blank (16) in the text.</p>",
+      "opciones": {
+        "A": "Along",
+        "B": "Around",
+        "C": "After"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar el adverbio que indica posterioridad respecto de un punto temporal (A1).",
+      "justificacion_correcta": "Opción C, After, puesto que este adverbio indica que una situación ocurre después de un punto temporal de referencia: después de muchas horas de trabajo, el ganador muestra el pastel. El estudiante debe conocer el uso de los adverbios de tiempo.",
+      "opciones_incorrectas": {
+        "A": "«Along» indica que algo ocurre a lo largo de un punto de referencia, no después de él.",
+        "B": "«Around» indica que algo ocurre alrededor de un punto de referencia, no posterioridad."
+      }
+    },
+    {
+      "id": "P10I17",
+      "numero": 17,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Greta Thunberg",
+      "enunciado": "<p>Read the text and answer questions 17 to 22.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0 0 6px'><b>GRETA THUNBERG</b></p><p style='margin:0'>Greta Thunberg is a young activist who was born in Sweden in 2003. When she was fifteen years old, she started to skip school on Fridays to protest in front of her country's parliament. She wanted adults to take care of the planet and to listen to scientists. Her idea grew quickly, and soon thousands of students in many countries joined her Friday protests. In 2019 she travelled to the United States on a sailing boat, because planes pollute the air too much. She has spoken at important meetings around the world, and many leaders now talk about climate change because of young people like her.</p></div><p class=\"en-stem\">Greta Thunberg was born in</p>",
+      "opciones": {
+        "A": "the United States.",
+        "B": "Sweden.",
+        "C": "Poland."
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "2",
+      "evidencia": "2.d",
+      "nivel_mcer": "A1",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Localizar información explícita en un texto breve (el país de nacimiento) (A1).",
+      "justificacion_correcta": "Opción B, Sweden, puesto que el texto afirma de forma explícita que Greta Thunberg nació en Suecia en 2003.",
+      "opciones_incorrectas": {
+        "A": "«the United States» es el país al que viajó en 2019, no donde nació.",
+        "C": "«Poland» (Polonia) no se menciona en el texto."
+      }
+    },
+    {
+      "id": "P10I18",
+      "numero": 18,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Greta Thunberg",
+      "enunciado": "<p class=\"en-stem\">From the text, we can understand that Greta Thunberg's main goal is to</p>",
+      "opciones": {
+        "A": "become a famous singer in Europe.",
+        "B": "win a science prize at her school.",
+        "C": "make adults protect the planet."
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Inferir la intención o idea principal del texto a partir de la información dada (B1).",
+      "justificacion_correcta": "Opción C, puesto que el texto explica que ella protestaba para que los adultos cuidaran el planeta y escucharan a los científicos; de ahí se infiere que su objetivo principal es lograr que los adultos protejan el planeta.",
+      "opciones_incorrectas": {
+        "A": "El texto no menciona que ella quiera ser cantante; habla de activismo ambiental.",
+        "B": "El texto no menciona ningún premio de ciencias en su colegio."
+      }
+    },
+    {
+      "id": "P10I19",
+      "numero": 19,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Greta Thunberg",
+      "enunciado": "<p class=\"en-stem\">On Fridays, Greta started to</p>",
+      "opciones": {
+        "A": "protest in front of the parliament.",
+        "B": "study harder at school.",
+        "C": "travel by plane to other countries."
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Localizar e interpretar información explícita sobre una acción del texto (A2).",
+      "justificacion_correcta": "Opción A, protestar frente al parlamento, puesto que el texto dice que los viernes ella faltaba a clase para protestar frente al parlamento de su país.",
+      "opciones_incorrectas": {
+        "B": "El texto dice que dejaba de ir a clase los viernes, no que estudiara más.",
+        "C": "El texto dice que viajó a Estados Unidos en barco de vela, no en avión los viernes."
+      }
+    },
+    {
+      "id": "P10I20",
+      "numero": 20,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Greta Thunberg",
+      "enunciado": "<p class=\"en-stem\">Greta travelled to the United States by</p>",
+      "opciones": {
+        "A": "plane.",
+        "B": "boat.",
+        "C": "train."
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Localizar un detalle explícito y su causa dentro del texto (A2).",
+      "justificacion_correcta": "Opción B, en barco, puesto que el texto afirma que en 2019 viajó a Estados Unidos en un barco de vela porque los aviones contaminan demasiado el aire.",
+      "opciones_incorrectas": {
+        "A": "El texto dice que ella evitó el avión justamente porque contamina el aire.",
+        "C": "El texto no menciona que viajara en tren."
+      }
+    },
+    {
+      "id": "P10I21",
+      "numero": 21,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Greta Thunberg",
+      "enunciado": "<p class=\"en-stem\">Who joined Greta's Friday protests?</p>",
+      "opciones": {
+        "A": "Only her family.",
+        "B": "Some famous singers.",
+        "C": "Thousands of students."
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Localizar información explícita sobre quiénes participan en una acción del texto (A2).",
+      "justificacion_correcta": "Opción C, miles de estudiantes, puesto que el texto dice que pronto miles de estudiantes de muchos países se unieron a sus protestas de los viernes.",
+      "opciones_incorrectas": {
+        "A": "El texto no afirma que solo su familia se uniera; habla de estudiantes de muchos países.",
+        "B": "El texto no menciona a cantantes famosos entre quienes se unieron."
+      }
+    },
+    {
+      "id": "P10I22",
+      "numero": 22,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Greta Thunberg",
+      "enunciado": "<p class=\"en-stem\">According to the text, because of Greta and other young people, many leaders now</p>",
+      "opciones": {
+        "A": "talk about climate change.",
+        "B": "build new schools.",
+        "C": "stop reading the news."
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Localizar el resultado o consecuencia explícita de la acción descrita en el texto (A2).",
+      "justificacion_correcta": "Opción A, hablan sobre el cambio climático, puesto que el texto dice que muchos líderes ahora hablan del cambio climático gracias a jóvenes como ella.",
+      "opciones_incorrectas": {
+        "B": "El texto no menciona la construcción de colegios nuevos.",
+        "C": "El texto no afirma que los líderes dejen de leer las noticias."
+      }
+    }
+  ],
+  "preservar_orden_preguntas": true
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Panel del Directivo — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- ExcelJS, jsPDF y html2canvas se cargan BAJO DEMANDA al exportar (js/cargar-libs.js); no bloquean el arranque. -->
+    <!-- Driver.js para onboarding -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <!-- Confetti (solo al celebrar) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">
+  <link rel="stylesheet" href="css/paneles-claros.css">  <link rel="stylesheet" href="css/tailwind.css"></head>
+<body class="rol-directivo">
+  <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
+  <header class="idea-header">
+    <a href="directivo.html" class="logo-home" title="Inicio (volver al panel)">
+      <img src="assets/logo-idea.png" class="logo">
+      <div class="nombre-app">IDEA — Panel Directivo / Funcionario</div>
+    </a>
+    <div class="user-info">
+      <span class="rol-chip" id="chip-rol">Directivo</span>
+      <span id="nombre-usuario"></span>
+      <button class="salir-btn" id="btn-salir">Salir</button>
+    </div>
+  </header>
+
+  <main class="doc-wrap" id="contenido">
+
+    <section class="panel-hero-doc animate-fade-in">
+      <div class="panel-hero-doc__info">
+        <span class="panel-hero-doc__chip">PANEL DIRECTIVO / FUNCIONARIO</span>
+        <h1 class="panel-hero-doc__greeting">Panel institucional</h1>
+        <p class="panel-hero-doc__sub">Consolida resultados, compara grupos y prepara los Planes de Mejora de tu institución.</p>
+      </div>
+    </section>
+
+    <nav class="panel-tabs animate-fade-in" style="animation-delay:60ms">
+      <button class="panel-tab activo" data-vista="consolidado"><span class="panel-tab__ic">📊</span>Consolidado</button>
+      <button class="panel-tab" data-vista="ranking"><span class="panel-tab__ic">🏆</span>Ranking de grupos</button>
+      <button class="panel-tab" data-vista="comparativo"><span class="panel-tab__ic">📈</span>Comparativo</button>
+      <button class="panel-tab" data-vista="por-grupo"><span class="panel-tab__ic">👥</span>Análisis por grupo</button>
+    </nav>
+
+    <div class="doc-acciones-grid animate-fade-in" style="animation-delay:120ms;margin-bottom:20px">
+      <button id="btn-ir-plan-mejora" class="doc-accion doc-accion--destacada"><span class="doc-accion__ic">📋</span><span>Planes de Mejora · Fase III</span></button>
+      <button id="btn-exportar-consolidado-pdf" class="doc-accion"><span class="doc-accion__ic">📕</span><span>Reporte institucional PDF</span></button>
+      <a href="docente.html" class="doc-accion"><span class="doc-accion__ic">🔎</span><span>Vista por grupo</span></a>
+    </div>
+
+      <div id="vista-consolidado" class="vista animate-fade-in">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Consolidado institucional</h1>
+        <p class="text-slate-600 text-sm mb-6" id="meta-institucion"></p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6" id="kpis-globales"></div>
+
+        <div class="idea-card mb-6">
+          <h2 class="card-title">Resumen de aplicaciones por grupo</h2>
+          <div class="overflow-x-auto">
+            <table class="tabla-aciertos w-full" id="tabla-grupos"></table>
+          </div>
+        </div>
+
+        <div class="idea-card mb-6">
+          <h2 class="card-title">Distribución de niveles institucionales</h2>
+          <div style="height:280px"><canvas id="chart-distribucion"></canvas></div>
+        </div>
+      </div>
+
+      <div id="vista-ranking" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-6" style="font-family:'Plus Jakarta Sans'">Ranking de estudiantes</h1>
+        <div class="idea-card">
+          <table class="tabla-aciertos w-full" id="tabla-ranking"></table>
+        </div>
+        <div class="idea-card mt-6" id="card-certificados">
+          <h2 class="card-title">🏅 Certificado de reconocimiento</h2>
+          <p class="text-sm text-slate-500 mb-4">Reconocimiento para el estudiante que ocupa el <strong>primer puesto</strong> (mayor promedio general, con todas las áreas evaluadas en 60 o más). El certificado lleva el escudo de la institución y lo firma el directivo docente.</p>
+          <div id="lista-certificados" class="flex flex-col gap-2"></div>
+        </div>
+      </div>
+
+      <div id="vista-comparativo" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-6" style="font-family:'Plus Jakarta Sans'">Comparativo entre grupos</h1>
+        <div class="idea-card">
+          <div style="height:380px"><canvas id="chart-comparativo-grupos"></canvas></div>
+        </div>
+      </div>
+
+      <div id="vista-por-grupo" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-3" style="font-family:'Plus Jakarta Sans'">Análisis por grupo</h1>
+        <p class="text-slate-600 text-sm mb-4">Selecciona un grupo para abrir su análisis completo en la vista del docente.</p>
+        <div id="lista-grupos-acceso" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+    </main>
+
+  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { requerirSesion, cerrarSesion } from './js/auth.js';
+    import { PALETA } from './js/graficos.js';
+    import { promedioGrupo, calcularNivel, COLOR_NIVEL } from './js/calculo.js';
+    import { exportarConsolidadoPDF } from './js/export-pdf.js';
+    import { escapeHtml, toast } from './js/utils.js';
+    import { iniciarTour, debeAutoIniciar, botonAyudaFlotante } from './js/tour.js';
+    import { evaluarGrupoExcelencia, generarCertificadoExcelenciaPDF } from './js/certificado.js';
+    import { construirBarraFiltros, normPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
+    import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
+
+    const ses = await requerirSesion(['directivo', 'funcionario', 'manager']);
+    if (!ses) throw new Error('redir');
+    document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
+    document.getElementById('chip-rol').textContent = ses.rol === 'funcionario' ? 'Funcionario' : 'Directivo';
+    document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href='index.html'; });
+
+    await db.inicializar();
+    // Pedagogía por grado×asignatura para análisis/consolidados diferenciados (aditivo; fallback por área).
+    await cargarPedagogiaGrado().catch(() => {});
+    const instituciones = await db.lista('idea_instituciones');
+    const cuadernillos = await db.lista('idea_cuadernillos');
+    // Lectura DIRIGIDA: solo las aplicaciones de la institución de este usuario (no toda
+    // la colección) → escala con muchos usuarios. Sin institución asignada (vista global),
+    // trae todas. No confiamos en la bandera `oficial`; abajo se elige una por integridad.
+    // Las "en curso" se excluyen (aún no tienen nivel/puntaje).
+    const todasApps = (await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id)).filter(a => a.estado === 'enviada');
+
+    // Regla de integridad: de varias entregas del MISMO estudiante+cuadernillo, la válida
+    // es la más reciente con permiso de reintento AUTORIZADO; si ninguna usó permiso, la
+    // PRIMERA presentada (los reintentos sin permiso no cuentan).
+    const _ts = (a) => new Date(a.fecha_envio || a.fecha_fin || a.fecha_creacion || 0).getTime();
+    const elegirOficial = (lista) => {
+      const conPermiso = lista.filter(a => a.permiso_usado);
+      if (conPermiso.length) return conPermiso.sort((x, y) => _ts(y) - _ts(x))[0];
+      return lista.slice().sort((x, y) => _ts(x) - _ts(y))[0];
+    };
+    const dedupePorEstudiante = (lista) => {
+      const m = new Map();
+      for (const a of lista) {
+        const ek = `${a.estudiante_id || a.estudiante_nombre}-${a.cuadernillo_id}`;
+        if (!m.has(ek)) m.set(ek, []);
+        m.get(ek).push(a);
+      }
+      return [...m.values()].map(elegirOficial);
+    };
+
+    // Filtrar por permisos
+    let apps = todasApps;
+    // Directivo Y funcionario con institución asignada ven SOLO su institución.
+    // Si no tienen institución asignada, ven todas (vista global administrativa).
+    const _scoped = (ses.rol === 'directivo' || ses.rol === 'funcionario') && !!ses.institucion_id;
+    if (_scoped) {
+      apps = todasApps.filter(a => a.institucion_id === ses.institucion_id);
+    }
+    // UNA sola entrega válida por estudiante+cuadernillo (no duplica ni infla promedios).
+    apps = dedupePorEstudiante(apps);
+
+    const inst = instituciones.find(i => i.id === ses.institucion_id);
+    document.getElementById('meta-institucion').textContent = _scoped
+      ? (inst?.nombre || '')
+      : 'Vista global — todas las instituciones';
+
+    // Cambio de vistas
+    document.querySelectorAll('[data-vista]').forEach(b => {
+      b.addEventListener('click', () => {
+        document.querySelectorAll('[data-vista]').forEach(x => x.classList.remove('activo'));
+        b.classList.add('activo');
+        document.querySelectorAll('.vista').forEach(v => v.classList.add('hidden'));
+        const vv = document.getElementById(`vista-${b.dataset.vista}`);
+        vv.classList.remove('hidden');
+        // Redibujar los gráficos creados mientras la vista estaba oculta (canvas en tamaño 0)
+        vv.querySelectorAll('canvas').forEach(c => { const ch = (window.Chart && Chart.getChart) ? Chart.getChart(c) : null; if (ch) ch.resize(); });
+      });
+    });
+
+    // === ADITIVO: subconjunto activo según la barra de filtros (default = TODAS) ===
+    // `apps` (arriba) es la fuente completa deduplicada. `appsActivas` es lo que ven los
+    // 4 tabs. renderTodo() re-pinta los 4 tabs a partir de appsActivas; al sombrear `apps`
+    // dentro de la función con appsActivas, NO hay que tocar la lógica de cada tab.
+    let appsActivas = apps;
+    // Periodo de una app = el del cuadernillo que respondió (cruce por cuadernillo_id).
+    const _periodoDeApp = (a) => {
+      const c = cuadernillos.find(c => c.id === a.cuadernillo_id);
+      return c ? c.periodo : (a.periodo ?? '');
+    };
+    // Destruye un chart colgado sobre un canvas antes de recrearlo (evita duplicados al re-render).
+    const _destruirChart = (id) => {
+      const cv = document.getElementById(id);
+      const ch = (cv && window.Chart && Chart.getChart) ? Chart.getChart(cv) : null;
+      if (ch) ch.destroy();
+    };
+
+    function renderTodo() {
+    // Dentro de esta función, `apps` = subconjunto activo (sombrea el `apps` exterior).
+    const apps = appsActivas;
+    _destruirChart('chart-distribucion');
+    _destruirChart('chart-comparativo-grupos');
+
+    // Render KPIs globales
+    const promGlobal = promedioGrupo(apps);
+    const niveles = { BAJO: 0, 'BÁSICO': 0, ALTO: 0, SUPERIOR: 0 };
+    apps.forEach(a => { niveles[a.nivel] = (niveles[a.nivel] || 0) + 1; });
+
+    document.getElementById('kpis-globales').innerHTML = `
+      <div class="idea-card text-center">
+        <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Aplicaciones totales</div>
+        <div class="text-3xl font-bold" style="font-family:'Plus Jakarta Sans'">${apps.length}</div>
+      </div>
+      <div class="idea-card text-center">
+        <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Promedio global</div>
+        <div class="text-3xl font-bold" style="font-family:'Plus Jakarta Sans';color:${COLOR_NIVEL[calcularNivel(promGlobal)]}">${promGlobal}</div>
+      </div>
+      <div class="idea-card text-center">
+        <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">En nivel BAJO</div>
+        <div class="text-3xl font-bold text-red-600" style="font-family:'Plus Jakarta Sans'">${niveles.BAJO}</div>
+      </div>
+      <div class="idea-card text-center">
+        <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Sobre nivel BÁSICO</div>
+        <div class="text-3xl font-bold text-emerald-600" style="font-family:'Plus Jakarta Sans'">${(niveles.ALTO || 0) + (niveles.SUPERIOR || 0) + (niveles['BÁSICO'] || 0)}</div>
+      </div>
+    `;
+
+    // Normaliza el grupo para que diferencias de mayúsculas/espacios NO creen grupos
+    // fantasma ("a" vs "A" eran dos grupos distintos). "a" → "A", "1° " → "1°".
+    const normGrupo = (g) => String(g ?? '').trim().toUpperCase();
+
+    // Agrupar por grupo+cuadernillo (grupo normalizado → un solo grupo por letra)
+    const gruposM = new Map();
+    for (const a of apps) {
+      const g = normGrupo(a.grupo);
+      const k = `${a.institucion_id}-${a.grado}-${g}-${a.cuadernillo_id}`;
+      if (!gruposM.has(k)) gruposM.set(k, { ...a, grupo: g, apps: [] });
+      gruposM.get(k).apps.push(a);
+    }
+
+    // Tabla resumen grupos
+    let html = '<thead><tr><th>Institución</th><th>Grado-Grupo</th><th>Área</th><th>N°</th><th>Promedio</th><th>Nivel grupo</th></tr></thead><tbody>';
+    for (const [k, g] of gruposM) {
+      const prom = promedioGrupo(g.apps);
+      const niv = calcularNivel(prom);
+      const i = instituciones.find(x => x.id === g.institucion_id);
+      html += `<tr>
+        <td class="nombre">${escapeHtml(i?.abreviatura || g.institucion_id)}</td>
+        <td><strong>${g.grado}° ${g.grupo}</strong></td>
+        <td>${g.area}</td>
+        <td>${g.apps.length}</td>
+        <td><strong>${prom}</strong></td>
+        <td><span class="chip-nivel ${niv.toLowerCase().replace('á','a')}">${niv}</span></td>
+      </tr>`;
+    }
+    html += '</tbody>';
+    document.getElementById('tabla-grupos').innerHTML = gruposM.size
+      ? html
+      : '<tbody><tr><td class="text-slate-400 italic p-4">Aún no hay aplicaciones registradas para esta institución.</td></tr></tbody>';
+
+    // Distribución de niveles INSTITUCIONALES por grupo-materia (consistente con las
+    // tarjetas de arriba): cuenta cuántos resultados de grupo caen en cada nivel y
+    // OCULTA los niveles sin datos (no dibuja un sector vacío para ALTO/SUPERIOR).
+    const nivelesGrupo = { BAJO: 0, 'BÁSICO': 0, ALTO: 0, SUPERIOR: 0 };
+    for (const g of gruposM.values()) {
+      const niv = calcularNivel(promedioGrupo(g.apps));
+      nivelesGrupo[niv] = (nivelesGrupo[niv] || 0) + 1;
+    }
+    const nivelesPresentes = Object.keys(nivelesGrupo).filter(k => nivelesGrupo[k] > 0);
+    new Chart(document.getElementById('chart-distribucion'), {
+      type: 'doughnut',
+      data: {
+        labels: nivelesPresentes,
+        datasets: [{ data: nivelesPresentes.map(k => nivelesGrupo[k]), backgroundColor: nivelesPresentes.map(k => COLOR_NIVEL[k]), borderWidth: 0 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, cutout: '55%', plugins: { legend: { position: 'right' } } }
+    });
+
+    // Ranking de estudiantes por PROMEDIO GENERAL de todas sus presentaciones
+    // (un estudiante = una fila, no una fila por materia).
+    const porEstudiante = new Map();
+    for (const a of apps) {
+      const id = a.estudiante_id || a.estudiante_nombre;
+      if (!id) continue;
+      if (!porEstudiante.has(id)) porEstudiante.set(id, { nombre: a.estudiante_nombre, grado: a.grado, grupo: normGrupo(a.grupo), apps: [] });
+      porEstudiante.get(id).apps.push(a);
+    }
+    // En vez de la columna "Pruebas" (un simple conteo), mostramos UNA columna por ÁREA EVALUADA
+    // con el puntaje de cada estudiante en esa área, coloreado por su nivel. Así el directivo ve
+    // de un vistazo el resultado de cada estudiante en cada prueba.
+    const ORDEN_AREA_RK = ['Matemáticas', 'Lectura Crítica', 'Sociales y Ciudadanas', 'Ciencias Naturales', 'Inglés'];
+    const AREA_CORTA = { 'Matemáticas': 'Mat.', 'Lectura Crítica': 'Lect.', 'Sociales y Ciudadanas': 'Soc.', 'Ciencias Naturales': 'C. Nat.', 'Inglés': 'Inglés' };
+    const areasPresentes = ORDEN_AREA_RK.filter(ar => apps.some(a => a.area === ar));
+    apps.forEach(a => { if (a.area && !areasPresentes.includes(a.area)) areasPresentes.push(a.area); });
+
+    const ranking = [...porEstudiante.values()]
+      .map(e => {
+        const porArea = {};
+        for (const a of e.apps) { if (!a.area) continue; (porArea[a.area] = porArea[a.area] || []).push(a.puntaje || 0); }
+        const areaProm = {};
+        for (const ar of Object.keys(porArea)) areaProm[ar] = Math.round(porArea[ar].reduce((s, v) => s + v, 0) / porArea[ar].length);
+        return { nombre: e.nombre, grado: e.grado, grupo: e.grupo, areaProm, promedio: promedioGrupo(e.apps) };
+      })
+      .sort((a, b) => b.promedio - a.promedio);
+
+    let rk = '<thead><tr><th>Puesto</th><th>Estudiante</th><th>Grado</th>'
+      + areasPresentes.map(ar => `<th>${escapeHtml(AREA_CORTA[ar] || ar)}</th>`).join('')
+      + '<th>Promedio general</th><th>Nivel</th></tr></thead><tbody>';
+    ranking.forEach((e, i) => {
+      const niv = calcularNivel(e.promedio);
+      const nivelClase = (niv || '').toLowerCase().replace('á', 'a');
+      const celdasArea = areasPresentes.map(ar => {
+        if (e.areaProm[ar] == null) return '<td style="color:#CBD5E1">—</td>';
+        const nA = calcularNivel(e.areaProm[ar]);
+        return `<td style="font-weight:700;color:${COLOR_NIVEL[nA]}">${e.areaProm[ar]}</td>`;
+      }).join('');
+      rk += `<tr><td><strong>${i+1}</strong></td><td class="nombre">${escapeHtml(e.nombre || '—')}</td><td>${e.grado || '—'}° ${e.grupo || ''}</td>${celdasArea}<td><strong>${e.promedio}</strong></td><td><span class="chip-nivel ${nivelClase}">${niv}</span></td></tr>`;
+    });
+    rk += '</tbody>';
+    document.getElementById('tabla-ranking').innerHTML = ranking.length
+      ? rk
+      : '<tbody><tr><td class="text-slate-400 italic p-4">Aún no hay aplicaciones registradas. Cuando los estudiantes presenten la prueba, aparecerá aquí el ranking.</td></tr></tbody>';
+
+    // ===== Certificados de reconocimiento (después del ranking) =====
+    (function renderCertificados() {
+      const cont = document.getElementById('lista-certificados');
+      if (!cont) return;
+      // Agrupar las aplicaciones por institución+grado+grupo en UNA pasada (O(apps)), y pasar a
+      // evaluarGrupoExcelencia solo el grupo correspondiente (evita re-escanear todo por combo).
+      const combos = new Map();
+      for (const a of apps) {
+        const k = `${a.institucion_id}|${a.grado}|${normGrupo(a.grupo)}`;
+        if (!combos.has(k)) combos.set(k, { institucion_id: a.institucion_id, grado: a.grado, grupo: normGrupo(a.grupo), apps: [] });
+        combos.get(k).apps.push(a);
+      }
+      const reconocidos = [];
+      for (const c of combos.values()) {
+        let ev; try { ev = evaluarGrupoExcelencia({ institucionId: c.institucion_id, grado: c.grado, grupo: c.grupo, cuadernillos, apps: c.apps }); } catch (_) { continue; }
+        const instC = instituciones.find(i => i.id === c.institucion_id);
+        const periodo = (cuadernillos.find(cu => String(cu.grado) === String(c.grado))?.periodo) || 'I';
+        ev.excelentes.forEach(e => reconocidos.push({ ...e, grado: c.grado, grupo: c.grupo, institucion: instC, periodo }));
+      }
+      reconocidos.sort((a, b) => b.promedio - a.promedio);
+      // El certificado va SOLO para el estudiante que ocupa el PRIMER PUESTO (mayor promedio general).
+      const primerPuesto = reconocidos.slice(0, 1);
+      if (!primerPuesto.length) {
+        cont.innerHTML = '<p class="text-slate-400 italic text-sm">El certificado se otorga únicamente al estudiante que ocupa el PRIMER PUESTO (el de mayor promedio general, con todas las áreas evaluadas en 60 o más). Aparecerá aquí cuando ese estudiante complete sus pruebas.</p>';
+        return;
+      }
+      cont.innerHTML = primerPuesto.map((e, i) => `
+        <div class="flex items-center justify-between gap-3 py-2.5 px-3 rounded-xl" style="background:#fff;border:1px solid #ECEAF3">
+          <div class="min-w-0">
+            <div class="font-semibold text-slate-800 truncate">${escapeHtml(e.nombre || '—')}</div>
+            <div class="text-xs text-slate-500">${e.grado}° ${escapeHtml(e.grupo)} · Promedio ${e.promedio} · Nivel ${escapeHtml(e.nivel)}</div>
+          </div>
+          <button class="btn-cert text-white text-sm font-semibold rounded-lg px-3 py-2 flex-shrink-0" data-i="${i}" style="background:linear-gradient(118deg,#C7163C,#B45309)">🏅 Imprimir certificado</button>
+        </div>`).join('');
+      cont.querySelectorAll('.btn-cert').forEach(b => b.addEventListener('click', async () => {
+        const e = reconocidos[+b.dataset.i];
+        const orig = b.textContent; b.disabled = true; b.textContent = 'Generando…';
+        try {
+          await generarCertificadoExcelenciaPDF({
+            estudiante: { nombre: e.nombre, tipo_documento: e.tipo_documento, documento: e.documento, grado: e.grado, grupo: e.grupo },
+            institucion: e.institucion || inst,
+            promedio: e.promedio, nivel: e.nivel, periodo: e.periodo,
+            firmante: { nombre: ses.nombre_completo, cargo: 'Directivo docente' }
+          });
+        } catch (err) { console.error('[cert]', err); toast('No se pudo generar el certificado.', 'error'); }
+        b.disabled = false; b.textContent = orig;
+      }));
+    })();
+
+    // Comparativo entre grupos (barras) — agrupadas por MATERIA: primero todas las barras
+    // de Matemáticas (grupo A, luego B…), después todas las de Lectura Crítica, etc. Así,
+    // cuando hay dos o más grupos, cada materia queda junta para compararlos lado a lado.
+    const ORDEN_AREA = ['Matemáticas', 'Lectura Crítica', 'Sociales y Ciudadanas', 'Ciencias Naturales', 'Inglés'];
+    const idxArea = (a) => { const i = ORDEN_AREA.indexOf(a); return i === -1 ? 99 : i; };
+    const gruposArr = [...gruposM.values()].sort((x, y) =>
+      idxArea(x.area) - idxArea(y.area)
+      || String(x.grado).localeCompare(String(y.grado), undefined, { numeric: true })
+      || String(x.grupo || '').localeCompare(String(y.grupo || '')));
+    const etiquetas = gruposArr.map(g => `${g.grado}°${g.grupo} · ${g.area || ''}`);
+    const promsG = gruposArr.map(g => promedioGrupo(g.apps));
+    // Un color PASTEL por materia
+    const PASTEL_AREA = {
+      'Matemáticas': '#AECBEB',
+      'Lectura Crítica': '#F6B8B8',
+      'Sociales y Ciudadanas': '#E9C9A8',
+      'Ciencias Naturales': '#B9E3C6',
+      'Inglés': '#D2C2EC'
+    };
+    const coloresBarras = gruposArr.map(g => PASTEL_AREA[g.area] || '#D9DEE3');
+    if (etiquetas.length > 0) {
+      new Chart(document.getElementById('chart-comparativo-grupos'), {
+        type: 'bar',
+        data: { labels: etiquetas, datasets: [{ label: 'Promedio del grupo', data: promsG, backgroundColor: coloresBarras, borderRadius: 8 }] },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { max: 100, beginAtZero: true } } }
+      });
+    } else {
+      const cont = document.getElementById('chart-comparativo-grupos').parentElement;
+      cont.style.height = 'auto';
+      cont.innerHTML = '<p class="text-slate-400 italic text-center py-10">Aún no hay grupos con aplicaciones para comparar.</p>';
+    }
+
+    // Lista de grupos acceso
+    const cont = document.getElementById('lista-grupos-acceso');
+    cont.innerHTML = '';  // limpiar antes (re-render por filtro no debe duplicar tarjetas)
+    if (gruposM.size === 0) {
+      cont.innerHTML = '<p class="text-slate-400 italic" style="grid-column:1/-1">Aún no hay grupos con aplicaciones. Cuando los estudiantes presenten la prueba, aparecerán aquí para abrir su análisis.</p>';
+    }
+    for (const [k, g] of gruposM) {
+      const i = instituciones.find(x => x.id === g.institucion_id);
+      const prom = promedioGrupo(g.apps);
+      const niv = calcularNivel(prom);
+      const card = document.createElement('a');
+      card.href = 'docente.html';
+      card.className = 'idea-card hover:shadow-lg no-underline text-slate-900 cursor-pointer';
+      card.innerHTML = `
+        <div class="text-xs text-slate-500 mb-1">${escapeHtml(i?.abreviatura || '')}</div>
+        <h3 class="font-bold text-lg mb-2" style="font-family:'Plus Jakarta Sans'">${g.grado}° ${g.grupo} · ${g.area}</h3>
+        <div class="flex items-center justify-between">
+          <div><div class="text-2xl font-bold" style="color:${COLOR_NIVEL[niv]}">${prom}</div><div class="text-xs text-slate-500">${g.apps.length} estudiantes</div></div>
+          <span class="chip-nivel ${niv.toLowerCase().replace('á','a')}">${niv}</span>
+        </div>
+      `;
+      cont.appendChild(card);
+    }
+    } // fin renderTodo
+
+    // Render inicial: TODAS las apps (sin filtro → 11°P1 y todo lo demás visible).
+    renderTodo();
+
+    // === Barra de filtros ADITIVA encima de los tabs: Grado / Periodo / Asignatura ===
+    // Produce appsActivas (subconjunto de apps). En onChange reasigna appsActivas, re-pinta
+    // los 4 tabs (renderTodo) y fuerza el resize de los charts del tab visible.
+    {
+      const navTabs = document.querySelector('.panel-tabs');
+      if (navTabs && apps.length > 0) {
+        const contFiltros = document.createElement('div');
+        contFiltros.className = 'animate-fade-in';
+        contFiltros.style.cssText = 'animation-delay:90ms;margin-bottom:14px';
+        navTabs.insertAdjacentElement('afterend', contFiltros);
+        const gradosPos = [...new Set(apps.map(a => String(a.grado)))];
+        const periodosPos = [...new Set(apps.map(a => _periodoDeApp(a)))];
+        const asigsPos = [...new Set(apps.map(a => a.area).filter(Boolean))];
+        const campos = {
+          grado: gradosPos.length > 1,
+          periodo: periodosPos.map(normPeriodo).filter((v,i,a)=>a.indexOf(v)===i).length > 1,
+          asignatura: asigsPos.length > 1
+        };
+        if (campos.grado || campos.periodo || campos.asignatura) {
+          construirBarraFiltros(
+            contFiltros,
+            campos,
+            { grados: gradosPos, periodos: periodosPos, asignaturas: asigsPos },
+            (f) => {
+              appsActivas = apps.filter(a =>
+                pasaFiltro(a, f, _periodoDeApp, (x) => x.area, (x) => x.grado)
+              );
+              renderTodo();
+              // Redibujar los charts del tab actualmente visible (los ocultos se ajustan al mostrarse).
+              const vistaVisible = document.querySelector('.vista:not(.hidden)');
+              if (vistaVisible) vistaVisible.querySelectorAll('canvas').forEach(c => {
+                const ch = (window.Chart && Chart.getChart) ? Chart.getChart(c) : null; if (ch) ch.resize();
+              });
+            }
+          );
+        }
+      }
+    }
+
+    document.getElementById('btn-ir-plan-mejora').addEventListener('click', () => { location.href = 'plan-mejora.html'; });
+
+    document.getElementById('btn-exportar-consolidado-pdf').addEventListener('click', async () => {
+      if (!apps.length) { toast('Aún no hay aplicaciones para incluir en el reporte.', 'info'); return; }
+      try {
+        toast('Generando reporte institucional...', 'info');
+        await exportarConsolidadoPDF(apps, instituciones, cuadernillos, {
+          nombre: inst?.nombre || 'Reporte institucional',
+          rol: ses.rol
+        });
+        toast('PDF descargado', 'exito');
+      } catch (e) {
+        console.error('Error generando el reporte institucional:', e);
+        toast('No se pudo generar el PDF. Intenta de nuevo.', 'error');
+      }
+    });
+
+    // Tour de onboarding
+    botonAyudaFlotante(ses.rol === 'funcionario' ? 'funcionario' : 'directivo');
+    if (debeAutoIniciar(ses.rol)) {
+      setTimeout(() => iniciarTour(ses.rol === 'funcionario' ? 'funcionario' : 'directivo'), 600);
+    }
+  </script>
+</body>
+</html>

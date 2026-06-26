@@ -1,0 +1,565 @@
+{
+  "id": "math-3-p1-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "3",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 3° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Resolución de problemas",
+    "b": "Razonamiento",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Resuelve problemas de medición que requieran el uso de patrones estandarizados o no estandarizados",
+    "2": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "3": "Reconoce el significado, el uso y equivalencia de números naturales y fracciones simples (1/2, 1/3, 1/4), y la codificación numérica en la secuenciación, la mensurabilidad y la asignación",
+    "4": "Descubre regularidades de las secuencias, la ordenación y sobre las equivalencias entre las situaciones aditivas y multiplicativas (arreglos rectangulares, producto cartesiano, adición repetida)",
+    "5": "Resuelve problemas que requieran el uso de frecuencias de datos representados a partir de diferentes formas: lenguaje natural, gráficas o tablas",
+    "6": "Resuelve situaciones aditivas y multiplicativas en diferentes contextos",
+    "7": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión"
+  },
+  "evidencias": {
+    "1.1": "Usa patrones estandarizados para enfrentar situaciones de medición",
+    "2.1": "Determina cuándo un evento es posible, imposible o seguro",
+    "3.1": "Asigna códigos numéricos, textuales y simbólicos, en sistema decimal a diferentes objetos y situaciones en las que existe orden",
+    "4.1": "Determina equivalencias entre modelos aditivos o multiplicativos, considerando los procesos de transformación y composición",
+    "5.1": "Usa la moda o la frecuencia para solucionar situaciones en las cuales se han organizado los datos usando varios tipos de registro",
+    "6.1": "Usa estrategias multiplicativas para dar solución a diferentes problemas",
+    "1.2": "Usa patrones no estandarizados para enfrentar situaciones de medición",
+    "7.1": "Identifica la imagen o la preimagen de una figura a partir de una transformación en un sistema de referencia cercano al contexto inmediato: arriba, abajo, derecha, izquierda",
+    "2.2": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "6.2": "Usa estrategias aditivas de transformación y composición para dar solución a diferentes problemas"
+  },
+  "cmc": [
+    "Espacial - métrico",
+    "Aleatorio",
+    "Numérico - variacional"
+  ],
+  "preguntas": [
+    {
+      "id": "P3M01",
+      "numero": 1,
+      "enunciado": "<p>A una hoja rectangular cuadriculada le recortaron una parte del <b>borde de arriba</b>: quedó un hueco en forma de <b>arco</b>, con los lados rectos y la parte superior <b>redondeada</b>, como muestra la figura. ¿Cuál de las piezas A, B, C o D es, exactamente, la parte que <b>recortaron</b> de la hoja?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo construcciones y diseños utilizando cuerpos y figuras geométricas tridimensionales y dibujos o figuras geométricas bidimensionales.",
+      "que_evalua": "La capacidad para realizar recubrimientos con figuras regulares e irregulares.",
+      "justificacion_correcta": "La pieza recortada tiene forma de cúpula: la base es recta, los dos lados son rectos y la parte de arriba es redondeada (un arco). La opción B es exactamente esa cúpula, con su cuadrícula igual a la del recorte, así que vuelve a encajar casillo por casillo en el hueco.",
+      "opciones_incorrectas": {
+        "A": "Tiene los dos extremos redondeados (arriba y abajo), como una píldora; le falta la base recta, así que no llena el hueco.",
+        "C": "Tiene la base y los lados rectos, pero su parte de arriba es cóncava (hundida hacia adentro) en lugar de redondeada hacia afuera.",
+        "D": "Su parte de arriba es redondeada como la del hueco, pero su base tiene una mordida cóncava (no es plana), así que no encaja."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q01.png"
+    },
+    {
+      "id": "P3M02",
+      "numero": 2,
+      "enunciado": "<p>En una rifa, Liliana escoge una caja y saca una tarjeta sin mirar. Si la tarjeta es <b>verde</b>, gana otra boleta. La figura muestra las tarjetas de cada caja. ¿Cuál caja debe escoger para que sea <b>seguro</b> ganar otra boleta?</p>",
+      "opciones": {
+        "A": "Caja 1.",
+        "B": "Caja 2.",
+        "C": "Caja 3.",
+        "D": "Caja 4."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
+      "que_evalua": "La capacidad para reconocer el evento que es seguro que ocurra en un experimento aleatorio.",
+      "justificacion_correcta": "En la caja 2 todas las tarjetas son verdes (5 verdes y ninguna blanca). Por eso es seguro sacar una verde: todos los casos posibles son favorables.",
+      "opciones_incorrectas": {
+        "A": "Tiene tarjetas verdes y blancas, así que sacar verde es solo posible, no seguro.",
+        "C": "No tiene ninguna tarjeta verde: sacar verde es imposible.",
+        "D": "Tiene los dos colores, pero hay más blancas que verdes; no es seguro."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q02.png"
+    },
+    {
+      "id": "P3M03",
+      "numero": 3,
+      "enunciado": "<p>Un grupo de niños hace fila para entrar al teatro (figura). El primero de la fila es el más cercano a la entrada. ¿Quién está <b>dos puestos adelante</b> de Daniel?</p>",
+      "opciones": {
+        "A": "Sara.",
+        "B": "Pablo.",
+        "C": "Mateo.",
+        "D": "Tomás."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
+      "que_evalua": "La capacidad para reconocer números ordinales.",
+      "justificacion_correcta": "Daniel ocupa el tercer puesto. Un puesto adelante (más cerca de la entrada) está Mateo, y dos puestos adelante está Pablo.",
+      "opciones_incorrectas": {
+        "A": "Sara está detrás de Daniel, no adelante.",
+        "C": "Mateo está solo un puesto adelante de Daniel.",
+        "D": "Tomás está dos puestos detrás de Daniel, en la dirección contraria."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q03.png"
+    },
+    {
+      "id": "P3M04",
+      "numero": 4,
+      "enunciado": "<p>Una profesora dice: <i>«Voy a entregar <b>\\(3\\) stickers</b> a cada uno de los <b>\\(5\\) niños</b> que están en el grupo»</i>. ¿Con cuál de las siguientes multiplicaciones se calcula el <b>total</b> de stickers que va a entregar?</p>",
+      "opciones": {
+        "A": "\\(6 \\times 3\\)",
+        "B": "\\(5 \\times 1\\)",
+        "C": "\\(6 \\times 1\\)",
+        "D": "\\(5 \\times 3\\)"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad para reconocer las cantidades que deben multiplicarse en una situación multiplicativa.",
+      "justificacion_correcta": "Hay \\(5\\) niños y a cada uno le da \\(3\\) stickers, así que el total es \\(5 \\times 3 = 15\\) stickers.",
+      "opciones_incorrectas": {
+        "A": "Cuenta también a la profesora entre quienes reciben stickers \\((6)\\) en lugar de los \\(5\\) niños.",
+        "B": "Toma «a cada uno» como multiplicar por \\(1\\), olvidando los \\(3\\) stickers.",
+        "C": "Cuenta a la profesora \\((6)\\) y además multiplica por \\(1\\)."
+      }
+    },
+    {
+      "id": "P3M05",
+      "numero": 5,
+      "enunciado": "<p>En unas olimpiadas con dos pruebas, los puntos de <b>Manuela</b> están en la tabla y los de <b>Diego</b> en la gráfica de barras. ¿Cuántos puntos le <b>faltaron a Diego en Carrera</b> para igualar los que obtuvo Manuela en esa misma prueba?</p>",
+      "opciones": {
+        "A": "\\(1\\) punto.",
+        "B": "\\(2\\) puntos.",
+        "C": "\\(3\\) puntos.",
+        "D": "\\(4\\) puntos."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
+      "que_evalua": "La capacidad para comparar información presentada en distintos tipos de registro.",
+      "justificacion_correcta": "Manuela obtuvo \\(4\\) puntos en Carrera y Diego obtuvo \\(3\\). A Diego le faltó \\(4 - 3 = 1\\) punto para igualarla.",
+      "opciones_incorrectas": {
+        "B": "Mira solo los puntos de Diego en una prueba sin compararlos con Manuela.",
+        "C": "Toma los puntos de Manuela en Carrera como si fueran lo que le falta a Diego.",
+        "D": "Usa un valor sin hacer la resta entre los dos registros."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q05.png"
+    },
+    {
+      "id": "P3M06",
+      "numero": 6,
+      "enunciado": "<p>Un vendedor dice: <i>«Cada empanada cuesta lo mismo y con <b>\\(10\\) fichas</b> se pueden comprar <b>\\(5\\) empanadas</b>»</i>. ¿Cuántas fichas vale <b>una sola</b> empanada?</p>",
+      "opciones": {
+        "A": "\\(1\\) ficha.",
+        "B": "\\(2\\) fichas.",
+        "C": "\\(5\\) fichas.",
+        "D": "\\(10\\) fichas."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad para identificar la relación entre dos magnitudes.",
+      "justificacion_correcta": "Si con \\(10\\) fichas se compran \\(5\\) empanadas, se cumple que \\(5 \\times (\\text{fichas por empanada}) = 10\\). Como \\(5 \\times 2 = 10\\), cada empanada vale \\(2\\) fichas.",
+      "opciones_incorrectas": {
+        "A": "Relaciona una empanada con una ficha de forma directa.",
+        "C": "Toma las \\(5\\) empanadas como si fueran las fichas de una empanada.",
+        "D": "Conserva el total de \\(10\\) fichas sin repartirlo entre las \\(5\\) empanadas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q06.png"
+    },
+    {
+      "id": "P3M07",
+      "numero": 7,
+      "enunciado": "<p>Un grupo de niños votó por la mascota que querían para el salón. El pictograma muestra los votos (cada huella es un voto). La mascota elegida fue la que tuvo <b>más</b> votos. ¿Cuál mascota fue la elegida?</p>",
+      "opciones": {
+        "A": "Perro.",
+        "B": "Gato.",
+        "C": "Conejo.",
+        "D": "Tortuga."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto cualitativamente datos referidos a situaciones del entorno escolar.",
+      "que_evalua": "La capacidad para hacer uso de las frecuencias de los datos cuando con esta se obtiene algún resultado de una situación, en este caso particular, elegir uno de los datos.",
+      "justificacion_correcta": "Hay que contar las huellas de cada mascota: Perro tuvo \\(6\\) votos, Gato \\(5\\), Conejo \\(4\\) y Tortuga \\(3\\). Como Perro tuvo más votos que las demás (uno más que Gato), fue la mascota elegida.",
+      "opciones_incorrectas": {
+        "B": "Tiene \\(5\\) votos: es la más cercana, pero le falta \\(1\\) voto para alcanzar al perro.",
+        "C": "Tiene \\(4\\) votos, menos que el perro y que el gato.",
+        "D": "Tiene \\(3\\) votos, la cantidad más baja de todas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q07.png"
+    },
+    {
+      "id": "P3M08",
+      "numero": 8,
+      "enunciado": "<p>Sobre un escritorio cuadriculado se quieren ubicar cuadernos del tamaño de la figura, sin sobreponerlos y cubriendo toda la superficie. Cada cuaderno ocupa \\(1\\) cuadro de ancho por \\(2\\) cuadros de alto, igual que el alto del escritorio. ¿Cuántos cuadernos caben en total?</p>",
+      "opciones": {
+        "A": "\\(2\\) cuadernos.",
+        "B": "\\(4\\) cuadernos.",
+        "C": "\\(6\\) cuadernos.",
+        "D": "\\(8\\) cuadernos."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La capacidad para reconocer el recubrimiento de una forma dada con un patrón no estandarizado.",
+      "justificacion_correcta": "El escritorio mide \\(6\\) cuadros de ancho por \\(2\\) de alto. Como cada cuaderno ocupa \\(1\\) cuadro de ancho y los \\(2\\) de alto, se ponen uno al lado del otro a lo largo del ancho: caben \\(6\\) cuadernos que cubren toda la superficie.",
+      "opciones_incorrectas": {
+        "A": "Tiene en cuenta solo una parte de una fila del escritorio.",
+        "B": "Toma parte del ancho del escritorio como si fuera el total.",
+        "D": "Suma el ancho del escritorio \\((6)\\) con el alto del cuaderno \\((2)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q08.png"
+    },
+    {
+      "id": "P3M09",
+      "numero": 9,
+      "enunciado": "<p>Un diseñador tomó la <b>Figura 1</b> (foto pequeña) y obtuvo la <b>Figura 2</b> (foto grande), como se ve en la cuadrícula. ¿Qué transformación le hizo a la foto original para obtener la segunda?</p>",
+      "opciones": {
+        "A": "Una traslación.",
+        "B": "Una ampliación.",
+        "C": "Una rotación.",
+        "D": "Una reflexión."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco congruencia y semejanza entre figuras (ampliar, reducir).",
+      "que_evalua": "La capacidad para reconocer la transformación hecha a una figura geométrica.",
+      "justificacion_correcta": "Las medidas de la Figura 2 \\((6\\text{ cm} \\times 4\\text{ cm})\\) son el <b>doble</b> de las de la Figura 1 \\((3\\text{ cm} \\times 2\\text{ cm})\\): conserva la forma pero crece de tamaño. Esa transformación es una ampliación.",
+      "opciones_incorrectas": {
+        "A": "Una traslación solo mueve la figura de lugar, sin cambiar su tamaño.",
+        "C": "Una rotación gira la figura, pero no la agranda.",
+        "D": "Una reflexión la voltea como un espejo, sin cambiar su tamaño."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q09.png"
+    },
+    {
+      "id": "P3M10",
+      "numero": 10,
+      "enunciado": "<p>Una profesora encuestó a cuatro estudiantes (tabla). Va a escoger al azar a una persona de la lista. ¿Cuál de las siguientes afirmaciones es <b>verdadera</b>?</p>",
+      "opciones": {
+        "A": "Es más probable escoger una niña a la que le guste la natación que un niño al que le guste la natación.",
+        "B": "Es más probable escoger un niño al que le guste el rojo que una niña a la que le guste el rojo.",
+        "C": "Es más probable escoger una niña a la que le guste el verde que un niño al que le guste el verde.",
+        "D": "Es más probable escoger un niño al que le guste el fútbol que una niña a la que le guste el fútbol."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para comparar el grado de posibilidad de dos eventos de un mismo experimento aleatorio.",
+      "justificacion_correcta": "A las dos niñas les gusta la natación y solo a uno de los niños. Como hay más niñas \\((2)\\) que niños \\((1)\\) a quienes les gusta la natación, es más probable escoger al azar una niña que un niño con esa preferencia.",
+      "opciones_incorrectas": {
+        "B": "Se fija en un solo estudiante de la tabla y no compara cuántos cumplen el evento.",
+        "C": "Solo una niña prefiere el verde; eso no lo hace más probable que el mismo evento en niños.",
+        "D": "Un solo niño prefiere el fútbol; no compara bien los casos favorables."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q10.png"
+    },
+    {
+      "id": "P3M11",
+      "numero": 11,
+      "enunciado": "<p>Un jardinero registró en una tabla cuántas plantas crecen según los litros de agua usados. ¿Cuál de las siguientes afirmaciones es <b>verdadera</b> respecto a la información de la tabla?</p>",
+      "opciones": {
+        "A": "A medida que disminuye el agua, la cantidad de plantas aumenta.",
+        "B": "Aunque el agua aumente, la cantidad de plantas es constante.",
+        "C": "A medida que aumenta el agua, la cantidad de plantas aumenta.",
+        "D": "Aunque el agua disminuya, la cantidad de plantas es constante."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Describo cualitativamente situaciones de cambio y variación utilizando el lenguaje natural, dibujos y gráficas.",
+      "que_evalua": "La capacidad para identificar la relación entre dos magnitudes.",
+      "justificacion_correcta": "El agua aumenta \\(10, 15, 20, 25\\) y a cada valor le corresponde una cantidad de plantas cada vez mayor: \\(20, 30, 40, 50\\). Por eso, a mayor cantidad de agua, mayor cantidad de plantas.",
+      "opciones_incorrectas": {
+        "A": "Observa solo las plantas e invierte el comportamiento del agua.",
+        "B": "Desestima que la cantidad de plantas también cambia.",
+        "D": "Lee la tabla de derecha a izquierda y supone que las plantas no cambian."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q11.png"
+    },
+    {
+      "id": "P3M12",
+      "numero": 12,
+      "enunciado": "<p>A Andrea le gusta guardar conchas durante el día. En la <b>mañana</b> tenía <b>\\(2\\) conchas</b> y al <b>finalizar el día</b> tenía <b>\\(6\\) conchas</b> en total. No se sabe cuántas recogió en la tarde. ¿Cuántas conchas recogió Andrea en la <b>tarde</b>?</p>",
+      "opciones": {
+        "A": "\\(2\\) conchas.",
+        "B": "\\(3\\) conchas.",
+        "C": "\\(4\\) conchas.",
+        "D": "\\(6\\) conchas."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición y de transformación.",
+      "que_evalua": "La capacidad para encontrar uno de los sumandos de una adición, cuando se conoce el resultado y el otro sumando.",
+      "justificacion_correcta": "En la mañana había \\(2\\) conchas y al final del día \\(6\\). Entonces \\(2 + (\\text{conchas de la tarde}) = 6\\), y eso se cumple con \\(2 + 4 = 6\\): recogió \\(4\\) conchas en la tarde.",
+      "opciones_incorrectas": {
+        "A": "Toma las \\(2\\) conchas de la mañana como la respuesta.",
+        "B": "Cuenta un valor intermedio sin completar la suma hasta el total.",
+        "D": "Toma el total del día \\((6)\\) como las conchas de la tarde."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q12.png"
+    },
+    {
+      "id": "P3M13",
+      "numero": 13,
+      "enunciado": "<p>Pedro organizó su dinero en <b>\\(3\\) montones</b>. En cada montón puso un billete de <b>$1.000</b> y un billete de <b>$5.000</b> (ver tabla). ¿Cuánto dinero tiene Pedro en total?</p>",
+      "opciones": {
+        "A": "$3.000",
+        "B": "$15.000",
+        "C": "$18.000",
+        "D": "$36.000"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad para realizar multiplicaciones en contextos con valores asociados a dinero.",
+      "justificacion_correcta": "En cada montón hay $1.000 \\(+\\) $5.000 \\(=\\) $6.000. Como hay \\(3\\) montones, en total tiene \\(3 \\times\\) $6.000 \\(=\\) $18.000.",
+      "opciones_incorrectas": {
+        "A": "Solo multiplica los billetes de $1.000: \\(3 \\times\\) $1.000 \\(=\\) $3.000.",
+        "B": "Solo multiplica los billetes de $5.000: \\(3 \\times\\) $5.000 \\(=\\) $15.000.",
+        "D": "Duplica de más: \\(3 \\times 2 \\times\\) $6.000 \\(=\\) $36.000."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q13.png"
+    },
+    {
+      "id": "P3M14",
+      "numero": 14,
+      "enunciado": "<p>El organizador de una feria asigna a cada expositor un puesto con forma de <b>trapecio</b> (figura). El borde del puesto se delimitará con cinta. La base de abajo viene marcada en tres tramos de \\(4\\) m, \\(3\\) m y \\(4\\) m. La línea punteada de \\(3\\) m es una medida interna (la altura), <b>no</b> es un lado. ¿Cuántos metros de cinta se necesitan para delimitar un puesto?</p>",
+      "opciones": {
+        "A": "\\(27\\) m",
+        "B": "\\(24\\) m",
+        "C": "\\(19\\) m",
+        "D": "\\(14\\) m"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La capacidad para hallar el perímetro de un trapecio a partir de la longitud de sus lados y algunas medidas internas que componen el polígono.",
+      "justificacion_correcta": "Primero se suma la base inferior por sus tramos: \\(4 + 3 + 4 = 11\\) m. El perímetro suma solo los lados del trapecio: la base inferior \\((11\\text{ m})\\), la base superior \\((3\\text{ m})\\) y los dos lados inclinados \\((5\\text{ m}\\) y \\(5\\text{ m})\\): \\(11 + 3 + 5 + 5 = 24\\) m. La altura punteada interna no se cuenta.",
+      "opciones_incorrectas": {
+        "A": "Suma los lados \\((24)\\) y, además, la altura interna \\((3\\text{ m})\\): \\(24 + 3 = 27\\).",
+        "C": "Olvida un lado inclinado: \\(11 + 3 + 5 = 19\\).",
+        "D": "Cuenta solo las dos bases \\((11 + 3 = 14)\\) y olvida los lados inclinados."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q14.png"
+    },
+    {
+      "id": "P3M15",
+      "numero": 15,
+      "enunciado": "<p>Diana armó la figura de un <b>pez</b> uniendo una cabeza (con una aleta) y un triángulo (la cola) por un lado común, como muestra la imagen. Todos los lados vienen marcados con su medida. La línea punteada es la <b>unión</b> entre las piezas y queda por dentro: no es borde. Diana decoró con cinta solo el <b>borde exterior</b>. ¿Cuántos centímetros de cinta utilizó?</p>",
+      "opciones": {
+        "A": "\\(26\\) cm",
+        "B": "\\(19\\) cm",
+        "C": "\\(23\\) cm",
+        "D": "\\(13\\) cm"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
+      "que_evalua": "La capacidad para hallar el perímetro de una figura bidimensional compuesta por triángulos y cuadriláteros.",
+      "justificacion_correcta": "Se suman SOLO los lados de afuera. La cola aporta \\(5 + 5 = 10\\). La cabeza aporta sus lados exteriores: \\(4 + 3 + 2 + 1 + 1 + 1 + 1 = 13\\) (incluida la aleta). En total: \\(10 + 13 = 23\\) cm. La línea de unión interna \\((3\\text{ cm})\\) no se cuenta.",
+      "opciones_incorrectas": {
+        "A": "Suma el borde exterior \\((23)\\) y, por error, también la unión interna \\((3\\text{ cm})\\): \\(23 + 3 = 26\\).",
+        "B": "Olvida el lado de la base de la cabeza \\((4\\text{ cm})\\): \\(23 - 4 = 19\\).",
+        "D": "Cuenta solo la cabeza \\((13)\\) y omite por completo los dos lados de la cola."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q15.png"
+    },
+    {
+      "id": "P3M16",
+      "numero": 16,
+      "enunciado": "<p>Una profesora preguntó en <b>dos cursos</b> por el sabor de torta preferido: el curso 301 en una tabla y el curso 302 en una gráfica de barras. Va a preparar la torta del sabor con <b>más</b> votos juntando los dos cursos. ¿De qué sabor debe ser la torta?</p>",
+      "opciones": {
+        "A": "Arequipe.",
+        "B": "Chocolate.",
+        "C": "Pera.",
+        "D": "Vainilla."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
+      "que_evalua": "La capacidad para hallar la moda al unir dos conjuntos de datos representados en una tabla y en una gráfica.",
+      "justificacion_correcta": "Al unir los dos cursos: Vainilla \\(5 + 3 = 8\\), Chocolate \\(2 + 4 = 6\\), Arequipe \\(3 + 1 = 4\\). El sabor con más votos en total es vainilla, con \\(8\\).",
+      "opciones_incorrectas": {
+        "A": "Arequipe suma \\(3 + 1 = 4\\), menos que vainilla.",
+        "B": "Chocolate es el más votado en el curso 302 \\((4)\\), pero al unir los dos cursos vainilla \\((8)\\) lo supera; es el error de mirar un solo curso.",
+        "C": "Pera no aparece en ninguno de los dos cursos."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q16.png"
+    },
+    {
+      "id": "P3M17",
+      "numero": 17,
+      "enunciado": "<p>Un grupo de <b>\\(12\\) fichas</b> está organizado en <b>\\(3\\) filas</b> de <b>\\(4\\) fichas</b> cada una (arreglo de la figura). ¿Cuál de las siguientes es <b>otra forma</b> de organizar las \\(12\\) fichas en filas con igual número de fichas cada una?</p>",
+      "opciones": {
+        "A": "Dos filas de \\(7\\) fichas.",
+        "B": "Dos filas de \\(12\\) fichas.",
+        "C": "Dos filas de \\(6\\) fichas.",
+        "D": "Dos filas de \\(5\\) fichas."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
+      "que_evalua": "La capacidad para construir expresiones multiplicativas con números de una cifra que tengan igual resultado que una multiplicación dada.",
+      "justificacion_correcta": "Como \\(3 \\times 4 = 12\\) y también \\(2 \\times 6 = 12\\), las \\(12\\) fichas se pueden organizar en \\(2\\) filas de \\(6\\) fichas cada una.",
+      "opciones_incorrectas": {
+        "A": "Suma \\(3 + 4 = 7\\) y hace filas de \\(7\\), que dan \\(14\\), no \\(12\\).",
+        "B": "Hace filas de \\(12\\), repitiendo el total en cada fila \\((2 \\times 12 = 24)\\).",
+        "D": "Toma lo que falta a \\(4 + 3\\) para llegar a \\(12\\) y hace filas de \\(5\\) \\((2 \\times 5 = 10)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q17.png"
+    },
+    {
+      "id": "P3M18",
+      "numero": 18,
+      "enunciado": "<p>Sofía quiere ir a la isla donde sea más probable ver delfines. La tabla muestra, en cada isla, cuántas veces los turistas <b>sí vieron</b> delfines, cuántas <b>no</b> y el total de visitas. ¿A cuál isla debe ir para tener <b>mayor probabilidad</b> de ver delfines?</p>",
+      "opciones": {
+        "A": "Palma.",
+        "B": "Blanca.",
+        "C": "Cocos.",
+        "D": "Bonita."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para estimar el evento que tiene mayor probabilidad de ocurrencia dentro de un conjunto de eventos, a partir del reconocimiento de los casos favorables y totales.",
+      "justificacion_correcta": "Hay que comparar la razón entre las veces que vieron delfines y el total de visitas. En Blanca vieron delfines \\(8\\) de \\(12\\) visitas: las veces favorables son el <b>doble</b> de las desfavorables \\((8\\) frente a \\(4)\\). En las demás islas las veces que sí y que no vieron son casi iguales (cerca de la mitad), así que Blanca tiene la mayor probabilidad.",
+      "opciones_incorrectas": {
+        "A": "Palma tiene muchos avistamientos \\((11)\\), pero también muchas visitas \\((21)\\): cerca de la mitad.",
+        "C": "En Cocos vieron delfines \\(4\\) de \\(7\\), una proporción menor que en Blanca.",
+        "D": "En Bonita vieron \\(6\\) de \\(12\\), justo la mitad de las visitas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q18.png"
+    },
+    {
+      "id": "P3M19",
+      "numero": 19,
+      "enunciado": "<p>En un concurso de baloncesto, cada estudiante hizo cierta cantidad de cestas (tabla). El profesor los ordenó desde el que <b>más</b> cestas hizo hasta el que <b>menos</b> hizo. ¿Cuál estudiante ocupó el <b>tercer</b> puesto?</p>",
+      "opciones": {
+        "A": "Valentina.",
+        "B": "Samuel.",
+        "C": "Mónica.",
+        "D": "Ricardo."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
+      "que_evalua": "La capacidad para asignar un número ordinal a cada uno de los elementos de un conjunto de números, de acuerdo con un criterio de orden dado.",
+      "justificacion_correcta": "Ordenados de mayor a menor: Mónica \\((15)\\), Samuel \\((10)\\), Ricardo \\((8)\\) y Valentina \\((3)\\). El tercer puesto es para Ricardo, con \\(8\\) cestas.",
+      "opciones_incorrectas": {
+        "A": "Relaciona la cantidad de cestas de Valentina \\((3)\\) con el puesto, en vez de ordenar.",
+        "B": "Ubica a Samuel, que ocupó el segundo puesto, como si fuera el tercero.",
+        "C": "Toma a Mónica, que ocupó el primer puesto, como tercera."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q19.png"
+    },
+    {
+      "id": "P3M20",
+      "numero": 20,
+      "enunciado": "<p>Un robot se mueve por un <b>tapete</b> que tiene 3 filas y 4 columnas de figuras de colores. Avanza <b>una casilla a la vez</b> según la rosa de direcciones del dibujo: <b>arriba</b>, <b>abajo</b>, <b>izquierda</b> y <b>derecha</b>. El robot parte del punto de <b>Inicio</b>, marcado a la izquierda de la casilla de la <b>esquina inferior izquierda</b>, y entra al tapete por esa casilla. Luego realiza, <b>en este orden</b>, cuatro desplazamientos: primero <b>arriba</b>, después <b>derecha</b>, después <b>derecha</b> y por último <b>arriba</b>. ¿Sobre cuál figura (A, B, C o D) queda la <b>posición final</b> del robot?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y aplico traslaciones y giros sobre una figura.",
+      "que_evalua": "La capacidad para determinar la posición final de un elemento al que se aplican tres o más traslaciones que relacionan la ubicación espacial dentro de un sistema de referencia cercano al estudiante.",
+      "justificacion_correcta": "Sigamos al robot casilla por casilla. Al entrar al tapete se ubica en la casilla de la esquina inferior izquierda, donde está el cuadrado morado. El 1.er desplazamiento es <b>arriba</b>: sube una casilla y pasa a la fila del medio, sobre el círculo morado. El 2.º es <b>derecha</b>: avanza una casilla a la segunda columna, sobre el cuadrado amarillo. El 3.º también es <b>derecha</b>: avanza otra casilla a la tercera columna, sobre el cuadrado rojo. El 4.º y último es <b>arriba</b>: sube una casilla más y llega a la fila de arriba, en esa misma tercera columna. Esa casilla tiene el <b>cuadrado verde</b>, así que la posición final del robot es la opción B.",
+      "opciones_incorrectas": {
+        "A": "Solo tiene en cuenta los dos desplazamientos <i>arriba</i> y olvida los dos <i>derecha</i>: sube por la primera columna hasta la fila de arriba y queda sobre el círculo amarillo.",
+        "C": "Hace los tres primeros pasos pero olvida el último <i>arriba</i>: se queda en la fila del medio, sobre el cuadrado rojo de la tercera columna.",
+        "D": "Avanza un <i>derecha</i> de más y termina en la cuarta columna de la fila de arriba, sobre el triángulo amarillo."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q20.png"
+    }
+  ]
+}

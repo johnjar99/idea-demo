@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>Atajos de teclado — IDEA</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css"></head>
+<body >
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-red-600 focus:text-white focus:px-3 focus:py-2 focus:rounded">Saltar al contenido</a>
+  <header class="idea-header">
+    <div class="flex items-center gap-4">
+      <img src="assets/logo-idea.png" class="logo" alt="IDEA">
+      <div class="nombre-app">Atajos de teclado y accesibilidad</div>
+    </div>
+    <div class="user-info">
+      <a href="index.html" class="salir-btn">Volver al inicio</a>
+    </div>
+  </header>
+
+  <main id="contenido" class="max-w-3xl mx-auto px-6 py-10">
+    <h1 class="text-3xl font-bold mb-2" style="font-family:'Plus Jakarta Sans'">Atajos de teclado</h1>
+    <p class="text-slate-600 mb-6">Esta página documenta los atajos disponibles en la plataforma IDEA para facilitar la navegación rápida y la accesibilidad para todas las personas.</p>
+
+    <section class="idea-card mb-6">
+      <h2 class="card-title">Durante la prueba (cuadernillo)</h2>
+      <table class="w-full text-sm">
+        <thead class="bg-slate-100">
+          <tr><th class="text-left p-2">Tecla</th><th class="text-left p-2">Acción</th></tr>
+        </thead>
+        <tbody>
+          <tr class="border-b"><td class="p-2"><kbd class="px-2 py-1 bg-slate-200 rounded font-mono">←</kbd></td><td class="p-2">Ir a la pregunta anterior</td></tr>
+          <tr class="border-b"><td class="p-2"><kbd class="px-2 py-1 bg-slate-200 rounded font-mono">→</kbd></td><td class="p-2">Ir a la siguiente pregunta</td></tr>
+          <tr class="border-b"><td class="p-2"><kbd class="px-2 py-1 bg-slate-200 rounded font-mono">1</kbd> – <kbd class="px-2 py-1 bg-slate-200 rounded font-mono">4</kbd></td><td class="p-2">Seleccionar la opción A, B, C o D</td></tr>
+          <tr class="border-b"><td class="p-2"><kbd class="px-2 py-1 bg-slate-200 rounded font-mono">Enter</kbd> / <kbd class="px-2 py-1 bg-slate-200 rounded font-mono">Espacio</kbd></td><td class="p-2">Confirmar opción enfocada (cuando la opción tiene foco visible)</td></tr>
+          <tr><td class="p-2"><kbd class="px-2 py-1 bg-slate-200 rounded font-mono">Tab</kbd></td><td class="p-2">Navegar entre las opciones y botones de la pregunta</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="idea-card mb-6">
+      <h2 class="card-title">Accesibilidad general</h2>
+      <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700">
+        <li>El enlace <strong>"Saltar al contenido"</strong> aparece al presionar Tab al inicio de cada página, para usuarios de lectores de pantalla.</li>
+        <li>Todas las opciones de respuesta tienen <strong>role="radio"</strong> y <strong>aria-checked</strong> dinámico.</li>
+        <li>La barra de progreso de la prueba usa <strong>role="progressbar"</strong> con <strong>aria-valuenow</strong> actualizado.</li>
+        <li>Las imágenes de cada pregunta tienen <strong>alt descriptivo</strong> con el enunciado para lectores de pantalla.</li>
+        <li>El contraste de los chips de nivel cumple con WCAG AA.</li>
+      </ul>
+    </section>
+
+    <section class="idea-card">
+      <h2 class="card-title">Soporte para teclado en docente y directivo</h2>
+      <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700">
+        <li>El botón flotante de ayuda relanza el tour de onboarding con Driver.js.</li>
+        <li>Los modales (mensajes, permisos, restore) se cierran con la "X" o con clic fuera, y son navegables por Tab.</li>
+        <li>El heatmap muestra detalle de la respuesta del estudiante al pasar el cursor sobre cualquier celda (tooltip nativo).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
+</body>
+</html>

@@ -1,0 +1,583 @@
+{
+  "id": "math-6-p1-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "6",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 6° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Comunicación",
+    "b": "Resolución de problemas",
+    "c": "Razonamiento"
+  },
+  "afirmaciones": {
+    "1": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión",
+    "2": "Resuelve problemas que requieran el uso de frecuencias de datos representados a partir de diferentes formas: lenguaje natural, gráficas o tablas",
+    "3": "Analiza datos representados de diferentes formas",
+    "4": "Resuelve problemas aditivos, multiplicativos y de proporción",
+    "5": "Resuelve problemas de medición de perímetro, de área y superficie, de capacidad y volumen de diversos objetos",
+    "6": "Conjetura sobre las propiedades de los objetos bidimensionales y tridimensionales relacionadas con sus atributos mensurables y de posición",
+    "7": "Resuelve problemas que requieren la obtención o comparación de la probabilidad de eventos aleatorios",
+    "8": "Reconoce distintos tipos de representación de uno o varios conjuntos de datos",
+    "9": "Explica las características y las propiedades de secuencias (numéricas o geométricas) y expresiones numéricas",
+    "10": "Comprende las condiciones de semejanza y congruencia en figuras poligonales",
+    "11": "Explica las características y las propiedades de secuencias, numéricas o geométricas, y expresiones numéricas",
+    "12": "Reconoce el uso y las propiedades de los números reales y sus operaciones en distintos contextos aplicados",
+    "13": "Interpreta la naturaleza y posibilidad de ocurrencia de eventos aleatorios simples",
+    "14": "Reconoce las propiedades de las fracciones, los números naturales, la representación decimal, las operaciones y las relaciones en distintos contextos"
+  },
+  "evidencias": {
+    "1.1": "Señala los atributos medibles de una figura junto con sus posibles unidades y magnitudes",
+    "2.1": "Usa la moda o la frecuencia de los datos para solucionar situaciones en las cuales se han organizado los datos a partir de gráficas, listas, tablas o lenguaje natural",
+    "3.1": "Determina diferencias y similitudes en distintas representaciones de conjuntos de datos de una misma situación",
+    "4.1": "Utiliza la proporcionalidad en contextos de relacionamiento de magnitudes",
+    "5.1": "Utiliza estrategias no estandarizadas (recubrimientos y patrones no convencionales) para encontrar perímetro, área, o volumen de diferentes objetos, en contextos escolares y extraescolares",
+    "6.1": "Establece relaciones de paralelismo o perpendicularidad entre segmentos",
+    "7.1": "Usa combinaciones y permutaciones para calcular casos favorables o posibles en contextos aplicados",
+    "8.1": "Identifica información de uno o varios conjuntos de datos en distintas representaciones",
+    "9.1": "Determina patrones y propiedades de las secuencias numéricas o geométricas",
+    "4.2": "Usa adiciones y productos en contextos escolares y extraescolares",
+    "3.2": "Toma decisiones sobre una situación a partir de representaciones de uno o más conjuntos de datos",
+    "10.1": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "5.2": "Utiliza estrategias estandarizadas (fórmulas) para encontrar perímetro, área o superficie, o volumen o capacidad de diferentes objetos, en contextos escolares y extraescolares",
+    "11.1": "Determina patrones y propiedades de las secuencias numéricas o geométricas",
+    "12.1": "Establece relaciones de orden entre números reales dados criterios de ubicación o aproximación",
+    "13.1": "Expresa grado de probabilidad de un evento, usando frecuencias o razones",
+    "14.1": "Describe propiedades y relaciones entre cantidades y magnitudes y sus operaciones"
+  },
+  "cmc": [
+    "Espacial - métrico",
+    "Aleatorio",
+    "Numérico - variacional"
+  ],
+  "preguntas": [
+    {
+      "id": "P-math-6-p1-01",
+      "numero": 1,
+      "enunciado": "<p>En la figura se muestra el plano de un barrio. Las líneas verticales son las <b>carreras</b> y las horizontales son las <b>calles</b>. En el plano están ubicadas una <b>tienda</b> y una <b>escuela</b>.</p><p>¿Cuál es la ubicación de la <b>escuela</b> respecto a la <b>tienda</b>?</p>",
+      "opciones": {
+        "A": "4 carreras hacia el oriente y 4 calles hacia el norte.",
+        "B": "6 carreras hacia el oriente y 7 calles hacia el norte.",
+        "C": "4 carreras hacia el occidente y 4 calles hacia el sur.",
+        "D": "7 carreras hacia el oriente y 8 calles hacia el norte."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico características de localización de objetos en sistemas de representación cartesiana y geográfica.",
+      "que_evalua": "La capacidad para reconocer la ubicación de puntos en el plano cartesiano y realizar movimientos a través de paralelas y perpendiculares del plano.",
+      "justificacion_correcta": "La tienda está en la carrera \\(2\\) con calle \\(3\\) y la escuela en la carrera \\(6\\) con calle \\(7\\). Para ir de la tienda a la escuela hay que avanzar \\(6-2 = 4\\) carreras hacia el oriente y \\(7-3 = 4\\) calles hacia el norte.",
+      "opciones_incorrectas": {
+        "B": "Toma las coordenadas absolutas de la escuela \\((6\\) y \\(7)\\) en lugar de la diferencia respecto a la tienda.",
+        "C": "Invierte el sentido de los desplazamientos: hacia el occidente y el sur en vez de oriente y norte.",
+        "D": "Considera el total de carreras y calles del plano \\((7\\) y \\(8)\\), no el desplazamiento entre los dos lugares."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q01.png"
+    },
+    {
+      "id": "P-math-6-p1-02",
+      "numero": 2,
+      "enunciado": "<p>En un colegio, la escala de calificación para la asignatura de Geometría es de <b>\\(0\\) a \\(5\\)</b>. Un estudiante <b>aprueba</b> la asignatura si la nota obtenida es <b>mayor o igual que \\(3\\)</b>.</p><p>El pictograma de la figura registra las calificaciones obtenidas por los estudiantes de grado sexto en Geometría. Recuerda que cada figura representa <b>2 estudiantes</b>. ¿Cuántos estudiantes de grado sexto aprobaron Geometría?</p>",
+      "opciones": {
+        "A": "\\(8\\) estudiantes.",
+        "B": "\\(10\\) estudiantes.",
+        "C": "\\(20\\) estudiantes.",
+        "D": "\\(22\\) estudiantes."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo e interpreto datos provenientes de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para reconocer el significado de las convenciones establecidas en las gráficas y determinar las frecuencias de ocurrencia de eventos en contextos escolares.",
+      "justificacion_correcta": "Aprueban quienes tienen nota mayor o igual que \\(3\\): las filas 'Desde 3 hasta menos de 4' \\((8\\) figuras\\()\\) y 'Superior o igual a 4' \\((2\\) figuras\\()\\), es decir \\(8+2 = 10\\) figuras. Como cada figura representa \\(2\\) estudiantes, el total es \\(10\\times 2 = 20\\) estudiantes.",
+      "opciones_incorrectas": {
+        "A": "Cuenta solo las \\(8\\) figuras de 'Desde 3 hasta menos de 4' y olvida la fila 'Superior o igual a 4', además de no multiplicar por \\(2\\).",
+        "B": "Cuenta correctamente las \\(10\\) figuras que aprueban, pero olvida que cada una vale \\(2\\) estudiantes.",
+        "D": "Cuenta todas las figuras del pictograma \\((3+5+1+8+2 = 11)\\) sin separar a quienes aprueban; al multiplicar por \\(2\\) obtiene \\(22\\)."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q02.png"
+    },
+    {
+      "id": "P-math-6-p1-03",
+      "numero": 3,
+      "enunciado": "<p>La figura muestra el número de entradas que vendió un cinema durante los primeros cuatro días de una semana. Cada figura representa <b>3 entradas vendidas</b>. Observa.</p><p>¿Cuál de las siguientes tablas muestra la cantidad de entradas que vendió el cinema en cada uno de los cuatro días?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Entradas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Entradas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Entradas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Entradas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco la relación entre un conjunto de datos y su representación.",
+      "que_evalua": "La capacidad para identificar que dos representaciones de datos dan cuenta de la misma información.",
+      "justificacion_correcta": "Cada figura vale \\(3\\) entradas. Lunes tiene \\(4\\) figuras: \\(4\\times 3 = 12\\); Martes \\(5\\): \\(5\\times 3 = 15\\); Miércoles \\(5\\): \\(5\\times 3 = 15\\); Jueves \\(2\\): \\(2\\times 3 = 6\\). La tabla correcta es la B.",
+      "opciones_incorrectas": {
+        "A": "Copia el número de figuras \\((4, 5, 5, 2)\\) sin multiplicar por \\(3\\), el valor de cada figura.",
+        "C": "Elimina una figura por día antes de multiplicar por \\(3\\), por lo que reduce todas las cantidades.",
+        "D": "Mezcla el conteo de figuras con un valor de \\(1\\) por figura, obteniendo cantidades que no corresponden a la escala."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q03.png"
+    },
+    {
+      "id": "P-math-6-p1-04",
+      "numero": 4,
+      "enunciado": "<p>Observa en la figura la cantidad de dinero que se debe pagar en una tienda por un paquete de <b>4 botellas</b> de jugo iguales.</p><p>¿Cuánto se debería pagar por <b>7 botellas</b> de jugo iguales a las de la figura?</p>",
+      "opciones": {
+        "A": "$3.500",
+        "B": "$4.900",
+        "C": "$11.200",
+        "D": "$19.600"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Formulo y resuelvo problemas en situaciones aditivas y multiplicativas, en diferentes contextos y dominios numéricos.",
+      "que_evalua": "La capacidad para reconocer una situación de proporción y calcular los factores correspondientes.",
+      "justificacion_correcta": "Si \\(4\\) botellas cuestan $2.800, cada botella cuesta \\(2800 \\div 4 = 700\\) pesos. Entonces \\(7\\) botellas cuestan \\(7\\times 700 = 4900\\), es decir $4.900.",
+      "opciones_incorrectas": {
+        "A": "Halla el valor de una botella \\((700)\\) y lo suma al precio del paquete \\((700 + 2800 = 3500)\\) en lugar de multiplicar por \\(7\\).",
+        "C": "Multiplica el precio del paquete por \\(4\\) \\((4\\times 2800 = 11200)\\) sin hallar primero el valor unitario, perdiendo la proporción.",
+        "D": "Multiplica el precio del paquete completo por \\(7\\) \\((7\\times 2800 = 19600)\\), como si cada botella costara $2.800."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q04.png"
+    },
+    {
+      "id": "P-math-6-p1-05",
+      "numero": 5,
+      "enunciado": "<p>Usando fichas como la que se muestra (formada por <b>3 cuadritos</b>), Eduardo armó la figura de la derecha.</p><p>Si las fichas se pueden rotar, ¿cuántas <b>fichas</b> necesitó Eduardo para armar la figura sin que las fichas se sobrepongan?</p>",
+      "opciones": {
+        "A": "\\(21\\)",
+        "B": "\\(10\\)",
+        "C": "\\(8\\)",
+        "D": "\\(7\\)"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo áreas y volúmenes a través de composición y descomposición de figuras y cuerpos.",
+      "que_evalua": "La capacidad para hallar áreas de superficies usando patrones o cubrimientos.",
+      "justificacion_correcta": "La figura tiene \\(21\\) cuadritos y cada ficha cubre \\(3\\) cuadritos. Como las fichas se pueden rotar y no se sobreponen, se necesitan \\(21 \\div 3 = 7\\) fichas.",
+      "opciones_incorrectas": {
+        "A": "Cuenta el total de cuadritos de la figura \\((21)\\) en lugar de las fichas que la recubren.",
+        "B": "Estima a ojo cuántas fichas caben sin dividir el total de cuadritos entre los de cada ficha.",
+        "C": "Divide mal o cuenta una ficha de más al intentar recubrir la figura por partes."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q05.png"
+    },
+    {
+      "id": "P-math-6-p1-06",
+      "numero": 6,
+      "enunciado": "<p>Camila colgó un reloj circular de radio \\(0,5\\) m en la pared. En la cuadrícula, <b>cada casilla mide \\(0,1\\) m</b> de lado. Cerca del reloj hay una pequeña <b>flor</b>.</p><p>¿Cuál es la ubicación de la <b>flor</b>?</p>",
+      "opciones": {
+        "A": "A \\(0,5\\) m de la pared izquierda y a \\(0,5\\) m del piso.",
+        "B": "A \\(0,5\\) m de la pared izquierda y a \\(1,7\\) m del piso.",
+        "C": "A \\(0,2\\) m de la pared izquierda y a \\(1,7\\) m del piso.",
+        "D": "A \\(0,2\\) m de la pared izquierda y a \\(0,5\\) m del piso."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico características de localización de objetos en sistemas de representación cartesiana y geográfica.",
+      "que_evalua": "La capacidad para ubicar la posición de un objeto en un plano cartesiano. En el caso puntual, se busca identificar que los valores de las coordenadas se obtienen al trazar la perpendicular del objeto hasta el eje respectivo y determinar la medida que hay hasta el 0.",
+      "justificacion_correcta": "Se cuentan las casillas desde la flor hasta cada eje. Hay \\(2\\) casillas hasta la pared izquierda \\((2\\times 0,1 = 0,2\\) m\\()\\) y \\(17\\) casillas hasta el piso \\((17\\times 0,1 = 1,7\\) m\\()\\). Por eso la flor está a \\(0,2\\) m de la pared izquierda y a \\(1,7\\) m del piso.",
+      "opciones_incorrectas": {
+        "A": "Usa como referencia el radio del reloj \\((0,5\\) m\\()\\) en lugar de contar las casillas hasta los ejes.",
+        "B": "Acierta la altura \\((1,7\\) m\\()\\) pero toma el radio del reloj como distancia a la pared.",
+        "D": "Acierta la distancia a la pared \\((0,2\\) m\\()\\) pero usa el radio del reloj como altura sobre el piso."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q06.png"
+    },
+    {
+      "id": "P-math-6-p1-07",
+      "numero": 7,
+      "enunciado": "<p>En un ropero hay <b>4 pantalones</b> (2 negros y 2 blancos), <b>3 camisetas</b> (2 negras y 1 blanca) y <b>2 pares de zapatos</b> (1 par negro y 1 par blanco), como muestra la figura.</p><p>¿Cuántas opciones hay para vestirse <b>todo de negro</b> (camiseta, pantalón y zapatos negros)?</p>",
+      "opciones": {
+        "A": "\\(1\\)",
+        "B": "\\(2\\)",
+        "C": "\\(4\\)",
+        "D": "\\(5\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo acerca del resultado de un experimento aleatorio usando proporcionalidad y nociones básicas de probabilidad.",
+      "que_evalua": "La capacidad de los estudiantes para realizar conteos simples, teniendo en cuenta el orden en el que ocurren los eventos.",
+      "justificacion_correcta": "De negro hay \\(2\\) camisetas, \\(2\\) pantalones y \\(1\\) par de zapatos. El total de formas de vestirse de negro es \\(2\\times 2\\times 1 = 4\\).",
+      "opciones_incorrectas": {
+        "A": "Considera que solo hay una forma posible, sin tener en cuenta que las prendas se combinan.",
+        "B": "Cuenta únicamente un tipo de prenda negra \\((2\\) camisetas o \\(2\\) pantalones\\()\\) y no multiplica las opciones.",
+        "D": "Suma todas las prendas negras \\((2+2+1 = 5)\\) en lugar de multiplicar las opciones de cada tipo."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q07.png"
+    },
+    {
+      "id": "P-math-6-p1-08",
+      "numero": 8,
+      "enunciado": "<p>En la gráfica se muestra la cantidad de mascotas de una veterinaria, según su especie.</p><p>Si se elige una mascota de la veterinaria <b>al azar</b>, ¿cuál de las especies es <b>menos probable</b> que sea la elegida?</p>",
+      "opciones": {
+        "A": "Aves.",
+        "B": "Tortugas.",
+        "C": "Perros.",
+        "D": "Peces."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo e interpreto datos provenientes de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para reconocer en un diagrama de barras el valor que genera una menor probabilidad de ocurrencia de un evento aleatorio.",
+      "justificacion_correcta": "La tortuga es la especie con menos individuos \\((37)\\). Como hay menos tortugas que de cualquier otra especie, al elegir una mascota al azar la tortuga es la menos probable.",
+      "opciones_incorrectas": {
+        "A": "Elige las aves \\((70)\\), que no son la menor cantidad; tienen más individuos que tortugas y peces.",
+        "C": "Elige los perros \\((85)\\), que son la especie más numerosa y por tanto la más probable, no la menos.",
+        "D": "Elige los peces \\((40)\\), que son pocos pero más que las tortugas \\((37)\\); no son el mínimo."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q08.png"
+    },
+    {
+      "id": "P-math-6-p1-09",
+      "numero": 9,
+      "enunciado": "<p>Observa en las tarjetas la cantidad de juguetes vendidos en una tienda durante 4 meses del año.</p><p>¿Cuál es el <b>cambio</b> en la cantidad de juguetes vendidos, de un mes a otro, a partir del segundo mes?</p>",
+      "opciones": {
+        "A": "Aumenta 30 juguetes cada mes.",
+        "B": "Disminuye 4 juguetes con respecto al mes anterior.",
+        "C": "Aumenta 40 juguetes cada mes.",
+        "D": "Disminuye 5 juguetes con respecto al mes anterior."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La capacidad para establecer relaciones de cambio dado un patrón establecido.",
+      "justificacion_correcta": "De febrero a marzo: \\(190 - 150 = 40\\); de marzo a abril: \\(230 - 190 = 40\\); de abril a mayo: \\(270 - 230 = 40\\). De un mes al siguiente las ventas aumentan en \\(40\\) juguetes.",
+      "opciones_incorrectas": {
+        "A": "Reconoce que aumenta cada mes, pero calcula mal el valor del aumento (30 en vez de 40).",
+        "B": "Observa el cambio solo en las decenas \\((5 - 9 = -4)\\) y lo interpreta como una disminución.",
+        "D": "Toma la diferencia como negativa, concluyendo que disminuye, lo cual contradice que las ventas crecen."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q09.png"
+    },
+    {
+      "id": "P-math-6-p1-10",
+      "numero": 10,
+      "enunciado": "<p>Observa la conversación entre dos operarios de mantenimiento de una vía.</p><p>¿Cuántos metros de la vía deben pintar <b>en total</b> los dos operarios?</p>",
+      "opciones": {
+        "A": "\\(194\\) metros.",
+        "B": "\\(204\\) metros.",
+        "C": "\\(339\\) metros.",
+        "D": "\\(519\\) metros."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Formulo y resuelvo problemas en situaciones aditivas y multiplicativas, en diferentes contextos y dominios numéricos.",
+      "que_evalua": "La capacidad para reconocer una situación aditiva y calcular los factores correspondientes.",
+      "justificacion_correcta": "Se suman los metros que pinta cada operario: \\(189 + 150 = 339\\) metros en total.",
+      "opciones_incorrectas": {
+        "A": "Olvida reagrupar al sumar y omite una decena, obteniendo un valor cercano pero menor \\((194)\\).",
+        "B": "Comete un error de reagrupación en las decenas y centenas al sumar \\(189 + 150\\).",
+        "D": "Intercambia el orden de decenas y unidades al sumar, obteniendo \\(519\\) en vez de \\(339\\)."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q10.png"
+    },
+    {
+      "id": "P-math-6-p1-11",
+      "numero": 11,
+      "enunciado": "<p>La tabla muestra los puntos anotados por diferentes equipos de baloncesto de un colegio durante el mes de marzo.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" rowspan=\"2\">Mes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=\"4\">Puntos anotados por el equipo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" rowspan=\"2\">Total por mes</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Toros</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cohetes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Guerreros</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Panteras</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Marzo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1.100</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">800</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">900</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">800</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.600</td></tr></table><p>¿Cuál equipo logró <b>superar el promedio</b> de puntos por equipo en el mes de marzo?</p>",
+      "opciones": {
+        "A": "Toros.",
+        "B": "Cohetes.",
+        "C": "Guerreros.",
+        "D": "Panteras."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
+      "que_evalua": "La capacidad para reconocer el promedio como estadística, el cual permite tomar una decisión, comparando los valores con esta medida estadística.",
+      "justificacion_correcta": "El promedio por equipo es \\(3600 \\div 4 = 900\\) puntos. El único equipo que supera \\(900\\) es Toros, con \\(1.100\\) puntos.",
+      "opciones_incorrectas": {
+        "B": "Cohetes anotó \\(800\\), por debajo del promedio \\((900)\\).",
+        "C": "Guerreros anotó exactamente \\(900\\), igual al promedio, no por encima de él.",
+        "D": "Panteras anotó \\(800\\), por debajo del promedio."
+      }
+    },
+    {
+      "id": "P-math-6-p1-12",
+      "numero": 12,
+      "enunciado": "<p>Observa las dos figuras sobre la cuadrícula. <b>Ser congruentes</b> significa que las figuras tienen igual forma e igual tamaño.</p><p>¿Qué hace que las dos figuras sean <b>congruentes</b>?</p>",
+      "opciones": {
+        "A": "Los lados de las dos figuras tienen diferentes medidas.",
+        "B": "El área de una figura es el doble del área de la otra.",
+        "C": "Las dos figuras son rectángulos cuyos lados miden 2 y 4.",
+        "D": "El área de una figura es 2 y la de la otra es 4."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
+      "que_evalua": "La capacidad para caracterizar las condiciones de congruencia entre formas.",
+      "justificacion_correcta": "Ambas son rectángulos y sus lados miden lo mismo: \\(2\\) y \\(4\\) cuadritos. Que tengan igual forma e iguales medidas, aunque estén en distinta posición, es lo que las hace congruentes.",
+      "opciones_incorrectas": {
+        "A": "Si los lados tuvieran medidas diferentes, las figuras no serían congruentes.",
+        "B": "Tienen la misma área, no una el doble de la otra; un área doble impediría la congruencia.",
+        "D": "Las dos figuras tienen la misma área \\((2\\times 4 = 8)\\), no áreas distintas de \\(2\\) y \\(4\\)."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q12.png"
+    },
+    {
+      "id": "P-math-6-p1-13",
+      "numero": 13,
+      "enunciado": "<p>Mateo construyó la estructura con forma de caja (prisma rectangular) que se muestra en la figura, con las medidas indicadas.</p><p>¿Cuál es el <b>volumen</b> de la estructura que construyó Mateo?</p>",
+      "opciones": {
+        "A": "\\(8\\ \\text{cm}^3\\)",
+        "B": "\\(16\\ \\text{cm}^3\\)",
+        "C": "\\(10\\ \\text{cm}^3\\)",
+        "D": "\\(7\\ \\text{cm}^3\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que requieren técnicas de estimación.",
+      "que_evalua": "La capacidad para calcular volúmenes de figuras geométricas regulares cuando se proporcionan las medidas explícitamente.",
+      "justificacion_correcta": "El volumen de un prisma rectangular es largo \\(\\times\\) ancho \\(\\times\\) alto: \\(5 \\times 2 \\times 1 = 10\\ \\text{cm}^3\\).",
+      "opciones_incorrectas": {
+        "A": "Multiplica solo dos de las tres medidas \\((4\\times 2 = 8)\\), olvidando una dimensión.",
+        "B": "Eleva al cuadrado en vez de multiplicar las tres medidas, obteniendo \\(16\\).",
+        "D": "Suma algunas de las medidas en lugar de multiplicarlas, confundiendo el volumen con una suma."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q13.png"
+    },
+    {
+      "id": "P-math-6-p1-14",
+      "numero": 14,
+      "enunciado": "<p>Emilia tiene un juego que consta de <b>48 fichas</b> y debe repartirlas <b>por igual</b> entre todos los jugadores. La tabla muestra la cantidad de fichas que le corresponde a cada jugador según la cantidad de jugadores.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de jugadores</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">3</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">4</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cantidad de fichas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr></table><p>Si hay <b>8 jugadores</b>, ¿cuántas fichas debe repartir Emilia a cada jugador?</p>",
+      "opciones": {
+        "A": "\\(10\\)",
+        "B": "\\(8\\)",
+        "C": "\\(6\\)",
+        "D": "\\(4\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables, de variación lineal o de proporcionalidad directa y de proporcionalidad inversa en contextos aritméticos y geométricos.",
+      "que_evalua": "La capacidad para determinar el valor proporcional que corresponde a un dato específico, identificando la relación y constante de proporcionalidad.",
+      "justificacion_correcta": "El número de fichas por jugador es \\(48\\) dividido entre la cantidad de jugadores (jugadores \\(\\times\\) fichas \\(= 48\\): \\(2\\times 24 = 3\\times 16 = 4\\times 12 = 48\\)). Con \\(8\\) jugadores: \\(48 \\div 8 = 6\\) fichas para cada uno.",
+      "opciones_incorrectas": {
+        "A": "Sigue un patrón de resta en la tabla en lugar de usar la constante de proporcionalidad, obteniendo un valor mayor.",
+        "B": "Toma el siguiente valor de la secuencia sin tener en cuenta que son 8 jugadores.",
+        "D": "Resta valores de la tabla \\((12 - 8 = 4)\\) en vez de dividir \\(48\\) entre \\(8\\)."
+      }
+    },
+    {
+      "id": "P-math-6-p1-15",
+      "numero": 15,
+      "enunciado": "<p>La figura muestra el diseño que hizo Jimena de varios edificios escalonados para un proyecto de vivienda. Sus alturas son \\(5,5\\) m; \\(8,0\\) m; \\(10,5\\) m; \\(13,0\\) m y \\(15,5\\) m.</p><p>Si se quiere construir un <b>sexto edificio</b> más alto, siguiendo el diseño de Jimena, ¿qué se debe hacer para determinar su altura?</p>",
+      "opciones": {
+        "A": "Multiplicar 8 m por 6.",
+        "B": "Multiplicar 5,5 m por 6.",
+        "C": "Sumar 2,5 m a la altura del edificio 5.",
+        "D": "Sumar 10 m a la altura del edificio 5."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Describo y represento situaciones de variación relacionando diferentes representaciones (diagramas, expresiones verbales generalizadas y tablas).",
+      "que_evalua": "La capacidad para identificar el patrón de formación de una secuencia numérica.",
+      "justificacion_correcta": "De un edificio al siguiente la altura aumenta \\(2,5\\) m \\((8,0 - 5,5 = 2,5\\); \\(10,5 - 8,0 = 2,5\\); etc.). Por eso, para hallar la altura del sexto edificio se suman \\(2,5\\) m a la altura del edificio \\(5\\).",
+      "opciones_incorrectas": {
+        "A": "Toma el segundo término de la secuencia como razón de cambio y lo multiplica por el número del edificio.",
+        "B": "Toma el primer término como razón de cambio y lo multiplica por el número del edificio.",
+        "D": "Usa la diferencia entre el primer y el último edificio \\((10\\) m\\()\\) como si fuera el aumento de un solo paso."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q15.png"
+    },
+    {
+      "id": "P-math-6-p1-16",
+      "numero": 16,
+      "enunciado": "<p>En las olimpiadas escolares se premió con medalla de <b>oro, plata y bronce</b> a los tres jugadores que anotaron la <b>mayor cantidad de goles</b>. La tabla muestra los goles de cada jugador.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nombre</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Número de goles</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mónica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Manuel</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">David</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Fabiana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alejandra</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carlos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Raúl</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Andrea</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mateo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table><p>De acuerdo con la información, ¿cómo quedó la premiación?</p>",
+      "opciones": {
+        "A": "Oro: Mónica, Plata: Manuel, Bronce: David.",
+        "B": "Oro: Fabiana, Plata: Alejandra, Bronce: David.",
+        "C": "Oro: Manuel, Plata: Raúl, Bronce: Mateo.",
+        "D": "Oro: David, Plata: Fabiana, Bronce: Alejandra."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 12,
+      "evidencia": "12.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y generalizo propiedades de las relaciones entre números racionales (simétrica, transitiva, etc.) y de las operaciones entre ellos (conmutativa, asociativa, etc.) en diferentes contextos.",
+      "que_evalua": "La capacidad para ordenar un conjunto de números de manera ascendente o descendente y seleccionar aquellos que cumplen con una condición dada.",
+      "justificacion_correcta": "Los tres mayores anotadores son Fabiana \\((9)\\), Alejandra \\((8)\\) y David \\((7)\\). Ordenados de mayor a menor: oro para Fabiana, plata para Alejandra y bronce para David.",
+      "opciones_incorrectas": {
+        "A": "Toma los tres primeros de la tabla en orden de aparición, no por su número de goles.",
+        "C": "Selecciona jugadores que no están entre los tres mayores anotadores.",
+        "D": "Identifica a los tres mejores pero les asigna las medallas en un orden equivocado."
+      }
+    },
+    {
+      "id": "P-math-6-p1-17",
+      "numero": 17,
+      "enunciado": "<p>En un club hay una piscina para <b>adultos</b> (con forma de cuadrado, con sus cuatro ángulos rectos marcados) y una para <b>niños</b> con la misma forma e iguales dimensiones, pero girada, como muestra la figura.</p><p>¿Cuál es la <b>suma de los 4 ángulos internos</b> de la piscina para niños?</p>",
+      "opciones": {
+        "A": "\\(450^\\circ\\)",
+        "B": "\\(360^\\circ\\)",
+        "C": "\\(180^\\circ\\)",
+        "D": "\\(20^\\circ\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
+      "que_evalua": "La capacidad para reconocer características en figuras geométricas congruentes.",
+      "justificacion_correcta": "Las dos piscinas son congruentes, así que tienen los mismos ángulos. La piscina de adultos es un cuadrado con cuatro ángulos rectos \\((90^\\circ\\) cada uno\\()\\), y su suma es \\(4 \\times 90^\\circ = 360^\\circ\\). La piscina para niños, congruente con ella, también suma \\(360^\\circ\\).",
+      "opciones_incorrectas": {
+        "A": "Suma cinco ángulos de \\(90^\\circ\\) en vez de cuatro \\((5\\times 90 = 450)\\).",
+        "C": "Usa la suma de los ángulos de un triángulo \\((180^\\circ)\\) en lugar de la de un cuadrilátero.",
+        "D": "Confunde la suma de los ángulos con la medida de un lado \\((5\\) m, redondeado a \\(20)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q17.png"
+    },
+    {
+      "id": "P-math-6-p1-18",
+      "numero": 18,
+      "enunciado": "<p>El administrador de un conjunto residencial hizo un sorteo para definir cuáles apartamentos pueden usar los parqueaderos. Después del sorteo afirmó que, en cada edificio, <b>\\(\\dfrac{15}{20}\\)</b> de los apartamentos tendrán acceso al parqueadero.</p><p>¿De qué forma se puede interpretar la fracción que utilizó el administrador?</p>",
+      "opciones": {
+        "A": "\\(3\\) de cada \\(4\\) apartamentos tendrán acceso al parqueadero.",
+        "B": "\\(20\\) de cada \\(15\\) apartamentos tendrán acceso al parqueadero.",
+        "C": "\\(7\\) de cada \\(10\\) apartamentos tendrán acceso al parqueadero.",
+        "D": "\\(10\\) de cada \\(3\\) apartamentos tendrán acceso al parqueadero."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 13,
+      "evidencia": "13.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco la relación entre un conjunto de datos y su representación.",
+      "que_evalua": "La capacidad para reescribir la probabilidad de ocurrencia de un evento y relacionarla dentro de un contexto.",
+      "justificacion_correcta": "La fracción \\(\\dfrac{15}{20}\\) se simplifica dividiendo numerador y denominador entre \\(5\\): \\(\\dfrac{15}{20} = \\dfrac{3}{4}\\). Esto significa que \\(3\\) de cada \\(4\\) apartamentos tendrán acceso al parqueadero.",
+      "opciones_incorrectas": {
+        "B": "Invierte la fracción \\(\\left(\\dfrac{20}{15}\\right)\\), poniendo el todo como parte.",
+        "C": "Simplifica mal, como si \\(\\dfrac{15}{20}\\) fuera \\(\\dfrac{7}{10}\\).",
+        "D": "Invierte la fracción simplificada \\(\\left(\\dfrac{4}{3}\\right)\\), obteniendo \\(10\\) de cada \\(3\\), que no tiene sentido aquí."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q18.png"
+    },
+    {
+      "id": "P-math-6-p1-19",
+      "numero": 19,
+      "enunciado": "<p>En un barrio suspenden el servicio de agua algunos lunes, miércoles, jueves o sábados. Arturo marcó con una X, en cuatro calendarios mensuales, los días en que se suspendió el servicio.</p><p>Arturo debe reportar a la empresa el día en que es <b>más habitual</b> que se suspenda el servicio. ¿Cuál día debe reportar Arturo?</p>",
+      "opciones": {
+        "A": "Sábado.",
+        "B": "Jueves.",
+        "C": "Miércoles.",
+        "D": "Lunes."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos presentados en tablas, diagramas de barras, diagramas circulares.",
+      "que_evalua": "La capacidad para determinar la frecuencia más alta o moda de un conjunto de datos representados en registros comunes.",
+      "justificacion_correcta": "Al contar las X de cada día en los cuatro meses se obtiene: sábado \\(7\\), jueves \\(4\\), miércoles \\(9\\) y lunes \\(8\\). El día con mayor frecuencia (la moda) es el miércoles, así que ese es el día que debe reportar Arturo.",
+      "opciones_incorrectas": {
+        "A": "Se fija en los sábados porque aparecen juntos al final de algunos meses, pero no son los más frecuentes en total.",
+        "B": "Elige el jueves, que es el día con MENOR número de suspensiones, justo lo contrario de lo pedido.",
+        "D": "Cuenta el lunes \\((8)\\), que es frecuente pero queda por debajo del miércoles \\((9)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q19.png"
+    },
+    {
+      "id": "P-math-6-p1-20",
+      "numero": 20,
+      "enunciado": "<p>Leidy necesita <b>\\(1,75\\) litros</b> de agua para un experimento en la clase de Ciencias y usa jarras con marcas de \\(0,5\\) l y \\(1\\) l, como la que se muestra arriba.</p><p>¿Cuál de las siguientes opciones (A, B, C o D) muestra el contenido <b>exacto</b> de agua que Leidy necesita?</p>",
+      "opciones": {
+        "A": "Opción A.",
+        "B": "Opción B.",
+        "C": "Opción C.",
+        "D": "Opción D."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 14,
+      "evidencia": "14.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números racionales, en sus distintas expresiones (fracciones, razones, decimales o porcentajes) para resolver problemas en contextos de medida.",
+      "que_evalua": "La capacidad para representar números racionales expresados como racionales de manera pictórica o gráfica en contextos donde los estudiantes deban medir.",
+      "justificacion_correcta": "Como \\(1,75 = 1 + 0,75\\), Leidy necesita una jarra llena con \\(1\\) litro y otra con \\(0,75\\) litros. La opción B muestra justamente una jarra en la marca de \\(1\\) l y otra entre \\(0,5\\) l y \\(1\\) l, en \\(0,75\\) l: \\(1 + 0,75 = 1,75\\) litros.",
+      "opciones_incorrectas": {
+        "A": "Muestra solo \\(0,75\\) litros (la parte decimal), olvidando el litro entero de \\(1,75\\).",
+        "C": "Muestra solo \\(1\\) litro (la parte entera), sin los \\(0,75\\) litros restantes.",
+        "D": "Muestra dos jarras con \\(0,75\\) litros cada una \\((0,75 + 0,75 = 1,5\\) litros\\()\\), que no llega a \\(1,75\\)."
+      },
+      "imagen_figura": "assets/banco-mat-6-p1/q20.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-6-p1/q20_opA.png",
+        "B": "assets/banco-mat-6-p1/q20_opB.png",
+        "C": "assets/banco-mat-6-p1/q20_opC.png",
+        "D": "assets/banco-mat-6-p1/q20_opD.png"
+      }
+    }
+  ]
+}

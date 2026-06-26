@@ -1,0 +1,553 @@
+{
+  "id": "math-10-p2-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "10",
+  "periodo": "II",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 10° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Interpretación y Representación",
+    "b": "Formulación y Ejecución",
+    "c": "Argumentación"
+  },
+  "afirmaciones": {
+    "1": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "2": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "3": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas."
+  },
+  "evidencias": {
+    "1.1": "Da cuenta de las características básicas de la información presentada en distintos formatos.",
+    "1.2": "Transforma la representación de una o más piezas de información.",
+    "2.1": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
+    "2.2": "Ejecuta un plan de solución para un problema que involucra información cuantitativa o esquemática.",
+    "2.3": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "3.3": "Establece la validez o pertinencia de una solución propuesta a un problema dado."
+  },
+  "cmc": [
+    "Estadística",
+    "Geometría",
+    "Álgebra y cálculo"
+  ],
+  "preguntas": [
+    {
+      "id": "P10M201",
+      "numero": 1,
+      "enunciado": "<p>En una feria escolar se pidió a <b>\\(60\\) personas</b> calificar un stand de \\(1\\) a \\(5\\). Al finalizar, la calificación <b>promedio</b> fue <b>\\(3\\)</b>. ¿Cuál de las siguientes tablas de votos (A, B, C o D) puede corresponder a ese estudio?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes para encontrar una tabla con datos que cumplen con un promedio aritmético y una cantidad total dados.",
+      "justificacion_correcta": "Si el promedio de los \\(60\\) votos es \\(3\\), la suma de todas las calificaciones debe ser \\(60 \\times 3 = 180\\). En la tabla A: \\((1\\times 10)+(2\\times 10)+(3\\times 20)+(4\\times 10)+(5\\times 10) = 10+20+60+40+50 = 180\\), y el total de votos es \\(60\\). Cumple ambas condiciones.",
+      "opciones_incorrectas": {
+        "B": "Suma \\(40\\) votos, no \\(60\\): aunque su promedio sea \\(3\\), no encuesta a las \\(60\\) personas.",
+        "C": "Sí tiene \\(60\\) votos, pero su suma de calificaciones es \\(25+20+0+40+75 = 160\\), no \\(180\\): el promedio no da \\(3\\).",
+        "D": "Reparte \\(4\\) votos por calificación: solo suma \\(20\\) votos, no llega a \\(60\\) ni la suma a \\(180\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q01.png"
+    },
+    {
+      "id": "P10M202",
+      "numero": 2,
+      "enunciado": "<p>De un ángulo <b>\\(\\varphi\\)</b> ubicado en el cuarto cuadrante se sabe que <b>\\(\\cos \\varphi = \\dfrac{12}{13}\\)</b> (y, por estar en ese cuadrante, su <b>seno es negativo</b>). Para hallar <b>\\(\\sen \\varphi\\)</b>, alguien escribe el siguiente desarrollo:</p>\\[\\textbf{Paso 1:}\\quad (\\cos \\varphi)^2 = \\left(\\dfrac{12}{13}\\right)^{2} = \\dfrac{144}{169}\\]\\[\\textbf{Paso 2:}\\quad (\\sen \\varphi)^2 + (\\cos \\varphi)^2 = 1 \\;\\;\\Longrightarrow\\;\\; (\\sen \\varphi)^2 + \\dfrac{144}{169} = 1\\]\\[\\textbf{Paso 3:}\\quad \\begin{aligned}(\\sen \\varphi)^2 &= 1 - \\dfrac{144}{169} \\\\[2pt] &= \\dfrac{169}{169} - \\dfrac{144}{169} \\\\[2pt] &= \\dfrac{25}{169}\\end{aligned}\\]\\[\\textbf{Paso 4:}\\quad \\sen \\varphi = +\\sqrt{\\dfrac{25}{169}} = +\\dfrac{5}{13}\\]<p>El desarrollo contiene un paso equivocado. ¿En cuál está y por qué?</p>",
+      "opciones": {
+        "A": "En el paso 2, ya que la identidad fundamental no aplica cuando el ángulo está en el cuarto cuadrante.",
+        "B": "En el paso 1, ya que elevar al cuadrado significa duplicar la fracción, no multiplicarla por sí misma.",
+        "C": "En el paso 4, ya que como \\(\\varphi\\) tiene seno negativo, la raíz debe tomarse con signo menos: \\(\\sen \\varphi = -\\dfrac{5}{13}\\).",
+        "D": "En el paso 3, ya que el cuadrado de un seno nunca puede dar una fracción menor que \\(1\\)."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para reconocer propiedades de las funciones trigonométricas y realizar operaciones aritméticas entre ellas.",
+      "justificacion_correcta": "En el cuarto cuadrante el coseno es positivo y el seno es negativo. El cálculo de \\((\\sen \\varphi)^2 = \\dfrac{25}{169}\\) es correcto, pero al extraer la raíz en el paso 4 hay dos signos posibles y, por el cuadrante, corresponde el negativo: \\(\\sen \\varphi = -\\dfrac{5}{13}\\). Tomar el signo positivo es el error del paso 4.",
+      "opciones_incorrectas": {
+        "A": "La identidad fundamental vale para cualquier ángulo; el cuadrante no la invalida, solo fija el signo del resultado.",
+        "B": "El paso 1 es correcto: \\(\\left(\\dfrac{12}{13}\\right)^{2}\\) es la fracción multiplicada por sí misma, no duplicada.",
+        "D": "El valor \\(\\dfrac{25}{169}\\) sí es menor que \\(1\\); el paso 3 está bien planteado."
+      }
+    },
+    {
+      "id": "P10M203",
+      "numero": 3,
+      "enunciado": "<p>Renata quiere meter un lápiz de <b>\\(10\\ \\text{cm}\\)</b> de largo en un vaso de <b>\\(6\\ \\text{cm}\\)</b> de diámetro y <b>\\(6\\ \\text{cm}\\)</b> de altura, de modo que sobresalgan <b>más de \\(3\\ \\text{cm}\\)</b> para poder tomarlo. Forma el triángulo rectángulo de la figura, aplica el Teorema de Pitágoras y obtiene que la diagonal interna mide <b>\\(\\sqrt{72}\\)</b>; luego la resta de los \\(10\\ \\text{cm}\\) y afirma que <b>sí</b> sobresalen más de \\(3\\ \\text{cm}\\). ¿Es correcta su afirmación?</p>",
+      "opciones": {
+        "A": "Sí, porque la diagonal es mayor que \\(6\\ \\text{cm}\\), así que sobresale más de \\(4\\ \\text{cm}\\).",
+        "B": "No, porque el lápiz se puede poner en otra posición y quedar totalmente dentro del vaso.",
+        "C": "No, porque \\(8 < \\sqrt{72} < 9\\), así que sobresalen entre \\(1\\) y \\(2\\ \\text{cm}\\): menos de \\(3\\).",
+        "D": "Sí, porque \\(\\sqrt{72} \\approx 8\\) y \\(10 - 8 = 2\\), justo lo que se necesita."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad del estudiante de establecer la validez de soluciones propuestas que usan en su procedimiento el Teorema de Pitágoras, además de realizar aproximaciones de raíces haciendo uso de desigualdades.",
+      "justificacion_correcta": "Aplicar Pitágoras es válido: la diagonal interna es la hipotenusa del triángulo de catetos \\(6\\) y \\(6\\), \\(\\sqrt{6^2+6^2}=\\sqrt{72}\\). Pero como \\(8 < \\sqrt{72} < 9\\), al restar \\(10 - \\sqrt{72}\\) se obtiene un valor entre \\(1\\) y \\(2\\ \\text{cm}\\) (porque \\(10-9 < 10-\\sqrt{72} < 10-8\\)). Sobresale menos de \\(3\\ \\text{cm}\\), así que la afirmación es falsa.",
+      "opciones_incorrectas": {
+        "A": "Que la hipotenusa supere un cateto no garantiza que sobresalga más de \\(3\\ \\text{cm}\\).",
+        "B": "La forma de meter más lápiz es justo por la diagonal, como hizo Renata; otra posición no ayuda.",
+        "D": "Confunde el sentido de la desigualdad: \\(10 - \\sqrt{72}\\) queda entre \\(1\\) y \\(2\\), no en \\(2\\) exacto."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q03.png"
+    },
+    {
+      "id": "P10M204",
+      "numero": 4,
+      "enunciado": "<p>Al resolver la ecuación <b>\\(x^2 - 7x + 12 = 0\\)</b>, un compañero asegura que el <b>único</b> valor que la satisface es \\(x = 4\\). ¿Tiene razón?</p>",
+      "opciones": {
+        "A": "Sí, porque al quitar el término \\(x^2\\) queda \\(-7x + 12 = 0\\) y de ahí sale solo \\(x = 4\\).",
+        "B": "Sí, porque una ecuación con término al cuadrado admite a lo sumo un valor que la cumpla.",
+        "C": "No, porque al sustituir \\(x = 0\\) reaparece el \\(12\\), que sería otra solución.",
+        "D": "No, porque la ecuación se escribe como \\((x - 3)(x - 4) = 0\\) y entonces \\(x = 3\\) también la satisface."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La capacidad de los estudiantes para identificar cuántas soluciones tiene una ecuación cuadrática y argumentar porque es esa la solución o soluciones.",
+      "justificacion_correcta": "Factorizando, \\(x^2 - 7x + 12 = (x - 3)(x - 4)\\). Un producto es \\(0\\) cuando alguno de sus factores lo es, de modo que \\(x = 3\\) o \\(x = 4\\). La afirmación es falsa: la ecuación tiene dos soluciones y \\(x = 3\\) es una de ellas.",
+      "opciones_incorrectas": {
+        "A": "No se puede descartar el término \\(x^2\\); al hacerlo se cambia la ecuación, que sigue siendo de segundo grado.",
+        "B": "Una ecuación de segundo grado puede tener hasta dos soluciones reales diferentes.",
+        "C": "Sustituir \\(x = 0\\) solo evalúa la expresión en cero; no produce una solución de la ecuación."
+      }
+    },
+    {
+      "id": "P10M205",
+      "numero": 5,
+      "enunciado": "<p>Camilo revisó cuatro cursos virtuales. De cada uno anotó su <b>duración total</b> y el <b>porcentaje de ese tiempo</b> destinado a evaluación, según la tabla:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso virtual</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Duración (h)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parte dedicada a evaluación</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">22 %</td></tr></table><p>Después armó la <b>gráfica circular</b> de la figura colocando esos cuatro porcentajes como tajadas de un mismo círculo. ¿Cuál es la razón por la que esa gráfica está <b>mal</b> usada?</p>",
+      "opciones": {
+        "A": "Porque cada porcentaje se refiere a un curso distinto y no a las partes de una sola cantidad.",
+        "B": "Porque dejó por fuera la duración total de cada curso.",
+        "C": "Porque la suma de los cuatro porcentajes no llega al \\(100\\,\\%\\).",
+        "D": "Porque los cursos quedaron ordenados de forma equivocada en la gráfica."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La capacidad de justificar la pertinencia o no de representaciones de datos.",
+      "justificacion_correcta": "Un diagrama circular divide una única cantidad en sus partes. Aquí cada porcentaje proviene de un curso diferente (cuatro cantidades independientes), así que reunirlos como tajadas de un mismo círculo no tiene sentido.",
+      "opciones_incorrectas": {
+        "B": "Los datos ya son porcentajes; no hace falta la duración total de cada curso para notar el error.",
+        "C": "Que sumen o no \\(100\\,\\%\\) es irrelevante; el problema de fondo es que pertenecen a todos distintos.",
+        "D": "Cada porcentaje está bien ligado a su curso; el orden de las tajadas no es la falla."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q05.png"
+    },
+    {
+      "id": "P10M206",
+      "numero": 6,
+      "enunciado": "<p>Para sostener un <b>asta</b>, un equipo de trabajo tensará un <b>cable</b> desde lo alto del asta hasta un anclaje en el suelo. En el diagrama, la línea punteada roja es el cable, que va del punto <b>\\(P\\)</b> (parte alta del asta) al punto <b>\\(Q\\)</b> (anclaje en el suelo). Las medidas <b>\\(h, d, L, \\beta\\)</b> forman un triángulo rectángulo, donde \\(h\\) es la altura del asta, \\(d\\) la distancia del anclaje a la base y \\(L\\) la longitud del cable. ¿Se puede hallar la longitud \\(L\\) del cable conociendo <b>dos</b> medidas adicionales a las que aparecen?</p>",
+      "opciones": {
+        "A": "No, se requieren simultáneamente la altura \\(h\\), el ángulo recto de la base y la distancia \\(d\\).",
+        "B": "Sí, conociendo el ángulo \\(\\beta\\) y la distancia \\(d\\) se aplica una razón trigonométrica.",
+        "C": "No, primero hay que medir los tres ángulos interiores del triángulo.",
+        "D": "Sí, alcanza con el ángulo recto de la base y la distancia \\(d\\) para obtener \\(L\\)."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Describo y modelo fenómenos periódicos del mundo real usando relaciones y funciones trigonométricas.",
+      "que_evalua": "La capacidad de los estudiantes para identificar datos que permiten determinar un valor requerido por medio de una estrategia que involucra relaciones trigonométricas.",
+      "justificacion_correcta": "El triángulo tiene su ángulo recto en la base del asta. Visto desde el ángulo \\(\\beta\\) en \\(Q\\), la distancia \\(d\\) es el cateto adyacente y \\(L\\) la hipotenusa, de modo que \\(\\cos \\beta = \\dfrac{d}{L}\\) y se despeja \\(L = \\dfrac{d}{\\cos \\beta}\\). Con \\(\\beta\\) y \\(d\\) (dos medidas) queda determinado \\(L\\).",
+      "opciones_incorrectas": {
+        "A": "No se necesitan las tres a la vez; con el ángulo \\(\\beta\\) y un lado ya se arma una razón trigonométrica.",
+        "C": "Basta un ángulo agudo y un cateto; no hacen falta los tres ángulos.",
+        "D": "El ángulo recto de la base, por sí solo, no vincula \\(L\\) con \\(d\\); se requiere el ángulo \\(\\beta\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q06.png"
+    },
+    {
+      "id": "P10M207",
+      "numero": 7,
+      "enunciado": "<p>Mariana arma una tabla con valores de la sucesión <b>\\(f(n) = 2 + \\dfrac{1}{n}\\)</b> para valores muy grandes de \\(n\\) (figura). ¿A qué valor se aproxima \\(f(n)\\) a medida que \\(n\\) aumenta cada vez más?</p>",
+      "opciones": {
+        "A": "A \\(0\\).",
+        "B": "A \\(2{,}5\\).",
+        "C": "A \\(-\\infty\\).",
+        "D": "A \\(2\\)."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo las técnicas de aproximación en procesos infinitos numéricos.",
+      "que_evalua": "La capacidad para caracterizar tendencias en sucesiones numéricas, a partir de la fórmula general y algunos valores particulares representados en una tabla.",
+      "justificacion_correcta": "Cuando \\(n\\) crece mucho, el término \\(\\dfrac{1}{n}\\) se acerca a \\(0\\), así que \\(f(n) = 2 + \\dfrac{1}{n}\\) se acerca a \\(2 + 0 = 2\\). La tabla lo confirma: \\(2{,}1\\); \\(2{,}01\\); \\(2{,}001\\); \\(2{,}0001\\).",
+      "opciones_incorrectas": {
+        "A": "Es \\(\\dfrac{1}{n}\\) el que tiende a \\(0\\), no toda la función; \\(f(n)\\) tiende a \\(2\\).",
+        "B": "\\(2{,}5\\) está por encima de todos los valores de la tabla, que bajan hacia \\(2\\).",
+        "C": "Los valores decrecen pero permanecen por encima de \\(2\\); no se van a \\(-\\infty\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q07.png"
+    },
+    {
+      "id": "P10M208",
+      "numero": 8,
+      "enunciado": "<p>En un club se encuestó a sus integrantes sobre tres deportes: <b>fútbol</b>, <b>tenis</b> y <b>natación</b>. Los resultados, dados como <b>totales</b>, fueron:</p><p>• \\(18\\) personas practicarían fútbol, \\(16\\) tenis y \\(19\\) natación.<br>• \\(7\\) practicarían fútbol y tenis; \\(8\\), fútbol y natación; \\(5\\), tenis y natación (cada una cuenta el total de ese par, incluidos quienes practican los tres).<br>• \\(3\\) personas practicarían los <b>tres</b> deportes a la vez.</p><p>¿Cuál de los diagramas de Venn (A, B, C o D) organiza correctamente esta información?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad del estudiante de construir el diagrama de Venn de una encuesta a partir de información textual (dada en lenguaje natural).",
+      "justificacion_correcta": "El diagrama correcto es el C. El centro (los tres) es \\(3\\). Cada par se obtiene restándole el centro: fútbol y tenis solos \\(=7-3=4\\); fútbol y natación solos \\(=8-3=5\\); tenis y natación solos \\(=5-3=2\\). Luego cada zona individual se obtiene restando del total: solo fútbol \\(=18-(4+5+3)=6\\); solo tenis \\(=16-(4+2+3)=7\\); solo natación \\(=19-(5+2+3)=9\\).",
+      "opciones_incorrectas": {
+        "A": "Coloca los totales de los pares (\\(7, 8, 5\\)) en las zonas de cada par sin restarles el centro \\(3\\); no opera las intersecciones.",
+        "B": "Confunde “practican fútbol” (total) con “practican <i>solo</i> fútbol”: coloca los totales \\(18, 16, 19\\) en las zonas individuales, sobrecontando.",
+        "D": "Copia cada dato del texto a una zona sin operar: deja los totales \\(18, 16, 19\\) en los solos y \\(7, 8, 5\\) en los pares."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q08.png"
+    },
+    {
+      "id": "P10M209",
+      "numero": 9,
+      "enunciado": "<p>La gráfica muestra la expectativa de vida de hombres y mujeres en cuatro ciudades. ¿En cuál ciudad es <b>mayor</b> la diferencia entre la expectativa de vida de hombres y mujeres?</p>",
+      "opciones": {
+        "A": "Cali.",
+        "B": "Pasto.",
+        "C": "Bogotá.",
+        "D": "Tunja."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad de interpretar gráficas a fin de dar respuesta a preguntas básicas acerca de la información presentada.",
+      "justificacion_correcta": "La diferencia es la distancia entre las dos barras, sin importar cuál sea mayor. En valor absoluto: Bogotá \\(|82-74|=8\\), Cali \\(|84-78|=6\\), Pasto \\(|81-71|=10\\), Tunja \\(|76-73|=3\\). La mayor es Pasto, con \\(10\\) años (allí las mujeres viven menos que los hombres).",
+      "opciones_incorrectas": {
+        "A": "En Cali la diferencia es \\(6\\), menor que en Pasto.",
+        "C": "En Bogotá la barra de mujeres es la más alta y la diferencia es \\(8\\), pero no es la mayor: en Pasto es \\(10\\).",
+        "D": "En Tunja la diferencia es apenas \\(3\\); confunde la cercanía de las barras con una mayor diferencia."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q09.png"
+    },
+    {
+      "id": "P10M210",
+      "numero": 10,
+      "enunciado": "<p>La gráfica registra los usuarios (en miles) que atendió una <b>biblioteca pública</b> durante sus primeras <b>\\(6\\) semanas</b>: \\(9\\), \\(12\\), \\(18\\), \\(12\\), \\(15\\) y \\(18\\) mil. ¿Cuál es el <b>promedio</b> de usuarios por semana?</p>",
+      "opciones": {
+        "A": "\\(18.000\\)",
+        "B": "\\(12.000\\)",
+        "C": "\\(16.500\\)",
+        "D": "\\(14.000\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes de determinar promedio de un conjunto de datos representado en una gráfica de barras.",
+      "justificacion_correcta": "Se suman todos los usuarios: \\(9+12+18+12+15+18 = 84\\) mil, y se divide entre las \\(6\\) semanas: \\(84.000 \\div 6 = 14.000\\).",
+      "opciones_incorrectas": {
+        "A": "\\(18.000\\) es el valor que más se repite (la moda), no el promedio.",
+        "B": "\\(12.000\\) corresponde a una semana del centro, no al promedio.",
+        "C": "\\(16.500\\) es el promedio de los dos valores centrales (una mediana mal calculada)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q10.png"
+    },
+    {
+      "id": "P10M211",
+      "numero": 11,
+      "enunciado": "<p>Cuando Venus, la Tierra y el Sol forman un ángulo de <b>\\(38^\\circ\\)</b> (en la Tierra), se forma un triángulo rectángulo (figura). La distancia <b>Tierra-Sol</b> es la <b>hipotenusa</b> y vale aproximadamente <b>\\(200\\) millones de km</b>; la distancia <b>Venus-Sol</b> es el <b>cateto opuesto</b> al ángulo de \\(38^\\circ\\). El recuadro recuerda las funciones trigonométricas: como se busca el <b>cateto opuesto</b> a partir de la <b>hipotenusa</b>, la función que las relaciona es el <b>seno</b>. ¿Cuál expresión permite hallar la distancia <b>Venus-Sol</b>, en millones de km?</p>",
+      "opciones": {
+        "A": "\\(200 \\div \\sen 38^\\circ\\)",
+        "B": "\\(200 \\times \\sen 38^\\circ\\)",
+        "C": "\\(200 \\times \\cos 38^\\circ\\)",
+        "D": "\\(200 \\div \\cos 38^\\circ\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad de los estudiantes de utilizar las funciones trigonométricas para determinar longitudes de los lados de un triángulo rectángulo.",
+      "justificacion_correcta": "Para el ángulo de \\(38^\\circ\\), \\(\\sen 38^\\circ = \\dfrac{\\text{cateto opuesto}}{\\text{hipotenusa}} = \\dfrac{\\text{Venus-Sol}}{200}\\). Despejando: Venus-Sol \\(= 200 \\times \\sen 38^\\circ\\).",
+      "opciones_incorrectas": {
+        "A": "Despeja al revés, dividiendo en vez de multiplicar por el seno.",
+        "C": "Usa el coseno, que relaciona el cateto adyacente, no el opuesto Venus-Sol.",
+        "D": "Combina el coseno con una división incorrecta."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q11.png"
+    },
+    {
+      "id": "P10M212",
+      "numero": 12,
+      "enunciado": "<p>En una veterinaria hay <b>\\(3\\) jaulas</b> y se quiere ubicar en ellas un <b>conejo</b>, un <b>hámster</b> y un <b>cobayo</b>, con un solo animal por jaula (figura). ¿De cuántas formas distintas se pueden organizar los tres animales en las tres jaulas?</p>",
+      "opciones": {
+        "A": "\\(1\\)",
+        "B": "\\(5\\)",
+        "C": "\\(6\\)",
+        "D": "\\(9\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad de los estudiantes para determinar la cantidad de veces que se pueden permutar todos los elementos de un conjunto.",
+      "justificacion_correcta": "Se permutan \\(3\\) animales en \\(3\\) jaulas: es una permutación de \\(3\\) elementos, que se calcula con el factorial \\(3! = 3 \\times 2 \\times 1 = 6\\).",
+      "opciones_incorrectas": {
+        "A": "Trataría a las jaulas como un solo grupo sin importar el orden (combinación \\(3\\) de \\(3 = 1\\)).",
+        "B": "Calcula mal el factorial como una suma \\(3 + 2 = 5\\).",
+        "D": "Multiplica \\(3 \\times 3 = 9\\), confundiendo permutación con repetición."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q12.png"
+    },
+    {
+      "id": "P10M213",
+      "numero": 13,
+      "enunciado": "<p>En el laboratorio, cada litro de la solución de <b>Andrés</b> contiene <b>\\(25\\ \\text{g}\\)</b> de sal y cada litro de la de <b>Bea</b> contiene <b>\\(75\\ \\text{g}\\)</b>. Se revuelve <b>\\(1\\ \\text{L}\\)</b> de la de Andrés con <b>\\(400\\ \\text{ml}\\)</b> de la de Bea. ¿Cuánta <b>agua pura</b> hay que agregar para que la concentración final iguale a la de Andrés (\\(25\\ \\text{g/L}\\))?</p>",
+      "opciones": {
+        "A": "\\(400\\ \\text{ml}\\)",
+        "B": "\\(600\\ \\text{ml}\\)",
+        "C": "\\(800\\ \\text{ml}\\)",
+        "D": "\\(1.400\\ \\text{ml}\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
+      "que_evalua": "La capacidad para aplicar estrategias en problemas que involucran razones con números reales.",
+      "justificacion_correcta": "Sal total: \\(1\\ \\text{L} \\times 25 + 0{,}4\\ \\text{L} \\times 75 = 25 + 30 = 55\\ \\text{g}\\). Para una concentración de \\(25\\ \\text{g/L}\\) se necesita un volumen total \\(V\\) con \\(\\dfrac{55}{V} = 25\\), es decir \\(V = 2{,}2\\ \\text{L}\\). Como ya hay \\(1{,}4\\ \\text{L}\\), se agregan \\(2{,}2 - 1{,}4 = 0{,}8\\ \\text{L} = 800\\ \\text{ml}\\).",
+      "opciones_incorrectas": {
+        "A": "\\(400\\ \\text{ml}\\) es lo que se añadió de la solución de Bea, no el agua que falta agregar.",
+        "B": "Olvida parte del volumen ya presente; \\(600\\) proviene de una resta incompleta.",
+        "D": "Suma \\(2{,}2\\ \\text{L} + 1{,}4\\ \\text{L}\\) en lugar de restar, lo que da un valor sin sentido."
+      }
+    },
+    {
+      "id": "P10M214",
+      "numero": 14,
+      "enunciado": "<p>En un videojuego, un jugador anotó puntajes que son <b>números impares</b> en cuatro rondas (la figura muestra un ejemplo). Si los puntajes pueden repetirse, ¿cuál de estas situaciones <b>resulta imposible</b>?</p>",
+      "opciones": {
+        "A": "Que la mediana de los cuatro puntajes resulte ser un entero par.",
+        "B": "Que la mediana de los cuatro puntajes tenga una única cifra decimal igual a \\(5\\).",
+        "C": "Que el promedio de los cuatro puntajes resulte ser un entero par.",
+        "D": "Que el promedio de los cuatro puntajes tenga una única cifra decimal igual a \\(5\\)."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes para determinar las características que tendrá el resultado de un cálculo de la mediana o de la media para un conjunto de datos con valores impares.",
+      "justificacion_correcta": "Con \\(4\\) datos (cantidad par), la mediana es el promedio de los dos valores centrales. Como son impares, esos dos centrales suman un número par y, al dividir entre \\(2\\), el resultado es siempre un entero, sin parte decimal. Por eso es imposible que la mediana termine en \\({,}5\\).",
+      "opciones_incorrectas": {
+        "A": "La mediana sí puede ser par; por ejemplo, \\(\\dfrac{13+15}{2} = 14\\).",
+        "C": "El promedio sí puede ser par: cuatro impares pueden sumar un múltiplo de \\(8\\).",
+        "D": "El promedio (la suma dividida entre \\(4\\)) sí puede terminar en \\({,}5\\): por ejemplo \\(13+13+13+15=54\\) y \\(\\dfrac{54}{4}=13{,}5\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q14.png"
+    },
+    {
+      "id": "P10M215",
+      "numero": 15,
+      "enunciado": "<p>Un pastelero organiza un menú de degustación y dispone de estas opciones:</p><p>• Fijar un nivel de dulzor entre \\(3\\) y \\(7\\).<br>• Fijar una temperatura de horno entre \\(160^\\circ\\) y \\(200^\\circ\\).<br>• Escoger \\(2\\) frutas de un surtido de \\(7\\) disponibles.<br>• Escoger \\(4\\) moldes de un conjunto de \\(6\\) que tiene.</p><p>El pastelero recuerda que la combinación de \\(7\\) tomados de a \\(2\\) es <b>\\(21\\)</b>. ¿Qué pregunta queda respondida con ese cálculo?</p>",
+      "opciones": {
+        "A": "Cuántos niveles de dulzor distintos podría fijar.",
+        "B": "Cuántas temperaturas de horno distintas podría fijar.",
+        "C": "Cuántos pares distintos de frutas podría seleccionar.",
+        "D": "Cuántos conjuntos distintos de moldes podría seleccionar."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad de los estudiantes para identificar el problema de conteo que se puede resolver al realizar una combinación.",
+      "justificacion_correcta": "Escoger \\(2\\) frutas de \\(7\\) sin que importe el orden y sin repetir es justamente la combinación de \\(7\\) tomados de a \\(2\\), igual a \\(21\\). Por eso ese número responde cuántos pares de frutas puede formar.",
+      "opciones_incorrectas": {
+        "A": "El intervalo de dulzor no se cuenta con una combinación.",
+        "B": "El intervalo de temperaturas tampoco corresponde a la combinación de \\(7\\) en \\(2\\).",
+        "D": "Los moldes darían la combinación de \\(6\\) en \\(4 = 15\\), no \\(21\\)."
+      }
+    },
+    {
+      "id": "P10M216",
+      "numero": 16,
+      "enunciado": "<p>La figura muestra, para <b>cuatro estudiantes</b> (Ana, Beto, Cris y Deri), cómo reparten las \\(24\\) horas del día entre <b>Dormir</b>, <b>Estudio</b>, <b>Ocio</b> y <b>Otros</b> (barras apiladas). Se quiere construir una gráfica de barras que muestre, para cada estudiante, <b>cuántas horas de Estudio</b> tiene. ¿Cuál de las gráficas (A, B, C o D) representa correctamente las horas de <b>Estudio</b> de cada estudiante?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad de extraer fragmentos de información cuantitativa y elaborar representaciones gráficas con ellas.",
+      "justificacion_correcta": "La gráfica correcta es la A. Las horas de Estudio son la <i>longitud</i> del segmento “Estudio” en cada barra apilada, no el punto donde termina: Ana \\(4\\) h, Beto \\(3\\) h, Cris \\(5\\) h y Deri \\(2\\) h. La gráfica A muestra exactamente esas alturas.",
+      "opciones_incorrectas": {
+        "B": "Usa el valor acumulado Dormir + Estudio (el punto donde <i>termina</i> el segmento: \\(11, 9, 13, 11\\)) en vez de su longitud.",
+        "C": "Lee por error el segmento anterior (Dormir: \\(7, 6, 8, 9\\)) en lugar del de Estudio.",
+        "D": "Lee por error el segmento siguiente (Ocio: \\(5, 7, 5, 6\\)) en lugar del de Estudio."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q16.png"
+    },
+    {
+      "id": "P10M217",
+      "numero": 17,
+      "enunciado": "<p>En una escuela se aplicaron <b>dos</b> encuestas separadas sobre adoptar una jornada única. La <b>Tabla 1</b> reúne los votos del personal de la escuela y la <b>Tabla 2</b> los de las familias:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Encuestados</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">A favor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">En contra</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Docentes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Auxiliares</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr></table><div style=\"text-align:center;font-family:Georgia,serif;font-weight:700;color:#A8132F;margin-top:6px\">Tabla 1 — Personal de la escuela</div><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Encuestados</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">A favor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">En contra</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Acudientes (mañana)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Acudientes (tarde)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr></table><div style=\"text-align:center;font-family:Georgia,serif;font-weight:700;color:#A8132F;margin-top:6px\">Tabla 2 — Familias</div><p>Para difundir los resultados, la escuela quiere una <b>sola</b> gráfica que muestre, para <b>cada uno de los cuatro grupos</b>, sus votos a favor y en contra (combinando la información de las dos tablas). ¿Cuál de las gráficas (A, B, C o D) lo representa correctamente?</p>",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad de los estudiantes para elaborar gráficas de barras a partir de información presentada en tablas.",
+      "justificacion_correcta": "La gráfica correcta es la B: para cada uno de los cuatro grupos dibuja dos barras, una con los votos a favor y otra con los en contra, usando los valores exactos de las dos tablas (Docentes \\(24/8\\), Auxiliares \\(12/6\\), Acud. mañana \\(18/14\\), Acud. tarde \\(16/9\\)).",
+      "opciones_incorrectas": {
+        "A": "Junta a favor y en contra en una sola barra por grupo; no discrimina los votos.",
+        "C": "Mezcla los grupos entre las dos tablas, asignando valores cruzados.",
+        "D": "Agrupa por tabla (solo dos barras) y no por grupo, perdiendo el detalle de cada uno."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q17.png"
+    },
+    {
+      "id": "P10M218",
+      "numero": 18,
+      "enunciado": "<p>Un bloque de concreto tiene tres orificios en forma de paralelepípedo recto (figura): los dos de los extremos son cuadrados de <b>\\(8\\ \\text{cm}\\)</b> de lado y el central es rectangular con un lado de <b>\\(3\\ \\text{cm}\\)</b>; los tres lo atraviesan a lo <b>largo</b> de su espesor, que mide <b>\\(7\\ \\text{cm}\\)</b>. Si se rellenan los tres orificios con mortero, ¿qué medidas hacen falta para calcular el mortero usado?</p>",
+      "opciones": {
+        "A": "\\(8\\ \\text{cm}\\), \\(3\\ \\text{cm}\\) y \\(7\\ \\text{cm}\\).",
+        "B": "\\(8\\ \\text{cm}\\), \\(14\\ \\text{cm}\\) y \\(28\\ \\text{cm}\\).",
+        "C": "\\(8\\ \\text{cm}\\), \\(3\\ \\text{cm}\\), \\(6\\ \\text{cm}\\) y \\(7\\ \\text{cm}\\).",
+        "D": "\\(8\\ \\text{cm}\\), \\(7\\ \\text{cm}\\), \\(14\\ \\text{cm}\\) y \\(28\\ \\text{cm}\\)."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Diseño estrategias para abordar situaciones de medición que requieran grados de precisión específicos.",
+      "que_evalua": "La capacidad para diseñar estrategias que permitan calcular volúmenes de figuras compuestas.",
+      "justificacion_correcta": "El mortero ocupa la suma de los tres orificios. Cada cuadrado requiere su lado (\\(8\\ \\text{cm}\\)) y el espesor del bloque (\\(7\\ \\text{cm}\\)): \\(8\\times 8\\times 7\\). El rectangular requiere los dos lados de su base (\\(3\\ \\text{cm}\\) y el otro, \\(6\\ \\text{cm}\\)) y el espesor (\\(7\\ \\text{cm}\\)): \\(3\\times 6\\times 7\\). En conjunto se necesitan \\(8\\ \\text{cm}\\), \\(3\\ \\text{cm}\\), \\(6\\ \\text{cm}\\) y \\(7\\ \\text{cm}\\).",
+      "opciones_incorrectas": {
+        "A": "Falta el segundo lado de la base del orificio central (\\(6\\ \\text{cm}\\)).",
+        "B": "Toma medidas exteriores del bloque (\\(14\\) y \\(28\\)), que no intervienen en los orificios.",
+        "D": "Combina medidas del bloque entero con las de los orificios; sobran datos y falta el lado de \\(6\\ \\text{cm}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p2/q18.png"
+    },
+    {
+      "id": "P10M219",
+      "numero": 19,
+      "enunciado": "<p>Al modelar la oscilación de un péndulo, Tomás aproxima el seno con la serie <b>\\(\\sen(x) = x - \\dfrac{x^3}{3!} + \\dfrac{x^5}{5!} - \\dots\\)</b> Si toma solo sus <b>tres primeros términos</b> para estimar <b>\\(\\sen(1)\\)</b>, teniendo en cuenta que \\(3! = 6\\) y \\(5! = 120\\), ¿qué valor le queda?</p>",
+      "opciones": {
+        "A": "\\(1 - 3 + 5 = 3\\).",
+        "B": "\\(1 - \\dfrac{1}{6} + \\dfrac{1}{120} = \\dfrac{101}{120}\\).",
+        "C": "\\(1 + \\dfrac{1}{6} + \\dfrac{1}{120} = \\dfrac{141}{120}\\).",
+        "D": "\\(1 + \\dfrac{1}{6} - \\dfrac{1}{120} = \\dfrac{139}{120}\\)."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo las técnicas de aproximación en procesos infinitos numéricos.",
+      "que_evalua": "La capacidad de los estudiantes para calcular una aproximación del valor de una función trigonométrica utilizando una expresión más simple.",
+      "justificacion_correcta": "Con los tres primeros términos y \\(x = 1\\): \\(\\sen(1) \\approx 1 - \\dfrac{1^3}{3!} + \\dfrac{1^5}{5!} = 1 - \\dfrac{1}{6} + \\dfrac{1}{120}\\). Con denominador común \\(120\\): \\(\\dfrac{120}{120} - \\dfrac{20}{120} + \\dfrac{1}{120} = \\dfrac{101}{120}\\).",
+      "opciones_incorrectas": {
+        "A": "Multiplica \\(1\\) por los exponentes en vez de aplicar \\(1^n = 1\\) y dividir por los factoriales.",
+        "C": "Suma todos los términos, ignorando el signo negativo del segundo.",
+        "D": "Cambia el signo del tercer término; debe sumarse, no restarse."
+      }
+    },
+    {
+      "id": "P10M220",
+      "numero": 20,
+      "enunciado": "<p>En una imprenta trabajan dos impresoras: la <b>impresora 1</b> imprime <b>\\(3.500\\)</b> hojas por hora y la <b>impresora 2</b> imprime <b>\\(4.500\\)</b> por hora. Para estimar cuántas hojas producen en un turno se procede así:</p><p>Paso 1. Sumar lo que imprimen por hora: \\(3.500 + 4.500\\).<br>Paso 2. Multiplicar ese resultado por la cantidad de horas del turno (un número entero).</p><p>¿Qué característica tendrá necesariamente el resultado?</p>",
+      "opciones": {
+        "A": "Ser múltiplo de \\(3.500\\).",
+        "B": "Ser múltiplo de \\(4.500\\).",
+        "C": "Ser múltiplo de \\(15.750\\).",
+        "D": "Ser múltiplo de \\(8.000\\)."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad del estudiante de identificar si el resultado de un procedimiento que involucra sumas y multiplicaciones es o no múltiplo de un número entero específico.",
+      "justificacion_correcta": "En el paso 1 la suma da \\(3.500 + 4.500 = 8.000\\), y en el paso 2 ese \\(8.000\\) se multiplica por un número entero de horas. El producto de \\(8.000\\) por cualquier entero es siempre un múltiplo de \\(8.000\\).",
+      "opciones_incorrectas": {
+        "A": "Solo la impresora 1 produce múltiplos de \\(3.500\\); el total también incluye a la 2.",
+        "B": "Solo la impresora 2 produce múltiplos de \\(4.500\\); el total también incluye a la 1.",
+        "C": "\\(15.750 = 3.500 \\times 4.500\\) confunde el paso 1, que es una suma y no un producto."
+      }
+    }
+  ],
+  "preservar_orden_preguntas": false
+}

@@ -1,0 +1,240 @@
+{
+  "version": "2.0",
+  "campos_encabezado": [
+    { "id": "docente", "label": "Docente", "tipo": "texto", "auto": "sesion.nombre_completo" },
+    { "id": "area", "label": "Área", "tipo": "texto", "valor_default": "Matemáticas" },
+    { "id": "grado", "label": "Grado", "tipo": "texto" },
+    { "id": "grupo", "label": "Grupo", "tipo": "texto" },
+    { "id": "periodo", "label": "Período", "tipo": "select", "opciones": ["I", "II", "III"] }
+  ],
+  "secciones": [
+    {
+      "id": "trayectoria",
+      "titulo": "Trayectoria histórica de puntajes",
+      "tipo": "tabla_auto",
+      "columnas": ["Puntaje", "PERIODO I", "PERIODO II", "PERIODO III"],
+      "descripcion": "Esta tabla se auto-rellena con los puntajes promedio del grupo en cada período aplicado."
+    },
+    {
+      "id": "acciones",
+      "titulo": "Plan de acción pedagógica",
+      "tipo": "tabla_editable",
+      "columnas": [
+        { "id": "fortalezas", "label": "FORTALEZAS", "color": "#10B981" },
+        { "id": "oportunidades", "label": "OPORTUNIDADES DE MEJORA", "color": "#F59E0B" },
+        { "id": "estrategias", "label": "ESTRATEGIAS DIDÁCTICAS", "color": "#DC2626" },
+        { "id": "seguimiento", "label": "SEGUIMIENTO", "color": "#0EA5E9" }
+      ],
+      "filas_iniciales": 3,
+      "permite_agregar_filas": true
+    },
+    {
+      "id": "vinculacion_curricular",
+      "titulo": "Vinculación curricular institucional",
+      "tipo": "checkboxes",
+      "items": [
+        { "id": "siee", "label": "Actualiza el Sistema Institucional de Evaluación de Estudiantes (SIEE)" },
+        { "id": "mallas", "label": "Actualiza las Mallas de Aprendizaje del área" },
+        { "id": "pei", "label": "Alinea objetivos con el Proyecto Educativo Institucional (PEI)" }
+      ],
+      "campos_adicionales": [
+        { "id": "responsable", "label": "Responsable institucional", "tipo": "texto" },
+        { "id": "fecha_implementacion", "label": "Fecha de implementación", "tipo": "fecha" }
+      ]
+    }
+  ],
+  "sugerencias_automaticas_por_area": {
+    "matematicas": {
+      "competencia": {
+        "a": [
+          "Implementar lectura crítica de gráficos y tablas en cada clase con preguntas guiadas.",
+          "Diseñar talleres de transformación de representaciones (tabla → gráfica → expresión algebraica)."
+        ],
+        "b": [
+          "Aplicar la metodología de Pólya en la resolución de problemas: comprender, planear, ejecutar, verificar.",
+          "Trabajar con problemas contextualizados de la cotidianidad estudiantil."
+        ],
+        "c": [
+          "Promover debates matemáticos donde los estudiantes justifiquen sus respuestas oralmente.",
+          "Implementar rutinas de pensamiento como 'Veo-Pienso-Pregunto' aplicadas a problemas matemáticos."
+        ]
+      },
+      "dim_secundaria": {
+        "Estadística": [
+          "Trabajar proyectos de aula con recolección y análisis de datos reales del entorno.",
+          "Usar GeoGebra Estadística o Google Sheets para visualizar distribuciones y medidas de tendencia central."
+        ],
+        "Geometría": [
+          "Usar software dinámico (GeoGebra) para visualizar transformaciones y propiedades.",
+          "Modelar geométricamente situaciones del contexto (planos, mapas, construcciones)."
+        ],
+        "Álgebra y Cálculo": [
+          "Reforzar los conceptos de función, dominio y rango con ejemplos del contexto.",
+          "Trabajar tasas de cambio y derivadas con aplicaciones contextualizadas."
+        ]
+      }
+    },
+    "lectura_critica": {
+      "competencia": {
+        "a": [
+          "Implementar talleres semanales de lectura con análisis literal, inferencial y crítico.",
+          "Construir glosarios contextualizados antes y durante la lectura para fortalecer el léxico."
+        ]
+      },
+      "afirmacion": {
+        "1": [
+          "Trabajar identificación de eventos explícitos, personajes y descripciones en textos breves.",
+          "Usar la rutina 'subrayar elementos locales clave' antes de cualquier análisis global."
+        ],
+        "2": [
+          "Diseñar actividades de reorganización textual: cambiar el orden de párrafos y pedir reconstrucción.",
+          "Trabajar con esquemas argumentativos: tesis, argumentos, ejemplos y contraargumentos en columnas de opinión."
+        ],
+        "3": [
+          "Promover debates en clase donde los estudiantes confronten posturas frente a textos polémicos.",
+          "Enseñar a identificar recursos persuasivos: apelaciones emocionales, falacias, dilución de fuentes."
+        ]
+      }
+    },
+    "sociales_ciudadanas": {
+      "competencia": {
+        "a": [
+          "Trabajar con fuentes primarias y secundarias para reconstruir contextos históricos colombianos.",
+          "Articular el aula con la Cátedra de Paz: memoria histórica, reconciliación, territorios."
+        ],
+        "b": [
+          "Confrontar relatos de distintos actores (víctimas, gobierno, sociedad civil) sobre un mismo hecho.",
+          "Analizar caricatura política, columnas y discursos identificando intencionalidad y posicionamiento."
+        ],
+        "c": [
+          "Plantear dilemas éticos del contexto colombiano (acuerdos de paz, derechos humanos, participación) para argumentar.",
+          "Trabajar con la Constitución de 1991 como insumo para evaluar normas y mecanismos de participación."
+        ]
+      },
+      "afirmacion": {
+        "1": [
+          "Reforzar el conocimiento del modelo de Estado Social de Derecho aplicado en Colombia.",
+          "Trabajar la organización del Estado (ramas del poder) y los mecanismos de participación democrática."
+        ],
+        "2": [
+          "Articular dimensiones históricas y geográficas en problemas espaciales y temporales locales.",
+          "Localizar eventos históricos en líneas de tiempo y mapas regionales."
+        ],
+        "3": [
+          "Trabajar evaluación de fuentes: posibilidades y limitaciones, prejuicios e intenciones de la fuente.",
+          "Contextualizar fuentes primarias en su contexto económico, político y cultural."
+        ],
+        "4": [
+          "Comparar perspectivas de distintos actores y grupos sociales en una situación.",
+          "Reconocer cómo cosmovisiones, ideologías y roles sociales influyen en las decisiones."
+        ],
+        "5": [
+          "Establecer relaciones entre dimensiones presentes en problemáticas (económica, ambiental, cultural).",
+          "Analizar efectos de una intervención posible en distintas dimensiones."
+        ]
+      }
+    },
+    "ciencias_naturales": {
+      "competencia": {
+        "a": [
+          "Usar la rutina 'observo–describo–explico–predigo' frente a experiencias demostrativas.",
+          "Promover simuladores PhET para visualizar fenómenos antes de explicarlos por escrito."
+        ],
+        "b": [
+          "Diseñar talleres de lectura comprensiva de textos científicos breves (artículos divulgativos, infografías).",
+          "Trabajar con preguntas orientadoras 'qué dice / qué significa / qué implica' para textos y datos científicos."
+        ],
+        "c": [
+          "Implementar mini-proyectos de investigación con planteamiento de hipótesis y control de variables.",
+          "Usar cuadernos de campo y bitácoras científicas como evidencia del proceso de indagación."
+        ]
+      },
+      "dim_secundaria": {
+        "Procesos vivos": [
+          "Articular salidas pedagógicas a ecosistemas locales con guías de observación e identificación de especies.",
+          "Realizar prácticas con microscopio o lupas para observar estructuras celulares y tejidos."
+        ],
+        "Procesos físicos": [
+          "Diseñar montajes experimentales caseros (péndulos, planos inclinados, circuitos simples).",
+          "Usar simuladores PhET de mecánica, ondas y electromagnetismo para construir modelos."
+        ],
+        "Procesos químicos": [
+          "Implementar prácticas con materiales seguros del entorno (vinagre, bicarbonato, indicadores naturales).",
+          "Articular el lenguaje simbólico (fórmulas, ecuaciones) con modelos moleculares."
+        ],
+        "Ciencia, tecnología y sociedad": [
+          "Estudiar casos colombianos de impacto socioambiental (minería, deforestación, vacunas) con posturas argumentadas.",
+          "Promover proyectos STEM articulados con problemáticas comunitarias locales."
+        ]
+      }
+    },
+    "ingles": {
+      "competencia": {
+        "a": [
+          "Trabajar matching de vocabulario por campo semántico (salud, viajes, escuela) con bancos de 8-10 palabras.",
+          "Construir glosarios temáticos semanales con apoyo visual y ejemplos en contexto real."
+        ],
+        "b": [
+          "Trabajar diálogos modelo en distintos registros (formal/informal) para identificar funciones comunicativas.",
+          "Diseñar role-plays sobre situaciones cotidianas: pedir información, dar indicaciones, opinar."
+        ],
+        "c": [
+          "Implementar scanning para localizar información explícita (quién, qué, cuándo, dónde) en textos breves.",
+          "Practicar lectura literal con preguntas factuales después de cada párrafo."
+        ],
+        "d": [
+          "Trabajar inferencias con textos breves: predicción del título, intención del autor, conclusión implícita.",
+          "Usar skimming para captar la idea global y luego inferir el propósito comunicativo."
+        ],
+        "e": [
+          "Practicar cloze tests con texto narrativo o expositivo, integrando vocabulario y gramática.",
+          "Trabajar transformación de frases (tiempos verbales, conectores, voz activa/pasiva) en contexto."
+        ]
+      },
+      "afirmacion": {
+        "1": [
+          "Trabajar reconocimiento de palabras básicas de altísima frecuencia con apoyo visual fuerte (flashcards con imágenes).",
+          "Practicar comprensión auditiva muy básica con audios cortos sobre saludos, números y vocabulario del entorno escolar."
+        ],
+        "2": [
+          "Reforzar estructuras básicas con verbo to be, presente simple y vocabulario de rutinas y familia.",
+          "Trabajar lectura de textos muy cortos (avisos, etiquetas, descripciones simples)."
+        ],
+        "3": [
+          "Trabajar diálogos de funciones comunicativas A2 (saludar, pedir, opinar brevemente, narrar pasado simple).",
+          "Practicar lectura de párrafos cortos con preguntas literales sobre quién, qué, cuándo, dónde."
+        ],
+        "4": [
+          "Implementar lectura de textos más extensos con preguntas inferenciales y de propósito comunicativo.",
+          "Practicar cloze tests con texto narrativo o expositivo nivel B1 y comprensión auditiva con monólogos cortos."
+        ]
+      }
+    }
+  },
+  "_compat_v1": {
+    "_nota": "Sección preservada por compatibilidad. Usar sugerencias_automaticas_por_area en código nuevo.",
+    "sugerencias_automaticas": {
+      "competencia_baja_interpretacion": [
+        "Implementar lectura crítica de gráficos y tablas en cada clase con preguntas guiadas.",
+        "Diseñar talleres de transformación de representaciones (tabla → gráfica → expresión algebraica)."
+      ],
+      "competencia_baja_formulacion": [
+        "Aplicar la metodología de Pólya en la resolución de problemas: comprender, planear, ejecutar, verificar.",
+        "Trabajar con problemas contextualizados de la cotidianidad estudiantil."
+      ],
+      "competencia_baja_argumentacion": [
+        "Promover debates matemáticos donde los estudiantes justifiquen sus respuestas oralmente.",
+        "Implementar rutinas de pensamiento como 'Veo-Pienso-Pregunto' aplicadas a problemas matemáticos."
+      ],
+      "cmc_baja_estadistica": [
+        "Trabajar proyectos de aula con recolección y análisis de datos reales del entorno."
+      ],
+      "cmc_baja_geometria": [
+        "Usar software dinámico (GeoGebra) para visualizar transformaciones y propiedades."
+      ],
+      "cmc_baja_algebra": [
+        "Reforzar los conceptos de función, dominio y rango con ejemplos del contexto."
+      ]
+    }
+  }
+}

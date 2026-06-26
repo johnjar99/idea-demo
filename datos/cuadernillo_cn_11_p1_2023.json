@@ -1,0 +1,616 @@
+{
+  "id": "cn-11-p1-2023",
+  "area": "Ciencias Naturales",
+  "grado": "11",
+  "periodo": "1",
+  "version": "EpA 2023 – Cuadernillo 1",
+  "competencias": {
+    "a": "Explicación de fenómenos",
+    "b": "Uso comprensivo del conocimiento científico",
+    "c": "Indagación"
+  },
+  "afirmaciones": {
+    "1": "Analiza el potencial del uso de recursos naturales o artefactos y sus efectos sobre el entorno y la salud, así como las posibilidades de desarrollo para las comunidades",
+    "2": "Explica cómo ocurren algunos fenómenos de la naturaleza basado en observaciones, en patrones y en conceptos propios del conocimiento científico",
+    "3": "Modela fenómenos de la naturaleza basado en el análisis de variables, la relación entre dos o más conceptos del conocimiento científico y de la evidencia derivada de investigaciones científicas",
+    "4": "Asocia fenómenos naturales con conceptos propios del conocimiento científico",
+    "5": "Identifica las características de algunos fenómenos de la naturaleza basado en el análisis de información y conceptos propios del conocimiento científico",
+    "6": "Comprende que a partir de la investigación científica se construyen explicaciones sobre el mundo natural",
+    "7": "Deriva conclusiones para algunos fenómenos de la naturaleza basándose en conocimientos científicos y en la evidencia de su propia investigación y de la de otros",
+    "8": "Observa y relaciona patrones en los datos para evaluar las predicciones",
+    "9": "Utiliza algunas habilidades de pensamiento y de procedimiento para evaluar predicciones"
+  },
+  "evidencias": {
+    "1.1": "Explica cómo la explotación de un recurso o el uso de una tecnología tiene efectos positivos y/o negativos en las personas y en el entorno",
+    "1.2": "Explica el uso correcto y seguro de una tecnología o artefacto en un contexto específico",
+    "2.1": "Elabora explicaciones al relacionar las variables de estado que describen un sistema, argumentando a partir de los modelos básicos de cinemática y dinámica Newtoniana",
+    "2.2": "Reconoce las razones por las cuales la materia se puede diferenciar según su estructura y propiedades y justifica las diferencias existentes entre distintos elementos, compuestos y mezclas",
+    "3.1": "Analiza y usa modelos biológicos para comprender la dinámica que se da en lo vivo y en el entorno",
+    "4.1": "Relaciona los componentes de un circuito en serie y en paralelo con sus respectivos voltajes y corrientes",
+    "4.2": "Establece relaciones entre conceptos fisicoquímicos simples (separación de mezclas, solubilidad, gases ideales) con distintos fenómenos naturales",
+    "4.3": "Establece relaciones entre fenómenos biológicos para comprender la dinámica de lo vivo",
+    "4.4": "Diferencia distintos tipos de reacciones químicas y realiza de manera adecuada cálculos teniendo en cuenta la ley de conservación de la masa y carga",
+    "5.1": "Identifica las características fundamentales de las ondas así como las variables y parámetros que afectan estas características en un medio de propagación",
+    "6.1": "Reconoce la importancia de la evidencia para comprender fenómenos naturales",
+    "7.1": "Comunica de forma apropiada el proceso y los resultados de investigación en ciencias naturales",
+    "8.1": "Interpreta y analiza datos representados en texto, gráficas, dibujos, diagramas o tablas",
+    "8.2": "Representa datos en gráficas y tablas",
+    "9.1": "Diseña experimentos para dar respuesta a sus preguntas"
+  },
+  "cmc": [
+    "Procesos vivos",
+    "Procesos físicos",
+    "Procesos químicos",
+    "Ciencia, tecnología y sociedad"
+  ],
+  "contextos": {
+    "ctx-01": {
+      "titulo": "El hongo Pestalotiopsis microspora",
+      "texto": "Los plásticos son compuestos con estructuras químicas diversas, ampliamente utilizados en la sociedad actual. Uno de los plásticos más usados es el poliuretano, porque tiene alta resistencia a la degradación química y ambiental.\n\nInvestigaciones recientes han reportado que el hongo Pestalotiopsis microspora, ampliamente distribuido en las selvas tropicales, es capaz de usar el poliuretano como única fuente de alimento tanto en ambientes aerobios como anaerobios. El organismo puede crecer utilizando este material, debido a la secreción de enzimas que rompen un enlace específico de la estructura del poliuretano, degradándolo y haciéndolo asimilable para su crecimiento. El hallazgo de este organismo representa una alternativa ambiental en el manejo de los residuos de poliuretano, pues el hongo puede usarse directamente en las zonas de acumulación de poliuretano.",
+      "rango_preguntas": "1 a 3"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "I_1355282",
+      "numero": 1,
+      "contexto_id": "ctx-01",
+      "contexto_titulo": "El hongo Pestalotiopsis microspora",
+      "enunciado": "<p>Debido a la resistencia a la degradación que tiene el poliuretano, actualmente, algunos desechos de poliuretano se incineran en hornos especiales a temperaturas superiores a 500&nbsp;°C, con la consecuente emisión de CO<sub>2</sub>.</p><p class=\"pregunta-cabeza\">Además de la reducción de la emisión de CO<sub>2</sub>, ¿qué otra ventaja tiene el uso de <em>Pestalotiopsis microspora</em>, mediante aplicación directa, respecto a la incineración de residuos?</p>",
+      "opciones": {
+        "A": "El crecimiento del hongo no requiere una infraestructura especial para asegurar la degradación de los desechos.",
+        "B": "El hongo degrada el material polimérico más rápido que la incineración.",
+        "C": "El hongo, al no ser parte de las redes tróficas, puede infectar a los animales y plantas del ecosistema.",
+        "D": "El uso del hongo posibilita la reutilización del poliuretano para hacer envases."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "componente": "Ciencia, tecnología y sociedad",
+      "dificultad": "Media",
+      "estandar": "Explico cambios químicos en la cocina, la industria y el ambiente.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para argumentar sobre las ventajas o desventajas del uso de una tecnología.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque en el contexto se menciona que el hongo puede usarse directamente en los lugares en los que hay poliuretano acumulado, lo que significa que no requiere instalaciones especiales como los hornos de incineración.",
+      "opciones_incorrectas": {
+        "B": "La incineración es una reacción química muy rápida, y la degradación con el hongo no puede superar esta velocidad.",
+        "C": "Se pide una ventaja, pero la contaminación mencionada en esta opción es una desventaja del uso del hongo.",
+        "D": "El hongo degrada el poliuretano y, por tanto, este material no puede ser reciclado para hacer nuevos envases."
+      },
+      "cmc": "Ciencia, tecnología y sociedad"
+    },
+    {
+      "id": "I_1355267",
+      "numero": 2,
+      "contexto_id": "ctx-01",
+      "contexto_titulo": "El hongo Pestalotiopsis microspora",
+      "enunciado": "<p>Un investigador desea cultivar solamente el hongo <em>Pestalotiopsis microspora</em> de una muestra traída de la selva, en la que se encuentran varios tipos de microorganismos. El investigador cuenta con cuatro posibles medios de cultivo, los cuales se muestran a continuación:</p><p class=\"pregunta-cabeza\">De los anteriores medios, ¿cuáles serían los más adecuados para cultivar únicamente el hongo de interés?</p>",
+      "opciones": {
+        "A": "Los medios 2 y 4.",
+        "B": "Los medios 2 y 3.",
+        "C": "Los medios 1 y 4.",
+        "D": "Los medios 1 y 3."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "9",
+      "evidencia": "9.1",
+      "componente": "Procesos vivos",
+      "dificultad": "Media",
+      "estandar": "Propongo modelos para predecir los resultados de mis experimentos y simulaciones.",
+      "que_evalua": "Si los estudiantes comprenden el estudio presentado y pueden determinar el medio de cultivo óptimo para el hongo.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque en el enunciado se dice explícitamente que el hongo utiliza como única fuente de nutrientes al poliuretano y que crece en presencia o ausencia de oxígeno. Por tanto, los medios 2 y 4, que solo contienen poliuretano (sin nutrientes adicionales), son los óptimos.",
+      "opciones_incorrectas": {
+        "B": "El medio de cultivo número 3 no es óptimo, ya que tiene nutrientes que pueden favorecer el crecimiento de microorganismos no deseados.",
+        "C": "El medio de cultivo número 1 tiene nutrientes que no son necesarios para el hongo y pueden favorecer el crecimiento de microorganismos no deseados.",
+        "D": "Ninguno de los medios 1 o 3 es óptimo, ya que ambos tienen nutrientes adicionales innecesarios para el hongo."
+      },
+      "cmc": "Procesos vivos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q2.png"
+    },
+    {
+      "id": "I_1355274",
+      "numero": 3,
+      "contexto_id": "ctx-01",
+      "contexto_titulo": "El hongo Pestalotiopsis microspora",
+      "enunciado": "<p>Un ambientalista le pregunta a un investigador si es posible extender el uso del hongo <em>Pestalotiopsis microspora</em> para degradar todos los plásticos de uso común.</p><p class=\"pregunta-cabeza\">Teniendo en cuenta la información anterior, ¿qué debería responder el investigador?</p>",
+      "opciones": {
+        "A": "No es posible, porque los plásticos tienen distintas estructuras químicas y la enzima secretada por el hongo no puede degradarlas todas.",
+        "B": "Es posible, porque el hongo puede crecer en diferentes ambientes, incluso con limitación de oxígeno.",
+        "C": "No es posible, porque el poliuretano es un material esencial para el crecimiento y reproducción del hongo.",
+        "D": "Es posible, porque, siempre que la enzima sea secretada fuera de las células, puede degradar cualquier tipo de material."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.2",
+      "componente": "Ciencia, tecnología y sociedad",
+      "dificultad": "Media",
+      "estandar": "Explico cambios químicos en la cocina, la industria y el ambiente.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para argumentar sobre la posibilidad de extender el uso de una tecnología a una situación particular.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque el hongo rompe un enlace específico del poliuretano que no está presente en otros plásticos, por lo que la enzima no podría degradar estructuras químicas diferentes.",
+      "opciones_incorrectas": {
+        "B": "Si bien el hongo puede crecer en diferentes ambientes, esto no implica que pueda degradar diferentes tipos de plásticos.",
+        "C": "El poliuretano no es esencial para el hongo, pues este ya vive y se desarrolla en las selvas tropicales, en las que no hay poliuretano.",
+        "D": "La enzima rompe un enlace especial del poliuretano y podría no tener ningún efecto sobre otros tipos de plástico."
+      },
+      "cmc": "Ciencia, tecnología y sociedad"
+    },
+    {
+      "id": "I_1411016",
+      "numero": 4,
+      "enunciado": "<p>Un detector de sonido está diseñado para funcionar tanto en el aire como en el agua. En ambos casos, registra la frecuencia, la longitud de onda, la velocidad de la onda y la intensidad del sonido.</p><p class=\"pregunta-cabeza\">De las variables registradas por el detector, ¿cuál permite conocer con certeza si el detector está en el aire o en el agua?</p>",
+      "opciones": {
+        "A": "La frecuencia de la onda.",
+        "B": "La longitud de onda de la onda.",
+        "C": "La velocidad de la onda.",
+        "D": "La intensidad del sonido."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "5",
+      "evidencia": "5.1",
+      "componente": "Procesos físicos",
+      "dificultad": "Alta",
+      "estandar": "Establezco relaciones entre frecuencia, amplitud, velocidad de propagación y longitud de onda en diversos tipos de ondas mecánicas.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para reconocer cómo cambian las propiedades de las ondas en distintos medios de propagación.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque la velocidad de una onda cambia entre el aire y el agua y, por lo tanto, es posible conocer el medio de propagación conociendo la velocidad de propagación de las ondas en el mismo.",
+      "opciones_incorrectas": {
+        "A": "Se pueden generar ondas de la misma frecuencia en el aire y en el agua, por lo que la frecuencia sola no permite distinguir el medio.",
+        "B": "Se pueden generar ondas de la misma longitud de onda en el aire y en el agua, por lo que este valor tampoco permite establecer el medio de propagación.",
+        "D": "Se pueden generar ondas de la misma intensidad en el aire y en el agua, por lo que la intensidad sola no permite distinguir el medio."
+      },
+      "cmc": "Procesos físicos"
+    },
+    {
+      "id": "I_1900244",
+      "numero": 5,
+      "enunciado": "<p>Un grupo de alumnos estudia el movimiento de una moto y encuentra que se puede modelar de acuerdo con la siguiente ecuación:</p><p class=\"cn-ecuacion\"><em>v</em>(<em>t</em>) = 5 + 4<em>t</em></p><p>Donde <em>v</em>(<em>t</em>) es la velocidad de la moto, en metros por segundo, y <em>t</em> es el tiempo, en segundos.</p><p class=\"pregunta-cabeza\">De acuerdo con el modelo, ¿el movimiento de la moto es con velocidad constante o uniformemente acelerado?</p>",
+      "opciones": {
+        "A": "Con velocidad constante, porque la velocidad de la moto se mantiene en 5 m/s en cualquier tiempo.",
+        "B": "Uniformemente acelerado, porque la velocidad aumenta linealmente con el tiempo, y la aceleración de la moto es 4 m/s².",
+        "C": "Con velocidad constante, porque el modelo no es para la aceleración, sino que solo muestra la velocidad de la moto.",
+        "D": "Uniformemente acelerado, porque cuando el tiempo es igual a cero, la moto tiene una velocidad inicial diferente de cero."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.1",
+      "componente": "Procesos físicos",
+      "dificultad": "Media",
+      "estandar": "Modelo matemáticamente el movimiento de objetos cotidianos a partir de las fuerzas que actúan sobre ellos.",
+      "que_evalua": "Si los estudiantes pueden explicar cómo es el movimiento de un objeto a partir de los modelos matemáticos que lo describen.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque la velocidad va cambiando con el tiempo de manera uniforme. Cada segundo, la velocidad aumenta en 4 m/s, equivalente a una aceleración de 4 m/s².",
+      "opciones_incorrectas": {
+        "A": "5 m/s es la velocidad inicial cuando t = 0, pero conforme aumente el tiempo, la velocidad va aumentando, por lo que no es constante.",
+        "C": "Aunque el modelo muestra la velocidad, del estudio del movimiento uniformemente acelerado se sabe que el coeficiente que multiplica al tiempo es la aceleración (4 m/s²), que sí se puede identificar.",
+        "D": "Aunque el movimiento es uniformemente acelerado, la razón no es que la velocidad inicial sea diferente a cero; el movimiento sería uniformemente acelerado incluso si la velocidad inicial fuera cero."
+      },
+      "cmc": "Procesos físicos"
+    },
+    {
+      "id": "I_1411287",
+      "numero": 6,
+      "enunciado": "<p>El siguiente circuito consta de 6 bombillos, dos interruptores, una batería y un cable conductor. Cuando los dos interruptores están en la posición “Encendido”, ellos permiten el paso de corriente y todos los bombillos alumbran, como se muestra a continuación:</p><p class=\"pregunta-cabeza\">Teniendo en cuenta la conexión de los bombillos, ¿cuáles se apagarán cuando los dos interruptores cambien a “Apagado” y no permitan el paso de corriente?</p>",
+      "opciones": {
+        "A": "B3 y B4.",
+        "B": "B2 y B3.",
+        "C": "B4 y B5.",
+        "D": "B2 y B5."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "4",
+      "evidencia": "4.1",
+      "componente": "Procesos físicos",
+      "dificultad": "Alta",
+      "estandar": "Relaciono voltaje y corriente con los diferentes elementos de un circuito eléctrico complejo y para todo el sistema.",
+      "que_evalua": "Si los estudiantes pueden predecir qué va a pasar en un circuito al modificar alguno de sus componentes.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque B3 está conectado en serie con el interruptor 2 y B4 con el interruptor 1. Al abrirse ambos interruptores, no hay camino cerrado para la corriente a través de B3 ni de B4, por lo que ambos se apagan.",
+      "opciones_incorrectas": {
+        "B": "Una vez apagados los interruptores, existe un camino cerrado que sí pasa por B2, por lo que este se mantiene encendido.",
+        "C": "Una vez apagados los interruptores, existe un camino cerrado que sí pasa por B5, por lo que este se mantiene encendido.",
+        "D": "Una vez apagados los interruptores, los bombillos B2 y B5 se mantienen encendidos porque pertenecen a ramas del circuito que no dependen de los interruptores."
+      },
+      "cmc": "Procesos físicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q6.png"
+    },
+    {
+      "id": "I_1383046",
+      "numero": 7,
+      "enunciado": "<p>Una estudiante quiere clasificar dos sustancias de acuerdo con el tipo de mezclas que son. Al buscar, encuentra que las mezclas <em>homogéneas</em> son uniformes en todas sus partes, pero que las mezclas <em>heterogéneas</em> no lo son. La estudiante realiza los procedimientos que se muestran en la tabla con las sustancias 1 y 2.</p><p class=\"pregunta-cabeza\">Teniendo en cuenta lo observado al separar las sustancias, ¿qué tipos de mezclas son las sustancias 1 y 2?</p>",
+      "opciones": {
+        "A": "La sustancia 1 es una mezcla homogénea y la sustancia 2 es una mezcla heterogénea.",
+        "B": "La sustancia 1 es una mezcla heterogénea y la sustancia 2 es una mezcla homogénea.",
+        "C": "Ambas sustancias son mezclas homogéneas.",
+        "D": "Ambas sustancias son mezclas heterogéneas."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "4",
+      "evidencia": "4.2",
+      "componente": "Procesos químicos",
+      "dificultad": "Media",
+      "estandar": "Clasifico materiales en sustancias puras o mezclas.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para reconocer los tipos de mezclas que pueden separarse por distintos métodos de separación.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque en la sustancia 1 solo se observa una fase líquida al inicio, siendo una mezcla homogénea; en la sustancia 2 se observan dos fases al inicio, siendo una mezcla heterogénea.",
+      "opciones_incorrectas": {
+        "B": "La sustancia 1 no es heterogénea porque no se observa más de una fase inicial; mientras que la sustancia 2 sí es heterogénea.",
+        "C": "La sustancia 2 no es homogénea porque muestra dos fases visibles desde el inicio.",
+        "D": "La sustancia 1 no es heterogénea porque inicialmente solo presenta una fase."
+      },
+      "cmc": "Procesos químicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q7.png"
+    },
+    {
+      "id": "I_1382062",
+      "numero": 8,
+      "enunciado": "<p>La figura representa el cruce entre dos ratones, para una característica dada por un solo gen.</p><p class=\"pregunta-cabeza\">¿Cuál de las siguientes tablas muestra los genotipos de los parentales y del descendiente para esta característica?</p>",
+      "opciones": {
+        "A": "Parental 1: MM, Parental 2: mm, Descendencia: MM",
+        "B": "Parental 1: mm, Parental 2: mm, Descendencia: Mm",
+        "C": "Parental 1: MM, Parental 2: mm, Descendencia: mm",
+        "D": "Parental 1: MM, Parental 2: mm, Descendencia: Mm"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": "4",
+      "evidencia": "4.3",
+      "componente": "Procesos vivos",
+      "dificultad": "Media",
+      "estandar": "Explico la relación entre el ADN, el ambiente y la diversidad de los seres vivos.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para comprender las leyes de Mendel y reconocer la importancia de los genes recesivos.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque los genotipos presentados en la tabla coinciden correctamente con el cruce mostrado: un parental MM (homocigoto dominante) cruzado con mm (homocigoto recesivo) da una descendencia Mm (heterocigoto).",
+      "opciones_incorrectas": {
+        "A": "Los genotipos no coinciden con el cruce mostrado; la descendencia MM no puede provenir de un cruce MM x mm.",
+        "B": "Los dos parentales no pueden tener genotipos iguales (mm x mm) según la imagen, y su descendencia sería mm, no Mm.",
+        "C": "La descendencia mm no es posible en un cruce MM x mm; todos los descendientes serían Mm."
+      },
+      "cmc": "Procesos vivos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q8.png",
+      "opciones_imagenes": {
+        "A": "assets/cuadernillo-cn-11-p1/q8_optA.png",
+        "B": "assets/cuadernillo-cn-11-p1/q8_optB.png",
+        "C": "assets/cuadernillo-cn-11-p1/q8_optC.png",
+        "D": "assets/cuadernillo-cn-11-p1/q8_optD.png"
+      }
+    },
+    {
+      "id": "I_1503339",
+      "numero": 9,
+      "enunciado": "<p>El modelo representa los procesos que se presentan en el núcleo de las células eucariotas durante la meiosis.</p><p class=\"pregunta-cabeza\">Con base en la información anterior, ¿qué proceso de la meiosis permite que cada una de las células sexuales resultantes sufran variación en la información genética?</p>",
+      "opciones": {
+        "A": "La presencia de genes en los cromosomas.",
+        "B": "El entrecruzamiento entre cromátidas no hermanas.",
+        "C": "La duplicación de los cromosomas.",
+        "D": "La división del citoplasma."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "4",
+      "evidencia": "4.3",
+      "componente": "Procesos vivos",
+      "dificultad": "Alta",
+      "estandar": "Explico la relación entre el ADN, el ambiente y la diversidad de los seres vivos.",
+      "que_evalua": "Si los estudiantes pueden interpretar correctamente un modelo de meiosis en una situación particular.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque en el modelo se establece que mediante el entrecruzamiento de cromátidas no hermanas se presenta la variación genética de las células resultantes; originalmente las cromátidas tenían los alelos R, G y r, g, y posterior al entrecruzamiento sus alelos se modificaron.",
+      "opciones_incorrectas": {
+        "A": "Todos los genes presentan cromosomas y esto no es un proceso para el surgimiento de la variación genética; debe haber entrecruzamiento.",
+        "C": "La duplicación de los cromosomas es el paso previo para que surjan las cromátidas hermanas; no genera variación genética por sí sola.",
+        "D": "La división del citoplasma no da paso a la variación de la información genética; esa variación ocurre por el entrecruzamiento."
+      },
+      "cmc": "Procesos vivos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q9.png"
+    },
+    {
+      "id": "I_1502022",
+      "numero": 10,
+      "enunciado": "<p>En clase de Química, Camilo escribe en el tablero la siguiente ecuación:</p><p>La profesora le dice a Camilo que la reacción no está balanceada porque no cumple la ley de conservación de la masa, la cual establece que el número de átomos de un tipo en los reactivos debe ser igual al número de átomos del mismo tipo en los productos.</p><p class=\"pregunta-cabeza\">Con base en la información anterior, ¿cuál de las siguientes ecuaciones cumple la ley de conservación de la masa?</p>",
+      "opciones": {
+        "A": "2 Na + Cl₂ → NaCl",
+        "B": "2 Na + Cl₂ → 2 NaCl",
+        "C": "Na + 2 Cl₂ → 2 NaCl",
+        "D": "2 Na + 2 Cl₂ → 2 NaCl"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "4",
+      "evidencia": "4.4",
+      "componente": "Procesos químicos",
+      "dificultad": "Media",
+      "estandar": "Realizo cálculos cuantitativos en cambios químicos.",
+      "que_evalua": "Si los estudiantes pueden balancear una ecuación química para cumplir con la ley de la conservación de la masa.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque con el balanceo de la ecuación se comprueba que en los reactivos se tienen dos átomos de sodio y dos átomos de cloro, y en los productos la misma cantidad, cumpliendo la ley de conservación de la masa.",
+      "opciones_incorrectas": {
+        "A": "En los reactivos se tienen dos átomos de sodio y dos de cloro, pero en los productos solo hay un átomo de cada uno; no se cumple la ley.",
+        "C": "En los reactivos se tiene un átomo de sodio y cuatro de cloro, pero en los productos dos de sodio y dos de cloro; no se cumple la ley.",
+        "D": "En los reactivos se tienen dos átomos de sodio y cuatro de cloro, pero en los productos dos de sodio y dos de cloro; no se cumple la ley."
+      },
+      "cmc": "Procesos químicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q10.png",
+      "opciones_imagenes": {
+        "A": "assets/cuadernillo-cn-11-p1/q10_optA.png",
+        "B": "assets/cuadernillo-cn-11-p1/q10_optB.png",
+        "C": "assets/cuadernillo-cn-11-p1/q10_optC.png",
+        "D": "assets/cuadernillo-cn-11-p1/q10_optD.png"
+      }
+    },
+    {
+      "id": "I_1569656",
+      "numero": 11,
+      "enunciado": "<p>Un grupo de estudiantes contó el número de individuos de una especie de mariposa en una hectárea de un bosque, a cinco diferentes altitudes. Los resultados se muestran en la siguiente gráfica:</p><p class=\"pregunta-cabeza\">Con base en la información anterior, ¿cuál de las siguientes interpretaciones es válida?</p>",
+      "opciones": {
+        "A": "El número de mariposas a los 1200 metros es menor que a 1600 metros.",
+        "B": "El número de mariposas es máximo a los 2000 metros de altitud.",
+        "C": "El número de mariposas disminuye a medida que disminuye la altitud.",
+        "D": "El número de mariposas disminuye a medida que aumenta la altitud."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": "8",
+      "evidencia": "8.1",
+      "componente": "Procesos vivos",
+      "dificultad": "Baja",
+      "estandar": "Establezco relaciones causales y multicausales entre los datos recopilados.",
+      "que_evalua": "Si los estudiantes pueden interpretar una gráfica correctamente y generar conclusiones lógicas de esta.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque en la gráfica se observa que a medida que aumenta la altura sobre el nivel del mar, va disminuyendo el número de mariposas observadas.",
+      "opciones_incorrectas": {
+        "A": "La interpretación es errónea; a 1200 m s. n. m. existe un número mayor de mariposas que a 1600 m, no menor.",
+        "B": "La interpretación es errónea; a 2000 m s. n. m. es la altitud en la que menos mariposas se observaron.",
+        "C": "La situación planteada es contraria a la observada; la gráfica muestra que a mayor altitud, menor número de mariposas."
+      },
+      "cmc": "Procesos vivos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q11.png"
+    },
+    {
+      "id": "I_1292707",
+      "numero": 12,
+      "enunciado": "<p>En el siglo XIX, Dalton formuló su modelo atómico, en el cual explicaba la forma de los átomos, el modo en que se diferencian unos de otros dependiendo del elemento químico, y la forma en que se relacionan entre sí en las reacciones químicas. En su modelo, el átomo se consideraba una esfera sólida sin partes y, por tanto, indivisible; sin embargo, su modelo atómico se rechazó años después porque</p>",
+      "opciones": {
+        "A": "no explicaba las diferentes formas de los átomos de los elementos de la tabla periódica.",
+        "B": "no tenía en cuenta la existencia de cargas eléctricas en el interior del átomo.",
+        "C": "no explicaba el hecho de que hubiese otros estados de la materia además del sólido.",
+        "D": "no tenía en cuenta que el átomo ha evolucionado en el tiempo."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "6",
+      "evidencia": "6.1",
+      "componente": "Procesos químicos",
+      "dificultad": "Media",
+      "estandar": "Persisto en la búsqueda de respuestas a mis preguntas.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para comprender una evidencia y reconocer sus implicaciones en el avance del conocimiento científico.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque la información disponible en el siglo XIX no permitía tener en cuenta que el átomo está conformado por partículas ni que algunas poseen carga eléctrica; este descubrimiento posterior invalidó el modelo de Dalton.",
+      "opciones_incorrectas": {
+        "A": "El modelo atómico fue rechazado porque se descubrió que los átomos estaban conformados por partículas, no porque no explicara sus formas.",
+        "C": "El modelo fue rechazado por el descubrimiento de partículas con carga eléctrica, no por no explicar los estados de la materia.",
+        "D": "El modelo fue rechazado por razones físicas observables, no porque el átomo haya «evolucionado» en el tiempo."
+      },
+      "cmc": "Procesos químicos"
+    },
+    {
+      "id": "I_1382891",
+      "numero": 13,
+      "enunciado": "<p>Los compuestos químicos pueden adoptar distintas geometrías, dependiendo del número de enlaces que posea el átomo central y del número de pares de electrones libres, como se muestra en la tabla.</p><p class=\"pregunta-cabeza\">¿Qué geometría se obtendrá si el nitrógeno del amoníaco se enlaza con otro hidrógeno para formar NH<sub>4</sub><sup>+</sup>?</p>",
+      "opciones": {
+        "A": "Tetraédrica, porque habría 4 átomos de hidrógeno unidos al nitrógeno (N) y ningún par de electrones libre.",
+        "B": "Pirámide trigonal, porque seguiría teniendo la misma configuración del NH₃.",
+        "C": "Angular, porque dos hidrógenos se enlazarían con el nitrógeno (N) y dos hidrógenos quedarían libres.",
+        "D": "Lineal, porque cada enlace del nitrógeno se uniría a dos hidrógenos."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.2",
+      "componente": "Procesos químicos",
+      "dificultad": "Alta",
+      "estandar": "Explico la relación entre la estructura de los átomos y los enlaces que realiza.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para identificar la geometría molecular de una estructura química y justificar su selección.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque la estructura del NH₄⁺ tiene 4 enlaces (con 4 hidrógenos) y 0 pares de electrones libres en el nitrógeno, lo que corresponde a la geometría tetraédrica.",
+      "opciones_incorrectas": {
+        "B": "La estructura química ha cambiado con respecto al NH₃; ahora tiene un enlace más y ya no tiene par de electrones libre, por lo que la geometría cambia.",
+        "C": "La geometría angular requiere 2 enlaces y 2 pares libres, lo que no corresponde con la estructura del NH₄⁺.",
+        "D": "La geometría lineal requiere 2 enlaces y 0 pares libres, lo que tampoco corresponde con los 4 enlaces del NH₄⁺."
+      },
+      "cmc": "Procesos químicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q13.png"
+    },
+    {
+      "id": "I_1571606",
+      "numero": 14,
+      "enunciado": "<p>En un laboratorio se estudia el comportamiento del volumen de un gas ideal al variar su temperatura, obteniendo la siguiente gráfica:</p><p class=\"pregunta-cabeza\">Teniendo en cuenta la información de la gráfica, si la temperatura aumenta de −153&nbsp;°C a −33&nbsp;°C, ¿qué pasa con el volumen del gas?</p>",
+      "opciones": {
+        "A": "Disminuye de 30 L a 25 L.",
+        "B": "Disminuye de 10 L a 5 L.",
+        "C": "Aumenta de 0 L a 10 L.",
+        "D": "Aumenta de 10 L a 20 L."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": "8",
+      "evidencia": "8.1",
+      "componente": "Procesos químicos",
+      "dificultad": "Media",
+      "estandar": "Establezco relaciones causales y multicausales entre los datos recopilados.",
+      "que_evalua": "Si los estudiantes pueden interpretar la información de la gráfica con los parámetros establecidos para hacer predicciones sobre un fenómeno específico.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque al analizar la gráfica se obtiene que a -153 °C el volumen del gas es de 10 litros, y a -33 °C el volumen aumenta a 20 litros, siguiendo la relación lineal mostrada.",
+      "opciones_incorrectas": {
+        "A": "La tendencia en la gráfica muestra que al aumentar la temperatura el volumen aumenta, no disminuye.",
+        "B": "La tendencia mostrada es que al aumentar la temperatura el volumen aumenta; además, los valores no corresponden con los de la gráfica.",
+        "C": "Aunque la dirección del cambio (aumento) es correcta, los valores de la gráfica muestran un aumento de 10 L a 20 L, no de 0 L a 10 L."
+      },
+      "cmc": "Procesos químicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q14.png"
+    },
+    {
+      "id": "I_1413409",
+      "numero": 15,
+      "enunciado": "<p>El modelo muestra una red trófica marina.</p><p class=\"pregunta-cabeza\">Teniendo en cuenta la red trófica anterior, ¿qué pasaría si se extinguen los tiburones?</p>",
+      "opciones": {
+        "A": "Disminuiría la población de calamares por el aumento en la población de atunes.",
+        "B": "Aumentaría la población de sardinas al no ser depredadas por los tiburones.",
+        "C": "Disminuiría la cantidad de zooplancton porque los atunes comenzarían a depredarlos.",
+        "D": "Los pastos marinos y el fitoplancton se disminuirían al ser productores primarios."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "3",
+      "evidencia": "3.1",
+      "componente": "Procesos vivos",
+      "dificultad": "Alta",
+      "estandar": "Explico diversos tipos de relaciones entre especies en los ecosistemas.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para comprender las relaciones presentes en una red trófica y las consecuencias de un cambio drástico en ella.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque al ser el tiburón el único depredador de los atunes, estos seguirán creciendo en número y atacarán con mayor frecuencia a los calamares, disminuyendo su población.",
+      "opciones_incorrectas": {
+        "B": "Los tiburones no son el principal depredador de las sardinas; su extinción no tendrá una relación directa con la población de sardinas.",
+        "C": "No existe una relación directa entre atunes y zooplancton; hay dos intermediarios entre esta relación en la red trófica.",
+        "D": "Esta situación no se podría presentar directamente; la extinción de los tiburones afectaría de manera indirecta a toda la red trófica."
+      },
+      "cmc": "Procesos vivos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q15.png"
+    },
+    {
+      "id": "I_1298011",
+      "numero": 16,
+      "enunciado": "<p>Desde la playa de un río, un niño observa un velero de juguete sobre el que actúan tres fuerzas en dirección horizontal, como lo muestra la siguiente figura:</p><p class=\"pregunta-cabeza\">Teniendo en cuenta la información anterior, el velero se mueve hacia la derecha porque</p>",
+      "opciones": {
+        "A": "la fuerza del motor por sí sola es capaz de mover el bote hacia la derecha, sin importar las demás fuerzas.",
+        "B": "hay una cancelación exacta entre las tres fuerzas que actúan sobre el bote y el bote sigue su movimiento inicial.",
+        "C": "la magnitud de la fuerza del viento sumada a la del motor es mayor que la magnitud de la fuerza del río.",
+        "D": "hay dos fuerzas que van hacia la derecha mientras que solamente una fuerza va hacia la izquierda."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.1",
+      "componente": "Procesos físicos",
+      "dificultad": "Media",
+      "estandar": "Establezco relaciones entre las diferentes fuerzas que actúan sobre los cuerpos en reposo o en movimiento rectilíneo uniforme.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para determinar cuál es la dinámica de un objeto a partir de las fuerzas que se ejercen sobre este.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque la sumatoria de fuerzas hacia la derecha es 20 N + 30 N = 50 N, mientras que la fuerza hacia la izquierda es solo 40 N. Esto causa una fuerza neta de 10 N hacia la derecha.",
+      "opciones_incorrectas": {
+        "A": "Aunque el motor provea fuerza hacia la derecha, es necesario tener en cuenta todas las fuerzas que actúan sobre el bote para determinar su dinámica.",
+        "B": "Las fuerzas no se cancelan; al realizar la sumatoria se obtiene una fuerza neta de 10 N hacia la derecha.",
+        "D": "No importa el número de fuerzas en cada dirección, sino la sumatoria de sus magnitudes (la fuerza neta)."
+      },
+      "cmc": "Procesos físicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q16.png"
+    },
+    {
+      "id": "I_1570744",
+      "numero": 17,
+      "enunciado": "<p>Se tiene una caja pesada, la cual se quiere mover (ver la figura). En la tabla, se muestra la fuerza que ejerce cierto número de personas al intentar mover la caja.</p><p class=\"pregunta-cabeza\">Si para mover la caja se requieren, al menos, 490 newtons de fuerza, ¿cuántas personas se necesitan para mover la caja?</p>",
+      "opciones": {
+        "A": "Una sola persona.",
+        "B": "Tres personas.",
+        "C": "Cuatro personas.",
+        "D": "Cinco personas."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": "8",
+      "evidencia": "8.1",
+      "componente": "Procesos físicos",
+      "dificultad": "Baja",
+      "estandar": "Interpreto los resultados teniendo en cuenta el orden de magnitud del error experimental.",
+      "que_evalua": "Si los estudiantes pueden establecer la tendencia en un conjunto de datos para realizar una predicción.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque en la tabla se observa que cada persona contribuye con 100 N. Como se necesitan al menos 490 N, con 5 personas se tendrán 500 N, que supera la mínima requerida.",
+      "opciones_incorrectas": {
+        "A": "Una sola persona aporta 100 N, muy por debajo de los 490 N requeridos.",
+        "B": "Tres personas aportan 300 N, lo que sigue siendo insuficiente para mover la caja.",
+        "C": "Cuatro personas aportan 400 N, que se acerca pero no alcanza el mínimo de 490 N necesario."
+      },
+      "cmc": "Procesos físicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q17.png"
+    },
+    {
+      "id": "I_098374A",
+      "numero": 18,
+      "enunciado": "<p>Un estudiante tomó los valores de pH a las sustancias que se muestran en la siguiente tabla:</p><p class=\"pregunta-cabeza\">¿Cuál de las siguientes gráficas muestra los datos que obtuvo el estudiante?</p>",
+      "opciones": {
+        "A": "Gráfica de líneas con valores incorrectos de pH para cada sustancia.",
+        "B": "Gráfica de barras numeradas del 1 al 6 sin identificar las sustancias.",
+        "C": "Gráfica con escala de pH reducida (0 a 4) que omite valores altos como sangre y agua de mar.",
+        "D": "Gráfica de barras con las sustancias identificadas en el eje X y sus valores correctos de pH."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": "8",
+      "evidencia": "8.2",
+      "componente": "Procesos químicos",
+      "dificultad": "Baja",
+      "estandar": "Registro mis observaciones y resultados utilizando esquemas, gráficos y tablas.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para representar de forma correcta en gráficas la información que proviene de una tabla.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque utiliza una gráfica de barras que permite comparar de forma rápida los valores puntuales de la tabla y presenta cada sustancia con su correspondiente valor de pH correctamente identificado.",
+      "opciones_incorrectas": {
+        "A": "Presenta valores incorrectos de pH para las sustancias y no es el tipo de gráfico apropiado para representar comparaciones numéricas discretas.",
+        "B": "No se puede saber a qué tipo de sustancia corresponden los valores de pH señalados en la gráfica.",
+        "C": "No es el tipo de gráfica apropiada para representar comparaciones numéricas discretas con esta escala."
+      },
+      "cmc": "Procesos químicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q18.png",
+      "opciones_imagenes": {
+        "A": "assets/cuadernillo-cn-11-p1/q18_optA.png",
+        "B": "assets/cuadernillo-cn-11-p1/q18_optB.png",
+        "C": "assets/cuadernillo-cn-11-p1/q18_optC.png",
+        "D": "assets/cuadernillo-cn-11-p1/q18_optD.png"
+      }
+    },
+    {
+      "id": "I_1502667",
+      "numero": 19,
+      "enunciado": "<p>Unos estudiantes quieren comprobar si las hormigas que viven en los árboles de acacia defienden a estos del ataque de insectos que consumen sus hojas. Para ello, realizan seguimiento a 10 hojas de dos grupos de árboles de acacia similares, uno sin hormigas y otro con hormigas. Los resultados de su investigación se muestran en la gráfica.</p><p class=\"pregunta-cabeza\">¿Cuál de las siguientes opciones es el principal error en la forma como se muestran los resultados obtenidos por los estudiantes?</p>",
+      "opciones": {
+        "A": "El título de la gráfica no contiene las variables trabajadas en el experimento.",
+        "B": "Las gráficas de barras no se pueden usar para representar porcentajes.",
+        "C": "El eje Y debe tener porcentajes positivos y porcentajes negativos.",
+        "D": "No se indica cuál barra corresponde a hojas con hormigas y cuál a hojas sin hormigas."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": "7",
+      "evidencia": "7.1",
+      "componente": "Procesos vivos",
+      "dificultad": "Media",
+      "estandar": "Registro mis resultados en forma organizada y sin alteración alguna.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para comprender las fases de un experimento y la importancia de comunicar correctamente los resultados.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque si en la gráfica no se identifica a qué tipo de hormigas pertenece cada barra, no se puede interpretar correctamente el estudio ni comparar los grupos.",
+      "opciones_incorrectas": {
+        "A": "El título sí contiene las variables trabajadas en el experimento: «Porcentaje consumido de hojas con presencia de hormigas y sin hormigas».",
+        "B": "Las gráficas de barras sí permiten la correcta presentación de porcentajes.",
+        "C": "La presencia de porcentajes negativos depende del estudio realizado; en este caso el eje no toma valores negativos y eso no es un error."
+      },
+      "cmc": "Procesos vivos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q19.png"
+    },
+    {
+      "id": "I_086421A",
+      "numero": 20,
+      "enunciado": "<p>En un experimento, un estudiante deja rodar una esfera de madera sobre una rampa a la cual se le puede variar el ángulo de inclinación. El estudiante prueba varios ángulos y registra la velocidad con que llega la esfera a la parte inferior de la rampa, en cada caso.</p><p class=\"pregunta-cabeza\">¿Qué se puede determinar con el anterior experimento?</p>",
+      "opciones": {
+        "A": "Cómo es la resistencia de la esfera de madera a los golpes.",
+        "B": "Cómo varía la velocidad de la esfera de madera respecto al ángulo de la rampa.",
+        "C": "Cómo cambia el peso de la esfera respecto al ángulo de inclinación de la rampa.",
+        "D": "Cómo la rampa es deformada por el peso de la esfera de madera."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "9",
+      "evidencia": "9.1",
+      "componente": "Procesos físicos",
+      "dificultad": "Baja",
+      "estandar": "Observo y formulo preguntas específicas sobre aplicaciones de teorías científicas.",
+      "que_evalua": "Si los estudiantes tienen la capacidad para determinar qué pregunta puede contestarse a partir de un diseño experimental descrito.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque el ángulo de la rampa y la velocidad de la esfera son las dos variables del experimento y, por lo tanto, son las variables entre las que se puede establecer una relación.",
+      "opciones_incorrectas": {
+        "A": "En ningún momento se hace chocar la esfera contra algo y, por ende, no se puede evaluar su resistencia a los golpes.",
+        "C": "Siempre se usó la misma esfera en el experimento y, por consiguiente, su peso es constante; no varía con el ángulo.",
+        "D": "La rampa no se deforma por el peso de la esfera; el ángulo de inclinación es modificado intencionalmente por el estudiante."
+      },
+      "cmc": "Procesos físicos",
+      "imagen_figura": "assets/cuadernillo-cn-11-p1/q20.png"
+    }
+  ],
+  "tiempo_minutos": 60,
+  "preservar_orden_preguntas": true
+}

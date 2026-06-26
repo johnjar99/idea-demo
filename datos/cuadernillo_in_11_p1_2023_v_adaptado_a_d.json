@@ -1,0 +1,759 @@
+{
+  "id": "in-11-p1-2023",
+  "area": "Inglés",
+  "grado": "11",
+  "periodo": "1",
+  "version": "EpA 2023 – Cuadernillo 1",
+  "nota": "Instrumento estructurado conforme a la guía oficial Saber 11 / EpA 2023 (ICFES). Inglés se rige por el Marco Común Europeo de Referencia (MCER) con cuatro niveles: Pre A1, A1, A2 y B1. El cuadernillo se organiza en 5 Partes (tratadas aquí como 'competencias' del área para alinearse a la arquitectura IDEA). Las afirmaciones corresponden a los 4 niveles MCER. La Parte 1 (preguntas 1-5) es matching A-G y se adaptó a formato A-D para la plataforma. La Parte 2 (preguntas 6-8) y Parte 3 (preguntas 9-14) en el cuadernillo ICFES tienen solo 3 opciones (A, B, C); la Parte 2 se conserva con 3 opciones como en el original. Las Partes 4 y 5 (preguntas 15-25) tienen 4 opciones (A, B, C, D) en el cuadernillo original. Versión adaptada con competencias DCE (lingüístico, pragmático, comprensión) preservada en cuadernillo_in_11_p1_2023_v_adaptado_dce.json para uso futuro opcional.",
+  "competencias": {
+    "a": "Parte 1 — Conocimiento léxico (matching de vocabulario con palabras del banco A–G)",
+    "b": "Parte 2 — Conocimiento pragmático (intervención adecuada en conversaciones breves)",
+    "c": "Parte 3 — Comprensión de lectura literal (localización de información explícita)",
+    "d": "Parte 4 — Comprensión de lectura inferencial (sentido global e intención del autor)",
+    "e": "Parte 5 — Conocimiento léxico y gramatical (completar texto con espacios)"
+  },
+  "afirmaciones": {
+    "1": "Pre A1 — Conoce palabras, frases y expresiones fijas básicas; identifica vocabulario de altísima frecuencia con apoyo visual.",
+    "2": "A1 — Comprende y produce frases muy sencillas sobre temas familiares; reconoce vocabulario común del entorno cotidiano.",
+    "3": "A2 — Comprende información clara en contextos cotidianos; identifica detalles factuales explícitos en textos breves.",
+    "4": "B1 — Comprende ideas principales en textos cotidianos; infiere propósito, intención y conclusiones; aplica gramática en contexto."
+  },
+  "evidencias": {
+    "1.a": "Pre A1 — Asocia palabras de uso muy básico con su definición en inglés (vocabulario fundamental de salud y bienestar).",
+    "2.a": "A1 — Reconoce vocabulario común sobre salud, partes del cuerpo y entorno cotidiano para emparejar definición con palabra.",
+    "3.b": "A2 — Identifica la intervención adecuada (respuesta de cortesía, opinión, sugerencia) ante un turno conversacional en contextos cotidianos.",
+    "3.c": "A2 — Localiza información factual explícita (lugar, momento, cantidad, característica) en un texto descriptivo breve.",
+    "4.c": "B1 — Encuentra detalles puntuales que requieren conectar información dispersa en un texto informativo más extenso.",
+    "4.d": "B1 — Infiere la idea global, el propósito comunicativo y conclusiones a partir de pistas léxicas y contextuales del texto.",
+    "2.e": "A1 — Selecciona vocabulario muy básico adecuado al contexto y al campo semántico de un texto narrativo o expositivo simple.",
+    "3.e": "A2 — Identifica la forma verbal, el conector o la preposición más apropiada en una oración dentro de un texto coherente.",
+    "4.e": "B1 — Aplica reglas gramaticales y léxicas en contextos auténticos breves, integrando significado y forma."
+  },
+  "cmc": [],
+  "contextos": {
+    "ctx-parte1": {
+      "titulo": "Health — Vocabulario de salud (Parte 1)",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5 DE ACUERDO CON EL EJEMPLO.\n\nLee las descripciones de la columna de la izquierda (1 - 5). ¿Cuál palabra de la columna de la derecha (A - G) concuerda con cada descripción?\n\nLa opción H se usa para el ejemplo. Sobran dos palabras más.\n\nEn las preguntas 1 - 5, marca la letra correcta A - G en tu hoja de respuestas.\n\nBANCO DE PALABRAS (Health)\nA. cold\nB. cough\nC. cry\nD. doctor\nE. hospital\nF. medicine\nG. stomach-ache\nH. toothache (usada en el ejemplo)\n\nEjemplo:\n0. When you don’t clean your teeth often you get this.  →  H. toothache",
+      "rango_preguntas": "1 a 5"
+    },
+    "ctx-parte2": {
+      "titulo": "Parte 2 — Completa las conversaciones (Ejemplo)",
+      "rango_preguntas": "6 a 8",
+      "imagen": "assets/cuadernillo-in-11-p1/ejemplo-parte2.png",
+      "texto": "RESPONDE LAS PREGUNTAS 6 A 8 DE ACUERDO CON EL EJEMPLO.\n\nCompleta las cinco conversaciones.\n\nEn las preguntas 6 - 8, marca A, B o C en tu hoja de respuestas.\n\nEn el ejemplo, una joven dice: “This is her favorite video game.” La respuesta correcta del interlocutor es A. “Mine too!”."
+    },
+    "ctx-parte3": {
+      "titulo": "The World’s Favorite Food",
+      "texto": "According to information collected in 17 countries, pasta is what people like to eat most. Not only is pasta the number one food in its home country, Italy, but it is also enjoyed in distant places like the Philippines, Mexico and South Africa. Italy is the biggest pasta-eating community of the world. Italy is followed by Venezuela, then Tunisia.\n\nPasta has become popular because it is a low-cost meal and it is not difficult to prepare. Just cook spaghetti or other forms of pasta with tomato to go with it and you’re finished. It tastes delicious and fills your stomach. It also produces energy, which is why athletes eat pasta.\n\nBefore it became popular in Italy during the 19th century, earlier civilizations ate some forms of pasta. People say that by the 13th century Marco Polo brought pasta to Italy from China, but this is not true. Arabs brought a noodle-like pasta to Sicily, an island in Italy, in the 8th century.\n\nWhen many Italians immigrated to America in the 20th century, they took their eating habits with them, so pasta and pizza became popular. Although many people think of spaghetti as the most popular form of pasta, there are over 600 types and they are cooked in different ways. Pasta has simple ingredients, so it can be kept longer.",
+      "rango_preguntas": "9 a 14"
+    },
+    "ctx-parte4": {
+      "titulo": "Smiling Often",
+      "texto": "Smiling often has many benefits. People who smile regularly can experience an increase in their health and state of mind. Unfortunately, many people don’t smile enough. It’s a good idea to smile more often in order to feel better. Here are some reasons to smile more often.\n\nSmiling brings health benefits. It increases natural substances in the body which improve your state of mind. Besides, smiling helps your facial structure give you a more youthful look; combined with healthy teeth, smiling can make you seem healthier and more attractive. Smiling also has positive effects on the immune and cardiovascular systems.\n\nThere are psychological benefits to smiling frequently, too. It makes you happy almost immediately. Sometimes when we can’t smile, we find that anyone’s smile helps us feel better. Smiling can also reduce stress levels since the body reacts quickly to it. A great way to make someone cheerful is to help them smile.\n\nSmiling more often can also make you look more attractive and confident. In general, people like to show happiness and be near those who are happy. Smiling in the presence of others shows you are a happy person, and you can transmit the feeling to them. People are naturally attracted to smiling; therefore, smiling frequently can help you get the attention you want from others.\n\nIf you don’t smile much, find ways to smile more often; try to make others smile more often too. Smiling is a fast way to feel happy. Feeling happy and making others feel happy is very positive and will bring many benefits. Although it seems difficult, it is in fact very easy; all it takes is moving some muscles and you will be happy almost immediately.",
+      "rango_preguntas": "15 a 19"
+    },
+    "ctx-parte5": {
+      "titulo": "Tomatoes",
+      "texto": "The tomato is the world´s (0) most popular fruit. And yes, scientifically speaking, it is a fruit, (20) __________ a vegetable. More than 60 million tons of tomatoes are produced every year, 16 million tons more than the banana, the (21) _______ one in popularity.\n\nTomatoes were first (22) ______ by Aztecs and Incas. Explorers returning from Mexico introduced the tomato (23) _______ Europe in 1556. The French called it “the apple of love,” the Germans “the apple of paradise.”\n\nTomatoes are (24) ______ in vitamins A and C, and are fat free. An average size tomato has only 35 calories. In addition, new medical (25) ______ suggests that eating tomatoes may prevent cancer.\n\nTomatoes are used in many food products as pasta and pizza. According to a survey from 1997, 68% of chefs use canned tomatoes because of their quality and taste. It hasn´t changed much since.",
+      "rango_preguntas": "20 a 25"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "I_1038631-C",
+      "numero": 1,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de salud — Parte 1",
+      "enunciado": "<p class=\"en-stem\">Some people do this when they feel really sad or sick.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cough",
+        "C": "cry",
+        "D": "doctor"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante comprende el significado de una descripción sencilla en inglés relacionada con salud y emociones.",
+      "justificacion_correcta": "La opción C (cry) es la correcta porque llorar es un acto que se suele interpretar como signo de estar triste y en algunas ocasiones como signo de estar enfermo.",
+      "opciones_incorrectas": {
+        "A": "cold (resfriado) es una enfermedad, no una acción que alguien realiza por tristeza.",
+        "B": "cough (toser) se relaciona con estar enfermo, pero no con estar triste.",
+        "D": "doctor es una persona, no una acción que alguien realiza cuando se siente mal."
+      }
+    },
+    {
+      "id": "I_1038646-C",
+      "numero": 2,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de salud — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You can take this when you have a terrible headache.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cough",
+        "C": "stomach-ache",
+        "D": "medicine"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce el vocabulario relacionado con remedios y salud en inglés.",
+      "justificacion_correcta": "La opción D (medicine) es la correcta porque normalmente al sentir dolor de cabeza se suele consumir algún tipo de medicina para aliviar este dolor.",
+      "opciones_incorrectas": {
+        "A": "cold es una enfermedad, no algo que se pueda tomar contra el dolor de cabeza.",
+        "B": "cough es una tos, no un remedio que se toma.",
+        "C": "stomach-ache es un dolor de estómago, no algo que se consume para tratar el dolor de cabeza."
+      }
+    },
+    {
+      "id": "I_1038655-C",
+      "numero": 3,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de salud — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You need to see this person when you are sick or hurt.</p>",
+      "opciones": {
+        "A": "doctor",
+        "B": "cold",
+        "C": "cough",
+        "D": "hospital"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce el vocabulario de personas relacionadas con la salud en inglés.",
+      "justificacion_correcta": "La opción A (doctor) es la correcta porque un doctor o doctora es la persona que se suele visitar cuando se está enfermo o herido.",
+      "opciones_incorrectas": {
+        "B": "cold es una enfermedad (resfriado), no una persona.",
+        "C": "cough es una tos, no una persona.",
+        "D": "hospital es el lugar al que se va cuando se está enfermo, pero el enunciado solicita una persona, no un lugar."
+      }
+    },
+    {
+      "id": "I_1038665-C",
+      "numero": 4,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de salud — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You can go to this place when your body isn’t OK.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cry",
+        "C": "medicine",
+        "D": "hospital"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce el vocabulario de lugares relacionados con la salud en inglés.",
+      "justificacion_correcta": "La opción D (hospital) es la correcta porque el hospital es el lugar al que se suele ir cuando una persona no se siente bien.",
+      "opciones_incorrectas": {
+        "A": "cold es una enfermedad, no un lugar.",
+        "B": "cry es una acción (llorar), no un lugar.",
+        "C": "medicine es algo que se consume, pero el enunciado solicita un lugar, no un objeto."
+      }
+    },
+    {
+      "id": "I_1038679-C",
+      "numero": 5,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Vocabulario de salud — Parte 1",
+      "enunciado": "<p class=\"en-stem\">You can have this when you eat too much.</p>",
+      "opciones": {
+        "A": "cold",
+        "B": "cough",
+        "C": "stomach-ache",
+        "D": "doctor"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Baja",
+      "estandar": "Comprende preguntas sencillas sobre el entorno y genera respuestas sobre características de personas y situaciones familiares.",
+      "que_evalua": "Si el estudiante reconoce vocabulario del cuerpo y síntomas físicos en inglés.",
+      "justificacion_correcta": "La opción C (stomach-ache) es la correcta porque es posible tener un dolor de estómago cuando se come demasiado.",
+      "opciones_incorrectas": {
+        "A": "cold (resfriado) no se relaciona con comer en exceso.",
+        "B": "cough (tos) tampoco se relaciona con comer en exceso.",
+        "D": "doctor es una persona, no una condición que se pueda tener."
+      }
+    },
+    {
+      "id": "I_1081217-C",
+      "numero": 6,
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I don’t think I’m going to enter the poster competition.”</p><p class=\"en-turno en-turno--prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B, C o D.</em></p></div>",
+      "opciones": {
+        "A": "Certainly!",
+        "B": "Good luck!",
+        "C": "What a pity!"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "Participa en conversaciones haciendo solicitudes, agradeciendo, expresando empatía, entre otros.",
+      "que_evalua": "Si el estudiante identifica la respuesta más adecuada en un intercambio conversacional en el que el interlocutor 1 expresa una decisión de no participar en algo.",
+      "justificacion_correcta": "La opción C (What a pity!) es la correcta porque el interlocutor 1 está expresando que ya no va a hacer parte de una competencia, y esta respuesta expresa lástima o pesar respecto a esa situación negativa.",
+      "opciones_incorrectas": {
+        "A": "Certainly! es una expresión de acuerdo, no de empatía ante una decisión negativa.",
+        "B": "Good luck! se utiliza para desear buena suerte antes de hacer algo, no para responder a alguien que decide no participar."
+      },
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Parte 2 — Completa las conversaciones"
+    },
+    {
+      "id": "I_1081190-C",
+      "numero": 7,
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “What do you think of my hat?”</p><p class=\"en-turno en-turno--prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B, C o D.</em></p></div>",
+      "opciones": {
+        "A": "Don't come.",
+        "B": "Very well.",
+        "C": "It's too big."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "Conversa con sus compañeros y profesor sobre aspectos cotidianos y da su opinión sobre temas familiares.",
+      "que_evalua": "Si el estudiante identifica la respuesta más adecuada cuando se le solicita una opinión sobre un objeto.",
+      "justificacion_correcta": "La opción C (It's too big) es la correcta porque el interlocutor 1 está solicitando una opinión sobre un sombrero y esta opción manifiesta que le parece demasiado grande, lo cual es una opinión directa y pertinente.",
+      "opciones_incorrectas": {
+        "A": "Don't come es una instrucción u orden, no una opinión sobre el sombrero.",
+        "B": "Very well es una respuesta que suele utilizarse para indicar estado de ánimo, no para dar una opinión sobre un objeto."
+      },
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Parte 2 — Completa las conversaciones"
+    },
+    {
+      "id": "I_1535313-C",
+      "numero": 8,
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “We haven’t discussed our tour plans yet.”</p><p class=\"en-turno en-turno--prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B, C o D.</em></p></div>",
+      "opciones": {
+        "A": "You poor thing.",
+        "B": "Let's do it now.",
+        "C": "As late as possible."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "Conversa con sus compañeros sobre planes futuros y apoya en conocimientos generales del mundo para participar en conversaciones.",
+      "que_evalua": "Si el estudiante identifica la intervención más adecuada ante una preocupación expresada por el interlocutor 1.",
+      "justificacion_correcta": "La opción B (Let's do it now) es la correcta porque es una invitación a resolver o actuar respecto a la preocupación manifestada por el interlocutor 1 sobre los planes del tour.",
+      "opciones_incorrectas": {
+        "A": "You poor thing suele utilizarse para expresar empatía hacia un estado negativo personal, no ante la falta de discusión de planes.",
+        "C": "As late as possible sería una respuesta válida a una pregunta sobre cuándo hacer algo, pero no responde apropiadamente a la preocupación del interlocutor 1."
+      },
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Parte 2 — Completa las conversaciones"
+    },
+    {
+      "id": "I_1082862-C",
+      "numero": 9,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The World's Favorite Food",
+      "enunciado": "<p class=\"en-stem\">The second country where most people eat pasta is</p>",
+      "opciones": {
+        "A": "the Philippines.",
+        "B": "Mexico.",
+        "C": "Venezuela.",
+        "D": "Tunisia."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Baja",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede localizar información específica en el primer párrafo del texto.",
+      "justificacion_correcta": "La opción C (Venezuela) es la correcta porque al final del primer párrafo se menciona explícitamente que, en consumo de pasta, Italy is followed by Venezuela, then Tunisia.",
+      "opciones_incorrectas": {
+        "A": "Las Filipinas son mencionadas como un país lejano donde se consume pasta, pero no como el segundo en consumo.",
+        "B": "México también es mencionado como país lejano donde se consume pasta, pero no como el segundo en la lista.",
+        "D": "Tunisia aparece como tercero en la lista, no como segundo."
+      }
+    },
+    {
+      "id": "I_1082876-C",
+      "numero": 10,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The World's Favorite Food",
+      "enunciado": "<p class=\"en-stem\">Pasta has become a favorite food because it</p>",
+      "opciones": {
+        "A": "has tomato.",
+        "B": "is cheap.",
+        "C": "is complicated.",
+        "D": "is nutritious."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Baja",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede identificar la razón por la cual la pasta es una comida favorita según el segundo párrafo.",
+      "justificacion_correcta": "La opción B (is cheap) es la correcta porque al principio del segundo párrafo se menciona que la pasta es un alimento de bajo costo: 'it is a low-cost meal'.",
+      "opciones_incorrectas": {
+        "A": "El tomate es parte de la preparación de la pasta, no una razón para que sea favorita en sí misma.",
+        "C": "El texto afirma exactamente lo contrario: que no es difícil de preparar (not difficult to prepare).",
+        "D": "El texto menciona que produce energía y que llena el estómago, pero la razón principal destacada como causa de su popularidad es el bajo costo."
+      }
+    },
+    {
+      "id": "I_1082889-C",
+      "numero": 11,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The World's Favorite Food",
+      "enunciado": "<p class=\"en-stem\">Sports people prefer pasta because it</p>",
+      "opciones": {
+        "A": "improves activity levels.",
+        "B": "helps empty stomachs.",
+        "C": "is simple to prepare.",
+        "D": "has few calories."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "4",
+      "evidencia": "4.c",
+      "nivel_mcer": "B1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "Analiza textos para comprender ideas principales y específicas.",
+      "que_evalua": "Si el estudiante comprende por qué los atletas consumen pasta según el texto.",
+      "justificacion_correcta": "La opción A (improves activity levels) es la correcta porque al final del párrafo dos se menciona que la pasta produce energía y que por ello los atletas la consumen, lo cual coincide con la idea de mejorar los niveles de actividad.",
+      "opciones_incorrectas": {
+        "B": "El texto menciona que la pasta llena el estómago, pero esta noción no es relacionada específicamente con los atletas.",
+        "C": "El texto dice que la pasta es fácil de preparar, pero tampoco relaciona esto con los deportistas.",
+        "D": "El texto no menciona que la pasta tenga pocas calorías; al contrario, produce energía."
+      }
+    },
+    {
+      "id": "I_1082904-C",
+      "numero": 12,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The World's Favorite Food",
+      "enunciado": "<p class=\"en-stem\">Pasta became well-known in the United States because Italians</p>",
+      "opciones": {
+        "A": "arrived there.",
+        "B": "liked pizza.",
+        "C": "were famous.",
+        "D": "were invited."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Baja",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede identificar la razón por la que la pasta se popularizó en los Estados Unidos.",
+      "justificacion_correcta": "La opción A (arrived there) es la correcta porque en el texto se menciona que los italianos, al llegar a los Estados Unidos, trajeron sus hábitos alimenticios con ellos: 'they took their eating habits with them'.",
+      "opciones_incorrectas": {
+        "B": "Aunque la pizza también se menciona en el texto, que a los italianos les gustara la pizza no explica por qué la pasta se hizo popular en EE. UU.",
+        "C": "El texto no menciona que los italianos fueran famosos; en cambio, sugiere que la pasta y la pizza se volvieron famosas.",
+        "D": "El texto no menciona que los italianos fueran invitados a los Estados Unidos."
+      }
+    },
+    {
+      "id": "I_1082899-C",
+      "numero": 13,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The World's Favorite Food",
+      "enunciado": "<p class=\"en-stem\">Who first brought pasta to Italy?</p>",
+      "opciones": {
+        "A": "Marco Polo",
+        "B": "Sicilians",
+        "C": "Arabs",
+        "D": "Chinese merchants"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "Identifica información general y específica de un texto corto.",
+      "que_evalua": "Si el estudiante puede identificar qué pueblo llevó la pasta a Italia por primera vez, distinguiendo entre la información verdadera y los mitos mencionados en el texto.",
+      "justificacion_correcta": "La opción C (Arabs) es la correcta porque al final del tercer párrafo se indica que fueron los árabes quienes trajeron un plato a base de fideos a Sicilia, una isla italiana, en el siglo octavo (8th century).",
+      "opciones_incorrectas": {
+        "A": "Marco Polo es mencionado en el texto como una creencia popular incorrecta; el texto aclara que esto 'is not true'.",
+        "B": "Los sicilianos son los habitantes de Sicilia, a quienes los árabes trajeron la pasta; no fueron ellos quienes la llevaron a Italia.",
+        "D": "Los mercaderes chinos no son mencionados en el texto como quienes trajeron la pasta a Italia."
+      }
+    },
+    {
+      "id": "I_1082921-C",
+      "numero": 14,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "The World's Favorite Food",
+      "enunciado": "<p class=\"en-stem\">Both pizza and pasta</p>",
+      "opciones": {
+        "A": "stay fresh for a long time.",
+        "B": "come to America from Italy.",
+        "C": "are prepared in only one way.",
+        "D": "were invented in Asia."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "4",
+      "evidencia": "4.c",
+      "nivel_mcer": "B1",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "Comprende las relaciones entre distintas partes del texto y la secuencia de los eventos mencionados.",
+      "que_evalua": "Si el estudiante puede identificar una característica común a la pizza y la pasta según el último párrafo del texto.",
+      "justificacion_correcta": "La opción B (come to America from Italy) es la correcta porque el último párrafo menciona cómo ambos productos llegaron a los Estados Unidos a través de los inmigrantes italianos.",
+      "opciones_incorrectas": {
+        "A": "Mantenerse fresca por bastante tiempo solo es aplicable a la pasta según el texto ('it can be kept longer'), no a la pizza.",
+        "C": "El texto menciona explícitamente que existen al menos 600 tipos de pasta que pueden prepararse de distintas maneras, lo contrario a esta opción.",
+        "D": "El texto no menciona que ni la pizza ni la pasta hayan sido inventadas en Asia."
+      }
+    },
+    {
+      "id": "I_1081425-C",
+      "numero": 15,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Smiling Often",
+      "enunciado": "<p class=\"en-stem\">What is the author doing in the text?</p>",
+      "opciones": {
+        "A": "convincing people that smiling at others is polite",
+        "B": "describing the consequences of not smiling",
+        "C": "discussing the effects of smiling in difficult situations",
+        "D": "encouraging people to smile more frequently"
+      },
+      "clave": "D",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Identifica el punto de vista del autor y analiza textos argumentativos para comprender ideas principales.",
+      "que_evalua": "Si el estudiante puede identificar la intención general del autor en un texto argumentativo.",
+      "justificacion_correcta": "La opción D (encouraging people to smile more frequently) es la correcta porque en el primer párrafo se menciona que es buena idea sonreír más para sentirse mejor, y a lo largo del texto se mencionan beneficios de la sonrisa con la intención de motivar al lector.",
+      "opciones_incorrectas": {
+        "A": "El texto no menciona la cortesía o decencia como razón para sonreír; enfatiza los beneficios personales y sociales.",
+        "B": "El texto se concentra en describir efectos positivos de la sonrisa, no las consecuencias negativas de no sonreír.",
+        "C": "El texto no se refiere específicamente a situaciones difíciles, sino a situaciones comunes del día a día."
+      }
+    },
+    {
+      "id": "I_1081431-C",
+      "numero": 16,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Smiling Often",
+      "enunciado": "<p class=\"en-stem\">What can the reader find out about smiling in paragraph 2?</p>",
+      "opciones": {
+        "A": "how smiling helps people appear better",
+        "B": "how smiling shows people you are interested in them",
+        "C": "how smiling makes people be popular",
+        "D": "how smiling lets people transmit happiness to others"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Analiza textos descriptivos y argumentativos para comprender ideas principales y específicas.",
+      "que_evalua": "Si el estudiante puede identificar el tema principal del segundo párrafo del texto.",
+      "justificacion_correcta": "La opción A (how smiling helps people appear better) es la correcta porque a lo largo del párrafo 2 se hace énfasis en cómo sonreír afecta positivamente la apariencia: verse más joven, más saludable y más atractivo.",
+      "opciones_incorrectas": {
+        "B": "La relación con otros no es directamente mencionada en este párrafo; el énfasis está en la apariencia propia.",
+        "C": "El párrafo no menciona que sonreír vuelva a alguien más popular.",
+        "D": "La transmisión de felicidad a otros es mencionada en el tercer párrafo, no en el segundo."
+      }
+    },
+    {
+      "id": "I_1081445-C",
+      "numero": 17,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Smiling Often",
+      "enunciado": "<p class=\"en-stem\">According to paragraph 3, what can smiling cause in people?</p>",
+      "opciones": {
+        "A": "It makes them react to funny situations frequently.",
+        "B": "It helps them know when they need to feel good.",
+        "C": "It makes them want to help others to feel happy.",
+        "D": "It helps them feel happy very quickly."
+      },
+      "clave": "D",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Hace inferencias a partir de la información en un texto y comprende relaciones entre distintas partes.",
+      "que_evalua": "Si el estudiante puede identificar el efecto de sonreír en las personas según el tercer párrafo.",
+      "justificacion_correcta": "La opción D (It helps them feel happy very quickly) es la correcta porque en el párrafo 3 se menciona que sonreír frecuentemente tiene beneficios psicológicos como hacer que una persona se sienta feliz casi de inmediato ('almost immediately').",
+      "opciones_incorrectas": {
+        "A": "El párrafo no habla de situaciones divertidas ni de la reacción ante estas.",
+        "B": "El texto sugiere que la sonrisa ayuda a sentirse mejor, no que permite saber cuándo uno necesita sentirse bien.",
+        "C": "El texto menciona que la sonrisa transmite felicidad, pero no que esto haga que una persona quiera ayudar a otros."
+      }
+    },
+    {
+      "id": "I_1081452-C",
+      "numero": 18,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Smiling Often",
+      "enunciado": "<p class=\"en-stem\">What does smiling do in a social situation?</p>",
+      "opciones": {
+        "A": "It tells others you need their attention to feel confident.",
+        "B": "It makes others do what you want and show happiness.",
+        "C": "It shows you are happy and makes others smile, too.",
+        "D": "It makes you look attractive and want people's acceptance."
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Hace inferencias a partir de la información en un texto y comprende relaciones entre distintas partes.",
+      "que_evalua": "Si el estudiante puede inferir qué efecto tiene sonreír en una situación social según el cuarto párrafo.",
+      "justificacion_correcta": "La opción C (It shows you are happy and makes others smile, too) es la correcta porque en el texto se insiste en que al sonreír se puede lucir más atractivo y lleno de confianza, y que en general esta sensación se transmite, generando que otros también sean felices.",
+      "opciones_incorrectas": {
+        "A": "El texto dice que la sonrisa hace que uno se vea atractivo y confiado, no vulnerable; al contrario de lo que sugiere esta opción.",
+        "B": "El texto afirma que sonreír ayuda a captar la atención de la gente, no necesariamente que las personas hagan lo que uno quiera.",
+        "D": "El texto menciona que sonreír hace que uno se vea atractivo, pero sugiere que se logra llamar la atención, no que se busque aceptación de manera vulnerable."
+      }
+    },
+    {
+      "id": "I_1081462-C",
+      "numero": 19,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Smiling Often",
+      "enunciado": "<p class=\"en-stem\">Which is the best advertisement for the author’s ideas about smiling?</p>",
+      "opciones": {
+        "A": "Want to look older and more mature? Smile. It will control your stress levels, your state of mind and your popularity.",
+        "B": "Want to be happy fast and easily? Smile more frequently. It will make you healthier, happier, and more attractive.",
+        "C": "Want to be natural? Smile often. It helps you improve your teeth, your mind, and your figure quickly.",
+        "D": "Want to look professional? Smile more. It is important for your body, your mind, and your personal life."
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "4",
+      "evidencia": "4.d",
+      "nivel_mcer": "B1",
+      "parte": 4,
+      "dificultad": "Alta",
+      "estandar": "Identifica palabras clave que permiten comprender el sentido global del texto y el punto de vista del autor.",
+      "que_evalua": "Si el estudiante puede seleccionar el anuncio que mejor resume las ideas principales del texto sobre sonreír.",
+      "justificacion_correcta": "La opción B es la correcta porque menciona los efectos más importantes de sonreír frecuentemente según el texto: ser más feliz, más saludable y más atractivo, de forma rápida y sencilla.",
+      "opciones_incorrectas": {
+        "A": "Habla de verse más viejo o más maduro, ideas que no son mencionadas en el texto. Solo lo referido al estado mental es parcialmente correcto.",
+        "C": "Habla de ser más natural y de que sonreír mejora los dientes; el texto no menciona la naturalidad y dice que sonreír con dientes sanos tiene efectos positivos, no que mejore los dientes.",
+        "D": "Habla de verse más profesional, idea que nunca es mencionada en el texto."
+      }
+    },
+    {
+      "id": "I_0935106-C",
+      "numero": 20,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Tomatoes — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(20)</strong> en el texto <em>Tomatoes</em>.</p><p class=\"en-stem\">“And yes, scientifically speaking, it is a fruit, <span class=\"en-blank\">(20) __________</span> a vegetable.”</p>",
+      "opciones": {
+        "A": "neither",
+        "B": "nor",
+        "C": "not",
+        "D": "no"
+      },
+      "clave": "C",
+      "competencia": "e",
+      "afirmacion": "2",
+      "evidencia": "2.e",
+      "nivel_mcer": "A1",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Usa adecuadamente estructuras y patrones gramaticales de uso frecuente en inglés.",
+      "que_evalua": "Si el estudiante conoce el uso correcto del adverbio de negación 'not' para negar verbos en inglés.",
+      "justificacion_correcta": "La opción C (not) es la correcta porque el adverbio de negación 'not' es el que se utiliza para negar verbos; en este caso complementa el verbo 'to be' implícito: 'it is a fruit, not a vegetable'.",
+      "opciones_incorrectas": {
+        "A": "neither se utiliza como conjunción para reafirmar una negación doble ('neither... nor'), no para negar un solo verbo.",
+        "B": "nor se utiliza en conjunto con 'neither' para negar dos elementos simultáneamente.",
+        "D": "no se utiliza para negar sustantivos directamente ('no time', 'no money'), no para negar verbos."
+      }
+    },
+    {
+      "id": "I_0935122-C",
+      "numero": 21,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Tomatoes — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(21)</strong> en el texto <em>Tomatoes</em>.</p><p class=\"en-stem\">“More than 60 million tons of tomatoes are produced every year, 16 million tons more than the banana, the <span class=\"en-blank\">(21) _______</span> one in popularity.”</p>",
+      "opciones": {
+        "A": "two",
+        "B": "both",
+        "C": "twice",
+        "D": "second"
+      },
+      "clave": "D",
+      "competencia": "e",
+      "afirmacion": "2",
+      "evidencia": "2.e",
+      "nivel_mcer": "A1",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Usa adecuadamente estructuras y patrones gramaticales de uso frecuente en inglés.",
+      "que_evalua": "Si el estudiante conoce el uso de los números ordinales en inglés para indicar posición en una lista.",
+      "justificacion_correcta": "La opción D (second) es la correcta porque la frase requiere un número ordinal para indicar que el banano es el segundo en popularidad después del tomate.",
+      "opciones_incorrectas": {
+        "A": "two es un número cardinal, no ordinal; no indica posición en una lista.",
+        "B": "both se utiliza como determinante o pronombre para referirse a dos objetos de la misma jerarquía, no para indicar posición.",
+        "C": "twice se utiliza para indicar que alguna acción se ha llevado a cabo dos veces, no para indicar posición en una lista."
+      }
+    },
+    {
+      "id": "I_0935130-C",
+      "numero": 22,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Tomatoes — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(22)</strong> en el texto <em>Tomatoes</em>.</p><p class=\"en-stem\">“Tomatoes were first <span class=\"en-blank\">(22) ______</span> by Aztecs and Incas.”</p>",
+      "opciones": {
+        "A": "achieved",
+        "B": "done",
+        "C": "grown",
+        "D": "invented"
+      },
+      "clave": "C",
+      "competencia": "e",
+      "afirmacion": "3",
+      "evidencia": "3.e",
+      "nivel_mcer": "A2",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Identifica y diferencia el significado adecuado de palabras según el contexto.",
+      "que_evalua": "Si el estudiante conoce el significado específico de verbos con campo semántico similar en inglés.",
+      "justificacion_correcta": "La opción C (grown) es la correcta porque 'grown' es el verbo que se utiliza para indicar el cultivo y crecimiento de tomates y plantas en general.",
+      "opciones_incorrectas": {
+        "A": "achieved (logrado/conseguido) no es el término adecuado para referirse al cultivo de una planta por pueblos indígenas.",
+        "B": "done (hecho) no es el término adecuado porque los tomates, al ser producto de la naturaleza, no pueden ser simplemente 'hechos'.",
+        "D": "invented (inventado) tampoco es adecuado porque los tomates son un producto natural, no algo que se pueda inventar."
+      }
+    },
+    {
+      "id": "I_0935148-C",
+      "numero": 23,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Tomatoes — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(23)</strong> en el texto <em>Tomatoes</em>.</p><p class=\"en-stem\">“Explorers returning from Mexico introduced the tomato <span class=\"en-blank\">(23) _______</span> Europe in 1556.”</p>",
+      "opciones": {
+        "A": "out",
+        "B": "on",
+        "C": "at",
+        "D": "into"
+      },
+      "clave": "D",
+      "competencia": "e",
+      "afirmacion": "4",
+      "evidencia": "4.e",
+      "nivel_mcer": "B1",
+      "parte": 5,
+      "dificultad": "Alta",
+      "estandar": "Reconoce los elementos de enlace de un texto para identificar su secuencia y comprende relaciones de orden temporal y espacial.",
+      "que_evalua": "Si el estudiante conoce el uso y significado de las distintas preposiciones en inglés para indicar dirección hacia un lugar.",
+      "justificacion_correcta": "La opción D (into) es la correcta porque el texto indica que el tomate fue llevado hacia y dentro de Europa; la preposición 'into' expresa movimiento hacia el interior de un lugar.",
+      "opciones_incorrectas": {
+        "A": "out se utiliza para indicar fuera de un lugar, lo contrario a la dirección descrita.",
+        "B": "on se utiliza para indicar sobre un lugar (superficie), no movimiento hacia el interior.",
+        "C": "at se utiliza para indicar al lado o en un punto específico, no para indicar movimiento hacia y dentro de un lugar tan grande como Europa."
+      }
+    },
+    {
+      "id": "I_0935163-C",
+      "numero": 24,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Tomatoes — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(24)</strong> en el texto <em>Tomatoes</em>.</p><p class=\"en-stem\">“Tomatoes are <span class=\"en-blank\">(24) ______</span> in vitamins A and C, and are fat free.”</p>",
+      "opciones": {
+        "A": "charged",
+        "B": "rich",
+        "C": "loaded",
+        "D": "full"
+      },
+      "clave": "B",
+      "competencia": "e",
+      "afirmacion": "3",
+      "evidencia": "3.e",
+      "nivel_mcer": "A2",
+      "parte": 5,
+      "dificultad": "Media",
+      "estandar": "Identifica y diferencia el significado adecuado de palabras según el contexto.",
+      "que_evalua": "Si el estudiante conoce el significado de adjetivos con campo semántico similar en inglés.",
+      "justificacion_correcta": "La opción B (rich) es la correcta porque el adjetivo 'rich' expresa claramente la riqueza natural en vitaminas del tomate; 'rich in vitamins' es una expresión fija y positiva para indicar abundancia natural de algo nutritivo.",
+      "opciones_incorrectas": {
+        "A": "charged se utiliza normalmente para indicar que algo está cargado de energía eléctrica, no para describir contenido nutricional.",
+        "C": "loaded se utiliza para indicar que un cargamento ya ha sido añadido, con connotación de peso o cantidad excesiva, no apropiado para vitaminas.",
+        "D": "full se utiliza para indicar que algo está lleno en exceso o de manera negativa, no para describir positivamente el contenido natural de vitaminas."
+      }
+    },
+    {
+      "id": "I_0935171-C",
+      "numero": 25,
+      "contexto_id": "ctx-parte5",
+      "contexto_titulo": "Tomatoes — Parte 5 (fill-in-the-blank)",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(25)</strong> en el texto <em>Tomatoes</em>.</p><p class=\"en-stem\">“In addition, new medical <span class=\"en-blank\">(25) ______</span> suggests that eating tomatoes may prevent cancer.”</p>",
+      "opciones": {
+        "A": "operation",
+        "B": "prescription",
+        "C": "drug",
+        "D": "research"
+      },
+      "clave": "D",
+      "competencia": "e",
+      "afirmacion": "4",
+      "evidencia": "4.e",
+      "nivel_mcer": "B1",
+      "parte": 5,
+      "dificultad": "Alta",
+      "estandar": "Reconoce el significado de frases nominales que usan adjetivos especializados en contextos científicos.",
+      "que_evalua": "Si el estudiante conoce el significado de sustantivos con campo semántico médico-científico en inglés.",
+      "justificacion_correcta": "La opción D (research) es la correcta porque el texto indica cómo a través de un proceso científico se adquirió más información sobre los beneficios del tomate; 'medical research' (investigación médica) es el sustantivo que describe este proceso.",
+      "opciones_incorrectas": {
+        "A": "operation se refiere a procedimientos como cirugías o tratamientos, no a un proceso de adquisición de conocimiento.",
+        "B": "prescription se refiere a la receta que da un doctor con las medicinas que debe tomar un paciente.",
+        "C": "drug se refiere a una droga o medicina, no a un proceso científico."
+      }
+    }
+  ],
+  "tiempo_minutos": 60,
+  "preservar_orden_preguntas": true
+}

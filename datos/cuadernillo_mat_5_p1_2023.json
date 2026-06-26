@@ -1,0 +1,574 @@
+{
+  "id": "math-5-p1-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "5",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 5° — Período I",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Razonamiento",
+    "b": "Resolución de problemas",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Analiza datos representados de diferentes formas",
+    "2": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "3": "Resuelve problemas de medición de perímetro, de área y superficie, de capacidad y volumen de diversos objetos",
+    "4": "Reconoce las propiedades de las fracciones, los números naturales, la representación decimal, las operaciones y las relaciones en distintos contextos",
+    "5": "Resuelve problemas aditivos, multiplicativos y de proporción",
+    "6": "Descubre regularidades de las secuencias, la ordenación y sobre las equivalencias entre las situaciones aditivas y multiplicativas (arreglos rectangulares, producto cartesiano, adición repetida)",
+    "7": "Comprende las condiciones de semejanza y congruencia en figuras poligonales",
+    "8": "Interpreta la naturaleza y posibilidad de ocurrencia de eventos aleatorios simples",
+    "9": "Explica las características y las propiedades de secuencias (numéricas o geométricas) y expresiones numéricas",
+    "10": "Resuelve problemas de medición que requieran el uso de patrones estandarizados o no estandarizados",
+    "11": "Explica las características y las propiedades de secuencias, numéricas o geométricas, y expresiones numéricas"
+  },
+  "evidencias": {
+    "1.1": "Determina diferencias y similitudes en distintas representaciones de conjuntos de datos de una misma situación",
+    "2.1": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "3.1": "Utiliza estrategias no estandarizadas (recubrimientos y patrones no convencionales) para encontrar perímetro, área, o volumen de diferentes objetos, en contextos escolares y extraescolares",
+    "4.1": "Representa fracciones y decimales de distintas formas",
+    "5.1": "Utiliza la proporcionalidad en contextos de relacionamiento de magnitudes",
+    "6.1": "Determina equivalencias entre modelos aditivos o multiplicativos, considerando los procesos de transformación y composición",
+    "7.1": "Determina figuras semejantes o las condiciones para que se dé la semejanza",
+    "4.2": "Describe propiedades y relaciones entre cantidades y magnitudes y sus operaciones",
+    "2.2": "Determina cuándo un evento es posible, imposible o seguro",
+    "8.1": "Clasifica los eventos aleatorios según los casos favorables observados en un mismo experimento",
+    "5.2": "Usa adiciones y productos en contextos escolares y extraescolares",
+    "9.1": "Determina patrones y propiedades de las secuencias numéricas o geométricas",
+    "10.1": "Usa patrones estandarizados para enfrentar situaciones de medición",
+    "7.2": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "11.1": "Establece equivalencias a partir de las relaciones, propiedades o dependencia entre magnitudes y expresiones numéricas"
+  },
+  "cmc": [
+    "Aleatorio",
+    "Espacial - métrico",
+    "Numérico - variacional"
+  ],
+  "preguntas": [
+    {
+      "id": "I_1723905",
+      "numero": 1,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
+      "que_evalua": "La capacidad para relacionar dos representaciones de un mismo conjunto de datos, en este caso: pictogramas y tablas.",
+      "justificacion_correcta": "respuesta correcta De acuerdo con el pictograma: Laura: 6 balones, que corresponde a 12 anotaciones. Leonardo: 3 balones, que corresponde a 6 anotaciones. Alejandra: 5 balones, que corresponde a 10 anotaciones. Felipe: 2 balones, que corresponde a 4 anotaciones.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción tomen la cantidad de balones como total de anotaciones hechas por cada estudiante y los ubiquen de derecha a izquierda.",
+        "B": "Es posible que el estudiante que elija esta opción tomen únicamente la cantidad de balones como total de anotaciones hechas por cada estudiante.",
+        "C": "Es posible que el estudiante que elija esta opción tomen la cantidad de anotaciones total hechas por cada estudiante y los ubiquen de derecha a izquierda. Matemáticas 5.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q01.png"
+    },
+    {
+      "id": "I_1748435",
+      "numero": 2,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para comparar los casos posibles de los eventos dados en un experimento aleatorio.",
+      "justificacion_correcta": "respuesta correcta La probabilidad de sacar una bola negra en cada bolsa es: Bolsa 1 →           . Bolsa 2 →           . Bolsa 3 →           . Bolsa 4 →          . Es menos probable en la bolsa 3. Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción asuman que se pregunta por el evento seguro.",
+        "B": "Es posible que el estudiante que elija esta opción asuman que solo queda una bola que no cumple la condición de color y esto hace que esta bolsa por la cual se pregunta.",
+        "D": "Es posible que el estudiante que elija esta opción asuman que el hecho de que en esta bolsa haya la menor cantidad de bolas, esto hace que la probabilidad de penitencia sea menor. Matemáticas 5.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q02.png"
+    },
+    {
+      "id": "I_172395A",
+      "numero": 3,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir (longitudes, distancias, áreas de superficies, volúmenes de cuerpos sólidos, volúmenes de líquidos y capacidades de recipientes; pesos y masa de cuerpos sólidos; duración de eventos o procesos; amplitud de ángulos).",
+      "que_evalua": "La capacidad para componer o descomponer sólidos regulares de acuerdo con sus medidads y forma.",
+      "justificacion_correcta": "respuesta correcta En total caben 12 fichas de la forma: Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción es posible que los estudiantes elijan la",
+        "B": "Es posible que el estudiante que elija esta opción si ubican las fichas como se muestran a continuación: Obteniendo 18 fichas.",
+        "D": "Es posible que el estudiante que elija esta opción tomen las 4 fichas que se pueden ubicar frontalmente y agreguen las dos “filas” que quedan al respaldo. Matemáticas 5.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q03.png"
+    },
+    {
+      "id": "I_112515A",
+      "numero": 4,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte todo, cociente, razones y proporciones.",
+      "que_evalua": "La capacidad para resolver una situación de proporcionalidad en problema del todo y la parte en representación porcentual.",
+      "justificacion_correcta": "respuesta correcta La cuarta parte del cultivo corresponde a la fracción        . 1 → 100 %. → ¿qué porcentaje?. Entonces, ¿qué porcentaje? =         × 100 % = 25 %. Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción asuman que la fracción          se relaciona directamente con el 40 %.",
+        "C": "Es posible que el estudiante que elija esta opción asuman que una parte del cultivo corresponde en general a la mitad, tomando el 50 %.",
+        "D": "Es posible que el estudiante que elija esta opción asuman que la cuarta parte se define al representar. Obteniendo el 75 %. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q04.png"
+    },
+    {
+      "id": "I_160708A",
+      "numero": 5,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad para determinar los valores asociados a una situación de proporcionalidad directa.",
+      "justificacion_correcta": "respuesta correcta Si dos botellas cuestan 1.400, cada una cuesta 700. Entonces 5 botellas cuestan 700 × 5 = 3.500.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción asuman que deben multiplicar 1.400 × 5, cometiendo un error en el algoritmo de multiplicación, obteniendo 3.000.",
+        "C": "Es posible que el estudiante que elija esta opción asuman que deben multiplicar 1.400 × 5, cometiendo un error en el algoritmo de multiplicación, obteniendo 3.000 y dividen posteriormente entre las 2 botellas que cuestan ese valor.",
+        "D": "Es posible que el estudiante que elija esta opción asuman que el precio indicado en el enunciado es el mismo por el que se pregunta. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q05.png"
+    },
+    {
+      "id": "I_1748373",
+      "numero": 6,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
+      "que_evalua": "La capacidad para relacionar diferentes formas de describir arreglos multiplicativos.",
+      "justificacion_correcta": "respuesta correcta La expresión 5 × 3 y el arreglo presentado corresponden a sumar 5 consigo mismo 3 veces, obteniendo: 5 ା 5 ା 5 de manera equivalente.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción asuman que únicamente se tiene en cuenta el número 5 en una nueva representación y tomen la cantidad de veces también como el valor 5.",
+        "C": "Es posible que el estudiante que elija esta opción consideren que se debe representar tres veces sumar cinco consigo mismo y cinco veces tres consigo mismo.",
+        "D": "Es posible que el estudiante que elija esta opción asuman que se debe sumar el mismo número que se indica en el número de veces. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q06.png"
+    },
+    {
+      "id": "I_1754092",
+      "numero": 7,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad para explicar las características que se cumplen cuando dos figuras son semejantes.",
+      "justificacion_correcta": "respuesta correcta Tanto la figura 1 como la figura 2 y las medidas de sus dimensiones satisfacen la relación de semejanza: 6 es a 3 como 2 es a 1.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción relacionen la forma con el tamaño y evidencien que la altura es diferente.",
+        "B": "Es posible que el estudiante que elija esta opción consideren que el tamaño ya implica que la forma es distinta, pero observen que las dos figuras tienen un lado denominado “altura” y relacionan esto con la semejanza.",
+        "C": "Es posible que el estudiante que elija esta opción relacionen que tener diferente forma coincide con que un rectángulo tiene mayor área que el otro y consideren que el hecho de estar sobre la misma cuadrícula se refiere a su tamaño. Matemáticas 5.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q07.png"
+    },
+    {
+      "id": "I_1606879",
+      "numero": 8,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
+      "que_evalua": "La capacidad para establecer relaciones entre expresiones.",
+      "justificacion_correcta": "respuesta correcta 300 ା 500 ା 300 = 300 ା 300 ା 500 = 300 × 2 ା 500.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción reconozcan que el número 300 se suma consigo mismo dos veces y reescriban la expresión considerando también esta misma relación para el número 500.",
+        "C": "Es posible que el estudiante que elija esta opción reconozcan que el sumando 300 se encuentra dos veces y lo registren 2 × 300, pero luego sumen los sumandos que son diferentes 300 ା 500, obteniendo la expresión 2 × 300 ା 800.",
+        "D": "Es posible que el estudiante que elija esta opción evidencien que el sumando 300 está dos veces y adicionalmente desarrollen: 300 ା 500 ା 300. (300 ା 500) ା (500 ା 300). 800 ା 800. Obteniendo el sumando 800 también dos veces. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q08.png"
+    },
+    {
+      "id": "I_156349A",
+      "numero": 9,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para diferenciar los eventos posibles de los imposibles.",
+      "justificacion_correcta": "respuesta correcta En el acuario 2 únicamente hay peces negros, por tanto es seguro sacar al azar un pez negro.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción si consideran el complemento del evento señalado.",
+        "C": "Es posible que el estudiante que elija esta opción si observan que en este acuario hay más peces negros que blancos.",
+        "D": "Es posible que el estudiante que elija esta opción si observan que en este acuario hay más peces en total. Matemáticas 5.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q09.png"
+    },
+    {
+      "id": "I_1724154",
+      "numero": 10,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad para reconocer y comparar casos favorable en un experimento aleatorio simple.",
+      "justificacion_correcta": "respuesta correcta En total hay: - 3 papeles con un balón. - 2 papeles con un lazo. - 2 papeles con una raqueta. - 1 papel con un tambor. Por lo tanto el lazo y la raqueta tienen la misma probabilidad de ser elegidos.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción asuman que los papeles Pelota y raqueta ubicados en la primera columna de izquierda a derecha son los más probables de ser elegidos.",
+        "C": "Es posible que el estudiante que elija esta opción si toman las figuras de las que hay más y menos papeles respectivamente.",
+        "D": "Es posible que el estudiante que elija esta opción si asumen que hay 3 papeles con estas dos figuras igual que la mayor cantidad de papeles que tiene otra figura. Matemáticas 5.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q10.png"
+    },
+    {
+      "id": "I_174595A",
+      "numero": 11,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir (longitudes, distancias, áreas de superficies, volúmenes de cuerpos sólidos, volúmenes de líquidos y capacidades de recipientes; pesos y masa de cuerpos sólidos.",
+      "que_evalua": "La capacidad para calcular perímetros, utilizando unidades de medidad no estandarizadas.",
+      "justificacion_correcta": "respuesta correcta 6 ା 6 ା 2 ା 2 = 16, 16 lápices de perímetro. Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción si suman la cantidad de lápices de la dimensión mayor.",
+        "C": "Es posible que el estudiante que elija esta opción si únicamente suman la cantidad de lápices observada en la imagen.",
+        "D": "Es posible que el estudiante que elija esta opción si restan la cantidad de lápices observada en la imagen. Matemáticas 5.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q11.png"
+    },
+    {
+      "id": "I_1748592",
+      "numero": 12,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La capacidad para modelar y resolver una situación aditiva.",
+      "justificacion_correcta": "respuesta correcta ା 44 ______ Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción si en el planteamiento no adicionan las decenas. ା 44 ______",
+        "C": "Es posible que el estudiante que elija esta opción si en el planteamiento adicionan las decenas en las centenas. ା 44 ______",
+        "D": "Es posible que el estudiante que elija esta opción si ubican el número 44 de izquierda a derecha. ା 44 ______ Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q12.png"
+    },
+    {
+      "id": "I_1724625",
+      "numero": 13,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico regularidades y propiedades de los números, sus relaciones y operaciones.",
+      "que_evalua": "La capacidad para ordenar números que se encuentran asociados a un conjunto de datos.",
+      "justificacion_correcta": "respuesta correcta Los números 12, 7, 9 y 11 ordenados de menor a mayor son: 7, 9, 11 y 12.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción si ordenan de menor a mayor en parejas de números.",
+        "C": "Es posible que el estudiante que elija esta opción si ubican los valores tal como se encuentran en la tabla, pero de abajo hacia arriba.",
+        "D": "Es posible que el estudiante que elija esta opción si ubican los valores tal como se encuentran en la tabla. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q13.png"
+    },
+    {
+      "id": "I_1891207",
+      "numero": 14,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad de resolver situaciones que asocian magnitudes discretas inversamente proporcionales en contextos familiares como el uso adecuado de recetas culinarias.",
+      "justificacion_correcta": "respuesta correcta Se establece la relación inversamente proporcional entre las magnitudes de cantidad vasos de agua y la cantidad de huevos, de modo que si se utilizara 12 vasos de agua, se tendrá que emplear la mitad de los huevos que, para 6 vasos de agua, es decir 3 huevos.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción observen que, por cada 3 vasos que aumenta la primera columna, de 6 a 9, la segunda columna disminuyó 2 huevos, por ende, para 12 vasos se utilizará 2 huevos.",
+        "C": "Es posible que el estudiante que elija esta opción consideren que, si para 6 vasos de agua se emplean 6 huevos, para 12 vasos de agua se necesitarán 12 huevos, estableciendo una proporcionalidad directa entre las magnitudes.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que la cantidad de huevos que se necesitan equivalen a completar 36 unidades entre vasos de agua y huevos. Así, si se utilizará 12 vasos de agua, se empleará 24 huevos. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q14.png"
+    },
+    {
+      "id": "I_1890408",
+      "numero": 15,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
+      "que_evalua": "La capacidad para determinar el área total de una región compuesta por tres rectángulos de diferentes medidas.",
+      "justificacion_correcta": "respuesta correcta Se determina el área respectiva para cada una de las regiones rectangulares de color que se presentan en la imagen y se adicionan estos valores para calcular el área total pintada. Área roja: 4 cm × 6 cm = 24 cm2. Área amarilla: 4 cm × 2 cm = 8 cm2. Área azul: 1 cm × 2 cm = 2 cm2. Área total: 8 cm2 ା 24 cm2 ା 2 cm2 = 34 cm2. Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción al determinar el área de las regiones rectangulares que se presentan, calculen el perímetro en cada caso: Perímetro rojo: 2 × (4 cm ା 6 cm) = 20 cm2. Perímetro amarillo: 2 × (4 cm ା 2 cm) = 12 cm2. Perímetro azul: 2 × (1 cm ା 2 cm) = 6 cm2. Por lo tanto, no se tiene clara la fórmula por emplear para determinar la región sombreada, hallando el contorno respectivo en cada caso y generando un valor total. Cabe resaltar que las unidades cuadradas son el resultado de realizar el producto por 2.",
+        "C": "Es posible que el estudiante que elija esta opción tengan en cuenta las medidas enunciadas para el largo y ancho de cada rectángulo, por tanto, el error está al adicionar las cantidades y no multiplicarlas. Además, dentro del proceso identifican que las unidades cuadradas son el resultado de la adición de estas (cm ା cm = cm2): Área roja: 4 cm ା 6 cm = 10 cm2. Área amarilla: 4 cm ା 2 cm = 6 cm2. Área azul: 1 cm ା 2 cm = 3 cm2. Área total: 10 cm2 ା 6 cm2 ା 3 cm2 = 19 cm2.",
+        "D": "Es posible que el estudiante que elija esta opción utilicen para cada región sombreada la fórmula del área de un triángulo            : Área roja:                              = 12 cm2. Área amarilla:                              = 4 cm2. Área azul:                              = 1 cm2. Área total: 12 cm2 ା 4 cm2 ା 1 cm2 = 17 cm2. b × h 4 cm × 6 cm 4 cm × 2 cm 1 cm × 2 cm Matemáticas 5.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q15.png"
+    },
+    {
+      "id": "I_1892305",
+      "numero": 16,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad para establecer relaciones de congruencia entre dos polígonos dadas las medidas de sus segmentos.",
+      "justificacion_correcta": "respuesta correcta El siguiente polígono representa la ficha que hace falta para completar el rectángulo: Matemáticas 5.º El siguiente polígono es congruente con el polígono que representa la ficha que hace falta: Debido a las medidas de los segmentos, se pueden establecer las siguientes relaciones de congruencia: HG ≌ QP, GF ≌ OP, FE ≌ ON, DE ≌ NM, DC ≌ MY, CB ≌ YX, BA ≌ XV, AK ≌ VU, KJ ≌ UT, JI ≌ TS, IK ≌ SR, KM ≌ RQ. Por otro lado, los siguientes ángulos internos de los polígonos son congruentes por tener una medida de 90°: ∠M ≌ ∠D, ∠X ≌ ∠B, ∠V ≌ ∠AA, ∠J ≌ ∠T, ∠I ≌ ∠S, ∠Q ≌ ∠H, ∠P ≌ ∠G, ∠N ≌ ∠E Además, los siguientes ángulos internos de los polígonos son congruentes por tener una medida de 270°: ∠PON ≌ ∠GFE, ∠MYX ≌ ∠DCB, ∠VUT ≌ ∠AKJ, ∠SRQ ≌ ∠ILH Por lo anterior, se puede establecer la siguiente relación de congruencia: ABCDEFGHIJK ≌ VXYMNOPQRSTU. Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción hayan establecido una relación de congruencia entre las dos figuras porque la medida 2 cm de algunos segmentos aparece varias veces en el rompecabezas y en la ficha correspondiente a esta opción.",
+        "C": "Es posible que el estudiante que elija esta opción encuentren que los perímetros del polígono que representa la ficha que hace falta y el polígono de esta opción de respuesta son iguales (24 cm).",
+        "D": "Es posible que el estudiante que elija esta opción se fijen en que el polígono que representa la ficha que hace falta y el polígono de esta opción tienen la misma forma, pero ignoran la medida de 1 cm por ser la más pequeña. Matemáticas 5.º"
+      },
+      "cmc": "Espacial - métrico",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q16.png"
+    },
+    {
+      "id": "I_1891240",
+      "numero": 17,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo diferentes representaciones del mismo conjunto de datos.",
+      "que_evalua": "La capacidad para elaborar una gráfica que contenga la misma información que aparece en una tabla.",
+      "justificacion_correcta": "respuesta correcta Se determina para cada uno de los servicios ofrecidos la frecuencia de venta, realizando la representación del diagrama de barras a partir de los datos ofrecidos en la representación tabular y reestructurando el orden de presentación.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción realicen un análisis de las frecuencias presentadas para cada uno de los servicios, estableciendo un criterio de orden descendente para ellas sin tener en cuenta el tipo de servicio ofrecido en esta nueva disposición.",
+        "C": "Es posible que el estudiante que elija esta opción tengan en cuenta la representación para aquellos servicios que presentan una mayor frecuencia de venta, omitiendo los valores respectivos para los servicios de menor frecuencia.",
+        "D": "Es posible que el estudiante que elija esta opción reorganicen el orden en el que se presentan los datos, tomando como referente la verificación del primer y último servicio presentado en el diagrama de barras, por lo que no tienen en cuenta la frecuencia de los servicios restantes. Matemáticas 5.º"
+      },
+      "cmc": "Aleatorio",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q17.png"
+    },
+    {
+      "id": "I_1891286",
+      "numero": 18,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La capacidad para resolver situaciones aditivas de composición que involucran más de dos cantidades.",
+      "justificacion_correcta": "respuesta correcta Para encontrar la cantidad total de visitantes al pueblo durante los tres días, se deben sumar los visitantes de cada día, así: 2.415 1.850 ା     770 ________ 5.035 Matemáticas 5.º",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción lleven a cabo el algoritmo de la suma de izquierda a derecha, iniciando por las unidades de mil y no por las unidades, así: 1                                     1 2.415                 2.415                 2.415 1.850        →          1.850        →         1.850 ା     770                    ା     770                    ା     770 ________                   ________                   ________ 3                       3.9                    3.946",
+        "C": "Es posible que el estudiante que elija esta opción lleven a cabo el algoritmo de la suma sin hacer el proceso de agrupación por valor posicional. Es decir, no agrupan 10 decenas como una centena, ni 10 centenas como una unidad de mil.",
+        "D": "Es posible que el estudiante que elija esta opción organicen la última cifra, 770, a la izquierda y no a la derecha, y no tengan en cuenta la agrupación final de 10 unidades de mil en una decena de mil, así: 2.41 5 1.850 ା 770 ________ 1.965 Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q18.png"
+    },
+    {
+      "id": "I_1892391",
+      "numero": 19,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas cuya estrategia de solución requiera de las relaciones y propiedades de los números naturales y sus operaciones.",
+      "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales como la conmutativa y la distributiva del producto sobre la suma.",
+      "justificacion_correcta": "respuesta correcta Dado que el número 4 es un factor común en ambos productos y que la multiplicación se distribuye en la suma, se establece la expresión 4 × (3 ା 6).",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que los signos de operación conmutan y no alteran el resultado, de modo que intercambiarlos entre sí, ା por ×, equivale a la operación propuesta inicialmente por Manuel.",
+        "C": "Es posible que el estudiante que elija esta opción establezcan el factor común entre las multiplicaciones, el factor 4, pero aplican la factorización como un producto de tres números distintos entre sí.",
+        "D": "Es posible que el estudiante que elija esta opción consideren equivalente el distribuir e intercambiar los factores que pertenecen a cada paréntesis, de modo que alternar el 4 con el 6, no afectará el resultado. Matemáticas 5.º"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q19.png"
+    },
+    {
+      "id": "I_1892455",
+      "numero": 20,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo la notación decimal para expresar fracciones en diferentes contextos y relaciono estas dos notaciones con la de los porcentajes.",
+      "que_evalua": "La capacidad de encontrar una expresión equivalente, que incluye porcentajes en diferentes contextos.",
+      "justificacion_correcta": "respuesta correcta El 20 % de un número es equivalente a multiplicar por la fracción           , luego, se efectúa esa división y se obtiene que la fracción            es equivalente al número decimal 0,2.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción realicen la conversión omitiendo el símbolo de % y la relación existente entre la cantidad de lanzamientos y aquellos que se convirtieron en gol.",
+        "B": "Es posible que el estudiante que elija esta opción interpreten de forma incorrecta el símbolo % como la relación 20 de cada 10, por lo que desarrollan el cociente entre los valores respectivos y obtienen el desplazamiento de la coma decimal una unidad a la izquierda.",
+        "C": "Es posible que el estudiante que elija esta opción planteen de forma incorrecta el cociente del valor dado en el enunciado por 100. Por tanto, presentan un error en la cantidad de ceros que se agregan o el desplazamiento de la coma decimal. 5. GRADO Cuadernillo 1 M051 G05.M.D Matemáticas ¡Hola! Queremos agradecer tu participación. Antes de empezar a responder, es importante que tengas en cuenta lo siguiente: • Lee cada pregunta cuidadosamente y elige UNA opción. • En este cuadernillo encuentras las preguntas y la Hoja de respuestas. • Por favor, responde TODAS las preguntas. • Si no entiendes algo o si tienes alguna inquietud sobre cómo llenar la Hoja de respuestas, pídele ayuda a tu docente. N.° de preguntas: Matemáticas - Cuadernillo 1 Saber 5.° La imagen muestra la cantidad de anotaciones que hicieron 4 estudiantes en un partido de baloncesto. ¿Cuál de las siguientes tablas representa la información de la imagen? Laura Leonardo Alejandra Felipe Representa dos anotaciones Cantidad de anotaciones Estudiante Laura Leonardo Alejandra Felipe A. Estudiante Laura Leonardo Alejandra Felipe Cantidad de anotaciones B. Estudiante Laura Leonardo Alejandra Felipe Cantidad de anotaciones C. Estudiante Laura Leonardo Alejandra Felipe Cantidad de anotaciones D. 1. Matemáticas - Cuadernillo 1 Saber 5.° Para un juego en la clase de matemáticas, hay 4 bolsas con bolas de varios colores. Cada niño debe meter la mano en alguna de las bolsas y si saca una bola negra debe pagar una penitencia. ¿En cuál de las 4 bolsas un niño tiene menos posibilidad de pagar una penitencia? A. En la bolsa 1. B. En la bolsa 2. C. En la bolsa 3. D. En la bolsa 4. 10 Bolas negras Bolsa 1 10 Bolas en total 10 Bolas negras 11 Bolas en total Bolsa 2 1 Bola negra 10 Bolas en total Bolsa 3 1 Bola negra 2 Bolas en total Bolsa 4 Ramón quiere construir un bloque como el que muestra la figura. ¿Cuántas fichas como esta                          necesita Ramón para construir el cubo? A. B. C. D. 2. 3. Matemáticas - Cuadernillo 1 Saber 5.° Si la cuarta parte de un campo de cultivo se usa para la siembra de maíz, ¿qué porcentaje del campo de cultivo se usa en la siembra de maíz? A. 25 % B. 40 % C. 50 % D. 75 % Dos botellas de jugo cuestan $1.400 y cada botella cuesta lo mismo. ¿Cuánto cuestan 5 botellas de jugo? A. $3.500 B. $3.000 C. $1.500 D. $1.400 Para indicar la cantidad de balones que hay en la figura se utilizó la expresión 5 × 3. ¿Cuál de las siguientes es otra forma correcta de indicar la cantidad de balones que hay? A. 5 + 5 + 5 + 5 + 5 B. 5 + 5 + 5 C. 5 + 5 + 5 + 3 + 3 + 3 + 3 + 3 D. 3 + 3 + 3 4. 5. 6. Matemáticas - Cuadernillo 1 Saber 5.° La profesora de Matemáticas dibujó dos figuras en el tablero. Si las dos figuras son semejantes, ¿cuál de las siguientes características se cumple? A. Tienen el mismo tamaño pero diferente altura. B. Tienen la misma altura y diferente forma. C. Tienen el mismo tamaño pero diferente forma. D. Tienen la misma forma y diferente tamaño. Altura Figura 1 Figura 2 Altura La caja registradora de una tienda muestra la siguiente imagen: ¿Con cuál de las siguientes operaciones también se puede calcular correctamente el valor total a pagar? A. (2 × 300) + (2 × 500) B. (2 × 300) + 500 C. (2 × 300) + 800 D. (2 × 300) + (2 × 800) $300 + $500 + $300 Valor total a pagar 7. 8. Matemáticas - Cuadernillo 1 Saber 5.° Observa los siguientes acuarios que contienen peces blancos y peces negros. Si se saca un pez al azar de algún acuario, ¿en cuál de los acuarios es seguro sacar un pez negro? A. En el acuario 1. B. En el acuario 2. C. En el acuario 3. D. En el acuario 4. Acuario 1 Acuario 2 Acuario 3 Acuario 4 En una fiesta de cumpleaños, los niños se cubren los ojos y sacan un papel con un juguete para un sorteo, pero solo es posible sacar uno de los siguientes papeles: ¿Cuáles de los juguetes tienen la misma probabilidad de ser elegidos al azar? A. La pelota y la raqueta. B. El lazo y la raqueta. C. La pelota y el tambor. D. El lazo y el tambor. Pelota Pelota Pelota Tambor Lazo Lazo Raqueta Raqueta 9. 10. Matemáticas - Cuadernillo 1 Saber 5.° Observa la medida que se tomó de la ventana, usando lápices. ¿Cuál es el perímetro de la ventana? A. 16 lápices. B. 12 lápices. C. 8 lápices. D. 4 lápices. Observa la cantidad de personas que asistieron cada día a un parque. ¿Cuántas personas asistieron en total al parque estos dos días? A. 170 personas. B. 180 personas. C. 270 personas. D. 576 personas. Lunes Martes 44 personas 136 personas La tabla muestra la cantidad de puntos que obtuvo cada niño que participó en un concurso. ¿Cuál de las siguientes opciones muestra los puntos obtenidos en el concurso, por cada niño, organizados de menor a mayor? A. 7, 9, 11, 12. B. 9, 11, 7, 12. C. 11, 9, 7, 12. D. 12, 7, 9, 11. Sofía Manuel Stefany Leonardo Nombre Puntos obtenidos 11. 12. 13. Matemáticas - Cuadernillo 1 Saber 5.° Ramiro es pizzero y para preparar la masa de la pizza sigue una tabla que relaciona la cantidad de vasos de agua y huevos que debe usar: Si la relación entre las cantidades se mantiene, y Ramiro planea utilizar 12 vasos de agua para la preparación de la masa, ¿cuántos huevos deberá usar en la receta? A. B. C. D. Cantidad de vasos de agua Cantidad de huevos Camilo pintó un famoso cuadro en su cuaderno empleando tres colores diferentes: amarillo, rojo y azul como se muestra en la imagen. ¿Cuál es el área total que Camilo pintó? A. 38 cm2 B. 34 cm2 C. 19 cm2 D. 17 cm2 1 cm 6 cm 2 cm 4 cm 2 cm 4 cm 1 cm Amarillo Azul Rojo 14. 15. Matemáticas - Cuadernillo 1 Saber 5.° Eliana tiene un rompecabezas rectangular de 5 fichas. Ella ubicó 4 de las fichas y le hace falta una para completar el rompecabezas. ¿Cuál de las siguientes fichas es la que completa el rompecabezas? 2 cm 2 cm 2 cm 2 cm 1 cm 3 cm 2 cm 3 cm 1 cm 2 cm 2 cm 2 cm B. 2 cm 2 cm 2 cm 2 cm 2 cm A. 2 cm 2 cm 3 cm 2 cm 2 cm C. 1 cm 2 cm 2 cm 2 cm 2 cm 3 cm 2 cm D. 16. Matemáticas - Cuadernillo 1 Saber 5.° Luis trabaja en una veterinaria y registró en una tabla la cantidad de servicios que realizó en un mes. ¿Cuál de los siguientes gráficos de barras representa la información registrada en la tabla? Servicio Peluquería Guardería Médico Vacunación Cantidad de servicios Médico Guardería Servicio Registro de venta Peluquería Vacunación A. Médico Guardería Servicio Registro de venta Peluquería Vacunación B. Médico Guardería Servicio Registro de venta Peluquería Vacunación C. Médico Guardería Servicio Registro de venta Peluquería Vacunación D. 17. Matemáticas - Cuadernillo 1 Saber 5.° Nicol trabaja en la alcaldía de un pueblo y es la encargada de llevar el registro de la cantidad de personas que lo visitan en la época de fiestas. Ella construyó una tabla con el número de visitantes diarios. ¿En total cuántas personas visitaron el pueblo de Nicol en los tres días de fiestas? A. 5.035 B. 3.946 C. 3.935 D. 1.965 Día 2.415 1.850 Cantidad de visitantes Manuel vende fresas decoradas con chocolate en dos cajas diferentes: Manuel vendió 3 cajas pequeñas y 4 cajas grandes y realizó la siguiente operación para determinar el total de fresas que vendió: Total de fresas que vendió = (3 × 4) + (4 × 6) ¿Cuál de las siguientes operaciones es equivalente a la operación que realizó Manuel? A. (3 + 4) × (4 + 6) B. 4 × (3 + 6) C. 4 × (3 × 6) D. (3 × 6) + (4 × 4) Caja pequeña Caja grande 18. 19. Matemáticas - Cuadernillo 1 Saber 5.° D. Podemos afirmar que el 0,2 de los lanzamientos al arco hechos por el equipo azul se convirtieron en gol. A. Despúes del análisis podemos decir que 20 de los lanzamientos al arco del equipo azul se convirtieron en gol. B. Podemos decir al finalizar el partido, que de los lanzamientos al arco, 2 se convirtieron en gol. C. Evaluando las jugadas 0,02 de los lanzamientos al arco fueron positivos y se convirtieron en increíbles goles. Para el equipo azul el 20 % de los lanzamientos al arco se convirtieron en gol. Un periodista realizó el análisis de un partido de fútbol y luego hizo la siguiente afirmación. ¿Cuál podría ser otra forma de expresar el porcentaje mencionado por el periodista? 20. FIN Matemáticas - Cuadernillo 1 A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D DATOS PERSONALES Tipo de documento Número de documento Nombres y apellidos Curso Sexo Niño - Hombre Niña - Mujer Para contestar en la Hoja de respuestas hazlo de la siguiente manera. Por ejemplo, si la respuesta es la B, MARCA ASÍ A B D C 5.° CUADERNILLO 1-2023 Calle 26 N.º 69-76, Torre 2, Piso 16, Edificio Elemento, Bogotá D.C., Colombia www.icfes.gov.co Línea de atención al usuario: Bogotá Tel.: 60 (1) 514 4370"
+      },
+      "cmc": "Numérico - variacional",
+      "imagen_figura": "assets/cuadernillo-mat-5-p1/q20.png"
+    }
+  ]
+}

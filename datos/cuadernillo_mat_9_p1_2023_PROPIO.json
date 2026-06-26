@@ -1,0 +1,570 @@
+{
+  "id": "math-9-p1-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "9",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 9° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Razonamiento",
+    "b": "Resolución de problemas",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Contrasta las equivalencias entre diferentes registros de relaciones de variación entre variables",
+    "2": "Resuelve problemas con ecuaciones lineales, cuadráticas y sistemas de ecuaciones lineales",
+    "3": "Reconoce el uso y las propiedades de los números reales y sus operaciones en distintos contextos aplicados",
+    "4": "Resuelve problemas que requieren diferentes procedimientos de cálculo para hallar medidas de superficies y volúmenes",
+    "5": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "6": "Resuelve problemas que requieren el uso de la distribución de los datos o medidas estadísticas: moda, mediana y promedio",
+    "7": "Resuelve problemas aditivos, multiplicativos, de proporcionalidad o de linealidad en contextos aplicados",
+    "8": "Interpreta la naturaleza y posibilidad de ocurrencia de eventos aleatorios simples",
+    "9": "Resuelve problemas que requieren la obtención o comparación de la probabilidad de eventos aleatorios",
+    "10": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión",
+    "11": "Expresa una misma información en diferentes lenguajes: natural, simbólico o textual, en contextos matemáticos o aplicados",
+    "12": "Explica las características y las propiedades de secuencias (numéricas o geométricas) y expresiones numéricas",
+    "13": "Conjetura sobre las propiedades de los objetos bidimensionales y tridimensionales relacionadas con sus atributos mensurables y de posición"
+  },
+  "evidencias": {
+    "1.1": "Identifica propiedades de las gráficas de las funciones lineales, cuadráticas y exponenciales",
+    "2.1": "Usa diferentes métodos de resolución de ecuaciones lineales y sistemas de ecuaciones lineales en contextos matemáticos o aplicados",
+    "3.1": "Establece relaciones de orden entre números reales, dados criterios de ubicación o aproximación",
+    "4.1": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello no se ofrecen en la situación",
+    "5.1": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "6.1": "Usa la moda o la mediana para interpretar el comportamiento de un conjunto de datos de acuerdo con el ordenamiento de los mismos",
+    "7.1": "Usa aproximaciones lineales o relaciones lineales en situaciones en las cuales las magnitudes están relacionadas",
+    "8.1": "Clasifica los eventos aleatorios según los casos favorables observados en un mismo experimento",
+    "9.1": "Calcula la probabilidad de eventos simples usando diferentes estrategias de conteos elementales (árboles, listas, combinaciones y permutaciones)",
+    "10.1": "Señala los atributos medibles de una figura junto con sus posibles unidades y magnitudes",
+    "11.1": "Relaciona un fenómeno, o situación de variación, en diversas estructuras con el lenguaje algebraico que lo representa",
+    "12.1": "Determina patrones y propiedades de las secuencias numéricas o geométricas",
+    "7.2": "Usa adecuadamente las propiedades de las operaciones, la proporcionalidad directa o inversa en situaciones en las cuales las magnitudes están relacionadas",
+    "13.1": "Establece relaciones de paralelismo o perpendicularidad entre segmentos",
+    "4.2": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello se ofrecen en la situación"
+  },
+  "cmc": [
+    "Numérico - variacional",
+    "Espacial - métrico",
+    "Aleatorio"
+  ],
+  "preguntas": [
+    {
+      "id": "P-math-9-p1-01",
+      "numero": 1,
+      "enunciado": "<p>La gráfica muestra la rapidez de un <b>dron</b> (en metros por segundo) durante los primeros <b>120 segundos</b> de un recorrido. ¿Cuál fue la <b>máxima</b> rapidez que alcanzó el dron durante ese recorrido?</p>",
+      "opciones": {
+        "A": "\\(60\\ \\dfrac{\\text{m}}{\\text{s}}\\)",
+        "B": "\\(50\\ \\dfrac{\\text{m}}{\\text{s}}\\)",
+        "C": "\\(40\\ \\dfrac{\\text{m}}{\\text{s}}\\)",
+        "D": "\\(30\\ \\dfrac{\\text{m}}{\\text{s}}\\)"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para identificar un valor representativo a partir de una gráfica que modela el comportamiento de una variable.",
+      "justificacion_correcta": "En el eje vertical se lee la rapidez. El valor más alto que alcanza la curva es \\(60\\ \\tfrac{\\text{m}}{\\text{s}}\\), entre los \\(40\\) y los \\(60\\) segundos; ningún otro instante lo supera. La máxima rapidez es \\(60\\ \\tfrac{\\text{m}}{\\text{s}}\\).",
+      "opciones_incorrectas": {
+        "B": "Toma el segundo pico de la curva \\(\\left(50\\ \\tfrac{\\text{m}}{\\text{s}}\\text{ hacia el final}\\right)\\) en lugar del valor más alto.",
+        "C": "Lee el valor donde la curva cambia de pendiente por primera vez \\(\\left(40\\ \\tfrac{\\text{m}}{\\text{s}}\\right)\\), no el máximo.",
+        "D": "Toma el valor del último instante registrado \\(\\left(30\\ \\tfrac{\\text{m}}{\\text{s}}\\text{ a los }120\\text{ s}\\right)\\), confundiendo el final con el máximo."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q01.png"
+    },
+    {
+      "id": "P-math-9-p1-02",
+      "numero": 2,
+      "enunciado": "<p>Marcela tiene <b>$480.000</b> ahorrados y cada semana retira <b>$60.000</b> para sus gastos. Si <b>\\(y\\)</b> representa el dinero que le queda y <b>\\(x\\)</b> el número de semanas transcurridas, ¿cuál de las siguientes ecuaciones le permite saber en qué semana se quedará sin dinero?</p>",
+      "opciones": {
+        "A": "\\(y = 420.000 - x\\)",
+        "B": "\\(y = 480.000\\,x - 60.000\\)",
+        "C": "\\(y = 480.000 - 60.000\\,x\\)",
+        "D": "\\(y = 60.000\\,x + 480.000\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Modelo situaciones de variación con funciones polinómicas.",
+      "que_evalua": "La capacidad para plantear una expresión que modela una situación de variación lineal.",
+      "justificacion_correcta": "En \\(x\\) semanas Marcela gasta \\(60.000\\,x\\) pesos. El dinero que le queda es el ahorro inicial menos lo gastado: \\(y = 480.000 - 60.000\\,x\\).",
+      "opciones_incorrectas": {
+        "A": "Resta \\(60.000\\) una sola vez de los \\(480.000\\) y luego resta el número de semanas \\(x\\), sin multiplicar por el gasto semanal.",
+        "B": "Multiplica el ahorro inicial por las semanas y resta el gasto una sola vez, invirtiendo los papeles de \\(480.000\\) y \\(60.000\\).",
+        "D": "Suma el gasto en lugar de restarlo, como si el dinero aumentara cada semana."
+      }
+    },
+    {
+      "id": "P-math-9-p1-03",
+      "numero": 3,
+      "enunciado": "<p>En una competencia de salto largo, la zona de la pista entre los <b>\\(5\\) m</b> y los <b>\\(6\\) m</b> está dividida en partes iguales. La figura señala con una bandera el punto donde llegó el salto de una atleta. ¿Cuál fue la distancia del salto?</p>",
+      "opciones": {
+        "A": "\\(5,3\\ \\text{m}\\)",
+        "B": "\\(5,7\\ \\text{m}\\)",
+        "C": "\\(6,3\\ \\text{m}\\)",
+        "D": "\\(5,07\\ \\text{m}\\)"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
+      "que_evalua": "La capacidad para identificar el número decimal asociado a una posición dada en un sistema de referencia.",
+      "justificacion_correcta": "El tramo entre \\(5\\) m y \\(6\\) m está dividido en \\(10\\) partes iguales, así que cada parte mide \\(0,1\\) m. La bandera está \\(7\\) divisiones después de la marca de \\(5\\) m, es decir, a \\(5 + 7\\times 0,1 = 5,7\\) m.",
+      "opciones_incorrectas": {
+        "A": "Cuenta las divisiones desde el lado equivocado: \\(3\\) divisiones \\((0,3\\) m\\()\\) en lugar de \\(7\\).",
+        "C": "Toma la marca de \\(6\\) m como referencia y avanza, obteniendo un valor mayor que \\(6\\).",
+        "D": "Confunde la escala y supone que cada división vale \\(0,01\\) m en lugar de \\(0,1\\) m."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q03.png"
+    },
+    {
+      "id": "P-math-9-p1-04",
+      "numero": 4,
+      "enunciado": "<p>Una empresa quiere saber cuánta baldosa necesita para cubrir el piso de una bodega, cuyo plano (dividido en zonas) se muestra en la figura. ¿Cuál procedimiento permite hallar el área de toda la bodega?</p>",
+      "opciones": {
+        "A": "Multiplicar por tres el área de la zona 3.",
+        "B": "Sumar las áreas de las zonas 4, 5 y 6 y multiplicar el resultado por dos.",
+        "C": "Hallar el área de una de las celdas iguales en que está dividido el plano y multiplicarla por el número total de celdas que caben en la bodega.",
+        "D": "Determinar el área de la zona 2 y multiplicarla por seis, que es el total de zonas."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para encontrar el procedimiento que permite calcular correctamente el área de una figura bidimensional compuesta.",
+      "justificacion_correcta": "El plano está dividido en celdas congruentes (todas del mismo tamaño). El área total se obtiene calculando el área de una sola celda y multiplicándola por la cantidad de celdas iguales que caben en toda la bodega.",
+      "opciones_incorrectas": {
+        "A": "Las zonas no son todas iguales a la zona 3, así que multiplicarla por tres no cubre la bodega completa.",
+        "B": "Las zonas 4, 5 y 6 no forman la mitad exacta de la bodega; su doble no da el área total.",
+        "D": "Las zonas no son congruentes con la zona 2, por lo que multiplicarla por seis no corresponde al área real."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q04.png"
+    },
+    {
+      "id": "P-math-9-p1-05",
+      "numero": 5,
+      "enunciado": "<p>Andrés fabrica zapatos con <b>\\(4\\) tipos de tela</b> distintos y suelas de <b>\\(3\\) calibres</b> (delgada, mediana y gruesa). Cada diseño combina una tela con un calibre de suela, como muestra la figura. Si se escoge un diseño al azar, ¿cuál de los siguientes eventos tiene probabilidad <b>\\(\\dfrac{4}{4\\times 3}\\)</b> de ocurrir?</p>",
+      "opciones": {
+        "A": "Que el diseño escogido tenga la tela 1 y suela gruesa.",
+        "B": "Que el diseño escogido tenga suela delgada o suela gruesa.",
+        "C": "Que el diseño escogido tenga suela de calibre mediano.",
+        "D": "Que el diseño escogido tenga la tela 1 o la tela 2."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para calcular una probabilidad a partir del número de casos favorables y de casos totales.",
+      "justificacion_correcta": "Hay \\(4\\) telas y \\(3\\) calibres, así que existen \\(4\\times 3 = 12\\) diseños posibles. Los diseños con suela de calibre mediano son uno por cada tela: \\(4\\) en total. Por eso su probabilidad es \\(\\dfrac{4}{4\\times 3}\\).",
+      "opciones_incorrectas": {
+        "A": "Un solo diseño (tela 1 con suela gruesa) da \\(\\dfrac{1}{4\\times 3}\\), no \\(\\dfrac{4}{4\\times 3}\\).",
+        "B": "Suela delgada o gruesa son \\(8\\) diseños, es decir \\(\\dfrac{8}{4\\times 3}\\).",
+        "D": "Las telas 1 o 2 aparecen con los \\(3\\) calibres cada una: \\(6\\) diseños, es decir \\(\\dfrac{6}{4\\times 3}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q05.png"
+    },
+    {
+      "id": "P-math-9-p1-06",
+      "numero": 6,
+      "enunciado": "<p>En un taller, la <b>moda</b> de las tallas de calzado de los empleados es <b>38</b>. ¿Cuál de las siguientes tablas puede representar correctamente las tallas de ese taller?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Talla</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">N.º de personas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">37</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Talla</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">N.º de personas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">37</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Talla</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">N.º de personas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">37</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Talla</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">N.º de personas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">37</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr></table>"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
+      "que_evalua": "La capacidad para encontrar un conjunto de datos que cumpla con un valor de la moda dado.",
+      "justificacion_correcta": "La moda es el valor con mayor frecuencia. Solo en la tabla A la talla 38 tiene la mayor cantidad de personas (5), más que las tallas 37 (2) y 40 (3); por eso la moda es 38.",
+      "opciones_incorrectas": {
+        "B": "Aquí la talla con mayor frecuencia es 37 (5 personas), no 38; la moda sería 37.",
+        "C": "Las tallas 38 y 40 empatan con 4 personas, así que 38 no es la única moda.",
+        "D": "La talla con mayor frecuencia es 37 (4 personas); confunde la moda con otra talla."
+      }
+    },
+    {
+      "id": "P-math-9-p1-07",
+      "numero": 7,
+      "enunciado": "<p>Para llenar un tanque se abrió una manguera. La gráfica muestra la cantidad de agua (en litros) registrada en algunas horas del día; entre las 3 p.m. y las 6 p.m. no se tomaron registros. Teniendo en cuenta la <b>tendencia</b> de los datos, ¿cuál es la mejor aproximación de la cantidad de agua que había a las <b>4 p.m.</b>?</p>",
+      "opciones": {
+        "A": "72 litros.",
+        "B": "55 litros.",
+        "C": "45 litros.",
+        "D": "22 litros."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para estimar el valor de una variable en un momento dado, usando una aproximación lineal.",
+      "justificacion_correcta": "Los datos crecen de forma aproximadamente lineal. Prolongando esa tendencia hasta las 4 p.m., que cae en el tramo sin registros, la cantidad de agua queda entre los 36 litros de las 3 p.m. y los 55 litros de las 6 p.m.; una mejor aproximación es 45 litros.",
+      "opciones_incorrectas": {
+        "A": "Toma el último valor registrado (72 litros a las 9 p.m.), no el correspondiente a las 4 p.m.",
+        "B": "Toma el primer valor después del corte (55 litros a las 6 p.m.), dos horas más tarde.",
+        "D": "Toma el primer valor registrado (22 litros a la 1 p.m.), tres horas antes."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q07.png"
+    },
+    {
+      "id": "P-math-9-p1-08",
+      "numero": 8,
+      "enunciado": "<p>El pictograma muestra la cantidad de libros de cada materia que hay en la biblioteca de un colegio; cada libro dibujado representa <b>100 libros</b>. Si se elige un libro al azar, ¿de qué materia es <b>más probable</b> que sea?</p>",
+      "opciones": {
+        "A": "Matemáticas.",
+        "B": "Sociales.",
+        "C": "Dibujo.",
+        "D": "Ciencias."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para identificar el evento que tiene mayor probabilidad de ocurrencia.",
+      "justificacion_correcta": "Matemáticas tiene 4 iconos (400 libros), más que Sociales y Ciencias (2 iconos, 200 libros cada una) y Dibujo (1 icono, 100 libros). Al haber más libros de Matemáticas, es la materia con mayor probabilidad de ser elegida.",
+      "opciones_incorrectas": {
+        "B": "Sociales aparece primero en el pictograma, pero solo tiene 2 iconos; la posición no determina la probabilidad.",
+        "C": "Dibujo es la materia con menos libros (1 icono); es la de menor probabilidad, no la mayor.",
+        "D": "Ciencias aparece al final con 2 iconos; tiene menos libros que Matemáticas."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q08.png"
+    },
+    {
+      "id": "P-math-9-p1-09",
+      "numero": 9,
+      "enunciado": "<p>El número de bacterias de un cultivo después de <b>\\(t\\)</b> horas está dado por la expresión <b>\\(500\\times 3^{\\,t}\\)</b>. ¿Qué representa el número <b>\\(3\\)</b> en esa expresión?</p>",
+      "opciones": {
+        "A": "El número de bacterias que hay en la tercera hora.",
+        "B": "El número de bacterias que hay en la última hora.",
+        "C": "Que cada hora el número de bacterias se reduce a la tercera parte.",
+        "D": "Que cada hora el número de bacterias se triplica respecto a la hora anterior."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico la relación entre los cambios en los parámetros de la representación algebraica de una familia de funciones y los cambios en las gráficas que las representan.",
+      "que_evalua": "La capacidad para determinar el significado de un parámetro en una función exponencial.",
+      "justificacion_correcta": "En una hora cualquiera \\(t\\) hay \\(500\\times 3^{\\,t}\\) bacterias; en la hora siguiente \\(t+1\\) hay \\(500\\times 3^{\\,t+1} = 500\\times 3^{\\,t}\\times 3\\). El factor \\(3\\) multiplica la cantidad de una hora a la siguiente, lo que significa que cada hora el número de bacterias se triplica.",
+      "opciones_incorrectas": {
+        "A": "Confunde la base \\(3\\) con un instante de tiempo \\((t=3)\\), no con el factor de crecimiento.",
+        "B": "Asocia el \\(3\\) con la última hora, cuando es el mismo factor para cualquier hora.",
+        "C": "Invierte el efecto: el factor \\(3\\) multiplica (triplica), no reduce a la tercera parte."
+      }
+    },
+    {
+      "id": "P-math-9-p1-10",
+      "numero": 10,
+      "enunciado": "<p>Cinco estudiantes —Ana, Beto, Carla, Diana y Esteban— se postulan para representar a su curso. El docente escribe los <b>cinco</b> nombres en papeles iguales y saca <b>uno</b> al azar. ¿Cuál es la probabilidad de que sea elegida <b>Carla</b>?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(\\dfrac{1}{4}\\)",
+        "C": "\\(\\dfrac{1}{6}\\)",
+        "D": "\\(\\dfrac{1}{5}\\)"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para calcular una probabilidad a partir de la cantidad de casos favorables y casos totales.",
+      "justificacion_correcta": "Hay un único caso favorable (que salga Carla) y cinco casos igualmente posibles, así que la probabilidad es \\(\\dfrac{1}{5}\\).",
+      "opciones_incorrectas": {
+        "A": "Considera solo dos resultados (ser elegida o no) y responde \\(\\dfrac{1}{2}\\), ignorando que los candidatos son cinco.",
+        "B": "Cuenta a Carla aparte y deja \\(4\\) candidatos, obteniendo \\(\\dfrac{1}{4}\\) en vez de \\(\\dfrac{1}{5}\\).",
+        "C": "Suma un caso de más \\((5+1)\\) y responde \\(\\dfrac{1}{6}\\)."
+      }
+    },
+    {
+      "id": "P-math-9-p1-11",
+      "numero": 11,
+      "enunciado": "<p>En una jardinería venden huertos en forma de prisma rectangular con las medidas de la figura: la <b>cara frontal</b> mide \\(12\\ \\text{cm}\\) de largo por \\(5\\ \\text{cm}\\) de alto, y la <b>cara lateral</b> tiene \\(8\\ \\text{cm}\\) de profundidad. A cada huerto se le pega una etiqueta con algunos de sus atributos, pero se borraron los <b>nombres</b> de dos de ellos. Teniendo en cuenta que \\(12\\times 8 = 96\\), que \\(12\\times 5 = 60\\), que \\(12\\times 8\\times 5 = 480\\) y que \\(2\\times(12+8) = 40\\), ¿cuál de las siguientes etiquetas nombra <b>correctamente</b> todos los atributos?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Capacidad</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Contorno de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Volumen del cajón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peso del cajón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Precio del cajón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peso de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico la pertinencia de utilizar unidades de medida estandarizadas en situaciones tomadas de distintas ciencias.",
+      "que_evalua": "La capacidad para identificar las unidades y magnitudes que corresponden con un atributo medible de un objeto tridimensional.",
+      "justificacion_correcta": "El valor \\(480\\ \\text{cm}^3\\) (unidades cúbicas) corresponde al <b>volumen</b> de la caja, y el valor \\(40\\ \\text{cm}\\) (unidades lineales) corresponde al <b>perímetro</b> de la base. Solo la etiqueta B nombra ambos atributos de acuerdo con sus unidades.",
+      "opciones_incorrectas": {
+        "A": "Llama 'capacidad' al volumen y 'contorno' al perímetro; no son los nombres del atributo medible pedido.",
+        "C": "Asocia \\(480\\ \\text{cm}^3\\) con el 'peso', pero las unidades cúbicas miden volumen, no peso.",
+        "D": "Asocia \\(480\\ \\text{cm}^3\\) con el 'precio' y \\(40\\ \\text{cm}\\) con el 'peso', sin relación con las unidades."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q11.png"
+    },
+    {
+      "id": "P-math-9-p1-12",
+      "numero": 12,
+      "enunciado": "<p>La cantidad de vueltas que da una rueda para recorrer <b>un metro</b> es igual a <b>\\(100\\)</b> dividido entre el perímetro de la rueda, donde el perímetro se expresa en centímetros. ¿Cuál de las siguientes expresiones permite hallar la cantidad de vueltas que debe dar una rueda de perímetro <b>\\(p\\)</b> (en cm) para recorrer <b>\\(200\\) metros</b>?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{100}{200}\\)",
+        "B": "\\(200\\times\\dfrac{p}{100}\\)",
+        "C": "\\(\\dfrac{100}{p}\\times 200\\)",
+        "D": "\\(\\dfrac{100}{p}\\)"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Modelo situaciones de variación con funciones polinómicas.",
+      "que_evalua": "La capacidad para identificar la expresión algebraica que modela una situación de variación.",
+      "justificacion_correcta": "En un metro la rueda da \\(\\dfrac{100}{p}\\) vueltas. Para recorrer \\(200\\) metros se necesitan \\(200\\) veces esa cantidad: \\(\\dfrac{100}{p}\\times 200\\) vueltas.",
+      "opciones_incorrectas": {
+        "A": "Toma el perímetro como \\(200\\) y olvida la variable \\(p\\): \\(\\dfrac{100}{200}\\).",
+        "B": "Invierte la división: multiplica por \\(\\dfrac{p}{100}\\) en lugar de dividir entre \\(p\\).",
+        "D": "Da las vueltas para \\(1\\) metro \\(\\left(\\dfrac{100}{p}\\right)\\) y olvida multiplicar por los \\(200\\) metros."
+      }
+    },
+    {
+      "id": "P-math-9-p1-13",
+      "numero": 13,
+      "enunciado": "<p>Lucía, Pedro, Sara y Mateo compraron, en ese orden, boletas para una atracción. El número de cada boleta aumenta siempre en <b>\\(40\\)</b> respecto a la anterior. La figura muestra el orden de compra y el número de la primera boleta. Si Mateo fue el último en comprar, ¿qué número de boleta le correspondió?</p>",
+      "opciones": {
+        "A": "\\(2.620\\)",
+        "B": "\\(2.470\\)",
+        "C": "\\(2.430\\)",
+        "D": "\\(2.390\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 12,
+      "evidencia": "12.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
+      "que_evalua": "La capacidad para determinar un valor especifico en una secuencia numérica.",
+      "justificacion_correcta": "La primera boleta es \\(2.350\\) y cada una aumenta \\(40\\). La segunda es \\(2.390\\), la tercera \\(2.430\\) y la cuarta (la de Mateo) es \\(2.350 + 3\\times 40 = 2.470\\).",
+      "opciones_incorrectas": {
+        "A": "Aumenta de \\(90\\) en \\(90\\) en lugar de \\(40\\): \\(2.350, 2.440, 2.530, 2.620\\).",
+        "C": "Toma el valor de la tercera boleta \\((2.430)\\), contando una posición de menos.",
+        "D": "Da el valor de la segunda boleta \\((2.390)\\), sumando \\(40\\) una sola vez."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q13.png"
+    },
+    {
+      "id": "P-math-9-p1-14",
+      "numero": 14,
+      "enunciado": "<p>En una promoción, por cada <b>\\(4\\) láminas</b> que un cliente compra recibe <b>\\(12\\) cromos</b> de regalo, en proporción directa. ¿Cuántos cromos recibe un cliente que compra <b>\\(7\\) láminas</b>?</p>",
+      "opciones": {
+        "A": "\\(28\\)",
+        "B": "\\(21\\)",
+        "C": "\\(12\\)",
+        "D": "\\(3\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+      "que_evalua": "La capacidad para solucionar un problema de proporcionalidad directa.",
+      "justificacion_correcta": "Como las dos magnitudes son directamente proporcionales, se plantea la regla de tres: si \\(4\\) láminas dan \\(12\\) cromos, entonces \\(7\\) láminas dan \\(x = \\dfrac{12\\times 7}{4} = 21\\) cromos.",
+      "opciones_incorrectas": {
+        "A": "Supone \\(4\\) cromos por lámina y multiplica \\(7\\times 4 = 28\\), en vez de usar la razón de \\(3\\) cromos por lámina.",
+        "C": "Copia el dato \\(12\\) cromos, suponiendo que siempre se reciben \\(12\\) sin importar las láminas.",
+        "D": "Divide \\(12\\) entre \\(4\\) y se queda con la razón unitaria \\(3\\) cromos por lámina, sin multiplicarla por las \\(7\\) láminas."
+      }
+    },
+    {
+      "id": "P-math-9-p1-15",
+      "numero": 15,
+      "enunciado": "<p>La figura representa una vista de una estructura. En ella, los segmentos <b>\\(\\overline{NR}\\)</b> y <b>\\(\\overline{OQ}\\)</b> forman ángulo recto con la base <b>\\(\\overline{MP}\\)</b> (marcas de \\(90^\\circ\\)). ¿Cuál de las siguientes opciones corresponde a dos lados <b>paralelos</b> de la figura?</p>",
+      "opciones": {
+        "A": "\\(\\overline{MN}\\) y \\(\\overline{OP}\\)",
+        "B": "\\(\\overline{MP}\\) y \\(\\overline{NR}\\)",
+        "C": "\\(\\overline{OP}\\) y \\(\\overline{PM}\\)",
+        "D": "\\(\\overline{NR}\\) y \\(\\overline{OQ}\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 13,
+      "evidencia": "13.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
+      "que_evalua": "La capacidad para reconocer características de paralelismo y perpendicularidad en figuras planas.",
+      "justificacion_correcta": "Si dos segmentos son perpendiculares a una misma recta, entonces son paralelos entre sí. Como \\(\\overline{NR}\\) y \\(\\overline{OQ}\\) forman ambos un ángulo de \\(90^\\circ\\) con la base \\(\\overline{MP}\\), los dos son paralelos.",
+      "opciones_incorrectas": {
+        "A": "\\(\\overline{MN}\\) y \\(\\overline{OP}\\) son los lados inclinados (forman \\(60^\\circ\\) con la base); tienen igual longitud, pero no son paralelos.",
+        "B": "\\(\\overline{NR}\\) es perpendicular a \\(\\overline{MP}\\), no paralelo a ella; confunde perpendicularidad con paralelismo.",
+        "C": "\\(\\overline{OP}\\) y \\(\\overline{PM}\\) comparten el vértice \\(P\\); tener un punto en común no significa ser paralelos."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q15.png"
+    },
+    {
+      "id": "P-math-9-p1-16",
+      "numero": 16,
+      "enunciado": "<p>Tomás lee en un libro un enunciado para completar: «Al multiplicar <b>\\(3\\ \\text{cm}\\times 4\\ \\text{cm}\\times 5\\ \\text{cm}\\)</b> se obtiene que el volumen del bloque de madera es <b>\\(60\\)</b> ___». ¿Qué debe escribir Tomás para completar correctamente la unidad?</p>",
+      "opciones": {
+        "A": "\\(60\\ \\text{cm}\\)",
+        "B": "\\(60\\ \\text{cm}^2\\)",
+        "C": "\\(60\\ \\text{cm}^3\\)",
+        "D": "\\(60\\ \\text{cm}^4\\)"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico la pertinencia de utilizar unidades de medida estandarizadas en situaciones tomadas de distintas ciencias.",
+      "que_evalua": "La capacidad para elegir una unidad de medida adecuada para determinar el volumen de un sólido.",
+      "justificacion_correcta": "Para hallar el volumen de un prisma se multiplican tres longitudes con la misma unidad. Al multiplicar \\(\\text{cm}\\times\\text{cm}\\times\\text{cm}\\), la unidad queda elevada al cubo: \\(\\text{cm}^3\\). Por eso el volumen es \\(60\\ \\text{cm}^3\\).",
+      "opciones_incorrectas": {
+        "A": "Deja la unidad lineal \\((\\text{cm})\\), como si se midiera una longitud y no un volumen.",
+        "B": "Eleva al cuadrado \\((\\text{cm}^2)\\), propio de un área, por considerar solo dos medidas.",
+        "D": "Eleva a la cuarta \\((\\text{cm}^4)\\), asociando el exponente al número de caras o lados en vez de a las tres dimensiones."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q16.png"
+    },
+    {
+      "id": "P-math-9-p1-17",
+      "numero": 17,
+      "enunciado": "<p>En una bolsa hay fichas blancas y negras; cada una tiene dibujado un círculo o un cuadrado y está clasificada como par o impar. La tabla indica cuántas fichas de cada tipo hay.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Color</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Categoría</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Círculo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cuadrado</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Blanca</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Par</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Blanca</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Impar</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Negra</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Par</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Negra</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Impar</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr></table><p>Si se elige una ficha al azar, ¿cuáles de las siguientes fichas tienen la <b>misma</b> probabilidad de ser elegidas?</p>",
+      "opciones": {
+        "A": "Una ficha blanca con círculo y una ficha negra con cuadrado.",
+        "B": "Una ficha blanca con cuadrado y una ficha negra con círculo.",
+        "C": "Una ficha blanca par con cuadrado y una ficha negra impar con círculo.",
+        "D": "Una ficha blanca impar con círculo y una ficha negra par con cuadrado."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para determinar eventos que presentan la misma probabilidad a partir de la representación tabular de la información en tablas de doble entrada.",
+      "justificacion_correcta": "Tomando color y forma (sin distinguir par/impar), las fichas blancas con cuadrado son 11 + 15 = 26 y las fichas negras con círculo son 16 + 10 = 26. Como ambas suman la misma cantidad, tienen la misma probabilidad de ser elegidas.",
+      "opciones_incorrectas": {
+        "A": "Blanca con círculo (12 + 8 = 20) y negra con cuadrado (20 + 8 = 28) no coinciden.",
+        "C": "Compara casillas con la categoría fijada: blanca par cuadrado (11) y negra impar círculo (10), que son distintas.",
+        "D": "Compara blanca impar círculo (8) con negra par cuadrado (20), que no son iguales."
+      }
+    },
+    {
+      "id": "P-math-9-p1-18",
+      "numero": 18,
+      "enunciado": "<p>La figura es un hexágono regular dividido en <b>\\(6\\) triángulos</b> iguales. Cada triángulo tiene base <b>\\(6\\ \\text{cm}\\)</b> y altura <b>\\(3\\sqrt{3}\\ \\text{cm}\\)</b>. Sabiendo que el área del hexágono se obtiene multiplicando por \\(6\\) el área de uno de esos triángulos, ¿cuál es el área del hexágono?</p>",
+      "opciones": {
+        "A": "\\(9\\sqrt{3}\\ \\text{cm}^2\\)",
+        "B": "\\(45\\sqrt{3}\\ \\text{cm}^2\\)",
+        "C": "\\(54\\sqrt{3}\\ \\text{cm}^2\\)",
+        "D": "\\(108\\sqrt{3}\\ \\text{cm}^2\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La capacidad para encontrar el área de una figura plana a partir de su descomposición en triángulos.",
+      "justificacion_correcta": "El área de cada triángulo es \\(\\dfrac{\\text{base}\\times\\text{altura}}{2} = \\dfrac{6\\times 3\\sqrt{3}}{2} = 9\\sqrt{3}\\ \\text{cm}^2\\). El hexágono está formado por \\(6\\) de estos triángulos, así que su área es \\(6\\times 9\\sqrt{3} = 54\\sqrt{3}\\ \\text{cm}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Da el área de un solo triángulo \\(\\left(9\\sqrt{3}\\ \\text{cm}^2\\right)\\) y olvida multiplicar por los \\(6\\) triángulos.",
+        "B": "Multiplica el área del triángulo por \\(5\\) en lugar de \\(6\\), contando un triángulo de menos.",
+        "D": "Olvida dividir entre \\(2\\) al hallar el triángulo \\(\\left(6\\times 3\\sqrt{3} = 18\\sqrt{3}\\right)\\) y luego multiplica por \\(6\\): \\(108\\sqrt{3}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q18.png"
+    },
+    {
+      "id": "P-math-9-p1-19",
+      "numero": 19,
+      "enunciado": "<p>Se encuestó a <b>\\(1.000\\)</b> personas sobre los bienes que poseen. El gráfico muestra cuántas personas hay en cada grupo. Si se escoge una persona al azar, ¿cuál es la probabilidad de que tenga <b>solo carro</b>?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{43}{100}\\)",
+        "B": "\\(\\dfrac{2}{10}\\)",
+        "C": "\\(\\dfrac{63}{100}\\)",
+        "D": "\\(\\dfrac{8}{10}\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para encontrar la probabilidad de un evento simple.",
+      "justificacion_correcta": "De las \\(1.000\\) personas, \\(200\\) tienen solo carro. La probabilidad es \\(\\dfrac{200}{1.000} = \\dfrac{2}{10}\\).",
+      "opciones_incorrectas": {
+        "A": "Suma 'solo carro' \\((200)\\) y 'carro y apartamento' \\((240)\\) para \\(440\\): \\(\\dfrac{440}{1.000}\\approx\\dfrac{43}{100}\\).",
+        "C": "Cuenta a todos los que tienen carro \\((200+190+240 = 630)\\): \\(\\dfrac{630}{1.000} = \\dfrac{63}{100}\\).",
+        "D": "Toma el complemento (los que NO tienen solo carro) en lugar del evento pedido: \\(\\dfrac{800}{1.000} = \\dfrac{8}{10}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q19.png"
+    },
+    {
+      "id": "P-math-9-p1-20",
+      "numero": 20,
+      "enunciado": "<p>Sofía lanza una vez un dado común de seis caras. <b>Gana</b> si obtiene un <b>\\(6\\)</b>; en cualquier otro caso, <b>pierde</b>. ¿Cuál de las siguientes afirmaciones sobre el juego es verdadera?</p>",
+      "opciones": {
+        "A": "Hay más posibilidades de que Sofía gane que de que obtenga un número par.",
+        "B": "Hay más posibilidades de que Sofía pierda que de que gane.",
+        "C": "Hay menos posibilidades de que Sofía pierda que de que obtenga un número impar.",
+        "D": "Hay menos posibilidades de que Sofía pierda que de que gane."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Uso conceptos básicos de probabilidad (espacio muestral, evento, independencia, etc.).",
+      "que_evalua": "La capacidad para comparar la medida de probabilidad de eventos aleatorios.",
+      "justificacion_correcta": "Sofía gana solo si sale \\(6\\): \\(1\\) caso favorable de \\(6\\), es decir \\(\\dfrac{1}{6}\\). Pierde si sale \\(1, 2, 3, 4\\) o \\(5\\): \\(5\\) casos, es decir \\(\\dfrac{5}{6}\\). Como \\(\\dfrac{5}{6} > \\dfrac{1}{6}\\), es más probable que pierda a que gane.",
+      "opciones_incorrectas": {
+        "A": "Ganar tiene probabilidad \\(\\dfrac{1}{6}\\) y obtener par \\((2,4,6)\\) tiene \\(\\dfrac{3}{6}\\); ganar es menos probable, no más.",
+        "C": "Perder \\(\\left(\\dfrac{5}{6}\\right)\\) es más probable que obtener impar \\(\\left(\\dfrac{3}{6}\\right)\\); la comparación está invertida.",
+        "D": "Perder \\(\\left(\\dfrac{5}{6}\\right)\\) es más probable que ganar \\(\\left(\\dfrac{1}{6}\\right)\\), no menos."
+      },
+      "imagen_figura": "assets/banco-mat-9-p1/q20.png"
+    }
+  ]
+}

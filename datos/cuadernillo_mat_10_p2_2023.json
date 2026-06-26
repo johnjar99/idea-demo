@@ -1,0 +1,557 @@
+{
+  "id": "math-10-p2-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "10",
+  "periodo": "II",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 10° — Período II",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Interpretación y Representación",
+    "b": "Formulación y Ejecución",
+    "c": "Argumentación"
+  },
+  "afirmaciones": {
+    "1": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "2": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "3": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas."
+  },
+  "evidencias": {
+    "1.1": "Da cuenta de las características básicas de la información presentada en distintos formatos.",
+    "1.2": "Transforma la representación de una o más piezas de información.",
+    "2.1": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
+    "2.2": "Ejecuta un plan de solución para un problema que involucra información cuantitativa o esquemática.",
+    "2.3": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "3.3": "Establece la validez o pertinencia de una solución propuesta a un problema dado."
+  },
+  "cmc": [
+    "Estadística",
+    "Geometría",
+    "Álgebra y cálculo"
+  ],
+  "preguntas": [
+    {
+      "id": "I_1957819",
+      "numero": 1,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes para encontrar una tabla con datos que cumplen con un promedio aritmético y una cantidad total dados.",
+      "justificacion_correcta": "respuesta correcta Si el promedio de los 80 votos es 2, entonces la suma de las calificaciones debe ser 80 × 2 = 160. Luego, se multiplica la calificación votada por la frecuencia de votos y se suman los resultados obtenidos así: (20 × 1) ା (40 × 2) ା (20 × 3) = 20 ା 80 ା 60 = 160.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción sumen los datos de la frecuencia de votos obteniendo 160 (20 ା 80 ା 60) y dividen ese valor entre la cantidad de votantes (80), para así conseguir el valor promedio 2, sin embargo, omiten que la cantidad total de votos es superior a las 80 personas encuestadas.",
+        "C": "Es posible que el estudiante que elija esta opción encuentren que la cantidad de votos necesaria concuerda con la cantidad de votantes 80, sin embargo, omiten la condición de que el promedio sea 2.",
+        "D": "Es posible que el estudiante que elija esta opción dividan la cantidad de votantes (80) entre el promedio dado (2), obteniendo como resultado 40 e identifiquen la tabla cuya suma del número de votos de cada calificación es 40. Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q01.png"
+    },
+    {
+      "id": "I_1957826",
+      "numero": 2,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para reconocer propiedades de las funciones trigonométricas y realizar operaciones aritméticas entre ellas.",
+      "justificacion_correcta": "respuesta correcta Debido a que tan Q =                 =               es negativo, se tiene que cos Q debe ser negativo y por tanto en el paso final se debe considerar el opuesto aditivo de la raíz cuadrada.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción relacionen la propiedad pitagórica con el teorema y consideren que por ser un triángulo debe tener lados \"positivos\".",
+        "B": "Es posible que el estudiante que elija esta opción consideren que para elevar el valor de sen Q al cuadrado se debe realizar sen (Q2).",
+        "D": "Es posible que el estudiante que elija esta opción reconocen la característica de la función cos de estar acotada por 1 y crean que se cometió un error al despejar pues se obtiene que (cos Q)2 = 4 ×        = 4. sen Q cos Q cos Q 2( ( Matemáticas 10.º"
+      },
+      "cmc": "Geometría",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q02.png"
+    },
+    {
+      "id": "I_1957839",
+      "numero": 3,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad del estudiante de establecer la validez de soluciones propuestas que usan en su procedimiento el Teorema de Pitágoras, además de realizar aproximaciones de raíces haciendo uso de desigualdades.",
+      "justificacion_correcta": "respuesta correcta La afirmación de Josué es incorrecta. Se sabe que la longitud de la parte de la cuchara que queda dentro del vaso sí se puede asociar con la hipotenusa del triángulo rectángulo formado por Josué, por tanto aplicar el Teorema de Pitágoras es válido. Sin embargo, al hacer la resta entre la longitud total de la cuchara menos √128 se obtiene un número entre 3 y 4 cm, ya que 11 < √128 < 12 y luego, −11 > −√128 > −12, así obtenemos que 15 − 11 > 15 − √128 > 15 − 12, que es igual a 4 > 15 − √128 > 3. Con lo cual obtenemos que quedan menos de 4 cm de la cuchara por fuera. Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción usen la construcción auxiliar de Josué del triángulo rectángulo y obtengan un resultado similar a él. En este caso se evidencia que no manejan el teorema de Pitágoras, pero sí saben que la hipotenusa de un triángulo siempre es más grande que alguno de sus dos catetos, por lo cual creerían erróneamente que dicha hipotenusa puede medir 9 cm. En este caso, la parte de la cuchara que queda por fuera del vaso tendría que medir 15 cm − 9 cm = 6 cm, lo cual es un número mayor a 4 cm como se busca en el enunciado.",
+        "B": "Es posible que el estudiante que elija esta opción no vean que la manera como la mayor parte de la cuchara ingresa al vaso es colocándola sobre la diagonal mayor del vaso como lo hizo Josué en su solución. En este caso, creerían que se puede colocar la cuchara con otra inclinación de tal manera que queden menos de 4 cm de ella por fuera.",
+        "D": "Es posible que el estudiante que elija esta opción manejen correctamente el Teorema de Pitágoras, pero se equivoquen en la resta final considerada en la solución de Josué. En este caso obtendrían de manera incorrecta que, como 11  < √128, entonces 4 = 15 − 11  < 15 − √128, pues no tienen en cuenta el cambio de orden en las desigualdades propuestas, y afirmarían que la parte de la cuchara que queda fuera del vaso es 4 cm, sin fijarse tampoco que el enunciado pide que sea mayor que 4 cm. Matemáticas 10.º"
+      },
+      "cmc": "Geometría",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q03.png"
+    },
+    {
+      "id": "I_1451711",
+      "numero": 4,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La capacidad de los estudiantes para identificar cuántas soluciones tiene una ecuación cuadrática y argumentar porque es esa la solución o soluciones.",
+      "justificacion_correcta": "respuesta correcta Al realizar la factorización en el lado izquierdo de la ecuación se obtiene que (x − 2) (x − 1) = 0 si x = 2 el primer factor se vuelve cero y todo el lado izquierdo da 0, igual que el lado derecho, con lo cual evidencia que 2 también es solución a la ecuación cuadrática.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción piensen que las ecuaciones cuadráticas tienen una sola solución asociada a tomar siempre raíces cuadradas positivas.",
+        "C": "Es posible que el estudiante que elija esta opción asocien la solución de una ecuación al valor de y cuando x = 0 (es decir, al corte con las abscisas), que en este caso es 2.",
+        "D": "Es posible que el estudiante que elija esta opción piensen que la x2 se puede restar con −3x y obtienen x − 3x = −2x, lo que los lleva a que una ecuación equivalente sería −2x ା 2 = 0, que es lineal y tiene solo una solución que es x = 1. Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q04.png"
+    },
+    {
+      "id": "I_1957848",
+      "numero": 5,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La capacidad de justificar la pertinencia o no de representaciones de datos.",
+      "justificacion_correcta": "respuesta correcta En una gráfica circular se representan datos que hacen parte de un todo. En este caso, los porcentajes corresponden a diferentes noticieros y medidas de tiempo, por lo que no es correcto expresarlos juntos en este tipo de gráfica.",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción no tengan en cuenta que la representación acerca de la cantidad de anuncios es porcentual y no se requiere el tiempo que tarda cada noticiero.",
+        "C": "Es posible que el estudiante que elija esta opción consideren que los porcentajes hacen parte de un conjunto común y por tanto deben sumar lo mismo que el todo, es decir, 100 %.",
+        "D": "Es posible que el estudiante que elija esta opción no tengan en cuenta que cada porcentaje está asociado correctamente a su categoría correspondiente. Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q05.png"
+    },
+    {
+      "id": "I_1957853",
+      "numero": 6,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "MEDIA",
+      "estandar": "Describo y modelo fenómenos periódicos del mundo real usando relaciones y funciones trigonométricas.",
+      "que_evalua": "La capacidad de los estudiantes para identificar datos que permiten determinar un valor requerido por medio de una estrategia que involucra relaciones trigonométricas.",
+      "justificacion_correcta": "respuesta correcta Dado que el triángulo es rectángulo, se puede utilizar la razón trigonométrica coseno conociendo la medida del ángulo θ y la medida de la distancia y para determinar la longitud del listón z.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción no reconocen que el ángulo de 90° es el ángulo α y consideran que es una medida que se debe conocer, además de las dos distancias x y y.",
+        "C": "Es posible que el estudiante que elija esta opción piensen que es necesario conocer las medidas de los tres ángulos sin tener en cuenta que deben conocer la medida de x o y, y así determinar la longitud de z.",
+        "D": "Es posible que el estudiante que elija esta opción reconocen que el ángulo de 90° es el ángulo α y consideran que con esta medida y la distancia x, pueden calcular la longitud de z, desconociendo que con estas medidas no se puede usar alguna razón trigonométrica que las relacione. Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q06.png"
+    },
+    {
+      "id": "I_1957868",
+      "numero": 7,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo las técnicas de aproximación en procesos infinitos numéricos.",
+      "que_evalua": "La capacidad para caracterizar tendencias en sucesiones numéricas, a partir de la fórmula general y algunos valores particulares representados en una tabla.",
+      "justificacion_correcta": "respuesta correcta Debido a que la función es 1 ା        teniendo en cuenta que a medida que n crece, va hacia 0, tenemos que la función como un todo se acerca a 1.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción noten que los valores de la función decrecen y por tanto asumen que debe converger a 0.",
+        "B": "Es posible que el estudiante que elija esta opción consideren la expresión y noten que los valores de la tabla se concentran alrededor de 1,5 =              =      .",
+        "D": "Es posible que el estudiante que elija esta opción noten que la función decrece y asuman que puede llegar hasta valores negativos muy pequeños, por eso escogen −∞. n n (n ା 1) n (2 ା 1) Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q07.png"
+    },
+    {
+      "id": "I_1957870",
+      "numero": 8,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad del estudiante de construir el diagrama de Venn de una encuesta a partir de información textual (dada en lenguaje natural).",
+      "justificacion_correcta": "respuesta correcta La frase \"10 personas jugarían Parqués y Monopoly\" corresponde a la intersección del conjunto de personas que jugarían Parqués con el conjunto de personas que jugarían Monopoly. Adicionalmente, al restar a este subconjunto el formado por la frase \"3 personas jugarían Parqués y Monopoly pero no Bingo\", se encuentra el dato del centro del diagrama de Venn, lo cual es 10 − 3 = 7. A partir de esto se pueden hacer las operaciones usuales para encontrar los otros datos restantes del diagrama de Venn. Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción crean que la frase \"3 personas jugarían Parqués y Monopoly pero no Bingo\" corresponda al dato del centro del diagrama y que la frase \"10 personas jugarían Parqués y Monopoly\" corresponda a la zona que falta para completar la intersección de los conjuntos de las personas que jugarían Parqués y de las personas que jugarían Monopoly, y en el resto del diagrama realicen las operaciones usuales.",
+        "B": "Es posible que el estudiante que elija esta opción encuentren de manera correcta la zona central y de las intersecciones de dos en dos, pero que confundan el conjunto de las personas que jugarían X juego con el conjunto de las personas que jugarían únicamente X juego. Por lo anterior, diligenciarían el diagrama de la siguiente manera.",
+        "D": "Es posible que el estudiante que elija esta opción crean que la frase \"3 personas jugarían Parqués y Monopoly pero no Bingo\" corresponda al dato del centro del diagrama y que la frase \"10 personas jugarían Parqués y Monopoly\" corresponda a la zona que falta para completar la intersección de los conjuntos de las personas que jugarían Parqués y de las personas que jugarían Monopoly, y en el resto del diagrama se coloque el dato de cada frase del enunciado en una zona del diagrama sin realizar ninguna operación. Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q08.png"
+    },
+    {
+      "id": "I_1957884",
+      "numero": 9,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad de interpretar gráficas a fin de dar respuesta a preguntas básicas acerca de la información presentada.",
+      "justificacion_correcta": "respuesta correcta Para hallar la diferencia entre la expectativa de vida entre hombres y mujeres hay que restar los datos para cada uno en cada región, así: Región Hombres Mujeres Diferencia Oceanía África Latinoamérica Asia Por lo que la región con mayor diferencia es Latinoamérica. Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que, dado que en Oceanía la expectativa de vida de las mujeres es mayor, debe haber una diferencia más grande con la de los hombres.",
+        "B": "Es posible que el estudiante que elija esta opción consideren que, dado que en África la expectativa de vida de los hombres es menor, debe haber una mayor diferencia con las mujeres.",
+        "D": "Es posible que el estudiante que elija esta opción confunden una mayor diferencia con una cercanía más grande entre los datos. Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q09.png"
+    },
+    {
+      "id": "I_1957892",
+      "numero": 10,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes de determinar promedio de un conjunto de datos representado en una gráfica de barras.",
+      "justificacion_correcta": "respuesta correcta Para obtener el promedio, se debe sumar la cantidad de visitantes total, es decir 90.000 y se divide este valor entre la cantidad de semanas que es 6. = 15.000   .",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción determinen la cantidad de visitantes 18.000 que más se repite en la gráfica.",
+        "C": "Es posible que el estudiante que elija esta opción consideren que como hay 6 semanas entonces el promedio es la cantidad de visitantes de la semana 3, porque dividen 6 entre 2,          = 3   , es decir, 10.000 visitantes.",
+        "D": "Es posible que el estudiante que elija esta opción calculen la mediana de la cantidad de visitantes,                                    =                 = 16.000. ( ( 90.000 2( ( (14.000 ା 18.000) 32.000 Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q10.png"
+    },
+    {
+      "id": "I_1082212",
+      "numero": 11,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad de los estudiantes de utilizar las funciones trigonométricas para determinar longitudes de los lados de un triángulo rectángulo.",
+      "justificacion_correcta": "respuesta correcta De acuerdo con el triángulo rectángulo, la distancia entre la Tierra y el Sol corresponde al valor de la hipotenusa y la distancia entre Venus y el Sol corresponde al cateto opuesto al ángulo de 46°. Con lo cual, para el ángulo de 46° se tiene: sen (46°) =                                          . De donde despejando se tiene: Distancia Venus-Sol = 150 × sen (46°) Distancia Venus-Sol Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción identifiquen erróneamente que la distancia entre la Tierra y el Sol corresponde al valor del cateto opuesto al ángulo 46° y la distancia entre Venus y el Sol corresponde a la hipotenusa. Con lo cual, para el ángulo de 46° se tiene: sen (46°) =                                         . De donde despejando obtienen: Distancia Venus-Sol =                   .",
+        "C": "Es posible que el estudiante que elija esta opción identifiquen erróneamente que la distancia entre la Tierra y el Sol corresponde al valor del cateto adyacente al ángulo 46° y la distancia entre Venus y el Sol corresponde a la hipotenusa. Con lo cual, para el ángulo de 46° se tiene: cos (46°) =                                          . De donde despejando obtienen: Distancia Venus-Sol =                   .",
+        "D": "Es posible que el estudiante que elija esta opción identifiquen que la distancia entre la Tierra y el Sol corresponde al valor de la hipotenusa pero erróneamente identifiquen que la distancia entre Venus y el Sol corresponde al cateto adyacente al ángulo de 46°. Con lo cual, para el ángulo de 46° se tiene: cos (46°) =                                          . De donde despejando obtienen: Distancia Venus-Sol = 150 × cos (46°). Distancia Venus-Sol Distancia Venus-Sol Distancia Venus-Sol sen (46º) cos (46º) Matemáticas 10.º"
+      },
+      "cmc": "Geometría",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q11.png"
+    },
+    {
+      "id": "I_1866689",
+      "numero": 12,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad de los estudiantes para determinar la cantidad de veces que se pueden permutar todos los elementos de un conjunto.",
+      "justificacion_correcta": "respuesta correcta Dado que se debe permutar tres tipos de aves dentro de los tres corrales, se debe hacer es una permutación de tres elementos tomados de a tres, lo cual se puede calcular mediante el factorial de 3: 3 × 2 × 1 = 6.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción almacenen las aves en los tres corrales, sin importar el orden, haciendo una combinación de tres elementos tomados de a tres, lo cual se puede calcular como        = 1.",
+        "B": "Es posible que el estudiante que elija esta opción identifiquen que se tiene una permutación de tres elementos tomados de a tres, lo cual se calcula con el factorial, pero, piensen que el factorial es: 3! = 3 ା 2 ା 1.",
+        "D": "Es posible que el estudiante que elija esta opción piensen que como son tres corrales y tres tipos de aves entonces el total de permutaciones será 3 × 3 = 9. 3! 3! Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q12.png"
+    },
+    {
+      "id": "I_1957909",
+      "numero": 13,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
+      "que_evalua": "La capacidad para aplicar estrategias en problemas que involucran razones con números reales.",
+      "justificacion_correcta": "respuesta correcta De acuerdo con el procedimiento tendríamos 1,2 L × 25 g/L ା 0,2 L × 50 g/L = 30 g. 1,2 L ା z L = cantidad total de agua. = 20  de donde z = 0,3. Así añadiendo 0,3 L tendremos una concentración             = 20 g/L teniendo en cuenta que 0,3 L = 300 ml. (1,2 ା z) 30 g 1,5 L Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "B": "Es posible que el estudiante que elija esta opción consideren que cuando se añadió 200 ml la concentración cambió, añadir esos 200 vuelve a la concentración inicial.",
+        "C": "Es posible que el estudiante que elija esta opción planteen una regla de tres: 1 L → 25. x L → 20. Así, x =          = 0,8, es decir 0,8 L o 800 ml.",
+        "D": "Es posible que el estudiante que elija esta opción planteen correctamente la ecuación pero en lugar de restar 1,2 lo adicionan obteniendo 1,5 L ା 1,2 L = 2,7 L, es decir, 2.700 ml. Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q13.png"
+    },
+    {
+      "id": "I_1695830",
+      "numero": 14,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes para determinar las características que tendrá el resultado de un cálculo de la mediana o de la media para un conjunto de datos con valores impares.",
+      "justificacion_correcta": "respuesta correcta Como la cantidad de datos es par, la mediana deberá ser considera como el promedio de dos datos y como los datos son impares, la suma de esos dos datos será un número par, que al dividirlo entre 2 no puede dar un número con decimales. Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción piensen que la mediana se calcula ordenando los datos (de mayor a menor o de menor a mayor) y tomando el dato del medio, y como todos los datos son impares, entonces el dato del medio será un número impar.",
+        "C": "Es posible que el estudiante que elija esta opción piensen que el promedio se calcula como la suma de todos los datos dividida entre 4 y entonces se fijan que esa suma por ser de números impares al ser dividida entre cuatro deberá dar otra vez impar.",
+        "D": "Es posible que el estudiante que elija esta opción piensen que la división entre 4 que se hace en el promedio, será como mínimo         que es 0,25, entonces piensen que cualquier conjunto de datos deberá dar un número con dos cifras decimales donde la segunda es 5. Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q14.png"
+    },
+    {
+      "id": "I_1957917",
+      "numero": 15,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad de los estudiantes para identificar el problema de conteo que se puede resolver al realizar una combinación.",
+      "justificacion_correcta": "respuesta correcta Tania debe elegir 3 investigadores de un total de 10 sin importar el orden de elección y sin poder repetir investigador, entonces el cálculo presentado corresponde a la cantidad total de posibles grupos de asistentes que Tania puede utilizar en el experimento, esto corresponde a 10 combinado 3. = 120. ( ( Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que como la mayor temperatura es 10° y la diferencia entre los extremos de las temperaturas es de 3° entonces el cálculo presentado corresponde a la cantidad total de posibles temperaturas que Tania puede utilizar en el experimento.",
+        "B": "Es posible que el estudiante que elija esta opción consideren que como la menor concentración de alcohol es 10 % y 3 veces este valor es la concentración máxima de alcohol que puede usar entonces el cálculo presentado corresponde a la cantidad total de posibles concentraciones de alcohol que Tania puede utilizar en el experimento.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que como debe elegir 3 máquinas de un total de 7 disponibles sin importar el orden y como 3 ା 7 = 10, entonces el cálculo planteado corresponde a la cantidad total de posibles grupos de máquinas que Tania puede utilizar en el experimento. Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q15.png"
+    },
+    {
+      "id": "I_1957920",
+      "numero": 16,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad de extraer fragmentos de información cuantitativa y elaborar representaciones gráficas con ellas.",
+      "justificacion_correcta": "respuesta correcta El tiempo destinado a trabajo creativo se muestra en el segundo segmento de la barra, y para hallar su longitud hay que contar desde que finaliza la barra de dormir hasta que inicia la de alimentación y ocio, por lo que la longitud del segmento deseado es: Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren que la longitud del segmento destinado a trabajo creativo va desde el inicio de la gráfica hasta el final del segundo segmento.",
+        "B": "Es posible que el estudiante que elija esta opción consideren que la longitud del segmento destinado a trabajo creativo va desde el inicio de la gráfica hasta el final de la misma.",
+        "D": "Es posible que el estudiante que elija esta opción consideren que la longitud del segmento destinado a trabajo creativo va desde el inicio del segundo segmento de la gráfica hasta el final de la misma. Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q16.png"
+    },
+    {
+      "id": "I_1957936",
+      "numero": 17,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad de los estudiantes para elaborar gráficas de barras a partir de información presentada en tablas.",
+      "justificacion_correcta": "respuesta correcta Para identificar la gráfica que muestra correctamente todos los votos a favor y en contra que aparecen en las dos tablas, se debe agrupar en cada categoría de encuestados, la cantidad de votos a favor y votos en contra identificando la longitud de las barras asociadas a la cantidad de votos así: - Padres de estudiantes de secundaria: 15 votos a favor y 5 votos en contra. - Padres de estudiantes de primaria: 15 votos a favor y 15 votos en contra. - Administrativos: 10 votos a favor y 5 votos en contra. - Profesores: 20 votos a favor y 10 votos en contra. Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción consideren la cantidad de votos que se recibieron de cada uno de los tipos de encuestados sin discriminar por votos a favor y votos en contra.",
+        "C": "Es posible que el estudiante que elija esta opción agrupen los resultados por tabla asignando los votos de los administrativos a los de los profesores y juntando los votos de los padres sin discriminar los votos a favor y los votos en contra.",
+        "D": "Es posible que el estudiante que elija esta opción agrupen los resultados por tabla y no por tipo de encuestado, asignando los votos de los administrativos a los de los profesores y juntando los votos de los padres sin distinguir si son de estudiantes de primaria o de secundaria. Matemáticas 10.º"
+      },
+      "cmc": "Estadística",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q17.png"
+    },
+    {
+      "id": "I_1957940",
+      "numero": 18,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Diseño estrategias para abordar situaciones de medición que requieran grados de precisión específicos.",
+      "que_evalua": "La capacidad para diseñar estrategias que permitan calcular volúmenes de figuras compuestas.",
+      "justificacion_correcta": "respuesta correcta Dado que los huecos son paralelepípedos rectos: los de los extremos son iguales y tienen base cuadrada y el del medio tiene base rectangular, sus alturas son iguales y corresponden a la altura del ladrillo, sus volúmenes quedan definidos como: → Volumen paralelepípedo base cuadrada = área base cuadrada × altura = 7 cm × 7 cm × 6 cm. → Volumen paralelepípedo base rectangular = área base rectangular × altura = 2 cm × 5 cm × 6 cm. Por tanto las medidas necesarias para hallar el volumen que ocupan los tres huecos en el ladrillo, que es equivalente a la arena que utilizó el niño, son: 2 cm, 5 cm, 6 cm y 7 cm. Matemáticas 10.º",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción observen la figura de la perspectiva del ladrillo vista desde arriba y consideren que deben hallar  el área que ocuparía la arena en los dos cuadrados y el rectángulo que se muestran allí.",
+        "B": "Es posible que el estudiante que elija esta opción consideren hallar el volumen de todo el ladrillo después de que los huecos han sido rellenados con arena.",
+        "D": "Es posible que el estudiante que elija esta opción consideren la figura tridimensional del ladrillo y sin tener en cuenta el hueco más pequeño, creen que lo que se les está preguntando es por el área superficial (interna y externa) del ladrillo. Matemáticas 10.º"
+      },
+      "cmc": "Geometría",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q18.png"
+    },
+    {
+      "id": "I_1957958",
+      "numero": 19,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo las técnicas de aproximación en procesos infinitos numéricos.",
+      "que_evalua": "La capacidad de los estudiantes para calcular una aproximación del valor de una función trigonométrica utilizando una expresión más simple.",
+      "justificacion_correcta": "respuesta correcta Al utilizar la serie con los primeros términos los estudiantes calculan el valor de sen (1) así: 1 −        ା        = 1 −        ା           =                             =          .",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción multipliquen 1 por el exponente de cada término así: 1 −               −               = 1 −        −          =                             =          .",
+        "B": "Es posible que el estudiante que elija esta opción sumen todos los términos de la serie y multipliquen 1 por el exponente de cada término así: 1 ା               ା               = 1 ା        ା          =                             =          .",
+        "D": "Es posible que el estudiante que elija esta opción sumen todos los términos de la serie así: 1 ା        ା        = 1 ା        ା           =                             =          . 3! 5! (120 − 20 ା 1) 3! 5! (120 ା 20 ା 1) (1 × 3) (1 × 5) (120 − 60 − 5) (1 × 3) (1 × 5) (120 ା 60 ା 5) Matemáticas 10.º"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q19.png"
+    },
+    {
+      "id": "I_1836863",
+      "numero": 20,
+      "enunciado": "",
+      "opciones": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad del estudiante de identificar si el resultado de un procedimiento que involucra sumas y multiplicaciones es o no múltiplo de un número entero específico.",
+      "justificacion_correcta": "respuesta correcta En el paso 1 se obtiene 2.000 ା 5.000 = 7.000, y luego en el paso 2 se debe multiplicar 7.000 por algún número entero, por tanto, el resultado obtenido es múltiplo de 7.000.",
+      "opciones_incorrectas": {
+        "A": "Es posible que el estudiante que elija esta opción noten que como la máquina 1 pone 2.000 tapas por hora entonces el total de tapas debe ser un múltiplo de esta cantidad.",
+        "B": "Es posible que el estudiante que elija esta opción no realicen una suma sino una resta de 5.000 − 2.000 = 3.000 en el paso 1, y por tanto, en el paso 2 la operación que deben hacer es 3.000 multiplicado por las horas de la jornada laboral, con lo cual obtienen que tendrán un múltiplo de 3.000.",
+        "C": "Es posible que el estudiante que elija esta opción noten que como la máquina 2 pone 5.000 tapas por hora, entonces el total de tapas debe ser un múltiplo de esta cantidad. Cuadernillo 2 M102 G10.M.E Matemáticas GRADO N.° de preguntas: ¡Hola! Queremos agradecer tu participación. Antes de empezar a responder, es importante que tengas en cuenta lo siguiente: • Lee cada pregunta cuidadosamente y elige UNA opción. • En este cuadernillo encuentras las preguntas y la Hoja de respuestas. • Por favor, responde TODAS las preguntas. • Si no entiendes algo o si tienes alguna inquietud sobre cómo llenar la Hoja de respuestas, pídele ayuda a tu docente. Matemáticas - Cuadernillo 2 Saber 10.° En una empresa se decide calificar el servicio al cliente de los trabajadores, utilizando una encuesta que califica el servicio de 1 a 3. Si, al finalizar la encuesta, se ha conseguido una calificación promedio de 2, encuestando a 80 personas, ¿cuál de las siguientes tablas puede corresponder al estudio? Calificación A. Número de votos Calificación B. Número de votos Calificación C. Número de votos Calificación D. Número de votos Respecto a un ángulo Q se conoce que 1. sen Q =    . 2. tan Q < 0. A partir de esta información, se plantea descubrir el correspondiente valor de cos Q, realizando el siguiente procedimiento: Paso 1. Elevar el valor de sen Q al cuadrado, para obtener    . Paso 2. Plantear la identidad pitagórica (cos Q)2 + (sen Q)2 = (cos Q)2 +     = 1. Paso 3. Despejar de la ecuación para hallar el valor de (cos Q)2 = 1 –     =    . Paso 4. Obtener la raíz cuadrada de la expresión anterior, para obtener que cos Q =      . El procedimiento anterior tiene un paso erróneo. ¿En dónde está y por qué? A. En el paso 2, porque la identidad pitagórica solo funciona si tan Q > 0. B. En el paso 1, porque es incorrecto considerar que sen (Q2) = (sen Q)2. C. En el paso 4, porque si tan Q < 0, la raíz debería considerar el valor negativo. D. En el paso 3, porque no es posible que cos Q sea un valor mayor que 1. √3 1. 2. Matemáticas - Cuadernillo 2 Saber 10.° 8 cm 8 cm 8 cm 8 cm Josué quiere comprar una cuchara de 15 cm de largo, para colocarla dentro de un vaso de 8 cm de diámetro y altura, buscando que siempre queden más de 4 cm de dicha cuchara por fuera, para poder agarrarla cómoda- mente. Para confirmar su plan, decide formar un triángulo rectángulo, como se muestra en la siguiente imagen: Al aplicar el Teorema de Pitágoras, Josué obtiene que la hipotenusa del triángulo es √128, resultado que resta del largo de la cuchara para, finalmente, afirmar que sí quedan más de 4 cm como deseaba. ¿Es correcta la afirmación de Josué? A. Sí, debido a que la hipotenusa del triángulo es más grande que 8 cm, por lo que la parte de la cuchara que queda por fuera sería mayor que 6 cm. B. No, debido a que se puede colocar la cuchara en otra posición dentro del vaso, de tal manera que quede totalmente contenida en él. C. No, debido a que 11 < √128 < 12, por lo cual quedan más de 3 cm y menos 4 cm de la cuchara por fuera del vaso. D. Sí, debido a que 11 < √128,  por lo que la parte de la cuchara que queda por fuera es justamente 4 cm. Se necesita solucionar la ecuación x2 – 3x + 2 = 0; al respecto, una persona afirma que la única solución es x = 1. ¿Esta afirmación es verdadera? A. No, porque esta ecuación es equivalente a (x – 2) (x – 1) = 0, por tanto, x = 2 también es solución. B. Sí, porque una ecuación cuadrática siempre tiene solo una solución. C. No, porque si x = 0, entonces queda como solución el término independiente que es 2. D. Sí, porque esta ecuación es equivalente a –2x + 2 = 0, cuya única solución es x = 1. Tania y Daniel hicieron un estudio acerca del tiempo de duración de cuatro noticieros y el porcentaje del tiempo que duran los anuncios publicitarios en cada uno. La tabla muestra la información que recolectó Tania y la imagen muestra la gráfica que hizo Daniel con base en esos datos. ¿Por qué no es correcta la gráfica que construyó Daniel? A. Porque los porcentajes no hacen parte de un mismo todo. B. Porque no incluyó los tiempos de duración de cada noticiero. C. Porque los porcentajes no suman 100 %. D. Porque los noticieros están en desorden en la gráfica. Noticiero Duración (min) Porcentaje de tiempo en anuncios Noticias F 10 % 20 % 15 % 25 % Noticias G Noticias H Noticias I Porcentaje de tiempo en anuncios Noticias F Noticias I 20 % 20 % 10 % 10 % 25 % 25 % 15 % 15 % Noticias H Noticias G 3. 4. 5. Matemáticas - Cuadernillo 2 Saber 10.° Un grupo de estudiantes desea colgar un listón en el colegio. Para determinar la longitud que debe tener el listón, ellos dibujaron un diagrama que representa la situación: - La línea punteada de color rojo representa el listón, que va desde el punto B hasta el punto C. - Las variables x, y, z, α y θ representan algunas medidas de la situación, las cuales forman un triángulo rectángulo. ¿Es posible determinar la longitud del listón z conociendo dos medidas adicionales a las que se muestran en el diagrama? A. No, porque es necesario conocer las medidas de la altura x, del ángulo α y de la distancia y para usar una razón trigonométrica. B. Sí, porque se puede usar una razón trigonométrica con la medida del ángulo θ y la medida de la dis- tancia y. C. No, porque es necesario conocer las medidas de los tres ángulos internos del triángulo que se forma. D. Sí, porque se puede usar una razón trigonométrica con la medida de la altura x y la medida del ángulo α. θ α x y z C B Dora está haciendo una tabla con algunos valores de la sucesión f(n) = 1 + 1 . Dora decidió que va a poner en la tabla valores muy grandes de n, por ejemplo 1.000, 2.000 y algunos más grandes. ¿A cuál valor se aproxima f(n) a medida que ella va aumentando los valores de n? A. B. 3/2 C. D. -∞ n 1,5 1,33 1,25 f(n) n 6. 7. Matemáticas - Cuadernillo 2 Saber 10.° Para realizar una jornada de juegos con los empleados de una empresa, se recogen los siguientes datos con el fin de organizar a las personas de acuerdo con sus preferencias en cuanto a tres juegos de mesa. • 3 personas jugarían parqués y Monopoly, pero no bingo. • 10 personas jugarían parqués y Monopoly, 8 personas jugarían Monopoly y bingo, y 7 personas jugarían parqués y bingo. • 17 personas jugarían parqués, 13 personas jugarían bingo y 20 personas jugarían Monopoly. De acuerdo con lo anterior, ¿cuál diagrama de Venn organiza los datos de manera adecuada? A. B. C. D. Monopoly Parqués Bingo Monopoly Parqués Bingo Monopoly Parqués Bingo Monopoly Parqués Bingo La gráfica muestra la expectativa de vida de hombres y mujeres en algunos continentes. ¿En qué continente es mayor la diferencia entre la expectativa de vida de hombres y mujeres? A. Oceanía. B. África. C. Latinoamérica. D. Asia. Tomado y adaptado de: https://cybercoastal.com/the-worlds-life-expectancy-gap/ Expectativa de vida Oceanía África Latinoamérica Asia Hombres Mujeres 8. 9. Matemáticas - Cuadernillo 2 Saber 10.° La gráfica muestra el número de visitantes a un parque natural durante sus primeras seis semanas de apertura. ¿Cuál es el promedio de visitas semanales al parque? A. 15.000 B. 18.000 C. 10.000 D. 16.000 Visitantes Semana 20.000 18.000 16.000 14.000 12.000 10.000 8.000 Visitantes 6.000 4.000 2.000 Cuando Venus, la Tierra y el Sol forman un ángulo de 46°, se forma, además, un triángulo rectángulo, como se muestra en la figura. Si la distancia entre la Tierra y el Sol es de, aproximadamente, 150 millones de kilómetros, ¿cuál es la expresión que permite determinar la distancia desde Venus hasta el Sol, medida en millones de kilómetros? 46° Tierra Venus Sol Funciones trigonométricas sen(θ) = cos(θ) = Cateto opuesto Hipotenusa Cateto adyacente Hipotenusa Figura sen 46° A. cos 46° C. D. 150 × cos 46° B. 150 × sen 46° Un granjero construyó tres corrales para gallinas, gansos y patos, así: Si en cada corral solo se puede encerrar un solo tipo de ave, ¿de cuántas formas distintas se pueden permutar los tres tipos de aves dentro de los tres corrales? A. B. C. D. 10. 11. 12. Matemáticas - Cuadernillo 2 Saber 10.° En clase de Química dos estudiantes están preparando soluciones de agua con sal, en distintas concentraciones. Cada litro de la solución de Magda contiene 20 gramos de sal, mientras que cada litro de la solución de Natalia contiene 50 gramos de sal. Para calcular la cantidad de sal que contiene una solución en la que se revolvió un litro de la solución de Magda con 200 ml de la solución de Natalia, se utiliza el siguiente procedimiento: Paso 1. Hallar la cantidad total de sal de la mezcla: 1 L × 20 g/L + 0,2 L × 50 g/L = 30 g. Paso 2. Hallar la cantidad total de agua: 1 L + 0,2 L = 1,2 L. Paso 3. Hallar la concentración de sal: 30 g/1,2 L = 25 g/L. Si se quiere que esta nueva mezcla tenga la misma concentración de sal que la solución de Magda, ¿cuánta agua se le debe añadir? A. 300 ml B. 200 ml C. 800 ml D. 2.700 ml Se sabe que las edades de cuatro amigos corresponden a cantidades impares de años. Si es posible que las edades se repitan, ¿cuál de las siguientes características NO se puede cumplir? A. Que la mediana de las edades sea un número par. B. Que la mediana de las edades termine con una sola cifra decimal igual a 5. C. Que el promedio de las edades sea un número par. D. Que el promedio de las edades termine con una sola cifra decimal igual a 5. Tania planea realizar un experimento químico y tiene las siguientes posibilidades: - Puede utilizar una temperatura entre los 7° y los 10°. - Puede utilizar una concentración de alcohol entre el 10 % y el 30 %. - Puede utilizar 3 asistentes de un grupo de 10 investigadores. - Puede utilizar 3 máquinas de un grupo de 7 disponibles. Tania sabe que                   . Con la información disponible, ¿qué pregunta puede responder Tania? A. La cantidad total de posibles temperaturas que puede usar en el experimento. B. La cantidad total de posibles concentraciones de alcohol que puede usar en el experimento. C. La cantidad total de posibles grupos de asistentes que puede usar en el experimento. D. La cantidad total de posibles grupos de máquinas que puede usar en el experimento. = 120 13. 14. 15. Matemáticas - Cuadernillo 2 Saber 10.° La gráfica muestra algunos resultados de un estudio acerca de cómo distribuían algunos momentos de su rutina diaria varios genios de diversos campos. ¿Cuál de las siguientes opciones muestra correctamente el tiempo que cada uno de los personajes señalados empleaba en el trabajo creativo? Freud (psicoanalista) Picasso (pintor) Mozart (músico) Beethoven (músico) Alimentación y ocio Trabajo creativo Dormir Ejercicio C. Freud (psicoanalista) Picasso (pintor) Mozart (músico) Beethoven (músico) Trabajo creativo Tiempo (h) D. Trabajo creativo Tiempo (h) Freud (psicoanalista) Picasso (pintor) Mozart (músico) Beethoven (músico) A. Freud (psicoanalista) Picasso (pintor) Mozart (músico) Beethoven (músico) Trabajo creativo Tiempo (h) B. Freud (psicoanalista) Picasso (pintor) Mozart (músico) Beethoven (músico) Trabajo creativo Tiempo (h) 16. Matemáticas - Cuadernillo 2 Saber 10.° En un colegio se planea cambiar la jornada escolar, y se encuesta a varios profesores, padres y administrativos sobre el tema. La Tabla 1 muestra los resultados de la encuesta aplicada a profesores y administrativos. La Tabla 2 muestra los resultados de la encuesta aplicada a padres de estudiantes de primaria y de secundaria. Para publicar los resultados, el colegio decide presentar una gráfica. ¿Cuál de las siguientes gráficas muestra correctamente todos los votos a favor y en contra que aparecen en las dos tablas? Encuestados Votos a favor Votos en contra Profesores Administrativos Encuestados Votos a favor Votos en contra Padres de estudiantes de primaria Padres de estudiantes de secundaria B. Padres de estudiantes de secundaria Padres de estudiantes de primaria Administrativos Profesores Cantidad de votos Encuestados Resultados de la encuesta Votos en contra Votos a favor D. Profesores Padres Cantidad de votos Encuestados Resultados de la encuesta Votos en contra Votos a favor A. Padres de estudiantes de secundaria Padres de estudiantes de primaria Administrativos Profesores Cantidad de votos Encuestados Resultados de la encuesta C. Profesores Padres Encuestados Resultados de la encuesta Cantidad de votos Tabla 1 Tabla 2 17. Matemáticas - Cuadernillo 2 Saber 10.° Para analizar el comportamiento de una onda de sonido, Ignacio utiliza la siguiente serie para hacer cálculos a partir de la función seno: sen(x) = x –      +      – … Si Ignacio utiliza la serie solamente con los primeros tres términos para aproximar el valor de sen(1), ¿qué valor obtendría? A. B. C. D. x3 3! x5 5! En una embotelladora, hay dos máquinas que sirven para ponerles las tapas a las botellas: la máquina 1 pone 2.000 tapas cada hora y la máquina 2 pone 5.000 tapas cada hora. Para saber cuántas tapas ponen las dos máquinas en una jornada de trabajo, se debe realizar el siguiente procedimiento: Paso 1. Sumar la cantidad de tapas que ponen cada hora la maquina 1 y la máquina 2. Paso 2. Multiplicar el resultado del paso anterior por la cantidad de horas que tiene una jornada de trabajo. Si la jornada de trabajo corresponde a un número entero de horas, ¿cuál de las siguientes características deberá tener el resultado obtenido al realizar el procedimiento? A. Ser múltiplo de 2.000 B. Ser múltiplo de 3.000 C. Ser múltiplo de 5.000 D. Ser múltiplo de 7.000 En construcción se utilizan ladrillos de varios tipos. La imagen muestra un ladrillo que tiene tres huecos, cada uno con forma de paralelepípedo recto. Un niño utilizó arena para rellenar los tres huecos del ladrillo. ¿Cuáles medidas se necesitan para calcular la cantidad de arena que utilizó el niño? A. 2 cm, 5 cm y 7 cm B. 6 cm, 12 cm y 25 cm C. 2 cm, 5 cm, 6 cm y 7 cm D. 6 cm, 7 cm, 12 cm y 25 cm Vista del ladrillo desde arriba 7 cm 7 cm 7 cm 7 cm 5 cm 2 cm Figura 6 cm 25 cm 12 cm Ladrillo Ladrillo 19. 20. 18. FIN A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D A B C D Matemáticas - Cuadernillo 2 10.° DATOS PERSONALES Tipo de documento Número de documento Nombres y apellidos Curso Sexo Niño - Hombre Niña - Mujer Para contestar en la Hoja de respuestas hazlo de la siguiente manera. Por ejemplo, si la respuesta es la B, MARCA ASÍ A B D C INSTRUCCIONES CUADERNILLO 2-2023 Calle 26 N.º 69-76, Torre 2, Piso 16, Edificio Elemento, Bogotá D.C., Colombia www.icfes.gov.co Línea de atención al usuario: Bogotá Tel.: 60 (1) 514 4370"
+      },
+      "cmc": "Álgebra y cálculo",
+      "imagen_figura": "assets/cuadernillo-mat-10-p2/q20.png"
+    }
+  ]
+}

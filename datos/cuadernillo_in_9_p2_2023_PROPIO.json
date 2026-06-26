@@ -1,0 +1,657 @@
+{
+  "id": "in-9-p2-propio-2023",
+  "area": "Inglés",
+  "area_slug": "ingles",
+  "grado": "9",
+  "periodo": "II",
+  "version": "2023",
+  "nombre": "Cuadernillo de Inglés — Grado 9° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias y al Marco Común Europeo (MCER). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 22,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "nota": "Inglés se rige por el Marco Común Europeo (MCER): Pre A1, A1, A2. Cada Parte comparte un contexto (banco de palabras o texto). Estructura igual al cuadernillo fuente de 9°.",
+  "competencias": {
+    "a": "Parte 1 — Conocimiento léxico — emparejar vocabulario con su descripción",
+    "b": "Parte 2 — Comprensión de lectura — localizar e inferir información en un texto",
+    "c": "Parte 3 — Conocimiento pragmático — intervención adecuada en conversaciones breves",
+    "d": "Parte 4 — Conocimiento léxico-gramatical — completar un texto con espacios"
+  },
+  "afirmaciones": {
+    "1": "Pre A1 — Reconoce palabras y expresiones básicas, con apoyo visual",
+    "2": "A1 — Comprende frases sencillas y vocabulario cotidiano",
+    "3": "A2 — Identifica información explícita en textos cotidianos breves"
+  },
+  "evidencias": {
+    "2.a": "A1 en Parte 1",
+    "1.b": "Pre A1 en Parte 2",
+    "3.b": "A2 en Parte 2",
+    "3.c": "A2 en Parte 3",
+    "3.d": "A2 en Parte 4"
+  },
+  "cmc": [],
+  "contextos": {
+    "ctx-parte1": {
+      "titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee las descripciones de la izquierda (1 - 5). ¿Cuál palabra de la columna de la derecha (A - G) concuerda con cada descripción? Sobran dos palabras. En las preguntas 1 - 5, marca la letra correcta A - G. Banco de palabras: A) rain  B) umbrella  C) river  D) snow  E) wind  F) garden  G) sun.",
+      "rango_preguntas": "1 a 5",
+      "imagen": "assets/banco-in-9-p2/ejemplo_parte1.png"
+    },
+    "ctx-parte2": {
+      "titulo": "Avisos y letreros",
+      "texto": "RESPONDE LAS PREGUNTAS 6 A 10. ¿Dónde puedes ver estos avisos? En las preguntas 6 - 10, marca A, B o C.",
+      "rango_preguntas": "6 a 10"
+    },
+    "ctx-parte3": {
+      "titulo": "Conversaciones breves",
+      "texto": "RESPONDE LAS PREGUNTAS 11 A 15. Completa las cinco conversaciones. En las preguntas 11 - 15, marca A, B o C.",
+      "rango_preguntas": "11 a 15",
+      "imagen": "assets/banco-in-9-p2/ejemplo_conversacion.png"
+    },
+    "ctx-parte4": {
+      "titulo": "A walk in the forest",
+      "texto": "Last Saturday my family and I went for a walk in a forest near our town. The path (16)_______ very long, so we took a lot of water with us. We saw many birds, and my little sister was (17)_______ excited that she could not stop talking. The trees were the (18)_______ I had ever seen, taller than any building in our city. (19)_______ the morning the weather was warm, (20)_______ in the afternoon it started to rain. We ran to a small wooden shelter and waited there (21)_______ the rain stopped. On the way back, my father said it was the best walk we (22)_______ ever taken together.",
+      "rango_preguntas": "16 a 22"
+    }
+  },
+  "preguntas": [
+    {
+      "id": "P9I01",
+      "numero": 1,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">It comes down in drops, it is not white, and you need a coat when it starts.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> rain  <b>B)</b> umbrella  <b>C)</b> river  <b>D)</b> snow  <b>E)</b> wind  <b>F)</b> garden  <b>G)</b> sun</p></div>",
+      "opciones": {
+        "A": "rain",
+        "B": "umbrella",
+        "C": "river",
+        "D": "snow",
+        "E": "wind",
+        "F": "garden",
+        "G": "sun"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Emparejar vocabulario cotidiano de clima con su descripción en inglés (A1).",
+      "justificacion_correcta": "Opción A, dado que «rain» (lluvia) cae en gotas (drops), no es blanca y obliga a abrigarse; es la única palabra del banco que nombra el agua líquida que cae del cielo.",
+      "opciones_incorrectas": {
+        "D": "«snow» (nieve) también cae del cielo, pero es blanca y cae en copos, no en gotas como dice la pista.",
+        "C": "«river» (río) es agua, pero no cae del cielo: corre por la tierra."
+      }
+    },
+    {
+      "id": "P9I02",
+      "numero": 2,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You open this object to stay dry when it is raining.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> rain  <b>B)</b> umbrella  <b>C)</b> river  <b>D)</b> snow  <b>E)</b> wind  <b>F)</b> garden  <b>G)</b> sun</p></div>",
+      "opciones": {
+        "A": "rain",
+        "B": "umbrella",
+        "C": "river",
+        "D": "snow",
+        "E": "wind",
+        "F": "garden",
+        "G": "sun"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Emparejar un objeto cotidiano con la acción para la que se usa (A1).",
+      "justificacion_correcta": "Opción B, dado que «umbrella» (paraguas) es el objeto que se abre para protegerse de la lluvia y permanecer seco.",
+      "opciones_incorrectas": {
+        "A": "«rain» (lluvia) es justo aquello de lo que el objeto nos protege, no el objeto que se abre.",
+        "F": "«garden» (jardín) es un lugar, no algo que se abra para no mojarse."
+      }
+    },
+    {
+      "id": "P9I03",
+      "numero": 3,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">This is cold and white, and it falls in winter.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> rain  <b>B)</b> umbrella  <b>C)</b> river  <b>D)</b> snow  <b>E)</b> wind  <b>F)</b> garden  <b>G)</b> sun</p></div>",
+      "opciones": {
+        "A": "rain",
+        "B": "umbrella",
+        "C": "river",
+        "D": "snow",
+        "E": "wind",
+        "F": "garden",
+        "G": "sun"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario de clima y estaciones a partir de su descripción (A1).",
+      "justificacion_correcta": "Opción D, dado que «snow» (nieve) es lo que cae en invierno, es frío y de color blanco.",
+      "opciones_incorrectas": {
+        "A": "«rain» (lluvia) cae del cielo, pero no es blanca ni propia solo del invierno.",
+        "E": "«wind» (viento) es aire en movimiento; no es blanco ni se describe como algo frío que cae."
+      }
+    },
+    {
+      "id": "P9I04",
+      "numero": 4,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You cannot see it at night, and on a clear day it makes you feel warm.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> rain  <b>B)</b> umbrella  <b>C)</b> river  <b>D)</b> snow  <b>E)</b> wind  <b>F)</b> garden  <b>G)</b> sun</p></div>",
+      "opciones": {
+        "A": "rain",
+        "B": "umbrella",
+        "C": "river",
+        "D": "snow",
+        "E": "wind",
+        "F": "garden",
+        "G": "sun"
+      },
+      "clave": "G",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Emparejar un elemento de la naturaleza con su función a partir de su descripción (A1).",
+      "justificacion_correcta": "Opción G, dado que «sun» (sol) no se ve de noche y en un día despejado nos hace sentir calor; es la única palabra del banco con esa función.",
+      "opciones_incorrectas": {
+        "E": "«wind» (viento) también se siente, pero puede soplar de día o de noche y no da calor.",
+        "A": "«rain» (lluvia) cae en cualquier momento y enfría; no nos hace sentir calor."
+      }
+    },
+    {
+      "id": "P9I05",
+      "numero": 5,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1 — Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">This is a place near your house where you can grow flowers.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0'><b>A)</b> rain  <b>B)</b> umbrella  <b>C)</b> river  <b>D)</b> snow  <b>E)</b> wind  <b>F)</b> garden  <b>G)</b> sun</p></div>",
+      "opciones": {
+        "A": "rain",
+        "B": "umbrella",
+        "C": "river",
+        "D": "snow",
+        "E": "wind",
+        "F": "garden",
+        "G": "sun"
+      },
+      "clave": "F",
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.a",
+      "nivel_mcer": "A1",
+      "parte": 1,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer el nombre de un lugar cotidiano a partir de su descripción (A1).",
+      "justificacion_correcta": "Opción F, dado que «garden» (jardín) es el lugar cercano a la casa donde se cultivan flores.",
+      "opciones_incorrectas": {
+        "C": "«river» (río) es agua que corre por la naturaleza, no un lugar para sembrar flores junto a la casa.",
+        "E": "«wind» (viento) es aire en movimiento; no es un lugar donde crezcan flores."
+      }
+    },
+    {
+      "id": "P9I06",
+      "numero": 6,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Avisos y letreros",
+      "enunciado": "<p>Where can you see this notice?</p>",
+      "opciones": {
+        "A": "in a swimming pool",
+        "B": "in a park",
+        "C": "in a cinema"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Inferir el lugar donde aparecería un aviso a partir de su contenido (Pre A1).",
+      "justificacion_correcta": "Opción C, dado que un cine es el lugar donde se pide apagar el teléfono antes de que empiece la película; es el único de la lista donde tendría sentido ese aviso.",
+      "opciones_incorrectas": {
+        "A": "en una piscina no se pide apagar el teléfono, sino cuidar la seguridad en el agua.",
+        "B": "un parque es un espacio abierto donde no se exige apagar el teléfono."
+      },
+      "imagen_figura": "assets/banco-in-9-p2/q06.png"
+    },
+    {
+      "id": "P9I07",
+      "numero": 7,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Avisos y letreros",
+      "enunciado": "<p>Where can you see this notice?</p>",
+      "opciones": {
+        "A": "in a bakery",
+        "B": "in a library",
+        "C": "in a hospital"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Identificar el lugar al que corresponde un aviso comercial a partir de su contenido (Pre A1).",
+      "justificacion_correcta": "Opción A, dado que una panadería es el único lugar de la lista donde se vendería pan fresco, como anuncia el aviso «FRESH BREAD sold here».",
+      "opciones_incorrectas": {
+        "B": "en una biblioteca se prestan libros, no se vende pan.",
+        "C": "en un hospital se atiende a los enfermos; no es un lugar para vender pan."
+      },
+      "imagen_figura": "assets/banco-in-9-p2/q07.png"
+    },
+    {
+      "id": "P9I08",
+      "numero": 8,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Avisos y letreros",
+      "enunciado": "<p>Where can you see this notice?</p>",
+      "opciones": {
+        "A": "at a bus stop",
+        "B": "at a museum",
+        "C": "at a restaurant"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Deducir el lugar en el que se encontraría un aviso a partir de la información que ofrece (Pre A1).",
+      "justificacion_correcta": "Opción B, dado que un museo (o galería) es el lugar donde se exhiben cuadros y se pide no tocar las pinturas («Do not touch the paintings»).",
+      "opciones_incorrectas": {
+        "A": "en una parada de bus no hay pinturas que cuidar.",
+        "C": "en un restaurante se sirve comida; no hay cuadros expuestos para que el público no los toque."
+      },
+      "imagen_figura": "assets/banco-in-9-p2/q08.png"
+    },
+    {
+      "id": "P9I09",
+      "numero": 9,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Avisos y letreros",
+      "enunciado": "<p>Where can you see this notice?</p>",
+      "opciones": {
+        "A": "in a bedroom",
+        "B": "on a beach",
+        "C": "in a supermarket"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Relacionar un aviso de seguridad con el lugar donde se exhibiría (Pre A1).",
+      "justificacion_correcta": "Opción C, dado que en un supermercado se coloca el aviso «Wet floor» (piso mojado) para advertir a los clientes que tengan cuidado al caminar.",
+      "opciones_incorrectas": {
+        "A": "en una habitación privada no se ponen avisos de seguridad para el público.",
+        "B": "en una playa el piso es arena y no se advierte sobre un piso mojado."
+      },
+      "imagen_figura": "assets/banco-in-9-p2/q09.png"
+    },
+    {
+      "id": "P9I10",
+      "numero": 10,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Avisos y letreros",
+      "enunciado": "<p>Where can you see this notice?</p>",
+      "opciones": {
+        "A": "at a market",
+        "B": "at a school library",
+        "C": "at a train station"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Inferir información explícita de un aviso cotidiano y el lugar donde aparecería (A2).",
+      "justificacion_correcta": "Opción B, dado que un aviso de «OPENING HOURS» que indica que está «Closed during the holidays» (cerrado durante las vacaciones) corresponde a la biblioteca de un colegio, el único lugar de la lista que cierra en periodo de vacaciones escolares.",
+      "opciones_incorrectas": {
+        "A": "un mercado abre a diario y no cierra por las vacaciones de un colegio.",
+        "C": "una estación de tren funciona todo el año, incluso durante las vacaciones."
+      },
+      "imagen_figura": "assets/banco-in-9-p2/q10.png"
+    },
+    {
+      "id": "P9I11",
+      "numero": 11,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p>Complete the conversation.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='margin:0 0 4px'><span style='font-style:italic;color:#946B11'>Speaker A</span><br><span style='display:inline-block;background:#FEF3C7;border:1px solid #E0CFA0;border-radius:12px;padding:6px 12px'>Why don't you come to my house on Saturday?</span></p><p style='margin:0;text-align:right'><span style='font-style:italic;color:#C7163C'>Speaker B</span><br><span style='display:inline-block;background:#FBF7F3;border:1px solid #E5DDD2;border-radius:12px;padding:6px 12px'>______</span></p></div>",
+      "opciones": {
+        "A": "Because I live far away.",
+        "B": "Yes, it is my house.",
+        "C": "Sure, I'd love to."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica que acepta una invitación, distinguiéndola de respuestas que parecen encajar (A2).",
+      "justificacion_correcta": "Opción C, dado que «Why don't you...?» no pregunta por una razón, sino que hace una invitación; la respuesta apropiada la acepta con «Sure, I'd love to».",
+      "opciones_incorrectas": {
+        "A": "«Because I live far away» toma «Why» de forma literal y da una causa, pero la frase es una invitación, no una pregunta por el motivo.",
+        "B": "«Yes, it is my house» repite la palabra «house» del enunciado, pero no acepta ni rechaza la invitación."
+      }
+    },
+    {
+      "id": "P9I12",
+      "numero": 12,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p>Complete the conversation.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='margin:0 0 4px'><span style='font-style:italic;color:#946B11'>Speaker A</span><br><span style='display:inline-block;background:#FEF3C7;border:1px solid #E0CFA0;border-radius:12px;padding:6px 12px'>I think the science exam was really difficult.</span></p><p style='margin:0;text-align:right'><span style='font-style:italic;color:#C7163C'>Speaker B</span><br><span style='display:inline-block;background:#FBF7F3;border:1px solid #E5DDD2;border-radius:12px;padding:6px 12px'>______</span></p></div>",
+      "opciones": {
+        "A": "Yes, I have one.",
+        "B": "So did I. I couldn't finish it.",
+        "C": "No, it isn't mine."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Reconocer la respuesta que mantiene la conversación tras un comentario abierto (A2).",
+      "justificacion_correcta": "Opción B, dado que ante el comentario «el examen fue muy difícil», la respuesta natural muestra acuerdo y añade información propia: «So did I. I couldn't finish it».",
+      "opciones_incorrectas": {
+        "A": "«Yes, I have one» responde a una pregunta sobre poseer algo, no a una opinión sobre el examen.",
+        "C": "«No, it isn't mine» habla de pertenencia y no reacciona a lo difícil que fue el examen."
+      }
+    },
+    {
+      "id": "P9I13",
+      "numero": 13,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p>Complete the conversation.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='margin:0 0 4px'><span style='font-style:italic;color:#946B11'>Speaker A</span><br><span style='display:inline-block;background:#FEF3C7;border:1px solid #E0CFA0;border-radius:12px;padding:6px 12px'>I can't open this window. It's stuck.</span></p><p style='margin:0;text-align:right'><span style='font-style:italic;color:#C7163C'>Speaker B</span><br><span style='display:inline-block;background:#FBF7F3;border:1px solid #E5DDD2;border-radius:12px;padding:6px 12px'>______</span></p></div>",
+      "opciones": {
+        "A": "Don't worry, I'll help you.",
+        "B": "Yes, the window is open.",
+        "C": "It's a nice window."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar la oferta de ayuda adecuada ante la mención de un problema (A2).",
+      "justificacion_correcta": "Opción A, dado que cuando alguien menciona que no puede con algo, la réplica adecuada ofrece ayuda: «Don't worry, I'll help you».",
+      "opciones_incorrectas": {
+        "B": "«Yes, the window is open» contradice el enunciado, que dice justamente que la ventana está atascada.",
+        "C": "«It's a nice window» comenta el aspecto de la ventana, pero ignora el problema planteado."
+      }
+    },
+    {
+      "id": "P9I14",
+      "numero": 14,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p>Complete the conversation.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='margin:0 0 4px'><span style='font-style:italic;color:#946B11'>Speaker A</span><br><span style='display:inline-block;background:#FEF3C7;border:1px solid #E0CFA0;border-radius:12px;padding:6px 12px'>Would you like some more juice?</span></p><p style='margin:0;text-align:right'><span style='font-style:italic;color:#C7163C'>Speaker B</span><br><span style='display:inline-block;background:#FBF7F3;border:1px solid #E5DDD2;border-radius:12px;padding:6px 12px'>______</span></p></div>",
+      "opciones": {
+        "A": "Yes, it was very nice.",
+        "B": "No, thanks. I've had enough.",
+        "C": "I don't have any juice."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir la respuesta cortés que rechaza un ofrecimiento sin sonar grosera (A2).",
+      "justificacion_correcta": "Opción B, dado que ante el ofrecimiento «¿Quieres más jugo?», una respuesta cortés y clara para rechazar es «No, thanks. I've had enough».",
+      "opciones_incorrectas": {
+        "A": "«Yes, it was very nice» valora algo en pasado, pero no responde al ofrecimiento de más jugo.",
+        "C": "«I don't have any juice» informa de que no se tiene jugo, lo cual no encaja con quien lo está ofreciendo."
+      }
+    },
+    {
+      "id": "P9I15",
+      "numero": 15,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p>Complete the conversation.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='margin:0 0 4px'><span style='font-style:italic;color:#946B11'>Speaker A</span><br><span style='display:inline-block;background:#FEF3C7;border:1px solid #E0CFA0;border-radius:12px;padding:6px 12px'>Let's meet at the library after lunch.</span></p><p style='margin:0;text-align:right'><span style='font-style:italic;color:#C7163C'>Speaker B</span><br><span style='display:inline-block;background:#FBF7F3;border:1px solid #E5DDD2;border-radius:12px;padding:6px 12px'>______</span></p></div>",
+      "opciones": {
+        "A": "The library is very big.",
+        "B": "I had lunch at home.",
+        "C": "OK, I'll see you there."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Identificar la réplica que confirma un plan y lo cierra adecuadamente (A2).",
+      "justificacion_correcta": "Opción C, dado que ante la propuesta «encontrémonos en la biblioteca después del almuerzo», la respuesta apropiada confirma y cierra el plan: «OK, I'll see you there».",
+      "opciones_incorrectas": {
+        "A": "«The library is very big» describe el lugar, pero no acepta ni concreta la cita.",
+        "B": "«I had lunch at home» repite la palabra «lunch», pero no responde a la propuesta de encontrarse."
+      }
+    },
+    {
+      "id": "P9I16",
+      "numero": 16,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Read the text and answer questions 16 to 22.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0 0 6px'><b>A WALK IN THE FOREST</b></p><p style='margin:0'>Last Saturday my family and I went for a walk in a forest near our town. The path (16)_______ very long, so we took a lot of water with us. We saw many birds, and my little sister was (17)_______ excited that she could not stop talking. The trees were the (18)_______ I had ever seen, taller than any building in our city. (19)_______ the morning the weather was warm, (20)_______ in the afternoon it started to rain. We ran to a small wooden shelter and waited there (21)_______ the rain stopped. On the way back, my father said it was the best walk we (22)_______ ever taken together.</p></div><p>Choose the correct word for blank (16) in the text.</p>",
+      "opciones": {
+        "A": "was",
+        "B": "is",
+        "C": "are"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Completar un texto con la forma verbal correcta del pasado (A2).",
+      "justificacion_correcta": "Opción A, dado que el relato ocurre en pasado («Last Saturday»), por lo que el verbo «to be» en singular y en pasado es «was». El estudiante debe reconocer el pasado simple del verbo «to be».",
+      "opciones_incorrectas": {
+        "B": "«is» está en presente y no concuerda con un relato sobre el sábado pasado.",
+        "C": "«are» está en presente y en plural; el sujeto «the path» es singular y la acción es pasada."
+      }
+    },
+    {
+      "id": "P9I17",
+      "numero": 17,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Choose the correct word for blank (17) in the text.</p>",
+      "opciones": {
+        "A": "too",
+        "B": "so",
+        "C": "very"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir el intensificador adecuado en una estructura de consecuencia (A2).",
+      "justificacion_correcta": "Opción B, dado que la estructura «so + adjetivo + that» expresa una consecuencia: estaba «tan» emocionada «que» no podía dejar de hablar. El estudiante debe conocer la estructura «so ... that».",
+      "opciones_incorrectas": {
+        "A": "«too» significa «demasiado» y no se usa con «that» para formar esta estructura de consecuencia.",
+        "C": "«very» intensifica un adjetivo, pero no forma la estructura «... that» de causa-consecuencia."
+      }
+    },
+    {
+      "id": "P9I18",
+      "numero": 18,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Choose the correct word for blank (18) in the text.</p>",
+      "opciones": {
+        "A": "tall",
+        "B": "taller",
+        "C": "tallest"
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Usar la forma superlativa del adjetivo en un texto (A2).",
+      "justificacion_correcta": "Opción C, dado que «the tallest I had ever seen» exige la forma superlativa para señalar que eran los árboles más altos de todos. El estudiante debe conocer el superlativo de los adjetivos.",
+      "opciones_incorrectas": {
+        "A": "«tall» es la forma base y no expresa que fueran los más altos de todos.",
+        "B": "«taller» es comparativo (más alto que algo concreto) y no encaja con «the ... I had ever seen»."
+      }
+    },
+    {
+      "id": "P9I19",
+      "numero": 19,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Choose the correct word for blank (19) in the text.</p>",
+      "opciones": {
+        "A": "On",
+        "B": "During",
+        "C": "At"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar la preposición de tiempo correcta para completar un texto (A2).",
+      "justificacion_correcta": "Opción B, dado que «During the morning» (durante la mañana) expresa el periodo en el que el clima estuvo cálido. El estudiante debe conocer las preposiciones de tiempo.",
+      "opciones_incorrectas": {
+        "A": "«On» se usa con días y fechas (on Monday), no con «the morning» como periodo.",
+        "C": "«At» se usa con horas puntuales (at six) o expresiones fijas (at night), no con «the morning»."
+      }
+    },
+    {
+      "id": "P9I20",
+      "numero": 20,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Choose the correct word for blank (20) in the text.</p>",
+      "opciones": {
+        "A": "because",
+        "B": "so",
+        "C": "but"
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Elegir el conector que une dos ideas opuestas en un texto (A2).",
+      "justificacion_correcta": "Opción C, dado que «but» (pero) introduce el contraste entre el clima cálido de la mañana y la lluvia de la tarde. El estudiante debe conocer los conectores de contraste.",
+      "opciones_incorrectas": {
+        "A": "«because» introduce una causa, pero aquí las dos ideas se oponen, no se explican una a la otra.",
+        "B": "«so» expresa consecuencia; la lluvia de la tarde no es consecuencia del clima cálido de la mañana."
+      }
+    },
+    {
+      "id": "P9I21",
+      "numero": 21,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Choose the correct word for blank (21) in the text.</p>",
+      "opciones": {
+        "A": "until",
+        "B": "during",
+        "C": "since"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Seleccionar la conjunción temporal que une dos acciones en el tiempo (A2).",
+      "justificacion_correcta": "Opción A, dado que «until the rain stopped» (hasta que la lluvia paró) indica el momento hasta el cual esperaron en el refugio. El estudiante debe distinguir las conjunciones y preposiciones de tiempo.",
+      "opciones_incorrectas": {
+        "B": "«during» va seguido de un sustantivo (during the rain), no de una oración con verbo como «the rain stopped».",
+        "C": "«since» señala el punto desde el que algo ocurre, no el momento hasta el cual se espera."
+      }
+    },
+    {
+      "id": "P9I22",
+      "numero": 22,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "A walk in the forest",
+      "enunciado": "<p>Choose the correct word for blank (22) in the text.</p>",
+      "opciones": {
+        "A": "had",
+        "B": "have",
+        "C": "has"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "Media",
+      "estandar": "",
+      "que_evalua": "Completar el texto con la forma del pasado perfecto que pide el sentido de la oración (A2).",
+      "justificacion_correcta": "Opción A, dado que «the best walk we had ever taken» usa el pasado perfecto («had» + participio) para hablar de una experiencia anterior dentro de un relato en pasado. El estudiante debe reconocer el pasado perfecto.",
+      "opciones_incorrectas": {
+        "B": "«have» forma el presente perfecto y no concuerda con un relato que ocurre por completo en el pasado.",
+        "C": "«has» es presente perfecto en tercera persona del singular; el sujeto es «we», que es plural."
+      }
+    }
+  ],
+  "preservar_orden_preguntas": true
+}

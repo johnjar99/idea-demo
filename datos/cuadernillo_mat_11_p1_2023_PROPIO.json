@@ -1,0 +1,562 @@
+{
+  "id": "math-11-p1-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "11",
+  "periodo": "I",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas — Grado 11° — Período I (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Interpretación y Representación",
+    "b": "Formulación y Ejecución",
+    "c": "Argumentación"
+  },
+  "afirmaciones": {
+    "1": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "2": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "3": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas."
+  },
+  "evidencias": {
+    "1.1": "Da cuenta de las características básicas de la información presentada en distintos formatos.",
+    "1.2": "Transforma la representación de una o más piezas de información.",
+    "2.1": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
+    "2.2": "Ejecuta un plan de solución para un problema que involucra información cuantitativa o esquemática.",
+    "2.3": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "3.1": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible.",
+    "3.3": "Establece la validez o pertinencia de una solución propuesta a un problema dado."
+  },
+  "cmc": [
+    "Estadística",
+    "Geometría",
+    "Álgebra y Cálculo"
+  ],
+  "preguntas": [
+    {
+      "id": "P-math-11-p1-01",
+      "numero": 1,
+      "enunciado": "<p>En un pequeño conjunto cerrado hay cinco edificios dispuestos en forma de pentágono, representados por los círculos <b>I, II, III, IV</b> y <b>V</b> de la figura. <b>Todos los edificios tienen una cantidad diferente de pisos</b>. Según la norma de construcción del conjunto, ninguna edificación puede tener menos de <b>dos pisos</b>. El edificio más alto de todos es uno solo y tiene <b>seis pisos</b>; ningún otro alcanza esa altura. ¿Cuál es el total de pisos construidos en el conjunto?</p>",
+      "opciones": {
+        "A": "\\(10\\)",
+        "B": "\\(20\\)",
+        "C": "\\(24\\)",
+        "D": "\\(30\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Comparo y contrasto las propiedades de los números para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad para resolver un problema en el que hay varias cantidades y condiciones entre estas.",
+      "justificacion_correcta": "Cada edificio tiene como mínimo \\(2\\) pisos, todas las cantidades son diferentes y el más alto tiene \\(6\\) pisos. Las únicas cinco cantidades distintas posibles entre \\(2\\) y \\(6\\) son \\(2, 3, 4, 5\\) y \\(6\\). Por lo tanto, el total es \\(2+3+4+5+6 = 20\\) pisos.",
+      "opciones_incorrectas": {
+        "A": "Supone que solo el más alto tiene \\(6\\) pisos y los otros cuatro tienen \\(1\\) cada uno \\((6+1+1+1+1)\\).",
+        "C": "Multiplica \\(6\\times 4\\), sin considerar que cada edificio tiene una cantidad diferente.",
+        "D": "Multiplica \\(6\\times 5\\), suponiendo que los cinco edificios tienen \\(6\\) pisos."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q01.png"
+    },
+    {
+      "id": "P-math-11-p1-02",
+      "numero": 2,
+      "enunciado": "<p>Una profesora entrega a tres estudiantes la misma figura sombreada y les pide rotarla <b>\\(90^\\circ\\) en sentido antihorario</b> (contrario al de las manecillas del reloj) respecto al origen del plano cartesiano. La gráfica muestra, para cada estudiante, la figura recibida (sombreada) y la figura que dibujó (en blanco). ¿Cuáles estudiantes realizaron correctamente la rotación pedida?</p>",
+      "opciones": {
+        "A": "I y II solamente.",
+        "B": "II y III solamente.",
+        "C": "I y III solamente.",
+        "D": "I, II y III."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "BAJA",
+      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana y otros y en particular de las curvas y figuras cónicas.",
+      "que_evalua": "La capacidad para identificar las rotaciones de figuras geométricas que cumplen con una condición dada.",
+      "justificacion_correcta": "Una rotación de \\(90^\\circ\\) en sentido antihorario transforma cada punto \\((x, y)\\) en \\((-y, x)\\). Los estudiantes I y II aplicaron esta regla; el estudiante III rotó en sentido horario (el equivalente a \\((y, -x)\\)), por lo que no cumplió la condición.",
+      "opciones_incorrectas": {
+        "B": "Da por correcto al estudiante III, que rotó en sentido horario.",
+        "C": "Descarta al estudiante II, que sí rotó correctamente.",
+        "D": "Acepta los tres sin notar el sentido equivocado del estudiante III."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q02.png"
+    },
+    {
+      "id": "P-math-11-p1-03",
+      "numero": 3,
+      "enunciado": "<p>La tabla muestra las relaciones comerciales entre varios países: a quién le <b>vende</b> productos cada país y de quién los <b>compra</b>.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">País</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vende productos a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Compra productos de:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>S, M</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R, V</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>V, M</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>S</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>V</i></td></tr></table><p>De acuerdo con la información presentada, ¿cuál de las siguientes tablas describe correctamente las relaciones comerciales del país <b>M</b>?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vende productos a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Compra productos de:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Ninguno</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Ninguno</i></td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vende productos a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Compra productos de:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Ninguno</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, R</i></td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vende productos a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Compra productos de:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, R</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Ninguno</i></td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vende productos a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Compra productos de:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R, V, Q</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>T, R</i></td></tr></table>"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad para identificar los valores asociados a un dato en particular a partir de la información presentada en una tabla.",
+      "justificacion_correcta": "El país M no tiene fila propia: hay que rastrearlo dentro de las celdas. M aparece en la columna 'Compra productos de:' de P y de R, lo que significa que esos países compran a M, es decir, M les VENDE a P y a R. En cambio, M no aparece en ninguna celda de la columna 'Vende productos a:', así que ningún país le vende a M; por tanto, M NO COMPRA de nadie. La tabla correcta es 'Vende a: P, R / Compra de: Ninguno'.",
+      "opciones_incorrectas": {
+        "A": "Supone que M no aparece en ninguna columna, ignorando que P y R lo registran como su proveedor.",
+        "B": "Invierte las columnas: pone en 'compra' lo que en realidad M vende a P y R.",
+        "D": "Copia las relaciones de otro país de la tabla en lugar de rastrear M."
+      }
+    },
+    {
+      "id": "P-math-11-p1-04",
+      "numero": 4,
+      "enunciado": "<p>Para un torneo interno, un entrenador debe escoger al azar una <b>pareja de 2 jugadores</b> a partir de un grupo de preseleccionados. Al revisar las posibilidades, encuentra que puede formar exactamente <b>21 parejas</b> distintas. ¿Cuántos jugadores conforman el grupo de preseleccionados?</p>",
+      "opciones": {
+        "A": "\\(42\\)",
+        "B": "\\(21\\)",
+        "C": "\\(7\\)",
+        "D": "\\(6\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad para calcular el cardinal del conjunto del que se van a elegir elementos al azar a partir del número de elecciones y del total de combinaciones posibles.",
+      "justificacion_correcta": "El número de parejas distintas que se pueden formar con \\(n\\) jugadores es la combinación de \\(n\\) en \\(2\\): \\(\\binom{n}{2} = \\dfrac{n(n-1)}{2} = 21\\), de donde \\(n(n-1) = 42\\). Como \\(7\\times 6 = 42\\), se tiene \\(n = 7\\) jugadores.",
+      "opciones_incorrectas": {
+        "A": "Resuelve \\(n(n-1) = 42\\) pero olvida dividir entre \\(2\\), quedándose con \\(42\\).",
+        "B": "Toma el número de parejas \\((21)\\) como si fuera el total de jugadores.",
+        "D": "Da \\(n-1\\) en lugar de \\(n\\) al resolver \\(n(n-1) = 42\\)."
+      }
+    },
+    {
+      "id": "P-math-11-p1-05",
+      "numero": 5,
+      "enunciado": "<p>En una caja hay <b>\\(4\\)</b> fichas verdes, <b>\\(4\\)</b> amarillas y <b>\\(16\\)</b> azules. Camilo afirma que, al sacar una ficha al azar, los tres colores tienen la misma probabilidad de salir. ¿Es verdadera la afirmación de Camilo?</p>",
+      "opciones": {
+        "A": "Sí, porque hay tres colores distintos en la caja.",
+        "B": "No, porque no se conoce el número total de fichas de la caja.",
+        "C": "Sí, porque las fichas están repartidas de la misma forma.",
+        "D": "No, porque hay más fichas de un color que de los otros dos."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La capacidad para justificar la validez de una afirmación sobre una probabilidad a partir de la descripción de los elementos de un conjunto.",
+      "justificacion_correcta": "La probabilidad de cada color es la cantidad de fichas de ese color sobre el total \\((24)\\). Hay \\(16\\) azules frente a \\(4\\) verdes y \\(4\\) amarillas, así que sacar azul \\(\\left(\\dfrac{16}{24}\\right)\\) es mucho más probable que sacar verde o amarilla \\(\\left(\\dfrac{4}{24}\\text{ cada una}\\right)\\). La afirmación es falsa porque hay más fichas de un color.",
+      "opciones_incorrectas": {
+        "A": "El número de colores no determina la probabilidad de cada uno.",
+        "B": "El total sí se conoce; el problema no está en desconocerlo.",
+        "C": "Las cantidades no son iguales, así que el reparto no es uniforme."
+      }
+    },
+    {
+      "id": "P-math-11-p1-06",
+      "numero": 6,
+      "enunciado": "<p>Una antigua torre campanario se ha inclinado con el paso de los años. Respecto a la <b>vertical</b>, la torre forma un ángulo de <b>\\(7^\\circ\\)</b>, como se observa en la figura. ¿Cuánto mide el ángulo que forma la torre con el <b>piso horizontal</b> (marcado con '?')?</p>",
+      "opciones": {
+        "A": "\\(7^\\circ\\)",
+        "B": "\\(17^\\circ\\)",
+        "C": "\\(83^\\circ\\)",
+        "D": "\\(90^\\circ\\)"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "BAJA",
+      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana.",
+      "que_evalua": "La capacidad para identificar el ángulo complementario a un ángulo dado.",
+      "justificacion_correcta": "La vertical forma un ángulo recto \\((90^\\circ)\\) con el piso horizontal. Como la torre se inclina \\(7^\\circ\\) respecto a la vertical, el ángulo entre la torre y el piso es \\(90^\\circ - 7^\\circ = 83^\\circ\\).",
+      "opciones_incorrectas": {
+        "A": "Repite el ángulo de inclinación sin restarlo de \\(90^\\circ\\).",
+        "B": "Suma \\(10^\\circ\\) por un error de cálculo.",
+        "D": "Da el ángulo recto sin descontar la inclinación."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q06.png"
+    },
+    {
+      "id": "P-math-11-p1-07",
+      "numero": 7,
+      "enunciado": "<p>Un parque acuático construirá tres piscinas y decorará el <b>borde</b> de cada una con baldosas <b>azules</b> y <b>blancas</b> intercaladas; el interior es el agua. Las figuras 1, 2 y 3 muestran las tres piscinas, de menor a mayor tamaño. Al observar las tres piscinas, puede afirmarse correctamente que el número de baldosas:</p>",
+      "opciones": {
+        "A": "azules se incrementa en cuatro de una piscina a la del siguiente tamaño.",
+        "B": "blancas aumenta en seis a medida que crece el tamaño de las piscinas.",
+        "C": "azules es el doble de la cantidad de baldosas blancas en cada piscina.",
+        "D": "blancas es la tercera parte de la cantidad de baldosas azules."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Comparo y contrasto las propiedades de los números para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad para identificar un patrón a partir de un conjunto de figuras dadas.",
+      "justificacion_correcta": "Al contar las baldosas azules del borde se obtiene \\(8\\) en la piscina 1, \\(12\\) en la 2 y \\(16\\) en la 3: aumentan de cuatro en cuatro. Por eso, el número de baldosas azules se incrementa en cuatro al pasar de una piscina a la del siguiente tamaño.",
+      "opciones_incorrectas": {
+        "B": "Las baldosas blancas aumentan en cuatro \\((8, 12, 16)\\), no en seis.",
+        "C": "En cada piscina las azules y las blancas son iguales en cantidad, no el doble.",
+        "D": "Las blancas igualan a las azules; no son su tercera parte."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q07.png"
+    },
+    {
+      "id": "P-math-11-p1-08",
+      "numero": 8,
+      "enunciado": "<p>El valor de la entrada a un museo depende de la edad del visitante: de <b>\\(0\\) a \\(8\\)</b> años cuesta <b>\\(\\$5.000\\)</b>; más de <b>\\(8\\) y hasta \\(16\\)</b> años, <b>\\(\\$7.000\\)</b>; más de <b>\\(16\\) y hasta \\(56\\)</b> años, <b>\\(\\$10.000\\)</b>; y más de <b>\\(56\\)</b> años, <b>\\(\\$6.000\\)</b>. ¿Cuál de las siguientes gráficas (A, B, C o D) representa correctamente esta función?</p>",
+      "opciones": {
+        "A": "Gráfica A.",
+        "B": "Gráfica B.",
+        "C": "Gráfica C.",
+        "D": "Gráfica D."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales.",
+      "que_evalua": "La capacidad para construir la gráfica asociada a una función a trozos descrita en una tabla.",
+      "justificacion_correcta": "La tarifa es constante dentro de cada intervalo de edad y cambia bruscamente al pasar de un intervalo a otro, por lo que la gráfica es escalonada: segmentos horizontales en \\(5, 7, 10\\) y \\(6\\) (miles) con extremos abiertos y cerrados según cada intervalo. La gráfica A muestra esto correctamente.",
+      "opciones_incorrectas": {
+        "B": "Une los valores con una línea continua, como si la tarifa cambiara gradualmente.",
+        "C": "Asigna las alturas a intervalos equivocados.",
+        "D": "Muestra puntos aislados, no los tramos constantes de la función."
+      },
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-11-p1/q08_opA.png",
+        "B": "assets/banco-mat-11-p1/q08_opB.png",
+        "C": "assets/banco-mat-11-p1/q08_opC.png",
+        "D": "assets/banco-mat-11-p1/q08_opD.png"
+      }
+    },
+    {
+      "id": "P-math-11-p1-09",
+      "numero": 9,
+      "enunciado": "<p>Se encuestó a <b>\\(300\\)</b> usuarios de una biblioteca sobre la calidad de la atención recibida. La gráfica muestra los porcentajes obtenidos: Malo \\(10\\%\\), Regular \\(20\\%\\), Bueno \\(45\\%\\) y Excelente \\(25\\%\\). La leyenda agrupa a los usuarios <b>insatisfechos</b> (Malo o Regular) y <b>satisfechos</b> (Bueno o Excelente). ¿Cuál de las siguientes afirmaciones es verdadera según los resultados?</p>",
+      "opciones": {
+        "A": "Más de \\(120\\) usuarios calificaron la atención como Buena.",
+        "B": "Los usuarios insatisfechos superan en número a los usuarios satisfechos.",
+        "C": "Menos de \\(150\\) usuarios quedaron satisfechos con la atención.",
+        "D": "Más usuarios calificaron la atención como Malo que como Excelente."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
+      "que_evalua": "La capacidad para establecer una afirmación verdadera a partir de la información presentada en una gráfica.",
+      "justificacion_correcta": "El \\(45\\%\\) de \\(300\\) es \\(135\\) usuarios que calificaron la atención como Buena, y \\(135\\) es más de \\(120\\). La afirmación A es verdadera.",
+      "opciones_incorrectas": {
+        "B": "Insatisfechos \\(= 10\\%+20\\% = 30\\%\\) \\((90\\) usuarios\\()\\); satisfechos \\(= 45\\%+25\\% = 70\\%\\) \\((210)\\). Los satisfechos son más, no menos.",
+        "C": "Satisfechos \\(= 70\\%\\) de \\(300 = 210\\) usuarios, que no es menos de \\(150\\).",
+        "D": "Malo es \\(10\\%\\) \\((30\\) usuarios\\()\\) y Excelente \\(25\\%\\) \\((75)\\); hay menos en Malo, así que la comparación está invertida."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q09.png"
+    },
+    {
+      "id": "P-math-11-p1-10",
+      "numero": 10,
+      "enunciado": "<p>Para una emisora de radio se tienen <b>tres CD</b>, y cada CD contiene canciones de <b>salsa (S)</b> y de <b>merengue (M)</b>. Se elige al azar una canción del CD1, luego una del CD2 y, finalmente, una del CD3. ¿Cuál de los siguientes diagramas de árbol (A, B, C o D) representa correctamente este experimento?</p>",
+      "opciones": {
+        "A": "Diagrama A.",
+        "B": "Diagrama B.",
+        "C": "Diagrama C.",
+        "D": "Diagrama D."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos.",
+      "que_evalua": "La capacidad para representar un experimento aleatorio mediante un diagrama de árbol.",
+      "justificacion_correcta": "El experimento tiene tres etapas (un CD por etapa) y en cada una hay dos opciones, S o M. El diagrama A es el único en el que TODOS los nodos, en los tres niveles, se abren correctamente en S y M; presenta tres niveles de ramificación y \\(2\\times 2\\times 2 = 8\\) trayectorias, todas distintas y bien etiquetadas.",
+      "opciones_incorrectas": {
+        "B": "El árbol está completo, pero en la primera pareja de hojas del CD3 aparece S, S en lugar de S y M: una rama del último nivel quedó mal etiquetada.",
+        "C": "El árbol está completo, pero un nodo del CD2 (la rama M del primer CD) se abre en S, S en lugar de S y M: el segundo nivel tiene una etiqueta repetida.",
+        "D": "El árbol está completo, pero en la última pareja de hojas del CD3 aparece M, M en lugar de S y M: una rama del último nivel quedó mal etiquetada."
+      },
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-11-p1/q10_opA.png",
+        "B": "assets/banco-mat-11-p1/q10_opB.png",
+        "C": "assets/banco-mat-11-p1/q10_opC.png",
+        "D": "assets/banco-mat-11-p1/q10_opD.png"
+      }
+    },
+    {
+      "id": "P-math-11-p1-11",
+      "numero": 11,
+      "enunciado": "<p>Para observar los efectos de un medicamento, este se inyecta en un animal de laboratorio y se registra el comportamiento de la temperatura (en °C) en función del tiempo (en horas), como muestra la gráfica. La temperatura oscila de forma periódica. ¿Cuál de las siguientes expresiones describe la temperatura T del animal en función del tiempo t?</p>",
+      "opciones": {
+        "A": "\\(T = 2\\,\\cos\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\)",
+        "B": "\\(T = 3\\,\\cos\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 39\\)",
+        "C": "\\(T = 2\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\)",
+        "D": "\\(T = 3\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 39\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
+      "que_evalua": "La capacidad para construir la función trigonométrica que representa una curva en una gráfica dada.",
+      "justificacion_correcta": "La curva oscila entre \\(35\\) y \\(39\\) °C, así que su eje central es \\(\\dfrac{35+39}{2} = 37\\) y su amplitud es \\(\\dfrac{39-35}{2} = 2\\). El periodo es \\(3\\) horas. Como en \\(t=0\\) la curva parte del eje \\((37)\\) subiendo, corresponde a un seno (no a un coseno): \\(T = 2\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\).",
+      "opciones_incorrectas": {
+        "A": "Acierta la amplitud y el eje, pero usa coseno; el coseno en \\(t=0\\) parte del máximo \\((39)\\), no del eje, así que no corresponde a esta curva.",
+        "B": "Usa coseno (parte del máximo, no del eje) y toma amplitud \\(3\\) y eje \\(39\\), que no coinciden con la curva.",
+        "D": "Acierta el seno, pero toma amplitud \\(3\\) y eje \\(39\\) en lugar de \\(2\\) y \\(37\\); la curva no llega a \\(42\\) ni baja a \\(36\\)."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q11.png"
+    },
+    {
+      "id": "P-math-11-p1-12",
+      "numero": 12,
+      "enunciado": "<p>La velocidad máxima de una motocicleta es <b>\\(120\\) kilómetros por hora</b>. Andrés afirma que, a su velocidad máxima, en <b>\\(120\\) horas</b> la motocicleta avanzará <b>\\(1\\) kilómetro</b>. ¿Es verdadera la afirmación de Andrés?</p>",
+      "opciones": {
+        "A": "Sí, porque al dividir \\(120\\) entre \\(120\\) horas se obtiene \\(1\\) kilómetro.",
+        "B": "No, porque en \\(120\\) horas la motocicleta recorre \\(120\\) kilómetros.",
+        "C": "Sí, porque \\(120\\) dividido entre \\(1\\) da el valor \\(120\\).",
+        "D": "No, porque a su velocidad máxima en una hora recorre \\(120\\) kilómetros."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva.",
+      "que_evalua": "La capacidad para analizar la validez de una afirmación sobre la interpretación de una razón de cambio.",
+      "justificacion_correcta": "La velocidad \\(120\\) km/h significa que cada hora se recorren \\(120\\) kilómetros; en \\(1\\) hora se avanzan \\(120\\) km, no \\(1\\) km. Andrés invirtió la relación entre velocidad, tiempo y distancia, así que la afirmación es falsa: a su velocidad máxima en una hora recorre \\(120\\) kilómetros.",
+      "opciones_incorrectas": {
+        "A": "Acepta la afirmación falsa dividiendo la velocidad entre el tiempo.",
+        "B": "En \\(120\\) horas se recorren \\(14.400\\) km, no \\(120\\) km.",
+        "C": "Es un cálculo numérico sin sentido físico."
+      }
+    },
+    {
+      "id": "P-math-11-p1-13",
+      "numero": 13,
+      "enunciado": "<p>La figura está formada por los cuadrados <b>P</b> y <b>R</b> y por el triángulo rectángulo <b>S</b>. Si el área del cuadrado P es <b>\\(100\\ \\text{m}^2\\)</b> y el área del cuadrado R es <b>\\(64\\ \\text{m}^2\\)</b>, ¿cuál es el área total de la figura?</p>",
+      "opciones": {
+        "A": "\\(80\\ \\text{m}^2\\)",
+        "B": "\\(164\\ \\text{m}^2\\)",
+        "C": "\\(204\\ \\text{m}^2\\)",
+        "D": "\\(244\\ \\text{m}^2\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para hallar áreas de figuras compuestas, dadas algunas de sus medidas.",
+      "justificacion_correcta": "El lado de P es \\(\\sqrt{100} = 10\\) m y el de R es \\(\\sqrt{64} = 8\\) m. El triángulo rectángulo S comparte sus catetos con esos lados, así que mide \\(10\\) y \\(8\\); su área es \\(\\dfrac{10\\times 8}{2} = 40\\ \\text{m}^2\\). El área total es \\(100 + 64 + 40 = 204\\ \\text{m}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Toma solo el triángulo y, además, multiplica los catetos sin dividir entre \\(2\\) \\((10\\times 8 = 80)\\), ignorando los dos cuadrados.",
+        "B": "Suma únicamente las áreas de los dos cuadrados \\((100+64)\\) y olvida el triángulo.",
+        "D": "Suma los cuadrados pero calcula el triángulo sin dividir entre \\(2\\) \\((10\\times 8 = 80)\\): \\(100+64+80 = 244\\)."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q13.png"
+    },
+    {
+      "id": "P-math-11-p1-14",
+      "numero": 14,
+      "enunciado": "<p>La temperatura T (en grados centígrados) de un horno industrial durante los primeros minutos se modela con la expresión <b>\\(T = 2^{x+2} + 3\\)</b>, donde \\(x\\) es el tiempo en minutos desde que se enciende. ¿Cuál de las siguientes tablas presenta correctamente algunos valores de tiempo y temperatura?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T (°C)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T (°C)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T (°C)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">T (°C)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">19</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35</td></tr></table>"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La capacidad para calcular parejas ordenadas, relacionadas mediante funciones exponenciales en contextos aplicados.",
+      "justificacion_correcta": "Al evaluar \\(T = 2^{x+2} + 3\\): para \\(x=1\\), \\(2^3 + 3 = 8 + 3 = 11\\); para \\(x=2\\), \\(2^4 + 3 = 16 + 3 = 19\\); para \\(x=3\\), \\(2^5 + 3 = 32 + 3 = 35\\). La tabla correcta es la D.",
+      "opciones_incorrectas": {
+        "A": "Aplica una regla lineal (de la forma \\(2x+7\\)) en lugar de la exponencial: \\(9, 11, 13\\) crecen de dos en dos.",
+        "B": "Calcula solo \\(2^{x+2}\\) y olvida sumar la constante \\(3\\): \\(8, 16, 32\\).",
+        "C": "Acierta el primer valor \\((11)\\) pero luego suma de dos en dos \\((11, 13, 15)\\), ignorando el crecimiento exponencial."
+      }
+    },
+    {
+      "id": "P-math-11-p1-15",
+      "numero": 15,
+      "enunciado": "<p>La cantidad de litros de agua (en millones) que quedan en un embalse después de aplicar un plan de ahorro está dada por <b>\\(g(x) = 2 + \\sqrt{15 - x}\\)</b>, donde \\(x\\) es el número de semanas transcurridas desde que inició el plan. ¿Cuál es el conjunto de todos los valores de \\(x\\) para los cuales \\(g(x)\\) está definida?</p>",
+      "opciones": {
+        "A": "\\(x \\ge 15\\)",
+        "B": "\\(x > 15\\)",
+        "C": "\\(0 \\le x \\le 15\\)",
+        "D": "\\(0 < x < 15\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales.",
+      "que_evalua": "La capacidad para determinar el dominio de una función radical en un contexto aplicado.",
+      "justificacion_correcta": "La raíz cuadrada exige que \\(15 - x \\ge 0\\), es decir \\(x \\le 15\\). Además, como \\(x\\) cuenta semanas, debe ser \\(x \\ge 0\\). El dominio es entonces \\(0 \\le x \\le 15\\).",
+      "opciones_incorrectas": {
+        "A": "Invierte el sentido de la desigualdad bajo la raíz.",
+        "B": "Excluye \\(x = 15\\), donde la raíz vale \\(0\\) y la función está definida.",
+        "D": "Excluye los extremos del intervalo sin justificación."
+      }
+    },
+    {
+      "id": "P-math-11-p1-16",
+      "numero": 16,
+      "enunciado": "<p>En un juego se lanza un dado <b>dos veces</b>. Se gana si el número del <b>segundo</b> lanzamiento es <b>el doble</b> del número del <b>primer</b> lanzamiento. ¿Cuál es la probabilidad de ganar?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{2}{36}\\)",
+        "B": "\\(\\dfrac{3}{36}\\)",
+        "C": "\\(\\dfrac{4}{36}\\)",
+        "D": "\\(\\dfrac{6}{36}\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad.",
+      "que_evalua": "La capacidad para calcular la probabilidad de un evento en contextos usuales trabajados en el aula (dados, canicas, cartas, etc.).",
+      "justificacion_correcta": "Los pares (primero, segundo) en los que el segundo es el doble del primero son \\((1, 2)\\), \\((2, 4)\\) y \\((3, 6)\\); con \\(4\\), \\(5\\) o \\(6\\) el doble sería \\(8\\), \\(10\\) o \\(12\\), que no existen en un dado. Son \\(3\\) casos favorables sobre \\(36\\) resultados posibles: \\(\\dfrac{3}{36}\\).",
+      "opciones_incorrectas": {
+        "A": "Cuenta solo dos pares favorables y olvida uno de los tres que cumplen la condición.",
+        "C": "Sobrecuenta: agrega un par que no cumple que el segundo sea el doble del primero.",
+        "D": "Suma también los pares inversos \\((2, 1)\\), \\((4, 2)\\) y \\((6, 3)\\), en los que el segundo es la mitad, no el doble, del primero."
+      }
+    },
+    {
+      "id": "P-math-11-p1-17",
+      "numero": 17,
+      "enunciado": "<p>Un agente de negocios analizó las ventas mensuales de dos productos durante seis meses, como muestra la gráfica. De acuerdo con la información, ¿cuál de las siguientes afirmaciones es verdadera?</p>",
+      "opciones": {
+        "A": "Las ventas del producto 1 son directamente proporcionales al número del mes.",
+        "B": "Las ventas del producto 1 son inversamente proporcionales al número del mes.",
+        "C": "Las ventas del producto 2 son inversamente proporcionales al número del mes.",
+        "D": "Las ventas del producto 2 no guardan proporcionalidad con el número del mes."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables.",
+      "que_evalua": "La capacidad para reconocer relaciones de proporcionalidad entre variables que representan situaciones cotidianas.",
+      "justificacion_correcta": "Para el producto 1 el producto \\(\\text{ventas}\\times\\text{mes}\\) es constante: \\(60\\times 1 = 30\\times 2 = 20\\times 3 = 15\\times 4 = 12\\times 5 = 10\\times 6 = 60\\). Cuando el mes aumenta, las ventas disminuyen en esa misma proporción, así que las ventas del producto 1 son inversamente proporcionales al mes. (Para el producto 2, en cambio, el cociente \\(\\text{ventas}\\div\\text{mes}\\) es constante: \\(10\\div 1 = 20\\div 2 = \\dots = 60\\div 6 = 10\\), es decir, es directamente proporcional al mes.)",
+      "opciones_incorrectas": {
+        "A": "Las ventas del producto 1 disminuyen al avanzar el mes; una relación directa exigiría que aumentaran en la misma proporción.",
+        "C": "El producto 2 aumenta cuando el mes aumenta \\((\\text{ventas}\\div\\text{mes}\\text{ constante} = 10)\\), así que es directamente proporcional, no inversamente.",
+        "D": "El producto 2 sí guarda proporcionalidad: el cociente \\(\\text{ventas}\\div\\text{mes}\\) es constante e igual a \\(10\\)."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q17.png"
+    },
+    {
+      "id": "P-math-11-p1-18",
+      "numero": 18,
+      "enunciado": "<p>En la recta numérica se muestra la posición inicial de un saltamontes, en el punto <b>\\(3\\)</b>; las unidades están en metros. El saltamontes se mueve <b>\\(6\\) metros al oriente</b>, luego <b>\\(2\\) metros al occidente</b> y, finalmente, <b>\\(3\\) metros al oriente</b>. ¿Cuál de los siguientes procedimientos permite encontrar la posición final del saltamontes?</p>",
+      "opciones": {
+        "A": "Sumar 6 metros y 3 metros, restarle 2 metros y, por último, restarle la posición inicial de 3 metros.",
+        "B": "Sumar 6 metros y 3 metros, restarle 2 metros y, por último, sumarle la posición inicial de 3 metros.",
+        "C": "Sumar 6 metros y 2 metros, restarle 3 metros y, por último, restarle la posición inicial de 3 metros.",
+        "D": "Sumar 6 metros y 2 metros, restarle 3 metros y, por último, sumarle la posición inicial de 3 metros."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales).",
+      "que_evalua": "La capacidad para explicar las operaciones entre números enteros usando la recta numérica.",
+      "justificacion_correcta": "Tomando oriente como positivo y occidente como negativo, la posición final es \\(3 + 6 - 2 + 3 = 10\\). El procedimiento correcto suma los dos movimientos al oriente \\((6\\) y \\(3)\\), resta el movimiento al occidente \\((2)\\) y suma la posición inicial \\((3)\\).",
+      "opciones_incorrectas": {
+        "A": "Agrupa bien los movimientos (suma 6 y 3, resta 2) pero resta la posición inicial en lugar de sumarla, como si la partida fuera hacia el occidente.",
+        "C": "Equivoca los dos ejes: agrupa mal (suma 6 y 2, resta 3, intercambiando un movimiento al oriente con el del occidente) y además resta la posición inicial.",
+        "D": "Agrupa mal los movimientos (suma 6 y 2, resta 3, intercambiando oriente y occidente) aunque suma correctamente la posición inicial."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q18.png"
+    },
+    {
+      "id": "P-math-11-p1-19",
+      "numero": 19,
+      "enunciado": "<p>La figura muestra un cuadrilátero con sus lados rotulados <b>X, Y, Z</b> y <b>W</b>. En la base, los ángulos marcados indican que <b>Y</b> y <b>W</b> forman ángulo recto con el lado <b>X</b>. ¿Por qué los lados Y y W son <b>paralelos</b>?</p>",
+      "opciones": {
+        "A": "Porque el lado W mide lo mismo que el lado X.",
+        "B": "Porque el lado Y es perpendicular a X y el lado W también es perpendicular a X.",
+        "C": "Porque todo cuadrilátero tiene siempre dos lados paralelos.",
+        "D": "Porque un cuadrilátero con un ángulo recto siempre tiene lados paralelos."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para justificar relaciones de paralelismo entre segmentos de recta utilizando propiedades de los ángulos que componen las figuras planas.",
+      "justificacion_correcta": "Si dos rectas son perpendiculares a una misma tercera recta, entonces son paralelas entre sí. Como Y es perpendicular a X y W también es perpendicular a X, los lados Y y W son paralelos.",
+      "opciones_incorrectas": {
+        "A": "Que dos lados midan lo mismo no implica que sean paralelos.",
+        "C": "No todo cuadrilátero tiene lados paralelos (por ejemplo, un trapezoide).",
+        "D": "Tener un solo ángulo recto no garantiza que dos lados sean paralelos."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q19.png"
+    },
+    {
+      "id": "P-math-11-p1-20",
+      "numero": 20,
+      "enunciado": "<p>En una elipse, el <b>semieje mayor</b> es la mayor de las distancias que van del centro a un punto de la elipse, y el <b>semieje menor</b> es la menor de esas distancias (ver figura). Una persona afirma que, si el semieje mayor mide <b>lo mismo</b> que el semieje menor, entonces la elipse es una <b>circunferencia</b>. ¿Es verdadera esta afirmación?</p>",
+      "opciones": {
+        "A": "No, porque las distancias del centro a la elipse son siempre distintas, así que los semiejes nunca pueden ser iguales.",
+        "B": "No, porque la igualdad de los semiejes mayor y menor no garantiza que todas las distancias del centro a la curva sean iguales.",
+        "C": "Sí, porque toda distancia del centro a la curva está entre la del semieje menor y la del mayor; si esas dos son iguales, todas las distancias lo serán.",
+        "D": "Sí, porque una elipse en la que el semieje mayor es distinto del menor nunca puede ser una circunferencia."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo curvas y o lugares geométricos.",
+      "que_evalua": "La capacidad para deducir características de una cónica, dadas condiciones sobre su construcción.",
+      "justificacion_correcta": "Toda distancia del centro a la curva está comprendida entre la distancia mínima (semieje menor) y la máxima (semieje mayor). Si esas dos cotas son iguales, cualquier distancia intermedia debe ser igual a ellas, de modo que todos los puntos quedan a la misma distancia del centro: la curva es una circunferencia. La afirmación es verdadera por esta razón.",
+      "opciones_incorrectas": {
+        "A": "Afirma falsamente que las distancias son siempre distintas.",
+        "B": "Niega la conclusión, ignorando la propiedad de orden entre las distancias.",
+        "D": "Aunque concluye 'sí', justifica el caso de medidas diferentes, no el de igualdad pedido."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q20.png"
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+  <title>IDEA — Instrumento de Interpretación de Datos para la Evaluación del Aprendizaje</title>
+  <link rel="icon" type="image/png" href="assets/logo-idea.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/idea-custom.css">
+  <link rel="stylesheet" href="css/idea-v2.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+
+  <!-- =====================================================================
+       v10 (2026-06-07) — Réplica estructural de Stripe, recoloreada a IDEA:
+        LANDING: nav + seda GRANDE que fluye y sangra por el borde superior
+        derecho + titular grande + CTAs + franja + 3 fases.
+        ACCESO: tarjeta limpia y compacta sobre nube de puntos sutil + acento
+        holográfico. Paleta 100% cálida IDEA (rojo/coral/naranja/ámbar/dorado).
+       ===================================================================== -->
+  <style>
+    .idx3{ --ink:#1B1726; --navy:#241B33; --muted:#6B6478; --line:#EEEAF2;
+      --red:#E11D48; --red2:#C7163C;
+      margin:0;min-height:100vh;background:#fff;color:var(--ink);
+      font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;}
+    .idx-view{animation:vIn .5s cubic-bezier(.2,.7,.2,1) both}@keyframes vIn{from{opacity:0}to{opacity:1}}
+    .hidden{display:none!important}
+
+    /* botones */
+    .idx3 .b-prim{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border:none;border-radius:11px;font-weight:700;font-size:14.5px;color:#fff;cursor:pointer;text-decoration:none;background:linear-gradient(118deg,#E11D48,#C7163C);box-shadow:0 12px 26px -12px rgba(225,29,72,.6),inset 0 1px 0 rgba(255,255,255,.22);transition:transform .16s,box-shadow .16s}
+    .idx3 .b-prim:hover{transform:translateY(-2px);box-shadow:0 18px 34px -14px rgba(225,29,72,.62)}
+    .idx3 .b-ghost{display:inline-flex;align-items:center;gap:7px;padding:11px 20px;border:1.5px solid var(--line);border-radius:11px;font-weight:600;font-size:14px;color:var(--navy);background:#fff;cursor:pointer;text-decoration:none;transition:border-color .16s,box-shadow .16s}
+    .idx3 .b-ghost:hover{border-color:#E0D9E8;box-shadow:0 8px 20px -12px rgba(27,23,38,.28)}
+
+    /* ===== TOP (nav + hero) con SEDA que sangra por el borde superior derecho ===== */
+    .idx-top{position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column}
+    /* Canvas del degradado MESH real (técnica Stripe / whatamesh), recoloreado a IDEA.
+       Se difumina en los bordes con una máscara para fundirse con el blanco de la página. */
+    .idx-silk{position:absolute;top:-14%;right:-10%;width:55%;height:148%;z-index:0;pointer-events:none;display:block;opacity:.92;
+      --gradient-color-1:#C2410C;--gradient-color-2:#B45309;--gradient-color-3:#9F1239;--gradient-color-4:#DE8A66;
+      -webkit-mask-image:radial-gradient(125% 135% at 96% 14%,#000 22%,transparent 70%);
+      mask-image:radial-gradient(125% 135% at 96% 14%,#000 22%,transparent 70%)}
+    .idx-burst{position:absolute;top:-6%;right:2%;width:48%;height:96%;z-index:1;pointer-events:none;overflow:visible;opacity:.85}
+
+    .idx-nav{position:relative;z-index:4;background:#0E0E12}
+    .idx-nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:13px 32px}
+    .idx-nav .brand{display:flex;align-items:center;gap:10px}.idx-nav .brand img{height:30px;background:#fff;border-radius:6px;padding:2px 4px}.idx-nav .brand b{font-weight:700;font-size:16px;color:#fff;letter-spacing:-.01em}
+    .idx-nav-links{display:flex;align-items:center;gap:26px}
+    .idx-nav-links a.lnk{font-size:14px;font-weight:600;color:#fff;text-decoration:none;opacity:.82}
+    .idx-nav-links a.lnk:hover{opacity:1}
+    .idx-nav .b-prim{padding:10px 19px;font-size:14px}
+
+    .idx-hero{position:relative;z-index:2;flex:1;width:100%;max-width:1400px;margin:0 auto;padding:8px 56px;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:stretch}
+    .idx-hero-inner{position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(6px,2vh,28px) 0 clamp(150px,22vh,260px)}
+    .idx-hero-top{display:flex;flex-direction:column}
+    .idx-scroll{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:4px;margin:2px auto 8px;color:var(--muted);font-size:12.5px;font-weight:600;text-decoration:none;letter-spacing:.02em}
+    .idx-scroll span{font-size:18px;animation:idxBounce 1.8s ease-in-out infinite}
+    @keyframes idxBounce{0%,100%{transform:translateY(0);opacity:.7}50%{transform:translateY(5px);opacity:1}}
+    .idx-hero-inner{max-width:560px}
+    .idx-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:var(--red2);background:rgba(253,236,239,.85);border:1px solid #F8D2DA;border-radius:999px;padding:6px 14px;margin-bottom:22px}
+    .idx-hero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(56px,7.4vw,100px);line-height:.96;letter-spacing:-.03em;color:var(--navy);margin:0 0 26px}
+    .idx-hero h1 .grad{background:linear-gradient(110deg,#E11D48,#FB923C);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .idx-lead{font-size:19.5px;line-height:1.62;color:#463F52;max-width:46ch;margin:0}
+    .idx-cta-row{display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+    .idx-hero-visual{position:relative;display:flex;align-items:center;justify-content:center}
+    .idx-hero-visual .bub{background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.85);border-radius:16px 16px 16px 4px;padding:12px 16px;font-size:13.5px;line-height:1.5;color:#4A4458;box-shadow:0 18px 40px -20px rgba(27,23,38,.4);max-width:300px;text-align:center}
+    .idx-hero-visual .bub b{color:var(--red2)}
+
+    /* franja propósito */
+    .idx-trust{max-width:1100px;margin:0 auto;padding:15px 32px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;border-top:1px solid var(--line)}
+    .idx-trust span{font-size:13px;font-weight:600;color:#6B6478;display:inline-flex;align-items:center;gap:8px}
+    .idx-trust span::before{content:"";width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#E11D48,#FB923C)}
+
+    /* momentos */
+    .idx-moments{max-width:1180px;margin:0 auto;padding:24px 32px 18px}
+    .idx-moments .head{text-align:center;margin-bottom:18px}
+    .idx-moments .head .ey{font-size:12.5px;font-weight:700;color:var(--red2);letter-spacing:.06em}
+    .idx-moments .head h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(26px,3.2vw,34px);letter-spacing:-.02em;color:var(--navy);margin:5px 0 0}
+    .idx-moments .head p{font-size:14.5px;color:var(--muted);margin:9px auto 0;max-width:54ch}
+    .idx-moments-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .idx-moment{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:0 18px 40px -30px rgba(27,23,38,.3);transition:transform .25s,box-shadow .25s;overflow:hidden}
+    .idx-moment::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px}
+    .idx-moment.m1::before{background:linear-gradient(90deg,#E11D48,#FB7185)}
+    .idx-moment.m2::before{background:linear-gradient(90deg,#F59E0B,#FBBF24)}
+    .idx-moment.m3::before{background:linear-gradient(90deg,#EA580C,#B45309)}
+    .idx-moment:hover{transform:translateY(-5px);box-shadow:0 30px 56px -28px rgba(27,23,38,.4)}
+    .idx-moment .n{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-weight:800;font-size:18px;color:#fff;margin-bottom:14px}
+    .idx-moment.m1 .n{background:linear-gradient(135deg,#E11D48,#BE123C)}
+    .idx-moment.m2 .n{background:linear-gradient(135deg,#F59E0B,#D97706)}
+    .idx-moment.m3 .n{background:linear-gradient(135deg,#EA580C,#9A3412)}
+    .idx-moment h4{font-weight:700;font-size:16px;margin:0 0 1px;color:var(--navy)}
+    .idx-moment .lema{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#A79FB0;margin-bottom:9px}
+    .idx-moment p{font-size:13.5px;line-height:1.58;color:var(--muted);margin:0}
+    /* Sabio reubicado: pequeño saludo en la columna izquierda del hero */
+    .idx-sabio-min{position:absolute;left:0;bottom:5%;display:flex;align-items:center;gap:18px;max-width:540px}
+    .idx-sabio-min #mascota-hero{position:relative;flex-shrink:0;animation:sabioFloat 4s ease-in-out infinite;filter:drop-shadow(0 10px 22px rgba(124,58,237,.24))}
+    @keyframes sabioFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .idx-sabio-min #mascota-hero::before{content:"";position:absolute;inset:-12%;z-index:-1;background:radial-gradient(circle,rgba(124,58,237,.18),transparent 68%);filter:blur(16px)}
+    .idx-sabio-min .bub{position:relative;max-width:340px;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border:1px solid #EFE0D8;border-radius:16px 16px 16px 5px;padding:13px 17px;font-size:14.5px;line-height:1.5;color:#3A3346;box-shadow:0 16px 36px -22px rgba(80,40,30,.4)}
+    .idx-sabio-min .bub::after{content:"● Sabio · IA";position:absolute;top:-11px;left:16px;font-size:9.5px;font-weight:800;letter-spacing:.06em;color:#fff;background:linear-gradient(135deg,#E11D48,#EA580C);padding:3px 10px;border-radius:999px;box-shadow:0 6px 14px -4px rgba(225,29,72,.5)}
+    .idx-sabio-min .bub b{color:#E11D48}
+    .idx-sabio-min .bub b{color:var(--red2)}
+    /* Ciclo INTERACTIVO (recycle): flechas gruesas que se juntan + texto CURVO dentro; pulso que recorre el ciclo */
+    .idx-ciclo2{position:relative;width:100%;max-width:592px;margin:0 auto;aspect-ratio:1/1;animation:c2Float 7s ease-in-out infinite}
+    @keyframes c2Float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    /* Halo cálido que gira lentamente detrás del ciclo (movimiento ambiental, no toca el texto) */
+    .idx-ciclo2::before{content:"";position:absolute;inset:-7%;border-radius:50%;z-index:-1;pointer-events:none;background:conic-gradient(from 0deg,transparent 0deg,rgba(225,29,72,.2) 50deg,transparent 120deg,transparent 180deg,rgba(251,191,36,.22) 230deg,transparent 300deg,transparent 360deg);filter:blur(26px);animation:c2spin 16s linear infinite}
+    @keyframes c2spin{to{transform:rotate(360deg)}}
+    .idx-ciclo2 #ciclo2-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+    .c2-arc{cursor:pointer}
+    .c2-arc .c2-band{transition:opacity .25s,filter .25s;animation:c2pulse 4.5s ease-in-out infinite}
+    @keyframes c2pulse{0%,100%{filter:brightness(.86) drop-shadow(0 5px 12px rgba(80,20,10,.28))}50%{filter:brightness(1.2) drop-shadow(0 9px 20px rgba(80,20,10,.4))}}
+    .c2-arc:hover .c2-band,.c2-arc.c2-on .c2-band{animation:none;filter:brightness(1.15) drop-shadow(0 10px 22px rgba(80,20,10,.4))}
+    .c2-arc.c2-dim .c2-band{animation:none;opacity:.34;filter:saturate(.85) brightness(.85)}
+    .c2-titulo{fill:#fff;font-family:'Inter',system-ui,sans-serif;font-weight:700;font-size:10px;letter-spacing:.01em;pointer-events:none;text-shadow:0 1px 3px rgba(0,0,0,.35)}
+    .c2-titulo .c2-num{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:13px}
+    .c2-arc.c2-dim .c2-titulo{opacity:.4}
+    .c2-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:54%;aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none;background:radial-gradient(circle at 50% 30%,rgba(74,47,55,.54),rgba(13,6,11,.7) 80%);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.2);border-radius:50%;padding:0 7.5%;box-shadow:0 30px 74px -28px rgba(16,7,13,.74),inset 0 2px 16px rgba(255,255,255,.13),inset 0 -16px 36px rgba(0,0,0,.4)}
+    .c2-center .ey{display:block;font-size:10px;font-weight:700;letter-spacing:.1em;color:#FBBF24;margin-bottom:3px;transition:color .2s}
+    .c2-center b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16.5px;line-height:1.08;color:#fff}
+    .c2-center p{font-size:13px;line-height:1.46;color:#fff;margin:7px 0 0}
+
+    .idx-cta-final{max-width:1180px;margin:0 auto;padding:14px 32px 36px;text-align:center}
+    .idx-cta-final .box{position:relative;overflow:hidden;background:linear-gradient(120deg,#2A1015,#3A1620);border-radius:22px;padding:38px 28px;color:#fff}
+    .idx-cta-final .box::after{content:"";position:absolute;right:-8%;top:-50%;width:46%;height:200%;background:radial-gradient(circle,rgba(251,191,36,.34),transparent 60%);filter:blur(40px)}
+    .idx-cta-final h3{position:relative;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,3vw,30px);letter-spacing:-.015em;margin:0 0 6px}
+    .idx-cta-final p{position:relative;color:rgba(255,255,255,.8);font-size:14.5px;margin:0 0 18px}
+    .idx-cta-final .b-prim{position:relative;background:#fff;color:#C7163C}
+    .idx-foot{text-align:center;padding:18px;color:#9C95A6;font-size:12px}.idx-foot a{color:var(--red2);text-decoration:none}
+
+    /* ===== ACCESO: tarjeta limpia + nube de puntos sutil + acento holográfico ===== */
+    .idx-login-stage{min-height:100vh;display:flex;flex-direction:column;position:relative;overflow:hidden;
+      background:radial-gradient(48% 44% at 84% 4%, rgba(194,65,12,.13), transparent 60%),radial-gradient(46% 42% at 8% 96%, rgba(159,18,57,.11), transparent 60%),radial-gradient(54% 48% at 50% 52%, rgba(222,138,102,.06), transparent 66%),#FFFCFA}
+    .idx-login-main{flex:1;display:flex;align-items:center;justify-content:center;padding:24px;position:relative;z-index:1}
+    .idx-login-stage .idx-foot{position:relative;z-index:3}
+    .idx-login-stage .idx-nav .brand img{height:26px}
+    .idx-login-spray{position:absolute;inset:0;z-index:1;width:100%;height:100%;opacity:.7}
+    .idx-login-bg{position:absolute;inset:0;z-index:0;width:100%;height:100%;opacity:.5;
+      --gradient-color-1:#E9CBA4;--gradient-color-2:#DE8A66;--gradient-color-3:#C2410C;--gradient-color-4:#9F1239;
+      -webkit-mask-image:radial-gradient(82% 84% at 50% 46%,transparent 26%,#000 76%);
+      mask-image:radial-gradient(82% 84% at 50% 46%,transparent 26%,#000 76%)}
+    .idx-back{position:absolute;top:20px;left:22px;z-index:3;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--muted);background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:10px;padding:8px 13px;cursor:pointer;text-decoration:none}
+    .idx-back:hover{color:var(--navy)}
+    .idx-login-card{position:relative;z-index:1;display:grid;grid-template-columns:.92fr 1.08fr;width:min(860px,100%);background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 48px 110px -40px rgba(27,23,38,.5),0 6px 18px -10px rgba(0,0,0,.07)}
+    .idx-login-visual{position:relative;overflow:hidden;color:#3B2E33;padding:34px 30px;display:flex;flex-direction:column;min-height:430px;border-right:1px solid #F2E6DF;
+      background:linear-gradient(162deg,#FFFFFF 0%,#FFF6F1 48%,#FAE7DF 100%)}
+    .idx-login-visual::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(58% 46% at 82% 6%,rgba(226,124,79,.16),transparent 62%),radial-gradient(52% 50% at 4% 98%,rgba(159,18,57,.09),transparent 62%)}
+    .idx-login-visual>*{position:relative;z-index:2}
+    .idx-login-visual .vlogo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px;color:#7E1D33}
+    .idx-login-visual .vlogo img{height:24px}
+    .idx-login-visual .vsabio{display:grid;place-items:center;margin:auto 0 6px}
+    .idx-login-visual h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:25px;letter-spacing:-.02em;margin:6px 0 7px;color:var(--navy)}
+    .idx-login-visual p{font-size:13px;line-height:1.58;color:#6E5C57;margin:0 0 14px}
+    .idx-login-visual .vchips{display:flex;gap:6px;flex-wrap:wrap}
+    .idx-login-visual .vchips span{font-size:10.5px;font-weight:600;padding:5px 11px;border-radius:999px;background:#fff;border:1px solid #EDD9D0;color:#9A3412;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .idx-login-body{padding:34px 34px;display:flex;flex-direction:column;justify-content:center;overflow-y:auto;max-height:92vh}
+    .idx-login-body h2{font-weight:800;font-size:21px;letter-spacing:-.02em;margin:0 0 2px;color:var(--navy)}
+    .idx-login-body .cap{font-size:12.5px;color:var(--muted);margin:0 0 18px}
+    @media (max-width:760px){.idx-login-card{grid-template-columns:1fr}.idx-login-visual{min-height:auto;padding:22px}}
+    .idx3 .idx-tabs{display:flex;gap:4px;background:#F5F1F8;padding:4px;border-radius:11px;margin-bottom:16px}
+    .idx3 .idx-tabs button{flex:1;border:none;background:transparent;padding:9px;border-radius:8px;font-weight:600;font-size:13px;color:var(--muted);cursor:pointer;transition:all .18s}
+    .idx3 .idx-tabs button.activo{background:#fff;color:var(--navy);box-shadow:0 2px 8px -3px rgba(27,23,38,.22)}
+    .idx3 .label-idea{font-size:11.5px;font-weight:600;color:#4C4660;margin-bottom:5px;display:block}
+    .idx3 .input-idea{width:100%;box-sizing:border-box;padding:10px 12px;border:1.5px solid var(--line);border-radius:9px;font-size:13.5px;color:var(--ink);background:#fff;transition:border-color .15s,box-shadow .15s;outline:none}
+    .idx3 .input-idea::placeholder{color:#ABA4B6}
+    .idx3 .input-idea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(225,29,72,.13)}
+    .idx3 .btn-idea{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;border:none;border-radius:11px;font-weight:700;font-size:14.5px;color:#fff;cursor:pointer;background:linear-gradient(118deg,#E11D48,#C7163C);box-shadow:0 12px 24px -12px rgba(225,29,72,.6);transition:transform .15s,box-shadow .15s}
+    .idx3 .btn-idea:hover{transform:translateY(-1px);box-shadow:0 18px 30px -14px rgba(225,29,72,.6)}
+
+    @media (max-width:900px){ .idx-hero{grid-template-columns:1fr;gap:10px} .idx-hero h1{font-size:38px} .idx-silk{width:120%;right:-30%;opacity:.5} .idx-sabio-min{position:static;margin-top:22px} .idx-hero-inner{padding:0} }
+    @media (prefers-reduced-motion:reduce){.idx-silk,.idx-view{animation:none}}
+  </style>
+</head>
+<body class="idx3">
+
+  <!-- =================== VISTA 1: LANDING (réplica Stripe, cálida) =================== -->
+  <div id="view-landing" class="idx-view">
+    <div class="idx-top">
+      <canvas class="idx-silk" id="silk-canvas" aria-hidden="true"></canvas>
+      <svg class="idx-burst" id="idx-burst" viewBox="0 0 460 460" aria-hidden="true"></svg>
+
+      <header class="idx-nav">
+        <div class="idx-nav-inner">
+          <div class="brand"><img src="assets/logo-idea.png" alt="Logo IDEA"><b>Instrumento IDEA</b></div>
+          <nav class="idx-nav-links">
+            <a class="b-prim" data-goto="login" href="#acceso">Iniciar sesión</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="idx-hero">
+        <div class="idx-hero-inner">
+          <div class="idx-hero-top">
+            <div class="idx-eyebrow">✦ Evaluación diagnóstica · ciclo de tres fases</div>
+            <h1>Del dato a la <span class="grad">acción pedagógica</span>.</h1>
+            <p class="idx-lead">Instrumento IDEA es la plataforma que articula la evaluación diagnóstica, el análisis pedagógico y la mejora institucional en un ciclo continuo de aprendizaje.</p>
+          </div>
+          <div class="idx-sabio-min">
+            <div id="mascota-hero"></div>
+            <div class="bub" id="hero-bubble"></div>
+          </div>
+        </div>
+        <div class="idx-hero-visual">
+          <div class="idx-ciclo2">
+            <svg id="ciclo2-svg" viewBox="0 0 360 360"></svg>
+            <div class="c2-center" id="c2-center"></div>
+          </div>
+        </div>
+      </main>
+
+      <div class="idx-trust">
+        <span>Alineado al marco del ICFES</span>
+        <span>Diagnóstico por competencias</span>
+        <span>Reportes accionables</span>
+        <span>Plan de mejora y seguimiento</span>
+      </div>
+    </div>
+
+    <div class="idx-cta-final">
+      <div class="box">
+        <h3>Empieza a transformar tus datos en aprendizajes</h3>
+        <p>Ingresa con la cuenta de tu institución y deja que Sabio te acompañe en cada fase.</p>
+        <a class="b-prim" data-goto="login" href="#acceso">Iniciar sesión →</a>
+      </div>
+    </div>
+    <footer class="idx-foot">© Instrumento IDEA — Álvaro Raúl Córdoba Belalcázar · <a href="mailto:raulcordmath@gmail.com">raulcordmath@gmail.com</a></footer>
+  </div>
+
+  <!-- =================== VISTA 2: ACCESO (tarjeta limpia + puntos) =================== -->
+  <div id="view-login" class="idx-view hidden">
+    <div class="idx-login-stage">
+      <header class="idx-nav">
+        <div class="idx-nav-inner">
+          <div class="brand"><img src="assets/logo-idea.png" alt="Logo IDEA"><b>Instrumento IDEA</b></div>
+          <nav class="idx-nav-links"><a class="lnk" data-goto="landing" href="#">← Volver</a></nav>
+        </div>
+      </header>
+      <canvas class="idx-login-bg" id="login-bg" aria-hidden="true"></canvas>
+      <svg class="idx-login-spray" id="login-spray" viewBox="0 0 700 700" aria-hidden="true"></svg>
+      <div class="idx-login-main">
+      <div class="idx-login-card">
+        <aside class="idx-login-visual">
+          <div class="vlogo"><img src="assets/logo-idea.png" alt=""> Instrumento IDEA</div>
+          <div class="vsabio" id="login-sabio"></div>
+          <h3 id="login-greet-title">¡Hola! Soy Sabio</h3>
+          <p id="login-greet-sub">Bienvenido al Instrumento IDEA. Te acompaño a convertir cada dato en aprendizajes para el aula.</p>
+          <div class="vchips"><span>I · Aplicación</span><span>II · Análisis</span><span>III · Acción</span></div>
+        </aside>
+        <div class="idx-login-body">
+          <h2>Bienvenido de nuevo</h2>
+          <p class="cap">Ingresa con tu cuenta para continuar.</p>
+          <div class="tabs-login idx-tabs">
+            <button class="activo" data-tab="login">Iniciar sesión</button>
+            <button data-tab="registro">Registrarse</button>
+          </div>
+          <form id="form-login" class="tab-contenido">
+            <div class="mb-3"><label class="label-idea">Usuario, documento o correo</label><input type="text" name="identificador" class="input-idea" placeholder="Tu usuario o documento" required></div>
+            <div class="mb-4"><label class="label-idea">Contraseña</label><input type="password" name="password" class="input-idea" placeholder="Tu contraseña" required></div>
+            <button type="submit" class="btn-idea">Ingresar →</button>
+            <p id="err-login" class="text-red-600 text-sm mt-3 text-center"></p>
+          </form>
+          <form id="form-registro" class="tab-contenido hidden">
+            <div class="mb-3"><label class="label-idea">Nombre completo</label><input type="text" name="nombre_completo" class="input-idea" required></div>
+            <div class="grid grid-cols-2 gap-3 mb-3">
+              <div><label class="label-idea">Tipo doc</label><select name="tipo_documento" class="input-idea" required><option value="CC">CC</option><option value="TI">TI</option><option value="CE">CE</option><option value="RC">RC</option></select></div>
+              <div><label class="label-idea">Número documento</label><input type="text" name="numero_documento" class="input-idea" required></div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-3">
+              <div><label class="label-idea">Sexo</label><select name="sexo" class="input-idea" required><option value="M">Masculino</option><option value="F">Femenino</option><option value="N">No especifica</option></select></div>
+              <div><label class="label-idea">Rol</label><select name="rol" class="input-idea" required id="select-rol"><option value="estudiante">Estudiante</option><option value="docente">Docente</option><option value="directivo">Directivo</option><option value="funcionario">Funcionario</option></select></div>
+            </div>
+            <div class="mb-3"><label class="label-idea">Correo</label><input type="email" name="email" class="input-idea" required></div>
+            <div class="mb-3"><label class="label-idea">Contraseña (mín 6)</label><input type="password" name="password" class="input-idea" required></div>
+            <div class="mb-3"><label class="label-idea">Institución</label><select name="institucion_id" class="input-idea" id="select-institucion"></select></div>
+            <div class="grid grid-cols-2 gap-3 mb-4" id="campos-estudiante">
+              <div><label class="label-idea">Grado</label><select name="grado" class="input-idea"><option value="">--</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+              <div><label class="label-idea">Grupo</label><input type="text" name="grupo" class="input-idea" placeholder="A, B, 1°..."></div>
+            </div>
+            <button type="submit" class="btn-idea">Crear cuenta</button>
+            <p id="err-registro" class="text-red-600 text-sm mt-3 text-center"></p>
+          </form>
+        </div>
+      </div>
+      </div>
+      <footer class="idx-foot">© Instrumento IDEA — Álvaro Raúl Córdoba Belalcázar · <a href="mailto:raulcordmath@gmail.com">raulcordmath@gmail.com</a></footer>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+  <script type="module">
+    import { db } from './js/db.js';
+    import './js/guia-sabio.js';
+    import { registrar, iniciarSesion, obtenerSesion } from './js/auth.js';
+    import { toast } from './js/utils.js';
+    import { sabioSVG } from './js/sabio.js?v=v10';
+    import { Gradient } from './js/mesh-gradient.js';
+
+    // Degradado MESH animado (la técnica real de Stripe, whatamesh), recoloreado a IDEA.
+    let _heroMesh = null;
+    try { _heroMesh = new Gradient(); _heroMesh.initGradient('#silk-canvas'); } catch (e) { console.warn('mesh gradient:', e); }
+
+    // Estallido de datos cálido y delicado, alineado a la seda del hero.
+    (function(){ const el=document.getElementById('idx-burst'); if(!el) return;
+      const cols=['#FBBF24','#FB7185','#E11D48','#FB923C','#F59E0B']; const cx=230,cy=230; let s='';
+      for(let i=0;i<140;i++){ const a=Math.random()*Math.PI*2; const r=40+Math.pow(Math.random(),0.65)*180;
+        const x=cx+Math.cos(a)*r, y=cy+Math.sin(a)*r; const fade=1-(r-40)/180; const op=(0.08+Math.max(0,fade)*0.42).toFixed(2);
+        s+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(0.7+Math.random()*1.7).toFixed(1)}" fill="${cols[i%cols.length]}" opacity="${op}"/>`; }
+      el.innerHTML=s; })();
+
+    document.getElementById('mascota-hero').innerHTML = sabioSVG('saludando', 150);
+
+    // Ciclo INTERACTIVO (recycle): flechas gruesas que se juntan + texto CURVO dentro; hover previsualiza, clic fija.
+    (function ciclo2(){
+      const svg=document.getElementById('ciclo2-svg'); if(!svg) return;
+      const FASES=[
+        {num:'I',t:'Aplicación',l:'Los datos',d:'El estudiante presenta la prueba diagnóstica. El sistema sistematiza, diagnostica y focaliza los resultados para pasar del dato a la acción pedagógica inmediata.',c1:'#FB7185',c2:'#E11D48'},
+        {num:'II',t:'Análisis y Planeación',l:'El saber',d:'Los docentes revisan los resultados, identifican fortalezas y oportunidades de mejora, y proponen estrategias didácticas que se traducen en acciones concretas y focalizadas.',c1:'#FBBF24',c2:'#F59E0B'},
+        {num:'III',t:'Implementación y Acción',l:'La intervención',d:'Las estrategias llegan al aula y a los ajustes curriculares del SIEE, las mallas de aprendizaje y el PEI institucional.',c1:'#FB923C',c2:'#EA580C'}
+      ];
+      const cx=180,cy=180,R=131,bw=21,barb=29,head=22;
+      const angs=[[212,328],[332,448],[92,208]]; // I arriba, II derecha, III izquierda (flechas que se juntan)
+      const P=(r,deg)=>{const a=deg*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
+      const F=(p)=>`${p[0].toFixed(1)} ${p[1].toFixed(1)}`;
+      const ri=R-bw, ro=R+bw;
+      const flecha=(a1,a2)=>{ const base=a2-head;
+        return `M ${F(P(ro,a1))} A ${ro} ${ro} 0 0 1 ${F(P(ro,base))} L ${F(P(R+barb,base))} L ${F(P(R,a2))} L ${F(P(R-barb,base))} L ${F(P(ri,base))} A ${ri} ${ri} 0 0 0 ${F(P(ri,a1))} Z`; };
+      // Trayectoria del texto CURVO dentro de cada flecha (la III se invierte para leerse bien abajo).
+      const textArc=(i,a1,a2)=>{ if(i===2){ const s=a2-12,e=a1+18; return `M ${F(P(R,s))} A ${R} ${R} 0 0 0 ${F(P(R,e))}`; }
+        const s=a1+12,e=a2-18; return `M ${F(P(R,s))} A ${R} ${R} 0 0 1 ${F(P(R,e))}`; };
+      let defs='',body='';
+      FASES.forEach((f,i)=>{ const[a,b]=angs[i];
+        defs+=`<linearGradient id="c2g${i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${f.c1}"/><stop offset="1" stop-color="${f.c2}"/></linearGradient>`;
+        defs+=`<path id="c2tp${i}" d="${textArc(i,a,b)}"/>`;
+        body+=`<g class="c2-arc" data-f="${i}">
+          <path class="c2-band" d="${flecha(a,b)}" fill="url(#c2g${i})" style="animation-delay:${(i*1.5).toFixed(1)}s"/>
+          <text class="c2-titulo" dy="3.6"><textPath href="#c2tp${i}" startOffset="50%" text-anchor="middle"><tspan class="c2-num">${f.num}</tspan>  ${f.t}</textPath></text>
+        </g>`;
+      });
+      svg.innerHTML=`<defs>${defs}</defs>${body}`;
+      const center=document.getElementById('c2-center');
+      const DEF='<span class="ey">CÓMO FUNCIONA</span><b>Ciclo continuo de tres fases</b><p>Pasa el cursor o toca una fase.</p>';
+      center.innerHTML=DEF;
+      const grupos=[...svg.querySelectorAll('.c2-arc')];
+      let pinned=null;
+      const render=(i)=>{
+        if(i==null){ center.innerHTML=DEF; grupos.forEach(g=>g.classList.remove('c2-on','c2-dim')); return; }
+        const f=FASES[i]; center.innerHTML=`<span class="ey" style="color:${f.c1}">${f.num} · ${f.l}</span><b>${f.t}</b><p>${f.d}</p>`;
+        grupos.forEach((g,j)=>{ g.classList.toggle('c2-on',j===i); g.classList.toggle('c2-dim',j!==i); });
+      };
+      const preview=(i)=>{ if(pinned===null) render(i); };
+      const unpreview=()=>{ render(pinned); };
+      const toggle=(i)=>{ pinned=(pinned===i?null:i); render(pinned); };
+      grupos.forEach((g,i)=>{
+        g.addEventListener('mouseenter',()=>preview(i)); g.addEventListener('mouseleave',unpreview);
+        g.addEventListener('click',(e)=>{e.stopPropagation();toggle(i);});
+      });
+      document.addEventListener('click',(e)=>{ if(pinned!==null && !e.target.closest('.idx-ciclo2')){ pinned=null; render(null); } });
+    })();
+
+    // Presentación de Sabio: la burbuja del hero cicla mensajes; se PAUSA al entrar al acceso.
+    const bubble=document.getElementById('hero-bubble');
+    const msgs=['<b>¡Hola! Soy Sabio</b>, la IA del Instrumento IDEA.','Convierto cada dato en mejores aprendizajes para el aula.','Pulsa <b>Iniciar sesión</b> y empezamos.'];
+    let mi=0, _bubbleTimer=null;
+    bubble.style.transition='opacity .4s'; bubble.innerHTML=msgs[0];
+    function _startBubble(){ if(_bubbleTimer) return; _bubbleTimer=setInterval(()=>{ mi=(mi+1)%msgs.length; bubble.style.opacity=0; setTimeout(()=>{bubble.innerHTML=msgs[mi];bubble.style.opacity=1;},260); }, 4200); }
+    function _stopBubble(){ if(_bubbleTimer){ clearInterval(_bubbleTimer); _bubbleTimer=null; } }
+    _startBubble();
+
+    (function(){ const el=document.getElementById('login-spray'); if(!el) return;
+      const cols=['#FB7185','#FBBF24','#FB923C','#F43F5E']; let s='';
+      for(let i=0;i<110;i++){ const x=Math.random()*700,y=Math.random()*700; const d=Math.hypot(x-350,y-350);
+        const op=(0.04+Math.max(0,1-d/420)*0.22).toFixed(2);
+        s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(0.7+Math.random()*1.5).toFixed(1)}" fill="${cols[i%cols.length]}" opacity="${op}"/>`; }
+      el.innerHTML=s; })();
+    document.getElementById('login-sabio').innerHTML = sabioSVG('saludando', 110);
+
+    let _loginMesh=null;
+    function goTo(v){ const L=document.getElementById('view-landing'),G=document.getElementById('view-login');
+      if(v==='login'){ L.classList.add('hidden'); G.classList.remove('hidden'); G.style.animation='none';void G.offsetWidth;G.style.animation='';
+        try{ _heroMesh && _heroMesh.pause && _heroMesh.pause(); }catch(e){}
+        _stopBubble();
+        try{ if(!_loginMesh){ _loginMesh=new Gradient(); _loginMesh.initGradient('#login-bg'); } else if(_loginMesh.play){ _loginMesh.play(); } }catch(e){ console.warn('login bg:',e); } }
+      else { G.classList.add('hidden'); L.classList.remove('hidden');
+        try{ _loginMesh && _loginMesh.pause && _loginMesh.pause(); }catch(e){}
+        try{ _heroMesh && _heroMesh.play && _heroMesh.play(); }catch(e){}
+        _startBubble(); }
+      window.scrollTo(0,0); }
+    document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();goTo(b.dataset.goto);}));
+
+    const REDIRECT_POR_ROL={estudiante:'estudiante.html',docente:'docente.html',directivo:'directivo.html',funcionario:'directivo.html',manager:'manager.html'};
+    const ses=await obtenerSesion(); if(ses) window.location.href=REDIRECT_POR_ROL[ses.rol];
+    await db.inicializar();
+    try{ const insts=await db.lista('idea_instituciones'); const sel=document.getElementById('select-institucion');
+      insts.forEach(i=>{const o=document.createElement('option');o.value=i.id;o.textContent=i.abreviatura;sel.appendChild(o);}); }catch(e){console.warn(e.message);}
+    document.querySelectorAll('.tabs-login button').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tabs-login button').forEach(b=>b.classList.remove('activo')); btn.classList.add('activo');
+      const t=btn.dataset.tab; document.getElementById('form-login').classList.toggle('hidden',t!=='login'); document.getElementById('form-registro').classList.toggle('hidden',t!=='registro'); }));
+    document.getElementById('select-rol').addEventListener('change',e=>{document.getElementById('campos-estudiante').style.display=e.target.value==='estudiante'?'':'none';});
+    document.getElementById('form-login').addEventListener('submit',async e=>{ e.preventDefault(); const fd=new FormData(e.target);
+      try{ const s=await iniciarSesion({identificador:fd.get('identificador'),password:fd.get('password')});
+        document.getElementById('login-sabio').innerHTML=sabioSVG('celebrando',86); toast(`¡Bienvenido, ${s.nombre_completo.split(' ')[0]}!`,'exito');
+        setTimeout(()=>window.location.href=REDIRECT_POR_ROL[s.rol],850);
+      }catch(err){ document.getElementById('err-login').textContent=err.message; document.getElementById('login-sabio').innerHTML=sabioSVG('pensativo',86);} });
+    document.getElementById('form-registro').addEventListener('submit',async e=>{ e.preventDefault(); const fd=new FormData(e.target);
+      try{ await registrar({nombre_completo:fd.get('nombre_completo'),tipo_documento:fd.get('tipo_documento'),numero_documento:fd.get('numero_documento'),sexo:fd.get('sexo'),email:fd.get('email'),password:fd.get('password'),rol:fd.get('rol'),institucion_id:fd.get('institucion_id'),grado:fd.get('grado'),grupo:fd.get('grupo')});
+        toast('Cuenta creada. Inicia sesión con tu documento.','exito'); document.querySelector('[data-tab="login"]').click();
+      }catch(err){ document.getElementById('err-registro').textContent=err.message; } });
+  </script>
+</body>
+</html>

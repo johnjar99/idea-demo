@@ -1,0 +1,58 @@
+{
+  "instituciones": [
+    {
+      "id": "iem-sjb",
+      "nombre": "Institución Educativa San Juan Bautista",
+      "abreviatura": "IEM SJB",
+      "secretaria_educacion": "Nariño",
+      "municipio": "Pasto",
+      "departamento": "Nariño",
+      "sedes": [
+        { "id": "sjb-centro", "nombre": "Centro" },
+        { "id": "sjb-principal", "nombre": "Principal" }
+      ],
+      "grados": ["3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "grupos": ["A", "B"]
+    },
+    {
+      "id": "iem-hrs",
+      "nombre": "Institución Educativa Municipal Heraldo Romero Sánchez",
+      "abreviatura": "IEM HRS",
+      "secretaria_educacion": "Pasto",
+      "municipio": "Pasto",
+      "departamento": "Nariño",
+      "sedes": [
+        { "id": "hrs-principal", "nombre": "Principal" }
+      ],
+      "grados": ["11"],
+      "grupos": ["1°", "2°", "3°"]
+    },
+    {
+      "id": "iem-la-caldera",
+      "nombre": "Institución Educativa Municipal La Caldera",
+      "abreviatura": "IEM La Caldera",
+      "secretaria_educacion": "Pasto",
+      "municipio": "Pasto",
+      "departamento": "Nariño",
+      "sedes": [
+        { "id": "caldera-principal", "nombre": "Principal" }
+      ],
+      "grados": ["3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "grupos": ["A", "B"]
+    }
+  ],
+  "secretarias_educacion": [
+    {
+      "id": "sed-narino",
+      "nombre": "Secretaría de Educación Departamental de Nariño",
+      "departamento": "Nariño",
+      "instituciones_ids": ["iem-sjb"]
+    },
+    {
+      "id": "sed-pasto",
+      "nombre": "Secretaría de Educación Municipal de Pasto",
+      "departamento": "Nariño",
+      "instituciones_ids": ["iem-hrs", "iem-la-caldera"]
+    }
+  ]
+}
