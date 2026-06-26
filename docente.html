@@ -80,7 +80,22 @@
   .grupo-acordeon-meta { font-size:11px; color:#9CA3AF; font-weight:500; white-space:nowrap; }
   .grupo-acordeon-chevron { font-size:12px; color:#9CA3AF; transition:transform .2s ease; }
   .grupo-acordeon[open] .grupo-acordeon-chevron { transform:rotate(180deg); color:#E11D48; }
-  .grupo-acordeon-body { padding:12px 14px 18px; display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+  /* flex-direction:row EXPLÍCITO: idea-custom.css define .grupo-acordeon-body como column;
+     sin forzar row, esa propiedad se filtra y apila las materias en vertical. */
+  .grupo-acordeon-body { padding:18px 16px 22px; display:flex !important; flex-direction:row !important;
+    flex-wrap:wrap; justify-content:center; align-items:stretch; gap:16px; position:relative; }
+  /* Fondo DINÁMICO de la sección de materias (cuando el curso está abierto): malla suave de la
+     marca + patrón de puntos sutil, para que el área no se vea plana. */
+  .grupo-acordeon[open] .grupo-acordeon-body{
+    background:
+      radial-gradient(90% 120% at 0% 0%, rgba(225,29,72,.06), transparent 55%),
+      radial-gradient(90% 120% at 100% 0%, rgba(59,130,246,.06), transparent 55%),
+      radial-gradient(120% 120% at 50% 120%, rgba(251,191,36,.07), transparent 60%),
+      radial-gradient(rgba(31,31,35,.045) 1px, transparent 1.4px) 0 0 / 18px 18px,
+      #fff;
+    border-radius:0 0 14px 14px;
+  }
+  .grupo-item-area{ white-space:normal !important; overflow:visible !important; text-overflow:clip !important; }
 
   /* Tarjeta de materia: vertical, CENTRADA, con el color del área como acento e interacción dinámica. */
   .grupo-item { position:relative; width:184px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:9px;
@@ -103,6 +118,21 @@
   .grupo-item-area { font-weight:700; font-size:14px; color:var(--idea-grafito,#1F1F23); line-height:1.18; }
   .grupo-item-stats { display:inline-block; font-size:11px; color:#6B7280; font-weight:600; padding:2px 9px; border-radius:999px;
     background:color-mix(in srgb, var(--area-color,#64748B) 12%, #fff); }
+
+  /* Fondo DINÁMICO de TODA la sección "Mis grupos": malla cálida de la marca + una capa
+     cónica desenfocada que gira muy lento (sutil, no distrae). El contenido va por encima. */
+  #card-mis-grupos{ position:relative; overflow:hidden;
+    background:
+      radial-gradient(60% 80% at 10% 0%, rgba(225,29,72,.06), transparent 58%),
+      radial-gradient(55% 75% at 100% 25%, rgba(59,130,246,.06), transparent 58%),
+      radial-gradient(70% 90% at 50% 125%, rgba(251,191,36,.07), transparent 60%),
+      #fff; }
+  #card-mis-grupos::before{ content:''; position:absolute; inset:-45%; z-index:0; pointer-events:none;
+    background:conic-gradient(from 0deg at 50% 50%, rgba(225,29,72,.05), rgba(59,130,246,.05), rgba(251,191,36,.06), rgba(16,185,129,.05), rgba(225,29,72,.05));
+    filter:blur(46px); opacity:.55; animation:misgrupos-rot 28s linear infinite; }
+  #card-mis-grupos > *{ position:relative; z-index:1; }
+  @keyframes misgrupos-rot{ to{ transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ #card-mis-grupos::before{ animation:none; } }
 
   /* Quickstart compacto */
   .doc-pasos { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
