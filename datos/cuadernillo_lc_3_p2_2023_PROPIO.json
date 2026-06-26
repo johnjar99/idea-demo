@@ -31,11 +31,37 @@
     "2.5": "Infiere la intención comunicativa de enunciados del texto",
     "3.4": "Relaciona y compara diferentes textos"
   },
+  "contextos": {
+    "como_nacio_arcoiris": {
+      "titulo": "¿Cómo nació el arcoíris? — Lectura para las preguntas 1 a 5",
+      "rango_preguntas": "1 a 5",
+      "texto": "¿Cómo nació el arcoíris?\n\nCuentan los abuelos del páramo que, hace muchísimo tiempo, el cielo era siempre gris y la lluvia caía sin color. Los animales se entristecían, pues no conocían más tonos que el del barro y el de las nubes apagadas, y soñaban con un cielo distinto.\n\nUn día, la mariposa azul propuso pintar el cielo. Voló hasta la flor más roja y mojó sus alas en ella; luego buscó una flor amarilla y otra morada. Pero el viento era tan fuerte que, cada vez que subía, la derramaba de nuevo sobre la tierra y los colores se perdían entre el lodo.\n\nEntonces la mariposa, cansada de intentarlo sola, pidió ayuda. El colibrí cargó el rojo, la abeja llevó el amarillo y el escarabajo subió el morado. Volando todos juntos, y empujándose unos a otros contra las ráfagas, lograron sostener los colores en lo alto. Gracias al esfuerzo de todos, los tonos quedaron estirados de una montaña a otra; así nació el primer arcoíris.\n\nDesde aquel día, cada vez que llueve y enseguida sale el sol, los colores vuelven al cielo para recordarnos que, unidos, los más pequeños también pueden hacer grandes cosas.\n\nAdaptación libre de una leyenda popular (texto de autoría propia)."
+    },
+    "ladridos_perros": {
+      "titulo": "¿Por qué ladran los perros? — Lectura para las preguntas 6 a 10",
+      "rango_preguntas": "6 a 10",
+      "imagen": "assets/banco-lc-3-p2/q06.png",
+      "alt": "Infografía sobre por qué ladran los perros, con cuatro recuadros: 1) Ansiedad, 2) Satisfacción de necesidades, 3) Buscan atención y 4) Agresión territorial.",
+      "texto": "Contenido adaptado de Icfes — Cuadernillo de prueba (uso educativo). Infografía: Banco propio IDEA."
+    },
+    "canasta_frutas": {
+      "titulo": "Canasta de frutas — Lectura para las preguntas 11 a 15",
+      "rango_preguntas": "11 a 15",
+      "imagen": "assets/banco-lc-3-p2/q11.png",
+      "alt": "Receta 'Canasta de frutas' con lista de ingredientes (banano, piña, naranja, jugo de limón y uvas) y un procedimiento de tres pasos ilustrados.",
+      "texto": "Contenido adaptado de Icfes — Cuadernillo de prueba (uso educativo). Infografía: Banco propio IDEA."
+    },
+    "pavo_real_patito": {
+      "titulo": "El pavo real y el patito — Lectura para las preguntas 16 a 20",
+      "rango_preguntas": "16 a 20",
+      "texto": "El pavo real y el patito\n\nEn la laguna del bosque vivían muchas aves. El pavo real, el ave más vanidosa del lugar, presumía de sus plumas mientras se burlaba de las demás:\n\n— ¡Qué pico tan grande tienes, tucán! ¡Qué patas tan flacas, garza! ¡Y tú, patito, qué color tan aburrido el de tus plumas!\n\nLas demás aves bajaban la cabeza y se alejaban tristes, pero ninguna se atrevía a responderle.\n\nUna tarde, una fuerte tormenta sorprendió a las aves. El viento arrastró al pavo real hacia el centro de la laguna, donde el agua era profunda. El pavo real no sabía nadar y comenzó a gritar:\n\n— ¡Auxilio! ¡Que alguien me ayude!\n\nEl patito, sin pensarlo dos veces, nadó hasta él y lo empujó despacio hasta la orilla. Mientras el pavo real recuperaba el aliento, las demás aves lo cubrieron con hojas secas para darle calor.\n\nAvergonzado, el pavo real pidió perdón:\n\n— Me burlé de ustedes por ser distintos, y hoy fue justamente el patito quien me salvó. Cada uno tiene algo valioso.\n\nDesde entonces, el pavo real nunca más se burló de nadie y todos vivieron como buenos amigos.\n\nCuento de autoría propia."
+    }
+  },
   "preguntas": [
     {
       "id": "P3L01",
       "numero": 1,
-      "enunciado": "<p>Lee la siguiente leyenda y responde las preguntas 1 a 5.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center'><b>¿Cómo nació el arcoíris?</b></p><p>Cuentan los abuelos del páramo que, hace muchísimo tiempo, el cielo era siempre gris y la lluvia caía sin color. Los animales se entristecían, pues no conocían más tonos que el del barro y el de las nubes apagadas, y soñaban con un cielo distinto.</p><p>Un día, la mariposa azul propuso pintar el cielo. Voló hasta la flor más roja y mojó sus alas en ella; luego buscó una flor amarilla y otra morada. Pero el viento era tan fuerte que, cada vez que subía, la <b>derramaba</b> de nuevo sobre la tierra y los colores se perdían entre el lodo.</p><p>Entonces la mariposa, cansada de intentarlo sola, pidió ayuda. El colibrí cargó el rojo, la abeja llevó el amarillo y el escarabajo subió el morado. Volando todos juntos, y empujándose unos a otros contra las ráfagas, lograron sostener los colores en lo alto. Gracias al esfuerzo de todos, los tonos quedaron estirados de una montaña a otra; así nació el primer arcoíris.</p><p>Desde aquel día, cada vez que llueve y enseguida sale el sol, los colores vuelven al cielo para recordarnos que, unidos, los más pequeños también pueden hacer grandes cosas.</p><p style='font-size:0.92em;color:#6B5F54'>Adaptación libre de una leyenda popular (texto de autoría propia).</p></div><p>En el texto, el viento «<b>derramaba</b>» de nuevo los colores sobre la tierra. ¿Cuál de las siguientes palabras puede reemplazar a «derramaba» sin que cambie el sentido del fragmento?</p>",
+      "enunciado": "<p>En el texto, el viento «<b>derramaba</b>» de nuevo los colores sobre la tierra. ¿Cuál de las siguientes palabras puede reemplazar a «derramaba» sin que cambie el sentido del fragmento?</p>",
       "opciones": {
         "A": "Guardaba.",
         "B": "Pintaba.",
@@ -54,7 +80,8 @@
         "A": "«Guardaba» significa lo contrario: conservar algo, no dejarlo caer.",
         "B": "«Pintaba» se refiere a dar color, no a hacer caer el líquido fuera de su sitio.",
         "D": "«Secaba» significa quitar la humedad, lo cual no corresponde al sentido del fragmento."
-      }
+      },
+      "contexto_id": "como_nacio_arcoiris"
     },
     {
       "id": "P3L02",
@@ -78,7 +105,8 @@
         "A": "Cuando la mariposa voló sola, el viento le derramaba los colores y no había arcoíris.",
         "B": "Cuando el viento los derramaba, los colores se perdían entre el lodo; aún no aparecía el arcoíris.",
         "C": "Es el momento inicial, cuando todavía el cielo no tenía color."
-      }
+      },
+      "contexto_id": "como_nacio_arcoiris"
     },
     {
       "id": "P3L03",
@@ -102,7 +130,8 @@
         "A": "El problema central (el viento que derrama los colores) aparece más adelante, no en esta oración.",
         "C": "No indica el final; apenas comienza la historia.",
         "D": "La enseñanza aparece en el último párrafo, no en esta oración."
-      }
+      },
+      "contexto_id": "como_nacio_arcoiris"
     },
     {
       "id": "P3L04",
@@ -126,7 +155,8 @@
         "B": "La flor no tiene alas; es la mariposa la que las moja.",
         "C": "El colibrí aparece después, ayudando a cargar el color rojo, no en este fragmento.",
         "D": "El viento no tiene alas ni realiza esa acción en el fragmento."
-      }
+      },
+      "contexto_id": "como_nacio_arcoiris"
     },
     {
       "id": "P3L05",
@@ -150,12 +180,13 @@
         "A": "La conclusión es contraria: trabajar solo no funcionó en la historia.",
         "B": "El texto no compara la altura del vuelo de los animales.",
         "D": "El viento dificultó la tarea, pero al final el arcoíris sí apareció."
-      }
+      },
+      "contexto_id": "como_nacio_arcoiris"
     },
     {
       "id": "P3L06",
       "numero": 6,
-      "enunciado": "<p>Observa la siguiente infografía y responde las preguntas 6 a 10.</p><p style='font-size:0.8em;color:#6B5F54;text-align:right;margin:6px 0 0'>Contenido adaptado de Icfes — Cuadernillo de prueba (uso educativo). Infografía: Banco propio IDEA.</p><p>En el recuadro 2 («SATISFACCIÓN DE NECESIDADES»), ¿para qué se usa la expresión «Por ejemplo»?</p>",
+      "enunciado": "<p>En el recuadro 2 («SATISFACCIÓN DE NECESIDADES»), ¿para qué se usa la expresión «Por ejemplo»?</p>",
       "opciones": {
         "A": "Para mencionar algunas necesidades de los perros.",
         "B": "Para mostrar de qué manera los perros buscan atención.",
@@ -175,7 +206,7 @@
         "C": "La ansiedad corresponde al recuadro 1.",
         "D": "La agresión territorial es el contenido del recuadro 4."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/q06.png"
+      "contexto_id": "ladridos_perros"
     },
     {
       "id": "P3L07",
@@ -200,7 +231,8 @@
         "B": "Sentirse en peligro corresponde a la agresión territorial y querer hacer popó a la satisfacción de necesidades.",
         "D": "Querer atención corresponde al recuadro 3 y sentir sed a la satisfacción de necesidades, no a la ansiedad."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/perros_s1.png"
+      "imagen_figura": "assets/banco-lc-3-p2/perros_s1.png",
+      "contexto_id": "ladridos_perros"
     },
     {
       "id": "P3L08",
@@ -225,7 +257,8 @@
         "B": "El recuadro no da indicaciones a los dueños sobre cómo alimentar a sus perros.",
         "C": "El recuadro no habla de consecuencias, sino de una de las causas de los ladridos."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/perros_s2.png"
+      "imagen_figura": "assets/banco-lc-3-p2/perros_s2.png",
+      "contexto_id": "ladridos_perros"
     },
     {
       "id": "P3L09",
@@ -250,7 +283,8 @@
         "B": "Las imágenes no usan palabras; presentan ejemplos con dibujos.",
         "D": "Las imágenes no muestran algo distinto, sino justamente ejemplos de lo que dice el texto."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/perros_s3.png"
+      "imagen_figura": "assets/banco-lc-3-p2/perros_s3.png",
+      "contexto_id": "ladridos_perros"
     },
     {
       "id": "P3L10",
@@ -275,12 +309,13 @@
         "B": "Jugar con él responde a la búsqueda de atención, no a la agresión territorial.",
         "D": "Dejarlo solo se relaciona con la ansiedad; además podría aumentar el problema, no resolver la amenaza."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/perros_s4.png"
+      "imagen_figura": "assets/banco-lc-3-p2/perros_s4.png",
+      "contexto_id": "ladridos_perros"
     },
     {
       "id": "P3L11",
       "numero": 11,
-      "enunciado": "<p>Observa la siguiente receta y responde las preguntas 11 a 15.</p><p style='font-size:0.8em;color:#6B5F54;text-align:right;margin:6px 0 0'>Contenido adaptado de Icfes — Cuadernillo de prueba (uso educativo). Infografía: Banco propio IDEA.</p><p>En la lista de ingredientes, el banano va partido en «<b>rodajas</b>». ¿Cuál de las siguientes palabras significa lo mismo que «rodajas»?</p>",
+      "enunciado": "<p>En la lista de ingredientes, el banano va partido en «<b>rodajas</b>». ¿Cuál de las siguientes palabras significa lo mismo que «rodajas»?</p>",
       "opciones": {
         "A": "Rebanadas.",
         "B": "Cubos.",
@@ -300,7 +335,7 @@
         "C": "Las «tiras» son alargadas y delgadas, no porciones redondas como las rodajas.",
         "D": "«Partes» es una palabra general que no indica la forma redonda del corte."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/q11.png"
+      "contexto_id": "canasta_frutas"
     },
     {
       "id": "P3L12",
@@ -325,7 +360,8 @@
         "B": "La receta no menciona una cuchara, sino un cuchillo.",
         "D": "La receta indica usar un cuchillo, no la mano."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/frutas_paso1.png"
+      "imagen_figura": "assets/banco-lc-3-p2/frutas_paso1.png",
+      "contexto_id": "canasta_frutas"
     },
     {
       "id": "P3L13",
@@ -350,7 +386,8 @@
         "B": "Las uvas son uno de los ingredientes, no lo que se va a preparar.",
         "C": "Los gajos de naranja se obtienen en un paso de la preparación, no son el producto final."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/frutas_ingredientes.png"
+      "imagen_figura": "assets/banco-lc-3-p2/frutas_ingredientes.png",
+      "contexto_id": "canasta_frutas"
     },
     {
       "id": "P3L14",
@@ -375,7 +412,8 @@
         "C": "La imagen no muestra utensilios de cocina.",
         "D": "Mezclar los ingredientes en un recipiente hondo corresponde al paso 2, no al 3."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/frutas_paso3.png"
+      "imagen_figura": "assets/banco-lc-3-p2/frutas_paso3.png",
+      "contexto_id": "canasta_frutas"
     },
     {
       "id": "P3L15",
@@ -400,12 +438,13 @@
         "C": "No es una pregunta: no tiene signos de interrogación ni pide una preferencia.",
         "D": "No cuenta una historia; da un paso a seguir para preparar la receta."
       },
-      "imagen_figura": "assets/banco-lc-3-p2/frutas_paso2.png"
+      "imagen_figura": "assets/banco-lc-3-p2/frutas_paso2.png",
+      "contexto_id": "canasta_frutas"
     },
     {
       "id": "P3L16",
       "numero": 16,
-      "enunciado": "<p>Lee el siguiente cuento y responde las preguntas 16 a 20.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center'><b>El pavo real y el patito</b></p><p>En la laguna del bosque vivían muchas aves. El pavo real, el ave más vanidosa del lugar, presumía de sus plumas mientras se burlaba de las demás:</p><p>— ¡Qué pico tan grande tienes, tucán! ¡Qué patas tan flacas, garza! ¡Y tú, patito, qué color tan aburrido el de tus plumas!</p><p>Las demás aves bajaban la cabeza y se alejaban tristes, pero ninguna se atrevía a responderle.</p><p>Una tarde, una fuerte tormenta sorprendió a las aves. El viento arrastró al pavo real hacia el centro de la laguna, donde el agua era profunda. El pavo real no sabía nadar y comenzó a gritar:</p><p>— ¡Auxilio! ¡Que alguien me ayude!</p><p>El patito, sin pensarlo dos veces, nadó hasta él y lo empujó despacio hasta la orilla. <b>Mientras</b> el pavo real recuperaba el aliento, las demás aves lo cubrieron con hojas secas para darle calor.</p><p>Avergonzado, el pavo real pidió perdón:</p><p>— Me burlé de ustedes por ser distintos, y hoy fue justamente el patito quien me salvó. Cada uno tiene algo valioso.</p><p>Desde entonces, el pavo real nunca más se burló de nadie y todos vivieron como buenos amigos.</p><p style='font-size:0.92em;color:#6B5F54'>Cuento de autoría propia.</p></div><p>Lee el siguiente fragmento:</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>«<b>Mientras</b> el pavo real recuperaba el aliento, las demás aves lo cubrieron con hojas secas para darle calor».</p></div><p>En el fragmento anterior, ¿qué indica la palabra «Mientras»?</p>",
+      "enunciado": "<p>Lee el siguiente fragmento:</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>«<b>Mientras</b> el pavo real recuperaba el aliento, las demás aves lo cubrieron con hojas secas para darle calor».</p></div><p>En el fragmento anterior, ¿qué indica la palabra «Mientras»?</p>",
       "opciones": {
         "A": "La razón por la que el pavo real se burlaba de las aves.",
         "B": "El lugar donde se encontraban las aves.",
@@ -424,7 +463,8 @@
         "A": "«Mientras» no señala la razón de la burla del pavo real.",
         "B": "«Mientras» no indica el lugar donde estaban las aves.",
         "D": "«Mientras» no explica la causa de la tormenta."
-      }
+      },
+      "contexto_id": "pavo_real_patito"
     },
     {
       "id": "P3L17",
@@ -448,7 +488,8 @@
         "A": "Esa oración cuenta un hecho que le ocurre, no describe su carácter.",
         "C": "Esa oración describe lo que hace el patito, no el carácter del pavo real.",
         "D": "Esa oración cuenta el final de la historia, no el carácter del pavo real."
-      }
+      },
+      "contexto_id": "pavo_real_patito"
     },
     {
       "id": "P3L18",
@@ -472,7 +513,8 @@
         "A": "Aunque nombra al patito, dice «ustedes», dirigiéndose a todas las aves.",
         "B": "No se dirige solo a la garza; habla a todas las aves.",
         "C": "No se dirige solo al tucán; habla a todas las aves."
-      }
+      },
+      "contexto_id": "pavo_real_patito"
     },
     {
       "id": "P3L19",
@@ -496,7 +538,8 @@
         "B": "Describir el color de las plumas no es la estrategia con la que se deja la enseñanza.",
         "C": "El cuento no se centra en explicar cómo se forma una tormenta.",
         "D": "El texto no enseña reglas para nadar."
-      }
+      },
+      "contexto_id": "pavo_real_patito"
     },
     {
       "id": "P3L20",
@@ -520,7 +563,8 @@
         "A": "Solo en el cuento del pavo real aparece una tormenta; no es lo que los relaciona.",
         "C": "Los personajes son distintos: pavo real y patito frente a ratón y león.",
         "D": "Ninguno de los dos textos ocurre en el fondo del mar."
-      }
+      },
+      "contexto_id": "pavo_real_patito"
     }
   ],
   "preservar_orden_preguntas": true

@@ -84,12 +84,20 @@ function validarCuadernillo(c) {
 }
 
 // --- Siembra inicial (solo si la base está vacía) ------------------------------------
+// Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
+// visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
+const SEED_VERSION = '2026-06-26-lc-contextos';
 let _sembrado = null;
 async function sembrarSiVacio() {
+  let verPrev = null;
+  try { verPrev = localStorage.getItem('idea_demo_seed_version'); } catch (_) {}
+  const reseed = verPrev !== SEED_VERSION;
+
   // 1) Cuadernillos: leer manifiesto datos/_release.json y cargar los servibles
   //    (estado local | web | vivo). Son los 35 P2 propio + 5 vivos de 11°P1.
   const cuadActuales = await idbGetAll('idea_cuadernillos');
-  if (!cuadActuales.length) {
+  if (reseed && cuadActuales.length) { await idbClear('idea_cuadernillos'); _invalidar('idea_cuadernillos'); }
+  if (!cuadActuales.length || reseed) {
     try {
       const rel = await fetch('datos/_release.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null);
       const ents = Object.entries((rel && rel.cuadernillos) || {})
@@ -106,7 +114,8 @@ async function sembrarSiVacio() {
 
   // 2) Instituciones: datos/instituciones.json + IE Demo
   const instActuales = await idbGetAll('idea_instituciones');
-  if (!instActuales.length) {
+  if (reseed && instActuales.length) { await idbClear('idea_instituciones'); _invalidar('idea_instituciones'); }
+  if (!instActuales.length || reseed) {
     let base = [];
     try { base = await fetch('datos/instituciones.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : []); } catch (_) {}
     if (!Array.isArray(base)) base = [];
@@ -114,6 +123,9 @@ async function sembrarSiVacio() {
     for (const i of base) { if (i && i.id) await idbPut('idea_instituciones', i); }
     _invalidar('idea_instituciones');
   }
+
+  // Marca la versión de contenido ya sembrada (para no re-sembrar en cada carga).
+  try { localStorage.setItem('idea_demo_seed_version', SEED_VERSION); } catch (_) {}
 }
 
 // === Interfaz pública (idéntica a la versión Firestore) ==============================
