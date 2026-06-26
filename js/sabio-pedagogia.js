@@ -541,10 +541,20 @@ export function peticionesPara(rol, ctx = {}) {
     const g = ctx && ctx.grado ? parseInt(ctx.grado, 10) : null;
     if (ak && g) {
       const nom = AREAS[ak].nombre;
+      // Habilidad nuclear PROPIA de cada área (no "resolución de problemas" para todas:
+      // eso es de Matemáticas; Lectura Crítica trabaja comprensión, etc.).
+      const HABILIDAD_NUCLEAR = {
+        mat: 'la resolución de problemas',
+        lc: 'la comprensión e interpretación de textos',
+        sc: 'el análisis de fuentes y el pensamiento social',
+        cn: 'la indagación y la explicación científica',
+        in: 'la comprensión de lectura en inglés'
+      };
+      const hab = HABILIDAD_NUCLEAR[ak] || 'las competencias del área';
       return [
         `Dame estrategias para enseñar ${nom} en ${g}°`,
         `Ejemplos para el aula de ${nom} en ${g}°`,
-        `¿Cómo trabajo la resolución de problemas en ${nom} en ${g}°?`,
+        `¿Cómo fortalezco ${hab} en ${g}°?`,
         `Dificultades comunes en ${nom} de ${g}° y cómo remediarlas`,
         `Un organizador previo para ${nom} en ${g}°`,
         'Propón un plan de mejora para los de nivel bajo'
