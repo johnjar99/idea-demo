@@ -86,7 +86,7 @@ function validarCuadernillo(c) {
 // --- Siembra inicial (solo si la base está vacía) ------------------------------------
 // Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
 // visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
-const SEED_VERSION = '2026-06-26-dce-competencias';
+const SEED_VERSION = '2026-06-26-dce-competencias-cn';
 let _sembrado = null;
 async function sembrarSiVacio() {
   let verPrev = null;
