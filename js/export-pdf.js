@@ -868,8 +868,21 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   // v12: la página de competencias se OMITE si el área tiene UNA SOLA (Lectura Crítica)
   // porque la información es redundante con el promedio global del grupo. La riqueza
   // diagnóstica de LC vive en las afirmaciones (página siguiente).
-  // v11.8: UNA paleta por competencia. Comp A, Afir 1, Evid 1.x comparten color (azul).
-  const COLOR_BY_COMP_PDF = { a: [59,130,246], b: [245,158,11], c: [139,92,246] };
+  // Color del marco DCE (espeja la lógica del panel web docente):
+  //  - paleta asignada POR AFIRMACIÓN (orden numérico del marco) para colores estables;
+  //  - una competencia toma el color de SU primera afirmación (así comparte color con ellas);
+  //  - VARIAS competencias → afir/evid se colorean por su competencia (mismos pocos colores);
+  //  - UNA sola competencia (ej. LC primaria) → afir/evid por afirmación (panel no monocromo).
+  // Esto también corrige el bug previo de llaves fijas a/b/c (LC con competencias 1/2/3 caía a gris).
+  const _PAL_RGB_DCE = [[59,130,246],[245,158,11],[139,92,246],[16,185,129],[236,72,153],[6,182,212],[132,204,22],[239,68,68]];
+  const _afirKeysOrden = Object.keys(cuadernillo.afirmaciones || {}).sort((a,b)=>+a-+b);
+  const COLOR_BY_AFIR_PDF = {}; _afirKeysOrden.forEach((k,i)=>{ COLOR_BY_AFIR_PDF[String(k)] = _PAL_RGB_DCE[i % _PAL_RGB_DCE.length]; });
+  const _afirsDeCompPDF = (c) => Object.entries(mapaCAE10).find(([cc]) => cc === String(c));
+  const _primeraAfirDeComp = (c) => { const e = _afirsDeCompPDF(c); if (!e) return null; return [...e[1].afir].sort((a,b)=>+a-+b)[0]; };
+  const COLOR_BY_COMP_PDF = {}; Object.keys(cuadernillo.competencias || {}).forEach(c => { const fa = _primeraAfirDeComp(c); COLOR_BY_COMP_PDF[c] = (fa != null && COLOR_BY_AFIR_PDF[String(fa)]) || [100,116,139]; });
+  const _unaCompPDF = Object.keys(cuadernillo.competencias || {}).length <= 1;
+  const _colAfirPDF = (k) => _unaCompPDF ? (COLOR_BY_AFIR_PDF[String(k)] || [100,116,139]) : (COLOR_BY_COMP_PDF[compDeAfirPDF(k)] || [100,116,139]);
+  const _colEvidPDF = (k) => { if (_unaCompPDF) { const m = String(k).match(/^(\d+)/); return (m && COLOR_BY_AFIR_PDF[m[1]]) || [100,116,139]; } return COLOR_BY_COMP_PDF[compDeEvidPDF(k)] || [100,116,139]; };
 
   // v13.2 fix: compsOrden estaba definido dentro del Desglose suprimido; redefinir acá.
   // v13.5 fix: leer TODAS las keys del objeto competencias (no asumir 'a'..'g'),
@@ -918,7 +931,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
         codigo: `${ET_PDF.afirmacion_codigo} ${codigoAfirmacion(cuadernillo, k)}`,
         titulo: cuadernillo.afirmaciones[k],
         valor: logAfirA[k] || 0,
-        color: COLOR_BY_COMP_PDF[c] || [100,116,139]
+        color: _colAfirPDF(k)
       };
     });
     dimensiones.push({ titulo: ET_PDF.afirmacion_plural, canvasId: 'chart-afir', items: itemsAfir });
@@ -938,7 +951,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
         codigo: k,
         titulo: cuadernillo.evidencias[k],
         valor: logEvidA[k] || 0,
-        color: COLOR_BY_COMP_PDF[c] || [100,116,139]
+        color: _colEvidPDF(k)
       };
     });
     dimensiones.push({ titulo: ET_PDF.evidencia_plural, canvasId: 'chart-evid', items: itemsEvid });

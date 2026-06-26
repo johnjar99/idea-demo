@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Sabio, mascota IDEA">
+  <defs>
+    <linearGradient id="cuerpoG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1F1F23"/>
+      <stop offset="1" stop-color="#0F0F12"/>
+    </linearGradient>
+    <radialGradient id="brilloR" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#E11D48"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Antena izquierda con bolita dorada -->
+  <line x1="68" y1="38" x2="58" y2="14" stroke="#1F1F23" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="58" cy="14" r="6" fill="#FBBF24"/>
+  <circle cx="56" cy="12" r="2" fill="#FEF3C7"/>
+
+  <!-- Antena derecha -->
+  <line x1="132" y1="38" x2="142" y2="14" stroke="#1F1F23" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="142" cy="14" r="6" fill="#FBBF24"/>
+  <circle cx="140" cy="12" r="2" fill="#FEF3C7"/>
+
+  <!-- Cabeza redonda -->
+  <ellipse cx="100" cy="78" rx="58" ry="52" fill="url(#cuerpoG)"/>
+  <!-- Sombra brillante -->
+  <ellipse cx="80" cy="58" rx="20" ry="12" fill="#FFFFFF" opacity="0.06"/>
+
+  <!-- Penachos de búho (orejas) -->
+  <path d="M 50 40 Q 56 22 70 36 Z" fill="url(#cuerpoG)"/>
+  <path d="M 150 40 Q 144 22 130 36 Z" fill="url(#cuerpoG)"/>
+
+  <!-- Ojos grandes blancos con marco rojo -->
+  <circle cx="78" cy="74" r="18" fill="#FFFFFF" stroke="#E11D48" stroke-width="2.5"/>
+  <circle cx="122" cy="74" r="18" fill="#FFFFFF" stroke="#E11D48" stroke-width="2.5"/>
+
+  <!-- Pupilas (signos > <) -->
+  <g class="sabio-ojos">
+    <text x="78" y="82" text-anchor="middle" fill="#0F0F12" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="22">&gt;</text>
+    <text x="122" y="82" text-anchor="middle" fill="#0F0F12" font-family="'JetBrains Mono', monospace" font-weight="900" font-size="22">&lt;</text>
+  </g>
+
+  <!-- Pico naranja-dorado -->
+  <path d="M 92 100 L 100 112 L 108 100 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Cuerpo redondeado -->
+  <ellipse cx="100" cy="160" rx="46" ry="40" fill="url(#cuerpoG)"/>
+
+  <!-- Gráfica de barras en el pecho (referencia al logo) -->
+  <g transform="translate(82 145)">
+    <rect x="0" y="20" width="6" height="14" rx="1" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="10" y="12" width="6" height="22" rx="1" fill="#FB7185"/>
+    <rect x="20" y="4" width="6" height="30" rx="1" fill="#FBBF24"/>
+    <rect x="30" y="14" width="6" height="20" rx="1" fill="#34D399"/>
+  </g>
+
+  <!-- Patitas -->
+  <line x1="86" y1="200" x2="86" y2="212" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  <line x1="114" y1="200" x2="114" y2="212" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 80 212 L 92 212" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 108 212 L 120 212" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+</svg>

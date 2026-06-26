@@ -80,15 +80,29 @@
   .grupo-acordeon-meta { font-size:11px; color:#9CA3AF; font-weight:500; white-space:nowrap; }
   .grupo-acordeon-chevron { font-size:12px; color:#9CA3AF; transition:transform .2s ease; }
   .grupo-acordeon[open] .grupo-acordeon-chevron { transform:rotate(180deg); color:#E11D48; }
-  .grupo-acordeon-body { padding:6px 12px 14px; display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:8px; }
+  .grupo-acordeon-body { padding:12px 14px 18px; display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
 
-  .grupo-item { display:grid; grid-template-columns:38px 1fr; align-items:center; gap:10px; padding:10px 12px; background:#fff; border:1px solid var(--idea-borde,#ECE6E1); border-radius:12px; cursor:pointer; transition:all .16s ease; text-align:left; }
-  .grupo-item:hover { border-color:#E11D48; transform:translateY(-2px); box-shadow:0 6px 16px rgba(225,29,72,.1); }
-  .grupo-item.activo { border-color:#E11D48; background:#FFF1F3; box-shadow:0 4px 12px rgba(225,29,72,.18); }
-  .grupo-item-chip { display:grid; place-items:center; width:38px; height:38px; border-radius:10px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:11px; color:#fff; letter-spacing:.05em; box-shadow:0 2px 6px rgba(0,0,0,.18); }
-  .grupo-item-texto { display:flex; flex-direction:column; }
-  .grupo-item-area { font-weight:600; font-size:13.5px; color:var(--idea-grafito,#1F1F23); }
-  .grupo-item-stats { font-size:11px; color:#9CA3AF; }
+  /* Tarjeta de materia: vertical, CENTRADA, con el color del área como acento e interacción dinámica. */
+  .grupo-item { position:relative; width:184px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:9px;
+    padding:18px 14px 15px; background:#fff; border:1px solid var(--idea-borde,#ECE6E1); border-top:4px solid var(--area-color,#64748B);
+    border-radius:16px; cursor:pointer; overflow:hidden; transition:transform .18s cubic-bezier(.2,.7,.3,1), box-shadow .18s ease, background .18s ease, border-color .18s ease; }
+  .grupo-item::before { content:''; position:absolute; left:0; right:0; top:0; height:60px;
+    background:linear-gradient(180deg, color-mix(in srgb, var(--area-color,#64748B) 10%, #fff), #fff); z-index:0; }
+  .grupo-item > * { position:relative; z-index:1; }
+  .grupo-item:hover { transform:translateY(-5px); border-color:var(--area-color,#E11D48);
+    background:color-mix(in srgb, var(--area-color,#64748B) 6%, #fff);
+    box-shadow:0 12px 26px color-mix(in srgb, var(--area-color,#64748B) 26%, transparent); }
+  .grupo-item:active { transform:translateY(-2px); }
+  .grupo-item.activo { border-color:var(--area-color,#E11D48); background:color-mix(in srgb, var(--area-color,#64748B) 12%, #fff);
+    box-shadow:0 8px 20px color-mix(in srgb, var(--area-color,#64748B) 30%, transparent); }
+  .grupo-item-chip { display:grid; place-items:center; width:52px; height:52px; border-radius:15px; font-family:'Plus Jakarta Sans',sans-serif;
+    font-weight:800; font-size:13px; color:#fff; letter-spacing:.04em; transition:transform .18s ease;
+    box-shadow:0 6px 14px color-mix(in srgb, var(--area-color,#64748B) 50%, transparent); }
+  .grupo-item:hover .grupo-item-chip { transform:scale(1.06) rotate(-2deg); }
+  .grupo-item-texto { display:flex; flex-direction:column; align-items:center; gap:2px; }
+  .grupo-item-area { font-weight:700; font-size:14px; color:var(--idea-grafito,#1F1F23); line-height:1.18; }
+  .grupo-item-stats { display:inline-block; font-size:11px; color:#6B7280; font-weight:600; padding:2px 9px; border-radius:999px;
+    background:color-mix(in srgb, var(--area-color,#64748B) 12%, #fff); }
 
   /* Quickstart compacto */
   .doc-pasos { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
@@ -316,8 +330,10 @@
 
         <!-- v10: Sección de Mapa de calor ELIMINADA por feedback del jefe -->
 
-        <!-- Sección H: Proyección SABER 11 (v11 - panel cian) -->
-        <section class="idea-card panel-conclusiones mb-6">
+        <!-- Sección H: Proyección SABER 11 (v11 - panel cian). Solo aplica al ciclo de
+             secundaria (9°,10°,11°), que es el que culmina en la prueba SABER 11°; en
+             primaria/básica baja (3°-8°) se oculta por no ser pertinente. -->
+        <section id="sec-proyeccion-saber" class="idea-card panel-conclusiones mb-6">
           <h2 class="card-title">Proyección parcial SABER 11°</h2>
           <p class="text-sm text-slate-500 mb-3">Estimación usando la fórmula ICFES del Índice Global, asumiendo desempeño análogo en las áreas pendientes (proyección parcial).</p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="proyeccion-saber"></div>
@@ -715,6 +731,8 @@
           const btn = document.createElement('button');
           btn.dataset.k = it.k;
           btn.className = 'grupo-item';
+          btn.style.setProperty('--area-color', meta.color);
+          btn.title = `Ver análisis de ${it.area} · ${curso.grado}°${curso.grupo}`;
           btn.innerHTML = `
             <span class="grupo-item-chip" style="background:${meta.color}">${meta.sigla}</span>
             <span class="grupo-item-texto">
@@ -916,6 +934,8 @@
       const pctMasDificil = Math.min(...pctPorPreg);
       const enRiesgo = aplicacionesActuales.filter(a => a.nivel === 'BAJO').length;
       const proy = proyeccionSaber11Parcial(promedio);
+      // La proyección/insight de SABER 11° solo aplica al ciclo de secundaria (9°-11°).
+      const _esSecundariaProy = (() => { const g = parseInt(String(cuadActual.grado), 10); return g >= 9 && g <= 11; })();
 
       // 1. KPIs amigables
       const kpiCont = document.getElementById('kpi-amigables');
@@ -948,11 +968,11 @@
             <div class="text-2xl font-bold text-rose-600">${enRiesgo}</div>
             <div class="text-[10px] text-slate-500 mt-1">estudiantes en BAJO</div>
           </div>
-          <div class="idea-card p-3 text-center">
+          ${_esSecundariaProy ? `<div class="idea-card p-3 text-center">
             <div class="text-[10px] uppercase text-slate-500 font-semibold">Proy. SABER 11</div>
             <div class="text-2xl font-bold text-sky-600">${proy?.realista?.puntaje_global || '—'}</div>
             <div class="text-[10px] text-slate-500 mt-1">escenario realista</div>
-          </div>
+          </div>` : ''}
         `;
       }
 
@@ -971,7 +991,7 @@
         const pctMejorPreg = Math.max(...pctPorPreg);
         const idxMejor = pctPorPreg.indexOf(pctMejorPreg) + 1;
         insights.push(`La pregunta con mejor desempeño es <strong>P${idxMejor}</strong> con ${pctMejorPreg}% de aciertos; la más difícil es <strong>P${pregMasDificil}</strong> con ${pctMasDificil}%.`);
-        insights.push(`Si el grupo mantiene este desempeño en SABER 11 ${cuadActual.area || ''}, proyectaría <strong>${proy?.realista?.puntaje_global || '—'} puntos</strong>. Para subir al rango ${proy?.optimista?.puntaje_global || '—'} se necesita fortalecer la competencia <strong>${minComp}.</strong> (${cuadActual.competencias?.[minComp] || ''}).`);
+        if (_esSecundariaProy) insights.push(`Si el grupo mantiene este desempeño en SABER 11 ${cuadActual.area || ''}, proyectaría <strong>${proy?.realista?.puntaje_global || '—'} puntos</strong>. Para subir al rango ${proy?.optimista?.puntaje_global || '—'} se necesita fortalecer la competencia <strong>${minComp}.</strong> (${cuadActual.competencias?.[minComp] || ''}).`);
         ins.innerHTML = insights.map(t => `<li class="flex gap-2"><span class="text-amber-600">●</span><span>${t}</span></li>`).join('');
       }
 
@@ -1364,6 +1384,13 @@
     }
 
     function renderProyeccionSaber() {
+      // La proyección SABER 11° solo es pertinente en el ciclo de secundaria (9°-11°),
+      // que culmina en esa prueba. En 3°-8° la fórmula del Índice Global (5 áreas) no
+      // aplica, así que se OCULTA la sección completa para no mostrar una meta irreal.
+      const _gradoNum = parseInt(String(cuadActual.grado), 10);
+      const _secProy = document.getElementById('sec-proyeccion-saber');
+      if (!(_gradoNum >= 9 && _gradoNum <= 11)) { if (_secProy) _secProy.style.display = 'none'; return; }
+      if (_secProy) _secProy.style.display = '';
       const prom = promedioGrupo(aplicacionesActuales);
       const py = proyeccionSaber11Parcial(prom);
       const cont = document.getElementById('proyeccion-saber');
@@ -1843,14 +1870,18 @@
       }
 
       // === AFIRMACIONES === ordenadas por su número (1, 2, 3, ...).
-      // Color AGRUPADO POR COMPETENCIA: cada afirmación toma el color de SU competencia
-      // (afir 1,2,3 → comp a; 4,5 → comp b; ...), igual que en Matemáticas, para tener
-      // SOLO los 3 colores de las competencias y no uno distinto por afirmación. Inglés
-      // (sin panel de competencia) conserva un color por nivel MCER.
+      // Regla de color (igual que en 11° P1):
+      //  - VARIAS competencias: cada afirmación toma el color de SU competencia (afir de una
+      //    misma competencia comparten color), para tener SOLO los colores de las competencias.
+      //  - UNA sola competencia (ej. Lectura Crítica de primaria): colorear por AFIRMACIÓN —
+      //    cada afirmación su color y las evidencias lo heredan— para que el panel no quede
+      //    monocromo y muestre la estructura interna del marco DCE.
+      //  - Inglés (sin panel de competencia): un color por nivel MCER.
       const _esInglesAE = (cuadActual.area || '').toLowerCase() === 'inglés';
+      const _colorPorAfir = _esInglesAE || ocultarCompUnica; // ocultarCompUnica = 1 sola competencia
       const afirLabels = afirOrden.map(k => codigoAfirmacion(cuadActual, k));
       const afirData = afirOrden.map(k => logAfir[k] || 0);
-      const afirColors = afirOrden.map(k => _esInglesAE ? (COLOR_BY_AFIR[k] || '#64748B') : (colorDeComp(compDeAfir(k)) || '#64748B'));
+      const afirColors = afirOrden.map(k => _colorPorAfir ? (COLOR_BY_AFIR[k] || '#64748B') : (colorDeComp(compDeAfir(k)) || '#64748B'));
       const afirFullTitles = afirOrden.map(k => cuadActual.afirmaciones[k]);
       charts.afir = crearChartLogro('chart-afir', afirLabels, afirData, afirColors, afirFullTitles);
       renderLeyendaAlineacion('legend-afir', afirOrden.map((k, i) => ({
@@ -1877,8 +1908,9 @@
         });
       const evidLabels = evidOrden.map(k => k);
       const evidData = evidOrden.map(k => logEvid[k] || 0);
-      // Cada evidencia hereda el color de SU competencia (mismos 3 colores). Inglés: por nivel.
-      const evidColors = evidOrden.map(k => _esInglesAE ? colorDeEvid(k) : (colorDeComp(compDeEvid(k)) || '#64748B'));
+      // Cada evidencia hereda el color de SU competencia (varias comps) o de SU afirmación
+      // padre (1 sola competencia / Inglés), coherente con el coloreo de afirmaciones de arriba.
+      const evidColors = evidOrden.map(k => _colorPorAfir ? colorDeEvid(k) : (colorDeComp(compDeEvid(k)) || '#64748B'));
       const evidFullTitles = evidOrden.map(k => cuadActual.evidencias[k]);
       charts.evid = crearChartLogro('chart-evid', evidLabels, evidData, evidColors, evidFullTitles);
       renderLeyendaAlineacion('legend-evid', evidOrden.map((k, i) => ({

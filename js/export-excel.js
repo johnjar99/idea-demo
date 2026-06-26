@@ -691,8 +691,18 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
   });
   const compDeAfir = (a) => { for (const [c, m] of Object.entries(mapaCAE)) if (m.afir.has(String(a))) return c; return null; };
   const compDeEvid = (e) => { for (const [c, m] of Object.entries(mapaCAE)) if (m.evid.has(String(e))) return c; return null; };
-  const colorComp = { a: '3B82F6', b: 'F59E0B', c: 'E11D48' };
-  const colorCompHex = (cc) => colorComp[cc] || '64748B';
+  // Color del marco DCE (espeja el panel web docente): paleta por AFIRMACIÓN; la competencia
+  // hereda el color de su primera afirmación; varias competencias → afir/evid por competencia;
+  // UNA sola competencia (ej. LC primaria) → afir/evid por afirmación (no monocromo). También
+  // corrige el bug de llaves fijas a/b/c (LC con competencias 1/2/3 caía a gris).
+  const _PAL_HEX_DCE = ['3B82F6','F59E0B','8B5CF6','10B981','EC4899','06B6D4','84CC16','EF4444'];
+  const _afirKeysXls = Object.keys(cuadernillo.afirmaciones || {}).sort((a,b)=>+a-+b);
+  const COLOR_BY_AFIR_XLS = {}; _afirKeysXls.forEach((k,i)=>{ COLOR_BY_AFIR_XLS[String(k)] = _PAL_HEX_DCE[i % _PAL_HEX_DCE.length]; });
+  const _primeraAfirXls = (cc) => { const m = mapaCAE[cc]; if (!m) return null; return [...m.afir].sort((a,b)=>+a-+b)[0]; };
+  const colorCompHex = (cc) => { const fa = _primeraAfirXls(cc); return (fa != null && COLOR_BY_AFIR_XLS[String(fa)]) || '64748B'; };
+  const _unaCompXls = Object.keys(cuadernillo.competencias || {}).length <= 1;
+  const colAfirXls = (k) => _unaCompXls ? (COLOR_BY_AFIR_XLS[String(k)] || '64748B') : colorCompHex(compDeAfir(k));
+  const colEvidXls = (k) => { if (_unaCompXls) { const m = String(k).match(/^(\d+)/); return (m && COLOR_BY_AFIR_XLS[m[1]]) || '64748B'; } return colorCompHex(compDeEvid(k)); };
 
   const logComp = logroGrupoPor(logroPorCompetencia, aplicaciones, cuadernillo);
   const logAfir = logroGrupoPor(logroPorAfirmacion, aplicaciones, cuadernillo);
@@ -763,7 +773,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
         codigo: `${_ETxlsG.afirmacion_codigo} ${codigoAfirmacion(cuadernillo, k)}`,
         titulo: cuadernillo.afirmaciones[k],
         valor: logAfir[k] || 0,
-        color: colorCompHex(cc),
+        color: colAfirXls(k),
         compLabel: cc ? cc : '—'
       };
     }));
@@ -783,7 +793,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
         codigo: k,
         titulo: cuadernillo.evidencias[k],
         valor: logEvid[k] || 0,
-        color: colorCompHex(cc),
+        color: colEvidXls(k),
         compLabel: cc ? cc : '—'
       };
     }));
