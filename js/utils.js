@@ -114,6 +114,22 @@ function crearToastContainer() {
  * Si KaTeX aún no cargó, espera hasta 6 segundos por llamada (contador local, no global).
  * @param {HTMLElement} [elemento=document.body]
  */
+// Macros de KaTeX para notación trigonométrica en ESPAÑOL (los cuadernillos usan \sen, \tg…,
+// que KaTeX no conoce y mostraría en rojo). Se mapean a \operatorname para que salgan en
+// redonda como \sin/\cos. Se aplican tanto en renderMathInElement como en renderToString.
+export const MACROS_KATEX_ES = {
+  '\\sen': '\\operatorname{sen}',
+  '\\tg': '\\operatorname{tg}',
+  '\\cotg': '\\operatorname{cotg}',
+  '\\cosec': '\\operatorname{cosec}',
+  '\\arcsen': '\\operatorname{arcsen}',
+  '\\arctg': '\\operatorname{arctg}',
+  '\\senh': '\\operatorname{senh}',
+  '\\tgh': '\\operatorname{tgh}',
+  '\\mcd': '\\operatorname{mcd}',
+  '\\mcm': '\\operatorname{mcm}'
+};
+
 export function renderMath(elemento, _intentos = 0) {
   const el = elemento || document.body;
   if (typeof window === 'undefined' || !el) return;
@@ -136,6 +152,7 @@ export function renderMath(elemento, _intentos = 0) {
       throwOnError: false,
       trust: false,
       strict: false,
+      macros: MACROS_KATEX_ES,
       ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'option']
     });
   } catch (e) {
@@ -170,7 +187,7 @@ export function latexToHtml(latex, display = false) {
     return escapeHtml(latex);
   }
   try {
-    return window.katex.renderToString(latex, { displayMode: display, throwOnError: false, strict: false });
+    return window.katex.renderToString(latex, { displayMode: display, throwOnError: false, strict: false, macros: MACROS_KATEX_ES });
   } catch (e) {
     return escapeHtml(latex);
   }
