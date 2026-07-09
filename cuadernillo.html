@@ -756,8 +756,10 @@
           // Opción con imagen recortada — alto adaptativo según layout
           div.style.flexDirection = 'column';
           div.style.alignItems = 'stretch';
-          const maxH = usaGrid2x2 ? 240 : 480;
-          const padH = usaGrid2x2 ? '10px 12px' : '14px 18px';
+          // Alto adaptativo: en grid 2x2 (Matemáticas) se subió de 240 a 300 para que tablas,
+          // diagramas y gráficas por opción se lean cómodas sin quedar pequeñas.
+          const maxH = usaGrid2x2 ? 300 : 460;
+          const padH = usaGrid2x2 ? '12px 14px' : '14px 18px';
           div.innerHTML = `
             <div class="flex items-center gap-3 mb-2">
               <div class="letra">${letraVisual}</div>
