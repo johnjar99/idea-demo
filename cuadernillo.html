@@ -502,8 +502,22 @@
              <img src="${ctx.imagen}" alt="" aria-hidden="true" loading="eager" decoding="async" onerror="${onerrorPlaceholder}">
            </figure>`
         : '';
+      // Formatea el texto de la lectura: el PRIMER párrafo es el TÍTULO (negrita + centrado);
+      // un párrafo corto a continuación es subtítulo (centrado); los párrafos con saltos de
+      // línea internos son versos/poema (centrado); el resto, prosa normal. Regla ICFES para
+      // todos los grados y asignaturas. El texto viene en plano (párrafos separados por \n\n).
+      const _fmtContexto = (txt) => String(txt).split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
+        .map((p, i) => {
+          const esVerso = /\n/.test(p);
+          const esCortoSub = p.length <= 30 && !/[.!?…»]$/.test(p);
+          let cls = 'ctx-p';
+          if (i === 0) cls += ' ctx-titulo';
+          else if (esVerso) cls += ' ctx-verso';
+          else if (i === 1 && esCortoSub) cls += ' ctx-subtitulo';
+          return `<p class="${cls}">${escapeHtml(p).replace(/\n/g, '<br>')}</p>`;
+        }).join('');
       const textoHtml = ctx.texto
-        ? `<div class="contexto-texto-corpo">${escapeHtml(ctx.texto)}</div>`
+        ? `<div class="contexto-texto-corpo">${_fmtContexto(ctx.texto)}</div>`
         : '';
       // Tres tips de lectura crítica que aplican a cualquier dispositivo (pantalla,
       // tablet, papel) y nunca asumen que el estudiante tenga lápiz o cuaderno.
@@ -726,10 +740,9 @@
       //    ejes y tablas grandes legibles.
       const opcImgs = p.opciones_imagenes || null;
       const areaActual = (cuadernillo.area || '').toLowerCase();
-      const usaGrid2x2 = !!opcImgs && (
-        areaActual === 'matemáticas' ||
-        p.id === 'I_1382062'
-      );
+      // TODAS las preguntas con imagen por opción usan grid 2x2: las opciones quedan lado a lado,
+      // comparables y de tamaño moderado (antes en columna salían enormes y costaba diferenciarlas).
+      const usaGrid2x2 = !!opcImgs;
       cont.className = opcImgs
         ? (usaGrid2x2 ? 'grid grid-cols-1 md:grid-cols-2 gap-4' : 'flex flex-col gap-4')
         : '';
@@ -756,9 +769,8 @@
           // Opción con imagen recortada — alto adaptativo según layout
           div.style.flexDirection = 'column';
           div.style.alignItems = 'stretch';
-          // Alto adaptativo: en grid 2x2 (Matemáticas) se subió de 240 a 300 para que tablas,
-          // diagramas y gráficas por opción se lean cómodas sin quedar pequeñas.
-          const maxH = usaGrid2x2 ? 300 : 460;
+          // Alto moderado para que las imágenes de opción se lean y comparen sin ser enormes.
+          const maxH = usaGrid2x2 ? 250 : 300;
           const padH = usaGrid2x2 ? '12px 14px' : '14px 18px';
           div.innerHTML = `
             <div class="flex items-center gap-3 mb-2">
