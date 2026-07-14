@@ -211,10 +211,46 @@ export function insightSabioIA(apsGrupo, cuadernillo) {
     const dK = Object.keys(logDim2).sort((x, y) => logDim2[x] - logDim2[y])[0];
     if (dK != null && logDim2[dK] < pct) { foco = `${cfg?.dimension_secundaria?.etiqueta_singular || 'componente'} ${dK}`; pct = logDim2[dK]; tipo = 'dim2'; }
   }
-  if (!foco) return { expr: 'feliz', texto: '¡El grupo va muy bien! No detecto oportunidades críticas; te sugiero profundizar para sostener el nivel.', accion: null };
+  // Capa POR GRADO×ASIGNATURA: personaliza el insight con el conocimiento específico de este
+  // grado y materia (no un texto genérico). Cada grado es un universo con su nivel de dificultad.
+  const slugPG = esVivoProtegido(cuadernillo) ? null : areaSlugDeCuadernillo(cuadernillo);
+  const areaNombre = cuadernillo.area || cfg?.nombre || 'esta área';
+  const gradoTxt = cuadernillo.grado ? `${cuadernillo.grado}° de ${areaNombre}` : areaNombre;
+  let matiz = '';   // frase pedagógica del grado que explica QUÉ significa esa debilidad aquí
+  if (slugPG && cuadernillo.grado != null) {
+    try {
+      if (tipo === 'afir' && aK != null) {
+        const estrAfir = pedagogiaDeSync(slugPG, cuadernillo.grado, 'estrategias_por_afirmacion');
+        const cod = _codAfir(cuadernillo, aK);
+        const lista = estrAfir && (estrAfir[cod] || estrAfir[String(cod)]);
+        if (Array.isArray(lista) && lista[0]) matiz = String(lista[0]);
+      }
+      if (!matiz && tipo === 'dim2') {
+        const estrCmc = pedagogiaDeSync(slugPG, cuadernillo.grado, 'estrategias_por_cmc');
+        const dK2 = foco.replace(/^[^\s]+\s+/, '');
+        const lista = estrCmc && (estrCmc[dK2] || Object.values(estrCmc || {}).find(Boolean));
+        if (Array.isArray(lista) && lista[0]) matiz = String(lista[0]);
+      }
+      if (!matiz) {   // último recurso dentro del grado: la estrategia clave del conocimiento de Sabio
+        const sk = pedagogiaDeSync(slugPG, cuadernillo.grado, 'sabio_conocimiento');
+        if (sk && Array.isArray(sk.estr) && sk.estr[0]) matiz = String(sk.estr[0]);
+      }
+    } catch (_) { matiz = ''; }
+  }
+
+  if (!foco) {
+    const bien = slugPG && matiz
+      ? `¡El grupo de ${gradoTxt} va muy bien! No detecto oportunidades críticas. Para sostener el nivel en este grado, profundiza: ${matiz}`
+      : '¡El grupo va muy bien! No detecto oportunidades críticas; te sugiero profundizar para sostener el nivel.';
+    return { expr: 'feliz', texto: bien, accion: null };
+  }
+  const base = `En ${gradoTxt}, el grupo quedó más bajo en ${foco} (${pct}%, nivel ${nivelDeLogro(pct)}).`;
+  const cierre = matiz
+    ? ` En este grado eso se atiende así: ${matiz} ¿Genero el plan de acción de la Fase II con estrategias propias de ${cuadernillo.grado}°?`
+    : ` ¿Genero el plan de acción para la Fase II?`;
   return {
     expr: pct < 60 ? 'pensativo' : 'animando',
-    texto: `Detecté una oportunidad de mejora en ${foco} (${pct}%, nivel ${nivelDeLogro(pct)}). ¿Genero el plan de acción para la Fase II?`,
+    texto: base + cierre,
     accion: { tipo: 'autocompletar-plan', foco, pct }
   };
 }
