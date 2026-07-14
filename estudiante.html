@@ -172,7 +172,13 @@
     // mezclados. Por defecto, el primer periodo disponible (preferir el 1).
     const _periodosDisp = [...new Set(cuadernillos.map(c => normPeriodo(c.periodo)))]
       .sort((a, b) => Number(a) - Number(b));
-    let _periodoFiltro = _periodosDisp[0] || '1';
+    // El periodo elegido se RECUERDA por estudiante: al terminar un cuadernillo y volver al inicio,
+    // se mantiene el último periodo seleccionado (evita tener que re-elegir "Período 2" cada vez).
+    const _LS_PERIODO = 'idea_periodo_' + (ses.user_id || ses.grado || 'x');
+    const _periodoGuardado = normPeriodo(localStorage.getItem(_LS_PERIODO) || '');
+    let _periodoFiltro = (_periodoGuardado && _periodosDisp.includes(_periodoGuardado))
+      ? _periodoGuardado
+      : (_periodosDisp[0] || '1');
     const _pasaPeriodo = (c) => normPeriodo(c.periodo) === normPeriodo(_periodoFiltro);
     const listaCuad = document.getElementById('lista-cuadernillos');
     listaCuad.innerHTML = '';
@@ -349,6 +355,7 @@
             // Campo obligatorio: f.periodo siempre trae un valor (1 o 2). Si por alguna razón
             // llegara vacío, conservamos el actual para no mostrar todo.
             _periodoFiltro = f.periodo || _periodoFiltro;
+            try { localStorage.setItem(_LS_PERIODO, normPeriodo(_periodoFiltro)); } catch (_) {}
             await renderCuadernillosEnriquecidos();
           },
           { sinTodos: ['periodo'], valoresIniciales: { periodo: _periodoFiltro } }

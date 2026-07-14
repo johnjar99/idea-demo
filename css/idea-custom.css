@@ -999,6 +999,9 @@ body:has(> .idea-footer) { padding-bottom: 56px; }
 }
 
 /* === MASCOTA SABIO === */
+/* overflow visible: el <svg> externo recorta su contenido por defecto; con animaciones de
+   flotación/rotación el birrete podía quedar cortado. Con visible nunca se recorta la mascota. */
+.sabio, .sabio-svg { overflow: visible; }
 .sabio { display: inline-block; vertical-align: middle; }
 .sabio-saludando, .sabio-feliz { animation: sabioBounce 3s ease-in-out infinite; }
 .sabio-animando { animation: sabioWiggle 4s ease-in-out infinite; }
@@ -1628,7 +1631,9 @@ section h3, .seccion-h3 { font-size: 18px; font-weight: 600; }
   border-radius: var(--idea-radius, 18px);
   background: linear-gradient(135deg, #FFF8EE 0%, #FFE8D8 60%, #FFD9C0 100%);
   box-shadow: 0 10px 28px -10px rgba(225, 29, 72, 0.18), 0 2px 8px rgba(15, 15, 18, 0.05);
-  overflow: hidden;
+  /* visible: deja que el birrete de Sabio (columna izquierda) se muestre completo aunque flote/rote.
+     El ::before decorativo usa inset:0 con gradientes transparentes en las esquinas, no se desborda. */
+  overflow: visible;
 }
 .panel-hero-est::before {
   content: "";

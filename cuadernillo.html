@@ -740,12 +740,15 @@
       //    ejes y tablas grandes legibles.
       const opcImgs = p.opciones_imagenes || null;
       const areaActual = (cuadernillo.area || '').toLowerCase();
-      // TODAS las preguntas con imagen por opción usan grid 2x2: las opciones quedan lado a lado,
+      // Opciones "ricas" que NO son imagen pero traen una tabla/figura HTML embebida (p. ej. tablas
+      // de datos como opción): también van en rejilla 2x2 para no apilarse verticalmente dejando medio
+      // panel vacío y poder compararlas de un vistazo. Las opciones de solo texto siguen en columna.
+      const _esOpcRica = (t) => /<(table|img|svg)\b/i.test(String(t ?? ''));
+      const opcTieneTabla = !opcImgs && mapeo.mostrada.some((l) => _esOpcRica(p.opciones[l]));
+      // TODAS las preguntas con imagen/tabla por opción usan grid 2x2: las opciones quedan lado a lado,
       // comparables y de tamaño moderado (antes en columna salían enormes y costaba diferenciarlas).
-      const usaGrid2x2 = !!opcImgs;
-      cont.className = opcImgs
-        ? (usaGrid2x2 ? 'grid grid-cols-1 md:grid-cols-2 gap-4' : 'flex flex-col gap-4')
-        : '';
+      const usaGrid2x2 = !!opcImgs || opcTieneTabla;
+      cont.className = usaGrid2x2 ? 'grid grid-cols-1 md:grid-cols-2 gap-4' : '';
       cont.innerHTML = '';
 
       mapeo.original.forEach((letraVisual, i) => {
@@ -781,6 +784,18 @@
               <img src="${opcImgs[letraReal]}" alt="Opción ${letraReal}" loading="lazy" style="max-width:100%;height:auto;max-height:${maxH}px;object-fit:contain;border-radius:4px;margin:0 auto" onerror="${onerrorPlaceholder}">
             </div>
             ${textoOpcion ? `<div class="texto text-xs text-slate-600 mt-2">${textoOpcion}</div>` : ''}
+          `;
+        } else if (usaGrid2x2 && _esOpcRica(textoOpcion)) {
+          // La opción ES una tabla/figura HTML: etiqueta arriba y contenido centrado dentro de la
+          // celda de la rejilla 2x2 (con scroll horizontal de reserva para tablas anchas en móvil).
+          div.style.flexDirection = 'column';
+          div.style.alignItems = 'stretch';
+          div.innerHTML = `
+            <div class="flex items-center gap-3 mb-2">
+              <div class="letra">${letraVisual}</div>
+              <div class="text-xs text-slate-500 uppercase tracking-wider">Opción ${letraVisual}</div>
+            </div>
+            <div class="texto opcion-rica" style="text-align:center;overflow-x:auto">${textoOpcion}</div>
           `;
         } else {
           div.innerHTML = `
