@@ -1,4 +1,4 @@
-// sabio.js — "Sabio", tutor de IA del Instrumento IDEA.
+// sabio.js - "Sabio", tutor de IA del Instrumento IDEA.
 //
 // REDISEÑO 2026-06-06 (v6): PERSONAJE completo = mascota amigable + robótica de IA +
 // educación. Cabeza de robot redondeada con visor y ojos cian luminosos (IA), birrete de
@@ -49,7 +49,7 @@ export function sabioSVG(expresion = 'saludando', tamano = 160) {
     pensando_profundo: { ojos: OJOS.pensando, boca: BOCA.leve,    extras: interrog,  blink: false }
   }[expresion] || { ojos: OJOS.base, boca: BOCA.leve, extras: '', blink: true };
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 250" style="height:${tamano}px;width:auto" class="sabio sabio-${expresion} sabio-svg" role="img" aria-label="Sabio, tutor de IA de IDEA — ${expresion}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 250" style="height:${tamano}px;width:auto" class="sabio sabio-${expresion} sabio-svg" role="img" aria-label="Sabio, tutor de IA de IDEA · ${expresion}">
     <defs>
       <radialGradient id="aura-${u}" cx="0.5" cy="0.5" r="0.5">
         <stop offset="0" stop-color="#A78BFA" stop-opacity="0.5"/>

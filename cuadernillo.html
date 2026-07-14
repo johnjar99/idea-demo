@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Cuadernillo de Matemáticas — IDEA</title>
+  <title>Cuadernillo de Matemáticas · IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
       <div class="text-center mb-8">
         <img src="assets/logo-idea.png" style="height:80px;margin:0 auto 16px">
         <h1 id="titulo-previa" class="text-3xl font-bold mb-2" style="font-family:'Plus Jakarta Sans'">Cuadernillo</h1>
-        <p id="subtitulo-previa" class="text-xl text-slate-600">Grado — Período</p>
+        <p id="subtitulo-previa" class="text-xl text-slate-600">Grado · Período</p>
       </div>
 
       <!-- Banner de estado: bloqueado, retomar o primer intento -->
@@ -66,8 +66,8 @@
         </thead>
         <tbody>
           <tr>
-            <td id="td-tiempo-previa" class="p-3 border font-bold text-lg">—</td>
-            <td id="td-num-preg-previa" class="p-3 border font-bold text-lg">—</td>
+            <td id="td-tiempo-previa" class="p-3 border font-bold text-lg">N/D</td>
+            <td id="td-num-preg-previa" class="p-3 border font-bold text-lg">N/D</td>
           </tr>
         </tbody>
       </table>
@@ -204,11 +204,11 @@
     document.getElementById('titulo-cuad').textContent = cuadernillo.nombre;
 
     // Rellenar pantalla previa con datos del cuadernillo activo (antes era hardcoded a Matemáticas)
-    document.title = `${cuadernillo.nombre || 'Cuadernillo'} — IDEA`;
+    document.title = `${cuadernillo.nombre || 'Cuadernillo'} · IDEA`;
     const tituloPrevia = document.getElementById('titulo-previa');
     const subtituloPrevia = document.getElementById('subtitulo-previa');
     if (tituloPrevia) tituloPrevia.textContent = `Cuadernillo de ${cuadernillo.area || ''}`.trim();
-    if (subtituloPrevia) subtituloPrevia.textContent = `Grado ${cuadernillo.grado}° — Período ${cuadernillo.periodo}`;
+    if (subtituloPrevia) subtituloPrevia.textContent = `Grado ${cuadernillo.grado}° · Período ${cuadernillo.periodo}`;
     const minutos = Number(cuadernillo.tiempo_minutos) || 60;
     const horas = Math.floor(minutos / 60);
     const minsResto = minutos % 60;
@@ -269,8 +269,8 @@
     const inst = instituciones.find(i => i.id === ses.institucion_id);
     document.getElementById('datos-confirmar').innerHTML = `
       <div><strong>Estudiante:</strong> ${ses.nombre_completo}</div>
-      <div><strong>Institución:</strong> ${inst?.nombre || '—'}</div>
-      <div><strong>Grado:</strong> ${ses.grado || '—'} - ${ses.grupo || '—'}</div>
+      <div><strong>Institución:</strong> ${inst?.nombre || 'N/D'}</div>
+      <div><strong>Grado:</strong> ${ses.grado || 'N/D'} - ${ses.grupo || 'N/D'}</div>
       <div><strong>Área:</strong> ${cuadernillo.area} · Período ${cuadernillo.periodo}</div>
     `;
 
@@ -482,7 +482,7 @@
       }
     }
 
-    // Muestra la página de contexto (lectura previa) — imagen del texto/infografía
+    // Muestra la página de contexto (lectura previa) - imagen del texto/infografía
     // completos del cuadernillo original, sin preguntas en pantalla.
     // Diseño personalizado IDEA: marca de agua, badge numerado, Sabio guía y banda dorada superior.
     function mostrarContextoView(contextoId) {
@@ -733,7 +733,7 @@
 
       // Render de opciones (texto o imagen si la pregunta tiene opciones_imagenes).
       // Para opciones con imagen el layout depende del área/pregunta:
-      //  - matemáticas (todas las preguntas con imagen): grid 2x2 — imágenes
+      //  - matemáticas (todas las preguntas con imagen): grid 2x2 - imágenes
       //    compactas que se ven a la vez, mucho más fácil de comparar.
       //  - CN pregunta I_1382062 (cruce genotipos MM/mm/Mm): también grid 2x2.
       //  - resto (CN con figuras complejas, etc.): 1-columna para preservar
@@ -769,7 +769,7 @@
         if (yaElegida) div.classList.add('elegida');
 
         if (opcImgs && opcImgs[letraReal]) {
-          // Opción con imagen recortada — alto adaptativo según layout
+          // Opción con imagen recortada - alto adaptativo según layout
           div.style.flexDirection = 'column';
           div.style.alignItems = 'stretch';
           // Alto moderado para que las imágenes de opción se lean y comparen sin ser enormes.
@@ -990,7 +990,7 @@
       if (esDuplicadoNoAutorizado) {
         toast('Ya tenías una entrega registrada para esta materia. Esta no la reemplaza.', 'aviso', 3500);
       } else {
-        toast(`✓ Prueba enviada — ${calc.total_correctas}/${cuadernillo.preguntas.length} aciertos`, 'exito', 2500);
+        toast(`✓ Prueba enviada · ${calc.total_correctas}/${cuadernillo.preguntas.length} aciertos`, 'exito', 2500);
       }
       window.location.href = `resultado.html?id=${aplicacionId}`;
     }

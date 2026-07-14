@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Panel del Docente — IDEA</title>
+  <title>Panel del Docente · IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
   <!-- Confetti (solo al celebrar) -->
   <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">
   <style>
-  /* === Panel Docente — diseño CLARO en tarjetas (mismo lenguaje que el panel del estudiante) === */
+  /* === Panel Docente - diseño CLARO en tarjetas (mismo lenguaje que el panel del estudiante) === */
   .doc-wrap { max-width: 1120px; margin: 0 auto; padding: 26px 22px 56px; }
   .doc-wrap > section, .doc-wrap > #vista-inicial, .doc-wrap > #vista-grupo { margin-bottom: 18px; }
 
@@ -38,7 +38,7 @@
   .panel-hero-doc__sub { color:#6B7280; font-size:14px; max-width:540px; }
   .panel-hero-doc__stats { display:flex; gap:12px; }
 
-  /* Acciones — tarjetas centradas con ícono en insignia (premium) */
+  /* Acciones - tarjetas centradas con ícono en insignia (premium) */
   .doc-acciones-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
   .doc-acciones-grid > .doc-accion { flex:1 1 150px; max-width:210px; }
   .doc-acciones-grid > .doc-accion--destacada { flex:1 1 100%; max-width:none; }
@@ -157,7 +157,7 @@
   <header class="idea-header">
     <a href="docente.html" class="logo-home" title="Inicio (volver al panel)">
       <img src="assets/logo-idea.png" class="logo">
-      <div class="nombre-app">IDEA — Panel del Docente</div>
+      <div class="nombre-app">IDEA · Panel del Docente</div>
     </a>
     <div class="user-info">
       <span class="rol-chip">Docente</span>
@@ -185,7 +185,7 @@
     <!-- ZONA INICIO (se oculta al abrir el análisis de un área) -->
     <div id="zona-landing">
 
-      <!-- MIS GRUPOS — primero, áreas en cuadrícula -->
+      <!-- MIS GRUPOS - primero, áreas en cuadrícula -->
       <section class="idea-card animate-fade-in" id="card-mis-grupos">
         <div class="flex items-center justify-between mb-3">
           <h2 class="card-title m-0">Mis grupos</h2>
@@ -215,7 +215,7 @@
       <!-- Bienvenida compacta -->
       <div id="vista-inicial">
         <section class="idea-card doc-quickstart animate-fade-in" style="animation-delay:120ms">
-          <h2 class="card-title">Cómo funciona la Fase II — Análisis y Planeación</h2>
+          <h2 class="card-title">Cómo funciona la Fase II · Análisis y Planeación</h2>
           <div class="doc-pasos">
             <div class="doc-paso"><div class="doc-paso__num">1</div><div><div class="doc-paso__t">👀 Observa</div><div class="doc-paso__d">Revisa el desempeño global del grupo, su nivel y las preguntas más difíciles.</div></div></div>
             <div class="doc-paso"><div class="doc-paso__num">2</div><div><div class="doc-paso__t">🎯 Diagnostica</div><div class="doc-paso__d">Identifica fortalezas y oportunidades por competencia, afirmación y evidencia.</div></div></div>
@@ -596,7 +596,7 @@
     <div class="p-5" id="contenido-glosario"></div>
   </div>
 
-  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
   <div id="toast-container"></div>
 
   <script type="module">
@@ -709,7 +709,7 @@
 
     // Render ADITIVO de la lista de grupos (acordeones por curso). Recibe el subconjunto
     // de apps ya filtrado por la barra. Reconstruye `grupos`/`cursos`, pinta los acordeones
-    // y actualiza los KPIs del hero — todo derivado de las apps recibidas.
+    // y actualiza los KPIs del hero - todo derivado de las apps recibidas.
     function renderAcordeones(apps) {
       grupos = new Map();
       cursos = new Map();
@@ -856,27 +856,27 @@
       // página responsiva. Son independientes entre sí (cada una pinta en su propio
       // contenedor), así que el orden de finalización no importa.
       const _ceder = () => new Promise(r => requestAnimationFrame(r));
-      // Lote 1 — lo esencial que el docente mira primero
+      // Lote 1 - lo esencial que el docente mira primero
       safeRun('renderEncabezado', renderEncabezado);
       // El certificado de reconocimiento ahora se gestiona SOLO en el panel del directivo.
       safeRun('renderKPIs', renderKPIs);
       safeRun('renderDistribucion', renderDistribucion);
       safeRun('renderTablaAciertos', renderTablaAciertos);
       await _ceder();
-      // Lote 2 — análisis pedagógico
+      // Lote 2 - análisis pedagógico
       safeRun('renderDesglose', renderDesglose);
       safeRun('renderAlineacion', renderAlineacion);
       safeRun('renderProyeccionSaber', renderProyeccionSaber);
       safeRun('renderRiesgo', renderRiesgo);
       await _ceder();
-      // Lote 3 — secciones complementarias
+      // Lote 3 - secciones complementarias
       safeRun('renderHistorico', renderHistorico);
       safeRun('renderIndividual', renderIndividual);
       safeRun('renderConclusionesProfundas', renderConclusionesProfundas);
       safeRun('renderSabioIAInsight', renderSabioIAInsight);
       safeRun('renderRecomendacionesV4', renderRecomendacionesV4);
       safeRun('renderMiraGrupo', renderMiraGrupo);
-      // v11: renderInsights eliminado — sección Hallazgos automáticos suprimida.
+      // v11: renderInsights eliminado - sección Hallazgos automáticos suprimida.
 
       // v9 final fix: red de seguridad - si los charts se crearon con dimensiones 0
       // (porque el layout aun no estaba listo), reintentar a los 500ms con dimensiones correctas
@@ -928,7 +928,7 @@
         const cont = sec.querySelector('#lista-excelentes');
         cont.innerHTML = evalG.excelentes.map((e, i) => `
           <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #EADFC0;border-radius:10px;padding:10px 14px">
-            <div><strong>${escapeHtml(e.nombre || '—')}</strong> <span style="color:#78716c;font-size:13px">· promedio ${e.promedio}/100</span></div>
+            <div><strong>${escapeHtml(e.nombre || 'N/D')}</strong> <span style="color:#78716c;font-size:13px">· promedio ${e.promedio}/100</span></div>
             <button class="btn-secundario btn-cert-uno" data-i="${i}" style="white-space:nowrap">📄 Certificado</button>
           </div>`).join('');
         const _perDoc = (cuadActual?.periodo) || 'I';
@@ -1000,7 +1000,7 @@
           </div>
           ${_esSecundariaProy ? `<div class="idea-card p-3 text-center">
             <div class="text-[10px] uppercase text-slate-500 font-semibold">Proy. SABER 11</div>
-            <div class="text-2xl font-bold text-sky-600">${proy?.realista?.puntaje_global || '—'}</div>
+            <div class="text-2xl font-bold text-sky-600">${proy?.realista?.puntaje_global || 'N/D'}</div>
             <div class="text-[10px] text-slate-500 mt-1">escenario realista</div>
           </div>` : ''}
         `;
@@ -1021,7 +1021,7 @@
         const pctMejorPreg = Math.max(...pctPorPreg);
         const idxMejor = pctPorPreg.indexOf(pctMejorPreg) + 1;
         insights.push(`La pregunta con mejor desempeño es <strong>P${idxMejor}</strong> con ${pctMejorPreg}% de aciertos; la más difícil es <strong>P${pregMasDificil}</strong> con ${pctMasDificil}%.`);
-        if (_esSecundariaProy) insights.push(`Si el grupo mantiene este desempeño en SABER 11 ${cuadActual.area || ''}, proyectaría <strong>${proy?.realista?.puntaje_global || '—'} puntos</strong>. Para subir al rango ${proy?.optimista?.puntaje_global || '—'} se necesita fortalecer la competencia <strong>${minComp}.</strong> (${cuadActual.competencias?.[minComp] || ''}).`);
+        if (_esSecundariaProy) insights.push(`Si el grupo mantiene este desempeño en SABER 11 ${cuadActual.area || ''}, proyectaría <strong>${proy?.realista?.puntaje_global || 'N/D'} puntos</strong>. Para subir al rango ${proy?.optimista?.puntaje_global || 'N/D'} se necesita fortalecer la competencia <strong>${minComp}.</strong> (${cuadActual.competencias?.[minComp] || ''}).`);
         ins.innerHTML = insights.map(t => `<li class="flex gap-2"><span class="text-amber-600">●</span><span>${t}</span></li>`).join('');
       }
 
@@ -1231,7 +1231,7 @@
               const bg = (k === d.clave) ? 'background:#DCFCE7' : (pct > 30 && k !== d.clave ? 'background:#FEE2E2' : '');
               html += `<td class="text-center" style="${bg}">${pct}%${tickClave}</td>`;
             }
-            html += `<td class="text-center text-slate-400">${d.distribucion['—'] || 0}%</td>`;
+            html += `<td class="text-center text-slate-400">${d.distribucion['N/D'] || 0}%</td>`;
             html += `<td class="text-center font-bold">${d.clave}</td></tr>`;
           });
           html += '</tbody>';
@@ -1240,12 +1240,12 @@
       } catch (e) { console.error('renderPsicometrico FAIL:', e); }
     }
 
-    // v11: renderInsights ELIMINADO — sección 'Hallazgos automáticos' suprimida por feedback del usuario.
+    // v11: renderInsights ELIMINADO - sección 'Hallazgos automáticos' suprimida por feedback del usuario.
 
     function renderEncabezado() {
       const inst = instituciones.find(i => i.id === aplicacionesActuales[0]?.institucion_id);
       document.getElementById('titulo-grupo').textContent =
-        `${cuadActual.area} — Grado ${grupoActivo.grado}° ${grupoActivo.grupo}`;
+        `${cuadActual.area} · Grado ${grupoActivo.grado}° ${grupoActivo.grupo}`;
       document.getElementById('meta-grupo').textContent =
         `${inst?.nombre || ''} · Período ${cuadActual.periodo} · ${aplicacionesActuales.length} aplicaciones`;
     }
@@ -1499,7 +1499,7 @@
           const r = a.respuestas.find(x => x.pregunta_id === cuadActual.preguntas[q].id);
           const elegida = r?.opcion_elegida_real || '';
           const acertada = a.aciertos_por_pregunta[q] === 1;
-          html += `<td class="${elegida ? (acertada ? 'acierto' : 'error') : 'vacio'}">${elegida || '—'}</td>`;
+          html += `<td class="${elegida ? (acertada ? 'acierto' : 'error') : 'vacio'}">${elegida || 'N/D'}</td>`;
         }
         html += `<td><strong>${a.total_correctas}</strong></td>`;
         html += `<td><button class="btn-msg-estudiante text-xs px-2 py-1 rounded-md bg-slate-100 hover:bg-amber-100 border border-slate-200 transition" data-id="${a.estudiante_id}" data-nombre="${escapeHtml(a.estudiante_nombre)}" title="Enviar mensaje">💬</button></td>`;
@@ -1570,10 +1570,10 @@
         // DIFICULTAD empírica (vista inversa: pocos aciertos = pregunta más difícil).
         // Cortes ICFES: ≤35% → ALTA (rojo) · 35–65% → MEDIA (naranja) · ≥65% → BAJA (verde).
         const dif = pctGrupoPreg < 35
-          ? { label: 'ALTA', titulo: `Dificultad alta — solo el ${pctGrupoPreg}% del grupo acertó (≤35%)` }
+          ? { label: 'ALTA', titulo: `Dificultad alta - solo el ${pctGrupoPreg}% del grupo acertó (≤35%)` }
           : (pctGrupoPreg < 65
-            ? { label: 'MEDIA', titulo: `Dificultad media — el ${pctGrupoPreg}% del grupo acertó (35–65%)` }
-            : { label: 'BAJA', titulo: `Dificultad baja — el ${pctGrupoPreg}% del grupo acertó (≥65%)` });
+            ? { label: 'MEDIA', titulo: `Dificultad media - el ${pctGrupoPreg}% del grupo acertó (35–65%)` }
+            : { label: 'BAJA', titulo: `Dificultad baja - el ${pctGrupoPreg}% del grupo acertó (≥65%)` });
         const compLetra = (p.competencia || 'a').charAt(0);
         const compNom = cuadActual.competencias[compLetra] || '';
         const afirTxt = cuadActual.afirmaciones?.[p.afirmacion] || `Afirmación ${p.afirmacion}`;
@@ -1720,7 +1720,7 @@
               <h2 style="margin:2px 0 0 0; font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:24px;">N° ${numero}</h2>
             </div>
             <div style="display:flex; gap:8px; align-items:center;">
-              <span style="background:${semModal.color}; color:${semModal.colorTexto}; padding:4px 12px; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:0.05em;" title="${escapeHtml(semModal.labelLargo)} — ${_pctGrupo}% de aciertos del grupo">${semModal.label}</span>
+              <span style="background:${semModal.color}; color:${semModal.colorTexto}; padding:4px 12px; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:0.05em;" title="${escapeHtml(semModal.labelLargo)} · ${_pctGrupo}% de aciertos del grupo">${semModal.label}</span>
               <button class="cerrar-modal-pregunta" style="background:transparent; border:1px solid rgba(255,255,255,0.3); color:white; padding:6px 14px; border-radius:8px; cursor:pointer; font-size:13px;">Cerrar ×</button>
             </div>
           </div>
@@ -1828,7 +1828,7 @@
       };
 
       // v12: Paleta POR AFIRMACIÓN (no por competencia). Razón: hay áreas con una
-      // sola competencia (Lectura Crítica) pero varias afirmaciones — antes todo
+      // sola competencia (Lectura Crítica) pero varias afirmaciones - antes todo
       // se coloreaba del mismo tono. Ahora cada afirmación tiene su color y sus
       // evidencias lo heredan: linaje visual desde el grupo más fino del marco DCE.
       const PALETA_AFIR = [
@@ -1882,7 +1882,7 @@
       if (!ocultarCompUnica) {
         // INGLÉS: la herencia "primera afirmación" produce colores duplicados
         // (Partes d y e caen al mismo nivel MCER o al fallback gris). Para Inglés
-        // usamos directamente PALETA.inglesPartes — 5 colores distintos por Parte.
+        // usamos directamente PALETA.inglesPartes - 5 colores distintos por Parte.
         const _esIngles = (cuadActual.area || '').toLowerCase() === 'inglés';
         const compLabels = compsOrden.map(k => `${k}.`);
         const compData = compsOrden.map(k => logComp[k] || 0);
@@ -1903,8 +1903,8 @@
       // Regla de color (igual que en 11° P1):
       //  - VARIAS competencias: cada afirmación toma el color de SU competencia (afir de una
       //    misma competencia comparten color), para tener SOLO los colores de las competencias.
-      //  - UNA sola competencia (ej. Lectura Crítica de primaria): colorear por AFIRMACIÓN —
-      //    cada afirmación su color y las evidencias lo heredan— para que el panel no quede
+      //  - UNA sola competencia (ej. Lectura Crítica de primaria): colorear por AFIRMACIÓN -
+      //    cada afirmación su color y las evidencias lo heredan - para que el panel no quede
       //    monocromo y muestre la estructura interna del marco DCE.
       //  - Inglés (sin panel de competencia): un color por nivel MCER.
       const _esInglesAE = (cuadActual.area || '').toLowerCase() === 'inglés';
@@ -2063,7 +2063,7 @@
                   <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:${it.color}; margin-right:6px; vertical-align:middle;"></span>
                   <span style="color:${it.color};">${escapeHtml(it.codigo)}</span>
                 </td>
-                <td style="padding:6px 8px; color:#1F1F23; line-height:1.4;">${escapeHtml(it.titulo || '—')}</td>
+                <td style="padding:6px 8px; color:#1F1F23; line-height:1.4;">${escapeHtml(it.titulo || 'N/D')}</td>
                 <td style="padding:6px 8px; text-align:right; font-weight:700; color:${semaforoDesempeno(it.valor).color};">${it.valor}%</td>
               </tr>`).join('')}
           </tbody>
@@ -2152,7 +2152,7 @@
       for (const a of aplicacionesActuales) {
         if (!unicos.has(a.estudiante_id)) unicos.set(a.estudiante_id, a.estudiante_nombre);
       }
-      sel.innerHTML = '<option value="">— Selecciona —</option>' +
+      sel.innerHTML = '<option value="">- Selecciona -</option>' +
         [...unicos.entries()].map(([id, n]) => `<option value="${id}">${escapeHtml(n)}</option>`).join('');
       sel.value = '';
       // Usar onchange (no addEventListener) para REEMPLAZAR el handler anterior
@@ -2207,7 +2207,7 @@
                 const d = Math.round(ind - grp);
                 const cod = codigoAfirmacion(cuadActual, k);
                 const desc = (cuadActual.afirmaciones && cuadActual.afirmaciones[k]) || '';
-                return `<tr><td>${escapeHtml(cod)}${desc ? ' — ' + escapeHtml(String(desc).slice(0, 40)) : ''}</td><td class="text-right font-semibold">${ind}%</td><td class="text-right text-slate-500">${grp}%</td><td class="text-right">${flecha(d)}</td></tr>`;
+                return `<tr><td>${escapeHtml(cod)}${desc ? ' - ' + escapeHtml(String(desc).slice(0, 40)) : ''}</td><td class="text-right font-semibold">${ind}%</td><td class="text-right text-slate-500">${grp}%</td><td class="text-right">${flecha(d)}</td></tr>`;
               }).join('')}</tbody>
             </table>
           </div>`;
@@ -2370,7 +2370,7 @@
           const est = allUsers.find(u => u.id === p.estudiante_id);
           return `<div class="border rounded-lg p-3 flex items-center justify-between gap-3 bg-emerald-50">
             <div class="flex-1">
-              <div class="font-semibold">${escapeHtml(est?.nombre_completo || '—')}</div>
+              <div class="font-semibold">${escapeHtml(est?.nombre_completo || 'N/D')}</div>
               <div class="text-xs text-slate-600">Otorgado el ${formatDateTime(p.fecha_otorgado)} · ${escapeHtml(p.razon || 'Sin razón especificada')}</div>
             </div>
             <button data-id="${p.id}" class="btn-revocar btn-secundario text-xs">Revocar</button>
@@ -2395,7 +2395,7 @@
           const est = allUsers.find(u => u.id === p.estudiante_id);
           const estado = p.consumido ? '<span class="chip-nivel alto" style="font-size:9px">CONSUMIDO</span>' : '<span class="chip-nivel bajo" style="font-size:9px">REVOCADO</span>';
           return `<div class="border rounded-lg p-2 flex items-center justify-between gap-2 text-xs">
-            <div>${escapeHtml(est?.nombre_completo || '—')} · ${formatDateTime(p.fecha_otorgado)}</div>
+            <div>${escapeHtml(est?.nombre_completo || 'N/D')} · ${formatDateTime(p.fecha_otorgado)}</div>
             ${estado}
           </div>`;
         }).join('');
@@ -2416,7 +2416,7 @@
       } else if (ses.rol === 'directivo') {
         candidatos = candidatos.filter(u => u.institucion_id === ses.institucion_id);
       }
-      sel.innerHTML = '<option value="">— Selecciona un estudiante —</option>' +
+      sel.innerHTML = '<option value="">- Selecciona un estudiante -</option>' +
         candidatos.map(u => `<option value="${u.id}">${escapeHtml(u.nombre_completo)} (${u.grado}°${u.grupo || ''})</option>`).join('');
     }
 
@@ -2841,7 +2841,7 @@
         return `<div class="border-l-4 ${m.leido ? 'border-emerald-400' : 'border-amber-400'} bg-slate-50 rounded-r-lg p-3 mb-3">
           <div class="flex justify-between items-start mb-1">
             <div>
-              <strong class="text-sm">Para: ${escapeHtml(dest?.nombre_completo || '—')}</strong>
+              <strong class="text-sm">Para: ${escapeHtml(dest?.nombre_completo || 'N/D')}</strong>
               ${leidoChip}
             </div>
             <span class="text-xs text-slate-400">${formatDateTime(m.fecha)}</span>

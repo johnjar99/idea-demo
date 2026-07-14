@@ -45,12 +45,12 @@ const GUIA_CONTENIDOS = {
     { titulo: 'Panel del directivo', texto: 'Soy Sabio. Te explico la vista institucional consolidada.', expr: 'saludando' },
     { element: '.panel-tabs', titulo: 'Pestañas de la vista institucional', texto: 'Cambia entre Consolidado, Ranking de estudiantes (por promedio general), Comparativo entre grupos por materia y Análisis por grupo. Cada pestaña te da una mirada distinta de tu institución.', expr: 'animando', side: 'bottom' },
     { element: '#kpis-globales, [id*=kpi]', titulo: 'KPIs institucionales', texto: 'Indicadores clave de tu institución: total de aplicaciones, promedio global de todas las presentaciones, estudiantes en riesgo y estudiantes sobre nivel básico. Es tu lectura estratégica.', expr: 'leyendo' },
-    { element: '#btn-ir-plan-mejora, [id*=plan-mejora]', titulo: 'Planes de Mejora', texto: 'Acompaña a tus docentes en la Fase II — Análisis y Planeación: ellos construyen aquí la estrategia y luego la llevan a la Fase III en aula.', expr: 'celebrando' }
+    { element: '#btn-ir-plan-mejora, [id*=plan-mejora]', titulo: 'Planes de Mejora', texto: 'Acompaña a tus docentes en la Fase II · Análisis y Planeación: ellos construyen aquí la estrategia y luego la llevan a la Fase III en aula.', expr: 'celebrando' }
   ],
   'plan-mejora': [
     { titulo: 'Constructor del Plan de Mejora', texto: 'Vamos a recorrer juntos las 5 etapas del wizard. Te muestro cada parte y te digo qué hacer.', expr: 'saludando' },
     { element: '#wizard-progress, [class*=progress]', titulo: 'Barra de progreso', texto: 'Esta barra de 5 píldoras te indica en qué paso estás. La activa va en rojo IDEA, las completadas en verde con check, las siguientes en gris.', expr: 'leyendo', side: 'bottom' },
-    { element: '#asesoria-sabio', titulo: 'Mensaje de Sabio', texto: 'En cada paso veo tu progreso y te doy un consejo contextual. Léeme antes de avanzar — te ahorra dudas.', expr: 'animando' },
+    { element: '#asesoria-sabio', titulo: 'Mensaje de Sabio', texto: 'En cada paso veo tu progreso y te doy un consejo contextual. Léeme antes de avanzar - te ahorra dudas.', expr: 'animando' },
     { element: '[data-paso="1"]', titulo: 'Paso 1 - Diagnóstico', texto: 'Te muestro automáticamente el promedio, los estudiantes en riesgo y la competencia más débil. Eso será el foco de tu plan. Agrega observaciones cualitativas si quieres.', expr: 'leyendo' },
     { element: '[data-nav-next="2"]', titulo: 'Avanzar al siguiente paso', texto: 'Click en este botón para confirmar el diagnóstico y pasar al Paso 2 (Prioridades). Siempre puedes retroceder con el botón Atrás.', expr: 'animando' },
     { titulo: 'Paso 2 - Prioridades', texto: 'Las competencias con menos del 70% de logro vienen pre-marcadas. Desmarca las que ya trabajas por otra vía o marca otras prioridades.', expr: 'pensativo' },

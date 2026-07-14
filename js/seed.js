@@ -1,4 +1,4 @@
-// seed.js — Generación de aplicaciones simuladas para datos demo enriquecidos.
+// seed.js - Generación de aplicaciones simuladas para datos demo enriquecidos.
 //
 // Cada estudiante recibe entre 1 y 3 aplicaciones (P1, P2, P3) con un puntaje
 // objetivo según un "perfil" persistente, simulando respuestas coherentes con
@@ -18,7 +18,7 @@ const ESTADOS_APLICACION = { ENVIADA: 'enviada' };
  *   ~30% BAJO, ~40% BÁSICO, ~25% ALTO, ~5% SUPERIOR.
  */
 const PERFILES = [
-  // 11A — 20 estudiantes
+  // 11A - 20 estudiantes
   { docs: '1000000001', perfil: [40, 50, 55] },   // mejora gradual
   { docs: '1000000002', perfil: [75, 80, 85] },   // alto consistente
   { docs: '1000000003', perfil: [40, 45, 50] },   // bajo persistente
@@ -37,9 +37,9 @@ const PERFILES = [
   { docs: '1000000017', perfil: [45, 65, 75] },   // mejora fuerte
   { docs: '1000000018', perfil: [75, 80, 85] },   // alta destacada
   { docs: '1000000019', perfil: [65, 70, 80] },   // alto en ascenso
-  { docs: '1000000021', perfil: [85, 90, 95] },   // SUPERIOR — referente
+  { docs: '1000000021', perfil: [85, 90, 95] },   // SUPERIOR - referente
   { docs: '1000000022', perfil: [50, 55, 70] },   // mejora notable
-  // 11B — 5 estudiantes
+  // 11B - 5 estudiantes
   { docs: '1000000023', perfil: [60, 70, 80], grupo: 'B' },
   { docs: '1000000024', perfil: [40, 50, 60], grupo: 'B' },
   { docs: '1000000025', perfil: [70, 75, 85], grupo: 'B' },

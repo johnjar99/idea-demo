@@ -1,4 +1,4 @@
-// tour.js — Onboarding interactivo usando Driver.js cargado via CDN.
+// tour.js - Onboarding interactivo usando Driver.js cargado via CDN.
 //
 // API:
 //   iniciarTour(rol) → arranca el tour específico del rol
@@ -63,7 +63,7 @@ const TOURS = {
       element: '#btn-plan-mejora',
       popover: {
         title: '📋 Plan de Mejora',
-        description: 'Fase II — Análisis y Planeación. Aquí construyes el plan articulado al marco DCE; la Fase III (implementación) la llevas tú a tu aula.'
+        description: 'Fase II · Análisis y Planeación. Aquí construyes el plan articulado al marco DCE; la Fase III (implementación) la llevas tú a tu aula.'
       }
     }
   ],
@@ -86,7 +86,7 @@ const TOURS = {
       element: '#btn-ir-plan-mejora',
       popover: {
         title: 'Planes de Mejora institucionales',
-        description: 'Acompaña a tus docentes en la Fase II — Análisis y Planeación. Ellos construyen aquí la estrategia para luego implementarla en aula (Fase III).'
+        description: 'Acompaña a tus docentes en la Fase II · Análisis y Planeación. Ellos construyen aquí la estrategia para luego implementarla en aula (Fase III).'
       }
     }
   ],
@@ -167,7 +167,7 @@ export function marcarTourCompleto(rol) {
  */
 export function botonAyudaFlotante(rol) {
   // Rediseño 2026-06-07: el ÚNICO botón de ayuda flotante es ahora el de Sabio
-  // (js/guia-sabio.js) — "la IA viviendo en la plataforma". Se suprime el antiguo "?"
+  // (js/guia-sabio.js) - "la IA viviendo en la plataforma". Se suprime el antiguo "?"
   // para no duplicar botones. El tour sigue disponible vía iniciarTour si se necesita.
   return;
 }

@@ -1,4 +1,4 @@
-// perfiles-fijos.js — Perfiles de demostración SIEMPRE disponibles, sin cargar demo.
+// perfiles-fijos.js - Perfiles de demostración SIEMPRE disponibles, sin cargar demo.
 //
 // IE de DEMOSTRACIÓN con estudiantes de TODOS los grados (3°-11°), sus docentes, un
 // directivo y un manager, para validar los tres paneles. Se auto-crean al inicializar la

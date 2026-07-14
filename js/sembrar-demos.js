@@ -1,4 +1,4 @@
-// sembrar-demos.js — Motor de DEMOS de la IE de demostración (solo sandbox idea-demo).
+// sembrar-demos.js - Motor de DEMOS de la IE de demostración (solo sandbox idea-demo).
 //
 // cargarDemosTodas(): por cada estudiante de la IE Demo, crea entregas YA presentadas (con
 //   resultados) de TODOS los cuadernillos de su grado, para que docente/directivo/Sabio/plan

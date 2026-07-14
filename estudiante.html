@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Mi panel — IDEA</title>
+  <title>Mi panel · IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
   <header class="idea-header">
     <a href="estudiante.html" class="logo-home" title="Inicio (volver al panel)">
       <img src="assets/logo-idea.png" class="logo" alt="IDEA">
-      <div class="nombre-app">IDEA — Panel del Estudiante</div>
+      <div class="nombre-app">IDEA · Panel del Estudiante</div>
     </a>
     <div class="user-info">
       <span class="rol-chip">Estudiante</span>
@@ -54,11 +54,11 @@
       </div>
       <div class="panel-hero-est__stats">
         <div class="kpi-card kpi-card--rojo">
-          <div class="kpi-card__valor" id="kpi-promedio">—</div>
+          <div class="kpi-card__valor" id="kpi-promedio">N/D</div>
           <div class="kpi-card__label">Promedio<br>global</div>
         </div>
         <div class="kpi-card kpi-card--dorado">
-          <div class="kpi-card__valor"><span id="kpi-completados">0</span>/<span id="kpi-total">—</span></div>
+          <div class="kpi-card__valor"><span id="kpi-completados">0</span>/<span id="kpi-total">N/D</span></div>
           <div class="kpi-card__label">Cuadernillos<br>completados</div>
         </div>
         <div class="kpi-card kpi-card--verde">
@@ -126,7 +126,7 @@
     </section>
   </main>
 
-  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
   <div id="toast-container"></div>
 
   <script type="module">
@@ -288,7 +288,7 @@
         estadoHtml = `<span class="cuad-chip-estado cuad-chip-estado--enviado">🔒 Enviado</span>`;
         estadoClase = 'cuad-card--enviado';
       }
-      // Botón PDF eliminado de la card — ahora vive en resultado.html tras presentar
+      // Botón PDF eliminado de la card - ahora vive en resultado.html tras presentar
       const pdfBtnHtml = '';
 
       const miniStatsCompacto = nInt > 0
@@ -402,7 +402,7 @@
       ? Math.round(ultimosPorMat.reduce((s, a) => s + a.puntaje, 0) / ultimosPorMat.length)
       : null;
 
-    document.getElementById('kpi-promedio').textContent = promedioGlobal !== null ? promedioGlobal : '—';
+    document.getElementById('kpi-promedio').textContent = promedioGlobal !== null ? promedioGlobal : 'N/D';
     document.getElementById('kpi-completados').textContent = completadosOficial;
     document.getElementById('kpi-total').textContent = totalCuad;
     document.getElementById('kpi-intentos-total').textContent = mias.length;
@@ -412,7 +412,7 @@
     let saludo, sub, expresion;
     if (completadosOficial === 0) {
       saludo = `¡Hola, ${escapeHtml(primerNombre)}! 👋`;
-      sub = `Tienes ${totalCuad} cuadernillos por presentar. Tómalos con calma — estoy contigo en cada uno.`;
+      sub = `Tienes ${totalCuad} cuadernillos por presentar. Tómalos con calma - estoy contigo en cada uno.`;
       expresion = 'saludando';
     } else if (completadosOficial < totalCuad) {
       saludo = `¡Vas muy bien, ${escapeHtml(primerNombre)}!`;
@@ -521,7 +521,7 @@
       let promediosGlobal = [];
       let labelsGlobal = [];
       let materiaResaltada = null;   // string area | null
-      let modoVista = 'promedio';     // 'todas' | 'promedio' — default = promedio
+      let modoVista = 'promedio';     // 'todas' | 'promedio' - default = promedio
 
       // Helper hex → rgba con alpha
       function hexAlpha(hex, alpha) {
@@ -722,7 +722,7 @@
         if (!btn) return;
         const area = btn.dataset.area;
         materiaResaltada = (materiaResaltada === area) ? null : area;
-        // Al resaltar una materia debe verse — si está en "Solo promedio", pasar a "Todas"
+        // Al resaltar una materia debe verse - si está en "Solo promedio", pasar a "Todas"
         if (materiaResaltada && modoVista !== 'todas') {
           const tT = document.getElementById('toggle-vista-todas');
           if (tT) tT.click();

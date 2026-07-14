@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Mi resultado — IDEA</title>
+  <title>Mi resultado · IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
   <header class="idea-header">
     <a href="estudiante.html" class="logo-home" title="Volver al panel del estudiante">
       <img src="assets/logo-idea.png" class="logo">
-      <div class="nombre-app">IDEA — Resultado individual</div>
+      <div class="nombre-app">IDEA · Resultado individual</div>
     </a>
     <div class="user-info">
       <span class="rol-chip">Estudiante</span>
@@ -129,7 +129,7 @@
     </div>
   </main>
 
-  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
   <div id="toast-container"></div>
 
   <script type="module">
@@ -497,7 +497,7 @@
     }
     })().catch(e => console.warn('[resultado] evolución:', e));
 
-    // Grid de preguntas — tooltip con competencia (post-prueba, modo review)
+    // Grid de preguntas - tooltip con competencia (post-prueba, modo review)
     const grid = document.getElementById('grid-preguntas');
     cuadernillo.preguntas.forEach((preg, i) => {
       const acierto = aplicacion.aciertos_por_pregunta[i] === 1;
@@ -513,7 +513,7 @@
 
     function mostrarDetalle(preg, idx) {
       const respUsuario = aplicacion.respuestas.find(r => r.pregunta_id === preg.id);
-      const elegida = respUsuario?.opcion_elegida_real || '—';
+      const elegida = respUsuario?.opcion_elegida_real || 'N/D';
       const correcta = preg.clave;
       const acierto = elegida === correcta;
       const det = document.getElementById('detalle-pregunta');
@@ -533,7 +533,7 @@
           </div>`
         : '';
       const renderLetra = (letra) => {
-        if (letra === '—') return '<em class="text-slate-400">No respondida</em>';
+        if (letra === 'N/D') return '<em class="text-slate-400">No respondida</em>';
         const tx = preg.opciones[letra] || '';
         if (opcImgs && opcImgs[letra]) {
           return `<div><strong>${letra}.</strong> ${tx}</div><img src="${opcImgs[letra]}" alt="Opción ${letra}" style="max-width:100%;height:auto;max-height:280px;object-fit:contain;margin-top:6px;border-radius:4px;border:1px solid #E5E7EB">`;
@@ -576,7 +576,7 @@
       exportarResultadoEstudianteExcel(aplicacion, cuadernillo);
     });
 
-    // Descargar el cuadernillo original (PDF) — disponible aquí tras presentar la prueba
+    // Descargar el cuadernillo original (PDF) - disponible aquí tras presentar la prueba
     document.getElementById('btn-descargar-cuadernillo-pdf').addEventListener('click', async (e) => {
       const btn = e.currentTarget;
       const labelOrig = btn.innerHTML;

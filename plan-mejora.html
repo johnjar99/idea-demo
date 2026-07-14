@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Plan de Mejora — Fase II — IDEA</title>
+  <title>Plan de Mejora · Fase II · IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
   <header class="idea-header">
     <a href="docente.html" class="logo-home" title="Volver al panel del docente">
       <img src="assets/logo-idea.png" class="logo">
-      <div class="nombre-app">IDEA — Plan de Mejora · Fase II</div>
+      <div class="nombre-app">IDEA · Plan de Mejora · Fase II</div>
     </a>
     <div class="user-info">
       <span class="rol-chip" id="chip-rol"></span>
@@ -35,7 +35,7 @@
     <!-- v9: Encabezado pedagógico compacto -->
     <div class="text-center mb-6">
       <div class="inline-block px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
-        Fase II — Análisis y Planeación
+        Fase II · Análisis y Planeación
       </div>
       <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Constructor del Plan de Mejora</h1>
       <p class="text-slate-600 text-sm max-w-2xl mx-auto">Sigue los pasos guiados para construir un plan accionable. El plan que generes aquí es la planeación; la implementación corresponde a la Fase III en tu aula.</p>
@@ -158,7 +158,7 @@
         </div>
         <p class="text-sm text-slate-600 mb-4">
           Identificadas automáticamente a partir de los resultados del grupo en <strong id="fortalezas-meta-area">esta materia</strong> y grado.
-          No requieren intervención inmediata — son la base sobre la cual construir.
+          No requieren intervención inmediata - son la base sobre la cual construir.
         </p>
         <div id="fortalezas-auto-lista" class="space-y-2">
           <div class="text-sm text-slate-400 italic">Cargando fortalezas detectadas…</div>
@@ -266,17 +266,17 @@
            en aula) es autonomía del docente; este mensaje promueve activamente
            que la lleve adelante. -->
       <div class="fase3-motivacional animate-fade-in" style="animation-delay:200ms">
-        <div class="fase3-cinta">FASE III — IMPLEMENTACIÓN Y ACCIÓN</div>
+        <div class="fase3-cinta">FASE III · IMPLEMENTACIÓN Y ACCIÓN</div>
         <div class="fase3-icono">🌱</div>
         <h3 class="fase3-titulo">Ahora viene lo más importante: tu aula.</h3>
         <p class="fase3-parrafo">
-          Acabas de completar la <strong>Fase II — Análisis y Planeación</strong>. El plan que construiste es un mapa, no un destino: cobra vida cuando lo llevas a tus estudiantes. La <strong>Fase III — Implementación y Acción</strong> es enteramente tuya, sucede en el aula, con tus secuencias didácticas, tu seguimiento día a día y tu juicio profesional ajustando la ruta según lo que veas.
+          Acabas de completar la <strong>Fase II · Análisis y Planeación</strong>. El plan que construiste es un mapa, no un destino: cobra vida cuando lo llevas a tus estudiantes. La <strong>Fase III · Implementación y Acción</strong> es enteramente tuya, sucede en el aula, con tus secuencias didácticas, tu seguimiento día a día y tu juicio profesional ajustando la ruta según lo que veas.
         </p>
         <div class="fase3-acciones">
           <div class="fase3-accion">
             <span class="fase3-accion-num">1</span>
             <div>
-              <strong>Empieza esta semana.</strong> Toma la primera estrategia del plan y prográmala para tu próxima clase. No esperes el lunes "perfecto" — el mejor día es hoy.
+              <strong>Empieza esta semana.</strong> Toma la primera estrategia del plan y prográmala para tu próxima clase. No esperes el lunes "perfecto" - el mejor día es hoy.
             </div>
           </div>
           <div class="fase3-accion">
@@ -316,7 +316,7 @@
     </style>
   </main>
 
-  <footer class="idea-footer no-print">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <footer class="idea-footer no-print">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
   <div id="toast-container"></div>
 
   <script type="module">
@@ -356,7 +356,7 @@
     document.getElementById('f-grado').value = grado;
     document.getElementById('f-grupo').value = grupo;
 
-    // Cargar trayectoria histórica — lectura DIRIGIDA por institución (no toda la colección).
+    // Cargar trayectoria histórica - lectura DIRIGIDA por institución (no toda la colección).
     // Al limitar a la IE del usuario, además se evita mezclar grupos homónimos de otras IE.
     const _normG = (g) => String(g ?? '').trim().toUpperCase();
     const todas = await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id);
@@ -393,12 +393,12 @@
     const filaTr = document.getElementById('tabla-trayectoria');
     filaTr.innerHTML = `<tr>
       <td><strong>Promedio</strong></td>
-      <td>${trayectoria.I ? promedioGrupo(trayectoria.I) : '—'}</td>
-      <td>${trayectoria.II ? promedioGrupo(trayectoria.II) : '—'}</td>
-      <td>${trayectoria.III ? promedioGrupo(trayectoria.III) : '—'}</td>
+      <td>${trayectoria.I ? promedioGrupo(trayectoria.I) : 'N/D'}</td>
+      <td>${trayectoria.II ? promedioGrupo(trayectoria.II) : 'N/D'}</td>
+      <td>${trayectoria.III ? promedioGrupo(trayectoria.III) : 'N/D'}</td>
     </tr>`;
 
-    // Sugerencias automáticas — articuladas con el marco evaluativo del área
+    // Sugerencias automáticas - articuladas con el marco evaluativo del área
     // específica (competencias + dim secundaria propia: CMC en MAT, componentes en
     // CN, niveles MCER en Inglés, afirmaciones en LC y SC).
     if (apsGrupo.length > 0 && cuadernillo) {
@@ -458,7 +458,7 @@
       }
     }
 
-    // Filas dinámicas (sin columna FORTALEZAS — ahora se autocompletan arriba)
+    // Filas dinámicas (sin columna FORTALEZAS - ahora se autocompletan arriba)
     const tbody = document.getElementById('filas-acciones');
     function nuevaFila(data = {}) {
       const tr = document.createElement('tr');
@@ -502,7 +502,7 @@
       const metaArea = document.getElementById('fortalezas-meta-area');
       if (!cont) return;
       const _cfgArea = configArea(cuadernillo);
-      if (metaArea) metaArea.textContent = `${_cfgArea.nombre_display} · Grado ${grado || '—'}°`;
+      if (metaArea) metaArea.textContent = `${_cfgArea.nombre_display} · Grado ${grado || 'N/D'}°`;
 
       if (!cuadernillo || !apsGrupo || !apsGrupo.length) {
         cont.innerHTML = `<div class="text-sm text-slate-500 italic">Necesitas tener al menos una aplicación del grupo para que se detecten fortalezas automáticamente.</div>`;
@@ -595,7 +595,7 @@
       }).filter(f => Object.values(f).some(v => v));
       // vinc se mantiene vacío para retro-compatibilidad con el schema de aplicaciones guardadas
       const vinc = {};
-      // Fortalezas autodetectadas (logro >= 65%) — viaja con el plan para exports y persistencia
+      // Fortalezas autodetectadas (logro >= 65%) - viaja con el plan para exports y persistencia
       const fortalezasAuto = [];
       if (cuadernillo && apsGrupo.length) {
         const _cfg = configArea(cuadernillo);
@@ -659,7 +659,7 @@
 
     // ===================== v9: WIZARD 5 PASOS =====================
     const SABIO_MENSAJES = {
-      1: '🦉 Te muestro lo que vi en tu grupo. Lee con atención el porcentaje en nivel BAJO y la competencia más débil — eso será el foco de tu plan.',
+      1: '🦉 Te muestro lo que vi en tu grupo. Lee con atención el porcentaje en nivel BAJO y la competencia más débil - eso será el foco de tu plan.',
       2: '🦉 Las competencias marcadas son las que tu grupo dominó menos. Desmárcalas si ya las estás trabajando, o agrega otras prioridades.',
       3: '🦉 Estas recomendaciones se generan del Marco DCE. Selecciona entre 3 y 8 acciones balanceando esfuerzo e impacto.',
       4: '🦉 Asigna responsables reales y semanas concretas. Este cronograma se descargará en el Word y el PDF.',
@@ -705,7 +705,7 @@
       const enRiesgo = apsGrupo.filter(a => a.nivel === 'BAJO').length;
       const logComp = cuadernillo ? logroGrupoPor(logroPorCompetencia, apsGrupo, cuadernillo) : {};
       const compKeys = Object.keys(logComp);
-      const minComp = compKeys.length ? compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b) : '—';
+      const minComp = compKeys.length ? compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b) : 'N/D';
       const minCompName = cuadernillo?.competencias?.[minComp] || minComp;
       cont.innerHTML = `
         <div class="idea-card p-3 text-center">
@@ -889,9 +889,9 @@
       const recsSel = catalogoActual.filter(r => recomendacionesSeleccionadas.has(r.id));
       const cronograma = [...document.querySelectorAll('#filas-cronograma tr')].map((tr, i) => ({
         accion: tr.querySelector('td:first-child')?.textContent?.trim() || '',
-        semana: tr.querySelector(`[data-crono-sem="${i}"]`)?.value || '—',
-        responsable: tr.querySelector(`[data-crono-resp="${i}"]`)?.value || '—',
-        indicador: tr.querySelector(`[data-crono-ind="${i}"]`)?.value || '—',
+        semana: tr.querySelector(`[data-crono-sem="${i}"]`)?.value || 'N/D',
+        responsable: tr.querySelector(`[data-crono-resp="${i}"]`)?.value || 'N/D',
+        indicador: tr.querySelector(`[data-crono-ind="${i}"]`)?.value || 'N/D',
         estado: tr.querySelector(`[data-crono-est="${i}"]`)?.value || 'pendiente'
       })).filter(c => c.accion);
       const observaciones = document.getElementById('f-observaciones')?.value || '';
@@ -935,7 +935,7 @@
         }
       }
       const trayectoriaHTML = plan.puntajes_periodos.map(p =>
-        `<tr><td><b>${p.periodo}</b></td><td style="text-align:center">${p.puntaje != null ? p.puntaje : '—'}</td></tr>`).join('');
+        `<tr><td><b>${p.periodo}</b></td><td style="text-align:center">${p.puntaje != null ? p.puntaje : 'N/D'}</td></tr>`).join('');
       const vincHTML = '';  // v13: Vinculación curricular institucional removida
       const recsHTML = recsSel.map(r => `
         <tr>
@@ -943,7 +943,7 @@
           <td>${escapeHtml(r.accion_detallada)}</td>
           <td style="text-align:center;text-transform:uppercase;font-size:9pt">${escapeHtml(r.esfuerzo)}</td>
           <td style="text-align:center;text-transform:uppercase;font-size:9pt">${escapeHtml(r.impacto)}</td>
-          <td style="text-align:center;font-size:9pt">${escapeHtml(r.duracion || '—')}</td>
+          <td style="text-align:center;font-size:9pt">${escapeHtml(r.duracion || 'N/D')}</td>
         </tr>`).join('');
       const cronoHTML = cronograma.map(c => `
         <tr>

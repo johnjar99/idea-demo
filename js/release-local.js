@@ -1,4 +1,4 @@
-// release-local.js — Overlay LOCAL de cuadernillos autorizados.
+// release-local.js - Overlay LOCAL de cuadernillos autorizados.
 // SOLO actúa en localhost: inyecta en memoria los cuadernillos marcados 'local' o 'web' en
 // datos/_release.json (leídos de los archivos datos/), para verificarlos en la plataforma LOCAL
 // antes de lanzarlos a la web. NO escribe en Firestore ni afecta producción: en el dominio real

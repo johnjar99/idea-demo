@@ -1,4 +1,4 @@
-// extractor-imagenes.js — Resolución de imágenes y fallback a placeholder genérico.
+// extractor-imagenes.js - Resolución de imágenes y fallback a placeholder genérico.
 //
 // Las imágenes oficiales del cuadernillo se entregan como archivos físicos en `assets/img/`:
 //   p01.svg, p02.svg ... p20.svg → enunciado de cada pregunta

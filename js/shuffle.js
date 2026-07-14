@@ -1,4 +1,4 @@
-// shuffle.js — Randomización Fisher-Yates con seed opcional.
+// shuffle.js - Randomización Fisher-Yates con seed opcional.
 // Garantiza que cada estudiante reciba la prueba en orden distinto y opciones barajadas
 // pero PRESERVA la trazabilidad: el orden original se reconstruye al calcular resultados.
 

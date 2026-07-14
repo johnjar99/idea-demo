@@ -1,4 +1,4 @@
-// utils.js — Helpers comunes (UUID, fechas, validación, slugify, encoding)
+// utils.js - Helpers comunes (UUID, fechas, validación, slugify, encoding)
 // Sin dependencias externas. Funciones puras reutilizables.
 
 export function uuid() {

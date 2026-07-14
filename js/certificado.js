@@ -1,4 +1,4 @@
-// certificado.js — Certificado de RECONOCIMIENTO académico (Instrumento IDEA).
+// certificado.js - Certificado de RECONOCIMIENTO académico (Instrumento IDEA).
 //
 // Reglas de negocio (actualizadas 2026-06-08):
 //   - Reconocimiento = el estudiante obtiene 60 o MÁS puntos en TODAS las áreas evaluadas
@@ -16,7 +16,7 @@
 
 import { cargarJsPDF } from './cargar-libs.js';
 
-export const UMBRAL_RECONOCIMIENTO = 60;   // ≥ 60 en TODAS las áreas → reconocimiento
+export const UMBRAL_RECONOCIMIENTO = 60;   // igual o superior a 60 en TODAS las áreas -> reconocimiento
 export const UMBRAL_EXCELENCIA = 60;       // alias retro-compatible
 
 const _normGrupo = (g) => String(g ?? '').trim().toUpperCase();
@@ -213,7 +213,7 @@ export async function generarCertificadoExcelenciaPDF({ estudiante, institucion,
 
   // Nombre del estudiante (cursiva elegante, como en el modelo).
   doc.setFont('times', 'bolditalic'); doc.setFontSize(30); doc.setTextColor(...INK);
-  doc.text(String(estudiante?.nombre || '—'), cx, y, { align: 'center' });
+  doc.text(String(estudiante?.nombre || 'N/D'), cx, y, { align: 'center' });
   y += 4;
   doc.setDrawColor(...ORO); doc.setLineWidth(0.6); doc.line(cx - 58, y + 1, cx + 58, y + 1);
   doc.setFillColor(...ORO);
@@ -228,7 +228,7 @@ export async function generarCertificadoExcelenciaPDF({ estudiante, institucion,
 
   // Cuerpo con palabras clave + nivel dinámico.
   const adj = _adjNivel(nivelG);
-  const per = periodo ? ` — Periodo ${periodo}` : '';
+  const per = periodo ? ` · Periodo ${periodo}` : '';
   doc.setFont('times', 'normal'); doc.setFontSize(13.5); doc.setTextColor(...INK);
   const cuerpo = `por la participación y ${adj} desempeño en la Evaluación Diagnóstica del Instrumento IDEA${per}, ¡felicitaciones!`;
   const lineas = doc.splitTextToSize(cuerpo, 150);

@@ -1,9 +1,9 @@
-// export-excel.js — Excel premium con ExcelJS (colores reales, fórmulas, formato condicional).
+// export-excel.js - Excel premium con ExcelJS (colores reales, fórmulas, formato condicional).
 // ExcelJS se carga global como `window.ExcelJS`.
 //
 // Dos exportaciones:
-//   - exportarResultadoEstudianteExcel(aplicacion, cuadernillo) — 5 hojas individuales
-//   - exportarReporteGrupoExcel(aplicaciones, cuadernillo, contexto) — 7 hojas Plantilla SJB
+//   - exportarResultadoEstudianteExcel(aplicacion, cuadernillo) - 5 hojas individuales
+//   - exportarReporteGrupoExcel(aplicaciones, cuadernillo, contexto) - 7 hojas Plantilla SJB
 
 import {
   logroPorCompetencia, logroPorAfirmacion, logroPorEvidencia, logroPorCMC, logroPorDimensionSecundaria,
@@ -101,7 +101,7 @@ function aplicarFilaZebra(row, par) {
 }
 
 // ====================================================================
-// EXCEL INDIVIDUAL DEL ESTUDIANTE — 5 hojas
+// EXCEL INDIVIDUAL DEL ESTUDIANTE - 5 hojas
 // ====================================================================
 
 export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) {
@@ -114,7 +114,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
 
   // === Hoja 1: Portada ===
   const wsP = wb.addWorksheet('Portada', { properties: { tabColor: { argb: 'FF' + COLOR.rojo } } });
-  wsP.mergeCells('A1:F1'); wsP.getCell('A1').value = 'INSTRUMENTO IDEA — RESULTADO INDIVIDUAL';
+  wsP.mergeCells('A1:F1'); wsP.getCell('A1').value = 'INSTRUMENTO IDEA · RESULTADO INDIVIDUAL';
   wsP.getCell('A1').font = fontBold(18, COLOR.rojo); wsP.getCell('A1').alignment = alignCenter;
   wsP.getRow(1).height = 32;
   wsP.mergeCells('A2:F2'); wsP.getCell('A2').value = 'Instrumento de Interpretación de Datos para la Evaluación del Aprendizaje';
@@ -173,7 +173,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   aplicarHeader(hdrD, COLOR.negro);
   cuadernillo.preguntas.forEach((p, i) => {
     const r = aplicacion.respuestas.find(x => x.pregunta_id === p.id);
-    const elegida = r?.opcion_elegida_real || '—';
+    const elegida = r?.opcion_elegida_real || 'N/D';
     const acierto = aplicacion.aciertos_por_pregunta[i] === 1;
     const row = wsD.addRow([
       p.numero, p.id, p.que_evalua.replace(/\$[^$]*\$/g, '[fórmula]'),
@@ -234,36 +234,36 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   const wsRec = wb.addWorksheet('Recomendaciones', { properties: { tabColor: { argb: 'FF' + COLOR.bajo } } });
   wsRec.mergeCells('A1:C1'); wsRec.getCell('A1').value = 'Recomendaciones para tu estudio';
   wsRec.getCell('A1').font = fontBold(14); wsRec.getRow(1).height = 28;
-  // Recursos por área del cuadernillo — alineados con su guía ICFES.
+  // Recursos por área del cuadernillo - alineados con su guía ICFES.
   const RECURSOS_POR_AREA = {
     'matemáticas': [
       ['Khan Academy Matemáticas', 'Refuerzo por tema y nivel', 'https://es.khanacademy.org/math'],
       ['GeoGebra', 'Visualización geometría y funciones', 'https://www.geogebra.org/m/start'],
-      ['ICFES — Cuadernillos oficiales', 'Practicar pruebas tipo SABER 11°', 'https://www.icfes.gov.co/']
+      ['ICFES ·Cuadernillos oficiales', 'Practicar pruebas tipo SABER 11°', 'https://www.icfes.gov.co/']
     ],
     'lectura crítica': [
       ['Diccionario RAE', 'Léxico y significado contextual', 'https://dle.rae.es/'],
-      ['Coursera — Lectura crítica', 'Curso gratuito sobre estructura textual y argumentación', 'https://www.coursera.org/learn/lectura-critica'],
+      ['Coursera · Lectura crítica', 'Curso gratuito sobre estructura textual y argumentación', 'https://www.coursera.org/learn/lectura-critica'],
       ['BBC Verifica / TED-Ed', 'Evaluación de fuentes y pensamiento crítico', 'https://ed.ted.com/'],
-      ['ICFES — Guía Lectura Crítica', 'Marco oficial de la prueba', 'https://www.icfes.gov.co/']
+      ['ICFES ·Guía Lectura Crítica', 'Marco oficial de la prueba', 'https://www.icfes.gov.co/']
     ],
     'sociales y ciudadanas': [
       ['Banco de la República Cultural', 'Memoria histórica y contextos sociales', 'https://www.banrepcultural.org/'],
       ['Comisión de la Verdad', 'Informes y testimonios oficiales', 'https://www.comisiondelaverdad.co/'],
       ['Constitución Política 1991', 'Texto íntegro comentado', 'https://www.constitucioncolombia.com/'],
-      ['ICFES — Cuadernillos Sociales y Ciudadanas', 'Práctica oficial', 'https://www.icfes.gov.co/']
+      ['ICFES ·Cuadernillos Sociales y Ciudadanas', 'Práctica oficial', 'https://www.icfes.gov.co/']
     ],
     'ciencias naturales': [
       ['Khan Academy Ciencias', 'Biología, química y física graduadas', 'https://es.khanacademy.org/science'],
       ['PhET Simulaciones', 'Laboratorios virtuales en español', 'https://phet.colorado.edu/es/'],
       ['CK-12', 'Explicaciones de fenómenos por modelo', 'https://www.ck12.org/student/'],
-      ['ICFES — Guía Ciencias Naturales', 'Componentes y competencias', 'https://www.icfes.gov.co/']
+      ['ICFES ·Guía Ciencias Naturales', 'Componentes y competencias', 'https://www.icfes.gov.co/']
     ],
     'inglés': [
       ['British Council LearnEnglish', 'Curso oficial por nivel MCER', 'https://learnenglish.britishcouncil.org/'],
       ['BBC Learning English', 'Audio, video y comprensión auditiva', 'https://www.bbc.co.uk/learningenglish/'],
       ['Cambridge English Practice', 'Tests de práctica oficiales A2/B1', 'https://www.cambridgeenglish.org/'],
-      ['ICFES — Guía Inglés', 'Marco oficial alineado al MCER', 'https://www.icfes.gov.co/']
+      ['ICFES ·Guía Inglés', 'Marco oficial alineado al MCER', 'https://www.icfes.gov.co/']
     ]
   };
   const areaKey = (cuadernillo.area || '').toLowerCase();
@@ -286,7 +286,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
 }
 
 // ====================================================================
-// EXCEL DE GRUPO (PLANTILLA SJB) — 7 hojas
+// EXCEL DE GRUPO (PLANTILLA SJB) - 7 hojas
 // ====================================================================
 
 export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, contexto) {
@@ -319,10 +319,10 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
   }
 
   // v6: las miniaturas de gráficos van DESPUÉS del índice (row ≥ 45) para no superponer datos.
-  // Esto se hace al final del armado de la portada — ver más abajo.
+  // Esto se hace al final del armado de la portada - ver más abajo.
   wsP.mergeCells('B1:G1'); wsP.getCell('B1').value = 'INSTRUMENTO IDEA';
   wsP.getCell('B1').font = fontBold(22, COLOR.rojo); wsP.getCell('B1').alignment = alignCenter;
-  wsP.mergeCells('B2:G2'); wsP.getCell('B2').value = 'Reporte de Resultados — ' + cuadernillo.area;
+  wsP.mergeCells('B2:G2'); wsP.getCell('B2').value = 'Reporte de Resultados · ' + cuadernillo.area;
   wsP.getCell('B2').font = fontBold(14, COLOR.grisOscuro); wsP.getCell('B2').alignment = alignCenter;
   wsP.mergeCells('B3:G3'); wsP.getCell('B3').value = 'Fase II · Análisis y Planeación';
   wsP.getCell('B3').font = fontNormal(11); wsP.getCell('B3').alignment = alignCenter;
@@ -404,12 +404,12 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
   wsD.columns = [{ width: 5 }, { width: 38 }, ...new Array(nPregs).fill({ width: 5 })];
   wsD.views = [{ state: 'frozen', xSplit: 2, ySplit: 2 }];
 
-  // === Hoja 4: Análisis — réplica formato SJB (rótulo de pestaña por ÁREA real, no fijo "Mat_") ===
+  // === Hoja 4: Análisis - réplica formato SJB (rótulo de pestaña por ÁREA real, no fijo "Mat_") ===
   const sheetName = `${configArea(cuadernillo).sigla}_${contexto.grado}°`;
   const wsM = wb.addWorksheet(sheetName, { properties: { tabColor: { argb: 'FF' + COLOR.alto } } });
   // Header
   wsM.mergeCells(`A1:${String.fromCharCode(65 + 3 + nPregs)}1`);
-  wsM.getCell('A1').value = `Reporte de resultados — ${cuadernillo.area} · Grado ${contexto.grado}° ${contexto.grupo}`;
+  wsM.getCell('A1').value = `Reporte de resultados · ${cuadernillo.area} · Grado ${contexto.grado}° ${contexto.grupo}`;
   wsM.getCell('A1').font = fontBold(13, COLOR.rojo);
   wsM.getRow(1).height = 24;
   wsM.addRow(['Promedio:', promedioGrupo(aplicaciones), '', '', 'CLAVES']);
@@ -486,7 +486,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
     const r = wsM.addRow([p.numero, p.que_evalua.replace(/\$[^$]*\$/g, '[fórmula]'), p.competencia, p.afirmacion, p.evidencia, (_hayDim2G ? (valorDimSecundaria(p, cuadernillo) || '') : ''), _difG]);
     r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(9); c.alignment = alignCenter; });
     r.getCell(2).alignment = alignLeft;
-    // Color del semáforo (sin el #) — mismo color que la dificultad en el panel docente
+    // Color del semáforo (sin el #) - mismo color que la dificultad en el panel docente
     const _colorHex = _semG.color.replace('#','');
     r.getCell(7).fill = fillSolid(_colorHex); r.getCell(7).font = fontBoldWhite(9);
   });
@@ -557,7 +557,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
   // === FORTALEZAS AUTODETECTADAS (logro grupal >= 65%) ===
   wsRec.addRow([]); wsRec.addRow([]);
   wsRec.addRow(['FORTALEZAS DETECTADAS EN EL GRUPO (autodetectadas)']).getCell(1).font = fontBold(12, COLOR.alto);
-  wsRec.addRow(['Dimensiones con logro grupal ≥ 65% — son la base sobre la cual construir el plan, no requieren intervención inmediata.']).getCell(1).font = fontNormal(9);
+  wsRec.addRow(['Dimensiones con logro grupal igual o superior al 65% - son la base sobre la cual construir el plan, no requieren intervención inmediata.']).getCell(1).font = fontNormal(9);
   const hdrFort = wsRec.addRow(['Tipo', 'Código', 'Descripción', 'Logro']);
   aplicarHeader(hdrFort, COLOR.alto);
   // Construir fortalezas auto desde los logros del grupo + cuadernillo
@@ -573,7 +573,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
     fortalezas.push(['Afirmación', `Afir ${k}`, cuadernillo.afirmaciones?.[k] || k, v + '%']);
   });
   if (fortalezas.length === 0) {
-    const r = wsRec.addRow(['—', '—', 'No se detectaron fortalezas con logro ≥ 65% en este grupo.', '—']);
+    const r = wsRec.addRow(['N/D', 'N/D', 'No se detectaron fortalezas con logro ≥ 65% en este grupo.', 'N/D']);
     r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(10); c.alignment = { vertical: 'top', wrapText: true }; });
   } else {
     fortalezas.forEach(f => {
@@ -583,9 +583,9 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
     });
   }
 
-  // Tabla editable para Plan de Mejora (SIN columna Fortalezas — están arriba como bloque auto)
+  // Tabla editable para Plan de Mejora (SIN columna Fortalezas - están arriba como bloque auto)
   wsRec.addRow([]); wsRec.addRow([]);
-  wsRec.addRow(['PLAN DE MEJORA — TABLA EDITABLE']).getCell(1).font = fontBold(12, COLOR.rojo);
+  wsRec.addRow(['PLAN DE MEJORA · TABLA EDITABLE']).getCell(1).font = fontBold(12, COLOR.rojo);
   const hdrPlan = wsRec.addRow(['Oportunidades', 'Estrategias', 'Seguimiento']);
   aplicarHeader(hdrPlan, COLOR.negro);
   for (let i = 0; i < 5; i++) {
@@ -670,7 +670,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
   // === v10: Hoja NUEVA "Alineación con descripciones" - títulos completos por dimensión ===
   const wsAlin = wb.addWorksheet('Alineación descripciones', { properties: { tabColor: { argb: 'FF3B82F6' } } });
   wsAlin.mergeCells('A1:D1');
-  wsAlin.getCell('A1').value = 'Alineación curricular MBE — Descripciones completas';
+  wsAlin.getCell('A1').value = 'Alineación curricular MBE · Descripciones completas';
   wsAlin.getCell('A1').font = fontBold(16);
   wsAlin.getRow(1).height = 26;
   wsAlin.mergeCells('A2:D2');
@@ -719,7 +719,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
     const hdr = wsAlin.addRow(['CÓDIGO', 'TÍTULO COMPLETO', '% DE LOGRO', 'COMPETENCIA']);
     aplicarHeader(hdr, COLOR.grisOscuro || COLOR.negro);
     filas.forEach((f, idx) => {
-      const r = wsAlin.addRow([f.codigo, f.titulo, f.valor + '%', f.compLabel || '—']);
+      const r = wsAlin.addRow([f.codigo, f.titulo, f.valor + '%', f.compLabel || 'N/D']);
       r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(10); c.alignment = { vertical: 'top', wrapText: true }; });
       // Color del código según competencia
       r.getCell(1).font = fontBold(10, f.color || COLOR.negro);
@@ -774,7 +774,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
         titulo: cuadernillo.afirmaciones[k],
         valor: logAfir[k] || 0,
         color: colAfirXls(k),
-        compLabel: cc ? cc : '—'
+        compLabel: cc ? cc : 'N/D'
       };
     }));
   }
@@ -794,7 +794,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
         titulo: cuadernillo.evidencias[k],
         valor: logEvid[k] || 0,
         color: colEvidXls(k),
-        compLabel: cc ? cc : '—'
+        compLabel: cc ? cc : 'N/D'
       };
     }));
   }
@@ -811,7 +811,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
         titulo: k,
         valor: logDim2A[k] || 0,
         color: colorCompHex(cc),
-        compLabel: cc ? cc : '—'
+        compLabel: cc ? cc : 'N/D'
       };
     }));
   }

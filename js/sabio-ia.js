@@ -1,4 +1,4 @@
-// js/sabio-ia.js — "Sabio IA": motor de recomendaciones pedagógicas automáticas.
+// js/sabio-ia.js - "Sabio IA": motor de recomendaciones pedagógicas automáticas.
 //
 // Cruza los resultados REALES del grupo (logro por competencia / afirmación / evidencia /
 // componente, calculados con calculo.js) con el catálogo DCE del cuadernillo y la base de
@@ -140,11 +140,11 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
     const nomComp = comp ? (cuadernillo.competencias?.[comp] || comp) : null;
 
     let oportunidad = `${ET.afirmacion_singular} ${cod} (${pct}%, nivel ${nivelDeLogro(pct)}): ${nomAfir}`;
-    if (nomComp) oportunidad += ` — ${ET.competencia_singular.toLowerCase()} ${comp}. ${nomComp}.`;
+    if (nomComp) oportunidad += `. ${ET.competencia_singular} ${comp}. ${nomComp}.`;
     if (ev) oportunidad += ` La ${ET.evidencia_singular.toLowerCase()} más débil es ${ev.codigo} (${ev.pct}%).`;
 
     const meta = Math.min(pct + 20, 80);
-    const seguimiento = `Re-aplicar ítems de ${ET.afirmacion_singular.toLowerCase()} ${cod} al cierre del período; meta: pasar de ${pct}% a ≥${meta}%. Evidencia formativa: quiz corto y rúbrica de proceso, con registro por estudiante.`;
+    const seguimiento = `Re-aplicar ítems de ${ET.afirmacion_singular.toLowerCase()} ${cod} al cierre del período; meta: pasar de ${pct}% a igual o superior al ${meta}%. Evidencia formativa: quiz corto y rúbrica de proceso, con registro por estudiante.`;
 
     filas.push({ oportunidades: oportunidad, estrategias: tomarEstrategia(k, comp, nomAfir), seguimiento });
   }
@@ -159,7 +159,7 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
       filas.push({
         oportunidades: `${dim2Nombre.charAt(0).toUpperCase() + dim2Nombre.slice(1)} "${d2}" (${pct}%, nivel ${nivelDeLogro(pct)}): es el ${dim2Nombre} con menor desempeño del grupo.`,
         estrategias: tomarEstrategia(null, null, d2, d2),
-        seguimiento: `Diseñar una unidad corta centrada en "${d2}" y verificar el avance con una prueba breve al final; meta: ≥${meta}%.`
+        seguimiento: `Diseñar una unidad corta centrada en "${d2}" y verificar el avance con una prueba breve al final; meta: igual o superior al ${meta}%.`
       });
     }
   }
@@ -173,7 +173,7 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
       filas.push({
         oportunidades: `El grupo muestra buen desempeño general. El punto relativamente más bajo es ${ET.afirmacion_singular.toLowerCase()} ${cod} (${pct}%).`,
         estrategias: `Profundizar con tareas de mayor demanda cognitiva (análisis, argumentación y transferencia a nuevos contextos) sobre ${ET.afirmacion_singular.toLowerCase()} ${cod}, para consolidar el dominio.`,
-        seguimiento: `Mantener el nivel con retos quincenales; verificar que ${ET.afirmacion_singular.toLowerCase()} ${cod} se sostenga en ≥80%.`
+        seguimiento: `Mantener el nivel con retos quincenales; verificar que ${ET.afirmacion_singular.toLowerCase()} ${cod} se sostenga en igual o superior al 80%.`
       });
     }
   }

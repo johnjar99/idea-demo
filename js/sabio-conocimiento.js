@@ -1,4 +1,4 @@
-// js/sabio-conocimiento.js — Base de conocimiento de "Sabio IA" + restricciones (guardas).
+// js/sabio-conocimiento.js - Base de conocimiento de "Sabio IA" + restricciones (guardas).
 //
 // Sabio IA responde dudas sobre CÓMO USAR el Instrumento IDEA e interpretar sus resultados,
 // a partir de una base curada (no es un modelo externo ni accede a internet). Tiene guardas:
@@ -75,9 +75,9 @@ export function responderSabioIA(pregunta, pasosPagina, ctx) {
     return { bloqueado: true, element: null, texto: 'Me especializo en el Instrumento IDEA: interpretar resultados, competencias, niveles y planear la mejora. Eso se sale de mi tema, pero con todo lo de la plataforma te ayudo encantado.' };
   }
   const palabras = qn.split(/[^a-z0-9ñ]+/i).map(_norm).filter(w => w.length > 3);
-  // CAPA PEDAGÓGICA (experto entrenado): si la pregunta es sobre CÓMO ENSEÑAR —estrategias,
+  // CAPA PEDAGÓGICA (experto entrenado): si la pregunta es sobre CÓMO ENSEÑAR - estrategias,
   // ejemplos para el aula, aprendizaje significativo, resolución de problemas, planes de mejora,
-  // diferenciación, retroalimentación— responde la base pedagógica por área y grado. Si no es de
+  // diferenciación, retroalimentación - responde la base pedagógica por área y grado. Si no es de
   // ese dominio devuelve null y seguimos con la base de uso de la plataforma.
   const ped = responderPedagogia(pregunta, ctx);
   if (ped && ped.texto) return { texto: ped.texto, element: null };

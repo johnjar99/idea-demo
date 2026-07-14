@@ -1,4 +1,4 @@
-// js/sabio-pedagogia.js — Base de conocimiento PEDAGÓGICA experta de "Sabio IA" (entrenamiento por capas).
+// js/sabio-pedagogia.js - Base de conocimiento PEDAGÓGICA experta de "Sabio IA" (entrenamiento por capas).
 //
 // Estructura por CAPAS: capa por ÁREA → dentro, capa por BANDA de grado (primaria 3°-5°,
 // secundaria 6°-9°, media 10°-11°) → dentro, estrategias didácticas, ejemplos para el aula,
@@ -45,7 +45,7 @@ function detectarBanda(qn) {
 }
 
 // ── CAPA POR ÁREA Y BANDA ────────────────────────────────────────────────────────────────
-// estr: estrategias "Nombre — cómo". ej: actividades listas. sig: aprendizaje significativo.
+// estr: estrategias "Nombre - cómo". ej: actividades listas. sig: aprendizaje significativo.
 // prob: resolución de problemas en el área. dif: "dificultad → remediación".
 const AREAS = {
   mat: {
@@ -54,12 +54,12 @@ const AREAS = {
     primaria: {
       comp: 'En 3°-5° se consolida el pensamiento numérico (valor posicional, las cuatro operaciones con sentido) y entran las fracciones en sus cuatro interpretaciones DBA (razón, parte-todo, cociente y operador), junto con medida, datos y patrones.',
       estr: [
-        'Resolución de problemas tipo Polya (4 pasos) — comprender (subrayar dato e incógnita), idear plan (dibujo o problema similar), ejecutar y, sobre todo, verificar que la respuesta tenga sentido y unidades.',
-        'Secuencia Concreto–Pictórico–Abstracto (CPA) — primero el material (bloques base 10, regletas), luego el dibujo, por último el símbolo; no saltar al algoritmo antes del modelo.',
-        'Representaciones múltiples de la fracción — la misma fracción como porción, punto en la recta numérica, parte de una colección y reparto; pedir traducir de una a otra.',
-        'Estimación previa y cálculo mental — antes de operar, estimar el orden del resultado; sirve de verificación natural.',
-        'El error como recurso — mostrar un procedimiento equivocado anónimo y pedir que detecten dónde y por qué falla.',
-        'Modelización de situaciones cotidianas — convertir un reparto, una compra o una medición real en un modelo matemático sencillo.'
+        'Resolución de problemas tipo Polya (4 pasos) - comprender (subrayar dato e incógnita), idear plan (dibujo o problema similar), ejecutar y, sobre todo, verificar que la respuesta tenga sentido y unidades.',
+        'Secuencia Concreto–Pictórico–Abstracto (CPA) - primero el material (bloques base 10, regletas), luego el dibujo, por último el símbolo; no saltar al algoritmo antes del modelo.',
+        'Representaciones múltiples de la fracción - la misma fracción como porción, punto en la recta numérica, parte de una colección y reparto; pedir traducir de una a otra.',
+        'Estimación previa y cálculo mental - antes de operar, estimar el orden del resultado; sirve de verificación natural.',
+        'El error como recurso - mostrar un procedimiento equivocado anónimo y pedir que detecten dónde y por qué falla.',
+        'Modelización de situaciones cotidianas - convertir un reparto, una compra o una medición real en un modelo matemático sencillo.'
       ],
       ej: [
         'La tienda escolar: "Tienes $5.000, una empanada cuesta $1.800 y un jugo $1.200. ¿Te alcanza para dos empanadas y un jugo? ¿Cuánto sobra o falta?" (estimación, suma, resta, argumentación).',
@@ -79,12 +79,12 @@ const AREAS = {
     secundaria: {
       comp: 'En 6°-9° se transita de la aritmética al álgebra (pensamiento variacional): enteros y racionales con signo, razones, proporciones y porcentajes, expresiones algebraicas, ecuaciones, sistemas 2×2 y la noción de función lineal; más Pitágoras, semejanza, estadística y probabilidad simple.',
       estr: [
-        'Aprendizaje basado en problemas y proyectos (ABP) — anclar la unidad a un problema real (presupuesto de una rifa, diseño de una huerta) donde el contenido emerge como necesidad.',
-        'Representaciones múltiples de la función (regla de cuatro) — la misma relación como tabla, gráfica, expresión algebraica y enunciado verbal; traducir entre las cuatro.',
-        'Álgebra con sentido geométrico (modelo de áreas) — representar (x+3)(x+2) como un rectángulo para dar significado a productos notables y factorización, no memoria de fórmulas.',
-        'Recta numérica para enteros — sumar/restar enteros como desplazamientos (deudas y ahorros, temperaturas) antes que reglas de signos memorizadas.',
-        'Modelización matemática — del fenómeno al modelo y de vuelta a la interpretación: tabla → gráfico → expresión → predicción.',
-        'El error como recurso — confrontar el error de distributividad (a+b)² = a²+b² con el contraejemplo numérico y el modelo de áreas.'
+        'Aprendizaje basado en problemas y proyectos (ABP) - anclar la unidad a un problema real (presupuesto de una rifa, diseño de una huerta) donde el contenido emerge como necesidad.',
+        'Representaciones múltiples de la función (regla de cuatro) - la misma relación como tabla, gráfica, expresión algebraica y enunciado verbal; traducir entre las cuatro.',
+        'Álgebra con sentido geométrico (modelo de áreas) - representar (x+3)(x+2) como un rectángulo para dar significado a productos notables y factorización, no memoria de fórmulas.',
+        'Recta numérica para enteros - sumar/restar enteros como desplazamientos (deudas y ahorros, temperaturas) antes que reglas de signos memorizadas.',
+        'Modelización matemática - del fenómeno al modelo y de vuelta a la interpretación: tabla → gráfico → expresión → predicción.',
+        'El error como recurso - confrontar el error de distributividad (a+b)² = a²+b² con el contraejemplo numérico y el modelo de áreas.'
       ],
       ej: [
         'El plan de datos del celular: "$15.000 fijos + $50 por minuto. Construye la tabla, la gráfica y la fórmula; ¿cuánto pagas con 120 minutos?" (función lineal; interpretar pendiente e intercepto).',
@@ -104,12 +104,12 @@ const AREAS = {
     media: {
       comp: 'En 10°-11° se profundiza el pensamiento variacional hacia las funciones (cuadrática, exponencial, logarítmica, trigonométricas) y nociones de cálculo (razón de cambio, derivada introductoria), trigonometría, geometría analítica y estadística con dispersión y probabilidad. Es la banda evaluada por Saber 11.',
       estr: [
-        'Modelización avanzada (datos reales → función) — ajustar un modelo (lineal, exponencial, cuadrático) a datos reales (población, precios, TRM) e interpretarlo críticamente.',
-        'Tecnología y graficadores (GeoGebra, Desmos, hoja de cálculo) — explorar familias de funciones moviendo parámetros (a, b, c de la parábola; frecuencia del seno).',
-        'El error como recurso y análisis de distractores Saber — analizar por qué cada opción incorrecta de una pregunta ICFES es plausible y qué error de razonamiento captura.',
-        'Argumentación y demostración guiada — identidades, propiedades de funciones, cadenas "porque… entonces…"; es justo lo que mide la competencia de argumentación.',
-        'Aprendizaje basado en proyectos — un estudio estadístico completo del propio colegio (pregunta, muestra, análisis, conclusión) o medición indirecta con trigonometría.',
-        'Conexión interdisciplinar — la derivada como velocidad (física), la exponencial como interés compuesto (economía).'
+        'Modelización avanzada (datos reales → función) - ajustar un modelo (lineal, exponencial, cuadrático) a datos reales (población, precios, TRM) e interpretarlo críticamente.',
+        'Tecnología y graficadores (GeoGebra, Desmos, hoja de cálculo) - explorar familias de funciones moviendo parámetros (a, b, c de la parábola; frecuencia del seno).',
+        'El error como recurso y análisis de distractores Saber - analizar por qué cada opción incorrecta de una pregunta ICFES es plausible y qué error de razonamiento captura.',
+        'Argumentación y demostración guiada - identidades, propiedades de funciones, cadenas "porque… entonces…"; es justo lo que mide la competencia de argumentación.',
+        'Aprendizaje basado en proyectos - un estudio estadístico completo del propio colegio (pregunta, muestra, análisis, conclusión) o medición indirecta con trigonometría.',
+        'Conexión interdisciplinar - la derivada como velocidad (física), la exponencial como interés compuesto (economía).'
       ],
       ej: [
         'La altura del Galeras: "Ves la cima con ángulo de 32°; te alejas 500 m y es de 25°. Estima la altura" (trigonometría, teorema del seno).',
@@ -139,12 +139,12 @@ const AREAS = {
     primaria: {
       comp: 'En 3°-5° se transita de "aprender a leer" a "leer para aprender": identificar información explícita, reconstruir la secuencia, hacer inferencias sencillas y producir textos cortos con estructura (inicio, desarrollo, cierre).',
       estr: [
-        'Las tres fases de Solé — antes (activar saberes, explorar paratextos, fijar propósito y predecir), durante (paradas para preguntar y verificar) y después (recapitular y producir).',
-        'Trabajo sistemático de fluidez — lectura repetida del mismo texto, lectura en coro o eco, lectura por parejas y "1 minuto de lectura" con metas personales; ataca el déficit de lectura de palabras (tipo EGRA).',
-        'Preguntas literales, inferenciales y críticas graduadas — por cada texto, al menos una de cada nivel.',
-        'Modelado metacognitivo (pensar en voz alta) — el docente verbaliza cómo deduce, cómo se devuelve cuando no entiende y cómo predice.',
-        'Organizadores gráficos — mapa del cuento (inicio, nudo, desenlace), línea de tiempo, cuadro de personajes, tabla SQA (Sé, Quiero saber, Aprendí).',
-        'Escritura por procesos simple — planear con un organizador, escribir borrador, revisar con lista de chequeo (¿tiene inicio?, ¿se entiende?, ¿usé mayúscula y punto?) y pasar a limpio.'
+        'Las tres fases de Solé - antes (activar saberes, explorar paratextos, fijar propósito y predecir), durante (paradas para preguntar y verificar) y después (recapitular y producir).',
+        'Trabajo sistemático de fluidez - lectura repetida del mismo texto, lectura en coro o eco, lectura por parejas y "1 minuto de lectura" con metas personales; ataca el déficit de lectura de palabras (tipo EGRA).',
+        'Preguntas literales, inferenciales y críticas graduadas - por cada texto, al menos una de cada nivel.',
+        'Modelado metacognitivo (pensar en voz alta) - el docente verbaliza cómo deduce, cómo se devuelve cuando no entiende y cómo predice.',
+        'Organizadores gráficos - mapa del cuento (inicio, nudo, desenlace), línea de tiempo, cuadro de personajes, tabla SQA (Sé, Quiero saber, Aprendí).',
+        'Escritura por procesos simple - planear con un organizador, escribir borrador, revisar con lista de chequeo (¿tiene inicio?, ¿se entiende?, ¿usé mayúscula y punto?) y pasar a limpio.'
       ],
       ej: [
         'El detective de la fábula: leer "El renacuajo paseador" de Pombo; subrayar lo que el texto dice (literal), anotar lo que deduce que sentía (inferencial) y responder "¿qué enseñanza deja y estás de acuerdo?" (crítico).',
@@ -164,16 +164,16 @@ const AREAS = {
     secundaria: {
       comp: 'En 6°-9° se pasa a textos expositivos y argumentativos: distinguir hechos de opiniones, identificar tesis y argumentos, reconocer la intención del autor y producir textos argumentativos con cohesión y conectores.',
       estr: [
-        'Secuencias de escritura por procesos — planeación (tesis y esquema), textualización, revisión entre pares con rúbrica, edición y publicación; la argumentación es proceso recursivo.',
-        'Lectura crítica de medios (Cassany, detrás de las líneas) — identificar quién escribe, para quién, con qué intención y qué deja por fuera; aplicar a publicidad y titulares.',
-        'Debate y argumentación estructurada — tesis polémica, posturas a favor y en contra, tres argumentos con evidencia, contraargumentar y cerrar.',
-        'Preguntas de los tres niveles ICFES — local (significado de un conector en contexto), global (cuál es la tesis, función de un párrafo) y crítico (qué intención y qué tan válido es el argumento).',
-        'Organizadores gráficos avanzados — mapa argumental (tesis-argumentos-evidencias-contraargumentos), cuadro comparativo de dos textos.',
-        'Rutinas de pensamiento — "Antes pensaba / Ahora pienso", "Afirmar, Apoyar, Cuestionar", "Círculo de puntos de vista".'
+        'Secuencias de escritura por procesos - planeación (tesis y esquema), textualización, revisión entre pares con rúbrica, edición y publicación; la argumentación es proceso recursivo.',
+        'Lectura crítica de medios (Cassany, detrás de las líneas) - identificar quién escribe, para quién, con qué intención y qué deja por fuera; aplicar a publicidad y titulares.',
+        'Debate y argumentación estructurada - tesis polémica, posturas a favor y en contra, tres argumentos con evidencia, contraargumentar y cerrar.',
+        'Preguntas de los tres niveles ICFES - local (significado de un conector en contexto), global (cuál es la tesis, función de un párrafo) y crítico (qué intención y qué tan válido es el argumento).',
+        'Organizadores gráficos avanzados - mapa argumental (tesis-argumentos-evidencias-contraargumentos), cuadro comparativo de dos textos.',
+        'Rutinas de pensamiento - "Antes pensaba / Ahora pienso", "Afirmar, Apoyar, Cuestionar", "Círculo de puntos de vista".'
       ],
       ej: [
         'Detector de tesis: con tres columnas de opinión cortas, subrayar la tesis, listar argumentos y señalar cuál está mejor sustentada y por qué.',
-        'Publicidad bajo lupa: analizar un comercial real — ¿qué te quieren vender?, ¿qué emoción usan?, ¿qué no te dicen?',
+        'Publicidad bajo lupa: analizar un comercial real - ¿qué te quieren vender?, ¿qué emoción usan?, ¿qué no te dicen?',
         'Carta de reclamo real: redactar una carta formal por un problema verídico del entorno, con estructura, tono respetuoso y argumentos.',
         'Dos noticias, un hecho: comparar cómo dos medios cuentan el mismo hecho y notar la postura de cada uno.'
       ],
@@ -189,12 +189,12 @@ const AREAS = {
     media: {
       comp: 'En 10°-11° se consolida la lectura crítica en sus tres competencias ICFES plenas: comprender contenidos locales, comprender la articulación global del texto y reflexionar/evaluar (intención del autor, supuestos, validez de argumentos, falacias). Meta: mover a los estudiantes a los niveles 3 y 4.',
       estr: [
-        'Entrenamiento explícito en las tres competencias ICFES — enseñar a reconocer qué pide cada pregunta (local, global o crítica) y qué procedimiento mental exige.',
-        'Lectura crítica detrás de las líneas (Cassany) como rutina diaria — quién escribe, desde qué posición, para quién, con qué intención, qué silencia.',
-        'Análisis de la estructura argumentativa — tesis, argumentos, evidencias, contraargumentos; tipos de argumento y detección de falacias (ad hominem, falsa causa, generalización apresurada).',
-        'Ensayo argumentativo por procesos — pregunta problematizadora, tesis, esquema, borrador, revisión con rúbrica, versión final.',
-        'Análisis de la intención y el tono — ironía, sarcasmo, registro, modalizadores, para no leer literalmente lo que es figurado.',
-        'Simulacros Saber con retroalimentación cualitativa — analizar por qué se eligió el distractor y qué competencia falló.'
+        'Entrenamiento explícito en las tres competencias ICFES - enseñar a reconocer qué pide cada pregunta (local, global o crítica) y qué procedimiento mental exige.',
+        'Lectura crítica detrás de las líneas (Cassany) como rutina diaria - quién escribe, desde qué posición, para quién, con qué intención, qué silencia.',
+        'Análisis de la estructura argumentativa - tesis, argumentos, evidencias, contraargumentos; tipos de argumento y detección de falacias (ad hominem, falsa causa, generalización apresurada).',
+        'Ensayo argumentativo por procesos - pregunta problematizadora, tesis, esquema, borrador, revisión con rúbrica, versión final.',
+        'Análisis de la intención y el tono - ironía, sarcasmo, registro, modalizadores, para no leer literalmente lo que es figurado.',
+        'Simulacros Saber con retroalimentación cualitativa - analizar por qué se eligió el distractor y qué competencia falló.'
       ],
       ej: [
         'Anatomía de una columna: con una columna de un columnista colombiano, identificar tesis, argumentos, supuestos que el autor da por sentados y evaluar si convence y por qué.',
@@ -224,12 +224,12 @@ const AREAS = {
     primaria: {
       comp: 'En 3°-5° el eje es "me aproximo al conocimiento como científico natural": observar, preguntar, conjeturar, registrar y comparar, sobre seres vivos, materia y sus cambios, fuerzas, el agua y el sistema solar.',
       estr: [
-        'Indagación guiada de baja estructura — el docente plantea una pregunta investigable cercana ("¿qué seres vivos hay en el jardín?") y guía a observar, registrar y concluir.',
-        'Predecir–Observar–Explicar (POE) — antes del experimento el niño predice por escrito, luego observa y confronta predicción contra resultado.',
-        'Ciclo 5E simple — Enganchar con un fenómeno sorprendente, Explorar, Explicar con palabras propias, Elaborar, Evaluar.',
-        'Bitácora de ciencias — el niño dibuja, rotula y escribe sus observaciones a lo largo del tiempo.',
-        'Clasificación con criterios propios — dar hojas, semillas o imágenes de animales y pedir que inventen criterios para agruparlos.',
-        'Mini-proyectos de aula — cultivar una planta y llevar registro semanal de crecimiento.'
+        'Indagación guiada de baja estructura - el docente plantea una pregunta investigable cercana ("¿qué seres vivos hay en el jardín?") y guía a observar, registrar y concluir.',
+        'Predecir–Observar–Explicar (POE) - antes del experimento el niño predice por escrito, luego observa y confronta predicción contra resultado.',
+        'Ciclo 5E simple - Enganchar con un fenómeno sorprendente, Explorar, Explicar con palabras propias, Elaborar, Evaluar.',
+        'Bitácora de ciencias - el niño dibuja, rotula y escribe sus observaciones a lo largo del tiempo.',
+        'Clasificación con criterios propios - dar hojas, semillas o imágenes de animales y pedir que inventen criterios para agruparlos.',
+        'Mini-proyectos de aula - cultivar una planta y llevar registro semanal de crecimiento.'
       ],
       ej: [
         'Germinación de fríjol en algodón húmedo midiendo el crecimiento cada día y registrando en tabla (conecta con la agricultura andina).',
@@ -249,12 +249,12 @@ const AREAS = {
     secundaria: {
       comp: 'En 6°-9° se sofistica la indagación (hipótesis contrastables, control de variables, gráficas) sobre célula, cuerpo humano, herencia, ecosistemas; estructura de la materia, reacciones, energía, fuerzas, electricidad y ondas.',
       estr: [
-        'Indagación estructurada y guiada → abierta — escalar de ejecutar un procedimiento dado a formular la propia pregunta.',
-        'Modelización científica — construir y revisar modelos del átomo, la célula, el flujo de energía, explicitando que un modelo es provisional y mejorable.',
-        'Argumentación con datos (afirmación–evidencia–razonamiento, CER) — toda conclusión anclada en evidencia.',
-        'V de Gowin — organizar la práctica conectando la pregunta central, el lado conceptual y el lado metodológico.',
-        'ABP con un problema auténtico — la calidad del agua de la quebrada local resuelta aplicando conceptos de varias clases.',
-        'POE con fenómenos contraintuitivos — dilatación, presión, reacciones; el conflicto cognitivo motor del cambio conceptual.'
+        'Indagación estructurada y guiada → abierta - escalar de ejecutar un procedimiento dado a formular la propia pregunta.',
+        'Modelización científica - construir y revisar modelos del átomo, la célula, el flujo de energía, explicitando que un modelo es provisional y mejorable.',
+        'Argumentación con datos (afirmación–evidencia–razonamiento, CER) - toda conclusión anclada en evidencia.',
+        'V de Gowin - organizar la práctica conectando la pregunta central, el lado conceptual y el lado metodológico.',
+        'ABP con un problema auténtico - la calidad del agua de la quebrada local resuelta aplicando conceptos de varias clases.',
+        'POE con fenómenos contraintuitivos - dilatación, presión, reacciones; el conflicto cognitivo motor del cambio conceptual.'
       ],
       ej: [
         'Extracción de ADN de banano o fresa con sal, jabón lavaplatos y alcohol frío (célula y herencia).',
@@ -274,12 +274,12 @@ const AREAS = {
     media: {
       comp: 'En 10°-11° el manejo se diferencia en procesos biológicos, físicos y químicos, con diseño experimental autónomo, modelización matemática y tratamiento de error. Banda evaluada por Saber 11 en sus tres competencias.',
       estr: [
-        'Indagación abierta por proyectos — el estudiante formula pregunta, hipótesis, diseño, análisis y comunica con formato de informe científico.',
-        'Controversias sociocientíficas (CSC/CTSA) — investigar, argumentar y tomar postura sobre dilemas reales (fracking, transgénicos, minería en páramos, vacunación).',
-        'Modelización matemática de fenómenos — ajustar datos experimentales a una función y predecir.',
-        'Análisis crítico de artículos y noticias científicas — distinguir evidencia de opinión.',
-        'Prácticas cuantitativas con tratamiento de error e incertidumbre — distinguir lo que la evidencia permite concluir de lo que no.',
-        'Preparación Saber 11 por competencias — trabajar preguntas liberadas por competencia (uso comprensivo, explicación, indagación), no solo por contenido.'
+        'Indagación abierta por proyectos - el estudiante formula pregunta, hipótesis, diseño, análisis y comunica con formato de informe científico.',
+        'Controversias sociocientíficas (CSC/CTSA) - investigar, argumentar y tomar postura sobre dilemas reales (fracking, transgénicos, minería en páramos, vacunación).',
+        'Modelización matemática de fenómenos - ajustar datos experimentales a una función y predecir.',
+        'Análisis crítico de artículos y noticias científicas - distinguir evidencia de opinión.',
+        'Prácticas cuantitativas con tratamiento de error e incertidumbre - distinguir lo que la evidencia permite concluir de lo que no.',
+        'Preparación Saber 11 por competencias - trabajar preguntas liberadas por competencia (uso comprensivo, explicación, indagación), no solo por contenido.'
       ],
       ej: [
         'Cinética química: medir el tiempo de reacción de antiácido efervescente a distintas temperaturas y graficar rapidez vs. temperatura.',
@@ -309,12 +309,12 @@ const AREAS = {
     primaria: {
       comp: 'En 3°-5° se parte de lo cercano (familia, barrio, municipio) hacia el departamento y el país: noción de tiempo, diversidad étnica y cultural, lectura inicial de mapas, derechos del niño y normas.',
       estr: [
-        'Línea de tiempo personal y comunitaria — cada niño construye su línea de vida y luego la de la escuela o el barrio con entrevistas a abuelos; combate el presentismo.',
-        'Lectura guiada de mapas y planos — empezar por el plano del salón y la escuela, trabajar leyenda y rosa de los vientos; leer el mapa, no calcarlo.',
-        'Cartografía social infantil — dibujar el mapa del barrio marcando lo que aman, lo que temen y lo que quieren cambiar.',
-        'Análisis de fuentes sencillas — fotografías antiguas vs. actuales, objetos familiares, testimonios; la idea de "evidencia del pasado".',
-        'Asamblea de aula y construcción de normas — los estudiantes deliberan y acuerdan las reglas; práctica real de participación.',
-        'Juego de roles y dramatización — representar oficios, autoridades o un conflicto para resolverlo; desarrolla toma de perspectiva.'
+        'Línea de tiempo personal y comunitaria - cada niño construye su línea de vida y luego la de la escuela o el barrio con entrevistas a abuelos; combate el presentismo.',
+        'Lectura guiada de mapas y planos - empezar por el plano del salón y la escuela, trabajar leyenda y rosa de los vientos; leer el mapa, no calcarlo.',
+        'Cartografía social infantil - dibujar el mapa del barrio marcando lo que aman, lo que temen y lo que quieren cambiar.',
+        'Análisis de fuentes sencillas - fotografías antiguas vs. actuales, objetos familiares, testimonios; la idea de "evidencia del pasado".',
+        'Asamblea de aula y construcción de normas - los estudiantes deliberan y acuerdan las reglas; práctica real de participación.',
+        'Juego de roles y dramatización - representar oficios, autoridades o un conflicto para resolverlo; desarrolla toma de perspectiva.'
       ],
       ej: [
         '"Mi barrio cuenta su historia": entrevistar a un adulto mayor sobre cómo era el barrio hace 30 años y construir un mural de "antes y ahora".',
@@ -334,12 +334,12 @@ const AREAS = {
     secundaria: {
       comp: 'En 6°-9° se pasa de lo local a lo mundial y de describir a explicar: procesos históricos (Conquista, Colonia, Independencia, siglo XX), geografía humana, Constitución de 1991, conflicto armado y mecanismos de participación.',
       estr: [
-        'Análisis de fuentes primarias y secundarias con preguntas-guía — preguntar a la fuente: ¿quién la produjo?, ¿para qué?, ¿qué intereses defiende?, ¿qué calla?',
-        'Multiperspectividad ("voces del pasado") — estudiar un mismo hecho desde varios actores; combate la versión única.',
-        'Líneas de tiempo de causalidad — relaciones causa-consecuencia y simultaneidad, no solo cronología.',
-        'Debate y deliberación reglada — posturas asignadas, argumentación con evidencia, turnos y refutación.',
-        'Dilemas morales — situaciones sin solución obvia discutidas para desarrollar razonamiento ético-político.',
-        'Cartografía social del territorio — mapear el municipio identificando conflictos socioambientales, actores y propuestas.'
+        'Análisis de fuentes primarias y secundarias con preguntas-guía - preguntar a la fuente: ¿quién la produjo?, ¿para qué?, ¿qué intereses defiende?, ¿qué calla?',
+        'Multiperspectividad ("voces del pasado") - estudiar un mismo hecho desde varios actores; combate la versión única.',
+        'Líneas de tiempo de causalidad - relaciones causa-consecuencia y simultaneidad, no solo cronología.',
+        'Debate y deliberación reglada - posturas asignadas, argumentación con evidencia, turnos y refutación.',
+        'Dilemas morales - situaciones sin solución obvia discutidas para desarrollar razonamiento ético-político.',
+        'Cartografía social del territorio - mapear el municipio identificando conflictos socioambientales, actores y propuestas.'
       ],
       ej: [
         '"La Conquista en cuatro voces": cuatro grupos narran el "descubrimiento" desde Colón, un cacique muisca, un cronista y un africano esclavizado, y se confrontan.',
@@ -359,12 +359,12 @@ const AREAS = {
     media: {
       comp: 'En 10°-11° se exige pensamiento crítico autónomo y análisis de sistemas complejos (economía política, geopolítica, Constitución en profundidad, DDHH, proceso de paz), con dominio pleno de las tres competencias ICFES.',
       estr: [
-        'Análisis crítico de fuentes y discursos — detectar sesgos, falacias, intereses y framing en prensa, propaganda y redes.',
-        'Deliberación y debate académico formal sobre cuestiones socialmente vivas — con investigación previa, evidencia y réplica estructurada.',
-        'Estudios de caso complejos — una política pública, un fallo de la Corte Constitucional, un conflicto socioambiental real con marco teórico.',
-        'Mapas conceptuales y modelos sistémicos — representar un problema social como sistema de variables, actores y retroalimentaciones.',
-        'Aprendizaje-servicio — articular contenido con un servicio real a la comunidad y reflexión sistemática.',
-        'Producción argumentativa (ensayo y columna) — tesis, evidencia y contraargumentación sobre una cuestión socialmente viva.'
+        'Análisis crítico de fuentes y discursos - detectar sesgos, falacias, intereses y framing en prensa, propaganda y redes.',
+        'Deliberación y debate académico formal sobre cuestiones socialmente vivas - con investigación previa, evidencia y réplica estructurada.',
+        'Estudios de caso complejos - una política pública, un fallo de la Corte Constitucional, un conflicto socioambiental real con marco teórico.',
+        'Mapas conceptuales y modelos sistémicos - representar un problema social como sistema de variables, actores y retroalimentaciones.',
+        'Aprendizaje-servicio - articular contenido con un servicio real a la comunidad y reflexión sistemática.',
+        'Producción argumentativa (ensayo y columna) - tesis, evidencia y contraargumentación sobre una cuestión socialmente viva.'
       ],
       ej: [
         '"El laboratorio de la paz": estudiar el Acuerdo de 2016 y la justicia transicional desde múltiples actores y debatir sobre verdad, justicia y reconciliación.',
@@ -394,16 +394,16 @@ const AREAS = {
     primaria: {
       comp: 'En 3°-5° (meta MCER A1) el estudiante comprende instrucciones del aula, reconoce vocabulario familiar (colores, números, familia), se presenta con frases memorizadas y responde preguntas básicas (What\'s your name?).',
       estr: [
-        'Total Physical Response (TPR) — dar órdenes en inglés (Stand up, touch your nose) a las que los niños responden con movimiento antes de exigir habla; respeta el periodo silencioso.',
-        'Classroom language como rutina — un repertorio fijo en inglés (Good morning; open your books; well done) que vuelve el aula fuente constante de input.',
-        'Canciones y chants con gestos — melodías repetitivas (Head, shoulders, knees and toes) fijan pronunciación, ritmo y léxico.',
-        'Flashcards y realia — tarjetas con imágenes y objetos reales por asociación directa imagen-palabra, evitando la traducción.',
-        'Storytelling con apoyo visual — cuentos cortos, predecibles y repetitivos con láminas, voz y gestos.',
-        'Juegos comunicativos simples — Simon Says, Bingo de vocabulario, memoria de pares; bajan el filtro afectivo y multiplican repeticiones.'
+        'Total Physical Response (TPR) - dar órdenes en inglés (Stand up, touch your nose) a las que los niños responden con movimiento antes de exigir habla; respeta el periodo silencioso.',
+        'Classroom language como rutina - un repertorio fijo en inglés (Good morning; open your books; well done) que vuelve el aula fuente constante de input.',
+        'Canciones y chants con gestos - melodías repetitivas (Head, shoulders, knees and toes) fijan pronunciación, ritmo y léxico.',
+        'Flashcards y realia - tarjetas con imágenes y objetos reales por asociación directa imagen-palabra, evitando la traducción.',
+        'Storytelling con apoyo visual - cuentos cortos, predecibles y repetitivos con láminas, voz y gestos.',
+        'Juegos comunicativos simples - Simon Says, Bingo de vocabulario, memoria de pares; bajan el filtro afectivo y multiplican repeticiones.'
       ],
       ej: [
         '"Simon Says" de partes del cuerpo (sin "Simon says" no se obedece): listening y vocabulario sin material.',
-        'Rutina diaria de calendario y clima: "What day is it today? What\'s the weather like?" — "It\'s Monday. It\'s sunny."',
+        'Rutina diaria de calendario y clima: "What day is it today? What\'s the weather like?" - "It\'s Monday. It\'s sunny."',
         'Monólogo de 4 frases "My favorite…": "My name is Ana. I am ten. My favorite color is blue. I like dogs."',
         'Information gap de colores: A describe ("The house is red") y B colorea según lo que oye; comunicación con propósito.'
       ],
@@ -419,15 +419,15 @@ const AREAS = {
     secundaria: {
       comp: 'En 6°-9° (meta A2) comprende mensajes y textos cortos cotidianos, escribe notas y descripciones enlazadas, y se desenvuelve en intercambios sociales breves (pedir direcciones, comprar). Aquí se construye el grueso del uso del lenguaje de Saber 11.',
       estr: [
-        'Enfoque comunicativo (CLT) — seleccionar primero las funciones (pedir información, invitar, describir) y luego las estructuras que las realizan; la gramática al servicio de la comunicación.',
-        'Aprendizaje basado en tareas (TBL) — organizar la clase en torno a una tarea con resultado comunicativo (planear un viaje, hacer una encuesta) con ciclo pre-task, task y post-task.',
-        'Role-plays y diálogos funcionales — dramatizar situaciones reales (en la tienda, pidiendo direcciones) con tarjetas de rol.',
-        'Scaffolding del input y del output — modelos, sentence starters y bancos de palabras antes de exigir producción; retirar el apoyo gradualmente.',
-        'Lectura graduada y extensiva — textos adaptados al nivel leídos por cantidad y placer; construyen vocabulario y fluidez.',
-        'Information gap — cada estudiante posee parte de la información y deben hablar en inglés para completar la tarea.'
+        'Enfoque comunicativo (CLT) - seleccionar primero las funciones (pedir información, invitar, describir) y luego las estructuras que las realizan; la gramática al servicio de la comunicación.',
+        'Aprendizaje basado en tareas (TBL) - organizar la clase en torno a una tarea con resultado comunicativo (planear un viaje, hacer una encuesta) con ciclo pre-task, task y post-task.',
+        'Role-plays y diálogos funcionales - dramatizar situaciones reales (en la tienda, pidiendo direcciones) con tarjetas de rol.',
+        'Scaffolding del input y del output - modelos, sentence starters y bancos de palabras antes de exigir producción; retirar el apoyo gradualmente.',
+        'Lectura graduada y extensiva - textos adaptados al nivel leídos por cantidad y placer; construyen vocabulario y fluidez.',
+        'Information gap - cada estudiante posee parte de la información y deben hablar en inglés para completar la tarea.'
       ],
       ej: [
-        'Role-play "At the store": "How much is this T-shirt? — It\'s 20,000 pesos. — Can I try it on?" (lengua transaccional).',
+        'Role-play "At the store": "How much is this T-shirt? - It\'s 20,000 pesos. - Can I try it on?" (lengua transaccional).',
         'Encuesta de rutinas: preguntar a tres compañeros "What time do you get up?" y reportar "Carlos gets up at six" (presente simple, 3ª persona).',
         'Tarea TBL "Plan a weekend trip" a un pueblo de Nariño (destino, transporte, presupuesto) y presentarlo en inglés.',
         'Running dictation: en parejas, uno corre, lee y memoriza una frase del muro y la dicta al compañero que la escribe (integra las cuatro habilidades).'
@@ -444,12 +444,12 @@ const AREAS = {
     media: {
       comp: 'En 10°-11° (meta B1) comprende ideas principales de discursos y textos cotidianos, argumenta de forma básica y sostiene opiniones. Banda decisiva para Saber 11 (7 partes; mayor peso en uso del lenguaje, Partes 4 y 7).',
       estr: [
-        'Enfoque comunicativo avanzado — equilibrar fluidez (debates) con foco en la forma (focus on form) para pulir precisión sin sacrificar comunicación.',
-        'Aprendizaje basado en proyectos — un podcast, un blog, una campaña o un debate formal que integran las cuatro habilidades.',
-        'Lectura intensiva estratégica — skimming (idea global), scanning (datos específicos) e inferencia de la intención del autor, alineados a las Partes 5 y 6 de Saber 11.',
-        'Escritura por procesos con géneros argumentativos — cartas formales y ensayos cortos con tesis, razones y conectores (however, therefore, in conclusion).',
-        'Entrenamiento estratégico para Saber 11 integrado al uso real — collocations, conectores, falsos cognados y pistas de contexto dentro de tareas comunicativas, no test prep mecánico.',
-        'Input auténtico — noticias, canciones, videos y entrevistas reales con tareas de comprensión.'
+        'Enfoque comunicativo avanzado - equilibrar fluidez (debates) con foco en la forma (focus on form) para pulir precisión sin sacrificar comunicación.',
+        'Aprendizaje basado en proyectos - un podcast, un blog, una campaña o un debate formal que integran las cuatro habilidades.',
+        'Lectura intensiva estratégica - skimming (idea global), scanning (datos específicos) e inferencia de la intención del autor, alineados a las Partes 5 y 6 de Saber 11.',
+        'Escritura por procesos con géneros argumentativos - cartas formales y ensayos cortos con tesis, razones y conectores (however, therefore, in conclusion).',
+        'Entrenamiento estratégico para Saber 11 integrado al uso real - collocations, conectores, falsos cognados y pistas de contexto dentro de tareas comunicativas, no test prep mecánico.',
+        'Input auténtico - noticias, canciones, videos y entrevistas reales con tareas de comprensión.'
       ],
       ej: [
         'Debate "Should school uniforms be mandatory?": cada lado prepara tres argumentos con conectores ("First, uniforms reduce inequality because…").',
@@ -478,15 +478,15 @@ const AREAS = {
 // ── CAPA TRANSVERSAL: marcos pedagógicos, evaluación formativa y PTA/FI ───────────────────
 const TRANSVERSAL = {
   significativo: 'Aprendizaje significativo (Ausubel): el conocimiento nuevo se ancla en lo que el estudiante ya sabe (los subsunsores). Pasos para el aula: 1) sondee el anclaje con 2-3 preguntas o una rutina "¿qué sé de esto?" (el diagnóstico por niveles ES esa radiografía); 2) presente un organizador previo (una analogía, un esquema, una pregunta movilizadora); 3) construya el puente cognitivo explícito ("esto se relaciona con lo que ya saben de…"); 4) diferencie progresivamente, de lo general a lo particular; 5) reconcilie integrando con un mapa conceptual o cuadro comparativo; 6) asegure material significativo: ejemplos del contexto y textos al nivel real del lector.',
-  polya: 'Resolución de problemas (Polya, 4 fases): 1) Comprender (¿qué se busca?, ¿cuáles son los datos?; reformular, dibujar); 2) Concebir un plan (¿problema parecido?, caso más simple, buscar un patrón, trabajar hacia atrás, hacer una tabla); 3) Ejecutar verificando cada paso; 4) Mirar hacia atrás (¿es razonable?, ¿se comprueba de otro modo?, ¿sirve para otros problemas?) — la fase más descuidada y la que consolida el aprendizaje transferible. Una buena situación-problema parte de un contexto real, admite varias vías, exige varias competencias y tiene un reto ajustado a la zona de desarrollo próximo.',
-  abp: 'Aprendizaje basado en problemas/proyectos (ABP): invierte la secuencia tradicional — primero el problema auténtico, después el contenido necesario para resolverlo. Pasos: presentar la situación-problema → los estudiantes activan lo que saben y detectan lo que necesitan → investigan al servicio del problema → construyen una solución o producto → la socializan y reciben retroalimentación → reflexionan. El docente facilita, no expone solo.',
+  polya: 'Resolución de problemas (Polya, 4 fases): 1) Comprender (¿qué se busca?, ¿cuáles son los datos?; reformular, dibujar); 2) Concebir un plan (¿problema parecido?, caso más simple, buscar un patrón, trabajar hacia atrás, hacer una tabla); 3) Ejecutar verificando cada paso; 4) Mirar hacia atrás (¿es razonable?, ¿se comprueba de otro modo?, ¿sirve para otros problemas?) - la fase más descuidada y la que consolida el aprendizaje transferible. Una buena situación-problema parte de un contexto real, admite varias vías, exige varias competencias y tiene un reto ajustado a la zona de desarrollo próximo.',
+  abp: 'Aprendizaje basado en problemas/proyectos (ABP): invierte la secuencia tradicional - primero el problema auténtico, después el contenido necesario para resolverlo. Pasos: presentar la situación-problema → los estudiantes activan lo que saben y detectan lo que necesitan → investigan al servicio del problema → construyen una solución o producto → la socializan y reciben retroalimentación → reflexionan. El docente facilita, no expone solo.',
   retro: 'Evaluación formativa y retroalimentación efectiva: evaluar PARA aprender (regular), no solo calificar. La retroalimentación responde tres preguntas (Wiliam): ¿a dónde voy? (metas claras), ¿dónde estoy? (evidencia de la brecha) y ¿cómo cierro la brecha? (el paso siguiente concreto). De alto impacto cuando es oportuna/inmediata, específica (apunta a la evidencia concreta), descriptiva, accionable y centrada en la tarea o el proceso, no en la persona ("eres inteligente" es el feedback menos eficaz). Use rúbricas compartidas antes de la tarea, autoevaluación y coevaluación.',
   plan: 'Del diagnóstico al plan de mejora: 1) lea los resultados como oportunidades (las afirmaciones/evidencias con más estudiantes en BAJO/BÁSICO); 2) priorice 2-3 focos de alto impacto, no todo a la vez; 3) defina metas claras y observables por foco; 4) asigne estrategias didácticas específicas, diferenciadas por nivel; 5) establezca seguimiento (mini-quiz, ticket de salida, registro de fluidez, re-aplicar el cuadernillo); 6) retroalimente inmediato y específico y reajuste. Estructura reutilizable: Oportunidad → Meta → Estrategia → Recurso/diferenciación → Indicador y fecha de seguimiento. En IDEA, "Autocompletar con Sabio IA" arma este plan desde el grupo real.',
   dua: 'Diferenciación y DUA (CAST): diseñe desde el inicio para todos con múltiples formas de REPRESENTACIÓN (varios formatos del contenido), de ACCIÓN Y EXPRESIÓN (varias maneras de demostrar lo aprendido) y de IMPLICACIÓN (enganchar la motivación). Por nivel del diagnóstico: en BAJO, retroceda al subsunsor faltante, material concreto, textos a su nivel, andamiaje fuerte y metas cortas (no es "lo mismo más despacio", es reconstruir el anclaje); en BÁSICO, consolide con práctica variada y retire andamiaje; en ALTO/SUPERIOR, profundice y extienda (problemas abiertos, retos de evaluar y crear, rol de tutor-par), no más cantidad de lo mismo.',
-  andamiaje: 'Andamiaje (Vygotsky/ZDP) y taxonomía de Bloom: enseñe en la zona de desarrollo próximo (lo que el estudiante logra con ayuda), con apoyo temporal que se retira al ganar competencia — modelar (el docente piensa en voz alta) → guiar juntos → práctica con pistas → práctica autónoma (fading planeado). Gradúe la demanda cognitiva por Bloom: recordar → comprender → aplicar → analizar → evaluar → crear. Para el grupo en BAJO ancle en recordar/comprender con andamiaje fuerte; para ALTO/SUPERIOR diseñe en analizar/evaluar/crear con andamiaje mínimo.',
+  andamiaje: 'Andamiaje (Vygotsky/ZDP) y taxonomía de Bloom: enseñe en la zona de desarrollo próximo (lo que el estudiante logra con ayuda), con apoyo temporal que se retira al ganar competencia - modelar (el docente piensa en voz alta) → guiar juntos → práctica con pistas → práctica autónoma (fading planeado). Gradúe la demanda cognitiva por Bloom: recordar → comprender → aplicar → analizar → evaluar → crear. Para el grupo en BAJO ancle en recordar/comprender con andamiaje fuerte; para ALTO/SUPERIOR diseñe en analizar/evaluar/crear con andamiaje mínimo.',
   genericas: 'Estrategias didácticas genéricas (sirven en cualquier área): rutinas de pensamiento (Veo-Pienso-Me pregunto), ticket de salida, Think-Pair-Share, aula invertida, gamificación, aprendizaje cooperativo estructurado, modelado metacognitivo (pensar en voz alta), preguntas socráticas, organizadores gráficos, el error como recurso, lectura en voz alta dosificada, lectura repetida, tutoría entre pares, enseñanza recíproca, ABP, estudio de casos, estaciones de aprendizaje, ejemplos resueltos, método Concreto-Pictórico-Abstracto, práctica espaciada y entrelazada, práctica de recuperación, KWL, semáforo de autoevaluación, gallery walk, rompecabezas (jigsaw), diarios de aprendizaje, rúbricas compartidas, preguntas de alto nivel cognitivo, nivelación de textos al lector y "explicar para aprender".',
-  pta_lectura: 'Cerrar el déficit de LECTURA (hallazgo PTA/FI con EGRA: el déficit está en la lectura de palabras y la comprensión, no en la fonética): 1) más lectura oral individual dosificada — que CADA estudiante lea en voz alta a diario en tramos breves (lectura repetida, en pareja, coral, "1 minuto de lectura"); 2) retroalimentación inmediata y específica sobre el error concreto ("dijiste casa donde dice caza"), no diferida ni genérica; 3) nivele el texto al lector real, no al grado nominal, subiendo la complejidad de forma graduada; 4) tutoría integrada y sistemática (rutina permanente, no eventos esporádicos); 5) monitoree la fluidez (palabras correctas por minuto y comprensión) y muestre el progreso al estudiante; 6) enseñe la comprensión explícitamente (predecir, preguntar, aclarar, resumir; inferencias guiadas; vocabulario en contexto).',
-  pta_mate: 'Cerrar el déficit de MATEMÁTICAS (hallazgo PTA/FI con EGMA: el déficit está en números faltantes y resolución de problemas, no en el cálculo de sumas y restas): 1) sentido numérico — relaciones parte-todo, valor posicional, magnitud relativa, estimación y cálculo mental, composición/descomposición; 2) patrones y números faltantes — secuencias, completar el término faltante, descubrir la regla (conecta con álgebra temprana); 3) resolución de problemas tipo Polya explícita (las 4 fases), priorizando problemas con contexto sobre ejercicios mecánicos y modelando el razonamiento en voz alta; 4) método Concreto-Pictórico-Abstracto, especialmente con estudiantes en BAJO; 5) retroalimentación inmediata y monitoreo del progreso también en matemáticas.'
+  pta_lectura: 'Cerrar el déficit de LECTURA (hallazgo PTA/FI con EGRA: el déficit está en la lectura de palabras y la comprensión, no en la fonética): 1) más lectura oral individual dosificada - que CADA estudiante lea en voz alta a diario en tramos breves (lectura repetida, en pareja, coral, "1 minuto de lectura"); 2) retroalimentación inmediata y específica sobre el error concreto ("dijiste casa donde dice caza"), no diferida ni genérica; 3) nivele el texto al lector real, no al grado nominal, subiendo la complejidad de forma graduada; 4) tutoría integrada y sistemática (rutina permanente, no eventos esporádicos); 5) monitoree la fluidez (palabras correctas por minuto y comprensión) y muestre el progreso al estudiante; 6) enseñe la comprensión explícitamente (predecir, preguntar, aclarar, resumir; inferencias guiadas; vocabulario en contexto).',
+  pta_mate: 'Cerrar el déficit de MATEMÁTICAS (hallazgo PTA/FI con EGMA: el déficit está en números faltantes y resolución de problemas, no en el cálculo de sumas y restas): 1) sentido numérico - relaciones parte-todo, valor posicional, magnitud relativa, estimación y cálculo mental, composición/descomposición; 2) patrones y números faltantes - secuencias, completar el término faltante, descubrir la regla (conecta con álgebra temprana); 3) resolución de problemas tipo Polya explícita (las 4 fases), priorizando problemas con contexto sobre ejercicios mecánicos y modelando el razonamiento en voz alta; 4) método Concreto-Pictórico-Abstracto, especialmente con estudiantes en BAJO; 5) retroalimentación inmediata y monitoreo del progreso también en matemáticas.'
 };
 
 // ── CAPA DE ACOMPAÑAMIENTO: guiar al docente que no sabe qué pedir ────────────────────────
@@ -650,8 +650,8 @@ export function responderPedagogia(pregunta, ctx) {
   const banda = detectarBanda(qn) || (ctx && ctx.grado ? detectarBanda(String(ctx.grado) + '°') : null);
 
   // Intenciones transversales (no requieren área).
-  if (intencion.fluidez && !area) return { texto: 'Comprensión y fluidez lectora — ' + TRANSVERSAL.pta_lectura };
-  if (intencion.numeros && !area) return { texto: 'Sentido numérico y resolución de problemas — ' + TRANSVERSAL.pta_mate };
+  if (intencion.fluidez && !area) return { texto: 'Comprensión y fluidez lectora - ' + TRANSVERSAL.pta_lectura };
+  if (intencion.numeros && !area) return { texto: 'Sentido numérico y resolución de problemas - ' + TRANSVERSAL.pta_mate };
   if (intencion.retro) return { texto: TRANSVERSAL.retro };
   if (intencion.diferenciar) return { texto: TRANSVERSAL.dua };
   if (intencion.bloom) return { texto: TRANSVERSAL.andamiaje };
@@ -684,7 +684,7 @@ export function responderPedagogia(pregunta, ctx) {
         };
       }
     }
-    let partes = [`${a.nombre} — ${nombreBanda(banda)}. ${b.comp}`];
+    let partes = [`${a.nombre} · ${nombreBanda(banda)}. ${b.comp}`];
     if (intencion.dificultades) { partes.push('Dificultades frecuentes y cómo remediarlas:\n• ' + b.dif.join('\n• ')); }
     else if (intencion.ejemplos) { partes.push('Actividades listas para el aula:\n• ' + b.ej.join('\n• ')); }
     else if (intencion.significativo) { partes.push('Aprendizaje significativo: ' + b.sig); }

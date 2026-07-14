@@ -1,4 +1,4 @@
-// js/pedagogia-grado.js — Capa ADITIVA de individualidad pedagogica POR GRADO x AREA.
+// js/pedagogia-grado.js - Capa ADITIVA de individualidad pedagogica POR GRADO x AREA.
 //
 // Carga datos/pedagogia_por_grado.json (esqueleto poblable celda a celda) y expone
 // lecturas tolerantes. REGLA SUPREMA: si una celda/clave NO existe, la lectura devuelve

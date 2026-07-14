@@ -1,4 +1,4 @@
-// auth.js — ADAPTADOR LOCAL de autenticación (sandbox idea-demo).
+// auth.js - ADAPTADOR LOCAL de autenticación (sandbox idea-demo).
 //
 // Reemplaza al auth.js de Firebase Authentication SIN cambiar la interfaz pública ni la
 // forma de la sesión. Login 100% client-side: el perfil vive en IndexedDB (idea_usuarios)

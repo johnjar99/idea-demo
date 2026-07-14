@@ -1,4 +1,4 @@
-// analisis.js — Estadística avanzada y narrativa pedagógica profunda para el dashboard docente.
+// analisis.js - Estadística avanzada y narrativa pedagógica profunda para el dashboard docente.
 //
 // Cubre lo que el Bloque 4 del prompt v2 exige:
 //   - KPIs avanzados: mediana, desviación estándar, cuartiles
@@ -171,27 +171,27 @@ const ESTRATEGIAS_POR_AREA = {
     // Estructura OFICIAL ICFES: las 5 "competencias" son las 5 Partes del cuadernillo.
     // Las afirmaciones son los 4 niveles MCER (Pre A1, A1, A2, B1).
     competencia: {
-      a: [ // Parte 1 — Matching de vocabulario
+      a: [ // Parte 1: Matching de vocabulario
         'Trabajar matching de vocabulario por campo semántico (salud, viajes, escuela) con bancos de 8-10 palabras.',
         'Construir glosarios temáticos semanales con apoyo visual fuerte y ejemplos en contexto real.',
         'Usar tarjetas de memoria (Quizlet, Anki) con palabras de alta frecuencia organizadas por categoría.'
       ],
-      b: [ // Parte 2 — Conocimiento pragmático (diálogos)
+      b: [ // Parte 2: Conocimiento pragmático (diálogos)
         'Trabajar con diálogos modelo en distintos registros (formal/informal) para identificar funciones comunicativas.',
         'Diseñar role-plays sobre situaciones cotidianas: pedir información, dar indicaciones, expresar opiniones.',
         'Analizar videos cortos de BBC Learning English / British Council por su intención comunicativa y tono.'
       ],
-      c: [ // Parte 3 — Comprensión literal
+      c: [ // Parte 3: Comprensión literal
         'Implementar scanning para localizar información explícita (quién, qué, cuándo, dónde, cuánto) en textos breves.',
         'Practicar lectura literal con preguntas factuales después de cada párrafo de textos informativos cortos.',
         'Trabajar comprensión auditiva con audios de ESL Lab y BBC Learning English seguidos de preguntas factuales.'
       ],
-      d: [ // Parte 4 — Comprensión inferencial
+      d: [ // Parte 4: Comprensión inferencial
         'Trabajar inferencias con textos breves: predicción del título, intención del autor, conclusión implícita.',
         'Usar skimming para captar la idea global y luego inferir el propósito comunicativo del texto.',
         'Practicar lectura crítica con anuncios, correos y fragmentos narrativos nivel A2-B1.'
       ],
-      e: [ // Parte 5 — Léxico-gramatical (cloze)
+      e: [ // Parte 5: Léxico-gramatical (cloze)
         'Practicar cloze tests con texto narrativo o expositivo, integrando vocabulario y gramática en contexto.',
         'Trabajar transformación de frases (tiempos verbales, voz activa/pasiva, conectores).',
         'Articular el repaso de gramática con vocabulario temático en contextos auténticos.'
@@ -280,7 +280,7 @@ const NARRATIVA_POR_AREA = {
     referente_externo: 'los Estándares Básicos de Competencias en Matemáticas del MEN y los Derechos Básicos de Aprendizaje (DBA)',
     instrumentos: 'GeoGebra, hojas de cálculo y rúbricas de proceso',
     saber: 'la prueba de Matemáticas de SABER 11°',
-    practica_destacada: 'la metodología de Pólya (comprender — planear — ejecutar — verificar) y los problemas abiertos del entorno escolar'
+    practica_destacada: 'la metodología de Pólya (comprender - planear - ejecutar - verificar) y los problemas abiertos del entorno escolar'
   },
   'lectura crítica': {
     marco: 'Diseño Centrado en Evidencias (DCE) del ICFES y los Estándares de Lenguaje',
@@ -291,7 +291,7 @@ const NARRATIVA_POR_AREA = {
     referente_externo: 'los Lineamientos Curriculares de Lengua Castellana del MEN y los Derechos Básicos de Aprendizaje (DBA) de Lenguaje',
     instrumentos: 'glosarios contextualizados, rutinas "Veo–Pienso–Pregunto" y mapas de argumentación',
     saber: 'la prueba de Lectura Crítica de SABER 11°',
-    practica_destacada: 'la rutina "subrayar — anotar al margen — parafrasear" aplicada a textos expositivos, argumentativos y discontinuos'
+    practica_destacada: 'la rutina "subrayar - anotar al margen - parafrasear" aplicada a textos expositivos, argumentativos y discontinuos'
   },
   'sociales y ciudadanas': {
     marco: 'Diseño Centrado en Evidencias (DCE) del ICFES y los Estándares de Ciencias Sociales',
@@ -308,7 +308,7 @@ const NARRATIVA_POR_AREA = {
     marco: 'Diseño Centrado en Evidencias (DCE) del ICFES y los Estándares de Ciencias Naturales',
     nombre_contenido: 'Componentes temáticos (Procesos vivos, físicos, químicos y Ciencia–Tecnología–Sociedad)',
     nombre_contenido_singular: 'componente temático',
-    enfasis_intervencion: 'secuencias indagatorias de tipo "observo — describo — explico — predigo" articuladas con simulaciones PhET y prácticas de laboratorio en aula',
+    enfasis_intervencion: 'secuencias indagatorias de tipo "observo - describo - explico - predigo" articuladas con simulaciones PhET y prácticas de laboratorio en aula',
     palanca: 'la indagación científica y la construcción de explicaciones a partir de modelos',
     referente_externo: 'los Estándares Básicos de Competencias en Ciencias Naturales del MEN y los Derechos Básicos de Aprendizaje (DBA) de Ciencias',
     instrumentos: 'simuladores PhET, cuadernos de campo, bitácoras científicas y prácticas de laboratorio con materiales del entorno',
@@ -397,7 +397,7 @@ export function matrizHeatmap(aplicaciones, cuadernillo) {
       return {
         acertada: elegida === correcta,
         respondida: !!elegida,
-        elegida: elegida || '—',
+        elegida: elegida || 'N/D',
         correcta
       };
     });
@@ -573,11 +573,11 @@ export function conclusionesProfundas(aplicaciones, cuadernillo) {
 
   // === 3. Oportunidades de mejora ===
   const minComp = compKeys.reduce((a, b) => logComp[a] <= logComp[b] ? a : b);
-  // Dimensión secundaria (CMC/componente/MCER) — solo si el área la tiene
+  // Dimensión secundaria (CMC/componente/MCER) - solo si el área la tiene
   const logDim2 = tieneDim2 ? logroGrupoPor(logroPorDimensionSecundaria, aplicaciones, cuadernillo) : {};
   const dim2Keys = Object.keys(logDim2);
   const minCmc = dim2Keys.length ? dim2Keys.reduce((a, b) => logDim2[a] <= logDim2[b] ? a : b) : null;
-  // Afirmación más débil — para áreas sin dim secundaria (LC, SC) es el diagnóstico principal
+  // Afirmación más débil - para áreas sin dim secundaria (LC, SC) es el diagnóstico principal
   const logAfir = logroGrupoPor(logroPorAfirmacion, aplicaciones, cuadernillo);
   const afirKeys = Object.keys(logAfir);
   const minAfir = afirKeys.length ? afirKeys.reduce((a, b) => logAfir[a] <= logAfir[b] ? a : b) : null;
@@ -864,10 +864,10 @@ export function kr20(aplicaciones, cuadernillo) {
  */
 export function analisisDistractores(aplicaciones, cuadernillo) {
   return cuadernillo.preguntas.map(p => {
-    const opciones = { A: 0, B: 0, C: 0, D: 0, '—': 0 };
+    const opciones = { A: 0, B: 0, C: 0, D: 0, 'N/D': 0 };
     aplicaciones.forEach(a => {
       const r = (a.respuestas || []).find(r => r.pregunta_id === p.id);
-      const elegida = r?.opcion_elegida_real || '—';
+      const elegida = r?.opcion_elegida_real || 'N/D';
       opciones[elegida] = (opciones[elegida] || 0) + 1;
     });
     const n = aplicaciones.length || 1;
@@ -956,7 +956,7 @@ export function generarRecomendacionesPersonalizables(aplicaciones, cuadernillo)
   let idCount = 1;
   const mkId = () => `rec-${idCount++}`;
 
-  // Por competencia débil (3 recomendaciones) — específicas por área del cuadernillo
+  // Por competencia débil (3 recomendaciones) - específicas por área del cuadernillo
   estrategiasPorCompetencia(cuadernillo, minComp).forEach((estr, i) => {
     recs.push({
       id: mkId(),
@@ -1002,7 +1002,7 @@ export function generarRecomendacionesPersonalizables(aplicaciones, cuadernillo)
 
   // Por preguntas críticas (focalizado a evidencia específica). El campo `cmc`
   // del articula_con guarda la categoría de la dim secundaria del área (CMC,
-  // componente o MCER) — leído dinámicamente vía valorDimSecundaria.
+  // componente o MCER) - leído dinámicamente vía valorDimSecundaria.
   for (const cr of criticas) {
     const _valDim2Cr = cr.p.cmc || cr.p.componente || cr.p.nivel_mcer || null;
     recs.push({

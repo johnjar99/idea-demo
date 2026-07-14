@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Panel del Manager — IDEA</title>
+  <title>Panel del Manager - IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
   <header class="idea-header">
     <a href="manager.html" class="logo-home" title="Inicio (Manager)">
       <img src="assets/logo-idea.png" class="logo">
-      <div class="nombre-app">IDEA — Panel del Manager</div>
+      <div class="nombre-app">IDEA · Panel del Manager</div>
     </a>
     <div class="user-info">
       <span class="rol-chip">Manager</span>
@@ -145,7 +145,7 @@
       </div>
     </main>
 
-  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
   <div id="toast-container"></div>
 
   <script type="module">
@@ -207,9 +207,9 @@
           <div class="idea-card mb-4">
             <div class="flex items-center justify-between gap-3 flex-wrap mb-3">
               <div>
-                <strong>${escapeHtml(d.nombre_completo || d.usuario || '—')}</strong>
+                <strong>${escapeHtml(d.nombre_completo || d.usuario || 'N/D')}</strong>
                 <span class="text-xs px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 ml-2">${escapeHtml(inst?.abreviatura || d.institucion_id || 'Sin institución')}</span>
-                <div class="text-xs text-slate-400 mt-0.5">Usuario: ${escapeHtml(d.usuario || '—')}${d.numero_documento ? ' · ' + escapeHtml((d.tipo_documento || 'CC') + ' ' + d.numero_documento) : ''}${d.email ? ' · ' + escapeHtml(d.email) : ''}</div>
+                <div class="text-xs text-slate-400 mt-0.5">Usuario: ${escapeHtml(d.usuario || 'N/D')}${d.numero_documento ? ' · ' + escapeHtml((d.tipo_documento || 'CC') + ' ' + d.numero_documento) : ''}${d.email ? ' · ' + escapeHtml(d.email) : ''}</div>
               </div>
               <button class="btn-idea btn-guardar-grupos" data-docente="${d.id}">Guardar</button>
             </div>
@@ -298,7 +298,7 @@
         const grupoOpts = gruposSet.map(g => `<option value="${g}" ${String(e.grupo) === g ? 'selected' : ''}>${g}</option>`).join('');
         const instOpts = instituciones.map(i => `<option value="${i.id}" ${e.institucion_id === i.id ? 'selected' : ''}>${escapeHtml(i.abreviatura || i.nombre)}</option>`).join('');
         return `<tr data-est="${e.id}" class="border-b border-slate-100">
-          <td class="p-2 text-sm"><strong>${escapeHtml(e.nombre_completo || '—')}</strong><div class="text-xs text-slate-400">${escapeHtml(e.usuario || '')}${e.numero_documento ? ' · ' + escapeHtml((e.tipo_documento || 'CC') + ' ' + e.numero_documento) : ''}</div></td>
+          <td class="p-2 text-sm"><strong>${escapeHtml(e.nombre_completo || 'N/D')}</strong><div class="text-xs text-slate-400">${escapeHtml(e.usuario || '')}${e.numero_documento ? ' · ' + escapeHtml((e.tipo_documento || 'CC') + ' ' + e.numero_documento) : ''}</div></td>
           <td class="p-2"><select class="input-idea est-grado" style="min-width:78px">${gradoOpts}</select></td>
           <td class="p-2"><select class="input-idea est-grupo" style="min-width:66px">${grupoOpts}</select></td>
           <td class="p-2"><select class="input-idea est-inst" style="min-width:170px">${instOpts}</select></td>
@@ -347,7 +347,7 @@
         .sort((a, b) => String(a.nombre_completo || '').localeCompare(String(b.nombre_completo || '')));
       selEst.innerHTML = lista.length
         ? lista.map(e => `<option value="${e.id}">${escapeHtml(e.nombre_completo || e.usuario)} · ${e.grado || '?'}°${e.grupo || ''}</option>`).join('')
-        : '<option value="">— Sin estudiantes —</option>';
+        : '<option value="">- Sin estudiantes -</option>';
       selEst.onchange = renderPruebasEstudiante;
       renderPruebasEstudiante();
     }
@@ -409,7 +409,7 @@
             <div class="text-sm">
               <strong>${escapeHtml(est?.usuario || est?.nombre_completo || 'Estudiante')}</strong>
               · ${escapeHtml(cuad?.area || p.cuadernillo_id)}
-              ${p.razon ? `<span class="text-xs text-slate-500"> — ${escapeHtml(p.razon)}</span>` : ''}
+              ${p.razon ? `<span class="text-xs text-slate-500"> - ${escapeHtml(p.razon)}</span>` : ''}
             </div>
             <button class="btn-secundario btn-revocar" data-permiso="${p.id}">Revocar</button>
           </div>`;

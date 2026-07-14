@@ -1,4 +1,4 @@
-// tema.js — Single source of truth en JavaScript para hex/medidas.
+// tema.js - Single source of truth en JavaScript para hex/medidas.
 const hexToRgb = (hex) => { const h = hex.replace('#', ''); return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)]; };
 const hexToExcel = (hex) => hex.replace('#', '').toUpperCase();
 const COLOR = {

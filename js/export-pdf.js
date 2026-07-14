@@ -1,4 +1,4 @@
-// export-pdf.js — Reportes PDF profesionales con jsPDF + html2canvas.
+// export-pdf.js - Reportes PDF profesionales con jsPDF + html2canvas.
 //
 // Tres exportaciones:
 //   - exportarReporteGrupoPDF: 10 páginas para el docente (Fase II)
@@ -225,7 +225,7 @@ async function capturarElementoEnPDF(doc, el, x, y, anchoMm) {
   });
 }
 
-// v11.9: paginación RENDER-PER-PAGE — la única forma realmente robusta de no cortar filas.
+// v11.9: paginación RENDER-PER-PAGE - la única forma realmente robusta de no cortar filas.
 // En lugar de cortar un canvas grande en franjas, agrupamos las filas en bloques que CABEN
 // en cada página y renderizamos cada bloque como una tabla independiente. Cada página
 // captura su propio canvas que incluye thead automáticamente. Imposible cortar mid-fila.
@@ -343,7 +343,7 @@ async function capturarCanvasEnPDF(doc, canvasEl, x, y, anchoMm) {
 }
 
 // =========================================================
-// 1) REPORTE DE GRUPO — 10 páginas
+// 1) REPORTE DE GRUPO - 10 páginas
 // =========================================================
 
 export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, contexto) {
@@ -361,7 +361,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   const enRiesgo = estudiantesEnRiesgo(aplicaciones, cuadernillo);
   const nivelGrupo = calcularNivel(kpi?.promedio || 0);
 
-  // ====== PÁGINA 1 — PORTADA v11.9 RESTAURADA (banda + dorado + card institucional + KPI grande) ======
+  // ====== PÁGINA 1 - PORTADA v11.9 RESTAURADA (banda + dorado + card institucional + KPI grande) ======
   let p = 1;
   dibujarHeader(doc, titulo, p, total, logo);
   doc.setFillColor(...C.marfil);
@@ -389,7 +389,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   doc.text('Reporte de Resultados', w/2, 82, { align: 'center' });
   doc.setFontSize(16);
   doc.setTextColor(...C.rojo);
-  doc.text(`${cuadernillo.area} — Grado ${contexto.grado}°`, w/2, 92, { align: 'center' });
+  doc.text(`${cuadernillo.area} · Grado ${contexto.grado}°`, w/2, 92, { align: 'center' });
 
   // Card dorada con datos institucionales
   doc.setFillColor(...C.dorado);
@@ -400,7 +400,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   doc.text(contexto.institucion || 'Institución', w/2, 114, { align: 'center' });
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
-  doc.text(`Sede ${contexto.sede || '—'} · Grupo ${contexto.grupo}`, w/2, 121, { align: 'center' });
+  doc.text(`Sede ${contexto.sede || 'N/D'} · Grupo ${contexto.grupo}`, w/2, 121, { align: 'center' });
   doc.text(`Período ${contexto.periodo} · ${aplicaciones.length} estudiantes evaluados`, w/2, 127, { align: 'center' });
   doc.text(formatDate(new Date().toISOString()), w/2, 133, { align: 'center' });
 
@@ -421,11 +421,11 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   doc.setTextColor(...C.negro);
   doc.setFontSize(9);
   doc.setFont('helvetica', 'normal');
-  doc.text('Documento generado por la plataforma IDEA — Fase II del ciclo pedagógico', w/2, 240, { align: 'center' });
+  doc.text('Documento generado por la plataforma IDEA · Fase II del ciclo pedagógico', w/2, 240, { align: 'center' });
   doc.text('Análisis y planeación · Uso restringido al docente y directivos de la institución', w/2, 246, { align: 'center' });
   dibujarFooter(doc);
 
-  // ====== PÁGINA 2 — RESUMEN EJECUTIVO + DISTRIBUCIÓN DE NIVELES (combinado v13.2) ======
+  // ====== PÁGINA 2 - RESUMEN EJECUTIVO + DISTRIBUCIÓN DE NIVELES (combinado v13.2) ======
   doc.addPage(); p++;
   dibujarHeader(doc, titulo, p, total, logo);
   tituloPagina(doc, 'Resumen ejecutivo', 'Indicadores clave + distribución del grupo');
@@ -455,7 +455,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   // Compatibilidad con el resto de página 2: kpiH equivale al alto v11.9 (28)
   const kpiH = 28;
 
-  // Diagnóstico narrativo COMPLETO (sin truncar — usa todo el ancho de página)
+  // Diagnóstico narrativo COMPLETO (sin truncar - usa todo el ancho de página)
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(11);
   doc.setTextColor(...C.negro);
@@ -556,7 +556,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
 
   dibujarFooter(doc);
 
-  // ====== PÁGINA 4 — TABLA ACIERTOS/DESACIERTOS (v11: clon sin columna ACCIÓN + fuente más legible) ======
+  // ====== PÁGINA 4 - TABLA ACIERTOS/DESACIERTOS (v11: clon sin columna ACCIÓN + fuente más legible) ======
   doc.addPage(); p++;
   let paginaActual = p;
   dibujarHeader(doc, titulo, p, total, logo);
@@ -625,7 +625,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   const splitText = (txt, maxW, fontSize, bold = false) => {
     doc.setFont('helvetica', bold ? 'bold' : 'normal');
     doc.setFontSize(fontSize);
-    return doc.splitTextToSize(txt || '—', maxW);
+    return doc.splitTextToSize(txt || 'N/D', maxW);
   };
   // Color por competencia POR POSICIÓN (no por clave fija a/b/c): así funciona para LC (1/2/3),
   // Inglés (a–e) o cualquier estructura, igual que el panel web.
@@ -715,7 +715,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
 
     let yInner = yD + hHeader + 1;
 
-    // Competencia (o "Parte" en Inglés) con código + nombre + color — solo si visible
+    // Competencia (o "Parte" en Inglés) con código + nombre + color - solo si visible
     if (PV_PDF.competencia !== false) {
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(8);
@@ -727,7 +727,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
       yInner += hComp;
     }
 
-    // Afirmación (o "Nivel" en Inglés) con código + nombre completo — solo si visible
+    // Afirmación (o "Nivel" en Inglés) con código + nombre completo - solo si visible
     if (PV_PDF.afirmacion !== false) {
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(8);
@@ -739,7 +739,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
       yInner += hAfir;
     }
 
-    // Evidencia (o "Habilidad" en Inglés) con código + nombre completo — solo si visible
+    // Evidencia (o "Habilidad" en Inglés) con código + nombre completo - solo si visible
     if (PV_PDF.evidencia !== false) {
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(8);
@@ -751,9 +751,9 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
       yInner += hEvid;
     }
 
-    // Dimensión secundaria (CMC en MAT, Componente en CN, MCER en Inglés) — solo si el área la tiene
+    // Dimensión secundaria (CMC en MAT, Componente en CN, MCER en Inglés) - solo si el área la tiene
     if (_hayDim2PDF) {
-      const _valDim2 = valorDimSecundaria(pq, cuadernillo) || '—';
+      const _valDim2 = valorDimSecundaria(pq, cuadernillo) || 'N/D';
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(8);
       doc.setTextColor(71, 85, 105);
@@ -834,7 +834,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
       const _semL = semaforoDesempeno(valor);
       const _hexL = _semL.color.replace('#','');
       const colorPct = [parseInt(_hexL.slice(0,2),16), parseInt(_hexL.slice(2,4),16), parseInt(_hexL.slice(4,6),16)];
-      const tituloLines = doc.splitTextToSize(it.titulo || '—', lw - 50);
+      const tituloLines = doc.splitTextToSize(it.titulo || 'N/D', lw - 50);
       const altoFila = Math.max(8, tituloLines.length * 4 + 3);
       // Fondo alternado
       if (idx % 2 === 0) { doc.setFillColor(250, 251, 253); doc.rect(lx, yL, lw, altoFila, 'F'); }
@@ -1013,7 +1013,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
         } catch (e) { chartAltoReal = chartAltoMax; }
       }
 
-      // Tabla mini debajo del chart — usar alto REAL del chart (no el max estimado)
+      // Tabla mini debajo del chart - usar alto REAL del chart (no el max estimado)
       const tablaY = yB + 4 + (chartAltoReal || chartAltoMax) + 3;
       const altoMaxTabla = hB - (tablaY - yB) - 2;
       doc.setFillColor(...C.grafito);
@@ -1098,7 +1098,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   // v11: Páginas 'Análisis por competencia' y 'Análisis individual destacado' ELIMINADAS por feedback del usuario.
   // La información de competencias ya está representada en Alineación curricular MBE (pág 6).
 
-  // ====== PÁGINA — CONCLUSIONES PROFUNDAS ======
+  // ====== PÁGINA - CONCLUSIONES PROFUNDAS ======
   doc.addPage(); p++;
   dibujarHeader(doc, titulo, p, total, logo);
   tituloPagina(doc, 'Conclusiones e interpretación pedagógica', 'Análisis en 4 bloques narrativos');
@@ -1132,7 +1132,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
 
   dibujarFooter(doc);
 
-  // ====== PÁGINA 10 — PLAN DE ACCIÓN SUGERIDO ======
+  // ====== PÁGINA 10 - PLAN DE ACCIÓN SUGERIDO ======
   doc.addPage(); p++;
   dibujarHeader(doc, titulo, p, total, logo);
   tituloPagina(doc, 'Plan de acción sugerido', 'Insumo para construir el Plan de Mejora (Fase II) y orientar la Fase III en el aula');
@@ -1178,9 +1178,9 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   doc.text('SIGUIENTE PASO', w / 2, yS + 18, { align: 'center' });
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(8.5);
-  doc.text('Genera el Plan de Mejora completo desde la plataforma IDEA · Fase II — Análisis y Planeación', w / 2, yS + 26, { align: 'center' });
+  doc.text('Genera el Plan de Mejora completo desde la plataforma IDEA · Fase II · Análisis y Planeación', w / 2, yS + 26, { align: 'center' });
 
-  // Espacios de firma — docente, coordinador, rector
+  // Espacios de firma - docente, coordinador, rector
   const yFirmas = yS + 44;
   doc.setTextColor(...C.negro);
   doc.setFont('helvetica', 'bold');
@@ -1221,7 +1221,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
 }
 
 // =========================================================
-// 2) CONSOLIDADO INSTITUCIONAL — directivo / funcionario
+// 2) CONSOLIDADO INSTITUCIONAL - directivo / funcionario
 // =========================================================
 
 export async function exportarConsolidadoPDF(aplicaciones, instituciones, cuadernillos, contexto) {
@@ -1270,7 +1270,7 @@ export async function exportarConsolidadoPDF(aplicaciones, instituciones, cuader
 }
 
 // =========================================================
-// 3) PLAN DE MEJORA — Fase II (Análisis y Planeación)
+// 3) PLAN DE MEJORA - Fase II (Análisis y Planeación)
 // =========================================================
 
 // v9 final: rediseno COMPLETO del PDF de Plan de Mejora para igualar al Word doc.
@@ -1315,7 +1315,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   doc.setTextColor(...C.negro);
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(9);
-  doc.text('FASE II — ANÁLISIS Y PLANEACIÓN', w/2, 82.5, { align: 'center' });
+  doc.text('FASE II · ANÁLISIS Y PLANEACIÓN', w/2, 82.5, { align: 'center' });
 
   // Titulo
   doc.setTextColor(...C.negro);
@@ -1336,12 +1336,12 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   doc.text('DATOS DEL PLAN', w/2, 134, { align: 'center' });
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(10);
-  doc.text(`Docente: ${plan.docente_nombre || '—'}`, w/2, 144, { align: 'center' });
+  doc.text(`Docente: ${plan.docente_nombre || 'N/D'}`, w/2, 144, { align: 'center' });
   doc.text(`Área: ${plan.area} · Grado: ${plan.grado}° ${plan.grupo} · Período: ${plan.periodo}`, w/2, 152, { align: 'center' });
   doc.text(`Fecha del plan: ${fechaActual}`, w/2, 160, { align: 'center' });
   doc.text(`Estado: ${plan.estado || 'borrador'}`, w/2, 168, { align: 'center' });
 
-  // Resumen contadores — v13: 2 cards (Acciones + Recomendaciones del catálogo).
+  // Resumen contadores - v13: 2 cards (Acciones + Recomendaciones del catálogo).
   // Card "VINCULACIONES" eliminada porque la articulación SIEE/PEI/Mallas es
   // autonomía del docente y la IE.
   const numAcc = (plan.acciones || []).length;
@@ -1439,7 +1439,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
     doc.text(`Período ${per}`, 20, y + 5.5);
     const v = plan.puntajes_periodos?.find(p => p.periodo === per)?.puntaje;
     doc.setFont('helvetica', 'bold');
-    doc.text(v != null ? String(v) : '—', w/2 + 10, y + 5.5, { align: 'center' });
+    doc.text(v != null ? String(v) : 'N/D', w/2 + 10, y + 5.5, { align: 'center' });
     y += 8;
   });
   y += 8;
@@ -1483,7 +1483,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
     });
     y += 8;
     fortalezasAutoPdf.forEach((f, idx) => {
-      const textos = [f.tipo || '', f.codigo || '—', f.nombre || '', `${f.logro || 0}%`].map(san);
+      const textos = [f.tipo || '', f.codigo || 'N/D', f.nombre || '', `${f.logro || 0}%`].map(san);
       const linesArr = textos.map((t, i) => doc.splitTextToSize(String(t), colsFort[i] - 4));
       const maxH = Math.max(...linesArr.map(l => l.length * 4 + 4));
       y = ensurePage(y, maxH);
@@ -1502,7 +1502,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
     doc.setTextColor(...C.gris);
     doc.setFont('helvetica', 'italic');
     doc.setFontSize(9);
-    doc.text('Aún no se han detectado fortalezas con logro ≥ 65% en este grupo.', 18, y + 6);
+    doc.text('Aún no se han detectado fortalezas con logro igual o superior al 65% en este grupo.', 18, y + 6);
     y += 12;
   }
   y += 6;
@@ -1532,7 +1532,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
     y += 14;
   } else {
     acciones.forEach((acc, idx) => {
-      const textos = [acc.oportunidades || '—', acc.estrategias || '—', acc.seguimiento || '—'].map(san);
+      const textos = [acc.oportunidades || 'N/D', acc.estrategias || 'N/D', acc.seguimiento || 'N/D'].map(san);
       const linesArr = textos.map((t, i) => doc.splitTextToSize(t, cols[i] - 4));
       const maxH = Math.max(...linesArr.map(l => l.length * 4 + 4));
       y = ensurePage(y, maxH);
@@ -1583,7 +1583,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
       doc.setFont('helvetica', 'normal');
       doc.text(san(plan.responsable || 'Docente').slice(0, 18), 130, y + 6);
       doc.setFontSize(7);
-      doc.text(doc.splitTextToSize(san(acc.seguimiento || '—'), 28).slice(0, 3), 165, y + 3.4);
+      doc.text(doc.splitTextToSize(san(acc.seguimiento || 'N/D'), 28).slice(0, 3), 165, y + 3.4);
       doc.setFontSize(8);
       y += 10;
     });
@@ -1595,7 +1595,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   const indicadores = [
     { titulo: 'Cuantitativo', texto: 'Aplicación de un segundo instrumento IDEA al cierre del próximo período, con metas de mejora del 10% mínimo en las competencias priorizadas.' },
     { titulo: 'Cualitativo', texto: 'Observación de aula focalizada en las estrategias didácticas implementadas, con rúbrica de fidelidad de aplicación.' },
-    { titulo: 'De proceso', texto: `Verificación quincenal del cumplimiento del cronograma con el responsable institucional: ${plan.responsable || '—'}.` },
+    { titulo: 'De proceso', texto: `Verificación quincenal del cumplimiento del cronograma con el responsable institucional: ${plan.responsable || 'N/D'}.` },
     { titulo: 'De producto', texto: 'Portafolio de evidencias de aprendizaje por estudiante priorizado, con muestras de inicio, medio y cierre del período.' },
     { titulo: 'De impacto', texto: 'Seguimiento individualizado de estudiantes en nivel BAJO, con plan de tutoría documentado.' }
   ];
@@ -1622,10 +1622,10 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   // institucional es autonomía del docente y de la IE; el instrumento IDEA
   // no la prescribe. Se reemplaza por un cierre motivacional hacia Fase III.
   y = ensurePage(y, 70);
-  y = seccionTitulo(y, 6, 'Puente a la Fase III — Implementación en el aula');
-  const cierreFase2 = `Este plan cierra la Fase II — Análisis y Planeación del instrumento IDEA. La Fase III — Implementación y Acción es enteramente autonomía del docente: sucede en el aula, con sus secuencias didácticas y su juicio profesional ajustando la ruta según el avance de los estudiantes.`;
+  y = seccionTitulo(y, 6, 'Puente a la Fase III · Implementación en el aula');
+  const cierreFase2 = `Este plan cierra la Fase II · Análisis y Planeación del instrumento IDEA. La Fase III · Implementación y Acción es enteramente autonomía del docente: sucede en el aula, con sus secuencias didácticas y su juicio profesional ajustando la ruta según el avance de los estudiantes.`;
   y = textoExperto(y, cierreFase2);
-  const ruta = `Para llevar este plan al aula esta misma semana: (1) Empieza con la primera estrategia y prográmala para la próxima clase, sin esperar el lunes "perfecto". (2) Lleva una bitácora corta con qué funcionó, qué ajustaste y cómo respondieron los estudiantes — ese registro será insumo para la próxima aplicación. (3) Conversa una vez por semana con otro docente del área; la mejora pedagógica más sostenible nace del diálogo profesional honesto.`;
+  const ruta = `Para llevar este plan al aula esta misma semana: (1) Empieza con la primera estrategia y prográmala para la próxima clase, sin esperar el lunes "perfecto". (2) Lleva una bitácora corta con qué funcionó, qué ajustaste y cómo respondieron los estudiantes - ese registro será insumo para la próxima aplicación. (3) Conversa una vez por semana con otro docente del área; la mejora pedagógica más sostenible nace del diálogo profesional honesto.`;
   y = textoExperto(y, ruta);
   const cierreInvitacion = `Al cierre del período, una nueva aplicación del cuadernillo IDEA permitirá comparar el impacto concreto del plan que hoy comienza. Confía en tu juicio profesional: tu aula te necesita.`;
   y = textoExperto(y, cierreInvitacion);

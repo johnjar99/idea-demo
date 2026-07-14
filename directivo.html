@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-  <title>Panel del Directivo — IDEA</title>
+  <title>Panel del Directivo · IDEA</title>
   <link rel="icon" type="image/png" href="assets/logo-idea.png">
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
   <header class="idea-header">
     <a href="directivo.html" class="logo-home" title="Inicio (volver al panel)">
       <img src="assets/logo-idea.png" class="logo">
-      <div class="nombre-app">IDEA — Panel Directivo / Funcionario</div>
+      <div class="nombre-app">IDEA · Panel Directivo / Funcionario</div>
     </a>
     <div class="user-info">
       <span class="rol-chip" id="chip-rol">Directivo</span>
@@ -103,7 +103,7 @@
       </div>
     </main>
 
-  <footer class="idea-footer">© Instrumento IDEA — Álvaro R. Córdoba B.</footer>
+  <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
   <div id="toast-container"></div>
 
   <script type="module">
@@ -169,7 +169,7 @@
     const inst = instituciones.find(i => i.id === ses.institucion_id);
     document.getElementById('meta-institucion').textContent = _scoped
       ? (inst?.nombre || '')
-      : 'Vista global — todas las instituciones';
+      : 'Vista global - todas las instituciones';
 
     // Cambio de vistas
     document.querySelectorAll('[data-vista]').forEach(b => {
@@ -316,11 +316,11 @@
       const niv = calcularNivel(e.promedio);
       const nivelClase = (niv || '').toLowerCase().replace('á', 'a');
       const celdasArea = areasPresentes.map(ar => {
-        if (e.areaProm[ar] == null) return '<td style="color:#CBD5E1">—</td>';
+        if (e.areaProm[ar] == null) return '<td style="color:#CBD5E1">N/D</td>';
         const nA = calcularNivel(e.areaProm[ar]);
         return `<td style="font-weight:700;color:${COLOR_NIVEL[nA]}">${e.areaProm[ar]}</td>`;
       }).join('');
-      rk += `<tr><td><strong>${i+1}</strong></td><td class="nombre">${escapeHtml(e.nombre || '—')}</td><td>${e.grado || '—'}° ${e.grupo || ''}</td>${celdasArea}<td><strong>${e.promedio}</strong></td><td><span class="chip-nivel ${nivelClase}">${niv}</span></td></tr>`;
+      rk += `<tr><td><strong>${i+1}</strong></td><td class="nombre">${escapeHtml(e.nombre || 'N/D')}</td><td>${e.grado || 'N/D'}° ${e.grupo || ''}</td>${celdasArea}<td><strong>${e.promedio}</strong></td><td><span class="chip-nivel ${nivelClase}">${niv}</span></td></tr>`;
     });
     rk += '</tbody>';
     document.getElementById('tabla-ranking').innerHTML = ranking.length
@@ -356,7 +356,7 @@
       cont.innerHTML = primerPuesto.map((e, i) => `
         <div class="flex items-center justify-between gap-3 py-2.5 px-3 rounded-xl" style="background:#fff;border:1px solid #ECEAF3">
           <div class="min-w-0">
-            <div class="font-semibold text-slate-800 truncate">${escapeHtml(e.nombre || '—')}</div>
+            <div class="font-semibold text-slate-800 truncate">${escapeHtml(e.nombre || 'N/D')}</div>
             <div class="text-xs text-slate-500">${e.grado}° ${escapeHtml(e.grupo)} · Promedio ${e.promedio} · Nivel ${escapeHtml(e.nivel)}</div>
           </div>
           <button class="btn-cert text-white text-sm font-semibold rounded-lg px-3 py-2 flex-shrink-0" data-i="${i}" style="background:linear-gradient(118deg,#C7163C,#B45309)">🏅 Imprimir certificado</button>
@@ -376,7 +376,7 @@
       }));
     })();
 
-    // Comparativo entre grupos (barras) — agrupadas por MATERIA: primero todas las barras
+    // Comparativo entre grupos (barras) - agrupadas por MATERIA: primero todas las barras
     // de Matemáticas (grupo A, luego B…), después todas las de Lectura Crítica, etc. Así,
     // cuando hay dos o más grupos, cada materia queda junta para compararlos lado a lado.
     const ORDEN_AREA = ['Matemáticas', 'Lectura Crítica', 'Sociales y Ciudadanas', 'Ciencias Naturales', 'Inglés'];

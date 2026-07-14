@@ -1,4 +1,4 @@
-// permisos.js — Sistema de habilitación de reintentos de prueba.
+// permisos.js - Sistema de habilitación de reintentos de prueba.
 //
 // Regla central: cada estudiante puede presentar UNA SOLA vez cada cuadernillo.
 // Para presentar de nuevo necesita un permiso explícito otorgado por docente/directivo/funcionario.

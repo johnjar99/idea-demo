@@ -1,4 +1,4 @@
-// Generador de Word del Plan de Mejora — estilo v11.9 (Calibri + paleta vivos clásicos).
+// Generador de Word del Plan de Mejora - estilo v11.9 (Calibri + paleta vivos clásicos).
 // v13.2 fix: removido THEME.word.css() editorial v14 (Fraunces+Inter+colores oscuros)
 // porque el usuario calificó como "diseño modificado" no deseado.
 import { escapeHtml } from './utils.js';
@@ -9,7 +9,7 @@ export function construirWordHtml(ctx) {
     logComp, compKeys, minComp, maxComp,
     accionesHTML, trayectoriaHTML, vincHTML, recsHTML, cronoHTML, prioridadesHTML,
     diagnosticoExperto, cuadernillo,
-    fortalezasAuto  // [{tipo, codigo, nombre, logro, color}] — autodetectadas en el panel
+    fortalezasAuto  // [{tipo, codigo, nombre, logro, color}] - autodetectadas en el panel
   } = ctx;
 
   const partes = [];
@@ -55,7 +55,7 @@ export function construirWordHtml(ctx) {
   partes.push('<ul>' + (prioridadesHTML || '<li>Sin competencias priorizadas en el wizard.</li>') + '</ul>');
   partes.push('<p>La priorizacion se basa en el porcentaje de logro grupal, focalizando las competencias con menos del 65% de dominio como areas criticas de intervencion pedagogica (umbral verde del semaforo unificado de la plataforma: menos de 35% rojo, 35 a 65% amarillo, 65% o mas verde).</p>');
 
-  // Seccion 2.1 — Fortalezas autodetectadas (logro >= 65%)
+  // Seccion 2.1 - Fortalezas autodetectadas (logro >= 65%)
   partes.push('<h2>2.1. Fortalezas detectadas en el grupo</h2>');
   partes.push('<p>Las siguientes competencias, afirmaciones o componentes muestran un nivel de logro grupal igual o superior al 65% (umbral verde del semaforo unificado de la plataforma). Son la base sobre la cual construir el plan de mejora y no requieren intervencion inmediata.</p>');
   if (fortalezasAuto && fortalezasAuto.length > 0) {
@@ -63,14 +63,14 @@ export function construirWordHtml(ctx) {
     fortalezasAuto.forEach(f => {
       partes.push(`<tr>
         <td>${escapeHtml(f.tipo || '')}</td>
-        <td>${escapeHtml(f.codigo || '—')}</td>
+        <td>${escapeHtml(f.codigo || 'N/D')}</td>
         <td>${escapeHtml(f.nombre || '')}</td>
         <td style="text-align:center;color:${f.color || '#10B981'};font-weight:bold">${f.logro || 0}%</td>
       </tr>`);
     });
     partes.push('</tbody></table>');
   } else {
-    partes.push('<p><i>Aun no se han detectado fortalezas con logro &ge; 65% en este grupo. Esto puede indicar que el grupo necesita refuerzo generalizado. Concentre el plan en las oportunidades de mejora.</i></p>');
+    partes.push('<p><i>Aun no se han detectado fortalezas con logro igual o superior al 65% en este grupo. Esto puede indicar que el grupo necesita refuerzo generalizado. Concentre el plan en las oportunidades de mejora.</i></p>');
   }
 
   // Seccion 3

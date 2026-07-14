@@ -1,4 +1,4 @@
-// firebase-init.js — NEUTRALIZADO en el sandbox idea-demo.
+// firebase-init.js - NEUTRALIZADO en el sandbox idea-demo.
 //
 // La demo NO usa Firebase: la persistencia es 100% local (IndexedDB vía db.js) y la
 // autenticación es local (auth.js). Este archivo se conserva solo por si algún módulo

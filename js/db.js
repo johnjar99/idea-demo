@@ -1,4 +1,4 @@
-// db.js — ADAPTADOR LOCAL (sandbox idea-demo) sobre IndexedDB.
+// db.js - ADAPTADOR LOCAL (sandbox idea-demo) sobre IndexedDB.
 //
 // Reemplaza al db.js de Firestore SIN cambiar la interfaz pública: las páginas
 // (estudiante/docente/directivo/manager/cuadernillo/resultado/plan-mejora) siguen
@@ -86,7 +86,7 @@ function validarCuadernillo(c) {
 // --- Siembra inicial (solo si la base está vacía) ------------------------------------
 // Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
 // visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
-const SEED_VERSION = '2026-07-09-dce-fidelidad-icfes';
+const SEED_VERSION = '2026-07-14-guion-pdf-mejoras';
 let _sembrado = null;
 async function sembrarSiVacio() {
   let verPrev = null;

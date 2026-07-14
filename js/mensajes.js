@@ -1,4 +1,4 @@
-// mensajes.js — Mensajería docente↔estudiante con hilos de conversación.
+// mensajes.js - Mensajería docente↔estudiante con hilos de conversación.
 // Cada mensaje: { id, hilo_id?, de_id, de_nombre, para_id, asunto?, texto, fecha, leido, plantilla? }
 // hilo_id permite agrupar respuestas. Si un mensaje no especifica hilo_id, su id es la raíz del hilo.
 

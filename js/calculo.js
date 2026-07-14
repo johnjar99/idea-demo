@@ -1,4 +1,4 @@
-// calculo.js — Lógica de puntaje, nivel, agregaciones, comparativos y conclusiones automáticas.
+// calculo.js - Lógica de puntaje, nivel, agregaciones, comparativos y conclusiones automáticas.
 // Toda la matemática de IDEA vive aquí. Sin dependencias externas.
 
 /**

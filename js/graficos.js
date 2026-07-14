@@ -1,4 +1,4 @@
-// graficos.js — Wrappers de Chart.js con paleta IDEA v14 editorial.
+// graficos.js - Wrappers de Chart.js con paleta IDEA v14 editorial.
 // Chart.js se carga via CDN en cada HTML. Toda la paleta proviene de tema.js
 // (single source of truth). Sincronizado con tokens.css.
 
@@ -15,7 +15,7 @@ if (typeof window !== 'undefined' && window.Chart && window.Chart.defaults) {
 // ============================================================================
 // PALETA derivada de THEME para consumo por los renderers
 // ============================================================================
-// PALETA v13 RESTAURADA — colores vivos, NO los editoriales oscuros v14.
+// PALETA v13 RESTAURADA - colores vivos, NO los editoriales oscuros v14.
 // Cambios respecto a v14:
 //  - Niveles: vivos puros (rojo #EF4444, ámbar #F59E0B, esmeralda #10B981, dorado #D4AF37)
 //    para que el donut "Distribución por niveles del grupo" vuelva al look v13.
@@ -40,7 +40,7 @@ const PALETA = {
   superior: '#D4AF37',
   // Paletas categóricas
   competencias: ['#6366F1', '#EC4899', '#14B8A6'],       // índigo, magenta, turquesa
-  cmc:          ['#0EA5E9', '#D946EF', '#84CC16', '#F97316'], // cielo, fucsia, lima, naranja — DISTINTO de competencias
+  cmc:          ['#0EA5E9', '#D946EF', '#84CC16', '#F97316'], // cielo, fucsia, lima, naranja - DISTINTO de competencias
   historico:    ['#6EE7B7', '#7DD3FC', '#F472B6', '#FCD34D'], // pasteles vivos v13
   inglesPartes: ['#3B82F6', '#A855F7', '#10B981', '#F59E0B', '#EC4899'], // 5 distintos
   // Neutros para grids/axes (se sigue tomando del tema para consistencia con exports)

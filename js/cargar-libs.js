@@ -1,4 +1,4 @@
-// cargar-libs.js — Carga BAJO DEMANDA las librerías pesadas (solo cuando se exporta),
+// cargar-libs.js - Carga BAJO DEMANDA las librerías pesadas (solo cuando se exporta),
 // para que NINGUNA página las descargue al abrir. Antes bloqueaban el arranque hasta
 // con 4 MB de JavaScript; ahora la página abre al instante y la librería se trae solo
 // en el momento exacto en que se necesita (al pulsar descargar/exportar).

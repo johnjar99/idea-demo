@@ -1,4 +1,4 @@
-// cuadernillo-pdf-original.js — Descarga del cuadernillo con portada y contraportada
+// cuadernillo-pdf-original.js - Descarga del cuadernillo con portada y contraportada
 // PROPIAS de IDEA. Las páginas de preguntas son las originales del ICFES sin
 // modificar (uso pedagógico). La primera página (portada ICFES) y la última
 // (contraportada "FIN" ICFES) se REEMPLAZAN por las generadas por IDEA con su
@@ -95,10 +95,10 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
   const pdfOrig = await PDFDocument.load(bytesOriginal);
   const pdfOut = await PDFDocument.create();
 
-  pdfOut.setTitle(`IDEA — Cuadernillo ${cuadernillo.area} ${cuadernillo.grado}° P${cuadernillo.periodo}`);
+  pdfOut.setTitle(`IDEA · Cuadernillo ${cuadernillo.area} ${cuadernillo.grado}° P${cuadernillo.periodo}`);
   pdfOut.setAuthor('Plataforma IDEA');
   pdfOut.setSubject(`Prueba diagnóstica · ${cuadernillo.area} · Grado ${cuadernillo.grado}°`);
-  pdfOut.setCreator('Plataforma IDEA — exportar cuadernillo');
+  pdfOut.setCreator('Plataforma IDEA · exportar cuadernillo');
 
   // Fuentes estándar (PDF built-in, no requiere embed externo)
   const fontBold = await pdfOut.embedFont(StandardFonts.HelveticaBold);
@@ -169,7 +169,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
     'Lee detenidamente cada pregunta antes de responder.',
     'Selecciona una unica opcion por pregunta (A, B, C o D).',
     'Si hay figura, tabla o lectura, observala con atencion.',
-    'Administra tu tiempo con calma — todas las preguntas valen lo mismo.',
+    'Administra tu tiempo con calma - todas las preguntas valen lo mismo.',
     'No es necesario que respondas en orden; puedes regresar a una pregunta.',
     'No se penalizan respuestas incorrectas: si dudas, intenta tu mejor opcion.'
   ];
@@ -232,7 +232,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
     yMsg += 22;
   });
 
-  // Bloque de créditos al ICFES — coordenadas reescritas en sistema "desde TOP" para
+  // Bloque de créditos al ICFES - coordenadas reescritas en sistema "desde TOP" para
   // evitar el solapamiento título/texto que tenía la versión anterior. pdf-lib usa
   // origen bottom-left, así que cada drawText recibe `y = pH - yTop`.
   const credLineas = [
@@ -242,7 +242,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
     'y de practica, sin modificacion del contenido original.',
     '',
     'La portada, contraportada, diseno editorial y herramientas de analisis son',
-    'propiedad de la Plataforma IDEA — Instrumento de Interpretacion de Datos para',
+    'propiedad de la Plataforma IDEA - Instrumento de Interpretacion de Datos para',
     'la Evaluacion del Aprendizaje. Autor: Alvaro Raul Cordoba Belalcazar.'
   ];
   const credBoxX = 60;
@@ -286,7 +286,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
   // Footer fecha
   fin.drawRectangle({ x: 80, y: 80, width: pW - 160, height: 0.6, color: cGris });
   textoCentrado(fin, 'Plataforma IDEA · Documento exportado el ' + new Date().toLocaleDateString('es-CO'), 778, { font: fontReg, size: 8.5, color: cGris });
-  textoCentrado(fin, 'Uso pedagogico — no comercializar', 792, { font: fontIt, size: 8, color: cGris });
+  textoCentrado(fin, 'Uso pedagogico - no comercializar', 792, { font: fontIt, size: 8, color: cGris });
 
   // ============= SERIALIZAR + DESCARGAR =============
   const pdfBytes = await pdfOut.save();

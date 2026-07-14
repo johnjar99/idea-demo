@@ -1,4 +1,4 @@
-// area-config.js — Configuración por área del marco evaluativo IDEA.
+// area-config.js - Configuración por área del marco evaluativo IDEA.
 //
 // Cada área (Matemáticas, Lectura Crítica, Sociales y Ciudadanas, Ciencias
 // Naturales, Inglés) tiene una arquitectura distinta de competencias, afirmaciones,
@@ -235,7 +235,7 @@ export function semaforoDesempeno(porcentaje) {
       color: '#EF4444',
       colorTexto: '#FFFFFF',
       label: 'BAJO',
-      labelLargo: 'Bajo — la mayoría no acertó (<35%)',
+      labelLargo: 'Bajo - la mayoría no acertó (menos del 35%)',
       rango: '< 35%',
       pct: p
     };
@@ -245,7 +245,7 @@ export function semaforoDesempeno(porcentaje) {
       color: '#F59E0B',
       colorTexto: '#FFFFFF',
       label: 'MEDIO',
-      labelLargo: 'Medio — dominio parcial (35-65%)',
+      labelLargo: 'Medio - dominio parcial (35-65%)',
       rango: '35–65%',
       pct: p
     };
@@ -254,8 +254,8 @@ export function semaforoDesempeno(porcentaje) {
     color: '#10B981',
     colorTexto: '#FFFFFF',
     label: 'ALTO',
-    labelLargo: 'Alto — la mayoría acertó (≥65%)',
-    rango: '≥ 65%',
+    labelLargo: 'Alto - la mayoría acertó (65% o más)',
+    rango: '65% o más',
     pct: p
   };
 }
