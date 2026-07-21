@@ -266,7 +266,9 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
       ['ICFES ·Guía Inglés', 'Marco oficial alineado al MCER', 'https://www.icfes.gov.co/']
     ]
   };
-  const areaKey = (cuadernillo.area || '').toLowerCase();
+  const _aliasArea = { 'lenguaje': 'lectura crítica', 'competencias ciudadanas': 'sociales y ciudadanas', 'ciencias naturales y educación ambiental': 'ciencias naturales' };
+  const _ak0 = (cuadernillo.area || '').toLowerCase().trim();
+  const areaKey = _aliasArea[_ak0] || _ak0;
   const recursosArea = RECURSOS_POR_AREA[areaKey] || RECURSOS_POR_AREA['matemáticas'];
   const recs = [
     ['Recurso', 'Para qué', 'Enlace'],

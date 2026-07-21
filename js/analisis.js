@@ -221,8 +221,16 @@ const ESTRATEGIAS_POR_AREA = {
 };
 
 // Resolvers ---------------------------------------------------------------------------
+// Normaliza el nombre de básica (Lenguaje, Competencias Ciudadanas, Ciencias Naturales y
+// Educación Ambiental) al canónico de la banda media, para que las estrategias/narrativa resuelvan igual.
+const _ALIAS_AREA = {
+  'lenguaje': 'lectura crítica',
+  'competencias ciudadanas': 'sociales y ciudadanas',
+  'ciencias naturales y educación ambiental': 'ciencias naturales',
+};
 function _areaSlug(cuadernillo) {
-  return (cuadernillo && cuadernillo.area || '').toLowerCase();
+  const a = (cuadernillo && cuadernillo.area || '').toLowerCase().trim();
+  return _ALIAS_AREA[a] || a;
 }
 // Resuelve area_slug (matematicas, lectura_critica, ...) y grado del cuadernillo para
 // consultar la capa por grado. Tolerante: si falta algo, devuelve null y NO se consulta.

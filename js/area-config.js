@@ -11,10 +11,19 @@
 //   'matemáticas' | 'lectura crítica' | 'sociales y ciudadanas' |
 //   'ciencias naturales' | 'inglés'
 
+// Los cuadernillos de básica (3°-9°) usan el nombre de área del ICFES básica; para toda la
+// LÓGICA (config, estrategias, colores) se normalizan al nombre canónico de la banda media,
+// porque el marco DCE es el mismo. Solo cambia el NOMBRE VISIBLE, no la lógica.
+export const ALIAS_AREA_BASICA = {
+  'lenguaje': 'lectura crítica',
+  'competencias ciudadanas': 'sociales y ciudadanas',
+  'ciencias naturales y educación ambiental': 'ciencias naturales',
+};
+
 /** Normaliza el nombre del área a slug canónico. */
 export function areaSlug(cuadernillo) {
   const area = (cuadernillo && cuadernillo.area || '').toLowerCase().trim();
-  return area;
+  return ALIAS_AREA_BASICA[area] || area;
 }
 
 /**
