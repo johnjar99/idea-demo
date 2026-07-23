@@ -38,7 +38,7 @@
   "contextos": {
     "ctx-parte1": {
       "titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee las descripciones de la izquierda (1 - 5). ¿Cuál palabra de la columna de la derecha (A - G) concuerda con cada descripción? Sobran dos palabras. En las preguntas 1 - 5, marca la letra correcta A - G. Ejemplo: «You wear special shoes for this and you slide on snow.» → la respuesta sería «skiing». Banco de palabras: A) camping  B) cooking  C) fishing  D) gardening  E) painting  F) reading  G) running.",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones, así que sobran dos; cada palabra se usa una sola vez.",
       "rango_preguntas": "1 a 5",
       "imagen": "assets/banco-in-10-p1/ejemplo_parte1.png"
     },
@@ -57,7 +57,7 @@
     "ctx-parte4": {
       "titulo": "A day in Sofía's kitchen",
       "imagen": "assets/banco-in-10-p1/q17.png",
-      "texto": "Two years ago, Sofía decided to cook all her meals at home, and she never buys fast food now, either. When she was a child, she ate a lot of fried snacks and candy. When she first changed her diet, she felt very tired. A nurse told her to eat beans and oranges to get more energy. Yesterday, she woke up early and had eggs and bread for breakfast at home before going to the market. She usually eats a big breakfast because she does not stop to eat again until the evening. In the afternoon she only drank a glass of juice while she worked. For dinner she cooked fish with rice and a few vegetables, the same fish she had also tasted at lunch; she drank water with it. It is important to plan your meals.",
+      "texto": "Two years ago, Sofía decided to cook all her meals at home, and she never buys fast food now, either. When she was a child, she ate a lot of fried snacks and candy. When she first changed her diet, she felt very tired. A nurse told her to eat beans and oranges to get more energy. Yesterday, she woke up early and had eggs and bread for breakfast at home before going to the market. She usually eats a big breakfast because she does not stop to eat again until the evening. In the afternoon she only drank a glass of juice while she worked. For dinner she cooked fish with rice and a few vegetables; she tasted a small piece while it was cooking and then ate the rest at the table, and she drank water with it. It is important to plan your meals.",
       "rango_preguntas": "17 a 22"
     }
   },
@@ -509,7 +509,7 @@
       "numero": 17,
       "contexto_id": "ctx-parte4",
       "contexto_titulo": "A day in Sofía's kitchen",
-      "enunciado": "<p>Read the text and answer questions 17 to 22.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0 0 6px'><b>A DAY IN SOFÍA'S KITCHEN</b></p><p style='margin:0;line-height:1.7'>Two years ago, Sofía decided to cook all her meals at home, and she never buys fast food now, either. When she was a child, she ate a lot of fried snacks and candy. When she first changed her diet, she felt very tired. A nurse told her to eat beans and oranges to get more energy. Yesterday, she woke up early and had eggs and bread for breakfast at home before going to the market. She usually eats a big breakfast because she does not stop to eat again until the evening. In the afternoon she only drank a glass of juice while she worked. For dinner she cooked fish with rice and a few vegetables, the same fish she had also tasted at lunch; she drank water with it. It is important to plan your meals.</p></div><p class=\"en-stem\">Yesterday, Sofía ate breakfast</p>",
+      "enunciado": "<p>Read the text and answer questions 17 to 22.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center;margin:0 0 6px'><b>A DAY IN SOFÍA'S KITCHEN</b></p><p style='margin:0;line-height:1.7'>Two years ago, Sofía decided to cook all her meals at home, and she never buys fast food now, either. When she was a child, she ate a lot of fried snacks and candy. When she first changed her diet, she felt very tired. A nurse told her to eat beans and oranges to get more energy. Yesterday, she woke up early and had eggs and bread for breakfast at home before going to the market. She usually eats a big breakfast because she does not stop to eat again until the evening. In the afternoon she only drank a glass of juice while she worked. For dinner she cooked fish with rice and a few vegetables; she tasted a small piece while it was cooking and then ate the rest at the table, and she drank water with it. It is important to plan your meals.</p></div><p class=\"en-stem\">Yesterday, Sofía ate breakfast</p>",
       "opciones": {
         "A": "at home.",
         "B": "at the market.",
@@ -574,9 +574,9 @@
       "evidencia": "3.d",
       "nivel_mcer": "A2",
       "parte": 4,
-      "dificultad": "ALTA",
+      "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Inferir la razón de una costumbre a partir de información explícita en el texto.",
+      "que_evalua": "Localizar en el texto la razón explícita por la que Sofía desayuna mucho.",
       "justificacion_correcta": "Opción C, dado que el texto explica que ella desayuna mucho porque no vuelve a comer hasta la noche, así que necesita energía para todo el día.",
       "opciones_incorrectas": {
         "A": "el texto dice que ella sí come verduras en la cena, no que nunca las coma.",
@@ -629,9 +629,9 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Contar cuántas veces ocurre un hecho conectando dos menciones separadas del texto.",
-      "justificacion_correcta": "Opción B, dado que el texto menciona que en la cena cocinó pescado y que era el mismo pescado que ya había probado en el almuerzo, es decir, lo comió dos veces.",
+      "justificacion_correcta": "Opción B, dado que el texto dice que en la cena Sofía probó un pequeño trozo del pescado mientras se cocinaba y luego comió el resto en la mesa, es decir, lo comió dos veces.",
       "opciones_incorrectas": {
-        "A": "«once» (una vez) ignora que el texto dice que también lo probó en el almuerzo.",
+        "A": "«once» (una vez) ignora que primero probó un trozo mientras cocinaba y luego comió el resto en la cena.",
         "C": "«three times» (tres veces) cuenta más comidas con pescado de las que menciona el texto."
       }
     },
