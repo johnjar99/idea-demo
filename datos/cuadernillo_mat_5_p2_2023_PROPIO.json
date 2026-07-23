@@ -159,7 +159,7 @@
       "opciones": {
         "A": "\\(5\\) lanzamientos de \\(4\\) puntos.",
         "B": "\\(3\\) lanzamientos de \\(6\\) puntos.",
-        "C": "\\(5\\) lanzamientos de \\(3\\) puntos.",
+        "C": "\\(6\\) lanzamientos de \\(3\\) puntos.",
         "D": "\\(2\\) lanzamientos de \\(6\\) puntos."
       },
       "clave": "B",
@@ -173,7 +173,7 @@
       "justificacion_correcta": "La suma de los cinco puntajes es \\(6 + 2 + 4 + 2 + 4 = 18\\). Agrupando los puntajes que se repiten, \\(6 + (2 + 4) + (2 + 4) = 6 + 6 + 6 = 3 \\times 6\\), equivalente a \\(3\\) lanzamientos de \\(6\\) puntos cada uno.",
       "opciones_incorrectas": {
         "A": "\\(5 \\times 4 = 20\\) puntos, que no coincide con la suma real de \\(18\\).",
-        "C": "\\(5 \\times 3 = 15\\) puntos, que no coincide con la suma real de \\(18\\).",
+        "C": "\\(6 \\times 3 = 18\\) puntos da el mismo total, pero reparte el total en \\(6\\) lanzamientos y no en \\(3\\), que es el menor número de repeticiones del mismo valor que comprueba la idea.",
         "D": "\\(2 \\times 6 = 12\\) puntos, que es menor que el total real de \\(18\\)."
       },
       "imagen_figura": "assets/banco-mat-5-p2/q05.png",
@@ -440,7 +440,7 @@
       "numero": 15,
       "enunciado": "<p>Valeria está resolviendo en el tablero la siguiente operación: <b>\\(\\sqrt{\\dfrac{4}{100}} + \\dfrac{2}{5} = \\dfrac{3}{5}\\)</b>. ¿Es <b>correcto</b> o <b>incorrecto</b> el resultado de la operación?</p>",
       "opciones": {
-        "A": "Es correcto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{2}{10}\\) y, al sumarle \\(\\dfrac{2}{5}\\), el resultado es \\(\\dfrac{3}{5}\\).",
+        "A": "Es correcto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{4}{10}\\) y, al sumarle \\(\\dfrac{2}{5}\\), el resultado es \\(\\dfrac{3}{5}\\).",
         "B": "Es correcto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{2}{10} = \\dfrac{1}{5}\\) y, al sumar \\(\\dfrac{1}{5} + \\dfrac{2}{5}\\) que son homogéneas, el resultado es \\(\\dfrac{3}{5}\\).",
         "C": "Es incorrecto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{1}{5}\\) y, al sumar \\(\\dfrac{1}{5} + \\dfrac{2}{5}\\), también se suman los denominadores: \\(\\dfrac{3}{10}\\).",
         "D": "Es incorrecto, porque la raíz cuadrada de \\(100\\) es \\(50\\), por lo que la raíz de la fracción no es \\(\\dfrac{1}{5}\\)."
@@ -455,7 +455,7 @@
       "que_evalua": "La capacidad de explicar por qué un cálculo entre fracciones es correcto o incorrecto, cuando hay raíces cuadradas en el proceso.",
       "justificacion_correcta": "La raíz cuadrada se distribuye sobre el numerador y el denominador: \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{\\sqrt{4}}{\\sqrt{100}} = \\dfrac{2}{10}\\), que al simplificar es \\(\\dfrac{1}{5}\\). Como \\(\\dfrac{1}{5}\\) y \\(\\dfrac{2}{5}\\) son homogéneas, se suman los numeradores: \\(\\dfrac{1}{5} + \\dfrac{2}{5} = \\dfrac{3}{5}\\). El resultado es correcto.",
       "opciones_incorrectas": {
-        "A": "Llega a la conclusión correcta, pero su justificación es incompleta: deja \\(\\dfrac{2}{10}\\) sin simplificar a \\(\\dfrac{1}{5}\\) y no explica por qué se pueden sumar las fracciones.",
+        "A": "Calcula mal la raíz: \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{2}{10}\\), no \\(\\dfrac{4}{10}\\). Con \\(\\dfrac{4}{10}\\) la suma daría \\(\\dfrac{4}{10} + \\dfrac{2}{5} = \\dfrac{4}{5}\\), no \\(\\dfrac{3}{5}\\); la opción se contradice a sí misma, así que es incorrecta.",
         "C": "Suma también los denominadores \\(\\left(\\dfrac{1+2}{5+5} = \\dfrac{3}{10}\\right)\\), olvidando que en fracciones homogéneas solo se suman los numeradores.",
         "D": "Calcula mal la raíz de \\(100\\) (sería \\(10\\), no \\(50\\)), por lo que parte de un valor equivocado."
       },
@@ -596,6 +596,5 @@
       },
       "imagen_figura": "assets/banco-mat-5-p2/q20.png"
     }
-  ],
-  "preservar_orden_preguntas": false
+  ]
 }

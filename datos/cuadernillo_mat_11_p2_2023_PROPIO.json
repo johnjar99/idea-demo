@@ -38,9 +38,9 @@
     {
       "id": "P-math-11-p2-01",
       "numero": 1,
-      "enunciado": "<p>El coordinador de un colegio encuestó a <b>\\(240\\)</b> estudiantes sobre el medio en que se transportan. Del total, el <b>\\(15\\%\\)</b> usa <b>bicicleta</b> y el <b>\\(35\\%\\)</b> usa <b>bus</b>. Además, <b>\\(60\\)</b> estudiantes van <b>a pie</b> y el resto se transporta en <b>metro</b>. ¿Cuál de las siguientes representaciones muestra correctamente la cantidad de estudiantes en cada medio?</p>",
+      "enunciado": "<p>El coordinador de un colegio encuestó a <b>\\(240\\)</b> estudiantes sobre el medio en que se transportan. Del total, el <b>\\(15\\%\\)</b> usa <b>bicicleta</b> y el <b>\\(35\\%\\)</b> usa <b>bus</b>. Además, <b>\\(72\\)</b> estudiantes van <b>a pie</b> y el resto se transporta en <b>metro</b>. ¿Cuál de las siguientes representaciones muestra correctamente la cantidad de estudiantes en cada medio?</p>",
       "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medio de transporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bicicleta</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bus</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">84</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">A pie</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Metro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60</td></tr></table>",
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medio de transporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bicicleta</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bus</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">84</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">A pie</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Metro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">48</td></tr></table>",
         "B": "Gráfica B.",
         "C": "Gráfica C.",
         "D": "Gráfica D."
@@ -53,11 +53,11 @@
       "dificultad": "MEDIA",
       "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
       "que_evalua": "La capacidad de los estudiantes para calcular partes de un todo a partir de la cantidad total y los porcentajes de cada parte, y buscar una representación alterna de estas cantidades en forma de tabla, diagramas de barras o diagramas circulares.",
-      "justificacion_correcta": "Se convierte cada porcentaje a cantidad sobre los \\(240\\) estudiantes: bicicleta \\(0{,}15\\times 240 = 36\\) y bus \\(0{,}35\\times 240 = 84\\). A pie van \\(60\\) (dato). El resto usa metro: \\(240 - (36 + 84 + 60) = 60\\). La tabla de la opción A muestra exactamente \\(36, 84, 60\\) y \\(60\\), que suman \\(240\\); por eso es la representación correcta.",
+      "justificacion_correcta": "Se convierte cada porcentaje a cantidad sobre los \\(240\\) estudiantes: bicicleta \\(0{,}15\\times 240 = 36\\) y bus \\(0{,}35\\times 240 = 84\\). A pie van \\(72\\) (dato). El resto usa metro: \\(240 - (36 + 84 + 72) = 48\\). La tabla de la opción A muestra exactamente \\(36, 84, 72\\) y \\(48\\), que suman \\(240\\); por eso es la representación correcta.",
       "opciones_incorrectas": {
-        "B": "Usa los porcentajes \\((15, 35, 25, 25)\\) como si fueran cantidades de estudiantes, sin multiplicar por \\(240\\); esos valores suman \\(100\\), no \\(240\\).",
-        "C": "Asigna al metro \\(84\\) estudiantes (copia el valor del bus); entonces \\(36 + 84 + 60 + 84 = 264\\) y no cierra en \\(240\\).",
-        "D": "Tiene las cantidades correctas, pero intercambia las etiquetas de 'a pie' y 'metro', que comparten el valor \\(60\\) y por eso es un error difícil de notar."
+        "B": "Usa los porcentajes \\((15, 35, 30, 20)\\) como si fueran cantidades de estudiantes, sin multiplicar por \\(240\\); esos valores suman \\(100\\), no \\(240\\).",
+        "C": "Asigna al metro \\(84\\) estudiantes (copia el valor del bus); entonces \\(36 + 84 + 72 + 84 = 276\\) y no cierra en \\(240\\).",
+        "D": "Intercambia las etiquetas de 'a pie' y 'metro': muestra \\(48\\) a pie y \\(72\\) en metro, cuando en realidad van \\(72\\) a pie y \\(48\\) en metro; por eso la representación es incorrecta."
       },
       "opciones_imagenes": {
         "B": "assets/banco-mat-11-p2/q01_opB.png",
@@ -522,12 +522,12 @@
     {
       "id": "P-math-11-p2-20",
       "numero": 20,
-      "enunciado": "<p>Para modelar la trayectoria de un dron, Mónica va a multiplicar los polinomios \\(x^{3} - 5x + 2\\) y \\(x^{3} + 4x - 1\\). Como el máximo exponente de la variable en cada uno es \\(3\\), Mónica afirma que, <i>sin hacer la multiplicación</i>, puede asegurar que el máximo exponente de la variable en el producto será <b>\\(6\\)</b>. ¿Por qué es correcta la afirmación de Mónica?</p>",
+      "enunciado": "<p>Para modelar la trayectoria de un dron, Mónica va a multiplicar los polinomios \\(x^{3} - 5x + 2\\) y \\(x^{2} + 4x - 1\\). El máximo exponente de la variable es \\(3\\) en el primero y \\(2\\) en el segundo. Mónica afirma que, <i>sin hacer la multiplicación</i>, puede asegurar que el máximo exponente de la variable en el producto será <b>\\(5\\)</b>. ¿Por qué es correcta la afirmación de Mónica?</p>",
       "opciones": {
-        "A": "Porque el exponente \\(6\\) es la suma de los máximos exponentes de cada polinomio \\((3 + 3)\\).",
-        "B": "Porque el exponente \\(6\\) es el producto de los máximos exponentes de cada polinomio \\((3 \\times 2)\\).",
-        "C": "Porque el exponente \\(6\\) es la cantidad de términos con variable que reúnen los dos polinomios.",
-        "D": "Porque el exponente \\(6\\) es el doble del máximo exponente de cualquiera de los polinomios."
+        "A": "Porque los grados se suman: el máximo exponente del producto es \\(3 + 2 = 5\\).",
+        "B": "Porque los grados se multiplican: \\(3 \\times 2 = 6\\).",
+        "C": "Porque se cuentan los términos con variable que reúnen los dos polinomios.",
+        "D": "Porque se toma el doble del mayor de los dos grados: \\(2 \\times 3 = 6\\)."
       },
       "clave": "A",
       "competencia": "c",
@@ -537,13 +537,12 @@
       "dificultad": "MEDIA",
       "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
       "que_evalua": "La capacidad de los estudiantes para reconocer el grado de un polinomio proveniente del producto de dos polinomios.",
-      "justificacion_correcta": "El término de mayor exponente del producto proviene de multiplicar los términos de mayor grado de cada factor: \\(x^{3}\\cdot x^{3} = x^{3+3} = x^{6}\\). Al multiplicar potencias de la misma base se <b>suman</b> los exponentes, por eso el máximo exponente del producto es \\(3 + 3 = 6\\).",
+      "justificacion_correcta": "El término de mayor exponente del producto proviene de multiplicar los términos de mayor grado de cada factor: \\(x^{3}\\cdot x^{2} = x^{3+2} = x^{5}\\). Al multiplicar potencias de la misma base se <b>suman</b> los exponentes, por eso el máximo exponente del producto es \\(3 + 2 = 5\\).",
       "opciones_incorrectas": {
-        "B": "Confunde la suma de exponentes con un producto; \\(x^{3}\\cdot x^{3}\\) no da \\(x^{3\\times 2}\\) sino \\(x^{3+3}\\).",
-        "C": "El exponente máximo no cuenta términos: surge del producto de los términos de mayor grado.",
-        "D": "Aunque \\(2\\times 3 = 6\\), el razonamiento correcto es que se suman los grados \\((3 + 3)\\), no que se duplique uno."
+        "B": "Multiplica los grados en vez de sumarlos \\((3\\times 2 = 6)\\); pero al multiplicar \\(x^{3}\\cdot x^{2}\\) los exponentes se SUMAN y dan \\(x^{5}\\), no \\(x^{6}\\).",
+        "C": "El exponente máximo no cuenta términos: surge de multiplicar los términos de mayor grado de cada factor.",
+        "D": "Toma el doble de un grado \\((2\\times 3 = 6)\\), pero lo correcto es sumar los dos grados distintos \\((3 + 2 = 5)\\)."
       }
     }
-  ],
-  "preservar_orden_preguntas": false
+  ]
 }

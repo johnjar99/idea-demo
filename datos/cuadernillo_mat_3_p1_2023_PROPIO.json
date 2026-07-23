@@ -47,10 +47,10 @@
       "numero": 1,
       "enunciado": "<p>A una hoja rectangular cuadriculada le recortaron una parte del <b>borde de arriba</b>: quedó un hueco en forma de <b>arco</b>, con los lados rectos y la parte superior <b>redondeada</b>, como muestra la figura. ¿Cuál de las piezas A, B, C o D es, exactamente, la parte que <b>recortaron</b> de la hoja?</p>",
       "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
       "clave": "B",
       "competencia": "a",
@@ -66,7 +66,13 @@
         "C": "Tiene la base y los lados rectos, pero su parte de arriba es cóncava (hundida hacia adentro) en lugar de redondeada hacia afuera.",
         "D": "Su parte de arriba es redondeada como la del hueco, pero su base tiene una mordida cóncava (no es plana), así que no encaja."
       },
-      "imagen_figura": "assets/banco-mat-3-p1/q01.png"
+      "imagen_figura": "assets/banco-mat-3-p1/s01.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-3-p1/o01a.png",
+        "B": "assets/banco-mat-3-p1/o01b.png",
+        "C": "assets/banco-mat-3-p1/o01c.png",
+        "D": "assets/banco-mat-3-p1/o01d.png"
+      }
     },
     {
       "id": "P3M02",
@@ -540,10 +546,10 @@
       "numero": 20,
       "enunciado": "<p>Un robot se mueve por un <b>tapete</b> que tiene 3 filas y 4 columnas de figuras de colores. Avanza <b>una casilla a la vez</b> según la rosa de direcciones del dibujo: <b>arriba</b>, <b>abajo</b>, <b>izquierda</b> y <b>derecha</b>. El robot parte del punto de <b>Inicio</b>, marcado a la izquierda de la casilla de la <b>esquina inferior izquierda</b>, y entra al tapete por esa casilla. Luego realiza, <b>en este orden</b>, cuatro desplazamientos: primero <b>arriba</b>, después <b>derecha</b>, después <b>derecha</b> y por último <b>arriba</b>. ¿Sobre cuál figura (A, B, C o D) queda la <b>posición final</b> del robot?</p>",
       "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
       "clave": "B",
       "competencia": "c",
@@ -559,7 +565,14 @@
         "C": "Hace los tres primeros pasos pero olvida el último <i>arriba</i>: se queda en la fila del medio, sobre el cuadrado rojo de la tercera columna.",
         "D": "Avanza un <i>derecha</i> de más y termina en la cuarta columna de la fila de arriba, sobre el triángulo amarillo."
       },
-      "imagen_figura": "assets/banco-mat-3-p1/q20.png"
+      "imagen_figura": "assets/banco-mat-3-p1/s20.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-3-p1/o20a.png",
+        "B": "assets/banco-mat-3-p1/o20b.png",
+        "C": "assets/banco-mat-3-p1/o20c.png",
+        "D": "assets/banco-mat-3-p1/o20d.png"
+      }
     }
-  ]
+  ],
+  "preservar_orden_preguntas": false
 }
