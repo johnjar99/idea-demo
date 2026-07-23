@@ -508,10 +508,16 @@
       // todos los grados y asignaturas. El texto viene en plano (párrafos separados por \n\n).
       const _fmtContexto = (txt) => String(txt).split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
         .map((p, i) => {
-          const esVerso = /\n/.test(p);
+          // Un párrafo con saltos internos puede ser un POEMA (centrado) o una LISTA
+          // numerada/con viñetas (p. ej. "pasos": va alineado a la izquierda, NO centrado).
+          const _lns = p.split('\n').map(s => s.trim()).filter(Boolean);
+          const esLista = _lns.length >= 2 &&
+            _lns.filter(l => /^(\d+[.\)]|[•·*–•\-])\s/.test(l)).length >= Math.ceil(_lns.length / 2);
+          const esVerso = /\n/.test(p) && !esLista;
           const esCortoSub = p.length <= 30 && !/[.!?…»]$/.test(p);
           let cls = 'ctx-p';
           if (i === 0) cls += ' ctx-titulo';
+          else if (esLista) cls += ' ctx-lista';
           else if (esVerso) cls += ' ctx-verso';
           else if (i === 1 && esCortoSub) cls += ' ctx-subtitulo';
           return `<p class="${cls}">${escapeHtml(p).replace(/\n/g, '<br>')}</p>`;
