@@ -1827,6 +1827,17 @@
         return null;
       };
 
+      // v14: ESTANDARIZACIÓN — color POR COMPETENCIA con índice fijo (a=0, b=1, c=2…),
+      // igual en todos los grados y áreas; y agrupación de afirmaciones/evidencias en el
+      // ORDEN de las competencias (a→b→c). Lectura Crítica (1 competencia) e Inglés
+      // conservan su coloreo por afirmación / nivel para no quedar monocromos.
+      const compsOrden = Object.keys(cuadActual.competencias).sort();
+      const ocultarCompUnica = compsOrden.length <= 1;
+      const _esInglesAE = (cuadActual.area || '').toLowerCase() === 'inglés';
+      const _grupoPorComp = !_esInglesAE && !ocultarCompUnica;
+      const PALETA_COMP = ['#3B82F6', '#F59E0B', '#8B5CF6', '#10B981', '#06B6D4', '#EC4899', '#84CC16', '#EF4444'];
+      const idxComp = (compKey) => compsOrden.indexOf(compKey);
+
       // v12: Paleta POR AFIRMACIÓN (no por competencia). Razón: hay áreas con una
       // sola competencia (Lectura Crítica) pero varias afirmaciones - antes todo
       // se coloreaba del mismo tono. Ahora cada afirmación tiene su color y sus
@@ -1854,11 +1865,19 @@
       // evitar mostrar 0% engañoso, filtramos solo las usadas.
       const afirsConPreguntas = new Set(cuadActual.preguntas.map(p => String(p.afirmacion)));
       const evidsConPreguntas = new Set(cuadActual.preguntas.map(p => String(p.evidencia)));
-      const afirOrden = afirOrdenCompleto.filter(k => afirsConPreguntas.has(k));
+      let afirOrden = afirOrdenCompleto.filter(k => afirsConPreguntas.has(k));
+      // v14: agrupar afirmaciones por competencia (a→b→c), y numérico dentro de cada competencia
+      if (_grupoPorComp) afirOrden = afirOrden.sort((a, b) => {
+        const ia = idxComp(compDeAfir(a)), ib = idxComp(compDeAfir(b));
+        return ia !== ib ? ia - ib : (+a - +b);
+      });
 
       // Color de competencia = color de su PRIMERA afirmación (visualmente la "agrupa")
       const colorDeComp = (compKey) => {
         if (!compKey) return null;
+        // v14: multi-competencia → color estándar por índice de competencia (a=azul, b=ámbar, c=violeta…);
+        //      1 sola competencia (LC) → color de su 1ª afirmación para no quedar monocromo.
+        if (!ocultarCompUnica) { const i = idxComp(compKey); if (i >= 0) return PALETA_COMP[i % PALETA_COMP.length]; }
         const afirsDeComp = afirOrden.filter(a => compDeAfir(a) === compKey);
         return afirsDeComp.length ? COLOR_BY_AFIR[afirsDeComp[0]] : '#64748B';
       };
@@ -1875,9 +1894,7 @@
       // Para áreas con UNA SOLA competencia (Lectura Crítica oficialmente) ocultamos
       // este panel: una sola barra es redundante con el promedio global. Las
       // afirmaciones cargan el peso diagnóstico para LC.
-      const compsOrden = Object.keys(cuadActual.competencias).sort();
       const cajaCompUni = document.querySelector('.caja-mbe-comp');
-      const ocultarCompUnica = compsOrden.length <= 1;
       if (cajaCompUni) cajaCompUni.style.display = ocultarCompUnica ? 'none' : '';
       if (!ocultarCompUnica) {
         // INGLÉS: la herencia "primera afirmación" produce colores duplicados
@@ -1907,8 +1924,7 @@
       //    cada afirmación su color y las evidencias lo heredan - para que el panel no quede
       //    monocromo y muestre la estructura interna del marco DCE.
       //  - Inglés (sin panel de competencia): un color por nivel MCER.
-      const _esInglesAE = (cuadActual.area || '').toLowerCase() === 'inglés';
-      const _colorPorAfir = _esInglesAE || ocultarCompUnica; // ocultarCompUnica = 1 sola competencia
+      const _colorPorAfir = _esInglesAE || ocultarCompUnica; // _esInglesAE definido arriba (v14)
       const afirLabels = afirOrden.map(k => codigoAfirmacion(cuadActual, k));
       const afirData = afirOrden.map(k => logAfir[k] || 0);
       const afirColors = afirOrden.map(k => _colorPorAfir ? (COLOR_BY_AFIR[k] || '#64748B') : (colorDeComp(compDeAfir(k)) || '#64748B'));
@@ -1929,6 +1945,11 @@
       const evidOrden = Object.keys(cuadActual.evidencias)
         .filter(k => evidsConPreguntas.has(String(k)))
         .sort((a, b) => {
+          // v14: agrupar evidencias por competencia (a→b→c) para áreas multi-competencia
+          if (_grupoPorComp) {
+            const ia = idxComp(compDeEvid(a)), ib = idxComp(compDeEvid(b));
+            if (ia !== ib) return ia - ib;
+          }
           const ma = String(a).match(/^(\d+)\.?(\d+)?/);
           const mb = String(b).match(/^(\d+)\.?(\d+)?/);
           if (!ma || !mb) return String(a).localeCompare(String(b));
