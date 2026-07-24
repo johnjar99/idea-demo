@@ -29,4 +29,19 @@ export async function cuadernillosLocales() {
   } catch (_) { _cache = []; return _cache; }
 }
 
-export function limpiarCacheLocal() { _cache = null; }
+// IDs a OCULTAR en localhost (estado 'archivado' en _release.json): p. ej. cuadernillos
+// viejos reemplazados por su versión propia. En producción no aplica (esEntornoLocal()=false).
+let _cacheOcultos = null;
+export async function cuadernillosOcultos() {
+  if (!esEntornoLocal()) return new Set();
+  if (_cacheOcultos) return _cacheOcultos;
+  try {
+    const rel = await fetch('datos/_release.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null);
+    const ids = Object.entries((rel && rel.cuadernillos) || {})
+      .filter(([, e]) => e.estado === 'archivado').map(([k]) => k);
+    _cacheOcultos = new Set(ids);
+  } catch (_) { _cacheOcultos = new Set(); }
+  return _cacheOcultos;
+}
+
+export function limpiarCacheLocal() { _cache = null; _cacheOcultos = null; }
