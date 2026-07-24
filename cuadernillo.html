@@ -506,13 +506,23 @@
       // un párrafo corto a continuación es subtítulo (centrado); los párrafos con saltos de
       // línea internos son versos/poema (centrado); el resto, prosa normal. Regla ICFES para
       // todos los grados y asignaturas. El texto viene en plano (párrafos separados por \n\n).
-      const _fmtContexto = (txt) => String(txt).split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
-        .map((p, i) => {
+      const _fmtContexto = (txt) => {
+        const paras = String(txt).split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+        const principal = [], nota = [];
+        let enNota = false;
+        paras.forEach((p, i) => {
+          // Un segundo texto marcado "TEXTO 2 ..." se muestra como NOTA aparte en un recuadro:
+          // texto plano y fluido (sin negrilla, sin saltos, sin centrado). Igual que en validación.
+          if (!enNota && /^texto\s*2\b/i.test(p)) enNota = true;
+          if (enNota) {
+            nota.push(`<p class="ctx-p ctx-nota-p">${escapeHtml(p).replace(/\n/g, ' ')}</p>`);
+            return;
+          }
           // Un párrafo con saltos internos puede ser un POEMA (centrado) o una LISTA
           // numerada/con viñetas (p. ej. "pasos": va alineado a la izquierda, NO centrado).
           const _lns = p.split('\n').map(s => s.trim()).filter(Boolean);
           const esLista = _lns.length >= 2 &&
-            _lns.filter(l => /^(\d+[.\)]|[•·*–•\-])\s/.test(l)).length >= Math.ceil(_lns.length / 2);
+            _lns.filter(l => /^(\d+[.\)]|[•·*–\-])\s/.test(l)).length >= Math.ceil(_lns.length / 2);
           const esVerso = /\n/.test(p) && !esLista;
           const esCortoSub = p.length <= 30 && !/[.!?…»]$/.test(p);
           let cls = 'ctx-p';
@@ -520,8 +530,12 @@
           else if (esLista) cls += ' ctx-lista';
           else if (esVerso) cls += ' ctx-verso';
           else if (i === 1 && esCortoSub) cls += ' ctx-subtitulo';
-          return `<p class="${cls}">${escapeHtml(p).replace(/\n/g, '<br>')}</p>`;
-        }).join('');
+          principal.push(`<p class="${cls}">${escapeHtml(p).replace(/\n/g, '<br>')}</p>`);
+        });
+        let html = principal.join('');
+        if (nota.length) html += `<div class="ctx-nota">${nota.join('')}</div>`;
+        return html;
+      };
       const textoHtml = ctx.texto
         ? `<div class="contexto-texto-corpo">${_fmtContexto(ctx.texto)}</div>`
         : '';
