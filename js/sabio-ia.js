@@ -83,7 +83,7 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
   const sugPorComp = {}, sugPorAfir = {}, sugPorDim2 = {}, sugPlanGrado = [];
   try {
     const slugPG = esVivoProtegido(cuadernillo) ? null : areaSlugDeCuadernillo(cuadernillo);
-    const pm = slugPG ? pedagogiaDeSync(slugPG, cuadernillo.grado, 'plan_mejora_sugerencias') : null;
+    const pm = slugPG ? pedagogiaDeSync(slugPG, cuadernillo.grado, 'plan_mejora_sugerencias', cuadernillo.periodo) : null;
     if (pm && typeof pm === 'object') {
       Object.entries(pm.competencia || {}).forEach(([k, arr]) => { if (Array.isArray(arr) && arr.length) { sugPorComp[k] = arr.slice(); sugPlanGrado.push(...arr); } });
       Object.entries(pm.afirmacion || {}).forEach(([k, arr]) => { if (Array.isArray(arr) && arr.length) { sugPorAfir[String(k)] = arr.slice(); sugPlanGrado.push(...arr); } });
@@ -220,19 +220,19 @@ export function insightSabioIA(apsGrupo, cuadernillo) {
   if (slugPG && cuadernillo.grado != null) {
     try {
       if (tipo === 'afir' && aK != null) {
-        const estrAfir = pedagogiaDeSync(slugPG, cuadernillo.grado, 'estrategias_por_afirmacion');
+        const estrAfir = pedagogiaDeSync(slugPG, cuadernillo.grado, 'estrategias_por_afirmacion', cuadernillo.periodo);
         const cod = _codAfir(cuadernillo, aK);
         const lista = estrAfir && (estrAfir[cod] || estrAfir[String(cod)]);
         if (Array.isArray(lista) && lista[0]) matiz = String(lista[0]);
       }
       if (!matiz && tipo === 'dim2') {
-        const estrCmc = pedagogiaDeSync(slugPG, cuadernillo.grado, 'estrategias_por_cmc');
+        const estrCmc = pedagogiaDeSync(slugPG, cuadernillo.grado, 'estrategias_por_cmc', cuadernillo.periodo);
         const dK2 = foco.replace(/^[^\s]+\s+/, '');
         const lista = estrCmc && (estrCmc[dK2] || Object.values(estrCmc || {}).find(Boolean));
         if (Array.isArray(lista) && lista[0]) matiz = String(lista[0]);
       }
       if (!matiz) {   // último recurso dentro del grado: la estrategia clave del conocimiento de Sabio
-        const sk = pedagogiaDeSync(slugPG, cuadernillo.grado, 'sabio_conocimiento');
+        const sk = pedagogiaDeSync(slugPG, cuadernillo.grado, 'sabio_conocimiento', cuadernillo.periodo);
         if (sk && Array.isArray(sk.estr) && sk.estr[0]) matiz = String(sk.estr[0]);
       }
     } catch (_) { matiz = ''; }

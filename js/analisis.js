@@ -237,15 +237,15 @@ function _areaSlug(cuadernillo) {
 // Los 5 vivos (11° P1) quedan EXENTOS del override por grado (esVivoProtegido) para producir
 // EXACTAMENTE la salida validada, aunque la celda [area][11] este poblada por el P2 de 11°.
 function _slugYGrado(cuadernillo) {
-  if (!cuadernillo) return { slug: null, grado: null };
-  if (esVivoProtegido(cuadernillo)) return { slug: null, grado: null };
-  return { slug: areaSlugDeCuadernillo(cuadernillo), grado: cuadernillo.grado };
+  if (!cuadernillo) return { slug: null, grado: null, periodo: null };
+  if (esVivoProtegido(cuadernillo)) return { slug: null, grado: null, periodo: null };
+  return { slug: areaSlugDeCuadernillo(cuadernillo), grado: cuadernillo.grado, periodo: cuadernillo.periodo };
 }
 function estrategiasPorCompetencia(cuadernillo, comp) {
   // 1) Capa POR GRADO (aditiva). Si hay celda, manda.
-  const { slug, grado } = _slugYGrado(cuadernillo);
+  const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
-    const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_competencia');
+    const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_competencia', periodo);
     if (porGrado && porGrado[comp] && porGrado[comp].length) return porGrado[comp];
   }
   // 2) FALLBACK: contenido por area actual (intacto).
@@ -253,18 +253,18 @@ function estrategiasPorCompetencia(cuadernillo, comp) {
   return (set.competencia && set.competencia[comp]) || [];
 }
 function estrategiasPorCMC(cuadernillo, cmc) {
-  const { slug, grado } = _slugYGrado(cuadernillo);
+  const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
-    const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_cmc');
+    const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_cmc', periodo);
     if (porGrado && porGrado[cmc] && porGrado[cmc].length) return porGrado[cmc];
   }
   const set = ESTRATEGIAS_POR_AREA[_areaSlug(cuadernillo)] || ESTRATEGIAS_POR_AREA['matemáticas'];
   return (set.cmc && set.cmc[cmc]) || [];
 }
 function estrategiasPorAfirmacion(cuadernillo, afirmacion) {
-  const { slug, grado } = _slugYGrado(cuadernillo);
+  const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
-    const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_afirmacion');
+    const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_afirmacion', periodo);
     if (porGrado && porGrado[String(afirmacion)] && porGrado[String(afirmacion)].length) return porGrado[String(afirmacion)];
   }
   const set = ESTRATEGIAS_POR_AREA[_areaSlug(cuadernillo)] || ESTRATEGIAS_POR_AREA['matemáticas'];
@@ -340,9 +340,9 @@ function narrativaArea(cuadernillo) {
   const base = NARRATIVA_POR_AREA[_areaSlug(cuadernillo)] || NARRATIVA_POR_AREA['matemáticas'];
   // Capa POR GRADO (aditiva): solo SOBREESCRIBE las claves presentes en el override;
   // el resto hereda de la narrativa por area. Si no hay override, devuelve la base tal cual.
-  const { slug, grado } = _slugYGrado(cuadernillo);
+  const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
-    const over = pedagogiaDeSync(slug, grado, 'narrativa');
+    const over = pedagogiaDeSync(slug, grado, 'narrativa', periodo);
     if (over && typeof over === 'object') return Object.assign({}, base, over);
   }
   return base;
@@ -677,9 +677,9 @@ export function conclusionesProfundas(aplicaciones, cuadernillo) {
   // Si existe pedagogia[area_slug][grado].interpretaciones, sus textos *_extra se
   // ANEXAN al bloque correspondiente (no reemplazan). Sin celda => salida identica a hoy.
   let _out = { diagnostico, fortalezas, oportunidades, recomendaciones, proyeccion };
-  const { slug: _slugC, grado: _gradoC } = _slugYGrado(cuadernillo);
+  const { slug: _slugC, grado: _gradoC, periodo: _periodoC } = _slugYGrado(cuadernillo);
   if (_slugC) {
-    const _itp = pedagogiaDeSync(_slugC, _gradoC, 'interpretaciones');
+    const _itp = pedagogiaDeSync(_slugC, _gradoC, 'interpretaciones', _periodoC);
     if (_itp && typeof _itp === 'object') {
       if (_itp.diagnostico_extra) _out.diagnostico += _itp.diagnostico_extra;
       if (_itp.fortalezas_extra) _out.fortalezas += _itp.fortalezas_extra;

@@ -167,7 +167,7 @@
     window.SABIO_CTX = Object.assign({}, window.SABIO_CTX,
       esVivoProtegido(cuadernillo)
         ? { area: cuadernillo.area, cuadernillo_id: cuadernillo.id }
-        : { area: cuadernillo.area, grado: cuadernillo.grado, cuadernillo_id: cuadernillo.id });
+        : { area: cuadernillo.area, grado: cuadernillo.grado, periodo: cuadernillo.periodo, cuadernillo_id: cuadernillo.id });
 
     // "Presentar otra vez" lleva al MISMO cuadernillo recién presentado (antes iba fijo a Matemáticas).
     document.getElementById('btn-presentar-otra').href = 'cuadernillo.html?id=' + aplicacion.cuadernillo_id;

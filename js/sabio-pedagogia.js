@@ -591,7 +591,7 @@ export function estrategiasPedagogicas(areaKey, grado, opts = {}) {
   // presentes ganan sobre los de la banda; los ausentes heredan del fallback por banda.
   const slug = _AREAKEY_A_SLUG[areaKey];
   let sc = null;
-  if (slug) { try { sc = pedagogiaDeSync(slug, grado, 'sabio_conocimiento'); } catch { sc = null; } }
+  if (slug) { try { sc = pedagogiaDeSync(slug, grado, 'sabio_conocimiento', opts && opts.periodo); } catch { sc = null; } }
   if (sc && typeof sc === 'object') {
     return {
       area: a.nombre, banda: nombreBanda(banda),
@@ -670,9 +670,10 @@ export function responderPedagogia(pregunta, ctx) {
     // si no, la celda por banda (fallback intacto).
     let b = a[banda];
     const _gradoCtx = (ctx && ctx.grado != null) ? ctx.grado : null;
+    const _periodoCtx = (ctx && ctx.periodo != null) ? ctx.periodo : null;
     const _slug = _AREAKEY_A_SLUG[area];
     if (_gradoCtx != null && _slug) {
-      let _sc = null; try { _sc = pedagogiaDeSync(_slug, _gradoCtx, 'sabio_conocimiento'); } catch { _sc = null; }
+      let _sc = null; try { _sc = pedagogiaDeSync(_slug, _gradoCtx, 'sabio_conocimiento', _periodoCtx); } catch { _sc = null; }
       if (_sc && typeof _sc === 'object') {
         b = {
           comp: _sc.comp || b.comp,

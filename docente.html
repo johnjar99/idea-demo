@@ -836,7 +836,7 @@
       cuadActual = cuadernillos.find(c => c.id === grupoActivo.cuadernillo_id);
       aplicacionesActuales = grupoActivo.apps;
       // Contexto para personalizar las sugerencias de Sabio (área y grado del grupo abierto).
-      window.SABIO_CTX = { area: (cuadActual?.area || grupoActivo.area || ''), grado: grupoActivo.grado };
+      window.SABIO_CTX = { area: (cuadActual?.area || grupoActivo.area || ''), grado: grupoActivo.grado, periodo: (cuadActual?.periodo || null) };
 
       document.getElementById('vista-inicial').classList.add('hidden');
       { const _zl = document.getElementById('zona-landing'); if (_zl) _zl.classList.add('hidden'); }

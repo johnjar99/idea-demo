@@ -16,6 +16,7 @@
 // (p.ej. "_meta", "_schema_celda", "_nota_ejemplo") se ignoran como contenido real.
 
 let _cache = null;          // objeto ya cargado (cache de modulo, lectura sincrona)
+let _cachePer = null;       // pedagogia POR PERIODO (area×grado×periodo): capa PREFERENTE sobre la de grado
 let _promesaCarga = null;   // de-duplica cargas concurrentes
 
 // Cuadernillos YA VIVOS y validados a la perfeccion (11° P1). La individualidad es por
@@ -32,6 +33,7 @@ export function esVivoProtegido(idOrCuad) {
 }
 
 const RUTA = 'datos/pedagogia_por_grado.json';
+const RUTA_PER = 'datos/pedagogia_por_periodo.json';  // capa POR PERIODO (opcional; personaliza área×grado×periodo)
 
 /**
  * Carga el JSON una sola vez y lo deja en cache de modulo. Tolerante a error:
@@ -52,6 +54,13 @@ export async function cargarPedagogiaGrado() {
       console.warn('[IDEA] pedagogia_por_grado.json no disponible; usando fallback por area.', e && e.message);
       _cache = {};
     }
+    // Capa POR PERIODO (opcional): personaliza por área×grado×periodo. Si no existe o falla,
+    // se ignora y todo cae a la pedagogía por grado (comportamiento actual, sin romper nada).
+    try {
+      const respP = await fetch(RUTA_PER, { cache: 'no-cache' });
+      const objP = (respP && respP.ok) ? await respP.json() : null;
+      _cachePer = (objP && typeof objP === 'object') ? objP : {};
+    } catch (_) { _cachePer = {}; }
     return _cache;
   })();
   return _promesaCarga;
@@ -110,11 +119,8 @@ export function areaSlugDeCuadernillo(cuadernillo) {
 }
 
 // --- Lectura tolerante del contenido -------------------------------------------------
-function _leerDe(data, area_slug, grado, clave) {
-  if (!data || !area_slug) return null;
-  const porArea = data[area_slug];
-  if (!porArea || typeof porArea !== 'object') return null;
-  const celda = porArea[String(grado)];
+// Lee una CELDA (objeto con las claves de pedagogía) tolerando ausencias/vacíos.
+function _leerCelda(celda, clave) {
   if (!celda || typeof celda !== 'object') return null;
   if (clave == null) {
     // Devuelve la celda completa pero SIN las claves de documentacion "_*".
@@ -131,6 +137,39 @@ function _leerDe(data, area_slug, grado, clave) {
   return v;
 }
 
+// Lectura por GRADO: data[area][grado][clave].
+function _leerDe(data, area_slug, grado, clave) {
+  if (!data || !area_slug) return null;
+  const porArea = data[area_slug];
+  if (!porArea || typeof porArea !== 'object') return null;
+  return _leerCelda(porArea[String(grado)], clave);
+}
+
+// Normaliza el periodo a "1" | "2" | "3" (acepta I/II/III, 1/2/3, "P1"/"P2"). null si no reconoce.
+function _normPeriodo(p) {
+  const s = (p == null ? '' : String(p)).trim().toUpperCase();
+  if (s === '1' || s === 'I' || s === 'P1') return '1';
+  if (s === '2' || s === 'II' || s === 'P2') return '2';
+  if (s === '3' || s === 'III' || s === 'P3') return '3';
+  return null;
+}
+
+// Lectura por PERIODO: dataPer[area][grado][periodo][clave]. null si no hay celda de ese periodo.
+function _leerDePeriodo(dataPer, area_slug, grado, periodo, clave) {
+  const per = _normPeriodo(periodo);
+  if (!dataPer || !area_slug || !per) return null;
+  const porArea = dataPer[area_slug]; if (!porArea || typeof porArea !== 'object') return null;
+  const porGrado = porArea[String(grado)]; if (!porGrado || typeof porGrado !== 'object') return null;
+  return _leerCelda(porGrado[per], clave);
+}
+
+// Resolución con prioridad: 1) celda POR PERIODO  2) celda POR GRADO  3) null (=> fallback en el llamador).
+function _resolver(area_slug, grado, clave, periodo) {
+  const porPeriodo = _leerDePeriodo(_cachePer, area_slug, grado, periodo, clave);
+  if (porPeriodo != null) return porPeriodo;
+  return _leerDe(_cache, area_slug, grado, clave);
+}
+
 /**
  * Lectura ASINCRONA: garantiza la carga del JSON antes de leer. Devuelve el contenido
  * de data[area_slug][grado][clave] o null si no existe (=> fallback en el llamador).
@@ -139,9 +178,9 @@ function _leerDe(data, area_slug, grado, clave) {
  * @param {string} [clave]  si se omite, devuelve la celda completa (sin claves "_*").
  * @returns {Promise<*|null>}
  */
-export async function pedagogiaDe(area_slug, grado, clave) {
-  const data = await cargarPedagogiaGrado();
-  return _leerDe(data, area_slug, grado, clave);
+export async function pedagogiaDe(area_slug, grado, clave, periodo) {
+  await cargarPedagogiaGrado();
+  return _resolver(area_slug, grado, clave, periodo);
 }
 
 /**
@@ -153,7 +192,7 @@ export async function pedagogiaDe(area_slug, grado, clave) {
  * @param {string} [clave]
  * @returns {*|null}
  */
-export function pedagogiaDeSync(area_slug, grado, clave) {
+export function pedagogiaDeSync(area_slug, grado, clave, periodo) {
   if (_cache == null) return null;
-  return _leerDe(_cache, area_slug, grado, clave);
+  return _resolver(area_slug, grado, clave, periodo);
 }
