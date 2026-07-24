@@ -118,6 +118,10 @@
   .grupo-item-area { font-weight:700; font-size:14px; color:var(--idea-grafito,#1F1F23); line-height:1.18; }
   .grupo-item-stats { display:inline-block; font-size:11px; color:#6B7280; font-weight:600; padding:2px 9px; border-radius:999px;
     background:color-mix(in srgb, var(--area-color,#64748B) 12%, #fff); }
+  .grupo-item-periodo { position:absolute; top:9px; right:9px; z-index:2; font-size:10px; font-weight:800; letter-spacing:.02em;
+    padding:2px 7px; border-radius:999px; color:var(--area-color,#64748B);
+    background:color-mix(in srgb, var(--area-color,#64748B) 15%, #fff);
+    border:1px solid color-mix(in srgb, var(--area-color,#64748B) 35%, #fff); }
 
   /* Fondo DINÁMICO de TODA la sección "Mis grupos": malla cálida de la marca + una capa
      cónica desenfocada que gira muy lento (sutil, no distrae). El contenido va por encima. */
@@ -684,14 +688,32 @@
     // tablas y que un reintento no autorizado reemplace al intento real).
     appsVisibles = dedupePorEstudiante(appsVisibles);
 
-    // Mapa área → color/sigla (debe coincidir con area-config sigla/color_chip)
+    // Mapa área → color/sigla ROBUSTO por SLUG normalizado. El campo `area` de los cuadernillos
+    // varía ("Lenguaje"/"Lectura Crítica", "Competencias Ciudadanas"/"Sociales y Ciudadanas",
+    // "Ciencias Naturales"/"...y Educación Ambiental"), así que NO se puede hacer match exacto.
+    // Cada área tiene SU color propio y vibrante.
     const AREA_META = {
-      'Matemáticas': { sigla: 'MAT', color: '#3B82F6' },
-      'Lectura Crítica': { sigla: 'LC', color: '#EF4444' },
-      'Sociales y Ciudadanas': { sigla: 'SC', color: '#B5775E' },
-      'Ciencias Naturales': { sigla: 'CN', color: '#10B981' },
-      'Inglés': { sigla: 'IN', color: '#8B5CF6' }
+      matematicas:         { sigla: 'MAT', color: '#3B82F6' },  // azul
+      lectura_critica:     { sigla: 'LEN', color: '#EF4444' },  // rojo
+      sociales_ciudadanas: { sigla: 'COM', color: '#F59E0B' },  // ámbar
+      ciencias_naturales:  { sigla: 'CIE', color: '#10B981' },  // verde
+      ingles:              { sigla: 'ING', color: '#8B5CF6' }   // violeta
     };
+    const ORDEN_SLUG = ['matematicas', 'lectura_critica', 'sociales_ciudadanas', 'ciencias_naturales', 'ingles'];
+    function slugDeArea(txt) {
+      const s = (txt || '').toString().toLowerCase();
+      if (/matemat|numeric/.test(s)) return 'matematicas';
+      if (/lectura|lenguaje|lengua|critic/.test(s)) return 'lectura_critica';
+      if (/social|ciudadan|competenc|historia|geograf/.test(s)) return 'sociales_ciudadanas';
+      if (/natural|biolog|quimic|fisic|ciencias/.test(s)) return 'ciencias_naturales';
+      if (/ingl|english/.test(s)) return 'ingles';
+      return null;
+    }
+    function metaDeArea(txt) {
+      const slug = slugDeArea(txt);
+      return (slug && AREA_META[slug]) || { sigla: (txt || '·').slice(0, 3).toUpperCase(), color: '#64748B' };
+    }
+    const _perLabel = (p) => { const s = String(p || '').toUpperCase(); return (s === 'I' || s === '1') ? 'P1' : (s === 'II' || s === '2') ? 'P2' : (s === 'III' || s === '3') ? 'P3' : ''; };
 
     // `grupos` y `cursos` se mantienen como referencias estables (let) porque
     // seleccionarGrupo() las consulta por clausura (grupos.get(k)). renderAcordeones()
@@ -753,17 +775,24 @@
           <div class="grupo-acordeon-body"></div>
         `;
         const body = det.querySelector('.grupo-acordeon-body');
-        // Ordenar las áreas dentro del curso por orden canónico Saber 11
-        const ORDEN_AREAS = ['Matemáticas','Lectura Crítica','Sociales y Ciudadanas','Ciencias Naturales','Inglés'];
-        const items = curso.items.sort((a, b) => ORDEN_AREAS.indexOf(a.area) - ORDEN_AREAS.indexOf(b.area));
+        // Orden ENTENDIBLE: por área (orden canónico Saber) y, dentro de la misma área, por periodo.
+        const _perDeItem = (it) => (cuadernillos.find(c => c.id === it.cuadernillo_id) || {}).periodo;
+        const items = curso.items.slice().sort((a, b) => {
+          let sa = ORDEN_SLUG.indexOf(slugDeArea(a.area)); let sb = ORDEN_SLUG.indexOf(slugDeArea(b.area));
+          sa = sa < 0 ? 99 : sa; sb = sb < 0 ? 99 : sb;
+          if (sa !== sb) return sa - sb;
+          return String(_perDeItem(a) || '').localeCompare(String(_perDeItem(b) || ''));
+        });
         items.forEach(it => {
-          const meta = AREA_META[it.area] || { sigla: it.area.slice(0,3).toUpperCase(), color: '#64748B' };
+          const meta = metaDeArea(it.area);
+          const perTxt = _perLabel(_perDeItem(it));
           const btn = document.createElement('button');
           btn.dataset.k = it.k;
           btn.className = 'grupo-item';
           btn.style.setProperty('--area-color', meta.color);
-          btn.title = `Ver análisis de ${it.area} · ${curso.grado}°${curso.grupo}`;
+          btn.title = `Ver análisis de ${it.area}${perTxt ? ' · ' + perTxt : ''} · ${curso.grado}°${curso.grupo}`;
           btn.innerHTML = `
+            ${perTxt ? `<span class="grupo-item-periodo">${perTxt}</span>` : ''}
             <span class="grupo-item-chip" style="background:${meta.color}">${meta.sigla}</span>
             <span class="grupo-item-texto">
               <span class="grupo-item-area">${it.area}</span>
@@ -2324,7 +2353,7 @@
       ov.id = 'ov-selector-plan';
       ov.style.cssText = 'position:fixed;inset:0;z-index:120;background:rgba(20,15,25,.5);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:20px';
       const filas = items.map((g, i) => {
-        const meta = AREA_META[g.area] || { sigla: '·', color: '#9A3412' };
+        const meta = metaDeArea(g.area);
         return `<button class="sel-plan-item" data-i="${i}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 14px;border:1px solid #ECEAF3;border-radius:12px;background:#fff;cursor:pointer">
           <span style="flex-shrink:0;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:12px;color:#fff;background:${meta.color}">${meta.sigla}</span>
           <span style="flex:1"><span style="font-weight:700;color:#241B33">${g.grado}° ${escapeHtml(String(g.grupo))} · ${escapeHtml(g.area || '')}</span><br><span style="font-size:12px;color:#6B6478">${g.apps.length} ${g.apps.length === 1 ? 'estudiante' : 'estudiantes'}</span></span>
