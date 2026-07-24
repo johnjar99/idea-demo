@@ -792,8 +792,9 @@
           // Opción con imagen recortada - alto adaptativo según layout
           div.style.flexDirection = 'column';
           div.style.alignItems = 'stretch';
-          // Alto moderado para que las imágenes de opción se lean y comparen sin ser enormes.
-          const maxH = usaGrid2x2 ? 250 : 300;
+          // Alto amplio para que las imágenes de opción (p. ej. diagramas de árbol de Matemáticas 11)
+          // se lean con comodidad. Solo agranda las imágenes grandes; las pequeñas conservan su tamaño.
+          const maxH = usaGrid2x2 ? 440 : 380;
           const padH = usaGrid2x2 ? '12px 14px' : '14px 18px';
           div.innerHTML = `
             <div class="flex items-center gap-3 mb-2">
