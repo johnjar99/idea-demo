@@ -20,7 +20,25 @@
   <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
   <!-- Confetti (solo al celebrar) -->
   <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">
-  <link rel="stylesheet" href="css/paneles-claros.css">  <link rel="stylesheet" href="css/tailwind.css"></head>
+  <link rel="stylesheet" href="css/paneles-claros.css">  <link rel="stylesheet" href="css/tailwind.css">  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+    <link rel="modulepreload" href="./js/analisis.js">
+    <link rel="modulepreload" href="./js/area-config.js">
+    <link rel="modulepreload" href="./js/auth.js">
+    <link rel="modulepreload" href="./js/calculo.js">
+    <link rel="modulepreload" href="./js/cargar-libs.js">
+    <link rel="modulepreload" href="./js/certificado.js">
+    <link rel="modulepreload" href="./js/db.js">
+    <link rel="modulepreload" href="./js/export-pdf.js">
+    <link rel="modulepreload" href="./js/filtros-navegacion.js">
+    <link rel="modulepreload" href="./js/firebase-init.js">
+    <link rel="modulepreload" href="./js/graficos.js">
+    <link rel="modulepreload" href="./js/pedagogia-grado.js">
+    <link rel="modulepreload" href="./js/release-local.js">
+    <link rel="modulepreload" href="./js/tema.js">
+    <link rel="modulepreload" href="./js/tour.js">
+    <link rel="modulepreload" href="./js/utils.js">
+    <!-- MODULEPRELOAD:FIN -->
+</head>
 <body class="rol-directivo">
   <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
   <header class="idea-header">
@@ -134,7 +152,11 @@
     // la colección) → escala con muchos usuarios. Sin institución asignada (vista global),
     // trae todas. No confiamos en la bandera `oficial`; abajo se elige una por integridad.
     // Las "en curso" se excluyen (aún no tienen nivel/puntaje).
-    const todasApps = (await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id)).filter(a => a.estado === 'enviada');
+    // El filtro por estado se resuelve en el SERVIDOR (índice compuesto institucion_id+estado):
+    // así no viajan las pruebas en curso, que este panel descartaba de todos modos.
+    const todasApps = ses.institucion_id
+      ? await db.consultarPorDosCampos('idea_aplicaciones', 'institucion_id', ses.institucion_id, 'estado', 'enviada')
+      : (await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id)).filter(a => a.estado === 'enviada');
 
     // Regla de integridad: de varias entregas del MISMO estudiante+cuadernillo, la válida
     // es la más reciente con permiso de reintento AUTORIZADO; si ninguna usó permiso, la

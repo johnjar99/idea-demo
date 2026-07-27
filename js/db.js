@@ -202,6 +202,15 @@ export const db = {
     return arr.filter(x => x[campo] === valor);
   },
 
+  // Paridad con la versión Firestore, donde esta consulta se resuelve en el servidor con un
+  // índice compuesto (la usa el panel directivo). Aquí, sobre IndexedDB local, filtrar en
+  // memoria ya es inmediato, así que basta con la misma firma para que el panel funcione igual.
+  async consultarPorDosCampos(coleccion, campo1, valor1, campo2, valor2) {
+    if (valor1 === undefined || valor1 === null || valor1 === '') return this.lista(coleccion);
+    const arr = await this.lista(coleccion);
+    return arr.filter(x => x[campo1] === valor1 && x[campo2] === valor2);
+  },
+
   // En el sandbox SÍ sembramos en la primera carga (idempotente entre páginas).
   async inicializar() {
     if (!_sembrado) {

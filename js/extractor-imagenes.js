@@ -31,6 +31,32 @@ export function srcImagenOpcion(pregunta, letra) {
  */
 export const onerrorPlaceholder = `this.onerror=null;this.src='${PLACEHOLDER_GENERICO}';this.classList.add('img-fallback');`;
 
+// === COPIA LIVIANA DE LAS FIGURAS (rendimiento) ======================================
+// Las figuras del banco son PNG y muchas son ilustraciones fotográficas: un cuadernillo llega a
+// pesar 8,4 MB solo en imágenes, que el estudiante debe esperar antes de empezar la prueba.
+// `scripts/generar_webp.py` deja una copia .webp al lado de cada .png (~85% menos peso, sin
+// diferencia visible). Los PNG originales NO se tocan: siguen ahí y siguen siendo los que usan
+// los PDF, porque jsPDF no acepta WebP.
+//
+// En pantalla se pide la copia liviana y, si por cualquier razón no existe, el navegador cae al
+// PNG original y solo si ese también falla aparece el placeholder. Así la prueba nunca se rompe.
+
+/** Ruta de la copia liviana (.webp) de un PNG. Cualquier otra extensión se devuelve igual. */
+export function srcLiviano(ruta) {
+  if (!ruta || typeof ruta !== 'string') return ruta;
+  return /\.png$/i.test(ruta) ? ruta.replace(/\.png$/i, '.webp') : ruta;
+}
+
+/**
+ * onerror en dos escalones para una imagen servida en versión liviana:
+ * 1º reintenta con el PNG original, 2º si tampoco carga, muestra el placeholder.
+ * @param {string} rutaOriginal la ruta .png tal como viene en el JSON
+ */
+export function onerrorLiviano(rutaOriginal) {
+  const orig = String(rutaOriginal || '').replace(/'/g, "\\'");
+  return `if(!this.dataset.fb){this.dataset.fb='1';this.src='${orig}';}else{${onerrorPlaceholder}}`;
+}
+
 // Tablas referenciales que conserva el código antiguo (compatibilidad)
 export function placeholderImagenPregunta() { return PLACEHOLDER_GENERICO; }
 export function placeholderOpcion() { return PLACEHOLDER_GENERICO; }

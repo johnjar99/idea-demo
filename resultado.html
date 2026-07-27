@@ -25,6 +25,23 @@
   <link rel="stylesheet" href="css/idea-custom.css">
   <link rel="stylesheet" href="css/idea-v2.css">
   <link rel="stylesheet" href="css/tailwind.css">
+  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+    <link rel="modulepreload" href="./js/analisis.js">
+    <link rel="modulepreload" href="./js/area-config.js">
+    <link rel="modulepreload" href="./js/auth.js">
+    <link rel="modulepreload" href="./js/calculo.js">
+    <link rel="modulepreload" href="./js/cargar-libs.js">
+    <link rel="modulepreload" href="./js/db.js">
+    <link rel="modulepreload" href="./js/export-excel.js">
+    <link rel="modulepreload" href="./js/extractor-imagenes.js">
+    <link rel="modulepreload" href="./js/firebase-init.js">
+    <link rel="modulepreload" href="./js/graficos.js">
+    <link rel="modulepreload" href="./js/pedagogia-grado.js">
+    <link rel="modulepreload" href="./js/release-local.js">
+    <link rel="modulepreload" href="./js/sabio.js">
+    <link rel="modulepreload" href="./js/tema.js">
+    <link rel="modulepreload" href="./js/utils.js">
+    <!-- MODULEPRELOAD:FIN -->
 </head>
 <body class="rol-estudiante">
   <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
@@ -140,7 +157,7 @@
     import { logroPorCompetencia, COLOR_NIVEL } from './js/calculo.js';
     import { etiquetasMarco } from './js/area-config.js';
     import { formatDateTime, escapeHtml, segundosAReloj, toast, renderMath } from './js/utils.js';
-    import { srcImagenPregunta, onerrorPlaceholder } from './js/extractor-imagenes.js';
+    import { srcImagenPregunta, onerrorPlaceholder, srcLiviano, onerrorLiviano } from './js/extractor-imagenes.js';
     import { exportarResultadoEstudianteExcel } from './js/export-excel.js';
     import { sabioConBurbuja, mensajeSabioPorNivel } from './js/sabio.js';
     import { cargarPedagogiaGrado, esVivoProtegido } from './js/pedagogia-grado.js';
@@ -523,13 +540,13 @@
       const figura = preg.imagen_figura;
       const opcImgs = preg.opciones_imagenes || null;
       const figHtml = figura
-        ? `<div class="bg-white rounded-lg p-3 border mb-3 text-center"><img src="${figura}" alt="Figura pregunta ${preg.numero}" loading="lazy" style="max-width:100%;max-height:340px;margin:0 auto;border-radius:6px" onerror="${onerrorPlaceholder}"></div>`
+        ? `<div class="bg-white rounded-lg p-3 border mb-3 text-center"><img src="${srcLiviano(figura)}" alt="Figura pregunta ${preg.numero}" loading="lazy" style="max-width:100%;max-height:340px;margin:0 auto;border-radius:6px" onerror="${onerrorLiviano(figura)}"></div>`
         : '';
       const ctxHtml = preg.contexto_compartido_imagen
         ? `<div class="card-contexto-compartido mb-3">
             <div class="text-xs uppercase tracking-wider text-amber-700 mb-2 font-semibold">📋 Contexto</div>
             <p class="italic text-amber-900 text-sm mb-2">${escapeHtml(preg.contexto_compartido_texto || '')}</p>
-            <div class="bg-white rounded-lg p-2 text-center"><img src="${preg.contexto_compartido_imagen}" alt="Contexto" loading="lazy" style="max-width:100%;max-height:280px;border-radius:4px" onerror="${onerrorPlaceholder}"></div>
+            <div class="bg-white rounded-lg p-2 text-center"><img src="${srcLiviano(preg.contexto_compartido_imagen)}" alt="Contexto" loading="lazy" style="max-width:100%;max-height:280px;border-radius:4px" onerror="${onerrorLiviano(preg.contexto_compartido_imagen)}"></div>
           </div>`
         : '';
       const renderLetra = (letra) => {

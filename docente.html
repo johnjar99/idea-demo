@@ -155,6 +155,31 @@
   @media (max-width:640px){ .panel-hero-doc__stats{ width:100%; } .panel-hero-doc__greeting{ font-size:24px; } }
   </style>
   <link rel="stylesheet" href="css/tailwind.css">
+  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+    <link rel="modulepreload" href="./js/analisis.js">
+    <link rel="modulepreload" href="./js/area-config.js">
+    <link rel="modulepreload" href="./js/auth.js">
+    <link rel="modulepreload" href="./js/calculo.js">
+    <link rel="modulepreload" href="./js/cargar-libs.js">
+    <link rel="modulepreload" href="./js/certificado.js">
+    <link rel="modulepreload" href="./js/db.js">
+    <link rel="modulepreload" href="./js/export-excel.js">
+    <link rel="modulepreload" href="./js/export-pdf.js">
+    <link rel="modulepreload" href="./js/extractor-imagenes.js">
+    <link rel="modulepreload" href="./js/filtros-navegacion.js">
+    <link rel="modulepreload" href="./js/firebase-init.js">
+    <link rel="modulepreload" href="./js/graficos.js">
+    <link rel="modulepreload" href="./js/mensajes.js">
+    <link rel="modulepreload" href="./js/pedagogia-grado.js">
+    <link rel="modulepreload" href="./js/permisos.js">
+    <link rel="modulepreload" href="./js/release-local.js">
+    <link rel="modulepreload" href="./js/sabio-ia.js">
+    <link rel="modulepreload" href="./js/sabio-pedagogia.js">
+    <link rel="modulepreload" href="./js/sabio.js">
+    <link rel="modulepreload" href="./js/tema.js">
+    <link rel="modulepreload" href="./js/tour.js">
+    <link rel="modulepreload" href="./js/utils.js">
+    <!-- MODULEPRELOAD:FIN -->
 </head>
 <body class="rol-docente">
   <a href="#contenido" class="skip-link sr-only">Saltar al contenido</a>
@@ -621,6 +646,7 @@
     import { kpiGrupo, histogramaPuntajes, matrizHeatmap, estudiantesEnRiesgo, proyeccionSaber11Parcial, conclusionesProfundas, comparativoIndividual, coefVariacion, asimetria, tasaPorDificultad, tiempoPromedio, discriminacionPorPregunta, datosBoxPlot, datosScatter, datosRadar, generarRecomendacionesPersonalizables, indiceDificultadPorPregunta, correlacionPuntoBiserial, kr20, analisisDistractores, errorEstandarMedida, insightsAutomaticos } from './js/analisis.js';
     import { sabioConBurbuja, mensajeSabioPorNivel, sabioSVG } from './js/sabio.js';
     import { insightSabioIA } from './js/sabio-ia.js';
+    import { srcLiviano, onerrorLiviano } from './js/extractor-imagenes.js';
     import { enviarMensaje, listarMensajesEnviados, listarHilo, PLANTILLAS_DOCENTE } from './js/mensajes.js';
     import { evaluarGrupoExcelencia, generarCertificadoExcelenciaPDF } from './js/certificado.js';
     import { construirBarraFiltros, normPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
@@ -862,7 +888,11 @@
         if (det) det.open = true;
       }
       grupoActivo = grupos.get(k);
-      cuadActual = cuadernillos.find(c => c.id === grupoActivo.cuadernillo_id);
+      // `cuadernillos` es el CATÁLOGO ligero (fichas sin preguntas ni contextos, ver db.js).
+      // El análisis del grupo sí necesita el cuerpo completo, así que se trae SOLO el del curso
+      // abierto: una lectura de ~50 KB en vez de los 3,4 MB de la colección entera al cargar.
+      cuadActual = await db.obtener('idea_cuadernillos', grupoActivo.cuadernillo_id)
+        || cuadernillos.find(c => c.id === grupoActivo.cuadernillo_id);
       aplicacionesActuales = grupoActivo.apps;
       // Contexto para personalizar las sugerencias de Sabio (área y grado del grupo abierto).
       window.SABIO_CTX = { area: (cuadActual?.area || grupoActivo.area || ''), grado: grupoActivo.grado, periodo: (cuadActual?.periodo || null) };
@@ -1733,10 +1763,10 @@
       });
 
       // Imagen del enunciado si existe
-      const imgEnunciado = p.imagen_figura ? `<div style="text-align:center; margin:14px 0;"><img src="${p.imagen_figura}" alt="Figura pregunta ${numero}" style="max-width:100%; max-height:320px; border:1px solid #E5E7EB; border-radius:8px;"></div>` : '';
+      const imgEnunciado = p.imagen_figura ? `<div style="text-align:center; margin:14px 0;"><img src="${srcLiviano(p.imagen_figura)}" alt="Figura pregunta ${numero}" style="max-width:100%; max-height:320px; border:1px solid #E5E7EB; border-radius:8px;" onerror="${onerrorLiviano(p.imagen_figura)}"></div>` : '';
 
       // Contexto compartido (P6)
-      const ctxComp = p.contexto_compartido ? `<div style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7); border-left:5px solid #FBBF24; padding:14px 18px; border-radius:8px; margin-bottom:14px; font-size:14px;">${p.contexto_compartido}${p.contexto_imagen ? `<div style="text-align:center; margin-top:10px;"><img src="${p.contexto_imagen}" style="max-width:100%; max-height:250px;"></div>` : ''}</div>` : '';
+      const ctxComp = p.contexto_compartido ? `<div style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7); border-left:5px solid #FBBF24; padding:14px 18px; border-radius:8px; margin-bottom:14px; font-size:14px;">${p.contexto_compartido}${p.contexto_imagen ? `<div style="text-align:center; margin-top:10px;"><img src="${srcLiviano(p.contexto_imagen)}" style="max-width:100%; max-height:250px;" onerror="${onerrorLiviano(p.contexto_imagen)}"></div>` : ''}</div>` : '';
 
       const overlay = document.createElement('div');
       overlay.className = 'modal-pregunta-overlay';
