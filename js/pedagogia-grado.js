@@ -45,8 +45,15 @@ export async function cargarPedagogiaGrado() {
   if (_cache) return _cache;
   if (_promesaCarga) return _promesaCarga;
   _promesaCarga = (async () => {
+    // RENDIMIENTO: los dos archivos suman ~380 KB comprimidos y antes se pedían EN SERIE y con
+    // `cache:'no-cache'`, que obliga al navegador a revalidar siempre. Ahora van EN PARALELO y
+    // con la caché normal del navegador: el servidor manda ETag, así que un archivo sin cambios
+    // se resuelve con un 304 vacío en vez de volver a descargarse, y las dos esperas se solapan.
+    const [resp, respP] = await Promise.all([
+      fetch(RUTA).catch(e => ({ ok: false, _err: e })),
+      fetch(RUTA_PER).catch(e => ({ ok: false, _err: e })),
+    ]);
     try {
-      const resp = await fetch(RUTA, { cache: 'no-cache' });
       if (!resp || !resp.ok) throw new Error('HTTP ' + (resp && resp.status));
       const obj = await resp.json();
       _cache = (obj && typeof obj === 'object') ? obj : {};
@@ -57,7 +64,6 @@ export async function cargarPedagogiaGrado() {
     // Capa POR PERIODO (opcional): personaliza por área×grado×periodo. Si no existe o falla,
     // se ignora y todo cae a la pedagogía por grado (comportamiento actual, sin romper nada).
     try {
-      const respP = await fetch(RUTA_PER, { cache: 'no-cache' });
       const objP = (respP && respP.ok) ? await respP.json() : null;
       _cachePer = (objP && typeof objP === 'object') ? objP : {};
     } catch (_) { _cachePer = {}; }

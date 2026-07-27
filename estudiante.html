@@ -204,7 +204,9 @@
     // igual bloquea el reintento, así que mostrar "Iniciar" de entrada es seguro.
     for (const cuad of cuadernillos.filter(_pasaPeriodo)) {
       const chip = AREA_CHIP[cuad.area] || { sigla: 'IDE', color: '#475569' };
-      const nPreg = cuad.preguntas?.length || 0;
+      // El catálogo trae la ficha sin el cuerpo del cuadernillo (ver db.js): el número de
+      // preguntas viene del campo num_preguntas, no de recorrer el arreglo.
+      const nPreg = cuad.num_preguntas ?? cuad.preguntas?.length ?? 0;
       const base = document.createElement('div');
       base.className = 'cuad-card cuad-card--disponible';
       base.dataset.cuadId = cuad.id;
@@ -261,7 +263,9 @@
     for (const cuad of _visibles) {
       const v = await puedeEstudianteIniciarPrueba(ses.user_id, cuad.id, { appsEstudiante: todas, permisosEstudiante: _permisosEst });
       const chip = AREA_CHIP[cuad.area] || { sigla: 'IDE', color: '#475569' };
-      const nPreg = cuad.preguntas?.length || 0;
+      // El catálogo trae la ficha sin el cuerpo del cuadernillo (ver db.js): el número de
+      // preguntas viene del campo num_preguntas, no de recorrer el arreglo.
+      const nPreg = cuad.num_preguntas ?? cuad.preguntas?.length ?? 0;
       const apsMat = porCuad[cuad.id] || [];
       const nInt = apsMat.length;
       const mejor = apsMat.length ? apsMat.reduce((a, b) => a.puntaje > b.puntaje ? a : b) : null;
