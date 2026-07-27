@@ -5,10 +5,11 @@
   "grado": "3",
   "periodo": "II",
   "version": "2023",
-  "nombre": "Cuadernillo de Matemáticas · Grado 3° · Período II (Banco propio IDEA)",
-  "fuente": "Banco propio IDEA · ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "nombre": "Cuadernillo de Matemáticas — Grado 3° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
   "tiempo_minutos": 60,
   "num_preguntas": 20,
+  "preservar_orden_preguntas": false,
   "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
   "competencias": {
     "a": "Resolución de problemas",
@@ -125,12 +126,12 @@
     {
       "id": "P3M2-04",
       "numero": 4,
-      "enunciado": "<p>El molde de una torta tiene la forma de la figura: una bandeja con un escalón (forma de <b>L</b>). Todas sus medidas están en la imagen. ¿Cuál es el <b>volumen</b> del molde?</p>",
+      "enunciado": "<p>Mateo está armando una torre con cubos de madera en su habitación. Él sabe que cada cubo mide <b>\\(1 \\ \\text{cm}^3\\)</b> de volumen.</p><p>¿Cuál es el <b>volumen total</b> de la torre que armó Mateo?</p>",
       "opciones": {
-        "A": "\\(1.500 \\ \\text{cm}^3\\)",
-        "B": "\\(2.000 \\ \\text{cm}^3\\)",
-        "C": "\\(100 \\ \\text{cm}^3\\)",
-        "D": "\\(300 \\ \\text{cm}^3\\)"
+        "A": "\\(9 \\ \\text{cm}^3\\)",
+        "B": "\\(4 \\ \\text{cm}^3\\)",
+        "C": "\\(10 \\ \\text{cm}^3\\)",
+        "D": "\\(3 \\ \\text{cm}^3\\)"
       },
       "clave": "A",
       "competencia": "a",
@@ -139,24 +140,24 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
-      "que_evalua": "La capacidad de los estudiantes para calcular el volumen de un sólido (figura tridimensional) que se compone de paralelepípedos.",
-      "justificacion_correcta": "El molde se separa en dos paralelepípedos. Brazo grande: \\(20 \\times 10 \\times 5 = 1.000 \\ \\text{cm}^3\\). Brazo que completa la L: \\(10 \\times 10 \\times 5 = 500 \\ \\text{cm}^3\\). El volumen total es \\(1.000 + 500 = 1.500 \\ \\text{cm}^3\\).",
+      "que_evalua": "La capacidad de los estudiantes para hallar el volumen de un cuerpo contando las unidades cúbicas que lo forman.",
+      "justificacion_correcta": "La torre está formada por \\(9\\) cubos: \\(4\\) en la fila de abajo, \\(3\\) en la siguiente y \\(2\\) más arriba. Como cada cubo ocupa \\(1 \\ \\text{cm}^3\\), el volumen total es \\(9 \\times 1 = 9 \\ \\text{cm}^3\\).",
       "opciones_incorrectas": {
-        "B": "Toma todo como un solo bloque cuadrado \\(20 \\times 20 \\times 5 = 2.000\\), sin descontar la muesca.",
-        "C": "Suma las medidas que ve \\((20 \\times 3) + (10 \\times 2) + (5 \\times 4) = 100\\) e interpreta el resultado como un volumen.",
-        "D": "Calcula el área de la base de la L \\((20 \\times 20) - (10 \\times 10) = 300\\) y la toma como volumen."
+        "B": "Cuenta únicamente los \\(4\\) cubos de la fila de abajo y deja por fuera los que están encima.",
+        "C": "Cuenta un cubo de más: incluye alguno de los que están sueltos en el piso, que no hacen parte de la torre.",
+        "D": "Cuenta los cubos de la segunda fila \\((3)\\) y no el resto de la torre."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q04.png"
     },
     {
       "id": "P3M2-05",
       "numero": 5,
-      "enunciado": "<p>Catalina recibió un juguete dentro de la caja de la figura. La caja tiene forma de prisma con <b>base cuadrada de lado \\(4\\) cm</b> y <b>altura \\(6\\) cm</b>. ¿Cuál es el <b>volumen</b> de la caja?</p>",
+      "enunciado": "<p>Mateo, al finalizar de jugar, organiza sus cubos de madera en una caja plástica. Si cada uno de los cubos tiene un volumen de <b>\\(1 \\ \\text{cm}^3\\)</b> y la caja queda completamente llena al guardarlos, ¿cuál es el <b>volumen total</b> de la caja?</p>",
       "opciones": {
-        "A": "\\(14 \\ \\text{cm}^3\\)",
-        "B": "\\(24 \\ \\text{cm}^3\\)",
-        "C": "\\(48 \\ \\text{cm}^3\\)",
-        "D": "\\(96 \\ \\text{cm}^3\\)"
+        "A": "\\(12 \\ \\text{cm}^3\\)",
+        "B": "\\(48 \\ \\text{cm}^3\\)",
+        "C": "\\(24 \\ \\text{cm}^3\\)",
+        "D": "\\(36 \\ \\text{cm}^3\\)"
       },
       "clave": "D",
       "competencia": "a",
@@ -165,12 +166,12 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
-      "que_evalua": "La capacidad para calcular el volumen de prismas rectangulares, cuyo proceso involucra productos entre valores de una cifra.",
-      "justificacion_correcta": "El volumen es el área de la base por la altura. La base es un cuadrado de lado \\(4\\): \\((4 \\times 4) \\times 6 = 16 \\times 6 = 96 \\ \\text{cm}^3\\).",
+      "que_evalua": "La capacidad para hallar el volumen de un recipiente contando las unidades cúbicas que lo llenan por completo.",
+      "justificacion_correcta": "En cada capa caben \\(4 \\times 3 = 12\\) cubos y la caja tiene \\(3\\) capas, así que se guardan \\(12 \\times 3 = 36\\) cubos. Como cada cubo ocupa \\(1 \\ \\text{cm}^3\\), el volumen de la caja es \\(36 \\ \\text{cm}^3\\).",
       "opciones_incorrectas": {
-        "A": "Suma las medidas: \\(4 + 4 + 6 = 14\\).",
-        "B": "Halla el área de una cara \\((6 \\times 4 = 24)\\) y la toma como volumen.",
-        "C": "Calcula mal la base \\((4 + 4 = 8)\\) y luego \\(8 \\times 6 = 48\\)."
+        "A": "Cuenta solo los \\(12\\) cubos que se ven en la capa de arriba y no las capas de abajo.",
+        "B": "Supone \\(4\\) cubos de fondo en lugar de \\(3\\) y calcula \\(4 \\times 4 \\times 3 = 48\\).",
+        "C": "Cuenta únicamente dos capas \\((12 \\times 2 = 24)\\) y deja una sin contar."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q05.png"
     },
@@ -281,7 +282,7 @@
     {
       "id": "P3M2-10",
       "numero": 10,
-      "enunciado": "<p>La <b>torta</b> muestra los alimentos que recolectaron los estudiantes de <b>3.°</b> en la granja escolar. Las siguientes opciones muestran lo recolectado por otros grados. ¿Cuál de ellos recolectó la <b>misma cantidad de tomates</b> que los estudiantes de 3.°?</p>",
+      "enunciado": "<p>La <b>torta</b> muestra los materiales que reunieron los estudiantes de <b>3.°</b> en la campaña de reciclaje del colegio. Las opciones A, B, C y D muestran lo que reunieron otros grados. ¿Cuál de ellos reunió la <b>misma cantidad de papel</b> que los estudiantes de 3.°?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -296,11 +297,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
       "que_evalua": "La capacidad de encontrar representaciones gráficas que contengan una característica cuantitativa dada.",
-      "justificacion_correcta": "Los estudiantes de \\(3.°\\) recolectaron \\(20\\) de tomate (sector de la torta). La gráfica correcta es la que tiene la barra de tomate en \\(20\\): la opción B.",
+      "justificacion_correcta": "Los estudiantes de \\(3.°\\) reunieron \\(25\\) de papel (sector de la torta). La gráfica correcta es la que tiene la barra de papel en \\(25\\): la opción B.",
       "opciones_incorrectas": {
-        "A": "Tiene los mismos valores de la torta pero en categorías distintas (tomate en \\(10\\)).",
-        "C": "La suma de todos sus alimentos es cercana a \\(20\\), pero su barra de tomate no llega a \\(20\\).",
-        "D": "Su barra de tomate llega a \\(45\\), no a \\(20\\)."
+        "A": "Tiene los mismos valores de la torta pero en categorías distintas (papel en \\(12\\)).",
+        "C": "La suma de todos sus materiales es cercana a \\(25\\), pero su barra de papel no llega a \\(25\\).",
+        "D": "Su barra de papel llega a \\(50\\), no a \\(25\\)."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q10_stem.png",
       "opciones_imagenes": {
@@ -338,12 +339,12 @@
     {
       "id": "P3M2-12",
       "numero": 12,
-      "enunciado": "<p>Carolina dibujó cuatro triángulos rectángulos siguiendo un patrón (figura). Todos tienen la misma <b>altura de \\(3\\) cm</b> y las bases miden <b>\\(2, 4, 6\\)</b> y <b>\\(8\\) cm</b>. El área de un triángulo es la base por la altura dividida entre \\(2\\). ¿Qué se puede afirmar sobre las <b>áreas</b> de los triángulos?</p>",
+      "enunciado": "<p>Diana dibujó cuatro rectángulos, como se observan en la imagen.</p><p>El área de un rectángulo se obtiene al multiplicar la base por la altura. ¿Qué se puede afirmar sobre las <b>áreas</b> de los rectángulos?</p>",
       "opciones": {
         "A": "Las áreas son los múltiplos de \\(3\\), empezando desde \\(3 \\ \\text{cm}^2\\).",
-        "B": "Las áreas son los números impares, empezando desde \\(5 \\ \\text{cm}^2\\).",
+        "B": "Las áreas son los números impares, empezando desde \\(3 \\ \\text{cm}^2\\).",
         "C": "Las áreas son los números pares, empezando desde \\(2 \\ \\text{cm}^2\\).",
-        "D": "Las áreas son los múltiplos de \\(6\\), empezando desde \\(6 \\ \\text{cm}^2\\)."
+        "D": "Las áreas son los múltiplos de \\(4\\), empezando desde \\(4 \\ \\text{cm}^2\\)."
       },
       "clave": "A",
       "competencia": "b",
@@ -353,23 +354,23 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
       "que_evalua": "La capacidad de los estudiantes para identificar una secuencia numérica proveniente de un contexto geométrico cuya variación genera una seriación simple como son los múltiplos de un número.",
-      "justificacion_correcta": "Las áreas son \\(\\dfrac{2 \\times 3}{2} = 3\\), \\(\\dfrac{4 \\times 3}{2} = 6\\), \\(\\dfrac{6 \\times 3}{2} = 9\\) y \\(\\dfrac{8 \\times 3}{2} = 12\\). La secuencia \\(3, 6, 9, 12\\) son los múltiplos de \\(3\\) desde \\(3\\).",
+      "justificacion_correcta": "Todos los rectángulos tienen \\(3\\) cm de altura y las bases miden \\(1, 2, 3\\) y \\(4\\) cm. Las áreas son \\(1 \\times 3 = 3\\), \\(2 \\times 3 = 6\\), \\(3 \\times 3 = 9\\) y \\(4 \\times 3 = 12\\). La secuencia \\(3, 6, 9, 12\\) son los múltiplos de \\(3\\) desde \\(3\\).",
       "opciones_incorrectas": {
-        "B": "Suma base y altura \\((2+3, 4+3, \\dots)\\) en vez de aplicar la fórmula del área.",
-        "C": "Mira solo las bases \\((2, 4, 6, 8)\\), los pares, no las áreas.",
-        "D": "Multiplica base por altura sin dividir entre \\(2\\) \\((6, 12, 18, 24)\\)."
+        "B": "Ve que la primera área es \\(3\\) y supone que siguen los impares \\((3, 5, 7, 9)\\), sin calcular las demás.",
+        "C": "Se fija en las bases y las duplica \\((2, 4, 6, 8)\\) en lugar de multiplicarlas por la altura.",
+        "D": "Toma la base del último rectángulo \\((4)\\) y supone que las áreas van de \\(4\\) en \\(4\\)."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q12.png"
     },
     {
       "id": "P3M2-13",
       "numero": 13,
-      "enunciado": "<p>En una tienda venden tres árboles de Navidad, organizados por altura y por la cantidad de bolas que tiene cada uno (figura). ¿Cómo <b>aumenta</b> la cantidad de bolas de un árbol con respecto al árbol anterior?</p>",
+      "enunciado": "<p>Observa la cantidad de bombillos en cada árbol de izquierda a derecha.</p><p>¿Cuál es el <b>patrón</b> que sigue la secuencia?</p>",
       "opciones": {
-        "A": "Se agrega \\(1\\) bola al pasar de \\(2\\) a \\(3\\) metros y \\(2\\) bolas al pasar de \\(3\\) a \\(4\\) metros.",
-        "B": "Se agrega una bola cada vez que la altura aumenta un metro.",
-        "C": "Se agregan \\(4\\) bolas al pasar de \\(2\\) a \\(3\\) metros y \\(5\\) bolas al pasar de \\(3\\) a \\(4\\) metros.",
-        "D": "Se agrega una bola por cada metro de altura que se le añade al árbol."
+        "A": "Aumenta de \\(2\\) en \\(2\\), porque el total de árboles que se decoraron en el juego es \\(3\\).",
+        "B": "Aumenta de \\(3\\) en \\(3\\), porque a cada árbol se le agregan \\(3\\) bombillos más que al árbol anterior.",
+        "C": "Aumenta de \\(2\\) en \\(2\\), porque a cada árbol se le agregan \\(2\\) bombillos más que al árbol anterior.",
+        "D": "Aumenta de \\(3\\) en \\(3\\), porque el total de árboles que se decoraron en el juego es \\(3\\)."
       },
       "clave": "C",
       "competencia": "b",
@@ -379,11 +380,11 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
       "que_evalua": "La capacidad del estudiante de expresar el cambio en los términos de una secuencia en una situación aditiva.",
-      "justificacion_correcta": "El árbol de \\(2\\) m tiene \\(2+3 = 5\\) bolas, el de \\(3\\) m tiene \\(2+3+4 = 9\\) y el de \\(4\\) m tiene \\(2+3+4+5 = 14\\). Entonces de \\(2\\) a \\(3\\) m se agregan \\(9 - 5 = 4\\) bolas y de \\(3\\) a \\(4\\) m se agregan \\(14 - 9 = 5\\) bolas.",
+      "justificacion_correcta": "Los árboles tienen \\(5\\), \\(7\\) y \\(9\\) bombillos. De un árbol al siguiente se agregan siempre \\(2\\) bombillos \\((7-5=2\\) y \\(9-7=2)\\), así que la secuencia aumenta de \\(2\\) en \\(2\\) por esa razón.",
       "opciones_incorrectas": {
-        "A": "Mira solo la base de cada árbol y cree que aumenta \\(1\\) y luego \\(2\\) bolas.",
-        "B": "Cree que el aumento es siempre de \\(1\\) bola, sin contar las bolas reales.",
-        "D": "Describe un patrón parecido pero no es exacto: no se agregan tantas bolas como metros, sino una más que la altura."
+        "A": "Acierta que aumenta de \\(2\\) en \\(2\\), pero lo explica por la cantidad de árboles y no por los bombillos que se agregan.",
+        "B": "Cuenta mal el aumento: cree que se agregan \\(3\\) bombillos cada vez.",
+        "D": "Se equivoca en las dos cosas: ni el aumento es de \\(3\\) ni depende del número de árboles."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q13.png"
     },
@@ -525,7 +526,7 @@
     {
       "id": "P3M2-19",
       "numero": 19,
-      "enunciado": "<p>Marco construyó la cometa de la figura, con varillas de <b>\\(40\\) cm</b> y <b>\\(60\\) cm</b>. ¿Cuál de las siguientes cometas es una figura <b>semejante</b> a la cometa de Marco?</p>",
+      "enunciado": "<p>Marco construyó la cometa de la figura, con varillas de <b>\\(40\\) cm</b> y <b>\\(60\\) cm</b>. ¿Cuál de las cometas A, B, C o D es una figura <b>semejante</b> a la cometa de Marco?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -586,6 +587,5 @@
         "D": "assets/banco-mat-3-p2/q20d.png"
       }
     }
-  ],
-  "preservar_orden_preguntas": false
+  ]
 }
