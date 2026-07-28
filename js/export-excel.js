@@ -483,7 +483,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
   cuadernillo.preguntas.forEach((p, i) => {
     const _pctG = Math.round((_correctasG[i] / _totalG) * 100);
     const _semG = semaforoDesempeno(_pctG);
-    // Dificultad empírica: ≤35% acertó → ALTA (rojo) · 35–65% → MEDIA (naranja) · ≥65% → BAJA (verde)
+    // Dificultad empírica: ≤35% acertó → ALTA (rojo) · 35-65% → MEDIA (naranja) · ≥65% → BAJA (verde)
     const _difG = _pctG < 35 ? 'ALTA' : (_pctG < 65 ? 'MEDIA' : 'BAJA');
     const r = wsM.addRow([p.numero, p.que_evalua.replace(/\$[^$]*\$/g, '[fórmula]'), p.competencia, p.afirmacion, p.evidencia, (_hayDim2G ? (valorDimSecundaria(p, cuadernillo) || '') : ''), _difG]);
     r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(9); c.alignment = alignCenter; });

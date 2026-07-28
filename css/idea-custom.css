@@ -1,4 +1,4 @@
-/* idea-custom.css — Sistema de diseño IDEA: paleta, tipografía, layouts, animaciones.
+/* idea-custom.css, Sistema de diseño IDEA: paleta, tipografía, layouts, animaciones.
    Trabaja junto con Tailwind CDN. */
 
 :root {
@@ -331,7 +331,7 @@ body:has(> .idea-footer) { padding-bottom: 56px; }
   margin: 0 0 16px 0;
 }
 
-/* === v11.3: Paneles sutiles — fondo blanco, banda lateral fina del color del tema, sin saturar === */
+/* === v11.3: Paneles sutiles, fondo blanco, banda lateral fina del color del tema, sin saturar === */
 /* La diferenciación principal viene de los colores de los CHARTS dentro de cada panel,
    no del fondo. El fondo solo necesita un acento lateral muy fino para señalizar. */
 .panel-distribucion { background: white; border-left: 4px solid #F59E0B; }
@@ -358,7 +358,7 @@ body:has(> .idea-footer) { padding-bottom: 56px; }
 .panel-recomendaciones { background: white; border-left: 4px solid #F97316; }
 .panel-recomendaciones .card-title { color: #7C2D12; }
 
-/* === v11: Cajas MBE — cada gráfico en un recuadro con borde y fondo pastel diferenciado === */
+/* === v11: Cajas MBE, cada gráfico en un recuadro con borde y fondo pastel diferenciado === */
 .caja-mbe {
   border: 2px solid;
   border-radius: 16px;
@@ -376,7 +376,7 @@ body:has(> .idea-footer) { padding-bottom: 56px; }
   padding-bottom: 8px;
   border-bottom: 1px dashed rgba(0,0,0,0.12);
 }
-/* v11.3: cajas MBE con un borde gris neutral fino — la diferenciación de cada chart viene del
+/* v11.3: cajas MBE con un borde gris neutral fino, la diferenciación de cada chart viene del
    color SEMÁNTICO de competencia que se propaga a sus afirmaciones y evidencias */
 .caja-mbe-comp, .caja-mbe-afir, .caja-mbe-evid, .caja-mbe-cmc {
   border-color: #E2E8F0;
@@ -387,7 +387,7 @@ body:has(> .idea-footer) { padding-bottom: 56px; }
 .caja-mbe-evid .caja-mbe-titulo { color: #1F2937; }
 .caja-mbe-cmc .caja-mbe-titulo { color: #1F2937; }
 
-/* === v11: @media print — preservar colores y formato al imprimir Ctrl+P === */
+/* === v11: @media print, preservar colores y formato al imprimir Ctrl+P === */
 @media print {
   * {
     -webkit-print-color-adjust: exact !important;
@@ -1045,7 +1045,7 @@ body:has(> .idea-footer) { padding-bottom: 56px; }
 .driver-popover.idea-tour .driver-popover-title { color: var(--idea-dorado) !important; font-family: 'Plus Jakarta Sans', sans-serif !important; }
 .driver-popover.idea-tour button { background: var(--idea-rojo) !important; color: white !important; border-radius: 8px !important; padding: 6px 14px !important; }
 
-/* Botones de ayuda flotantes — rediseño 2026-06-06: navy + dorado, limpios y coherentes
+/* Botones de ayuda flotantes, rediseño 2026-06-06: navy + dorado, limpios y coherentes
    con el botón de Guía de Sabio y con el encabezado oscuro de los paneles. */
 .btn-ayuda-flotante {
   position: fixed; bottom: 24px; right: 24px; z-index: 30;
@@ -1238,7 +1238,7 @@ section h3, .seccion-h3 { font-size: 18px; font-weight: 600; }
   border: 1px solid var(--idea-dorado, #D4AF37);
 }
 
-/* === Página de contexto (lectura previa) — diseño único IDEA ====================
+/* === Página de contexto (lectura previa), diseño único IDEA ====================
    Aparece antes del primer pregunta de cada bloque temático. Toma protagonismo
    del área de pregunta pero conserva la identidad visual del cuadernillo. */
 .contexto-pagina {
@@ -2026,7 +2026,7 @@ section h3, .seccion-h3 { font-size: 18px; font-weight: 600; }
 .cuad-chip--mini .cuad-chip-grado { display: none; }
 
 /* ========================================================================
-   PANEL DOCENTE — Sidebar con acordeones por curso y vista de bienvenida
+   PANEL DOCENTE, Sidebar con acordeones por curso y vista de bienvenida
    ======================================================================== */
 
 /* Acordeones de cursos en la sidebar */

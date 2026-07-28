@@ -1,18 +1,50 @@
 {
   "version": "2.0",
   "campos_encabezado": [
-    { "id": "docente", "label": "Docente", "tipo": "texto", "auto": "sesion.nombre_completo" },
-    { "id": "area", "label": "Área", "tipo": "texto", "valor_default": "Matemáticas" },
-    { "id": "grado", "label": "Grado", "tipo": "texto" },
-    { "id": "grupo", "label": "Grupo", "tipo": "texto" },
-    { "id": "periodo", "label": "Período", "tipo": "select", "opciones": ["I", "II", "III"] }
+    {
+      "id": "docente",
+      "label": "Docente",
+      "tipo": "texto",
+      "auto": "sesion.nombre_completo"
+    },
+    {
+      "id": "area",
+      "label": "Área",
+      "tipo": "texto",
+      "valor_default": "Matemáticas"
+    },
+    {
+      "id": "grado",
+      "label": "Grado",
+      "tipo": "texto"
+    },
+    {
+      "id": "grupo",
+      "label": "Grupo",
+      "tipo": "texto"
+    },
+    {
+      "id": "periodo",
+      "label": "Período",
+      "tipo": "select",
+      "opciones": [
+        "I",
+        "II",
+        "III"
+      ]
+    }
   ],
   "secciones": [
     {
       "id": "trayectoria",
       "titulo": "Trayectoria histórica de puntajes",
       "tipo": "tabla_auto",
-      "columnas": ["Puntaje", "PERIODO I", "PERIODO II", "PERIODO III"],
+      "columnas": [
+        "Puntaje",
+        "PERIODO I",
+        "PERIODO II",
+        "PERIODO III"
+      ],
       "descripcion": "Esta tabla se auto-rellena con los puntajes promedio del grupo en cada período aplicado."
     },
     {
@@ -20,10 +52,26 @@
       "titulo": "Plan de acción pedagógica",
       "tipo": "tabla_editable",
       "columnas": [
-        { "id": "fortalezas", "label": "FORTALEZAS", "color": "#10B981" },
-        { "id": "oportunidades", "label": "OPORTUNIDADES DE MEJORA", "color": "#F59E0B" },
-        { "id": "estrategias", "label": "ESTRATEGIAS DIDÁCTICAS", "color": "#DC2626" },
-        { "id": "seguimiento", "label": "SEGUIMIENTO", "color": "#0EA5E9" }
+        {
+          "id": "fortalezas",
+          "label": "FORTALEZAS",
+          "color": "#10B981"
+        },
+        {
+          "id": "oportunidades",
+          "label": "OPORTUNIDADES DE MEJORA",
+          "color": "#F59E0B"
+        },
+        {
+          "id": "estrategias",
+          "label": "ESTRATEGIAS DIDÁCTICAS",
+          "color": "#DC2626"
+        },
+        {
+          "id": "seguimiento",
+          "label": "SEGUIMIENTO",
+          "color": "#0EA5E9"
+        }
       ],
       "filas_iniciales": 3,
       "permite_agregar_filas": true
@@ -33,13 +81,30 @@
       "titulo": "Vinculación curricular institucional",
       "tipo": "checkboxes",
       "items": [
-        { "id": "siee", "label": "Actualiza el Sistema Institucional de Evaluación de Estudiantes (SIEE)" },
-        { "id": "mallas", "label": "Actualiza las Mallas de Aprendizaje del área" },
-        { "id": "pei", "label": "Alinea objetivos con el Proyecto Educativo Institucional (PEI)" }
+        {
+          "id": "siee",
+          "label": "Actualiza el Sistema Institucional de Evaluación de Estudiantes (SIEE)"
+        },
+        {
+          "id": "mallas",
+          "label": "Actualiza las Mallas de Aprendizaje del área"
+        },
+        {
+          "id": "pei",
+          "label": "Alinea objetivos con el Proyecto Educativo Institucional (PEI)"
+        }
       ],
       "campos_adicionales": [
-        { "id": "responsable", "label": "Responsable institucional", "tipo": "texto" },
-        { "id": "fecha_implementacion", "label": "Fecha de implementación", "tipo": "fecha" }
+        {
+          "id": "responsable",
+          "label": "Responsable institucional",
+          "tipo": "texto"
+        },
+        {
+          "id": "fecha_implementacion",
+          "label": "Fecha de implementación",
+          "tipo": "fecha"
+        }
       ]
     }
   ],
@@ -137,7 +202,7 @@
     "ciencias_naturales": {
       "competencia": {
         "a": [
-          "Usar la rutina 'observo–describo–explico–predigo' frente a experiencias demostrativas.",
+          "Usar la rutina 'observo-describo-explico-predigo' frente a experiencias demostrativas.",
           "Promover simuladores PhET para visualizar fenómenos antes de explicarlos por escrito."
         ],
         "b": [

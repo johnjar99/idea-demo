@@ -449,7 +449,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
             <div>
               <h3 class="text-sm font-semibold mb-2 text-slate-700">📊 Aciertos y dificultad por pregunta</h3>
-              <p class="text-xs text-slate-500 mb-2">La altura es el % de aciertos del grupo y el color refleja la dificultad: <span style="color:#EF4444;font-weight:600">rojo = ALTA (≤35% acertó)</span>, <span style="color:#F59E0B;font-weight:600">naranja = MEDIA (35–65%)</span>, <span style="color:#10B981;font-weight:600">verde = BAJA (≥65%)</span>.</p>
+              <p class="text-xs text-slate-500 mb-2">La altura es el % de aciertos del grupo y el color refleja la dificultad: <span style="color:#EF4444;font-weight:600">rojo = ALTA (≤35% acertó)</span>, <span style="color:#F59E0B;font-weight:600">naranja = MEDIA (35-65%)</span>, <span style="color:#10B981;font-weight:600">verde = BAJA (≥65%)</span>.</p>
               <div style="height:240px"><canvas id="chart-aciertos-pregunta"></canvas></div>
             </div>
             <div>
@@ -863,17 +863,14 @@
           asignatura: asigsPos.length > 1
         };
         if (campos.grado || campos.periodo || campos.asignatura) {
-          construirBarraFiltros(
-            contFiltros,
+          construirBarraFiltros(contFiltros,
             campos,
             { grados: gradosPos, periodos: periodosPos, asignaturas: asigsPos },
             (f) => {
               const sub = appsVisibles.filter(a =>
-                pasaFiltro(a, f, _periodoDeApp, (x) => x.area, (x) => x.grado)
-              );
+                pasaFiltro(a, f, _periodoDeApp, (x) => x.area, (x) => x.grado));
               renderAcordeones(sub);
-            }
-          );
+            });
         }
       }
     }
@@ -1318,10 +1315,8 @@
 
       // Sabio contextual
       const msg = mensajeSabioPorNivel(nivelGrupo);
-      document.getElementById('sabio-hero').innerHTML = sabioConBurbuja(
-        `<strong>${nivelGrupo === 'BAJO' ? 'Este grupo necesita refuerzo urgente.' : nivelGrupo === 'BÁSICO' ? 'Hay oportunidad clara de mejora.' : '¡Buen trabajo grupal!'}</strong> ${msg.msg}`,
-        msg.expr, { lado: 'izquierda', tamano: 110 }
-      );
+      document.getElementById('sabio-hero').innerHTML = sabioConBurbuja(`<strong>${nivelGrupo === 'BAJO' ? 'Este grupo necesita refuerzo urgente.' : nivelGrupo === 'BÁSICO' ? 'Hay oportunidad clara de mejora.' : '¡Buen trabajo grupal!'}</strong> ${msg.msg}`,
+        msg.expr, { lado: 'izquierda', tamano: 110 });
 
       const kpis = document.getElementById('kpis');
       kpis.innerHTML = `
@@ -1518,8 +1513,7 @@
       let html = '<thead><tr><th>Estudiante</th><th>Puntaje</th><th>Competencia más débil</th><th style="min-width:340px">3 acciones recomendadas</th></tr></thead><tbody>';
       enR.forEach(e => {
         const lista = (e.sugerencias || [e.sugerencia]).map((s, i) =>
-          `<div class="text-[11px] leading-snug mb-1.5"><strong class="text-red-700">${i+1}.</strong> ${escapeHtml(s)}</div>`
-        ).join('');
+          `<div class="text-[11px] leading-snug mb-1.5"><strong class="text-red-700">${i+1}.</strong> ${escapeHtml(s)}</div>`).join('');
         html += `<tr>
           <td class="nombre">${escapeHtml(e.estudiante)}</td>
           <td><strong class="text-red-600">${e.puntaje}</strong></td>
@@ -1614,7 +1608,7 @@
         ${mostrarComp ? `<th style="width:${claro ? '20' : '8'}%">${escapeHtml(ET_T.competencia_singular.toUpperCase())}</th>` : ''}
         ${mostrarAfir ? `<th style="width:${claro ? '20' : '8'}%">${escapeHtml(ET_T.afirmacion_singular.toUpperCase())}</th>` : ''}
         ${mostrarEvid ? `<th style="width:${claro ? '18' : '8'}%">${escapeHtml(ET_T.evidencia_singular.toUpperCase())}</th>` : ''}
-        ${mostrarDim2 ? `<th>${escapeHtml(tituloDim2.toUpperCase())}</th>` : ''}<th title="Dificultad empírica de la pregunta según el % de aciertos del grupo. ALTA (rojo) si ≤35% acertó · MEDIA (naranja) entre 35–65% · BAJA (verde) si ≥65%.">DIFICULTAD</th>
+        ${mostrarDim2 ? `<th>${escapeHtml(tituloDim2.toUpperCase())}</th>` : ''}<th title="Dificultad empírica de la pregunta según el % de aciertos del grupo. ALTA (rojo) si ≤35% acertó · MEDIA (naranja) entre 35-65% · BAJA (verde) si ≥65%.">DIFICULTAD</th>
       </tr>
       <tr class="fila-filtros-desg">
         <td></td><td style="text-align:right;font-size:10px;color:#475569;font-weight:800;padding-right:8px">FILTRAR ▾</td>
@@ -1629,11 +1623,11 @@
         const pctGrupoPreg = Math.round((correctasPorPreg[idx] / totalEstud) * 100);
         const sem = semaforoDesempeno(pctGrupoPreg);
         // DIFICULTAD empírica (vista inversa: pocos aciertos = pregunta más difícil).
-        // Cortes ICFES: ≤35% → ALTA (rojo) · 35–65% → MEDIA (naranja) · ≥65% → BAJA (verde).
+        // Cortes ICFES: ≤35% → ALTA (rojo) · 35-65% → MEDIA (naranja) · ≥65% → BAJA (verde).
         const dif = pctGrupoPreg < 35
           ? { label: 'ALTA', titulo: `Dificultad alta - solo el ${pctGrupoPreg}% del grupo acertó (≤35%)` }
           : (pctGrupoPreg < 65
-            ? { label: 'MEDIA', titulo: `Dificultad media - el ${pctGrupoPreg}% del grupo acertó (35–65%)` }
+            ? { label: 'MEDIA', titulo: `Dificultad media - el ${pctGrupoPreg}% del grupo acertó (35-65%)` }
             : { label: 'BAJA', titulo: `Dificultad baja - el ${pctGrupoPreg}% del grupo acertó (≥65%)` });
         const compLetra = (p.competencia || 'a').charAt(0);
         const compNom = cuadActual.competencias[compLetra] || '';
@@ -1894,7 +1888,7 @@
         return null;
       };
 
-      // v14: ESTANDARIZACIÓN — color POR COMPETENCIA con índice fijo (a=0, b=1, c=2…),
+      // v14: ESTANDARIZACIÓN, color POR COMPETENCIA con índice fijo (a=0, b=1, c=2…),
       // igual en todos los grados y áreas; y agrupación de afirmaciones/evidencias en el
       // ORDEN de las competencias (a→b→c). Lectura Crítica (1 competencia) e Inglés
       // conservan su coloreo por afirmación / nivel para no quedar monocromos.
@@ -2223,11 +2217,9 @@
         const a = _afirOrd.filter(x => _mapaComp[c] && _mapaComp[c].has(x));
         return a.length ? _colorByAfir[a[0]] : '#64748B';
       });
-      charts.compAgr = barrasAgrupadas(
-        document.getElementById('chart-comp-agrupadas'),
+      charts.compAgr = barrasAgrupadas(document.getElementById('chart-comp-agrupadas'),
         categorias, grupos,
-        { etiquetasCompletas, coloresPorBarra }
-      );
+        { etiquetasCompletas, coloresPorBarra });
     }
 
     function renderIndividual() {
@@ -2307,8 +2299,7 @@
             <table class="w-full text-xs">
               <thead><tr><th class="text-left">${escapeHtml(ET_C.competencia_singular)}</th><th class="text-right">Tú</th><th class="text-right">Grupo</th><th class="text-right">Δ</th></tr></thead>
               <tbody>${Object.entries(comp.competencias).map(([k, v]) =>
-                `<tr><td>${k}. ${escapeHtml(cuadActual.competencias[k] || '').slice(0, 30)}</td><td class="text-right font-semibold">${v.individual}%</td><td class="text-right text-slate-500">${v.grupo}%</td><td class="text-right">${flecha(v.delta)}</td></tr>`
-              ).join('')}</tbody>
+                `<tr><td>${k}. ${escapeHtml(cuadActual.competencias[k] || '').slice(0, 30)}</td><td class="text-right font-semibold">${v.individual}%</td><td class="text-right text-slate-500">${v.grupo}%</td><td class="text-right">${flecha(v.delta)}</td></tr>`).join('')}</tbody>
             </table>
           </div>` : ''}
           ${(() => {
@@ -2328,8 +2319,7 @@
             <table class="w-full text-xs">
               <thead><tr><th class="text-left">${escapeHtml(_tit)}</th><th class="text-right">Tú</th><th class="text-right">Grupo</th><th class="text-right">Δ</th></tr></thead>
               <tbody>${Object.entries(comp.cmc || {}).map(([k, v]) =>
-                `<tr><td>${escapeHtml(k)}</td><td class="text-right font-semibold">${v.individual}%</td><td class="text-right text-slate-500">${v.grupo}%</td><td class="text-right">${flecha(v.delta)}</td></tr>`
-              ).join('')}</tbody>
+                `<tr><td>${escapeHtml(k)}</td><td class="text-right font-semibold">${v.individual}%</td><td class="text-right text-slate-500">${v.grupo}%</td><td class="text-right">${flecha(v.delta)}</td></tr>`).join('')}</tbody>
             </table>
           </div>`;
           })()}
@@ -2499,8 +2489,7 @@
         const gruposAsig = ses.grupos_asignados || [];
         candidatos = candidatos.filter(u =>
           u.institucion_id === ses.institucion_id &&
-          (gruposAsig.length === 0 || gruposAsig.includes(`${u.grado}-${u.grupo}`))
-        );
+          (gruposAsig.length === 0 || gruposAsig.includes(`${u.grado}-${u.grupo}`)));
       } else if (ses.rol === 'directivo') {
         candidatos = candidatos.filter(u => u.institucion_id === ses.institucion_id);
       }
@@ -2567,18 +2556,14 @@
       const _cfgGloss = configArea(cuadActual);
       const cmcUnicos = [...new Set(cuadActual.preguntas.map(p => valorDimSecundaria(p, cuadActual)).filter(Boolean))];
       const compHtml = comps.filter(([k,v]) => coincide(k+' '+v)).map(([k,v]) =>
-        `<div class="border-l-4 border-sky-500 pl-3 py-2 mb-2 bg-sky-50 rounded-r"><strong>${k}.</strong> ${escapeHtml(v)}</div>`
-      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+        `<div class="border-l-4 border-sky-500 pl-3 py-2 mb-2 bg-sky-50 rounded-r"><strong>${k}.</strong> ${escapeHtml(v)}</div>`).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
       const _ETgl = etiquetasMarco(cuadActual);
       const afirHtml = afirs.filter(([k,v]) => coincide(k+' '+v)).map(([k,v]) =>
-        `<div class="border-l-4 border-amber-500 pl-3 py-2 mb-2 bg-amber-50 rounded-r"><strong>${escapeHtml(_ETgl.afirmacion_codigo)} ${escapeHtml(codigoAfirmacion(cuadActual, k))}:</strong> ${escapeHtml(v)}</div>`
-      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+        `<div class="border-l-4 border-amber-500 pl-3 py-2 mb-2 bg-amber-50 rounded-r"><strong>${escapeHtml(_ETgl.afirmacion_codigo)} ${escapeHtml(codigoAfirmacion(cuadActual, k))}:</strong> ${escapeHtml(v)}</div>`).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
       const evidHtml = evids.filter(([k,v]) => coincide(k+' '+v)).map(([k,v]) =>
-        `<div class="border-l-4 border-emerald-500 pl-3 py-2 mb-2 bg-emerald-50 rounded-r"><strong>${escapeHtml(_ETgl.evidencia_codigo)} ${k}:</strong> ${escapeHtml(v)}</div>`
-      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+        `<div class="border-l-4 border-emerald-500 pl-3 py-2 mb-2 bg-emerald-50 rounded-r"><strong>${escapeHtml(_ETgl.evidencia_codigo)} ${k}:</strong> ${escapeHtml(v)}</div>`).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
       const cmcHtml = cmcUnicos.filter(c => coincide(c)).map(c =>
-        `<div class="border-l-4 border-purple-500 pl-3 py-2 mb-2 bg-purple-50 rounded-r">${escapeHtml(c)}</div>`
-      ).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
+        `<div class="border-l-4 border-purple-500 pl-3 py-2 mb-2 bg-purple-50 rounded-r">${escapeHtml(c)}</div>`).join('') || '<p class="text-xs text-slate-400 italic">Sin coincidencias</p>';
       const difHtml = `
         <div class="border-l-4 border-emerald-500 pl-3 py-2 mb-2 bg-emerald-50 rounded-r"><strong>BAJA:</strong> Pregunta accesible para la mayoría. Mide aprendizajes consolidados.</div>
         <div class="border-l-4 border-amber-500 pl-3 py-2 mb-2 bg-amber-50 rounded-r"><strong>MEDIA:</strong> Pregunta de desempeño esperado para el grado. Requiere integrar varios conceptos.</div>

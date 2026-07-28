@@ -289,10 +289,8 @@
     `;
 
     // Sabio acompañando
-    document.getElementById('sabio-previa').innerHTML = sabioConBurbuja(
-      'Hola, soy <strong>Sabio</strong>. Te acompañaré durante tu prueba. Recuerda: lee con calma, responde lo que sepas con seguridad y revisa antes de enviar.',
-      'animando', { lado: 'izquierda', tamano: 130 }
-    );
+    document.getElementById('sabio-previa').innerHTML = sabioConBurbuja('Hola, soy <strong>Sabio</strong>. Te acompañaré durante tu prueba. Recuerda: lee con calma, responde lo que sepas con seguridad y revisa antes de enviar.',
+      'animando', { lado: 'izquierda', tamano: 130 });
 
     // ===== Estado de la aplicación (en memoria) =====
     let aplicacionId = null;
@@ -536,7 +534,7 @@
           // numerada/con viñetas (p. ej. "pasos": va alineado a la izquierda, NO centrado).
           const _lns = p.split('\n').map(s => s.trim()).filter(Boolean);
           const esLista = _lns.length >= 2 &&
-            _lns.filter(l => /^(\d+[.\)]|[•·*–\-])\s/.test(l)).length >= Math.ceil(_lns.length / 2);
+            _lns.filter(l => /^(\d+[.\)]|[•·*-\-])\s/.test(l)).length >= Math.ceil(_lns.length / 2);
           const esVerso = /\n/.test(p) && !esLista;
           const esCortoSub = p.length <= 30 && !/[.!?…»]$/.test(p);
           let cls = 'ctx-p';
@@ -550,8 +548,27 @@
         if (nota.length) html += `<div class="ctx-nota">${nota.join('')}</div>`;
         return html;
       };
-      const textoHtml = ctx.texto
-        ? `<div class="contexto-texto-corpo">${_fmtContexto(ctx.texto)}</div>`
+      // El ÚLTIMO párrafo de una lectura con pieza gráfica suele ser la línea de crédito
+      // («Infografía … Los derechos pertenecen a su autor»). Se separa para que viaje PEGADA a
+      // la imagen y no quede suelta en medio de la prosa cuando la pieza va al final.
+      const _ES_CREDITO = /(los derechos pertenecen|uso educativo|recuperad[oa] de|tomado (y adaptado)?de|adaptado de|elaboraci[oó]n propia|reproducid[ao] del)/i;
+      let _cuerpoTxt = String(ctx.texto || ''), _creditoTxt = '';
+      if (ctx.imagen && _cuerpoTxt) {
+        const _ps = _cuerpoTxt.split(/
+\s*
+/);
+        if (_ps.length > 1 && _ES_CREDITO.test(_ps[_ps.length - 1])) {
+          _creditoTxt = _ps.pop().trim();
+          _cuerpoTxt = _ps.join('
+
+');
+        }
+      }
+      const textoHtml = _cuerpoTxt
+        ? `<div class="contexto-texto-corpo">${_fmtContexto(_cuerpoTxt)}</div>`
+        : '';
+      const creditoHtml = _creditoTxt
+        ? `<p class="ctx-p ctx-credito">${escapeHtml(_creditoTxt)}</p>`
         : '';
       // Tres tips de lectura crítica que aplican a cualquier dispositivo (pantalla,
       // tablet, papel) y nunca asumen que el estudiante tenga lápiz o cuaderno.
@@ -576,8 +593,9 @@
           </header>
 
           <div class="contexto-pagina__lienzo">
-            ${imgHtml}
             ${textoHtml}
+            ${imgHtml}
+            ${creditoHtml}
           </div>
 
           <footer class="contexto-pagina__pie">

@@ -55,7 +55,7 @@ const AREAS = {
       comp: 'En 3°-5° se consolida el pensamiento numérico (valor posicional, las cuatro operaciones con sentido) y entran las fracciones en sus cuatro interpretaciones DBA (razón, parte-todo, cociente y operador), junto con medida, datos y patrones.',
       estr: [
         'Resolución de problemas tipo Polya (4 pasos) - comprender (subrayar dato e incógnita), idear plan (dibujo o problema similar), ejecutar y, sobre todo, verificar que la respuesta tenga sentido y unidades.',
-        'Secuencia Concreto–Pictórico–Abstracto (CPA) - primero el material (bloques base 10, regletas), luego el dibujo, por último el símbolo; no saltar al algoritmo antes del modelo.',
+        'Secuencia Concreto-Pictórico-Abstracto (CPA) - primero el material (bloques base 10, regletas), luego el dibujo, por último el símbolo; no saltar al algoritmo antes del modelo.',
         'Representaciones múltiples de la fracción - la misma fracción como porción, punto en la recta numérica, parte de una colección y reparto; pedir traducir de una a otra.',
         'Estimación previa y cálculo mental - antes de operar, estimar el orden del resultado; sirve de verificación natural.',
         'El error como recurso - mostrar un procedimiento equivocado anónimo y pedir que detecten dónde y por qué falla.',
@@ -128,14 +128,14 @@ const AREAS = {
     },
     frases: [
       'Se sugiere anclar el nuevo concepto en los conocimientos previos del estudiante, partiendo de una situación significativa de su contexto.',
-      'Conviene transitar por la secuencia concreto–pictórico–abstracto, evitando saltar prematuramente al algoritmo.',
+      'Conviene transitar por la secuencia concreto-pictórico-abstracto, evitando saltar prematuramente al algoritmo.',
       'Resulta clave fortalecer la comprensión del enunciado (fase de comprensión de Polya) antes de iniciar cualquier operación.',
       'Es pertinente diversificar las representaciones (tabular, gráfica, simbólica y verbal) y solicitar la conversión entre ellas.'
     ]
   },
   lc: {
     nombre: 'Lenguaje y Lectura Crítica',
-    foco: 'La tríada articuladora es: niveles de lectura literal–inferencial–crítico = tres competencias ICFES (local, global, crítico-reflexiva) = tres lecturas de Cassany (las líneas, entre líneas, detrás de las líneas), con Solé (antes–durante–después) como estructura de toda sesión.',
+    foco: 'La tríada articuladora es: niveles de lectura literal-inferencial-crítico = tres competencias ICFES (local, global, crítico-reflexiva) = tres lecturas de Cassany (las líneas, entre líneas, detrás de las líneas), con Solé (antes-durante-después) como estructura de toda sesión.',
     primaria: {
       comp: 'En 3°-5° se transita de "aprender a leer" a "leer para aprender": identificar información explícita, reconstruir la secuencia, hacer inferencias sencillas y producir textos cortos con estructura (inicio, desarrollo, cierre).',
       estr: [
@@ -225,7 +225,7 @@ const AREAS = {
       comp: 'En 3°-5° el eje es "me aproximo al conocimiento como científico natural": observar, preguntar, conjeturar, registrar y comparar, sobre seres vivos, materia y sus cambios, fuerzas, el agua y el sistema solar.',
       estr: [
         'Indagación guiada de baja estructura - el docente plantea una pregunta investigable cercana ("¿qué seres vivos hay en el jardín?") y guía a observar, registrar y concluir.',
-        'Predecir–Observar–Explicar (POE) - antes del experimento el niño predice por escrito, luego observa y confronta predicción contra resultado.',
+        'Predecir-Observar-Explicar (POE) - antes del experimento el niño predice por escrito, luego observa y confronta predicción contra resultado.',
         'Ciclo 5E simple - Enganchar con un fenómeno sorprendente, Explorar, Explicar con palabras propias, Elaborar, Evaluar.',
         'Bitácora de ciencias - el niño dibuja, rotula y escribe sus observaciones a lo largo del tiempo.',
         'Clasificación con criterios propios - dar hojas, semillas o imágenes de animales y pedir que inventen criterios para agruparlos.',
@@ -251,7 +251,7 @@ const AREAS = {
       estr: [
         'Indagación estructurada y guiada → abierta - escalar de ejecutar un procedimiento dado a formular la propia pregunta.',
         'Modelización científica - construir y revisar modelos del átomo, la célula, el flujo de energía, explicitando que un modelo es provisional y mejorable.',
-        'Argumentación con datos (afirmación–evidencia–razonamiento, CER) - toda conclusión anclada en evidencia.',
+        'Argumentación con datos (afirmación-evidencia-razonamiento, CER) - toda conclusión anclada en evidencia.',
         'V de Gowin - organizar la práctica conectando la pregunta central, el lado conceptual y el lado metodológico.',
         'ABP con un problema auténtico - la calidad del agua de la quebrada local resuelta aplicando conceptos de varias clases.',
         'POE con fenómenos contraintuitivos - dilatación, presión, reacciones; el conflicto cognitivo motor del cambio conceptual.'
@@ -299,7 +299,7 @@ const AREAS = {
     frases: [
       'Diagnostique las concepciones alternativas antes de planear la unidad y rastree la idea previa del estudiante.',
       'Formule una pregunta investigable contrastable y acotada, y opere las variables: cuál manipula, cuál mide y cuáles controla.',
-      'Exija que toda conclusión esté anclada en evidencia, con el esquema afirmación–evidencia–razonamiento.',
+      'Exija que toda conclusión esté anclada en evidencia, con el esquema afirmación-evidencia-razonamiento.',
       'Promueva el conflicto cognitivo cuando la intuición contradiga la evidencia.'
     ]
   },
@@ -325,7 +325,7 @@ const AREAS = {
       sig: 'Parta siempre del entorno inmediato y de los saberes del niño (su familia, su comida, su barrio) como anclaje. El niño debe percibirse como agente que puede transformar su entorno cercano.',
       prob: 'Trabaje problemas concretos y abordables a su escala (la basura del patio, el conflicto del recreo) con el ciclo observar → preguntar → indagar → proponer → actuar.',
       dif: [
-        'Presentismo y noción de tiempo difusa → líneas de tiempo físicas y manipulables, uso de generaciones (yo–papá–abuelo).',
+        'Presentismo y noción de tiempo difusa → líneas de tiempo físicas y manipulables, uso de generaciones (yo-papá-abuelo).',
         'Lee el mapa como dibujo (no entiende escala ni símbolos) → empezar por planos del entorno real recorrido con el cuerpo.',
         'Egocentrismo / dificultad de toma de perspectiva → juego de roles, "¿cómo se sintió el otro?".',
         'Memorización mecánica de símbolos y fechas patrias → convertir cada efeméride en una pregunta-problema.'

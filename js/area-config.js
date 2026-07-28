@@ -255,7 +255,7 @@ export function semaforoDesempeno(porcentaje) {
       colorTexto: '#FFFFFF',
       label: 'MEDIO',
       labelLargo: 'Medio - dominio parcial (35-65%)',
-      rango: '35–65%',
+      rango: '35-65%',
       pct: p
     };
   }

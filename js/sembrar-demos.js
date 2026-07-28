@@ -8,8 +8,9 @@
 // borrarDemos(): elimina SOLO los datos de demostración (aplicaciones/planes/permisos/mensajes
 //   de la IE Demo), conservando cuentas y cuadernillos, para poder presentar las pruebas en vivo.
 //
-// NUNCA toca instituciones reales (todo está acotado a institucion_id === 'ie-demo') ni Firestore
-// (la demo es 100% IndexedDB local).
+// NUNCA toca instituciones reales: todo está acotado a institucion_id === 'ie-demo'. Esta es la
+// versión de PRODUCCIÓN, así que sí escribe en Firestore, pero solo dentro de esa institución de
+// demostración; las IE reales (La Caldera, HRS, San Pablo, SJB) y sus pruebas quedan intactas.
 
 import { db } from './db.js';
 import { generarPlanAplicacion, fisherYates } from './shuffle.js';
@@ -21,6 +22,16 @@ const IE = INSTITUCION_DEMO.id; // 'ie-demo'
 const COLS_DEMO = ['idea_aplicaciones', 'idea_planes_mejora', 'idea_permisos_reintento', 'idea_mensajes'];
 
 const _clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+
+// Memoria de cuadernillos completos durante la siembra: los estudiantes de un mismo grado
+// comparten cuadernillo, así que sin esto se releería el mismo documento decenas de veces.
+const _completos = new Map();
+async function _cuadernilloCompleto(id) {
+  if (_completos.has(id)) return _completos.get(id);
+  const c = await db.obtener('idea_cuadernillos', id);
+  _completos.set(id, c);
+  return c;
+}
 
 // ¿Un registro pertenece a la demo? Por institucion_id directo, o porque alguno de sus
 // campos *_id apunta a un usuario de la IE Demo (planes/permisos/mensajes referencian al
@@ -75,8 +86,12 @@ export async function cargarDemosTodas(onLog = () => {}) {
     const cuads = cuadernillos.filter(c => String(c.grado) === String(est.grado));
     const baseAcc = BASES[si % BASES.length]; si++;
 
-    for (const c of cuads) {
-      const preguntas = c.preguntas || [];
+    for (const ficha of cuads) {
+      // db.lista devuelve el CATÁLOGO ligero (sin preguntas). Para generar una entrega real
+      // hace falta el cuerpo, así que se trae por id y se memoriza para no repetir la lectura
+      // en cada estudiante del mismo grado.
+      const c = await _cuadernilloCompleto(ficha.id);
+      const preguntas = (c && c.preguntas) || [];
       if (!preguntas.length) continue;
       const plan = generarPlanAplicacion(c);                  // barajado REAL (respeta preservar_orden)
       const acc = _clamp(baseAcc + (Math.random() * 0.14 - 0.07), 0.25, 1);

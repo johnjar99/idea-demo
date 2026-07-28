@@ -628,7 +628,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
     return doc.splitTextToSize(txt || 'N/D', maxW);
   };
   // Color por competencia POR POSICIÓN (no por clave fija a/b/c): así funciona para LC (1/2/3),
-  // Inglés (a–e) o cualquier estructura, igual que el panel web.
+  // Inglés (a-e) o cualquier estructura, igual que el panel web.
   const COMP_PAL_PDF = [[59, 130, 246], [245, 158, 11], [225, 29, 72], [16, 185, 129], [139, 92, 246], [20, 184, 166], [234, 88, 12]];
   const _compKeysPDF = Object.keys(cuadernillo.competencias || {});
   const colorComp = (letra) => { const i = _compKeysPDF.indexOf(String(letra)); return i >= 0 ? COMP_PAL_PDF[i % COMP_PAL_PDF.length] : [100, 116, 139]; };
@@ -1290,7 +1290,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   const san = t => String(t == null ? '' : t)
     .replace(/≥/g, '>=').replace(/≤/g, '<=').replace(/≈/g, '~')
     .replace(/[→➜►]/g, '->').replace(/[←]/g, '<-').replace(/[•·▪]/g, '-')
-    .replace(/[“”«»]/g, '"').replace(/[‘’]/g, "'").replace(/[–—]/g, '-')
+    .replace(/[“”«»]/g, '"').replace(/[‘’]/g, "'").replace(/[--]/g, '-')
     .replace(/…/g, '...').replace(/[✓✔]/g, '').replace(/ /g, ' ');
 
   // ============= PAGINA 1: PORTADA =============

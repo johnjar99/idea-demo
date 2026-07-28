@@ -29,7 +29,7 @@ const ESTRATEGIAS_POR_AREA = {
     competencia: {
       a: [ // Comunicación, representación y modelación
         'Trabajar talleres semanales de lectura crítica de gráficas, tablas y esquemas con preguntas orientadoras.',
-        'Implementar rutinas "Veo–Pienso–Pregunto" aplicadas a representaciones cuantitativas reales (datos del entorno).',
+        'Implementar rutinas "Veo-Pienso-Pregunto" aplicadas a representaciones cuantitativas reales (datos del entorno).',
         'Diseñar ejercicios de transformación entre registros: tabla → gráfica → expresión algebraica → texto descriptivo.'
       ],
       b: [ // Planteamiento y resolución de problemas
@@ -66,7 +66,7 @@ const ESTRATEGIAS_POR_AREA = {
       a: [
         'Implementar talleres semanales de lectura con tres niveles de análisis: literal, inferencial y crítico.',
         'Construir glosarios contextualizados antes y durante la lectura para fortalecer el léxico disciplinar.',
-        'Usar la rutina "subrayar–anotar al margen–parafrasear" en textos de diversa tipología (expositivos, argumentativos, narrativos, infográficos).'
+        'Usar la rutina "subrayar-anotar al margen-parafrasear" en textos de diversa tipología (expositivos, argumentativos, narrativos, infográficos).'
       ]
     },
     afirmacion: {
@@ -134,7 +134,7 @@ const ESTRATEGIAS_POR_AREA = {
     competencia: {
       a: [ // Explicación de fenómenos
         'Promover el uso de simuladores PhET para visualizar fenómenos físicos, químicos y biológicos antes de explicarlos por escrito.',
-        'Usar la rutina "observo–describo–explico–predigo" frente a experiencias demostrativas en aula.',
+        'Usar la rutina "observo-describo-explico-predigo" frente a experiencias demostrativas en aula.',
         'Diseñar evaluaciones donde el estudiante deba justificar por qué ocurre un fenómeno, no solo describirlo.'
       ],
       b: [ // Uso comprensivo del conocimiento científico
@@ -297,7 +297,7 @@ const NARRATIVA_POR_AREA = {
     enfasis_intervencion: 'talleres semanales de comprensión lectora en sus tres niveles (literal, inferencial y crítico) con textos de tipología variada',
     palanca: 'la lectura inferencial y la evaluación crítica del discurso',
     referente_externo: 'los Lineamientos Curriculares de Lengua Castellana del MEN y los Derechos Básicos de Aprendizaje (DBA) de Lenguaje',
-    instrumentos: 'glosarios contextualizados, rutinas "Veo–Pienso–Pregunto" y mapas de argumentación',
+    instrumentos: 'glosarios contextualizados, rutinas "Veo-Pienso-Pregunto" y mapas de argumentación',
     saber: 'la prueba de Lectura Crítica de SABER 11°',
     practica_destacada: 'la rutina "subrayar - anotar al margen - parafrasear" aplicada a textos expositivos, argumentativos y discontinuos'
   },
@@ -314,7 +314,7 @@ const NARRATIVA_POR_AREA = {
   },
   'ciencias naturales': {
     marco: 'Diseño Centrado en Evidencias (DCE) del ICFES y los Estándares de Ciencias Naturales',
-    nombre_contenido: 'Componentes temáticos (Procesos vivos, físicos, químicos y Ciencia–Tecnología–Sociedad)',
+    nombre_contenido: 'Componentes temáticos (Procesos vivos, físicos, químicos y Ciencia-Tecnología-Sociedad)',
     nombre_contenido_singular: 'componente temático',
     enfasis_intervencion: 'secuencias indagatorias de tipo "observo - describo - explico - predigo" articuladas con simulaciones PhET y prácticas de laboratorio en aula',
     palanca: 'la indagación científica y la construcción de explicaciones a partir de modelos',
@@ -457,7 +457,7 @@ export function estudiantesEnRiesgo(aplicaciones, cuadernillo) {
  *   - REALISTA:  las áreas restantes rinden igual que Matemáticas
  *   - OPTIMISTA: las áreas restantes rinden 10 puntos por encima de Matemáticas
  * Fórmula: Índice Global = (Mat·3 + LC·3 + Soc·3 + CN·3 + Ing·1) / 13
- * Puntaje SABER = Índice Global · 5 (escala 0–500)
+ * Puntaje SABER = Índice Global · 5 (escala 0-500)
  */
 export function proyeccionSaber11Parcial(puntajeMat) {
   const calcular = (otrasAreas) => {
@@ -802,7 +802,7 @@ export function datosScatter(aplicaciones) {
 export function datosRadar(aplicaciones, cuadernillo) {
   const log = logroGrupoPor(logroPorCompetencia, aplicaciones, cuadernillo);
   // Baseline simulado (referencia nacional) por POSICIÓN, no por clave fija a/b/c:
-  // así funciona igual para LC (1/2/3), Inglés (a–e) o cualquier estructura.
+  // así funciona igual para LC (1/2/3), Inglés (a-e) o cualquier estructura.
   const REF = [65, 68, 62, 66, 64, 67, 63];
   return {
     competencias: Object.keys(log).map(k => `${k}. ${(cuadernillo.competencias[k] || '').slice(0, 30)}`),
