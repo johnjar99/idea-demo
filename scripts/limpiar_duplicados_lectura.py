@@ -118,6 +118,13 @@ DUPLICADOS = [
     ("in_11_p2", 1, "ctx-parte4"),
     ("in_11_p2", 14, "ctx-parte5"),
     ("in_11_p2", 20, "ctx-parte3"),
+    # P1 arrastraba tres casos identicos. Aqui los rangos SI eran correctos, asi que lo unico
+    # que se corrige es la lectura repetida; la coletilla con el rango se retira igual, para que
+    # el encabezado de la pagina de lectura sea la unica fuente del dato en toda la plataforma.
+    # Ninguno es de los 5 vivos protegidos: esos son los '-2023' del Icfes, no los '-propio-'.
+    ("in_10_p1", 17, "ctx-parte4"),
+    ("in_11_p1", 9, "ctx-parte3"),
+    ("in_11_p1", 15, "ctx-parte4"),
 ]
 
 for tag in sorted(set(t for t, _, _ in DUPLICADOS)):
@@ -126,7 +133,8 @@ for tag in sorted(set(t for t, _, _ in DUPLICADOS)):
         q = preg(d, n)
         m = _LECTURA.match(q["enunciado"])
         if not m:
-            cambios.append("[!] %s q%d: no se reconocio el bloque de lectura" % (tag, n))
+            if "texto-lectura" in q["enunciado"]:
+                cambios.append("[!] %s q%d: no se reconocio el bloque de lectura" % (tag, n))
             continue
         instr = quitar_rango(plano(m.group("instr") or ""))
         q["enunciado"] = q["enunciado"][m.end():].strip()
