@@ -36,9 +36,59 @@
   ],
   "preguntas": [
     {
-      "id": "P-math-11-p2-01",
+      "id": "P-math-11-p2-07",
       "numero": 1,
-      "enunciado": "<p>El coordinador de un colegio encuestó a <b>\\(240\\)</b> estudiantes sobre el medio en que se transportan. Del total, el <b>\\(15\\%\\)</b> usa <b>bicicleta</b> y el <b>\\(35\\%\\)</b> usa <b>bus</b>. Además, <b>\\(72\\)</b> estudiantes van <b>a pie</b> y el resto se transporta en <b>metro</b>. ¿Cuál de las siguientes representaciones muestra correctamente la cantidad de estudiantes en cada medio?</p>",
+      "enunciado": "<p>Un colectivo de artesanas repartirá <b>\\(36.000\\)</b> puntos de un programa de fidelidad de manera <b>proporcional</b> a las piezas entregadas en la temporada: Ruth entregó <b>\\(12\\)</b>; Ximena, <b>\\(9\\)</b>; y Celia, <b>\\(15\\)</b>. Para saber cuántos puntos le corresponden a Ruth se proponen dos rutas de cálculo:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Ruta A.</b> Dividir el total de puntos en \\(36\\) partes iguales y, luego, multiplicar una de esas partes por \\(12\\).<br><br><b>Ruta B.</b> Multiplicar el total de puntos por \\(12\\) y, luego, dividir ese resultado entre \\(100\\).</div><p>¿Cuál o cuáles rutas llevan al reparto correcto?</p>",
+      "opciones": {
+        "A": "Solo la ruta B lleva al reparto correcto.",
+        "B": "Solo la ruta A lleva al reparto correcto.",
+        "C": "Las dos rutas llevan al reparto correcto.",
+        "D": "Ninguna de las dos rutas lleva al reparto correcto."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad de comparar y validar diversas vías de solución de problemas que involucran cantidades.",
+      "justificacion_correcta": "El total de partes es \\(12 + 9 + 15 = 36\\). Cada parte vale \\(\\dfrac{36.000}{36} = 1.000\\) puntos, así que a Ruth, con \\(12\\) partes, le corresponden \\(12\\times 1.000 = 12.000\\) puntos. Eso es exactamente lo que hace la ruta A. La ruta B divide entre \\(100\\) en lugar de entre \\(36\\) y arroja \\(4.320\\) puntos, un valor equivocado.",
+      "opciones_incorrectas": {
+        "D": "Descarta las dos rutas porque cree que el reparto debe hacerse en partes iguales entre las \\(3\\) integrantes.",
+        "C": "Ve el \\(12\\) en las dos rutas y las acepta, sin notar que la ruta B divide entre \\(100\\) y no entre \\(36\\).",
+        "A": "Lee las \\(12\\) piezas como si fueran un \\(12\\%\\) del total y por eso admite la división entre \\(100\\)."
+      }
+    },
+    {
+      "id": "P-math-11-p2-09",
+      "numero": 2,
+      "enunciado": "<p>Una bomba llena un tanque a caudal constante. A los <b>\\(5\\) minutos</b> el tanque contiene <b>\\(40\\) litros</b> y a los <b>\\(20\\) minutos</b> contiene <b>\\(250\\) litros</b>. Para hallar el caudal medio en L/min, alguien escribió estos pasos:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Volumen añadido: \\(250\\ \\text{L} - 40\\ \\text{L} = 210\\ \\text{L}\\)<br><b>Paso 2.</b> Tiempo transcurrido: \\(20\\ \\text{min} - 5\\ \\text{min} = 15\\ \\text{min}\\)<br><b>Paso 3.</b> Cociente: \\(\\dfrac{210\\ \\text{min}}{15\\ \\text{L}} = 14\\ \\text{min/L}\\)</div><p>¿En qué paso está el error y por qué?</p>",
+      "opciones": {
+        "A": "En el paso 3, porque el cociente correcto es \\(\\dfrac{210\\ \\text{L}}{15\\ \\text{min}} = 14\\) L/min.",
+        "B": "En el paso 1, porque el volumen añadido es \\(250\\) L y no \\(210\\) L.",
+        "C": "En el paso 1, porque el volumen añadido debía calcularse como \\(40\\ \\text{L} - 250\\ \\text{L} = -210\\) L.",
+        "D": "En el paso 2, porque el tiempo que corresponde usar es el total desde el arranque, es decir, \\(20\\) minutos."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
+      "que_evalua": "La capacidad para reconocer en qué parte de la solución de un problema hay un error y explicar el porqué de dicho error.",
+      "justificacion_correcta": "El caudal medio es el volumen añadido dividido entre el tiempo transcurrido: \\(\\dfrac{210\\ \\text{L}}{15\\ \\text{min}} = 14\\) L/min. En el paso 3 los números son los correctos \\((210\\) y \\(15)\\), pero las unidades quedaron invertidas: aparece min/L en lugar de L/min. Por eso el error está en el paso 3.",
+      "opciones_incorrectas": {
+        "D": "El caudal medio se calcula sobre el intervalo observado, que va de los \\(5\\) a los \\(20\\) minutos; el paso 2 está bien.",
+        "B": "Los \\(250\\) L son el contenido final, no lo añadido; el paso 1 resta correctamente \\(250 - 40\\).",
+        "C": "Invertir el orden de la resta daría un volumen negativo, imposible en un tanque que se está llenando."
+      }
+    },
+    {
+      "id": "P-math-11-p2-01",
+      "numero": 3,
+      "enunciado": "<p>El comité de movilidad de un colegio consultó a los <b>\\(240\\)</b> estudiantes de la jornada de la tarde sobre el medio en que llegan a clase. Los resultados fueron: <b>\\(15\\%\\)</b> en bicicleta, <b>\\(35\\%\\)</b> en bus, <b>\\(30\\%\\)</b> a pie y el <b>\\(20\\%\\)</b> restante en metro. ¿Cuál de las siguientes representaciones traduce correctamente esos porcentajes a cantidades de estudiantes?</p>",
       "opciones": {
         "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medio de transporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bicicleta</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bus</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">84</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">A pie</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Metro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">48</td></tr></table>",
         "B": "Gráfica B.",
@@ -53,11 +103,11 @@
       "dificultad": "MEDIA",
       "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
       "que_evalua": "La capacidad de los estudiantes para calcular partes de un todo a partir de la cantidad total y los porcentajes de cada parte, y buscar una representación alterna de estas cantidades en forma de tabla, diagramas de barras o diagramas circulares.",
-      "justificacion_correcta": "Se convierte cada porcentaje a cantidad sobre los \\(240\\) estudiantes: bicicleta \\(0{,}15\\times 240 = 36\\) y bus \\(0{,}35\\times 240 = 84\\). A pie van \\(72\\) (dato). El resto usa metro: \\(240 - (36 + 84 + 72) = 48\\). La tabla de la opción A muestra exactamente \\(36, 84, 72\\) y \\(48\\), que suman \\(240\\); por eso es la representación correcta.",
+      "justificacion_correcta": "Cada porcentaje se convierte en cantidad sobre los \\(240\\) estudiantes: \\(0{,}15\\times 240 = 36\\) en bicicleta, \\(0{,}35\\times 240 = 84\\) en bus, \\(0{,}30\\times 240 = 72\\) a pie y \\(0{,}20\\times 240 = 48\\) en metro. La tabla de la opción B recoge justamente \\(36, 84, 72\\) y \\(48\\), cifras que suman \\(240\\).",
       "opciones_incorrectas": {
-        "B": "Usa los porcentajes \\((15, 35, 30, 20)\\) como si fueran cantidades de estudiantes, sin multiplicar por \\(240\\); esos valores suman \\(100\\), no \\(240\\).",
-        "C": "Asigna al metro \\(84\\) estudiantes (copia el valor del bus); entonces \\(36 + 84 + 72 + 84 = 276\\) y no cierra en \\(240\\).",
-        "D": "Intercambia las etiquetas de 'a pie' y 'metro': muestra \\(48\\) a pie y \\(72\\) en metro, cuando en realidad van \\(72\\) a pie y \\(48\\) en metro; por eso la representación es incorrecta."
+        "A": "El diagrama de barras repite los porcentajes \\((15, 35, 30, 20)\\) como si fueran estudiantes; esos valores suman \\(100\\) y no \\(240\\).",
+        "D": "El diagrama circular asigna \\(84\\) estudiantes al metro, el mismo valor del bus, con lo cual el total llega a \\(276\\) y no a \\(240\\).",
+        "C": "El diagrama de barras horizontales intercambia las cantidades de 'a pie' y 'metro': muestra \\(48\\) a pie y \\(72\\) en metro, cuando corresponde lo contrario."
       },
       "opciones_imagenes": {
         "B": "assets/banco-mat-11-p2/q01_opB.png",
@@ -66,41 +116,66 @@
       }
     },
     {
-      "id": "P-math-11-p2-02",
-      "numero": 2,
-      "enunciado": "<p>Al estudiar el alcance de un proyectil, un estudiante obtiene la expresión <b>\\(\\dfrac{12x^{5} - 8x^{4} + 4x^{3}}{4x^{2}}\\)</b>, válida para valores de \\(x\\) distintos de \\(0\\). ¿Cuál de las siguientes expresiones es equivalente a esa fracción?</p>",
+      "id": "P-math-11-p2-10",
+      "numero": 4,
+      "enunciado": "<p>Un tablero rectangular de anuncios tiene un área de <b>\\(24.000\\ \\text{cm}^{2}\\)</b> y se cubrirá por completo con láminas de corcho de tres tamaños, con la condición de usar <b>al menos una lámina de cada tamaño</b>. La tabla indica el área que cubre cada lámina.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tamaño de la lámina</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Área (cm²)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Grande</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5.400</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mediana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.600</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pequeña</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1.200</td></tr></table><p>Un auxiliar propone este procedimiento para estimar la <b>cantidad mínima</b> de láminas que hay que comprar:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Sumar las áreas de una lámina grande, una mediana y una pequeña: \\(5.400 + 3.600 + 1.200 = 10.200\\ \\text{cm}^{2}\\).<br><b>Paso 2.</b> Dividir \\(24.000\\ \\text{cm}^{2}\\) entre \\(10.200\\ \\text{cm}^{2}\\).</div><p>¿Es acertado el procedimiento propuesto?</p>",
       "opciones": {
-        "A": "\\(3x^{3} - 2x^{2} + x\\)",
-        "B": "\\(3x^{5} - 2x^{4} + x^{3}\\)",
-        "C": "\\(12x^{3} - 8x^{2} + 4x\\)",
-        "D": "\\(3x^{3} - 2x^{2} + 4x^{3}\\)"
+        "A": "Sí, porque el paso 1 ya garantiza que se use al menos una lámina de cada tamaño.",
+        "B": "Sí, porque conocer el área del tablero y la de cada lámina basta para decidir cuántas comprar.",
+        "C": "No, porque al dividir áreas se pierden de vista las medidas del tablero y de las láminas.",
+        "D": "No, porque el cociente \\(24.000 \\div 10.200\\) no da un número entero."
       },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para reconocer si un plan de acción propuesto es correcto o permite resolver un problema en contextos geométricos.",
+      "justificacion_correcta": "Comparar solo áreas no alcanza: para cubrir el tablero sin huecos ni traslapos hay que conocer además el largo y el alto del tablero y de cada lámina, porque dos tableros con la misma área pero distinta forma pueden exigir cantidades diferentes de láminas. Por eso el procedimiento no es acertado: dividir áreas ignora esas medidas.",
+      "opciones_incorrectas": {
+        "B": "El cociente de áreas no dice cómo encajan las láminas; la forma y las medidas son decisivas.",
+        "D": "\\(24.000 \\div 10.200 \\approx 2{,}35\\) en efecto no es entero, pero aunque lo fuera el plan seguiría siendo incorrecto, porque omite las medidas.",
+        "A": "Confunde incluir una lámina de cada tamaño (paso 1) con haber resuelto el problema."
+      }
+    },
+    {
+      "id": "P-math-11-p2-20",
+      "numero": 5,
+      "enunciado": "<p>Al programar una animación, <b>Sebastián</b> debe multiplicar los polinomios \\(4t^{5} - t^{2} + 6\\) y \\(-2t^{3} + 7t\\). Antes de operar anticipa que el mayor exponente de la variable en el producto será <b>\\(8\\)</b>. ¿Cuál valoración de esa anticipación es acertada?</p>",
+      "opciones": {
+        "A": "No es acertada: el producto conserva el grado mayor de los dos factores, es decir, \\(5\\).",
+        "B": "No es acertada: los grados de los factores se multiplican, de modo que el mayor exponente sería \\(15\\).",
+        "C": "Es acertada: el término dominante sale de \\(4t^{5}\\cdot(-2t^{3}) = -8t^{8}\\), y al multiplicar potencias de igual base los exponentes se suman.",
+        "D": "No es acertada: el grado mayor se duplica, de modo que el exponente sería \\(10\\)."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
       "cmc": "Álgebra y cálculo",
       "dificultad": "MEDIA",
       "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
-      "que_evalua": "La capacidad de los estudiantes para determinar un polinomio equivalente a uno dado utilizando simplificación.",
-      "justificacion_correcta": "Al dividir cada término del numerador entre \\(4x^{2}\\) se restan los exponentes y se dividen los coeficientes: \\(\\dfrac{12x^{5}}{4x^{2}} = 3x^{3}\\), \\(\\dfrac{8x^{4}}{4x^{2}} = 2x^{2}\\) y \\(\\dfrac{4x^{3}}{4x^{2}} = x\\). La expresión equivalente es \\(3x^{3} - 2x^{2} + x\\).",
+      "que_evalua": "La capacidad de los estudiantes para reconocer el grado de un polinomio proveniente del producto de dos polinomios.",
+      "justificacion_correcta": "El término de mayor exponente del producto proviene de multiplicar los términos de mayor grado de cada factor: \\(4t^{5}\\cdot(-2t^{3}) = -8t^{5+3} = -8t^{8}\\). Ningún otro producto parcial alcanza el exponente \\(8\\), así que no hay cancelación posible y el grado del producto es \\(8\\). La anticipación de Sebastián es acertada.",
       "opciones_incorrectas": {
-        "B": "Divide solo los coeficientes \\((3, 2, 1)\\), pero conserva los exponentes originales \\((5, 4, 3)\\) sin restarlos.",
-        "C": "Resta los exponentes correctamente, pero no divide los coeficientes, dejando \\(12, 8\\) y \\(4\\).",
-        "D": "Simplifica bien los dos primeros términos, pero no divide el tercero y lo deja como \\(4x^{3}\\)."
+        "B": "Multiplicar los grados no corresponde: al multiplicar potencias de igual base los exponentes se suman, no se multiplican.",
+        "A": "El producto no conserva el grado mayor de los factores: \\(t^{5}\\cdot t^{3}\\) genera un exponente superior a \\(5\\).",
+        "D": "Duplicar el grado mayor daría \\(10\\), pero la regla es sumar los dos grados: \\(5 + 3 = 8\\)."
       }
     },
     {
       "id": "P-math-11-p2-03",
-      "numero": 3,
-      "enunciado": "<p>Para señalizar un sendero, tres estacas forman el triángulo \\(RST\\). Un topógrafo registró los signos del seno y del coseno de sus ángulos interiores:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">\\(\\operatorname{sen}(R) > 0,\\quad \\operatorname{sen}(S) > 0,\\quad \\operatorname{sen}(T) > 0\\)<br>\\(\\cos(R) > 0,\\quad \\cos(S) > 0,\\quad \\cos(T) < 0\\)</div><p>Con esta información, ¿de qué tipo es el triángulo \\(RST\\) atendiendo a la medida de sus ángulos?</p>",
+      "numero": 6,
+      "enunciado": "<p>Un programa de diseño reporta, para los tres ángulos interiores del triángulo \\(JKL\\) que forma una pieza de vitral, los siguientes signos de la tangente:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">\\(\\tan(J) > 0,\\quad \\tan(K) > 0,\\quad \\tan(L) < 0\\)</div><p>¿Qué conclusión se desprende de ese reporte?</p>",
       "opciones": {
-        "A": "Es un triángulo rectángulo, pues uno de sus ángulos mide exactamente 90°.",
-        "B": "Es un triángulo equiángulo, pues sus tres ángulos tienen la misma medida.",
-        "C": "Es un triángulo acutángulo, pues ninguno de sus ángulos alcanza los 90°.",
-        "D": "Es un triángulo obtusángulo, pues uno de sus ángulos supera los 90°."
+        "A": "El ángulo \\(L\\) es obtuso y, en consecuencia, \\(J\\) y \\(K\\) suman menos de \\(90^\\circ\\).",
+        "B": "Los tres ángulos miden lo mismo, pues las tres tangentes se calculan con la misma razón.",
+        "C": "El ángulo \\(L\\) mide exactamente \\(90^\\circ\\), de modo que la pieza tiene una esquina recta.",
+        "D": "Los tres ángulos son agudos, porque \\(J\\) y \\(K\\) tienen tangente positiva."
       },
-      "clave": "D",
+      "clave": "A",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.2",
@@ -108,24 +183,176 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana y otros (polares, cilíndricos y esféricos) y en particular de las curvas y figuras cónicas.",
       "que_evalua": "La capacidad para reconocer características de las funciones trigonométricas y el círculo unitario.",
-      "justificacion_correcta": "Como todo ángulo interior de un triángulo está entre \\(0^\\circ\\) y \\(180^\\circ\\), su seno es siempre positivo. El ángulo \\(T\\) cumple \\(\\operatorname{sen}(T) > 0\\) y \\(\\cos(T) < 0\\): en el círculo unitario eso lo sitúa en el segundo cuadrante, por lo que \\(T\\) mide más de \\(90^\\circ\\). Al tener un ángulo obtuso, el triángulo es obtusángulo.",
+      "justificacion_correcta": "Todo ángulo interior de un triángulo mide entre \\(0^\\circ\\) y \\(180^\\circ\\). En ese recorrido del círculo unitario la tangente es positiva solo entre \\(0^\\circ\\) y \\(90^\\circ\\) y negativa entre \\(90^\\circ\\) y \\(180^\\circ\\). Entonces \\(J\\) y \\(K\\) son agudos y \\(L\\) es obtuso. Como los tres suman \\(180^\\circ\\), se tiene \\(J + K = 180^\\circ - L < 90^\\circ\\).",
       "opciones_incorrectas": {
-        "A": "Asocia \\(\\cos(T) < 0\\) con un ángulo recto, pero un ángulo de \\(90^\\circ\\) tiene \\(\\cos = 0\\), no negativo.",
-        "B": "Confunde la igualdad de signos de \\(R\\) y \\(S\\) con que los tres ángulos midan lo mismo.",
-        "C": "Se queda con que los tres senos son positivos y concluye que todos los ángulos son agudos, sin atender que \\(\\cos(T) < 0\\)."
+        "C": "En \\(90^\\circ\\) la tangente no está definida, nunca toma un valor negativo; por eso \\(L\\) no puede ser recto.",
+        "B": "El signo de la tangente no informa sobre la igualdad de las medidas: aquí \\(L\\) es obtuso y los otros dos no.",
+        "D": "\\(J\\) y \\(K\\) sí son agudos, pero \\(\\tan(L) < 0\\) obliga a que \\(L\\) quede entre \\(90^\\circ\\) y \\(180^\\circ\\)."
+      }
+    },
+    {
+      "id": "P-math-11-p2-12",
+      "numero": 7,
+      "enunciado": "<p>Un servicio de almacenamiento en la nube ofrece dos planes, donde \\(x\\) representa la <b>cantidad de gigas adicionales</b> consumidos en el mes:</p><div style=\"text-align:center;margin:12px 0\"><div style=\"display:inline-block;vertical-align:top;width:230px;margin:6px 10px;border:1px solid #C7163C;border-radius:8px;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#1A1613;text-align:center\"><div style=\"background:#A8132F;color:#fff;font-weight:700;padding:7px 0;font-size:15px\">Plan Azul</div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Cargo fijo: <b>$30.000</b></div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Por cada giga adicional: <b>$2.500</b></div></div><div style=\"display:inline-block;vertical-align:top;width:230px;margin:6px 10px;border:1px solid #C7163C;border-radius:8px;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#1A1613;text-align:center\"><div style=\"background:#A8132F;color:#fff;font-weight:700;padding:7px 0;font-size:15px\">Plan Verde</div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Cargo fijo: <b>$18.000</b></div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Por cada giga adicional: <b>$4.000</b></div></div></div><p>Un usuario plantea el siguiente procedimiento:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Costo total con el plan Azul:\\[\\,C_A = 30.000 + 2.500\\,x\\,\\]<b>Paso 2.</b> Costo total con el plan Verde:\\[\\,C_V = 18.000 + 4.000\\,x\\,\\]<b>Paso 3.</b> Plantear y resolver la desigualdad:\\[\\,30.000 + 2.500\\,x \\;<\\; 18.000 + 4.000\\,x\\,\\]</div><p>¿Qué se obtiene al resolver esa desigualdad?</p>",
+      "opciones": {
+        "A": "El rango de precios que se pagaría al escoger el plan Verde.",
+        "B": "El rango de gigas en los que el plan Azul resulta más caro que el plan Verde.",
+        "C": "El rango de precios que se pagaría al escoger el plan Azul.",
+        "D": "El rango de gigas en los que el plan Azul resulta más barato que el plan Verde."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico resultados obtenidos mediante procesos de aproximación sucesiva, rangos de variación y límites en situaciones de medición.",
+      "que_evalua": "La capacidad de los estudiantes para plantear y resolver desigualdades para representar problemas que impliquen encontrar rangos de valores.",
+      "justificacion_correcta": "La desigualdad \\(30.000 + 2.500x < 18.000 + 4.000x\\) dice, en palabras, que el costo total del plan Azul es <b>menor</b> que el del plan Verde. Al resolverla queda \\(12.000 < 1.500x\\), es decir \\(x > 8\\): se obtiene el conjunto de valores de \\(x\\) (gigas adicionales) para los cuales conviene el plan Azul.",
+      "opciones_incorrectas": {
+        "B": "Lee el símbolo \\(<\\) como 'mayor que' e invierte el sentido de la comparación.",
+        "A": "Toma \\(x\\) como si fuera un costo, cuando \\(x\\) cuenta gigas adicionales.",
+        "C": "Vuelve a confundir \\(x\\) con un costo; \\(x\\) representa gigas y no pesos."
+      }
+    },
+    {
+      "id": "P-math-11-p2-11",
+      "numero": 8,
+      "enunciado": "<p>En el dial de un torno quedaron marcados dos topes: uno en <b>\\(\\dfrac{3}{5}\\)</b> de vuelta y otro en <b>\\(\\dfrac{4}{5}\\)</b> de vuelta. La figura los ubica sobre una recta numérica entre \\(0\\) y \\(1\\). Un aprendiz sostiene que cualquier marca intermedia solo puede escribirse como una fracción de <b>denominador \\(5\\)</b>.</p>[[IMG]]<p>¿Cuál de las siguientes valoraciones resuelve la cuestión?</p>",
+      "opciones": {
+        "A": "El aprendiz acierta: \\(\\dfrac{3{,}5}{5}\\) queda entre las dos marcas y conserva el denominador \\(5\\).",
+        "B": "El aprendiz se equivoca: entre las dos marcas caben infinitas fracciones, de modo que alguna tendrá forzosamente denominador \\(5\\).",
+        "C": "El aprendiz se equivoca: \\(\\dfrac{7}{10}\\) queda entre las dos marcas y su denominador es \\(10\\).",
+        "D": "El aprendiz acierta: al crecer el denominador la fracción se hace más pequeña, así que entre ambas no cabe ninguna otra."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco la densidad e incompletitud de los números racionales a través de métodos numéricos, geométricos y algebraicos.",
+      "que_evalua": "La capacidad para reconocer y comparar números reales representados como fracción.",
+      "justificacion_correcta": "Basta con exhibir un contraejemplo. Al escribir las dos marcas con denominador \\(10\\) se tiene \\(\\dfrac{3}{5} = \\dfrac{6}{10}\\) y \\(\\dfrac{4}{5} = \\dfrac{8}{10}\\); entre ellas queda \\(\\dfrac{7}{10}\\), cuyo denominador es \\(10\\) y no \\(5\\). Por lo tanto, lo que sostiene el aprendiz es falso.",
+      "opciones_incorrectas": {
+        "A": "\\(\\dfrac{3{,}5}{5}\\) no es una fracción de números enteros; fuerza el denominador \\(5\\) de manera artificial.",
+        "D": "Que la fracción disminuya al crecer el denominador no impide que existan valores intermedios escritos con otro denominador.",
+        "B": "Es cierto que entre ambas marcas hay infinitas fracciones, pero de ahí no se sigue que alguna tenga denominador \\(5\\); de hecho, ninguna lo tiene."
+      },
+      "imagen_figura": "assets/banco-mat-11-p2/q11.png"
+    },
+    {
+      "id": "P-math-11-p2-18",
+      "numero": 9,
+      "enunciado": "<p>La densidad lineal de un cable es el cociente entre su masa y su longitud. <b>Rosa</b> tiene <b>\\(40\\) cm</b> de cable de cobre y, para estimar su masa, multiplica esa longitud por la densidad lineal del cable, <b>\\(2.400\\ \\text{g/m}\\)</b>, y anota como resultado \\(96.000\\) g. ¿Es correcto el cálculo de Rosa?</p>",
+      "opciones": {
+        "A": "Sí, porque la masa se obtiene multiplicando la densidad lineal por la longitud, sin más ajustes.",
+        "B": "No, porque se equivocó al manejar los ceros de la multiplicación.",
+        "C": "Sí, porque \\(40\\) cm y \\(2.400\\) g/m ya están en unidades compatibles.",
+        "D": "No, porque antes de multiplicar debía expresar la longitud en metros."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
+      "que_evalua": "La capacidad de justificar la solución de un problema que involucra diferentes magnitudes y tipos de medida.",
+      "justificacion_correcta": "Multiplicar es la operación apropiada, pues masa \\(=\\) densidad lineal \\(\\times\\) longitud; el problema está en las unidades: la densidad viene en g/m y la longitud, en centímetros. Antes de multiplicar hay que convertir \\(40\\) cm en \\(0{,}4\\) m, con lo cual \\(0{,}4\\times 2.400 = 960\\) g y no \\(96.000\\) g. Por eso el cálculo de Rosa está mal: le faltó la conversión de unidades.",
+      "opciones_incorrectas": {
+        "B": "La multiplicación \\(40\\times 2.400\\) está bien resuelta; lo que falla es la unidad en que se expresó la longitud.",
+        "A": "La relación masa \\(=\\) densidad lineal \\(\\times\\) longitud es correcta, pero exige que la longitud esté en metros.",
+        "C": "Los centímetros no son compatibles con g/m, pues \\(1\\) m equivale a \\(100\\) cm."
+      }
+    },
+    {
+      "id": "P-math-11-p2-08",
+      "numero": 10,
+      "enunciado": "<p>Una finca cafetera entrega su cosecha en <b>cuatro</b> lotes. La tabla registra los kilos recolectados en los tres lotes ya entregados. Si el administrador quiere que el <b>promedio</b> de los cuatro lotes sea de <b>\\(58\\)</b> kilos, ¿cuántos kilos debe aportar el <b>cuarto</b> lote?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lote</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Kilos recolectados</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Primero</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">54</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Segundo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">61</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tercero</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">49</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">?</td></tr></table>",
+      "opciones": {
+        "A": "\\(68\\)",
+        "B": "\\(58\\)",
+        "C": "\\(41\\)",
+        "D": "\\(55\\)"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La capacidad de los estudiantes para interpretar el concepto de promedio y utilizar procedimientos para solucionar ecuaciones de primer grado en un contexto con pocos datos.",
+      "justificacion_correcta": "Para que el promedio de los cuatro lotes sea \\(58\\), la suma de los cuatro debe ser \\(4\\times 58 = 232\\) kilos. Los tres lotes conocidos suman \\(54 + 61 + 49 = 164\\), de modo que el cuarto debe aportar \\(232 - 164 = 68\\) kilos.",
+      "opciones_incorrectas": {
+        "C": "Divide la suma parcial entre \\(4\\): \\(164 \\div 4 = 41\\), y toma ese valor como el dato faltante.",
+        "B": "Supone que el cuarto lote debe coincidir con el promedio buscado; con \\(58\\) kilos la suma sería \\(222\\) y el promedio, \\(55{,}5\\).",
+        "D": "Promedia únicamente los tres lotes entregados: \\(164 \\div 3 \\approx 55\\)."
+      }
+    },
+    {
+      "id": "P-math-11-p2-19",
+      "numero": 11,
+      "enunciado": "<p>En un vivero se tiende una manguera desde la llave \\(S\\) hasta la maceta \\(G\\) siguiendo los bordes de canteros cuadrados de lado \\(L = 7\\) metros. La figura muestra dos trayectos posibles; en ambos la manguera avanza únicamente por los bordes de los canteros. Un operario sostiene que, por cualquiera de los dos trayectos, la manguera mide <b>\\(35\\) metros</b>.</p>[[IMG]]<p>¿Es verdadera esa afirmación?</p>",
+      "opciones": {
+        "A": "Sí, porque en cada trayecto se recorren cinco lados y cada lado mide \\(7\\) metros.",
+        "B": "No, porque habría que multiplicar el perímetro de un cantero por los cinco tramos recorridos.",
+        "C": "Sí, porque entre los dos trayectos quedan encerrados cuatro canteros de \\(7\\) metros de lado.",
+        "D": "No, porque habría que dividir el perímetro de un cantero entre la medida de su lado y multiplicar por los tramos."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La capacidad para justificar si un procedimiento dado permite solucionar un problema.",
+      "justificacion_correcta": "En los dos trayectos la manguera recorre \\(5\\) lados de cantero, sin importar cómo se escalone el recorrido. Como cada lado mide \\(7\\) metros, la longitud total es \\(5\\times 7 = 35\\) metros. La afirmación del operario es verdadera porque en ambos casos se recorren cinco lados de \\(7\\) metros.",
+      "opciones_incorrectas": {
+        "D": "Ese cociente da \\(4\\) (los lados de un cuadrado) y no guarda relación con la longitud que se recorre.",
+        "C": "Llega al veredicto correcto por una razón que no corresponde: el área encerrada entre los trayectos no determina la longitud recorrida.",
+        "B": "No se recorre el perímetro completo de ningún cantero, sino cinco de sus lados; \\(28\\times 5 = 140\\) m sería un valor muy superior al real."
+      },
+      "imagen_figura": "assets/banco-mat-11-p2/q19.png"
+    },
+    {
+      "id": "P-math-11-p2-02",
+      "numero": 12,
+      "enunciado": "<p>En un banco de pruebas, la energía acumulada por un motor durante un ensayo se describe con <b>\\(18y^{7} - 27y^{5} + 9y^{4}\\)</b> y el tiempo empleado, con <b>\\(9y^{3}\\)</b>, para valores de \\(y\\) distintos de \\(0\\). La potencia media del ensayo es el cociente entre esas dos cantidades. ¿Cuál expresión es equivalente a dicho cociente?</p>",
+      "opciones": {
+        "A": "\\(2y^{4} - 3y^{2} + 9y^{4}\\)",
+        "B": "\\(2y^{7} - 3y^{5} + y^{4}\\)",
+        "C": "\\(18y^{4} - 27y^{2} + 9y\\)",
+        "D": "\\(2y^{4} - 3y^{2} + y\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La capacidad de los estudiantes para determinar un polinomio equivalente a uno dado utilizando simplificación.",
+      "justificacion_correcta": "Se divide cada término del numerador entre \\(9y^{3}\\): los coeficientes se dividen y los exponentes se restan. Así, \\(\\dfrac{18y^{7}}{9y^{3}} = 2y^{4}\\), \\(\\dfrac{27y^{5}}{9y^{3}} = 3y^{2}\\) y \\(\\dfrac{9y^{4}}{9y^{3}} = y\\). La potencia media equivale a \\(2y^{4} - 3y^{2} + y\\).",
+      "opciones_incorrectas": {
+        "C": "Resta bien los exponentes \\((4, 2, 1)\\), pero deja intactos los coeficientes \\(18, 27\\) y \\(9\\).",
+        "A": "Simplifica correctamente los dos primeros términos y olvida dividir el tercero, que queda como \\(9y^{4}\\).",
+        "B": "Divide solo los coeficientes \\((2, 3, 1)\\) y conserva los exponentes originales \\((7, 5, 4)\\) sin restarlos."
       }
     },
     {
       "id": "P-math-11-p2-04",
-      "numero": 4,
-      "enunciado": "<p>Tres repartidores de una app de domicilios \\(\\,R_1,\\ R_2\\,\\) y \\(\\,R_3\\,\\) registraron, en minutos, lo que tardaron en entregar cinco pedidos. La tabla recoge esos tiempos.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Repartidor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pedido 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pedido 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pedido 3</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pedido 4</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pedido 5</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">R₁</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">22</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">31</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">19</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">R₂</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">33</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">29</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">R₃</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">23</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td></tr></table><p>Si se compara la <b>mediana</b> de los tiempos de entrega de los tres repartidores, ¿qué enunciado resulta verdadero?</p>",
+      "numero": 13,
+      "enunciado": "<p>Una panadería con tres sucursales anotó, de lunes a viernes, los kilos de pan vendidos en cada una.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Sucursal</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lunes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Martes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Miércoles</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jueves</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Viernes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Norte</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">45</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">41</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">52</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">44</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Centro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">47</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">39</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">55</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sur</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">46</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">46</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">62</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">56</td></tr></table><p>Al comparar la <b>mediana</b> de los kilos vendidos por cada sucursal, ¿qué afirmación resulta verdadera?</p>",
       "opciones": {
-        "A": "El tiempo mediano de R₃ coincide con el de R₂ y es inferior al de R₁.",
-        "B": "El tiempo mediano de R₃ es el más alto de los tres repartidores.",
-        "C": "El tiempo mediano de R₃ coincide con el de R₁ y es inferior al de R₂.",
-        "D": "El tiempo mediano de R₃ queda por encima del de R₁ y por debajo del de R₂."
+        "A": "La mediana de Sur es igual a la de Centro y mayor que la de Norte.",
+        "B": "La mediana de Sur queda por encima de la de Norte y por debajo de la de Centro.",
+        "C": "La mediana de Sur es la más alta de las tres sucursales.",
+        "D": "La mediana de Sur es la más baja de las tres sucursales."
       },
-      "clave": "C",
+      "clave": "B",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.1",
@@ -133,22 +360,148 @@
       "dificultad": "MEDIA",
       "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
       "que_evalua": "La capacidad de los estudiantes para determinar y comparar la mediana de diferentes conjuntos de datos presentados en una tabla.",
-      "justificacion_correcta": "Se ordenan de menor a mayor los cinco tiempos de cada repartidor y se toma el del medio: \\(R_1 = 19, 22, 25, 27, 31 \\Rightarrow 25\\); \\(R_2 = 18, 26, 28, 29, 33 \\Rightarrow 28\\); \\(R_3 = 18, 23, 25, 26, 30 \\Rightarrow 25\\). Por tanto, la mediana de \\(R_3\\) \\((25)\\) es igual a la de \\(R_1\\) \\((25)\\) y menor que la de \\(R_2\\) \\((28)\\).",
+      "justificacion_correcta": "Se ordenan de menor a mayor los cinco datos de cada sucursal y se toma el central: Norte \\(= 38, 41, 44, 45, 52 \\Rightarrow 44\\); Centro \\(= 36, 39, 47, 50, 55 \\Rightarrow 47\\); Sur \\(= 30, 46, 46, 56, 62 \\Rightarrow 46\\). Entonces \\(44 < 46 < 47\\): la mediana de Sur supera a la de Norte y es menor que la de Centro.",
       "opciones_incorrectas": {
-        "A": "Empareja a \\(R_3\\) con \\(R_2\\) en vez de con \\(R_1\\); en realidad la mediana de \\(R_2\\) es \\(28\\), distinta de la de \\(R_3\\) \\((25)\\).",
-        "B": "Toma el valor central de la fila sin ordenar \\((26\\) para \\(R_3)\\) y supone que es el mayor de los tres, cuando \\(R_2\\) llega a \\(28\\).",
-        "D": "Confunde la mediana con el promedio: el de \\(R_3\\) es \\(24{,}4\\); el de \\(R_1\\), \\(24{,}8\\); y el de \\(R_2\\), \\(26{,}8\\), lo que sugeriría un orden distinto."
+        "A": "Empareja a Sur con Centro por la cercanía de los valores, pero \\(46\\) y \\(47\\) son medianas distintas.",
+        "D": "Toma el dato que ocupa el lugar central de la fila sin ordenar \\((30\\) en Sur\\()\\) y por eso la juzga la menor.",
+        "C": "Compara promedios en lugar de medianas: \\(48\\) en Sur, \\(45{,}4\\) en Centro y \\(44\\) en Norte."
+      }
+    },
+    {
+      "id": "P-math-11-p2-13",
+      "numero": 14,
+      "enunciado": "<p>La gráfica registra la participación de cuatro empresas de mensajería en un país. Las empresas <b>\\(M_1\\)</b> y <b>\\(M_2\\)</b> reparten con <b>flota propia</b>, mientras que <b>\\(M_3\\)</b> y <b>\\(M_4\\)</b> <b>subcontratan</b> el reparto. Un analista propone este procedimiento:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Sumar las participaciones de \\(M_1\\) y \\(M_2\\).<br><b>Paso 2.</b> Dividir esa suma entre \\(100\\).<br>[[IMG]]<b>Paso 3.</b> Multiplicar el resultado por el número total de usuarios de mensajería del país.</div><p>¿Qué dato se obtiene al efectuar el procedimiento?</p>",
+      "opciones": {
+        "A": "El porcentaje de usuarios atendidos por empresas que subcontratan el reparto.",
+        "B": "La cantidad de usuarios atendidos por empresas que subcontratan el reparto.",
+        "C": "El porcentaje de usuarios atendidos por empresas con flota propia.",
+        "D": "La cantidad de usuarios atendidos por empresas con flota propia."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
+      "que_evalua": "La capacidad para identificar el problema que se puede resolver al realizar un procedimiento que involucra información presentada en una gráfica.",
+      "justificacion_correcta": "\\(M_1\\) y \\(M_2\\) son las empresas con flota propia y sus participaciones suman \\(52\\% + 18\\% = 70\\%\\). Al dividir esa suma entre \\(100\\) se obtiene la fracción \\(0{,}70\\) y, al multiplicarla por el total de usuarios del país, resulta la <b>cantidad</b> de personas atendidas por empresas con flota propia.",
+      "opciones_incorrectas": {
+        "A": "Cambia el grupo (las que subcontratan son \\(M_3\\) y \\(M_4\\)) y, además, se queda en un porcentaje.",
+        "B": "El grupo es el equivocado: los pasos usan a \\(M_1\\) y \\(M_2\\), que reparten con flota propia.",
+        "C": "Multiplicar por el total de usuarios convierte la fracción en un número de personas; el resultado ya no es un porcentaje."
+      },
+      "imagen_figura": "assets/banco-mat-11-p2/q13.png"
+    },
+    {
+      "id": "P-math-11-p2-14",
+      "numero": 15,
+      "enunciado": "<p>En una guía de repaso, <b>Camilo</b> debía simplificar la expresión \\(-(9p - 3q - 4p + 7q)\\,5p\\), pero su desarrollo quedó <b>equivocado</b>:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Expresión:</b> \\(-(9p - 3q - 4p + 7q)\\,5p\\)<br><br><b>Paso 1.</b> Agrupar términos semejantes: \\(-(9p - 4p - 3q + 7q)\\,5p\\)<br><b>Paso 2.</b> Reducir lo que está dentro del paréntesis: \\((5p + 4q)\\,5p\\)<br><b>Paso 3.</b> Multiplicar los factores: \\(25p^{2} + 20pq\\)<br><b>Paso 4.</b> Extraer factor común: \\(5p(5p + 4q)\\)</div><p>¿En qué paso se equivocó Camilo?</p>",
+      "opciones": {
+        "A": "En el paso 2, porque el signo menos de afuera debe conservarse, así: \\(-(5p + 4q)\\,5p\\).",
+        "B": "En el paso 4, porque el factor común de los dos términos es \\(5\\), así: \\(5(5p^{2} + 4pq)\\).",
+        "C": "En el paso 3, porque el segundo término no lleva la variable \\(q\\), así: \\(25p^{2} + 20p\\).",
+        "D": "En el paso 1, porque debía reunir todos los términos en uno solo, así: \\(-(9p)\\,5p\\)."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad de reconocer propiedades de expresiones algebraicas con coeficientes enteros.",
+      "justificacion_correcta": "Dentro del paréntesis se reduce \\(9p - 4p = 5p\\) y \\(-3q + 7q = 4q\\), de modo que la expresión queda \\(-(5p + 4q)\\,5p\\). En el paso 2 Camilo dejó caer el signo menos que antecede al paréntesis y escribió \\((5p + 4q)\\,5p\\). El desarrollo correcto termina en \\(-25p^{2} - 20pq\\); por eso el error está en el paso 2.",
+      "opciones_incorrectas": {
+        "D": "El paso 1 solo reordena los términos respetando sus signos, lo cual es válido; \\(p\\) y \\(q\\) no pueden combinarse.",
+        "C": "Multiplicar \\((5p + 4q)\\) por \\(5p\\) sí produce \\(25p^{2} + 20pq\\): el paso 3 es coherente con lo escrito en el paso 2.",
+        "B": "El factor común de \\(25p^{2}\\) y \\(20pq\\) es \\(5p\\), y el paso 4 lo extrae correctamente."
+      }
+    },
+    {
+      "id": "P-math-11-p2-16",
+      "numero": 16,
+      "enunciado": "<p>En acústica musical, la distancia en <b>semitonos</b> entre dos notas se relaciona con sus frecuencias mediante <b>\\(s - s_{0} = 12\\,\\log_{2}\\!\\left(\\dfrac{f}{f_{0}}\\right)\\)</b>, donde \\(f_{0}\\) es la frecuencia de la nota de referencia y \\(s_{0}\\), el semitono que ocupa esa nota. Se sabe que, cuando \\(\\dfrac{f}{f_{0}} = 2\\) (una octava), la diferencia \\(s - s_{0}\\) es \\(12\\). ¿En qué semitono queda una nota cuya frecuencia cumple \\(\\dfrac{f}{f_{0}} = 2^{3}\\), si la nota de referencia ocupa el semitono \\(s_{0} = 28\\)?</p>",
+      "opciones": {
+        "A": "\\(8\\)",
+        "B": "\\(76\\)",
+        "C": "\\(64\\)",
+        "D": "\\(31\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La capacidad de los estudiantes para calcular el valor de una variable a partir del valor de las demás variables que se relacionan por medio de una expresión.",
+      "justificacion_correcta": "El dato de calibración confirma la relación: con \\(\\dfrac{f}{f_{0}} = 2\\) se tiene \\(12\\,\\log_{2}(2) = 12\\times 1 = 12\\). Para la nota pedida, \\(\\dfrac{f}{f_{0}} = 2^{3}\\), así que \\(12\\,\\log_{2}(2^{3}) = 12\\times 3 = 36\\). Como esa es la diferencia \\(s - s_{0}\\), se despeja \\(s = 36 + s_{0} = 36 + 28 = 64\\).",
+      "opciones_incorrectas": {
+        "D": "Olvida el factor \\(12\\) y suma directamente el exponente con el semitono de referencia: \\(3 + 28 = 31\\).",
+        "B": "Lee \\(\\log_{2}(2^{3})\\) como \\(4\\) porque cuenta también la base, y obtiene \\(12\\times 4 = 48\\), de donde \\(48 + 28 = 76\\).",
+        "A": "Invierte el despeje \\((s_{0} - s\\) en lugar de \\(s - s_{0})\\) y resta el semitono de referencia: \\(36 - 28 = 8\\)."
+      }
+    },
+    {
+      "id": "P-math-11-p2-06",
+      "numero": 17,
+      "enunciado": "<p>En un taller de refuerzo, tres estudiantes pasaron al tablero a resolver la ecuación \\((2x-5)(x-7) = 3(x-7)\\). Estos fueron sus procedimientos:</p><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:15px\">Lucía</div>\\[\\begin{aligned}2x^{2}-19x+35 &= 3x-21 \\\\[2pt] 2x^{2}-22x+56 &= 0 \\\\[2pt] x^{2}-11x+28 &= 0 \\\\[2pt] (x-4)(x-7) &= 0 \\\\[2pt] x = 4 \\;\\;&\\text{o}\\;\\; x = 7\\end{aligned}\\]</div><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:15px\">Bernardo</div>\\[\\begin{aligned}(2x-5)(x-7) &= 3(x-7) \\\\[2pt] 2x-5 &= 3 \\\\[2pt] 2x &= 8 \\\\[2pt] x &= 4\\end{aligned}\\]</div><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:15px\">Emilia</div>\\[\\begin{aligned}(2x-5)(x-7)-3(x-7) &= 0 \\\\[2pt] (x-7)\\big[(2x-5)-3\\big] &= 0 \\\\[2pt] (x-7)(2x-8) &= 0 \\\\[2pt] x = 7 \\;\\;&\\text{o}\\;\\; x = 4\\end{aligned}\\]</div><p>¿Cuál o cuáles estudiantes desarrollaron un procedimiento <b>correcto</b>?</p>",
+      "opciones": {
+        "A": "Únicamente Lucía.",
+        "B": "Bernardo y Emilia, pero no Lucía.",
+        "C": "Lucía y Emilia, pero no Bernardo.",
+        "D": "Únicamente Bernardo."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La capacidad de los estudiantes para resolver por diferentes métodos ecuaciones cuadráticas que tengan términos factorizados.",
+      "justificacion_correcta": "Lucía desarrolla los productos, reúne todo en un lado y factoriza; Emilia extrae el factor común \\((x-7)\\). Las dos llegan a las soluciones \\(x = 4\\) y \\(x = 7\\). Bernardo, en cambio, divide ambos lados entre \\((x-7)\\) sin considerar el caso \\(x - 7 = 0\\) y por eso pierde la solución \\(x = 7\\). Son correctos los procedimientos de Lucía y Emilia.",
+      "opciones_incorrectas": {
+        "D": "Acepta la división entre \\((x-7)\\) sin advertir que ese factor puede valer cero, y descarta dos vías válidas.",
+        "B": "Da por bueno el procedimiento de Bernardo y, además, rechaza el desarrollo de Lucía, que sí es correcto.",
+        "A": "Reconoce a Lucía, pero descarta la factorización por factor común de Emilia, que también es válida."
+      }
+    },
+    {
+      "id": "P-math-11-p2-17",
+      "numero": 18,
+      "enunciado": "<p>Un vivero organiza una campaña de siembra: la primera semana planta <b>\\(1\\)</b> árbol; la segunda, <b>\\(3\\)</b>; la tercera, <b>\\(5\\)</b>, y, en general, cada semana planta <b>\\(2\\)</b> árboles más que la anterior. El total plantado resulta de sumar lo de todas las semanas. ¿Cuál fórmula permite calcular el <b>total de árboles</b> plantados al cabo de \\(n\\) semanas?</p>",
+      "opciones": {
+        "A": "\\(n(n+1)\\)",
+        "B": "\\(n^{2}\\)",
+        "C": "\\(2n - 1\\)",
+        "D": "\\(\\dfrac{n(n+1)}{2}\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
+      "que_evalua": "La capacidad para modelar situaciones que involucran sucesiones aritméticas.",
+      "justificacion_correcta": "El total acumulado es la suma de los \\(n\\) primeros números impares: para \\(n = 1\\) da \\(1\\); para \\(n = 2\\), \\(1 + 3 = 4\\); para \\(n = 3\\), \\(1 + 3 + 5 = 9\\). Esos resultados son \\(1, 4, 9, \\dots\\), es decir \\(n^{2}\\): la suma de los \\(n\\) primeros impares vale \\(n^{2}\\).",
+      "opciones_incorrectas": {
+        "A": "\\(n(n+1)\\) duplica el resultado: para \\(n = 3\\) daría \\(12\\) y el total real es \\(9\\).",
+        "C": "\\(2n - 1\\) cuenta los árboles plantados en la semana \\(n\\), no el acumulado de todas las semanas.",
+        "D": "\\(\\dfrac{n(n+1)}{2}\\) suma los \\(n\\) primeros números naturales: para \\(n = 3\\) daría \\(6\\) y no \\(9\\)."
       }
     },
     {
       "id": "P-math-11-p2-05",
-      "numero": 5,
-      "enunciado": "<p>Dado un segmento \\(PQ\\), con regla y compás se puede construir un segmento que mida <b>el doble</b> del anterior usando, cada vez, un círculo: con centro en \\(Q\\) y radio \\(PQ\\) se ubica \\(R\\) (de modo que \\(PR\\) es el doble de \\(PQ\\)); con centro en \\(R\\) y radio \\(PR\\) se ubica \\(S\\) (de modo que \\(PS\\) es el doble de \\(PR\\)), y así sucesivamente, como muestra la figura. Si se quiere construir un segmento <b>\\(16\\) veces</b> más grande que \\(PQ\\), ¿cuál es la cantidad <b>mínima</b> de círculos que se deben usar?</p>",
+      "numero": 19,
+      "enunciado": "<p>Para trazar guías sobre una lámina, un dibujante parte del segmento \\(PQ\\) y lo va duplicando con regla y compás: con centro en \\(Q\\) y radio \\(PQ\\) ubica \\(R\\), de manera que \\(PR\\) es el doble de \\(PQ\\); enseguida, con centro en \\(R\\) y radio \\(PR\\) ubica \\(S\\), de manera que \\(PS\\) es el doble de \\(PR\\), y así continúa. La figura resume ese ciclo.</p>[[IMG]]<p>Si necesita una guía <b>\\(64\\) veces</b> más larga que \\(PQ\\), ¿cuál es la cantidad <b>mínima</b> de círculos que debe trazar?</p>",
       "opciones": {
-        "A": "\\(1\\)",
-        "B": "\\(2\\)",
-        "C": "\\(4\\)",
-        "D": "\\(8\\)"
+        "A": "\\(4\\)",
+        "B": "\\(5\\)",
+        "C": "\\(6\\)",
+        "D": "\\(32\\)"
       },
       "clave": "C",
       "competencia": "b",
@@ -158,252 +511,25 @@
       "dificultad": "MEDIA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
       "que_evalua": "La capacidad de los estudiantes para realizar construcciones de nuevos segmentos a partir de un segmento inicial por medio del uso de rayos, rectas, puntos y círculos (compás).",
-      "justificacion_correcta": "Cada círculo duplica la distancia a \\(P\\): con uno se llega a \\(2\\) veces \\(PQ\\), con dos a \\(4\\), con tres a \\(8\\) y con cuatro a \\(16\\) veces. Como \\(16 = 2^{4}\\), se necesitan como mínimo \\(4\\) círculos.",
+      "justificacion_correcta": "Cada círculo duplica la distancia medida desde \\(P\\): con uno se llega a \\(2\\,PQ\\); con dos, a \\(4\\,PQ\\); con tres, a \\(8\\,PQ\\); con cuatro, a \\(16\\,PQ\\); con cinco, a \\(32\\,PQ\\), y con seis, a \\(64\\,PQ\\). Como \\(64 = 2^{6}\\), se requieren como mínimo \\(6\\) círculos.",
       "opciones_incorrectas": {
-        "A": "Cree que basta repetir el procedimiento una sola vez más sobre \\(PS\\) \\((= 4\\,PQ)\\) para llegar a \\(16\\).",
-        "B": "Piensa que con dos círculos más sobre \\(PS\\) ya se llega a \\(16\\), confundiendo cuadruplicar con duplicar.",
-        "D": "Supone que cada círculo añade \\(2\\) veces \\(PQ\\) (suma) en vez de duplicar, así que toma \\(8\\times 2 = 16\\) y responde \\(8\\)."
+        "A": "La figura alcanza \\(4\\,PQ\\) con dos círculos; supone que dos círculos más bastan para llegar a \\(64\\).",
+        "B": "Cuenta mal el exponente y da por hecho que \\(2^{5} = 64\\), cuando \\(2^{5} = 32\\).",
+        "D": "Supone que cada círculo agrega \\(2\\,PQ\\) (suma) en vez de duplicar, y calcula \\(64 \\div 2 = 32\\)."
       },
       "imagen_figura": "assets/banco-mat-11-p2/q05.png"
     },
     {
-      "id": "P-math-11-p2-06",
-      "numero": 6,
-      "enunciado": "<p>Un profesor pide resolver la ecuación \\((x-1)(x+4) = 6(x+4)\\). Tres estudiantes presentan los siguientes procedimientos:</p><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:15px\">Sara</div>\\[\\begin{aligned}x^{2}+3x-4 &= 6x+24 \\\\[2pt] x^{2}-3x-28 &= 0 \\\\[2pt] (x-7)(x+4) &= 0 \\\\[2pt] x = 7 \\;\\;&\\text{o}\\;\\; x = -4\\end{aligned}\\]</div><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:15px\">Tomás</div>\\[\\begin{aligned}(x-1)(x+4)-6(x+4) &= 0 \\\\[2pt] (x+4)\\big[(x-1)-6\\big] &= 0 \\\\[2pt] (x+4)(x-7) &= 0 \\\\[2pt] x = -4 \\;\\;&\\text{o}\\;\\; x = 7\\end{aligned}\\]</div><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:15px\">Iván</div>\\[\\begin{aligned}(x-1)+(x+4) &= 6+(x+4) \\\\[2pt] 2x+3 &= x+10 \\\\[2pt] x &= 7\\end{aligned}\\]</div><p>¿Cuál o cuáles estudiantes desarrollaron un procedimiento <b>correcto</b> para resolver la ecuación?</p>",
-      "opciones": {
-        "A": "Solo Tomás e Iván.",
-        "B": "Solo Sara y Tomás.",
-        "C": "Solamente Iván.",
-        "D": "Solamente Sara."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
-      "que_evalua": "La capacidad de los estudiantes para resolver por diferentes métodos ecuaciones cuadráticas que tengan términos factorizados.",
-      "justificacion_correcta": "Sara aplica la propiedad distributiva, reúne todo en un lado y factoriza correctamente; Tomás usa factor común \\((x+4)\\) y obtiene la misma factorización. Ambos llegan a \\(x=7\\) o \\(x=-4\\). Iván, en cambio, reemplaza los productos por sumas (suma los binomios en vez de multiplicarlos), por lo que su procedimiento es incorrecto. Son correctos Sara y Tomás.",
-      "opciones_incorrectas": {
-        "A": "Da por bueno a Iván, que cambió la multiplicación de binomios por una suma, y descarta a Sara.",
-        "C": "Considera que la ecuación es lineal (por la forma del paso de Iván) y acepta solo ese procedimiento.",
-        "D": "Acepta a Sara, pero rechaza la factorización por factor común de Tomás, que también es válida."
-      }
-    },
-    {
-      "id": "P-math-11-p2-07",
-      "numero": 7,
-      "enunciado": "<p>En una cooperativa de reciclaje, Beatriz, Hernán y Tomasa recibirán un bono de <b>$48.000.000</b> que se repartirá <b>proporcionalmente</b> a los kilos de material que aportó cada uno durante el mes: Beatriz aportó <b>\\(9\\)</b> partes; Hernán, <b>\\(7\\)</b>; y Tomasa, <b>\\(8\\)</b>. Para calcular cuánto le toca a ella, Beatriz propone dos planes:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Plan 1.</b> Multiplicar el bono por \\(9\\) y, después, dividir ese resultado entre \\(50\\).<br><br><b>Plan 2.</b> Dividir el bono en \\(24\\) partes iguales y, después, multiplicar una de esas partes por \\(9\\).</div><p>¿Cuál o cuáles de los planes conducen al reparto correcto?</p>",
-      "opciones": {
-        "A": "Los dos planes llevan al reparto correcto.",
-        "B": "Únicamente el plan 1 lleva al reparto correcto.",
-        "C": "Únicamente el plan 2 lleva al reparto correcto.",
-        "D": "Ninguno de los dos planes lleva al reparto correcto."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
-      "que_evalua": "La capacidad de comparar y validar diversas vías de solución de problemas que involucran cantidades.",
-      "justificacion_correcta": "El total de partes es \\(9+7+8 = 24\\). Cada parte vale \\(\\dfrac{48.000.000}{24} = 2.000.000\\), de modo que a Beatriz, con \\(9\\) partes, le corresponden \\(9\\times 2.000.000 = 18.000.000\\). Eso es exactamente lo que hace el plan 2 (dividir en \\(24\\) partes y multiplicar por \\(9\\)). El plan 1 divide entre \\(50\\) en lugar de \\(24\\), por lo que da un valor equivocado.",
-      "opciones_incorrectas": {
-        "A": "Supone que ambos planes sirven porque los dos usan el \\(9\\), sin advertir que el plan 1 divide entre \\(50\\) y no entre \\(24\\).",
-        "B": "Toma las \\(9\\) partes como si fueran un \\(9\\%\\) del total y por eso acepta dividir entre \\(50\\) (o entre \\(100\\)).",
-        "D": "Piensa que basta con dividir el bono entre el número de aportantes \\((3)\\) y descarta ambos planes."
-      }
-    },
-    {
-      "id": "P-math-11-p2-08",
-      "numero": 8,
-      "enunciado": "<p>Daniel debe presentar <b>cuatro</b> evaluaciones, calificadas de \\(1\\) a \\(100\\). La tabla muestra las notas de las tres que ya presentó. Si Daniel aspira a obtener una nota <b>promedio de \\(75\\)</b>, ¿cuál debe ser su nota en la <b>cuarta</b> evaluación?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Evaluación</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nota</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Primera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">80</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Segunda</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">68</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tercera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarta</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">?</td></tr></table>",
-      "opciones": {
-        "A": "\\(55\\)",
-        "B": "\\(20\\)",
-        "C": "\\(73\\)",
-        "D": "\\(80\\)"
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.3",
-      "cmc": "Estadística",
-      "dificultad": "MEDIA",
-      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
-      "que_evalua": "La capacidad de los estudiantes para interpretar el concepto de promedio y utilizar procedimientos para solucionar ecuaciones de primer grado en un contexto con pocos datos.",
-      "justificacion_correcta": "Para que el promedio de las cuatro notas sea \\(75\\), la suma de las cuatro debe ser \\(4\\times 75 = 300\\). Las tres conocidas suman \\(80+68+72 = 220\\), así que la cuarta nota es \\(300 - 220 = 80\\).",
-      "opciones_incorrectas": {
-        "A": "Divide la suma parcial entre \\(4\\): \\(\\dfrac{220}{4} = 55\\), tomándola como la nota que falta.",
-        "B": "Resta el promedio a la suma parcial \\((220 - 75 = 145)\\) y luego divide entre la cantidad de notas, obteniendo un valor cercano a \\(20\\) sin sentido.",
-        "C": "Promedia solo las tres notas presentadas: \\(\\dfrac{220}{3} \\approx 73\\), sin usar la cuarta."
-      }
-    },
-    {
-      "id": "P-math-11-p2-09",
-      "numero": 9,
-      "enunciado": "<p>Una ciclista mantiene una rapidez constante en una ruta. A las <b>7:00 a. m.</b> lleva recorridos <b>\\(12\\) km</b> desde el punto de partida y a las <b>11:00 a. m.</b> ya está a <b>\\(92\\) km</b> de ese mismo punto. Para hallar su rapidez media en km/h, alguien escribió estos pasos:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Distancia recorrida: \\(92\\ \\text{km} - 12\\ \\text{km} = 80\\ \\text{km}\\)<br><b>Paso 2.</b> Tiempo transcurrido: \\(11\\ \\text{h} - 7\\ \\text{h} = 4\\ \\text{h}\\)<br><b>Paso 3.</b> Cociente: \\(\\dfrac{80\\ \\text{h}}{4\\ \\text{km}} = 20\\ \\text{h/km}\\)</div><p>¿En qué paso hay un error y cuál es la razón?</p>",
-      "opciones": {
-        "A": "En el paso 1, ya que la distancia recorrida debería ser \\(92\\) km, no \\(80\\) km.",
-        "B": "En el paso 2, ya que el tiempo debió calcularse como \\(7\\ \\text{h} - 11\\ \\text{h} = -4\\) h.",
-        "C": "En el paso 3, ya que el resultado correcto es \\(\\dfrac{80\\ \\text{km}}{4\\ \\text{h}} = 20\\) km/h.",
-        "D": "En el paso 1, ya que la distancia recorrida debería ser \\(12\\ \\text{km} - 92\\ \\text{km} = -80\\) km."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.3",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
-      "que_evalua": "La capacidad para reconocer en qué parte de la solución de un problema hay un error y explicar el porqué de dicho error.",
-      "justificacion_correcta": "La rapidez media es la distancia dividida entre el tiempo: \\(\\dfrac{80\\ \\text{km}}{4\\ \\text{h}} = 20\\) km/h. En el paso 3 los números están bien \\((80\\) y \\(4)\\), pero las unidades quedaron al revés: aparece h/km en lugar de km/h. Por eso el error está en el paso 3.",
-      "opciones_incorrectas": {
-        "A": "El paso 1 ya es correcto: la distancia recorrida es la diferencia de posiciones \\(92 - 12 = 80\\) km, no \\(92\\) km.",
-        "B": "El tiempo se resta del instante mayor al menor \\((11 - 7 = 4)\\); invertirlo daría un valor negativo sin sentido. El paso 2 está bien.",
-        "D": "La distancia se obtiene de \\(92 - 12\\), no de \\(12 - 92\\); ese orden invertido produciría un valor negativo imposible."
-      }
-    },
-    {
-      "id": "P-math-11-p2-10",
-      "numero": 10,
-      "enunciado": "<p>Para decorar la pared rectangular de un salón, con un área de <b>\\(30.000\\ \\text{cm}^{2}\\)</b>, se cubrirá toda su superficie con paneles de madera de tres tipos, con la condición de colocar <b>por lo menos un panel de cada tipo</b>. La tabla indica el área que cubre cada panel.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tipo de panel</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Área (cm²)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Amplio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Intermedio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Reducido</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2.000</td></tr></table><p>Un ayudante sugiere este procedimiento para estimar la <b>cantidad mínima</b> de paneles que se deben comprar:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Sumar las áreas de un panel amplio, uno intermedio y uno reducido: \\(6.000 + 3.000 + 2.000 = 11.000\\ \\text{cm}^{2}\\).<br><b>Paso 2.</b> Dividir \\(30.000\\ \\text{cm}^{2}\\) entre \\(11.000\\ \\text{cm}^{2}\\).</div><p>¿Es acertado el procedimiento sugerido?</p>",
-      "opciones": {
-        "A": "Sí, pues para resolverlo alcanza con conocer el área de la pared y el área de cada panel.",
-        "B": "No, pues al dividir áreas se dejan de lado las dimensiones de la pared y de los paneles.",
-        "C": "Sí, pues de esa forma se garantiza emplear al menos un panel de cada tipo.",
-        "D": "No, pues la división entre áreas no arroja un número entero de paneles."
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.3",
-      "cmc": "Geometría",
-      "dificultad": "MEDIA",
-      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
-      "que_evalua": "La capacidad para reconocer si un plan de acción propuesto es correcto o permite resolver un problema en contextos geométricos.",
-      "justificacion_correcta": "Cotejar solo las áreas no alcanza: para cubrir la pared sin huecos ni sobrantes hay que conocer además las dimensiones (largo y alto) de la pared y de cada panel, porque dos paredes con igual área pueden requerir cantidades distintas de paneles según su forma. Por eso el procedimiento no es acertado: dividir áreas ignora esas dimensiones.",
-      "opciones_incorrectas": {
-        "A": "Supone que basta el cociente de áreas, sin notar que la forma y las dimensiones determinan cómo encajan los paneles.",
-        "C": "Confunde 'incluir un panel de cada tipo' (paso 1) con que el plan ya resuelva el problema, sin tener en cuenta las dimensiones.",
-        "D": "Repara en que \\(30.000 \\div 11.000 \\approx 2{,}7\\) no es entero y cree que ahí está la falla; en realidad, incluso si diera entero el plan seguiría siendo incorrecto, porque omite las dimensiones de la pared y de los paneles."
-      }
-    },
-    {
-      "id": "P-math-11-p2-11",
-      "numero": 11,
-      "enunciado": "<p>En una recta numérica, un estudiante ubicó primero el número <b>\\(\\dfrac{3}{5}\\)</b> y, después, el número <b>\\(\\dfrac{4}{5}\\)</b> (ver figura). El estudiante pensó que <b>todo</b> número racional ubicado entre esos dos debe tener <b>denominador \\(5\\)</b>. ¿Es correcto lo que pensó el estudiante?</p>",
-      "opciones": {
-        "A": "Sí, porque la fracción \\(\\dfrac{3{,}5}{5}\\) está entre los dos números.",
-        "B": "No, porque la fracción \\(\\dfrac{7}{10}\\) está entre los dos números.",
-        "C": "Sí, porque a mayor denominador la fracción es más pequeña y entre ellos no cabe otra.",
-        "D": "No, porque entre los dos números hay infinitos racionales, así que alguno debe tener denominador \\(5\\)."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco la densidad e incompletitud de los números racionales a través de métodos numéricos, geométricos y algebraicos.",
-      "que_evalua": "La capacidad para reconocer y comparar números reales representados como fracción.",
-      "justificacion_correcta": "Basta exhibir un contraejemplo: \\(\\dfrac{7}{10}\\) es el punto medio entre \\(\\dfrac{3}{5} = \\dfrac{6}{10}\\) y \\(\\dfrac{4}{5} = \\dfrac{8}{10}\\), pues \\(\\dfrac{1}{2}\\left(\\dfrac{6}{10}+\\dfrac{8}{10}\\right) = \\dfrac{7}{10}\\). Está entre ambos y su denominador es \\(10\\), no \\(5\\); por lo tanto, lo que pensó el estudiante es incorrecto.",
-      "opciones_incorrectas": {
-        "A": "Usa \\(\\dfrac{3{,}5}{5}\\), que no es una fracción de números enteros; está forzando un denominador \\(5\\) de forma artificial.",
-        "C": "Generaliza una idea sobre el tamaño de la fracción para negar que existan otros denominadores, lo cual es falso.",
-        "D": "Acierta que hay infinitos racionales entre ambos, pero de ahí concluye, sin razón, que alguno debe tener denominador \\(5\\)."
-      },
-      "imagen_figura": "assets/banco-mat-11-p2/q11.png"
-    },
-    {
-      "id": "P-math-11-p2-12",
-      "numero": 12,
-      "enunciado": "<p>En un parqueadero se ofrecen dos opciones de cobro, donde \\(x\\) representa la <b>cantidad de horas</b>:</p><div style=\"text-align:center;margin:12px 0\"><div style=\"display:inline-block;vertical-align:top;width:230px;margin:6px 10px;border:1px solid #C7163C;border-radius:8px;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#1A1613;text-align:center\"><div style=\"background:#A8132F;color:#fff;font-weight:700;padding:7px 0;font-size:15px\">Opción 1</div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Tarifa fija: <b>$8.000</b></div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Por cada hora: <b>$2.000</b></div></div><div style=\"display:inline-block;vertical-align:top;width:230px;margin:6px 10px;border:1px solid #C7163C;border-radius:8px;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#1A1613;text-align:center\"><div style=\"background:#A8132F;color:#fff;font-weight:700;padding:7px 0;font-size:15px\">Opción 2</div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Tarifa fija: <b>$12.000</b></div><div style=\"padding:8px 12px;font-size:14px;border-top:1px solid #E5DDD2\">Por cada hora: <b>$1.000</b></div></div></div><p>Una persona plantea el siguiente procedimiento:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Costo total con la opción 1:\\[\\,C_1 = 8.000 + 2.000\\,x\\,\\]<b>Paso 2.</b> Costo total con la opción 2:\\[\\,C_2 = 12.000 + 1.000\\,x\\,\\]<b>Paso 3.</b> Plantear y resolver la desigualdad:\\[\\,8.000 + 2.000\\,x \\;<\\; 12.000 + 1.000\\,x\\,\\]</div><p>¿Cuál de los siguientes valores se puede encontrar al resolver la desigualdad?</p>",
-      "opciones": {
-        "A": "El rango de costos que se debería pagar si se escoge la opción 1.",
-        "B": "El rango de horas en las que el costo de la opción 1 es mayor que el de la opción 2.",
-        "C": "El rango de horas en las que el costo de la opción 1 es menor que el de la opción 2.",
-        "D": "El rango de costos que se debería pagar si se escoge la opción 2."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Justifico resultados obtenidos mediante procesos de aproximación sucesiva, rangos de variación y límites en situaciones de medición.",
-      "que_evalua": "La capacidad de los estudiantes para plantear y resolver desigualdades para representar problemas que impliquen encontrar rangos de valores.",
-      "justificacion_correcta": "La desigualdad \\(8.000 + 2.000x < 12.000 + 1.000x\\) dice, en palabras, que el costo total de la opción 1 es <b>menor</b> que el de la opción 2. Al resolverla se obtiene el conjunto de valores de \\(x\\) (cantidad de horas) para los cuales conviene la opción 1, es decir, el rango de horas en las que la opción 1 cuesta menos que la 2.",
-      "opciones_incorrectas": {
-        "A": "Asocia \\(x\\) con el costo de la opción 1, pero \\(x\\) es la cantidad de horas, no un costo.",
-        "B": "Interpreta el símbolo \\(<\\) como 'mayor que', invirtiendo el sentido de la comparación.",
-        "D": "Asocia \\(x\\) con el costo de la opción 2; nuevamente \\(x\\) representa horas, no costos."
-      }
-    },
-    {
-      "id": "P-math-11-p2-13",
-      "numero": 13,
-      "enunciado": "<p>La gráfica muestra la participación de cuatro empresas de mensajería en un país. Las empresas <b>\\(M_1\\)</b> y <b>\\(M_2\\)</b> son <b>nacionales</b>, y las empresas <b>\\(M_3\\)</b> y <b>\\(M_4\\)</b> son <b>extranjeras</b>. Una persona propone el siguiente procedimiento:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Sumar los porcentajes de participación de \\(M_1\\) y \\(M_2\\).<br><b>Paso 2.</b> Multiplicar el resultado del paso 1 por el total de usuarios de mensajería del país.<br><b>Paso 3.</b> Dividir el resultado del paso 2 entre \\(100\\).</div><p>Al efectuar el procedimiento, ¿cuál de los siguientes datos puede determinarse?</p>",
-      "opciones": {
-        "A": "El número de usuarios que usa una empresa de mensajería extranjera.",
-        "B": "El número de usuarios que usa una empresa de mensajería nacional.",
-        "C": "El porcentaje total de usuarios que usa una empresa de mensajería nacional.",
-        "D": "El porcentaje total de usuarios que usa una empresa de mensajería extranjera."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
-      "que_evalua": "La capacidad para identificar el problema que se puede resolver al realizar un procedimiento que involucra información presentada en una gráfica.",
-      "justificacion_correcta": "\\(M_1\\) y \\(M_2\\) son las empresas nacionales. Sumar sus porcentajes \\((52\\% + 18\\% = 70\\%)\\) da el porcentaje de usuarios nacionales; al multiplicarlo por el total de usuarios y dividir entre \\(100\\) se obtiene la <b>cantidad</b> de usuarios que usan una empresa nacional.",
-      "opciones_incorrectas": {
-        "A": "\\(M_1\\) y \\(M_2\\) son nacionales, no extranjeras; el resultado cuenta usuarios nacionales.",
-        "C": "Multiplicar por el total y dividir entre \\(100\\) ya no deja un porcentaje, sino un número de usuarios.",
-        "D": "Combina dos errores: usar 'extranjera' y quedarse en un porcentaje, cuando el resultado es una cantidad de usuarios nacionales."
-      },
-      "imagen_figura": "assets/banco-mat-11-p2/q13.png"
-    },
-    {
-      "id": "P-math-11-p2-14",
-      "numero": 14,
-      "enunciado": "<p>En una tarea, <b>Valentina</b> debía simplificar la expresión \\((7m + 4n - 2m - 6n)\\,2m\\), pero su desarrollo quedó <b>equivocado</b>:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Expresión:</b> \\((7m + 4n - 2m - 6n)\\,2m\\)<br><br><b>Paso 1.</b> Reorganizar términos semejantes: \\((7m - 2m + 4n - 6n)\\,2m\\)<br><b>Paso 2.</b> Reducir lo que está dentro del paréntesis: \\((5m - 2n)\\,2m\\)<br><b>Paso 3.</b> Multiplicar por el factor de afuera: \\(10m^{2} - 4m\\)<br><b>Paso 4.</b> Extraer factor común: \\(2m(5m - 2)\\)</div><p>¿En qué paso está el error de Valentina?</p>",
-      "opciones": {
-        "A": "En el paso 1, porque debía juntar todos los términos en uno solo, así: \\((9m - 2n)\\,2m\\).",
-        "B": "En el paso 2, porque al reducir queda \\((5m + 2n)\\,2m\\) y no \\((5m - 2n)\\,2m\\).",
-        "C": "En el paso 3, porque el segundo término conserva la variable \\(n\\), así: \\(10m^{2} - 4mn\\).",
-        "D": "En el paso 4, porque el factor común que debió sacar es \\(2\\), así: \\(2(5m^{2} - 2m)\\)."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
-      "que_evalua": "La capacidad de reconocer propiedades de expresiones algebraicas con coeficientes enteros.",
-      "justificacion_correcta": "Al multiplicar \\((5m - 2n)\\,2m\\) se obtiene \\(10m^{2} - 4mn\\). En el paso 3, al multiplicar el segundo término por \\(2m\\), Valentina solo operó los coeficientes \\((2\\times 2 = 4)\\) y dejó por fuera la variable \\(n\\), por lo que escribió \\(4m\\) en lugar de \\(4mn\\). El error está en el paso 3.",
-      "opciones_incorrectas": {
-        "A": "El paso 1 solo reordena los términos respetando su signo, lo cual es válido; no se pueden combinar \\(m\\) con \\(n\\).",
-        "B": "La reducción del paso 2 es correcta: \\(4n - 6n = -2n\\), de modo que queda \\((5m - 2n)\\,2m\\).",
-        "D": "El factor común correcto es \\(2m\\) (no solo \\(2\\)); el paso 4 es coherente con lo escrito en el paso 3."
-      }
-    },
-    {
       "id": "P-math-11-p2-15",
-      "numero": 15,
-      "enunciado": "<p>Para una obra de teatro, cada actor arma un disfraz eligiendo <b>1</b> sombrero, <b>1</b> camisa, <b>1</b> pantalón y <b>1</b> par de zapatos. El vestuario ofrece <b>\\(3\\)</b> sombreros, <b>\\(5\\)</b> camisas, <b>\\(2\\)</b> pantalones y <b>\\(4\\)</b> pares de zapatos. ¿Cuántos disfraces diferentes se pueden armar?</p>",
+      "numero": 20,
+      "enunciado": "<p>Un taller arma bicicletas a pedido: cada cliente escoge <b>1</b> cuadro, <b>1</b> juego de ruedas, <b>1</b> manubrio y <b>1</b> color de pintura. El taller dispone de <b>\\(6\\)</b> cuadros, <b>\\(3\\)</b> juegos de ruedas, <b>\\(2\\)</b> manubrios y <b>\\(4\\)</b> colores. ¿Cuántas bicicletas distintas se pueden armar?</p>",
       "opciones": {
-        "A": "\\(14\\)",
-        "B": "\\(24\\)",
-        "C": "\\(120\\)",
-        "D": "\\(56\\)"
+        "A": "\\(144\\)",
+        "B": "\\(15\\)",
+        "C": "\\(48\\)",
+        "D": "\\(60\\)"
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "b",
       "afirmacion": 2,
       "evidencia": "2.3",
@@ -411,137 +537,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
       "que_evalua": "La capacidad del estudiante para aplicar el principio multiplicativo en una situación en la que se requiere determinar la cantidad total de posibles combinaciones en un contexto social.",
-      "justificacion_correcta": "Por el principio de multiplicación, el total de disfraces es el producto de las opciones de cada prenda: \\(3\\times 5\\times 2\\times 4 = 120\\) disfraces diferentes.",
+      "justificacion_correcta": "Por el principio de multiplicación, el total de bicicletas es el producto de las opciones disponibles en cada elemento: \\(6\\times 3\\times 2\\times 4 = 144\\) bicicletas distintas.",
       "opciones_incorrectas": {
-        "A": "Suma las opciones \\((3 + 5 + 2 + 4 = 14)\\) en lugar de multiplicarlas.",
-        "B": "Omite una prenda al multiplicar (deja por fuera las camisas): \\(3\\times 2\\times 4 = 24\\).",
-        "D": "Suma las opciones \\((14)\\) y luego multiplica por el número de prendas \\((14\\times 4 = 56)\\)."
-      }
-    },
-    {
-      "id": "P-math-11-p2-16",
-      "numero": 16,
-      "enunciado": "<p>El nivel de intensidad sonora \\(L\\) (en decibeles) de una fuente se relaciona con su intensidad \\(I\\) mediante <b>\\(L - L_{0} = 10\\,\\log_{10}\\!\\left(\\dfrac{I}{I_{0}}\\right)\\)</b>, donde \\(I_{0}\\) y \\(L_{0}\\) son una intensidad y un nivel de referencia. Se sabe que, para una fuente con \\(\\dfrac{I}{I_{0}} = 10\\), la diferencia \\(L - L_{0}\\) es \\(10\\). ¿Cuál es el nivel \\(L\\) de un motor cuya intensidad cumple \\(\\dfrac{I}{I_{0}} = 10^{4}\\) y cuyo nivel de referencia es \\(L_{0} = 20\\) dB?</p>",
-      "opciones": {
-        "A": "\\(60\\) dB",
-        "B": "\\(80\\) dB",
-        "C": "\\(20\\) dB",
-        "D": "\\(24\\) dB"
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.3",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
-      "que_evalua": "La capacidad de los estudiantes para calcular el valor de una variable a partir del valor de las demás variables que se relacionan por medio de una expresión.",
-      "justificacion_correcta": "El dato de calibración confirma la relación: con \\(\\dfrac{I}{I_{0}} = 10\\), \\(10\\,\\log_{10}(10) = 10\\times 1 = 10\\), que coincide con \\(L - L_{0} = 10\\). Para el motor, \\(\\dfrac{I}{I_{0}} = 10^{4}\\), así que \\(10\\,\\log_{10}(10^{4}) = 10\\times 4 = 40\\). Como esa es la diferencia \\(L - L_{0}\\), se despeja \\(L = 40 + L_{0} = 40 + 20 = 60\\) dB.",
-      "opciones_incorrectas": {
-        "B": "Lee \\(\\log_{10}(10^{4})\\) como \\(6\\) (cuenta también la base) y obtiene \\(10\\times 6 = 60\\), de donde \\(L = 60 + 20 = 80\\).",
-        "C": "Invierte la relación al despejar \\((L_{0} - L\\) en lugar de \\(L - L_{0})\\) y resta el nivel de referencia: \\(40 - 20 = 20\\).",
-        "D": "Olvida multiplicar por \\(10\\) y suma directamente el exponente con el nivel de referencia: \\(4 + 20 = 24\\)."
-      }
-    },
-    {
-      "id": "P-math-11-p2-17",
-      "numero": 17,
-      "enunciado": "<p>Para una exhibición se arma una pirámide de cubos por filas: la fila \\(1\\) tiene <b>\\(1\\)</b> cubo, la fila \\(2\\) tiene <b>\\(3\\)</b>, la fila \\(3\\) tiene <b>\\(5\\)</b> y, en general, cada fila tiene <b>\\(2\\)</b> cubos más que la anterior. El total de cubos se obtiene sumando los de todas las filas. ¿Cuál fórmula permite calcular el <b>total de cubos</b> de una pirámide con \\(n\\) filas?</p>",
-      "opciones": {
-        "A": "\\(2n - 1\\)",
-        "B": "\\(2n + 1\\)",
-        "C": "\\(n + 2\\)",
-        "D": "\\(n^{2}\\)"
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
-      "que_evalua": "La capacidad para modelar situaciones que involucran sucesiones aritméticas.",
-      "justificacion_correcta": "El total es la suma de los \\(n\\) primeros números impares: \\(1 + 3 + 5 + \\dots\\). Para \\(n = 1\\) da \\(1\\); para \\(n = 2\\), \\(1 + 3 = 4\\); para \\(n = 3\\), \\(1 + 3 + 5 = 9\\). Estos resultados son \\(1, 4, 9, \\dots = n^{2}\\). La suma de los \\(n\\) primeros impares es \\(n^{2}\\).",
-      "opciones_incorrectas": {
-        "A": "\\(2n - 1\\) modela el número de cubos de la fila \\(n\\) (el \\(n\\)-ésimo impar), no el total acumulado.",
-        "B": "\\(2n + 1\\) es otra expresión de los impares; tampoco representa la suma total.",
-        "C": "\\(n + 2\\) describe un aumento de \\(1\\) en \\(1\\), no el crecimiento de la suma de impares."
-      }
-    },
-    {
-      "id": "P-math-11-p2-18",
-      "numero": 18,
-      "enunciado": "<p>La densidad de un líquido es el cociente entre su masa y su volumen. Mateo tiene <b>\\(0{,}005\\) litros</b> de glicerina y, para estimar su masa, multiplica ese volumen por la densidad de la glicerina, <b>\\(1.260\\ \\text{kg/m}^{3}\\)</b>, y anota como resultado \\(6{,}3\\) kg. ¿Está bien hecho el cálculo de Mateo?</p>",
-      "opciones": {
-        "A": "Está bien, ya que la masa se obtiene multiplicando la densidad por el volumen sin más ajustes.",
-        "B": "Está mal, ya que cometió una equivocación al operar las cifras decimales.",
-        "C": "Está mal, ya que primero debía pasar el volumen de litros a metros cúbicos y no lo hizo.",
-        "D": "Está bien, ya que \\(0{,}005\\) litros corresponden a un metro cúbico."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Geometría",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
-      "que_evalua": "La capacidad de justificar la solución de un problema que involucra diferentes magnitudes y tipos de medida.",
-      "justificacion_correcta": "La masa es densidad por volumen, así que multiplicar es lo apropiado; el problema está en las unidades: la densidad viene en \\(\\text{kg/m}^{3}\\) y el volumen en litros, que no son compatibles. Antes de multiplicar hay que pasar \\(0{,}005\\) litros a metros cúbicos \\((0{,}005\\ \\text{L} = 0{,}000005\\ \\text{m}^{3})\\). Por eso el cálculo de Mateo está mal: le faltó esa conversión de unidades.",
-      "opciones_incorrectas": {
-        "A": "Aunque la relación masa \\(=\\) densidad \\(\\times\\) volumen es correcta, las unidades no concuerdan tal como están escritas.",
-        "B": "El manejo de los decimales no es lo que falla; el inconveniente está en las unidades.",
-        "D": "\\(0{,}005\\) litros no equivalen a un metro cúbico, pues \\(1\\ \\text{m}^{3} = 1000\\) litros."
-      }
-    },
-    {
-      "id": "P-math-11-p2-19",
-      "numero": 19,
-      "enunciado": "<p>Un robot de bodega se desplaza desde la casilla de salida \\(S\\) hasta la casilla meta \\(G\\) sobre una cuadrícula de pasillos formados por cuadrados de <b>\\(8\\) metros</b> de lado. La figura muestra dos trayectos posibles; en ambos el robot avanza únicamente por los lados de los cuadrados. Un operario sostiene que la longitud de \\(S\\) a \\(G\\) es de <b>\\(40\\) metros</b> por cualquiera de los dos trayectos. ¿Es verdadera esa afirmación?</p>",
-      "opciones": {
-        "A": "Sí, porque entre los dos trayectos quedan encerrados cinco cuadrados de \\(8\\) metros de lado.",
-        "B": "No, porque habría que multiplicar el perímetro de un cuadrado por los cinco tramos recorridos.",
-        "C": "Sí, porque cada lado de un cuadrado mide \\(8\\) metros y en cada trayecto se recorren cinco lados de \\(S\\) a \\(G\\).",
-        "D": "No, porque habría que dividir el perímetro de un cuadrado entre la medida de un lado y multiplicar por los tramos."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.3",
-      "cmc": "Geometría",
-      "dificultad": "MEDIA",
-      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
-      "que_evalua": "La capacidad para justificar si un procedimiento dado permite solucionar un problema.",
-      "justificacion_correcta": "En cada trayecto el robot recorre \\(5\\) lados de cuadrados de \\(8\\) metros (dos hacia un costado y tres en el otro sentido); como cada lado mide \\(8\\) m, el recorrido total es \\(5\\times 8 = 40\\) metros, sin importar cómo se escalone. La afirmación es verdadera porque ambos trayectos recorren cinco lados de \\(8\\) metros.",
-      "opciones_incorrectas": {
-        "A": "La cantidad de cuadrados encerrados no fija la longitud recorrida; lo determinante es cuántos lados se transitan.",
-        "B": "No se recorre el perímetro completo de cada cuadrado, sino solo algunos de sus lados.",
-        "D": "Dividir el perímetro entre el lado da \\(4\\) (los lados de un cuadrado), pero la longitud se obtiene sumando los cinco lados que se recorren, no con ese cociente."
-      },
-      "imagen_figura": "assets/banco-mat-11-p2/q19.png"
-    },
-    {
-      "id": "P-math-11-p2-20",
-      "numero": 20,
-      "enunciado": "<p>Para modelar la trayectoria de un dron, Mónica va a multiplicar los polinomios \\(x^{3} - 5x + 2\\) y \\(x^{2} + 4x - 1\\). El máximo exponente de la variable es \\(3\\) en el primero y \\(2\\) en el segundo. Mónica afirma que, <i>sin hacer la multiplicación</i>, puede asegurar que el máximo exponente de la variable en el producto será <b>\\(5\\)</b>. ¿Por qué es correcta la afirmación de Mónica?</p>",
-      "opciones": {
-        "A": "Porque los grados se suman: el máximo exponente del producto es \\(3 + 2 = 5\\).",
-        "B": "Porque los grados se multiplican: \\(3 \\times 2 = 6\\).",
-        "C": "Porque se cuentan los términos con variable que reúnen los dos polinomios.",
-        "D": "Porque se toma el doble del mayor de los dos grados: \\(2 \\times 3 = 6\\)."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.3",
-      "cmc": "Álgebra y cálculo",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
-      "que_evalua": "La capacidad de los estudiantes para reconocer el grado de un polinomio proveniente del producto de dos polinomios.",
-      "justificacion_correcta": "El término de mayor exponente del producto proviene de multiplicar los términos de mayor grado de cada factor: \\(x^{3}\\cdot x^{2} = x^{3+2} = x^{5}\\). Al multiplicar potencias de la misma base se <b>suman</b> los exponentes, por eso el máximo exponente del producto es \\(3 + 2 = 5\\).",
-      "opciones_incorrectas": {
-        "B": "Multiplica los grados en vez de sumarlos \\((3\\times 2 = 6)\\); pero al multiplicar \\(x^{3}\\cdot x^{2}\\) los exponentes se SUMAN y dan \\(x^{5}\\), no \\(x^{6}\\).",
-        "C": "El exponente máximo no cuenta términos: surge de multiplicar los términos de mayor grado de cada factor.",
-        "D": "Toma el doble de un grado \\((2\\times 3 = 6)\\), pero lo correcto es sumar los dos grados distintos \\((3 + 2 = 5)\\)."
+        "D": "Suma las opciones \\((6 + 3 + 2 + 4 = 15)\\) y después multiplica por las \\(4\\) categorías: \\(15\\times 4 = 60\\).",
+        "B": "Suma las opciones en lugar de multiplicarlas: \\(6 + 3 + 2 + 4 = 15\\).",
+        "C": "Deja por fuera una categoría (los juegos de ruedas): \\(6\\times 2\\times 4 = 48\\)."
       }
     }
   ]

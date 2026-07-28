@@ -566,8 +566,12 @@
           <span class="chip-nivel ${acierto ? 'alto' : 'bajo'}">${acierto ? 'Correcta' : 'Incorrecta'}</span>
         </div>
         ${ctxHtml}
-        <p class="text-sm mb-3">${preg.enunciado}</p>
-        ${figHtml}
+        <div class="text-sm mb-3">${(() => {
+          // Mismo criterio que en la prueba: la figura va donde marca [[IMG]].
+          const _pt = String(preg.enunciado || '').split('[[IMG]]');
+          return _pt.length > 1 && figHtml ? _pt[0] + figHtml + _pt.slice(1).join('') : _pt.join(' ');
+        })()}</div>
+        ${String(preg.enunciado || '').includes('[[IMG]]') ? '' : figHtml}
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm mb-3">
           <div class="bg-white rounded-lg p-3 border">
             <div class="text-xs uppercase tracking-wider text-slate-500 mb-1">Tu respuesta</div>

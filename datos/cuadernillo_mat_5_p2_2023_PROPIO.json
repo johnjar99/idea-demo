@@ -50,64 +50,39 @@
   ],
   "preguntas": [
     {
-      "id": "P-math-5-p2-01",
+      "id": "P-math-5-p2-08",
       "numero": 1,
-      "enunciado": "<p>Una planta de bambú crece diariamente de forma constante <b>\\(9\\) centímetros</b> cada día. Observa la ilustración y la tabla.</p><p>¿Cuántos centímetros crecerá la planta en <b>\\(6\\) días</b>?</p>",
+      "enunciado": "<p>Daniel instaló una veleta en la maqueta de la estación meteorológica, pero la dejó mal montada. En la imagen aparecen la veleta como la dejó al principio y la veleta ya corregida.</p>[[IMG]]<p>¿Qué transformación geométrica tuvo que aplicarle Daniel al paño de la veleta para dejarla bien puesta?</p>",
       "opciones": {
-        "A": "\\(9\\) cm",
-        "B": "\\(54\\) cm",
-        "C": "\\(15\\) cm",
-        "D": "\\(63\\) cm"
+        "A": "Una reflexión del paño respecto de una línea horizontal.",
+        "B": "Un giro de \\(90^\\circ\\) hacia la derecha, en el sentido de las manecillas del reloj.",
+        "C": "Un giro de \\(180^\\circ\\).",
+        "D": "Un giro de \\(90^\\circ\\) hacia la izquierda, en contra de las manecillas del reloj."
       },
       "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Numérico - variacional",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
-      "que_evalua": "La capacidad de usar una proporción directa para resolver un problema dado.",
-      "justificacion_correcta": "Se establece la relación de proporcionalidad directa entre los días y los centímetros que crece la planta; así, en \\(6\\) días el crecimiento será de \\(6 \\times 9\\ \\text{cm} = 54\\ \\text{cm}\\).",
+      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
+      "que_evalua": "La capacidad de identificar la transformación (rotación o reflexión) que lleva una figura a una posición dada.",
+      "justificacion_correcta": "Al comienzo la punta del paño señalaba hacia la derecha y, una vez corregida, señala hacia abajo. Pasar de la derecha a abajo es un cuarto de vuelta, \\(90^\\circ\\), recorrido en el sentido de las manecillas del reloj, es decir, hacia la derecha.",
       "opciones_incorrectas": {
-        "A": "Toma la medida constante de crecimiento diario \\((9\\ \\text{cm})\\) como respuesta, sin tener en cuenta la relación proporcional entre los días y los centímetros.",
-        "C": "Suma la cantidad de días y el crecimiento diario, sin importar la naturaleza de las magnitudes: \\(6 + 9 = 15\\ \\text{cm}\\).",
-        "D": "Halla correctamente que en \\(6\\) días crece \\(54\\ \\text{cm}\\), pero le agrega el dato \\(9\\) que aparece en la tabla: \\(54\\ \\text{cm} + 9\\ \\text{cm} = 63\\ \\text{cm}\\)."
+        "A": "Una reflexión horizontal deja la punta del paño señalando otra vez hacia la derecha, así que la veleta seguiría mal puesta.",
+        "D": "Acierta la magnitud del giro, un cuarto de vuelta, pero lo hace en el sentido contrario: la punta quedaría señalando hacia arriba.",
+        "C": "Media vuelta lleva la punta del paño de la derecha a la izquierda, y no hacia abajo como aparece en la veleta corregida."
       },
-      "imagen_figura": "assets/banco-mat-5-p2/q01.png"
-    },
-    {
-      "id": "P-math-5-p2-02",
-      "numero": 2,
-      "enunciado": "<p>Para preparar una pintura, Marcela vertió en un recipiente <b>\\(\\dfrac{3}{4}\\)</b> de un litro de pintura blanca; luego, agregó <b>\\(\\dfrac{1}{8}\\)</b> de un litro de pintura azul y mezcló todo. ¿Cuánto contenido de pintura quedó al final en el recipiente?</p>",
-      "opciones": {
-        "A": "\\(\\dfrac{7}{8}\\) de litro.",
-        "B": "\\(\\dfrac{4}{12}\\) de litro.",
-        "C": "\\(\\dfrac{4}{32}\\) de litro.",
-        "D": "\\(\\dfrac{1}{2}\\) de litro."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de los estudiantes para sumar dos números fraccionarios.",
-      "justificacion_correcta": "Primero se transforma \\(\\dfrac{3}{4}\\) a una fracción equivalente con denominador \\(8\\): \\(\\dfrac{3}{4} = \\dfrac{6}{8}\\). Luego se suma con \\(\\dfrac{1}{8}\\). Como ambas fracciones son homogéneas, se suman los numeradores: \\(\\dfrac{6}{8} + \\dfrac{1}{8} = \\dfrac{7}{8}\\) de litro.",
-      "opciones_incorrectas": {
-        "B": "Suma por separado numeradores y denominadores: \\(\\dfrac{3+1}{4+8} = \\dfrac{4}{12}\\).",
-        "C": "Multiplica los denominadores y suma los numeradores: \\(\\dfrac{3+1}{4 \\times 8} = \\dfrac{4}{32}\\).",
-        "D": "Simplifica de forma incorrecta y obtiene \\(\\dfrac{1}{2}\\), sin homogeneizar las fracciones antes de sumar."
-      }
+      "imagen_figura": "assets/banco-mat-5-p2/q08.png"
     },
     {
       "id": "P-math-5-p2-03",
-      "numero": 3,
-      "enunciado": "<p>Mariana quiere armar una de las figuras de su rompecabezas usando varias piezas iguales a la <b>pieza</b> que se muestra (un triángulo). Observa la figura y la pieza. Teniendo en cuenta que las piezas se pueden <b>rotar</b>, ¿cuántas piezas conforman la figura del rompecabezas que quiere armar Mariana?</p>",
+      "numero": 2,
+      "enunciado": "<p>En el taller de artes, Óscar recubre por completo la <b>Figura</b> pegando baldosas de cartulina todas iguales a la <b>Pieza</b> triangular que se muestra. Las baldosas pueden <b>girarse</b> antes de pegarlas, pero no se pueden recortar ni montar una sobre otra.</p>[[IMG]]<p>¿Cuántas baldosas necesita Óscar para recubrir la Figura sin que quede ningún espacio libre?</p>",
       "opciones": {
         "A": "\\(7\\)",
-        "B": "\\(8\\)",
-        "C": "\\(9\\)",
+        "B": "\\(9\\)",
+        "C": "\\(12\\)",
         "D": "\\(14\\)"
       },
       "clave": "D",
@@ -117,24 +92,224 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
-      "que_evalua": "La capacidad para reconocer y utilizar patrones de medida no estandarizados para calcular el área de figuras geométricas compuestas.",
-      "justificacion_correcta": "La figura está formada por \\(7\\) cuadrados y cada cuadrado se puede cubrir con \\(2\\) piezas (dos triángulos). Por lo tanto, se necesitan \\(7 \\times 2 = 14\\) piezas.",
+      "que_evalua": "La capacidad para recubrir una figura compuesta con un patrón de medida no estandarizado y determinar cuántas unidades se necesitan.",
+      "justificacion_correcta": "La Figura está formada por \\(7\\) cuadrados iguales y la diagonal de cada cuadrado muestra que en él caben exactamente \\(2\\) baldosas triangulares, una de ellas girada. En total se necesitan \\(7 \\times 2 = 14\\) baldosas.",
       "opciones_incorrectas": {
-        "A": "Cuenta solo los \\(7\\) cuadrados, sin reconocer que cada cuadrado se forma con dos triángulos.",
-        "B": "Ubica una sola pieza por cuadrado usando solo traslaciones, sin aprovechar que la pieza también se puede rotar para cubrir el otro triángulo de cada cuadrado.",
-        "C": "Identifica los \\(7\\) cuadrados pero comete un error al operar: hace \\(7 + 2 = 9\\) en lugar de \\(7 \\times 2\\)."
+        "A": "Cuenta los \\(7\\) cuadrados de la Figura y no repara en que cada cuadrado se cubre con dos triángulos.",
+        "B": "Reconoce los \\(7\\) cuadrados y que hacen falta \\(2\\) baldosas por cuadrado, pero suma en lugar de multiplicar: \\(7 + 2 = 9\\).",
+        "C": "Pasa por alto uno de los cuadrados y calcula \\(6 \\times 2 = 12\\)."
       },
       "imagen_figura": "assets/banco-mat-5-p2/q03.png"
     },
     {
-      "id": "P-math-5-p2-04",
-      "numero": 4,
-      "enunciado": "<p>Observa el castillo que dibujó Lucía en su cuaderno, junto con un pequeño cuadrado de <b>\\(1\\ cm^2\\)</b> de área. ¿Cuál es el área del castillo que dibujó Lucía?</p>",
+      "id": "P-math-5-p2-19",
+      "numero": 3,
+      "enunciado": "<p>Para la clase de estadística, el curso guardó en un talego seis balotas numeradas: \\(1\\), \\(2\\), \\(3\\), \\(3\\), \\(5\\) y \\(7\\) (ver figura). Un estudiante meterá la mano y sacará una balota sin mirar.</p>[[IMG]]<p>¿Cuál de las siguientes balotas <b>no puede salir en ningún caso</b>?</p>",
       "opciones": {
-        "A": "\\(17\\ cm^2\\)",
+        "A": "La balota marcada con el \\(7\\).",
+        "B": "La balota marcada con el \\(1\\).",
+        "C": "La balota marcada con el \\(3\\).",
+        "D": "La balota marcada con el \\(8\\)."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad de reconocer un evento imposible dentro de un experimento aleatorio sencillo.",
+      "justificacion_correcta": "Solo puede salir una balota que esté dentro del talego. Entre las seis balotas guardadas no hay ninguna marcada con el \\(8\\), así que ese resultado nunca puede ocurrir: es un evento imposible.",
+      "opciones_incorrectas": {
+        "A": "El \\(7\\) está en el talego. Que aparezca una sola vez lo hace poco probable, pero no imposible.",
+        "C": "El \\(3\\) está dos veces en el talego, así que es el resultado con mayor probabilidad de salir.",
+        "B": "El \\(1\\) está en el talego; que sea el número más pequeño no impide que salga."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q19.png",
+      "opciones_imagenes": {
+        "D": "assets/banco-mat-5-p2/q19_opA.png",
+        "A": "assets/banco-mat-5-p2/q19_opB.png",
+        "C": "assets/banco-mat-5-p2/q19_opC.png",
+        "B": "assets/banco-mat-5-p2/q19_opD.png"
+      }
+    },
+    {
+      "id": "P-math-5-p2-12",
+      "numero": 4,
+      "enunciado": "<p>La caja de Cruji Cereal que se muestra pesa <b>\\(15\\) kg</b> en total y su etiqueta indica de qué está hecho ese contenido: <b>\\(6\\) kg de fruta</b> y <b>\\(9\\) kg de avena</b>. La fábrica prepara el cereal siempre con la misma receta, sin importar el tamaño del empaque.</p><p>Un restaurante encarga una caja industrial de <b>\\(35\\) kg</b> del mismo cereal.</p>[[IMG]]<p>¿Cuánta fruta trae esa caja?</p>",
+      "opciones": {
+        "A": "\\(29\\) kg",
+        "B": "\\(21\\) kg",
+        "C": "\\(14\\) kg",
+        "D": "\\(26\\) kg"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad de resolver un problema conservando una razón entre dos magnitudes directamente proporcionales.",
+      "justificacion_correcta": "De cada \\(15\\) kg de cereal, \\(6\\) kg son de fruta; esa razón se simplifica a \\(\\dfrac{6}{15} = \\dfrac{2}{5}\\). Como la receta no cambia, en la caja de \\(35\\) kg la fruta es \\(35 \\times \\dfrac{2}{5} = 14\\) kg.",
+      "opciones_incorrectas": {
+        "A": "Le resta al peso nuevo los kilos de fruta de la caja pequeña \\((35 - 6 = 29)\\), tratando el problema como una diferencia y no como una proporción.",
+        "B": "Aplica la razón de la avena \\(\\left(\\dfrac{9}{15} = \\dfrac{3}{5}\\right)\\) y obtiene \\(21\\) kg, que es la avena y no la fruta.",
+        "D": "Le suma a los \\(6\\) kg de fruta todo lo que creció el empaque \\((35 - 15 = 20)\\), con lo que llega a \\(26\\) kg."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q12.png"
+    },
+    {
+      "id": "P-math-5-p2-13",
+      "numero": 5,
+      "enunciado": "<p>En el taller de cálculo mental, la profesora dejó en la calculadora el resultado de una suma y borró los sumandos: en la pantalla solo quedó <b>\\(1.346\\)</b>. Cuatro estudiantes propusieron una operación distinta para reconstruirla.</p>[[IMG]]<p>¿Cuál de las propuestas (A, B, C o D) devuelve exactamente ese resultado?</p>",
+      "opciones": {
+        "A": "\\(980 + 314 + 25\\)",
+        "B": "\\(980 + 314 + 52\\)",
+        "C": "\\(890 + 314 + 52\\)",
+        "D": "\\(980 + 304 + 52\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La capacidad de comprobar, mediante sumas con reagrupación, cuáles sumandos producen un resultado dado.",
+      "justificacion_correcta": "Basta con efectuar cada suma: \\(980 + 314 + 52 = 1.346\\); \\(980 + 314 + 25 = 1.319\\); \\(980 + 304 + 52 = 1.336\\); \\(890 + 314 + 52 = 1.256\\). La única propuesta que llega a \\(1.346\\) es la A.",
+      "opciones_incorrectas": {
+        "A": "Invierte las cifras del último sumando y digita \\(25\\) en lugar de \\(52\\); la suma queda en \\(1.319\\), veintisiete unidades por debajo.",
+        "D": "Pierde la decena del segundo sumando y digita \\(304\\) en vez de \\(314\\); la suma queda en \\(1.336\\).",
+        "C": "Invierte las cifras del primer sumando y digita \\(890\\) en lugar de \\(980\\); la suma queda en \\(1.256\\)."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q13.png",
+      "opciones_imagenes": {
+        "B": "assets/banco-mat-5-p2/q13_opA.png",
+        "A": "assets/banco-mat-5-p2/q13_opB.png",
+        "D": "assets/banco-mat-5-p2/q13_opC.png",
+        "C": "assets/banco-mat-5-p2/q13_opD.png"
+      }
+    },
+    {
+      "id": "P-math-5-p2-20",
+      "numero": 6,
+      "enunciado": "<p>Antes de empezar el juego de mesa del descanso hay que repartir las fichas. La Figura 1 muestra el montón completo de fichas que se van a repartir y la Figura 2 muestra las fichas que quedaron en manos de Lucas.</p>[[IMG]]<p>¿Qué fracción del montón completo le quedó a Lucas?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(\\dfrac{1}{4}\\)",
+        "C": "\\(\\dfrac{1}{5}\\)",
+        "D": "\\(\\dfrac{3}{4}\\)"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte-todo, cociente, razones y proporciones.",
+      "que_evalua": "La capacidad de expresar como fracción irreducible una relación parte-todo leída de una representación gráfica.",
+      "justificacion_correcta": "El montón completo tiene \\(8\\) fichas (el todo) y a Lucas le quedaron \\(2\\) (la parte). La relación parte-todo se escribe \\(\\dfrac{2}{8}\\) y, al dividir numerador y denominador entre \\(2\\), queda \\(\\dfrac{1}{4}\\).",
+      "opciones_incorrectas": {
+        "A": "Supone que el montón se repartió en dos partes iguales, sin contar las fichas de cada figura.",
+        "C": "Añade al total las fichas de Lucas \\((8 + 2 = 10)\\) y arma \\(\\dfrac{2}{10} = \\dfrac{1}{5}\\), en vez de comparar la parte con el todo.",
+        "D": "Cuenta las fichas que NO le quedaron a Lucas \\((8 - 2 = 6)\\) y forma \\(\\dfrac{6}{8} = \\dfrac{3}{4}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q20.png"
+    },
+    {
+      "id": "P-math-5-p2-11",
+      "numero": 7,
+      "enunciado": "<p>Julián lleva la cuenta de sus tiros a la cesta en el descanso. Al revisar sus anotaciones de las últimas semanas descubre que su marca se mantiene estable: por cada <b>\\(8\\)</b> tiros que hace, encesta <b>\\(5\\)</b>.</p>[[IMG]]<p>Si Julián hace un tiro más, y se toma esa marca como referencia, ¿cuál es la probabilidad de que enceste?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{3}{8}\\)",
+        "B": "\\(\\dfrac{8}{5}\\)",
+        "C": "\\(\\dfrac{5}{13}\\)",
+        "D": "\\(\\dfrac{5}{8}\\)"
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad de expresar como una razón la probabilidad de un evento a partir de la frecuencia observada en experiencias anteriores.",
+      "justificacion_correcta": "La probabilidad de un evento se escribe como los casos favorables sobre el total de casos posibles. Aquí los casos favorables son los \\(5\\) tiros que entran y el total son los \\(8\\) tiros que hace, así que la probabilidad de encestar es \\(\\dfrac{5}{8}\\).",
+      "opciones_incorrectas": {
+        "B": "Escribe la razón al revés y pone el total de tiros en el numerador: \\(\\dfrac{8}{5}\\), un valor mayor que \\(1\\) que no puede ser una probabilidad.",
+        "C": "Suma los tiros encestados y los fallados a los ocho ya contados y arma un total equivocado: \\(\\dfrac{5}{8+5} = \\dfrac{5}{13}\\).",
+        "A": "Cuenta los tiros que no entran \\((8 - 5 = 3)\\) en vez de los que entran, con lo cual halla la probabilidad del evento contrario."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q11.png"
+    },
+    {
+      "id": "P-math-5-p2-15",
+      "numero": 8,
+      "enunciado": "<p>Al terminar la clase quedó escrita en el tablero la igualdad que se muestra en la imagen. Antes de borrarla, el profesor le pidió al curso decidir si está <b>bien</b> o <b>mal</b> resuelta y explicar por qué.</p>[[IMG]]<p>¿Cuál de las siguientes respuestas es la acertada?</p>",
+      "opciones": {
+        "A": "Está mal resuelta, porque \\(\\sqrt{100} = 50\\) y entonces la raíz de la fracción no puede ser \\(\\dfrac{1}{5}\\).",
+        "B": "Está bien resuelta, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{4}{10}\\) y al sumarle \\(\\dfrac{2}{5}\\) se obtiene \\(\\dfrac{3}{5}\\).",
+        "C": "Está bien resuelta, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{2}{10} = \\dfrac{1}{5}\\) y, al ser \\(\\dfrac{1}{5}\\) y \\(\\dfrac{2}{5}\\) homogéneas, su suma es \\(\\dfrac{3}{5}\\).",
+        "D": "Está mal resuelta, porque al sumar \\(\\dfrac{1}{5} + \\dfrac{2}{5}\\) también se suman los denominadores y el resultado es \\(\\dfrac{3}{10}\\)."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico la potenciación y la radicación en contextos matemáticos y no matemáticos.",
+      "que_evalua": "La capacidad de argumentar por qué una igualdad entre fracciones que involucra una raíz cuadrada está bien o mal resuelta.",
+      "justificacion_correcta": "La raíz cuadrada de una fracción se calcula sobre el numerador y sobre el denominador: \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{\\sqrt{4}}{\\sqrt{100}} = \\dfrac{2}{10}\\), que simplificada es \\(\\dfrac{1}{5}\\). Como \\(\\dfrac{1}{5}\\) y \\(\\dfrac{2}{5}\\) tienen el mismo denominador, solo se suman los numeradores: \\(\\dfrac{1}{5} + \\dfrac{2}{5} = \\dfrac{3}{5}\\). La igualdad del tablero está bien resuelta.",
+      "opciones_incorrectas": {
+        "A": "Confunde la raíz cuadrada con la mitad: \\(\\sqrt{100} = 10\\) y no \\(50\\), así que parte de un valor equivocado para descartar la igualdad.",
+        "B": "Se equivoca al extraer la raíz del numerador: \\(\\sqrt{4} = 2\\), de manera que la raíz vale \\(\\dfrac{2}{10}\\) y no \\(\\dfrac{4}{10}\\). Además, con \\(\\dfrac{4}{10}\\) la suma daría \\(\\dfrac{4}{5}\\), así que la propia opción se contradice.",
+        "D": "Suma también los denominadores, cuando en fracciones de igual denominador solo se suman los numeradores; por eso reporta \\(\\dfrac{3}{10}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q15.png"
+    },
+    {
+      "id": "P-math-5-p2-09",
+      "numero": 9,
+      "enunciado": "<p>En la cartelera del salón pegaron el recorte de periódico que se muestra. La profesora pidió volver a escribir ese titular usando una <b>fracción</b> en lugar del número decimal, cuidando que el titular siga diciendo exactamente lo mismo.</p>[[IMG]]<p>¿Cuál de los siguientes titulares (A, B, C o D) cumple con lo que pidió la profesora?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{4}{100}\\) de los niños.",
+        "B": "\\(\\dfrac{2}{5}\\) de los niños.",
+        "C": "\\(\\dfrac{1}{4}\\) de los niños.",
+        "D": "\\(\\dfrac{4}{1}\\) de los niños."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo números racionales, en sus distintas expresiones (fracciones, razones, decimales o porcentajes) para resolver problemas en contextos de medida.",
+      "que_evalua": "La capacidad de pasar de la escritura decimal a la escritura fraccionaria de un mismo número racional.",
+      "justificacion_correcta": "En \\(0{,}4\\) la cifra \\(4\\) ocupa el lugar de las décimas, de modo que el número se escribe como \\(\\dfrac{4}{10}\\). Al dividir numerador y denominador entre \\(2\\) se obtiene la fracción irreducible \\(\\dfrac{2}{5}\\), que es la que aparece en el titular C.",
+      "opciones_incorrectas": {
+        "D": "Ignora la coma decimal, lee solamente el \\(4\\) y lo escribe como el entero \\(\\dfrac{4}{1}\\).",
+        "C": "Cambia de lugar el numerador y el denominador de \\(\\dfrac{4}{10}\\) y termina reportando \\(\\dfrac{1}{4}\\).",
+        "A": "Ubica el \\(4\\) en el lugar de las centésimas y no en el de las décimas, por lo que escribe \\(\\dfrac{4}{100}\\)."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q09.png",
+      "opciones_imagenes": {
+        "D": "assets/banco-mat-5-p2/q09_opA.png",
+        "C": "assets/banco-mat-5-p2/q09_opB.png",
+        "B": "assets/banco-mat-5-p2/q09_opC.png",
+        "A": "assets/banco-mat-5-p2/q09_opD.png"
+      }
+    },
+    {
+      "id": "P-math-5-p2-04",
+      "numero": 10,
+      "enunciado": "<p>Samuel dibujó en papel cuadriculado la silueta de un <b>castillo</b> que después recortará en cartón para la maqueta del salón. En la cuadrícula, cada cuadrito tiene un área de <b>\\(1\\ cm^2\\)</b>.</p>[[IMG]]<p>¿Cuántos centímetros cuadrados de cartón ocupará la silueta del castillo?</p>",
+      "opciones": {
+        "A": "\\(14\\ cm^2\\)",
         "B": "\\(19\\ cm^2\\)",
-        "C": "\\(24\\ cm^2\\)",
-        "D": "\\(28\\ cm^2\\)"
+        "C": "\\(28\\ cm^2\\)",
+        "D": "\\(35\\ cm^2\\)"
       },
       "clave": "B",
       "competencia": "a",
@@ -143,385 +318,55 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Selecciono unidades, tanto convencionales como estandarizadas, apropiadas para diferentes mediciones.",
-      "que_evalua": "La capacidad para hallar el área de un polígono que se compone de varios rectángulos, mediante el uso de patrones de medida estandarizados.",
-      "justificacion_correcta": "La figura se descompone en rectángulos cuyas áreas se suman tomando como unidad el cuadrado de \\(1\\ cm^2\\): la base de \\(7 \\times 2 = 14\\ cm^2\\), la torre izquierda de \\(1 \\times 2 = 2\\ cm^2\\) y la torre derecha de \\(1 \\times 3 = 3\\ cm^2\\). En total, \\(14 + 2 + 3 = 19\\ cm^2\\).",
+      "que_evalua": "La capacidad para hallar el área de una figura compuesta descomponiéndola en rectángulos y usando un patrón de medida estandarizado.",
+      "justificacion_correcta": "La silueta se separa en tres rectángulos y se suman sus áreas, medidas con el cuadrito de \\(1\\ cm^2\\): el cuerpo mide \\(7 \\times 2 = 14\\ cm^2\\), la torre baja \\(1 \\times 2 = 2\\ cm^2\\) y la torre alta \\(1 \\times 3 = 3\\ cm^2\\). El total es \\(14 + 2 + 3 = 19\\ cm^2\\).",
       "opciones_incorrectas": {
-        "A": "Omite uno de los rectángulos que forman las torres y suma solo \\(17\\ cm^2\\).",
-        "C": "Cuenta los cuadrados del borde (contorno) en lugar de los del interior, hallando algo parecido al perímetro.",
-        "D": "Toma las medidas mayores del ancho y el alto y las multiplica \\((7 \\times 4 = 28)\\), como si la figura fuera un rectángulo lleno."
+        "A": "Mide únicamente el cuerpo rectangular del castillo \\((7 \\times 2 = 14)\\) y deja por fuera las dos torres.",
+        "C": "Cuenta los cuadritos que recorre el contorno de la silueta, es decir, halla el perímetro y no el área.",
+        "D": "Toma el ancho y el alto máximos de la silueta y los multiplica \\((7 \\times 5 = 35)\\), como si el castillo fuera un rectángulo lleno."
       },
       "imagen_figura": "assets/banco-mat-5-p2/q04.png"
     },
     {
-      "id": "P-math-5-p2-05",
-      "numero": 5,
-      "enunciado": "<p>Pedro juega con un dado y obtiene los siguientes puntos en cinco lanzamientos (ver figura).</p><p>Pedro suma los puntos que obtuvo en los cinco lanzamientos y quiere probar si existe la posibilidad de obtener la <b>misma cantidad total de puntos</b> haciendo que el dado repita un mismo resultado siempre. ¿Cuál de las siguientes posibilidades comprueba la idea de Pedro?</p>",
+      "id": "P-math-5-p2-10",
+      "numero": 11,
+      "enunciado": "<p>Al cerrar la jornada, el administrador de un parqueadero escribe en su reporte diario: <i>«Quedaron ocupados <b>\\(\\dfrac{3}{7}\\)</b> de los espacios»</i>.</p><p>¿Cuál de los siguientes parqueaderos (A, B, C o D) coincide con lo que dice el reporte?</p>",
       "opciones": {
-        "A": "\\(5\\) lanzamientos de \\(4\\) puntos.",
-        "B": "\\(3\\) lanzamientos de \\(6\\) puntos.",
-        "C": "\\(6\\) lanzamientos de \\(3\\) puntos.",
-        "D": "\\(2\\) lanzamientos de \\(6\\) puntos."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas cuya estrategia de solución requiera de las relaciones y propiedades de los números naturales y sus operaciones.",
-      "que_evalua": "La capacidad de establecer una equivalencia entre expresiones, teniendo en cuenta propiedades de la suma como la asociación en contextos discretos.",
-      "justificacion_correcta": "La suma de los cinco puntajes es \\(6 + 2 + 4 + 2 + 4 = 18\\). Agrupando los puntajes que se repiten, \\(6 + (2 + 4) + (2 + 4) = 6 + 6 + 6 = 3 \\times 6\\), equivalente a \\(3\\) lanzamientos de \\(6\\) puntos cada uno.",
-      "opciones_incorrectas": {
-        "A": "\\(5 \\times 4 = 20\\) puntos, que no coincide con la suma real de \\(18\\).",
-        "C": "\\(6 \\times 3 = 18\\) puntos da el mismo total, pero reparte el total en \\(6\\) lanzamientos y no en \\(3\\), que es el menor número de repeticiones del mismo valor que comprueba la idea.",
-        "D": "\\(2 \\times 6 = 12\\) puntos, que es menor que el total real de \\(18\\)."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q05.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-5-p2/q05_opA.png",
-        "B": "assets/banco-mat-5-p2/q05_opB.png",
-        "C": "assets/banco-mat-5-p2/q05_opC.png",
-        "D": "assets/banco-mat-5-p2/q05_opD.png"
-      }
-    },
-    {
-      "id": "P-math-5-p2-06",
-      "numero": 6,
-      "enunciado": "<p>Esteban tomó dos triángulos <b>congruentes</b> y un círculo para formar un moño. Observa. El triángulo de la izquierda tiene lados de <b>\\(7\\) cm</b>, <b>\\(9\\) cm</b> y <b>\\(12\\) cm</b>. ¿Cuáles deben ser los valores de los lados <b>\\(x\\)</b>, <b>\\(z\\)</b> y <b>\\(w\\)</b> del otro triángulo?</p>",
-      "opciones": {
-        "A": "\\(x = 12\\) cm, \\(z = 12\\) cm, \\(w = 12\\) cm",
-        "B": "\\(x = 7\\) cm, \\(z = 9\\) cm, \\(w = 9\\) cm",
-        "C": "\\(x = 8\\) cm, \\(z = 8\\) cm, \\(w = 12\\) cm",
-        "D": "\\(x = 7\\) cm, \\(z = 9\\) cm, \\(w = 12\\) cm"
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
-      "que_evalua": "La capacidad de encontrar información faltante en una figura geométrica a partir de una congruencia.",
-      "justificacion_correcta": "Al ser los triángulos congruentes, deben cumplir el criterio de congruencia lado-lado-lado (L.L.L.). Por ello, los lados del triángulo que no tiene medidas deben ser iguales a los del otro: \\(x = 7\\) cm, \\(z = 9\\) cm y \\(w = 12\\) cm.",
-      "opciones_incorrectas": {
-        "A": "Supone que los lados del triángulo deben ser todos iguales entre sí, es decir, un triángulo equilátero.",
-        "B": "Cree que basta con que dos de los lados correspondientes sean congruentes para que los triángulos lo sean.",
-        "C": "Asume que dos triángulos son congruentes si sus perímetros coinciden \\((7+9+12 = 8+8+12 = 28)\\), aunque los lados no sean iguales uno a uno."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q06.png"
-    },
-    {
-      "id": "P-math-5-p2-07",
-      "numero": 7,
-      "enunciado": "<p>Sofía y Tomás registran cuántos minutos leen cada día. La gráfica de barras muestra los minutos que cada uno leyó de lunes a viernes. ¿Cuál de las siguientes tablas muestra los minutos que Sofía y Tomás leyeron cada día?</p>",
-      "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Sofía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Tomás</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Sofía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Tomás</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Sofía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Tomás</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Sofía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Minutos de Tomás</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr></table>"
+        "A": "El parqueadero C.",
+        "B": "El parqueadero B.",
+        "C": "El parqueadero D.",
+        "D": "El parqueadero A."
       },
       "clave": "A",
-      "competencia": "b",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
-      "que_evalua": "La capacidad de los estudiantes para relacionar datos numéricos con datos no numéricos presentados en una gráfica de barras y representarlos en una tabla.",
-      "justificacion_correcta": "Se asocia cada cantidad de minutos con su respectivo día, leyendo en la gráfica la barra de Sofía y la de Tomás para cada día y ubicando esos valores en la columna del día correspondiente, sin alterar el orden de los días.",
-      "opciones_incorrectas": {
-        "B": "Ordena de menor a mayor los minutos de cada persona por separado, perdiendo la relación de cada dato con su día.",
-        "C": "Ordena los minutos de cada persona y, además, intercambia los datos de Sofía con los de Tomás.",
-        "D": "Conserva cada minuto con su día, pero intercambia los minutos de Sofía con los de Tomás."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q07.png"
-    },
-    {
-      "id": "P-math-5-p2-08",
-      "numero": 8,
-      "enunciado": "<p>En la parte izquierda de la imagen se muestra una veleta que Daniel había puesto <b>mal</b>, y en la parte derecha se muestra cómo quedó después de arreglarla. ¿Cuál transformación geométrica le hizo Daniel a la veleta para que quedara bien puesta?</p>",
-      "opciones": {
-        "A": "La giró 180° a la izquierda.",
-        "B": "La giró 180° a la derecha.",
-        "C": "La giró 90° a la derecha.",
-        "D": "La giró 90° a la izquierda."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
-      "que_evalua": "La capacidad de identificar transformaciones (rotaciones) en figuras o representaciones de objetos.",
-      "justificacion_correcta": "El paño de la veleta pasó de apuntar a la derecha a apuntar hacia arriba. Ese cambio de orientación corresponde a un giro de \\(90^\\circ\\) en sentido contrario a las manecillas del reloj, es decir, \\(90^\\circ\\) a la izquierda.",
-      "opciones_incorrectas": {
-        "A": "Confunde un giro de \\(180^\\circ\\) con uno de \\(90^\\circ\\); con \\(180^\\circ\\) el paño quedaría apuntando a la izquierda.",
-        "B": "Confunde la magnitud del giro: \\(180^\\circ\\) no deja el paño apuntando hacia arriba.",
-        "C": "Acierta la magnitud \\((90^\\circ)\\) pero confunde el sentido del giro; a la derecha el paño quedaría apuntando hacia abajo."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q08.png"
-    },
-    {
-      "id": "P-math-5-p2-09",
-      "numero": 9,
-      "enunciado": "<p>Observa el título de una noticia que salió en el periódico: <i>«\\(0{,}4\\) de los niños del barrio practica algún deporte»</i>. ¿Cuál de los siguientes títulos (A, B, C o D) es <b>equivalente</b> al mostrado?</p>",
-      "opciones": {
-        "A": "\\(\\dfrac{4}{1}\\) de los niños del barrio practica algún deporte.",
-        "B": "\\(\\dfrac{1}{4}\\) de los niños del barrio practica algún deporte.",
-        "C": "\\(\\dfrac{2}{5}\\) de los niños del barrio practica algún deporte.",
-        "D": "\\(\\dfrac{4}{100}\\) de los niños del barrio practica algún deporte."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Utilizo números racionales, en sus distintas expresiones (fracciones, razones, decimales o porcentajes) para resolver problemas en contextos de medida.",
-      "que_evalua": "La capacidad de representar números racionales de distintas formas.",
-      "justificacion_correcta": "El decimal \\(0{,}4\\) tiene una cifra después de la coma, así que equivale a \\(\\dfrac{4}{10}\\). Al simplificar dividiendo numerador y denominador entre \\(2\\), se obtiene \\(\\dfrac{2}{5}\\). Por lo tanto, \\(0{,}4 = \\dfrac{2}{5}\\).",
-      "opciones_incorrectas": {
-        "A": "Toma el \\(4\\) de \\(0{,}4\\) como un número entero y lo escribe como \\(\\dfrac{4}{1}\\), ignorando la coma decimal.",
-        "B": "Invierte la fracción y la asocia con \\(\\dfrac{1}{4}\\), confundiendo el lugar del numerador y el denominador.",
-        "D": "Lee \\(0{,}4\\) como si fueran cuatro centésimas \\(\\left(\\dfrac{4}{100}\\right)\\), en vez de cuatro décimas."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q09.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-5-p2/q09_opA.png",
-        "B": "assets/banco-mat-5-p2/q09_opB.png",
-        "C": "assets/banco-mat-5-p2/q09_opC.png",
-        "D": "assets/banco-mat-5-p2/q09_opD.png"
-      }
-    },
-    {
-      "id": "P-math-5-p2-10",
-      "numero": 10,
-      "enunciado": "<p>El encargado de un parqueadero de bicicletas hace la siguiente afirmación: <i>«<b>\\(\\dfrac{3}{7}\\)</b> de los espacios para parquear están ocupados»</i>. ¿Cuál de los siguientes parqueaderos (A, B, C o D) podría ser el que describe el encargado?</p>",
-      "opciones": {
-        "A": "El parqueadero A.",
-        "B": "El parqueadero B.",
-        "C": "El parqueadero C.",
-        "D": "El parqueadero D."
-      },
-      "clave": "C",
       "competencia": "c",
       "afirmacion": 8,
       "evidencia": "8.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte-todo, cociente, razones y proporciones.",
-      "que_evalua": "La capacidad de interpretar fracciones de forma numérica a esquemática.",
-      "justificacion_correcta": "La fracción \\(\\dfrac{3}{7}\\) indica que hay \\(7\\) espacios en total (el denominador), de los cuales \\(3\\) están ocupados (el numerador) y \\(4\\) quedan libres. El parqueadero C tiene exactamente \\(7\\) espacios con \\(3\\) ocupados.",
+      "que_evalua": "La capacidad de reconocer la representación gráfica que corresponde a una fracción dada en la relación parte-todo.",
+      "justificacion_correcta": "En \\(\\dfrac{3}{7}\\) el denominador dice en cuántas partes iguales está repartido el todo, \\(7\\) espacios, y el numerador cuántas de esas partes se toman, \\(3\\) espacios con carro. El parqueadero C es el único con \\(7\\) espacios y exactamente \\(3\\) ocupados.",
       "opciones_incorrectas": {
-        "A": "Tiene \\(10\\) espacios con muchos ocupados, lo que no corresponde a la fracción \\(\\dfrac{3}{7}\\).",
-        "B": "Tiene \\(7\\) espacios, pero solo \\(2\\) ocupados; representaría \\(\\dfrac{2}{7}\\), no \\(\\dfrac{3}{7}\\).",
-        "D": "Tiene \\(3\\) ocupados, pero solo \\(4\\) espacios en total; representaría \\(\\dfrac{3}{4}\\), no \\(\\dfrac{3}{7}\\)."
+        "D": "Tiene \\(10\\) espacios y casi todos ocupados, de manera que el todo no está dividido en las \\(7\\) partes que indica el denominador.",
+        "B": "Acierta el total de \\(7\\) espacios, pero solo \\(2\\) están ocupados: representa \\(\\dfrac{2}{7}\\).",
+        "C": "Tiene \\(3\\) espacios ocupados, pero el total es de \\(4\\) espacios: representa \\(\\dfrac{3}{4}\\)."
       },
       "opciones_imagenes": {
-        "A": "assets/banco-mat-5-p2/q10_opA.png",
+        "D": "assets/banco-mat-5-p2/q10_opA.png",
         "B": "assets/banco-mat-5-p2/q10_opB.png",
-        "C": "assets/banco-mat-5-p2/q10_opC.png",
-        "D": "assets/banco-mat-5-p2/q10_opD.png"
+        "A": "assets/banco-mat-5-p2/q10_opC.png",
+        "C": "assets/banco-mat-5-p2/q10_opD.png"
       }
-    },
-    {
-      "id": "P-math-5-p2-11",
-      "numero": 11,
-      "enunciado": "<p>A Camila le gusta el baloncesto y practica lanzamientos a la cesta todos los días. Camila revisa los lanzamientos de los últimos días y concluye que, de cada <b>\\(10\\)</b> lanzamientos, encestó <b>\\(7\\)</b>. A partir de su conclusión, ¿cuál es la probabilidad de que lance de nuevo y enceste?</p>",
-      "opciones": {
-        "A": "\\(\\dfrac{10}{7}\\)",
-        "B": "\\(\\dfrac{7}{17}\\)",
-        "C": "\\(\\dfrac{7}{10}\\)",
-        "D": "\\(\\dfrac{3}{10}\\)"
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 9,
-      "evidencia": "9.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad de los estudiantes para determinar la probabilidad de un evento a partir de los resultados de experimentos realizados.",
-      "justificacion_correcta": "La probabilidad de encestar es la cantidad de aciertos sobre el total de lanzamientos. Como de cada \\(10\\) lanzamientos encestó \\(7\\), la probabilidad es \\(\\dfrac{7}{10}\\).",
-      "opciones_incorrectas": {
-        "A": "Invierte la razón y divide el total entre los aciertos: \\(\\dfrac{10}{7}\\).",
-        "B": "Suma los aciertos \\((7)\\) y los fallos \\((3)\\) como si fueran un total distinto, obteniendo \\(\\dfrac{7}{17}\\).",
-        "D": "Toma los lanzamientos fallados \\((10 - 7 = 3)\\) en lugar de los encestados: \\(\\dfrac{3}{10}\\)."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q11.png"
-    },
-    {
-      "id": "P-math-5-p2-12",
-      "numero": 12,
-      "enunciado": "<p>La imagen muestra una bolsa de cereal de <b>\\(15\\) kg</b> que contiene <b>\\(6\\) kg de fruta</b> y <b>\\(9\\) kg de avena</b>. Una tienda necesita saber cuánta fruta hay en bolsas del mismo cereal pero de otro tamaño. Si compra una bolsa de <b>\\(45\\) kg</b>, ¿cuánta fruta hay en esa bolsa?</p>",
-      "opciones": {
-        "A": "\\(39\\) kg",
-        "B": "\\(27\\) kg",
-        "C": "\\(30\\) kg",
-        "D": "\\(18\\) kg"
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
-      "que_evalua": "La capacidad de resolver problemas asociados a situaciones de proporcionalidad directa.",
-      "justificacion_correcta": "En la bolsa de \\(15\\) kg, la razón de fruta es \\(\\dfrac{6}{15} = \\dfrac{2}{5}\\). Como la proporción se conserva, en una bolsa de \\(45\\) kg la fruta es \\(45 \\times \\dfrac{2}{5} = 18\\) kg.",
-      "opciones_incorrectas": {
-        "A": "Resta el peso de la fruta al total nuevo \\((45 - 6 = 39)\\), usando una resta en lugar de la proporción.",
-        "B": "Usa la razón de la avena \\(\\left(\\dfrac{9}{15}\\right)\\) en vez de la de la fruta, obteniendo \\(27\\) kg.",
-        "C": "Toma la relación entre fruta y avena \\(\\left(\\dfrac{6}{9} = \\dfrac{2}{3}\\right)\\) y la aplica a \\(45\\), obteniendo \\(30\\) kg."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q12.png"
-    },
-    {
-      "id": "P-math-5-p2-13",
-      "numero": 13,
-      "enunciado": "<p>Bruno realizó una operación aditiva en la calculadora y obtuvo el resultado que muestra la pantalla: <b>\\(1.346\\)</b>. ¿Cuál de las siguientes calculadoras (A, B, C o D) muestra una operación aditiva que pudo digitar Bruno para obtener ese resultado?</p>",
-      "opciones": {
-        "A": "\\(980 + 314 + 52\\)",
-        "B": "\\(980 + 314 + 25\\)",
-        "C": "\\(980 + 304 + 52\\)",
-        "D": "\\(890 + 314 + 52\\)"
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
-      "que_evalua": "La capacidad de hallar los sumandos que al sumar dan un resultado previamente presentado.",
-      "justificacion_correcta": "Al resolver cada operación con reagrupación: \\(980 + 314 + 52 = 1.346\\); \\(980 + 314 + 25 = 1.319\\); \\(980 + 304 + 52 = 1.336\\); \\(890 + 314 + 52 = 1.256\\). La única que da \\(1.346\\) es la opción A.",
-      "opciones_incorrectas": {
-        "B": "Cambia el último sumando por \\(25\\) (intercambia las cifras de \\(52\\)): \\(980 + 314 + 25 = 1.319\\), distinto de \\(1.346\\).",
-        "C": "Lee \\(304\\) en lugar de \\(314\\) (omite la decena del segundo sumando): \\(980 + 304 + 52 = 1.336\\).",
-        "D": "Lee \\(890\\) en lugar de \\(980\\) (intercambia las cifras del primer sumando): \\(890 + 314 + 52 = 1.256\\)."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q13.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-5-p2/q13_opA.png",
-        "B": "assets/banco-mat-5-p2/q13_opB.png",
-        "C": "assets/banco-mat-5-p2/q13_opC.png",
-        "D": "assets/banco-mat-5-p2/q13_opD.png"
-      }
-    },
-    {
-      "id": "P-math-5-p2-14",
-      "numero": 14,
-      "enunciado": "<p>Daniela necesita pegar una cinta alrededor de todo el borde de una cartelera rectangular. En la figura solo se conocen dos de sus medidas: <b>\\(60\\) cm</b> de ancho y <b>\\(45\\) cm</b> de alto. ¿Cuál es la cantidad mínima de cinta que necesita Daniela para cubrir todo el borde de la cartelera?</p>",
-      "opciones": {
-        "A": "\\(105\\) cm",
-        "B": "\\(165\\) cm",
-        "C": "\\(210\\) cm",
-        "D": "\\(2.700\\) cm"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Selecciono unidades, tanto convencionales como estandarizadas, apropiadas para diferentes mediciones.",
-      "que_evalua": "La capacidad de hallar el perímetro de un rectángulo dadas solo dos de las cuatro medidas de sus lados.",
-      "justificacion_correcta": "Un rectángulo tiene los lados opuestos iguales, así que sus cuatro lados miden \\(60\\), \\(60\\), \\(45\\) y \\(45\\) cm. El borde (perímetro) es \\(60 + 60 + 45 + 45 = 210\\) cm.",
-      "opciones_incorrectas": {
-        "A": "Suma únicamente las dos medidas que aparecen \\((60 + 45 = 105)\\), sin tener en cuenta los dos lados que faltan.",
-        "B": "Dobla solo el ancho y deja el alto sencillo \\((60 + 60 + 45 = 165)\\), olvidando que también hay dos lados de \\(45\\) cm.",
-        "D": "Multiplica las dos medidas \\((60 \\times 45 = 2.700)\\), que corresponde al área, no al borde."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q14.png"
-    },
-    {
-      "id": "P-math-5-p2-15",
-      "numero": 15,
-      "enunciado": "<p>Valeria está resolviendo en el tablero la siguiente operación: <b>\\(\\sqrt{\\dfrac{4}{100}} + \\dfrac{2}{5} = \\dfrac{3}{5}\\)</b>. ¿Es <b>correcto</b> o <b>incorrecto</b> el resultado de la operación?</p>",
-      "opciones": {
-        "A": "Es correcto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{4}{10}\\) y, al sumarle \\(\\dfrac{2}{5}\\), el resultado es \\(\\dfrac{3}{5}\\).",
-        "B": "Es correcto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{2}{10} = \\dfrac{1}{5}\\) y, al sumar \\(\\dfrac{1}{5} + \\dfrac{2}{5}\\) que son homogéneas, el resultado es \\(\\dfrac{3}{5}\\).",
-        "C": "Es incorrecto, porque \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{1}{5}\\) y, al sumar \\(\\dfrac{1}{5} + \\dfrac{2}{5}\\), también se suman los denominadores: \\(\\dfrac{3}{10}\\).",
-        "D": "Es incorrecto, porque la raíz cuadrada de \\(100\\) es \\(50\\), por lo que la raíz de la fracción no es \\(\\dfrac{1}{5}\\)."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico la potenciación y la radicación en contextos matemáticos y no matemáticos.",
-      "que_evalua": "La capacidad de explicar por qué un cálculo entre fracciones es correcto o incorrecto, cuando hay raíces cuadradas en el proceso.",
-      "justificacion_correcta": "La raíz cuadrada se distribuye sobre el numerador y el denominador: \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{\\sqrt{4}}{\\sqrt{100}} = \\dfrac{2}{10}\\), que al simplificar es \\(\\dfrac{1}{5}\\). Como \\(\\dfrac{1}{5}\\) y \\(\\dfrac{2}{5}\\) son homogéneas, se suman los numeradores: \\(\\dfrac{1}{5} + \\dfrac{2}{5} = \\dfrac{3}{5}\\). El resultado es correcto.",
-      "opciones_incorrectas": {
-        "A": "Calcula mal la raíz: \\(\\sqrt{\\dfrac{4}{100}} = \\dfrac{2}{10}\\), no \\(\\dfrac{4}{10}\\). Con \\(\\dfrac{4}{10}\\) la suma daría \\(\\dfrac{4}{10} + \\dfrac{2}{5} = \\dfrac{4}{5}\\), no \\(\\dfrac{3}{5}\\); la opción se contradice a sí misma, así que es incorrecta.",
-        "C": "Suma también los denominadores \\(\\left(\\dfrac{1+2}{5+5} = \\dfrac{3}{10}\\right)\\), olvidando que en fracciones homogéneas solo se suman los numeradores.",
-        "D": "Calcula mal la raíz de \\(100\\) (sería \\(10\\), no \\(50\\)), por lo que parte de un valor equivocado."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q15.png"
-    },
-    {
-      "id": "P-math-5-p2-16",
-      "numero": 16,
-      "enunciado": "<p>Un grupo de amigos cuida cinco gatas que tuvieron crías. La figura muestra cuántos gaticos tuvo cada una. Una forma de hallar el total de gaticos es sumando \\(7 + 3 + 3 + 7 + 5\\). ¿De qué otra manera se puede calcular esa misma cantidad total de gaticos?</p>",
-      "opciones": {
-        "A": "\\(2 \\times (7 + 3 + 5)\\)",
-        "B": "\\(5 \\times (7 + 3 + 5)\\)",
-        "C": "\\(2 \\times (7 + 3) + 5\\)",
-        "D": "\\(5 \\times (7 + 3) \\times 5\\)"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 10,
-      "evidencia": "10.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
-      "que_evalua": "La capacidad de los estudiantes para determinar una expresión aritmética equivalente a una adición dada.",
-      "justificacion_correcta": "Hay dos gatas con \\(7\\) gaticos y dos con \\(3\\) gaticos, que se pueden agrupar como \\(2 \\times (7 + 3)\\); a ese resultado se le suma la única cantidad que no se repite, los \\(5\\) gaticos de la otra gata. Así, el total equivale a \\(2 \\times (7 + 3) + 5\\).",
-      "opciones_incorrectas": {
-        "A": "Multiplica por \\(2\\) todas las cantidades, incluido el \\(5\\) que aparece una sola vez.",
-        "B": "Multiplica por \\(5\\) (la cantidad de gatas) la suma de los valores, contando varias veces cada cantidad.",
-        "D": "Combina productos que no corresponden: \\(5 \\times (7 + 3) \\times 5\\) da un total mucho mayor que el real."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q16.png"
-    },
-    {
-      "id": "P-math-5-p2-17",
-      "numero": 17,
-      "enunciado": "<p>Catalina diseña tarjetas con forma de <b>rombo</b>. Observa el Rombo 1 y el Rombo 2 sobre la cuadrícula. Catalina quiere que las dos tarjetas sean <b>semejantes</b>. ¿Cuál de las siguientes condiciones deben cumplir los rombos del diseño?</p>",
-      "opciones": {
-        "A": "Que los lados del rombo 1 midan lo mismo que los del rombo 2.",
-        "B": "Que las medidas de los ángulos del rombo 1 sean iguales a las del rombo 2.",
-        "C": "Que la medida de los ángulos del rombo 2 sea cuatro veces la de los del rombo 1.",
-        "D": "Que los lados del rombo 2 sean proporcionales a los del rombo 1."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
-      "que_evalua": "La capacidad de reconocer las características que deben cumplir dos o más figuras para que sean semejantes.",
-      "justificacion_correcta": "En un rombo los cuatro lados son iguales, así que la proporción entre los lados ya se cumple por la forma de la figura. Para que dos rombos sean semejantes basta, entonces, con que sus ángulos correspondientes sean iguales.",
-      "opciones_incorrectas": {
-        "A": "Que los lados midan lo mismo es la condición de congruencia (figuras del mismo tamaño), no de semejanza.",
-        "C": "La semejanza no exige que los ángulos sean cuatro veces mayores; los ángulos correspondientes deben ser iguales, no multiplicados.",
-        "D": "En un rombo todos los lados ya son iguales, así que pedir que sean proporcionales no aporta una condición nueva ni garantiza la semejanza por sí sola."
-      },
-      "imagen_figura": "assets/banco-mat-5-p2/q17.png"
     },
     {
       "id": "P-math-5-p2-18",
-      "numero": 18,
-      "enunciado": "<p>Andrés registró en una tabla los minutos que jugó al ajedrez cada día de la semana pasada.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Minutos de juego</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table><p>Andrés decidió que cada día de la próxima semana jugará una cantidad de minutos igual al <b>promedio</b> de los minutos que jugó la semana pasada. ¿Cuántos minutos jugará cada día de la próxima semana?</p>",
+      "numero": 12,
+      "enunciado": "<p>Ximena participó en la campaña de reciclaje del colegio y anotó cuántas botellas plásticas recogió cada día de la semana pasada.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Botellas recogidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr></table><p>Para el informe de la campaña, el profesor le pidió resumir la semana con un solo número: el <b>promedio</b> diario de botellas recogidas. ¿Qué número debe reportar Ximena?</p>",
       "opciones": {
-        "A": "\\(2\\) minutos",
-        "B": "\\(3\\) minutos",
-        "C": "\\(4\\) minutos",
-        "D": "\\(6\\) minutos"
+        "A": "\\(2\\) botellas",
+        "B": "\\(5\\) botellas",
+        "C": "\\(6\\) botellas",
+        "D": "\\(30\\) botellas"
       },
       "clave": "C",
       "competencia": "b",
@@ -530,71 +375,226 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
-      "que_evalua": "La capacidad para hallar el valor promedio de un conjunto de datos no agrupados.",
-      "justificacion_correcta": "Para hallar el promedio se suman todos los datos: \\(8 + 2 + 5 + 2 + 3 = 20\\), y se divide entre la cantidad de días, que es \\(5\\): \\(20 \\div 5 = 4\\) minutos.",
+      "que_evalua": "La capacidad de calcular el promedio de un conjunto de datos no agrupados y distinguirlo de otras medidas.",
+      "justificacion_correcta": "El promedio se obtiene sumando todos los datos y dividiendo entre la cantidad de datos. La suma es \\(12 + 2 + 9 + 2 + 5 = 30\\) botellas y los días registrados son \\(5\\); por lo tanto, \\(30 \\div 5 = 6\\) botellas diarias.",
       "opciones_incorrectas": {
-        "A": "Halla la moda (el dato que más se repite), que es \\(2\\) minutos, en lugar del promedio.",
-        "B": "Halla la mediana: al ordenar los datos \\((2, 2, 3, 5, 8)\\) el valor del centro es \\(3\\), que no es el promedio.",
-        "D": "Halla el rango: \\(8 - 2 = 6\\) minutos, que mide la dispersión, no el promedio."
+        "A": "Reporta la moda, el dato que más se repite en la tabla \\((2)\\), y no el promedio.",
+        "B": "Reporta la mediana: al ordenar los datos \\((2, 2, 5, 9, 12)\\) el valor del centro es \\(5\\), que tampoco es el promedio.",
+        "D": "Suma correctamente los datos \\((30)\\) pero olvida el paso de dividir entre los \\(5\\) días."
       }
     },
     {
-      "id": "P-math-5-p2-19",
-      "numero": 19,
-      "enunciado": "<p>Mateo participa en una rifa y debe sacar de la bolsa, sin mirar, una de las pelotas que tienen un número. En la bolsa hay pelotas marcadas con los números \\(1\\), \\(2\\), \\(3\\), \\(3\\), \\(5\\) y \\(7\\) (ver figura). ¿Cuál de las siguientes pelotas es <b>imposible</b> que Mateo saque de la bolsa?</p>",
+      "id": "P-math-5-p2-16",
+      "numero": 13,
+      "enunciado": "<p>En el refugio de animales del barrio nacieron las crías de cinco gatas. En la figura aparece cuántos gaticos tuvo cada una y, en la planilla del refugio, el total quedó anotado como la suma \\(7 + 3 + 3 + 7 + 5\\).</p><p>La veterinaria quiere anotar ese mismo total de una forma más corta, aprovechando las cantidades que se repiten.</p>[[IMG]]<p>¿Cuál de las siguientes expresiones sirve para eso?</p>",
       "opciones": {
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": ""
+        "A": "\\(2 \\times (7 + 3) \\times 5\\)",
+        "B": "\\(5 \\times (7 + 3 + 5)\\)",
+        "C": "\\(2 \\times (7 + 3 + 5)\\)",
+        "D": "\\(2 \\times (7 + 3) + 5\\)"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La capacidad de escribir una expresión multiplicativa equivalente a una suma con sumandos repetidos.",
+      "justificacion_correcta": "En la figura el \\(7\\) aparece dos veces y el \\(3\\) también dos veces, de modo que esos cuatro sumandos se agrupan como \\(2 \\times (7 + 3) = 20\\). Al \\(5\\), que no se repite, se le suma aparte: \\(2 \\times (7 + 3) + 5 = 25\\), el mismo total que \\(7 + 3 + 3 + 7 + 5\\).",
+      "opciones_incorrectas": {
+        "B": "Multiplica por \\(5\\), la cantidad de gatas, la suma de los valores distintos, y termina contando cinco veces cada cantidad: \\(5 \\times 15 = 75\\).",
+        "C": "Duplica también el \\(5\\), que en la figura aparece una sola vez: \\(2 \\times 15 = 30\\), cinco gaticos de más.",
+        "A": "Cambia por una multiplicación la suma del \\(5\\) y obtiene \\(20 \\times 5 = 100\\), un total muy lejano al real."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q16.png"
+    },
+    {
+      "id": "P-math-5-p2-07",
+      "numero": 14,
+      "enunciado": "<p>Sofía y Tomás se propusieron leer todos los días y llevaron el registro en la gráfica de barras que se muestra. La profesora les pidió pasar esa misma información a una tabla para pegarla en la cartelera.</p>[[IMG]]<p>¿Cuál de las siguientes tablas recoge sin errores lo que muestra la gráfica?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sofía (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tomás (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sofía (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tomás (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sofía (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tomás (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lun</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mié</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jue</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Vie</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sofía (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tomás (minutos)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
+      "que_evalua": "La capacidad de trasladar a una tabla la información de una gráfica de barras conservando la correspondencia entre cada dato y su categoría.",
+      "justificacion_correcta": "Para cada día se lee la altura de la barra verde (Sofía) y la de la barra morada (Tomás) y esos valores se escriben en la columna de ese mismo día. Así, Sofía registra \\(8, 12, 10, 14\\) y \\(9\\) minutos, y Tomás \\(10, 6, 12, 8\\) y \\(11\\) minutos, de lunes a viernes.",
+      "opciones_incorrectas": {
+        "A": "Escribe la semana al revés, empezando por el viernes, de modo que ningún dato queda frente al día que le corresponde.",
+        "C": "Conserva cada dato en su día, pero cambia de fila: pone en Sofía los minutos de Tomás y viceversa.",
+        "D": "Copia bien la fila de Sofía, pero corre un día la fila de Tomás, así que a cada día le asigna el dato del día anterior."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q07.png"
+    },
+    {
+      "id": "P-math-5-p2-14",
+      "numero": 15,
+      "enunciado": "<p>Don Álvaro va a instalar una moldura de madera que rodee por completo el borde de un espejo rectangular. En el plano del espejo solo quedaron anotadas dos medidas: <b>\\(60\\) cm</b> y <b>\\(45\\) cm</b>.</p>[[IMG]]<p>¿Cuántos centímetros de moldura debe comprar, como mínimo, para rodear todo el espejo?</p>",
+      "opciones": {
+        "A": "\\(210\\) cm",
+        "B": "\\(2.700\\) cm",
+        "C": "\\(120\\) cm",
+        "D": "\\(165\\) cm"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Selecciono unidades, tanto convencionales como estandarizadas, apropiadas para diferentes mediciones.",
+      "que_evalua": "La capacidad de calcular el perímetro de un rectángulo cuando solo se conocen dos de sus lados.",
+      "justificacion_correcta": "En un rectángulo los lados opuestos miden lo mismo, así que hay dos lados de \\(60\\) cm y dos de \\(45\\) cm. La moldura debe cubrir el contorno completo: \\(60 + 60 + 45 + 45 = 210\\) cm.",
+      "opciones_incorrectas": {
+        "C": "Solo tiene en cuenta los dos lados largos \\((60 + 60 = 120)\\) y olvida por completo los dos lados de \\(45\\) cm.",
+        "D": "Duplica el lado largo pero deja el corto una sola vez \\((60 + 60 + 45 = 165)\\), de modo que le falta un lado por sumar.",
+        "B": "Multiplica las dos medidas \\((60 \\times 45 = 2.700)\\): ese resultado es la superficie del espejo, no la longitud de su borde."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q14.png"
+    },
+    {
+      "id": "P-math-5-p2-02",
+      "numero": 16,
+      "enunciado": "<p>El grupo de quinto se encargó del aseo de la cancha del colegio. Antes del descanso alcanzaron a barrer <b>\\(\\dfrac{2}{3}\\)</b> de la cancha y, al regresar, barrieron <b>\\(\\dfrac{1}{6}\\)</b> más. ¿Qué parte de la cancha quedó barrida en total?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{3}{9}\\) de la cancha.",
+        "B": "\\(\\dfrac{1}{2}\\) de la cancha.",
+        "C": "\\(\\dfrac{5}{6}\\) de la cancha.",
+        "D": "\\(\\dfrac{3}{18}\\) de la cancha."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad de los estudiantes para sumar dos fracciones de distinto denominador.",
+      "justificacion_correcta": "Antes de sumar hay que igualar los denominadores. Como \\(6\\) es múltiplo de \\(3\\), se amplifica la primera fracción: \\(\\dfrac{2}{3} = \\dfrac{4}{6}\\). Ya homogéneas, se suman solo los numeradores: \\(\\dfrac{4}{6} + \\dfrac{1}{6} = \\dfrac{5}{6}\\) de la cancha.",
+      "opciones_incorrectas": {
+        "D": "Multiplica los denominadores y suma los numeradores: \\(\\dfrac{2+1}{3 \\times 6} = \\dfrac{3}{18}\\).",
+        "B": "Simplifica sin haber homogeneizado y reporta \\(\\dfrac{1}{2}\\), un valor incluso menor que la parte que ya se había barrido.",
+        "A": "Suma por separado numeradores y denominadores: \\(\\dfrac{2+1}{3+6} = \\dfrac{3}{9}\\)."
+      }
+    },
+    {
+      "id": "P-math-5-p2-01",
+      "numero": 17,
+      "enunciado": "<p>En la huerta del colegio, los estudiantes de quinto sembraron un retoño de bambú y comprobaron que su altura aumenta la misma cantidad todos los días. Para llevar el control del cultivo empezaron a diligenciar la tabla del registro, pero les faltó completar la última casilla.</p>[[IMG]]<p>De acuerdo con el registro, ¿qué número debe escribirse en la <b>casilla vacía</b> de la tabla?</p>",
+      "opciones": {
+        "A": "\\(54\\) cm",
+        "B": "\\(9\\) cm",
+        "C": "\\(63\\) cm",
+        "D": "\\(15\\) cm"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad de completar un registro apoyándose en una relación de proporcionalidad directa entre dos magnitudes.",
+      "justificacion_correcta": "La primera fila indica que en \\(1\\) día la planta crece \\(9\\) cm. Como el crecimiento diario es siempre el mismo, la cantidad de días y los centímetros son magnitudes directamente proporcionales; por eso, para \\(6\\) días corresponde \\(6 \\times 9\\ \\text{cm} = 54\\ \\text{cm}\\).",
+      "opciones_incorrectas": {
+        "D": "Suma la cantidad de días con el crecimiento diario \\((6 + 9 = 15)\\), aunque son magnitudes de distinta naturaleza y no se pueden sumar entre sí.",
+        "C": "Obtiene bien los \\(54\\) cm de los seis días, pero vuelve a sumar el \\(9\\) de la primera fila: \\(54 + 9 = 63\\).",
+        "B": "Copia el valor de la fila anterior y confunde el crecimiento de un solo día con el crecimiento acumulado de los seis días."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q01.png"
+    },
+    {
+      "id": "P-math-5-p2-06",
+      "numero": 18,
+      "enunciado": "<p>Para el taller de costura, Esteban dibujó el molde de un lazo: dos triángulos <b>congruentes</b> unidos por un botón redondo. Del triángulo de la izquierda ya anotó las tres medidas (<b>\\(7\\) cm</b> arriba, <b>\\(9\\) cm</b> al lado y <b>\\(12\\) cm</b> abajo), pero el triángulo de la derecha todavía tiene los lados <b>\\(x\\)</b>, <b>\\(z\\)</b> y <b>\\(w\\)</b> sin medida.</p>[[IMG]]<p>¿Qué medidas debe escribir Esteban para que el molde quede bien?</p>",
+      "opciones": {
+        "A": "\\(x = 7\\) cm, \\(z = 12\\) cm, \\(w = 9\\) cm",
+        "B": "\\(x = 7\\) cm, \\(z = 12\\) cm, \\(w = 12\\) cm",
+        "C": "\\(x = 9\\) cm, \\(z = 9\\) cm, \\(w = 9\\) cm",
+        "D": "\\(x = 8\\) cm, \\(z = 10\\) cm, \\(w = 10\\) cm"
       },
       "clave": "A",
       "competencia": "b",
-      "afirmacion": 11,
-      "evidencia": "11.1",
-      "cmc": "Aleatorio",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad para identificar la imposibilidad de un evento dada su definición y un experimento aleatorio.",
-      "justificacion_correcta": "El evento «sacar una pelota con el número \\(8\\)» es imposible, porque en la bolsa no hay ninguna pelota marcada con el \\(8\\).",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad de deducir las medidas faltantes de una figura a partir de una relación de congruencia.",
+      "justificacion_correcta": "Dos triángulos son congruentes cuando sus tres pares de lados correspondientes miden lo mismo (criterio lado-lado-lado). En el molde, el lado \\(x\\) se corresponde con el de \\(7\\) cm, el lado \\(z\\) con el de \\(12\\) cm y el lado \\(w\\) con el de \\(9\\) cm; por eso \\(x = 7\\) cm, \\(z = 12\\) cm y \\(w = 9\\) cm.",
       "opciones_incorrectas": {
-        "B": "La pelota con el \\(7\\) sí está en la bolsa, así que sacarla es un evento posible, no imposible.",
-        "C": "Hay dos pelotas con el \\(3\\): es el resultado más probable, no un evento imposible.",
-        "D": "La pelota con el \\(1\\) sí está en la bolsa; tener un número pequeño no la hace imposible de sacar."
+        "D": "Se conforma con que los dos moldes tengan el mismo contorno \\((7+9+12 = 8+10+10 = 28)\\), aunque los lados no coincidan uno a uno.",
+        "C": "Supone que un triángulo congruente con otro debe tener sus tres lados iguales entre sí, es decir, ser equilátero.",
+        "B": "Empareja bien el lado \\(x\\) y el lado \\(z\\), pero repite el \\(12\\) en \\(w\\) y deja sin usar la medida de \\(9\\) cm."
       },
-      "imagen_figura": "assets/banco-mat-5-p2/q19.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-5-p2/q19_opA.png",
-        "B": "assets/banco-mat-5-p2/q19_opB.png",
-        "C": "assets/banco-mat-5-p2/q19_opC.png",
-        "D": "assets/banco-mat-5-p2/q19_opD.png"
-      }
+      "imagen_figura": "assets/banco-mat-5-p2/q06.png"
     },
     {
-      "id": "P-math-5-p2-20",
-      "numero": 20,
-      "enunciado": "<p>En un juego de mesa se reparten fichas a los participantes. La Figura 1 muestra el total de fichas disponibles (\\(8\\) fichas) y la Figura 2 muestra las \\(2\\) fichas que le correspondieron a Lucas. ¿Qué fracción del total de fichas le correspondió a Lucas?</p>",
+      "id": "P-math-5-p2-17",
+      "numero": 19,
+      "enunciado": "<p>En el taller de origami, Nicolás dobló dos rombos de papel de distinto tamaño y los ubicó sobre una cuadrícula (Rombo 1 y Rombo 2). Nicolás quiere que el rombo grande sea una <b>ampliación exacta</b> del pequeño, es decir, que los dos rombos sean <b>semejantes</b>.</p>[[IMG]]<p>¿Qué condición deben cumplir los dos rombos para que eso ocurra?</p>",
       "opciones": {
-        "A": "\\(\\dfrac{3}{4}\\)",
-        "B": "\\(\\dfrac{1}{4}\\)",
-        "C": "\\(\\dfrac{1}{2}\\)",
-        "D": "\\(\\dfrac{1}{5}\\)"
+        "A": "Que los lados del rombo 2 sean proporcionales a los del rombo 1.",
+        "B": "Que los cuatro lados del rombo 2 midan lo mismo que los del rombo 1.",
+        "C": "Que la medida de cada ángulo del rombo 2 sea el doble de la del ángulo correspondiente del rombo 1.",
+        "D": "Que los ángulos correspondientes de los dos rombos tengan la misma medida."
       },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad de reconocer qué condición garantiza la semejanza entre dos figuras poligonales.",
+      "justificacion_correcta": "Por definición, un rombo tiene sus cuatro lados iguales; entonces, entre dos rombos cualesquiera la razón entre lados correspondientes ya es la misma y esa parte de la semejanza se cumple sola. Lo que falta exigir es la otra condición: que los ángulos correspondientes midan lo mismo.",
+      "opciones_incorrectas": {
+        "A": "En cualquier par de rombos los lados ya guardan una misma razón, así que pedir esa proporcionalidad no agrega ninguna condición y por sí sola no asegura la semejanza.",
+        "C": "Duplicar los ángulos deformaría la figura: en la semejanza los ángulos correspondientes se conservan iguales, no se multiplican.",
+        "B": "Que los lados midan lo mismo describe figuras congruentes, es decir, del mismo tamaño; la semejanza admite tamaños distintos."
+      },
+      "imagen_figura": "assets/banco-mat-5-p2/q17.png"
+    },
+    {
+      "id": "P-math-5-p2-05",
+      "numero": 20,
+      "enunciado": "<p>Durante el juego de mesa del descanso, Pedro anotó los puntos que le salieron en cinco lanzamientos del dado (ver figura).</p><p>Al terminar, la profesora le pidió escribir ese mismo total como una <b>multiplicación</b>: varios lanzamientos que hubieran caído siempre en el mismo valor.</p>[[IMG]]<p>¿Cuál de las siguientes posibilidades da exactamente el total que obtuvo Pedro?</p>",
+      "opciones": {
+        "A": "\\(3\\) lanzamientos de \\(6\\) puntos.",
+        "B": "\\(4\\) lanzamientos de \\(4\\) puntos.",
+        "C": "\\(2\\) lanzamientos de \\(6\\) puntos.",
+        "D": "\\(5\\) lanzamientos de \\(3\\) puntos."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
-      "estandar": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte-todo, cociente, razones y proporciones.",
-      "que_evalua": "La capacidad para representar una situación de relación parte-todo como una fracción y simplificarla.",
-      "justificacion_correcta": "El total de fichas es \\(8\\) y a Lucas le correspondieron \\(2\\). La fracción que representa la parte de Lucas es \\(\\dfrac{2}{8}\\), que al simplificar (dividiendo entre \\(2\\)) es \\(\\dfrac{1}{4}\\).",
+      "estandar": "Resuelvo y formulo problemas cuya estrategia de solución requiera de las relaciones y propiedades de los números naturales y sus operaciones.",
+      "que_evalua": "La capacidad de reconocer una expresión multiplicativa equivalente a una suma dada, apoyándose en el agrupamiento de sumandos.",
+      "justificacion_correcta": "Los cinco lanzamientos suman \\(6 + 2 + 4 + 2 + 4 = 18\\) puntos. Agrupando los sumandos que se repiten, \\(6 + (2 + 4) + (2 + 4) = 6 + 6 + 6\\), es decir, \\(3 \\times 6 = 18\\): tres lanzamientos de \\(6\\) puntos.",
       "opciones_incorrectas": {
-        "A": "Toma las fichas que NO son de Lucas \\((8 - 2 = 6)\\) sobre el total: \\(\\dfrac{6}{8} = \\dfrac{3}{4}\\).",
-        "C": "Cree que Lucas recibió la mitad de las fichas \\(\\left(\\dfrac{1}{2}\\right)\\), sin contar el total real de \\(8\\).",
-        "D": "Suma las fichas de Lucas y el total \\((2 + 8 = 10)\\) y forma \\(\\dfrac{2}{10} = \\dfrac{1}{5}\\)."
+        "B": "\\(4 \\times 4 = 16\\) puntos: se queda corto frente a los \\(18\\) puntos que realmente sumó Pedro.",
+        "D": "\\(5 \\times 3 = 15\\) puntos. Conserva la cantidad de lanzamientos de la figura, pero elige un valor del dado que nunca salió y no llega al total.",
+        "C": "\\(2 \\times 6 = 12\\) puntos: acierta el valor del dado, pero repite muy pocos lanzamientos y obtiene menos de \\(18\\)."
       },
-      "imagen_figura": "assets/banco-mat-5-p2/q20.png"
+      "imagen_figura": "assets/banco-mat-5-p2/q05.png",
+      "opciones_imagenes": {
+        "B": "assets/banco-mat-5-p2/q05_opA.png",
+        "A": "assets/banco-mat-5-p2/q05_opB.png",
+        "D": "assets/banco-mat-5-p2/q05_opC.png",
+        "C": "assets/banco-mat-5-p2/q05_opD.png"
+      }
     }
   ]
 }

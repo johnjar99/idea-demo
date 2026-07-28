@@ -50,89 +50,269 @@
   ],
   "preguntas": [
     {
-      "id": "math-8-p2-propio-2023-01",
+      "id": "math-8-p2-propio-2023-16",
       "numero": 1,
-      "enunciado": "<p>Un taller arma kits de herramientas para repartir. En cada kit se colocan <b>2 destornilladores</b> y <b>3 llaves</b>. Se prepararán <b>16 lotes</b> de <b>35 kits</b> cada uno. ¿Qué debería hacer el encargado para calcular cuántas unidades necesita <b>de cada herramienta</b> por separado?</p>",
+      "enunciado": "<p>El chorro de un aspersor de riego describe la parábola de la figura, donde \\(x\\) es la distancia horizontal y \\(y\\) la altura, ambas en metros. La curva pasa por los puntos <b>\\((0, 1)\\)</b>, <b>\\((2, 5)\\)</b> y <b>\\((4, 1)\\)</b>.</p>[[IMG]]<p>¿Cuál expresión modela la altura del chorro?</p>",
       "opciones": {
-        "A": "Paso 1. Multiplicar \\(35\\times 2\\). Paso 2. Multiplicar \\(35\\times 3\\). Paso 3. Sumar los dos resultados.",
-        "B": "Paso 1. Multiplicar \\(35\\times 16\\) para hallar el total de kits. Paso 2. Multiplicar ese total por \\(2\\). Paso 3. Multiplicar ese total por \\(3\\).",
-        "C": "Paso 1. Multiplicar \\(16\\times 2\\). Paso 2. Multiplicar \\(16\\times 3\\). Paso 3. Sumar los dos resultados.",
-        "D": "Paso 1. Multiplicar \\(2\\times 3\\). Paso 2. Multiplicar el resultado por \\(35\\). Paso 3. Multiplicar por \\(16\\)."
+        "A": "\\(y = x^2 - 4x + 1\\)",
+        "B": "\\(y = -x^2 + 4x + 1\\)",
+        "C": "\\(y = -2x^2 + 4x + 1\\)",
+        "D": "\\(y = -x^2 + 5\\)"
       },
       "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
-      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
-      "que_evalua": "La capacidad para encontrar una ruta de solución correcta a un problema matemático en un contexto cotidiano.",
-      "justificacion_correcta": "Primero se halla el total de kits \\(35\\times 16 = 560\\); luego se multiplica ese total por \\(2\\) y por \\(3\\), por separado, para obtener los destornilladores y las llaves de cada herramienta.",
+      "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
+      "que_evalua": "La capacidad para relacionar una expresión de la forma y = ax² + bx + c con su representación en el plano cartesiano.",
+      "justificacion_correcta": "Al reemplazar en \\(y = -x^2 + 4x + 1\\): \\(y(0) = 1\\); \\(y(2) = -4+8+1 = 5\\); \\(y(4) = -16+16+1 = 1\\). Es la única expresión que pasa por los tres puntos, y como el coeficiente de \\(x^2\\) es negativo, la curva abre hacia abajo con su punto más alto en \\((2, 5)\\), tal como muestra la figura.",
       "opciones_incorrectas": {
-        "A": "Toma \\(35\\) como el total de kits (olvida los \\(16\\) lotes) y, además, suma las dos herramientas cuando se piden por separado.",
-        "C": "Toma \\(16\\) como el total de kits (olvida los \\(35\\) por lote) y suma las dos herramientas.",
-        "D": "Multiplica primero \\(2\\times 3\\), mezclando las dos herramientas que deben calcularse por separado."
-      }
-    },
-    {
-      "id": "math-8-p2-propio-2023-02",
-      "numero": 2,
-      "enunciado": "<p>Camilo registró cuántos minutos tardan en llegar al colegio él y sus cuatro amigos, y obtuvo que, <b>en promedio</b>, tardan <b>9 minutos</b>. ¿Cuál de las siguientes listas de cinco datos corresponde a ese promedio?</p>",
-      "opciones": {
-        "A": "\\(7,\\ 9,\\ 8,\\ 10\\) y \\(6\\) minutos.",
-        "B": "\\(11,\\ 9,\\ 10,\\ 9\\) y \\(8\\) minutos.",
-        "C": "\\(9,\\ 11,\\ 7,\\ 10\\) y \\(6\\) minutos.",
-        "D": "\\(8,\\ 11,\\ 7,\\ 12\\) y \\(7\\) minutos."
+        "A": "Pasa por \\((0, 1)\\), pero al ser positivo el coeficiente de \\(x^2\\) abre hacia arriba; además \\(y(2) = -3\\), no \\(5\\).",
+        "D": "Le falta el término en \\(x\\), así que su punto más alto queda sobre el eje \\(y\\): \\(y(0) = 5\\) en vez de \\(1\\).",
+        "C": "Sí pasa por \\((0, 1)\\), pero el coeficiente \\(-2\\) hunde la curva: \\(y(2) = -8+8+1 = 1\\), y no \\(5\\)."
       },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
-      "que_evalua": "La capacidad para identificar que lista contiene un conjunto de datos con números enteros correspondiente a un promedio dado.",
-      "justificacion_correcta": "El promedio es la suma de los datos dividida entre \\(5\\). En la opción D: \\(8+11+7+12+7 = 45\\) y \\(45 \\div 5 = 9\\).",
-      "opciones_incorrectas": {
-        "A": "Suma \\(40\\); el promedio es \\(8\\), no \\(9\\).",
-        "B": "Suma \\(47\\); el promedio es \\(9{,}4\\), no es entero \\(9\\).",
-        "C": "Suma \\(43\\); el promedio es \\(8{,}6\\), no es \\(9\\)."
-      }
+      "imagen_figura": "assets/banco-mat-8-p2/q16.png"
     },
     {
       "id": "math-8-p2-propio-2023-03",
-      "numero": 3,
-      "enunciado": "<p>Un entrenador registró durante cinco días la distancia que nadaron dos deportistas y reportó que, <b>en promedio</b>, cada uno recorrió <b>800 metros</b> por día. ¿Cuál de las siguientes opciones describe una distribución posible que produce ese promedio para <b>ambos</b> nadadores?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nadador 1 (m)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nadador 2 (m)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">700</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">900</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">900</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">700</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">800</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">800</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">600</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">600</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1.000</td></tr></table>",
+      "numero": 2,
+      "enunciado": "<p>Una cooperativa cafetera pesó el café que entregaron dos recolectores en cada una de las cinco semanas de la cosecha y reportó que, <b>en promedio</b>, cada uno entregó <b>45 kg por semana</b>. ¿Qué condición debe cumplir un registro para que ese promedio sea cierto <b>para los dos</b> recolectores?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Semana</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Recolector A (kg)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Recolector B (kg)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Semana 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">52</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">43</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Semana 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">55</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Semana 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">41</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Semana 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">48</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Semana 5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">46</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">47</td></tr></table>",
       "opciones": {
-        "A": "La que tiene como valor más repetido \\(800\\) m en cada nadador.",
-        "B": "La tabla mostrada: cada nadador suma \\(4.000\\) m en los cinco días.",
-        "C": "La que toma como promedio la diferencia entre el primer día y el último.",
-        "D": "La que usa solo el recorrido del miércoles (el día del medio)."
+        "A": "Que la diferencia entre el peso mayor y el menor de cada recolector sea \\(45\\) kg.",
+        "B": "Que el dato del centro de cada columna de registros sea \\(45\\) kg.",
+        "C": "La que cumple la tabla mostrada: los cinco pesos de cada recolector suman \\(225\\) kg.",
+        "D": "Que \\(45\\) kg sea el peso que más veces aparece en los registros."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "a",
       "afirmacion": 2,
       "evidencia": "2.1",
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
-      "que_evalua": "La capacidad para identificar una tabla que muestra la distribución de los datos asociados a un promedio definido.",
-      "justificacion_correcta": "El total de cada nadador debe ser \\(800\\times 5 = 4.000\\) m. Nadador 1: \\(700+900+800+1.000+600 = 4.000\\); Nadador 2: \\(900+700+800+600+1.000 = 4.000\\). Ambos promedian \\(800\\) m.",
+      "que_evalua": "La capacidad para reconocer qué condición sobre una distribución de datos garantiza un promedio dado.",
+      "justificacion_correcta": "El promedio de cada recolector es su total dividido entre \\(5\\); para que valga \\(45\\) kg, ese total debe ser \\(45\\times 5 = 225\\) kg. En la tabla, el recolector A suma \\(52+38+41+48+46 = 225\\) y el recolector B suma \\(43+55+50+30+47 = 225\\). Los dos promedian \\(45\\) kg.",
       "opciones_incorrectas": {
-        "A": "Confunde el promedio con la moda (el valor que más se repite).",
-        "C": "Confunde el promedio con el rango (diferencia entre extremos).",
-        "D": "Confunde el promedio con la mediana (el dato del medio)."
+        "B": "Esa es la condición de la mediana (el dato central), no la del promedio.",
+        "A": "Esa diferencia es el rango de los datos, y el rango no determina el promedio.",
+        "D": "El peso que más se repite es la moda; un conjunto puede promediar \\(45\\) kg sin que \\(45\\) aparezca nunca."
       }
     },
     {
-      "id": "math-8-p2-propio-2023-04",
-      "numero": 4,
-      "enunciado": "<p>En clase, un profesor dibujó en el plano cartesiano el triángulo de vértices <b>\\(P(1, 1)\\)</b>, <b>\\(Q(2, 4)\\)</b> y <b>\\(R(4, 2)\\)</b> (ver figura). ¿Cuál de las opciones A, B, C o D muestra un triángulo <b>congruente</b> con el que dibujó el profesor?</p>",
+      "id": "math-8-p2-propio-2023-06",
+      "numero": 3,
+      "enunciado": "<p>Tres puestos de una feria gastronómica anotaron cuántas porciones vendieron de tres platos. El puesto Norte vendió \\(6\\) empanadas, \\(11\\) arepas y \\(4\\) tamales; el puesto Centro, \\(12\\) empanadas, \\(5\\) arepas y \\(9\\) tamales; el puesto Sur, \\(7\\) empanadas, \\(8\\) arepas y \\(10\\) tamales. Entre los tres vendieron, entonces, <b>\\(6 + 12 + 7\\)</b> empanadas, <b>\\(11 + 5 + 8\\)</b> arepas y <b>\\(4 + 9 + 10\\)</b> tamales. En otra feria, <b>solo dos</b> puestos vendieron entre los dos esas mismas cantidades totales. ¿Cuál pareja pudo lograrlo?</p>",
       "opciones": {
-        "A": "Triángulo A.",
-        "B": "Triángulo B.",
-        "C": "Triángulo C.",
-        "D": "Triángulo D."
+        "A": "Efraín: \\(25\\) empanadas, \\(24\\) arepas y \\(23\\) tamales. Gala: \\(6\\) empanadas, \\(11\\) arepas y \\(4\\) tamales.",
+        "B": "Casimiro: \\(25\\) empanadas, \\(24\\) arepas y \\(23\\) tamales. Delia: \\(25\\) empanadas, \\(24\\) arepas y \\(23\\) tamales.",
+        "C": "Hilda: \\(12\\) empanadas, \\(5\\) arepas y \\(9\\) tamales. Ismael: \\(7\\) empanadas, \\(8\\) arepas y \\(10\\) tamales.",
+        "D": "Antonia: \\(6\\) empanadas, \\(11\\) arepas y \\(4\\) tamales. Beltrán: \\(19\\) empanadas, \\(13\\) arepas y \\(19\\) tamales."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Formulo y resuelvo problemas en situaciones aditivas y multiplicativas, en diferentes contextos y dominios numéricos.",
+      "que_evalua": "La capacidad para reconocer que una suma de tres términos equivale a una de dos cuando se asocian dos de ellos.",
+      "justificacion_correcta": "Basta asociar los dos últimos sumandos de cada renglón: empanadas \\(6+(12+7) = 6+19\\); arepas \\(11+(5+8) = 11+13\\); tamales \\(4+(9+10) = 4+19\\). La opción D reparte justamente \\(6\\) y \\(19\\) empanadas, \\(11\\) y \\(13\\) arepas, \\(4\\) y \\(19\\) tamales, con lo que alcanza los totales \\(25\\), \\(24\\) y \\(23\\).",
+      "opciones_incorrectas": {
+        "B": "Le asigna a cada puesto el total completo, con lo cual las cantidades quedan duplicadas: \\(50\\), \\(48\\) y \\(46\\).",
+        "A": "Suma el total con lo vendido por un solo puesto, así que se pasa de los totales en los tres platos.",
+        "C": "Repite lo de Centro y lo de Sur y deja por fuera lo del puesto Norte: apenas llega a \\(19\\), \\(13\\) y \\(19\\)."
+      }
+    },
+    {
+      "id": "math-8-p2-propio-2023-19",
+      "numero": 4,
+      "enunciado": "<p>En el taller de artes se va a forrar con fieltro únicamente el <b>aro</b> de un reloj de pared, es decir, la franja que queda entre la esfera y el borde exterior (la parte verde de la figura). La esfera tiene <b>radio \\(4\\) cm</b> y el borde exterior, <b>radio \\(10\\) cm</b>.</p>[[IMG]]<p>Sabiendo que el área de un círculo de radio \\(r\\) es <b>\\(\\pi r^2\\)</b>, ¿cuánto fieltro se necesita como mínimo?</p>",
+      "opciones": {
+        "A": "\\(100\\pi\\ \\text{cm}^2\\)",
+        "B": "\\(36\\pi\\ \\text{cm}^2\\)",
+        "C": "\\(16\\pi\\ \\text{cm}^2\\)",
+        "D": "\\(84\\pi\\ \\text{cm}^2\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para calcular el área de una región limitada por dos círculos concéntricos.",
+      "justificacion_correcta": "El aro es lo que queda al quitarle al círculo grande el círculo de la esfera: \\(\\pi(10)^2 - \\pi(4)^2 = 100\\pi - 16\\pi = 84\\pi\\ \\text{cm}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Es el área del círculo exterior completo; no descuenta la esfera, que no se forra.",
+        "B": "Resta primero los radios y luego eleva al cuadrado: \\(\\pi(10-4)^2 = 36\\pi\\). El cuadrado de una resta no es la resta de los cuadrados.",
+        "C": "Es el área de la esfera del reloj, justamente la parte que no lleva fieltro."
+      },
+      "imagen_figura": "assets/banco-mat-8-p2/q19.png"
+    },
+    {
+      "id": "math-8-p2-propio-2023-02",
+      "numero": 5,
+      "enunciado": "<p>Una biblioteca escolar contó cuántos libros se prestaron en cada uno de sus <b>seis puntos de atención</b> y encontró que, <b>en promedio</b>, se prestaron <b>12 libros</b> por punto. ¿Cuál de estos conteos produce ese promedio?</p>",
+      "opciones": {
+        "A": "\\(15,\\ 9,\\ 14,\\ 8,\\ 16\\) y \\(10\\).",
+        "B": "\\(8,\\ 12,\\ 16,\\ 10,\\ 14\\) y \\(6\\).",
+        "C": "\\(11,\\ 12,\\ 14,\\ 10,\\ 13\\) y \\(9\\).",
+        "D": "\\(10,\\ 13,\\ 9,\\ 14,\\ 11\\) y \\(8\\)."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
+      "que_evalua": "La capacidad para reconocer un conjunto de datos enteros cuyo promedio coincide con un valor dado.",
+      "justificacion_correcta": "El promedio se obtiene sumando los seis conteos y dividiendo entre \\(6\\). En D: \\(15+9+14+8+16+10 = 72\\) y \\(72\\div 6 = 12\\).",
+      "opciones_incorrectas": {
+        "D": "Los seis conteos suman \\(65\\) y \\(65\\div 6 \\approx 10{,}8\\): ni siquiera resulta un número entero.",
+        "C": "Suman \\(69\\), de modo que el promedio es \\(11{,}5\\); queda cerca de \\(12\\), pero no es \\(12\\).",
+        "B": "Suman \\(66\\) y el promedio da \\(11\\) exacto: es entero, pero no es el promedio pedido."
+      }
+    },
+    {
+      "id": "math-8-p2-propio-2023-20",
+      "numero": 6,
+      "enunciado": "<p>Desde la terraza de un edificio, a <b>\\(21\\) m</b> de altura, se lanza un balón que describe la parábola de la figura. La distancia horizontal \\(x\\) se mide en metros desde la fachada del edificio, y la altura \\(y\\) también en metros.</p>[[IMG]]<p>¿A qué <b>distancia de la fachada</b> tocó el suelo el balón, es decir, dónde la curva corta el eje horizontal?</p>",
+      "opciones": {
+        "A": "A \\(2\\) metros.",
+        "B": "A \\(7\\) metros.",
+        "C": "A \\(21\\) metros.",
+        "D": "A \\(25\\) metros."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
+      "que_evalua": "La capacidad para identificar puntos característicos de la gráfica de una función cuadrática.",
+      "justificacion_correcta": "La curva corta el eje horizontal en el punto \\((7, 0)\\). Como en ese punto la altura es cero, allí el balón tocó el suelo, y su primera coordenada indica que lo hizo a \\(7\\) m de la fachada.",
+      "opciones_incorrectas": {
+        "A": "\\(2\\) es la distancia horizontal del punto más alto \\((2, 25)\\), no la del punto donde el balón cae.",
+        "C": "\\(21\\) m es la altura de la terraza desde la que se lanzó el balón; es una altura, no una distancia horizontal.",
+        "D": "\\(25\\) m es la altura máxima que alcanzó el balón, la segunda coordenada del punto más alto."
+      },
+      "imagen_figura": "assets/banco-mat-8-p2/q20.png"
+    },
+    {
+      "id": "math-8-p2-propio-2023-12",
+      "numero": 7,
+      "enunciado": "<p>Un puerto fluvial guarda la carga en una bodega móvil con forma de caja de <b>\\(7\\) m</b> de largo, <b>\\(3\\) m</b> de ancho y <b>\\(2\\) m</b> de alto (ver figura). Para la temporada alta encargan otra bodega del mismo tipo, pero con el largo, el ancho y el alto <b>multiplicados por \\(2\\)</b>.</p>[[IMG]]<p>¿Cuántos metros cúbicos podrá almacenar la bodega nueva?</p>",
+      "opciones": {
+        "A": "\\(84\\ \\text{m}^3\\)",
+        "B": "\\(168\\ \\text{m}^3\\)",
+        "C": "\\(252\\ \\text{m}^3\\)",
+        "D": "\\(336\\ \\text{m}^3\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La capacidad para calcular el volumen de un paralelepípedo recto tras modificar sus tres dimensiones.",
+      "justificacion_correcta": "Al multiplicar por \\(2\\) cada medida, la bodega nueva mide \\(14\\ \\text{m}\\times 6\\ \\text{m}\\times 4\\ \\text{m}\\), y su volumen es \\(14\\times 6\\times 4 = 336\\ \\text{m}^3\\). Equivale a multiplicar por \\(8\\) el volumen inicial de \\(42\\ \\text{m}^3\\).",
+      "opciones_incorrectas": {
+        "A": "Duplica una sola dimensión: \\(14\\times 3\\times 2 = 84\\).",
+        "B": "Duplica solo dos de las tres dimensiones: \\(14\\times 6\\times 2 = 168\\).",
+        "C": "Multiplica el volumen inicial por \\(6\\) \\((42\\times 6 = 252)\\), como si los dos de cada dimensión se sumaran en lugar de multiplicarse."
+      },
+      "imagen_figura": "assets/banco-mat-8-p2/q12.png"
+    },
+    {
+      "id": "math-8-p2-propio-2023-18",
+      "numero": 8,
+      "enunciado": "<p>Una heladería registró cuántos conos vendió de cada uno de sus cuatro sabores durante un fin de semana (ver tabla). Para decidir qué sabor preparar en mayor cantidad la próxima semana, la dueña quiere saber cuál de ellos corresponde a la <b>moda</b> de las ventas. ¿Cuál es?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Sabor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Conos vendidos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mora</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">88</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Arequipe</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">145</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Coco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">97</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Maracuyá</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">88</td></tr></table>",
+      "opciones": {
+        "A": "Coco.",
+        "B": "Maracuyá.",
+        "C": "Mora.",
+        "D": "Arequipe."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
+      "que_evalua": "La capacidad para leer datos de una tabla y determinar la moda de un conjunto descrito por categorías.",
+      "justificacion_correcta": "La moda es la categoría que aparece más veces, es decir, el sabor con más conos vendidos. Arequipe registra \\(145\\) conos, por encima de los \\(97\\) de Coco y de los \\(88\\) de Mora y Maracuyá; por eso la moda es Arequipe.",
+      "opciones_incorrectas": {
+        "B": "Maracuyá vendió \\(88\\) conos; que ese número se repita en otro sabor no lo convierte en la moda.",
+        "A": "Coco, con \\(97\\) conos, es el segundo más vendido, pero no el máximo.",
+        "C": "Mora vendió \\(88\\) conos, la cifra más baja de la tabla junto con Maracuyá."
+      }
+    },
+    {
+      "id": "math-8-p2-propio-2023-15",
+      "numero": 9,
+      "enunciado": "<p>En el bazar de un colegio, cuatro kioscos reparten cupones. Cada kiosco tiene su propia bolsa, donde mezcla cupones premiados con cupones sin premio (ver tabla). Un visitante saca un solo cupón, al azar, de la bolsa del kiosco que visite. ¿En cuál kiosco es <b>mayor</b> la probabilidad de que el cupón salga <b>premiado</b>?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Kiosco</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cupones premiados</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cupones sin premio</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Total de cupones</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Deportes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">224</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">320</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ciencias</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">128</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">272</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">400</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Arte</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">108</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">132</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">240</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Música</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">150</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">350</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">500</td></tr></table>",
+      "opciones": {
+        "A": "En el de Arte.",
+        "B": "En el de Deportes.",
+        "C": "En el de Música.",
+        "D": "En el de Ciencias."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para identificar el espacio muestral en el que se maximiza la probabilidad de un evento definido.",
+      "justificacion_correcta": "La probabilidad de cupón premiado es \\(\\dfrac{\\text{premiados}}{\\text{total}}\\): Deportes \\(\\dfrac{96}{320}=0{,}30\\); Ciencias \\(\\dfrac{128}{400}=0{,}32\\); Arte \\(\\dfrac{108}{240}=0{,}45\\); Música \\(\\dfrac{150}{500}=0{,}30\\). El valor más alto es el de Arte, aunque no sea el kiosco con más cupones premiados en total.",
+      "opciones_incorrectas": {
+        "B": "Su probabilidad es \\(0{,}30\\), bastante por debajo del \\(0{,}45\\) de Arte.",
+        "D": "Con \\(0{,}32\\) es la segunda más alta, pero sigue siendo menor que la de Arte.",
+        "C": "Es el kiosco con más cupones premiados \\((150)\\), pero también el que más cupones tiene: su probabilidad es apenas \\(0{,}30\\)."
+      }
+    },
+    {
+      "id": "math-8-p2-propio-2023-05",
+      "numero": 10,
+      "enunciado": "<p>En la tómbola de un bazar escolar hay <b>16 fichas</b> como las de la imagen: unas redondas y otras cuadradas, en cuatro colores. Cada participante gana si la ficha que salga pertenece a la clase que eligió: Hernán eligió <b>las redondas</b>; Karla, <b>las azules o las amarillas</b>; Nubia, <b>las cuadradas</b>; Ómar, <b>las verdes</b>. Se saca una sola ficha al azar.</p>[[IMG]]<p>¿Quién tiene la <b>mayor</b> probabilidad de ganar?</p>",
+      "opciones": {
+        "A": "Karla.",
+        "B": "Nubia.",
+        "C": "Ómar.",
+        "D": "Hernán."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La capacidad para comparar las probabilidades de varios eventos definidos sobre un mismo conjunto de resultados.",
+      "justificacion_correcta": "En la imagen hay \\(16\\) fichas: \\(7\\) azules redondas, \\(4\\) rojas cuadradas, \\(3\\) verdes redondas y \\(2\\) amarillas cuadradas. Entonces las redondas son \\(7+3 = 10\\); las azules o amarillas, \\(7+2 = 9\\); las cuadradas, \\(4+2 = 6\\); y las verdes, \\(3\\). La clase más numerosa es la de Hernán, con \\(\\dfrac{10}{16}\\), y por eso es quien tiene mayor probabilidad de ganar.",
+      "opciones_incorrectas": {
+        "A": "Azules y amarillas reúnen \\(9\\) fichas, una menos que las \\(10\\) redondas: queda muy cerca, pero no es la mayor.",
+        "B": "Las cuadradas son solo \\(6\\) de las \\(16\\); las redondas las superan ampliamente.",
+        "C": "Las verdes son apenas \\(3\\): es la clase más pequeña de las cuatro."
+      },
+      "imagen_figura": "assets/banco-mat-8-p2/q05.png"
+    },
+    {
+      "id": "math-8-p2-propio-2023-04",
+      "numero": 11,
+      "enunciado": "<p>Para el mapa de un videojuego, Nicolás ubicó una plataforma triangular con vértices <b>\\(P(1, 1)\\)</b>, <b>\\(Q(2, 4)\\)</b> y <b>\\(R(4, 2)\\)</b> (ver figura). El motor del juego debe generar una copia de esa plataforma que sea <b>congruente</b> con ella, es decir, que conserve exactamente las mismas medidas de lados y de ángulos.</p>[[IMG]]<p>¿Cuál de las cuatro opciones cumple esa condición?</p>",
+      "opciones": {
+        "A": "La figura de la opción A.",
+        "B": "La figura de la opción B.",
+        "C": "La figura de la opción C.",
+        "D": "La figura de la opción D."
       },
       "clave": "B",
       "competencia": "b",
@@ -141,12 +321,11 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Aplico y justifico criterios de congruencias y semejanza entre triángulos en la resolución y formulación de problemas.",
-      "que_evalua": "La capacidad para reconocer las características invariantes al realizar movimientos rígidos en triángulos.",
-      "justificacion_correcta": "La opción B es la reflexión del triángulo respecto al eje \\(x\\): cada vértice conserva su coordenada en \\(x\\) y cambia el signo de su coordenada en \\(y\\). La reflexión es un movimiento rígido, por eso los triángulos son congruentes (conservan la medida de todos sus lados y ángulos).",
+      "que_evalua": "La capacidad para reconocer qué se conserva y qué cambia al aplicar movimientos rígidos a un triángulo.",
+      "justificacion_correcta": "La opción C se obtiene reflejando la plataforma respecto al eje \\(x\\): cada vértice conserva su abscisa y cambia el signo de su ordenada. La reflexión es un movimiento rígido, así que los lados y los ángulos quedan idénticos y la copia sí es congruente.",
       "opciones_incorrectas": {
-        "A": "Es un triángulo más pequeño: sus lados son más cortos que los del original, así que NO es congruente.",
-        "C": "Es una versión ampliada: tiene la misma forma pero los lados son más largos, así que es semejante (más grande), no congruente.",
-        "D": "Está estirado: cambió la proporción entre sus lados, por lo que no conserva la forma ni el tamaño del original."
+        "D": "Reproduce la forma general, pero a una escala mucho menor: al encoger la figura las medidas dejan de coincidir.",
+        "A": "Mantiene la forma y la amplía; una figura semejante más grande no es congruente con la original."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q04.png",
       "opciones_imagenes": {
@@ -157,317 +336,60 @@
       }
     },
     {
-      "id": "math-8-p2-propio-2023-05",
-      "numero": 5,
-      "enunciado": "<p>Cuatro amigos sacaron de una caja <b>16 fichas</b> de colores (ver imagen). Cada uno prefiere: Bruno, las <b>redondas</b>; Daniela, las <b>azules</b>; Emilio, las <b>rojas o verdes</b>; Fabiana, las <b>amarillas</b>. Si se toma una ficha al azar, ¿quién tiene la <b>mayor</b> probabilidad de que sea de su preferencia?</p>",
-      "opciones": {
-        "A": "Bruno.",
-        "B": "Daniela.",
-        "C": "Emilio.",
-        "D": "Fabiana."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
-      "que_evalua": "La capacidad para comparar probabilidades de eventos distintos asociados a un mismo contexto.",
-      "justificacion_correcta": "En la imagen hay \\(16\\) fichas: \\(7\\) azules redondas, \\(4\\) rojas cuadradas, \\(3\\) verdes redondas y \\(2\\) amarillas cuadradas. Las probabilidades son: Bruno (redondas \\(= 7+3 = 10\\)) \\(\\dfrac{10}{16}\\); Daniela (azules) \\(\\dfrac{7}{16}\\); Emilio (rojas o verdes \\(= 4+3 = 7\\)) \\(\\dfrac{7}{16}\\); Fabiana (amarillas) \\(\\dfrac{2}{16}\\). La preferencia de Bruno abarca dos colores de fichas redondas y reúne \\(10\\) de las \\(16\\), la cantidad mayor; por eso tiene la mayor probabilidad.",
-      "opciones_incorrectas": {
-        "B": "Las azules son \\(7\\) de \\(16\\); Bruno reúne \\(10\\) (las redondas de cualquier color), que son más.",
-        "C": "Rojas y verdes suman \\(7\\), menos que las \\(10\\) fichas redondas que prefiere Bruno.",
-        "D": "Las amarillas son apenas \\(2\\); es la menor probabilidad."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q05.png"
-    },
-    {
-      "id": "math-8-p2-propio-2023-06",
-      "numero": 6,
-      "enunciado": "<p>En una campaña de reciclaje, tres amigos recolectaron material: Sara \\(4\\) botellas, \\(7\\) latas y \\(3\\) cajas; Tomás \\(9\\) botellas, \\(6\\) latas y \\(8\\) cajas; Iván \\(5\\) botellas, \\(9\\) latas y \\(6\\) cajas. En total juntaron <b>\\(4 + 9 + 5\\)</b> botellas, <b>\\(7 + 6 + 9\\)</b> latas y <b>\\(3 + 8 + 6\\)</b> cajas. Otro grupo de <b>solo dos</b> personas recolectó, en conjunto, la <b>misma</b> cantidad total. ¿Cuál podría ser ese otro grupo?</p>",
-      "opciones": {
-        "A": "Pablo: \\(4\\) botellas, \\(7\\) latas, \\(3\\) cajas. Rosa: \\(9\\) botellas, \\(6\\) latas, \\(8\\) cajas.",
-        "B": "Camila: \\(18\\) botellas, \\(22\\) latas, \\(17\\) cajas. Marta: \\(18\\) botellas, \\(22\\) latas, \\(17\\) cajas.",
-        "C": "Julián: \\(13\\) botellas, \\(13\\) latas, \\(11\\) cajas. Aurora: \\(5\\) botellas, \\(9\\) latas, \\(6\\) cajas.",
-        "D": "Luis: \\(18\\) botellas, \\(22\\) latas, \\(17\\) cajas. Fernando: \\(4\\) botellas, \\(7\\) latas, \\(3\\) cajas."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Formulo y resuelvo problemas en situaciones aditivas y multiplicativas, en diferentes contextos y dominios numéricos.",
-      "que_evalua": "La capacidad para identificar sumas de tres términos equivalentes a sumas de dos términos que resultan de haber asociado dos de ellos.",
-      "justificacion_correcta": "Al asociar los dos primeros sumandos de cada grupo: botellas \\((4+9)+5 = 13+5\\); latas \\((7+6)+9 = 13+9\\); cajas \\((3+8)+6 = 11+6\\). La opción C reparte exactamente \\(13\\) y \\(5\\) botellas, \\(13\\) y \\(9\\) latas, \\(11\\) y \\(6\\) cajas, que suman los mismos totales \\((18,\\ 22\\) y \\(17)\\).",
-      "opciones_incorrectas": {
-        "A": "Solo repite a los dos primeros recolectores y deja por fuera lo recolectado por Iván.",
-        "B": "Asigna a cada persona el total de cada tipo: duplica las cantidades.",
-        "D": "Mezcla el total con las cantidades de un solo recolector; los totales no cuadran."
-      }
-    },
-    {
-      "id": "math-8-p2-propio-2023-07",
-      "numero": 7,
-      "enunciado": "<p>Un equipo de cuatro personas ganó <b>$2.000.000</b> en una feria participando en cinco juegos. La tabla muestra el <b>puntaje</b> que obtuvo el equipo en cada juego y la gráfica circular muestra el porcentaje del premio que le correspondió a cada juego (ver figura). ¿Cuál tabla resume correctamente el <b>puntaje</b> y el <b>dinero</b> que obtuvo el equipo en cada juego?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">110</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">160</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">70</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td></tr></table>",
-      "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$500.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27,5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$400.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$600.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">17,5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$200.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$250.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27,5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$200.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">17,5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$100.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$150.000</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$250.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">110</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$200.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">160</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">70</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$100.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$150.000</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$500.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">110</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$400.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">160</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$600.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">70</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$200.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td></tr></table>"
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
-      "que_evalua": "La capacidad de los estudiantes para elaborar una tabla que contiene información de una tabla y una gráfica dada.",
-      "justificacion_correcta": "El puntaje se copia tal cual de la tabla del enunciado y el dinero es el porcentaje de $2.000.000: \\(25\\%=\\$500.000\\), \\(20\\%=\\$400.000\\), \\(30\\%=\\$600.000\\), \\(10\\%=\\$200.000\\) y \\(15\\%=\\$300.000\\). Solo la opción D conserva el puntaje correcto y calcula bien el dinero.",
-      "opciones_incorrectas": {
-        "A": "El dinero está bien, pero divide cada puntaje entre \\(4\\) (suponiendo que cada integrante aportó lo mismo); el puntaje pedido es el del equipo, no el de una persona.",
-        "B": "Divide el puntaje entre \\(4\\) Y asigna el dinero agregando cuatro ceros al porcentaje \\((25\\to \\$250.000)\\), sin calcular el porcentaje de $2.000.000.",
-        "C": "Conserva el puntaje correcto, pero asigna el dinero agregando cuatro ceros al porcentaje \\((25\\to \\$250.000)\\): eso no es el porcentaje de $2.000.000."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q07.png"
-    },
-    {
       "id": "math-8-p2-propio-2023-08",
-      "numero": 8,
-      "enunciado": "<p>Mariana llevó <b>$30.000</b> para comprar <b>8 libretas</b> iguales. Compró las \\(8\\) y le sobraron <b>$2.000</b>. ¿Cuánto pagó por <b>cada</b> libreta?</p>",
+      "numero": 12,
+      "enunciado": "<p>Un club de senderismo reunió <b>$92.400</b> en su alcancía para comprar <b>12 linternas</b> del mismo precio. Compraron las \\(12\\) y en la alcancía quedaron <b>$6.000</b>. ¿Cuánto costó <b>cada</b> linterna?</p>",
       "opciones": {
-        "A": "\\(\\$5.000\\)",
-        "B": "\\(\\$4.000\\)",
-        "C": "\\(\\$3.750\\)",
-        "D": "\\(\\$3.500\\)"
+        "A": "\\(\\$7.700\\)",
+        "B": "\\(\\$7.200\\)",
+        "C": "\\(\\$8.200\\)",
+        "D": "\\(\\$7.450\\)"
       },
-      "clave": "D",
+      "clave": "B",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.2",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
-      "que_evalua": "La capacidad de plantear y resolver ecuaciones lineales.",
-      "justificacion_correcta": "Planteando \\(30.000 = 8x + 2.000\\): se restan los $2.000 del sobrante, \\(30.000 - 2.000 = 28.000\\) es lo invertido en las \\(8\\) libretas; \\(28.000 \\div 8 = 3.500\\) por cada una.",
+      "que_evalua": "La capacidad de plantear y resolver una ecuación lineal a partir de una situación de compra.",
+      "justificacion_correcta": "Si \\(x\\) es el precio de una linterna, se cumple \\(12x + 6.000 = 92.400\\). Lo realmente invertido fue \\(92.400 - 6.000 = 86.400\\), y ese dinero se repartió entre las \\(12\\) linternas: \\(86.400 \\div 12 = 7.200\\).",
       "opciones_incorrectas": {
-        "A": "Divide mal: \\((30.000+2.000)\\div 8\\) y redondea, ignorando que el sobrante NO se invirtió.",
-        "B": "Ignora el dinero que sobró y divide \\(30.000 \\div 8 = 3.750\\), y luego lo aproxima a \\(\\$4.000\\).",
-        "C": "Ignora el dinero que sobró: \\(30.000 \\div 8 = 3.750\\), sin descontar los $2.000."
-      }
-    },
-    {
-      "id": "math-8-p2-propio-2023-09",
-      "numero": 9,
-      "enunciado": "<p>Daniel quiere forrar completamente con papel una caja con forma de prisma rectangular de <b>\\(25\\) cm</b> de largo, <b>\\(40\\) cm</b> de fondo y <b>\\(10\\) cm</b> de alto (ver figura). ¿Cuánta área de papel necesita como mínimo?</p>",
-      "opciones": {
-        "A": "\\(3.300\\ \\text{cm}^2\\)",
-        "B": "\\(10.000\\ \\text{cm}^2\\)",
-        "C": "\\(1.650\\ \\text{cm}^2\\)",
-        "D": "\\(2.000\\ \\text{cm}^2\\)"
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
-      "que_evalua": "La capacidad para calcular el área superficial de un sólido como la suma de las áreas de todas las caras que encierran el sólido.",
-      "justificacion_correcta": "El área superficial es \\(2(\\text{largo}\\times\\text{fondo} + \\text{largo}\\times\\text{alto} + \\text{fondo}\\times\\text{alto}) = 2(25\\times 40 + 25\\times 10 + 40\\times 10) = 2(1.000 + 250 + 400) = 2(1.650) = 3.300\\ \\text{cm}^2\\).",
-      "opciones_incorrectas": {
-        "B": "Supone que todas las caras miden \\(25\\times 40\\): \\(2(1.000+1.000+1.000)\\), sin justificación.",
-        "C": "Suma solo las tres caras visibles \\((1.000+250+400 = 1.650)\\) y no duplica.",
-        "D": "Toma medidas mezcladas para todas las caras y obtiene un valor incorrecto."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q09.png"
-    },
-    {
-      "id": "math-8-p2-propio-2023-10",
-      "numero": 10,
-      "enunciado": "<p>Una urbanización dividió un terreno rectangular en <b>seis lotes</b> para construir casas (ver figura, con el frente de cada lote rotulado y la profundidad de cada fila acotada al costado). ¿Cuáles dos lotes son <b>congruentes</b>?</p>",
-      "opciones": {
-        "A": "Lotes 1 y 4.",
-        "B": "Lotes 2 y 3.",
-        "C": "Lotes 1 y 5.",
-        "D": "Lotes 4 y 5."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
-      "que_evalua": "La capacidad para identificar rectángulos congruentes a partir de sus medidas.",
-      "justificacion_correcta": "Dos rectángulos son congruentes solo si coinciden en frente Y en profundidad. Los lotes \\(2\\) y \\(3\\) miden ambos \\(60\\) m de frente \\(\\times\\) \\(45\\) m de profundidad, por eso son los únicos congruentes entre los seis.",
-      "opciones_incorrectas": {
-        "A": "Los lotes \\(1\\) \\((70\\times 50)\\) y \\(4\\) \\((85\\times 50)\\) comparten la profundidad \\((50\\) m\\()\\) pero su frente es distinto \\((70\\) frente a \\(85)\\): no basta una sola medida igual.",
-        "C": "El lote \\(5\\) \\((55\\times 55)\\) se ve casi cuadrado, pero el lote \\(1\\) mide \\(70\\times 50\\): no coinciden ni en frente ni en profundidad.",
-        "D": "Los lotes \\(4\\) \\((85\\times 50)\\) y \\(5\\) \\((55\\times 55)\\) están seguidos en la misma fila, pero tienen distinto frente y distinta profundidad."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q10.png"
-    },
-    {
-      "id": "math-8-p2-propio-2023-11",
-      "numero": 11,
-      "enunciado": "<p>Un biólogo registró cuántos chirridos por minuto emite un grillo según la temperatura del ambiente. La gráfica muestra esa relación en cuatro intervalos (ver figura). ¿En cuál intervalo de temperatura el número de chirridos aumenta <b>más rápido</b>?</p>",
-      "opciones": {
-        "A": "De \\(8\\,{}^{\\circ}\\text{C}\\) a \\(12\\,{}^{\\circ}\\text{C}\\).",
-        "B": "De \\(20\\,{}^{\\circ}\\text{C}\\) a \\(24\\,{}^{\\circ}\\text{C}\\).",
-        "C": "De \\(12\\,{}^{\\circ}\\text{C}\\) a \\(16\\,{}^{\\circ}\\text{C}\\).",
-        "D": "De \\(16\\,{}^{\\circ}\\text{C}\\) a \\(20\\,{}^{\\circ}\\text{C}\\)."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
-      "que_evalua": "La capacidad para identificar el intervalo en el que la pendiente de una curva a trozos es mayor.",
-      "justificacion_correcta": "Entre \\(12\\,{}^{\\circ}\\text{C}\\) y \\(16\\,{}^{\\circ}\\text{C}\\) la gráfica sube de \\(28\\) a \\(96\\) chirridos \\((68\\) más en \\(4\\) grados\\()\\): es el tramo de mayor pendiente, donde el aumento es más rápido.",
-      "opciones_incorrectas": {
-        "A": "De \\(8\\) a \\(12\\) sube \\(16\\) \\((12\\to 28)\\): pendiente pequeña.",
-        "B": "De \\(20\\) a \\(24\\) sube \\(28\\) \\((160-132)\\): la pendiente es menor.",
-        "D": "De \\(16\\) a \\(20\\) sube \\(36\\) \\((96\\to 132)\\): es alta, pero menor que el tramo de \\(12\\) a \\(16\\)."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q11.png"
-    },
-    {
-      "id": "math-8-p2-propio-2023-12",
-      "numero": 12,
-      "enunciado": "<p>Una bodega usa un contenedor con forma de caja de <b>\\(7\\) m</b> de largo, <b>\\(3\\) m</b> de ancho y <b>\\(2\\) m</b> de alto (ver figura). Para almacenar más, compran otro contenedor igual pero con cada una de sus tres medidas <b>duplicadas</b>. ¿Cuál es la <b>capacidad</b> (volumen) del nuevo contenedor?</p>",
-      "opciones": {
-        "A": "\\(84\\ \\text{m}^3\\)",
-        "B": "\\(168\\ \\text{m}^3\\)",
-        "C": "\\(504\\ \\text{m}^3\\)",
-        "D": "\\(336\\ \\text{m}^3\\)"
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
-      "que_evalua": "La capacidad para determinar el volumen de paralelepípedos rectos.",
-      "justificacion_correcta": "Al duplicar cada medida: \\(14\\ \\text{m}\\times 6\\ \\text{m}\\times 4\\ \\text{m}\\). El volumen es \\(14\\times 6\\times 4 = 336\\ \\text{m}^3\\).",
-      "opciones_incorrectas": {
-        "A": "Calcula el volumen original \\((7\\times 3\\times 2 = 42)\\) y lo multiplica por \\(2 = 84\\).",
-        "B": "Calcula el volumen original \\((42)\\) y lo multiplica por \\(4 = 168\\), duplicando solo dos factores.",
-        "C": "Eleva al cuadrado el largo \\((49\\times 6\\times \\dots)\\) en vez de duplicarlo, obteniendo un valor incorrecto."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q12.png"
-    },
-    {
-      "id": "math-8-p2-propio-2023-13",
-      "numero": 13,
-      "enunciado": "<p>Tatiana revisa las cinco notas que obtuvo en Biología y observa que la <b>mediana</b> de sus notas es <b>\\(4{,}5\\)</b>. ¿En cuál de las siguientes listas de cinco notas la mediana es realmente \\(4{,}5\\)?</p>",
-      "opciones": {
-        "A": "\\(3{,}5\\ -\\ 4\\ -\\ 4{,}5\\ -\\ 5\\ -\\ 5\\).",
-        "B": "\\(2{,}5\\ -\\ 4\\ -\\ 3{,}5\\ -\\ 4{,}5\\ -\\ 4{,}5\\).",
-        "C": "\\(4{,}3\\ -\\ 4{,}4\\ -\\ 4{,}6\\ -\\ 4{,}6\\ -\\ 4{,}6\\).",
-        "D": "\\(5\\ -\\ 3{,}5\\ -\\ 4{,}5\\ -\\ 3{,}5\\ -\\ 3\\)."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
-      "que_evalua": "La capacidad para escoger una tabla de datos asociada a una mediana dada en un contexto.",
-      "justificacion_correcta": "Para hallar la mediana se ordenan los datos de menor a mayor y se toma el del centro. En A, ordenados \\(3{,}5\\ -\\ 4\\ -\\ 4{,}5\\ -\\ 5\\ -\\ 5\\), el del medio es \\(4{,}5\\).",
-      "opciones_incorrectas": {
-        "B": "Confunde la mediana con la moda (el valor que más se repite, \\(4{,}5\\)).",
-        "C": "Confunde la mediana con la media (el promedio \\(\\approx 4{,}5\\)).",
-        "D": "Toma el dato del medio sin ordenar; al ordenar \\((3\\ -\\ 3{,}5\\ -\\ 3{,}5\\ -\\ 4{,}5\\ -\\ 5)\\) la mediana es \\(3{,}5\\)."
+        "C": "Suma el sobrante en vez de restarlo: \\((92.400+6.000)\\div 12 = 8.200\\).",
+        "A": "Pasa por alto el sobrante y reparte toda la alcancía: \\(92.400 \\div 12 = 7.700\\).",
+        "D": "Descuenta solo la mitad del sobrante: \\((92.400-3.000)\\div 12 = 7.450\\)."
       }
     },
     {
       "id": "math-8-p2-propio-2023-14",
-      "numero": 14,
-      "enunciado": "<p>La gráfica muestra el perfil de altura de una montaña rusa a lo largo de su recorrido (ver figura), con algunas alturas señaladas. Respecto a las curvas de la montaña rusa, ¿cuál afirmación es <b>verdadera</b>?</p>",
+      "numero": 13,
+      "enunciado": "<p>El perfil de la figura registra la altura, en metros, a la que voló un dron durante un recorrido de inspección; en él aparecen señaladas tres alturas. Un técnico debe redactar el informe del vuelo.</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones sobre ese perfil es <b>verdadera</b>?</p>",
       "opciones": {
-        "A": "La altura máxima es \\(178\\) metros.",
-        "B": "La altura mínima está al nivel del suelo.",
-        "C": "La altura mínima es \\(22\\) metros.",
-        "D": "La altura máxima es \\(58\\) metros."
+        "A": "La altura máxima del vuelo fue de \\(178\\) metros.",
+        "B": "La altura mínima del vuelo fue de \\(0\\) metros, porque el dron llegó a tocar el suelo.",
+        "C": "La altura máxima del vuelo fue de \\(58\\) metros.",
+        "D": "La altura mínima del vuelo fue de \\(22\\) metros."
       },
-      "clave": "C",
+      "clave": "D",
       "competencia": "b",
       "afirmacion": 9,
       "evidencia": "9.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
-      "que_evalua": "La capacidad para reconocer valores mínimos o máximos de gráficas similares a las polinómicas en las que se puede evidenciar cambios de concavidad.",
-      "justificacion_correcta": "La menor altura que toca la curva es \\(22\\) metros (el punto más bajo del perfil). Por eso la altura mínima es \\(22\\) m.",
+      "que_evalua": "La capacidad para reconocer los valores máximo y mínimo de una curva con varios cambios de concavidad.",
+      "justificacion_correcta": "El punto más bajo que alcanza la curva está en \\(22\\) metros; por debajo de esa altura el dron nunca voló. Por eso la altura mínima del recorrido es \\(22\\) m.",
       "opciones_incorrectas": {
-        "A": "Suma todas las alturas marcadas \\((98+58+22)\\) como si fuera la máxima.",
-        "B": "Supone que el mínimo siempre está en el suelo (altura \\(0\\)).",
-        "D": "Toma una altura intermedia \\((58\\) m\\()\\) como si fuera la máxima."
+        "C": "Los \\(58\\) m corresponden a una altura intermedia del recorrido; la curva sube bastante más arriba de ese valor.",
+        "B": "Supone que todo perfil empieza o termina en el suelo; aquí la curva nunca baja hasta la altura \\(0\\).",
+        "A": "Suma las tres alturas señaladas \\((98+58+22 = 178)\\) como si el resultado fuera la altura máxima."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q14.png"
     },
     {
-      "id": "math-8-p2-propio-2023-15",
-      "numero": 15,
-      "enunciado": "<p>Cuatro niñas tienen cajas con fichas verdes y naranjas (ver tabla). Cada una saca una ficha al azar de su caja. ¿Quién tiene <b>mayor</b> probabilidad de sacar una ficha <b>verde</b>?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Niña</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Fichas verdes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Fichas naranjas</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sara</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">280</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">400</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">125</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">375</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">500</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Noa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">200</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">200</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">400</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ada</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">225</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">275</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">500</td></tr></table>",
-      "opciones": {
-        "A": "Sara.",
-        "B": "Mía.",
-        "C": "Noa.",
-        "D": "Ada."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
-      "que_evalua": "La capacidad para identificar el espacio en el que se maximiza la probabilidad de un evento definido.",
-      "justificacion_correcta": "La probabilidad de verde es \\(\\dfrac{\\text{verdes}}{\\text{total}}\\): Sara \\(\\dfrac{120}{400}=0{,}30\\); Mía \\(\\dfrac{125}{500}=0{,}25\\); Noa \\(\\dfrac{200}{400}=0{,}50\\); Ada \\(\\dfrac{225}{500}=0{,}45\\). La mayor es la de Noa.",
-      "opciones_incorrectas": {
-        "A": "Sara tiene \\(0{,}30\\), menor que la de Noa.",
-        "B": "Mía tiene la menor probabilidad \\((0{,}25)\\).",
-        "D": "Ada tiene \\(0{,}45\\), menor que el \\(0{,}50\\) de Noa."
-      }
-    },
-    {
-      "id": "math-8-p2-propio-2023-16",
-      "numero": 16,
-      "enunciado": "<p>La parábola de la figura pasa por los puntos <b>\\((0, 1)\\)</b>, <b>\\((2, 5)\\)</b> y <b>\\((4, 1)\\)</b>. ¿Cuál de las siguientes expresiones la representa?</p>",
-      "opciones": {
-        "A": "\\(y = -x^2 + 1\\)",
-        "B": "\\(y = x^2 + 1\\)",
-        "C": "\\(y = -x^2 + 4x + 1\\)",
-        "D": "\\(y = x^2 - 4x + 1\\)"
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
-      "que_evalua": "La capacidad para relacionar una expresión de la forma y = ax² + bx + c con su representación en el plano cartesiano.",
-      "justificacion_correcta": "Reemplazando en \\(y = -x^2 + 4x + 1\\): \\(y(0)=1\\), \\(y(2)=-4+8+1 = 5\\) y \\(y(4)=-16+16+1 = 1\\). Es la única que pasa por los tres puntos y abre hacia abajo, con vértice en \\((2,5)\\), como la figura.",
-      "opciones_incorrectas": {
-        "A": "Pasa por \\((0,1)\\) pero su vértice queda en \\(x=0\\); en \\((2,5)\\) daría \\(y(2)=-3\\), no \\(5\\).",
-        "B": "Abre hacia arriba y no pasa por \\((2,5)\\) ni por \\((4,1)\\).",
-        "D": "Abre hacia arriba; no corresponde a una parábola con máximo como la de la figura."
-      },
-      "imagen_figura": "assets/banco-mat-8-p2/q16.png"
-    },
-    {
       "id": "math-8-p2-propio-2023-17",
-      "numero": 17,
-      "enunciado": "<p>La figura muestra el logo que diseñó Alexandra. El cliente le pidió <b>rotarlo \\(90^\\circ\\) en el sentido de las manecillas del reloj</b>. ¿Cuál de las opciones A, B, C o D muestra el logo después de esa rotación?</p>",
+      "numero": 14,
+      "enunciado": "<p>La flecha de la figura hace parte de la señalización de evacuación de un edificio; el punto amarillo marca su punta. Al reubicar la señal en otro corredor, el comité de emergencias pide reimprimirla girada <b>un cuarto de vuelta en el sentido de las manecillas del reloj</b>.</p>[[IMG]]<p>¿Cuál de las opciones muestra la flecha ya girada?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -481,12 +403,12 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas",
-      "que_evalua": "La capacidad para hacer transformaciones (rotaciones, traslaciones o reflexiones) a figuras bidimensionales.",
-      "justificacion_correcta": "Al girar el logo \\(90^\\circ\\) en el sentido de las manecillas del reloj, la punta superior queda apuntando hacia la derecha, como en la opción B.",
+      "que_evalua": "La capacidad para aplicar transformaciones (rotaciones, traslaciones o reflexiones) a figuras bidimensionales.",
+      "justificacion_correcta": "Un cuarto de vuelta en el sentido de las manecillas del reloj lleva lo que apuntaba hacia arriba a apuntar hacia la derecha, y lo que estaba a la izquierda pasa a quedar arriba. La opción B es la única con la punta hacia la derecha y con el escalón del cuerpo en la parte superior.",
       "opciones_incorrectas": {
-        "A": "Gira \\(90^\\circ\\) pero en sentido contrario (antihorario).",
-        "C": "Confunde la amplitud: gira solo \\(45^\\circ\\) en sentido horario.",
-        "D": "Gira \\(180^\\circ\\) en vez de \\(90^\\circ\\)."
+        "A": "Gira el mismo cuarto de vuelta, pero en el sentido contrario al de las manecillas: la punta termina hacia la izquierda.",
+        "C": "Se queda a mitad de camino: gira apenas un octavo de vuelta y la punta queda en diagonal, hacia arriba y a la derecha.",
+        "D": "Gira media vuelta en lugar de un cuarto: la punta queda apuntando hacia abajo."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q17.png",
       "opciones_imagenes": {
@@ -497,81 +419,158 @@
       }
     },
     {
-      "id": "math-8-p2-propio-2023-18",
-      "numero": 18,
-      "enunciado": "<p>Una panadería hornea cuatro tipos de pan. La tabla muestra cuántas unidades horneó de cada tipo en una semana. ¿Cuál tipo de pan corresponde a la <b>moda</b> de la producción?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tipo de pan</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Unidades horneadas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tipo 1 (integral)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tipo 2 (centeno)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tipo 3 (avena)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tipo 4 (maíz)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60</td></tr></table>",
+      "id": "math-8-p2-propio-2023-10",
+      "numero": 15,
+      "enunciado": "<p>El plano catastral de la figura muestra un predio ya dividido en <b>seis lotes</b>; debajo del número de cada uno aparecen su frente y su profundidad, en metros. La oficina de planeación debe asignar el <b>mismo avalúo</b> a los lotes que sean <b>congruentes</b>, es decir, a los que coincidan a la vez en el frente y en la profundidad.</p>[[IMG]]<p>¿Cuáles dos lotes reciben ese mismo avalúo?</p>",
       "opciones": {
-        "A": "Tipo 1.",
-        "B": "Tipo 4.",
-        "C": "Tipo 3.",
-        "D": "Tipo 2."
+        "A": "Los lotes \\(1\\) y \\(4\\).",
+        "B": "Los lotes \\(4\\) y \\(6\\).",
+        "C": "Los lotes \\(5\\) y \\(6\\).",
+        "D": "Los lotes \\(2\\) y \\(3\\)."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
+      "que_evalua": "La capacidad para decidir si dos rectángulos son congruentes comparando sus dos medidas.",
+      "justificacion_correcta": "Dos rectángulos son congruentes solo si coinciden en las dos medidas. Los lotes \\(2\\) y \\(3\\) miden ambos \\(60\\) m de frente por \\(45\\) m de profundidad, y son la única pareja del plano que cumple esa doble coincidencia.",
+      "opciones_incorrectas": {
+        "B": "En \\(85\\times 50\\) y \\(50\\times 40\\) aparece el número \\(50\\), pero en papeles distintos: es profundidad en uno y frente en el otro.",
+        "A": "\\(70\\times 50\\) y \\(85\\times 50\\) comparten la profundidad, y con una sola medida igual no basta.",
+        "C": "\\(55\\times 55\\) y \\(50\\times 40\\) se ven de tamaño parecido en el plano, pero no coincide ninguna de sus medidas."
+      },
+      "imagen_figura": "assets/banco-mat-8-p2/q10.png"
+    },
+    {
+      "id": "math-8-p2-propio-2023-01",
+      "numero": 16,
+      "enunciado": "<p>Un vivero municipal alista bandejas para una jornada de siembra. En cada bandeja se colocan <b>5 bolsas de abono</b> y <b>4 tutores de madera</b>. Se despacharán <b>24 estibas</b> con <b>45 bandejas</b> en cada una. ¿Cómo debe proceder el almacenista para saber cuántas unidades pedir <b>de cada insumo por separado</b>?</p>",
+      "opciones": {
+        "A": "Multiplicar \\(24\\times 5\\), luego \\(24\\times 4\\), y sumar los dos resultados.",
+        "B": "Multiplicar \\(5\\times 4\\) y al resultado aplicarle las \\(45\\) bandejas y después las \\(24\\) estibas.",
+        "C": "Multiplicar \\(45\\times 5\\), luego \\(45\\times 4\\), y sumar los dos resultados.",
+        "D": "Obtener el total de bandejas con \\(45\\times 24\\); enseguida multiplicar ese total por \\(5\\) y, aparte, ese mismo total por \\(4\\)."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
+      "que_evalua": "La capacidad para trazar una ruta de solución correcta a un problema numérico surgido de una situación de trabajo.",
+      "justificacion_correcta": "El total de bandejas es \\(45\\times 24 = 1.080\\). Como cada bandeja lleva \\(5\\) bolsas de abono y \\(4\\) tutores, se multiplica ese total por \\(5\\) y, por separado, por \\(4\\); así queda una cifra distinta para cada insumo.",
+      "opciones_incorrectas": {
+        "B": "Multiplicar \\(5\\times 4\\) mezcla los dos insumos desde el primer paso, cuando el pedido debe quedar separado.",
+        "C": "Usa \\(45\\) como si fuera el total de bandejas (ignora las \\(24\\) estibas) y, además, reúne los dos insumos en una sola cifra.",
+        "A": "Usa \\(24\\) como si fuera el total de bandejas (ignora las \\(45\\) de cada estiba) y también suma los dos insumos."
+      }
+    },
+    {
+      "id": "math-8-p2-propio-2023-13",
+      "numero": 17,
+      "enunciado": "<p>En el taller de bicicletas de un colegio se anotó cuántas bicicletas se repararon en cada uno de los <b>siete días</b> de una semana. Al revisar los registros, el coordinador afirma que la <b>mediana</b> de esos siete datos es <b>\\(6\\)</b>. ¿En cuál de estas listas la mediana es realmente \\(6\\)?</p>",
+      "opciones": {
+        "A": "\\(1\\ -\\ 2\\ -\\ 3\\ -\\ 4\\ -\\ 5\\ -\\ 12\\ -\\ 15\\).",
+        "B": "\\(10\\ -\\ 12\\ -\\ 9\\ -\\ 6\\ -\\ 11\\ -\\ 3\\ -\\ 4\\).",
+        "C": "\\(6\\ -\\ 2\\ -\\ 6\\ -\\ 10\\ -\\ 12\\ -\\ 11\\ -\\ 9\\).",
+        "D": "\\(9\\ -\\ 4\\ -\\ 7\\ -\\ 3\\ -\\ 6\\ -\\ 11\\ -\\ 5\\)."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
+      "que_evalua": "La capacidad para escoger un conjunto de datos cuya mediana coincide con un valor dado en un contexto.",
+      "justificacion_correcta": "Con siete datos, la mediana es el cuarto valor una vez ordenados de menor a mayor. Al ordenar la lista A queda \\(3\\ -\\ 4\\ -\\ 5\\ -\\ 6\\ -\\ 7\\ -\\ 9\\ -\\ 11\\), y el cuarto valor es \\(6\\).",
+      "opciones_incorrectas": {
+        "C": "Confunde la mediana con la moda: \\(6\\) es el dato que se repite, pero al ordenar \\((2, 6, 6, 9, 10, 11, 12)\\) la mediana es \\(9\\).",
+        "A": "Confunde la mediana con la media: los datos suman \\(42\\) y promedian \\(6\\), pero el valor central es \\(4\\).",
+        "B": "Toma el dato que está escrito en la mitad sin ordenar; al ordenar \\((3, 4, 6, 9, 10, 11, 12)\\) la mediana resulta \\(9\\)."
+      }
+    },
+    {
+      "id": "math-8-p2-propio-2023-07",
+      "numero": 18,
+      "enunciado": "<p>En las olimpiadas internas de un colegio, el equipo de un curso —integrado por <b>5 estudiantes</b>— quedó campeón y recibió <b>$1.800.000</b>. La tabla registra el <b>puntaje</b> que alcanzó el equipo en cada uno de los cinco juegos, y la gráfica circular reparte el premio entre esos mismos juegos (ver figura). ¿Cuál tabla reúne bien el <b>puntaje</b> y el <b>dinero</b> que le correspondió al equipo en cada juego?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">145</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">90</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">175</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">55</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">130</td></tr></table>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">29</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$250.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$200.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$100.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$150.000</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">145</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$250.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">90</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$200.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">175</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">55</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$100.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">130</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$150.000</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">145</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$450.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">90</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$360.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">175</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$540.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">55</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$180.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">130</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$270.000</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Juego</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Dinero</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tiro al arco</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">29</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$450.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carrera</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$360.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$540.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Ajedrez</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$180.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tejo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$270.000</td></tr></table>"
       },
       "clave": "C",
       "competencia": "c",
       "afirmacion": 6,
-      "evidencia": "6.2",
+      "evidencia": "6.1",
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
-      "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
-      "que_evalua": "La capacidad para interpretar datos presentados en tablas y encontrar la moda de un conjunto cuya descripción es numérica.",
-      "justificacion_correcta": "La moda es el dato con mayor cantidad de unidades fabricadas. El Tipo 3 (avena) tiene \\(120\\) unidades, la mayor de todas.",
+      "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La capacidad para armar una tabla que integra datos tomados de otra tabla y de una gráfica circular.",
+      "justificacion_correcta": "El puntaje se copia tal cual, porque el que se pide es el del equipo. El dinero es el porcentaje que la gráfica asigna a cada juego, calculado sobre \\($1.800.000\\): \\(25\\,\\%=\\$450.000\\), \\(20\\,\\%=\\$360.000\\), \\(30\\,\\%=\\$540.000\\), \\(10\\,\\%=\\$180.000\\) y \\(15\\,\\%=\\$270.000\\). Solo la tabla D cumple las dos cosas a la vez.",
       "opciones_incorrectas": {
-        "A": "El Tipo 1 (integral) tiene solo \\(50\\) unidades, no es la moda.",
-        "B": "El Tipo 4 (maíz) tiene \\(60\\) unidades; no es el más fabricado.",
-        "D": "El Tipo 2 (centeno) tiene \\(60\\) unidades; empata con el Tipo 4 pero no es el máximo."
-      }
+        "B": "El puntaje está bien copiado, pero el dinero se calculó sobre \\($1.000.000\\) y no sobre el premio real de \\($1.800.000\\).",
+        "A": "Falla en las dos columnas: reparte el puntaje entre los \\(5\\) integrantes y, además, calcula el dinero sobre \\($1.000.000\\).",
+        "D": "El dinero quedó bien, pero divide cada puntaje entre \\(5\\) como si fuera el aporte de un solo integrante; lo que se pide es el puntaje del equipo."
+      },
+      "imagen_figura": "assets/banco-mat-8-p2/q07.png"
     },
     {
-      "id": "math-8-p2-propio-2023-19",
+      "id": "math-8-p2-propio-2023-09",
       "numero": 19,
-      "enunciado": "<p>Esteban va a pintar de verde únicamente el anillo exterior de un reloj de pared que se compone de dos círculos concéntricos: el interior (la esfera) tiene <b>radio \\(4\\) cm</b> y el exterior tiene <b>radio \\(10\\) cm</b> (ver figura). Recuerda que el área de un círculo de radio \\(r\\) es <b>\\(\\pi r^2\\)</b>. ¿Qué área debe pintar?</p>",
+      "enunciado": "<p>Una fábrica de empaques necesita saber cuánto cartón laminado gasta al recubrir <b>por fuera</b>, sin traslapes, cada caja de exhibición. La caja tiene forma de prisma rectangular de <b>\\(25\\) cm</b> de largo, <b>\\(40\\) cm</b> de fondo y <b>\\(10\\) cm</b> de alto (ver figura).</p>[[IMG]]<p>¿Cuál es el área total de sus seis caras?</p>",
       "opciones": {
-        "A": "\\(36\\pi\\ \\text{cm}^2\\)",
-        "B": "\\(84\\pi\\ \\text{cm}^2\\)",
-        "C": "\\(100\\pi\\ \\text{cm}^2\\)",
-        "D": "\\(16\\pi\\ \\text{cm}^2\\)"
+        "A": "\\(2.900\\ \\text{cm}^2\\)",
+        "B": "\\(6.000\\ \\text{cm}^2\\)",
+        "C": "\\(3.300\\ \\text{cm}^2\\)",
+        "D": "\\(1.650\\ \\text{cm}^2\\)"
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "a",
       "afirmacion": 7,
-      "evidencia": "7.2",
+      "evidencia": "7.1",
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
-      "que_evalua": "La capacidad para calcular el área de una región compuesta por círculos.",
-      "justificacion_correcta": "El borde es la corona: el área del círculo grande menos la del pequeño. \\(\\pi(10)^2 - \\pi(4)^2 = 100\\pi - 16\\pi = 84\\pi\\ \\text{cm}^2\\).",
+      "que_evalua": "La capacidad para hallar el área superficial de un sólido sumando las áreas de todas sus caras.",
+      "justificacion_correcta": "Las caras van por parejas iguales: dos de \\(25\\times 40 = 1.000\\), dos de \\(25\\times 10 = 250\\) y dos de \\(40\\times 10 = 400\\). En total, \\(2(1.000 + 250 + 400) = 2(1.650) = 3.300\\ \\text{cm}^2\\).",
       "opciones_incorrectas": {
-        "A": "Resta los radios \\((10-4=6)\\) y eleva al cuadrado: \\(\\pi(6)^2 = 36\\pi\\), lo cual es incorrecto.",
-        "C": "Calcula solo el área del círculo grande \\((100\\pi)\\).",
-        "D": "Calcula solo el área del círculo pequeño \\((16\\pi)\\)."
+        "D": "Suma una sola cara de cada tamaño \\((1.000+250+400 = 1.650)\\) y olvida que cada una tiene su pareja.",
+        "B": "Da por hecho que las seis caras miden \\(25\\times 40\\): \\(6\\times 1.000 = 6.000\\), y con eso ignora que la caja tiene tres tamaños distintos de cara.",
+        "A": "Duplica dos parejas de caras pero deja una sin duplicar: \\(2(1.000)+2(250)+400 = 2.900\\)."
       },
-      "imagen_figura": "assets/banco-mat-8-p2/q19.png"
+      "imagen_figura": "assets/banco-mat-8-p2/q09.png"
     },
     {
-      "id": "math-8-p2-propio-2023-20",
+      "id": "math-8-p2-propio-2023-11",
       "numero": 20,
-      "enunciado": "<p>Un gato montés parte de una rama a <b>\\(21\\) m</b> del piso y salta; su trayectoria se modela con la parábola de la figura. La rama está sobre el eje vertical. ¿A qué <b>distancia de la base del árbol</b> cayó el gato (punto donde la curva corta el eje horizontal)?</p>",
+      "enunciado": "<p>Una aplicación de ciencia ciudadana estima la temperatura del ambiente contando los chirridos que emite un grillo en un minuto; la gráfica es la curva de calibración que usa la aplicación (ver figura). La estimación resulta más precisa en el tramo donde un mismo cambio de temperatura produce el <b>mayor cambio</b> en el número de chirridos.</p>[[IMG]]<p>¿Cuál es ese tramo?</p>",
       "opciones": {
-        "A": "\\(25\\) metros.",
-        "B": "\\(7\\) metros.",
-        "C": "\\(21\\) metros.",
-        "D": "\\(2\\) metros."
+        "A": "Entre \\(16\\,{}^{\\circ}\\text{C}\\) y \\(20\\,{}^{\\circ}\\text{C}\\).",
+        "B": "Entre \\(12\\,{}^{\\circ}\\text{C}\\) y \\(16\\,{}^{\\circ}\\text{C}\\).",
+        "C": "Entre \\(20\\,{}^{\\circ}\\text{C}\\) y \\(24\\,{}^{\\circ}\\text{C}\\).",
+        "D": "Entre \\(8\\,{}^{\\circ}\\text{C}\\) y \\(12\\,{}^{\\circ}\\text{C}\\)."
       },
       "clave": "B",
-      "competencia": "b",
-      "afirmacion": 9,
-      "evidencia": "9.1",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
-      "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
-      "que_evalua": "La capacidad para identificar puntos característicos de la gráfica de una función cuadrática.",
-      "justificacion_correcta": "El punto donde la curva corta el eje horizontal es \\((7, 0)\\): la primera coordenada \\((7)\\) es la distancia horizontal a la base del árbol. Por eso cayó a \\(7\\) metros.",
+      "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
+      "que_evalua": "La capacidad para comparar la rapidez de cambio de una curva a trozos identificando el tramo de mayor pendiente.",
+      "justificacion_correcta": "Como todos los tramos abarcan \\(4\\,{}^{\\circ}\\text{C}\\), basta comparar cuánto sube la curva en cada uno. Entre \\(12\\,{}^{\\circ}\\text{C}\\) y \\(16\\,{}^{\\circ}\\text{C}\\) pasa de \\(28\\) a \\(96\\) chirridos, es decir \\(68\\) más: es el mayor de los cuatro aumentos y, por tanto, el tramo de mayor pendiente.",
       "opciones_incorrectas": {
-        "A": "Toma la segunda coordenada del punto más alto \\((25)\\) en vez del corte con el eje \\(x\\).",
-        "C": "Toma la altura de partida \\((21\\) m\\()\\), no la distancia de caída.",
-        "D": "Toma la primera coordenada del punto más alto \\((2)\\) en vez del corte con el eje horizontal."
+        "A": "Ahí la curva sube de \\(96\\) a \\(132\\), o sea \\(36\\) chirridos: es un tramo empinado, pero no el que más sube.",
+        "D": "Ahí la curva apenas pasa de \\(12\\) a \\(28\\): son \\(16\\) chirridos, el menor aumento de todos.",
+        "C": "Ahí la curva sube de \\(132\\) a \\(160\\), solo \\(28\\) chirridos; el tramo se va aplanando."
       },
-      "imagen_figura": "assets/banco-mat-8-p2/q20.png"
+      "imagen_figura": "assets/banco-mat-8-p2/q11.png"
     }
   ],
   "preservar_orden_preguntas": false

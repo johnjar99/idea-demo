@@ -5,10 +5,11 @@
   "grado": "10",
   "periodo": "II",
   "version": "2023",
-  "nombre": "Cuadernillo de Sociales y Ciudadanas · Grado 10° · Período II (Banco propio IDEA)",
-  "fuente": "Banco propio IDEA · ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "nombre": "Cuadernillo de Sociales y Ciudadanas — Grado 10° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
   "tiempo_minutos": 60,
   "num_preguntas": 20,
+  "preservar_orden_preguntas": false,
   "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
   "competencias": {
     "a": "Pensamiento social",
@@ -39,399 +40,423 @@
   },
   "preguntas": [
     {
-      "id": "P10S201",
+      "id": "P10S208",
       "numero": 1,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En varias regiones del país, el precio de la papa se ha disparado. Según las autoridades, el encarecimiento no obedece a que producirla cueste más, sino a que un <b>reducido grupo de empresas intermediarias</b> concentra la compra al campesino y la reventa al consumidor: ese control de unos pocos sobre el mercado les permite fijar precios altos, mientras el agricultor recibe una fracción mínima de lo que paga el comprador final. Para romper esa cadena, un gobernador propone crear <b>centrales de acopio públicas</b> en los municipios productores, donde los campesinos vendan directamente al consumidor. Sin embargo, expertos advierten que cada central exige refrigeración permanente, control sanitario constante y un costo de montaje que no baja de varios miles de millones de pesos.</p></div><p>¿Cuál podría ser un efecto <b>no deseado</b> de la propuesta del gobernador?</p>",
+      "enunciado": "<p>Lee atentamente el siguiente fragmento.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Los hombres nacen y permanecen libres e iguales en derechos. Ninguna casa, ningún señor y ningún cuerpo puede reclamar mando que la nación no le haya conferido. La ley es la expresión de la voluntad común y ha de ser la misma para todos, tanto cuando protege como cuando castiga; ningún nacimiento otorga por sí mismo cargo, exención ni tribunal aparte.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Fragmento de un pliego leído ante una asamblea (texto elaborado para esta prueba).</p></div><p>El pliego cuestiona un orden en el que</p>",
       "opciones": {
-        "A": "Que los agricultores rechacen la medida porque preferirían seguir vendiendo a los intermediarios.",
-        "B": "Que las empresas intermediarias bajen sus precios para igualarse a los de las centrales de acopio.",
-        "C": "Que el consumidor deje de comprar papa porque desconfía de los productos vendidos directamente por los campesinos.",
-        "D": "Que, al no poder cubrir lo que cuesta operarlas, algunas centrales terminen funcionando en mal estado y pongan en riesgo lo que allí se vende."
+        "A": "unas colonias reclamaban gobernarse sin la tutela de la metrópoli que las administraba.",
+        "B": "las leyes eran discutidas y aprobadas por asambleas elegidas por los ciudadanos.",
+        "C": "el nacimiento repartía cargos y exenciones, y quien mandaba no rendía cuentas a nadie.",
+        "D": "las fábricas les prohibían a los obreros reunirse y organizar sindicatos para negociar."
       },
-      "clave": "D",
+      "clave": "C",
       "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.2",
+      "afirmacion": 3,
+      "evidencia": "3.2",
       "dificultad": "MEDIA",
-      "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
-      "que_evalua": "La capacidad para identificar cómo una propuesta de solución puede afectar una situación y los diferentes aspectos que la componen.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque las centrales de acopio exigen refrigeración y vigilancia costosa y permanente; si por los costos no se logran sostener esas condiciones, terminarían funcionando en mal estado y se pondría en riesgo el producto que allí se vende. Ese es un efecto no buscado de la propia solución, expresado sin repetir las palabras del texto.",
+      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
+      "que_evalua": "La capacidad para reconocer, a partir de una fuente primaria, el orden social contra el cual fue escrita.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque el pliego niega que alguna casa o señor pueda mandar sin que la nación se lo haya conferido y rechaza que el nacimiento otorgue cargos, exenciones o tribunales aparte. Se pronuncia, entonces, contra un orden donde los privilegios venían de la cuna y quien gobernaba no respondía ante los gobernados.",
       "opciones_incorrectas": {
-        "A": "La medida favorece a los agricultores (venden directamente y reciben más); no hay razón para que la rechacen.",
-        "B": "Que los intermediarios bajen sus precios sería un efecto deseado de la medida, no un efecto no deseado.",
-        "C": "Nada en la situación indica que el consumidor desconfíe de comprar directamente a los campesinos."
+        "D": "El pliego no discute el trabajo asalariado ni la organización sindical, sino los privilegios heredados y la ley común.",
+        "B": "Si las leyes ya salieran de asambleas elegidas, no haría falta reclamar que expresen la voluntad común.",
+        "A": "El texto no plantea una disputa entre colonias y metrópoli; discute quién puede mandar dentro de una misma nación."
       }
     },
     {
       "id": "P10S202",
       "numero": 2,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El pueblo rohinyá es una minoría que durante generaciones ha vivido en una región de Myanmar (antes Birmania), en el sudeste asiático. A diferencia de la mayoría de la población del país, los rohinyás profesan una religión distinta y hablan su propia lengua. Durante décadas, el Estado les ha negado el reconocimiento como ciudadanos: no se les expiden documentos de identidad ni se les reconoce una nacionalidad, de modo que, ante la ley, son personas «sin Estado». A partir de esa negación, muchos han sufrido restricciones para moverse, estudiar y trabajar, y cientos de miles han huido del país.</p></div><p>De acuerdo con lo anterior, ¿cuál es la causa que <b>origina</b> el conflicto que vive el pueblo rohinyá?</p>",
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El barrio Villa Esperanza se formó hace veinte años, cuando decenas de familias que salieron de sus veredas por la violencia ocuparon una ladera en el borde de una ciudad intermedia. Hoy viven allí unas cuatrocientas familias, pero el barrio no aparece en los planos oficiales: nunca se legalizó. Como para la administración ese asentamiento no existe, la empresa de acueducto no puede tender la red ni instalar medidores, las calles no entran en los planes de pavimentación y ninguna obra puede contratarse allí. Las familias se abastecen con mangueras conectadas a un tubo del barrio vecino, se cuelgan del poste de energía y cada dos o tres años reciben la advertencia de un desalojo.</p></div><p>Si la administración quisiera actuar sobre la raíz de esta situación, y no sobre sus manifestaciones, ¿en qué tendría que intervenir?</p>",
       "opciones": {
-        "A": "Que el país les niega un estatus legal que los ampare como miembros plenos de la nación, dejándolos sin amparo ante la ley.",
-        "B": "La huida de cientos de miles de rohinyás hacia los países vecinos en busca de refugio.",
-        "C": "La negativa de los rohinyás a aprender la lengua y a adoptar la religión de la mayoría del país.",
-        "D": "Las restricciones para moverse, estudiar y trabajar que el Estado les impone a los rohinyás dentro del país."
+        "A": "En el número de familias que cada año siguen llegando a la ladera desde otras veredas del departamento.",
+        "B": "En la disposición de las familias a aprender los oficios que hoy demanda la economía de la ciudad.",
+        "C": "En las mangueras y los cables improvisados con que las familias resuelven hoy el agua y la energía.",
+        "D": "En el reconocimiento del barrio en el ordenamiento urbano, sin el que no cabe contratar obra alguna."
       },
-      "clave": "A",
+      "clave": "D",
       "competencia": "c",
       "afirmacion": 6,
       "evidencia": "6.2",
       "dificultad": "MEDIA",
       "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para identificar la causa que origina un conflicto.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la raíz del conflicto es que el país les niega un estatus legal que los ampare como miembros plenos de la nación: al quedar sin amparo legal son invisibles ante la ley, y de esa negación se derivan después las restricciones y el desplazamiento. Esa es la causa que origina toda la problemática.",
+      "que_evalua": "La capacidad para relacionar las dimensiones que componen una situación problemática y distinguir su origen de sus manifestaciones.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque todo lo que padece el barrio (agua por manguera, energía colgada, calles sin pavimentar, amenaza de desalojo) se desprende de un mismo punto: para la administración el asentamiento no existe, y sin ese paso ninguna entidad puede invertir allí. Intervenir sobre ese punto desbloquea las demás dimensiones; intervenir sobre las otras solo alivia síntomas.",
       "opciones_incorrectas": {
-        "B": "La huida es una consecuencia del conflicto, no la causa que lo origina.",
-        "C": "El texto no señala que los rohinyás se nieguen a adaptarse; tener cultura y lengua propias no es lo que origina el conflicto.",
-        "D": "Repite las restricciones que menciona el texto (moverse, estudiar, trabajar), pero estas son consecuencias de la negación de la ciudadanía, no la causa que la origina."
+        "A": "La llegada de nuevas familias vuelve más grande el problema, pero no es lo que impide que el barrio reciba obras.",
+        "B": "El caso no atribuye lo ocurrido a la formación de las familias; ese enfoque traslada la responsabilidad a quienes lo padecen.",
+        "C": "Las conexiones improvisadas son la salida que las familias encontraron ante el problema, es decir, una de sus manifestaciones."
       }
     },
     {
-      "id": "P10S203",
+      "id": "P10S220",
       "numero": 3,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un hospital público de una ciudad intermedia, los pacientes esperan hasta seis horas para ser atendidos en urgencias porque hay muy pocos médicos por turno y los que están deben atender a demasiadas personas. Esto ha deteriorado la atención y aumentado las quejas. Para mejorar la situación, la dirección del hospital propone <b>contratar más médicos, enfermeras y especialistas, y mejorar sus salarios</b>, de modo que cada paciente reciba una atención más rápida y de mejor calidad.</p></div><p>En la situación descrita, ¿cuál es el aspecto que el hospital <b>privilegió</b> con la solución propuesta?</p>",
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La alcaldía de una ciudad anunció que la nueva terminal de buses intermunicipales se construirá en el lote donde hoy queda la única zona verde del barrio La Aurora; el proyecto pasará al concejo para su aprobación. Trescientos habitantes del barrio firmaron una solicitud: no quieren enviar una carta ni enterarse después del resultado de la votación, quieren estar presentes en la sesión en que el concejo discuta el proyecto, tomar la palabra allí y sustentar por qué se oponen al lote elegido.</p></div><p>¿Cuál es el mecanismo que les permite intervenir de esa manera?</p>",
       "opciones": {
-        "A": "El aspecto administrativo, entendido como el manejo de los trámites y la papelería del hospital.",
-        "B": "El aspecto político, entendido como las alianzas del hospital con otras entidades del Estado.",
-        "C": "El aspecto cultural, entendido como las costumbres de la comunidad frente a la salud.",
-        "D": "El aspecto asistencial, entendido como el cuidado en salud que efectivamente se le brinda a cada persona que llega a urgencias."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
-      "que_evalua": "La capacidad para identificar los aspectos que componen una situación y cómo están relacionados, para lograr una mejor comprensión de la información dada.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque sumar personal de salud y mejorar sus condiciones apunta directamente al cuidado que recibe cada persona que llega a urgencias; es decir, fortalece el aspecto asistencial (la atención en salud), que es el que la solución privilegia. El término «asistencial» no aparece en la situación: el estudiante debe nombrarlo.",
-      "opciones_incorrectas": {
-        "A": "Lo administrativo (trámites y papelería) no es lo que se busca mejorar contratando más personal médico.",
-        "B": "La solución no se basa en alianzas políticas con otras entidades, sino en reforzar la atención.",
-        "C": "Lo cultural (las costumbres frente a la salud) no es la dimensión que se deriva de la solución propuesta."
-      }
-    },
-    {
-      "id": "P10S204",
-      "numero": 4,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una administración municipal debe distribuir un presupuesto insuficiente para todas las necesidades de su población. En un mismo predio, declarado en riesgo de colapso estructural, funcionan en jornadas distintas dos servicios sociales: un comedor escolar que garantiza la alimentación diaria de niños y niñas en condición de vulnerabilidad y un centro de encuentro para población adulta. Los recursos disponibles solo permiten reforzar y reabrir de inmediato uno de los dos; el otro deberá esperar a una vigencia posterior. Tras estudiar el caso, la alcaldía resuelve intervenir primero el comedor escolar, de modo que la población infantil no quede sin alimentación.</p></div><p>De acuerdo con la Constitución Política de Colombia, ¿cuál es el fundamento que justifica haber priorizado el comedor escolar?</p>",
-      "opciones": {
-        "A": "Que la población adulta puede proveerse el alimento por sus propios medios mientras se gestiona más presupuesto.",
-        "B": "Que reforzar primero el comedor escolar representa un menor costo para las finanzas del municipio.",
-        "C": "Que los derechos de los niños y las niñas prevalecen sobre los derechos de los demás.",
-        "D": "Que la afluencia de niños y niñas asegura un mejor mantenimiento del predio a lo largo del tiempo."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente las decisiones, acciones u omisiones que se toman en el ámbito nacional o internacional y que pueden generar conflictos o afectar los derechos humanos.",
-      "que_evalua": "La capacidad para identificar en una situación la prevalencia que tienen los derechos de los niños.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la Constitución, en su artículo 44, establece que los derechos de los niños y las niñas prevalecen sobre los de los demás; por eso, ante la imposibilidad de atender a la vez ambos servicios, el criterio constitucional obliga a priorizar el que protege los derechos de la niñez.",
-      "opciones_incorrectas": {
-        "A": "Suponer que la población adulta puede valerse sola es un argumento de conveniencia, no el fundamento constitucional de la decisión.",
-        "B": "La decisión no se sustenta en que sea la opción más económica, sino en la prevalencia de los derechos de la niñez.",
-        "D": "Atribuir a los niños la conservación del predio no corresponde a la razón constitucional que ordena la prioridad."
-      }
-    },
-    {
-      "id": "P10S205",
-      "numero": 5,
-      "enunciado": "<p>Lee el siguiente fragmento de una economista y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Cuando un grupo de países decide formar un mercado común, no solo eliminan los impuestos a los productos que cruzan sus fronteras; también acuerdan que las personas, los trabajadores y el dinero puedan circular libremente de un país a otro, como si se tratara de un solo gran mercado.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Reflexión de una economista (texto elaborado para esta prueba).</p></div><p>De acuerdo con el fragmento, ¿con cuál de las siguientes ideas se relaciona el concepto de <b>mercado común</b>?</p>",
-      "opciones": {
-        "A": "Con borrar las barreras internas para que la actividad económica fluya entre los miembros como dentro de un solo territorio.",
-        "B": "Con la decisión de un país de cerrar sus fronteras para proteger su producción nacional.",
-        "C": "Con eliminar únicamente los impuestos a las mercancías que cruzan las fronteras, sin tocar la circulación de las personas.",
-        "D": "Con la unión de varios países bajo un solo gobierno y un mismo presidente."
+        "A": "El cabildo abierto, con el que el concejo sesiona en público para oír y debatir con quienes lo piden.",
+        "B": "La acción de tutela, con la que un juez ordena proteger de inmediato un derecho fundamental amenazado.",
+        "C": "El derecho de petición, con el que una autoridad queda obligada a responder por escrito una solicitud.",
+        "D": "El voto programático, con el que se le exige al alcalde cumplir el programa por el que fue elegido."
       },
       "clave": "A",
       "competencia": "a",
       "afirmacion": 1,
-      "evidencia": "1.2",
+      "evidencia": "1.3",
       "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente las decisiones, acciones u omisiones que se toman en el ámbito nacional o internacional y que pueden generar conflictos o afectar los derechos humanos.",
-      "que_evalua": "La capacidad para analizar información derivada de una fuente, identificando el concepto social que se encuentra relacionado.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque, según el fragmento, el mercado común no se limita a quitar impuestos a los productos: borra las barreras internas para que toda la actividad económica (bienes, personas, trabajadores y capital) circule entre los países miembros como si fuera un único territorio. La opción reformula esa idea sin copiar la enumeración del texto.",
+      "estandar": "Analizo críticamente el sentido de las leyes y comprendo la importancia de cumplirlas, así no comparta alguna de ellas.",
+      "que_evalua": "Los conocimientos relacionados con los mecanismos con que los ciudadanos intervienen en decisiones de su localidad.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque lo que piden los habitantes del barrio es exactamente lo que el cabildo abierto hace posible: que la corporación sesione de manera pública sobre el asunto solicitado y que quienes lo pidieron intervengan y sustenten su posición durante esa sesión. Los otros tres mecanismos existen, pero sirven para fines distintos.",
       "opciones_incorrectas": {
-        "B": "Cerrar fronteras es lo contrario de un mercado común, que busca abrirlas entre sus integrantes.",
-        "C": "Recoge solo una parte del texto (eliminar impuestos a los productos) y deja por fuera lo decisivo: que también circulen libremente las personas, los trabajadores y el dinero.",
-        "D": "Un mercado común no implica un solo gobierno; los países conservan su independencia política."
+        "B": "La tutela protege un derecho fundamental ante un juez; no abre un espacio de deliberación en el concejo.",
+        "C": "La petición obliga a responder por escrito, pero no da lugar a que los vecinos hablen en la sesión.",
+        "D": "El voto programático sirve para exigir el cumplimiento del programa de gobierno, no para participar en un debate."
+      }
+    },
+    {
+      "id": "P10S219",
+      "numero": 4,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una institución educativa rural, una estudiante de quince años que cursa décimo quedó embarazada. El rector la citó con su madre y les propuso que se retirara y volviera «cuando pudiera», para no alterar el ambiente del colegio y evitar comentarios entre los compañeros; a cambio le ofreció guardarle el cupo para el año siguiente. La madre aceptó por temor a que la niña perdiera el año. La personera estudiantil se opuso y pidió que el caso pasara al consejo directivo.</p></div><p>Frente a lo propuesto por el rector, ¿qué debe ocurrir según el ordenamiento colombiano?</p>",
+      "opciones": {
+        "A": "Que se le permita presentar solo los exámenes del final del año, con lo cual su derecho a estudiar queda cubierto.",
+        "B": "Que el colegio consulte a las demás familias, pues su permanencia afecta la formación de sus compañeros.",
+        "C": "Que se le autoricen clases en la casa, pues asistir todos los días pondría en riesgo su salud y la del bebé.",
+        "D": "Que la estudiante siga en su curso y su jornada, pues su estado no puede ser motivo para apartarla del colegio."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente la situación de los derechos humanos en Colombia y en el mundo y propongo alternativas para su promoción y defensa.",
+      "que_evalua": "La capacidad para reconocer la garantía que ofrece un Estado Social de Derecho frente a una decisión que aparta a una persona de un servicio.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque en un Estado Social de Derecho la educación es un derecho que no puede suspenderse por la condición personal de la estudiante: el embarazo no habilita a la institución para retirarla, ni siquiera con la promesa de un cupo posterior. Lo que corresponde es que permanezca en su curso, con los apoyos que su situación requiera.",
+      "opciones_incorrectas": {
+        "C": "Trasladarla a la casa la aparta igualmente del colegio; cuidar su salud no exige sacarla del aula.",
+        "B": "La permanencia de una estudiante no se somete a la opinión de las demás familias, pues su derecho no depende de ello.",
+        "A": "Reducirla a unos exámenes finales le quita el proceso formativo completo, que es justamente lo que el derecho ampara."
+      }
+    },
+    {
+      "id": "P10S207",
+      "numero": 5,
+      "enunciado": "<p>Lee el siguiente fragmento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Compatriotas: el café que llena nuestras bodegas ya no encuentra quien lo reciba en los puertos del norte, y con él se fueron las rentas de la nación. No nos quedaremos esperando. El Gobierno abrirá carreteras que unan los valles, prestará a quien monte fábricas de tejidos, de cemento y de vidrio, y creará un banco nacional que dirija el crédito. Lo que hasta ayer traíamos de afuera, mañana saldrá de nuestros propios talleres.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Fragmento de un discurso radial de un mandatario (texto elaborado para esta prueba).</p></div><p>¿Qué situación de la economía mundial explica las decisiones que anuncia el mandatario?</p>",
+      "opciones": {
+        "A": "El cierre de los puertos a causa de una guerra civil entre los dos partidos tradicionales.",
+        "B": "El desplome de los mercados internacionales, que dejó sin salida los productos agrícolas.",
+        "C": "La pérdida de un departamento, que obligó a reordenar el territorio y las rentas nacionales.",
+        "D": "La firma de un acuerdo comercial que abrió el país a las manufacturas producidas en otras naciones."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
+      "que_evalua": "La capacidad para inscribir una fuente primaria en el contexto económico en el que fue producida.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque el mandatario parte de un hecho concreto: el producto que sostenía las rentas del país dejó de ser recibido en el exterior. Ese cierre de los mercados externos es lo que lo lleva a impulsar carreteras, crédito y fábricas para producir dentro lo que antes se compraba afuera. La fuente se inscribe así en una crisis de la economía mundial.",
+      "opciones_incorrectas": {
+        "D": "Un acuerdo que abra el país a manufacturas extranjeras iría en contra de lo que anuncia el discurso: fabricar aquí lo que se importaba.",
+        "A": "El fragmento no menciona un enfrentamiento armado interno; lo que falta son compradores en el exterior.",
+        "C": "La pérdida de un territorio no explica que las bodegas queden llenas y sin quién reciba la carga."
+      }
+    },
+    {
+      "id": "P10S218",
+      "numero": 6,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el borde de una ciudad queda un humedal de doce hectáreas: es el último refugio de varias aves migratorias y, al mismo tiempo, el lugar donde treinta familias cultivan hortalizas en sus orillas desde hace veinte años. Un colectivo de vecinos propone cerrarlo con malla y declararlo reserva: sin cultivos, sin paso de personas y con vigilancia permanente, para que el humedal se recupere solo. La asociación de huerteros propone lo contrario: abrir senderos, ampliar las parcelas y convertirlo en un parque productivo donde la ciudad aprenda a sembrar, porque —dicen— un lugar que nadie usa termina siendo un lote que alguien rellena.</p></div><p>¿Qué hace que las dos propuestas no puedan llevarse a cabo a la vez?</p>",
+      "opciones": {
+        "A": "Porque una beneficiaría a los habitantes del barrio y la otra a visitantes de otras zonas de la ciudad.",
+        "B": "Porque una se aplicaría en las orillas del humedal y la otra en el espejo de agua que queda al centro.",
+        "C": "Porque entienden el lugar de modo opuesto: para una vale si nadie lo toca; para la otra, si se trabaja.",
+        "D": "Porque una plantea sembrar árboles nativos en el humedal y la otra instalar senderos con señalización clara."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
+      "que_evalua": "La capacidad para identificar por qué dos soluciones propuestas para una misma situación resultan incompatibles.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque las dos propuestas no discuten un detalle técnico: discuten qué es el humedal. Para el colectivo se conserva manteniendo a la gente afuera; para los huerteros se conserva justamente porque la gente lo usa y lo cuida. Como cada una exige del lugar algo que la otra excluye, no pueden ejecutarse al mismo tiempo.",
+      "opciones_incorrectas": {
+        "D": "La diferencia no está en árboles o senderos, sino en si el humedal debe quedar sin intervención o ser trabajado.",
+        "A": "Las dos propuestas se refieren al mismo humedal y a la misma ciudad; no se distinguen por sus beneficiarios.",
+        "B": "Ninguna de las dos se limita a una parte del humedal: cada una plantea qué hacer con el conjunto."
       }
     },
     {
       "id": "P10S206",
-      "numero": 6,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En las últimas décadas se han producido cambios como estos: una ciudad instala rampas y ascensores para que las personas con discapacidad puedan usar el transporte público; un colegio abre por primera vez sus puertas a estudiantes de una comunidad indígena y adapta sus clases a su lengua; y una empresa establece la regla de que la mitad de sus cargos directivos sea ocupada por mujeres.</p></div><p>Estos cambios pueden catalogarse, en conjunto, como</p>",
+      "numero": 7,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio del norte del Cauca, las familias del consejo comunitario de La Balsita habitan desde el siglo XIX las tierras donde se asentaron sus bisabuelos al salir de las minas. Durante décadas no tuvieron ningún papel que respaldara esa posesión. En 2016 el Estado les entregó un <b>título colectivo</b> sobre el territorio: no pertenece a cada familia por separado, no puede venderse y son las asambleas del consejo las que deciden qué se siembra, quién puede entrar y cómo se usa el monte. Desde entonces, las autoridades del municipio deben concertar con el consejo cualquier obra que proyecten allí.</p></div><p>Lo que hizo posible esa decisión fue un proceso de</p>",
       "opciones": {
-        "A": "medidas para aumentar las ganancias económicas de las empresas y las ciudades.",
-        "B": "reformas dirigidas a reducir el tamaño del Estado y de sus instituciones.",
-        "C": "acciones para uniformar las costumbres de los distintos grupos de la población.",
-        "D": "acciones que buscan abrir espacios a sectores que durante mucho tiempo quedaron al margen de la sociedad."
+        "A": "unificación de las costumbres del país, que igualó las formas de habitar y de producir el campo.",
+        "B": "reconocimiento del gobierno propio de pueblos que habitan un territorio desde varias generaciones.",
+        "C": "reducción de las entidades del Estado, que traspasó a los particulares tareas antes públicas.",
+        "D": "valorización de las tierras del municipio, que buscaba elevar las ganancias de quienes las trabajan."
       },
-      "clave": "D",
+      "clave": "B",
       "competencia": "a",
       "afirmacion": 2,
       "evidencia": "2.2",
       "dificultad": "MEDIA",
       "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para identificar los procesos económicos, políticos, culturales o geográficos a los que se hace referencia en una descripción dada.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque los tres ejemplos (personas con discapacidad, comunidad indígena, mujeres en cargos directivos) comparten un mismo proceso: abrir espacios a sectores que durante mucho tiempo quedaron al margen de la sociedad. Es la idea común que explica los tres cambios.",
+      "que_evalua": "La capacidad para identificar el proceso histórico, político o cultural al que corresponde una situación descrita.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque el título no reparte la tierra entre particulares ni la pone en el mercado: entrega el territorio a una colectividad y deja en manos de sus asambleas las decisiones sobre él, al punto de que el municipio debe concertar con ellas. Eso corresponde a un proceso en el que el Estado reconoce el gobierno propio de pueblos asentados allí desde generaciones atrás.",
       "opciones_incorrectas": {
-        "A": "Aumentar ganancias no es el propósito común de estos cambios, orientados a la inclusión.",
-        "B": "Los ejemplos no buscan reducir el Estado, sino ampliar la participación de grupos excluidos.",
-        "C": "Incluir no es uniformar costumbres; al contrario, los ejemplos respetan y reconocen la diferencia."
-      }
-    },
-    {
-      "id": "P10S207",
-      "numero": 7,
-      "enunciado": "<p>Lee el siguiente fragmento de un discurso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Hoy abrimos las urnas para que cada colombiano y cada colombiana pueda elegir a quienes redactarán una nueva carta de derechos para el país. Que nadie quede por fuera: que indígenas, campesinos, estudiantes y trabajadores tengan, por primera vez, voz en la asamblea que escribirá las reglas con las que viviremos. Dejamos atrás una Constitución de hace más de cien años para darnos, entre todos, una nueva.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Discurso de un dirigente político (texto elaborado para esta prueba).</p></div><p>El fragmento hace referencia al contexto político colombiano de comienzos de la década de 1990 porque, en ese periodo,</p>",
-      "opciones": {
-        "A": "se firmó un tratado de libre comercio que abrió la economía del país a los productos extranjeros.",
-        "B": "el país enfrentó una guerra entre liberales y conservadores por el control del poder político.",
-        "C": "se convocó una Asamblea Nacional Constituyente que redactó una nueva Constitución para el país.",
-        "D": "se separó el departamento de Panamá y se reorganizó el territorio nacional."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para identificar contextos históricos, geográficos o culturales a los que se hace referencia en una fuente dada.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque el fragmento describe la elección de quienes redactarían una nueva carta de derechos con participación de distintos sectores; eso corresponde a la Asamblea Nacional Constituyente que dio origen a la Constitución de 1991.",
-      "opciones_incorrectas": {
-        "A": "La firma de un tratado comercial no es lo que describe el fragmento, que habla de redactar una Constitución.",
-        "B": "La guerra entre liberales y conservadores corresponde a otro momento de la historia del país.",
-        "D": "La separación de Panamá ocurrió a comienzos del siglo XX, no en la década de 1990."
-      }
-    },
-    {
-      "id": "P10S208",
-      "numero": 8,
-      "enunciado": "<p>Lee atentamente el siguiente fragmento.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Nosotros, los pueblos de las Naciones Unidas, resueltos a preservar a las generaciones venideras del flagelo de la guerra que dos veces durante nuestra vida ha infligido a la humanidad sufrimientos indecibles, y a reafirmar la fe en los derechos fundamentales del hombre, en la dignidad y el valor de la persona humana, hemos decidido aunar nuestros esfuerzos para realizar estos designios.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Preámbulo de la Carta de las Naciones Unidas (1945).</p></div><p>El preámbulo expresa que esta organización se creó en los años posteriores a la Segunda Guerra Mundial porque en el fragmento</p>",
-      "opciones": {
-        "A": "se afirma que la organización nació para impulsar el comercio entre las grandes potencias del mundo.",
-        "B": "se sostiene que la guerra es un medio legítimo para resolver las disputas entre las naciones.",
-        "C": "se reconoce que los derechos humanos deben subordinarse a los intereses de cada Estado.",
-        "D": "se conecta su fundación con el propósito de impedir que se repita el horror vivido en esas guerras y de devolverle valor a cada ser humano."
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para comprender y analizar información dada a partir de una fuente primaria.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque el fragmento liga la creación de la organización con dos rasgos del periodo de posguerra: el sufrimiento de dos guerras mundiales en una sola generación y el compromiso de evitar que ese horror se repita, devolviéndole valor y protección a cada persona. La opción reformula esa idea sin copiar las palabras del preámbulo.",
-      "opciones_incorrectas": {
-        "A": "El preámbulo no menciona el comercio entre potencias, sino la preservación de la paz.",
-        "B": "El texto rechaza la guerra; no la presenta como un medio legítimo.",
-        "C": "El fragmento reafirma la fe en los derechos del hombre; no los subordina a los intereses de cada Estado."
+        "D": "El título prohíbe vender el territorio, de modo que no persigue elevar el valor comercial de la tierra.",
+        "C": "No hay traspaso de funciones estatales a particulares; hay reconocimiento de una autoridad colectiva.",
+        "A": "El proceso reconoce una forma propia de habitar y de decidir, en lugar de igualarla con las demás."
       }
     },
     {
       "id": "P10S209",
-      "numero": 9,
-      "enunciado": "<p>Lee atentamente el siguiente texto y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«En 1960, la mayoría de las colonias africanas que aún dependían de potencias europeas iniciaron su proceso de independencia. Ese año, conocido como «el año de África», nacieron diecisiete nuevos Estados que pasaron a administrar por sí mismos su territorio, su economía y sus instituciones.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Texto de divulgación histórica (elaborado para esta prueba).</p></div><p>A partir del texto, ¿es posible inferir que esos países africanos vivieron un desarrollo económico estable durante las décadas siguientes a su independencia?</p>",
+      "numero": 8,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La junta de acción comunal del barrio San Isidro repartió un sábado en la tarde una encuesta de una sola pregunta entre las cuarenta casas de su cuadra: «¿Pasó el carro de la basura por su casa esta semana?». Treinta hogares respondieron que no. Con ese resultado en la mano, un concejal afirmó en la sesión del lunes que el servicio de aseo había fracasado en toda la ciudad y pidió cancelar el contrato con la empresa que lo presta.</p></div><p>¿Cuál es la principal limitación del dato recogido para sostener lo que afirmó el concejal?</p>",
       "opciones": {
-        "A": "Sí, porque la fuente explica que los nuevos Estados pasaron a administrar su propia economía.",
-        "B": "No, porque el texto no aporta información sobre lo que ocurrió en esos países después de 1960.",
-        "C": "Sí, porque al independizarse cualquier país logra automáticamente un desarrollo económico estable.",
-        "D": "No, porque el texto demuestra que esos países no contaban con instituciones propias."
+        "A": "La información viene de una sola cuadra y de una sola semana, así que nada dice sobre el resto de la ciudad.",
+        "B": "Ninguna: si la mayoría de los hogares consultados quedó sin recolección, el resultado vale para la ciudad entera.",
+        "C": "Quienes repartieron la encuesta son vecinos y no funcionarios autorizados para evaluar el servicio.",
+        "D": "Faltó preguntar cuánto paga cada hogar por el servicio y qué empresa aparece a cargo del contrato."
       },
-      "clave": "B",
+      "clave": "A",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "MEDIA",
       "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para analizar inferencias realizadas a partir del uso de fuentes.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la fuente solo informa sobre el momento de la independencia en 1960; no dice nada sobre lo que pasó en las décadas siguientes. Por eso no permite inferir si hubo o no un desarrollo económico estable: faltan datos posteriores.",
+      "que_evalua": "La capacidad para evaluar las limitaciones que tiene una fuente para sostener una afirmación.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque el dato cubre cuarenta casas de una cuadra durante una semana: sirve para describir lo que ocurrió allí, pero no autoriza a hablar del servicio en toda la ciudad. La afirmación del concejal va mucho más lejos de lo que la información recogida puede respaldar.",
       "opciones_incorrectas": {
-        "A": "Que un país administre su economía no garantiza que su desarrollo sea estable; la fuente no lo afirma.",
-        "C": "Suponer que toda independencia trae desarrollo estable es una generalización que el texto no respalda.",
-        "D": "El texto sí indica que pasaron a administrar sus instituciones; el problema es la falta de datos posteriores a 1960."
-      }
-    },
-    {
-      "id": "P10S210",
-      "numero": 10,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>A mediados del siglo XX se difundió la idea de que, para «progresar», los países de América Latina debían seguir, paso a paso, el mismo camino que habían recorrido los países industrializados de Europa, adoptando sus formas de producir, de consumir y de vivir. Sin embargo, un grupo de sociólogos latinoamericanos sostuvo que esa idea era equivocada, porque la pobreza de la región no se debía a un «atraso» que se superaría imitando a otros, sino a relaciones de <b>dependencia</b> en las que la región vendía materias primas baratas y compraba productos elaborados caros, lo que la mantenía subordinada.</p></div><p>Teniendo en cuenta lo anterior, esos sociólogos dirían que la idea de progresar imitando a los países industrializados</p>",
-      "opciones": {
-        "A": "debería aplicarse, porque copiar el camino de los países industrializados garantiza el desarrollo de la región.",
-        "B": "podría aplicarse, porque la región solo necesita más tiempo para alcanzar a los países industrializados.",
-        "C": "no debería aplicarse, porque pasa por alto el vínculo desigual que ata a la región a un papel subordinado en el comercio mundial.",
-        "D": "no debería aplicarse, porque la cultura latinoamericana es un obstáculo que impide cualquier desarrollo."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para identificar la aplicación de diferentes teorías sociales en el siglo XX.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque, según la postura de esos sociólogos, la pobreza de la región no se explica por un simple «atraso» que se borre imitando a otros, sino por un vínculo desigual que la ata a vender barato y comprar caro, es decir, a un papel subordinado en el comercio mundial; por eso rechazarían la idea de progresar copiando a los países industrializados. La opción expresa esa idea sin repetir la palabra clave del texto.",
-      "opciones_incorrectas": {
-        "A": "Es lo contrario de lo que sostienen los sociólogos, que critican esa idea de imitación.",
-        "B": "El problema, según ellos, no es de tiempo, sino del vínculo desigual que debe transformarse.",
-        "D": "Los sociólogos no afirman que la cultura sea un obstáculo; esa es justamente la idea que critican."
-      }
-    },
-    {
-      "id": "P10S211",
-      "numero": 11,
-      "enunciado": "<p>Lee atentamente el siguiente texto y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«La competitividad de una economía es su capacidad de producir bienes y servicios en condiciones iguales o mejores que las de otros países. Esa ventaja no es permanente: un país que la conserva porque su mano de obra es barata o porque dispone en abundancia de un recurso natural puede perderla a medida que su economía se desarrolla, suben los salarios o el recurso se agota. Cuando un sector deja de ser competitivo, su producción se contrae y se reduce el empleo que generaba, mientras la economía intenta, lentamente, reorientarse hacia otras actividades.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Texto de educación económica, a partir de documentos de la Organización Mundial del Comercio.</p></div><p>De acuerdo con el texto, ¿qué consecuencia podría traer para un país la pérdida de competitividad de uno de sus sectores productivos?</p>",
-      "opciones": {
-        "A": "Un cambio inmediato y sin costos hacia otros sectores, que devolvería de una vez la competitividad perdida.",
-        "B": "Una caída de la actividad de ese sector, con menos empleo e ingresos, mientras la economía tarda en reorientarse hacia otras actividades.",
-        "C": "El encarecimiento de la mano de obra de ese sector, que sería la causa de que el país recupere la ventaja perdida.",
-        "D": "Un alza de los precios de los productos del sector, que le permitiría al país recaudar fondos para cubrir las pérdidas."
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para analizar las posibles consecuencias que tendría una intervención en las dimensiones de una situación o contexto dado.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque, según el texto, cuando un sector deja de ser competitivo su producción se contrae y se pierde el empleo que generaba, mientras la economía intenta reorientarse de forma lenta hacia otras actividades. Esa es la consecuencia que se deriva de la pérdida de competitividad, reformulada sin copiar las palabras del texto.",
-      "opciones_incorrectas": {
-        "A": "El propio texto señala que la reorientación es lenta; no es inmediata ni libre de costos.",
-        "C": "El encarecimiento de la mano de obra es presentado como una de las causas que erosionan la competitividad, no como una consecuencia que la recupere.",
-        "D": "El texto no relaciona la pérdida de competitividad con un alza de precios que sirva para recaudar fondos; perder competitividad reduce la actividad, no la financia."
-      }
-    },
-    {
-      "id": "P10S212",
-      "numero": 12,
-      "enunciado": "<p>Lee atentamente el siguiente testimonio y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«En mi colegio, cuando un compañero se burla del acento, de los rasgos o del color de piel de otro, los profesores lo dejan pasar como si fuera «solo un chiste» y el tema jamás se conversa en clase. Así, los mismos comentarios se repiten año tras año, se vuelven costumbre y nadie aprende que detrás de ellos hay una forma de exclusión que humilla. No es que falten normas en el papel: el manual de convivencia las tiene escritas. Lo que ocurre es que, en el día a día, se tolera que esto siga pasando sin que nadie lo nombre ni lo cuestione.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Testimonio de una estudiante (texto elaborado para esta prueba).</p></div><p>De acuerdo con el testimonio, ¿cuál es una de las causas por las que la discriminación se mantiene en ese colegio?</p>",
-      "opciones": {
-        "A": "La existencia de normas escritas contra la discriminación, que generan rechazo entre los estudiantes.",
-        "B": "La falta de estudiantes de distintos orígenes, lo que impide que se den situaciones de convivencia.",
-        "C": "Que las burlas se naturalizan como bromas inofensivas y nunca se nombran ni se trabajan, de modo que vuelven a aparecer cada año.",
-        "D": "Que los estudiantes afectados no presentan quejas formales ante las directivas del colegio."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.2",
-      "dificultad": "MEDIA",
-      "estandar": "Construyo una posición crítica frente a las situaciones de discriminación y exclusión social que resultan de las relaciones desiguales entre personas, culturas y naciones.",
-      "que_evalua": "La capacidad para identificar la causa de un conflicto.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque el testimonio muestra que las burlas se naturalizan como bromas inofensivas y nunca se nombran ni se trabajan en clase; al normalizarlas en la convivencia, el problema vuelve a aparecer cada año. Esa tolerancia cotidiana es la causa que lo reproduce, expresada sin repetir las palabras del testimonio.",
-      "opciones_incorrectas": {
-        "A": "Tener normas escritas no es una causa de la discriminación; el testimonio aclara que «no faltan normas en el papel».",
-        "B": "El testimonio no afirma que falten estudiantes de distintos orígenes; al contrario, supone que conviven.",
-        "D": "La falta de quejas formales sería una consecuencia del problema, no la causa que lo mantiene."
-      }
-    },
-    {
-      "id": "P10S213",
-      "numero": 13,
-      "enunciado": "<p>Lee el siguiente fragmento de una declaración política y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Tras largos años en que el odio entre las dos colectividades históricas sembró de luto los campos y encendió la guerra entre hermanos, los jefes del liberalismo y del conservatismo nos hemos reunido, lejos de la patria, para deponer el sectarismo que tanta sangre ha costado. Hemos convenido un régimen de paridad y de relevo en el gobierno que, por un periodo fijo, sustraiga la administración del país a la disputa partidista y permita reconstruir, sobre la concordia, las instituciones que la violencia destruyó.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Declaración conjunta de dos dirigentes políticos (texto elaborado para esta prueba).</p></div><p>Por el contenido y el momento que describe, el acuerdo del fragmento corresponde, en la historia de Colombia, al</p>",
-      "opciones": {
-        "A": "estallido del Bogotazo, desatado en 1948 tras el asesinato de un caudillo liberal.",
-        "B": "Frente Nacional, pactado a finales de la década de 1950 entre liberales y conservadores.",
-        "C": "periodo de La Violencia bipartidista que se extendió por buena parte de las décadas de 1940 y 1950.",
-        "D": "proceso de independencia de Colombia frente a España, a comienzos del siglo XIX."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para contextualizar un fragmento en hechos de la historia de Colombia.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque el fragmento describe a los jefes liberal y conservador deponiendo el sectarismo y conviniendo un régimen de paridad y relevo en el gobierno por un periodo fijo para sacar la administración de la disputa partidista; eso corresponde al Frente Nacional, pactado a finales de la década de 1950 para cerrar el periodo de La Violencia. El nombre del acuerdo no aparece en el texto: el estudiante debe inferirlo del contenido.",
-      "opciones_incorrectas": {
-        "A": "El Bogotazo fue un estallido de violencia urbana, no un acuerdo para repartir y alternar el gobierno.",
-        "C": "La Violencia es justamente el conflicto que el acuerdo busca cerrar; el fragmento describe el pacto que le pone fin, no el periodo de enfrentamiento.",
-        "D": "La independencia frente a España no consistió en un pacto de paridad y relevo entre dos partidos."
+        "B": "Un resultado obtenido en una cuadra no puede extenderse sin más a los demás barrios de la ciudad.",
+        "D": "Esas preguntas darían otra información, pero no corrigen el problema: el dato seguiría siendo de un solo sector.",
+        "C": "El inconveniente no está en quién aplicó la encuesta, sino en lo reducido de aquello que alcanzó a medir."
       }
     },
     {
       "id": "P10S214",
-      "numero": 14,
-      "enunciado": "<p>Durante un foro sobre el manejo de las basuras de una ciudad, dos funcionarios hicieron las siguientes declaraciones.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Secretaría de Ambiente</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Secretaría de Hacienda</th></tr><tr><td style=\"border:1px solid #C7163C;padding:8px 14px;text-align:left;vertical-align:top;max-width:280px\">«La ciudad debe cerrar de inmediato el botadero a cielo abierto, porque contamina el río y enferma a los vecinos. Construiremos cuanto antes una planta moderna de reciclaje.»</td><td style=\"border:1px solid #C7163C;padding:8px 14px;text-align:left;vertical-align:top;max-width:280px\">«Coincidimos en que el botadero es un problema, pero esa decisión de construir la planta todavía no está tomada: no contamos con los recursos para asumir ese costo en este momento.»</td></tr></table><p>¿Cuál es la relación entre las dos declaraciones?</p>",
+      "numero": 9,
+      "enunciado": "<p>En una audiencia pública sobre el estado del río que atraviesa un municipio, dos organizaciones que trabajan en su cauce presentaron estas posturas.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Asociación de Pescadores del Río</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cooperativa de Areneros del Cauce</th></tr><tr><td style=\"border:1px solid #C7163C;padding:8px 14px;text-align:left;vertical-align:top;max-width:280px\">«El río se está muriendo: donde había bocachico solo quedan bancos de arena removida. Mientras las dragas sigan trabajando, no habrá pesca que sostener a nadie.»</td><td style=\"border:1px solid #C7163C;padding:8px 14px;text-align:left;vertical-align:top;max-width:280px\">«Que el río está enfermo no lo discute nadie. Pero el daño baja con el agua: son las alcantarillas del casco urbano las que llegan sin tratamiento. Nuestro oficio no es la causa.»</td></tr></table><p>Al comparar las dos posturas, ¿en qué coinciden y en qué se separan?</p>",
       "opciones": {
-        "A": "Son idénticas, pues ambas secretarías anuncian que la planta de reciclaje ya está en construcción.",
-        "B": "Son opuestas, pues una secretaría niega que el botadero sea un problema y la otra lo afirma.",
-        "C": "Coinciden en el problema, pero difieren en la solución: una da por hecha la construcción de la planta y la otra señala que aún no está decidida.",
-        "D": "No tienen relación, pues cada secretaría se refiere a un tema completamente distinto."
+        "A": "No guardan relación, pues cada organización se refiere a un tramo distinto y a un problema diferente.",
+        "B": "Coinciden en el deterioro, pero difieren en su causa: unos culpan las dragas y otros el alcantarillado.",
+        "C": "Son opuestas, pues una organización niega que el río esté deteriorado y la otra sostiene que sí lo está.",
+        "D": "Son idénticas, pues las dos organizaciones piden que se suspenda de inmediato la extracción de arena."
       },
-      "clave": "C",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "MEDIA",
       "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
       "que_evalua": "La capacidad para comprender una información a partir de la identificación de semejanzas y diferencias.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque ambas secretarías reconocen que el botadero es un problema (semejanza), pero difieren en la solución: Ambiente anuncia la planta como un hecho, mientras Hacienda advierte que esa decisión aún no está tomada por falta de recursos.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque ambas organizaciones parten del mismo diagnóstico —el río está deteriorado— y ahí está su semejanza; la diferencia aparece cuando explican por qué: los pescadores señalan la extracción de arena y los areneros, las aguas residuales que bajan del casco urbano.",
       "opciones_incorrectas": {
-        "A": "No son idénticas: Hacienda aclara que la construcción de la planta aún no está decidida.",
-        "B": "No son opuestas en el diagnóstico: ambas coinciden en que el botadero es un problema.",
-        "D": "Sí tienen relación: las dos se refieren al mismo tema (el botadero y la planta de reciclaje)."
+        "D": "No son idénticas: los areneros defienden su oficio y en ningún momento piden suspender la extracción.",
+        "C": "No se oponen en el diagnóstico: las dos reconocen que el río está en mal estado.",
+        "A": "Sí guardan relación: hablan del mismo río y del mismo deterioro, aunque no de la misma causa."
       }
     },
     {
       "id": "P10S215",
-      "numero": 15,
-      "enunciado": "<p>En una ciudad se propuso instalar, cerca de los hogares geriátricos, la siguiente señal de tránsito para advertir a los conductores que en la zona transitan personas mayores. En la señal aparecen dos personas mayores: una se apoya en la otra, que a su vez camina con un bastón.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al ver la propuesta, varias personas mayores opinaron: «Siempre nos representan encorvados, débiles y dependientes, como si todas las personas de nuestra edad fuéramos incapaces de valernos por nosotras mismas».</p></div><p>¿Es correcto afirmar que la señal de tránsito contiene un <b>prejuicio</b>?</p>",
+      "numero": 10,
+      "enunciado": "<p>La secretaría de tránsito de una ciudad puso en marcha una campaña de señalización en el barrio Los Cerezos, donde funciona un centro de día para personas mayores. En cada esquina instaló la señal que aparece a continuación, en la que dos personas mayores cruzan la calle: una se apoya en la otra, que camina con bastón. Debajo de cada señal, la campaña sumó el lema «Reduzca: aquí camina quien ya no puede apurarse».</p><p>Al conocer la pieza, el club de caminantes del centro de día —treinta personas de más de sesenta años que cada domingo recorren veinte kilómetros por la vía al mar— le pidió a la secretaría retirarla, porque ni el dibujo ni el lema tienen que ver con la vida que ellos llevan.</p>[[IMG]]<p>¿Qué se puede afirmar con acierto sobre la pieza de la campaña?</p>",
       "opciones": {
-        "A": "Sí, porque dar por hecho que envejecer equivale a perder autonomía y necesitar ayuda extiende a todo el grupo una imagen que no le corresponde.",
-        "B": "Sí, porque la señal busca que los conductores sean más cuidadosos en las zonas donde transitan personas mayores.",
-        "C": "No, porque todas las personas mayores presentan alguna discapacidad física y necesitan ayuda para movilizarse.",
-        "D": "No, porque la intención de la señal es proteger a las personas mayores que cruzan por esas zonas."
+        "A": "Está bien lograda, porque consigue que quien conduce baje la velocidad al pasar por ese sector del barrio.",
+        "B": "Carga un prejuicio, porque supone que llegar a esa edad significa perder autonomía y depender de otros.",
+        "C": "Es exacta, porque a partir de cierta edad toda persona necesita el apoyo de alguien más para desplazarse.",
+        "D": "No merece reparo, porque su propósito es evitar accidentes a quienes cruzan la calle en esa zona."
       },
-      "clave": "A",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.3",
       "dificultad": "MEDIA",
       "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
-      "que_evalua": "La capacidad para identificar prejuicios y sus posibles efectos.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la señal da por hecho que envejecer equivale a perder autonomía y necesitar ayuda; al extender esa imagen a todo el grupo, aunque muchas personas mayores sean autónomas, refuerza un prejuicio sobre la vejez. Su efecto es sostener una idea equivocada de ese grupo. La opción nombra el prejuicio sin copiar las palabras de la opinión citada.",
+      "que_evalua": "La capacidad para develar el prejuicio que contiene una representación y reconocer sus efectos.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque el dibujo y el lema parten de una misma idea general: que a cierta edad la persona ya no puede sostenerse ni moverse por sí misma. Extender eso a todo un grupo —cuando quienes reclaman caminan veinte kilómetros cada domingo— es un prejuicio, y su efecto es reforzar una imagen de la vejez que no corresponde a la vida de muchas personas.",
       "opciones_incorrectas": {
-        "B": "Que la señal busque que los conductores sean cuidadosos no elimina el prejuicio que contiene su imagen.",
-        "C": "Afirmar que «todas» las personas mayores tienen una discapacidad es justamente una generalización prejuiciosa.",
-        "D": "Una intención protectora no impide que la forma de representar a las personas mayores contenga un prejuicio."
+        "A": "Que la pieza cumpla su propósito de tránsito no significa que la imagen con la que lo logra esté libre de prejuicio.",
+        "C": "Afirmar que a cierta edad toda persona depende de otra para caminar es precisamente la generalización que se cuestiona.",
+        "D": "Una intención protectora no vuelve adecuada la manera en que la pieza representa a las personas mayores."
       },
       "imagen_figura": "assets/banco-sc-10-p2/q15.png"
     },
     {
       "id": "P10S216",
-      "numero": 16,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una ingeniera diseñó una aplicación que conecta directamente a los pescadores artesanales de la costa con los restaurantes de la ciudad, de modo que el pescado se venda más rápido y a mejor precio, sin pasar por varios intermediarios. La ingeniera explica: «Vi que el pescado se dañaba esperando comprador y que los pescadores recibían muy poco; con la aplicación el producto llega fresco al cliente en horas. Lo importante es que el proceso sea rápido y rentable». Aunque la aplicación también mejora los ingresos de las familias pescadoras, ese beneficio aparece como una consecuencia y no como el motivo central de su trabajo.</p></div><p>¿Qué creencia motivó principalmente a la ingeniera a crear la aplicación?</p>",
+      "numero": 11,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Después de diez años de consulta en una clínica privada de la capital, una pediatra la cerró y se fue a vivir a un caserío del bajo San Juan, a ocho horas en lancha del hospital más cercano. Allí atiende sin cobrar, recorre en canoa las casas del río y formó a seis jóvenes de la comunidad para que tomen signos vitales y remitan los casos graves cuando ella no está. Cuando le preguntan por qué dejó la ciudad, responde: «Nunca me interesó mirarle el bolsillo a nadie antes de examinarlo. Hay vidas esperando y eso basta; donde nadie llega, la espera es más larga».</p></div><p>La decisión de la pediatra se explica porque ella</p>",
       "opciones": {
-        "A": "La creencia en que los pescadores deben abandonar su oficio para dedicarse a otras actividades más modernas.",
-        "B": "La creencia en que la forma de producir y vender vale sobre todo por evitar pérdidas y hacer llegar el producto en el menor tiempo posible.",
-        "C": "La creencia en que el Estado es el único responsable de mejorar los ingresos de los pescadores.",
-        "D": "La creencia en que la pesca artesanal debe desaparecer para proteger los recursos del mar."
+        "A": "piensa que solo el Estado está en condiciones de resolver lo que ocurre en las zonas apartadas.",
+        "B": "sostiene que la medicina de especialistas debe reemplazar los saberes propios de la comunidad.",
+        "C": "cree que las familias del río deberían mudarse a la ciudad si quieren recibir atención médica.",
+        "D": "parte de que atender a alguien es algo debido por su existencia, no un servicio que se compra."
       },
-      "clave": "B",
+      "clave": "D",
       "competencia": "b",
       "afirmacion": 4,
       "evidencia": "4.3",
       "dificultad": "MEDIA",
       "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
-      "que_evalua": "La capacidad para reconocer cómo las creencias de una persona influyen en sus conductas.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la propia ingeniera valora ante todo evitar que el pescado se dañe y entregarlo en el menor tiempo posible; su conducta se explica por la creencia en que producir y vender vale sobre todo por su eficiencia. La mejora de los ingresos de los pescadores aparece como un efecto secundario, no como su motivación central. La opción reformula esa creencia sin copiar la frase de la ingeniera.",
+      "que_evalua": "La capacidad para reconocer cómo las creencias de una persona influyen en sus decisiones.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque la pediatra renuncia a cobrar y se instala en el lugar más difícil de alcanzar; en sus palabras, examinar a alguien nunca dependió de lo que pudiera pagar. Su conducta se explica por la convicción de que cuidar a una persona es algo debido por el hecho de existir, no un servicio sujeto a la capacidad de compra.",
       "opciones_incorrectas": {
-        "A": "La ingeniera no busca que los pescadores abandonen su oficio, sino hacer más eficiente su venta.",
-        "C": "La situación no plantea que ella crea que solo el Estado deba mejorar los ingresos de los pescadores.",
-        "D": "Nada indica que la ingeniera quiera que desaparezca la pesca artesanal; busca optimizarla."
+        "C": "Ella hace lo contrario: en lugar de esperar que las familias se desplacen, se instala donde viven.",
+        "A": "Si creyera que solo el Estado puede resolverlo, no habría asumido personalmente la atención del caserío.",
+        "B": "Formar a seis jóvenes de la comunidad muestra que valora sus saberes en lugar de sustituirlos."
       }
     },
     {
       "id": "P10S217",
-      "numero": 17,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un parque del centro de una ciudad se reúnen, desde hace años, varios grupos de jóvenes que practican baile urbano y patineta. Algunos vecinos se quejan del ruido y de los daños en las bancas; los comerciantes cercanos dicen que el movimiento de jóvenes a veces les ayuda y a veces les espanta clientes; y la alcaldía afirma que debe destinar muchos vigilantes al parque. Como solución, un concejal propone <b>prohibir por completo el uso del parque a esos grupos de jóvenes</b> y cerrarlo con rejas en horario nocturno.</p></div><p>¿Para quiénes sería esta propuesta una <b>desventaja</b>?</p>",
+      "numero": 12,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cada sábado, doscientos campesinos de las veredas bajan a vender sus cosechas en la plaza del centro de un municipio. Ese día la calle se llena: los vecinos se quejan del desorden y de la basura que queda al final de la jornada; los almacenes de la cuadra reconocen que la gente que llega a la plaza también entra a comprarles; y la secretaría de tránsito debe cerrar dos vías y destinar allí a la mitad de sus agentes. Como solución, la administración propone trasladar la venta de los campesinos a un lote cubierto a dos kilómetros del centro y abrirlo únicamente los domingos.</p></div><p>¿Sobre quién recaería la mayor desventaja si se adopta esta propuesta?</p>",
       "opciones": {
-        "A": "Para los vecinos, porque tendrían que seguir soportando el ruido y los daños en las bancas.",
-        "B": "Para la alcaldía, porque debería contratar aún más vigilantes para cuidar el parque.",
-        "C": "Para los grupos de jóvenes, porque al prohibirles el uso del parque podrían sentirse excluidos y reaccionar de forma más conflictiva.",
-        "D": "Para los comerciantes, porque al cerrar el parque perderían a todos sus clientes habituales."
+        "A": "Sobre los almacenes de la cuadra, porque quedarían sin ningún comprador durante todos los fines de semana.",
+        "B": "Sobre los campesinos, porque perderían el día y el sitio donde concentran sus ventas y dejarían de bajar.",
+        "C": "Sobre la secretaría de tránsito, porque necesitaría más agentes para cerrar las vías del centro cada semana.",
+        "D": "Sobre los vecinos de la plaza, porque tendrían que seguir soportando el desorden y la basura de los sábados."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
+      "que_evalua": "La capacidad para identificar sobre quién recae la desventaja de una solución propuesta a un conflicto.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque la propuesta cambia a la vez el lugar y el día en que los campesinos venden: los aparta del centro, donde está el paso de la gente, y les quita el sábado. Al hacerlo, la solución descarga su costo sobre el grupo al que va dirigida, que incluso podría dejar de bajar al municipio.",
+      "opciones_incorrectas": {
+        "D": "Con el traslado los vecinos dejarían de soportar el desorden de los sábados; la medida los favorece.",
+        "C": "El traslado libera las vías del centro, de modo que la secretaría necesitaría menos agentes, no más.",
+        "A": "Los almacenes perderían parte de sus compradores, pero afirmar que quedarían sin ninguno excede lo que plantea el caso."
+      }
+    },
+    {
+      "id": "P10S203",
+      "numero": 13,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cada temporada de lluvias, el río que bordea un municipio del bajo Magdalena se desborda y el agua entra en las casas de tres barrios levantados sobre la orilla. Las familias afectadas pidieron tres cosas: que se les reubique en un terreno alto, que el municipio prohíba seguir construyendo al borde del cauce y que se organice una brigada de vecinos encargada de avisar cuando el nivel del agua suba. Tras estudiar el caso, la alcaldía destinó todo el presupuesto disponible a levantar un muro de contención de un kilómetro y a elevar con material de relleno la franja que da al río.</p></div><p>¿En qué dimensión del problema concentró sus efectos la decisión de la alcaldía?</p>",
+      "opciones": {
+        "A": "En las reglas del municipio, porque define qué puede levantarse y qué no en los terrenos junto al cauce.",
+        "B": "En el entorno construido, porque transforma el terreno para que la creciente no alcance las viviendas.",
+        "C": "En la organización de los vecinos, porque los prepara para responder de manera coordinada ante una emergencia.",
+        "D": "En el patrimonio de las familias, porque les repone las viviendas y los bienes que el agua les destruyó."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
+      "que_evalua": "La capacidad para reconocer en cuál de las dimensiones de una situación problemática concentra sus efectos una intervención.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque la alcaldía no reubicó a nadie, no cambió las normas de construcción y no organizó a la comunidad: destinó los recursos a una obra que modifica físicamente la franja que da al río. Sus efectos recaen entonces sobre el entorno construido del lugar, mientras las otras dimensiones que las familias señalaron quedan intactas.",
+      "opciones_incorrectas": {
+        "C": "Ninguna parte de la obra prepara a los vecinos para actuar ante una creciente; esa petición quedó sin atender.",
+        "A": "La decisión no toca las reglas de construcción en la orilla, que era otra de las peticiones de las familias.",
+        "D": "La obra no repone viviendas ni bienes perdidos; lo que busca es evitar que el agua vuelva a entrar."
+      }
+    },
+    {
+      "id": "P10S210",
+      "numero": 14,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una ciudad industrial atraviesa su tercer año de recesión: las fábricas trabajan a media máquina, uno de cada cinco trabajadores está sin empleo y los negocios del centro cierran porque nadie compra. En el concejo se discuten dos maneras de entender lo que ocurre. La primera sostiene que el mercado se corrige solo y que el municipio debe recortar su gasto y esperar. La segunda, defendida por un grupo de economistas formados a mediados del siglo XX, sostiene que nadie compra porque nadie tiene empleo y que nadie tiene empleo porque nadie compra: alguien tiene que romper ese círculo poniendo dinero a circular.</p></div><p>Si el alcalde le pidiera consejo a ese segundo grupo de economistas, ¿qué le recomendarían hacer?</p>",
+      "opciones": {
+        "A": "Esperar sin intervenir, pues toda recesión termina cediendo con el simple paso de los años.",
+        "B": "Recortar el gasto del municipio y aguardar a que los precios y los salarios se acomoden por sí solos.",
+        "C": "Atribuir el desempleo a la falta de iniciativa de la gente y ofrecer cursos de emprendimiento.",
+        "D": "Emprender obras pagadas por el municipio, para que ese gasto reactive las compras y el empleo."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
+      "que_evalua": "La capacidad para identificar la aplicación de una teoría social del siglo XX a la solución de un problema concreto.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque, para ese grupo de economistas, la recesión se sostiene en un círculo que el mercado por sí solo no rompe: sin empleo no hay compras y sin compras no hay empleo. Por eso recomendarían que sea el gasto público el que ponga dinero a circular, y las obras del municipio son la vía directa para hacerlo.",
+      "opciones_incorrectas": {
+        "B": "Recortar y esperar es justamente la postura contraria, la de quienes confían en que el mercado se corrige solo.",
+        "A": "Para estos economistas el problema no es de paciencia: si nadie interviene, el círculo se mantiene.",
+        "C": "Culpar la iniciativa de cada persona desconoce el punto central de su explicación, que es la falta de compras."
+      }
+    },
+    {
+      "id": "P10S204",
+      "numero": 15,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El único camino que conduce al hospital de un municipio tiene tres metros de ancho: las ambulancias no logran cruzarse con otro vehículo y, en dos ocasiones, un paciente grave llegó con más de media hora de retraso. Para ampliar ese camino se necesita una franja de cuatro metros que hoy hace parte del patio de un predio privado. El dueño se niega y sostiene que sobre su terreno decide él y nadie más. La alcaldía adelanta entonces el procedimiento que la ley prevé para estos casos: hace avaluar la franja, le paga al propietario lo que vale y ejecuta la ampliación.</p></div><p>¿En qué fundamento constitucional se apoya la actuación de la alcaldía?</p>",
+      "opciones": {
+        "A": "En que la llegada oportuna de las ambulancias eleva el valor comercial de los predios de todo el sector.",
+        "B": "En que el propietario conserva la mayor parte de su predio y puede seguir usándolo como lo hacía antes.",
+        "C": "En que ampliar por ese costado le resulta al municipio más económico que abrir un camino por otro lado.",
+        "D": "En que el provecho de la comunidad prima sobre el de un particular cuando no pueden atenderse a la vez."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente las decisiones, acciones u omisiones que se toman en el ámbito nacional o internacional y que pueden generar conflictos o afectar los derechos humanos.",
+      "que_evalua": "La capacidad para reconocer, en una situación concreta, el principio del Estado Social de Derecho que ordena la relación entre el provecho colectivo y el de un particular.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque el ordenamiento colombiano ordena que, cuando el beneficio de todos y el de un particular no pueden satisfacerse al mismo tiempo, se imponga el primero, siempre por el procedimiento legal y pagándole al propietario lo que su terreno vale. Ese principio, y no la conveniencia ni el ahorro, es lo que respalda la ampliación del camino.",
+      "opciones_incorrectas": {
+        "B": "Que al dueño le quede terreno suficiente es una consideración práctica, no el principio que autoriza la actuación.",
+        "C": "El ahorro puede explicar por dónde se amplía, pero no es lo que le permite al municipio disponer de la franja.",
+        "A": "El aumento del valor de los predios vecinos sería un efecto de la obra, no el fundamento que la respalda."
+      }
+    },
+    {
+      "id": "P10S211",
+      "numero": 16,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una ciudad de la costa, la moto es el medio de transporte de casi la mitad de quienes trabajan, y de ella viven cientos de repartidores y de personas que llevan pasajeros. Es también el vehículo que aparece en ocho de cada diez accidentes graves registrados en las dos avenidas que cruzan el centro. Para reducir esas cifras, el concejo aprueba prohibir el paso de motos por esas dos avenidas entre las seis de la mañana y las ocho de la noche; los demás vehículos podrán seguir circulando por allí.</p></div><p>Además de la reducción de accidentes que busca, ¿qué otra consecuencia tendría la medida?</p>",
+      "opciones": {
+        "A": "Que quienes reparten o llevan pasajeros pierdan ingresos, pues deberán rodear la ciudad para trabajar.",
+        "B": "Que el aumento de los accidentes en las dos avenidas sea lo que devuelva la fluidez al tránsito del centro.",
+        "C": "Que el precio de las motos suba y que con ese dinero la ciudad financie la construcción de nuevas vías.",
+        "D": "Que todos los usuarios de moto pasen de inmediato al transporte público sin gastar más ni demorarse más."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
+      "que_evalua": "La capacidad para analizar las consecuencias que una intervención tendría en distintas dimensiones de una situación.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque la prohibición recae sobre el vehículo con el que muchas personas se ganan la vida en el centro: al no poder usar las dos avenidas durante casi todo el día, repartidores y transportadores harán recorridos más largos, alcanzarán menos viajes y verán caer sus ingresos. Es una consecuencia económica que la medida arrastra sin buscarla.",
+      "opciones_incorrectas": {
+        "D": "Suponer un cambio inmediato y sin costos desconoce que muchos trabajan sobre la moto y que rodear cuesta tiempo y dinero.",
+        "B": "La medida busca reducir los accidentes; presentarlos como la causa de una mejora invierte el orden de los hechos.",
+        "C": "Nada indica que restringir el paso encarezca las motos ni que de allí salgan recursos para obras viales."
+      }
+    },
+    {
+      "id": "P10S205",
+      "numero": 17,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cuatro países vecinos firmaron hace una década un acuerdo que hoy funciona así: un camión cargado de panela sale de una ciudad del primero y descarga en el segundo sin pagar ningún impuesto de aduana; una enfermera formada en el tercero trabaja en un hospital del cuarto con su título reconocido y sin permiso especial; y una familia envía cada mes parte de sus ahorros a un banco de otro de los cuatro sin trámite alguno. En las carreteras que unen a los cuatro quedó una sola caseta, donde se registra el paso de los vehículos, no donde se les cobra.</p></div><p>El funcionamiento descrito corresponde al concepto de</p>",
+      "opciones": {
+        "A": "un tratado limitado a rebajar los impuestos de las mercancías, sin tocar el traslado de personas ni de ahorros.",
+        "B": "un acuerdo que borra las barreras internas para que productos, trabajadores y dinero circulen sin trabas.",
+        "C": "la fusión de varios países en uno solo, gobernado por un mismo presidente y un mismo congreso nacional.",
+        "D": "la decisión de un país de cerrar sus fronteras y elevar los impuestos para proteger lo que produce dentro."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente las decisiones, acciones u omisiones que se toman en el ámbito nacional o internacional y que pueden generar conflictos o afectar los derechos humanos.",
+      "que_evalua": "La capacidad para identificar el concepto social al que corresponde una situación descrita.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque los tres casos descritos (mercancías que cruzan sin aduana, un título profesional válido en cualquiera de los países y ahorros que se mueven sin trámite) muestran que el acuerdo eliminó las barreras internas entre sus miembros: bienes, personas y capital se desplazan como si los cuatro países fueran un mismo territorio.",
+      "opciones_incorrectas": {
+        "D": "Cerrar fronteras y elevar impuestos es lo contrario de lo que hacen estos cuatro países entre sí.",
+        "A": "Recoge apenas una parte del acuerdo y deja por fuera lo decisivo: que también se mueven libremente las personas y el dinero.",
+        "C": "Nada indica que los cuatro países hayan renunciado a su gobierno propio; lo que comparten es un régimen económico."
+      }
+    },
+    {
+      "id": "P10S201",
+      "numero": 18,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un departamento de montaña, cerca de la mitad de los estudiantes del área rural abandona el colegio antes de terminar noveno: muchos caminan dos o tres horas para llegar a una <b>escuela de vereda</b> donde un solo docente atiende a la vez todos los cursos. La gobernación propone cerrar esas escuelas y reunir a los estudiantes en seis sedes amplias, con laboratorios y biblioteca, ubicadas en las cabeceras municipales, a las que llegarían en rutas escolares contratadas. Los técnicos que estudiaron el plan advirtieron algo: cada ruta implica combustible, mantenimiento y conductor todos los días del calendario escolar, y sostenerlas costaría al año más de lo que hoy invierte el departamento en toda la educación del campo.</p></div><p>Si el plan se ejecuta, ¿qué resultado contrario a su propósito podría producirse?</p>",
+      "opciones": {
+        "A": "Que las familias de las cabeceras municipales se opongan a que sus hijos compartan el aula con los del campo.",
+        "B": "Que los estudiantes de las veredas asistan a clase en sedes mejor dotadas que las escuelas donde estudian hoy.",
+        "C": "Que, al faltar el dinero para mover las rutas cada día, los niños de las veredas lejanas dejen de asistir.",
+        "D": "Que los docentes de las escuelas de vereda pierdan su nombramiento y deban presentar otra vez un concurso."
       },
       "clave": "C",
       "competencia": "b",
@@ -439,86 +464,61 @@
       "evidencia": "4.2",
       "dificultad": "MEDIA",
       "estandar": "Identifico dilemas de la vida en los que entran en conflicto el bien general y el bien particular; analizo opciones de solución, considerando sus aspectos positivos y negativos.",
-      "que_evalua": "La capacidad para identificar efectos no deseados de una solución a un conflicto.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la prohibición recae sobre los grupos de jóvenes: al excluirlos del espacio que usaban, podrían sentirse discriminados y reaccionar de forma más conflictiva. Ese es un efecto no deseado de la solución sobre el grupo al que se dirige.",
+      "que_evalua": "La capacidad para identificar cómo una propuesta de solución puede afectar una situación y los diferentes aspectos que la componen.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque el plan solo funciona si el transporte opera a diario, y los propios técnicos advierten que sostenerlo cuesta más de lo que el departamento puede pagar. Si las rutas fallan, quienes viven más lejos quedan sin manera de llegar y se agrava justamente el abandono que se quería corregir: un resultado que la solución no busca.",
       "opciones_incorrectas": {
-        "A": "Con la prohibición, los vecinos dejarían de soportar el ruido; no sería una desventaja para ellos.",
-        "B": "El cierre y la prohibición buscan reducir la vigilancia, no aumentarla; no es desventaja para la alcaldía.",
-        "D": "No hay razón para afirmar que los comerciantes perderían a TODOS sus clientes con la medida."
+        "B": "Contar con sedes mejor dotadas es uno de los resultados que el plan persigue, no algo que quiera evitarse.",
+        "D": "Reunir sedes no implica que los docentes pierdan su nombramiento; el caso no plantea nada semejante.",
+        "A": "Nada en el caso indica que en las cabeceras exista rechazo hacia los estudiantes que llegan del campo."
       }
     },
     {
-      "id": "P10S218",
-      "numero": 18,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En muchas zonas rurales, miles de estudiantes no pueden conectarse a internet para estudiar, porque sus familias no tienen recursos para pagar el servicio ni hay buena señal en la región. Frente a esto, surgen dos posturas. Un grupo de ciudadanos sostiene que el Estado debe garantizar internet gratuito en las escuelas y casas de esas comunidades, porque hoy la conexión es necesaria para acceder a la educación, que es un derecho. Otro grupo responde que el internet es un servicio que cada familia debe costear según sus posibilidades, y que el Estado no tiene por qué asumir un gasto que beneficia solo a una parte de la población.</p></div><p>¿Por qué las dos soluciones propuestas resultan <b>incompatibles</b>?</p>",
+      "id": "P10S213",
+      "numero": 19,
+      "enunciado": "<p>Lee el siguiente fragmento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«La propiedad es una función social y quien la tiene cumple con ella un deber frente a la comunidad; las tierras que permanezcan sin explotar volverán al dominio de la nación. El Estado intervendrá en la producción y en la distribución de los bienes cuando el interés común lo exija. Se reconoce a los trabajadores el derecho de asociarse y de declarar la huelga, y la enseñanza que sostenga la nación será libre y no quedará sujeta a autoridad distinta de la civil.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Fragmento de una declaración de principios de gobierno (texto elaborado para esta prueba).</p></div><p>¿A qué momento de la historia de Colombia corresponde esta declaración?</p>",
       "opciones": {
-        "A": "Porque una propone instalar antenas y la otra propone entregar computadores a los estudiantes.",
-        "B": "Porque parten de ideas opuestas sobre hasta dónde llega el deber del Estado: una le exige asegurar la conexión como parte de un derecho y la otra la deja en manos del bolsillo de cada hogar.",
-        "C": "Porque una busca beneficiar a los estudiantes del campo y la otra a los de la ciudad.",
-        "D": "Porque una se aplica solo en zonas rurales y la otra solo en zonas urbanas."
+        "A": "A la Regeneración, que en 1886 estableció un Estado centralista y de fuerte tutela religiosa.",
+        "B": "A la Hegemonía Conservadora, que gobernó durante las primeras décadas del siglo XX.",
+        "C": "A la Gran Colombia, cuyo congreso sancionó su primera constitución en el año de 1821.",
+        "D": "A las reformas de la República Liberal, adelantadas a lo largo de la década de 1930."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
+      "que_evalua": "La capacidad para ubicar un documento en el momento de la historia de Colombia al que corresponde.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque la declaración reúne medidas inconfundibles: la propiedad entendida como función social, la tierra sin explotar que revierte a la nación, la intervención del Estado en la economía, el derecho de huelga y una enseñanza fuera de la tutela eclesiástica. Ese conjunto corresponde a las reformas emprendidas por los gobiernos liberales de los años treinta.",
+      "opciones_incorrectas": {
+        "A": "La Regeneración reforzó la autoridad central y la tutela religiosa sobre la enseñanza, lo contrario de lo que aquí se anuncia.",
+        "B": "La Hegemonía Conservadora es justamente el periodo que estas reformas vinieron a modificar.",
+        "C": "En 1821 no estaban en discusión la huelga, la función social de la propiedad ni la intervención económica del Estado."
+      }
+    },
+    {
+      "id": "P10S212",
+      "numero": 20,
+      "enunciado": "<p>Analiza el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio del piedemonte, el acueducto llega a los barrios de la parte alta, pero no a los cinco barrios de la parte baja, donde vive casi la tercera parte de la población. Allí el agua se compra a carrotanques y cada familia paga por ella cinco veces más que quien tiene medidor. El concejo aprobó en 2018 un acuerdo que ordena extender la red y el municipio tiene el dinero apartado desde entonces. Cada año, sin embargo, la obra se aplaza: en la oficina de planeación explican que esos barrios «no están completos en el catastro», el trámite queda pendiente para la siguiente vigencia y ningún funcionario responde por moverlo.</p></div><p>De acuerdo con el caso, ¿qué hace que la desigualdad en el acceso al agua se repita año tras año?</p>",
+      "opciones": {
+        "A": "Que las familias de la parte baja sigan comprándoles el agua a los carrotanques semana tras semana.",
+        "B": "Que aplazar la obra se volvió rutina y nadie en la administración asume el trámite que la libera.",
+        "C": "Que en la parte baja vivan pocas familias, de manera que extender la red allí resulta poco necesario.",
+        "D": "Que exista un acuerdo del concejo sobre el tema, lo cual genera confusión entre las dependencias."
       },
       "clave": "B",
       "competencia": "c",
       "afirmacion": 6,
-      "evidencia": "6.1",
+      "evidencia": "6.2",
       "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente y debato con argumentos y evidencias sobre hechos ocurridos a nivel local, nacional y mundial, y comprendo las consecuencias que estos pueden tener sobre mi propia vida.",
-      "que_evalua": "La capacidad para identificar los aspectos que componen una situación y cómo están relacionados, para lograr una mejor comprensión de la información dada.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque las dos posturas chocan en cuánto debe hacer el Estado: la primera le exige asegurar la conexión por ser parte del derecho a la educación; la segunda deja ese gasto en manos de cada hogar. Como atribuyen al Estado responsabilidades opuestas, no pueden cumplirse a la vez. La opción expresa ese choque sin copiar las frases de cada postura.",
+      "estandar": "Construyo una posición crítica frente a las situaciones de discriminación y exclusión social que resultan de las relaciones desiguales entre personas, culturas y naciones.",
+      "que_evalua": "La capacidad para relacionar las dimensiones que hacen que una situación de exclusión se mantenga en el tiempo.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque en el caso no falta la norma ni el dinero: lo que se repite es un aplazamiento convertido en costumbre de oficina, donde el trámite pasa de una vigencia a otra sin que nadie lo asuma. Esa inercia administrativa es la que sostiene la desigualdad, aunque las condiciones para corregirla estén dadas.",
       "opciones_incorrectas": {
-        "A": "La diferencia no está en antenas o computadores, sino en quién debe asumir el costo y por qué.",
-        "C": "Ambas posturas se refieren a los estudiantes del campo; no se distinguen por la ubicación de los beneficiarios.",
-        "D": "La incompatibilidad no es geográfica, sino sobre el papel que debe cumplir el Estado."
-      }
-    },
-    {
-      "id": "P10S219",
-      "numero": 19,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Según el más reciente boletín de estadísticas laborales, en una región del país las mujeres ocupan apenas el 6 % de los empleos del sector de la construcción, históricamente reservado a los hombres, y su tasa de desempleo casi duplica la de ellos. Para corregir esa brecha, la gobernación pone en marcha un programa que forma de manera gratuita a un grupo de mujeres como maestras de obra y operarias especializadas, y gestiona su vinculación con empresas constructoras de la región en igualdad de condiciones salariales.</p><p style=\"font-size:13px;color:#6B5F54;margin-top:6px\">Adaptado de un boletín de estadísticas laborales (datos elaborados para esta prueba).</p></div><p>Respecto a esta medida, ¿se protege o se vulnera algún derecho?</p>",
-      "opciones": {
-        "A": "Se protege el derecho a la igualdad de oportunidades en el acceso al trabajo, porque les abre a las mujeres la puerta de un oficio del que casi siempre han quedado por fuera.",
-        "B": "Se vulnera el derecho a la salud de las mujeres, porque la construcción es una actividad que pone en riesgo su integridad física.",
-        "C": "Se vulnera el derecho a la educación de los hombres, porque ya no podrían formarse como maestros de obra.",
-        "D": "Se protege únicamente el derecho a la libre asociación, porque las mujeres podrían crear su propio sindicato."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente la situación de los derechos humanos en Colombia y en el mundo y propongo alternativas para su promoción y defensa.",
-      "que_evalua": "La capacidad para conocer sobre derechos fundamentales de un Estado Social de Derecho.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la medida les abre a las mujeres la puerta de un oficio del que casi siempre han quedado por fuera; con ello se protege su derecho a la igualdad de oportunidades en el acceso al trabajo, propio de un Estado Social de Derecho. El nombre del derecho no aparece en la situación: el estudiante debe identificarlo.",
-      "opciones_incorrectas": {
-        "B": "La medida no vulnera el derecho a la salud; busca abrir oportunidades laborales con la formación adecuada.",
-        "C": "Formar a mujeres no impide que los hombres se formen; no se vulnera el derecho a la educación de nadie.",
-        "D": "El derecho protegido es el de la igualdad de oportunidades en el trabajo, no solo la libre asociación."
-      }
-    },
-    {
-      "id": "P10S220",
-      "numero": 20,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una senadora cuestiona al ministro de Transporte porque, según ella, una importante vía nacional lleva años sin terminarse a pesar del dinero invertido. El ministro responde que los senadores deben dedicarse a hacer leyes y que la ejecución de las obras es asunto exclusivo del Gobierno. Ante esto, la senadora decide <b>citar al ministro a un debate de control político</b> en el Congreso para que explique el manejo de los recursos de la vía.</p></div><p>De acuerdo con la Constitución Política de Colombia, ¿puede la senadora citar este debate?</p>",
-      "opciones": {
-        "A": "No, porque las decisiones sobre las obras viales son de competencia exclusiva del Ministerio de Transporte.",
-        "B": "No, porque corresponde a los ministros, y no al Congreso, convocar los debates de control político.",
-        "C": "Sí, porque al Congreso le corresponde vigilar políticamente la gestión del Gobierno y pedirle cuentas de ella.",
-        "D": "Sí, porque el Congreso puede asumir directamente la ejecución de las obras que el Gobierno no termina."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.3",
-      "dificultad": "MEDIA",
-      "estandar": "Analizo críticamente el sentido de las leyes y comprendo la importancia de cumplirlas, así no comparta alguna de ellas.",
-      "que_evalua": "Los conocimientos relacionados con las funciones y alcances de los organismos de control.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la Constitución encarga al Congreso vigilar políticamente la gestión del Gobierno y pedirle cuentas de ella; por eso una senadora puede citar a un ministro a un debate para que explique el manejo de los recursos públicos.",
-      "opciones_incorrectas": {
-        "A": "Que la ejecución sea del Gobierno no exime al ministro de rendir cuentas ante el control político del Congreso.",
-        "B": "Son los congresistas, no los ministros, quienes convocan los debates de control político.",
-        "D": "El Congreso ejerce control político, pero no asume la ejecución directa de las obras del Gobierno."
+        "D": "El acuerdo del concejo es precisamente lo que ordena la obra; contar con él no es lo que impide ejecutarla.",
+        "C": "El caso indica lo contrario: en la parte baja vive cerca de una tercera parte de la población del municipio.",
+        "A": "Comprarles agua a los carrotanques es la salida que les queda a esas familias, es decir, un efecto del problema."
       }
     }
-  ],
-  "preservar_orden_preguntas": false
+  ]
 }

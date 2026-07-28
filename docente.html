@@ -1795,8 +1795,14 @@
               ${(() => { const v = valorDimSecundaria(p, cuadActual); return v ? `<span style="background:#F1F5F9; color:#475569; padding:4px 12px; border-radius:6px; font-size:11px; font-weight:600;">${escapeHtml(v)}</span>` : ''; })()}
             </div>
             ${ctxComp}
-            <div style="font-size:15px; line-height:1.65; margin-bottom:14px; color:#1F1F23;">${p.enunciado}</div>
-            ${imgEnunciado}
+            <div style="font-size:15px; line-height:1.65; margin-bottom:14px; color:#1F1F23;">${(() => {
+              // Enunciado con figura intercalada: contextualización → imagen → desenlace (ver
+              // cuadernillo.html). El marcador [[IMG]] dice dónde va; sin marcador, la figura
+              // queda debajo como siempre.
+              const _pt = String(p.enunciado || '').split('[[IMG]]');
+              return _pt.length > 1 && imgEnunciado ? _pt[0] + imgEnunciado + _pt.slice(1).join('') : _pt.join(' ');
+            })()}</div>
+            ${String(p.enunciado || '').includes('[[IMG]]') ? '' : imgEnunciado}
             <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.1em; color:#94A3B8; font-weight:700; margin:18px 0 12px 0;">Opciones de respuesta</h3>
             ${opcionesHTML}
             ${p.justificacion_correcta ? `<div style="margin-top:18px; padding:14px 18px; background:#ECFDF5; border-left:5px solid #10B981; border-radius:8px;"><div style="font-size:11px; text-transform:uppercase; color:#10B981; font-weight:700; margin-bottom:6px;">Justificación de la clave</div><div style="font-size:13px; line-height:1.5;">${escapeHtml(p.justificacion_correcta)}</div></div>` : ''}

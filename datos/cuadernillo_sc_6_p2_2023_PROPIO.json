@@ -1,14 +1,15 @@
 {
   "id": "sc-6-p2-propio-2023",
-  "area": "Competencias Ciudadanas",
+  "area": "Sociales y Ciudadanas",
   "area_slug": "sociales_ciudadanas",
   "grado": "6",
   "periodo": "II",
   "version": "2023",
-  "nombre": "Cuadernillo de Competencias Ciudadanas · Grado 6° · Período II (Banco propio IDEA)",
-  "fuente": "Banco propio IDEA · ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "nombre": "Cuadernillo de Sociales y Ciudadanas — Grado 6° — Período II (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA — ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
   "tiempo_minutos": 60,
   "num_preguntas": 20,
+  "preservar_orden_preguntas": false,
   "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
   "competencias": {
     "a": "Pensamiento social",
@@ -34,134 +35,470 @@
   },
   "preguntas": [
     {
-      "id": "P6S01",
+      "id": "P6S18",
       "numero": 1,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Durante la feria de ciencias del colegio, varios grupos expusieron sus proyectos ante un jurado de profesores. El que obtuvo el mejor puntaje fue un equipo conformado solo por niñas, que diseñó y programó un brazo robótico capaz de clasificar objetos por su color. Al anunciar los resultados frente a todo el público, uno de los profesores del jurado tomó el micrófono y comentó: «Quedé verdaderamente sorprendido; aunque son niñas, manejaron la robótica y la programación casi tan bien como lo haría un grupo de niños».</p></div><p>¿El comentario del profesor contiene un prejuicio?</p>",
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para no gastar agua del acueducto, el colegio quiere regar la huerta escolar con agua de lluvia: instalará canales en el techo del bloque nuevo y un tanque de mil litros al lado de las camas de siembra. Los estudiantes de sexto se encargarían del riego.</p><p>En el municipio llueve fuerte de marzo a mayo, pero entre junio y agosto casi no cae una gota, y son justamente los meses en que la huerta necesita agua a diario. El tanque lleno alcanza para unos ocho días de riego.</p></div><p>¿Por qué razón este sistema podría no servirle a la huerta del colegio?</p>",
       "opciones": {
-        "A": "No, porque solo está felicitando a las niñas por el buen trabajo que presentaron.",
-        "B": "Sí, porque a los profesores no les corresponde opinar sobre los proyectos de los estudiantes.",
-        "C": "Sí, porque da por hecho que ser niña es una desventaja para la robótica, como si fuera un asunto de niños.",
-        "D": "No, porque es cierto que la robótica se les facilita más a los niños que a las niñas."
+        "A": "Porque el techo del bloque nuevo tiene menos superficie que las camas de siembra.",
+        "B": "Porque un tanque de mil litros cuesta más de lo que el colegio puede pagar.",
+        "C": "Porque en los meses de sequía no habría lluvia con que llenar el tanque.",
+        "D": "Porque los estudiantes de sexto no saben cómo se riega una huerta escolar."
       },
       "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.2",
       "dificultad": "MEDIA",
-      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
-      "que_evalua": "La habilidad para identificar prejuicios que se enmarcan en un contexto ciudadano.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque el comentario, aunque parece un elogio, parte del prejuicio de que la robótica es propia de los niños; por eso al profesor le «sorprende» que las niñas la manejen bien, tratando su condición de mujeres como una desventaja.",
+      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
+      "que_evalua": "La capacidad para reconocer qué condiciones del contexto (recursos económicos, ambientales, sociales) obstaculizan o favorecen la implementación o efectividad de una solución.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque el sistema depende de la lluvia y en el municipio no llueve entre junio y agosto, los meses de mayor necesidad. Con un tanque que alcanza para ocho días, la huerta quedaría sin riego justo cuando más lo requiere.",
       "opciones_incorrectas": {
-        "A": "No es solo una felicitación: el «aunque son niñas» revela una idea preconcebida sobre lo que ellas pueden lograr.",
-        "B": "El problema no es que un profesor opine, sino el prejuicio que contiene su opinión.",
-        "D": "Afirmar que la robótica se les facilita más a los niños es justamente el estereotipo de género que constituye el prejuicio."
+        "A": "El texto no compara el tamaño del techo con el de las camas de siembra; lo decisivo es cuándo llueve.",
+        "D": "Regar una huerta es una tarea sencilla de aprender y el texto no señala esa dificultad.",
+        "B": "El costo del tanque no se discute en el texto, y aun pagándolo el problema seguiría igual."
       }
     },
     {
-      "id": "P6S02",
+      "id": "P6S06",
       "numero": 2,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio ribereño del Pacífico, varias comunidades afrocolombianas e indígenas viven de la pesca artesanal y de cultivos tradicionales que han heredado por generaciones. En los últimos años, varias familias enfrentan hambre y desnutrición infantil. Las causas son diversas: empresas que se instalaron río arriba desviaron parte del cauce y vierten residuos que contaminan el agua y espantan los peces; además, las temporadas de lluvias dañaron las cosechas y la ayuda alimentaria del Estado llega de forma irregular y tardía.</p><p>Pese a este panorama, durante una entrevista en la radio local un concejal afirmó: «Esa gente vive en la pobreza y pasa hambre porque son perezosos y se aferran a sus costumbres antiguas, en lugar de buscar trabajos modernos como cualquier persona haría».</p><p>Recuerda que un <b>prejuicio</b> es formarse una opinión sobre una persona o un grupo antes de conocer de verdad su situación.</p></div><p>¿La afirmación del concejal contiene un prejuicio contra la comunidad?</p>",
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una vereda cafetera, la cosecha ocupa seis semanas al año y muchas familias necesitan manos para recoger el grano. Este año varios acudientes pidieron permiso para retirar a sus hijos de la escuela durante ese tiempo. En lugar de aceptar, la rectora, la Comisaría de Familia y los mismos acudientes firmaron un acuerdo: durante la cosecha las clases se dan de 6 a 11 de la mañana, la escuela presta una ruta para acercar a los niños desde las fincas y ningún estudiante pierde el año por ese periodo. Así, Yeimi, de once años, sigue asistiendo a clase y por la tarde ayuda en su casa.</p></div><p>De acuerdo con la Constitución Política de Colombia, ¿cuál derecho fundamental de los niños hace efectivo ese acuerdo?</p>",
       "opciones": {
-        "A": "No, porque la comunidad debería abandonar la pesca artesanal para salir de la pobreza.",
-        "B": "Sí, porque las familias se niegan a aceptar los empleos modernos que les ofrecen.",
-        "C": "No, porque su intención es ayudar a la comunidad a conseguir mejores trabajos.",
-        "D": "Sí, porque culpa a la comunidad de su pobreza llamándola «perezosa», sin conocer de verdad su situación."
+        "A": "El derecho de los niños a la educación, incluso en tiempo de cosecha.",
+        "B": "La libertad de cada familia para organizar el trabajo de su propia finca.",
+        "C": "La facultad de cada estudiante de decidir si asiste o no a la escuela.",
+        "D": "El derecho de los niños a la recreación durante las semanas de cosecha."
       },
-      "clave": "D",
+      "clave": "A",
       "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
+      "afirmacion": 2,
+      "evidencia": "2.1",
       "dificultad": "MEDIA",
-      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
-      "que_evalua": "La habilidad para identificar prejuicios que se enmarcan en un contexto ciudadano.",
-      "justificacion_correcta": "respuesta correcta La opción D es la respuesta correcta porque el concejal se forma una opinión negativa de la comunidad antes de conocerla: la tacha de perezosa y la responsabiliza de su pobreza, en lugar de informarse sobre lo que realmente les pasa. Eso es un prejuicio.",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La habilidad para reconocer en una situación que se está protegiendo uno de los derechos fundamentales de los niños.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque el acuerdo se firmó para que ningún niño abandone la escuela durante la cosecha: cambia el horario y dispone una ruta justamente para garantizar el derecho fundamental de los niños a la educación.",
       "opciones_incorrectas": {
-        "A": "Pedir que abandonen la pesca artesanal no señala el prejuicio; esa pesca es su forma de vida y de sustento.",
-        "B": "El texto no dice que rechacen empleos: presenta el comentario del concejal como una opinión sin fundamento.",
-        "C": "La afirmación no busca ayudar: descalifica a la comunidad y le echa la culpa de su situación."
+        "B": "Organizar la finca es un asunto de los adultos; el acuerdo se firmó para proteger un derecho de los niños.",
+        "D": "La recreación también es un derecho de los niños, pero el acuerdo no se hizo por eso: lo que asegura es que sigan en clase.",
+        "C": "La asistencia a la escuela no depende de la voluntad del niño: es un derecho que se le garantiza."
       }
     },
     {
-      "id": "P6S03",
+      "id": "P6S08",
       "numero": 3,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la institución educativa se adelanta la campaña para elegir a la representante de curso. Durante la presentación de propuestas ante sus compañeros, una de las candidatas dice en su discurso: «He escuchado lo que ofrecen los otros candidatos y son cosas enormes e imposibles, como conseguir una semana entera sin tareas o traer una fiesta con un DJ famoso. Yo no voy a engañarlos con promesas que jamás se van a cumplir: a diferencia de ellos, solo me comprometo con lo que de verdad está a mi alcance y puedo cumplir».</p></div><p>¿Qué busca lograr la candidata con esa afirmación?</p>",
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El equipo de fútbol de sexto llegó a la final del torneo intercolegiado. La liga programó el partido a las nueve de la noche en un municipio que queda a tres horas de camino, porque a esa hora un canal local puede transmitirlo y así lo pidió la empresa que patrocina el torneo. Con ese horario, los jugadores, de once y doce años, regresarían hacia las dos de la mañana y al día siguiente tienen clase desde las seis y media.</p><p>Cuando el colegio pidió cambiar la hora, la liga contestó que el contrato con el patrocinador ya está firmado.</p></div><p>De acuerdo con la Constitución Política, ¿qué debe pesar más al fijar la hora de la final?</p>",
       "opciones": {
-        "A": "Que los demás candidatos mejoren sus propuestas para que sean más realistas.",
-        "B": "Que el profesor cancele las elecciones porque las promesas son imposibles.",
-        "C": "Convencer a sus compañeros de votar por ella, presentando a los otros candidatos como mentirosos.",
-        "D": "Reconocer que las propuestas de los demás candidatos son buenas para el curso."
+        "A": "El descanso y el estudio de unos jugadores que tienen once y doce años.",
+        "B": "El contrato firmado, pues el patrocinador ya destinó el dinero del torneo.",
+        "C": "Que el canal local alcance más audiencia a esa hora de la noche.",
+        "D": "La facultad de la liga, que es la entidad encargada de fijar los horarios."
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
+      "afirmacion": 2,
+      "evidencia": "2.2",
       "dificultad": "MEDIA",
-      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
-      "que_evalua": "La capacidad para identificar cuál es el impacto social buscado por alguien que emite un enunciado.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque la candidata busca movilizar el voto a su favor: desprestigia a los demás presentándolos como personas que hacen «promesas imposibles» (mienten) y se muestra a sí misma como la única sincera.",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La capacidad para reconocer que los derechos de los niños prevalecen sobre los de los demás.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque, cuando los intereses de los adultos y los derechos de un niño se cruzan, la Constitución ordena atender primero los del niño. El descanso y el estudio de los jugadores pesan más que el contrato o la transmisión.",
       "opciones_incorrectas": {
-        "A": "Su intención no es ayudar a los rivales a mejorar, sino restarles credibilidad frente a los votantes.",
-        "B": "No pretende que se cancelen las elecciones; quiere ganarlas.",
-        "D": "Lejos de reconocer las propuestas ajenas como buenas, las descalifica como imposibles."
+        "B": "Un contrato entre adultos no puede cumplirse a costa del descanso y del estudio de los jugadores.",
+        "C": "La audiencia del canal es un interés comercial y no va antes de lo que necesitan los niños.",
+        "D": "La liga fija los horarios, pero esa facultad tiene un límite: los derechos de los jugadores."
       }
     },
     {
       "id": "P6S04",
       "numero": 4,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mientras organiza los grupos para un torneo de ajedrez del colegio, un docente dice frente al curso: «El ajedrez requiere mucha concentración y cabeza fría; por eso suele dárseles mejor a los niños. Las niñas mejor que se animen con la decoración del salón».</p></div><p>¿Qué efecto puede tener la afirmación hecha por el docente?</p>",
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El semillero de investigación del colegio prepara la exposición de su proyecto ante los jurados del encuentro municipal. Al repartir los papeles, el docente que lo coordina anunció: «Frente a los jurados hablarán los estudiantes cuyos papás son profesionales, porque en la casa han aprendido a dirigirse a un público. Los hijos de los vendedores de la galería nos ayudan cargando las carteleras y repartiendo los refrigerios».</p></div><p>¿Cuál es el principal daño que esa forma de repartir los papeles puede causar en el semillero?</p>",
       "opciones": {
-        "A": "Que los niños del curso pierdan el interés por el torneo de ajedrez.",
-        "B": "Que las niñas se sientan motivadas a participar y ganar el torneo de ajedrez.",
-        "C": "Que niños y niñas entiendan que ambos tienen las mismas capacidades para el ajedrez.",
-        "D": "Que las niñas crean que no son buenas para el ajedrez y no se atrevan a participar."
+        "A": "Que el docente deba repartir de nuevo los papeles antes del encuentro municipal.",
+        "B": "Que los jurados del encuentro municipal escuchen una exposición demasiado larga y confusa.",
+        "C": "Que varios estudiantes se crean incapaces de hablar por el oficio de sus papás.",
+        "D": "Que las carteleras lleguen maltratadas al auditorio donde se hace la exposición."
       },
-      "clave": "D",
+      "clave": "C",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.1",
       "dificultad": "MEDIA",
       "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
       "que_evalua": "La habilidad para reconocer el impacto negativo que un enunciado puede tener en una persona o un grupo de personas.",
-      "justificacion_correcta": "respuesta correcta La opción D es la respuesta correcta porque la afirmación refuerza el estereotipo de que el ajedrez «es de niños»; su impacto negativo es que las niñas se perciban poco capaces y se abstengan de participar.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque el docente les asigna un lugar secundario a esos estudiantes sin haberlos escuchado, y la razón que da es el oficio de sus papás. El daño mayor es que ellos mismos acaben creyendo que no son capaces de hablar en público.",
       "opciones_incorrectas": {
-        "A": "La afirmación favorece a los niños en el torneo, no los desmotiva.",
-        "B": "El comentario las desalienta en lugar de motivarlas: las desvía hacia «decorar el salón».",
-        "C": "El efecto es el contrario: marca una diferencia de capacidad entre niños y niñas que no existe."
+        "B": "Nada indica que la exposición vaya a ser larga o confusa; lo cuestionable es el criterio del reparto.",
+        "A": "Rehacer el reparto sería una molestia menor, no el daño que sufren los estudiantes señalados.",
+        "D": "El estado de las carteleras es un detalle material y no explica por qué la decisión resulta excluyente."
+      }
+    },
+    {
+      "id": "P6S11",
+      "numero": 5,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La ruta escolar que sube a la vereda El Tambo sale del colegio a la 1:15 de la tarde y no tiene otro turno. El profesor de matemáticas programó el refuerzo de sexto los martes de 1:00 a 2:00, porque a esa hora es el único momento en que el salón queda libre y él no tiene clase. De los doce estudiantes que necesitan el refuerzo, nueve viven en la vereda y solo pueden regresar a su casa en esa ruta.</p></div><p>¿Entre qué intereses se produce el choque en esta situación?</p>",
+      "opciones": {
+        "A": "El profesor necesita el salón a la 1:00 y nueve estudiantes necesitan la ruta.",
+        "B": "El conductor necesita salir puntual y los acudientes quieren recoger a sus hijos.",
+        "C": "Los estudiantes quieren reforzar matemáticas y el profesor no quiere repetir su clase.",
+        "D": "El colegio quiere ahorrar en la ruta y el conductor quiere trabajar más horas."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La habilidad para reconocer y comparar los intereses de las partes presentes en una situación e identificar entre cuáles de ellos se produce el choque.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque el único horario en que el profesor tiene salón disponible coincide con la única hora en que nueve de esos estudiantes pueden volver a su casa. Los dos intereses son legítimos y no caben al mismo tiempo.",
+      "opciones_incorrectas": {
+        "D": "El texto no dice que el colegio quiera ahorrar en la ruta ni que el conductor pida más horas.",
+        "C": "El profesor no se niega a dictar el refuerzo: es él quien lo programó por su propia iniciativa.",
+        "B": "La puntualidad del conductor y la de los acudientes apuntan a lo mismo, así que entre ellas no hay choque."
+      }
+    },
+    {
+      "id": "P6S14",
+      "numero": 6,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el colegio se estudia la propuesta de abrir el patio los sábados para que la gente del barrio lo use como cancha. Sobre la cartelera de la entrada quedaron pegados dos textos.</p><p>Del Consejo de Padres: «Abrir el patio los sábados significa gente ajena dentro del colegio. Los baños, las mallas y las graderías se deterioran, y el lunes nadie responde por lo que aparezca roto».</p><p>Del Consejo Estudiantil: «El patio del colegio es la única cancha que hay en el barrio. Si se abre los sábados, los muchachos no tendrían que armar los partidos en plena vía, entre los carros».</p></div><p>¿En qué se diferencian las dos posiciones?</p>",
+      "opciones": {
+        "A": "Se diferencian en el día: el Consejo de Padres prefiere abrir el domingo.",
+        "B": "Las dos rechazan que la gente del barrio entre al colegio los fines de semana.",
+        "C": "Una atiende al cuidado del colegio y la otra, a la falta de canchas en el barrio.",
+        "D": "Las dos se ocupan del estado en que quedan los baños y las mallas del patio."
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La habilidad para identificar diferencias o semejanzas entre los puntos de vista de dos partes sobre una misma situación conflictiva.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque cada texto mira un aspecto distinto del mismo asunto: el Consejo de Padres se centra en el deterioro de las instalaciones y el Consejo Estudiantil, en que el barrio no tiene otro lugar donde jugar.",
+      "opciones_incorrectas": {
+        "B": "El Consejo Estudiantil no rechaza la apertura: la defiende porque el barrio no tiene otra cancha.",
+        "D": "El estado de los baños y de las mallas solo lo menciona el Consejo de Padres.",
+        "A": "Ninguno de los dos textos propone cambiar el sábado por el domingo."
+      }
+    },
+    {
+      "id": "P6S03",
+      "numero": 7,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el conjunto residencial San Isidro hay que decidir si se cobra una cuota extra de cien mil pesos por apartamento para cambiar el motor del ascensor. El técnico entregó un informe en el que concluye que el motor actual funciona bien y puede durar cerca de un año más si se le hace mantenimiento.</p><p>La administradora, que quiere que la cuota se apruebe en la asamblea de este sábado, escribió en el grupo de mensajes de los vecinos: «Si el sábado no aprobamos la cuota, el ascensor se queda quieto en cualquier momento y los niños y los abuelos del octavo piso tendrán que subir a pie».</p></div><p>¿Qué busca lograr la administradora con ese mensaje?</p>",
+      "opciones": {
+        "A": "Que los vecinos aprueben la cuota el sábado por miedo a quedarse sin ascensor.",
+        "B": "Informar a los vecinos lo que dice el informe que entregó el técnico del ascensor.",
+        "C": "Reunir firmas para que el técnico revise otra vez el motor del ascensor.",
+        "D": "Que la asamblea del sábado se aplace hasta que el motor deje de funcionar."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
+      "que_evalua": "La capacidad para identificar cuál es el impacto social buscado por alguien que emite un enunciado.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque la administradora quiere la aprobación de la cuota ese mismo sábado y, para conseguirla, anuncia un daño inmediato que el informe del técnico no respalda: presenta como cuestión de días algo que puede tardar cerca de un año.",
+      "opciones_incorrectas": {
+        "B": "No informa lo que dice el técnico: su mensaje afirma justamente lo contrario del informe.",
+        "D": "Aplazar la asamblea iría contra su propósito, que es que la cuota se apruebe el sábado.",
+        "C": "El motor ya fue revisado; pedir otra revisión retrasaría la decisión que ella busca."
+      }
+    },
+    {
+      "id": "P6S09",
+      "numero": 8,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>A tres estudiantes de sexto les suspendieron el descanso durante un mes por un daño en el bebedero del patio. Ellos aseguran que nadie los llamó a contar qué pasó y que el manual de convivencia exige escuchar al estudiante antes de sancionarlo. Quieren que alguien tome el caso, revise si ese procedimiento se cumplió y lo presente ante las directivas del colegio.</p></div><p>¿A quién del Gobierno escolar le corresponde asumir esa tarea?</p>",
+      "opciones": {
+        "A": "Al Consejo Directivo.",
+        "B": "Al Consejo Académico.",
+        "C": "Al Consejo de Padres.",
+        "D": "Al personero estudiantil."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La capacidad para reconocer las funciones que cumplen los integrantes del Gobierno escolar.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque el personero estudiantil es el estudiante elegido por votación de todos sus compañeros para recibir sus quejas, verificar que se cumplan los procedimientos del manual de convivencia y presentar esos casos ante las directivas.",
+      "opciones_incorrectas": {
+        "B": "El Consejo Académico se ocupa del plan de estudios y de la evaluación, no de reclamar por una sanción.",
+        "A": "El Consejo Directivo hace parte de las directivas ante las cuales se lleva el caso, así que no es quien lo presenta.",
+        "C": "El Consejo de Padres acompaña desde las familias y no representa a los estudiantes en sus reclamos."
+      }
+    },
+    {
+      "id": "P6S16",
+      "numero": 9,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el barrio Las Acacias el agua llega solo tres horas al día. Para tener con qué cocinar y lavar, casi todas las familias llenan tanques y baldes que dejan destapados en los patios. En los dos últimos meses el puesto de salud registró doce casos de dengue en el barrio, una enfermedad que transmite un mosquito que se cría en aguas quietas. La empresa de acueducto informó que el racionamiento seguirá hasta noviembre.</p></div><p>¿Qué relación entre los hechos descritos explica los casos de dengue en el barrio?</p>",
+      "opciones": {
+        "A": "El racionamiento va hasta noviembre porque la empresa aplazó el arreglo de tuberías.",
+        "B": "El puesto de salud atiende más pacientes y así registra más enfermedades del barrio.",
+        "C": "El agua llega pocas horas y por eso las familias deben hervir toda la que consumen.",
+        "D": "Al llegar el agua pocas horas, se almacena destapada y en ella se cría el mosquito."
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
+      "que_evalua": "La habilidad para establecer relaciones entre los distintos aspectos de una situación problemática.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque conecta los hechos del texto: el agua llega pocas horas, eso obliga a guardarla en tanques y baldes destapados, y en esas aguas quietas se cría el mosquito que transmite el dengue.",
+      "opciones_incorrectas": {
+        "C": "Hervir el agua sirve contra otras enfermedades, pero el dengue no se contagia por beberla.",
+        "B": "Los casos no aparecen porque se atienda a más gente: el texto describe una enfermedad y su criadero.",
+        "A": "El aplazamiento explica por qué sigue el racionamiento, no por qué se enfermaron doce personas."
+      }
+    },
+    {
+      "id": "P6S15",
+      "numero": 10,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Don Ubaldo entrena al equipo infantil del barrio. Sostiene que a esa edad lo importante no es el trofeo, sino que ningún niño se quede sentado en la banca: todas las familias pagaron la inscripción y todos los niños están aprendiendo a jugar.</p><p>En la final, faltando quince minutos, el partido va empatado y cuatro de sus jugadores todavía no han entrado a la cancha.</p></div><p>¿Cuál decisión de don Ubaldo sería más coherente con lo que él sostiene?</p>",
+      "opciones": {
+        "A": "Dejar en la cancha a los mismos que vienen jugando hasta que termine.",
+        "B": "Hacer entrar a los cuatro que todavía no han jugado.",
+        "C": "Pedir tiempo para explicar otra vez la jugada que le ha fallado al equipo.",
+        "D": "Cambiar únicamente al jugador que se vea más cansado en esos minutos."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "dificultad": "MEDIA",
+      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
+      "que_evalua": "La habilidad para establecer, dada una concepción y distintas posiciones o comportamientos, cuál de estas posiciones o comportamientos es más afín con esa concepción.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque don Ubaldo entiende su papel de entrenador como el de alguien que hace jugar a todos los niños; ponerlos en la cancha aunque el resultado esté abierto es lo que corresponde a esa manera de ver el deporte infantil.",
+      "opciones_incorrectas": {
+        "A": "Mantener a los mismos jugadores busca el resultado, que es justamente lo que él no pone en primer lugar.",
+        "C": "Explicar la jugada puede mejorar el juego, pero deja a cuatro niños sin entrar a la cancha.",
+        "D": "Un solo cambio por cansancio no responde a su idea de que ninguno se quede en la banca."
+      }
+    },
+    {
+      "id": "P6S20",
+      "numero": 11,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para que los estudiantes no salgan a la calle durante la jornada, el colegio decidió mantener la puerta cerrada de siete de la mañana a tres de la tarde y autorizó que la tienda escolar sea el único sitio donde se venda comida. Desde que empezó la medida, la tienda subió los precios: el almuerzo que en los puestos de la calle costaba tres mil pesos ahora cuesta seis mil, y dentro del colegio no hay otro lugar donde comprarlo.</p></div><p>De los siguientes efectos de la medida, ¿cuál lo sienten directamente las familias?</p>",
+      "opciones": {
+        "A": "Que la tienda escolar deba contratar a otra persona para atender la fila.",
+        "B": "Que el almuerzo cueste el doble y no haya otro lugar donde comprarlo.",
+        "C": "Que el manual de convivencia tenga que reescribirse antes de fin de año.",
+        "D": "Que los estudiantes puedan escoger entre varios sitios donde almorzar."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
+      "que_evalua": "La capacidad para valorar en una situación problemática el impacto que tendría un curso de acción en uno de los aspectos de dicha situación.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque, al quedar la tienda como único vendedor, el almuerzo pasó de tres mil a seis mil pesos: son las familias las que deben poner cada día el doble de dinero.",
+      "opciones_incorrectas": {
+        "A": "Contratar a alguien más sería un gasto de la tienda, no de las familias.",
+        "D": "La medida hace lo contrario: deja un único sitio donde se puede comprar comida.",
+        "C": "Un cambio en el manual es un trámite del colegio y no toca el bolsillo de las familias."
+      }
+    },
+    {
+      "id": "P6S13",
+      "numero": 12,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El comité ambiental del colegio discute qué hacer con las envolturas que quedan tiradas en el patio después de cada descanso.</p><p>Kevin propone: «Hay que asignarle a cada curso un turno de aseo con planilla, y el curso que no cumpla pierde el descanso del viernes».</p><p>Sara contesta: «Con planilla o sin planilla, mientras haya que caminar media cancha para encontrar una caneca las envolturas van a seguir en el piso. Yo pondría canecas en las cuatro esquinas del patio y una campaña para aprender a separar la basura».</p></div><p>¿Qué tienen en común las posiciones de Kevin y de Sara?</p>",
+      "opciones": {
+        "A": "Los dos piden que el comité ambiental vigile los turnos de aseo del patio.",
+        "B": "Los dos parten de que las envolturas quedan en el piso después del descanso.",
+        "C": "Los dos sostienen que la causa del problema son las pocas canecas del patio.",
+        "D": "Los dos proponen que el curso que no cumpla su turno pierda el descanso del viernes."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La habilidad para identificar diferencias o semejanzas entre los puntos de vista de dos partes de una misma situación conflictiva.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque, aunque proponen medidas distintas, ninguno discute el hecho de partida: después del descanso el patio queda con envolturas en el piso. Ese diagnóstico compartido es lo que tienen en común.",
+      "opciones_incorrectas": {
+        "D": "Quitar el descanso del viernes es la propuesta de Kevin; Sara sostiene que con eso nada cambia.",
+        "C": "La escasez de canecas es el argumento de Sara; Kevin no habla de canecas sino de turnos.",
+        "A": "Vigilar los turnos no aparece en la propuesta de Sara, que apunta a las canecas y a la campaña."
+      }
+    },
+    {
+      "id": "P6S07",
+      "numero": 13,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Camilo, de once años, se cayó jugando en el descanso y el brazo se le hinchó de inmediato. En la secretaría llamaron a su acudiente y, como nadie contestó, le dijeron a Camilo que esperara sentado en la portería hasta la hora de salida. Estuvo allí cinco horas, con el brazo hinchado y sin que nadie lo revisara. Cuando su tía llegó y lo llevó al centro de salud, el médico explicó que el hueso se había acomodado mal por la espera y que ahora había que corregirlo con cirugía.</p></div><p>De acuerdo con los derechos fundamentales que la Constitución reconoce a los niños, ¿qué debía hacer el colegio en esta situación?</p>",
+      "opciones": {
+        "A": "Cobrar a la familia el traslado, pues el accidente ocurrió durante el descanso.",
+        "B": "Anotar el accidente en el observador y comentarlo al final de la jornada escolar.",
+        "C": "Esperar la autorización del acudiente antes de trasladar a Camilo a cualquier parte.",
+        "D": "Llevarlo enseguida a que le atendieran el brazo, sin esperar cinco horas."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "MEDIA",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La habilidad para reconocer en una situación que se está vulnerando uno de los derechos fundamentales de los niños.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque la salud es un derecho fundamental de los niños y su atención no puede posponerse. Dejar a Camilo cinco horas con el brazo hinchado desconoció ese derecho y además agravó la lesión.",
+      "opciones_incorrectas": {
+        "C": "Un niño no puede quedarse sin atención mientras aparece un adulto: la urgencia se atiende primero y al acudiente se le informa después.",
+        "B": "El registro escrito es un trámite y no reemplaza el traslado que el estado del brazo exigía.",
+        "A": "Discutir quién paga el traslado no era lo urgente; lo desconocido fue la atención de su salud."
+      }
+    },
+    {
+      "id": "P6S10",
+      "numero": 14,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Doña Fabiola atiende la tienda escolar desde hace ocho años y necesita vender más para pagar el arriendo del local. Este año el colegio firmó el acuerdo de tienda saludable: en los descansos solo pueden venderse frutas, agua, jugos naturales y alimentos preparados sin freír. La decisión se tomó porque el médico del centro de salud reportó varios casos de gastritis y de sobrepeso entre los estudiantes.</p></div><p>¿Cuál de estos intereses de doña Fabiola choca con el acuerdo de tienda saludable?</p>",
+      "opciones": {
+        "A": "Abrir también en la última hora de la jornada para vender un poco más.",
+        "B": "Vender más porciones de fruta picada durante el descanso de la mañana.",
+        "C": "Atender más rápido para no dejar clientes por fuera en cada descanso.",
+        "D": "Ofrecer papas fritas y gaseosas, que son las que más le piden a diario."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
+      "que_evalua": "La habilidad para identificar el interés inmediato de una parte involucrada en una situación, y qué interés (también inmediato) generaría un conflicto.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque vender papas fritas y gaseosas contradice de manera directa lo pactado, que solo admite frutas, agua, jugos naturales y alimentos sin freír, y desconoce la razón de salud por la que se firmó el acuerdo.",
+      "opciones_incorrectas": {
+        "B": "La fruta picada está permitida por el acuerdo, así que vender más porciones no genera conflicto.",
+        "C": "Atender con más agilidad no cambia lo que se vende; el acuerdo se mantiene intacto.",
+        "A": "Ampliar el horario no altera los productos permitidos, de modo que no se opone al acuerdo."
+      }
+    },
+    {
+      "id": "P6S01",
+      "numero": 15,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El curso 603 está reuniendo dinero para la salida de fin de año y en cada descanso vende empanadas. Al escoger quién guardaría la caja con lo recaudado, la directora de grupo dijo frente a todo el curso: «Que la lleve Valentina. A Yeison no, porque en el barrio Las Palmas, donde él vive, uno nunca sabe con quién está tratando».</p></div><p>Varios estudiantes le pidieron a la directora de grupo que retirara esa frase. ¿Cuál de estas razones justifica el reclamo?</p>",
+      "opciones": {
+        "A": "Que en el colegio el dinero de las ventas debería guardarlo la tesorería.",
+        "B": "Que el curso no votó para decidir quién se encargaría de guardar la caja.",
+        "C": "Que la directora de grupo dio a entender que ningún estudiante de sexto sabe manejar dinero.",
+        "D": "Que se juzga a Yeison por el barrio en que vive y no por algo que él hizo."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
+      "que_evalua": "La habilidad para identificar prejuicios que se enmarcan en un contexto ciudadano.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque la directora de grupo no menciona ningún hecho de Yeison: le niega la caja por el barrio donde vive. Ese es un prejuicio, un juicio formado de antemano sobre alguien por el lugar o el grupo al que pertenece.",
+      "opciones_incorrectas": {
+        "C": "La frase no habla del curso entero: a Valentina sí le confía la caja sin poner ninguna duda.",
+        "B": "Votar podría ser deseable, pero el reclamo apunta a la razón con la que se descartó a Yeison.",
+        "A": "Que exista una tesorería no cambia lo cuestionado, que es la idea usada para excluir a un compañero."
+      }
+    },
+    {
+      "id": "P6S02",
+      "numero": 16,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una institución educativa, los estudiantes de la jornada nocturna obtuvieron los promedios más bajos del segundo periodo. Los docentes explicaron varias causas: la mayoría de ellos entra a clase después de ocho o nueve horas de trabajo, dos profesores del turno renunciaron en abril y todavía no han sido reemplazados, y en tres salones la iluminación es tan débil que desde las últimas filas apenas se distingue el tablero.</p><p>Al conocer los promedios, un representante de la asociación de padres afirmó en la reunión general: «Esos muchachos van mal porque son flojos y solo van a la nocturna a pasar el rato; si de verdad les interesara, estudiarían como los de la mañana».</p></div><p>¿Cuál es el principal problema de lo que afirmó el representante?</p>",
+      "opciones": {
+        "A": "Exagera al comparar los promedios de la nocturna con los de la jornada de la mañana.",
+        "B": "Atribuye los promedios bajos únicamente a la renuncia de los dos profesores del turno.",
+        "C": "Los califica de flojos sin mirar las condiciones en que estudian esos muchachos.",
+        "D": "Su intención es animar a los muchachos a esforzarse, aunque lo diga de forma dura."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
+      "que_evalua": "La habilidad para identificar prejuicios que se enmarcan en un contexto ciudadano.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque el representante se forma un juicio sobre los estudiantes de la nocturna antes de conocer su situación: los llama flojos e ignora la jornada laboral, la falta de dos profesores y los salones sin luz.",
+      "opciones_incorrectas": {
+        "B": "El representante no menciona la renuncia de los profesores: su única explicación es la supuesta flojera.",
+        "A": "La comparación de promedios existe y está en el texto; el problema es la explicación que el representante le da.",
+        "D": "El comentario no anima a nadie: les atribuye una falta de voluntad que el texto no respalda."
+      }
+    },
+    {
+      "id": "P6S19",
+      "numero": 17,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para reducir la basura que sale del colegio, la tienda escolar reemplazará los vasos y platos desechables por unos de loza que cada estudiante deberá lavar en el lavadero del patio antes de volver al salón. El descanso dura veinte minutos, en el colegio estudian ochocientos estudiantes y el lavadero del patio tiene dos llaves, una de las cuales se usa también para llenar las materas del jardín.</p></div><p>¿Qué dificultad tendría esta medida en el colegio?</p>",
+      "opciones": {
+        "A": "Que la basura del colegio aumentaría al cambiar los desechables por loza.",
+        "B": "Que el jardín del colegio se quedaría sin agua para regar sus materas.",
+        "C": "Que ochocientos estudiantes no alcanzan a lavar en veinte minutos con dos llaves.",
+        "D": "Que la tienda escolar tendría que dejar de vender las porciones de fruta picada."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
+      "que_evalua": "La capacidad para reconocer qué condiciones del contexto (recursos económicos, ambientales, sociales) obstaculizan o favorecen la implementación o efectividad de una solución.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque la medida depende de que cada estudiante lave su vaso y su plato dentro del descanso: con ochocientos estudiantes, veinte minutos y dos llaves, la fila no alcanzaría y la loza terminaría sucia o abandonada.",
+      "opciones_incorrectas": {
+        "D": "El cambio es del recipiente, no de lo que se vende: la fruta puede seguir ofreciéndose igual.",
+        "A": "La loza se lava y se vuelve a usar, así que la basura disminuiría en lugar de aumentar.",
+        "B": "El jardín puede regarse en otro momento del día; la dificultad está en el tiempo del descanso."
+      }
+    },
+    {
+      "id": "P6S17",
+      "numero": 18,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El colegio debe entregar los informes de notas antes del puente de octubre. Para lograrlo, las directivas decidieron que las dos últimas semanas del periodo se dediquen por completo a exámenes escritos de todas las áreas y que, mientras tanto, se suspendan la banda marcial, las salidas de campo y el trabajo en la huerta escolar. Los docentes de esos proyectos advirtieron que la huerta, sembrada en abril, se pierde si nadie la riega durante quince días, y que la banda no alcanzaría a preparar la presentación del festival.</p></div><p>¿Qué quedó sacrificado con la decisión de las directivas?</p>",
+      "opciones": {
+        "A": "Los proyectos del colegio: la huerta, la banda y las salidas de campo.",
+        "B": "La entrega de los informes de notas antes del puente de octubre.",
+        "C": "El tiempo que los docentes necesitan para calificar todos los exámenes.",
+        "D": "La aplicación de los exámenes escritos de todas las áreas del colegio."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
+      "que_evalua": "La habilidad para identificar, en una situación problemática en la que dos o más aspectos entran en tensión, cuál de ellos queda sacrificado por un curso de acción.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque la decisión asegura los exámenes y la entrega de notas a costa de lo demás: la huerta queda sin riego, la banda sin ensayos y las salidas sin fecha. Eso es lo que se sacrifica.",
+      "opciones_incorrectas": {
+        "B": "La entrega de los informes es justamente lo que la decisión busca proteger.",
+        "D": "Los exámenes no se sacrifican: son la actividad a la que se destinan las dos semanas.",
+        "C": "El texto no dice que a los docentes les falte tiempo para calificar; lo que advierten es la pérdida de sus proyectos."
+      }
+    },
+    {
+      "id": "P6S12",
+      "numero": 19,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la feria del libro del colegio, al curso 604 le asignaron un solo puesto y dos horas de programación. La mitad del curso quiere usar ese tiempo para leer en voz alta los cuentos que escribieron, y que los escuchen los cursos de primaria. La otra mitad quiere vender allí las libretas artesanales que fabricaron, porque con eso reunirían el dinero que falta para la salida de fin de año. Cada actividad necesita el puesto completo y las dos horas.</p></div><p>¿Por qué lo que ocurre en el curso 604 es un conflicto?</p>",
+      "opciones": {
+        "A": "Porque a los cursos de primaria no les interesa escuchar cuentos de estudiantes mayores.",
+        "B": "Porque las dos actividades necesitan el mismo puesto y solo cabe una.",
+        "C": "Porque el manual de convivencia prohíbe vender objetos dentro del colegio.",
+        "D": "Porque el curso no fabricó libretas suficientes para vender durante dos horas."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
+      "que_evalua": "La habilidad para reconocer los intereses de las partes de una misma situación y establecer por qué constituyen un conflicto.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque las dos mitades del curso persiguen algo razonable, pero ambas necesitan el mismo puesto y las mismas dos horas. Ese choque por un recurso que no alcanza para las dos es lo que constituye el conflicto.",
+      "opciones_incorrectas": {
+        "A": "El texto no dice nada sobre el interés de los cursos de primaria.",
+        "C": "No se menciona ninguna prohibición: la feria contempla la venta de las libretas.",
+        "D": "La cantidad de libretas no aparece en el texto y no es lo que enfrenta a las dos mitades del curso."
       }
     },
     {
       "id": "P6S05",
-      "numero": 5,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Viendo el noticiero con su abuelo, Tomás se entera de que en un páramo de su región una empresa quiere abrir una mina de carbón a cielo abierto. El páramo es un ecosistema estratégico y único: allí nacen las quebradas que abastecen de agua potable a miles de familias de varios municipios y habitan especies de plantas y animales que no existen en ningún otro lugar del planeta. Por eso, las comunidades de la zona, junto con varios biólogos, le solicitan al Gobierno declarar el páramo como Parque Nacional Natural, una figura de protección especial que prohibiría la explotación minera en ese territorio.</p><p>Quienes apoyan la mina argumentan que esta traería empleos y dinero a la región. Aun así, el abuelo de Tomás le dice que, en su opinión, el Gobierno debería atender la solicitud de la comunidad y declarar la zona como área protegida.</p></div><p>De acuerdo con los principios de la Constitución Política de Colombia, ¿por qué tendría razón el abuelo de Tomás?</p>",
+      "numero": 20,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Detrás de las aulas del colegio rural El Común hay un guadual por el que baja el nacimiento de agua que llena el tanque de la escuela. Este año el rector anunció que talará el guadual para ampliar la cancha y que el nacimiento se encerrará en un tubo de cemento.</p><p>El profesor de ciencias le mostró un estudio del acueducto veredal: sin las guaduas el nacimiento se seca en los meses de verano y el agua deja de filtrarse antes de llegar al tanque. El rector respondió que el predio es del colegio y que dentro de su propiedad él puede disponer de los árboles que quiera.</p></div><p>Según los principios de la Constitución Política de Colombia, ¿qué se puede decir de la respuesta del rector?</p>",
       "opciones": {
-        "A": "Porque el Gobierno está obligado a aceptar cualquier solicitud que hagan las comunidades.",
-        "B": "Porque la mina de carbón le daría más empleos y dinero a la región.",
-        "C": "Porque es un deber del Estado y de las personas proteger las riquezas naturales de la nación.",
-        "D": "Porque el abuelo, al ser una persona mayor, sabe más que los demás sobre el tema."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La habilidad para reconocer situaciones en las cuales hay acciones o propuestas que vulnerarían o respetarían el principio constitucional de protección a las riquezas naturales de la nación.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque alude al principio fundamental del artículo 8 de la Constitución: «Es obligación del Estado y de las personas proteger las riquezas culturales y naturales de la Nación». Proteger el páramo y su biodiversidad corresponde a ese deber.",
-      "opciones_incorrectas": {
-        "A": "El Gobierno debe escuchar a las comunidades, pero no está obligado a aceptar toda solicitud; ese no es el principio en juego.",
-        "B": "Es un argumento a favor de la mina, contrario a lo que piden la comunidad y el abuelo.",
-        "D": "La edad de una persona no es lo que da la razón; lo que la sustenta es el principio constitucional."
-      }
-    },
-    {
-      "id": "P6S06",
-      "numero": 6,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Camilo y Andrés cursan el grado quinto en una escuela rural y conversan sobre las jornadas de salud que la alcaldía organizó allí. En esas jornadas, un equipo médico vacuna de forma gratuita a los niños y niñas, les hace controles de crecimiento y peso, y orienta a las familias sobre alimentación. Camilo le cuenta a Andrés que a él le parecen de mucha ayuda, porque, aunque sus papás están muy pendientes de él y le dan todo lo que pueden, en su casa no siempre alcanza el dinero para llevarlo al médico o pagar las vacunas en el pueblo. Andrés, en cambio, dice que a él y a sus padres a veces les incomoda que lo revisen en la escuela sin que ellos lo hayan pedido primero.</p></div><p>De acuerdo con la Constitución Política de Colombia, ¿el puesto de salud está protegiendo alguno de los derechos fundamentales de los niños?</p>",
-      "opciones": {
-        "A": "No, porque se está vulnerando el derecho de los padres a decidir cuándo llevar al médico a sus hijos.",
-        "B": "Sí, el derecho de los niños a la salud.",
-        "C": "No, porque los niños tienen derecho a decidir si quieren o no que los revisen.",
-        "D": "Sí, el derecho de los niños a ser protegidos del abandono de sus familias."
+        "A": "El predio pertenece al colegio, así que el rector puede talar los árboles que quiera.",
+        "B": "Ser dueño del predio no lo autoriza a acabar con el agua ni con el guadual.",
+        "C": "La tala solo necesitaría el permiso escrito del profesor de ciencias.",
+        "D": "La cancha puede ampliarse si el colegio siembra árboles en otro municipio."
       },
       "clave": "B",
       "competencia": "a",
@@ -169,350 +506,13 @@
       "evidencia": "2.1",
       "dificultad": "MEDIA",
       "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La habilidad para reconocer en una situación que se está protegiendo uno de los derechos fundamentales de los niños.",
-      "justificacion_correcta": "respuesta correcta La opción B es la respuesta correcta porque las vacunas y los controles de crecimiento gratuitos protegen el derecho fundamental de los niños y las niñas a la salud, garantizado por la Constitución.",
+      "que_evalua": "La habilidad para reconocer situaciones en las cuales hay acciones o propuestas que vulnerarían o respetarían el principio constitucional de protección a las riquezas naturales de la nación.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque la Constitución encarga tanto a las autoridades como a los particulares el cuidado del ambiente y de los recursos naturales del país. Ser propietario de un terreno no da permiso para destruir un nacimiento de agua ni el bosque que lo protege.",
       "opciones_incorrectas": {
-        "A": "La salud es un derecho fundamental del niño que se está garantizando, aunque a algún adulto le incomode.",
-        "C": "No es un asunto de que el niño escoja: el derecho a la salud se protege a su favor.",
-        "D": "Ningún niño de la situación está en abandono; el caso trata de proteger su salud."
-      }
-    },
-    {
-      "id": "P6S07",
-      "numero": 7,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En algunos colegios se aplica un examen de admisión que evalúa las habilidades de los aspirantes, con el fin de decidir si pueden ingresar o no. Mariana, una niña de ocho años que usa silla de ruedas porque tiene una discapacidad física, presentó el examen de admisión de un colegio muy reconocido de la ciudad y obtuvo uno de los mejores puntajes entre todos los aspirantes. Sin embargo, las directivas del colegio le niegan el cupo argumentando que «el colegio no está hecho para niños así», que «no cuentan con las adaptaciones necesarias» y que ella «no podría seguir el ritmo de los demás estudiantes».</p></div><p>¿Qué derecho fundamental le están vulnerando a Mariana?</p>",
-      "opciones": {
-        "A": "El derecho de los niños a participar y a ser escuchados en cualquier ámbito.",
-        "B": "El derecho a la vida y a la salud de los niños dentro del colegio.",
-        "C": "El derecho a la educación, en condiciones de igualdad, de los niños con discapacidad.",
-        "D": "El derecho de los niños a recibir ayuda prioritaria cuando están en peligro."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La habilidad para reconocer en una situación que se está vulnerando uno de los derechos fundamentales de los niños.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque a Mariana se le niega el cupo por su discapacidad, pese a su excelente puntaje. Eso constituye discriminación y vulnera su derecho a la educación en condiciones de igualdad.",
-      "opciones_incorrectas": {
-        "A": "La situación no trata de que no la dejen opinar, sino de que le niegan el acceso al estudio.",
-        "B": "No está en riesgo su vida ni su salud; lo vulnerado es su acceso a la educación.",
-        "D": "No es un caso de peligro como abandono o maltrato que requiera ayuda prioritaria, sino de discriminación educativa."
-      }
-    },
-    {
-      "id": "P6S08",
-      "numero": 8,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un canal de televisión quiere grabar un programa dentro del aula de Samuel, un niño de cinco años, para mostrar al país cómo es un día de clases. Los productores planean enfocar el rostro de Samuel y poner en pantalla su nombre completo y el colegio donde estudia. Al enterarse, Diana, la mamá de Samuel, se niega y pide por escrito que no lo graben, porque exponer así a un niño en televisión puede ponerlo en riesgo, y él tiene derecho a su intimidad y a su imagen, derechos que ni siquiera ella, como su madre, puede entregar a cambio de nada.</p><p>El productor le responde que, como el programa es educativo, sirve de ejemplo para otros colegios y, además, le pagará una suma de dinero a la institución, él tiene todo el derecho de grabar a los estudiantes que aparezcan en el aula.</p></div><p>De acuerdo con la Constitución Política, ¿quién tiene la razón?</p>",
-      "opciones": {
-        "A": "El productor, porque el programa es educativo y beneficia al colegio.",
-        "B": "El productor, porque pagarle al colegio le da derecho a grabar a los niños.",
-        "C": "La mamá, porque los derechos del niño, como su intimidad, prevalecen sobre los demás intereses.",
-        "D": "La mamá, porque las madres tienen más derechos sobre sus hijos que cualquier otra persona."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La capacidad para reconocer que los derechos de los niños prevalecen sobre los de los demás.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque el artículo 44 de la Constitución establece que los derechos de los niños prevalecen sobre los derechos de los demás. La intimidad y la integridad de Samuel están por encima del interés del canal de grabarlo.",
-      "opciones_incorrectas": {
-        "A": "Que el programa sea educativo no autoriza a exponer a un niño contra su protección.",
-        "B": "Un pago al colegio no puede estar por encima de los derechos del niño.",
-        "D": "La razón no viene de que ella sea la madre, sino de que los derechos del niño prevalecen."
-      }
-    },
-    {
-      "id": "P6S09",
-      "numero": 9,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>A Esteban, de grado sexto, lo sancionaron con tres días sin entrar a clase por una falta que, según él, no cometió. Esteban considera que la sanción es injusta y que no lo dejaron explicar lo que pasó, y quiere que alguien del colegio defienda sus derechos como estudiante.</p></div><p>¿A qué integrante del Gobierno escolar debería acudir Esteban?</p>",
-      "opciones": {
-        "A": "A la Personería estudiantil, encargada de promover y defender los derechos de los estudiantes.",
-        "B": "Al Consejo Académico, encargado de definir los planes y programas de estudio del colegio.",
-        "C": "Al Consejo Directivo, encargado de administrar el presupuesto y los recursos del colegio.",
-        "D": "Al Consejo de Padres, encargado de acompañar el desempeño académico de los estudiantes."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La capacidad para reconocer las funciones que cumplen los integrantes del Gobierno escolar.",
-      "justificacion_correcta": "respuesta correcta La opción A es la respuesta correcta porque entre las funciones del personero estudiantil está promover y defender los derechos de los estudiantes, que es justo lo que Esteban necesita ante una sanción que considera injusta.",
-      "opciones_incorrectas": {
-        "B": "El Consejo Académico se ocupa de los planes y programas de estudio, no de defender los derechos de un estudiante.",
-        "C": "El Consejo Directivo administra recursos y orienta la institución; no es la instancia para defender al estudiante sancionado.",
-        "D": "El Consejo de Padres acompaña procesos de los estudiantes, pero no tiene la función de defender sus derechos en una sanción."
-      }
-    },
-    {
-      "id": "P6S10",
-      "numero": 10,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Daniela tuvo una cirugía en el oído y el médico le prohibió mojarse o exponerse a ruidos fuertes durante un mes. Aun así, quiere pasar la tarde con sus amigos. Cuando se reúnen, cada uno propone un plan:</p><p>• <b>Sara</b>: armar un rompecabezas grande entre todos en la sala.</p><p>• <b>Luis</b>: ir a la piscina del conjunto a refrescarse.</p><p>• <b>Karen</b>: ver una serie juntos en el televisor.</p><p>• <b>Pablo</b>: pintar camisetas con témperas en la mesa del comedor.</p></div><p>¿El interés de quién entra en conflicto con el interés de Daniela de pasar la tarde con sus amigos?</p>",
-      "opciones": {
-        "A": "El de Sara, porque armar un rompecabezas la cansaría demasiado.",
-        "B": "El de Karen, porque ver una serie le haría daño al oído operado.",
-        "C": "El de Luis, porque ir a la piscina implica mojarse, lo que el médico le prohibió.",
-        "D": "El de Pablo, porque pintar camisetas mancharía la ropa de Daniela."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
-      "que_evalua": "La habilidad para identificar el interés inmediato de una parte involucrada en una situación, y qué interés (también inmediato) generaría un conflicto.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque ir a la piscina implica mojarse, justamente lo que el médico le prohibió a Daniela tras la cirugía; por eso ese plan entra en conflicto con su recuperación.",
-      "opciones_incorrectas": {
-        "A": "Armar un rompecabezas en la sala no afecta su recuperación; es una actividad tranquila.",
-        "B": "Ver una serie a volumen normal no equivale a exponerse a ruidos fuertes; no le impide participar.",
-        "D": "Manchar la ropa no tiene relación con la restricción médica de Daniela; podría participar igual."
-      }
-    },
-    {
-      "id": "P6S11",
-      "numero": 11,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Don Régulo tiene una finca de turismo y quiere atraer más visitantes. Un vecino, Joaquín, le ofrece venderle guacamayas y monos que capturó en el monte, para tenerlos encerrados en jaulas como atracción para los turistas, pues «así la gente pagaría por verlos de cerca».</p></div><p>Si don Régulo tuviera alguno de los siguientes intereses, ¿cuál entraría en conflicto con la propuesta de Joaquín de venderle animales silvestres?</p>",
-      "opciones": {
-        "A": "Su interés de aumentar el número de visitantes a la finca.",
-        "B": "Su interés de tener más atracciones que llamen la atención de los turistas.",
-        "C": "Su interés de cobrar la entrada a quienes quieran ver los animales.",
-        "D": "Su interés de respetar y proteger la fauna silvestre de la región."
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La habilidad para identificar el interés inmediato de una parte involucrada en una situación, y qué interés (también inmediato) generaría un conflicto.",
-      "justificacion_correcta": "respuesta correcta La opción D es la respuesta correcta porque si don Régulo quisiera respetar y proteger la fauna silvestre, ese interés chocaría con la propuesta de Joaquín, que implica capturar y enjaular animales silvestres para exhibirlos, es decir, maltrato animal.",
-      "opciones_incorrectas": {
-        "A": "Atraer más visitantes coincide con la propuesta de Joaquín de hacer la finca más atractiva; no hay conflicto.",
-        "B": "Querer más atracciones es compatible con tener los animales como espectáculo; no genera conflicto.",
-        "C": "Cobrar por ver los animales encaja con la propuesta de exhibirlos; no se opone a ella."
-      }
-    },
-    {
-      "id": "P6S12",
-      "numero": 12,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para la semana cultural, Valeria propone que su grupo prepare una exposición sobre las comidas típicas de las regiones de Colombia. Sus compañeros comentan qué les gustaría hacer:</p><p>• <b>Nicolás</b>: preparar y mostrar cómo se hace el ajiaco bogotano.</p><p>• <b>Ángela</b>: investigar la receta y el origen del sancocho de la costa.</p><p>• <b>Brayan</b>: construir un modelo del sistema solar con sus planetas.</p><p>• <b>Sara</b>: traer una muestra de dulces tradicionales del Valle del Cauca.</p></div><p>¿El interés de cuál integrante entra en conflicto con la propuesta de Valeria?</p>",
-      "opciones": {
-        "A": "El de Brayan, porque un modelo del sistema solar no trata sobre comidas típicas.",
-        "B": "El de Nicolás, porque mostrar el ajiaco se aleja del tema de las comidas regionales.",
-        "C": "El de Ángela, porque investigar el sancocho no aporta a la exposición de Valeria.",
-        "D": "El de Sara, porque los dulces tradicionales no son comidas de las regiones."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
-      "que_evalua": "La habilidad para identificar el interés inmediato de una parte involucrada en una situación, y qué interés (también inmediato) generaría un conflicto.",
-      "justificacion_correcta": "respuesta correcta La opción A es la respuesta correcta porque construir un modelo del sistema solar es un tema de astronomía, ajeno a las comidas típicas; por eso el interés de Brayan entra en conflicto con la propuesta de Valeria.",
-      "opciones_incorrectas": {
-        "B": "El ajiaco es una comida típica bogotana; la propuesta de Nicolás concuerda con el tema.",
-        "C": "Investigar el sancocho de la costa aporta directamente a la exposición sobre comidas regionales.",
-        "D": "Los dulces tradicionales del Valle son parte de las comidas regionales; no hay conflicto."
-      }
-    },
-    {
-      "id": "P6S13",
-      "numero": 13,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Manuela y Felipe ven en clase un reportaje sobre las toneladas de plástico y basura que cada año terminan en los ríos y los mares, y sobre los animales marinos que mueren atrapados o que confunden el plástico con alimento. Al terminar el video, conversan sobre lo que vieron.</p><p>Manuela dice: «A mí me parece terriblemente injusto lo que les pasa a esos animales; es de las cosas más graves que he visto. Pero siento que es un problema tan enorme, de empresas y países enteros, que uno como estudiante no puede hacer absolutamente nada para cambiarlo». Felipe le responde: «Tienes razón en que es una situación gravísima e injusta, y me duele igual que a ti. Sin embargo, no creo que estemos atados de manos: podríamos empezar por organizar jornadas de reciclaje y de limpieza de la quebrada con todo el curso».</p></div><p>¿Se parecen los puntos de vista de Manuela y Felipe?</p>",
-      "opciones": {
-        "A": "Sí, porque los dos creen que los estudiantes no pueden hacer nada frente al problema.",
-        "B": "No, porque a Felipe le preocupan los animales y a Manuela no.",
-        "C": "Sí, porque ambos consideran que la contaminación de ríos y mares es una situación grave e injusta.",
-        "D": "No, porque Manuela quiere convencer a Felipe de que el problema no es tan importante."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La habilidad para identificar diferencias o semejanzas entre los puntos de vista de dos partes de una misma situación conflictiva.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque, aunque difieren en si se puede actuar o no, Manuela y Felipe coinciden en su postura central: ambos ven la contaminación de ríos y mares como una situación grave e injusta.",
-      "opciones_incorrectas": {
-        "A": "Solo Manuela cree que no se puede hacer nada; Felipe propone reciclar y limpiar, así que no coinciden en eso.",
-        "B": "A Manuela sí le preocupan los animales; lo dice expresamente al inicio.",
-        "D": "Manuela no minimiza el problema; al contrario, lo considera muy injusto."
-      }
-    },
-    {
-      "id": "P6S14",
-      "numero": 14,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Dos docentes conversan sobre las redes sociales y los adolescentes. La profesora Clara dice: «Las redes son una gran herramienta: permiten que los muchachos aprendan, compartan sus talentos y se mantengan en contacto con sus seres queridos lejanos». El profesor Hugo opina: «A mí me preocupa que pasen tantas horas en las redes que dejen de dormir, de estudiar y de conversar cara a cara, lo que puede afectar su salud y sus relaciones».</p></div><p>¿Se parecen los puntos de vista de Clara y Hugo?</p>",
-      "opciones": {
-        "A": "Sí, porque ambos creen que las redes sociales solo traen beneficios para los adolescentes.",
-        "B": "Sí, porque ambos piensan que los adolescentes deberían dejar de usar las redes sociales.",
-        "C": "No, porque Clara advierte los riesgos de las redes y Hugo defiende sus ventajas.",
-        "D": "No, porque Clara resalta las ventajas de las redes y Hugo advierte sus riesgos."
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La habilidad para identificar diferencias o semejanzas entre los puntos de vista de dos partes sobre una misma situación conflictiva.",
-      "justificacion_correcta": "respuesta correcta La opción D es la respuesta correcta porque los puntos de vista son diferentes: Clara se enfoca en las ventajas de las redes sociales, mientras que Hugo advierte los riesgos de su uso excesivo.",
-      "opciones_incorrectas": {
-        "A": "Hugo no ve solo beneficios; señala riesgos para la salud y las relaciones.",
-        "B": "Ninguno propone que dejen de usarlas del todo; difieren en cómo las valoran.",
-        "C": "Es al revés: Clara resalta las ventajas y Hugo advierte los riesgos."
-      }
-    },
-    {
-      "id": "P6S15",
-      "numero": 15,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La profesora Diana cree que el descanso debe ser un momento de juego libre, en el que cada estudiante elija qué hacer y se relacione con quien quiera, porque así aprenden a convivir. Frente al tema del descanso, otras personas opinan:</p><p>• <b>El coordinador</b>: en el descanso todos deben hacer la misma actividad dirigida por un docente.</p><p>• <b>Una mamá</b>: el descanso debería usarse para que terminen las tareas pendientes.</p><p>• <b>El profesor de Educación Física</b>: el descanso debe dejarse libre para que cada estudiante decida cómo jugar y con quién.</p><p>• <b>La rectora</b>: el descanso debería acortarse para tener más horas de clase.</p></div><p>¿Cuál de estas opiniones es más afín con la concepción de la profesora Diana?</p>",
-      "opciones": {
-        "A": "La del coordinador, porque organiza una actividad igual para todos.",
-        "B": "La de la mamá, porque aprovecha el descanso para las tareas.",
-        "C": "La del profesor de Educación Física, porque deja el descanso libre para que cada quien elija.",
-        "D": "La de la rectora, porque dedica más tiempo a las clases."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.2",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
-      "que_evalua": "La habilidad para establecer, dada una concepción y distintas posiciones o comportamientos, cuál de estas posiciones o comportamientos es más afín con esa concepción.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque el profesor de Educación Física comparte la concepción de Diana: que el descanso sea de juego libre, donde cada estudiante decida qué hacer y con quién.",
-      "opciones_incorrectas": {
-        "A": "Una actividad igual y dirigida para todos contradice la idea de juego libre que defiende Diana.",
-        "B": "Usar el descanso para tareas elimina el juego libre que Diana considera valioso.",
-        "D": "Acortar el descanso para más clases se opone a la concepción de Diana sobre su importancia."
-      }
-    },
-    {
-      "id": "P6S16",
-      "numero": 16,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un colegio abrió una sala de tecnología con computadores nuevos. Sin embargo, solo permite entrar a la sala a los estudiantes inscritos en el club de robótica, que tiene un costo mensual. A los demás estudiantes, aunque tengan clase de informática, los dejan por fuera y deben trabajar en cuadernos. Los padres pidieron que todos los estudiantes pudieran usar la sala en sus clases, pero las directivas respondieron que quien quiera entrar debe pagar e inscribirse en el club.</p></div><p>¿Cuál de las siguientes circunstancias generó este conflicto?</p>",
-      "opciones": {
-        "A": "La decisión de algunos padres de no inscribir a sus hijos en el club de robótica.",
-        "B": "El hecho de que los computadores de la sala sean nuevos y costosos.",
-        "C": "La decisión del colegio de impedir que todos los estudiantes usen la sala en sus clases.",
-        "D": "La petición de los padres de que todos los estudiantes puedan usar la sala de tecnología."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
-      "que_evalua": "La habilidad para identificar en una situación de conflicto entre dos o más aspectos, la circunstancia que da lugar a dicho conflicto.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque la circunstancia que origina el conflicto es que el colegio impida usar la sala a quienes no pagan el club, dejando por fuera a estudiantes que tienen clase de informática.",
-      "opciones_incorrectas": {
-        "A": "No inscribirse en un club opcional es legítimo; no es la causa del conflicto, sino la restricción del colegio.",
-        "B": "Que los equipos sean nuevos no es lo que genera el conflicto, sino la regla que excluye a algunos.",
-        "D": "La petición de los padres busca resolver el problema; no lo origina."
-      }
-    },
-    {
-      "id": "P6S17",
-      "numero": 17,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En las graderías de un coliseo donde juega el equipo de baloncesto del colegio, algunos asistentes lanzan gritos burlones e insultos a los jugadores cuando fallan. Varios jugadores dijeron que esas burlas los desaniman y afectan su juego. Unos organizadores creen que hay que sancionar a quienes insultan, aunque eso podría hacer que vaya menos gente. Otros piensan que los gritos «son parte del ambiente». Tras votar, se decide retirar del coliseo a quienes lancen insultos contra los jugadores.</p></div><p>Con esa decisión, ¿cuál de los siguientes aspectos se privilegió?</p>",
-      "opciones": {
-        "A": "La libertad de los asistentes para expresar lo que quieran durante el partido.",
-        "B": "La cantidad de personas que asisten al coliseo a ver los partidos.",
-        "C": "La integridad y el bienestar emocional de los jugadores del equipo.",
-        "D": "La seguridad física de las personas que asisten a las graderías."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco y rechazo las situaciones de exclusión o discriminación en mi medio escolar.",
-      "que_evalua": "La habilidad para identificar en una situación problemática en la que existe un conflicto entre dos o más aspectos, qué aspecto privilegia un curso de acción dado.",
-      "justificacion_correcta": "respuesta correcta La opción C es la respuesta correcta porque, al retirar a quienes insultan, los organizadores privilegiaron la integridad y el bienestar de los jugadores, que ya habían dicho sentirse desanimados y afectados por esas burlas.",
-      "opciones_incorrectas": {
-        "A": "La libertad de expresión de los asistentes no se privilegió; al contrario, se limitó para proteger a los jugadores.",
-        "B": "Se aceptó el riesgo de que asistiera menos gente con tal de proteger a los jugadores; no se privilegió la asistencia.",
-        "D": "Los insultos afectaban el ánimo de los jugadores, no la seguridad física del público."
-      }
-    },
-    {
-      "id": "P6S18",
-      "numero": 18,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Los estudiantes de un colegio quieren formar una banda de música para tocar en los actos del municipio. La profesora de artes está dispuesta a dirigir los ensayos, más de 25 estudiantes se inscribieron con muchas ganas y la rectora consiguió que una fundación done los instrumentos. El problema es que el colegio no tiene un salón cerrado y los ensayos los harían en el pasillo, donde el ruido interrumpe las clases de los demás cursos y no hay forma de practicar tranquilos.</p></div><p>En esta situación, ¿qué condición podría dificultar que el colegio forme la banda?</p>",
-      "opciones": {
-        "A": "Que no haya quien quiera dirigir los ensayos de la banda.",
-        "B": "Que no haya suficientes estudiantes interesados en participar.",
-        "C": "Que la banda no cuente con instrumentos para poder ensayar.",
-        "D": "Que no exista un espacio adecuado donde la banda pueda ensayar sin interrumpir."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
-      "que_evalua": "La capacidad para reconocer qué condiciones del contexto (recursos económicos, ambientales, sociales) obstaculizan o favorecen la implementación o efectividad de una solución.",
-      "justificacion_correcta": "respuesta correcta La opción D es la respuesta correcta porque, según el contexto, falta un salón cerrado para ensayar: el pasillo interrumpe las clases y no permite practicar tranquilos, lo que dificulta formar la banda.",
-      "opciones_incorrectas": {
-        "A": "El contexto dice que la profesora de artes está dispuesta a dirigir los ensayos; esa condición sí se cumple.",
-        "B": "Se inscribieron más de 25 estudiantes con ganas; el interés no es el obstáculo.",
-        "C": "Una fundación donará los instrumentos; ese recurso ya está resuelto."
-      }
-    },
-    {
-      "id": "P6S19",
-      "numero": 19,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un municipio quiere reducir la basura acumulada en las calles poniendo en marcha un sistema de reciclaje. La idea es que cada familia separe sus residuos en orgánicos, plástico y papel, y luego registre por medio de una página web la cantidad que entregó, para acumular puntos que después se cambian por descuentos en los servicios públicos. Para apoyar el plan, la alcaldía instaló suficientes canecas de colores en cada barrio y dispuso camiones recolectores que alcanzan a recoger el material separado en toda la zona. Sin embargo, según un censo reciente, apenas la mitad de las familias del municipio tiene conexión a internet en casa o sabe manejar la página web donde se hace el registro.</p></div><p>¿Qué condición del municipio dificultaría que funcione este sistema de reciclaje?</p>",
-      "opciones": {
-        "A": "Que no todas las familias tienen internet o saben usar la página web para reportar.",
-        "B": "Que no hay suficientes canecas de colores en los barrios para separar la basura.",
-        "C": "Que los camiones no alcanzan a recoger el material separado en toda la zona.",
-        "D": "Que las familias no estén dispuestas a separar sus residuos en sus casas."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "dificultad": "MEDIA",
-      "estandar": "Asumo, de manera pacífica y constructiva, los conflictos cotidianos en mi vida escolar y familiar y contribuyo a la protección de los derechos de las niñas y los niños.",
-      "que_evalua": "La capacidad para reconocer qué condiciones del contexto (recursos económicos, ambientales, sociales) obstaculizan o favorecen la implementación o efectividad de una solución.",
-      "justificacion_correcta": "respuesta correcta La opción A es la respuesta correcta porque el sistema depende de reportar por la página web, pero solo una parte de las familias tiene internet o sabe usarla; eso impide que muchas participen y dificulta el funcionamiento.",
-      "opciones_incorrectas": {
-        "B": "El contexto dice que hay suficientes canecas de colores en cada barrio; eso no es el obstáculo.",
-        "C": "Se menciona que hay camiones para recoger el material en toda la zona; esa condición sí se cumple.",
-        "D": "El texto no afirma que las familias se nieguen a separar; el obstáculo es el acceso a internet."
-      }
-    },
-    {
-      "id": "P6S20",
-      "numero": 20,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un colegio se instaló una cafetería donde los estudiantes compran sus refrigerios. Para ahorrar, la cafetería dejó de cambiar el aceite con que fríe los alimentos y lo reutiliza durante muchos días, hasta que se ve oscuro y con mal olor. Aun así, los estudiantes siguen comprando empanadas y papas fritas todos los días.</p></div><p>¿Qué impacto podría tener esta situación sobre la salud de los estudiantes?</p>",
-      "opciones": {
-        "A": "Que los estudiantes ahorren dinero al comprar comida más barata en la cafetería.",
-        "B": "Que la cafetería del colegio gaste menos al no cambiar el aceite tan seguido.",
-        "C": "Que los padres y madres se quejen del mal olor que sale de la cafetería.",
-        "D": "Que los estudiantes se enfermen por consumir alimentos fritos en aceite en mal estado."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en procesos democráticos en mi salón y en el medio escolar.",
-      "que_evalua": "La capacidad para valorar en una situación problemática el impacto que tendría un curso de acción en uno de los aspectos de dicha situación.",
-      "justificacion_correcta": "respuesta correcta La opción D es la respuesta correcta porque reutilizar el aceite hasta que está oscuro y con mal olor lo deja en mal estado; consumir alimentos fritos en ese aceite puede enfermar a los estudiantes, afectando su salud.",
-      "opciones_incorrectas": {
-        "A": "El ahorro de dinero no tiene relación directa con la salud, que es lo que pregunta el enunciado.",
-        "B": "El ahorro de la cafetería es la causa de la decisión, no el impacto sobre la salud de los estudiantes.",
-        "C": "La queja por el olor es un posible efecto, pero no es el impacto directo sobre la salud que se pregunta."
+        "A": "Ser propietario del terreno no borra el deber de conservar el agua y el bosque que hay en él.",
+        "C": "Ese permiso no existe: lo que está en juego es un deber que la Constitución impone a todos.",
+        "D": "Sembrar en otro municipio no devuelve el nacimiento que surte el tanque de la escuela."
       }
     }
-  ],
-  "preservar_orden_preguntas": false
+  ]
 }

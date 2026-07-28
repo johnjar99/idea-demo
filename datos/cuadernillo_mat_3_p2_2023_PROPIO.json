@@ -47,242 +47,9 @@
   ],
   "preguntas": [
     {
-      "id": "P3M2-01",
-      "numero": 1,
-      "enunciado": "<p>Durante tres días, <b>Valentina</b> leyó <b>\\(80\\) páginas</b> de un libro de cuentos. En su registro anotó las páginas de cada día (ver la tabla); el tercer día aún no lo ha anotado. ¿Cuántas páginas leyó el <b>tercer</b> día?</p><div style=\"max-width:320px;margin:10px auto\"><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Páginas leídas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(15\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(25\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><b style=\"color:#A8132F\">?</b></td></tr></table></div>",
-      "opciones": {
-        "A": "\\(70\\) páginas.",
-        "B": "\\(40\\) páginas.",
-        "C": "\\(50\\) páginas.",
-        "D": "\\(30\\) páginas."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición y de transformación.",
-      "que_evalua": "La capacidad para resolver problemas aditivos en situaciones cotidianas, en los que hay que hallar el cambio que produjo el resultado.",
-      "justificacion_correcta": "Las páginas del tercer día son el cambio entre lo leído hasta el segundo día y el total: \\(80 - (15 + 25) = 80 - 40 = 40\\) páginas.",
-      "opciones_incorrectas": {
-        "A": "Hace la resta mal: \\(80 - 25 + 15\\) y obtiene \\(70\\) en vez de descontar ambos días.",
-        "C": "Cree que cada día aumenta el doble y supone \\(2 \\times 25 = 50\\), ignorando el total de \\(80\\).",
-        "D": "Cree que cada día aumenta de \\(10\\) en \\(10\\) y supone \\(30\\), sin usar el total de \\(80\\)."
-      }
-    },
-    {
-      "id": "P3M2-02",
-      "numero": 2,
-      "enunciado": "<p><b>Tomás</b> compró <b>\\(6\\) sobres</b> de calcomanías para su álbum y reunió en total <b>\\(54\\) calcomanías</b>. Si todos los sobres traen la misma cantidad de calcomanías, ¿cuántas calcomanías vienen en cada sobre?</p>",
-      "opciones": {
-        "A": "\\(60\\) calcomanías.",
-        "B": "\\(48\\) calcomanías.",
-        "C": "\\(9\\) calcomanías.",
-        "D": "\\(6\\) calcomanías."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de resolver situaciones multiplicativas en las que hay que hallar uno de los factores a partir del producto y el otro factor.",
-      "justificacion_correcta": "Como los \\(6\\) sobres traen la misma cantidad, se reparte el total entre los sobres: \\(54 \\div 6 = 9\\) calcomanías por sobre.",
-      "opciones_incorrectas": {
-        "A": "Suma en vez de dividir: \\(54 + 6 = 60\\).",
-        "B": "Resta en vez de dividir: \\(54 - 6 = 48\\).",
-        "D": "Confunde calcomanías con sobres y repite el número de sobres \\((6)\\)."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q02.png"
-    },
-    {
-      "id": "P3M2-03",
-      "numero": 3,
-      "enunciado": "<p>En una tienda de telas hay un letrero que dice: <i>«Lleve <b>\\(4\\) metros</b> de tela por solo <b>$48.000</b>»</i>. Si <b>Marcela</b> solo va a comprar <b>un metro</b> de esa tela, ¿cuánto le costará?</p>",
-      "opciones": {
-        "A": "$192.000",
-        "B": "$12.000",
-        "C": "$24.000",
-        "D": "$48.000"
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de resolver situaciones multiplicativas en situaciones cotidianas.",
-      "justificacion_correcta": "Como \\(4\\) metros cuestan $48.000 y cada metro vale lo mismo, se halla la cuarta parte: \\(48.000 \\div 4 = 12.000\\). Un metro cuesta $12.000.",
-      "opciones_incorrectas": {
-        "A": "Multiplica por \\(4\\) en vez de dividir: \\(48.000 \\times 4 = 192.000\\).",
-        "C": "Calcula la mitad de \\(48.000\\) en lugar de la cuarta parte.",
-        "D": "Cree que los $48.000 ya corresponden a un solo metro."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q03.png"
-    },
-    {
-      "id": "P3M2-04",
-      "numero": 4,
-      "enunciado": "<p>Mateo está armando una torre con cubos de madera en su habitación. Él sabe que cada cubo mide <b>\\(1 \\ \\text{cm}^3\\)</b> de volumen.</p><p>¿Cuál es el <b>volumen total</b> de la torre que armó Mateo?</p>",
-      "opciones": {
-        "A": "\\(9 \\ \\text{cm}^3\\)",
-        "B": "\\(4 \\ \\text{cm}^3\\)",
-        "C": "\\(10 \\ \\text{cm}^3\\)",
-        "D": "\\(3 \\ \\text{cm}^3\\)"
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
-      "que_evalua": "La capacidad de los estudiantes para hallar el volumen de un cuerpo contando las unidades cúbicas que lo forman.",
-      "justificacion_correcta": "La torre está formada por \\(9\\) cubos: \\(4\\) en la fila de abajo, \\(3\\) en la siguiente y \\(2\\) más arriba. Como cada cubo ocupa \\(1 \\ \\text{cm}^3\\), el volumen total es \\(9 \\times 1 = 9 \\ \\text{cm}^3\\).",
-      "opciones_incorrectas": {
-        "B": "Cuenta únicamente los \\(4\\) cubos de la fila de abajo y deja por fuera los que están encima.",
-        "C": "Cuenta un cubo de más: incluye alguno de los que están sueltos en el piso, que no hacen parte de la torre.",
-        "D": "Cuenta los cubos de la segunda fila \\((3)\\) y no el resto de la torre."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q04.png"
-    },
-    {
-      "id": "P3M2-05",
-      "numero": 5,
-      "enunciado": "<p>Mateo, al finalizar de jugar, organiza sus cubos de madera en una caja plástica. Si cada uno de los cubos tiene un volumen de <b>\\(1 \\ \\text{cm}^3\\)</b> y la caja queda completamente llena al guardarlos, ¿cuál es el <b>volumen total</b> de la caja?</p>",
-      "opciones": {
-        "A": "\\(12 \\ \\text{cm}^3\\)",
-        "B": "\\(48 \\ \\text{cm}^3\\)",
-        "C": "\\(24 \\ \\text{cm}^3\\)",
-        "D": "\\(36 \\ \\text{cm}^3\\)"
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
-      "que_evalua": "La capacidad para hallar el volumen de un recipiente contando las unidades cúbicas que lo llenan por completo.",
-      "justificacion_correcta": "En cada capa caben \\(4 \\times 3 = 12\\) cubos y la caja tiene \\(3\\) capas, así que se guardan \\(12 \\times 3 = 36\\) cubos. Como cada cubo ocupa \\(1 \\ \\text{cm}^3\\), el volumen de la caja es \\(36 \\ \\text{cm}^3\\).",
-      "opciones_incorrectas": {
-        "A": "Cuenta solo los \\(12\\) cubos que se ven en la capa de arriba y no las capas de abajo.",
-        "B": "Supone \\(4\\) cubos de fondo en lugar de \\(3\\) y calcula \\(4 \\times 4 \\times 3 = 48\\).",
-        "C": "Cuenta únicamente dos capas \\((12 \\times 2 = 24)\\) y deja una sin contar."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q05.png"
-    },
-    {
-      "id": "P3M2-06",
-      "numero": 6,
-      "enunciado": "<p>La figura muestra las medidas de un espejo rectangular: el lado largo mide <b>\\(200\\) cm</b> y el lado corto mide <b>\\(50\\) cm</b> (solo esos dos lados aparecen rotulados). Se quiere ponerle un marco alrededor de todo el borde. ¿Cuál es el <b>perímetro</b> del espejo?</p>",
-      "opciones": {
-        "A": "\\(100\\) cm",
-        "B": "\\(250\\) cm",
-        "C": "\\(400\\) cm",
-        "D": "\\(500\\) cm"
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
-      "que_evalua": "La capacidad de usar las medidas de un objeto bidimensional para hallar otras medidas, específicamente perímetros o áreas.",
-      "justificacion_correcta": "El perímetro suma los cuatro lados. Como es un rectángulo, los lados opuestos son iguales: \\(50 + 200 + 50 + 200 = 500\\) cm.",
-      "opciones_incorrectas": {
-        "A": "Suma solo los dos lados cortos: \\(50 + 50 = 100\\).",
-        "B": "Suma solo los dos lados que aparecen rotulados: \\(200 + 50 = 250\\).",
-        "C": "Suma solo los dos lados largos: \\(200 + 200 = 400\\)."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q06.png"
-    },
-    {
-      "id": "P3M2-07",
-      "numero": 7,
-      "enunciado": "<p>Andrea quiere rellenar el dibujo coloreado de la figura con fichas iguales a la <b>ficha</b> que aparece al lado, sin sobreponerlas ni girarlas. Cada ficha cubre <b>\\(2\\) cuadros</b>. ¿Cuál de las siguientes afirmaciones es <b>verdadera</b>?</p>",
-      "opciones": {
-        "A": "La altura del dibujo es \\(3\\) fichas y se necesitan \\(18\\) fichas.",
-        "B": "La altura del dibujo es \\(6\\) fichas y se necesitan \\(36\\) fichas.",
-        "C": "La altura del dibujo es \\(3\\) fichas y se necesitan \\(9\\) fichas.",
-        "D": "La altura del dibujo es \\(6\\) fichas y se necesitan \\(12\\) fichas."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
-      "que_evalua": "La capacidad de los estudiantes para calcular el área de un plano con medidas no estandarizadas.",
-      "justificacion_correcta": "La ficha mide \\(2\\) cuadros de alto, igual que en el enunciado. El dibujo tiene \\(6\\) cuadros de alto, que equivalen a \\(6 \\div 2 = 3\\) fichas de altura. Además, el dibujo tiene \\(36\\) cuadros coloreados y cada ficha cubre \\(2\\), así que se necesitan \\(36 \\div 2 = 18\\) fichas.",
-      "opciones_incorrectas": {
-        "B": "Mide la altura y cuenta los cuadros sin recordar que cada ficha cubre \\(2\\) (toma \\(6\\) y \\(36\\)).",
-        "C": "Acierta en la altura \\((3)\\) pero halla las fichas con \\(3 \\times 3 = 9\\), usando mal el patrón.",
-        "D": "Toma la altura en cuadros \\((6)\\) y cuenta solo las fichas completas de una región parcial \\((12)\\)."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q07.png"
-    },
-    {
-      "id": "P3M2-08",
-      "numero": 8,
-      "enunciado": "<p>El papá de <b>Camilo</b> registra cuántas arepas vende cada día durante <b>dos semanas</b>. La <b>semana 1</b> está en la gráfica de barras y la <b>semana 2</b> en la tabla. ¿Cuál es la cantidad de arepas que <b>más se repite</b> en las dos semanas?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día (semana 2)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Arepas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(20\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(20\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(40\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(25\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(25\\)</td></tr></table>",
-      "opciones": {
-        "A": "\\(40\\) arepas.",
-        "B": "\\(20\\) arepas.",
-        "C": "\\(30\\) arepas.",
-        "D": "\\(25\\) arepas."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Represento datos relativos a mi entorno usando objetos concretos, pictogramas y diagramas de barras.",
-      "que_evalua": "La capacidad de los estudiantes para identificar la moda de un conjunto de datos representado a partir de dos registros distintos en una situación cotidiana.",
-      "justificacion_correcta": "Juntando las dos semanas, el valor \\(20\\) aparece \\(4\\) veces (días 1 y 2 de cada semana), más que cualquier otro: \\(30\\) aparece \\(2\\) veces, \\(40\\) dos veces y \\(25\\) dos veces. La cantidad que más se repite, la moda, es \\(20\\) arepas.",
-      "opciones_incorrectas": {
-        "A": "Toma la mayor cantidad vendida en un día \\((40)\\), no la que más se repite.",
-        "C": "Elige \\(30\\), que solo aparece \\(2\\) veces, no es la moda.",
-        "D": "Elige \\(25\\), que se repite menos veces que \\(20\\)."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q08.png"
-    },
-    {
-      "id": "P3M2-09",
-      "numero": 9,
-      "enunciado": "<p>En un salón, cada estudiante votó por un candidato a representante escribiendo su nombre en un papel. El pictograma muestra los votos (cada figura es \\(1\\) voto). Gana quien tenga <b>más</b> votos. ¿Quién es el representante?</p>",
-      "opciones": {
-        "A": "Pablo.",
-        "B": "Sofía.",
-        "C": "Hugo.",
-        "D": "Lorena."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
-      "que_evalua": "La capacidad del estudiante de identificar la moda en una lista de datos para realizar una selección.",
-      "justificacion_correcta": "La moda es el dato de mayor frecuencia. Lorena tiene \\(5\\) votos, más que Pablo \\((4)\\), Sofía \\((3)\\) y Hugo \\((3)\\); por eso es la representante.",
-      "opciones_incorrectas": {
-        "A": "Pablo tiene \\(4\\) votos, uno menos que Lorena.",
-        "B": "Sofía tiene \\(3\\) votos, no es la mayor frecuencia.",
-        "C": "Hugo tiene \\(3\\) votos, no es la mayor frecuencia."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q09.png"
-    },
-    {
       "id": "P3M2-10",
-      "numero": 10,
-      "enunciado": "<p>La <b>torta</b> muestra los materiales que reunieron los estudiantes de <b>3.°</b> en la campaña de reciclaje del colegio. Las opciones A, B, C y D muestran lo que reunieron otros grados. ¿Cuál de ellos reunió la <b>misma cantidad de papel</b> que los estudiantes de 3.°?</p>",
+      "numero": 1,
+      "enunciado": "<p>La <b>torta</b> muestra los materiales que reunieron los estudiantes de <b>3.°</b> en la campaña de reciclaje del colegio. Las opciones A, B, C y D muestran lo que reunieron otros grados.</p>[[IMG]]<p>¿Cuál de ellos reunió la <b>misma cantidad de papel</b> que los estudiantes de 3.°?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -312,14 +79,92 @@
       }
     },
     {
-      "id": "P3M2-11",
-      "numero": 11,
-      "enunciado": "<p><b>Aníbal</b> ahorró para un viaje familiar <b>$300.000</b> en billetes y <b>$21.000</b> en monedas. La tabla muestra cuánto guardó cada familiar, separando los billetes y las monedas. ¿Quién ahorró la <b>misma cantidad</b> total de dinero que Aníbal?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Familiar</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">En billetes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">En monedas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rubén</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$20.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Teresa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$310.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$11.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Esteban</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$300.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$31.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Olga</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$312.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$10.000</td></tr></table>",
+      "id": "P3M2-03",
+      "numero": 2,
+      "enunciado": "<p><b>Aurora</b>, la modista del barrio, va a forrar unos cojines y pasa frente a la vitrina de <b>Telas El Telar</b>, donde está el aviso de la figura.</p>[[IMG]]<p>Como ella solo necesita <b>un metro</b> de esa tela, ¿cuánto tendrá que pagar?</p>",
       "opciones": {
-        "A": "Rubén.",
-        "B": "Teresa.",
-        "C": "Esteban.",
-        "D": "Olga."
+        "A": "$192.000",
+        "B": "$24.000",
+        "C": "$12.000",
+        "D": "$48.000"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad de resolver situaciones multiplicativas en situaciones cotidianas.",
+      "justificacion_correcta": "El aviso ofrece \\(4\\) metros por $48.000 y todos los metros valen lo mismo, así que el precio de un metro es la cuarta parte del total: \\(48.000 \\div 4 = 12.000\\). Aurora paga $12.000.",
+      "opciones_incorrectas": {
+        "B": "Halla la mitad de \\(48.000\\) y no la cuarta parte.",
+        "A": "Multiplica por \\(4\\) en vez de repartir: \\(48.000 \\times 4 = 192.000\\).",
+        "D": "Toma el precio del aviso como si ya correspondiera a un solo metro."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q03.png"
+    },
+    {
+      "id": "P3M2-09",
+      "numero": 3,
+      "enunciado": "<p>En el club de lectura del colegio se votó para elegir quién coordinará el préstamo de libros durante el semestre. El pictograma reúne los votos que recibió cada candidato (cada casilla equivale a \\(1\\) voto) y el cargo lo asume quien alcance <b>más</b> votos.</p>[[IMG]]<p>¿Quién queda como coordinador o coordinadora?</p>",
+      "opciones": {
+        "A": "Lorena.",
+        "B": "Pablo.",
+        "C": "Hugo.",
+        "D": "Sofía."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
+      "que_evalua": "La capacidad del estudiante de identificar la moda en una lista de datos para realizar una selección.",
+      "justificacion_correcta": "Se busca el dato de mayor frecuencia. Lorena reúne \\(5\\) votos, por encima de Pablo con \\(4\\), Sofía con \\(3\\) y Hugo con \\(3\\); por eso queda como coordinadora.",
+      "opciones_incorrectas": {
+        "C": "Hugo alcanza \\(3\\) votos, la menor frecuencia junto con Sofía.",
+        "B": "Pablo alcanza \\(4\\) votos, uno menos que Lorena.",
+        "D": "Sofía alcanza \\(3\\) votos, que no es la mayor frecuencia."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q09.png"
+    },
+    {
+      "id": "P3M2-07",
+      "numero": 4,
+      "enunciado": "<p>Para la feria de matemáticas, el curso <b>3.° B</b> dibujó en papel cuadriculado el mosaico gris y azul de la figura y quiere taparlo por completo con fichas iguales a la que aparece al lado. Las fichas no se giran ni se montan una sobre otra, y cada <b>ficha</b> tapa <b>\\(2\\) cuadros</b>.</p>[[IMG]]<p>¿Cuál de estas afirmaciones sobre el mosaico es <b>correcta</b>?</p>",
+      "opciones": {
+        "A": "El mosaico tiene \\(3\\) fichas de alto y se necesitan \\(9\\) fichas para taparlo.",
+        "B": "El mosaico tiene \\(6\\) fichas de alto y se necesitan \\(12\\) fichas para taparlo.",
+        "C": "El mosaico tiene \\(6\\) fichas de alto y se necesitan \\(36\\) fichas para taparlo.",
+        "D": "El mosaico tiene \\(3\\) fichas de alto y se necesitan \\(18\\) fichas para taparlo."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
+      "que_evalua": "La capacidad de los estudiantes para calcular el área de un plano con medidas no estandarizadas.",
+      "justificacion_correcta": "La ficha ocupa \\(2\\) cuadros de alto. Como el mosaico mide \\(6\\) cuadros de alto, en esa dirección caben \\(6 \\div 2 = 3\\) fichas. Además el mosaico está formado por \\(36\\) cuadros coloreados y cada ficha tapa \\(2\\), así que se requieren \\(36 \\div 2 = 18\\) fichas.",
+      "opciones_incorrectas": {
+        "B": "Mide la altura en cuadros \\((6)\\) y cuenta solo las fichas de una parte del mosaico \\((12)\\).",
+        "C": "Da la altura y el conteo en cuadros \\((6\\) y \\(36)\\), sin considerar que cada ficha tapa \\(2\\) cuadros.",
+        "A": "Acierta la altura en fichas \\((3)\\) pero calcula \\(3 \\times 3 = 9\\) en vez de repartir los \\(36\\) cuadros entre \\(2\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q07.png"
+    },
+    {
+      "id": "P3M2-11",
+      "numero": 5,
+      "enunciado": "<p>En la jornada ambiental, cada curso de tercero entregó material reciclable y recibió puntos: unos por el papel y otros por el plástico. El curso <b>3.°A</b> obtuvo <b>\\(250\\) puntos</b> por papel y <b>\\(45\\) puntos</b> por plástico. La tabla muestra lo que lograron los demás cursos. ¿Cuál de ellos reunió el <b>mismo total</b> de puntos que 3.°A?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntos por papel</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntos por plástico</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.°B</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(250\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(50\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.°C</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(260\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(35\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.°D</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(240\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(45\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3.°E</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(230\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(60\\)</td></tr></table>",
+      "opciones": {
+        "A": "3.°B.",
+        "B": "3.°C.",
+        "C": "3.°D.",
+        "D": "3.°E."
       },
       "clave": "B",
       "competencia": "b",
@@ -329,76 +174,56 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
       "que_evalua": "La capacidad de los estudiantes para reconocer equivalencias entre expresiones numéricas.",
-      "justificacion_correcta": "Aníbal ahorró \\(300.000 + 21.000 = 321.000\\). Hay que sumar billetes y monedas de cada familiar: Rubén \\(320.000\\), Teresa \\(310.000 + 11.000 = 321.000\\), Esteban \\(331.000\\) y Olga \\(322.000\\). El único que reúne $321.000, con otro reparto de billetes y monedas, es Teresa.",
+      "justificacion_correcta": "3.°A reunió \\(250 + 45 = 295\\) puntos. Al sumar cada fila se obtiene: 3.°B \\(300\\), 3.°C \\(260 + 35 = 295\\), 3.°D \\(285\\) y 3.°E \\(290\\). El único que llega a los mismos \\(295\\) puntos, aunque repartidos de otra manera, es 3.°C.",
       "opciones_incorrectas": {
-        "A": "Rubén reúne \\(300.000 + 20.000 = 320.000\\); le faltan $1.000 para igualar a Aníbal.",
-        "C": "Esteban tiene los mismos billetes que Aníbal \\((300.000)\\), pero al sumar las monedas reúne \\(331.000\\): se fija solo en los billetes y no suma el resto.",
-        "D": "Olga reúne \\(312.000 + 10.000 = 322.000\\); se pasa por $1.000."
+        "A": "3.°B tiene los mismos \\(250\\) puntos de papel que 3.°A, pero al sumar el plástico llega a \\(300\\): compara una sola columna y no el total.",
+        "C": "3.°D coincide en los \\(45\\) puntos de plástico, pero su total es \\(285\\): le faltan \\(10\\) puntos.",
+        "D": "3.°E reúne \\(230 + 60 = 290\\) puntos: le faltan \\(5\\) para igualar a 3.°A."
       }
     },
     {
-      "id": "P3M2-12",
-      "numero": 12,
-      "enunciado": "<p>Diana dibujó cuatro rectángulos, como se observan en la imagen.</p><p>El área de un rectángulo se obtiene al multiplicar la base por la altura. ¿Qué se puede afirmar sobre las <b>áreas</b> de los rectángulos?</p>",
+      "id": "P3M2-20",
+      "numero": 6,
+      "enunciado": "<p>En la maqueta del proyecto de ciencias, un <b>velero</b> de juguete queda quieto sobre un estanque cuya superficie está tan lisa que funciona como un <b>espejo</b>.</p>[[IMG]]<p>Si se dibuja lo que se vería debajo de la línea del agua, ¿cuál de las imágenes A, B, C o D corresponde a ese dibujo?</p>",
       "opciones": {
-        "A": "Las áreas son los múltiplos de \\(3\\), empezando desde \\(3 \\ \\text{cm}^2\\).",
-        "B": "Las áreas son los números impares, empezando desde \\(3 \\ \\text{cm}^2\\).",
-        "C": "Las áreas son los números pares, empezando desde \\(2 \\ \\text{cm}^2\\).",
-        "D": "Las áreas son los múltiplos de \\(4\\), empezando desde \\(4 \\ \\text{cm}^2\\)."
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.2",
-      "cmc": "Numérico - variacional",
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
-      "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
-      "que_evalua": "La capacidad de los estudiantes para identificar una secuencia numérica proveniente de un contexto geométrico cuya variación genera una seriación simple como son los múltiplos de un número.",
-      "justificacion_correcta": "Todos los rectángulos tienen \\(3\\) cm de altura y las bases miden \\(1, 2, 3\\) y \\(4\\) cm. Las áreas son \\(1 \\times 3 = 3\\), \\(2 \\times 3 = 6\\), \\(3 \\times 3 = 9\\) y \\(4 \\times 3 = 12\\). La secuencia \\(3, 6, 9, 12\\) son los múltiplos de \\(3\\) desde \\(3\\).",
+      "estandar": "Represento el espacio circundante para establecer relaciones espaciales.",
+      "que_evalua": "La capacidad de los estudiantes para establecer el resultado de una reflexión de representaciones pictóricas usuales del entorno.",
+      "justificacion_correcta": "En una reflexión, la línea del agua actúa como eje: la figura se voltea de arriba hacia abajo, de manera que el casco queda pegado al eje y el mástil apunta hacia el fondo, conservando los mismos colores y el mismo lado de las velas. La imagen C es la única que cumple esas condiciones.",
       "opciones_incorrectas": {
-        "B": "Ve que la primera área es \\(3\\) y supone que siguen los impares \\((3, 5, 7, 9)\\), sin calcular las demás.",
-        "C": "Se fija en las bases y las duplica \\((2, 4, 6, 8)\\) en lugar de multiplicarlas por la altura.",
-        "D": "Toma la base del último rectángulo \\((4)\\) y supone que las áreas van de \\(4\\) en \\(4\\)."
+        "C": "Repite el velero tal como está, sin voltearlo: eso corresponde a una traslación, no a una reflexión.",
+        "D": "Voltea el velero de izquierda a derecha y lo deja por fuera del agua: no es el reflejo en el estanque.",
+        "A": "Voltea el velero, pero intercambia los colores de las velas; el reflejo debe conservarlos tal como están."
       },
-      "imagen_figura": "assets/banco-mat-3-p2/q12.png"
-    },
-    {
-      "id": "P3M2-13",
-      "numero": 13,
-      "enunciado": "<p>Observa la cantidad de bombillos en cada árbol de izquierda a derecha.</p><p>¿Cuál es el <b>patrón</b> que sigue la secuencia?</p>",
-      "opciones": {
-        "A": "Aumenta de \\(2\\) en \\(2\\), porque el total de árboles que se decoraron en el juego es \\(3\\).",
-        "B": "Aumenta de \\(3\\) en \\(3\\), porque a cada árbol se le agregan \\(3\\) bombillos más que al árbol anterior.",
-        "C": "Aumenta de \\(2\\) en \\(2\\), porque a cada árbol se le agregan \\(2\\) bombillos más que al árbol anterior.",
-        "D": "Aumenta de \\(3\\) en \\(3\\), porque el total de árboles que se decoraron en el juego es \\(3\\)."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
-      "que_evalua": "La capacidad del estudiante de expresar el cambio en los términos de una secuencia en una situación aditiva.",
-      "justificacion_correcta": "Los árboles tienen \\(5\\), \\(7\\) y \\(9\\) bombillos. De un árbol al siguiente se agregan siempre \\(2\\) bombillos \\((7-5=2\\) y \\(9-7=2)\\), así que la secuencia aumenta de \\(2\\) en \\(2\\) por esa razón.",
-      "opciones_incorrectas": {
-        "A": "Acierta que aumenta de \\(2\\) en \\(2\\), pero lo explica por la cantidad de árboles y no por los bombillos que se agregan.",
-        "B": "Cuenta mal el aumento: cree que se agregan \\(3\\) bombillos cada vez.",
-        "D": "Se equivoca en las dos cosas: ni el aumento es de \\(3\\) ni depende del número de árboles."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q13.png"
+      "imagen_figura": "assets/banco-mat-3-p2/q20.png",
+      "opciones_imagenes": {
+        "C": "assets/banco-mat-3-p2/q20a.png",
+        "D": "assets/banco-mat-3-p2/q20b.png",
+        "B": "assets/banco-mat-3-p2/q20c.png",
+        "A": "assets/banco-mat-3-p2/q20d.png"
+      }
     },
     {
       "id": "P3M2-14",
-      "numero": 14,
-      "enunciado": "<p>En el Día del Idioma, cada niño que visita la biblioteca saca, sin mirar, un libro del baúl de regalos. La figura muestra los libros que hay: <b>cuentos</b>, <b>aventuras</b> e <b>historietas</b>. ¿Cuál de los siguientes libros es <b>imposible</b> que saque un niño?</p>",
+      "numero": 7,
+      "enunciado": "<p>Al terminar el club de lectura de los sábados, cada participante mete la mano en el <b>baúl de regalos</b> y saca un libro sin mirar. La figura muestra todo lo que hay guardado dentro del baúl.</p>[[IMG]]<p>¿Cuál de los siguientes libros <b>nunca</b> podría salir?</p>",
       "opciones": {
-        "A": "Un libro de cuentos.",
-        "B": "Un libro de fábulas.",
-        "C": "Un libro de aventuras.",
-        "D": "Un libro de historietas."
+        "A": "Un libro de historietas.",
+        "B": "Un libro de aventuras.",
+        "C": "Un libro de poemas.",
+        "D": "Un libro de cuentos."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "b",
       "afirmacion": 5,
       "evidencia": "5.1",
@@ -406,25 +231,77 @@
       "dificultad": "MEDIA",
       "estandar": "Explico –desde mi experiencia– la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
       "que_evalua": "La capacidad de identificar eventos imposibles en un experimento aleatorio sencillo.",
-      "justificacion_correcta": "En el baúl no hay libros de fábulas; por eso es imposible que un niño saque un libro de ese tipo.",
+      "justificacion_correcta": "Dentro del baúl solo hay cuentos, aventuras e historietas. No hay ningún libro de poemas, de modo que sacar uno de ellos es un evento imposible.",
       "opciones_incorrectas": {
-        "A": "Hay cuentos en el baúl: sacarlo es posible (y es lo más probable).",
-        "C": "Hay un libro de aventuras: es posible sacarlo.",
-        "D": "Hay historietas en el baúl: es posible sacarlas."
+        "A": "En el baúl hay tres historietas: sacar una es posible.",
+        "D": "En el baúl hay cuatro cuentos: es el libro que más posibilidades tiene de salir.",
+        "B": "En el baúl hay un libro de aventuras: es poco probable, pero posible."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q14.png"
     },
     {
-      "id": "P3M2-15",
-      "numero": 15,
-      "enunciado": "<p>Jacinta empacó varios regalos usando <b>cajas del mismo tamaño</b> con <b>diferentes diseños</b>, como muestra la figura. Si Jacinta guarda todos los regalos en una bolsa y saca uno al azar, ¿cuál de los siguientes regalos es <b>imposible</b> que saque?</p>",
+      "id": "P3M2-06",
+      "numero": 8,
+      "enunciado": "<p>En la academia de danza van a bordear con una cinta luminosa <b>todo el contorno</b> del espejo de la sala de ensayo. Según la figura, el espejo mide <b>\\(200\\) cm</b> de largo y <b>\\(50\\) cm</b> de ancho.</p>[[IMG]]<p>¿Cuántos centímetros de cinta se necesitan para rodearlo por completo?</p>",
       "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "\\(100\\) cm",
+        "B": "\\(250\\) cm",
+        "C": "\\(400\\) cm",
+        "D": "\\(500\\) cm"
       },
-      "clave": "C",
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
+      "que_evalua": "La capacidad de usar las medidas de un objeto bidimensional para hallar otras medidas, específicamente perímetros o áreas.",
+      "justificacion_correcta": "La cinta recorre los cuatro lados. Por tratarse de un rectángulo, los lados opuestos miden lo mismo, de modo que hay dos de \\(200\\) cm y dos de \\(50\\) cm: \\(200 + 200 + 50 + 50 = 500\\) cm.",
+      "opciones_incorrectas": {
+        "A": "Suma únicamente los dos lados de \\(50\\) cm y obtiene \\(100\\).",
+        "B": "Suma una sola vez cada medida rotulada: \\(200 + 50 = 250\\).",
+        "C": "Suma únicamente los dos lados de \\(200\\) cm y obtiene \\(400\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q06.png"
+    },
+    {
+      "id": "P3M2-17",
+      "numero": 9,
+      "enunciado": "<p>En el proyecto de educación financiera, cada curso maneja una cuenta en el <b>Banco Escolar</b>. <b>Zulay</b>, la tesorera, ya escribió en el cheque el valor en letras (ver figura) y solo le falta llenar la casilla <i>«Valor en números»</i>.</p>[[IMG]]<p>¿Qué número debe escribir allí?</p>",
+      "opciones": {
+        "A": "\\(407.300\\)",
+        "B": "\\(47.300\\)",
+        "C": "\\(4.007.000.300\\)",
+        "D": "\\(4.007.300\\)"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso representaciones –principalmente concretas y pictóricas– para realizar equivalencias de un número en las diferentes unidades del sistema decimal.",
+      "que_evalua": "La capacidad del estudiante de escribir en forma simbólica un número que está escrito en forma de texto.",
+      "justificacion_correcta": "«Cuatrocientos siete mil» corresponde a \\(407.000\\) y «trescientos» a \\(300\\); al reunirlos se obtiene \\(407.300\\), con \\(4\\) centenas de mil, \\(7\\) unidades de mil y \\(3\\) centenas.",
+      "opciones_incorrectas": {
+        "B": "Ubica el \\(4\\) en las decenas de mil y escribe \\(47.300\\), un número diez veces menor.",
+        "D": "Escribe «cuatrocientos» \\((400)\\) por separado y le pega «siete mil trescientos»: \\(4.007.300\\).",
+        "C": "Escribe un número por cada palabra y los une sin respetar el valor posicional: \\(4.007.000.300\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q17.png"
+    },
+    {
+      "id": "P3M2-15",
+      "numero": 10,
+      "enunciado": "<p>En el bazar del colegio, los premios de la rifa vienen empacados en cajas del <b>mismo tamaño</b> y con <b>tres diseños</b> distintos, como se ve en la figura. Todas las cajas se echan en un costal y cada participante saca una sin mirar.</p>[[IMG]]<p>¿Cuál de las cajas A, B, C o D es <b>imposible</b> que salga?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
       "competencia": "b",
       "afirmacion": 5,
       "evidencia": "5.1",
@@ -432,29 +309,106 @@
       "dificultad": "MEDIA",
       "estandar": "Explico –desde mi experiencia– la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
       "que_evalua": "La capacidad de identificar eventos imposibles en un experimento aleatorio sencillo.",
-      "justificacion_correcta": "Para que sacar un regalo sea imposible, ese diseño no debe estar en la colección. En la fila hay cajas de lunares, de rayas y de estrellas. El regalo de la opción C tiene un diseño de corazón, que no aparece en ninguna caja, por eso es imposible sacarlo.",
+      "justificacion_correcta": "Un evento es imposible cuando su resultado no está entre los posibles. En el costal solo hay cajas de lunares, de rayas y de estrellas. La caja de la opción D está decorada con corazones, un diseño que no aparece en ninguno de los premios del bazar; por eso no puede salir.",
       "opciones_incorrectas": {
-        "A": "El diseño de estrellas sí está en la fila: es posible sacarlo.",
-        "B": "El diseño de lunares sí está en la fila: es posible sacarlo.",
-        "D": "El diseño de rayas sí está en la fila: es posible sacarlo."
+        "A": "El diseño de estrellas sí está entre los premios del costal: puede salir.",
+        "B": "El diseño de lunares sí está entre los premios del costal: puede salir.",
+        "C": "El diseño de rayas sí está entre los premios del costal: puede salir."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q15.png",
       "opciones_imagenes": {
         "A": "assets/banco-mat-3-p2/q15a.png",
         "B": "assets/banco-mat-3-p2/q15b.png",
-        "C": "assets/banco-mat-3-p2/q15c.png",
-        "D": "assets/banco-mat-3-p2/q15d.png"
+        "D": "assets/banco-mat-3-p2/q15c.png",
+        "C": "assets/banco-mat-3-p2/q15d.png"
       }
     },
     {
-      "id": "P3M2-16",
-      "numero": 16,
-      "enunciado": "<p>Juana tiene cuatro libros. En algunas páginas hay un dibujo de una <b>oruga</b>. La tabla muestra, en cada libro, cuántas páginas tienen oruga sobre el total de páginas. Si Juana abre un libro en una página cualquiera, ¿en cuál es <b>más probable</b> que la página tenga una oruga?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Libro</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Páginas con oruga</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Total de páginas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Libro 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(3\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(7\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Libro 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(2\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Libro 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(1\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(3\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Libro 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(2\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(8\\)</td></tr></table>",
+      "id": "P3M2-01",
+      "numero": 11,
+      "enunciado": "<p>El grupo de danzas del colegio se propuso vender <b>\\(90\\) boletas</b> para la muestra folclórica y lo logró en tres jornadas. <b>Ana Belén</b>, la tesorera, alcanzó a registrar en la tabla las dos primeras jornadas y le falta anotar la tercera. ¿Cuántas boletas vendieron en la <b>tercera</b> jornada?</p><div style=\"max-width:320px;margin:10px auto\"><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jornada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Boletas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jornada 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(24\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jornada 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(31\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jornada 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><b style=\"color:#A8132F\">?</b></td></tr></table></div>",
       "opciones": {
-        "A": "Libro 1.",
-        "B": "Libro 2.",
-        "C": "Libro 3.",
-        "D": "Libro 4."
+        "A": "\\(59\\) boletas.",
+        "B": "\\(66\\) boletas.",
+        "C": "\\(55\\) boletas.",
+        "D": "\\(35\\) boletas."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición y de transformación.",
+      "que_evalua": "La capacidad para resolver problemas aditivos en situaciones cotidianas, en los que hay que hallar el cambio que produjo el resultado.",
+      "justificacion_correcta": "Lo vendido en la tercera jornada es lo que faltaba para completar el total. Primero se suma lo de las jornadas registradas, \\(24 + 31 = 55\\), y luego se descuenta del total: \\(90 - 55 = 35\\) boletas.",
+      "opciones_incorrectas": {
+        "B": "Descuenta solo la primera jornada, \\(90 - 24 = 66\\), y olvida las boletas de la segunda.",
+        "C": "Se queda con la suma de las dos jornadas registradas \\((24 + 31 = 55)\\) y la entrega como respuesta, sin restarla del total.",
+        "A": "Descuenta solo la segunda jornada, \\(90 - 31 = 59\\), y deja por fuera las de la primera."
+      }
+    },
+    {
+      "id": "P3M2-05",
+      "numero": 12,
+      "enunciado": "<p>Mateo, al finalizar de jugar, organiza sus cubos de madera en una caja plástica.</p>[[IMG]]<p>Si cada uno de los cubos tiene un volumen de <b>\\(1 \\ \\text{cm}^3\\)</b> y la caja queda completamente llena al guardarlos, ¿cuál es el <b>volumen total</b> de la caja?</p>",
+      "opciones": {
+        "A": "\\(36 \\ \\text{cm}^3\\)",
+        "B": "\\(24 \\ \\text{cm}^3\\)",
+        "C": "\\(12 \\ \\text{cm}^3\\)",
+        "D": "\\(48 \\ \\text{cm}^3\\)"
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La capacidad para hallar el volumen de un recipiente contando las unidades cúbicas que lo llenan por completo.",
+      "justificacion_correcta": "En cada capa caben \\(4 \\times 3 = 12\\) cubos y la caja tiene \\(3\\) capas, así que se guardan \\(12 \\times 3 = 36\\) cubos. Como cada cubo ocupa \\(1 \\ \\text{cm}^3\\), el volumen de la caja es \\(36 \\ \\text{cm}^3\\).",
+      "opciones_incorrectas": {
+        "C": "Cuenta solo los \\(12\\) cubos que se ven en la capa de arriba y no las capas de abajo.",
+        "D": "Supone \\(4\\) cubos de fondo en lugar de \\(3\\) y calcula \\(4 \\times 4 \\times 3 = 48\\).",
+        "B": "Cuenta únicamente dos capas \\((12 \\times 2 = 24)\\) y deja una sin contar."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q05.png"
+    },
+    {
+      "id": "P3M2-02",
+      "numero": 13,
+      "enunciado": "<p>El comité ambiental del colegio compró varios <b>sobres de calcomanías</b> para marcar las canecas de reciclaje. La tabla resume la compra.</p>[[IMG]]<p>Si en todos los sobres viene la misma cantidad, ¿cuántas calcomanías trae <b>un</b> sobre?</p>",
+      "opciones": {
+        "A": "\\(60\\) calcomanías.",
+        "B": "\\(6\\) calcomanías.",
+        "C": "\\(48\\) calcomanías.",
+        "D": "\\(9\\) calcomanías."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad de resolver situaciones multiplicativas en las que hay que hallar uno de los factores a partir del producto y el otro factor.",
+      "justificacion_correcta": "El total se reparte en partes iguales entre los sobres comprados: \\(54 \\div 6 = 9\\). En cada sobre vienen \\(9\\) calcomanías.",
+      "opciones_incorrectas": {
+        "B": "Repite el número de sobres \\((6)\\) y lo entrega como cantidad de calcomanías.",
+        "A": "Suma en lugar de repartir: \\(54 + 6 = 60\\).",
+        "C": "Resta en lugar de repartir: \\(54 - 6 = 48\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q02.png"
+    },
+    {
+      "id": "P3M2-16",
+      "numero": 14,
+      "enunciado": "<p>En la feria del colegio hay cuatro canastas con bolas y solo las bolas <b>rojas</b> tienen premio. La tabla indica, en cada canasta, cuántas bolas rojas hay y cuántas bolas tiene en total. Si <b>Nicolás</b> escoge una sola canasta y saca una bola sin mirar, ¿en cuál canasta tiene <b>más posibilidad</b> de sacar una bola roja?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Canasta</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Bolas rojas</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Total de bolas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Canasta 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(10\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Canasta 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(3\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(5\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Canasta 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(2\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Canasta 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(5\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(20\\)</td></tr></table>",
+      "opciones": {
+        "A": "Canasta 1.",
+        "B": "Canasta 2.",
+        "C": "Canasta 3.",
+        "D": "Canasta 4."
       },
       "clave": "B",
       "competencia": "b",
@@ -464,50 +418,24 @@
       "dificultad": "MEDIA",
       "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
       "que_evalua": "La capacidad de los estudiantes para establecer la mayor probabilidad de varios eventos de un mismo experimento a partir del número de casos favorables y casos totales.",
-      "justificacion_correcta": "Se compara la razón de páginas con oruga sobre el total: Libro 1: \\(3\\) de \\(7\\); Libro 2: \\(2\\) de \\(4\\) (la mitad); Libro 3: \\(1\\) de \\(3\\); Libro 4: \\(2\\) de \\(8\\) (la cuarta parte). La mayor proporción es \\(2\\) de \\(4\\), en el Libro 2.",
+      "justificacion_correcta": "Hay que comparar las bolas rojas con el total de cada canasta: en la 1 son \\(4\\) de \\(10\\) (menos de la mitad), en la 2 son \\(3\\) de \\(5\\) (más de la mitad), en la 3 son \\(2\\) de \\(6\\) (la tercera parte) y en la 4 son \\(5\\) de \\(20\\) (la cuarta parte). La mayor posibilidad está en la Canasta 2.",
       "opciones_incorrectas": {
-        "A": "El Libro 1 tiene más orugas \\((3)\\), pero sobre más páginas \\((7)\\): proporción menor que \\(2\\) de \\(4\\).",
-        "C": "En el Libro 3 solo \\(1\\) de \\(3\\) páginas tiene oruga: proporción menor.",
-        "D": "En el Libro 4 solo \\(2\\) de \\(8\\) páginas tienen oruga: la proporción más baja."
+        "A": "La Canasta 1 tiene \\(4\\) bolas rojas, pero repartidas entre \\(10\\) bolas: menos de la mitad.",
+        "C": "En la Canasta 3 solo \\(2\\) de \\(6\\) bolas son rojas: la tercera parte.",
+        "D": "La Canasta 4 es la que más bolas rojas tiene \\((5)\\), pero también la que más bolas tiene \\((20)\\): su proporción es la más baja."
       }
     },
     {
-      "id": "P3M2-17",
-      "numero": 17,
-      "enunciado": "<p>Ivón está diligenciando un cheque para retirar dinero. Ya escribió el valor en letras: <i>«<b>Cuatrocientos siete mil trescientos</b>»</i> (ver figura). Ahora debe escribir el mismo valor con <b>números</b>. ¿Cuál es el número que debe colocar?</p>",
-      "opciones": {
-        "A": "\\(47.300\\)",
-        "B": "\\(407.300\\)",
-        "C": "\\(4.007.300\\)",
-        "D": "\\(4.007.000.300\\)"
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso representaciones –principalmente concretas y pictóricas– para realizar equivalencias de un número en las diferentes unidades del sistema decimal.",
-      "que_evalua": "La capacidad del estudiante de escribir en forma simbólica un número que está escrito en forma de texto.",
-      "justificacion_correcta": "«Cuatrocientos siete mil» es \\(407.000\\) y «trescientos» es \\(300\\). El número es \\(407.300\\): \\(4\\) en las centenas de mil, \\(7\\) en las unidades de mil y \\(3\\) en las centenas.",
-      "opciones_incorrectas": {
-        "A": "Confunde las centenas de mil con decenas de mil y escribe \\(47.300\\).",
-        "C": "Separa «cuatrocientos» \\((400)\\) de «siete mil trescientos» y los concatena mal \\((4.007.300)\\).",
-        "D": "Escribe un número para cada palabra y los une sin valor posicional \\((4.007.000.300)\\)."
-      },
-      "imagen_figura": "assets/banco-mat-3-p2/q17.png"
-    },
-    {
       "id": "P3M2-18",
-      "numero": 18,
-      "enunciado": "<p>En un juego aparece el sistema solar de la figura. A cada planeta se le asigna un código según dos reglas: el <b>primer dígito</b> es el orden del planeta según su cercanía al Sol, y los <b>dos siguientes dígitos</b> son el número de lunas del planeta. En el juego, ¿qué significa el código <b>\\(516\\)</b>?</p>",
+      "numero": 15,
+      "enunciado": "<p>En el planetario móvil que visitó el colegio, cada planeta del modelo de la figura lleva una ficha con un código de tres dígitos: el <b>primer dígito</b> indica el puesto que ocupa el planeta contando desde el Sol y los <b>dos dígitos siguientes</b> indican cuántas lunas tiene.</p>[[IMG]]<p>¿Qué información entrega la ficha con el código <b>\\(314\\)</b>?</p>",
       "opciones": {
-        "A": "Que el planeta azul tiene \\(16\\) lunas.",
-        "B": "Que el planeta rosado tiene \\(5\\) lunas.",
-        "C": "Que el planeta azul tiene \\(6\\) lunas.",
-        "D": "Que el planeta rosado tiene \\(15\\) lunas."
+        "A": "El planeta gris tiene \\(13\\) lunas.",
+        "B": "El planeta gris tiene \\(3\\) lunas.",
+        "C": "El planeta rojo tiene \\(4\\) lunas.",
+        "D": "El planeta rojo tiene \\(14\\) lunas."
       },
-      "clave": "A",
+      "clave": "D",
       "competencia": "c",
       "afirmacion": 6,
       "evidencia": "6.1",
@@ -515,18 +443,44 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
       "que_evalua": "La capacidad de relacionar un número con su significado en un contexto de codificación y posición.",
-      "justificacion_correcta": "El primer dígito \\((5)\\) indica el orden: el quinto planeta desde el Sol es el azul. Los dos siguientes dígitos \\((16)\\) indican el número de lunas: \\(16\\) lunas. El código \\(516\\) significa que el planeta azul tiene \\(16\\) lunas.",
+      "justificacion_correcta": "El primer dígito es \\(3\\): contando desde el Sol, el tercer planeta del modelo es el rojo. Los dos dígitos siguientes forman el \\(14\\), que es la cantidad de lunas. La ficha \\(314\\) informa entonces que el planeta rojo tiene \\(14\\) lunas.",
       "opciones_incorrectas": {
-        "B": "Lee el código al revés \\((615)\\) y toma el primer dígito como las lunas: planeta \\(6\\) (rosado) con \\(5\\) lunas.",
-        "C": "Toma solo el último dígito \\((6)\\) como el número de lunas, ignorando el \\(1\\): azul con \\(6\\) lunas.",
-        "D": "Lee al revés \\((615)\\): planeta \\(6\\) (rosado) con \\(15\\) lunas."
+        "C": "Toma solo el último dígito \\((4)\\) como el número de lunas y desconoce el \\(1\\) que lo acompaña.",
+        "A": "Lee el código al revés \\((413)\\) y ubica el cuarto planeta, el gris, con \\(13\\) lunas.",
+        "B": "Lee el código al revés y además toma un solo dígito: cuarto planeta (gris) con \\(3\\) lunas."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q18.png"
     },
     {
+      "id": "P3M2-12",
+      "numero": 16,
+      "enunciado": "<p>Diana dibujó cuatro rectángulos, como se observan en la imagen.</p><p>El área de un rectángulo se obtiene al multiplicar la base por la altura.</p>[[IMG]]<p>¿Qué se puede afirmar sobre las <b>áreas</b> de los rectángulos?</p>",
+      "opciones": {
+        "A": "Las áreas son los números pares, empezando desde \\(2 \\ \\text{cm}^2\\).",
+        "B": "Las áreas son los múltiplos de \\(3\\), empezando desde \\(3 \\ \\text{cm}^2\\).",
+        "C": "Las áreas son los números impares, empezando desde \\(3 \\ \\text{cm}^2\\).",
+        "D": "Las áreas son los múltiplos de \\(4\\), empezando desde \\(4 \\ \\text{cm}^2\\)."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
+      "que_evalua": "La capacidad de los estudiantes para identificar una secuencia numérica proveniente de un contexto geométrico cuya variación genera una seriación simple como son los múltiplos de un número.",
+      "justificacion_correcta": "Todos los rectángulos tienen \\(3\\) cm de altura y las bases miden \\(1, 2, 3\\) y \\(4\\) cm. Las áreas son \\(1 \\times 3 = 3\\), \\(2 \\times 3 = 6\\), \\(3 \\times 3 = 9\\) y \\(4 \\times 3 = 12\\). La secuencia \\(3, 6, 9, 12\\) son los múltiplos de \\(3\\) desde \\(3\\).",
+      "opciones_incorrectas": {
+        "C": "Ve que la primera área es \\(3\\) y supone que siguen los impares \\((3, 5, 7, 9)\\), sin calcular las demás.",
+        "A": "Se fija en las bases y las duplica \\((2, 4, 6, 8)\\) en lugar de multiplicarlas por la altura.",
+        "D": "Toma la base del último rectángulo \\((4)\\) y supone que las áreas van de \\(4\\) en \\(4\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q12.png"
+    },
+    {
       "id": "P3M2-19",
-      "numero": 19,
-      "enunciado": "<p>Marco construyó la cometa de la figura, con varillas de <b>\\(40\\) cm</b> y <b>\\(60\\) cm</b>. ¿Cuál de las cometas A, B, C o D es una figura <b>semejante</b> a la cometa de Marco?</p>",
+      "numero": 17,
+      "enunciado": "<p>Para el festival de cometas del barrio, en el taller de artes se elaboró el modelo de la figura, con varillas de <b>\\(60\\) cm</b> y <b>\\(40\\) cm</b>. Ahora quieren fabricar una versión más pequeña que conserve <b>exactamente la misma forma</b>.</p>[[IMG]]<p>¿Cuál de las cometas A, B, C o D es <b>semejante</b> al modelo?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -541,11 +495,11 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco congruencia y semejanza entre figuras (ampliar, reducir).",
       "que_evalua": "La capacidad de los estudiantes para identificar las características de semejanza entre figuras planas.",
-      "justificacion_correcta": "Dos figuras son semejantes si tienen la <b>misma forma</b> y sus lados son <b>proporcionales</b>. La cometa A tiene la misma forma (lados rectos) y sus varillas \\((20\\) y \\(30\\) cm\\()\\) son la mitad de las de Marco \\((40\\) y \\(60)\\): es semejante.",
+      "justificacion_correcta": "Dos figuras son semejantes cuando tienen la <b>misma forma</b> y sus medidas se reducen o amplían en la <b>misma proporción</b>. La cometa A conserva los lados rectos del modelo y sus varillas miden \\(30\\) cm y \\(20\\) cm, justo la mitad de \\(60\\) cm y \\(40\\) cm: es la versión reducida.",
       "opciones_incorrectas": {
-        "B": "Tiene proporción parecida pero los lados son curvos: cambia la forma, no es semejante.",
-        "C": "Conserva la forma recta, pero \\(20\\) y \\(50\\) no son proporcionales a \\(40\\) y \\(60\\).",
-        "D": "Tiene los lados curvos y achatados: la forma es distinta a la de Marco."
+        "B": "Sus medidas \\((15\\) y \\(10\\) cm\\()\\) sí guardan la proporción, pero los bordes son curvos: la forma cambia.",
+        "C": "Mantiene los bordes rectos, pero \\(50\\) cm y \\(20\\) cm no reducen por igual las varillas de \\(60\\) cm y \\(40\\) cm.",
+        "D": "Es una figura curva y achatada: ni la forma ni las medidas \\((10\\) y \\(20\\) cm\\()\\) corresponden al modelo."
       },
       "imagen_figura": "assets/banco-mat-3-p2/q19_stem.png",
       "opciones_imagenes": {
@@ -556,36 +510,82 @@
       }
     },
     {
-      "id": "P3M2-20",
-      "numero": 20,
-      "enunciado": "<p>Un <b>velero</b> está sobre un lago, como muestra la figura. El agua funciona como un <b>espejo</b>. ¿Cuál de las imágenes A, B, C o D muestra correctamente el <b>reflejo</b> del velero en el agua?</p>",
+      "id": "P3M2-04",
+      "numero": 18,
+      "enunciado": "<p>Mateo está armando una torre con cubos de madera en su habitación. Él sabe que cada cubo mide <b>\\(1 \\ \\text{cm}^3\\)</b> de volumen.</p>[[IMG]]<p>¿Cuál es el <b>volumen total</b> de la torre que armó Mateo?</p>",
       "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "\\(3 \\ \\text{cm}^3\\)",
+        "B": "\\(4 \\ \\text{cm}^3\\)",
+        "C": "\\(10 \\ \\text{cm}^3\\)",
+        "D": "\\(9 \\ \\text{cm}^3\\)"
       },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 7,
-      "evidencia": "7.2",
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
-      "estandar": "Represento el espacio circundante para establecer relaciones espaciales.",
-      "que_evalua": "La capacidad de los estudiantes para establecer el resultado de una reflexión de representaciones pictóricas usuales del entorno.",
-      "justificacion_correcta": "En una reflexión, la línea del agua es el eje: el velero se voltea hacia abajo como en un espejo, de modo que el casco que estaba abajo queda arriba (invertido) y la vela grande sigue inclinada hacia el mismo lado. Eso es lo que muestra la opción C.",
+      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
+      "que_evalua": "La capacidad de los estudiantes para hallar el volumen de un cuerpo contando las unidades cúbicas que lo forman.",
+      "justificacion_correcta": "La torre está formada por \\(9\\) cubos: \\(4\\) en la fila de abajo, \\(3\\) en la siguiente y \\(2\\) más arriba. Como cada cubo ocupa \\(1 \\ \\text{cm}^3\\), el volumen total es \\(9 \\times 1 = 9 \\ \\text{cm}^3\\).",
       "opciones_incorrectas": {
-        "A": "Dibuja el velero igual, sin voltearlo: eso es una traslación, no una reflexión.",
-        "B": "Voltea el velero en el eje equivocado (izquierda-derecha), por eso la vela queda inclinada hacia el lado contrario; eso no es el reflejo en el agua.",
-        "D": "Voltea el velero, pero le cambia el color y el lado de las velas: el reflejo debe conservar los colores tal como están."
+        "B": "Cuenta únicamente los \\(4\\) cubos de la fila de abajo y deja por fuera los que están encima.",
+        "C": "Cuenta un cubo de más: incluye alguno de los que están sueltos en el piso, que no hacen parte de la torre.",
+        "A": "Cuenta los cubos de la segunda fila \\((3)\\) y no el resto de la torre."
       },
-      "imagen_figura": "assets/banco-mat-3-p2/q20.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-3-p2/q20a.png",
-        "B": "assets/banco-mat-3-p2/q20b.png",
-        "C": "assets/banco-mat-3-p2/q20c.png",
-        "D": "assets/banco-mat-3-p2/q20d.png"
-      }
+      "imagen_figura": "assets/banco-mat-3-p2/q04.png"
+    },
+    {
+      "id": "P3M2-13",
+      "numero": 19,
+      "enunciado": "<p>Observa la cantidad de bombillos en cada árbol de izquierda a derecha.</p>[[IMG]]<p>¿Cuál es el <b>patrón</b> que sigue la secuencia?</p>",
+      "opciones": {
+        "A": "Aumenta de \\(3\\) en \\(3\\), porque el total de árboles que se decoraron en el juego es \\(3\\).",
+        "B": "Aumenta de \\(2\\) en \\(2\\), porque a cada árbol se le agregan \\(2\\) bombillos más que al árbol anterior.",
+        "C": "Aumenta de \\(3\\) en \\(3\\), porque a cada árbol se le agregan \\(3\\) bombillos más que al árbol anterior.",
+        "D": "Aumenta de \\(2\\) en \\(2\\), porque el total de árboles que se decoraron en el juego es \\(3\\)."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
+      "que_evalua": "La capacidad del estudiante de expresar el cambio en los términos de una secuencia en una situación aditiva.",
+      "justificacion_correcta": "Los árboles tienen \\(5\\), \\(7\\) y \\(9\\) bombillos. De un árbol al siguiente se agregan siempre \\(2\\) bombillos \\((7-5=2\\) y \\(9-7=2)\\), así que la secuencia aumenta de \\(2\\) en \\(2\\) por esa razón.",
+      "opciones_incorrectas": {
+        "D": "Acierta que aumenta de \\(2\\) en \\(2\\), pero lo explica por la cantidad de árboles y no por los bombillos que se agregan.",
+        "C": "Cuenta mal el aumento: cree que se agregan \\(3\\) bombillos cada vez.",
+        "A": "Se equivoca en las dos cosas: ni el aumento es de \\(3\\) ni depende del número de árboles."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q13.png"
+    },
+    {
+      "id": "P3M2-08",
+      "numero": 20,
+      "enunciado": "<p>En la tienda escolar se lleva el control de las <b>arepas</b> que se venden cada día. Los cinco días de la <b>semana 1</b> quedaron en la gráfica de barras y los de la <b>semana 2</b> en la tabla. Al mirar los <b>diez registros</b> juntos, ¿qué cantidad de arepas se repite <b>más veces</b>?</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día (semana 2)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Arepas vendidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(30\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(45\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(30\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(20\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Día 5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(30\\)</td></tr></table>",
+      "opciones": {
+        "A": "\\(20\\) arepas.",
+        "B": "\\(40\\) arepas.",
+        "C": "\\(30\\) arepas.",
+        "D": "\\(45\\) arepas."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Represento datos relativos a mi entorno usando objetos concretos, pictogramas y diagramas de barras.",
+      "que_evalua": "La capacidad de los estudiantes para identificar la moda de un conjunto de datos representado a partir de dos registros distintos en una situación cotidiana.",
+      "justificacion_correcta": "Reuniendo los diez días, el \\(30\\) aparece \\(5\\) veces (días 3 y 4 de la gráfica y días 1, 3 y 5 de la tabla), el \\(20\\) aparece \\(3\\) veces, el \\(40\\) una vez y el \\(45\\) una vez. El dato que más se repite, la moda, es \\(30\\) arepas vendidas.",
+      "opciones_incorrectas": {
+        "D": "Escoge la mayor cantidad vendida en un día \\((45)\\), que ocurre una sola vez.",
+        "A": "Escoge \\(20\\), que aparece \\(3\\) veces: menos que el \\(30\\).",
+        "B": "Se fija solo en la barra más alta de la gráfica \\((40)\\) y no en cuántas veces se repite cada dato."
+      },
+      "imagen_figura": "assets/banco-mat-3-p2/q08.png"
     }
   ]
 }

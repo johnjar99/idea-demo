@@ -47,90 +47,242 @@
     {
       "id": "P5N201",
       "numero": 1,
-      "enunciado": "<p>Lee la situación y observa la imagen.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Después de una enfermedad tratada con un antibiótico fuerte, Camilo quedó con muy pocas <b>bacterias buenas</b> (microbiota) en el intestino. Esas bacterias ayudan a digerir los alimentos y a defender el cuerpo, así que el médico quiere que Camilo recupere su número. Para lograrlo le arma una dieta con cuatro componentes:</p><p>• <b>Fibra</b> (de frutas, verduras y granos): el cuerpo humano <b>no la digiere</b>, así que llega entera hasta el intestino.<br>• <b>Zinc</b> (de las legumbres): ayuda a producir <b>glóbulos blancos</b>, las células de defensa.<br>• <b>Vitamina C</b> (de los cítricos): refuerza las <b>defensas</b> generales del cuerpo.<br>• <b>Minerales</b> (de los cereales): hacen funcionar mejor el organismo en general.</p></div><p>De los cuatro componentes, ¿cuál es el que <b>de verdad</b> ayuda a Camilo a recuperar sus bacterias buenas, y por qué?</p>",
+      "enunciado": "<p>Lee el caso y observa la imagen.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Doña Amparo terminó un tratamiento largo con antibióticos y en el puesto de salud le explican que casi se quedó sin <b>bacterias buenas</b> (microbiota) en el intestino; esas bacterias ayudan a digerir los alimentos y a defender el cuerpo, de modo que hay que recuperarlas. La nutricionista le arma entonces una minuta en la que entran cuatro componentes: <b>hierro</b> de las lentejas, que ayuda a llevar oxígeno a todo el cuerpo; <b>fibra</b> de frutas, verduras y granos, que el cuerpo humano <b>no digiere</b> y por eso llega entera hasta el intestino; <b>zinc</b> de las semillas, que interviene en la producción de <b>glóbulos blancos</b>, las células de defensa; y <b>vitamina C</b> de la guayaba, que refuerza las <b>defensas</b> generales del organismo.</p>[[IMG]]</div><p>¿Cuál de esos cuatro componentes actúa directamente sobre la microbiota de doña Amparo y por qué razón?</p>",
       "opciones": {
-        "A": "El zinc, porque los glóbulos blancos que produce se transforman luego en nuevas bacterias buenas.",
-        "B": "La fibra, porque llega entera al intestino y allí sirve de alimento a las bacterias buenas, que crecen y se reproducen.",
-        "C": "La vitamina C, porque al subir las defensas del cuerpo aparecen solas más bacterias buenas en el intestino.",
-        "D": "Los minerales, porque al mejorar todo el organismo hacen que las bacterias buenas se multipliquen más rápido."
+        "A": "El zinc, pues los glóbulos blancos que ayuda a producir terminan convirtiéndose en bacterias buenas.",
+        "B": "El hierro, pues al mejorar el transporte de oxígeno en todo el organismo el intestino repone por sí solo las bacterias que perdió.",
+        "C": "La fibra, pues llega entera al intestino y allí las bacterias buenas la aprovechan como alimento.",
+        "D": "La vitamina C, pues con las defensas altas las bacterias buenas reaparecen sin necesidad de ningún alimento."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.1",
       "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes explican la función que cumple una parte de un sistema del cuerpo humano dentro de una situación de salud.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque, de los cuatro componentes, solo la fibra llega entera hasta el intestino (el cuerpo no la digiere) y allí funciona como alimento de las bacterias buenas; con ese alimento disponible, la microbiota crece y se reproduce. El zinc, la vitamina C y los minerales ayudan a las defensas o al organismo en general, pero no son el alimento que necesitan esas bacterias.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes explican la función que cumple un componente dentro de un sistema del cuerpo humano en una situación de salud.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque la fibra es el único de los cuatro componentes que el cuerpo no digiere: llega entera al intestino y allí sirve de alimento a las bacterias buenas, que con ese alimento crecen y se multiplican. El hierro, el zinc y la vitamina C actúan sobre el transporte de oxígeno o sobre las defensas, no sobre la microbiota.",
       "opciones_incorrectas": {
-        "A": "El zinc ayuda a producir glóbulos blancos, que son células de defensa, pero esos glóbulos no se convierten en bacterias buenas: son cosas distintas.",
-        "C": "La vitamina C refuerza las defensas del cuerpo, pero las bacterias buenas no aparecen solas por tener más defensas: necesitan un alimento que las haga crecer.",
-        "D": "Los minerales mejoran el funcionamiento general del organismo, pero no son el alimento propio de las bacterias del intestino, así que no son los que recuperan su número."
+        "B": "El hierro ayuda a transportar oxígeno, pero la microbiota no se repone sola por eso: necesita un alimento propio que llegue hasta el intestino.",
+        "A": "El zinc participa en la producción de glóbulos blancos, que son células de defensa del cuerpo; esas células no se transforman en bacterias.",
+        "D": "La vitamina C refuerza las defensas, pero unas defensas altas no hacen aparecer bacterias buenas: hacen falta nutrientes que ellas puedan aprovechar."
       },
       "componente": "Ciencia, Tecnología y Sociedad",
       "imagen_figura": "assets/banco-cn-5-p2/q01.png"
     },
     {
-      "id": "P5N202",
+      "id": "P5N206",
       "numero": 2,
-      "enunciado": "<p>Observa la línea del descubrimiento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Hace miles de años, los seres humanos aprendieron a <b>producir fuego</b>. Con el tiempo, ese dominio del fuego les permitió calentar metales, fabricar herramientas y cocer los alimentos. La imagen muestra cómo un mismo descubrimiento sirvió de base para lograr cosas nuevas.</p></div><p>De acuerdo con la información, ¿cuál fue la importancia del fuego para el avance de la ciencia?</p>",
+      "enunciado": "<p>Observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la emisora comunitaria de un municipio, don Efraín cuenta que los árboles de la otra orilla del <b>río</b> amanecen amarillos y con las hojas manchadas desde que funciona la <b>fábrica</b>. Un ingeniero ambiental invitado muestra la figura y explica que el humo de la fábrica lleva <b>gases contaminantes</b> que suben hasta las nubes.</p>[[IMG]]</div><p>¿Qué recorrido siguen esos gases hasta terminar dañando los árboles de la otra orilla?</p>",
       "opciones": {
-        "A": "Permitió predecir los cambios del clima al observar el humo que producían las hogueras.",
-        "B": "Permitió fabricar de inmediato la primera bombilla eléctrica para iluminar de noche.",
-        "C": "Permitió transformar los materiales, como calentar y fundir metales para fabricar herramientas.",
-        "D": "Permitió que el ser humano dejara por completo de alimentarse de plantas y frutos."
+        "A": "El humo caliente eleva la temperatura del aire y ese calor es el que quema las hojas.",
+        "B": "Los gases suben, se mezclan con el agua de las nubes y caen convertidos en lluvia ácida.",
+        "C": "Los gases se filtran en el suelo, viajan bajo tierra y salen desde allí hacia las nubes.",
+        "D": "La fábrica vierte agua sucia al río y esa agua sube y se vuelve lluvia ácida."
       },
-      "clave": "C",
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes explican cómo la contaminación del aire puede afectar el ciclo del agua y producir lluvia ácida.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque en la figura los gases contaminantes salen de la fábrica hacia arriba y se mezclan con el agua de la nube; de esa mezcla resulta la lluvia ácida que cae sobre la vegetación de la otra orilla.",
+      "opciones_incorrectas": {
+        "A": "El daño no proviene del calor del humo, sino de los gases que se combinan con el agua de las nubes.",
+        "C": "Según la figura los gases suben directamente por el aire; no atraviesan el suelo para llegar a las nubes.",
+        "D": "El problema que muestra la figura empieza en el humo que sube al aire, no en un vertimiento hecho al río."
+      },
+      "componente": "Ciencia, Tecnología y Sociedad",
+      "imagen_figura": "assets/banco-cn-5-p2/q06.png"
+    },
+    {
+      "id": "P5N214",
+      "numero": 3,
+      "enunciado": "<p>Lee con atención la descripción y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>«Es un <b>insecto social</b> de cuerpo blando y color claro. Vive en colonias muy numerosas dentro de galerías que abre en la madera y en el suelo. Se alimenta de madera y de restos de plantas. La mayoría de sus obreras <b>no tienen alas ni ojos funcionales</b> y se orientan por el tacto y el olfato. <b>No</b> fabrica miel y <b>no</b> posee aguijón.»</p></div><p>¿Qué animal corresponde a esa descripción?</p>",
+      "opciones": {
+        "A": "La hormiga arriera, un insecto social que abre galerías en el suelo.",
+        "B": "La avispa, un insecto social que construye su nido con fibras vegetales.",
+        "C": "La abeja, un insecto social que vive en colonias muy numerosas.",
+        "D": "El comején o termita, un insecto social que se alimenta de madera."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes identifican un ser vivo a partir de la descripción de sus características físicas y sus hábitos.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque solo el comején (o termita) reúne todos los rasgos descritos: cuerpo blando y de color claro, colonias alojadas en galerías abiertas en la madera, alimentación a base de madera y restos vegetales, y obreras sin alas ni ojos funcionales que además no producen miel ni pican.",
+      "opciones_incorrectas": {
+        "C": "La abeja vive en colonias, pero fabrica miel, tiene aguijón y sus obreras vuelan; la descripción niega justamente esas tres cosas.",
+        "A": "La hormiga arriera abre galerías, pero no se alimenta de madera: corta hojas para cultivar un hongo dentro del hormiguero.",
+        "B": "La avispa arma su nido con fibras vegetales masticadas, vuela y tiene aguijón, así que no coincide con lo descrito."
+      },
+      "componente": "Entorno Vivo"
+    },
+    {
+      "id": "P5N205",
+      "numero": 4,
+      "enunciado": "<p>Observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para el periódico mural del club de ciencias, Tomás copió el esquema de la imagen: allí aparecen los tres estados de la materia y los procesos que llevan de uno a otro. Las <b>flechas rojas</b> señalan que la temperatura <b>sube</b> y las <b>azules</b> que la temperatura <b>baja</b>. A Tomás le falta escribir al pie una frase que explique en qué consiste la <b>condensación</b>.</p>[[IMG]]</div><p>¿Qué frase describe correctamente lo que ocurre en la condensación?</p>",
+      "opciones": {
+        "A": "El sólido se vuelve líquido mientras la temperatura sube.",
+        "B": "El líquido se vuelve sólido mientras la temperatura baja.",
+        "C": "El líquido se vuelve gas mientras la temperatura sube.",
+        "D": "El gas se vuelve líquido mientras la temperatura baja."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen el efecto de la temperatura en los cambios de estado de la materia a partir de un esquema.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque en el esquema la condensación es la flecha que va del gas al líquido y está dibujada en azul; según la convención de la imagen, el color azul indica que la temperatura baja.",
+      "opciones_incorrectas": {
+        "B": "Del líquido al sólido con la temperatura bajando es la solidificación; comparte el color azul, pero es otro proceso del esquema.",
+        "C": "Del líquido al gas con la temperatura subiendo es la vaporización, dibujada en rojo.",
+        "A": "Del sólido al líquido con la temperatura subiendo es la fusión, también dibujada en rojo."
+      },
+      "componente": "Entorno Físico",
+      "imagen_figura": "assets/banco-cn-5-p2/q05.png"
+    },
+    {
+      "id": "P5N210",
+      "numero": 5,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una charla sobre los <b>arrecifes de coral</b> del Caribe colombiano, la bióloga invitada explica que el agua cálida y transparente deja pasar la luz, de manera que las algas que viven dentro de los corales alcanzan a hacer <b>fotosíntesis</b>; que las ramas y cavidades de los corales sirven de <b>refugio y de sitio de cría</b> a peces, cangrejos, erizos y caracoles de muchas clases; y que las corrientes marinas renuevan el agua y traen <b>alimento</b> de manera constante.</p></div><p>¿Qué asunto está desarrollando la bióloga con esas tres ideas?</p>",
+      "opciones": {
+        "A": "Las razones por las cuales el arrecife alberga tantas especies distintas.",
+        "B": "La pérdida de especies marinas a causa de la contaminación del agua.",
+        "C": "Los daños que el turismo y la pesca causan en los corales.",
+        "D": "Las consecuencias del aumento de la temperatura del mar sobre las costas."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes relacionan unas condiciones ambientales descritas con la explicación de un fenómeno, en este caso la biodiversidad de un ecosistema.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque los tres puntos describen condiciones favorables —luz que permite la fotosíntesis, refugios para muchas especies y llegada constante de alimento— y esas condiciones son justamente las que explican la enorme variedad de seres vivos del arrecife.",
+      "opciones_incorrectas": {
+        "B": "En la charla no se menciona la contaminación ni la pérdida de especies, sino las condiciones que permiten la vida en el arrecife.",
+        "D": "No se habla del calentamiento del mar ni de sus consecuencias; lo expuesto son condiciones favorables, no problemas.",
+        "C": "No aparece ninguna referencia al turismo o a la pesca; los puntos explican por qué hay tanta vida en ese lugar."
+      },
+      "componente": "Entorno Vivo"
+    },
+    {
+      "id": "P5N215",
+      "numero": 6,
+      "enunciado": "<p>Observa el ciclo del agua y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La imagen muestra cómo circula el agua: del <b>lago</b> sube <b>vapor</b>, se forman las <b>nubes</b>, cae la <b>lluvia</b> y el agua regresa al lago. Una fábrica instalada en la orilla suelta <b>humo</b> hacia las nubes y, además, descarga <b>residuos</b> en el lago. La brigada ecológica del colegio prepara una carta para el concejo municipal advirtiendo lo que puede ocurrir.</p>[[IMG]]</div><p>¿Qué consecuencia deberían señalar los estudiantes en esa carta?</p>",
+      "opciones": {
+        "A": "Que el lago se calentará demasiado, y solo por el humo que la fábrica manda a las nubes.",
+        "B": "Que el agua lluvia arrastrará residuos dañinos y afectará a las plantas de los alrededores.",
+        "C": "Que sobre la zona lloverá mucho menos por causa de los residuos descargados en el lago.",
+        "D": "Que los peces del lago crecerán más porque los residuos les servirán de alimento."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes explican cómo los residuos de origen humano alteran un ciclo natural y producen un efecto sobre el ambiente.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque los residuos entran al ciclo del agua: el agua del lago se evapora, forma nubes y vuelve a caer como lluvia llevando consigo sustancias dañinas que llegan al suelo y a las plantas de la zona.",
+      "opciones_incorrectas": {
+        "C": "Nada indica que vaya a llover menos; el ciclo del agua sigue funcionando y lo que cambia es la calidad del agua.",
+        "A": "El humo aporta gases a las nubes, pero el problema que muestra la imagen no se reduce a un calentamiento del lago.",
+        "D": "Los residuos de una fábrica no son alimento para los peces: al contrario, ponen en riesgo su vida."
+      },
+      "componente": "Ciencia, Tecnología y Sociedad",
+      "imagen_figura": "assets/banco-cn-5-p2/q15.png"
+    },
+    {
+      "id": "P5N216",
+      "numero": 7,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mateo sostiene que los <b>músculos</b> «se forman en el momento en que uno hace fuerza y se deshacen apenas uno descansa». Después consulta su libro de Ciencias y lee que los músculos son órganos <b>permanentes</b>, unidos a los huesos por los <b>tendones</b>, y que producen el movimiento al <b>contraerse y relajarse</b> siguiendo las órdenes que les llegan por los nervios.</p></div><p>Con lo que dice el libro, ¿cómo tendría que reformular Mateo su idea?</p>",
+      "opciones": {
+        "A": "Los músculos se forman cuando uno hace fuerza y se deshacen cuando uno descansa.",
+        "B": "Los músculos solamente rellenan el espacio que queda entre los huesos y no intervienen en el movimiento.",
+        "C": "Los músculos existen únicamente mientras el nervio envía la orden y desaparecen cuando esa orden cesa.",
+        "D": "Los músculos son órganos permanentes unidos a los huesos, que generan movimiento al contraerse y relajarse."
+      },
+      "clave": "D",
       "competencia": "c",
       "afirmacion": 2,
       "evidencia": "2.1",
       "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen la importancia de la evolución temporal de un descubrimiento para la ciencia.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque dominar el fuego permitió transformar materiales (calentar y fundir metales) y fabricar herramientas nuevas; ese control del calor abrió paso a procesos que más adelante la ciencia estudiaría y aprovecharía.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes ajustan o corrigen una afirmación a partir de una nueva evidencia obtenida de una fuente confiable.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque recoge lo que dice el libro: los músculos son órganos permanentes, están sujetos a los huesos por los tendones y producen el movimiento contrayéndose y relajándose; no se forman ni se deshacen según la actividad.",
       "opciones_incorrectas": {
-        "A": "El clima no se predice observando el humo de una hoguera; eso depende de otros estudios y del fuego no surgió esa capacidad.",
-        "B": "La bombilla eléctrica apareció miles de años después y nació del estudio de la electricidad, no del descubrimiento del fuego.",
-        "D": "El fuego permitió cocer y aprovechar mejor los alimentos, pero no hizo que el ser humano dejara de comer plantas y frutos."
+        "B": "El libro precisa que los músculos producen el movimiento, así que no son un simple relleno entre los huesos.",
+        "C": "Lo que llega y cesa es la orden nerviosa, no el músculo: este permanece en su lugar aunque no esté trabajando.",
+        "A": "Esa es exactamente la idea que Mateo debe corregir; el libro muestra que los músculos son estructuras permanentes."
+      },
+      "componente": "Entorno Vivo"
+    },
+    {
+      "id": "P5N202",
+      "numero": 8,
+      "enunciado": "<p>Observa la secuencia y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la sala de arqueología de un museo hay un panel como el de la imagen. El texto que lo acompaña dice que, después de aprender a <b>producir la chispa</b>, los grupos humanos pudieron calentar metales, forjar herramientas y cocer sus alimentos, y que cada logro sirvió de base para el siguiente.</p>[[IMG]]</div><p>Según la información del panel, ¿qué aporte del dominio del fuego resultó decisivo para el desarrollo posterior de la ciencia?</p>",
+      "opciones": {
+        "A": "Que se pudieran anticipar las lluvias y las sequías observando el humo de las hogueras.",
+        "B": "Que se pudiera transformar la materia, por ejemplo calentando y fundiendo metales.",
+        "C": "Que los grupos humanos dejaran de vivir juntos, pues cada persona podía hacer su propio fuego.",
+        "D": "Que se pudieran construir enseguida los primeros motores y máquinas de vapor."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen la importancia que tuvo, para la ciencia, la evolución de un descubrimiento a lo largo del tiempo.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque controlar el fuego permitió actuar sobre los materiales: calentarlos, fundirlos y darles otra forma. Esa capacidad de transformar la materia es la base de procesos que la ciencia estudiaría y aprovecharía mucho después.",
+      "opciones_incorrectas": {
+        "D": "Las máquinas de vapor se construyeron miles de años más tarde y surgieron del estudio del calor y la presión, no del hallazgo del fuego.",
+        "A": "El humo de una hoguera no permite anticipar lluvias ni sequías; esas predicciones dependen de otro tipo de observaciones.",
+        "C": "El fuego no dispersó a los grupos humanos: la hoguera fue más bien un punto de reunión y de trabajo compartido."
       },
       "componente": "Entorno Físico",
       "imagen_figura": "assets/banco-cn-5-p2/q02.png"
     },
     {
-      "id": "P5N203",
-      "numero": 3,
-      "enunciado": "<p>Lee la situación y observa la tabla de resultados.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una investigadora leyó que el ejercicio físico puede ayudar a dormir más horas. Para comprobarlo, formó dos grupos de personas que dormían poco (unas <b>5,5 horas</b> por noche). Un grupo hizo el <b>Ejercicio 1</b> y el otro el <b>Ejercicio 2</b>, cada uno durante una semana. Antes y después midió cuántas <b>horas de sueño</b> dormía cada grupo y lo anotó en la tabla.</p></div><p>De acuerdo únicamente con los datos de la tabla, ¿a qué conclusión válida puede llegar la investigadora?</p>",
+      "id": "P5N211",
+      "numero": 9,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la huerta escolar hay un gotero que pierde agua. Para saber cuánta se desperdicia, Sofía coloca debajo un <b>frasco graduado</b> y lo deja allí toda la jornada. Al final debe anotar el resultado en la bitácora del grupo con la <b>unidad</b> que corresponde a lo que midió.</p></div><p>¿Con qué unidad debe registrar Sofía el agua que cayó en el frasco?</p>",
       "opciones": {
-        "A": "Que cualquiera de los dos ejercicios sirve igual para dormir más horas.",
-        "B": "Que ninguno de los dos ejercicios sirvió para dormir más horas.",
-        "C": "Que el Ejercicio 2 fue el que aumentó las horas de sueño en una semana.",
-        "D": "Que el Ejercicio 1 fue el que aumentó las horas de sueño en una semana."
+        "A": "En mililitros (mL), que sirven para el volumen de los líquidos.",
+        "B": "En metros (m), que sirven para longitudes.",
+        "C": "En centímetros cuadrados (cm²), que sirven para superficies.",
+        "D": "En horas (h), que sirven para el tiempo."
       },
-      "clave": "D",
+      "clave": "A",
       "competencia": "c",
-      "afirmacion": 2,
-      "evidencia": "2.2",
+      "afirmacion": 6,
+      "evidencia": "6.1",
       "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes obtienen conclusiones correctas a partir de los datos de una tabla.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque, según los datos, con el Ejercicio 1 las horas de sueño pasaron de 5,5 a 7,5 (subieron), mientras que con el Ejercicio 2 siguieron en 5,5 (no cambiaron). La única conclusión que sostienen los datos es que el Ejercicio 1 fue el que aumentó las horas de sueño.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes eligen la unidad de medida adecuada para registrar una magnitud física.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque lo que Sofía midió es la cantidad de agua acumulada, es decir un <b>volumen</b>, y el mililitro es la unidad de volumen apropiada para la poca agua que cabe en un frasco graduado.",
       "opciones_incorrectas": {
-        "A": "Los dos ejercicios no dieron el mismo resultado: con el 2 las horas de sueño no cambiaron, así que no sirven igual.",
-        "B": "Sí hubo un ejercicio que aumentó las horas de sueño (el 1, que pasó de 5,5 a 7,5 h); por eso no es válido decir que ninguno sirvió.",
-        "C": "Con el Ejercicio 2 las horas de sueño se quedaron en 5,5; no fue el que produjo el aumento."
+        "B": "El metro sirve para medir longitudes o distancias, no la cantidad de líquido recogido.",
+        "C": "El centímetro cuadrado mide superficies o áreas, que es una magnitud distinta.",
+        "D": "La hora mide cuánto duró la jornada, no cuánta agua se acumuló en el frasco."
       },
-      "componente": "Ciencia, Tecnología y Sociedad",
-      "imagen_figura": "assets/banco-cn-5-p2/q03.png"
+      "componente": "Entorno Físico"
     },
     {
       "id": "P5N204",
-      "numero": 4,
-      "enunciado": "<p>Observa los dos grupos de objetos y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una salida de campo, los estudiantes recogieron varios objetos y los separaron en dos grupos, como se ve en la imagen. El <b>Grupo 1</b> tiene una hoja, una semilla, una pluma, una concha y una rama; el <b>Grupo 2</b> tiene una botella, un vaso, una cuchara y un frasco.</p></div><p>¿Cuál es la característica que hace diferentes a los dos grupos?</p>",
+      "numero": 10,
+      "enunciado": "<p>Observa las dos vitrinas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Los vigías ambientales de una escuela recorrieron la orilla de una quebrada recogiendo lo que encontraron a su paso. Al volver, organizaron el material en dos vitrinas del museo escolar: en una quedaron una hoja, una semilla, una pluma, una concha y una rama; en la otra, una botella, un vaso, una cuchara y un frasco.</p>[[IMG]]</div><p>¿Qué criterio usaron los vigías para separar el material en esas dos vitrinas?</p>",
       "opciones": {
-        "A": "El Grupo 1 son objetos de origen natural y el Grupo 2 son objetos fabricados por el ser humano.",
-        "B": "El Grupo 1 son objetos que se pueden reutilizar y el Grupo 2 son objetos que no se pueden reutilizar.",
-        "C": "El Grupo 1 proviene solo de plantas y el Grupo 2 proviene solo del plástico.",
-        "D": "El Grupo 1 son objetos blandos y el Grupo 2 son objetos duros."
+        "A": "Que lo del Grupo 1 se originó en la naturaleza y lo del Grupo 2 lo fabricaron las personas.",
+        "B": "Que lo del Grupo 1 es blando y lo del Grupo 2 es duro.",
+        "C": "Que lo del Grupo 1 sale únicamente de plantas y lo del Grupo 2 es únicamente plástico.",
+        "D": "Que lo del Grupo 1 puede volver a usarse y lo del Grupo 2 ya no sirve para nada más."
       },
       "clave": "A",
       "competencia": "b",
@@ -139,436 +291,284 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes comparan dos conjuntos de objetos y reconocen el criterio que los diferencia (de origen natural o elaborados por el ser humano).",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque los objetos del Grupo 1 (hoja, semilla, pluma, concha, rama) provienen de la naturaleza, mientras que los del Grupo 2 (botella, vaso, cuchara, frasco) fueron elaborados por el ser humano con plástico, vidrio o metal.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque la hoja, la semilla, la pluma, la concha y la rama se formaron en la naturaleza, mientras que la botella, el vaso, la cuchara y el frasco fueron elaborados por el ser humano con plástico, vidrio o metal. Ese es el criterio que separa las dos vitrinas.",
       "opciones_incorrectas": {
-        "B": "Muchos objetos de los dos grupos se pueden reutilizar; ese criterio no separa los grupos.",
-        "C": "La pluma y la concha son de origen animal, no vegetal; y el Grupo 2 no es solo plástico (hay vidrio y metal).",
-        "D": "En ambos grupos hay objetos blandos y duros, así que la dureza no es lo que los diferencia."
+        "B": "En las dos vitrinas hay cosas blandas y cosas duras: la rama y la concha son duras, así que la dureza no separa los grupos.",
+        "C": "La pluma y la concha provienen de animales, no de plantas; y en el segundo grupo hay vidrio y metal además de plástico.",
+        "D": "Casi todo lo que aparece en las dos vitrinas puede reutilizarse, de modo que ese no fue el criterio empleado."
       },
       "componente": "Ciencia, Tecnología y Sociedad",
       "imagen_figura": "assets/banco-cn-5-p2/q04.png"
     },
     {
-      "id": "P5N205",
-      "numero": 5,
-      "enunciado": "<p>Observa el esquema de los cambios de estado y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El esquema muestra los tres estados de la materia (sólido, líquido y gas) y los cuatro procesos que los unen. Las <b>flechas rojas</b> indican que la temperatura <b>sube</b> y las <b>flechas azules</b> que la temperatura <b>baja</b>. La profesora pide ubicar el proceso de <b>condensación</b> en el esquema y deducir qué ocurre en él.</p></div><p>Según el esquema, ¿qué cambio de estado y de temperatura ocurre durante la <b>condensación</b>?</p>",
-      "opciones": {
-        "A": "El líquido pasa a gas y la temperatura sube.",
-        "B": "El gas pasa a líquido y la temperatura baja.",
-        "C": "El sólido pasa a líquido y la temperatura sube.",
-        "D": "El líquido pasa a sólido y la temperatura baja."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen el efecto de la temperatura en los cambios de estado de la materia a partir de un esquema.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque en el esquema la condensación une el gas con el líquido (gas → líquido) y está dibujada con una flecha azul; según la convención, la flecha azul significa que la temperatura baja.",
-      "opciones_incorrectas": {
-        "A": "El paso de líquido a gas con la temperatura subiendo (flecha roja) es la vaporización, no la condensación.",
-        "C": "El paso de sólido a líquido al subir la temperatura (flecha roja) es la fusión, no la condensación.",
-        "D": "El paso de líquido a sólido al bajar la temperatura es la solidificación; aunque la temperatura también baja, no es el proceso preguntado."
-      },
-      "componente": "Entorno Físico",
-      "imagen_figura": "assets/banco-cn-5-p2/q05.png"
-    },
-    {
-      "id": "P5N206",
-      "numero": 6,
-      "enunciado": "<p>Observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cerca de un pueblo se instaló una fábrica que arroja <b>gases contaminantes</b> al aire en forma de humo. Esos gases suben hasta las nubes, donde se mezclan con el agua. Tiempo después, en una zona verde que está al otro lado del río, las plantas comenzaron a dañarse por la <b>lluvia ácida</b>, como muestra la imagen.</p></div><p>De acuerdo con la figura, ¿cómo producen lluvia ácida los gases de la fábrica?</p>",
-      "opciones": {
-        "A": "La fábrica arroja agua sucia al río y esa agua se convierte en lluvia ácida.",
-        "B": "El humo de la fábrica calienta el aire y el calor produce la lluvia ácida.",
-        "C": "Los gases contaminantes suben y se mezclan con el agua de las nubes, y así forman lluvia ácida.",
-        "D": "Los gases se meten en el suelo y desde allí suben hasta las nubes como lluvia ácida."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes explican cómo la contaminación del aire puede afectar el ciclo del agua y producir lluvia ácida.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque, según la figura, los gases contaminantes suben hasta las nubes y se mezclan con el agua que hay en ellas; esa mezcla forma la lluvia ácida que luego cae sobre la zona verde.",
-      "opciones_incorrectas": {
-        "A": "El problema empieza por el humo que sube al aire, no por agua sucia arrojada al río.",
-        "B": "La lluvia ácida no se forma por el calor, sino porque los gases se mezclan con el agua de las nubes.",
-        "D": "Los gases suben directamente al aire como humo; no salen del suelo hacia las nubes."
-      },
-      "componente": "Ciencia, Tecnología y Sociedad",
-      "imagen_figura": "assets/banco-cn-5-p2/q06.png"
-    },
-    {
-      "id": "P5N207",
-      "numero": 7,
-      "enunciado": "<p>Lee la situación y observa el circuito.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El circuito de la imagen tiene una <b>batería</b>, un <b>cable</b>, un <b>fusible</b> y tres <b>bombillos LED</b>. El fusible es una pieza que se <b>quema y corta el paso de corriente</b> cuando pasa demasiada electricidad, para proteger el circuito. Daniela conecta el circuito: los LED encienden un instante y enseguida se apagan todos a la vez. Ella piensa cambiar solo el fusible.</p></div><p>¿Es correcto cambiar solo el fusible para resolver el problema?</p>",
-      "opciones": {
-        "A": "Sí, porque el fusible es el que produce la corriente eléctrica que necesitan los tres bombillos LED.",
-        "B": "Sí, porque el fusible es la única pieza del circuito que todavía no se ha revisado ni reemplazado.",
-        "C": "No, porque seguramente los tres bombillos LED se fundieron todos al mismo tiempo y hay que cambiarlos.",
-        "D": "No, porque si el fusible se quemó hubo una sobrecarga, y si no se busca su causa volverá a quemarse."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen la función de un fusible dentro de un circuito y argumentan la causa de un daño.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque los LED sí encendieron un instante, lo que muestra que el circuito funcionaba; al apagarse de golpe, lo más probable es que el fusible se quemara por una sobrecarga. Si solo se cambia el fusible sin buscar qué causa esa sobrecarga, el nuevo fusible volverá a quemarse.",
-      "opciones_incorrectas": {
-        "A": "El fusible no produce corriente: su función es cortar el paso cuando hay demasiada, para proteger el circuito.",
-        "B": "Que no se haya revisado no garantiza que sea la solución; el fusible se quemó por una causa que aún hay que encontrar.",
-        "C": "Los bombillos encendieron un instante, así que no estaban fundidos; el que falló fue el fusible por una sobrecarga."
-      },
-      "componente": "Entorno Físico",
-      "imagen_figura": "assets/banco-cn-5-p2/q07.png"
-    },
-    {
-      "id": "P5N208",
-      "numero": 8,
-      "enunciado": "<p>Observa el modelo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un profesor explica que los glaciares de las montañas se están derritiendo. Para mostrarlo usa el modelo de la imagen: una barra de temperatura que va de <b>baja</b> a <b>alta</b>, con la materia en estado sólido, líquido y gaseoso. A baja temperatura las partículas están ordenadas (sólido); al subir la temperatura se mueven más y la materia pasa a líquido y luego a gas.</p></div><p>Según el modelo, ¿por qué la temperatura del entorno está derritiendo los glaciares?</p>",
-      "opciones": {
-        "A": "Porque al bajar la temperatura el hielo (sólido) se mantiene firme y no llega a derretirse nunca.",
-        "B": "Porque al subir la temperatura el hielo (sólido) pasa a agua (líquido) y puede llegar a evaporarse.",
-        "C": "Porque al subir la temperatura disminuye la posibilidad de que el hielo sólido se derrita en agua.",
-        "D": "Porque al bajar la temperatura el hielo pasa directamente de sólido a estado gaseoso, sin ser agua."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes explican, usando un modelo, cómo la temperatura del entorno afecta el estado de la materia, en este caso el deshielo de los glaciares.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque, según el modelo, al aumentar la temperatura las partículas del hielo (sólido) se mueven más y la materia pasa a líquido, y con más temperatura puede pasar a gas; por eso los glaciares se derriten.",
-      "opciones_incorrectas": {
-        "A": "Si la temperatura bajara, el hielo se mantendría sólido; el deshielo ocurre porque la temperatura sube.",
-        "C": "Es lo contrario: al subir la temperatura aumenta, no disminuye, la posibilidad de que el hielo se derrita.",
-        "D": "Para pasar a gas hace falta más calor, no menos; al bajar la temperatura el hielo no se evapora."
-      },
-      "componente": "Entorno Físico",
-      "imagen_figura": "assets/banco-cn-5-p2/q08.png"
-    },
-    {
-      "id": "P5N209",
-      "numero": 9,
-      "enunciado": "<p>Observa el experimento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Ingrid usa <b>la misma esfera</b>, de densidad \\(1{,}2\\ \\text{g/cm}^3\\), y la deja caer en tres líquidos distintos. Estos son los datos y lo que observó:</p><p>• En el <b>Líquido 1</b> (\\(1{,}0\\ \\text{g/cm}^3\\)) la esfera se fue <b>al fondo</b>.<br>• En el <b>Líquido 2</b> (\\(1{,}5\\ \\text{g/cm}^3\\)) la esfera <b>flotó</b> en la superficie.</p><p>Ahora Ingrid quiere predecir qué ocurrirá en el <b>Líquido 3</b>, cuya densidad es \\(1{,}8\\ \\text{g/cm}^3\\), antes de hacer la prueba.</p></div><p>Comparando las densidades, ¿qué resultado debe esperar Ingrid en el Líquido 3?</p>",
-      "opciones": {
-        "A": "La esfera quedará flotando justo en la mitad del líquido, sin subir ni bajar.",
-        "B": "La esfera se hundirá hasta el fondo, como ocurrió en el Líquido 1.",
-        "C": "La esfera flotará en la superficie, como ocurrió en el Líquido 2.",
-        "D": "La esfera quedará justo debajo de la superficie, sin asomar nada por encima."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes infieren si un objeto flota o se hunde comparando la densidad del objeto con la del líquido, a partir de unos datos.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque un objeto flota cuando es <b>menos denso</b> que el líquido. La esfera (\\(1{,}2\\)) es más densa que el Líquido 1 (\\(1{,}0\\)) y por eso se hundió; pero es menos densa que el Líquido 2 (\\(1{,}5\\)) y que el Líquido 3 (\\(1{,}8\\)). Como el Líquido 3 es aún más denso que el 2, la esfera también flotará en él, igual que en el Líquido 2.",
-      "opciones_incorrectas": {
-        "A": "Quedar a media altura ocurriría solo si la esfera y el líquido tuvieran la misma densidad; aquí el líquido es más denso, así que la esfera sube y flota.",
-        "B": "Al fondo se iría si la esfera fuera más densa que el líquido (como pasó en el Líquido 1); pero el Líquido 3 es más denso que la esfera, así que ocurre lo contrario.",
-        "D": "Si la esfera es menos densa que el líquido, no se queda sumergida: emerge y parte de ella sobresale por encima de la superficie."
-      },
-      "componente": "Entorno Físico",
-      "imagen_figura": "assets/banco-cn-5-p2/q09.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-5-p2/q09_opA.png",
-        "B": "assets/banco-cn-5-p2/q09_opB.png",
-        "C": "assets/banco-cn-5-p2/q09_opC.png",
-        "D": "assets/banco-cn-5-p2/q09_opD.png"
-      }
-    },
-    {
-      "id": "P5N210",
-      "numero": 10,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una charla sobre los manglares del Pacífico colombiano se resaltan estos puntos:</p><p>• La unión entre el agua dulce del río y el agua salada del mar genera <b>una gran variedad de ambientes</b> (hábitats) para vivir.<br>• Allí coexisten muchas especies de plantas, peces, cangrejos y aves que se <b>adaptan</b> a esos distintos ambientes.<br>• El agua tibia, la alta humedad y los <b>nutrientes</b> que arrastra el río favorecen el crecimiento y la reproducción de numerosos seres vivos.</p></div><p>De acuerdo con la información, ¿cuál de los siguientes aspectos se está explicando en la charla?</p>",
-      "opciones": {
-        "A": "Las consecuencias del cambio climático sobre las costas colombianas.",
-        "B": "Los daños que la actividad humana causa en los manglares.",
-        "C": "La desaparición de especies por la contaminación del mar.",
-        "D": "Las causas que explican la gran biodiversidad de los manglares."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes relacionan unas condiciones ambientales descritas con la explicación de un fenómeno, en este caso la biodiversidad de un ecosistema.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque los tres puntos describen condiciones favorables (variedad de hábitats, agua tibia, humedad y nutrientes) que permiten que prosperen muchas especies; esas son precisamente las causas que explican la gran biodiversidad del manglar.",
-      "opciones_incorrectas": {
-        "A": "La charla no trata las consecuencias del cambio climático, sino las condiciones que explican por qué hay tanta vida en el manglar.",
-        "B": "No se mencionan daños provocados por las personas; se exponen las condiciones que favorecen la biodiversidad.",
-        "C": "No se habla de desaparición de especies ni de contaminación, sino de las causas de la biodiversidad."
-      },
-      "componente": "Entorno Vivo"
-    },
-    {
-      "id": "P5N211",
-      "numero": 11,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la temporada de lluvias, Mariana coloca un balde al aire libre para saber <b>qué cantidad de agua</b> recoge durante un día. Para registrarlo en su cuaderno de campo necesita expresar esa cantidad con la <b>unidad de medida</b> que corresponde a la magnitud que está midiendo.</p></div><p>¿En qué unidad debe expresar Mariana la cantidad de agua que recoge?</p>",
-      "opciones": {
-        "A": "En centímetros cuadrados (cm²), porque mide superficies.",
-        "B": "En horas (h), porque mide el tiempo que dura la lluvia.",
-        "C": "En metros (m), porque mide distancias.",
-        "D": "En mililitros (mL), porque mide el volumen de un líquido."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes eligen la unidad de medida adecuada para registrar una magnitud física.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque la cantidad de agua recogida corresponde a un <b>volumen</b> (la magnitud de un líquido), y el mililitro (mL) es una unidad de volumen; por eso es la unidad adecuada para anotar cuánta agua recolectó.",
-      "opciones_incorrectas": {
-        "A": "El centímetro cuadrado mide superficies o áreas, no el volumen de un líquido.",
-        "B": "La hora mide tiempo, no la cantidad de agua recogida.",
-        "C": "El metro mide longitudes o distancias, no el volumen de un líquido."
-      },
-      "componente": "Entorno Físico"
-    },
-    {
-      "id": "P5N212",
-      "numero": 12,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de estudiantes va a una salida de campo a un <b>páramo</b> para investigar <b>cómo se adaptan sus animales</b> al frío intenso y al viento. Para lograrlo deben recoger información que les permita <b>relacionar las características de los animales</b> (rasgos del cuerpo y comportamiento) con las condiciones ambientales del lugar donde viven.</p></div><p>¿Cuál de los siguientes procedimientos les será más útil para responder su pregunta de investigación?</p>",
-      "opciones": {
-        "A": "Observar y registrar los rasgos del cuerpo y el comportamiento de los animales en su propio ambiente.",
-        "B": "Analizar en el laboratorio de qué minerales está compuesto el suelo del páramo donde habitan los animales.",
-        "C": "Medir solo la temperatura y la humedad del aire del páramo, sin observar ni registrar a los animales.",
-        "D": "Medir únicamente el tamaño de las patas de un solo animal capturado en el páramo, sin ver a los demás."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes eligen el procedimiento experimental adecuado para responder una pregunta de investigación.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la adaptación se manifiesta en los rasgos del cuerpo y el comportamiento de los animales; observarlos y registrarlos en su ambiente es lo que permite relacionar esas características con las condiciones del páramo, que es justo el objetivo de la investigación.",
-      "opciones_incorrectas": {
-        "B": "Conocer los minerales del suelo no aporta información sobre cómo se adaptan los animales al frío y al viento.",
-        "C": "Medir solo las variables del aire, sin observar a los animales, no permite relacionar sus características con el ambiente.",
-        "D": "Medir solo las patas de un animal es una muestra demasiado pobre para explicar la adaptación de los animales del páramo."
-      },
-      "componente": "Entorno Vivo"
-    },
-    {
-      "id": "P5N213",
-      "numero": 13,
-      "enunciado": "<p>Lee la situación y observa la imagen de los tipos de raíz.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una red social, Valentina lee: «Los cactus del desierto tienen raíces <b>largas y profundas</b> que bajan a buscar agua bajo la tierra». Después, en un libro de botánica encuentra la imagen de los tipos de raíz y lee: «Las plantas de zonas muy secas, como los cactus, tienen raíces <b>cortas y extendidas cerca de la superficie</b> (Tipo 1), para aprovechar rápido la poca lluvia».</p></div><p>De acuerdo con el libro, ¿es verdadera la afirmación de la red social?</p>",
-      "opciones": {
-        "A": "No, porque el libro muestra que los cactus tienen raíces cortas y superficiales, no largas y profundas.",
-        "B": "Sí, porque todas las raíces crecen siempre lo más profundo posible buscando el agua bajo la tierra.",
-        "C": "No, porque los cactus guardan toda el agua en el tallo y por eso no necesitan tener ninguna raíz.",
-        "D": "Sí, porque la imagen del libro muestra justo las raíces largas y profundas que describe la red social."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes valoran la veracidad de una afirmación comparándola con una fuente científica confiable.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque el libro (fuente confiable) indica que los cactus tienen raíces cortas y superficiales (Tipo 1); eso contradice la afirmación de la red social de que serían largas y profundas.",
-      "opciones_incorrectas": {
-        "B": "No es cierto que todas las raíces vayan siempre a lo más profundo; las del cactus son superficiales.",
-        "C": "El cactus sí tiene raíces (son un órgano vital); el error está en decir que son largas y profundas.",
-        "D": "La imagen y el texto del libro muestran raíces cortas para los cactus, no las largas que dice la red social."
-      },
-      "componente": "Entorno Vivo",
-      "imagen_figura": "assets/banco-cn-5-p2/q13.png"
-    },
-    {
-      "id": "P5N214",
-      "numero": 14,
-      "enunciado": "<p>Lee con atención la descripción del animal y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>«Es un <b>mamífero</b> pequeño, de pelaje suave color pardo y orejas notorias. Sus patas de atrás son mucho más largas y fuertes que las de adelante, lo que le permite avanzar a saltos para escapar rápido de sus depredadores. Vive en zonas abiertas de pastos y matorrales, se alimenta de hierbas y se esconde en madrigueras que cava. <b>No</b> tiene caparazón ni alas.»</p></div><p>Según la descripción, ¿a qué animal corresponde?</p>",
-      "opciones": {
-        "A": "A un armadillo, un mamífero que cava madrigueras en zonas de pastos.",
-        "B": "A una liebre, un mamífero que avanza a saltos gracias a sus patas traseras largas.",
-        "C": "A un murciélago, un mamífero pequeño de orejas notorias y hábitos en la oscuridad.",
-        "D": "A una ardilla, un mamífero pardo y pequeño que vive entre la vegetación."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes identifican un ser vivo a partir de la descripción de sus características físicas y hábitos.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque las patas traseras largas y fuertes que permiten avanzar a saltos, junto con el pelaje pardo, el hábitat de pastos y la alimentación a base de hierbas, son rasgos propios de la liebre.",
-      "opciones_incorrectas": {
-        "A": "El armadillo sí cava madrigueras, pero tiene un caparazón de placas óseas y no se desplaza a saltos; la descripción dice que el animal no tiene caparazón.",
-        "C": "El murciélago es un mamífero, pero se desplaza volando con alas y no tiene patas traseras largas para saltar; la descripción aclara que no tiene alas.",
-        "D": "La ardilla es pequeña y parda, pero trepa y corre por los árboles; no avanza a grandes saltos con patas traseras largas como las descritas."
-      },
-      "componente": "Entorno Vivo"
-    },
-    {
-      "id": "P5N215",
-      "numero": 15,
-      "enunciado": "<p>Observa la imagen del ciclo del agua y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La imagen muestra el ciclo del agua: el agua del lago se evapora, forma nubes, cae como lluvia y vuelve al lago. Cerca se instaló una fábrica que <b>echa humo a las nubes</b> y, además, <b>vierte residuos al lago</b>. Esos residuos entran al ciclo del agua.</p></div><p>De acuerdo con la imagen, ¿cuál es un efecto de los residuos de la fábrica?</p>",
-      "opciones": {
-        "A": "Los peces del lago tendrán más alimento y crecerán mejor gracias a los residuos de la fábrica.",
-        "B": "Lloverá mucho menos sobre la zona por culpa de los residuos que la fábrica vierte al lago.",
-        "C": "El lago se calentará demasiado solo por el humo que la fábrica echa hacia las nubes.",
-        "D": "El agua lluvia llevará residuos dañinos del lago y afectará a las plantas de toda la zona."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes explican cómo los residuos de origen humano alteran un ciclo natural y producen un efecto sobre el ambiente.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque los residuos entran al ciclo del agua: al evaporarse y caer como lluvia, el agua lleva sustancias dañinas que afectan a las plantas y al resto del ambiente.",
-      "opciones_incorrectas": {
-        "A": "Los residuos dañinos no son alimento para los peces; al contrario, ponen en riesgo su vida.",
-        "B": "No hay evidencia de que llueva menos; el humo más bien aporta gases a las nubes.",
-        "C": "El problema no es solo el calor; lo que daña la zona son los residuos que entran al ciclo del agua."
-      },
-      "componente": "Ciencia, Tecnología y Sociedad",
-      "imagen_figura": "assets/banco-cn-5-p2/q15.png"
-    },
-    {
-      "id": "P5N216",
-      "numero": 16,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un estudiante cree que las <b>neuronas</b> «van apareciendo y desapareciendo» por su cuerpo según el lugar donde recibe un estímulo. Luego lee en su libro de Ciencias que las neuronas forman una <b>red fija que recorre todo el cuerpo</b>; por esa red circulan los impulsos nerviosos (mensajes químicos y eléctricos) que llevan la información hasta el <b>cerebro</b>, donde se analiza para producir una respuesta.</p></div><p>Con la evidencia del libro, ¿cómo debería corregir el estudiante su afirmación?</p>",
-      "opciones": {
-        "A": "Las neuronas forman una red fija en todo el cuerpo y llevan los impulsos nerviosos hasta el cerebro.",
-        "B": "Las neuronas aparecen y desaparecen según el lugar donde la persona recibe un estímulo.",
-        "C": "Las neuronas solo sirven para sostener los órganos y no transmiten ninguna información.",
-        "D": "Las neuronas se forman únicamente cuando hay un estímulo y se borran cuando este desaparece."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes ajustan o corrigen una afirmación a partir de una nueva evidencia obtenida de una fuente confiable.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque coincide con la evidencia: las neuronas no aparecen ni desaparecen, sino que forman una red fija que recorre todo el cuerpo y conduce los impulsos nerviosos hasta el cerebro.",
-      "opciones_incorrectas": {
-        "B": "Esa es la idea equivocada del comienzo; el libro muestra que las neuronas no aparecen ni desaparecen, sino que ya forman una red.",
-        "C": "El libro indica que las neuronas sí transmiten información (los impulsos nerviosos); no son un simple sostén.",
-        "D": "Las neuronas no se crean y se borran con cada estímulo: conforman una red estable que conduce los impulsos."
-      },
-      "componente": "Entorno Vivo"
-    },
-    {
-      "id": "P5N217",
-      "numero": 17,
-      "enunciado": "<p>Lee la situación y observa los modelos.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Manuela escribe en su cuaderno: «En la planta hay muchos <b>áfidos</b> (insectos pequeños) que se comen sus hojas. Sobre algunas hojas, una <b>mariquita</b> se está comiendo a los áfidos. Más tarde, un <b>ave</b> llega y se come a la mariquita.» En una cadena alimentaria, cada flecha va del que <b>es comido</b> hacia el que <b>se lo come</b>.</p></div><p>¿Cuál de los modelos representa correctamente lo que describió Manuela?</p>",
-      "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.2",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes relacionan la descripción de un fenómeno con el modelo de cadena alimentaria que le corresponde.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque sigue el orden descrito: la planta es comida por los áfidos, los áfidos por la mariquita y la mariquita por el ave (planta → áfidos → mariquita → ave).",
-      "opciones_incorrectas": {
-        "B": "Coloca el ave antes que la mariquita, pero en la descripción el ave se come a la mariquita, así que va al final.",
-        "C": "Pone la mariquita comiendo la planta antes que los áfidos, lo cual no corresponde a lo descrito.",
-        "D": "Empieza por los áfidos en vez de la planta y desordena los demás eslabones de la cadena."
-      },
-      "componente": "Entorno Vivo",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-5-p2/q17_opA.png",
-        "B": "assets/banco-cn-5-p2/q17_opB.png",
-        "C": "assets/banco-cn-5-p2/q17_opC.png",
-        "D": "assets/banco-cn-5-p2/q17_opD.png"
-      }
-    },
-    {
       "id": "P5N218",
-      "numero": 18,
-      "enunciado": "<p>Lee la situación y observa la gráfica.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un estudiante regó una planta y dejó otra igual sin regar. Durante <b>tres días seguidos</b> midió cada día la <b>altura</b> de las dos plantas y construyó la gráfica de barras de la imagen. La profesora le dijo que a la gráfica le falta el nombre del <b>eje horizontal</b> (marcado con ¿?).</p></div><p>¿Cuál es el nombre que corresponde al eje horizontal?</p>",
+      "numero": 11,
+      "enunciado": "<p>Lee la situación y observa la gráfica.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el semillero de la escuela, Laura sembró dos matas de cilantro del mismo tamaño: a una la regó todos los días y a la otra no le echó agua. Durante <b>tres días seguidos</b> midió la altura de cada mata y con esos datos armó la gráfica de barras. Al revisarla, el profesor le señaló que al <b>eje horizontal</b> le falta el rótulo, marcado con ¿?.</p>[[IMG]]</div><p>¿Qué rótulo debe llevar ese eje horizontal?</p>",
       "opciones": {
-        "A": "Horas, porque mide el tiempo en horas.",
-        "B": "Día, porque las medidas se tomaron una vez por día durante tres días.",
-        "C": "Tipo de riego, porque compara la planta regada y la no regada.",
-        "D": "Temperatura, porque la temperatura cambia cada día."
+        "A": "Temperatura, porque la temperatura cambia de un día a otro.",
+        "B": "Tipo de riego, porque se comparan la mata regada y la mata sin regar.",
+        "C": "Día, porque cada medición se hizo una vez al día durante tres días.",
+        "D": "Horas, porque el eje señala el tiempo transcurrido en horas."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "c",
       "afirmacion": 6,
       "evidencia": "6.3",
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen, a partir de la información de un experimento, el nombre que corresponde al eje de una gráfica.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque las mediciones se hicieron una vez por día durante tres días (1, 2 y 3); por eso el eje horizontal representa el día de la medición.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque los números 1, 2 y 3 del eje horizontal corresponden a los tres días en que Laura midió las matas, con una medición por día.",
       "opciones_incorrectas": {
-        "A": "No se midió por horas, sino una vez al día durante tres días; el eje no representa horas.",
-        "C": "El tipo de riego ya está representado por el color de las barras, no por el eje horizontal.",
-        "D": "No se midió la temperatura; los números 1, 2 y 3 del eje corresponden a los días."
+        "A": "La temperatura no se midió en este trabajo; los valores 1, 2 y 3 no son grados.",
+        "D": "Las medidas no se tomaron por horas, sino una sola vez cada día durante tres días.",
+        "B": "El tipo de riego ya aparece indicado por el color de las barras y por la convención de la gráfica, no por el eje."
       },
       "componente": "Ciencia, Tecnología y Sociedad",
       "imagen_figura": "assets/banco-cn-5-p2/q18.png"
     },
     {
-      "id": "P5N219",
-      "numero": 19,
-      "enunciado": "<p>Observa los tres mapas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una especie de rana solo puede vivir en las zonas de <b>bosque húmedo</b>, dibujadas de <b>color verde</b> en los mapas. La zona <b>morada</b> es seca y allí la rana no sobrevive. Los mapas muestran cómo cambió la región en los años 2000, 2010 y 2020: observa con atención cómo cambia el tamaño de cada color con el paso del tiempo.</p></div><p>Si la tendencia continúa, ¿cómo será el tamaño del hábitat de la rana (la zona verde) en el año 2030?</p>",
+      "id": "P5N207",
+      "numero": 12,
+      "enunciado": "<p>Lee la situación y observa el circuito.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller de robótica, Sebastián arma la iluminación de una maqueta con el circuito de la imagen: una <b>batería</b>, un <b>cable</b>, un <b>fusible</b> y tres <b>bombillos LED</b>. El fusible es una pieza que se <b>quema y corta el paso de la corriente</b> cuando circula más electricidad de la debida, y así protege el circuito. Al conectar, los tres LED alumbran un instante y enseguida se apagan todos a la vez. Sebastián propone reemplazar únicamente el fusible.</p>[[IMG]]</div><p>¿Conviene reemplazar solo el fusible, como propone Sebastián?</p>",
       "opciones": {
-        "A": "Se mantendrá exactamente del mismo tamaño que en el año 2020.",
-        "B": "Aumentará de tamaño, porque la zona verde ha venido creciendo año tras año.",
-        "C": "Disminuirá de tamaño, porque la zona verde se ha venido reduciendo año tras año.",
-        "D": "Crecerá de golpe hasta cubrir toda la región en el año 2030."
+        "A": "No, porque lo más probable es que los tres LED se hayan fundido al tiempo y haya que cambiarlos.",
+        "B": "Sí, porque el fusible es la pieza que genera la corriente que alimenta a los tres LED.",
+        "C": "No, porque el fusible se quemó por una sobrecarga y, si no se busca de dónde viene, el repuesto se quemará igual.",
+        "D": "Sí, porque es la única pieza del circuito que todavía no ha sido revisada."
       },
       "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen la función de un fusible dentro de un circuito y argumentan la causa de un daño.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque los LED alcanzaron a encender, señal de que el circuito estaba completo; que se apaguen todos de golpe indica que el fusible cortó el paso por una sobrecarga. Cambiar el fusible sin averiguar qué provoca esa sobrecarga hace que el nuevo se queme otra vez.",
+      "opciones_incorrectas": {
+        "A": "Los tres LED encendieron un instante, así que no estaban fundidos; la pieza que dejó de conducir fue el fusible.",
+        "B": "El fusible no genera corriente: la corriente proviene de la batería, y el fusible solo corta el paso cuando circula demasiada.",
+        "D": "Que una pieza no se haya revisado no la convierte en la solución; falta encontrar la causa de la sobrecarga."
+      },
+      "componente": "Entorno Físico",
+      "imagen_figura": "assets/banco-cn-5-p2/q07.png"
+    },
+    {
+      "id": "P5N208",
+      "numero": 13,
+      "enunciado": "<p>Lee la situación y observa el modelo.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la plaza de mercado, doña Rosa conserva el pescado en cajones con <b>hielo</b>. A las siete de la mañana los cajones están llenos de hielo; hacia el mediodía queda agua en el fondo y, al caer la tarde, parte de esa agua ya no está. Su hijo, que estudia 5.°, le muestra el modelo de la imagen: con la temperatura <b>baja</b> las partículas están ordenadas y quietas (sólido) y, a medida que la temperatura <b>sube</b>, se mueven cada vez más (líquido y luego gas).</p>[[IMG]]</div><p>Según el modelo, ¿por qué el calor del día va acabando con el hielo de los cajones?</p>",
+      "opciones": {
+        "A": "Porque al subir la temperatura del ambiente disminuye la posibilidad de que las partículas del hielo se separen y formen agua.",
+        "B": "Porque al bajar la temperatura el hielo pasa directamente de sólido a gas, sin volverse agua.",
+        "C": "Porque al bajar la temperatura las partículas se ordenan todavía más y el hielo nunca llega a derretirse.",
+        "D": "Porque al subir la temperatura las partículas del hielo se mueven más, el sólido pasa a líquido y luego se evapora."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes explican, usando un modelo, cómo la temperatura del entorno afecta el estado en que se encuentra la materia.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque el modelo muestra que, al aumentar la temperatura, las partículas ganan movimiento: el hielo (sólido) pasa a agua (líquido) y, con más calor, parte de esa agua pasa a gas. Eso explica que al mediodía haya agua en el cajón y que en la tarde una parte haya desaparecido.",
+      "opciones_incorrectas": {
+        "A": "Ocurre lo contrario: cuanto más sube la temperatura, más fácil resulta que el hielo se derrita.",
+        "B": "Para pasar a estado gaseoso hace falta más calor, no menos; con la temperatura bajando el hielo no se evapora.",
+        "C": "Si la temperatura bajara, el hielo se mantendría sólido; pero en los cajones aparece agua, señal de que la temperatura subió."
+      },
+      "componente": "Entorno Físico",
+      "imagen_figura": "assets/banco-cn-5-p2/q08.png"
+    },
+    {
+      "id": "P5N209",
+      "numero": 14,
+      "enunciado": "<p>Observa el experimento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la feria de ciencias del colegio, Tomás monta una demostración sobre densidad. Usa siempre <b>la misma esfera</b>, de \\(1{,}2\\ \\text{g/cm}^3\\), y la suelta en tres líquidos diferentes:</p><p>• En el <b>Líquido 1</b>, de \\(1{,}0\\ \\text{g/cm}^3\\), la esfera terminó <b>en el fondo</b> del vaso.<br>• En el <b>Líquido 2</b>, de \\(1{,}5\\ \\text{g/cm}^3\\), la esfera se quedó <b>asomada en la superficie</b>.</p><p>Le falta el <b>Líquido 3</b>, de \\(1{,}8\\ \\text{g/cm}^3\\). Antes de soltar la esfera, Tomás quiere anunciarle al público qué va a pasar.</p>[[IMG]]</div><p>Al comparar las densidades, ¿qué debe anunciar Tomás para el Líquido 3?</p>",
+      "opciones": {
+        "A": "La esfera quedará sumergida justo debajo de la superficie, sin asomar.",
+        "B": "La esfera subirá y quedará asomada en la superficie, como en el Líquido 2.",
+        "C": "La esfera bajará hasta el fondo del vaso, como en el Líquido 1.",
+        "D": "La esfera se detendrá a media altura del líquido, sin subir ni bajar."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes infieren si un objeto flota o se hunde comparando la densidad del objeto con la del líquido, a partir de unos datos.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque un cuerpo flota cuando su densidad es menor que la del líquido. La esfera (\\(1{,}2\\)) es más densa que el Líquido 1 (\\(1{,}0\\)) y por eso se fue al fondo; en cambio es menos densa que el Líquido 2 (\\(1{,}5\\)) y que el Líquido 3 (\\(1{,}8\\)). Como el Líquido 3 es todavía más denso, la esfera vuelve a flotar asomada en la superficie.",
+      "opciones_incorrectas": {
+        "D": "Quedarse a media altura solo ocurriría si la esfera y el líquido tuvieran la misma densidad, y aquí el líquido es bastante más denso.",
+        "C": "Al fondo se va un cuerpo más denso que el líquido, como pasó en el Líquido 1; con el Líquido 3 la relación es la contraria.",
+        "A": "Cuando la densidad del cuerpo es menor, este emerge y una parte queda por encima de la superficie, no oculta bajo ella."
+      },
+      "componente": "Entorno Físico",
+      "imagen_figura": "assets/banco-cn-5-p2/q09.png",
+      "opciones_imagenes": {
+        "D": "assets/banco-cn-5-p2/q09_opA.png",
+        "C": "assets/banco-cn-5-p2/q09_opB.png",
+        "B": "assets/banco-cn-5-p2/q09_opC.png",
+        "A": "assets/banco-cn-5-p2/q09_opD.png"
+      }
+    },
+    {
+      "id": "P5N219",
+      "numero": 15,
+      "enunciado": "<p>Observa los tres mapas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una bióloga estudia una <b>rana</b> que solo sobrevive en el <b>bosque húmedo</b>, señalado en <b>verde</b> en los mapas; la parte <b>morada</b> es terreno seco, donde la rana no puede vivir. Los tres mapas corresponden a la misma vereda fotografiada en 2000, 2010 y 2020. Fíjate en cómo cambia el tamaño de cada color de un mapa al siguiente.</p>[[IMG]]</div><p>De mantenerse ese cambio, ¿qué tamaño tendrá el bosque húmedo en 2030?</p>",
+      "opciones": {
+        "A": "Será igual al de 2020, porque el bosque ya no cambia de tamaño.",
+        "B": "Será exactamente la mitad del de 2020, porque el bosque siempre se reduce a la mitad.",
+        "C": "Será más grande, porque la zona verde ha venido ganando terreno en cada mapa.",
+        "D": "Será más pequeño, porque la zona verde se ha ido reduciendo mapa tras mapa."
+      },
+      "clave": "D",
       "competencia": "c",
       "afirmacion": 2,
       "evidencia": "2.2",
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes hacen una predicción a partir de la tendencia que muestran unos datos en el tiempo.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque, al comparar los tres mapas, la zona verde (el bosque húmedo donde vive la rana) es cada vez más pequeña de 2000 a 2020. Si esa tendencia continúa, en 2030 el hábitat de la rana seguirá disminuyendo.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque al comparar los tres mapas la zona verde disminuye de 2000 a 2010 y de 2010 a 2020. Si esa tendencia se mantiene, en 2030 el bosque húmedo donde vive la rana será todavía más pequeño.",
       "opciones_incorrectas": {
-        "A": "Los mapas muestran un cambio claro de tamaño con el tiempo, así que el hábitat no se mantendría igual.",
-        "B": "Es justo lo contrario: la zona verde no crece, sino que se hace más pequeña en cada mapa.",
-        "D": "No hay datos que indiquen un crecimiento repentino; la tendencia observada es que el hábitat se reduce poco a poco."
+        "C": "Los mapas muestran lo contrario: la zona verde pierde extensión en cada fecha, no la gana.",
+        "A": "Entre un mapa y el siguiente hay un cambio evidente de tamaño, así que no puede afirmarse que se mantenga igual.",
+        "B": "La tendencia permite anticipar que se reducirá, pero los mapas no dan información suficiente para asegurar una cifra exacta como la mitad."
       },
       "componente": "Entorno Vivo",
       "imagen_figura": "assets/banco-cn-5-p2/q19.png"
     },
     {
-      "id": "P5N220",
-      "numero": 20,
-      "enunciado": "<p>Lee la situación y observa la imagen.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región muy fría y nevada, cercana a las altas montañas, las familias deben adaptarse para soportar las <b>bajas temperaturas</b>. Una de ellas usa <b>ropa gruesa hecha de lana y piel</b> durante todo el día, como muestra la imagen. Esa ropa cumple una <b>función</b> directamente relacionada con las condiciones del entorno donde viven.</p></div><p>¿Cuál es la función de usar ropa gruesa de lana y piel en ese entorno?</p>",
+      "id": "P5N213",
+      "numero": 16,
+      "enunciado": "<p>Lee la situación y observa los tipos de raíz.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un vivero, un aviso escrito a mano asegura: «El cactus aguanta el desierto porque echa <b>raíces muy largas</b> que bajan a buscar el agua guardada en lo profundo del suelo». Sebastián no queda convencido y revisa la guía del Jardín Botánico, donde encuentra la imagen de los tipos de raíz y esta explicación: «En zonas muy secas, los cactus desarrollan raíces del <b>Tipo 1</b>, <b>cortas y muy extendidas cerca de la superficie</b>, para absorber en pocos minutos el agua de las lluvias escasas».</p>[[IMG]]</div><p>Con lo que dice la guía, ¿queda respaldado el aviso del vivero?</p>",
       "opciones": {
-        "A": "Impedir que el agua de la lluvia llegue hasta la piel de las personas.",
-        "B": "Cocinar más rápido los alimentos cuando hace frío.",
-        "C": "Conservar el calor del cuerpo y evitar que descienda la temperatura corporal.",
-        "D": "Transportar con más facilidad las herramientas de trabajo."
+        "A": "Sí, porque toda raíz busca siempre la mayor profundidad posible.",
+        "B": "No, porque el cactus guarda el agua en el tallo y carece por completo de raíces.",
+        "C": "Sí, porque el Tipo 4 de la imagen es el de los cactus y muestra la raíz larga que describe el aviso.",
+        "D": "No, porque la guía indica que el cactus desarrolla raíces cortas y superficiales, no largas y profundas."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes valoran la veracidad de una afirmación comparándola con una fuente científica confiable.",
+      "justificacion_correcta": "La opción D es la respuesta correcta porque la guía del Jardín Botánico, que es una fuente confiable, señala que los cactus tienen raíces del Tipo 1, cortas y extendidas cerca de la superficie. Eso contradice el aviso del vivero, que las describe como largas y profundas.",
+      "opciones_incorrectas": {
+        "C": "La guía asocia a los cactus con el Tipo 1, no con el Tipo 4; leer la imagen de esa manera es lo que hace parecer verdadero el aviso.",
+        "A": "No todas las raíces crecen hacia lo más profundo: su forma depende del ambiente, y en zonas secas conviene que sean superficiales.",
+        "B": "Es cierto que el cactus almacena agua en el tallo, pero sí tiene raíces; el error del aviso está en cómo las describe."
+      },
+      "componente": "Entorno Vivo",
+      "imagen_figura": "assets/banco-cn-5-p2/q13.png"
+    },
+    {
+      "id": "P5N217",
+      "numero": 17,
+      "enunciado": "<p>Lee la situación y observa los modelos.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Don Álvaro, encargado de la huerta escolar, llama al grupo frente a una mata de tomate y les dice: «Miren, en estas hojas hay un montón de <b>áfidos</b> chupándole la savia a la mata; sobre aquella hoja una <b>mariquita</b> se está comiendo a los áfidos, y hace un rato vi que un <b>ave</b> bajó y se llevó a la mariquita». Recuerden que, en una cadena alimentaria, la flecha va siempre del organismo que <b>sirve de alimento</b> hacia el que <b>se alimenta</b> de él.</p></div><p>¿Cuál de los siguientes modelos corresponde a lo que contó don Álvaro?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
       "clave": "C",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes relacionan la descripción de un fenómeno con el modelo de cadena alimentaria que le corresponde.",
+      "justificacion_correcta": "La opción C es la respuesta correcta porque respeta el orden que describe don Álvaro: la planta alimenta a los áfidos, los áfidos alimentan a la mariquita y la mariquita alimenta al ave (planta → áfidos → mariquita → ave).",
+      "opciones_incorrectas": {
+        "D": "Sitúa al ave antes que a la mariquita, cuando en el relato el ave se lleva a la mariquita y por lo tanto va al final.",
+        "B": "Hace que la mariquita quede antes que los áfidos, como si se alimentara de la planta, algo que no ocurre en el relato.",
+        "A": "Empieza por los áfidos en lugar de la planta y deja desordenados los demás eslabones de la cadena."
+      },
+      "componente": "Entorno Vivo",
+      "opciones_imagenes": {
+        "C": "assets/banco-cn-5-p2/q17_opA.png",
+        "D": "assets/banco-cn-5-p2/q17_opB.png",
+        "B": "assets/banco-cn-5-p2/q17_opC.png",
+        "A": "assets/banco-cn-5-p2/q17_opD.png"
+      }
+    },
+    {
+      "id": "P5N203",
+      "numero": 18,
+      "enunciado": "<p>Lee la situación y observa la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un colegio, la enfermera y el profesor de educación física notaron que varios estudiantes llegaban con sueño a clase: dormían apenas <b>5,5 horas</b> por noche. Con permiso de las familias formaron dos grupos: uno hizo el <b>Ejercicio 1</b> y el otro el <b>Ejercicio 2</b>, todos los días durante una semana. Al empezar y al terminar anotaron las <b>horas de sueño</b> de cada grupo en la tabla.</p>[[IMG]]</div><p>Mirando solo lo que registra la tabla, ¿qué afirmación queda respaldada por los datos?</p>",
+      "opciones": {
+        "A": "El Ejercicio 1 fue el que hizo aumentar las horas de sueño en esa semana.",
+        "B": "El Ejercicio 2 fue el que hizo aumentar las horas de sueño en esa semana.",
+        "C": "Cualquier rutina de ejercicio sirve por igual para dormir más horas.",
+        "D": "Ninguno de los dos ejercicios logró que los estudiantes durmieran más horas."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes obtienen conclusiones válidas a partir de los datos registrados en una tabla.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque en la tabla el grupo del Ejercicio 1 pasó de 5,5 h a 7,5 h de sueño, mientras que el del Ejercicio 2 se quedó en 5,5 h. Lo único que sostienen los datos es que el aumento se dio con el Ejercicio 1.",
+      "opciones_incorrectas": {
+        "D": "Sí hubo aumento: con el Ejercicio 1 las horas de sueño subieron de 5,5 a 7,5, así que no es cierto que ninguno funcionara.",
+        "B": "El grupo del Ejercicio 2 terminó la semana con las mismas 5,5 h con las que empezó; no fue ese el que produjo el cambio.",
+        "C": "Los dos ejercicios no dieron el mismo resultado, y con dos rutinas tampoco puede afirmarse nada sobre «cualquier» ejercicio."
+      },
+      "componente": "Ciencia, Tecnología y Sociedad",
+      "imagen_figura": "assets/banco-cn-5-p2/q03.png"
+    },
+    {
+      "id": "P5N220",
+      "numero": 19,
+      "enunciado": "<p>Lee la situación y observa la imagen.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de caminantes sube a la zona nevada de una montaña. Antes de salir, la guía revisa la indumentaria de cada uno y exige <b>ropa gruesa de lana y piel</b>, como la que lleva el niño de la imagen, porque allá arriba la temperatura permanece bajo cero durante todo el día.</p>[[IMG]]</div><p>¿Qué función cumple esa ropa gruesa en un entorno así?</p>",
+      "opciones": {
+        "A": "Retener el calor del cuerpo y evitar que la temperatura corporal descienda.",
+        "B": "Permitir que cada caminante cargue más herramientas y equipo.",
+        "C": "Ayudar a que los alimentos se calienten más rápido durante la caminata.",
+        "D": "Impedir que el agua de la lluvia alcance la piel de quien la usa."
+      },
+      "clave": "A",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.2",
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes identifican la función de un elemento de acuerdo con las características del entorno donde se usa.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque, en un entorno muy frío, la ropa gruesa de lana y piel actúa como aislante: conserva el calor del cuerpo y evita que la temperatura corporal baje demasiado; esa es su función principal allí.",
+      "justificacion_correcta": "La opción A es la respuesta correcta porque la lana y la piel son materiales aislantes: retienen el calor que produce el cuerpo y frenan su salida hacia el aire frío, de modo que la temperatura corporal no baja peligrosamente.",
       "opciones_incorrectas": {
-        "A": "En el frío la función principal de la ropa gruesa es conservar el calor, no impermeabilizar la piel.",
-        "B": "La ropa no sirve para cocinar; su función frente al frío es mantener el calor del cuerpo.",
-        "D": "Transportar herramientas no se relaciona con abrigarse; la ropa gruesa sirve para conservar el calor corporal."
+        "B": "Cargar el equipo depende de los morrales y no del abrigo; la ropa gruesa responde al frío del lugar.",
+        "D": "Aislar del agua es propio de un impermeable; en un entorno bajo cero lo que se necesita es conservar el calor.",
+        "C": "La ropa no calienta los alimentos: lo que hace es evitar que el cuerpo pierda su propio calor."
       },
       "componente": "Ciencia, Tecnología y Sociedad",
       "imagen_figura": "assets/banco-cn-5-p2/q20.png"
+    },
+    {
+      "id": "P5N212",
+      "numero": 20,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de 5.° visitará una <b>cueva</b> donde nunca entra la luz. Quieren averiguar <b>cómo se adaptan los animales que viven allí</b> a la oscuridad permanente y a la humedad. Para conseguirlo necesitan reunir información que les permita <b>relacionar las características de esos animales</b> —forma del cuerpo, órganos de los sentidos, manera de desplazarse y de conseguir comida— con las condiciones del lugar.</p></div><p>¿Qué procedimiento les resultará más útil para responder esa pregunta?</p>",
+      "opciones": {
+        "A": "Medir el largo de las antenas de un solo grillo capturado, sin observar a ningún otro animal.",
+        "B": "Observar y anotar, dentro de la cueva, los rasgos del cuerpo y el comportamiento de los animales que allí habitan.",
+        "C": "Analizar en el laboratorio de qué minerales están hechas las rocas de la cueva.",
+        "D": "Registrar únicamente la temperatura y la humedad del aire de la cueva, sin fijarse en los animales."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes eligen el procedimiento adecuado para responder una pregunta de investigación.",
+      "justificacion_correcta": "La opción B es la respuesta correcta porque la adaptación se manifiesta en los rasgos del cuerpo y en el comportamiento; observarlos y registrarlos dentro de la cueva es lo que permite relacionarlos con la oscuridad y la humedad del lugar, que es el objetivo del grupo.",
+      "opciones_incorrectas": {
+        "D": "Los datos del aire describen el ambiente, pero sin observar a los animales no puede relacionarse ese ambiente con sus características.",
+        "A": "Una sola medida tomada en un solo individuo es una muestra demasiado pobre para explicar la adaptación de los animales de la cueva.",
+        "C": "La composición de las rocas no informa sobre la forma ni el comportamiento de los animales que viven en la oscuridad."
+      },
+      "componente": "Entorno Vivo"
     }
   ],
   "preservar_orden_preguntas": false

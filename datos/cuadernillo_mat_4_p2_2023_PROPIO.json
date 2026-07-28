@@ -48,35 +48,469 @@
   ],
   "preguntas": [
     {
-      "id": "P4M201",
+      "id": "P4M204",
       "numero": 1,
-      "enunciado": "<p>Marcela acompaña a su mamá a comprar útiles escolares. En la papelería, su mamá compra <b>7</b> cuadernos iguales. En la repisa, el cartel indica el valor de cada cuaderno (ver figura). ¿Cuánto dinero paga la mamá de Marcela por los <b>7</b> cuadernos?</p>",
+      "enunciado": "<p>La tienda escolar debe exhibir una gráfica con la información nutricional de la barra de cereal que vende. En el empaque solo se alcanzan a leer dos datos: <b>40 gramos de azúcar</b> y <b>10 gramos de sodio</b>; los valores de proteína y de almidón se borraron. El proveedor envió cuatro gráficas y solo una puede corresponder a ese empaque. ¿Cuál de ellas (A, B, C o D) es?</p>",
       "opciones": {
-        "A": "$23.200",
-        "B": "$22.400",
-        "C": "$21.400",
-        "D": "$25.200"
+        "A": "Gráfica A.",
+        "B": "Gráfica B.",
+        "C": "Gráfica C.",
+        "D": "Gráfica D."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
+      "que_evalua": "La capacidad para comparar varias gráficas de barras y reconocer cuál representa correctamente unos datos conocidos.",
+      "justificacion_correcta": "Los dos únicos datos legibles son azúcar \\(= 40\\) g y sodio \\(= 10\\) g. La gráfica que sirve debe tener la barra de \\(40\\) sobre la categoría Azúcar y la de \\(10\\) sobre la categoría Sodio, sin importar qué valores tomen proteína y almidón. Eso ocurre únicamente en la gráfica D.",
+      "opciones_incorrectas": {
+        "C": "Ubica el \\(40\\) y el \\(10\\) en las dos primeras barras, Proteína y Almidón, que no son las categorías mencionadas.",
+        "B": "Se conforma con que el sodio quede en \\(10\\) g y no revisa el azúcar, que en esa gráfica aparece con \\(20\\) g y no con \\(40\\) g."
+      },
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-4-p2/q04_opA.png",
+        "B": "assets/banco-mat-4-p2/q04_opB.png",
+        "C": "assets/banco-mat-4-p2/q04_opC.png",
+        "D": "assets/banco-mat-4-p2/q04_opD.png"
+      }
+    },
+    {
+      "id": "P4M206",
+      "numero": 2,
+      "enunciado": "<p>En el club de natación, cada casillero del vestier tiene asignado un gorro y el número del casillero va impreso en él (ver figura).</p>[[IMG]]<p>¿Qué se puede afirmar sobre el conjunto de números impresos en los gorros?</p>",
+      "opciones": {
+        "A": "Son los números pares menores que 30.",
+        "B": "Son los divisores de 28.",
+        "C": "Son los múltiplos de 8.",
+        "D": "Son los siete primeros múltiplos de 4."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco propiedades de los números (ser par, ser impar, etc.) y relaciones entre ellos (ser mayor que, ser menor que, ser múltiplo de, ser divisible por, etc.) en diferentes contextos.",
+      "que_evalua": "La capacidad del estudiante de reconocer la relación de ser múltiplos en un conjunto numérico dado.",
+      "justificacion_correcta": "Los números impresos son \\(4, 8, 12, 16, 20, 24\\) y \\(28\\). Se obtienen al multiplicar \\(4\\) por \\(1, 2, 3, 4, 5, 6\\) y \\(7\\), de modo que son exactamente los siete primeros múltiplos de \\(4\\).",
+      "opciones_incorrectas": {
+        "B": "Los divisores de \\(28\\) son \\(1, 2, 4, 7, 14\\) y \\(28\\); números como \\(8, 12, 16, 20\\) y \\(24\\) no dividen a \\(28\\).",
+        "A": "Entre los pares menores que \\(30\\) también están \\(2, 6, 10, 14, 18, 22\\) y \\(26\\), y ninguno aparece en los gorros.",
+        "C": "Los múltiplos de \\(8\\) son \\(8, 16, 24\\dots\\): el \\(4\\), el \\(12\\), el \\(20\\) y el \\(28\\) no lo son."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q06.png"
+    },
+    {
+      "id": "P4M211",
+      "numero": 3,
+      "enunciado": "<p>En el salón hay un tablero de damas colgado en la pared. Al volver del descanso, los estudiantes vieron que la ficha roja ya no estaba en la casilla donde la habían dejado. Las dos imágenes muestran el tablero antes y después, y al lado aparece la rosa de direcciones (ver figura).</p>[[IMG]]<p>¿Qué desplazamiento tuvo la ficha?</p>",
+      "opciones": {
+        "A": "Solo se corrió hacia la derecha; siguió en la misma fila.",
+        "B": "Se corrió hacia la derecha y subió.",
+        "C": "Solo subió; siguió en la misma columna.",
+        "D": "Se corrió hacia la izquierda y bajó."
       },
       "clave": "B",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo sistemas de coordenadas para especificar localizaciones y describir relaciones espaciales.",
+      "que_evalua": "La capacidad de los estudiantes para identificar los movimientos realizados al cambiar la ubicación de un objeto en un sistema de referencia bidimensional.",
+      "justificacion_correcta": "En la segunda imagen la ficha aparece más a la derecha y más arriba que en la primera, de manera que su desplazamiento combina un movimiento hacia la derecha con uno hacia arriba.",
+      "opciones_incorrectas": {
+        "A": "Solo tiene en cuenta el corrimiento hacia la derecha y pasa por alto que la ficha quedó en una fila más alta.",
+        "C": "Solo tiene en cuenta que la ficha subió y pasa por alto que también cambió de columna.",
+        "D": "Describe el desplazamiento contrario, el que devolvería la ficha a la casilla donde estaba al comienzo."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q11.png"
+    },
+    {
+      "id": "P4M210",
+      "numero": 4,
+      "enunciado": "<p>En el club de carros a control remoto, los organizadores pintan el número de cada participante siguiendo una regla según el carril que le tocó (ver figura). Al carro del <b>carril 4</b> todavía no le han pintado el número.</p>[[IMG]]<p>¿Cuál número le corresponde?</p>",
+      "opciones": {
+        "A": "\\(17\\)",
+        "B": "\\(18\\)",
+        "C": "\\(20\\)",
+        "D": "\\(65\\)"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
+      "que_evalua": "La capacidad del estudiante de identificar el término siguiente de una secuencia dada.",
+      "justificacion_correcta": "Los números pintados son \\(3, 8\\) y \\(13\\): de un carril al siguiente aumentan \\(5\\), porque \\(3 + 5 = 8\\) y \\(8 + 5 = 13\\). Al carro del carril \\(4\\) le corresponde \\(13 + 5 = 18\\).",
+      "opciones_incorrectas": {
+        "A": "Toma el aumento como \\(4\\) en lugar de \\(5\\) y calcula \\(13 + 4 = 17\\).",
+        "C": "Multiplica el aumento por el número del carril \\((5 \\times 4 = 20)\\) y olvida que la secuencia arranca en \\(3\\) y no en \\(5\\).",
+        "D": "Multiplica \\(5 \\times 13 = 65\\) en lugar de sumarle \\(5\\) al número anterior."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q10.png"
+    },
+    {
+      "id": "P4M203",
+      "numero": 5,
+      "enunciado": "<p>En la clase de tecnología, Samuel forró con papel verde una parte de una tabla de madera rectangular para representar el sector arborizado de un vivero; la parte que no forró quedó con la madera a la vista (ver figura). Samuel necesita saber cuánto papel verde alcanzó a cubrir.</p>[[IMG]]<p>¿Cuál es el área de la zona forrada de verde?</p>",
+      "opciones": {
+        "A": "\\(78\\ \\text{cm}^2\\)",
+        "B": "\\(80\\ \\text{cm}^2\\)",
+        "C": "\\(36\\ \\text{cm}^2\\)",
+        "D": "\\(60\\ \\text{cm}^2\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco el uso de algunas magnitudes (longitud, área, volumen, capacidad, peso y masa, duración, rapidez, temperatura) y de algunas de las unidades que se usan para medir cantidades de la magnitud respectiva en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad de los estudiantes para hallar el área de una región plana que puede descomponerse en rectángulos.",
+      "justificacion_correcta": "La zona verde se parte en dos rectángulos: el de la izquierda mide \\(8 \\times 6 = 48\\ \\text{cm}^2\\) y la franja inferior de la derecha mide \\(4 \\times 3 = 12\\ \\text{cm}^2\\). Sumando, \\(48 + 12 = 60\\ \\text{cm}^2\\).",
+      "opciones_incorrectas": {
+        "C": "Suma las longitudes del contorno \\((8 + 10 + 3 + 4 + 5 + 6 = 36)\\): eso es el perímetro y no el área.",
+        "A": "Toma \\(8 \\times 6 = 48\\) y \\(10 \\times 3 = 30\\) y los suma: \\(48 + 30 = 78\\ \\text{cm}^2\\), contando dos veces la esquina inferior izquierda.",
+        "B": "Multiplica las dos medidas mayores \\((8 \\times 10 = 80)\\): halla el área de toda la tabla, incluida la madera sin forrar."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q03.png"
+    },
+    {
+      "id": "P4M220",
+      "numero": 6,
+      "enunciado": "<p>Para la izada de bandera, la cooperativa escolar preparó una bandeja con <b>24</b> empanadas de distintos rellenos, repartidas como muestra la tabla.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Relleno</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de empanadas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Espinaca</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Total</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr></table><p>Si un estudiante toma una empanada de la bandeja <b>sin mirar</b> el relleno, ¿cuál relleno es el <b>menos probable</b> que le toque?</p>",
+      "opciones": {
+        "A": "Papa.",
+        "B": "Espinaca.",
+        "C": "Queso.",
+        "D": "Carne."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad para identificar la mayor o menor probabilidad de un evento dada una tabla de frecuencias.",
+      "justificacion_correcta": "El relleno con menos empanadas en la bandeja es la espinaca, con solo \\(2\\) de las \\(24\\). Al tener la menor frecuencia, es el menos probable de salir al azar.",
+      "opciones_incorrectas": {
+        "D": "La carne tiene \\(9\\) empanadas: es el relleno más probable, no el menos probable.",
+        "C": "El queso tiene \\(5\\) empanadas, más del doble que la espinaca.",
+        "A": "Elige la papa por estar entre las primeras filas de la tabla, sin comparar: tiene \\(8\\) empanadas, cuatro veces más que la espinaca."
+      }
+    },
+    {
+      "id": "P4M218",
+      "numero": 7,
+      "enunciado": "<p>En el taller de cerámica, cada aprendiz pinta flores sobre un plato a lo largo de varios días y registra cuántas flores lleva pintadas al terminar cada día. La figura muestra el registro del plato de Mauricio en tres días seguidos.</p>[[IMG]]<p>¿Qué regla siguió Mauricio de un día al siguiente?</p>",
+      "opciones": {
+        "A": "Cada día el plato tiene tres veces las flores que tenía el día anterior.",
+        "B": "Cada día agrega tres flores más de las que tenía el día anterior.",
+        "C": "Cada día el plato tiene el doble de las flores que tenía el día anterior.",
+        "D": "Cada día agrega dos flores más de las que tenía el día anterior."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
+      "que_evalua": "La capacidad de los estudiantes para identificar el patrón de formación de una secuencia a partir de los primeros tres términos.",
+      "justificacion_correcta": "El Día 1 hay \\(1\\) flor, el Día 2 hay \\(3\\) y el Día 3 hay \\(9\\). De un día al siguiente el total se multiplica por \\(3\\): \\(1 \\times 3 = 3\\) y \\(3 \\times 3 = 9\\).",
+      "opciones_incorrectas": {
+        "B": "Sumar \\(3\\) cada día daría \\(1, 4\\) y \\(7\\), pero en el Día 2 el plato tiene \\(3\\) flores, no \\(4\\).",
+        "D": "Sumar \\(2\\) cada día daría \\(1, 3\\) y \\(5\\): coincide en el Día 2, pero en el Día 3 hay \\(9\\) flores y no \\(5\\).",
+        "C": "Duplicar daría \\(1, 2\\) y \\(4\\); ya en el Día 2 el plato tiene \\(3\\) flores."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q18.png"
+    },
+    {
+      "id": "P4M219",
+      "numero": 8,
+      "enunciado": "<p>Don Efraín guarda en una bolsa de tela <b>20</b> dijes de distintas formas para que sus estudiantes armen pulseras en la clase de artes (ver figura). Un estudiante mete la mano y saca un dije <b>sin mirar</b>.</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones sobre ese sorteo es verdadera?</p>",
+      "opciones": {
+        "A": "Sacar la hoja es igual de probable que sacar cualquier otra forma, porque todas están en la misma bolsa.",
+        "B": "Es imposible sacar la concha, porque es la forma que menos aparece en la bolsa.",
+        "C": "Es seguro sacar la estrella, porque es la forma que más aparece en la bolsa.",
+        "D": "Es más probable sacar la estrella, porque es la forma que más aparece en la bolsa."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad de identificar y argumentar la probabilidad de ocurrencia de eventos, a partir del número de casos favorables respecto al número de casos posibles.",
+      "justificacion_correcta": "De los \\(20\\) dijes, \\(9\\) tienen forma de estrella, más que cualquier otra forma: hay \\(5\\) círculos, \\(4\\) hojas y \\(2\\) conchas. Por eso la estrella es la que tiene mayor probabilidad de salir, es decir, la más probable.",
+      "opciones_incorrectas": {
+        "A": "Las formas no aparecen la misma cantidad de veces: hay \\(9\\) estrellas y solo \\(2\\) conchas, así que no todas tienen la misma posibilidad de salir.",
+        "B": "La concha sí está en la bolsa \\((2\\) dijes\\()\\): que aparezca poco la hace poco probable, no imposible.",
+        "C": "Ser la forma más frecuente no la vuelve segura: también pueden salir círculos, hojas o conchas."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q19.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-4-p2/q19_opA.png",
+        "B": "assets/banco-mat-4-p2/q19_opB.png",
+        "D": "assets/banco-mat-4-p2/q19_opC.png",
+        "C": "assets/banco-mat-4-p2/q19_opD.png"
+      }
+    },
+    {
+      "id": "P4M215",
+      "numero": 9,
+      "enunciado": "<p>Tobías corta en cartón las fichas de un juego de parejas. Cada ficha es rectangular y lleva dos casillas con una figura en cada una; la figura muestra una ficha con sus medidas. Antes de encargar el cartón, Tobías necesita saber cuánta superficie ocupa una sola ficha.</p>[[IMG]]<p>¿Cuál es esa superficie?</p>",
+      "opciones": {
+        "A": "\\(14\\ \\text{cm}^2\\)",
+        "B": "\\(25\\ \\text{cm}^2\\)",
+        "C": "\\(28\\ \\text{cm}^2\\)",
+        "D": "\\(45\\ \\text{cm}^2\\)"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco el uso de algunas magnitudes (longitud, área, volumen, capacidad, peso y masa, duración, rapidez, temperatura) y de algunas de las unidades que se usan para medir cantidades de la magnitud respectiva en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad de los estudiantes para calcular el área de un rectángulo.",
+      "justificacion_correcta": "La ficha es un rectángulo de \\(5\\ \\text{cm}\\) de ancho y \\(9\\ \\text{cm}\\) de alto. Su área es el producto de esas dos medidas: \\(5 \\times 9 = 45\\ \\text{cm}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Suma las dos medidas \\((5 + 9 = 14)\\) en lugar de multiplicarlas.",
+        "B": "Multiplica el ancho por sí mismo \\((5 \\times 5 = 25)\\), como si la ficha fuera cuadrada.",
+        "C": "Calcula el contorno de la ficha \\(((2 \\times 5) + (2 \\times 9) = 28)\\): eso es el perímetro y no la superficie."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q15.png"
+    },
+    {
+      "id": "P4M207",
+      "numero": 10,
+      "enunciado": "<p>En la kermés del colegio hay cuatro bolsas con fichas de colores. Quien saque una ficha roja pierde el turno, así que a Daniela le conviene la bolsa en la que sacar roja sea lo <b>menos</b> probable. Cada bolsa tiene escrito qué parte de sus fichas son rojas (ver figura).</p>[[IMG]]<p>¿Cuál bolsa le conviene a Daniela?</p>",
+      "opciones": {
+        "A": "Bolsa 1.",
+        "B": "Bolsa 2.",
+        "C": "Bolsa 3.",
+        "D": "Bolsa 4."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad de los estudiantes para elegir el espacio en el que se obtiene la menor probabilidad de un evento definido.",
+      "justificacion_correcta": "La parte de fichas rojas es \\(\\dfrac{1}{4}\\) en la bolsa 1, \\(\\dfrac{5}{6}\\) en la 2, \\(\\dfrac{1}{3}\\) en la 3 y \\(\\dfrac{1}{12}\\) en la 4. Llevándolas todas a doceavos: \\(\\dfrac{1}{4}=\\dfrac{3}{12}\\), \\(\\dfrac{5}{6}=\\dfrac{10}{12}\\), \\(\\dfrac{1}{3}=\\dfrac{4}{12}\\) y \\(\\dfrac{1}{12}\\) se queda igual. La menor parte de rojas está en la bolsa 4, que es donde Daniela corre menos riesgo de perder el turno.",
+      "opciones_incorrectas": {
+        "A": "Se guía por el \\(1\\) que aparece arriba en la fracción, pero \\(\\dfrac{1}{4}=\\dfrac{3}{12}\\) es el triple de \\(\\dfrac{1}{12}\\).",
+        "B": "Es justo la bolsa con la mayor parte de fichas rojas \\(\\left(\\dfrac{5}{6}\\right)\\): allí Daniela perdería el turno casi siempre.",
+        "C": "\\(\\dfrac{1}{3}=\\dfrac{4}{12}\\) es mayor que \\(\\dfrac{1}{12}\\), así que la bolsa 3 no es la de menor riesgo."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q07.png"
+    },
+    {
+      "id": "P4M208",
+      "numero": 11,
+      "enunciado": "<p>En el taller de la huerta escolar, cada grupo recibe una cantidad de semillas y debe anotar <b>todos los números de surcos iguales</b> en los que puede repartirlas sin que le sobre ninguna. Al grupo de Camila le entregaron <b>28</b> semillas. ¿Qué números debe anotar el grupo de Camila?</p>",
+      "opciones": {
+        "A": "\\(1, 2, 4, 7, 14\\) y \\(28\\).",
+        "B": "\\(2, 4, 7\\) y \\(14\\).",
+        "C": "\\(1\\) y \\(28\\).",
+        "D": "\\(28, 56, 84, 112\\) y \\(140\\)."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico regularidades y propiedades de los números, sus relaciones y operaciones.",
+      "que_evalua": "La capacidad de encontrar todos los divisores positivos de un número natural.",
+      "justificacion_correcta": "Las multiplicaciones que dan \\(28\\) son \\(1 \\times 28\\), \\(2 \\times 14\\) y \\(4 \\times 7\\). Por eso las semillas caben exactamente en \\(1, 2, 4, 7, 14\\) o \\(28\\) surcos iguales: esos son todos los divisores positivos de \\(28\\).",
+      "opciones_incorrectas": {
+        "B": "Anota solo las parejas que aparecen en las tablas de multiplicar \\((2 \\times 14\\) y \\(4 \\times 7)\\) y deja por fuera el \\(1\\) y el \\(28\\).",
+        "D": "Escribe los múltiplos de \\(28\\) en lugar de sus divisores: con \\(28\\) semillas no se alcanzan a llenar \\(56\\) surcos.",
+        "C": "Anota únicamente el \\(1\\) y el mismo \\(28\\), como si \\(28\\) no se pudiera repartir de ninguna otra manera."
+      }
+    },
+    {
+      "id": "P4M201",
+      "numero": 12,
+      "enunciado": "<p>El rincón de lectura del colegio necesita un cuaderno de registro para cada uno de sus <b>7</b> grupos. En la tienda escolar quedan exactamente esos siete cuadernos en la estantería, con su precio en la etiqueta (ver figura). El profesor encargado los lleva todos y pide el recibo.</p>[[IMG]]<p>¿Qué valor debe aparecer en el recibo?</p>",
+      "opciones": {
+        "A": "$21.400",
+        "B": "$25.600",
+        "C": "$21.000",
+        "D": "$22.400"
+      },
+      "clave": "D",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de establecer y calcular el producto entre dos números, relativos a la compra de varias unidades de un solo artículo en contextos de canasta familiar.",
-      "justificacion_correcta": "Cada cuaderno cuesta $3.200 y se compran \\(7\\). El total es el producto \\(3.200 \\times 7 = 22.400\\); la mamá paga $22.400.",
+      "que_evalua": "La capacidad de calcular el producto entre dos números para hallar el costo total de varias unidades iguales de un mismo artículo.",
+      "justificacion_correcta": "La etiqueta indica que cada cuaderno vale $3.200 y se llevan \\(7\\). El valor del recibo es el producto \\(3.200 \\times 7 = 22.400\\), es decir, $22.400.",
       "opciones_incorrectas": {
-        "A": "Estima la cantidad como \\(8\\) por su cercanía a \\(7\\) y solo agrega un cero: queda en $23.200.",
-        "C": "Al multiplicar las centenas \\((2 \\times 7 = 14)\\) deja el \\(4\\) pero olvida agrupar bien, y obtiene $21.400.",
-        "D": "Separa \\(3.000 \\times 7 = 21.000\\) y \\(200 \\times 7 = 1.400\\) pero suma mal, agregando $200 de más: $25.200."
+        "C": "Multiplica solo la parte de los miles \\((3.000 \\times 7 = 21.000)\\) y deja por fuera las \\(200\\) unidades que aporta cada cuaderno.",
+        "B": "Cuenta ocho cuadernos en la estantería en lugar de siete y calcula \\(3.200 \\times 8 = 25.600\\).",
+        "A": "Al multiplicar \\(200 \\times 7 = 1.400\\) escribe las \\(400\\) unidades pero no agrupa el millar que se lleva, y obtiene $21.400."
       },
       "imagen_figura": "assets/banco-mat-4-p2/q01.png"
     },
     {
+      "id": "P4M214",
+      "numero": 13,
+      "enunciado": "<p>En un juego de aventuras, al superar un nivel el personaje entra a una máquina que multiplica sus vidas por un mismo número. Rocío superó el nivel y su tablero final muestra el multiplicador que se aplicó y las vidas con las que quedó (ver figura).</p>[[IMG]]<p>¿Con cuántas vidas había entrado Rocío al nivel?</p>",
+      "opciones": {
+        "A": "\\(102\\)",
+        "B": "\\(20\\)",
+        "C": "\\(16\\)",
+        "D": "\\(90\\)"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad de reconstruir un factor desconocido cuando se conocen el otro factor y el producto.",
+      "justificacion_correcta": "La máquina multiplica por \\(6\\) y deja \\(96\\) vidas. Hay que buscar el número que multiplicado por \\(6\\) da \\(96\\): como \\(16 \\times 6 = 96\\), Rocío entró al nivel con \\(16\\) vidas.",
+      "opciones_incorrectas": {
+        "A": "Suma \\(96 + 6 = 102\\), tratando la máquina como si sumara en lugar de multiplicar.",
+        "B": "Propone un número redondo sin comprobarlo: \\(20 \\times 6 = 120\\), que no es \\(96\\).",
+        "D": "Resta \\(96 - 6 = 90\\), como si lo contrario de multiplicar fuera restar."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q14.png"
+    },
+    {
+      "id": "P4M212",
+      "numero": 14,
+      "enunciado": "<p>Doña Rosa vende espejos en el mercado. Uno de sus espejos con forma de <b>octágono</b> se cayó y se partió en dos por la línea punteada que aparece en la figura: el pedazo que estaba por encima de esa línea se desprendió y se perdió. Para reponerlo, doña Rosa tiene cuatro plantillas de vidrio dibujadas a la misma escala, <b>algunas giradas</b>.</p>[[IMG]]<p>¿Cuál plantilla tiene la <b>misma forma y el mismo tamaño</b> del pedazo que se desprendió?</p>",
+      "opciones": {
+        "A": "Plantilla A.",
+        "B": "Plantilla B.",
+        "C": "Plantilla C.",
+        "D": "Plantilla D."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La capacidad para reconocer las condiciones que hacen congruentes a dos cuadriláteros.",
+      "justificacion_correcta": "El pedazo que falta es un cuadrilátero. Dos figuras son congruentes cuando sus lados y sus ángulos coinciden uno a uno, aunque una esté girada respecto de la otra. La plantilla C es ese mismo cuadrilátero girado: al rotarla encaja exactamente sobre el hueco del espejo.",
+      "opciones_incorrectas": {
+        "A": "Es un cuadrilátero parecido, pero uno de sus lados quedó más largo, así que no ajusta en el hueco.",
+        "B": "Es un cuadrilátero reflejado y con medidas distintas; por más que se gire, no alcanza a cubrir el hueco."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q12.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-4-p2/q12_opA.png",
+        "B": "assets/banco-mat-4-p2/q12_opB.png",
+        "C": "assets/banco-mat-4-p2/q12_opC.png",
+        "D": "assets/banco-mat-4-p2/q12_opD.png"
+      }
+    },
+    {
+      "id": "P4M216",
+      "numero": 15,
+      "enunciado": "<p>En una panadería, las galletas de mantequilla se venden en cajas con forma de prisma rectangular como la de la figura. Cada caja debe salir con una etiqueta que indique su <b>volumen</b>.</p>[[IMG]]<p>¿Cuál etiqueta le corresponde a esta caja?</p>",
+      "opciones": {
+        "A": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">20 cm³</span>",
+        "B": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">22 cm³</span>",
+        "C": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">40 cm³</span>",
+        "D": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">66 cm³</span>"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
+      "que_evalua": "La capacidad para hallar el volumen de un paralelepípedo recto dadas tres medidas de las aristas que representan cada una de las dimensiones (altura, ancho y profundidad).",
+      "justificacion_correcta": "El volumen de un prisma rectangular es el producto de sus tres dimensiones: \\(5\\ \\text{cm} \\times 4\\ \\text{cm} \\times 2\\ \\text{cm} = 40\\ \\text{cm}^3\\).",
+      "opciones_incorrectas": {
+        "A": "Multiplica solo dos de las medidas \\((5 \\times 4 = 20)\\): eso da el área de una cara, no el volumen.",
+        "B": "Suma las tres medidas y duplica el resultado \\((5 + 4 + 2 = 11\\) y \\(11 \\times 2 = 22)\\).",
+        "D": "Suma las tres medidas y multiplica por las seis caras \\((11 \\times 6 = 66)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q16.png"
+    },
+    {
+      "id": "P4M213",
+      "numero": 16,
+      "enunciado": "<p>Marisol arma una cenefa sobre papel cuadriculado repitiendo siempre el mismo triángulo: cada copia queda <b>3 unidades a la derecha</b> de la anterior y a la misma altura. En la figura está dibujado el primer triángulo de la cenefa.</p>[[IMG]]<p>¿Cuál de las siguientes cuadrículas (A, B, C o D) muestra la copia que sigue?</p>",
+      "opciones": {
+        "A": "Cuadrícula D.",
+        "B": "Cuadrícula A.",
+        "C": "Cuadrícula B.",
+        "D": "Cuadrícula C."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
+      "que_evalua": "La capacidad para representar la traslación de una figura en el plano.",
+      "justificacion_correcta": "Correr la figura \\(3\\) unidades a la derecha aumenta en \\(3\\) la coordenada \\(x\\) de cada vértice y deja igual la coordenada \\(y\\). Los vértices pasan de \\((2,2), (2,6)\\) y \\((5,3)\\) a \\((5,2), (5,6)\\) y \\((8,3)\\), que es lo que muestra la cuadrícula B.",
+      "opciones_incorrectas": {
+        "B": "Baja el triángulo en lugar de correrlo hacia la derecha: cambió la altura de los vértices, y eso no ocurre en una traslación horizontal.",
+        "D": "Sube el triángulo en lugar de correrlo hacia la derecha.",
+        "A": "Voltea el triángulo como en un espejo; en una traslación la figura se desliza sin cambiar de orientación."
+      },
+      "imagen_figura": "assets/banco-mat-4-p2/q13.png",
+      "opciones_imagenes": {
+        "B": "assets/banco-mat-4-p2/q13_opA.png",
+        "C": "assets/banco-mat-4-p2/q13_opB.png",
+        "D": "assets/banco-mat-4-p2/q13_opC.png",
+        "A": "assets/banco-mat-4-p2/q13_opD.png"
+      }
+    },
+    {
+      "id": "P4M217",
+      "numero": 17,
+      "enunciado": "<p>En la feria de ciencias, los jurados calificaron los proyectos del <b>Club Azul</b> y del <b>Club Verde</b>. Las tablas muestran los puntajes obtenidos y cuántos proyectos alcanzaron cada puntaje.</p><p style=\"text-align:center;font-weight:700;color:#A8132F;font-family:Georgia,serif;margin:6px\">Club Azul</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de proyectos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table><p style=\"text-align:center;font-weight:700;color:#A8132F;font-family:Georgia,serif;margin:6px\">Club Verde</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de proyectos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table><p>Se entrega una medalla a cada proyecto que obtuvo el <b>puntaje más alto de su propio club</b>. ¿Cuántas medallas se deben entregar en total?</p>",
+      "opciones": {
+        "A": "\\(4\\)",
+        "B": "\\(6\\)",
+        "C": "\\(13\\)",
+        "D": "\\(28\\)"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
+      "que_evalua": "La capacidad para identificar y usar dos determinadas frecuencias de dos conjuntos de datos agrupados para solucionar un problema.",
+      "justificacion_correcta": "En el Club Azul el puntaje más alto es \\(13\\) y lo alcanzaron \\(4\\) proyectos; en el Club Verde el más alto es \\(12\\) y lo alcanzaron \\(2\\) proyectos. En total se entregan \\(4 + 2 = 6\\) medallas.",
+      "opciones_incorrectas": {
+        "A": "Cuenta solo los \\(4\\) proyectos del club donde está el puntaje mayor de los dos \\((13)\\) y deja por fuera al otro club.",
+        "C": "Confunde el puntaje más alto \\((13)\\) con la cantidad de proyectos que lo obtuvieron.",
+        "D": "Suma todos los proyectos de las dos tablas \\((6 + 5 + 4 + 8 + 3 + 2 = 28)\\) en vez de contar solo los del puntaje más alto de cada club."
+      }
+    },
+    {
       "id": "P4M202",
-      "numero": 2,
-      "enunciado": "<p>Sofía hace figuras con globos y reparte <b>todos</b> los globos de su bolsa entre los niños que llegan a su taller (ver figura). En otra ocasión, Sofía lleva la <b>misma</b> cantidad de globos que antes, pero esta vez llegan solo <b>8 niños</b>. ¿Cuántos globos le corresponden a cada niño?</p>",
+      "numero": 18,
+      "enunciado": "<p>Sofía hace figuras con globos y reparte <b>todos</b> los globos de su bolsa entre los niños que llegan a su taller (ver figura). En otra ocasión, Sofía lleva la <b>misma</b> cantidad de globos que antes, pero esta vez llegan solo <b>8 niños</b>.</p>[[IMG]]<p>¿Cuántos globos le corresponden a cada niño?</p>",
       "opciones": {
         "A": "\\(3\\)",
         "B": "\\(4\\)",
@@ -100,176 +534,42 @@
       "imagen_figura": "assets/banco-mat-4-p2/q02.png"
     },
     {
-      "id": "P4M203",
-      "numero": 3,
-      "enunciado": "<p>Eliana hizo una maqueta sobre una tabla rectangular y pintó de <b>verde</b> la zona que representa un parque, con la forma que muestra la figura. ¿Cuál es el área de la zona verde que representa el parque?</p>",
-      "opciones": {
-        "A": "\\(60\\ \\text{cm}^2\\)",
-        "B": "\\(80\\ \\text{cm}^2\\)",
-        "C": "\\(36\\ \\text{cm}^2\\)",
-        "D": "\\(78\\ \\text{cm}^2\\)"
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco el uso de algunas magnitudes (longitud, área, volumen, capacidad, peso y masa, duración, rapidez, temperatura) y de algunas de las unidades que se usan para medir cantidades de la magnitud respectiva en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de los estudiantes para determinar el área de una figura bidimensional que se compone de rectángulos.",
-      "justificacion_correcta": "La zona verde se separa en dos rectángulos. El de la izquierda mide \\(8 \\times 6 = 48\\ \\text{cm}^2\\) y la franja inferior derecha mide \\(4 \\times 3 = 12\\ \\text{cm}^2\\). El área total es \\(48 + 12 = 60\\ \\text{cm}^2\\).",
-      "opciones_incorrectas": {
-        "B": "Halla el área de toda la tabla tomando las medidas mayores: \\(8 \\times 10 = 80\\ \\text{cm}^2\\).",
-        "C": "Suma las longitudes del borde \\((8 + 10 + 3 + 4 + 5 + 6 = 36)\\): calcula el perímetro, no el área.",
-        "D": "Toma \\(8 \\times 6 = 48\\) y \\(10 \\times 3 = 30\\) y los suma: \\(48 + 30 = 78\\ \\text{cm}^2\\)."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q03.png"
-    },
-    {
-      "id": "P4M204",
-      "numero": 4,
-      "enunciado": "<p>Andrés investiga la información nutricional de una galleta. Hasta ahora ha encontrado que cada galleta contiene <b>40 gramos de azúcar</b> y <b>10 gramos de sodio</b>, y que además contiene proteína y almidón. ¿Cuál de las siguientes gráficas (A, B, C o D) podría mostrar correctamente la composición nutricional de la galleta?</p>",
-      "opciones": {
-        "A": "Gráfica A.",
-        "B": "Gráfica B.",
-        "C": "Gráfica C.",
-        "D": "Gráfica D."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Represento datos usando tablas y gráficas (pictogramas, gráficas de barras, diagramas de líneas, diagramas circulares).",
-      "que_evalua": "La capacidad para comparar histogramas y reconocer el que representa correctamente algunos datos.",
-      "justificacion_correcta": "Solo se conocen dos datos: azúcar \\(= 40\\) g y sodio \\(= 10\\) g. La gráfica correcta debe ubicar la barra de \\(40\\) en la categoría Azúcar y la de \\(10\\) en la categoría Sodio. La gráfica D cumple ambas condiciones.",
-      "opciones_incorrectas": {
-        "A": "Suma las dos cantidades dadas \\((40 + 10)\\) y elige la gráfica donde todas las barras suman \\(50\\) g.",
-        "B": "Coloca las cantidades 40 y 10 en las dos primeras barras (Proteína y Almidón), categorías que no corresponden.",
-        "C": "Toma una gráfica que solo empieza en 40 y termina en 10, sin que esas barras sean Azúcar y Sodio."
-      },
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p2/q04_opA.png",
-        "B": "assets/banco-mat-4-p2/q04_opB.png",
-        "C": "assets/banco-mat-4-p2/q04_opC.png",
-        "D": "assets/banco-mat-4-p2/q04_opD.png"
-      }
-    },
-    {
       "id": "P4M205",
-      "numero": 5,
-      "enunciado": "<p>Para una caminata ecológica, Leonardo colocó banderas que marcan los puntos de descanso cada cierto número de kilómetros, como se ve en la figura. ¿En qué orden están puestas las banderas a lo largo del recorrido?</p>",
+      "numero": 19,
+      "enunciado": "<p>Durante una jornada de siembra, el grupo de Amanda puso una bandera en cada punto del sendero donde plantó un árbol. El número de cada bandera indica el metro del sendero en el que quedó sembrado ese árbol (ver figura).</p>[[IMG]]<p>¿Cómo quedaron ubicados los puntos de siembra?</p>",
       "opciones": {
-        "A": "Empezando en el 2 y sumando 2 cada vez.",
-        "B": "En los kilómetros con número par hasta el 18.",
-        "C": "Empezando en el 2 y sumando 4 cada vez.",
-        "D": "En orden del 2 al 18."
+        "A": "En todos los metros seguidos, desde el 2 hasta el 18.",
+        "B": "Desde el metro 2, avanzando de cuatro en cuatro.",
+        "C": "En todos los metros pares que hay hasta el 18.",
+        "D": "Desde el metro 2, avanzando de dos en dos."
       },
-      "clave": "C",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 5,
       "evidencia": "5.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
-      "que_evalua": "La capacidad del estudiante de expresar el cambio en los términos de una secuencia en una situación aditiva.",
-      "justificacion_correcta": "Los números de las banderas son \\(2, 6, 10, 14\\) y \\(18\\). De cada bandera a la siguiente se suma \\(4\\): \\(2 + 4 = 6\\), \\(6 + 4 = 10\\), \\(10 + 4 = 14\\) y \\(14 + 4 = 18\\). El orden empieza en \\(2\\) y suma \\(4\\) cada vez.",
+      "que_evalua": "La capacidad del estudiante de expresar el cambio entre los términos de una secuencia en una situación aditiva.",
+      "justificacion_correcta": "Las banderas están en los metros \\(2, 6, 10, 14\\) y \\(18\\). De una a la siguiente siempre se avanza \\(4\\): \\(2 + 4 = 6\\), \\(6 + 4 = 10\\), \\(10 + 4 = 14\\) y \\(14 + 4 = 18\\). La siembra empieza en el metro \\(2\\) y avanza de cuatro en cuatro.",
       "opciones_incorrectas": {
-        "A": "Cree que se aumenta de \\(2\\) en \\(2\\), fijándose solo en banderas a un mismo nivel y no en el salto real de \\(4\\).",
-        "B": "Cree que están todos los kilómetros pares hasta \\(18\\), pero faltan varios \\((4, 8, 12, 16)\\).",
-        "D": "Supone que aparecen todos los números del \\(2\\) al \\(18\\) en orden, sin notar el salto constante."
+        "A": "Si fueran metros seguidos habría un árbol en el \\(3\\), en el \\(4\\), en el \\(5\\) y así hasta el \\(18\\), pero en la figura solo hay cinco banderas.",
+        "D": "Avanzar de dos en dos desde \\(2\\) daría \\(2, 4, 6, 8\\dots\\), y el \\(4\\) y el \\(8\\) no tienen bandera.",
+        "C": "Los metros pares hasta \\(18\\) incluyen \\(4, 8, 12\\) y \\(16\\), que tampoco tienen bandera."
       },
       "imagen_figura": "assets/banco-mat-4-p2/q05.png"
     },
     {
-      "id": "P4M206",
-      "numero": 6,
-      "enunciado": "<p>En una carrera de natación, los nadadores recibieron los números que aparecen en sus gorros (ver figura). ¿Qué característica tienen los números asignados a los nadadores?</p>",
+      "id": "P4M209",
+      "numero": 20,
+      "enunciado": "<p>En una fábrica de chocolates, cada caja lleva impreso un código de <b>seis cifras</b> relacionado con tres características. Las dos primeras cifras indican el <b>tamaño</b> de la caja, la tercera y la cuarta indican el <b>sabor</b>, y las dos últimas indican el <b>día de empaque</b>, según la tabla.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=2>Tamaño de la caja</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=4>Sabor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=3>Día de empaque</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pequeña</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Grande</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Leche</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Amargo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Blanco</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Almendra</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lunes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Miércoles</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Viernes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">61</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">47</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">52</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">70</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">29</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">33</td></tr></table><p>¿Cuál es el código de una caja <b>grande</b>, de sabor <b>blanco</b>, empacada el <b>miércoles</b>?</p>",
       "opciones": {
-        "A": "Son números compuestos.",
-        "B": "Son divisores de 28.",
-        "C": "Son múltiplos de 4.",
-        "D": "Son números pares."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco propiedades de los números (ser par, ser impar, etc.) y relaciones entre ellos (ser mayor que, ser menor que, ser múltiplo de, ser divisible por, etc.) en diferentes contextos.",
-      "que_evalua": "La capacidad del estudiante de reconocer la relación de ser múltiplos en un conjunto numérico dado.",
-      "justificacion_correcta": "Los números son \\(4, 8, 12, 16, 20, 24\\) y \\(28\\). Todos se obtienen al multiplicar \\(4\\) por \\(1, 2, 3, 4, 5, 6\\) y \\(7\\), así que son múltiplos de \\(4\\).",
-      "opciones_incorrectas": {
-        "A": "Cree que la característica común es ser compuestos, pero lo que reúne a todos es ser múltiplos de \\(4\\).",
-        "B": "Solo \\(4\\) y \\(28\\) (junto con \\(1, 2, 7, 14\\)) dividen a \\(28\\); números como \\(8, 12, 16, 20, 24\\) no son divisores de \\(28\\).",
-        "D": "Es cierto que son pares, pero también lo son \\(6, 10, 14\\dots\\); lo que los reúne a todos es ser múltiplos de \\(4\\)."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q06.png"
-    },
-    {
-      "id": "P4M207",
-      "numero": 7,
-      "enunciado": "<p>Daniela debe elegir una de las cuatro bolsas para sacar una ficha al azar. Cada bolsa indica qué parte de sus fichas son rojas (ver figura). ¿Cuál bolsa debería elegir Daniela para tener la <b>menor</b> posibilidad de sacar una ficha roja?</p>",
-      "opciones": {
-        "A": "Bolsa 1.",
-        "B": "Bolsa 2.",
-        "C": "Bolsa 3.",
-        "D": "Bolsa 4."
+        "A": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">614733</span>",
+        "B": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">526129</span>",
+        "C": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">243815</span>",
+        "D": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">615229</span>"
       },
       "clave": "D",
-      "competencia": "b",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad de los estudiantes para elegir el espacio en el que se obtiene la menor probabilidad de obtener un evento definido.",
-      "justificacion_correcta": "La posibilidad de sacar roja es \\(\\dfrac{1}{4}\\) en la bolsa 1, \\(\\dfrac{5}{6}\\) en la 2, \\(\\dfrac{1}{3}\\) en la 3 y \\(\\dfrac{1}{12}\\) en la 4. Para compararlas se llevan a un mismo total \\((12)\\): \\(\\dfrac{1}{4}=\\dfrac{3}{12}\\), \\(\\dfrac{5}{6}=\\dfrac{10}{12}\\), \\(\\dfrac{1}{3}=\\dfrac{4}{12}\\) y \\(\\dfrac{1}{12}\\). La menor de todas es \\(\\dfrac{1}{12}\\), la bolsa 4.",
-      "opciones_incorrectas": {
-        "A": "Escoge la bolsa 1 porque también dice \\(\\dfrac{1}{}\\) (una ficha roja), pero \\(\\dfrac{1}{4}=\\dfrac{3}{12}\\) es mayor que \\(\\dfrac{1}{12}\\): no basta mirar el numerador, hay que comparar el total.",
-        "B": "Confunde el enunciado y escoge la bolsa con más fichas rojas \\(\\left(\\dfrac{5}{6}\\right)\\).",
-        "C": "Escoge \\(\\dfrac{1}{3}=\\dfrac{4}{12}\\) sin compararla con \\(\\dfrac{1}{12}\\), que es menor."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q07.png"
-    },
-    {
-      "id": "P4M208",
-      "numero": 8,
-      "enunciado": "<p>En un juego, cada jugador gira una ruleta con números naturales y, según el número que le toque, debe anotar en su hoja <b>todos los divisores positivos</b> de ese número. Si a un jugador le toca el <b>18</b>, ¿cuáles números debe anotar?</p>",
-      "opciones": {
-        "A": "\\(1\\) y \\(18\\).",
-        "B": "\\(2, 3, 6\\) y \\(9\\).",
-        "C": "\\(1, 2, 3, 6, 9\\) y \\(18\\).",
-        "D": "\\(18, 36, 54, 72\\) y \\(90\\)."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Justifico regularidades y propiedades de los números, sus relaciones y operaciones.",
-      "que_evalua": "La capacidad de encontrar los divisores positivos de un número entero.",
-      "justificacion_correcta": "Las multiplicaciones que dan \\(18\\) son \\(1 \\times 18\\), \\(2 \\times 9\\) y \\(3 \\times 6\\). Por eso los divisores positivos de \\(18\\) son \\(1, 2, 3, 6, 9\\) y \\(18\\).",
-      "opciones_incorrectas": {
-        "A": "Da solo el \\(1\\) y el mismo número, como si \\(18\\) fuera primo.",
-        "B": "Toma únicamente las parejas de las tablas de multiplicar \\((2 \\times 9\\) y \\(3 \\times 6)\\) y olvida \\(1\\) y \\(18\\).",
-        "D": "Escribe los múltiplos de \\(18\\) en lugar de sus divisores."
-      }
-    },
-    {
-      "id": "P4M209",
-      "numero": 9,
-      "enunciado": "<p>Los buses de una ciudad tienen un código de <b>seis cifras</b> relacionado con tres aspectos. Las dos primeras cifras indican el <b>tipo de transporte</b>, la tercera y la cuarta indican la <b>ruta</b>, y las dos últimas indican el <b>horario</b>, según la tabla.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=2>Tipo de transporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=4>Ruta</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\" colspan=3>Horario</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tipo I</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tipo III</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Norte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Sur</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Oriente</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Occidente</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mañana</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tarde</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Noche</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">42</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">19</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">46</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">53</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td></tr></table><p>¿Cuál es el código de un bus cuyo tipo de transporte es el <b>III</b>, su ruta es la del <b>sur</b> y su horario es el de la <b>mañana</b>?</p>",
-      "opciones": {
-        "A": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">422713</span>",
-        "B": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">381916</span>",
-        "C": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">351913</span>",
-        "D": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:3px;color:#1A1613;background:#FEF3C7;border:1.5px solid #946B11;border-radius:6px;padding:6px 18px;\">271342</span>"
-      },
-      "clave": "A",
       "competencia": "c",
       "afirmacion": 7,
       "evidencia": "7.1",
@@ -277,313 +577,11 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
       "que_evalua": "La capacidad de codificar o descodificar números por medio de convenciones asociadas al sistema de numeración decimal para la interpretación de situaciones cotidianas que describan atributos y características de un proceso o sistema",
-      "justificacion_correcta": "Cada atributo aporta dos cifras al código en su orden: tipo III \\(= 42\\), sur \\(= 27\\) y mañana \\(= 13\\). Al unirlos se obtiene el código \\(422713\\).",
+      "justificacion_correcta": "Cada característica aporta dos cifras al código, en el orden indicado: tamaño grande \\(= 61\\), sabor blanco \\(= 52\\) y día miércoles \\(= 29\\). Al unirlas se obtiene \\(615229\\).",
       "opciones_incorrectas": {
-        "B": "Confunde los atributos: usa Tipo II (no listado), Norte (19) y Tarde (16), formando 381916.",
-        "C": "Toma los primeros valores de cada columna (Tipo I = 35, Norte = 19, Mañana = 13): 351913.",
-        "D": "Arma el código en el orden equivocado, empezando por la ruta sur (27) en lugar del tipo."
-      }
-    },
-    {
-      "id": "P4M210",
-      "numero": 10,
-      "enunciado": "<p>En una competencia, los carros se ubican en cada carril siguiendo un patrón (ver figura). ¿Cuál número debe tener el carro que se ubica en el <b>carril 4</b>?</p>",
-      "opciones": {
-        "A": "\\(16\\)",
-        "B": "\\(18\\)",
-        "C": "\\(20\\)",
-        "D": "\\(65\\)"
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 7,
-      "evidencia": "7.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
-      "que_evalua": "La capacidad del estudiante de identificar el término siguiente de una secuencia dada.",
-      "justificacion_correcta": "Los números van \\(3, 8, 13\\) y aumentan \\(5\\) de un carril al siguiente: \\(3 + 5 = 8\\), \\(8 + 5 = 13\\) y \\(13 + 5 = 18\\). El carro del carril \\(4\\) lleva el número \\(18\\).",
-      "opciones_incorrectas": {
-        "A": "Cree que el salto es menor que \\(5\\) y suma mal, quedando en \\(16\\).",
-        "C": "Usa una regla distinta (multiplicar por el número de carril) y obtiene \\(20\\), sin respetar el salto de \\(5\\).",
-        "D": "Multiplica \\(5 \\times 13\\) en lugar de sumar \\(5\\) al término anterior."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q10.png"
-    },
-    {
-      "id": "P4M211",
-      "numero": 11,
-      "enunciado": "<p>Patricia tenía un tablero de juego colgado en la pared con una ficha sobre una de sus casillas. Después cambió la ficha a otra casilla, como muestran las dos imágenes (antes y después). Apoyándote en la rosa de direcciones, ¿en qué sentido desplazó Patricia la ficha?</p>",
-      "opciones": {
-        "A": "Se desplazó a la derecha y hacia arriba.",
-        "B": "Se desplazó a la izquierda y hacia abajo.",
-        "C": "Se movió únicamente hacia arriba.",
-        "D": "Se movió únicamente hacia la derecha."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Utilizo sistemas de coordenadas para especificar localizaciones y describir relaciones espaciales.",
-      "que_evalua": "La capacidad de los estudiantes para identificar los movimientos realizados al cambiar la ubicación de un objeto en un sistema de referencia bidimensional.",
-      "justificacion_correcta": "La ficha terminó más a la derecha y más arriba que al inicio, de modo que Patricia la desplazó hacia la derecha y hacia arriba.",
-      "opciones_incorrectas": {
-        "B": "Describe el movimiento opuesto, el que regresaría la ficha a su posición de partida (izquierda y abajo).",
-        "C": "Solo nota el ascenso y pasa por alto que la ficha también se corrió a la derecha.",
-        "D": "Solo nota el corrimiento a la derecha y pasa por alto que la ficha también subió."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q11.png"
-    },
-    {
-      "id": "P4M212",
-      "numero": 12,
-      "enunciado": "<p>Julián le puso un marco a un espejo con forma de <b>octágono</b>, pero el espejo se rompió en dos pedazos. En la figura se ve cómo <b>era el espejo</b> y cómo <b>quedó al romperse</b>: la línea recta marca por dónde se partió y deja un pedazo arriba. Las cuatro figuras A, B, C y D están dibujadas a la misma escala, <b>algunas giradas</b>. ¿Cuál de ellas tiene la <b>misma forma y el mismo tamaño</b> que el pedazo que se separó (aunque esté en otra posición)?</p>",
-      "opciones": {
-        "A": "Figura A.",
-        "B": "Figura B.",
-        "C": "Figura C.",
-        "D": "Figura D."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
-      "que_evalua": "La capacidad para identificar las condiciones para que dos cuadriláteros sean congruentes.",
-      "justificacion_correcta": "El pedazo que quedó del espejo es un cuadrilátero de cuatro lados. Dos figuras son iguales (congruentes) cuando tienen los mismos lados y los mismos ángulos, aunque una esté girada. La figura C es ese mismo cuadrilátero, solo que girado: sus lados y ángulos coinciden uno a uno con los del pedazo, por eso al rotarla encaja perfectamente sobre él.",
-      "opciones_incorrectas": {
-        "A": "Es un cuadrilátero parecido, pero está estirado: uno de sus lados es más largo que el del pedazo, así que no encaja sobre él (no es congruente).",
-        "B": "Es un cuadrilátero más achatado: su altura es menor y sus ángulos no coinciden con los del pedazo, por lo que no tiene el mismo tamaño.",
-        "D": "Es un cuadrilátero reflejado y deformado: aunque por un lado se parece, sus medidas no coinciden con las del pedazo, así que no es congruente."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q12.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p2/q12_opA.png",
-        "B": "assets/banco-mat-4-p2/q12_opB.png",
-        "C": "assets/banco-mat-4-p2/q12_opC.png",
-        "D": "assets/banco-mat-4-p2/q12_opD.png"
-      }
-    },
-    {
-      "id": "P4M213",
-      "numero": 13,
-      "enunciado": "<p>En un libro de Geometría aparece un triángulo dibujado sobre una cuadrícula (ver figura). ¿Cuál de las siguientes opciones (A, B, C o D) muestra el triángulo <b>trasladado 3 unidades hacia la derecha</b>?</p>",
-      "opciones": {
-        "A": "Figura A.",
-        "B": "Figura B.",
-        "C": "Figura C.",
-        "D": "Figura D."
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.2",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
-      "que_evalua": "La capacidad para representar la translación de una figura en el plano.",
-      "justificacion_correcta": "Trasladar \\(3\\) unidades a la derecha aumenta en \\(3\\) la coordenada \\(x\\) de cada vértice y deja igual la coordenada \\(y\\). Los vértices pasan de \\((2,2), (2,6), (5,3)\\) a \\((5,2), (5,6), (8,3)\\), como en la figura B.",
-      "opciones_incorrectas": {
-        "A": "Mueve el triángulo hacia abajo en lugar de hacia la derecha.",
-        "C": "Mueve el triángulo hacia arriba en lugar de hacia la derecha.",
-        "D": "Refleja el triángulo (lo voltea), en vez de solo deslizarlo a la derecha."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q13.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p2/q13_opA.png",
-        "B": "assets/banco-mat-4-p2/q13_opB.png",
-        "C": "assets/banco-mat-4-p2/q13_opC.png",
-        "D": "assets/banco-mat-4-p2/q13_opD.png"
-      }
-    },
-    {
-      "id": "P4M214",
-      "numero": 14,
-      "enunciado": "<p>En un videojuego, al terminar un nivel, una máquina <b>multiplica</b> por un mismo número la cantidad de vidas del personaje. Al pasar de nivel, la máquina multiplicó las vidas de Angélica <b>por 6</b> y le quedaron <b>96 vidas</b> (ver figura). ¿Cuántas vidas tenía el personaje de Angélica <b>antes</b> de usar la máquina?</p>",
-      "opciones": {
-        "A": "\\(90\\)",
-        "B": "\\(16\\)",
-        "C": "\\(102\\)",
-        "D": "\\(20\\)"
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de reconstruir e identificar el par de factores, y que al tener uno ellos, satisfacen un producto dado.",
-      "justificacion_correcta": "La máquina multiplica por \\(6\\) y el resultado es \\(96\\). El número inicial es el que multiplicado por \\(6\\) da \\(96\\): como \\(16 \\times 6 = 96\\), el personaje tenía \\(16\\) vidas.",
-      "opciones_incorrectas": {
-        "A": "Resta \\(96 - 6 = 90\\), como si la máquina restara en vez de multiplicar.",
-        "C": "Suma \\(96 + 6 = 102\\), tratando la operación como una adición.",
-        "D": "Estima un número redondo \\((20)\\) sin comprobar que \\(20 \\times 6 = 120\\), distinto de \\(96\\)."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q14.png"
-    },
-    {
-      "id": "P4M215",
-      "numero": 15,
-      "enunciado": "<p>Tobías diseña fichas rectangulares para un juego de mesa. La figura muestra una ficha con sus medidas. ¿Cuál es la medida de la <b>superficie</b> que debe cortar Tobías para construir una ficha?</p>",
-      "opciones": {
-        "A": "\\(14\\ \\text{cm}^2\\)",
-        "B": "\\(25\\ \\text{cm}^2\\)",
-        "C": "\\(28\\ \\text{cm}^2\\)",
-        "D": "\\(45\\ \\text{cm}^2\\)"
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco el uso de algunas magnitudes (longitud, área, volumen, capacidad, peso y masa, duración, rapidez, temperatura) y de algunas de las unidades que se usan para medir cantidades de la magnitud respectiva en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad de los estudiantes para calcular el área de un rectángulo.",
-      "justificacion_correcta": "El área de un rectángulo es el producto de su largo por su ancho: \\(5\\ \\text{cm} \\times 9\\ \\text{cm} = 45\\ \\text{cm}^2\\).",
-      "opciones_incorrectas": {
-        "A": "Suma las dimensiones \\((5 + 9 = 14)\\) en lugar de multiplicarlas.",
-        "B": "Calcula el área de una sola celda cuadrada \\((5 \\times 5 = 25)\\), no de toda la ficha.",
-        "C": "Calcula el perímetro \\(((2 \\times 5) + (2 \\times 9) = 28)\\) en lugar del área."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q15.png"
-    },
-    {
-      "id": "P4M216",
-      "numero": 16,
-      "enunciado": "<p>Gonzalo trabaja en una joyería y empaca los anillos en cajas con forma de prisma rectangular, como la de la imagen (ver figura). Gonzalo debe ponerle una etiqueta con el <b>volumen</b> de la caja. ¿Cuál etiqueta debe ponerle?</p>",
-      "opciones": {
-        "A": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">20 cm³</span>",
-        "B": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">22 cm³</span>",
-        "C": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">40 cm³</span>",
-        "D": "<span style=\"display:inline-block;font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1A1613;background:#CDE8EE;border:1.5px solid #2C7C8C;border-radius:6px;padding:7px 20px;\">66 cm³</span>"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
-      "que_evalua": "La capacidad para hallar el volumen de un paralelepípedo recto dadas tres medidas de las aristas que representan cada una de las dimensiones (altura, ancho y profundidad).",
-      "justificacion_correcta": "El volumen de un prisma rectangular es el producto de sus tres dimensiones: \\(5\\ \\text{cm} \\times 4\\ \\text{cm} \\times 2\\ \\text{cm} = 40\\ \\text{cm}^3\\).",
-      "opciones_incorrectas": {
-        "A": "Calcula el área de una sola cara \\((5 \\times 4 = 20)\\) en vez del volumen.",
-        "B": "Suma las aristas visibles de la caja y obtiene \\(22\\) en lugar de multiplicarlas.",
-        "D": "Suma las tres medidas \\((5 + 4 + 2 = 11)\\) y multiplica por las \\(6\\) caras: \\(11 \\times 6 = 66\\)."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q16.png"
-    },
-    {
-      "id": "P4M217",
-      "numero": 17,
-      "enunciado": "<p>Se muestran los puntajes obtenidos por los estudiantes de <b>grado cuarto</b> y de <b>grado quinto</b> en una prueba de Educación Física.</p><p style=\"text-align:center;font-weight:700;color:#A8132F;font-family:Georgia,serif;margin:6px\">Grado cuarto</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table><p style=\"text-align:center;font-weight:700;color:#A8132F;font-family:Georgia,serif;margin:6px\">Grado quinto</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">11</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table><p>Si el profesor debe comprar los premios para los estudiantes de cuarto <b>y</b> de quinto que obtuvieron el <b>mayor puntaje</b> en su grado, ¿cuántos premios debe comprar?</p>",
-      "opciones": {
-        "A": "\\(3\\)",
-        "B": "\\(5\\)",
-        "C": "\\(12\\)",
-        "D": "\\(27\\)"
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 4,
-      "evidencia": "4.2",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
-      "que_evalua": "La capacidad para identificar y usar dos determinadas frecuencias de dos conjuntos de datos agrupados para solucionar un problema.",
-      "justificacion_correcta": "En grado cuarto el mayor puntaje es \\(12\\) y lo obtuvieron \\(3\\) estudiantes; en grado quinto el mayor puntaje es \\(11\\) y lo obtuvieron \\(2\\) estudiantes. Los premios son \\(3 + 2 = 5\\).",
-      "opciones_incorrectas": {
-        "A": "Premia solo al grupo con mayor puntaje de los dos grados \\((3\\) estudiantes de cuarto\\()\\), olvidando el otro grado.",
-        "C": "Confunde el puntaje más alto \\((12)\\) con la cantidad de premios.",
-        "D": "Suma todos los puntajes de las tablas en vez de contar a los estudiantes con el puntaje más alto."
-      }
-    },
-    {
-      "id": "P4M218",
-      "numero": 18,
-      "enunciado": "<p>Mauricio decora un plato con flores durante varios días. Cada día pinta más flores, como se ve en la figura (Día 1, Día 2 y Día 3). ¿Cómo cambia la cantidad total de flores pintadas por Mauricio a medida que avanzan los días?</p>",
-      "opciones": {
-        "A": "Aumenta dos flores.",
-        "B": "Duplica el número de flores.",
-        "C": "Triplica el número de flores.",
-        "D": "Aumenta tres flores."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
-      "que_evalua": "La capacidad de los estudiantes para identificar el patrón de formación de una secuencia a partir de los primeros tres términos.",
-      "justificacion_correcta": "El Día 1 hay \\(1\\) flor, el Día 2 hay \\(3\\) flores \\((1 \\times 3)\\) y el Día 3 hay \\(9\\) flores \\((3 \\times 3)\\). De un día al siguiente el número de flores se multiplica por \\(3\\), es decir, se triplica.",
-      "opciones_incorrectas": {
-        "A": "Mira solo del Día 1 al 2 \\((1\\) a \\(3)\\) y cree que aumentan \\(2\\) cada vez, sin revisar el Día 3.",
-        "B": "Cree que de \\(1\\) a \\(3\\) se duplica, pero \\(1\\) duplicado es \\(2\\), no \\(3\\).",
-        "D": "Ve que se agregan flores y supone que siempre se suman \\(3\\), cuando en realidad se multiplica por \\(3\\)."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q18.png"
-    },
-    {
-      "id": "P4M219",
-      "numero": 19,
-      "enunciado": "<p>Lucía guardó en una bolsa <b>20</b> piedras de distintas formas para armar una pulsera (ver figura). Si Lucía saca una piedra de la bolsa <b>sin mirar</b>, ¿cuál de las siguientes afirmaciones es verdadera?</p>",
-      "opciones": {
-        "A": "Es imposible sacar la piedra de hoja porque es la que menos se repite en la bolsa.",
-        "B": "Es menos probable sacar la piedra de concha porque es la que menos se repite en la bolsa.",
-        "C": "Es más probable sacar la piedra de estrella porque es la que más se repite en la bolsa.",
-        "D": "Es seguro sacar la piedra de estrella porque es la que más se repite en la bolsa."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 6,
-      "evidencia": "6.2",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad de identificar y argumentar la probabilidad de ocurrencia de eventos, a partir del número de casos favorables respecto al número de casos posibles.",
-      "justificacion_correcta": "Entre las \\(20\\) piedras, la de estrella aparece \\(9\\) veces, más que cualquier otra forma. Por eso es la que tiene mayor probabilidad de ser sacada: es la más probable.",
-      "opciones_incorrectas": {
-        "A": "La piedra de hoja sí está en la bolsa (aparece varias veces), así que sacarla no es imposible, solo poco probable.",
-        "B": "Aunque la concha es poco frecuente, la afirmación correcta debe señalar la piedra más probable, que es la estrella.",
-        "D": "Que sea la más frecuente no la hace segura: también pueden salir otras piedras."
-      },
-      "imagen_figura": "assets/banco-mat-4-p2/q19.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p2/q19_opA.png",
-        "B": "assets/banco-mat-4-p2/q19_opB.png",
-        "C": "assets/banco-mat-4-p2/q19_opC.png",
-        "D": "assets/banco-mat-4-p2/q19_opD.png"
-      }
-    },
-    {
-      "id": "P4M220",
-      "numero": 20,
-      "enunciado": "<p>La familia de Verónica compró una pizza grande dividida en <b>20</b> porciones, y sus sabores están distribuidos como se muestra en la tabla.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Sabor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de porciones</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Champiñón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jamón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tomate</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Total</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr></table><p>Si Verónica escoge una porción de pizza al azar, ¿cuál es el sabor <b>menos probable</b> que puede seleccionar?</p>",
-      "opciones": {
-        "A": "Champiñón.",
-        "B": "Queso.",
-        "C": "Jamón.",
-        "D": "Tomate."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad para identificar la mayor o menor probabilidad de un evento dada una tabla de frecuencias.",
-      "justificacion_correcta": "El sabor con menos porciones es Champiñón, con solo \\(1\\) porción de las \\(20\\). Como tiene la menor frecuencia, es el menos probable de salir al azar.",
-      "opciones_incorrectas": {
-        "B": "Escoge Queso por ser el primero de la tabla, sin comparar las cantidades.",
-        "C": "Escoge Jamón (9 porciones), que es el más probable, no el menos probable.",
-        "D": "Escoge Tomate por ser el último de la lista de sabores, aunque tiene 3 porciones, más que Champiñón."
+        "B": "Usa los tres valores correctos, pero arma el código empezando por el sabor \\((52)\\) en vez del tamaño.",
+        "A": "Acierta el tamaño \\((61)\\) y se equivoca en las otras dos características: toma Amargo \\((47)\\) y Viernes \\((33)\\).",
+        "C": "Copia el primer valor de cada grupo de la tabla (Pequeña \\(= 24\\), Leche \\(= 38\\), Lunes \\(= 15\\)) sin fijarse en lo que pide la pregunta."
       }
     }
   ]

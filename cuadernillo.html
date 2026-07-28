@@ -754,15 +754,26 @@
       // Modo v4: texto + figura recortada + opciones de texto (o de imagen para P8/P10)
       enunEl.classList.remove('hidden');
       instruEl.classList.add('hidden');
-      enunEl.innerHTML = p.enunciado;
 
-      // Figura recortada (si la pregunta la tiene)
-      if (p.imagen_figura) {
-        imgCont.innerHTML = `<div style="background:white;padding:16px;border-radius:12px;box-shadow:inset 0 0 0 1px #E5E7EB;text-align:center">
+      // ESTRUCTURA DEL ENUNCIADO CON FIGURA (indicación del dueño, 28-jul).
+      // Un enunciado de área con imagen es un texto DISCONTINUO y debe leerse en tres tiempos:
+      // contextualización → imagen → desenlace de la pregunta. Poner toda la prosa junta y la
+      // figura al final obliga a leer la pregunta sin haber visto el estímulo y da pie a
+      // ambigüedades. El marcador [[IMG]] dentro del enunciado señala dónde va la figura.
+      // Si el marcador no está (o la pregunta no tiene figura), se conserva el orden de siempre.
+      const _figHTML = p.imagen_figura
+        ? `<div style="background:white;padding:16px;border-radius:12px;box-shadow:inset 0 0 0 1px #E5E7EB;text-align:center;margin:14px 0">
           <img src="${srcLiviano(p.imagen_figura)}" alt="Figura de la pregunta ${p.numero}" loading="lazy" decoding="async" style="max-width:100%;max-height:420px;margin:0 auto;border-radius:8px" onerror="${onerrorLiviano(p.imagen_figura)}">
-        </div>`;
-      } else {
+        </div>`
+        : '';
+      const _partes = String(p.enunciado || '').split('[[IMG]]');
+      if (_partes.length > 1 && _figHTML) {
+        enunEl.innerHTML = _partes[0] + _figHTML + _partes.slice(1).join('');
         imgCont.innerHTML = '';
+      } else {
+        // sin marcador: se limpia por si quedó suelto y la figura va después del texto
+        enunEl.innerHTML = _partes.join(' ');
+        imgCont.innerHTML = _figHTML;
       }
 
       // Render de opciones (texto o imagen si la pregunta tiene opciones_imagenes).
