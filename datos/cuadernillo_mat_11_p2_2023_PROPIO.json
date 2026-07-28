@@ -168,7 +168,7 @@
     {
       "id": "P-math-11-p2-03",
       "numero": 6,
-      "enunciado": "<p>Un programa de diseño reporta, para los tres ángulos interiores del triángulo \\(JKL\\) que forma una pieza de vitral, los siguientes signos de la tangente:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">\\(\\tan(J) > 0,\\quad \\tan(K) > 0,\\quad \\tan(L) < 0\\)</div><p>¿Qué conclusión se desprende de ese reporte?</p>",
+      "enunciado": "<p>Un programa de diseño reporta, para los tres ángulos interiores del triángulo \\(JKL\\) que forma una pieza de vitral, los siguientes signos de la tangente:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">\\[\\tan(J) > 0, \\qquad \\tan(K) > 0, \\qquad \\tan(L) < 0\\]</div><p>El siguiente esquema resume qué signo toma la tangente según la medida del ángulo.</p>[[IMG]]<p>¿Qué conclusión se desprende de ese reporte?</p>",
       "opciones": {
         "A": "El ángulo \\(L\\) es obtuso y, en consecuencia, \\(J\\) y \\(K\\) suman menos de \\(90^\\circ\\).",
         "B": "Los tres ángulos miden lo mismo, pues las tres tangentes se calculan con la misma razón.",
@@ -188,7 +188,9 @@
         "C": "En \\(90^\\circ\\) la tangente no está definida, nunca toma un valor negativo; por eso \\(L\\) no puede ser recto.",
         "B": "El signo de la tangente no informa sobre la igualdad de las medidas: aquí \\(L\\) es obtuso y los otros dos no.",
         "D": "\\(J\\) y \\(K\\) sí son agudos, pero \\(\\tan(L) < 0\\) obliga a que \\(L\\) quede entre \\(90^\\circ\\) y \\(180^\\circ\\)."
-      }
+      },
+      "imagen_figura": "assets/banco-mat-11-p2/q06.png",
+      "imagen_alt": null
     },
     {
       "id": "P-math-11-p2-12",
@@ -244,7 +246,7 @@
     {
       "id": "P-math-11-p2-18",
       "numero": 9,
-      "enunciado": "<p>La densidad lineal de un cable es el cociente entre su masa y su longitud. <b>Rosa</b> tiene <b>\\(40\\) cm</b> de cable de cobre y, para estimar su masa, multiplica esa longitud por la densidad lineal del cable, <b>\\(2.400\\ \\text{g/m}\\)</b>, y anota como resultado \\(96.000\\) g. ¿Es correcto el cálculo de Rosa?</p>",
+      "enunciado": "<p>La <b>densidad lineal</b> de un cable es el cociente entre su masa y su longitud. <b>Rosa</b> quiere estimar la masa de un tramo de cable de cobre y dispone de estos datos:</p><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.7\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:13px;letter-spacing:.04em\">DATOS</div>Longitud del tramo: \\(40\\ \\text{cm}\\)<br>Densidad lineal del cable: \\(2.400\\ \\text{g/m}\\)</div><p>Rosa multiplica la longitud por la densidad lineal y anota como resultado \\(96.000\\ \\text{g}\\). ¿Es correcto el cálculo de Rosa?</p>",
       "opciones": {
         "A": "Sí, porque la masa se obtiene multiplicando la densidad lineal por la longitud, sin más ajustes.",
         "B": "No, porque se equivocó al manejar los ceros de la multiplicación.",
@@ -320,7 +322,7 @@
     {
       "id": "P-math-11-p2-02",
       "numero": 12,
-      "enunciado": "<p>En un banco de pruebas, la energía acumulada por un motor durante un ensayo se describe con <b>\\(18y^{7} - 27y^{5} + 9y^{4}\\)</b> y el tiempo empleado, con <b>\\(9y^{3}\\)</b>, para valores de \\(y\\) distintos de \\(0\\). La potencia media del ensayo es el cociente entre esas dos cantidades. ¿Cuál expresión es equivalente a dicho cociente?</p>",
+      "enunciado": "<p>En un banco de pruebas se registran, para valores de \\(y\\) distintos de \\(0\\), la energía acumulada por un motor durante un ensayo y el tiempo empleado:</p><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.7\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:13px;letter-spacing:.04em\">DATOS</div>Energía acumulada: \\(18y^{7} - 27y^{5} + 9y^{4}\\)<br>Tiempo empleado: \\(9y^{3}\\)</div><p>La <b>potencia media</b> del ensayo es el cociente entre esas dos cantidades:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">\\[\\dfrac{18y^{7} - 27y^{5} + 9y^{4}}{9y^{3}}\\]</div><p>¿Cuál expresión es equivalente a ese cociente?</p>",
       "opciones": {
         "A": "\\(2y^{4} - 3y^{2} + 9y^{4}\\)",
         "B": "\\(2y^{7} - 3y^{5} + y^{4}\\)",
@@ -421,7 +423,7 @@
     {
       "id": "P-math-11-p2-16",
       "numero": 16,
-      "enunciado": "<p>En acústica musical, la distancia en <b>semitonos</b> entre dos notas se relaciona con sus frecuencias mediante <b>\\(s - s_{0} = 12\\,\\log_{2}\\!\\left(\\dfrac{f}{f_{0}}\\right)\\)</b>, donde \\(f_{0}\\) es la frecuencia de la nota de referencia y \\(s_{0}\\), el semitono que ocupa esa nota. Se sabe que, cuando \\(\\dfrac{f}{f_{0}} = 2\\) (una octava), la diferencia \\(s - s_{0}\\) es \\(12\\). ¿En qué semitono queda una nota cuya frecuencia cumple \\(\\dfrac{f}{f_{0}} = 2^{3}\\), si la nota de referencia ocupa el semitono \\(s_{0} = 28\\)?</p>",
+      "enunciado": "<p>En acústica musical, la distancia en <b>semitonos</b> entre dos notas se relaciona con sus frecuencias mediante la siguiente fórmula:</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">\\[s - s_{0} = 12\\,\\log_{2}\\!\\left(\\dfrac{f}{f_{0}}\\right)\\]</div><p>En ella, \\(f_{0}\\) es la frecuencia de la nota de referencia y \\(s_{0}\\), el semitono que ocupa esa nota. Se sabe que, cuando \\(\\dfrac{f}{f_{0}} = 2\\) (una octava), la diferencia \\(s - s_{0}\\) es \\(12\\).</p><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:8px 16px;margin:10px auto;max-width:560px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.7\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:2px;font-size:13px;letter-spacing:.04em\">DATOS</div>Nota de referencia: \\(s_{0} = 28\\)<br>Nota buscada: \\(\\dfrac{f}{f_{0}} = 2^{3}\\)</div><p>¿En qué semitono queda la nota buscada?</p>",
       "opciones": {
         "A": "\\(8\\)",
         "B": "\\(76\\)",
@@ -471,7 +473,7 @@
     {
       "id": "P-math-11-p2-17",
       "numero": 18,
-      "enunciado": "<p>Un vivero organiza una campaña de siembra: la primera semana planta <b>\\(1\\)</b> árbol; la segunda, <b>\\(3\\)</b>; la tercera, <b>\\(5\\)</b>, y, en general, cada semana planta <b>\\(2\\)</b> árboles más que la anterior. El total plantado resulta de sumar lo de todas las semanas. ¿Cuál fórmula permite calcular el <b>total de árboles</b> plantados al cabo de \\(n\\) semanas?</p>",
+      "enunciado": "<p>Un vivero organiza una campaña de siembra: la primera semana planta \\(1\\) árbol; la segunda, \\(3\\); la tercera, \\(5\\), y, en general, cada semana planta \\(2\\) árboles más que la anterior.</p>[[IMG]]<p>El total plantado resulta de sumar lo de todas las semanas. ¿Cuál fórmula permite calcular el <b>total de árboles</b> plantados al cabo de \\(n\\) semanas?</p>",
       "opciones": {
         "A": "\\(n(n+1)\\)",
         "B": "\\(n^{2}\\)",
@@ -491,7 +493,9 @@
         "A": "\\(n(n+1)\\) duplica el resultado: para \\(n = 3\\) daría \\(12\\) y el total real es \\(9\\).",
         "C": "\\(2n - 1\\) cuenta los árboles plantados en la semana \\(n\\), no el acumulado de todas las semanas.",
         "D": "\\(\\dfrac{n(n+1)}{2}\\) suma los \\(n\\) primeros números naturales: para \\(n = 3\\) daría \\(6\\) y no \\(9\\)."
-      }
+      },
+      "imagen_figura": "assets/banco-mat-11-p2/q18.png",
+      "imagen_alt": null
     },
     {
       "id": "P-math-11-p2-05",
@@ -522,7 +526,7 @@
     {
       "id": "P-math-11-p2-15",
       "numero": 20,
-      "enunciado": "<p>Un taller arma bicicletas a pedido: cada cliente escoge <b>1</b> cuadro, <b>1</b> juego de ruedas, <b>1</b> manubrio y <b>1</b> color de pintura. El taller dispone de <b>\\(6\\)</b> cuadros, <b>\\(3\\)</b> juegos de ruedas, <b>\\(2\\)</b> manubrios y <b>\\(4\\)</b> colores. ¿Cuántas bicicletas distintas se pueden armar?</p>",
+      "enunciado": "<p>Un taller arma bicicletas a pedido: cada cliente escoge <b>1</b> cuadro, <b>1</b> juego de ruedas, <b>1</b> manubrio y <b>1</b> color de pintura. Estas son las opciones disponibles:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Pieza</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Opciones disponibles</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuadro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Juego de ruedas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Manubrio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Color de pintura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr></table><p>¿Cuántas bicicletas distintas se pueden armar?</p>",
       "opciones": {
         "A": "\\(144\\)",
         "B": "\\(15\\)",
