@@ -125,6 +125,10 @@ DUPLICADOS = [
     ("in_10_p1", 17, "ctx-parte4"),
     ("in_11_p1", 9, "ctx-parte3"),
     ("in_11_p1", 15, "ctx-parte4"),
+    # Este se escapo en la primera pasada: el texto embebido escribia los espacios como
+    # "(11) ______" y el contexto como "(11)_______", asi que la comparacion literal no los
+    # veia iguales. Se detecto al normalizar quitando espacios y guiones bajos.
+    ("in_10_p1", 11, "ctx-parte3"),
 ]
 
 for tag in sorted(set(t for t, _, _ in DUPLICADOS)):
@@ -208,7 +212,12 @@ for tag, cid, viejo0, nuevo0, cuantos in CLOZE:
 
 # --- F4 numero de item sobrante al inicio del enunciado -----------------------------------
 _NUM = re.compile(r"^(\s*<p[^>]*>)?\s*(?:<b>\s*)?\d{1,2}\s*[.)]\s*(?:</b>)?\s*")
-for tag in ("lc_6_p2", "lc_7_p2"):
+# En P1 los numeros SI coincidian con la pregunta, asi que no eran un desfase; pero se imprimian
+# igual, y como la plataforma y el PDF ya ponen su propia insignia con el numero, el estudiante
+# veia el numero dos veces seguidas: la insignia "1" y despues "1." abriendo el texto. Ademas
+# P2 ya no los tiene, de modo que las dos mitades de la plataforma no se parecian.
+for tag in ("lc_6_p2", "lc_7_p2",
+            "lc_3_p1", "lc_5_p1", "lc_6_p1", "lc_7_p1", "lc_10_p1", "lc_11_p1"):
     d = leer(tag)
     n = 0
     for q in d["preguntas"]:
