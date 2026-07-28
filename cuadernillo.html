@@ -554,14 +554,10 @@
       const _ES_CREDITO = /(los derechos pertenecen|uso educativo|recuperad[oa] de|tomado (y adaptado)?de|adaptado de|elaboraci[oó]n propia|reproducid[ao] del)/i;
       let _cuerpoTxt = String(ctx.texto || ''), _creditoTxt = '';
       if (ctx.imagen && _cuerpoTxt) {
-        const _ps = _cuerpoTxt.split(/
-\s*
-/);
+        const _ps = _cuerpoTxt.split(/\n\s*\n/);
         if (_ps.length > 1 && _ES_CREDITO.test(_ps[_ps.length - 1])) {
           _creditoTxt = _ps.pop().trim();
-          _cuerpoTxt = _ps.join('
-
-');
+          _cuerpoTxt = _ps.join('\n\n');
         }
       }
       const textoHtml = _cuerpoTxt
