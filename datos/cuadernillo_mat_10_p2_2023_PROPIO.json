@@ -54,8 +54,8 @@
       "que_evalua": "La capacidad de los estudiantes de determinar promedio de un conjunto de datos representado en una gráfica de barras.",
       "justificacion_correcta": "Se suman los visitantes de las seis semanas, \\(9+12+18+12+15+18 = 84\\) mil, y ese total se reparte entre las \\(6\\) semanas: \\(84.000 \\div 6 = 14.000\\).",
       "opciones_incorrectas": {
-        "C": "\\(16.500\\) es el promedio de las dos semanas más concurridas, \\((18+15)\\div 2\\), no el de las seis.",
         "B": "\\(18.000\\) es el registro máximo, alcanzado en dos semanas, y no representa a las demás.",
+        "C": "\\(16.500\\) es el promedio de las dos semanas más concurridas, \\((18+15)\\div 2\\), no el de las seis.",
         "D": "\\(12.000\\) es lo que recibieron dos de las semanas; repetirse no convierte a un dato en promedio."
       },
       "imagen_figura": "assets/banco-mat-10-p2/q10.png"
@@ -164,9 +164,9 @@
       "que_evalua": "La capacidad para reconocer propiedades de las funciones trigonométricas y realizar operaciones aritméticas entre ellas.",
       "justificacion_correcta": "En el tercer cuadrante el seno y el coseno son ambos negativos. El planteamiento de Daniela es correcto hasta \\((\\cos \\theta)^2 = \\dfrac{49}{625}\\), pero al extraer la raíz hay dos valores posibles, \\(+\\dfrac{7}{25}\\) y \\(-\\dfrac{7}{25}\\), y el cuadrante obliga a tomar el negativo. Por eso el compañero tiene razón: \\(\\cos \\theta = -\\dfrac{7}{25}\\).",
       "opciones_incorrectas": {
-        "C": "El valor \\(\\dfrac{49}{625}\\) sí es menor que \\(1\\); de hecho el cuadrado de cualquier coseno está entre \\(0\\) y \\(1\\).",
         "A": "La identidad \\((\\sen \\theta)^2 + (\\cos \\theta)^2 = 1\\) vale para cualquier ángulo; el cuadrante no la invalida, solo decide el signo.",
-        "B": "Elevar al cuadrado es multiplicar la fracción por sí misma, no duplicarla, y ese paso borra el signo en lugar de fijarlo."
+        "B": "Elevar al cuadrado es multiplicar la fracción por sí misma, no duplicarla, y ese paso borra el signo en lugar de fijarlo.",
+        "C": "El valor \\(\\dfrac{49}{625}\\) sí es menor que \\(1\\); de hecho el cuadrado de cualquier coseno está entre \\(0\\) y \\(1\\)."
       }
     },
     {
@@ -189,8 +189,8 @@
       "que_evalua": "La capacidad para aplicar estrategias en problemas que involucran razones con números reales.",
       "justificacion_correcta": "El nutriente total de la mezcla es \\(1\\ \\text{L} \\times 25 + 0{,}5\\ \\text{L} \\times 100 = 25 + 50 = 75\\ \\text{g}\\), y agregar agua no lo modifica. Para una concentración de \\(25\\ \\text{g/L}\\), el volumen final \\(V\\) debe cumplir \\(\\dfrac{75}{V} = 25\\), o sea \\(V = 3\\ \\text{L}\\). Como la mezcla ya ocupa \\(1{,}5\\ \\text{L}\\), se deben añadir \\(3 - 1{,}5 = 1{,}5\\ \\text{L} = 1.500\\ \\text{ml}\\).",
       "opciones_incorrectas": {
-        "C": "\\(500\\ \\text{ml}\\) es el Ámbar que entró en la mezcla, no el agua que hace falta.",
         "B": "Divide los \\(75\\ \\text{g}\\) entre \\(100\\ \\text{g/L}\\), la concentración del Ámbar, en vez de entre la concentración buscada.",
+        "C": "\\(500\\ \\text{ml}\\) es el Ámbar que entró en la mezcla, no el agua que hace falta.",
         "D": "Suma el volumen final y el actual, \\(3\\ \\text{L} + 1{,}5\\ \\text{L}\\), en lugar de restarlos."
       }
     },
@@ -214,9 +214,9 @@
       "que_evalua": "La capacidad de los estudiantes para determinar las características que tendrá el resultado de un cálculo de la mediana o de la media para un conjunto de datos con valores impares.",
       "justificacion_correcta": "Con cuatro datos la mediana es el promedio de los dos valores centrales. Como ambos son impares, su suma es par y la mitad de un número par es siempre un entero: la mediana no tiene parte decimal y, por lo tanto, jamás puede terminar en \\({,}5\\).",
       "opciones_incorrectas": {
-        "D": "El promedio sí puede terminar en \\({,}5\\): con \\(13\\), \\(13\\), \\(13\\) y \\(15\\) la suma es \\(54\\) y \\(54 \\div 4 = 13{,}5\\).",
         "A": "La mediana sí puede ser par: si los centrales son \\(13\\) y \\(15\\), la mediana vale \\(14\\).",
-        "B": "El promedio sí puede ser par: \\(11+13+15+17 = 56\\) y \\(56 \\div 4 = 14\\)."
+        "B": "El promedio sí puede ser par: \\(11+13+15+17 = 56\\) y \\(56 \\div 4 = 14\\).",
+        "D": "El promedio sí puede terminar en \\({,}5\\): con \\(13\\), \\(13\\), \\(13\\) y \\(15\\) la suma es \\(54\\) y \\(54 \\div 4 = 13{,}5\\)."
       },
       "imagen_figura": "assets/banco-mat-10-p2/q14.png"
     },
@@ -240,9 +240,9 @@
       "que_evalua": "La capacidad de justificar la pertinencia o no de representaciones de datos.",
       "justificacion_correcta": "Un diagrama circular sirve para repartir <i>una sola</i> cantidad entre sus partes. Aquí cada porcentaje se calculó sobre la duración de un curso diferente, es decir, sobre cuatro totales independientes, así que reunirlos como tajadas de un mismo círculo no representa nada.",
       "opciones_incorrectas": {
-        "C": "El orden de las tajadas es una cuestión de presentación; el diagrama seguiría siendo inadecuado aunque estuvieran ordenadas.",
         "A": "Los datos ya vienen en porcentaje: agregar las duraciones no arreglaría el problema de fondo.",
-        "B": "Que sumen o no \\(100\\,\\%\\) es apenas un síntoma; lo que falla es que los porcentajes provienen de cantidades distintas."
+        "B": "Que sumen o no \\(100\\,\\%\\) es apenas un síntoma; lo que falla es que los porcentajes provienen de cantidades distintas.",
+        "C": "El orden de las tajadas es una cuestión de presentación; el diagrama seguiría siendo inadecuado aunque estuvieran ordenadas."
       },
       "imagen_figura": "assets/banco-mat-10-p2/q05.png"
     },

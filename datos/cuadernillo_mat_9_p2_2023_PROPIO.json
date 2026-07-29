@@ -74,9 +74,9 @@
       "que_evalua": "La capacidad para descomponer una figura en dos solidos (un paralelepípedo recto y un prisma) para hallar su volumen con ayuda de fórmulas y patrones estandarizados.",
       "justificacion_correcta": "El módulo se descompone en dos sólidos y se suman sus volúmenes. El cuerpo es un paralelepípedo de \\(4\\ \\text{m} \\times 2\\ \\text{m} \\times 2\\ \\text{m}\\), es decir, \\(16\\ \\text{m}^3\\). La cubierta es un prisma triangular de \\(\\dfrac{1}{2} \\times 4 \\times 2 \\times 1{,}5 = 6\\ \\text{m}^3\\). En total caben \\(16 + 6 = 22\\ \\text{m}^3\\).",
       "opciones_incorrectas": {
-        "D": "Deja por fuera la altura \\(p\\) de la cubierta: calcula \\(\\dfrac{1}{2} \\times 4 \\times 2 = 4\\) y suma \\(16 + 4\\).",
         "A": "Se queda solo con el cuerpo, \\(16\\ \\text{m}^3\\), y no le agrega la cubierta, que también almacena agua.",
-        "B": "Olvida el factor \\(\\dfrac{1}{2}\\) del prisma: usa \\(4 \\times 2 \\times 1{,}5 = 12\\) y suma \\(16 + 12\\)."
+        "B": "Olvida el factor \\(\\dfrac{1}{2}\\) del prisma: usa \\(4 \\times 2 \\times 1{,}5 = 12\\) y suma \\(16 + 12\\).",
+        "D": "Deja por fuera la altura \\(p\\) de la cubierta: calcula \\(\\dfrac{1}{2} \\times 4 \\times 2 = 4\\) y suma \\(16 + 4\\)."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q13.png"
     },
@@ -125,9 +125,9 @@
       "que_evalua": "La capacidad para juntar los datos de una tabla y de una gráfica para determinar una frecuencia total e identificar cuál elemento tiene la mayor frecuencia.",
       "justificacion_correcta": "Hay que sumar, género por género, lo que aporta cada fuente. De la gráfica (mujeres): Rock \\(2\\), Pop \\(3\\), Salsa \\(4\\), Vallenato \\(1\\). De la tabla (hombres): Salsa \\(4\\), Rock \\(5\\), Pop \\(2\\), Vallenato \\(3\\). Los totales quedan así: Rock \\(7\\), Pop \\(5\\), Salsa \\(8\\) y Vallenato \\(4\\). El mayor es Salsa, con \\(8\\) votos.",
       "opciones_incorrectas": {
-        "D": "Vallenato reúne el total más bajo, \\(1 + 3 = 4\\) votos: se escoge el mínimo en lugar del máximo.",
         "A": "Rock encabeza la tabla de los hombres con \\(5\\), pero al sumarle los \\(2\\) votos de las mujeres llega a \\(7\\) y no alcanza a Salsa.",
-        "C": "Empareja la gráfica y la tabla por posición y no por nombre: junta la segunda barra (Pop, \\(3\\)) con la segunda fila (Rock, \\(5\\)) y le adjudica a Pop \\(8\\) votos que no son suyos."
+        "C": "Empareja la gráfica y la tabla por posición y no por nombre: junta la segunda barra (Pop, \\(3\\)) con la segunda fila (Rock, \\(5\\)) y le adjudica a Pop \\(8\\) votos que no son suyos.",
+        "D": "Vallenato reúne el total más bajo, \\(1 + 3 = 4\\) votos: se escoge el mínimo en lugar del máximo."
       },
       "imagen_figura": ""
     },
@@ -152,8 +152,8 @@
       "justificacion_correcta": "Las barras marcan el acumulado \\((0, 1, 1, 2, 3, 5)\\). Lo que entró en cada intervalo es la diferencia entre un registro y el anterior: \\(0\\); \\(1-0=1\\); \\(1-1=0\\); \\(2-1=1\\); \\(3-2=1\\); \\(5-3=2\\). La tabla que necesita el operario es la que lista \\(0, 1, 0, 1, 1, 2\\).",
       "opciones_incorrectas": {
         "A": "Traslada las alturas de las barras tal cual: son los acumulados, de modo que cada persona quedaría contada de nuevo en todos los intervalos siguientes.",
-        "C": "En vez de restar registros consecutivos los suma \\((1+1=2;\\ 1+2=3;\\ 2+3=5;\\ 3+5=8)\\), lo que infla el ingreso de cada intervalo.",
-        "B": "Calcula bien las diferencias, pero las corre una casilla hacia arriba y le asigna a cada intervalo el ingreso del siguiente."
+        "B": "Calcula bien las diferencias, pero las corre una casilla hacia arriba y le asigna a cada intervalo el ingreso del siguiente.",
+        "C": "En vez de restar registros consecutivos los suma \\((1+1=2;\\ 1+2=3;\\ 2+3=5;\\ 3+5=8)\\), lo que infla el ingreso de cada intervalo."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q20.png"
     },
@@ -178,8 +178,8 @@
       "justificacion_correcta": "Para cada variedad la probabilidad de germinar es el cociente entre las semillas que germinaron y las sembradas: Criolla \\(\\dfrac{45}{75} = 0{,}60\\); Sabanera \\(\\dfrac{96}{240} = 0{,}40\\); Andina \\(\\dfrac{28}{56} = 0{,}50\\); Costeña \\(\\dfrac{12}{48} = 0{,}25\\). El cociente más alto es el de la Criolla.",
       "opciones_incorrectas": {
         "B": "Sabanera es la que más semillas germinadas acumula \\((96)\\), pero también es la que más sembró \\((240)\\): su cociente es apenas \\(0{,}40\\).",
-        "D": "Costeña es la de menor siembra \\((48)\\) y eso no mejora sus posibilidades: con \\(12\\) germinadas su cociente, \\(0{,}25\\), es el más bajo de las cuatro.",
-        "C": "Andina germina exactamente la mitad de lo sembrado, \\(0{,}50\\), cifra alta pero inferior al \\(0{,}60\\) de la Criolla."
+        "C": "Andina germina exactamente la mitad de lo sembrado, \\(0{,}50\\), cifra alta pero inferior al \\(0{,}60\\) de la Criolla.",
+        "D": "Costeña es la de menor siembra \\((48)\\) y eso no mejora sus posibilidades: con \\(12\\) germinadas su cociente, \\(0{,}25\\), es el más bajo de las cuatro."
       }
     },
     {
@@ -202,9 +202,9 @@
       "que_evalua": "La capacidad de describir con un lenguaje natural las características medibles de polígonos regulares.",
       "justificacion_correcta": "La base es un hexágono: un polígono cerrado de \\(6\\) lados que, por tanto, tiene \\(6\\) vértices (uno por cada esquina, no dos). Como los seis lados miden lo mismo, \\(8\\ \\text{m}\\), es regular, y en un hexágono regular cada ángulo interno mide \\(120^\\circ\\), es decir, es obtuso.",
       "opciones_incorrectas": {
+        "B": "Llama agudos a los ángulos internos, pero \\(120^\\circ\\) es mayor que \\(90^\\circ\\): son obtusos.",
         "C": "Acierta en todo salvo en la clasificación: con los seis lados de igual medida el polígono es regular, no irregular.",
-        "D": "Duplica el conteo de vértices: cada esquina es un solo vértice, así que un polígono de \\(6\\) lados tiene \\(6\\) vértices.",
-        "B": "Llama agudos a los ángulos internos, pero \\(120^\\circ\\) es mayor que \\(90^\\circ\\): son obtusos."
+        "D": "Duplica el conteo de vértices: cada esquina es un solo vértice, así que un polígono de \\(6\\) lados tiene \\(6\\) vértices."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q08.png"
     },
@@ -255,8 +255,8 @@
       "justificacion_correcta": "El orden en que suenan las canciones cambia la cortinilla, así que se cuenta una permutación de \\(5\\) tomados de a \\(3\\): \\(P(5,3) = \\dfrac{5!}{(5-3)!} = 5 \\times 4 \\times 3 = 60\\). Se pueden producir \\(60\\) cortinillas.",
       "opciones_incorrectas": {
         "A": "Aplica una combinación, \\(C(5,3) = \\dfrac{5!}{3!\\,2!} = 10\\), que no distingue el orden de las canciones.",
-        "D": "Calcula \\(5! = 120\\), como si en cada cortinilla sonaran las cinco canciones y no solo tres.",
-        "B": "Multiplica canciones por espacios, \\(5 \\times 3 = 15\\), sin ver que cada elección reduce las disponibles."
+        "B": "Multiplica canciones por espacios, \\(5 \\times 3 = 15\\), sin ver que cada elección reduce las disponibles.",
+        "D": "Calcula \\(5! = 120\\), como si en cada cortinilla sonaran las cinco canciones y no solo tres."
       }
     },
     {
@@ -279,9 +279,9 @@
       "que_evalua": "La capacidad de decir qué lados son paralelos a un lado dado de un polígono.",
       "justificacion_correcta": "Los cuadraditos del plano marcan ángulo recto en \\(A\\) y en \\(D\\), de modo que \\(AB\\) y \\(DC\\) son perpendiculares a la misma base \\(AD\\). Dos rectas perpendiculares a una misma recta son paralelas entre sí, así que \\(DC\\) es el borde que nunca se cruzará con \\(AB\\) por más que se prolonguen.",
       "opciones_incorrectas": {
+        "A": "Señala el borde que ya tiene seto; la pregunta pide otro borde del terreno.",
         "C": "El borde \\(BC\\) es el lado inclinado del trapecio: al prolongarlo corta a \\(AB\\), así que no es paralelo a él.",
-        "D": "El borde \\(AD\\) comparte el vértice \\(A\\) con \\(AB\\) y forma con él un ángulo recto: se cruzan, no son paralelos.",
-        "A": "Señala el borde que ya tiene seto; la pregunta pide otro borde del terreno."
+        "D": "El borde \\(AD\\) comparte el vértice \\(A\\) con \\(AB\\) y forma con él un ángulo recto: se cruzan, no son paralelos."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q05.png"
     },
@@ -305,9 +305,9 @@
       "que_evalua": "La capacidad para descomponer una figura y utilizar adecuadamente las fórmulas para hallar áreas de figuras geométricas sencillas.",
       "justificacion_correcta": "La franja es lo que le queda al cuadrado después de quitarle el círculo. Como la piscina roza los cuatro muros, el lado del patio coincide con el diámetro: \\(2 \\times 4 = 8\\) m. Entonces la superficie es \\(8 \\times 8 - \\pi(4)^2 = (64 - 16\\pi)\\ \\text{m}^2\\).",
       "opciones_incorrectas": {
+        "A": "Toma el radio como si fuera el lado del patio, \\(4 \\times 4 = 16\\); el lado es el diámetro, \\(8\\) m.",
         "B": "Usa perímetros en lugar de áreas: \\(4 \\times 8 = 32\\) para el patio y \\(2\\pi(4) = 8\\pi\\) para la piscina.",
-        "D": "No eleva el radio al cuadrado en el área del círculo: escribe \\(\\pi(4) = 4\\pi\\) en vez de \\(\\pi(4)^2 = 16\\pi\\).",
-        "A": "Toma el radio como si fuera el lado del patio, \\(4 \\times 4 = 16\\); el lado es el diámetro, \\(8\\) m."
+        "D": "No eleva el radio al cuadrado en el área del círculo: escribe \\(\\pi(4) = 4\\pi\\) en vez de \\(\\pi(4)^2 = 16\\pi\\)."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q14.png"
     },
@@ -331,9 +331,9 @@
       "que_evalua": "La capacidad para ordenar información en orden ascendente según un criterio dado.",
       "justificacion_correcta": "Lo que le falta a cada ciclista se lee en su posición horizontal: mientras más a la derecha aparece, menos distancia le queda. Daniela es la más adelantada, detrás viene Renata, luego Gael y de último Bruno, el más cercano a la salida. El narrador debe leer Daniela, Renata, Gael y Bruno.",
       "opciones_incorrectas": {
-        "D": "Intercambia el segundo y el tercer nombre: en la imagen Renata aparece más adelante que Gael.",
         "A": "Arranca por Renata, pero la bicicleta de Daniela está más cerca de la meta que la de ella.",
-        "C": "Lee la fila al revés, es decir, de quien más le falta a quien menos le falta."
+        "C": "Lee la fila al revés, es decir, de quien más le falta a quien menos le falta.",
+        "D": "Intercambia el segundo y el tercer nombre: en la imagen Renata aparece más adelante que Gael."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q06.png"
     },
@@ -382,9 +382,9 @@
       "que_evalua": "La capacidad para calcular la probabilidad de un evento mediante casos favorables y casos posibles.",
       "justificacion_correcta": "Los casos posibles son los \\(5\\) boletos de la urna. De los números impresos \\((8, 2, 5, 11\\) y \\(4)\\), los múltiplos de \\(4\\) son \\(8\\) y \\(4\\), es decir, \\(2\\) casos favorables. La probabilidad pedida es \\(\\dfrac{2}{5}\\).",
       "opciones_incorrectas": {
-        "D": "Cuenta bien los \\(2\\) favorables, pero usa como total el número más grande impreso, \\(11\\), en vez de la cantidad de boletos.",
+        "B": "Cuenta los números pares \\((8, 2\\) y \\(4)\\), confundiendo \"múltiplo de \\(4\\)\" con \"par\": el \\(2\\) no es múltiplo de \\(4\\).",
         "C": "Reconoce solo el \\(8\\) como múltiplo de \\(4\\) y descarta el propio \\(4\\), creyendo que un número no es múltiplo de sí mismo.",
-        "B": "Cuenta los números pares \\((8, 2\\) y \\(4)\\), confundiendo \"múltiplo de \\(4\\)\" con \"par\": el \\(2\\) no es múltiplo de \\(4\\)."
+        "D": "Cuenta bien los \\(2\\) favorables, pero usa como total el número más grande impreso, \\(11\\), en vez de la cantidad de boletos."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q10.png"
     },
@@ -460,8 +460,8 @@
       "justificacion_correcta": "El indicador publicado describe la <b>mediana</b>, que debe valer \\(12\\) minutos. En la tabla B hay \\(4+6+5+7+11+8+6 = 47\\) pacientes, cantidad impar, de modo que la mediana ocupa la posición \\(\\dfrac{47+1}{2} = 24\\). Las frecuencias acumuladas son \\(4, 10, 15, 22, 33, 41, 47\\): la posición \\(24\\) queda entre \\(22\\) y \\(33\\), es decir, sobre el valor \\(12\\) minutos.",
       "opciones_incorrectas": {
         "A": "Aquí \\(12\\) es el tiempo más frecuente \\((16\\) pacientes\\()\\), pero eso es la moda. Con \\(50\\) datos, las acumuladas \\(14, 26, 42, 50\\) dejan las posiciones \\(25\\) y \\(26\\) sobre \\(11\\) minutos.",
-        "D": "Escoge \\(12\\) por quedar cerca del centro de la lista de valores, sin acumular. Con \\(38\\) datos, las acumuladas \\(12, 21, 32, 38\\) dejan las posiciones \\(19\\) y \\(20\\) sobre \\(10\\) minutos.",
-        "B": "Tiene también \\(47\\) pacientes, pero sus acumuladas \\(7, 15, 21, 30, 37, 42, 47\\) hacen que la posición \\(24\\) caiga en \\(11\\) minutos, no en \\(12\\)."
+        "B": "Tiene también \\(47\\) pacientes, pero sus acumuladas \\(7, 15, 21, 30, 37, 42, 47\\) hacen que la posición \\(24\\) caiga en \\(11\\) minutos, no en \\(12\\).",
+        "D": "Escoge \\(12\\) por quedar cerca del centro de la lista de valores, sin acumular. Con \\(38\\) datos, las acumuladas \\(12, 21, 32, 38\\) dejan las posiciones \\(19\\) y \\(20\\) sobre \\(10\\) minutos."
       }
     },
     {
@@ -510,9 +510,9 @@
       "que_evalua": "La capacidad para identificar propiedades de expresiones algebraicas y encontrar valores de la variable dependiente, dados algunos de los valores de la variable independiente.",
       "justificacion_correcta": "Se reemplaza cada \\(x\\) en la expresión: \\(h(-7) = -(-7)^2 - 6(-7) + 91 = -49 + 42 + 91 = 84\\); \\(h(0) = 91\\); \\(h(3) = -9 - 18 + 91 = 64\\); \\(h(5) = -25 - 30 + 91 = 36\\). La tabla que recoge esos cuatro valores es la A.",
       "opciones_incorrectas": {
-        "C": "Interpreta \\(-x^2\\) como \\(-2x\\): en \\(x = 3\\) obtiene \\(-6 - 18 + 91 = 67\\) y en \\(x = 5\\), \\(-10 - 30 + 91 = 51\\).",
+        "A": "Supone que si \\(x = 0\\) la altura también es \\(0\\), sin reemplazar; el término independiente hace que \\(h(0) = 91\\).",
         "B": "Pierde el signo del cuadrado en \\(-(-7)^2\\): usa \\(+49\\) en vez de \\(-49\\) y le queda \\(h(-7) = 182\\).",
-        "A": "Supone que si \\(x = 0\\) la altura también es \\(0\\), sin reemplazar; el término independiente hace que \\(h(0) = 91\\)."
+        "C": "Interpreta \\(-x^2\\) como \\(-2x\\): en \\(x = 3\\) obtiene \\(-6 - 18 + 91 = 67\\) y en \\(x = 5\\), \\(-10 - 30 + 91 = 51\\)."
       }
     },
     {
@@ -535,9 +535,9 @@
       "que_evalua": "La capacidad para solucionar una ecuación lineal.",
       "justificacion_correcta": "Se aísla el término con \\(m\\): \\(126\\,000 - 21\\,000 = 3\\,500\\,m\\), es decir \\(105\\,000 = 3\\,500\\,m\\). Al dividir, \\(m = \\dfrac{105\\,000}{3\\,500} = 30\\). La vivienda consumió \\(30\\) metros cúbicos.",
       "opciones_incorrectas": {
-        "D": "Suma el cargo fijo en lugar de descontarlo: \\(126\\,000 + 21\\,000 = 147\\,000\\) y \\(147\\,000 \\div 3\\,500 = 42\\).",
+        "A": "Llega bien a \\(105\\,000 = 3\\,500\\,m\\), pero tacha ceros de más y reduce la división a \\(105 \\div 35 = 3\\).",
         "C": "Pasa por alto el cargo fijo y divide el recibo completo: \\(126\\,000 \\div 3\\,500 = 36\\).",
-        "A": "Llega bien a \\(105\\,000 = 3\\,500\\,m\\), pero tacha ceros de más y reduce la división a \\(105 \\div 35 = 3\\)."
+        "D": "Suma el cargo fijo en lugar de descontarlo: \\(126\\,000 + 21\\,000 = 147\\,000\\) y \\(147\\,000 \\div 3\\,500 = 42\\)."
       }
     },
     {
@@ -561,8 +561,8 @@
       "justificacion_correcta": "Los puntos de la gráfica son \\((1, 120)\\), \\((2, 240)\\), \\((3, 360)\\) y \\((4, 480)\\). De un mes al siguiente el canal suma siempre \\(120\\) suscriptores, de modo que el crecimiento es constante y en cada par de meses acumula \\(120 + 120 = 240\\) suscriptores.",
       "opciones_incorrectas": {
         "A": "La duplicación solo se cumple del primer al segundo mes; después \\(240\\) pasa a \\(360\\) y \\(360\\) a \\(480\\), que no son dobles.",
-        "D": "Confunde los totales con los aumentos: los totales suben \\(120, 240, 360, 480\\), pero los aumentos son \\(120\\) en cada paso.",
-        "C": "Invierte la relación: si en un mes entran \\(120\\), en dos meses entran \\(240\\), el doble y no la mitad."
+        "C": "Invierte la relación: si en un mes entran \\(120\\), en dos meses entran \\(240\\), el doble y no la mitad.",
+        "D": "Confunde los totales con los aumentos: los totales suben \\(120, 240, 360, 480\\), pero los aumentos son \\(120\\) en cada paso."
       },
       "imagen_figura": "assets/banco-mat-9-p2/q12.png"
     }

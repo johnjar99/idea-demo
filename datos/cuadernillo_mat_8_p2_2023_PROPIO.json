@@ -70,8 +70,8 @@
       "justificacion_correcta": "Al reemplazar en \\(y = -x^2 + 4x + 1\\): \\(y(0) = 1\\); \\(y(2) = -4+8+1 = 5\\); \\(y(4) = -16+16+1 = 1\\). Es la única expresión que pasa por los tres puntos, y como el coeficiente de \\(x^2\\) es negativo, la curva abre hacia abajo con su punto más alto en \\((2, 5)\\), tal como muestra la figura.",
       "opciones_incorrectas": {
         "A": "Pasa por \\((0, 1)\\), pero al ser positivo el coeficiente de \\(x^2\\) abre hacia arriba; además \\(y(2) = -3\\), no \\(5\\).",
-        "D": "Le falta el término en \\(x\\), así que su punto más alto queda sobre el eje \\(y\\): \\(y(0) = 5\\) en vez de \\(1\\).",
-        "C": "Sí pasa por \\((0, 1)\\), pero el coeficiente \\(-2\\) hunde la curva: \\(y(2) = -8+8+1 = 1\\), y no \\(5\\)."
+        "C": "Sí pasa por \\((0, 1)\\), pero el coeficiente \\(-2\\) hunde la curva: \\(y(2) = -8+8+1 = 1\\), y no \\(5\\).",
+        "D": "Le falta el término en \\(x\\), así que su punto más alto queda sobre el eje \\(y\\): \\(y(0) = 5\\) en vez de \\(1\\)."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q16.png"
     },
@@ -95,8 +95,8 @@
       "que_evalua": "La capacidad para reconocer qué condición sobre una distribución de datos garantiza un promedio dado.",
       "justificacion_correcta": "El promedio de cada recolector es su total dividido entre \\(5\\); para que valga \\(45\\) kg, ese total debe ser \\(45\\times 5 = 225\\) kg. En la tabla, el recolector A suma \\(52+38+41+48+46 = 225\\) y el recolector B suma \\(43+55+50+30+47 = 225\\). Los dos promedian \\(45\\) kg.",
       "opciones_incorrectas": {
-        "B": "Esa es la condición de la mediana (el dato central), no la del promedio.",
         "A": "Esa diferencia es el rango de los datos, y el rango no determina el promedio.",
+        "B": "Esa es la condición de la mediana (el dato central), no la del promedio.",
         "D": "El peso que más se repite es la moda; un conjunto puede promediar \\(45\\) kg sin que \\(45\\) aparezca nunca."
       }
     },
@@ -120,8 +120,8 @@
       "que_evalua": "La capacidad para reconocer que una suma de tres términos equivale a una de dos cuando se asocian dos de ellos.",
       "justificacion_correcta": "Basta asociar los dos últimos sumandos de cada renglón: empanadas \\(6+(12+7) = 6+19\\); arepas \\(11+(5+8) = 11+13\\); tamales \\(4+(9+10) = 4+19\\). La opción D reparte justamente \\(6\\) y \\(19\\) empanadas, \\(11\\) y \\(13\\) arepas, \\(4\\) y \\(19\\) tamales, con lo que alcanza los totales \\(25\\), \\(24\\) y \\(23\\).",
       "opciones_incorrectas": {
-        "B": "Le asigna a cada puesto el total completo, con lo cual las cantidades quedan duplicadas: \\(50\\), \\(48\\) y \\(46\\).",
         "A": "Suma el total con lo vendido por un solo puesto, así que se pasa de los totales en los tres platos.",
+        "B": "Le asigna a cada puesto el total completo, con lo cual las cantidades quedan duplicadas: \\(50\\), \\(48\\) y \\(46\\).",
         "C": "Repite lo de Centro y lo de Sur y deja por fuera lo del puesto Norte: apenas llega a \\(19\\), \\(13\\) y \\(19\\)."
       }
     },
@@ -171,9 +171,9 @@
       "que_evalua": "La capacidad para reconocer un conjunto de datos enteros cuyo promedio coincide con un valor dado.",
       "justificacion_correcta": "El promedio se obtiene sumando los seis conteos y dividiendo entre \\(6\\). En D: \\(15+9+14+8+16+10 = 72\\) y \\(72\\div 6 = 12\\).",
       "opciones_incorrectas": {
-        "D": "Los seis conteos suman \\(65\\) y \\(65\\div 6 \\approx 10{,}8\\): ni siquiera resulta un número entero.",
+        "B": "Suman \\(66\\) y el promedio da \\(11\\) exacto: es entero, pero no es el promedio pedido.",
         "C": "Suman \\(69\\), de modo que el promedio es \\(11{,}5\\); queda cerca de \\(12\\), pero no es \\(12\\).",
-        "B": "Suman \\(66\\) y el promedio da \\(11\\) exacto: es entero, pero no es el promedio pedido."
+        "D": "Los seis conteos suman \\(65\\) y \\(65\\div 6 \\approx 10{,}8\\): ni siquiera resulta un número entero."
       }
     },
     {
@@ -248,8 +248,8 @@
       "que_evalua": "La capacidad para leer datos de una tabla y determinar la moda de un conjunto descrito por categorías.",
       "justificacion_correcta": "La moda es la categoría que aparece más veces, es decir, el sabor con más conos vendidos. Arequipe registra \\(145\\) conos, por encima de los \\(97\\) de Coco y de los \\(88\\) de Mora y Maracuyá; por eso la moda es Arequipe.",
       "opciones_incorrectas": {
-        "B": "Maracuyá vendió \\(88\\) conos; que ese número se repita en otro sabor no lo convierte en la moda.",
         "A": "Coco, con \\(97\\) conos, es el segundo más vendido, pero no el máximo.",
+        "B": "Maracuyá vendió \\(88\\) conos; que ese número se repita en otro sabor no lo convierte en la moda.",
         "C": "Mora vendió \\(88\\) conos, la cifra más baja de la tabla junto con Maracuyá."
       }
     },
@@ -274,8 +274,8 @@
       "justificacion_correcta": "La probabilidad de cupón premiado es \\(\\dfrac{\\text{premiados}}{\\text{total}}\\): Deportes \\(\\dfrac{96}{320}=0{,}30\\); Ciencias \\(\\dfrac{128}{400}=0{,}32\\); Arte \\(\\dfrac{108}{240}=0{,}45\\); Música \\(\\dfrac{150}{500}=0{,}30\\). El valor más alto es el de Arte, aunque no sea el kiosco con más cupones premiados en total.",
       "opciones_incorrectas": {
         "B": "Su probabilidad es \\(0{,}30\\), bastante por debajo del \\(0{,}45\\) de Arte.",
-        "D": "Con \\(0{,}32\\) es la segunda más alta, pero sigue siendo menor que la de Arte.",
-        "C": "Es el kiosco con más cupones premiados \\((150)\\), pero también el que más cupones tiene: su probabilidad es apenas \\(0{,}30\\)."
+        "C": "Es el kiosco con más cupones premiados \\((150)\\), pero también el que más cupones tiene: su probabilidad es apenas \\(0{,}30\\).",
+        "D": "Con \\(0{,}32\\) es la segunda más alta, pero sigue siendo menor que la de Arte."
       }
     },
     {
@@ -324,8 +324,8 @@
       "que_evalua": "La capacidad para reconocer qué se conserva y qué cambia al aplicar movimientos rígidos a un triángulo.",
       "justificacion_correcta": "La opción C se obtiene reflejando la plataforma respecto al eje \\(x\\): cada vértice conserva su abscisa y cambia el signo de su ordenada. La reflexión es un movimiento rígido, así que los lados y los ángulos quedan idénticos y la copia sí es congruente.",
       "opciones_incorrectas": {
-        "D": "Reproduce la forma general, pero a una escala mucho menor: al encoger la figura las medidas dejan de coincidir.",
-        "A": "Mantiene la forma y la amplía; una figura semejante más grande no es congruente con la original."
+        "A": "Mantiene la forma y la amplía; una figura semejante más grande no es congruente con la original.",
+        "D": "Reproduce la forma general, pero a una escala mucho menor: al encoger la figura las medidas dejan de coincidir."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q04.png",
       "opciones_imagenes": {
@@ -355,8 +355,8 @@
       "que_evalua": "La capacidad de plantear y resolver una ecuación lineal a partir de una situación de compra.",
       "justificacion_correcta": "Si \\(x\\) es el precio de una linterna, se cumple \\(12x + 6.000 = 92.400\\). Lo realmente invertido fue \\(92.400 - 6.000 = 86.400\\), y ese dinero se repartió entre las \\(12\\) linternas: \\(86.400 \\div 12 = 7.200\\).",
       "opciones_incorrectas": {
-        "C": "Suma el sobrante en vez de restarlo: \\((92.400+6.000)\\div 12 = 8.200\\).",
         "A": "Pasa por alto el sobrante y reparte toda la alcancía: \\(92.400 \\div 12 = 7.700\\).",
+        "C": "Suma el sobrante en vez de restarlo: \\((92.400+6.000)\\div 12 = 8.200\\).",
         "D": "Descuenta solo la mitad del sobrante: \\((92.400-3.000)\\div 12 = 7.450\\)."
       }
     },
@@ -380,9 +380,9 @@
       "que_evalua": "La capacidad para reconocer los valores máximo y mínimo de una curva con varios cambios de concavidad.",
       "justificacion_correcta": "El punto más bajo que alcanza la curva está en \\(22\\) metros; por debajo de esa altura el dron nunca voló. Por eso la altura mínima del recorrido es \\(22\\) m.",
       "opciones_incorrectas": {
-        "C": "Los \\(58\\) m corresponden a una altura intermedia del recorrido; la curva sube bastante más arriba de ese valor.",
+        "A": "Suma las tres alturas señaladas \\((98+58+22 = 178)\\) como si el resultado fuera la altura máxima.",
         "B": "Supone que todo perfil empieza o termina en el suelo; aquí la curva nunca baja hasta la altura \\(0\\).",
-        "A": "Suma las tres alturas señaladas \\((98+58+22 = 178)\\) como si el resultado fuera la altura máxima."
+        "C": "Los \\(58\\) m corresponden a una altura intermedia del recorrido; la curva sube bastante más arriba de ese valor."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q14.png"
     },
@@ -438,8 +438,8 @@
       "que_evalua": "La capacidad para decidir si dos rectángulos son congruentes comparando sus dos medidas.",
       "justificacion_correcta": "Dos rectángulos son congruentes solo si coinciden en las dos medidas. Los lotes \\(2\\) y \\(3\\) miden ambos \\(60\\) m de frente por \\(45\\) m de profundidad, y son la única pareja del plano que cumple esa doble coincidencia.",
       "opciones_incorrectas": {
-        "B": "En \\(85\\times 50\\) y \\(50\\times 40\\) aparece el número \\(50\\), pero en papeles distintos: es profundidad en uno y frente en el otro.",
         "A": "\\(70\\times 50\\) y \\(85\\times 50\\) comparten la profundidad, y con una sola medida igual no basta.",
+        "B": "En \\(85\\times 50\\) y \\(50\\times 40\\) aparece el número \\(50\\), pero en papeles distintos: es profundidad en uno y frente en el otro.",
         "C": "\\(55\\times 55\\) y \\(50\\times 40\\) se ven de tamaño parecido en el plano, pero no coincide ninguna de sus medidas."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q10.png"
@@ -464,9 +464,9 @@
       "que_evalua": "La capacidad para trazar una ruta de solución correcta a un problema numérico surgido de una situación de trabajo.",
       "justificacion_correcta": "El total de bandejas es \\(45\\times 24 = 1.080\\). Como cada bandeja lleva \\(5\\) bolsas de abono y \\(4\\) tutores, se multiplica ese total por \\(5\\) y, por separado, por \\(4\\); así queda una cifra distinta para cada insumo.",
       "opciones_incorrectas": {
+        "A": "Usa \\(24\\) como si fuera el total de bandejas (ignora las \\(45\\) de cada estiba) y también suma los dos insumos.",
         "B": "Multiplicar \\(5\\times 4\\) mezcla los dos insumos desde el primer paso, cuando el pedido debe quedar separado.",
-        "C": "Usa \\(45\\) como si fuera el total de bandejas (ignora las \\(24\\) estibas) y, además, reúne los dos insumos en una sola cifra.",
-        "A": "Usa \\(24\\) como si fuera el total de bandejas (ignora las \\(45\\) de cada estiba) y también suma los dos insumos."
+        "C": "Usa \\(45\\) como si fuera el total de bandejas (ignora las \\(24\\) estibas) y, además, reúne los dos insumos en una sola cifra."
       }
     },
     {
@@ -489,9 +489,9 @@
       "que_evalua": "La capacidad para escoger un conjunto de datos cuya mediana coincide con un valor dado en un contexto.",
       "justificacion_correcta": "Con siete datos, la mediana es el cuarto valor una vez ordenados de menor a mayor. Al ordenar la lista A queda \\(3\\ -\\ 4\\ -\\ 5\\ -\\ 6\\ -\\ 7\\ -\\ 9\\ -\\ 11\\), y el cuarto valor es \\(6\\).",
       "opciones_incorrectas": {
-        "C": "Confunde la mediana con la moda: \\(6\\) es el dato que se repite, pero al ordenar \\((2, 6, 6, 9, 10, 11, 12)\\) la mediana es \\(9\\).",
         "A": "Confunde la mediana con la media: los datos suman \\(42\\) y promedian \\(6\\), pero el valor central es \\(4\\).",
-        "B": "Toma el dato que está escrito en la mitad sin ordenar; al ordenar \\((3, 4, 6, 9, 10, 11, 12)\\) la mediana resulta \\(9\\)."
+        "B": "Toma el dato que está escrito en la mitad sin ordenar; al ordenar \\((3, 4, 6, 9, 10, 11, 12)\\) la mediana resulta \\(9\\).",
+        "C": "Confunde la mediana con la moda: \\(6\\) es el dato que se repite, pero al ordenar \\((2, 6, 6, 9, 10, 11, 12)\\) la mediana es \\(9\\)."
       }
     },
     {
@@ -514,8 +514,8 @@
       "que_evalua": "La capacidad para armar una tabla que integra datos tomados de otra tabla y de una gráfica circular.",
       "justificacion_correcta": "El puntaje se copia tal cual, porque el que se pide es el del equipo. El dinero es el porcentaje que la gráfica asigna a cada juego, calculado sobre \\($1.800.000\\): \\(25\\,\\%=\\$450.000\\), \\(20\\,\\%=\\$360.000\\), \\(30\\,\\%=\\$540.000\\), \\(10\\,\\%=\\$180.000\\) y \\(15\\,\\%=\\$270.000\\). Solo la tabla D cumple las dos cosas a la vez.",
       "opciones_incorrectas": {
-        "B": "El puntaje está bien copiado, pero el dinero se calculó sobre \\($1.000.000\\) y no sobre el premio real de \\($1.800.000\\).",
         "A": "Falla en las dos columnas: reparte el puntaje entre los \\(5\\) integrantes y, además, calcula el dinero sobre \\($1.000.000\\).",
+        "B": "El puntaje está bien copiado, pero el dinero se calculó sobre \\($1.000.000\\) y no sobre el premio real de \\($1.800.000\\).",
         "D": "El dinero quedó bien, pero divide cada puntaje entre \\(5\\) como si fuera el aporte de un solo integrante; lo que se pide es el puntaje del equipo."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q07.png"
@@ -540,9 +540,9 @@
       "que_evalua": "La capacidad para hallar el área superficial de un sólido sumando las áreas de todas sus caras.",
       "justificacion_correcta": "Las caras van por parejas iguales: dos de \\(25\\times 40 = 1.000\\), dos de \\(25\\times 10 = 250\\) y dos de \\(40\\times 10 = 400\\). En total, \\(2(1.000 + 250 + 400) = 2(1.650) = 3.300\\ \\text{cm}^2\\).",
       "opciones_incorrectas": {
-        "D": "Suma una sola cara de cada tamaño \\((1.000+250+400 = 1.650)\\) y olvida que cada una tiene su pareja.",
+        "A": "Duplica dos parejas de caras pero deja una sin duplicar: \\(2(1.000)+2(250)+400 = 2.900\\).",
         "B": "Da por hecho que las seis caras miden \\(25\\times 40\\): \\(6\\times 1.000 = 6.000\\), y con eso ignora que la caja tiene tres tamaños distintos de cara.",
-        "A": "Duplica dos parejas de caras pero deja una sin duplicar: \\(2(1.000)+2(250)+400 = 2.900\\)."
+        "D": "Suma una sola cara de cada tamaño \\((1.000+250+400 = 1.650)\\) y olvida que cada una tiene su pareja."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q09.png"
     },
@@ -567,8 +567,8 @@
       "justificacion_correcta": "Como todos los tramos abarcan \\(4\\,{}^{\\circ}\\text{C}\\), basta comparar cuánto sube la curva en cada uno. Entre \\(12\\,{}^{\\circ}\\text{C}\\) y \\(16\\,{}^{\\circ}\\text{C}\\) pasa de \\(28\\) a \\(96\\) chirridos, es decir \\(68\\) más: es el mayor de los cuatro aumentos y, por tanto, el tramo de mayor pendiente.",
       "opciones_incorrectas": {
         "A": "Ahí la curva sube de \\(96\\) a \\(132\\), o sea \\(36\\) chirridos: es un tramo empinado, pero no el que más sube.",
-        "D": "Ahí la curva apenas pasa de \\(12\\) a \\(28\\): son \\(16\\) chirridos, el menor aumento de todos.",
-        "C": "Ahí la curva sube de \\(132\\) a \\(160\\), solo \\(28\\) chirridos; el tramo se va aplanando."
+        "C": "Ahí la curva sube de \\(132\\) a \\(160\\), solo \\(28\\) chirridos; el tramo se va aplanando.",
+        "D": "Ahí la curva apenas pasa de \\(12\\) a \\(28\\): son \\(16\\) chirridos, el menor aumento de todos."
       },
       "imagen_figura": "assets/banco-mat-8-p2/q11.png"
     }

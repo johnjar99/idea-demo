@@ -55,9 +55,9 @@
       "que_evalua": "La capacidad de comparar y validar diversas vías de solución de problemas que involucran cantidades.",
       "justificacion_correcta": "El total de partes es \\(12 + 9 + 15 = 36\\). Cada parte vale \\(\\dfrac{36.000}{36} = 1.000\\) puntos, así que a Ruth, con \\(12\\) partes, le corresponden \\(12\\times 1.000 = 12.000\\) puntos. Eso es exactamente lo que hace la ruta A. La ruta B divide entre \\(100\\) en lugar de entre \\(36\\) y arroja \\(4.320\\) puntos, un valor equivocado.",
       "opciones_incorrectas": {
-        "D": "Descarta las dos rutas porque cree que el reparto debe hacerse en partes iguales entre las \\(3\\) integrantes.",
+        "A": "Lee las \\(12\\) piezas como si fueran un \\(12\\%\\) del total y por eso admite la división entre \\(100\\).",
         "C": "Ve el \\(12\\) en las dos rutas y las acepta, sin notar que la ruta B divide entre \\(100\\) y no entre \\(36\\).",
-        "A": "Lee las \\(12\\) piezas como si fueran un \\(12\\%\\) del total y por eso admite la división entre \\(100\\)."
+        "D": "Descarta las dos rutas porque cree que el reparto debe hacerse en partes iguales entre las \\(3\\) integrantes."
       }
     },
     {
@@ -80,9 +80,9 @@
       "que_evalua": "La capacidad para reconocer en qué parte de la solución de un problema hay un error y explicar el porqué de dicho error.",
       "justificacion_correcta": "El caudal medio es el volumen añadido dividido entre el tiempo transcurrido: \\(\\dfrac{210\\ \\text{L}}{15\\ \\text{min}} = 14\\) L/min. En el paso 3 los números son los correctos \\((210\\) y \\(15)\\), pero las unidades quedaron invertidas: aparece min/L en lugar de L/min. Por eso el error está en el paso 3.",
       "opciones_incorrectas": {
-        "D": "El caudal medio se calcula sobre el intervalo observado, que va de los \\(5\\) a los \\(20\\) minutos; el paso 2 está bien.",
         "B": "Los \\(250\\) L son el contenido final, no lo añadido; el paso 1 resta correctamente \\(250 - 40\\).",
-        "C": "Invertir el orden de la resta daría un volumen negativo, imposible en un tanque que se está llenando."
+        "C": "Invertir el orden de la resta daría un volumen negativo, imposible en un tanque que se está llenando.",
+        "D": "El caudal medio se calcula sobre el intervalo observado, que va de los \\(5\\) a los \\(20\\) minutos; el paso 2 está bien."
       }
     },
     {
@@ -106,8 +106,8 @@
       "justificacion_correcta": "Cada porcentaje se convierte en cantidad sobre los \\(240\\) estudiantes: \\(0{,}15\\times 240 = 36\\) en bicicleta, \\(0{,}35\\times 240 = 84\\) en bus, \\(0{,}30\\times 240 = 72\\) a pie y \\(0{,}20\\times 240 = 48\\) en metro. La tabla de la opción B recoge justamente \\(36, 84, 72\\) y \\(48\\), cifras que suman \\(240\\).",
       "opciones_incorrectas": {
         "A": "El diagrama de barras repite los porcentajes \\((15, 35, 30, 20)\\) como si fueran estudiantes; esos valores suman \\(100\\) y no \\(240\\).",
-        "D": "El diagrama circular asigna \\(84\\) estudiantes al metro, el mismo valor del bus, con lo cual el total llega a \\(276\\) y no a \\(240\\).",
-        "C": "El diagrama de barras horizontales intercambia las cantidades de 'a pie' y 'metro': muestra \\(48\\) a pie y \\(72\\) en metro, cuando corresponde lo contrario."
+        "C": "El diagrama de barras horizontales intercambia las cantidades de 'a pie' y 'metro': muestra \\(48\\) a pie y \\(72\\) en metro, cuando corresponde lo contrario.",
+        "D": "El diagrama circular asigna \\(84\\) estudiantes al metro, el mismo valor del bus, con lo cual el total llega a \\(276\\) y no a \\(240\\)."
       },
       "opciones_imagenes": {
         "B": "assets/banco-mat-11-p2/q01_opB.png",
@@ -135,9 +135,9 @@
       "que_evalua": "La capacidad para reconocer si un plan de acción propuesto es correcto o permite resolver un problema en contextos geométricos.",
       "justificacion_correcta": "Comparar solo áreas no alcanza: para cubrir el tablero sin huecos ni traslapos hay que conocer además el largo y el alto del tablero y de cada lámina, porque dos tableros con la misma área pero distinta forma pueden exigir cantidades diferentes de láminas. Por eso el procedimiento no es acertado: dividir áreas ignora esas medidas.",
       "opciones_incorrectas": {
+        "A": "Confunde incluir una lámina de cada tamaño (paso 1) con haber resuelto el problema.",
         "B": "El cociente de áreas no dice cómo encajan las láminas; la forma y las medidas son decisivas.",
-        "D": "\\(24.000 \\div 10.200 \\approx 2{,}35\\) en efecto no es entero, pero aunque lo fuera el plan seguiría siendo incorrecto, porque omite las medidas.",
-        "A": "Confunde incluir una lámina de cada tamaño (paso 1) con haber resuelto el problema."
+        "D": "\\(24.000 \\div 10.200 \\approx 2{,}35\\) en efecto no es entero, pero aunque lo fuera el plan seguiría siendo incorrecto, porque omite las medidas."
       }
     },
     {
@@ -160,8 +160,8 @@
       "que_evalua": "La capacidad de los estudiantes para reconocer el grado de un polinomio proveniente del producto de dos polinomios.",
       "justificacion_correcta": "El término de mayor exponente del producto proviene de multiplicar los términos de mayor grado de cada factor: \\(4t^{5}\\cdot(-2t^{3}) = -8t^{5+3} = -8t^{8}\\). Ningún otro producto parcial alcanza el exponente \\(8\\), así que no hay cancelación posible y el grado del producto es \\(8\\). La anticipación de Sebastián es acertada.",
       "opciones_incorrectas": {
-        "B": "Multiplicar los grados no corresponde: al multiplicar potencias de igual base los exponentes se suman, no se multiplican.",
         "A": "El producto no conserva el grado mayor de los factores: \\(t^{5}\\cdot t^{3}\\) genera un exponente superior a \\(5\\).",
+        "B": "Multiplicar los grados no corresponde: al multiplicar potencias de igual base los exponentes se suman, no se multiplican.",
         "D": "Duplicar el grado mayor daría \\(10\\), pero la regla es sumar los dos grados: \\(5 + 3 = 8\\)."
       }
     },
@@ -185,8 +185,8 @@
       "que_evalua": "La capacidad para reconocer características de las funciones trigonométricas y el círculo unitario.",
       "justificacion_correcta": "Todo ángulo interior de un triángulo mide entre \\(0^\\circ\\) y \\(180^\\circ\\). En ese recorrido del círculo unitario la tangente es positiva solo entre \\(0^\\circ\\) y \\(90^\\circ\\) y negativa entre \\(90^\\circ\\) y \\(180^\\circ\\). Entonces \\(J\\) y \\(K\\) son agudos y \\(L\\) es obtuso. Como los tres suman \\(180^\\circ\\), se tiene \\(J + K = 180^\\circ - L < 90^\\circ\\).",
       "opciones_incorrectas": {
-        "C": "En \\(90^\\circ\\) la tangente no está definida, nunca toma un valor negativo; por eso \\(L\\) no puede ser recto.",
         "B": "El signo de la tangente no informa sobre la igualdad de las medidas: aquí \\(L\\) es obtuso y los otros dos no.",
+        "C": "En \\(90^\\circ\\) la tangente no está definida, nunca toma un valor negativo; por eso \\(L\\) no puede ser recto.",
         "D": "\\(J\\) y \\(K\\) sí son agudos, pero \\(\\tan(L) < 0\\) obliga a que \\(L\\) quede entre \\(90^\\circ\\) y \\(180^\\circ\\)."
       },
       "imagen_figura": "assets/banco-mat-11-p2/q06.png",
@@ -212,8 +212,8 @@
       "que_evalua": "La capacidad de los estudiantes para plantear y resolver desigualdades para representar problemas que impliquen encontrar rangos de valores.",
       "justificacion_correcta": "La desigualdad \\(30.000 + 2.500x < 18.000 + 4.000x\\) dice, en palabras, que el costo total del plan Azul es <b>menor</b> que el del plan Verde. Al resolverla queda \\(12.000 < 1.500x\\), es decir \\(x > 8\\): se obtiene el conjunto de valores de \\(x\\) (gigas adicionales) para los cuales conviene el plan Azul.",
       "opciones_incorrectas": {
-        "B": "Lee el símbolo \\(<\\) como 'mayor que' e invierte el sentido de la comparación.",
         "A": "Toma \\(x\\) como si fuera un costo, cuando \\(x\\) cuenta gigas adicionales.",
+        "B": "Lee el símbolo \\(<\\) como 'mayor que' e invierte el sentido de la comparación.",
         "C": "Vuelve a confundir \\(x\\) con un costo; \\(x\\) representa gigas y no pesos."
       }
     },
@@ -238,8 +238,8 @@
       "justificacion_correcta": "Basta con exhibir un contraejemplo. Al escribir las dos marcas con denominador \\(10\\) se tiene \\(\\dfrac{3}{5} = \\dfrac{6}{10}\\) y \\(\\dfrac{4}{5} = \\dfrac{8}{10}\\); entre ellas queda \\(\\dfrac{7}{10}\\), cuyo denominador es \\(10\\) y no \\(5\\). Por lo tanto, lo que sostiene el aprendiz es falso.",
       "opciones_incorrectas": {
         "A": "\\(\\dfrac{3{,}5}{5}\\) no es una fracción de números enteros; fuerza el denominador \\(5\\) de manera artificial.",
-        "D": "Que la fracción disminuya al crecer el denominador no impide que existan valores intermedios escritos con otro denominador.",
-        "B": "Es cierto que entre ambas marcas hay infinitas fracciones, pero de ahí no se sigue que alguna tenga denominador \\(5\\); de hecho, ninguna lo tiene."
+        "B": "Es cierto que entre ambas marcas hay infinitas fracciones, pero de ahí no se sigue que alguna tenga denominador \\(5\\); de hecho, ninguna lo tiene.",
+        "D": "Que la fracción disminuya al crecer el denominador no impide que existan valores intermedios escritos con otro denominador."
       },
       "imagen_figura": "assets/banco-mat-11-p2/q11.png"
     },
@@ -263,8 +263,8 @@
       "que_evalua": "La capacidad de justificar la solución de un problema que involucra diferentes magnitudes y tipos de medida.",
       "justificacion_correcta": "Multiplicar es la operación apropiada, pues masa \\(=\\) densidad lineal \\(\\times\\) longitud; el problema está en las unidades: la densidad viene en g/m y la longitud, en centímetros. Antes de multiplicar hay que convertir \\(40\\) cm en \\(0{,}4\\) m, con lo cual \\(0{,}4\\times 2.400 = 960\\) g y no \\(96.000\\) g. Por eso el cálculo de Rosa está mal: le faltó la conversión de unidades.",
       "opciones_incorrectas": {
-        "B": "La multiplicación \\(40\\times 2.400\\) está bien resuelta; lo que falla es la unidad en que se expresó la longitud.",
         "A": "La relación masa \\(=\\) densidad lineal \\(\\times\\) longitud es correcta, pero exige que la longitud esté en metros.",
+        "B": "La multiplicación \\(40\\times 2.400\\) está bien resuelta; lo que falla es la unidad en que se expresó la longitud.",
         "C": "Los centímetros no son compatibles con g/m, pues \\(1\\) m equivale a \\(100\\) cm."
       }
     },
@@ -288,8 +288,8 @@
       "que_evalua": "La capacidad de los estudiantes para interpretar el concepto de promedio y utilizar procedimientos para solucionar ecuaciones de primer grado en un contexto con pocos datos.",
       "justificacion_correcta": "Para que el promedio de los cuatro lotes sea \\(58\\), la suma de los cuatro debe ser \\(4\\times 58 = 232\\) kilos. Los tres lotes conocidos suman \\(54 + 61 + 49 = 164\\), de modo que el cuarto debe aportar \\(232 - 164 = 68\\) kilos.",
       "opciones_incorrectas": {
-        "C": "Divide la suma parcial entre \\(4\\): \\(164 \\div 4 = 41\\), y toma ese valor como el dato faltante.",
         "B": "Supone que el cuarto lote debe coincidir con el promedio buscado; con \\(58\\) kilos la suma sería \\(222\\) y el promedio, \\(55{,}5\\).",
+        "C": "Divide la suma parcial entre \\(4\\): \\(164 \\div 4 = 41\\), y toma ese valor como el dato faltante.",
         "D": "Promedia únicamente los tres lotes entregados: \\(164 \\div 3 \\approx 55\\)."
       }
     },
@@ -313,9 +313,9 @@
       "que_evalua": "La capacidad para justificar si un procedimiento dado permite solucionar un problema.",
       "justificacion_correcta": "En los dos trayectos la manguera recorre \\(5\\) lados de cantero, sin importar cómo se escalone el recorrido. Como cada lado mide \\(7\\) metros, la longitud total es \\(5\\times 7 = 35\\) metros. La afirmación del operario es verdadera porque en ambos casos se recorren cinco lados de \\(7\\) metros.",
       "opciones_incorrectas": {
-        "D": "Ese cociente da \\(4\\) (los lados de un cuadrado) y no guarda relación con la longitud que se recorre.",
+        "B": "No se recorre el perímetro completo de ningún cantero, sino cinco de sus lados; \\(28\\times 5 = 140\\) m sería un valor muy superior al real.",
         "C": "Llega al veredicto correcto por una razón que no corresponde: el área encerrada entre los trayectos no determina la longitud recorrida.",
-        "B": "No se recorre el perímetro completo de ningún cantero, sino cinco de sus lados; \\(28\\times 5 = 140\\) m sería un valor muy superior al real."
+        "D": "Ese cociente da \\(4\\) (los lados de un cuadrado) y no guarda relación con la longitud que se recorre."
       },
       "imagen_figura": "assets/banco-mat-11-p2/q19.png"
     },
@@ -339,9 +339,9 @@
       "que_evalua": "La capacidad de los estudiantes para determinar un polinomio equivalente a uno dado utilizando simplificación.",
       "justificacion_correcta": "Se divide cada término del numerador entre \\(9y^{3}\\): los coeficientes se dividen y los exponentes se restan. Así, \\(\\dfrac{18y^{7}}{9y^{3}} = 2y^{4}\\), \\(\\dfrac{27y^{5}}{9y^{3}} = 3y^{2}\\) y \\(\\dfrac{9y^{4}}{9y^{3}} = y\\). La potencia media equivale a \\(2y^{4} - 3y^{2} + y\\).",
       "opciones_incorrectas": {
-        "C": "Resta bien los exponentes \\((4, 2, 1)\\), pero deja intactos los coeficientes \\(18, 27\\) y \\(9\\).",
         "A": "Simplifica correctamente los dos primeros términos y olvida dividir el tercero, que queda como \\(9y^{4}\\).",
-        "B": "Divide solo los coeficientes \\((2, 3, 1)\\) y conserva los exponentes originales \\((7, 5, 4)\\) sin restarlos."
+        "B": "Divide solo los coeficientes \\((2, 3, 1)\\) y conserva los exponentes originales \\((7, 5, 4)\\) sin restarlos.",
+        "C": "Resta bien los exponentes \\((4, 2, 1)\\), pero deja intactos los coeficientes \\(18, 27\\) y \\(9\\)."
       }
     },
     {
@@ -365,8 +365,8 @@
       "justificacion_correcta": "Se ordenan de menor a mayor los cinco datos de cada sucursal y se toma el central: Norte \\(= 38, 41, 44, 45, 52 \\Rightarrow 44\\); Centro \\(= 36, 39, 47, 50, 55 \\Rightarrow 47\\); Sur \\(= 30, 46, 46, 56, 62 \\Rightarrow 46\\). Entonces \\(44 < 46 < 47\\): la mediana de Sur supera a la de Norte y es menor que la de Centro.",
       "opciones_incorrectas": {
         "A": "Empareja a Sur con Centro por la cercanía de los valores, pero \\(46\\) y \\(47\\) son medianas distintas.",
-        "D": "Toma el dato que ocupa el lugar central de la fila sin ordenar \\((30\\) en Sur\\()\\) y por eso la juzga la menor.",
-        "C": "Compara promedios en lugar de medianas: \\(48\\) en Sur, \\(45{,}4\\) en Centro y \\(44\\) en Norte."
+        "C": "Compara promedios en lugar de medianas: \\(48\\) en Sur, \\(45{,}4\\) en Centro y \\(44\\) en Norte.",
+        "D": "Toma el dato que ocupa el lugar central de la fila sin ordenar \\((30\\) en Sur\\()\\) y por eso la juzga la menor."
       }
     },
     {
@@ -415,9 +415,9 @@
       "que_evalua": "La capacidad de reconocer propiedades de expresiones algebraicas con coeficientes enteros.",
       "justificacion_correcta": "Dentro del paréntesis se reduce \\(9p - 4p = 5p\\) y \\(-3q + 7q = 4q\\), de modo que la expresión queda \\(-(5p + 4q)\\,5p\\). En el paso 2 Camilo dejó caer el signo menos que antecede al paréntesis y escribió \\((5p + 4q)\\,5p\\). El desarrollo correcto termina en \\(-25p^{2} - 20pq\\); por eso el error está en el paso 2.",
       "opciones_incorrectas": {
-        "D": "El paso 1 solo reordena los términos respetando sus signos, lo cual es válido; \\(p\\) y \\(q\\) no pueden combinarse.",
+        "B": "El factor común de \\(25p^{2}\\) y \\(20pq\\) es \\(5p\\), y el paso 4 lo extrae correctamente.",
         "C": "Multiplicar \\((5p + 4q)\\) por \\(5p\\) sí produce \\(25p^{2} + 20pq\\): el paso 3 es coherente con lo escrito en el paso 2.",
-        "B": "El factor común de \\(25p^{2}\\) y \\(20pq\\) es \\(5p\\), y el paso 4 lo extrae correctamente."
+        "D": "El paso 1 solo reordena los términos respetando sus signos, lo cual es válido; \\(p\\) y \\(q\\) no pueden combinarse."
       }
     },
     {
@@ -440,9 +440,9 @@
       "que_evalua": "La capacidad de los estudiantes para calcular el valor de una variable a partir del valor de las demás variables que se relacionan por medio de una expresión.",
       "justificacion_correcta": "El dato de calibración confirma la relación: con \\(\\dfrac{f}{f_{0}} = 2\\) se tiene \\(12\\,\\log_{2}(2) = 12\\times 1 = 12\\). Para la nota pedida, \\(\\dfrac{f}{f_{0}} = 2^{3}\\), así que \\(12\\,\\log_{2}(2^{3}) = 12\\times 3 = 36\\). Como esa es la diferencia \\(s - s_{0}\\), se despeja \\(s = 36 + s_{0} = 36 + 28 = 64\\).",
       "opciones_incorrectas": {
-        "D": "Olvida el factor \\(12\\) y suma directamente el exponente con el semitono de referencia: \\(3 + 28 = 31\\).",
+        "A": "Invierte el despeje \\((s_{0} - s\\) en lugar de \\(s - s_{0})\\) y resta el semitono de referencia: \\(36 - 28 = 8\\).",
         "B": "Lee \\(\\log_{2}(2^{3})\\) como \\(4\\) porque cuenta también la base, y obtiene \\(12\\times 4 = 48\\), de donde \\(48 + 28 = 76\\).",
-        "A": "Invierte el despeje \\((s_{0} - s\\) en lugar de \\(s - s_{0})\\) y resta el semitono de referencia: \\(36 - 28 = 8\\)."
+        "D": "Olvida el factor \\(12\\) y suma directamente el exponente con el semitono de referencia: \\(3 + 28 = 31\\)."
       }
     },
     {
@@ -465,9 +465,9 @@
       "que_evalua": "La capacidad de los estudiantes para resolver por diferentes métodos ecuaciones cuadráticas que tengan términos factorizados.",
       "justificacion_correcta": "Lucía desarrolla los productos, reúne todo en un lado y factoriza; Emilia extrae el factor común \\((x-7)\\). Las dos llegan a las soluciones \\(x = 4\\) y \\(x = 7\\). Bernardo, en cambio, divide ambos lados entre \\((x-7)\\) sin considerar el caso \\(x - 7 = 0\\) y por eso pierde la solución \\(x = 7\\). Son correctos los procedimientos de Lucía y Emilia.",
       "opciones_incorrectas": {
-        "D": "Acepta la división entre \\((x-7)\\) sin advertir que ese factor puede valer cero, y descarta dos vías válidas.",
+        "A": "Reconoce a Lucía, pero descarta la factorización por factor común de Emilia, que también es válida.",
         "B": "Da por bueno el procedimiento de Bernardo y, además, rechaza el desarrollo de Lucía, que sí es correcto.",
-        "A": "Reconoce a Lucía, pero descarta la factorización por factor común de Emilia, que también es válida."
+        "D": "Acepta la división entre \\((x-7)\\) sin advertir que ese factor puede valer cero, y descarta dos vías válidas."
       }
     },
     {
@@ -543,9 +543,9 @@
       "que_evalua": "La capacidad del estudiante para aplicar el principio multiplicativo en una situación en la que se requiere determinar la cantidad total de posibles combinaciones en un contexto social.",
       "justificacion_correcta": "Por el principio de multiplicación, el total de bicicletas es el producto de las opciones disponibles en cada elemento: \\(6\\times 3\\times 2\\times 4 = 144\\) bicicletas distintas.",
       "opciones_incorrectas": {
-        "D": "Suma las opciones \\((6 + 3 + 2 + 4 = 15)\\) y después multiplica por las \\(4\\) categorías: \\(15\\times 4 = 60\\).",
         "B": "Suma las opciones en lugar de multiplicarlas: \\(6 + 3 + 2 + 4 = 15\\).",
-        "C": "Deja por fuera una categoría (los juegos de ruedas): \\(6\\times 2\\times 4 = 48\\)."
+        "C": "Deja por fuera una categoría (los juegos de ruedas): \\(6\\times 2\\times 4 = 48\\).",
+        "D": "Suma las opciones \\((6 + 3 + 2 + 4 = 15)\\) y después multiplica por las \\(4\\) categorías: \\(15\\times 4 = 60\\)."
       }
     }
   ]
