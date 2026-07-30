@@ -81,7 +81,7 @@
     {
       "id": "P4M02",
       "numero": 2,
-      "enunciado": "<p>Tomás mide la superficie de tres hojas con cuadritos de <b>\\(1\\ \\text{cm}^2\\)</b>. La hoja 1 mide <b>\\(3\\ \\text{cm}^2\\)</b> y la hoja 2 mide <b>\\(4\\ \\text{cm}^2\\)</b> (ver figura). La hoja 3 se puede cubrir exactamente con <b>\\(6\\)</b> hojas iguales a la <b>hoja 2</b> y <b>\\(2\\)</b> hojas iguales a la <b>hoja 1</b>.</p><p>¿Cuál es la medida de la superficie de la hoja 3?</p>",
+      "enunciado": "<p>Tomás mide la superficie de tres hojas usando cuadritos de \\(1\\ \\text{cm}^{2}\\). La hoja 1 ocupa \\(3\\ \\text{cm}^{2}\\) y la hoja 2 ocupa \\(4\\ \\text{cm}^{2}\\). La hoja 3 se cubre exactamente con \\(6\\) hojas como la 1 y \\(3\\) hojas como la 2.</p>[[IMG]]<p>¿Qué superficie tiene la hoja 3?</p>",
       "opciones": {
         "A": "\\(8\\ \\text{cm}^2\\)",
         "B": "\\(24\\ \\text{cm}^2\\)",
@@ -96,7 +96,7 @@
       "dificultad": "MEDIA",
       "estandar": "Construyo y descompongo figuras y sólidos a partir de condiciones dadas.",
       "que_evalua": "La capacidad para calcular áreas de figuras regulares utilizando patrones de recubrimientos estandarizados.",
-      "justificacion_correcta": "Cada hoja tipo 2 mide \\(4\\ \\text{cm}^2\\) y cada hoja tipo 1 mide \\(3\\ \\text{cm}^2\\). La hoja 3 se cubre con \\(6\\) del tipo 2 y \\(2\\) del tipo 1: \\(6\\times 4 + 2\\times 3 = 24 + 6 = 30\\ \\text{cm}^2\\).",
+      "justificacion_correcta": "Seis hojas como la 1 aportan \\(6 \\times 3 = 18\\ \\text{cm}^{2}\\) y tres como la 2 aportan \\(3 \\times 4 = 12\\ \\text{cm}^{2}\\). En total, \\(18 + 12 = 30\\ \\text{cm}^{2}\\).",
       "opciones_incorrectas": {
         "A": "Suma solo las cantidades de hojas \\((6 + 2 = 8)\\) sin multiplicar por su área.",
         "B": "Calcula solo \\(6\\times 4 = 24\\) y olvida las hojas tipo 1.",
@@ -107,7 +107,7 @@
     {
       "id": "P4M03",
       "numero": 3,
-      "enunciado": "<p>Todos los días, la mamá de Sara escribe en papelitos las tareas del hogar, los echa en una bolsa y Sara saca uno sin mirar. El cuadro muestra los papelitos antes de meterlos en la bolsa (ver figura).</p><p>¿Cuál es la tarea que es <b>menos posible</b> que le toque a Sara?</p>",
+      "enunciado": "<p>Todos los días, la mamá de Sara anota las tareas del hogar en papelitos iguales, los echa en una bolsa y Sara toma uno sin mirar. El cuadro muestra los papelitos antes de guardarlos.</p>[[IMG]]<p>¿Qué tarea es la que más posibilidades tiene de tocarle a Sara?</p>",
       "opciones": {
         "A": "Servir la comida.",
         "B": "Limpiar las ventanas.",
@@ -122,7 +122,7 @@
       "dificultad": "BAJA",
       "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
       "que_evalua": "La capacidad para identificar el evento con un menor grado de posibilidad de ocurrencia.",
-      "justificacion_correcta": "Solo un papelito dice «Tirar la basura», mientras que las demás tareas aparecen en dos o más papelitos. Como hay menos papelitos de esa tarea, es la menos posible de salir.",
+      "justificacion_correcta": "La tarea con más posibilidades es la que está escrita en más papelitos. Al contar el cuadro, esa tarea es tirar la basura.",
       "opciones_incorrectas": {
         "A": "«Servir la comida» está en dos papelitos: tiene más posibilidad que la basura.",
         "B": "«Limpiar las ventanas» está en dos papelitos: más posible que la basura.",
@@ -133,12 +133,12 @@
     {
       "id": "P4M04",
       "numero": 4,
-      "enunciado": "<p>Cada año, unos duendes mineros aumentan los cofres de oro que ofrecen al dragón que cuida la montaña. La figura muestra los cofres ofrecidos en los años 1, 2 y 3.</p><p>Si en el <b>año 4</b> ofrecieran <b>\\(27\\)</b> cofres, ¿cuál regla estarían siguiendo?</p>",
+      "enunciado": "<p>Cada año, unos duendes mineros llevan más cofres de oro al dragón que cuida la montaña. La imagen muestra lo que llevaron en los años 1, 2 y 3.</p>[[IMG]]<p>Si en el año 4 llevaran \\(27\\) cofres, ¿qué regla estarían siguiendo?</p>",
       "opciones": {
-        "A": "Duplicar la cantidad de cofres respecto al año anterior, después del primer año.",
-        "B": "Aumentar 6 cofres respecto al año anterior, después del primer año.",
-        "C": "Triplicar la cantidad de cofres respecto al año anterior, después del primer año.",
-        "D": "Aumentar 18 cofres respecto al año anterior, después del primer año."
+        "A": "Llevar el doble de cofres que el año anterior.",
+        "B": "Llevar \\(6\\) cofres más que el año anterior.",
+        "C": "Llevar el triple de cofres que el año anterior.",
+        "D": "Llevar \\(18\\) cofres más que el año anterior."
       },
       "clave": "C",
       "competencia": "c",
@@ -148,7 +148,7 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
       "que_evalua": "La capacidad para encontrar el patrón de una sucesión.",
-      "justificacion_correcta": "Los cofres por año son \\(1, 3, 9\\) y \\(27\\): de un año al siguiente cada cantidad se multiplica por \\(3\\) \\((1\\times 3 = 3,\\ 3\\times 3 = 9,\\ 9\\times 3 = 27)\\). La regla es triplicar la cantidad respecto al año anterior.",
+      "justificacion_correcta": "Al comparar un año con el siguiente, la cantidad de cofres queda multiplicada por \\(3\\) cada vez, y \\(9 \\times 3 = 27\\) confirma la regla.",
       "opciones_incorrectas": {
         "A": "Del año 1 al 2 la cantidad pasa de \\(1\\) a \\(3\\); duplicar daría \\(2\\), y no se cumpliría para \\(9\\) ni \\(27\\).",
         "B": "Aumentar \\(6\\) fijos no sirve: del año 1 al 2 solo aumenta \\(2\\), no \\(6\\).",
@@ -184,7 +184,7 @@
     {
       "id": "P4M06",
       "numero": 6,
-      "enunciado": "<p>Antonio y Carlos recorren, cada uno, un camino de <b>dos tramos</b> para llegar a la misma meta, como muestra la figura. Antonio recorre el <b>tramo 1</b> y el <b>tramo 2</b>; Carlos recorre el <b>tramo 3</b> y el <b>tramo 4</b>.</p><p>¿Qué se debe calcular para saber la <b>distancia total</b> que recorrió <b>Antonio</b>?</p>",
+      "enunciado": "<p>Antonio y Carlos hacen cada uno un recorrido de dos tramos hasta la misma meta, como muestra la imagen. Antonio pasa por el tramo 1 y el tramo 2; Carlos pasa por el tramo 3 y el tramo 4.</p>[[IMG]]<p>¿Qué hay que calcular para saber cuánto recorrió Antonio?</p>",
       "opciones": {
         "A": "La suma de las distancias de los tramos 1 y 2.",
         "B": "El producto de las distancias de los tramos 3 y 4.",
@@ -199,7 +199,7 @@
       "dificultad": "BAJA",
       "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir.",
       "que_evalua": "La capacidad para realizar mediciones en sistemas de referencia convencionales.",
-      "justificacion_correcta": "La distancia total recorrida por Antonio es la suma de las longitudes de los tramos por donde pasó. Antonio recorrió el tramo 1 y el tramo 2, así que se debe calcular la suma de las distancias de los tramos 1 y 2.",
+      "justificacion_correcta": "El recorrido de Antonio es la unión de sus dos tramos, así que su distancia total es la suma de las distancias del tramo 1 y del tramo 2.",
       "opciones_incorrectas": {
         "B": "Los tramos 3 y 4 los recorrió Carlos, no Antonio; además multiplicar tramos no da una longitud total.",
         "C": "El tramo 4 es de Carlos y, además, multiplicar distancias no calcula un recorrido total.",
@@ -210,7 +210,7 @@
     {
       "id": "P4M07",
       "numero": 7,
-      "enunciado": "<p>Observa la conversación entre Laura y Javier (ver figura). Javier tiene razón: después de regalar el dulce, la cantidad de dulces que tiene <b>Laura</b> es <b>\\(8 + 1\\)</b>.</p><p>¿Cuál expresión representa la cantidad de dulces con que queda <b>Javier</b>, de modo que los dos tengan la misma cantidad?</p>",
+      "enunciado": "<p>Laura y Javier conversan sobre los dulces que tiene Laura. Javier acierta: después de regalar un dulce, a Laura le quedan \\(8 + 1\\).</p>[[IMG]]<p>¿Qué expresión indica cuántos dulces tenía Laura antes de regalar el suyo?</p>",
       "opciones": {
         "A": "\\(10 + 3\\)",
         "B": "\\(10 - 1\\)",
@@ -225,7 +225,7 @@
       "dificultad": "MEDIA",
       "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
       "que_evalua": "La capacidad para identificar equivalencias entre expresiones numéricas.",
-      "justificacion_correcta": "Laura pasa a tener \\(8 + 1 = 9\\) dulces. Javier tenía \\(10\\) y regaló \\(1\\), así que le quedan \\(10 - 1 = 9\\). Las expresiones \\(8+1\\) y \\(10-1\\) son equivalentes porque ambas valen \\(9\\): la de Javier es \\(10 - 1\\).",
+      "justificacion_correcta": "Después de regalar un dulce le quedan \\(8 + 1 = 9\\). Antes de regalarlo tenía uno más, es decir \\(10\\), que es lo que representa \\(10 - 1\\) al deshacer el regalo.",
       "opciones_incorrectas": {
         "A": "Suma \\(3\\) en vez de quitar el dulce; Javier regala, no recibe, y \\(10+3 = 13 \\neq 9\\).",
         "C": "\\(5 + 3 = 8\\) no corresponde a los \\(9\\) dulces con que debe quedar Javier.",
@@ -236,12 +236,12 @@
     {
       "id": "P4M08",
       "numero": 8,
-      "enunciado": "<p>En un colegio se organizó un torneo con 4 equipos, en dos rondas. La <b>gráfica</b> muestra los puntos de la ronda 1 y la <b>tabla</b> los de la ronda 2 (ver figura).</p><p>¿Cuál equipo ganó <b>más puntos en total</b> sumando las dos rondas?</p>",
+      "enunciado": "<p>Cuatro equipos disputaron un torneo del colegio en dos rondas. La gráfica recoge los puntos de la primera ronda y la tabla los de la segunda.</p>[[IMG]]<p>Al juntar las dos rondas, ¿qué equipo reunió más puntos?</p>",
       "opciones": {
-        "A": "El equipo 1.",
-        "B": "El equipo 2.",
-        "C": "El equipo 3.",
-        "D": "El equipo 4."
+        "A": "Equipo 1.",
+        "B": "Equipo 2.",
+        "C": "Equipo 3.",
+        "D": "Equipo 4."
       },
       "clave": "A",
       "competencia": "b",
@@ -251,7 +251,7 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
       "que_evalua": "La capacidad para usar la información presentada en distintos tipos de registro.",
-      "justificacion_correcta": "Sumando las dos rondas: equipo 1 \\(= 7 + 8 = 15\\); equipo 2 \\(= 4 + 4 = 8\\); equipo 3 \\(= 3 + 0 = 3\\); equipo 4 \\(= 2 + 5 = 7\\). El mayor total es el del equipo 1 con \\(15\\) puntos.",
+      "justificacion_correcta": "Para cada equipo se lee su puntaje en la gráfica de la primera ronda, se le suma el de la tabla de la segunda y se comparan los cuatro totales. El más alto es el del equipo 1.",
       "opciones_incorrectas": {
         "B": "El equipo 2 suma \\(8\\), menos que los \\(15\\) del equipo 1.",
         "C": "El equipo 3 suma \\(3\\), el menor de todos.",
@@ -262,7 +262,7 @@
     {
       "id": "P4M09",
       "numero": 9,
-      "enunciado": "<p>Rocío quiere cubrir una pared con piezas de papel iguales, sin sobreponerlas. La pared y una pieza de papel se muestran en la figura; todos los cuadrados de la pared tienen el mismo tamaño que los de la pieza.</p><p>¿Cuántas piezas de papel necesita para cubrir toda la pared?</p>",
+      "enunciado": "<p>Rocío quiere forrar una pared con piezas de papel iguales, sin encimarlas. En la imagen aparecen la pared y una de las piezas; los cuadros de la pared son del mismo tamaño que los de la pieza.</p>[[IMG]]<p>¿Cuántas piezas necesita para cubrirla por completo?</p>",
       "opciones": {
         "A": "\\(10\\) piezas.",
         "B": "\\(12\\) piezas.",
@@ -277,7 +277,7 @@
       "dificultad": "MEDIA",
       "estandar": "Construyo y descompongo figuras y sólidos a partir de condiciones dadas.",
       "que_evalua": "La capacidad para reconocer el recubrimiento de una forma dada con un patrón no estandarizado.",
-      "justificacion_correcta": "La pared tiene \\(6\\times 4 = 24\\) cuadrados, pero cada pieza de papel cubre \\(2\\) cuadrados. Por eso se necesitan \\(24 \\div 2 = 12\\) piezas para cubrir toda la pared.",
+      "justificacion_correcta": "Se cuenta cuántos cuadros tiene la pared y cuántos cubre cada pieza, y se divide. El resultado es \\(12\\) piezas.",
       "opciones_incorrectas": {
         "A": "Suma las dimensiones de la pared \\((6 + 4 = 10)\\) en lugar de cubrirla con piezas.",
         "C": "Cuenta de más: usa una fila o columna extra al ubicar las piezas.",
@@ -288,12 +288,12 @@
     {
       "id": "P4M10",
       "numero": 10,
-      "enunciado": "<p>Cada domingo, Mariana lee <b>\\(6\\)</b> cuentos distintos de la colección de su abuelo. ¿Cuántos cuentos lee Mariana en <b>\\(3\\)</b> domingos?</p>",
+      "enunciado": "<p>Cada sábado, Mariana arma \\(7\\) pulseras distintas para la venta del colegio. ¿Cuántas pulseras arma en \\(4\\) sábados?</p>",
       "opciones": {
-        "A": "\\(3\\) cuentos.",
-        "B": "\\(6\\) cuentos.",
-        "C": "\\(9\\) cuentos.",
-        "D": "\\(18\\) cuentos."
+        "A": "\\(4\\) pulseras.",
+        "B": "\\(7\\) pulseras.",
+        "C": "\\(11\\) pulseras.",
+        "D": "\\(28\\) pulseras."
       },
       "clave": "D",
       "competencia": "b",
@@ -303,11 +303,11 @@
       "dificultad": "BAJA",
       "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
       "que_evalua": "La capacidad para identificar una situación multiplicativa y encontrar el resultado.",
-      "justificacion_correcta": "Mariana lee \\(6\\) cuentos cada domingo durante \\(3\\) domingos, así que en total lee \\(6\\times 3 = 18\\) cuentos.",
+      "justificacion_correcta": "Se repite \\(7\\) tantas veces como sábados hay: \\(7 \\times 4 = 28\\) pulseras.",
       "opciones_incorrectas": {
-        "A": "Toma solo el número de domingos \\((3)\\).",
-        "B": "Toma solo los cuentos de un domingo \\((6)\\).",
-        "C": "Suma \\(6 + 3 = 9\\) en lugar de multiplicar."
+        "A": "Repite el número de sábados en lugar de contar las pulseras.",
+        "B": "Corresponde a un solo sábado.",
+        "C": "Suma los dos números en vez de multiplicarlos."
       }
     },
     {
@@ -344,7 +344,7 @@
     {
       "id": "P4M12",
       "numero": 12,
-      "enunciado": "<p>Se encuestó a 4 estudiantes sobre su curso, su clase favorita y su color favorito. Los resultados se muestran en la tabla.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Clase favorita</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Color favorito</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carla</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Salomé</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tomás</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sergio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Inglés</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td></tr></table><p>Si se elige un estudiante al azar de la lista, ¿cuál de las siguientes afirmaciones es <b>verdadera</b>?</p>",
+      "enunciado": "<p>Se preguntó a cuatro estudiantes por su curso, su clase favorita y su color preferido. Las respuestas quedaron así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Clase favorita</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Color favorito</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carla</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Salomé</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Verde</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tobías</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Artes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Iván</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Artes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td></tr></table><p>Si se elige a uno de ellos al azar, ¿qué afirmación es cierta?</p>",
       "opciones": {
         "A": "Es más probable elegir un estudiante de quinto que prefiera Español que uno de cuarto que prefiera Español.",
         "B": "Es más probable elegir un estudiante de cuarto que prefiera el rojo que uno de quinto que prefiera el rojo.",
@@ -359,7 +359,7 @@
       "dificultad": "ALTA",
       "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
       "que_evalua": "La capacidad para comparar el grado de posibilidad de dos eventos de un mismo experimento aleatorio.",
-      "justificacion_correcta": "Dos estudiantes de quinto prefieren Español (Carla y Salomé) y solo uno de cuarto (Tomás). Como hay más estudiantes de quinto con Español, es más probable elegir uno de quinto con Español que uno de cuarto con Español.",
+      "justificacion_correcta": "Se cuenta cuántos estudiantes cumplen cada condición y se comparan esas cantidades. La afirmación de la opción A es la única que coincide con la tabla.",
       "opciones_incorrectas": {
         "B": "El rojo solo lo prefiere Carla (de quinto); en cuarto nadie prefiere el rojo, así que es al revés.",
         "C": "El azul lo prefieren Salomé (quinto), Tomás y Sergio (cuarto): hay más de cuarto, así que es al revés.",
@@ -369,12 +369,12 @@
     {
       "id": "P4M13",
       "numero": 13,
-      "enunciado": "<p>Andrea y Diego recogen aguacates en un cultivo. Por cada <b>\\(50\\)</b> aguacates que recoge Andrea, Diego recoge <b>\\(20\\)</b>. Si en total Diego recogió <b>\\(80\\)</b> aguacates, ¿cuántos aguacates recogió Andrea?</p>",
+      "enunciado": "<p>Andrea y Diego recogen mandarinas en la misma finca. Por cada \\(60\\) mandarinas que recoge Andrea, Diego recoge \\(20\\). Si Diego terminó el día con \\(80\\) mandarinas, ¿cuántas recogió Andrea?</p>",
       "opciones": {
-        "A": "\\(90\\) aguacates.",
-        "B": "\\(200\\) aguacates.",
-        "C": "\\(150\\) aguacates.",
-        "D": "\\(110\\) aguacates."
+        "A": "\\(140\\) mandarinas.",
+        "B": "\\(240\\) mandarinas.",
+        "C": "\\(180\\) mandarinas.",
+        "D": "\\(100\\) mandarinas."
       },
       "clave": "B",
       "competencia": "b",
@@ -384,11 +384,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
       "que_evalua": "La capacidad para determinar una constante de proporcionalidad y usarla para hallar un cuarto valor que satisface la proporción.",
-      "justificacion_correcta": "Diego pasó de \\(20\\) a \\(80\\) aguacates: se multiplicó por \\(4\\) \\((20\\times 4 = 80)\\). Como la relación es proporcional, a Andrea se le aplica el mismo factor: \\(50\\times 4 = 200\\) aguacates.",
+      "justificacion_correcta": "Diego recogió \\(80\\), que son cuatro veces \\(20\\). Como la relación se mantiene, Andrea recogió cuatro veces \\(60\\), es decir \\(240\\) mandarinas.",
       "opciones_incorrectas": {
-        "A": "Usa un factor equivocado, por ejemplo \\(50\\times \\tfrac{80}{...}\\), y obtiene \\(90\\) en vez de \\(200\\).",
-        "C": "Suma las cantidades del enunciado \\((50 + 20 + 80 = 150)\\) sin usar la proporción.",
-        "D": "Suma a \\(50\\) el cambio de Diego \\((80 - 20 = 60)\\), obteniendo \\(110\\), en lugar de multiplicar por el factor."
+        "A": "Suma \\(60\\) y \\(80\\) en lugar de conservar la relación.",
+        "C": "Corresponde a tres veces \\(60\\), no a cuatro.",
+        "D": "Añade \\(20\\) a \\(80\\), mezclando las dos recolecciones."
       }
     },
     {
@@ -444,7 +444,7 @@
     {
       "id": "P4M16",
       "numero": 16,
-      "enunciado": "<p>Un comerciante preguntó al tendero cuánto debía pagar y este le respondió con el cartel de la figura: <b>«ochocientos seis mil cincuenta pesos»</b>.</p><p>¿Cuál es ese número escrito con cifras?</p>",
+      "enunciado": "<p>Un comerciante preguntó cuánto debía pagar y el tendero le mostró el cartel de la imagen, donde el valor está escrito con palabras: «ochocientos seis mil cincuenta pesos».</p>[[IMG]]<p>¿Cómo se escribe ese valor con cifras?</p>",
       "opciones": {
         "A": "$865.000",
         "B": "$8.650",
@@ -459,7 +459,7 @@
       "dificultad": "MEDIA",
       "estandar": "Justifico el valor de posición en el sistema de numeración decimal en relación con el conteo recurrente de unidades.",
       "que_evalua": "La capacidad para escribir un número en su representación simbólica dada su representación en lenguaje natural.",
-      "justificacion_correcta": "«Ochocientos seis mil» es \\(806.000\\) y «cincuenta» es \\(50\\). Por valor posicional: \\(8\\) en las centenas de mil, \\(0\\) en las decenas de mil, \\(6\\) en las unidades de mil, \\(0\\) en las centenas, \\(5\\) en las decenas y \\(0\\) en las unidades. El número es $806.050.",
+      "justificacion_correcta": "Ochocientos seis mil son \\(806.000\\) y cincuenta más dan \\(806.050\\). El cero en las centenas indica que no hay centenas.",
       "opciones_incorrectas": {
         "A": "Arma $865.000 leyendo \\(8, 6, 5\\) seguidos sin respetar las posiciones de los ceros.",
         "B": "Escribe solo las cifras \\(8, 6, 5, 0\\) como $8.650, perdiendo el valor de posición.",
@@ -495,7 +495,7 @@
     {
       "id": "P4M18",
       "numero": 18,
-      "enunciado": "<p>Una señal estaba mal puesta. Para corregirla se <b>rotó \\(90^\\circ\\) a la derecha</b> y quedó en la posición correcta que muestra la figura.</p><p>¿Cuál de las opciones muestra cómo estaba la señal <b>antes</b> de corregir el error?</p>",
+      "enunciado": "<p>Una señal estaba mal puesta. Para corregirla se <b>rotó \\(90^\\circ\\) a la derecha</b> y quedó en la posición correcta que muestra la figura.</p>[[IMG]]<p>¿Cuál de las opciones muestra cómo estaba la señal <b>antes</b> de corregir el error?</p>",
       "opciones": {
         "A": "Opción A.",
         "B": "Opción B.",
@@ -527,7 +527,7 @@
     {
       "id": "P4M19",
       "numero": 19,
-      "enunciado": "<p>Un carpintero tomó un bloque de madera de <b>\\(4\\ \\text{cm} \\times 4\\ \\text{cm} \\times 10\\ \\text{cm}\\)</b> y le hizo un corte siguiendo las líneas punteadas, retirando una pieza de <b>\\(2\\ \\text{cm} \\times 4\\ \\text{cm} \\times 6\\ \\text{cm}\\)</b>. Así obtuvo la figura en forma de escalón que se muestra.</p><p>¿Cuál es el volumen de la figura que obtuvo el carpintero?</p>",
+      "enunciado": "<p>Un carpintero partió de un bloque de madera de \\(4\\ \\text{cm} \\times 4\\ \\text{cm} \\times 10\\ \\text{cm}\\) y cortó por las líneas punteadas, retirando una pieza de \\(2\\ \\text{cm} \\times 4\\ \\text{cm} \\times 6\\ \\text{cm}\\).</p>[[IMG]]<p>¿Qué volumen le quedó al bloque después del corte?</p>",
       "opciones": {
         "A": "\\(208\\ \\text{cm}^3\\)",
         "B": "\\(160\\ \\text{cm}^3\\)",
@@ -542,7 +542,7 @@
       "dificultad": "ALTA",
       "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
       "que_evalua": "La capacidad para calcular el volumen de una figura que se obtiene al extraer un paralelepípedo de otro paralelepípedo de mayores dimensiones.",
-      "justificacion_correcta": "El bloque inicial tiene volumen \\(4\\times 4\\times 10 = 160\\ \\text{cm}^3\\). La pieza retirada mide \\(2\\times 4\\times 6 = 48\\ \\text{cm}^3\\). La figura final es la diferencia: \\(160 - 48 = 112\\ \\text{cm}^3\\).",
+      "justificacion_correcta": "El bloque entero mide \\(4 \\times 4 \\times 10 = 160\\ \\text{cm}^{3}\\) y la pieza retirada \\(2 \\times 4 \\times 6 = 48\\ \\text{cm}^{3}\\). Al restar queda \\(160 - 48 = 112\\ \\text{cm}^{3}\\).",
       "opciones_incorrectas": {
         "A": "Suma los dos volúmenes \\((160 + 48 = 208)\\) en lugar de restarlos.",
         "B": "Da solo el volumen del bloque inicial \\((160)\\), sin quitar la pieza retirada.",
@@ -553,7 +553,7 @@
     {
       "id": "P4M20",
       "numero": 20,
-      "enunciado": "<p>Un paquete de gomitas masticables tiene varios colores, como muestra la figura.</p><p>Si un niño saca una gomita del paquete sin mirar, ¿de qué color es <b>más posible</b> que salga?</p>",
+      "enunciado": "<p>Un paquete de gomitas masticables trae varios colores mezclados, como se ve en la imagen.</p>[[IMG]]<p>Si alguien mete la mano sin mirar y saca una gomita, ¿qué color tiene más posibilidades de salir?</p>",
       "opciones": {
         "A": "Azul.",
         "B": "Verde.",
@@ -568,7 +568,7 @@
       "dificultad": "BAJA",
       "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
       "que_evalua": "La capacidad para identificar dentro de un conjunto de elementos con varias características, aquel que tiene una mayor probabilidad de ocurrencia.",
-      "justificacion_correcta": "En el paquete hay \\(4\\) gomitas azules, \\(3\\) rojas, \\(1\\) verde y ninguna amarilla. Como hay más gomitas azules que de cualquier otro color, es más posible que salga una azul.",
+      "justificacion_correcta": "Sale con más facilidad el color que aparece en mayor cantidad dentro del paquete. Al contar las gomitas de la imagen, ese color es el azul.",
       "opciones_incorrectas": {
         "B": "Solo hay \\(1\\) gomita verde: es de las de menor posibilidad.",
         "C": "No hay gomitas amarillas: sacar amarilla es un evento imposible.",

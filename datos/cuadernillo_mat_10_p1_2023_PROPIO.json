@@ -62,7 +62,7 @@
     {
       "id": "P-math-10-p1-02",
       "numero": 2,
-      "enunciado": "<p>Observa el siguiente <b>prisma triangular</b>: tiene dos bases con forma de triángulo (una arriba y otra abajo) y tres caras laterales rectangulares.</p><p>Los cuatro moldes (desarrollos planos) tienen <b>tres rectángulos y dos triángulos</b>.</p><p>¿Con cuál de ellos se puede armar exactamente este prisma, de modo que al plegarlo cada cara coincida con su vecina (aristas de igual longitud) y ningún triángulo se superponga a otro?</p>",
+      "enunciado": "<p>Observa el siguiente <b>prisma triangular</b>: tiene dos bases con forma de triángulo (una arriba y otra abajo) y tres caras laterales rectangulares.</p><p>Los cuatro moldes (desarrollos planos) tienen <b>tres rectángulos y dos triángulos</b>.</p>[[IMG]]<p>¿Con cuál de ellos se puede armar exactamente este prisma, de modo que al plegarlo cada cara coincida con su vecina (aristas de igual longitud) y ningún triángulo se superponga a otro?</p>",
       "opciones": {
         "A": "Molde A.",
         "B": "Molde B.",
@@ -94,7 +94,7 @@
     {
       "id": "P-math-10-p1-03",
       "numero": 3,
-      "enunciado": "<p>En el triángulo \\(PQR\\) se cumple la ley del coseno \\(p^{2} = q^{2} + r^{2} - 2\\,q\\,r\\,\\cos P\\). En la figura, el ángulo en \\(P\\) mide \\(60^\\circ\\) y el lado \\(r = 6\\). Además \\(r = 3q\\).</p><p>¿Cuál es la medida del lado \\(p\\)? (Recuerda que \\(\\cos 60^\\circ = \\tfrac{1}{2}\\).)</p>",
+      "enunciado": "<p>En el triángulo \\(PQR\\) vale la ley del coseno \\(p^{2} = q^{2} + r^{2} - 2\\,q\\,r\\,\\cos P\\). Según la imagen, el ángulo en \\(P\\) mide \\(60^\\circ\\), el lado \\(r = 6\\) y además \\(r = 3q\\).</p>[[IMG]]<p>¿Cuánto mide el lado \\(p\\)?</p>",
       "opciones": {
         "A": "\\(\\sqrt{52}\\)",
         "B": "\\(28\\)",
@@ -109,7 +109,7 @@
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
       "que_evalua": "La capacidad para calcular la longitud de un lado de un triángulo usando el Teorema del coseno.",
-      "justificacion_correcta": "Como \\(r = 6\\) y \\(r = 3q\\), entonces \\(q = 2\\). Aplicando la ley del coseno con \\(\\cos 60^\\circ = \\tfrac12\\): \\(p^{2} = 2^{2} + 6^{2} - 2\\cdot 2\\cdot 6\\cdot \\tfrac12 = 4 + 36 - 12 = 28\\). Por lo tanto \\(p = \\sqrt{28}\\).",
+      "justificacion_correcta": "De \\(r = 3q\\) con \\(r = 6\\) sale \\(q = 2\\). Reemplazando: \\(p^{2} = 2^{2} + 6^{2} - 2(2)(6)\\cos 60^\\circ = 4 + 36 - 12 = 28\\), de donde \\(p = \\sqrt{28}\\).",
       "opciones_incorrectas": {
         "A": "Cambia el signo del último término: \\(p^{2} = 4 + 36 + 12 = 52\\), como si la ley del coseno sumara en lugar de restar.",
         "B": "Calcula bien \\(p^{2} = 28\\) pero olvida tomar la raíz cuadrada y deja \\(p = 28\\).",
@@ -120,12 +120,12 @@
     {
       "id": "P-math-10-p1-04",
       "numero": 4,
-      "enunciado": "<p>A un concierto asistieron \\(5.400\\) personas. El \\(8\\%\\) de ellas compró el combo de comida. Para hallar cuántas personas compraron el combo, alguien propone <b>multiplicar \\(0{,}08\\) por el número de asistentes</b>. ¿Es correcto el procedimiento propuesto?</p>",
+      "enunciado": "<p>A un concierto entraron \\(5.400\\) personas y el \\(8\\%\\) de ellas compró el combo de comida. Alguien propone hallar cuántas lo compraron multiplicando \\(0{,}08\\) por el número de asistentes.</p><p>¿Funciona esa propuesta?</p>",
       "opciones": {
-        "A": "No, porque se debe multiplicar \\(0{,}8\\) por el número de asistentes.",
-        "B": "Sí, pero solo si el resultado obtenido es un número par de personas.",
-        "C": "No, porque falta multiplicar el resultado por el número de combos disponibles.",
-        "D": "Sí, porque calcular el \\(8\\%\\) equivale a multiplicar por \\(\\dfrac{8}{100} = 0{,}08\\)."
+        "A": "No: habría que multiplicar por \\(0{,}8\\) el número de asistentes.",
+        "B": "Sí, aunque solo vale si el resultado da un número par de personas.",
+        "C": "No: haría falta multiplicar además por la cantidad de combos disponibles.",
+        "D": "Sí: hallar el \\(8\\%\\) es lo mismo que multiplicar por \\(\\dfrac{8}{100} = 0{,}08\\)."
       },
       "clave": "D",
       "competencia": "c",
@@ -135,7 +135,7 @@
       "dificultad": "MEDIA",
       "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
       "que_evalua": "La capacidad para justificar la validez de un procedimiento en el que se debe calcular un porcentaje.",
-      "justificacion_correcta": "Calcular el \\(8\\%\\) de una cantidad es multiplicarla por \\(\\dfrac{8}{100} = 0{,}08\\). Por eso multiplicar \\(0{,}08\\) por el número de asistentes da exactamente el \\(8\\%\\) y el procedimiento es correcto.",
+      "justificacion_correcta": "Calcular el \\(8\\%\\) de una cantidad equivale a multiplicarla por \\(\\dfrac{8}{100} = 0{,}08\\), así que la propuesta es correcta.",
       "opciones_incorrectas": {
         "A": "Confunde \\(8\\%\\) con \\(80\\%\\): \\(0{,}8\\) corresponde a \\(\\dfrac{80}{100}\\), no a \\(\\dfrac{8}{100}\\).",
         "B": "La paridad del resultado no tiene relación con que el procedimiento del porcentaje sea válido.",
@@ -145,12 +145,12 @@
     {
       "id": "P-math-10-p1-05",
       "numero": 5,
-      "enunciado": "<p>Un centro cultural ofrece cuatro cursos. Cada estudiante paga el <b>precio por sesión</b> tantas veces como sesiones semanales tome. La tabla muestra cuántos están inscritos a \\(1\\), \\(2\\) o \\(3\\) sesiones y el precio por sesión de cada curso:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Inscritos a 1 sesión</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Inscritos a 2 sesiones</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Inscritos a 3 sesiones</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio por sesión</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Robótica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(120\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(110\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(105\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$10.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Pintura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(80\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(70\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(60\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Música</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(100\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(95\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(90\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Natación</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(110\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(95\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(85\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$9.000</td></tr></table><p>Con esos datos se construyó la siguiente gráfica de <b>ingresos semanales</b> (inscritos \\(\\times\\) precio por sesión \\(\\times\\) número de sesiones). Sabiendo que quien asiste a más sesiones paga más, la gráfica presenta una <b>inconsistencia</b> porque los ingresos provenientes de:</p>",
+      "enunciado": "<p>Un centro cultural ofrece cuatro cursos y cada estudiante paga el precio por sesión tantas veces como sesiones tome a la semana. La tabla recoge cuántos se inscribieron a \\(1\\), \\(2\\) o \\(3\\) sesiones y el precio por sesión de cada curso:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Inscritos a 1 sesión</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Inscritos a 2 sesiones</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Inscritos a 3 sesiones</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio por sesión</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Robótica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(120\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(110\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(105\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$10.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Pintura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(80\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(70\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(60\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Música</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(100\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(95\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(90\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Natación</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(110\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(95\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(85\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$9.000</td></tr></table><p>Con esos datos se construyó la siguiente gráfica de <b>ingresos semanales</b> (inscritos \\(\\times\\) precio por sesión \\(\\times\\) número de sesiones).</p>[[IMG]]<p>Con esos datos se levantó la gráfica de ingresos semanales, entendidos como inscritos por precio por número de sesiones. Sabiendo que quien toma más sesiones paga más, la gráfica tiene una inconsistencia, porque los ingresos que provienen de:</p>",
       "opciones": {
-        "A": "una sesión de robótica deben ser mayores que los de las demás actividades.",
-        "B": "dos o tres sesiones deben ser mayores que los de una sesión en todas las actividades.",
-        "C": "música y pintura deben ser iguales sin importar el número de sesiones.",
-        "D": "tres sesiones de robótica o de música deben tener barras de igual altura."
+        "A": "una sesión de robótica tendrían que superar a los del resto de actividades.",
+        "B": "dos o tres sesiones tendrían que superar a los de una sesión en toda actividad.",
+        "C": "música y pintura tendrían que coincidir sin importar cuántas sesiones sean.",
+        "D": "tres sesiones de robótica y de música tendrían que dibujar barras iguales."
       },
       "clave": "B",
       "competencia": "a",
@@ -171,7 +171,7 @@
     {
       "id": "P-math-10-p1-06",
       "numero": 6,
-      "enunciado": "<p>Un punto \\(K\\) se desplaza de un extremo a otro del segmento \\(QT\\). Desde \\(K\\) se mide la distancia \\(DK\\) a un punto fijo \\(D\\); el ángulo \\(\\alpha\\) en \\(K\\) cumple \\(\\operatorname{sen}\\alpha = \\dfrac{h}{DK}\\), de donde \\(DK = \\dfrac{h}{\\operatorname{sen}\\alpha}\\). La distancia máxima posible es \\(DQ\\) (cuando \\(\\alpha\\) es mínimo) y la mínima es \\(h\\) (cuando \\(\\alpha = 90^\\circ\\)).</p><p>¿Cuál gráfica muestra cómo cambia \\(DK\\) a medida que crece \\(\\alpha\\)?</p>",
+      "enunciado": "<p>Un punto \\(K\\) se desplaza de un extremo a otro del segmento \\(QT\\). Desde \\(K\\) se mide la distancia \\(DK\\) a un punto fijo \\(D\\); el ángulo \\(\\alpha\\) en \\(K\\) cumple \\(\\operatorname{sen}\\alpha = \\dfrac{h}{DK}\\), de donde \\(DK = \\dfrac{h}{\\operatorname{sen}\\alpha}\\). La distancia máxima posible es \\(DQ\\) (cuando \\(\\alpha\\) es mínimo) y la mínima es \\(h\\) (cuando \\(\\alpha = 90^\\circ\\)).</p>[[IMG]]<p>¿Cuál gráfica muestra cómo cambia \\(DK\\) a medida que crece \\(\\alpha\\)?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -203,7 +203,7 @@
     {
       "id": "P-math-10-p1-07",
       "numero": 7,
-      "enunciado": "<p>Un número es divisible por \\(4\\) cuando cumple <b>alguna</b> de estas condiciones: sus dos últimas cifras forman un múltiplo de \\(4\\) (por ejemplo, \\(2.536\\), porque \\(36\\) es múltiplo de \\(4\\)), o termina en doble cero (por ejemplo, \\(45.300\\)). ¿Cuál de los siguientes números <b>NO</b> es múltiplo de \\(4\\)?</p>",
+      "enunciado": "<p>Un número es divisible por \\(4\\) cuando sus dos últimas cifras forman un múltiplo de \\(4\\), como ocurre en \\(2.536\\) porque \\(36\\) lo es, o cuando termina en dos ceros.</p><p>¿Cuál de estos números NO es divisible por \\(4\\)?</p>",
       "opciones": {
         "A": "\\(31.616\\)",
         "B": "\\(47.500\\)",
@@ -218,7 +218,7 @@
       "dificultad": "MEDIA",
       "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
       "que_evalua": "La capacidad para determinar si un número cumple con condiciones de divisibilidad dadas.",
-      "justificacion_correcta": "\\(52.314\\) no cumple ninguna de las dos condiciones: no termina en doble cero (termina en \\(14\\)) y \\(14\\) no es múltiplo de \\(4\\). Por eso \\(52.314\\) no es divisible por \\(4\\).",
+      "justificacion_correcta": "Se miran las dos últimas cifras de cada número: \\(16\\), \\(00\\) y \\(32\\) son múltiplos de \\(4\\), pero \\(14\\) no lo es. Por eso \\(52.314\\) no cumple.",
       "opciones_incorrectas": {
         "A": "\\(31.616\\) termina en \\(16\\), que sí es múltiplo de \\(4\\); por tanto sí es divisible.",
         "B": "\\(47.500\\) termina en doble cero, condición que garantiza la divisibilidad por \\(4\\).",
@@ -228,7 +228,7 @@
     {
       "id": "P-math-10-p1-08",
       "numero": 8,
-      "enunciado": "<p>El empaque de un alimento está hecho de papel, plástico y vidrio. La gráfica muestra la composición porcentual aproximada de una lámina: papel \\(80\\%\\), plástico \\(16\\%\\) y vidrio \\(4\\%\\). De acuerdo con la información, en la lámina existe:</p>",
+      "enunciado": "<p>El empaque de un alimento está hecho de papel, plástico y vidrio. La gráfica muestra la composición porcentual aproximada de una lámina: papel \\(80\\%\\), plástico \\(16\\%\\) y vidrio \\(4\\%\\).</p>[[IMG]]<p>De acuerdo con la información, en la lámina existe:</p>",
       "opciones": {
         "A": "una relación de \\(1\\) a \\(76\\) entre el vidrio y el papel.",
         "B": "una relación de \\(4\\) a \\(1\\) entre el vidrio y el plástico.",
@@ -254,7 +254,7 @@
     {
       "id": "P-math-10-p1-09",
       "numero": 9,
-      "enunciado": "<p>Un jardín circular de área \\(20\\ \\mathrm{m}^2\\) está rodeado por una reja circular, separada \\(10\\ \\mathrm{m}\\) del jardín por un camino de piedra (ver figura).</p><p>¿Con esta información es posible calcular el <b>perímetro de la reja exterior</b>?</p>",
+      "enunciado": "<p>Un jardín circular de \\(20\\ \\mathrm{m}^{2}\\) está rodeado por una reja, también circular, separada del jardín por un camino de piedra de \\(10\\ \\mathrm{m}\\).</p>[[IMG]]<p>¿Alcanza esa información para calcular cuánto mide la reja?</p>",
       "opciones": {
         "A": "Sí, porque basta usar la fórmula del área de un círculo con radio \\(10\\ \\mathrm{m}\\) para hallar el camino.",
         "B": "No, porque hay dos radios distintos que dan el área del jardín y no se sabe cuál usar.",
@@ -269,7 +269,7 @@
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
       "que_evalua": "La capacidad para justificar la posibilidad de calcular un perímetro con la información dada.",
-      "justificacion_correcta": "El área del jardín es \\(20 = \\pi r^{2}\\), de donde \\(r = \\sqrt{20/\\pi}\\), un valor único. El radio de la reja es \\(r + 10\\), y su perímetro es \\(2\\pi (r + 10)\\). Por eso sí es posible calcularlo.",
+      "justificacion_correcta": "Del área del jardín se despeja su radio, y sumándole los \\(10\\ \\mathrm{m}\\) del camino se obtiene el radio de la reja, con el que se calcula su longitud.",
       "opciones_incorrectas": {
         "A": "El radio de \\(10\\ \\mathrm{m}\\) es la separación, no el del jardín; además el camino no es un círculo lleno.",
         "B": "La ecuación \\(\\pi r^{2} = 20\\) determina un único radio positivo; no hay ambigüedad.",
@@ -280,12 +280,12 @@
     {
       "id": "P-math-10-p1-10",
       "numero": 10,
-      "enunciado": "<p>Un haz de luz (recta roja) atraviesa los dos muros paralelos de un nicho rectangular, como muestra la figura. Se conoce el ángulo \\(\\gamma\\) y se quiere hallar \\(\\beta\\). Un técnico propone: <b>Paso 1.</b> restar \\(\\gamma\\) de \\(180^\\circ\\) para obtener \\(\\alpha\\); <b>Paso 2.</b> afirmar que \\(\\beta = \\alpha\\). Una persona dice que con este procedimiento <b>NO</b> se puede determinar \\(\\beta\\).</p><p>¿Es verdadera la afirmación de la persona?</p>",
+      "enunciado": "<p>Un haz de luz, dibujado en rojo, cruza los dos muros paralelos de un nicho rectangular. Se conoce el ángulo \\(\\gamma\\) y se busca \\(\\beta\\); un técnico propone un camino para hallarlo.</p>[[IMG]]<p>¿Es correcto lo que propone el técnico?</p>",
       "opciones": {
-        "A": "No, porque \\(\\gamma\\) y \\(\\alpha\\) son complementarios y \\(\\alpha\\) y \\(\\beta\\) son opuestos por el vértice.",
-        "B": "Sí, porque \\(\\gamma\\) y \\(\\alpha\\) son suplementarios, entonces suman \\(90^\\circ\\) y no \\(180^\\circ\\).",
-        "C": "No, porque \\(\\gamma\\) y \\(\\alpha\\) son suplementarios y \\(\\alpha\\) y \\(\\beta\\) son alternos externos.",
-        "D": "Sí, porque \\(\\alpha\\) y \\(\\beta\\) tienen direcciones diferentes y por eso no pueden ser iguales."
+        "A": "No: \\(\\gamma\\) y \\(\\alpha\\) se complementan, y \\(\\alpha\\) con \\(\\beta\\) también.",
+        "B": "Sí: al ser \\(\\gamma\\) y \\(\\alpha\\) suplementarios, entre los dos dan \\(90^\\circ\\).",
+        "C": "No: \\(\\gamma\\) y \\(\\alpha\\) se suplementan, igual que \\(\\alpha\\) con \\(\\beta\\).",
+        "D": "Sí: \\(\\alpha\\) y \\(\\beta\\) quedan en posiciones que los hacen iguales."
       },
       "clave": "C",
       "competencia": "c",
@@ -295,7 +295,7 @@
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
       "que_evalua": "La capacidad para justificar la veracidad de una afirmación sobre una estrategia para determinar la medida de un ángulo.",
-      "justificacion_correcta": "\\(\\gamma\\) y \\(\\alpha\\) forman un ángulo llano, así que son suplementarios y \\(\\alpha = 180^\\circ - \\gamma\\). Como los muros son paralelos, \\(\\alpha\\) y \\(\\beta\\) son alternos externos y por tanto iguales. Entonces el procedimiento sí permite hallar \\(\\beta\\), y la afirmación de la persona (que no se puede) es falsa.",
+      "justificacion_correcta": "Los ángulos \\(\\gamma\\) y \\(\\alpha\\) quedan en posiciones que no los hacen iguales entre paralelas, así que el camino propuesto no permite deducir \\(\\beta\\).",
       "opciones_incorrectas": {
         "A": "\\(\\gamma\\) y \\(\\alpha\\) no son complementarios (no suman \\(90^\\circ\\)) ni \\(\\alpha\\) y \\(\\beta\\) son opuestos por el vértice.",
         "B": "Suplementarios significa que suman \\(180^\\circ\\), no \\(90^\\circ\\); el paso 1 es correcto.",
@@ -306,7 +306,7 @@
     {
       "id": "P-math-10-p1-11",
       "numero": 11,
-      "enunciado": "<p>Dos personas hicieron compras de frutas y verduras. La persona 1 compró el conjunto \\(C_1\\) y la persona 2 el conjunto \\(C_2\\). Sea \\(V\\) el conjunto de todas las verduras. Alguien afirma que el conjunto de <b>todas las verduras que compraron entre las dos</b> se obtiene con \\((C_1 \\cup C_2) \\cap V\\). ¿Es verdadera esta afirmación?</p>",
+      "enunciado": "<p>Dos personas hicieron mercado. La primera se llevó el conjunto \\(C_1\\) y la segunda el conjunto \\(C_2\\). Se llama \\(V\\) al conjunto de todas las verduras. Alguien sostiene que \\((C_1 \\cup C_2) \\cap V\\) representa las verduras que compraron entre las dos.</p><p>¿Está en lo cierto?</p>",
       "opciones": {
         "A": "No, porque \\((C_1 \\cup C_2) \\cap V\\) equivale a todo \\(V\\).",
         "B": "No, porque dentro del paréntesis debería ir \\(C_1 \\cap C_2\\) para tomar lo comprado por ambas.",
@@ -321,7 +321,7 @@
       "dificultad": "ALTA",
       "estandar": "Reconozco cómo diferentes maneras de presentación de información pueden originar distintas interpretaciones.",
       "que_evalua": "La capacidad para argumentar, usando propiedades de las operaciones entre conjuntos.",
-      "justificacion_correcta": "Por la propiedad distributiva de la intersección sobre la unión, \\((C_1 \\cup C_2) \\cap V = (C_1 \\cap V) \\cup (C_2 \\cap V)\\). El primer término son las verduras que compró la persona 1 y el segundo las de la persona 2; su unión es justo todas las verduras compradas entre las dos. La afirmación es verdadera.",
+      "justificacion_correcta": "La unión reúne lo que compraron las dos y la intersección con \\(V\\) se queda solo con las verduras, de modo que la expresión sí representa lo que se afirma. Además, por la propiedad distributiva, \\((C_1 \\cup C_2) \\cap V = (C_1 \\cap V) \\cup (C_2 \\cap V)\\).",
       "opciones_incorrectas": {
         "A": "\\((C_1 \\cup C_2) \\cap V\\) no es todo \\(V\\): solo quedan las verduras efectivamente compradas.",
         "B": "Se quiere lo comprado por <i>cualquiera</i> de las dos, así que va la unión \\(C_1 \\cup C_2\\), no la intersección.",
@@ -356,12 +356,12 @@
     {
       "id": "P-math-10-p1-13",
       "numero": 13,
-      "enunciado": "<p>El trapecio isósceles \\(EFGH\\) es la reflexión del trapecio isósceles \\(OPQR\\) respecto a la recta \\(k\\), como muestra la figura. Se sabe que \\(k\\) es paralela a los lados \\(OR,\\ PQ,\\ FG\\) y \\(EH\\).</p><p>Comparando los dos trapecios, ¿cuáles lados son <b>paralelos</b> entre sí?</p>",
+      "enunciado": "<p>El trapecio isósceles \\(EFGH\\) se obtuvo reflejando el trapecio isósceles \\(OPQR\\) sobre la recta \\(k\\), como recoge la imagen. La recta \\(k\\) es paralela a los lados \\(OR\\), \\(PQ\\), \\(FG\\) y \\(EH\\).</p>[[IMG]]<p>¿Qué par de lados resulta tener la misma medida por efecto de esa reflexión?</p>",
       "opciones": {
-        "A": "\\(OP\\) y \\(EF\\).",
-        "B": "\\(RQ\\) y \\(EH\\).",
-        "C": "\\(OP\\) y \\(GH\\).",
-        "D": "\\(RQ\\) y \\(GF\\)."
+        "A": "Los lados \\(OP\\) y \\(EF\\).",
+        "B": "Los lados \\(RQ\\) y \\(EH\\).",
+        "C": "Los lados \\(OP\\) y \\(GH\\).",
+        "D": "Los lados \\(RQ\\) y \\(GF\\)."
       },
       "clave": "C",
       "competencia": "a",
@@ -371,7 +371,7 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco y describo curvas y/o lugares geométricos.",
       "que_evalua": "La capacidad para identificar lados paralelos de dos trapecios cuando se presentan condiciones de paralelismo en su representación.",
-      "justificacion_correcta": "En el trapecio \\(OPQR\\) los lados paralelos son \\(OR\\) y \\(PQ\\) (ambos paralelos a \\(k\\)); \\(OP\\) y \\(RQ\\) son los lados oblicuos. Como el trapecio es isósceles, \\(OP\\) y \\(RQ\\) son simétricos respecto a la recta \\(k\\). Al reflejar, el lado \\(RQ\\) se transforma en \\(GH\\); por la simetría, \\(GH\\) queda con la misma dirección que \\(OP\\). Por eso \\(OP\\) y \\(GH\\) son paralelos entre sí.",
+      "justificacion_correcta": "Una reflexión conserva las medidas y empareja cada lado con su imagen al otro lado del eje. Al aplicar esa correspondencia, \\(OP\\) se corresponde con \\(GH\\), de modo que miden lo mismo.",
       "opciones_incorrectas": {
         "A": "\\(EF\\) es la reflexión de \\(OP\\): forma con \\(k\\) el mismo ángulo pero hacia el otro lado, así que cruza la dirección de \\(OP\\) en lugar de ser paralela a ella.",
         "B": "\\(EH\\) es paralelo a \\(k\\) (es un lado de los paralelos), mientras que \\(RQ\\) es oblicuo; no pueden ser paralelos entre sí.",
@@ -382,7 +382,7 @@
     {
       "id": "P-math-10-p1-14",
       "numero": 14,
-      "enunciado": "<p>La figura muestra el dinero recaudado por \\(4\\) documentales en un cine.</p><p>¿Cuál fue el <b>promedio</b> de dinero recaudado por documental?</p>",
+      "enunciado": "<p>La imagen recoge cuánto dinero recaudó cada uno de los cuatro documentales que proyectó un cine.</p>[[IMG]]<p>¿Cuánto recaudó en promedio cada documental?</p>",
       "opciones": {
         "A": "\\(\\$120\\) millones.",
         "B": "\\(\\$70\\) millones.",
@@ -397,7 +397,7 @@
       "dificultad": "BAJA",
       "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
       "que_evalua": "La capacidad para calcular el promedio en un conjunto de datos agrupados, presentados en un diagrama de barras.",
-      "justificacion_correcta": "Los recaudos son \\(120,\\ 80,\\ 40\\) y \\(40\\) (millones). La suma es \\(120 + 80 + 40 + 40 = 280\\) y, como son \\(4\\) documentales, el promedio es \\(\\dfrac{280}{4} = 70\\) millones.",
+      "justificacion_correcta": "Se suman los cuatro recaudos y el total se divide entre \\(4\\). El promedio es de \\(\\$70\\) millones.",
       "opciones_incorrectas": {
         "A": "Toma el mayor valor \\((120)\\) como si fuera el promedio.",
         "C": "Divide la suma \\(280\\) entre \\(8\\) en lugar de entre \\(4\\), obteniendo \\(35\\).",
@@ -458,7 +458,7 @@
     {
       "id": "P-math-10-p1-17",
       "numero": 17,
-      "enunciado": "<p>Una empresa proyecta la cantidad de usuarios de su videojuego según los años \\(x\\) desde el lanzamiento, como muestra la gráfica (una parábola con vértice en \\((3,\\,9)\\) que corta el eje horizontal en \\(x = 0\\) y \\(x = 6\\)).</p><p>¿Qué ecuación corresponde a esta gráfica?</p>",
+      "enunciado": "<p>Una empresa proyecta la cantidad de usuarios de su videojuego según los años \\(x\\) desde el lanzamiento, como muestra la gráfica (una parábola con vértice en \\((3,\\,9)\\) que corta el eje horizontal en \\(x = 0\\) y \\(x = 6\\)).</p>[[IMG]]<p>¿Qué ecuación corresponde a esta gráfica?</p>",
       "opciones": {
         "A": "\\(y = x^{2} + 3x - 9\\)",
         "B": "\\(y = x^{2} + 2x - 6\\)",
@@ -484,12 +484,12 @@
     {
       "id": "P-math-10-p1-18",
       "numero": 18,
-      "enunciado": "<p>Cuatro amigas comparan el dinero que tuvieron el martes y el jueves:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nombre</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Martes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jueves</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Paola</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$7.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Erika</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$7.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$4.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Tatiana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$5.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$4.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Laura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$6.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$6.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\"><b>Promedio del día</b></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><b>$6.500</b></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><b>$5.250</b></td></tr></table><p>¿Cuánto dinero <b>en total</b> deberían haber reunido de más las cuatro amigas el jueves para igualar el promedio del martes?</p>",
+      "enunciado": "<p>Cuatro amigas compararon cuánto dinero llevaban el martes y el jueves, y anotaron también el promedio de cada día.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Nombre</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Martes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Jueves</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Paola</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$7.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Erika</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$7.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$4.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Tatiana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$5.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$4.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Laura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$6.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$6.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\"><b>Promedio del día</b></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><b>$6.500</b></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><b>$5.250</b></td></tr></table><p>¿Cuál fue el promedio del jueves?</p>",
       "opciones": {
-        "A": "$1.250",
-        "B": "$4.000",
-        "C": "$5.000",
-        "D": "$6.500"
+        "A": "\\(\\$1.250\\)",
+        "B": "\\(\\$4.000\\)",
+        "C": "\\(\\$5.000\\)",
+        "D": "\\(\\$6.500\\)"
       },
       "clave": "C",
       "competencia": "b",
@@ -509,7 +509,7 @@
     {
       "id": "P-math-10-p1-19",
       "numero": 19,
-      "enunciado": "<p>Para una feria, cada estudiante entrega un regalo en una caja. Todas las cajas son iguales: \\(10\\) cm de largo, \\(10\\) cm de alto y \\(30\\) cm de ancho. La figura muestra las \\(12\\) cajas apiladas como adorno.</p><p>¿Cuál es el <b>volumen total</b> ocupado por las cajas?</p>",
+      "enunciado": "<p>Para una feria, cada estudiante lleva su regalo dentro de una caja. Todas las cajas son idénticas y miden \\(10\\) cm de largo, \\(10\\) cm de alto y \\(30\\) cm de ancho. En la imagen aparecen las \\(12\\) cajas apiladas.</p>[[IMG]]<p>¿Qué espacio ocupa toda la pila?</p>",
       "opciones": {
         "A": "\\(3.000\\ \\mathrm{cm}^3\\)",
         "B": "\\(12.000\\ \\mathrm{cm}^3\\)",
@@ -524,7 +524,7 @@
       "dificultad": "MEDIA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
       "que_evalua": "La capacidad para calcular el volumen de una figura tridimensional conformada por varios paralelepípedos.",
-      "justificacion_correcta": "El volumen de cada caja es \\(10 \\times 10 \\times 30 = 3.000\\ \\mathrm{cm}^3\\). Como hay \\(12\\) cajas iguales, el volumen total es \\(3.000 \\times 12 = 36.000\\ \\mathrm{cm}^3\\).",
+      "justificacion_correcta": "Cada caja ocupa \\(10 \\times 10 \\times 30 = 3.000\\ \\mathrm{cm}^{3}\\) y hay \\(12\\): \\(3.000 \\times 12 = 36.000\\ \\mathrm{cm}^{3}\\).",
       "opciones_incorrectas": {
         "A": "Calcula el volumen de una sola caja \\((3.000\\ \\mathrm{cm}^3)\\) y olvida que son \\(12\\).",
         "B": "Asocia el número de cajas \\((12)\\) con \\(12.000\\ \\mathrm{cm}^3\\) sin usar el volumen real de cada caja.",
@@ -535,7 +535,7 @@
     {
       "id": "P-math-10-p1-20",
       "numero": 20,
-      "enunciado": "<p>Un cultivo de bacterias empieza con una población de \\(2^{5}\\) bacterias.</p><p>Si la población se <b>duplica</b> cada hora (ver el esquema), ¿cuántas bacterias habrá al cabo de \\(3\\) horas?</p>",
+      "enunciado": "<p>Un cultivo arranca con \\(2^{5}\\) bacterias y su población se duplica cada hora, tal como recoge el esquema.</p>[[IMG]]<p>¿Cuántas bacterias habrá tres horas después?</p>",
       "opciones": {
         "A": "\\(2^{8}\\)",
         "B": "\\(2^{7}\\)",
@@ -550,7 +550,7 @@
       "dificultad": "MEDIA",
       "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
       "que_evalua": "La capacidad para determinar la expresión que representa una situación a partir de una expresión inicial.",
-      "justificacion_correcta": "Duplicar la población cada hora durante \\(3\\) horas equivale a multiplicar por \\(2\\) tres veces, es decir, por \\(2^{3}\\). Así, la población es \\(2^{5} \\times 2^{3} = 2^{5+3} = 2^{8}\\).",
+      "justificacion_correcta": "Duplicar tres veces equivale a multiplicar por \\(2^{3}\\): \\(2^{5} \\times 2^{3} = 2^{8}\\).",
       "opciones_incorrectas": {
         "B": "Suma solo \\(2\\) al exponente \\((5 + 2 = 7)\\) en vez de sumar \\(3\\), dando \\(2^{7}\\).",
         "C": "Multiplica los exponentes \\((5 \\times 3 = 15)\\) en lugar de sumarlos, obteniendo \\(2^{15}\\).",

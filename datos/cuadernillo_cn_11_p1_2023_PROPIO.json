@@ -79,7 +79,7 @@
     {
       "id": "P11CN02",
       "numero": 2,
-      "enunciado": "<p>Lee la situación y observa los cuatro medios de cultivo.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un investigador trajo de un humedal una muestra con <b>muchos microorganismos</b> mezclados. Le interesa cultivar <b>solo</b> la bacteria <i>Gordonia</i>, que tiene una particularidad: usa el <b>caucho como única fuente de alimento</b> y crece <b>tanto con oxígeno como sin él</b>. Dispone de los cuatro medios de la figura.</p></div><p>¿Cuáles medios serían los más adecuados para cultivar <b>únicamente</b> la bacteria de interés?</p>",
+      "enunciado": "<p>Lee la situación y observa los cuatro medios de cultivo.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un investigador trajo de un humedal una muestra con <b>muchos microorganismos</b> mezclados. Le interesa cultivar <b>solo</b> la bacteria <i>Gordonia</i>, que tiene una particularidad: usa el <b>caucho como única fuente de alimento</b> y crece <b>tanto con oxígeno como sin él</b>. Dispone de los cuatro medios de la figura.</p>[[IMG]]</div><p>¿Qué medios le servirían mejor para cultivar solamente la bacteria que le interesa?</p>",
       "opciones": {
         "A": "Los medios 2 y 4.",
         "B": "Los medios 1 y 3.",
@@ -158,12 +158,12 @@
     {
       "id": "P11CN05",
       "numero": 5,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de estudiantes modela el descenso de un teleférico turístico y obtiene que su rapidez, en metros por segundo, sigue la expresión</p><p style='text-align:center;font-size:18px'>\\(v(t) = 3 + 2\\,t\\)</p><p>donde \\(t\\) es el tiempo en segundos desde que se suelta el freno.</p></div><p>De acuerdo con el modelo, ¿el movimiento del teleférico es con rapidez constante o uniformemente acelerado?</p>",
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de estudiantes modela el descenso de un teleférico turístico y obtiene que su rapidez, en metros por segundo, sigue la expresión</p><p style='text-align:center;font-size:18px'>\\(v(t) = 3 + 2\\,t\\)</p><p>donde \\(t\\) es el tiempo en segundos desde que se suelta el freno.</p></div><p>Según ese modelo, ¿el teleférico se mueve con rapidez constante o con aceleración uniforme?</p>",
       "opciones": {
-        "A": "Con rapidez constante, porque su valor se mantiene siempre fijo en \\(3\\ \\text{m/s}\\).",
-        "B": "Uniformemente acelerado, porque la rapidez crece de forma lineal con \\(a=2\\ \\text{m/s}^2\\).",
-        "C": "Con rapidez constante, porque el modelo describe la rapidez \\(v\\) y no la aceleración \\(a\\).",
-        "D": "Uniformemente acelerado, porque en \\(t=0\\) la rapidez inicial \\(3\\ \\text{m/s}\\) no es nula."
+        "A": "Con rapidez constante, porque su valor se queda fijo en \\(3\\ \\text{m/s}\\).",
+        "B": "Con aceleración uniforme, porque la rapidez aumenta de forma lineal con \\(a=2\\ \\text{m/s}^2\\).",
+        "C": "Con rapidez constante, porque el modelo da la rapidez \\(v\\) y no la aceleración \\(a\\).",
+        "D": "Con aceleración uniforme, porque en \\(t=0\\) la rapidez de partida \\(3\\ \\text{m/s}\\) no vale cero."
       },
       "clave": "B",
       "competencia": "a",
@@ -184,7 +184,7 @@
     {
       "id": "P11CN06",
       "numero": 6,
-      "enunciado": "<p>Observa el circuito y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El circuito de la figura tiene una <b>batería</b>, seis bombillos (B1 a B6) y un <b>interruptor</b>. Cuando el interruptor está cerrado, todos los bombillos alumbran. El bombillo <b>B3</b> está conectado <b>en serie</b> con el interruptor, en una rama; el bombillo <b>B2</b> está en una rama <b>paralela</b> que no pasa por el interruptor, y los bombillos <b>B1, B4, B5</b> y <b>B6</b> están en el lazo principal conectado a la batería.</p></div><p>¿Cuál(es) bombillo(s) se apagará(n) cuando el interruptor cambie a «abierto» y no deje pasar corriente por su rama?</p>",
+      "enunciado": "<p>Observa el circuito y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El circuito de la figura tiene una <b>batería</b>, seis bombillos (B1 a B6) y un <b>interruptor</b>. Cuando el interruptor está cerrado, todos los bombillos alumbran. El bombillo <b>B3</b> está conectado <b>en serie</b> con el interruptor, en una rama; el bombillo <b>B2</b> está en una rama <b>paralela</b> que no pasa por el interruptor, y los bombillos <b>B1, B4, B5</b> y <b>B6</b> están en el lazo principal conectado a la batería.</p>[[IMG]]</div><p>¿Cuál(es) bombillo(s) se apagará(n) cuando el interruptor cambie a «abierto» y no deje pasar corriente por su rama?</p>",
       "opciones": {
         "A": "Se apagan B1 y B6.",
         "B": "Se apagan B2 y B3.",
@@ -237,7 +237,7 @@
     {
       "id": "P11CN08",
       "numero": 8,
-      "enunciado": "<p>Observa el cruce y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En cierta planta, el color de la flor depende de un solo gen. La figura muestra el cruce entre un parental de genotipo <b>MM</b> (homocigoto dominante) y otro de genotipo <b>mm</b> (homocigoto recesivo). Cada descendiente recibe <b>un alelo de cada parental</b>.</p></div><p>¿Cuál de las siguientes tablas muestra correctamente los genotipos de los parentales y de la descendencia de este cruce?</p>",
+      "enunciado": "<p>Observa el cruce y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En cierta planta, el color de la flor depende de un solo gen. La figura muestra el cruce entre un parental de genotipo <b>MM</b> (homocigoto dominante) y otro de genotipo <b>mm</b> (homocigoto recesivo). Cada descendiente recibe <b>un alelo de cada parental</b>.</p>[[IMG]]</div><p>¿Cuál de las siguientes tablas muestra correctamente los genotipos de los parentales y de la descendencia de este cruce?</p>",
       "opciones": {
         "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descendencia</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td></tr></table>",
         "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descendencia</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mm</td></tr></table>",
@@ -264,12 +264,12 @@
     {
       "id": "P11CN09",
       "numero": 9,
-      "enunciado": "<p>Observa el modelo de meiosis y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El modelo representa la formación de células sexuales en una célula con dos cromosomas. Las letras <b>R, G</b> y <b>r, g</b> son alelos de dos genes. La célula duplica sus cromosomas, las cromátidas <b>no hermanas</b> intercambian segmentos y, al final, se forman <b>cuatro células sexuales</b>. Observa que las combinaciones de alelos de las cuatro células finales no son todas iguales.</p></div><p>¿Qué proceso de la meiosis permite que las células sexuales resultantes presenten variación en su información genética?</p>",
+      "enunciado": "<p>Observa el modelo de meiosis y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El modelo representa la formación de células sexuales en una célula con dos cromosomas. Las letras <b>R, G</b> y <b>r, g</b> son alelos de dos genes. La célula duplica sus cromosomas, las cromátidas <b>no hermanas</b> intercambian segmentos y, al final, se forman <b>cuatro células sexuales</b>. Observa que las combinaciones de alelos de las cuatro células finales no son todas iguales.</p>[[IMG]]</div><p>¿Qué proceso de la meiosis hace que las células sexuales que resultan lleven información genética distinta?</p>",
       "opciones": {
-        "A": "El entrecruzamiento entre cromátidas no hermanas.",
-        "B": "La duplicación previa de los cromosomas.",
-        "C": "La separación del citoplasma al final de la división.",
-        "D": "La sola presencia de los genes en los cromosomas."
+        "A": "El entrecruzamiento entre cromátidas que no son hermanas.",
+        "B": "La duplicación de los cromosomas que ocurre antes.",
+        "C": "El reparto del citoplasma cuando termina la división.",
+        "D": "El simple hecho de que los genes estén en los cromosomas."
       },
       "clave": "A",
       "competencia": "b",
@@ -317,12 +317,12 @@
     {
       "id": "P11CN11",
       "numero": 11,
-      "enunciado": "<p>Observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos estudiantes contaron el número de hongos del género <i>Pleurotus</i> que crecían en una parcela de bosque a distintos niveles de <b>humedad del suelo</b>. Los resultados se muestran en la gráfica de barras.</p></div><p>Con base en la información, ¿cuál de las siguientes interpretaciones es válida?</p>",
+      "enunciado": "<p>Observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos estudiantes contaron el número de hongos del género <i>Pleurotus</i> que crecían en una parcela de bosque a distintos niveles de <b>humedad del suelo</b>. Los resultados se muestran en la gráfica de barras.</p>[[IMG]]</div><p>Con esa información, ¿qué interpretación resulta válida?</p>",
       "opciones": {
-        "A": "El número de hongos es máximo cuando la humedad es del 100 %.",
-        "B": "El número de hongos a 20 % de humedad es menor que a 60 % de humedad.",
-        "C": "El número de hongos disminuye a medida que aumenta la humedad del suelo.",
-        "D": "El número de hongos no cambia con la humedad del suelo."
+        "A": "Que la cantidad de hongos llega a su tope cuando la humedad es del 100 %.",
+        "B": "Que con 20 % de humedad hay menos hongos que con 60 %.",
+        "C": "Que la cantidad de hongos cae a medida que el suelo se humedece más.",
+        "D": "Que la humedad del suelo no altera la cantidad de hongos."
       },
       "clave": "C",
       "competencia": "c",
@@ -370,7 +370,7 @@
     {
       "id": "P11CN13",
       "numero": 13,
-      "enunciado": "<p>Lee la situación y observa la tabla de geometrías.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La <b>geometría</b> de una molécula depende del número de <b>enlaces</b> del átomo central y de sus <b>pares de electrones libres</b>, como muestra la tabla.</p><p>En el agua (\\(\\text{H}_2\\text{O}\\)), el oxígeno central forma <b>2 enlaces</b> (a dos hidrógenos) y conserva <b>2 pares de electrones libres</b>. Si ese oxígeno <b>captara un protón</b> (\\(\\text{H}^+\\)) para formar el ion <b>hidronio</b> (\\(\\text{H}_3\\text{O}^+\\)), uno de sus pares libres pasaría a formar un nuevo enlace: el oxígeno quedaría con <b>3 enlaces</b> y <b>1 par libre</b>.</p></div><p>De acuerdo con la tabla, ¿qué geometría tendría el ion hidronio \\(\\text{H}_3\\text{O}^+\\)?</p>",
+      "enunciado": "<p>Lee la situación y observa la tabla de geometrías.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La <b>geometría</b> de una molécula depende del número de <b>enlaces</b> del átomo central y de sus <b>pares de electrones libres</b>, como muestra la tabla.</p><p>En el agua (\\(\\text{H}_2\\text{O}\\)), el oxígeno central forma <b>2 enlaces</b> (a dos hidrógenos) y conserva <b>2 pares de electrones libres</b>. Si ese oxígeno <b>captara un protón</b> (\\(\\text{H}^+\\)) para formar el ion <b>hidronio</b> (\\(\\text{H}_3\\text{O}^+\\)), uno de sus pares libres pasaría a formar un nuevo enlace: el oxígeno quedaría con <b>3 enlaces</b> y <b>1 par libre</b>.</p>[[IMG]]</div><p>De acuerdo con la tabla, ¿qué geometría tendría el ion hidronio \\(\\text{H}_3\\text{O}^+\\)?</p>",
       "opciones": {
         "A": "Pirámide trigonal, porque tendría 3 enlaces y 1 par de electrones libre.",
         "B": "Tetraédrica, porque el oxígeno seguiría teniendo 4 pares de electrones alrededor.",
@@ -397,7 +397,7 @@
     {
       "id": "P11CN14",
       "numero": 14,
-      "enunciado": "<p>Observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un laboratorio se midió el <b>volumen</b> de una muestra de gas ideal a presión constante mientras se variaba su <b>temperatura</b>. Los resultados, representados en la gráfica, muestran una relación lineal entre volumen y temperatura.</p></div><p>De acuerdo con la gráfica, si la temperatura aumenta de \\(-173\\ ^\\circ\\text{C}\\) a \\(-73\\ ^\\circ\\text{C}\\), ¿qué ocurre con el volumen del gas?</p>",
+      "enunciado": "<p>Observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un laboratorio se midió el <b>volumen</b> de una muestra de gas ideal a presión constante mientras se variaba su <b>temperatura</b>. Los resultados, representados en la gráfica, muestran una relación lineal entre volumen y temperatura.</p>[[IMG]]</div><p>De acuerdo con la gráfica, si la temperatura aumenta de \\(-173\\ ^\\circ\\text{C}\\) a \\(-73\\ ^\\circ\\text{C}\\), ¿qué ocurre con el volumen del gas?</p>",
       "opciones": {
         "A": "Disminuye de \\(16\\ \\text{mL}\\) a \\(8\\ \\text{mL}\\).",
         "B": "Disminuye de \\(24\\ \\text{mL}\\) a \\(16\\ \\text{mL}\\).",
@@ -424,7 +424,7 @@
     {
       "id": "P11CN15",
       "numero": 15,
-      "enunciado": "<p>Observa la red trófica de páramo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La figura muestra una red trófica de páramo. Las flechas indican «sirve de alimento a». El <b>puma</b> es el único depredador del <b>venado</b>, y el venado se alimenta de los <b>frailejones</b> y otros pastos. Por una cacería intensa, los pumas <b>desaparecen</b> de la zona.</p></div><p>¿Qué consecuencia es la más probable tras la desaparición de los pumas?</p>",
+      "enunciado": "<p>Observa la red trófica de páramo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La figura muestra una red trófica de páramo. Las flechas indican «sirve de alimento a». El <b>puma</b> es el único depredador del <b>venado</b>, y el venado se alimenta de los <b>frailejones</b> y otros pastos. Por una cacería intensa, los pumas <b>desaparecen</b> de la zona.</p>[[IMG]]</div><p>¿Qué consecuencia es la más probable tras la desaparición de los pumas?</p>",
       "opciones": {
         "A": "Disminuiría la población de frailejones por el aumento de la población de venados.",
         "B": "Aumentaría la población de curíes al desaparecer su principal depredador, el puma.",
@@ -451,12 +451,12 @@
     {
       "id": "P11CN16",
       "numero": 16,
-      "enunciado": "<p>Observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Sobre una <b>vagoneta</b> que puede rodar en línea recta actúan tres fuerzas horizontales: el <b>viento</b> la empuja hacia la <b>derecha</b> con \\(15\\ \\text{N}\\), el <b>motor</b> la empuja hacia la <b>derecha</b> con \\(35\\ \\text{N}\\) y la <b>corriente</b> de aire la frena hacia la <b>izquierda</b> con \\(30\\ \\text{N}\\). La vagoneta termina moviéndose hacia la derecha.</p></div><p>¿Por qué la vagoneta se mueve hacia la derecha?</p>",
+      "enunciado": "<p>Observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Sobre una <b>vagoneta</b> que puede rodar en línea recta actúan tres fuerzas horizontales: el <b>viento</b> la empuja hacia la <b>derecha</b> con \\(15\\ \\text{N}\\), el <b>motor</b> la empuja hacia la <b>derecha</b> con \\(35\\ \\text{N}\\) y la <b>corriente</b> de aire la frena hacia la <b>izquierda</b> con \\(30\\ \\text{N}\\). La vagoneta termina moviéndose hacia la derecha.</p>[[IMG]]</div><p>¿A qué se debe que la vagoneta termine yendo hacia la derecha?</p>",
       "opciones": {
-        "A": "Porque la suma hacia la derecha (\\(15+35\\)) supera a la fuerza hacia la izquierda (\\(30\\)).",
-        "B": "Porque hay dos fuerzas que empujan hacia la derecha y solo una que empuja hacia la izquierda.",
-        "C": "Porque la fuerza del motor, por sí sola, mueve la vagoneta sin importar las otras dos fuerzas.",
-        "D": "Porque las tres fuerzas se cancelan exactamente entre sí y la vagoneta conserva su movimiento."
+        "A": "A que lo que empuja a la derecha (\\(15+35\\)) pesa más que la fuerza hacia la izquierda (\\(30\\)).",
+        "B": "A que hay dos fuerzas empujando a la derecha y apenas una hacia la izquierda.",
+        "C": "A que la fuerza del motor por sí sola la mueve, sin que importen las otras dos.",
+        "D": "A que las tres fuerzas se anulan entre sí y por eso conserva su movimiento."
       },
       "clave": "A",
       "competencia": "a",
@@ -536,7 +536,7 @@
     {
       "id": "P11CN19",
       "numero": 19,
-      "enunciado": "<p>Lee la situación y observa la gráfica.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos estudiantes investigan si las <b>hormigas que viven en las acacias</b> protegen al árbol de los insectos que comen sus hojas. Comparan dos grupos de acacias: uno <b>con hormigas</b> y otro <b>sin hormigas</b>, y miden el porcentaje de hoja consumida en cada grupo. Presentan sus resultados en la gráfica de barras, rotulando solo «Grupo 1» y «Grupo 2».</p></div><p>¿Cuál es el principal error en la forma como muestran sus resultados?</p>",
+      "enunciado": "<p>Lee la situación y observa la gráfica.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos estudiantes investigan si las <b>hormigas que viven en las acacias</b> protegen al árbol de los insectos que comen sus hojas. Comparan dos grupos de acacias: uno <b>con hormigas</b> y otro <b>sin hormigas</b>, y miden el porcentaje de hoja consumida en cada grupo. Presentan sus resultados en la gráfica de barras, rotulando solo «Grupo 1» y «Grupo 2».</p>[[IMG]]</div><p>¿Cuál es el principal error en la forma como muestran sus resultados?</p>",
       "opciones": {
         "A": "El título no menciona ninguna de las dos variables que se midieron en el experimento.",
         "B": "Las gráficas de barras no sirven para representar el porcentaje de hoja que fue consumida.",
@@ -563,12 +563,12 @@
     {
       "id": "P11CN20",
       "numero": 20,
-      "enunciado": "<p>Lee la situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un estudiante deja rodar <b>la misma esfera de madera</b> por una rampa a la que puede cambiar el <b>ángulo de inclinación</b>. Para varios ángulos distintos, mide la <b>rapidez</b> con que la esfera llega al final de la rampa y registra cada resultado.</p></div><p>¿Qué se puede determinar con este experimento?</p>",
+      "enunciado": "<p>Lee la situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un estudiante deja rodar <b>la misma esfera de madera</b> por una rampa a la que puede cambiar el <b>ángulo de inclinación</b>. Para varios ángulos distintos, mide la <b>rapidez</b> con que la esfera llega al final de la rampa y registra cada resultado.</p>[[IMG]]</div><p>¿Qué alcanza a establecerse con este experimento?</p>",
       "opciones": {
-        "A": "Cómo cambia el peso de la esfera de madera al variar el ángulo de inclinación de la rampa.",
-        "B": "Cómo varía la rapidez de la esfera al final de la rampa según el ángulo de inclinación.",
-        "C": "Qué tan resistente es la esfera de madera a los golpes que recibe al caer al final.",
-        "D": "Cuánto se deforma la superficie de la rampa por causa del peso de la esfera de madera."
+        "A": "De qué modo cambia el peso de la esfera de madera al variar el ángulo de la rampa.",
+        "B": "De qué modo cambia la rapidez con que la esfera llega al final según el ángulo de la rampa.",
+        "C": "Qué tanto aguanta la esfera de madera los golpes que recibe al caer al final.",
+        "D": "Cuánto se hunde la superficie de la rampa por el peso de la esfera de madera."
       },
       "clave": "B",
       "competencia": "c",

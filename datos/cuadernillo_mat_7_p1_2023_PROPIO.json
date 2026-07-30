@@ -58,12 +58,12 @@
     {
       "id": "P-math-7-p1-01",
       "numero": 1,
-      "enunciado": "<p>Daniela es jugadora de baloncesto y en la temporada ganó el <b>\\(60\\%\\)</b> de los partidos en los que participó. Si en esa temporada Daniela ganó <b>\\(18\\) partidos</b>, ¿en cuántos partidos participó?</p>",
+      "enunciado": "<p>En una jornada de adopción de mascotas, el <b>\\(75\\%\\)</b> de los animales que llegaron al albergue encontró un hogar ese mismo día. Si <b>\\(27\\)</b> animales fueron adoptados, ¿cuántos animales llegaron al albergue?</p>",
       "opciones": {
-        "A": "\\(11\\) partidos",
-        "B": "\\(24\\) partidos",
-        "C": "\\(30\\) partidos",
-        "D": "\\(78\\) partidos"
+        "A": "\\(20\\) animales",
+        "B": "\\(34\\) animales",
+        "C": "\\(36\\) animales",
+        "D": "\\(102\\) animales"
       },
       "clave": "C",
       "competencia": "a",
@@ -73,22 +73,22 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
       "que_evalua": "La capacidad para calcular valores asociados a una situación de proporcionalidad.",
-      "justificacion_correcta": "Como el \\(60\\%\\) corresponde a \\(18\\) partidos, el total (el \\(100\\%\\)) cumple \\(\\dfrac{18}{60} = \\dfrac{x}{100}\\). Entonces \\(x = \\dfrac{18 \\times 100}{60} = 30\\) partidos.",
+      "justificacion_correcta": "Los \\(27\\) adoptados son el \\(75\\%\\) del total, así que el total se obtiene dividiendo: \\(27 \\div 0{,}75 = 36\\). También por regla de tres: si \\(75\\) corresponde a \\(27\\), entonces \\(100\\) corresponde a \\(36\\).",
       "opciones_incorrectas": {
-        "A": "Calcula el \\(60\\%\\) de \\(18\\) \\((\\approx 11)\\), en lugar de hallar el total a partir del \\(60\\%\\).",
-        "B": "Aplica una proporción equivocada o suma \\(18 + 6\\) y obtiene \\(24\\).",
-        "D": "Mezcla la resta \\(60 - 18 = 42\\) con otra cantidad, llegando a un valor sin sentido como \\(78\\)."
+        "A": "Resulta de aplicarle el \\(75\\%\\) a los \\(27\\) adoptados en lugar de dividir. Ese camino da un número menor que \\(27\\), y el total nunca puede ser menor que la parte.",
+        "B": "Suma una cantidad al azar a los adoptados. El porcentaje no se resuelve sumando.",
+        "D": "Suma el número de adoptados y el número del porcentaje, \\(27 + 75\\), que son cantidades de naturaleza distinta y no se pueden sumar."
       }
     },
     {
       "id": "P-math-7-p1-02",
       "numero": 2,
-      "enunciado": "<p>Observa las notas obtenidas por Mateo en sus evaluaciones.</p><div style=\"display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:12px 0\"><div style=\"background:#FEF3C7;border:1px solid #B8861A;border-radius:6px;padding:14px 20px;text-align:center;font-family:Georgia,serif;min-width:96px\"><div style=\"font-weight:700;color:#1A1613\">Nota 1</div><div style=\"font-size:20px;color:#A8132F;font-weight:700;margin-top:4px\">4,6</div></div><div style=\"background:#FEF3C7;border:1px solid #B8861A;border-radius:6px;padding:14px 20px;text-align:center;font-family:Georgia,serif;min-width:96px\"><div style=\"font-weight:700;color:#1A1613\">Nota 2</div><div style=\"font-size:20px;color:#A8132F;font-weight:700;margin-top:4px\">3,2</div></div><div style=\"background:#FEF3C7;border:1px solid #B8861A;border-radius:6px;padding:14px 20px;text-align:center;font-family:Georgia,serif;min-width:96px\"><div style=\"font-weight:700;color:#1A1613\">Nota 3</div><div style=\"font-size:20px;color:#A8132F;font-weight:700;margin-top:4px\">4,4</div></div><div style=\"background:#FEF3C7;border:1px solid #B8861A;border-radius:6px;padding:14px 20px;text-align:center;font-family:Georgia,serif;min-width:96px\"><div style=\"font-weight:700;color:#1A1613\">Nota 4</div><div style=\"font-size:20px;color:#A8132F;font-weight:700;margin-top:4px\">?</div></div></div><p>Mateo necesita que el promedio (media) de sus cuatro evaluaciones sea como mínimo <b>\\(4{,}0\\)</b>. ¿Cuál es la mínima calificación que debe obtener en la nota 4?</p>",
+      "enunciado": "<p>En el taller de robótica, cada estudiante presenta cuatro retos y recibe un puntaje de \\(1{,}0\\) a \\(5{,}0\\) en cada uno. Estos son los puntajes que lleva <b>Emiliano</b>:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Reto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puntaje</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Reto 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4{,}9\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Reto 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(3{,}4\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Reto 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4{,}1\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Reto 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">?</td></tr></table><p>Emiliano necesita que el promedio de los cuatro retos sea, como mínimo, \\(4{,}0\\). ¿Cuál es el puntaje más bajo que puede sacar en el reto 4?</p>",
       "opciones": {
-        "A": "\\(4{,}2\\)",
-        "B": "\\(4{,}0\\)",
-        "C": "\\(3{,}8\\)",
-        "D": "\\(3{,}4\\)"
+        "A": "\\(4{,}0\\)",
+        "B": "\\(3{,}9\\)",
+        "C": "\\(3{,}6\\)",
+        "D": "\\(3{,}2\\)"
       },
       "clave": "C",
       "competencia": "a",
@@ -98,17 +98,17 @@
       "dificultad": "ALTA",
       "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
       "que_evalua": "La capacidad para reconocer las propiedades de la media aritmética y calcularla en una situación cercana a los estudiantes.",
-      "justificacion_correcta": "Para que el promedio de las cuatro notas sea \\(4{,}0\\) debe cumplirse \\(\\dfrac{4{,}6 + 3{,}2 + 4{,}4 + n}{4} = 4{,}0\\), es decir \\(4{,}6 + 3{,}2 + 4{,}4 + n = 16\\). Entonces \\(n = 16 - 12{,}2 = 3{,}8\\).",
+      "justificacion_correcta": "Para que el promedio de cuatro puntajes sea \\(4{,}0\\), la suma debe ser \\(4{,}0 \\times 4 = 16{,}0\\). Los tres retos presentados suman \\(4{,}9 + 3{,}4 + 4{,}1 = 12{,}4\\), así que en el cuarto necesita al menos \\(16{,}0 - 12{,}4 = 3{,}6\\).",
       "opciones_incorrectas": {
-        "A": "Da una nota mayor a la necesaria; con \\(4{,}2\\) el promedio pasa de \\(4{,}0\\), pero no es el mínimo pedido.",
-        "B": "Confunde la nota faltante con el promedio buscado \\((4{,}0)\\).",
-        "D": "Calcula el promedio de las tres notas conocidas \\(\\left(\\dfrac{12{,}2}{3} \\approx 4{,}07\\right)\\) y lo aproxima mal o resta de forma incorrecta."
+        "A": "Confunde el promedio que se busca con el puntaje que falta. El promedio es el resultado del conjunto, no el valor de un reto.",
+        "B": "Queda por encima de lo necesario: con \\(3{,}6\\) ya se alcanza el promedio, así que \\(3{,}9\\) no es el puntaje más bajo posible.",
+        "D": "Con \\(3{,}2\\) la suma llega a \\(15{,}6\\) y el promedio queda en \\(3{,}9\\), por debajo de lo exigido."
       }
     },
     {
       "id": "P-math-7-p1-03",
       "numero": 3,
-      "enunciado": "<p>La tabla relaciona la cantidad de medallas obtenidas por algunos países en una competencia deportiva.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">País</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medallas de oro</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medallas de plata</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medallas de bronce</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Australia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Brasil</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">17</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Canadá</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Jamaica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Japón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">17</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td></tr></table><p>¿Cuál de los siguientes diagramas representa la cantidad de medallas de <b>oro</b> y <b>bronce</b> conseguidas por <b>Australia, Brasil</b> y <b>Jamaica</b>?</p>",
+      "enunciado": "<p>Cinco delegaciones participaron en unos juegos deportivos y estas fueron las medallas que consiguió cada una:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">País</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medallas de oro</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medallas de plata</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medallas de bronce</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Australia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Brasil</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">17</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Canadá</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Jamaica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Japón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">17</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">38</td></tr></table><p>Entre los siguientes diagramas, ¿cuál representa correctamente las medallas de oro y de bronce que consiguieron Australia, Brasil y Jamaica?</p>",
       "opciones": {
         "A": "Diagrama A.",
         "B": "Diagrama B.",
@@ -139,7 +139,7 @@
     {
       "id": "P-math-7-p1-04",
       "numero": 4,
-      "enunciado": "<p>En una fábrica de zapatos, el número de zapatos que se elaboran depende del número de máquinas que se utilizan. En la tabla se muestra la relación entre el número de máquinas y la cantidad de zapatos.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Número de máquinas</th><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Número de zapatos</th><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr></table><p>¿Cuál de las siguientes gráficas describe la relación entre el número de máquinas y el número de zapatos?</p>",
+      "enunciado": "<p>En una planta de calzado se midió cuántos zapatos alcanzan a elaborarse en un turno según cuántas máquinas se pongan a funcionar. Estos fueron los registros:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Número de máquinas</th><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Número de zapatos</th><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr></table><p>Entre las siguientes gráficas, ¿cuál representa esa relación entre máquinas y zapatos?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -170,7 +170,7 @@
     {
       "id": "P-math-7-p1-05",
       "numero": 5,
-      "enunciado": "<p>En un juego de tablero, las fichas se ubican como se muestra en la figura. Un jugador mueve la ficha que está en la posición <b>(K, 1)</b> tres unidades hacia la <b>izquierda</b> y dos unidades hacia <b>arriba</b>.</p><p>¿Cuál es la posición final de la ficha?</p>",
+      "enunciado": "<p>En el plano de una bodega, cada estante se identifica con una letra y un número. El operario debe llevar la carretilla que está en la posición <b>(K, 1)</b> hasta otro estante, moviéndola <b>tres puestos hacia la izquierda</b> y <b>dos puestos hacia arriba</b>.</p>[[IMG]]<p>¿En qué posición queda la carretilla?</p>",
       "opciones": {
         "A": "(K, 2).",
         "B": "(I, 4).",
@@ -185,18 +185,18 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico características de localización de objetos en sistemas de representación cartesiana y geográfica.",
       "que_evalua": "La capacidad para ubicar puntos en el plano cartesiano y realizar movimientos de estos a través de paralelas y prependiculares del plano.",
-      "justificacion_correcta": "Las columnas son H, I, J, K, L, M. Tres unidades a la izquierda desde la columna K llevan a la columna H (K\\(\\to\\)J\\(\\to\\)I\\(\\to\\)H), y dos unidades hacia arriba desde la fila \\(1\\) llevan a la fila \\(3\\). La posición final es \\((H, 3)\\).",
+      "justificacion_correcta": "Partiendo de (K, 1), moverse tres puestos a la izquierda cambia la letra tres lugares hacia atrás: K, J, I, H. Moverse dos puestos hacia arriba aumenta el número en dos: \\(1 + 2 = 3\\). La posición final es (H, 3).",
       "opciones_incorrectas": {
-        "A": "Solo cuenta el movimiento vertical (una unidad) y deja la columna en K.",
-        "B": "Cuenta mal las columnas (dos en vez de tres) y suma de más en las filas, llegando a (I, 4).",
-        "D": "Mueve una sola unidad a la izquierda y no aplica el movimiento vertical."
+        "A": "Solo sube un puesto y no se mueve hacia la izquierda.",
+        "B": "Retrocede dos letras en lugar de tres y sube tres números en lugar de dos: intercambia los dos movimientos.",
+        "D": "Retrocede una sola letra y no cambia de número."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q05.png"
     },
     {
       "id": "P-math-7-p1-06",
       "numero": 6,
-      "enunciado": "<p>La gráfica muestra un polígono en el plano cartesiano.</p><p>Si el polígono se traslada <b>3 unidades hacia abajo</b> y después <b>4 unidades a la derecha</b>, ¿cuál de las siguientes gráficas representa el polígono luego de los movimientos realizados?</p>",
+      "enunciado": "<p>Un diseñador dibujó en el plano cartesiano la pieza que aparece en la gráfica.</p>[[IMG]]<p>La pieza se baja <b>3 unidades</b> y, hecho eso, se corre <b>4 unidades hacia la derecha</b>. ¿En cuál de las gráficas queda después de esos dos desplazamientos?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -211,7 +211,7 @@
       "dificultad": "MEDIA",
       "estandar": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
       "que_evalua": "La capacidad para realizar traslaciones en el plano cartesiano.",
-      "justificacion_correcta": "Trasladar \\(3\\) unidades hacia abajo resta \\(3\\) a cada coordenada \\(y\\), y trasladar \\(4\\) unidades a la derecha suma \\(4\\) a cada coordenada \\(x\\). Al aplicar ambos movimientos al polígono original, este queda en la posición que muestra la gráfica A.",
+      "justificacion_correcta": "Trasladar no cambia la forma ni el tamaño de la pieza: solo la mueve. Bajar \\(3\\) unidades resta \\(3\\) a cada coordenada vertical, y moverse \\(4\\) a la derecha suma \\(4\\) a cada coordenada horizontal. La gráfica A es la única donde la pieza conserva su forma y aparece en esa posición.",
       "opciones_incorrectas": {
         "B": "Realiza el segundo movimiento hacia la izquierda en lugar de hacia la derecha.",
         "C": "Mueve el polígono a la derecha pero no lo baja las 3 unidades.",
@@ -228,12 +228,12 @@
     {
       "id": "P-math-7-p1-07",
       "numero": 7,
-      "enunciado": "<p>Andrés repartió entre sus tres sobrinos una misma cantidad de dinero, así:</p><ul><li>A <b>Sofía</b> le dio el <b>\\(45\\%\\)</b> del dinero.</li><li>A <b>Tomás</b> le dio el <b>\\(30\\%\\)</b> del dinero.</li><li>A <b>Lucía</b> le dio el <b>\\(25\\%\\)</b> del dinero.</li></ul><p>¿Cuál de las siguientes afirmaciones es correcta respecto a la cantidad de dinero recibida?</p>",
+      "enunciado": "<p>Una fundación repartió el total de horas de voluntariado de un mes entre sus tres brigadas, así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Brigada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Porcentaje del total de horas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Brigada Sembradores</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(48\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Brigada Aguas Limpias</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(32\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Brigada Aves del Valle</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(20\\%\\)</td></tr></table><p>¿Qué se puede concluir al comparar las horas que recibió cada brigada?</p>",
       "opciones": {
-        "A": "Sofía fue quien recibió más dinero y Lucía quien menos recibió.",
-        "B": "Tomás fue quien recibió más dinero y Sofía quien menos recibió.",
-        "C": "Sofía fue quien recibió más dinero y Tomás quien menos recibió.",
-        "D": "Lucía fue quien recibió más dinero y Sofía quien menos recibió."
+        "A": "Sembradores fue la que recibió más horas y Aves del Valle la que menos recibió.",
+        "B": "Aguas Limpias fue la que recibió más horas y Sembradores la que menos recibió.",
+        "C": "Sembradores fue la que recibió más horas y Aguas Limpias la que menos recibió.",
+        "D": "Aves del Valle fue la que recibió más horas y Sembradores la que menos recibió."
       },
       "clave": "A",
       "competencia": "b",
@@ -243,17 +243,17 @@
       "dificultad": "BAJA",
       "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables, de variación lineal o de proporcionalidad directa y de proporcionalidad inversa en contextos aritméticos y geométricos.",
       "que_evalua": "La capacidad de reconocer las propiedades de la función porcentaje.",
-      "justificacion_correcta": "Como se reparte un mismo total, basta comparar los porcentajes: Sofía recibe \\(45\\%\\) (lo mayor), luego Tomás con \\(30\\%\\) y, por último, Lucía con \\(25\\%\\) (lo menor). Por eso Sofía recibió más y Lucía menos.",
+      "justificacion_correcta": "Como los tres porcentajes se calculan sobre el mismo total de horas, basta compararlos entre sí: \\(48\\%\\) es el mayor y \\(20\\%\\) el menor. Por eso Sembradores recibió más horas y Aves del Valle menos.",
       "opciones_incorrectas": {
-        "B": "Toma a Tomás como el que más recibe; pero \\(30\\%\\) es menor que el \\(45\\%\\) de Sofía.",
-        "C": "Acierta que Sofía recibe más, pero el que menos recibe es Lucía \\((25\\%)\\), no Tomás \\((30\\%)\\).",
-        "D": "Invierte la comparación: el mayor porcentaje (Sofía) recibe más, no menos."
+        "B": "Invierte el orden: \\(32\\%\\) no es el mayor y \\(48\\%\\) no es el menor.",
+        "C": "Acierta en cuál recibió más, pero se equivoca en cuál recibió menos: \\(32\\%\\) es mayor que \\(20\\%\\).",
+        "D": "Toma el porcentaje más pequeño como si fuera el mayor."
       }
     },
     {
       "id": "P-math-7-p1-08",
       "numero": 8,
-      "enunciado": "<p>En la gráfica se observa la ubicación de un auto que quiere llegar a un parque cercano.</p><p>Si este auto se movió <b>4 unidades al norte</b> y luego <b>2 unidades al oriente</b>, ¿cuál gráfica representa la ubicación en donde quedó?</p>",
+      "enunciado": "<p>El punto marcado en la gráfica indica dónde se encuentra un auto que se dirige a un parque cercano.</p>[[IMG]]<p>Después de avanzar <b>4 unidades hacia el norte</b> y enseguida <b>2 unidades hacia el oriente</b>, ¿en cuál de las gráficas queda ubicado el auto?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -268,7 +268,7 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico características de localización de objetos en sistemas de representación cartesiana y geográfica.",
       "que_evalua": "La capacidad para ubicar puntos en el plano cartesiano y realizar movimientos de estos a través de paralelas y prependiculares del plano.",
-      "justificacion_correcta": "Desde su posición inicial \\((2, 2)\\), moverse \\(4\\) al norte aumenta la coordenada vertical \\((2 \\to 6)\\) y moverse \\(2\\) al oriente aumenta la horizontal \\((2 \\to 4)\\). El auto queda en \\((4, 6)\\), como en la gráfica A.",
+      "justificacion_correcta": "Avanzar hacia el norte sube el punto \\(4\\) unidades sobre el eje vertical y avanzar hacia el oriente lo corre \\(2\\) unidades hacia la derecha sobre el eje horizontal. La gráfica A es la que ubica el auto en ese punto.",
       "opciones_incorrectas": {
         "B": "Intercambia las direcciones: avanza 4 al oriente y 2 al norte.",
         "C": "Solo aplica el movimiento al norte y olvida el desplazamiento al oriente.",
@@ -285,12 +285,12 @@
     {
       "id": "P-math-7-p1-09",
       "numero": 9,
-      "enunciado": "<p>En un concurso se da un premio a quien, sin ver, saque de un solo intento una <b>bola negra</b> de una bolsa. El participante tiene las cuatro bolsas que se muestran en la figura.</p><p>¿Con cuál de las cuatro bolsas es más probable que gane el participante?</p>",
+      "enunciado": "<p>En la feria de la ciencia hay un puesto donde se gana un premio si, sin mirar, se saca una <b>esfera negra</b> en un solo intento. El participante puede elegir una de las cuatro bolsas que se muestran.</p>[[IMG]]<p>¿Con cuál bolsa tiene más posibilidades de ganar?</p>",
       "opciones": {
-        "A": "Con la 1.",
-        "B": "Con la 2.",
-        "C": "Con la 3.",
-        "D": "Con la 4."
+        "A": "Con la bolsa 1.",
+        "B": "Con la bolsa 2.",
+        "C": "Con la bolsa 3.",
+        "D": "Con la bolsa 4."
       },
       "clave": "B",
       "competencia": "a",
@@ -300,18 +300,18 @@
       "dificultad": "ALTA",
       "estandar": "Conjeturo acerca del resultado de un experimento aleatorio usando proporcionalidad y nociones básicas de probabilidad.",
       "que_evalua": "La capacidad para calcular la probabilidad de eventos simples en contextos escolares.",
-      "justificacion_correcta": "La probabilidad de sacar negra es \\(\\dfrac{\\text{negras}}{\\text{total}}\\). En la bolsa 2 es \\(\\dfrac{4}{5}\\); en las bolsas 1 y 3 es \\(\\dfrac{4}{7}\\); en la bolsa 4 es \\(\\dfrac{2}{3}\\). Como \\(\\dfrac{4}{5}\\) es la mayor, conviene la bolsa 2.",
+      "justificacion_correcta": "La posibilidad de sacar una esfera negra se mide comparando, en cada bolsa, cuántas esferas negras hay frente al total de esferas. Gana más posibilidades la bolsa donde esa razón es mayor, que es la bolsa 2.",
       "opciones_incorrectas": {
-        "A": "En la bolsa 1 la probabilidad es \\(\\dfrac{4}{7}\\), menor que \\(\\dfrac{4}{5}\\) de la bolsa 2.",
-        "C": "La bolsa 3 también da \\(\\dfrac{4}{7}\\); tiene más bolas blancas que la bolsa 2.",
-        "D": "La bolsa 4 da \\(\\dfrac{2}{3}\\), menor que \\(\\dfrac{4}{5}\\), aunque tenga el doble de negras que blancas."
+        "A": "Fijarse solo en cuántas esferas negras hay no basta: hay que compararlas con el total de esferas de esa misma bolsa.",
+        "C": "Su razón entre esferas negras y total es menor que la de la bolsa 2.",
+        "D": "Es la bolsa donde la proporción de esferas negras es de las más bajas."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q09.png"
     },
     {
       "id": "P-math-7-p1-10",
       "numero": 10,
-      "enunciado": "<p>La gráfica muestra información sobre las ventas de dos libros durante los tres primeros meses del año.</p><p>En <b>febrero</b>, ¿cuál fue la cantidad de ejemplares vendidos del <b>libro 1</b>?</p>",
+      "enunciado": "<p>Una editorial hace seguimiento a dos de sus títulos y registró en la gráfica cuántos ejemplares vendió de cada uno en el primer trimestre.</p>[[IMG]]<p>¿Cuántos ejemplares del <b>libro 1</b> se vendieron en el mes de febrero?</p>",
       "opciones": {
         "A": "\\(1.000\\)",
         "B": "\\(5.000\\)",
@@ -326,23 +326,23 @@
       "dificultad": "BAJA",
       "estandar": "Comparo e interpreto datos provenientes de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
       "que_evalua": "La capacidad para reconocer información relevante en diagramas de barras.",
-      "justificacion_correcta": "La barra del libro 1 en febrero llega a la marca de \\(6.000\\) en el eje vertical, así que se vendieron \\(6.000\\) ejemplares.",
+      "justificacion_correcta": "Se ubica el mes de febrero en el eje horizontal y se lee la altura de la barra correspondiente al libro 1 sobre el eje vertical: son \\(6.000\\) ejemplares.",
       "opciones_incorrectas": {
-        "A": "Lee la barra del libro 2 en febrero \\((1.000)\\) en lugar de la del libro 1.",
-        "B": "Lee la barra del libro 1 en enero \\((5.000)\\), no en febrero.",
-        "D": "Estima mal la altura de la barra y la ubica en \\(7.000\\)."
+        "A": "Corresponde a la diferencia entre las dos barras de febrero, no a la venta del libro 1.",
+        "B": "Es la lectura de la barra del otro libro en ese mismo mes.",
+        "D": "Corresponde a la venta del libro 1 en otro mes, no en febrero."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q10.png"
     },
     {
       "id": "P-math-7-p1-11",
       "numero": 11,
-      "enunciado": "<p>Para una función de teatro se vendió el <b>\\(25\\%\\)</b> de las entradas. Si la sala tiene <b>\\(240\\) sillas</b>, ¿qué cantidad de entradas se vendieron?</p>",
+      "enunciado": "<p>Para un taller de encuadernación se abrieron \\(320\\) cupos y hasta hoy se ha inscrito el <b>\\(15\\%\\)</b> de ellos. ¿Cuántas personas se han inscrito?</p>",
       "opciones": {
-        "A": "\\(60\\) entradas",
-        "B": "\\(25\\) entradas",
-        "C": "\\(96\\) entradas",
-        "D": "\\(215\\) entradas"
+        "A": "\\(48\\) personas",
+        "B": "\\(15\\) personas",
+        "C": "\\(80\\) personas",
+        "D": "\\(305\\) personas"
       },
       "clave": "A",
       "competencia": "a",
@@ -352,17 +352,17 @@
       "dificultad": "BAJA",
       "estandar": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
       "que_evalua": "La capacidad para calcular porcentajes de números naturales es situaciones cotidianas.",
-      "justificacion_correcta": "El \\(25\\%\\) de \\(240\\) es \\(\\dfrac{25}{100} \\times 240 = \\dfrac{240}{4} = 60\\) entradas.",
+      "justificacion_correcta": "El \\(15\\%\\) de \\(320\\) es \\(320 \\times 0{,}15 = 48\\). También puede pensarse como \\(320 \\div 100 = 3{,}2\\) personas por cada \\(1\\%\\), y \\(3{,}2 \\times 15 = 48\\).",
       "opciones_incorrectas": {
-        "B": "Toma el número del porcentaje \\((25)\\) como si fuera la cantidad de entradas.",
-        "C": "Comete un error de cálculo (por ejemplo, halla el \\(40\\%\\) de \\(240\\)) y obtiene \\(96\\).",
-        "D": "Resta \\(240 - 25 = 215\\), confundiendo el porcentaje con una resta."
+        "B": "Repite el número del porcentaje sin aplicarlo al total. El \\(15\\%\\) no significa \\(15\\) personas salvo que el total fuera \\(100\\).",
+        "C": "Corresponde al \\(25\\%\\) de \\(320\\), no al \\(15\\%\\).",
+        "D": "Resta el número del porcentaje al total, \\(320 - 15\\), que mezcla un porcentaje con una cantidad de personas."
       }
     },
     {
       "id": "P-math-7-p1-12",
       "numero": 12,
-      "enunciado": "<p>Sara recogió muestras de agua de mar en tres recipientes. En la figura se observan las tres muestras y la cantidad de sal que tiene cada una. Si se aumentan <b>\\(500\\) mL</b> de agua de mar, la cantidad de sal</p>",
+      "enunciado": "<p>En el laboratorio del colegio se analizaron tres muestras de agua de mar tomadas en la misma playa. En la figura aparecen las tres muestras con la cantidad de sal que contiene cada una.</p>[[IMG]]<p>Si a una muestra se le agregan \\(500\\) mL de esa misma agua de mar, la cantidad de sal</p>",
       "opciones": {
         "A": "disminuye \\(15\\) g.",
         "B": "aumenta \\(15\\) g.",
@@ -377,23 +377,23 @@
       "dificultad": "MEDIA",
       "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables, de variación lineal o de proporcionalidad directa y de proporcionalidad inversa en contextos aritméticos y geométricos.",
       "que_evalua": "La capacidad para descifrar las características de patrones numéricos.",
-      "justificacion_correcta": "La secuencia de sal es \\(15, 30, 45\\) g, asociada a volúmenes de \\(500, 1.000, 1.500\\) mL. Cada \\(500\\) mL adicionales agregan \\(15\\) g de sal, así que al aumentar \\(500\\) mL la sal aumenta \\(15\\) g.",
+      "justificacion_correcta": "Las tres muestras vienen del mismo mar, así que la cantidad de sal por cada mililitro es la misma en todas. Al comparar dos muestras que se diferencian en \\(500\\) mL se observa que la sal se diferencia en \\(15\\) g, de modo que agregar \\(500\\) mL suma \\(15\\) g de sal.",
       "opciones_incorrectas": {
-        "A": "La sal aumenta al aumentar el agua; no disminuye.",
-        "C": "Pasar de \\(500\\) a \\(1.000\\) mL sí duplica, pero el patrón al sumar \\(500\\) mL es agregar \\(15\\) g, no duplicar siempre.",
-        "D": "Solo considera el salto de la primera a la última muestra (de \\(15\\) a \\(45\\)), no el aumento por cada \\(500\\) mL."
+        "A": "Agregar agua de mar aporta sal; no puede disminuirla.",
+        "C": "Duplicar la sal exigiría duplicar el volumen, y \\(500\\) mL no son el doble de ninguna de las muestras.",
+        "D": "Triplicar la sal exigiría triplicar el volumen, mucho más de lo que se agrega."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q12.png"
     },
     {
       "id": "P-math-7-p1-13",
       "numero": 13,
-      "enunciado": "<p>Un salón con el piso cubierto de baldosas cuadradas, de área <b>\\(4\\ \\text{dm}^2\\)</b> cada una, tiene la forma de la figura.</p><p>¿Cuál es el área total del piso del salón?</p>",
+      "enunciado": "<p>La terraza de un taller está cubierta con baldosas cuadradas iguales, cada una de \\(4\\ \\text{dm}^{2}\\) de área, y tiene la forma que muestra la figura.</p>[[IMG]]<p>¿Cuánto mide en total la superficie de la terraza?</p>",
       "opciones": {
-        "A": "\\(36 \\times 2\\ \\text{dm}^2\\)",
-        "B": "\\(24 \\times 4\\ \\text{dm}^2\\)",
-        "C": "\\(12 \\times 2\\ \\text{dm}^2\\)",
-        "D": "\\(6 \\times 4\\ \\text{dm}^2\\)"
+        "A": "\\(36 \\times 2\\ \\text{dm}^{2}\\)",
+        "B": "\\(24 \\times 4\\ \\text{dm}^{2}\\)",
+        "C": "\\(12 \\times 2\\ \\text{dm}^{2}\\)",
+        "D": "\\(6 \\times 4\\ \\text{dm}^{2}\\)"
       },
       "clave": "B",
       "competencia": "a",
@@ -403,23 +403,23 @@
       "dificultad": "MEDIA",
       "estandar": "Calculo áreas y volúmenes a través de composición y descomposición de figuras y cuerpos.",
       "que_evalua": "La capacidad para calcular áreas descomponiendo figuras en figuras de área conocida.",
-      "justificacion_correcta": "El piso está formado por \\(24\\) baldosas iguales y cada una tiene área \\(4\\ \\text{dm}^2\\). El área total es la suma de las \\(24\\) áreas: \\(24 \\times 4\\ \\text{dm}^2\\).",
+      "justificacion_correcta": "El área total se obtiene multiplicando cuántas baldosas hay por el área de cada una. En la figura se cuentan \\(24\\) baldosas y cada una mide \\(4\\ \\text{dm}^{2}\\), de modo que el área es \\(24 \\times 4\\ \\text{dm}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Cuenta \\(36\\) cuadritos (como si el contorno fuera un cuadrado \\(6\\times 6\\)) y usa \\(2\\) en vez del área \\(4\\).",
-        "C": "Cuenta solo \\(12\\) baldosas (por filas) y multiplica por \\(2\\) en lugar de por el área de cada una.",
-        "D": "Cuenta solo \\(6\\) baldosas y las multiplica por el área de una sola baldosa."
+        "A": "Cuenta mal las baldosas y además usa \\(2\\) en lugar de \\(4\\) como área de cada una.",
+        "C": "Toma la mitad de las baldosas y también un área equivocada por baldosa.",
+        "D": "Usa el área correcta por baldosa, pero cuenta apenas \\(6\\) de las \\(24\\) que hay."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q13.png"
     },
     {
       "id": "P-math-7-p1-14",
       "numero": 14,
-      "enunciado": "<p>Entre los años 2010 y 2014 se observó si llovía o no en tres regiones distintas. Los resultados se muestran en las tablas 1, 2 y 3.</p><div style=\"text-align:center;white-space:nowrap;overflow-x:auto\"><div style=\"display:inline-block;vertical-align:top;margin:0 8px\"><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Año</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Región 1</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2010</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2011</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2012</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2013</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2014</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr></table><div style=\"text-align:center;font-family:Georgia,serif;font-weight:700;margin-top:2px\">Tabla 1</div></div><div style=\"display:inline-block;vertical-align:top;margin:0 8px\"><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Año</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Región 2</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2010</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2011</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2012</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2013</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2014</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No llovió</td></tr></table><div style=\"text-align:center;font-family:Georgia,serif;font-weight:700;margin-top:2px\">Tabla 2</div></div><div style=\"display:inline-block;vertical-align:top;margin:0 8px\"><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Año</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Región 3</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2010</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2011</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2012</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2013</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No llovió</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2014</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No llovió</td></tr></table><div style=\"text-align:center;font-family:Georgia,serif;font-weight:700;margin-top:2px\">Tabla 3</div></div></div><p>Usando únicamente la información de las tablas, se quiere estimar la probabilidad de que llueva durante el año 2015 en cada región. ¿A qué región o regiones le corresponde una probabilidad de lluvia <b>mayor al \\(50\\%\\)</b> para el año 2015?</p>",
+      "enunciado": "<p>En un vivero se sembró la misma cantidad de semillas en tres lotes durante cinco temporadas seguidas, y en cada temporada se registró si el lote alcanzó o no la meta de germinación. Estos son los registros:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Temporada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lote A</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lote B</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Lote C</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2019</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2020</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No alcanzó</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2021</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2022</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No alcanzó</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2023</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No alcanzó</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No alcanzó</td></tr></table><p>Con esos registros como única información, el vivero quiere estimar la probabilidad de que cada lote alcance la meta en la temporada 2024. ¿En qué lote o lotes esa probabilidad supera el \\(50\\%\\)?</p>",
       "opciones": {
-        "A": "Solamente a la región 1.",
-        "B": "Región 1 y región 2.",
-        "C": "Región 2 y región 3.",
-        "D": "Solamente a la región 3."
+        "A": "Solamente en el lote A.",
+        "B": "En el lote A y en el lote B.",
+        "C": "En el lote B y en el lote C.",
+        "D": "Solamente en el lote C."
       },
       "clave": "B",
       "competencia": "c",
@@ -429,22 +429,22 @@
       "dificultad": "ALTA",
       "estandar": "Conjeturo acerca del resultado de un experimento aleatorio usando proporcionalidad y nociones básicas de probabilidad.",
       "que_evalua": "La capacidad para determinar el grado de probabilidad de eventos aleatorios simples y realizar comparaciones entre estos.",
-      "justificacion_correcta": "En la región 1 llovió \\(4\\) de \\(5\\) años \\(\\left(\\dfrac{4}{5} = 80\\%\\right)\\); en la región 2, \\(3\\) de \\(5\\) \\(\\left(\\dfrac{3}{5} = 60\\%\\right)\\); en la región 3, \\(2\\) de \\(5\\) \\(\\left(\\dfrac{2}{5} = 40\\%\\right)\\). Superan el \\(50\\%\\) las regiones 1 y 2.",
+      "justificacion_correcta": "La frecuencia relativa de cada lote se obtiene dividiendo las temporadas en que alcanzó la meta entre las cinco registradas. Lote A: \\(\\dfrac{4}{5} = 80\\%\\); lote B: \\(\\dfrac{3}{5} = 60\\%\\); lote C: \\(\\dfrac{2}{5} = 40\\%\\). Superan el \\(50\\%\\) el lote A y el lote B.",
       "opciones_incorrectas": {
-        "A": "Considera solo la región con la mayor probabilidad, olvidando que la región 2 también supera el \\(50\\%\\).",
-        "C": "Suma años de las regiones 2 y 3 \\((3 + 2 = 5)\\) e interpreta mal ese \\(5\\) como \\(50\\%\\).",
-        "D": "Toma la región con probabilidad menor al \\(50\\%\\) \\((40\\%)\\)."
+        "A": "Deja por fuera el lote B, que con \\(3\\) de \\(5\\) temporadas alcanza el \\(60\\%\\) y también supera el \\(50\\%\\).",
+        "C": "Incluye el lote C, que solo alcanzó la meta \\(2\\) de \\(5\\) veces, es decir el \\(40\\%\\).",
+        "D": "Escoge justamente el lote con la menor frecuencia de las tres."
       }
     },
     {
       "id": "P-math-7-p1-15",
       "numero": 15,
-      "enunciado": "<p>En una fábrica de plásticos, <b>\\(4\\) robots</b> ensamblan <b>\\(80\\) termos</b> en un día. Si se quiere <b>triplicar</b> la cantidad de termos que se ensamblan en un día, ¿cuántos robots se deben utilizar en un día?</p>",
+      "enunciado": "<p>En una panadería, \\(6\\) hornos iguales producen \\(90\\) panes en una jornada. Si se quiere <b>cuadruplicar</b> la cantidad de panes producidos en una jornada, ¿cuántos hornos se deben poner a funcionar?</p>",
       "opciones": {
-        "A": "\\(240\\) robots",
-        "B": "\\(76\\) robots",
-        "C": "\\(20\\) robots",
-        "D": "\\(12\\) robots"
+        "A": "\\(360\\) hornos",
+        "B": "\\(84\\) hornos",
+        "C": "\\(10\\) hornos",
+        "D": "\\(24\\) hornos"
       },
       "clave": "D",
       "competencia": "a",
@@ -454,22 +454,22 @@
       "dificultad": "MEDIA",
       "estandar": "Justifico el uso de representaciones y procedimientos en situaciones de proporcionalidad directa e inversa.",
       "que_evalua": "La capacidad para ejecutar algunas operaciones básicas y de proporcionalidad (directa).",
-      "justificacion_correcta": "Hay proporcionalidad directa entre robots y termos. Para triplicar la producción \\((80 \\to 240\\) termos\\()\\) se necesita el triple de robots: \\(4 \\times 3 = 12\\) robots. (También por regla de tres: \\(\\dfrac{4}{80} = \\dfrac{x}{240} \\Rightarrow x = 12\\).)",
+      "justificacion_correcta": "La relación entre hornos y panes es de proporcionalidad directa: al multiplicar los hornos por un número, los panes se multiplican por el mismo. Para cuadruplicar la producción hacen falta cuatro veces los hornos: \\(6 \\times 4 = 24\\). Por regla de tres: \\(\\dfrac{6}{90} = \\dfrac{x}{360} \\Rightarrow x = 24\\).",
       "opciones_incorrectas": {
-        "A": "Triplica los termos \\((80 \\times 3 = 240)\\) y responde con esa cantidad como si fueran robots.",
-        "B": "Resta \\(80 - 4 = 76\\), restando termos y robots sin sentido.",
-        "C": "Divide \\(240 \\div 12\\) o usa una proporción equivocada y obtiene \\(20\\)."
+        "A": "Es la cantidad de panes que se quiere producir, no la de hornos.",
+        "B": "Resta los hornos a los panes, \\(90 - 6\\), operación que mezcla dos magnitudes distintas.",
+        "C": "Suma \\(4\\) a los hornos en lugar de multiplicarlos por \\(4\\). Cuadruplicar es multiplicar, no sumar."
       }
     },
     {
       "id": "P-math-7-p1-16",
       "numero": 16,
-      "enunciado": "<p>Jaime es escultor y para un trabajo utilizó un bloque de mármol en forma de cubo, como se muestra en la figura. Ahora desea una nueva escultura y necesita un cubo cuyas aristas midan el <b>doble</b> de las del cubo que ya utilizó.</p><p>¿Cuál es el volumen del cubo que necesita?</p>",
+      "enunciado": "<p>En un taller de empaques se fabricó una caja con forma de cubo, como la que aparece en la figura. Ahora piden una caja más grande, también cúbica, cuyas aristas midan <b>el doble</b> de las de la primera.</p>[[IMG]]<p>¿Qué volumen tendrá esa caja más grande?</p>",
       "opciones": {
-        "A": "\\(96\\ \\text{m}^3\\)",
-        "B": "\\(64\\ \\text{m}^3\\)",
-        "C": "\\(32\\ \\text{m}^3\\)",
-        "D": "\\(16\\ \\text{m}^3\\)"
+        "A": "\\(96\\ \\text{m}^{3}\\)",
+        "B": "\\(64\\ \\text{m}^{3}\\)",
+        "C": "\\(32\\ \\text{m}^{3}\\)",
+        "D": "\\(16\\ \\text{m}^{3}\\)"
       },
       "clave": "B",
       "competencia": "a",
@@ -479,23 +479,23 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas usando modelos geométricos.",
       "que_evalua": "La capacidad para construir un sólido juntando varios paralelepípedos, y luego calcular su volumen.",
-      "justificacion_correcta": "El cubo inicial tiene aristas de \\(2\\) m. Al duplicar la arista, la nueva mide \\(4\\) m, y el volumen de un cubo es la arista al cubo: \\(4^3 = 4 \\times 4 \\times 4 = 64\\ \\text{m}^3\\).",
+      "justificacion_correcta": "El volumen de un cubo es la arista elevada al cubo. Si la arista se duplica, el volumen queda multiplicado por \\(2^{3} = 8\\). Con la arista de la figura, la caja nueva tiene un volumen de \\(64\\ \\text{m}^{3}\\).",
       "opciones_incorrectas": {
-        "A": "Calcula el área de las \\(6\\) caras del cubo nuevo \\((6 \\times 16 = 96)\\) y la confunde con el volumen.",
-        "C": "Duplica el volumen original dos veces o multiplica mal, obteniendo \\(32\\).",
-        "D": "Calcula el volumen original \\((2^3 = 8)\\) y solo lo duplica \\((8 \\times 2 = 16)\\), sin duplicar la arista."
+        "A": "No corresponde a ninguna potencia de la arista duplicada.",
+        "C": "Resulta de multiplicar el volumen original por \\(4\\), como si el cambio afectara solo a dos dimensiones y no a las tres.",
+        "D": "Resulta de duplicar el volumen original. Duplicar la arista no duplica el volumen: lo multiplica por ocho."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q16.png"
     },
     {
       "id": "P-math-7-p1-17",
       "numero": 17,
-      "enunciado": "<p>Jorge compró algunos implementos de aseo. Observa la factura:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><td colspan=\"4\" style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;text-align:right;font-weight:700\">FACTURA</td></tr><tr><td colspan=\"4\" style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:700\">Facturar a: Jorge</td></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descripción</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio unitario</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Limpiador</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$17.900</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$53.700</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Detergente</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$24.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$120.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Cepillo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$1.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$5.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Blanqueador</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$20.100</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$60.300</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;text-align:right;font-weight:700\">Total</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700\">$239.000</td></tr></table><p>¿Cuál de las siguientes operaciones es equivalente al valor total de la factura de Jorge?</p>",
+      "enunciado": "<p><b>Marcela</b> compró insumos para el club de robótica y recibió esta factura:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descripción</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio unitario</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sensor de distancia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$32.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$128.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rollo de filamento</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$45.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$270.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Juego de cables</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$9.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$54.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Batería recargable</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$28.000</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$112.000</td></tr></table><p>Para el mes siguiente, Marcela necesita la misma cantidad de <b>sensores</b> y de <b>rollos de filamento</b>, pero el proveedor le avisa que el sensor costará $38.000 y el rollo, $52.000. ¿Cuál expresión permite calcular lo que pagará por esos dos insumos?</p>",
       "opciones": {
-        "A": "\\(3 \\times (\\$38.000) + 5 \\times (\\$25.000)\\)",
-        "B": "\\((3 + 5) \\times (\\$38.000 + \\$25.000)\\)",
-        "C": "\\(\\big((3 \\times 2) + (5 \\times 2)\\big) \\times (\\$25.000 + \\$38.000)\\)",
-        "D": "\\(3 \\times (\\$25.000) + 5 \\times (\\$38.000)\\)"
+        "A": "\\(4 \\times (\\$38.000) + 6 \\times (\\$52.000)\\)",
+        "B": "\\((4 + 6) \\times (\\$38.000 + \\$52.000)\\)",
+        "C": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\$38.000)\\)",
+        "D": "\\(4 \\times (\\$52.000) + 6 \\times (\\$38.000)\\)"
       },
       "clave": "A",
       "competencia": "c",
@@ -505,17 +505,17 @@
       "dificultad": "ALTA",
       "estandar": "Justifico procedimientos aritméticos utilizando las relaciones y propiedades de las operaciones.",
       "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales, como la asociativa y la distributiva del producto respecto a la suma.",
-      "justificacion_correcta": "Los productos con cantidad \\(3\\) (Limpiador y Blanqueador) cuestan \\(\\$17.900\\) y \\(\\$20.100\\), que suman \\(\\$38.000\\); los de cantidad \\(5\\) (Detergente y Cepillo) cuestan \\(\\$24.000\\) y \\(\\$1.000\\), que suman \\(\\$25.000\\). Por la propiedad distributiva, el total es \\(3 \\times (\\$38.000) + 5 \\times (\\$25.000)\\).",
+      "justificacion_correcta": "Cada insumo se paga multiplicando su cantidad por su precio unitario, y después se suman los dos productos. Son \\(4\\) sensores a \\(\\$38.000\\) y \\(6\\) rollos a \\(\\$52.000\\), es decir \\(4 \\times \\$38.000 + 6 \\times \\$52.000\\).",
       "opciones_incorrectas": {
-        "B": "Multiplica la suma de las cantidades por la suma de los precios, lo que altera el resultado.",
-        "C": "Duplica sin razón las cantidades y vuelve a sumarlas, cambiando el valor de la factura.",
-        "D": "Intercambia los precios agrupados: hace corresponder la cantidad \\(3\\) con \\(\\$25.000\\) y la \\(5\\) con \\(\\$38.000\\)."
+        "B": "Suma primero las cantidades y los precios, y luego multiplica. Eso le cobra a cada sensor también el precio del rollo, y al revés.",
+        "C": "Duplica las cantidades sin razón y le aplica a los rollos el precio del sensor.",
+        "D": "Cruza los precios: le pone al sensor el precio del rollo y al rollo el del sensor."
       }
     },
     {
       "id": "P-math-7-p1-18",
       "numero": 18,
-      "enunciado": "<p>La Figura 1 muestra un jardín en forma de <b>octágono regular</b> de lado \\(5\\) m, con un ángulo interno de <b>\\(135^\\circ\\)</b>. La Figura 2 muestra el jardín que Luisa quiere hacer, también octagonal, de lado \\(10\\) m.</p><p>Si Luisa quiere que su jardín sea <b>semejante</b> al de la Figura 1, ¿cuál debe ser la medida de los ángulos internos de su jardín?</p>",
+      "enunciado": "<p>La Figura 1 muestra el diseño de una baldosa con forma de octágono regular de \\(5\\) m de lado, cuyo ángulo interno mide \\(135^\\circ\\). La Figura 2 muestra la baldosa ampliada que quiere fabricar el taller, también octagonal y regular, pero de \\(10\\) m de lado.</p>[[IMG]]<p>Si la baldosa ampliada debe ser semejante a la de la Figura 1, ¿cuánto mide cada uno de sus ángulos internos?</p>",
       "opciones": {
         "A": "\\(270^\\circ\\)",
         "B": "\\(135^\\circ\\)",
@@ -530,23 +530,23 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
       "que_evalua": "La capacidad para reconocer las condiciones para que dos o más figuras sean semejantes.",
-      "justificacion_correcta": "En figuras semejantes los lados son proporcionales, pero los ángulos correspondientes se conservan iguales. Como el octágono regular tiene ángulos internos de \\(135^\\circ\\), el jardín semejante de Luisa también debe tener ángulos internos de \\(135^\\circ\\), aunque sus lados midan el doble.",
+      "justificacion_correcta": "En dos figuras semejantes los lados cambian en la misma proporción, pero los ángulos se conservan. Por eso, aunque el lado pase de \\(5\\) m a \\(10\\) m, cada ángulo interno sigue midiendo \\(135^\\circ\\).",
       "opciones_incorrectas": {
-        "A": "Duplica el ángulo \\((135 \\times 2)\\) porque los lados se duplican; pero los ángulos no cambian en una semejanza.",
-        "C": "Toma la mitad del ángulo \\((135 \\div 2)\\) para 'compensar' el cambio de tamaño.",
-        "D": "Divide el ángulo entre la medida del lado \\((135 \\div 10)\\), mezclando longitudes con ángulos."
+        "A": "Duplica el ángulo porque se duplicó el lado. En una semejanza los ángulos no cambian.",
+        "C": "Toma la mitad del ángulo, como si al agrandar la figura los ángulos se redujeran.",
+        "D": "Divide el ángulo entre diez, mezclando la medida del lado con la del ángulo."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q18.png"
     },
     {
       "id": "P-math-7-p1-19",
       "numero": 19,
-      "enunciado": "<p>Julián practica el avistamiento de aves en un parque cercano a su casa, y esta semana registró en su bitácora las aves que observó y el día en que las vio.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Ave</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Golondrina</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lechuza</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sábado</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sábado</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Golondrina</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sábado</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Domingo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Copetón</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Domingo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tingua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Domingo</td></tr></table><p>Se planea instalar unos bebederos para las aves que visitan con <b>mayor frecuencia</b> el parque. De acuerdo con la bitácora de Julián, ¿para cuál ave se instalarán los bebederos?</p>",
+      "enunciado": "<p><b>Camila</b> lleva el registro de la basura que su curso separa para reciclar. Esta semana anotó, cada vez que llenó una caneca, el material que predominaba en ella:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Material predominante</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vidrio</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr></table><p>¿Cuál fue el material que predominó en más canecas durante la semana?</p>",
       "opciones": {
-        "A": "Golondrina.",
-        "B": "Copetón.",
-        "C": "Colibrí.",
-        "D": "Tingua."
+        "A": "Papel.",
+        "B": "Cartón.",
+        "C": "Vidrio.",
+        "D": "Plástico."
       },
       "clave": "B",
       "competencia": "c",
@@ -556,17 +556,17 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
       "que_evalua": "La capacidad para analizar datos representados en tablas y determinar la moda de estos.",
-      "justificacion_correcta": "El ave que más veces aparece en la bitácora (la moda) es el copetón, con \\(8\\) registros, más que cualquier otra ave. Por eso los bebederos se instalarán para el copetón.",
+      "justificacion_correcta": "Se cuenta cuántas veces aparece cada material: cartón \\(5\\), plástico \\(3\\), papel \\(2\\) y vidrio \\(1\\). El que más se repite, es decir la moda, es el cartón.",
       "opciones_incorrectas": {
-        "A": "Elige la primera ave registrada (golondrina), no la más frecuente.",
-        "C": "Elige el colibrí, que tiene muy pocos avistamientos.",
-        "D": "Elige la tingua, que aparece varias veces pero menos que el copetón."
+        "A": "El papel aparece \\(2\\) veces, menos que el cartón.",
+        "C": "El vidrio aparece una sola vez: es el material menos frecuente, no el más frecuente.",
+        "D": "El plástico aparece \\(3\\) veces, una menos que las \\(5\\) del cartón."
       }
     },
     {
       "id": "P-math-7-p1-20",
       "numero": 20,
-      "enunciado": "<p>Una piscina tiene forma de prisma rectangular (largo \\(6\\) m, ancho \\(4\\) m, alto \\(1{,}5\\) m) y una etiqueta rasgada en el costado que muestra información incompleta del volumen y del área de la base, como se ve en la figura.</p><p>¿Cuál debería ser la etiqueta completa que contenga la información correcta del volumen y del área de la base de la piscina?</p>",
+      "enunciado": "<p>Un tanque para recoger agua lluvia tiene forma de prisma rectangular de \\(6\\) m de largo, \\(4\\) m de ancho y \\(1{,}5\\) m de alto. En un costado lleva una etiqueta que se rasgó y quedó incompleta, como se ve en la figura.</p>[[IMG]]<p>¿Cómo debería quedar la etiqueta completa?</p>",
       "opciones": {
         "A": "<div style=\"display:inline-block;border:1px solid #3D332C;border-radius:4px;padding:8px 14px;font-family:Georgia,serif;font-size:13px;background:#FBF7EF\">Volumen de la piscina: \\(36\\ \\text{m}^3\\)<br>Área de la base de la piscina: \\(24\\ \\text{m}^3\\)</div>",
         "B": "<div style=\"display:inline-block;border:1px solid #3D332C;border-radius:4px;padding:8px 14px;font-family:Georgia,serif;font-size:13px;background:#FBF7EF\">Volumen de la piscina: \\(36\\ \\text{m}^2\\)<br>Área de la base de la piscina: \\(24\\ \\text{m}^2\\)</div>",
@@ -581,11 +581,11 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico relaciones entre distintas unidades utilizadas para medir cantidades de la misma magnitud.",
       "que_evalua": "La capacidad para establecer y distinguir las unidades de medida apropiadas para el área y volumen de un prisma a partir de las medidas de sus aristas.",
-      "justificacion_correcta": "El volumen mide un espacio en tres dimensiones, así que su unidad es \\(\\text{m}^3\\); el área de la base mide una superficie en dos dimensiones, así que su unidad es \\(\\text{m}^2\\). La etiqueta correcta es: volumen \\(36\\ \\text{m}^3\\) y área de la base \\(24\\ \\text{m}^2\\).",
+      "justificacion_correcta": "El volumen del prisma es \\(6 \\times 4 \\times 1{,}5 = 36\\), y como se multiplican tres longitudes el resultado va en metros cúbicos: \\(36\\ \\text{m}^{3}\\). El área de la base es \\(6 \\times 4 = 24\\), y al multiplicar dos longitudes va en metros cuadrados: \\(24\\ \\text{m}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Usa \\(\\text{m}^3\\) tanto para el volumen como para el área de la base, como si la base fuera tridimensional.",
-        "B": "Usa \\(\\text{m}^2\\) para ambas magnitudes, como si el volumen fuera una superficie.",
-        "D": "Intercambia las unidades: \\(\\text{m}^2\\) para el volumen y \\(\\text{m}^3\\) para el área de la base."
+        "A": "Acierta los números pero le pone al área de la base una unidad que no corresponde.",
+        "B": "Expresa el volumen en metros cuadrados, cuando multiplicar tres longitudes da metros cúbicos.",
+        "D": "Equivoca las dos unidades a la vez."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q20.png"
     }
