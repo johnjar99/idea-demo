@@ -18,6 +18,8 @@ export const ALIAS_AREA_BASICA = {
   'lenguaje': 'lectura crítica',
   'competencias ciudadanas': 'sociales y ciudadanas',
   'ciencias naturales y educación ambiental': 'ciencias naturales',
+  'competencias ciudadanas: pensamiento ciudadano': 'sociales y ciudadanas',
+  'competencias comunicativas en lenguaje: lectura': 'lectura crítica',
 };
 
 /** Normaliza el nombre del área a slug canónico. */

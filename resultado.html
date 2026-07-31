@@ -317,7 +317,20 @@
     // Crítica (ni viceversa).
     const logroPorComp = logroPorCompetencia(aplicacion.aciertos_por_pregunta || [], cuadernillo);
     const compDebil = Object.keys(logroPorComp).reduce((a, b) => logroPorComp[a] <= logroPorComp[b] ? a : b);
-    const areaSlug = (cuadernillo.area || '').toLowerCase();
+    // El campo `area` cambia de nombre segun la banda de grados ("Lenguaje",
+    // "Competencias Comunicativas en Lenguaje: Lectura", "Lectura Critica"...), asi que NO se
+    // puede usar tal cual como llave del catalogo: hasta hoy caia al set de Matematicas y a un
+    // estudiante de Lenguaje se le ofrecian recursos de Khan de estadistica. Se normaliza al
+    // nombre canonico antes de buscar.
+    const CLAVE_RECURSOS = [
+      [/matemat|numeric/, 'matemáticas'],
+      [/lectura|lenguaje|lengua|critic|comunicativ/, 'lectura crítica'],
+      [/social|ciudadan|pensamiento ciudadano/, 'sociales y ciudadanas'],
+      [/ciencias naturales|natural|ambiental/, 'ciencias naturales'],
+      [/ingl|english/, 'inglés']
+    ];
+    const _areaTxt = (cuadernillo.area || '').toLowerCase();
+    const areaSlug = (CLAVE_RECURSOS.find(([re]) => re.test(_areaTxt)) || [null, _areaTxt])[1];
     const recursosPorArea = {
       'matemáticas': {
         a: [
@@ -420,7 +433,11 @@
       }
     };
     const setArea = recursosPorArea[areaSlug] || recursosPorArea['matemáticas'];
-    let recursos = setArea[compDebil];
+    // Lectura Critica numera sus competencias (1, 2, 3) mientras el catalogo las guarda por
+    // letra (a, b, c): sin esta traduccion siempre se servia el bloque 'a'.
+    const NUM_A_LETRA = { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e' };
+    const claveComp = setArea[compDebil] ? compDebil : (NUM_A_LETRA[String(compDebil)] || compDebil);
+    let recursos = setArea[claveComp];
     if (!recursos) {
       // Si la competencia débil no tiene entrada en este área, usa la primera disponible.
       const primera = Object.keys(setArea)[0];
@@ -587,8 +604,8 @@
           <div class="text-sm">${preg.justificacion_correcta}</div>
         </div>
         <div class="grid grid-cols-2 gap-2 text-xs">
-          <div class="bg-slate-100 rounded p-2"><strong>Habilidad:</strong> ${preg.competencia}</div>
-          <div class="bg-slate-100 rounded p-2"><strong>Dificultad:</strong> ${preg.dificultad}</div>
+          <div class="bg-slate-100 rounded p-2"><strong>${escapeHtml(etiquetasMarco(cuadernillo).competencia_singular)}:</strong> ${escapeHtml(preg.competencia)}. ${escapeHtml((cuadernillo.competencias || {})[preg.competencia] || '')}</div>
+          <div class="bg-slate-100 rounded p-2"><strong>Dificultad:</strong> ${escapeHtml(preg.dificultad)}</div>
         </div>
       `;
       renderMath(det);

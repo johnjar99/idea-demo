@@ -6,7 +6,7 @@
   "periodo": "II",
   "version": "2023",
   "nombre": "Cuadernillo de Matemáticas · Grado 6° · Período II (Banco propio IDEA)",
-  "fuente": "Banco propio IDEA · ítems y figuras originales alineados a los Estándares Básicos de Competencias (marco público). NO reproduce ítems del Icfes.",
+  "fuente": "Banco propio IDEA · ítems y textos de autoría propia alineados a los Estándares Básicos de Competencias (marco público). Algunas figuras y textos discontinuos se adaptan de material protegido por derechos de autor del Icfes y de sus autores (cuadernillos de prueba, uso educativo), con su atribución en cada pieza; los derechos corresponden a sus respectivos titulares y el uso es educativo, sin ánimo de lucro.",
   "tiempo_minutos": 60,
   "num_preguntas": 20,
   "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
@@ -505,27 +505,28 @@
     {
       "id": "P-math-6-p2-15",
       "numero": 18,
-      "enunciado": "<p>En el club de robótica hay <b>\\(7\\)</b> estudiantes y se deben escoger <b>\\(2\\)</b> de ellos para exponer el proyecto en la feria municipal. No importa cuál de los dos se nombre primero. ¿De cuántas maneras distintas se puede formar esa pareja de expositores?</p>",
+      "enunciado": "<p>En la cafetería de un colegio, el menú del día permite a los estudiantes elegir <b>una opción de cada categoría</b>:</p><ul style=\"margin:6px 0 6px 18px\"><li><b>Plato principal:</b> pollo o carne.</li><li><b>Acompañamiento:</b> arroz, ensalada o papas.</li><li><b>Bebida:</b> jugo de mora o jugo de mango.</li></ul>[[IMG]]<p>¿De cuántas formas diferentes puede un estudiante armar su almuerzo si escoge un plato principal, un acompañamiento y una bebida?</p>",
       "opciones": {
-        "A": "\\(5.040\\)",
-        "B": "\\(49\\)",
-        "C": "\\(21\\)",
-        "D": "\\(42\\)"
+        "A": "\\(12\\) almuerzos distintos.",
+        "B": "\\(6\\) almuerzos distintos.",
+        "C": "\\(10\\) almuerzos distintos.",
+        "D": "\\(7\\) almuerzos distintos."
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "a",
       "afirmacion": 11,
       "evidencia": "11.1",
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
-      "que_evalua": "La capacidad para reconocer y usar la combinación como una técnica apropiada para resolver una situación de conteo.",
-      "justificacion_correcta": "Como se escogen \\(2\\) estudiantes entre \\(7\\) y el orden no importa, se trata de una combinación: \\(C(7,2) = \\dfrac{7!}{2!\\,(7-2)!} = \\dfrac{7 \\times 6}{2} = 21\\). Hay \\(21\\) parejas distintas posibles.",
+      "que_evalua": "La capacidad para contar de cuántas formas se combinan opciones independientes, multiplicando las posibilidades de cada categoría.",
+      "justificacion_correcta": "Por cada uno de los \\(2\\) platos principales hay \\(3\\) acompañamientos, lo que da \\(2 \\times 3 = 6\\) parejas; y por cada una de esas parejas hay \\(2\\) bebidas. En total, \\(2 \\times 3 \\times 2 = 12\\) almuerzos distintos.",
       "opciones_incorrectas": {
-        "A": "Calcula \\(7! = 5.040\\), que es el número de formas de ordenar a los siete estudiantes, no de escoger dos.",
-        "B": "Eleva \\(7^2 = 49\\), como si el orden importara y además se pudiera repetir el mismo estudiante.",
-        "D": "Calcula \\(7 \\times 6 = 42\\), que cuenta las parejas ordenadas y por eso registra dos veces cada pareja."
-      }
+        "B": "Se queda en \\(2 \\times 3 = 6\\): cuenta plato y acompañamiento, pero olvida multiplicar por las \\(2\\) bebidas.",
+        "C": "Parece venir de \\(2 \\times (3 + 2) = 10\\): suma acompañamientos y bebidas en vez de multiplicarlos.",
+        "D": "Suma las opciones de las tres categorías, \\(2 + 3 + 2 = 7\\), en lugar de multiplicarlas."
+      },
+      "imagen_figura": "assets/banco-mat-6-p2/q18_menu.png"
     },
     {
       "id": "P-math-6-p2-13",

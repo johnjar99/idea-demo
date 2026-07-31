@@ -318,8 +318,11 @@
     // En vez de la columna "Pruebas" (un simple conteo), mostramos UNA columna por ÁREA EVALUADA
     // con el puntaje de cada estudiante en esa área, coloreado por su nivel. Así el directivo ve
     // de un vistazo el resultado de cada estudiante en cada prueba.
-    const ORDEN_AREA_RK = ['Matemáticas', 'Lectura Crítica', 'Sociales y Ciudadanas', 'Ciencias Naturales', 'Inglés'];
-    const AREA_CORTA = { 'Matemáticas': 'Mat.', 'Lectura Crítica': 'Lect.', 'Sociales y Ciudadanas': 'Soc.', 'Ciencias Naturales': 'C. Nat.', 'Inglés': 'Inglés' };
+    const ORDEN_AREA_RK = ['Matemáticas', 'Lectura Crítica', 'Competencias Comunicativas en Lenguaje: Lectura',
+      'Sociales y Ciudadanas', 'Competencias Ciudadanas: Pensamiento Ciudadano',
+      'Ciencias Naturales', 'Ciencias Naturales y Educación Ambiental', 'Inglés'];
+    const AREA_CORTA = { 'Matemáticas': 'Mat.', 'Lectura Crítica': 'Lect.', 'Sociales y Ciudadanas': 'Soc.', 'Ciencias Naturales': 'C. Nat.', 'Inglés': 'Inglés',
+      'Competencias Comunicativas en Lenguaje: Lectura': 'Lect.', 'Competencias Ciudadanas: Pensamiento Ciudadano': 'Ciud.', 'Ciencias Naturales y Educación Ambiental': 'C. Nat.' };
     const areasPresentes = ORDEN_AREA_RK.filter(ar => apps.some(a => a.area === ar));
     apps.forEach(a => { if (a.area && !areasPresentes.includes(a.area)) areasPresentes.push(a.area); });
 
@@ -403,7 +406,9 @@
     // Comparativo entre grupos (barras) - agrupadas por MATERIA: primero todas las barras
     // de Matemáticas (grupo A, luego B…), después todas las de Lectura Crítica, etc. Así,
     // cuando hay dos o más grupos, cada materia queda junta para compararlos lado a lado.
-    const ORDEN_AREA = ['Matemáticas', 'Lectura Crítica', 'Sociales y Ciudadanas', 'Ciencias Naturales', 'Inglés'];
+    const ORDEN_AREA = ['Matemáticas', 'Lectura Crítica', 'Competencias Comunicativas en Lenguaje: Lectura',
+      'Sociales y Ciudadanas', 'Competencias Ciudadanas: Pensamiento Ciudadano',
+      'Ciencias Naturales', 'Ciencias Naturales y Educación Ambiental', 'Inglés'];
     const idxArea = (a) => { const i = ORDEN_AREA.indexOf(a); return i === -1 ? 99 : i; };
     const gruposArr = [...gruposM.values()].sort((x, y) =>
       idxArea(x.area) - idxArea(y.area)
@@ -417,7 +422,11 @@
       'Lectura Crítica': '#F6B8B8',
       'Sociales y Ciudadanas': '#E9C9A8',
       'Ciencias Naturales': '#B9E3C6',
-      'Inglés': '#D2C2EC'
+      'Inglés': '#D2C2EC',
+      // Nombres oficiales de la banda 3°-9° (31-jul-2026): mismo pastel que su par de media
+      'Competencias Comunicativas en Lenguaje: Lectura': '#F6B8B8',
+      'Competencias Ciudadanas: Pensamiento Ciudadano': '#E9C9A8',
+      'Ciencias Naturales y Educación Ambiental': '#B9E3C6'
     };
     const coloresBarras = gruposArr.map(g => PASTEL_AREA[g.area] || '#D9DEE3');
     if (etiquetas.length > 0) {

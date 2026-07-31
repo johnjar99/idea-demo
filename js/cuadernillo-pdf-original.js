@@ -139,7 +139,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
   }
 
   // Eyebrow
-  textoCentrado(portada, 'INSTRUMENTO IDEA · CUADERNILLO DE PRUEBA', 130, { font: fontBold, size: 9, color: cDorado });
+  textoCentrado(portada, 'INSTRUMENTO IDEA', 130, { font: fontBold, size: 9, color: cDorado });
 
   // Título: nombre del cuadernillo
   textoCentrado(portada, cuadernillo.area || 'Cuadernillo', 180, { font: fontBold, size: 32, color: cNegro });
