@@ -10,15 +10,24 @@
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Las fuentes no bloquean el pintado: la URL ya trae display=swap, asi que el texto se ve
+       de entrada con la tipografia del sistema y cambia en cuanto llegan Fraunces e Inter. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <!-- jsPDF y html2canvas se cargan BAJO DEMANDA al exportar (js/cargar-libs.js); no bloquean el arranque. -->
   <!-- Driver.js para guia Sabio interactiva -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css">  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+  <!-- driver.css solo hace falta para el tour: se baja sin bloquear el primer pintado. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"
+        media="print" onload="this.media='all';this.onload=null">
+  <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+  <!-- Hoja única generada por scripts/unificar_css.py: seis hojas en una. Mismo orden de cascada. -->
+  <link rel="stylesheet" href="css/idea.css">
+  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
     <link rel="modulepreload" href="./js/analisis.js">
     <link rel="modulepreload" href="./js/area-config.js">
     <link rel="modulepreload" href="./js/auth.js">

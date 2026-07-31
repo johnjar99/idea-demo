@@ -2744,3 +2744,14 @@ section h3, .seccion-h3 { font-size: 18px; font-weight: 600; }
   .mat-evol-grid > .mat-evol-card { flex: 0 1 100%; max-width: 100%; }
 }
 
+
+/* Línea de crédito de una lectura con pieza gráfica: va PEGADA a la imagen (después de ella),
+   no suelta en medio de la prosa. Discreta, para que no compita con el texto de la lectura. */
+.ctx-credito {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: #6B6459;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}

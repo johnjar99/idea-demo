@@ -10,7 +10,11 @@
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Las fuentes no bloquean el pintado: la URL ya trae display=swap, asi que el texto se ve
+       de entrada con la tipografia del sistema y cambia en cuanto llegan Fraunces e Inter. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -18,11 +22,15 @@
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <!-- ExcelJS, jsPDF y html2canvas se cargan BAJO DEMANDA al exportar (js/cargar-libs.js); no bloquean el arranque. -->
     <!-- Driver.js para onboarding -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <!-- driver.css solo hace falta para el tour: se baja sin bloquear el primer pintado. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"
+        media="print" onload="this.media='all';this.onload=null">
   <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
   <!-- Confetti (solo al celebrar) -->
-  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">
-  <link rel="stylesheet" href="css/paneles-claros.css">  <link rel="stylesheet" href="css/tailwind.css">  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <!-- Hoja única generada por scripts/unificar_css.py: seis hojas en una. Mismo orden de cascada. -->
+  <link rel="stylesheet" href="css/idea.css">
+  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
     <link rel="modulepreload" href="./js/analisis.js">
     <link rel="modulepreload" href="./js/area-config.js">
     <link rel="modulepreload" href="./js/auth.js">
@@ -70,12 +78,14 @@
       <button class="panel-tab" data-vista="ranking"><span class="panel-tab__ic">🏆</span>Ranking de grupos</button>
       <button class="panel-tab" data-vista="comparativo"><span class="panel-tab__ic">📈</span>Comparativo</button>
       <button class="panel-tab" data-vista="por-grupo"><span class="panel-tab__ic">👥</span>Análisis por grupo</button>
+      <button class="panel-tab" data-vista="mi-ie"><span class="panel-tab__ic">🏫</span>Mi institución</button>
     </nav>
 
     <div class="doc-acciones-grid animate-fade-in" style="animation-delay:120ms;margin-bottom:20px">
       <button id="btn-ir-plan-mejora" class="doc-accion doc-accion--destacada"><span class="doc-accion__ic">📋</span><span>Planes de Mejora · Fase III</span></button>
       <button id="btn-exportar-consolidado-pdf" class="doc-accion"><span class="doc-accion__ic">📕</span><span>Reporte institucional PDF</span></button>
       <a href="docente.html" class="doc-accion"><span class="doc-accion__ic">🔎</span><span>Vista por grupo</span></a>
+      <a href="manager.html" class="doc-accion"><span class="doc-accion__ic">⚙️</span><span>Gestionar mi institución</span></a>
     </div>
 
       <div id="vista-consolidado" class="vista animate-fade-in">
@@ -121,6 +131,33 @@
         <p class="text-slate-600 text-sm mb-4">Selecciona un grupo para abrir su análisis completo en la vista del docente.</p>
         <div id="lista-grupos-acceso" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
       </div>
+
+      <!-- Mi institución: consulta de sedes, docentes y estudiantes. SOLO LECTURA. -->
+      <div id="vista-mi-ie" class="vista hidden">
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Mi institución</h1>
+        <p class="text-slate-600 text-sm mb-6">Consulta de sedes, docentes y estudiantes. Esta vista es <strong>solo de lectura</strong>: los cambios de asignación los hace el administrador de la plataforma.</p>
+
+        <div class="idea-card mb-5">
+          <h2 class="card-title">Sedes</h2>
+          <div id="mi-ie-sedes"></div>
+        </div>
+
+        <div class="idea-card mb-5">
+          <h2 class="card-title">Docentes</h2>
+          <div id="mi-ie-docentes"></div>
+        </div>
+
+        <div class="idea-card">
+          <h2 class="card-title">Estudiantes</h2>
+          <div class="asig-filtros mb-4">
+            <div><label class="label-idea">Sede</label><select id="mi-ie-f-sede" class="input-idea"></select></div>
+            <div><label class="label-idea">Grado</label><select id="mi-ie-f-grado" class="input-idea"></select></div>
+            <div style="flex:2 1 240px"><label class="label-idea">Buscar por nombre o documento</label><input id="mi-ie-f-texto" class="input-idea" type="search" placeholder="Escribe para filtrar…"></div>
+          </div>
+          <p id="mi-ie-conteo" class="text-xs text-slate-500 mb-3"></p>
+          <div id="mi-ie-estudiantes"></div>
+        </div>
+      </div>
     </main>
 
   <footer class="idea-footer">© Instrumento IDEA · Álvaro R. Córdoba B.</footer>
@@ -139,8 +176,20 @@
     import { construirBarraFiltros, normPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
     import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
 
+    // Se lanzan las lecturas ANTES de esperar la sesion: restaurar la sesion de Firebase Auth
+    // cuesta su tiempo y hasta ahora ese tiempo era espera muerta. El SDK de Firestore encola la
+    // peticion hasta tener el token, asi que las dos cosas avanzan a la vez.
+    const _datos = Promise.all([
+      db.lista('idea_instituciones'),
+      db.lista('idea_cuadernillos'),
+    ]);
     const ses = await requerirSesion(['directivo', 'funcionario', 'manager']);
     if (!ses) throw new Error('redir');
+    // El manager puede mirar cualquier institución pasando ?ie=<id>. A cualquier otro rol el
+    // parámetro se le IGNORA: el alcance de una persona no puede depender de lo que escriba en
+    // la barra de direcciones. Si el id no existe, se sigue con la institución propia.
+    const _iePedida = new URLSearchParams(location.search).get('ie');
+    if (ses.rol === 'manager' && _iePedida) ses.institucion_id = _iePedida;
     document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
     document.getElementById('chip-rol').textContent = ses.rol === 'funcionario' ? 'Funcionario' : 'Directivo';
     document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href='index.html'; });
@@ -148,8 +197,21 @@
     await db.inicializar();
     // Pedagogía por grado×asignatura para análisis/consolidados diferenciados (aditivo; fallback por área).
     await cargarPedagogiaGrado().catch(() => {});
-    const instituciones = await db.lista('idea_instituciones');
-    const cuadernillos = await db.lista('idea_cuadernillos');
+    // Independientes entre si: se piden a la vez y no una detras de otra.
+    const [instituciones, cuadernillos] = await _datos;
+    // Aviso visible de que se está mirando otra institución, para que no haya confusión.
+    if (ses.rol === 'manager' && _iePedida) {
+      const _n = (instituciones.find(i => i.id === _iePedida) || {}).nombre || _iePedida;
+      const _hero = document.querySelector('.panel-hero-doc') || document.querySelector('main');
+      if (_hero) {
+        const _av = document.createElement('p');
+        _av.className = 'text-xs mt-2';
+        _av.style.cssText = 'color:#9F1239;font-weight:600';
+        _av.textContent = 'Viendo como manager: ' + _n;
+        _hero.appendChild(_av);
+      }
+    }
+
     // Lectura DIRIGIDA: solo las aplicaciones de la institución de este usuario (no toda
     // la colección) → escala con muchos usuarios. Sin institución asignada (vista global),
     // trae todas. No confiamos en la bandera `oficial`; abajo se elige una por integridad.
@@ -482,16 +544,26 @@
         const gradosPos = [...new Set(apps.map(a => String(a.grado)))];
         const periodosPos = [...new Set(apps.map(a => _periodoDeApp(a)))];
         const asigsPos = [...new Set(apps.map(a => a.area).filter(Boolean))];
+        // SEDES (31-jul-2026). Instituciones como La Caldera tienen sedes rurales ademas de la
+        // principal. Se listan las sedes REALES de la institucion, no las que aparezcan en las
+        // pruebas, para que el desplegable las muestre todas aunque alguna aun no tenga datos.
+        const _ie = instituciones.find(i => i.id === ses.institucion_id) || null;
+        const _sedesIE = (_ie && _ie.sedes) ? _ie.sedes : [];
+        const _sedesConDatos = new Set(apps.map(a => a.sede_id).filter(Boolean));
+        const sedesPos = _sedesIE.length ? _sedesIE : [...(_sedesConDatos)].map(id => ({ id, nombre: id }));
         const campos = {
           grado: gradosPos.length > 1,
           periodo: periodosPos.map(normPeriodo).filter((v,i,a)=>a.indexOf(v)===i).length > 1,
+          sede: sedesPos.length > 1,
           asignatura: asigsPos.length > 1
         };
-        if (campos.grado || campos.periodo || campos.asignatura) {
+        if (campos.grado || campos.periodo || campos.sede || campos.asignatura) {
           construirBarraFiltros(
             contFiltros,
             campos,
-            { grados: gradosPos, periodos: periodosPos, asignaturas: asigsPos },
+            { grados: gradosPos, periodos: periodosPos, asignaturas: asigsPos, sedes: sedesPos,
+              etiquetaTodasLasSedes: (_ie && _ie.nombre)
+                ? `${_ie.nombre} (todas las sedes)` : 'Toda la institución' },
             (f) => {
               appsActivas = apps.filter(a =>
                 pasaFiltro(a, f, _periodoDeApp, (x) => x.area, (x) => x.grado)
@@ -530,6 +602,140 @@
     if (debeAutoIniciar(ses.rol)) {
       setTimeout(() => iniciarTour(ses.rol === 'funcionario' ? 'funcionario' : 'directivo'), 600);
     }
+
+    // ===== Mi institución (solo lectura) =====
+    // El directivo necesita ver su colegio completo: qué sedes tiene, qué docentes hay y en qué
+    // área y grado está cada uno, y el listado de estudiantes de todos los grados. Aquí no se
+    // escribe NADA: asignar es potestad del manager.
+    {
+      const ETIQUETA_AREA = {
+        lectura_critica: 'Lenguaje / Lectura',
+        matematicas: 'Matemáticas',
+        ciencias_naturales: 'C. Naturales',
+        sociales_ciudadanas: 'Ciudadanas / Sociales',
+        ingles: 'Inglés'
+      };
+      const _ieMia = instituciones.find(i => i.id === ses.institucion_id) || null;
+      const _sedesMias = (_ieMia && _ieMia.sedes) ? _ieMia.sedes : [];
+      const _nombreSede = (id) => {
+        const s = _sedesMias.find(x => x.id === id);
+        return s ? (s.nombre || s.id) : (id ? id : 'Sin sede asignada');
+      };
+      let _genteMia = [];
+
+      async function cargarMiInstitucion() {
+        if (_genteMia.length) return;
+        // Solo la gente de esta institución, no la plataforma entera: de 273 documentos a
+        // los del propio colegio.
+        const todos = await db.consultarPorCampo('idea_usuarios', 'institucion_id', ses.institucion_id);
+        _genteMia = todos.filter(u => u.institucion_id === ses.institucion_id);
+      }
+
+      function pintarSedes() {
+        const cont = document.getElementById('mi-ie-sedes');
+        if (!cont) return;
+        const filas = (_sedesMias.length ? _sedesMias : [{ id: null, nombre: 'Sede única' }]).map(s => {
+          const est = _genteMia.filter(u => u.rol === 'estudiante' && String(u.sede_id || '') === String(s.id || '')).length;
+          const doc = _genteMia.filter(u => u.rol === 'docente' && String(u.sede_id || '') === String(s.id || '')).length;
+          return '<tr><th>' + escapeHtml(s.nombre || s.id) + '</th>' +
+                 '<td style="text-align:center">' + est + '</td>' +
+                 '<td style="text-align:center">' + doc + '</td></tr>';
+        }).join('');
+        const huerfanos = _genteMia.filter(u => u.rol === 'estudiante' && !u.sede_id).length;
+        cont.innerHTML = '<div style="overflow-x:auto"><table class="matriz"><thead><tr>' +
+          '<th class="matriz__esq">Sede</th><th>Estudiantes</th><th>Docentes</th>' +
+          '</tr></thead><tbody>' + filas + '</tbody></table></div>' +
+          (huerfanos ? '<p class="text-xs text-slate-500 mt-3">' + huerfanos + ' estudiante(s) todavía sin sede asignada.</p>' : '');
+      }
+
+      function pintarDocentes() {
+        const cont = document.getElementById('mi-ie-docentes');
+        if (!cont) return;
+        const docentes = _genteMia.filter(u => u.rol === 'docente')
+          .sort((a, b) => String(a.nombre_completo || '').localeCompare(String(b.nombre_completo || '')));
+        if (!docentes.length) { cont.innerHTML = '<p class="text-sm text-slate-500">Todavía no hay docentes registrados.</p>'; return; }
+        cont.innerHTML = '<div style="overflow-x:auto"><table class="matriz"><thead><tr>' +
+          '<th class="matriz__esq">Docente</th><th>Sede</th><th>Asignación</th>' +
+          '</tr></thead><tbody>' + docentes.map(d => {
+            const asg = d.asignaciones || [];
+            let detalle;
+            if (asg.length) {
+              // Se agrupa por área para que se lea "Matemáticas: 6°, 7°, 8°" y no una lista suelta.
+              const porArea = {};
+              asg.forEach(a => { (porArea[a.area_slug] = porArea[a.area_slug] || []).push(String(a.grado)); });
+              detalle = Object.keys(porArea).map(k =>
+                '<span class="asig-chip">' + escapeHtml(ETIQUETA_AREA[k] || k) + ': ' +
+                porArea[k].sort((x, y) => Number(x) - Number(y)).map(g => g + '°').join(', ') + '</span>').join(' ');
+            } else if ((d.grupos_asignados || []).length) {
+              detalle = (d.grupos_asignados || []).map(g => '<span class="asig-chip">' + escapeHtml(String(g).replace('-', '° ')) + '</span>').join(' ');
+            } else {
+              detalle = '<span class="asig-chip">Sin asignación · ve todo</span>';
+            }
+            return '<tr><th>' + escapeHtml(d.nombre_completo || d.usuario || 'N/D') +
+              '<div class="asig-doc__meta">' + escapeHtml((d.tipo_documento || 'CC') + ' ' + (d.numero_documento || '')) + '</div></th>' +
+              '<td style="text-align:left;padding-left:10px">' + escapeHtml(_nombreSede(d.sede_id)) + '</td>' +
+              '<td style="text-align:left;padding-left:10px">' + detalle + '</td></tr>';
+          }).join('') + '</tbody></table></div>';
+      }
+
+      function pintarEstudiantes() {
+        const cont = document.getElementById('mi-ie-estudiantes');
+        if (!cont) return;
+        const fSede = (document.getElementById('mi-ie-f-sede') || {}).value || '';
+        const fGrado = (document.getElementById('mi-ie-f-grado') || {}).value || '';
+        const fTexto = ((document.getElementById('mi-ie-f-texto') || {}).value || '').trim().toLowerCase();
+        const todos = _genteMia.filter(u => u.rol === 'estudiante');
+        let lista = todos;
+        if (fSede) lista = lista.filter(e => String(e.sede_id || '') === fSede);
+        if (fGrado) lista = lista.filter(e => String(e.grado) === fGrado);
+        if (fTexto) lista = lista.filter(e =>
+          ((e.nombre_completo || '') + ' ' + (e.numero_documento || '')).toLowerCase().includes(fTexto));
+        const cont2 = document.getElementById('mi-ie-conteo');
+        if (cont2) cont2.textContent = 'Mostrando ' + lista.length + ' de ' + todos.length + ' estudiantes.';
+        if (!lista.length) { cont.innerHTML = '<p class="text-sm text-slate-500">Ningún estudiante coincide con estos filtros.</p>'; return; }
+        const filas = lista.slice().sort((a, b) =>
+          Number(a.grado || 0) - Number(b.grado || 0)
+          || String(a.grupo || '').localeCompare(String(b.grupo || ''))
+          || String(a.nombre_completo || '').localeCompare(String(b.nombre_completo || '')))
+          .map(e => '<tr><th>' + escapeHtml(e.nombre_completo || 'N/D') +
+            '<div class="asig-doc__meta">' + escapeHtml((e.tipo_documento || '') + ' ' + (e.numero_documento || '')) + '</div></th>' +
+            '<td>' + escapeHtml(String(e.grado || '')) + '°</td>' +
+            '<td>' + escapeHtml(String(e.grupo || '')) + '</td>' +
+            '<td style="text-align:left;padding-left:10px">' + escapeHtml(_nombreSede(e.sede_id)) + '</td></tr>').join('');
+        cont.innerHTML = '<div style="overflow-x:auto"><table class="matriz"><thead><tr>' +
+          '<th class="matriz__esq">Estudiante</th><th>Grado</th><th>Grupo</th><th>Sede</th>' +
+          '</tr></thead><tbody>' + filas + '</tbody></table></div>';
+      }
+
+      function poblarFiltrosMiIE() {
+        const selS = document.getElementById('mi-ie-f-sede');
+        const selG = document.getElementById('mi-ie-f-grado');
+        if (!selS || selS.dataset.listo) return;
+        selS.innerHTML = '<option value="">Todas las sedes</option>' +
+          _sedesMias.map(s => '<option value="' + s.id + '">' + escapeHtml(s.nombre || s.id) + '</option>').join('');
+        const grados = [...new Set(_genteMia.filter(u => u.rol === 'estudiante' && u.grado).map(u => String(u.grado)))]
+          .sort((a, b) => Number(a) - Number(b));
+        selG.innerHTML = '<option value="">Todos los grados</option>' +
+          grados.map(g => '<option value="' + g + '">' + g + '°</option>').join('');
+        ['mi-ie-f-sede', 'mi-ie-f-grado', 'mi-ie-f-texto'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.addEventListener(id === 'mi-ie-f-texto' ? 'input' : 'change', pintarEstudiantes);
+        });
+        selS.dataset.listo = '1';
+      }
+
+      // Se carga la primera vez que se abre la pestaña, no al entrar al panel: así no se
+      // retrasa el consolidado, que es lo que el directivo mira primero.
+      const btnMiIE = document.querySelector('[data-vista="mi-ie"]');
+      if (btnMiIE) btnMiIE.addEventListener('click', async () => {
+        await cargarMiInstitucion();
+        poblarFiltrosMiIE();
+        pintarSedes();
+        pintarDocentes();
+        pintarEstudiantes();
+      });
+    }
+
   </script>
 </body>
 </html>

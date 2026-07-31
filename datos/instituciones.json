@@ -8,11 +8,30 @@
       "municipio": "Pasto",
       "departamento": "Nariño",
       "sedes": [
-        { "id": "sjb-centro", "nombre": "Centro" },
-        { "id": "sjb-principal", "nombre": "Principal" }
+        {
+          "id": "sjb-centro",
+          "nombre": "Centro"
+        },
+        {
+          "id": "sjb-principal",
+          "nombre": "Principal"
+        }
       ],
-      "grados": ["3", "4", "5", "6", "7", "8", "9", "10", "11"],
-      "grupos": ["A", "B"]
+      "grados": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "grupos": [
+        "A",
+        "B"
+      ]
     },
     {
       "id": "iem-hrs",
@@ -22,10 +41,19 @@
       "municipio": "Pasto",
       "departamento": "Nariño",
       "sedes": [
-        { "id": "hrs-principal", "nombre": "Principal" }
+        {
+          "id": "hrs-principal",
+          "nombre": "Principal"
+        }
       ],
-      "grados": ["11"],
-      "grupos": ["1°", "2°", "3°"]
+      "grados": [
+        "11"
+      ],
+      "grupos": [
+        "1°",
+        "2°",
+        "3°"
+      ]
     },
     {
       "id": "iem-la-caldera",
@@ -35,10 +63,42 @@
       "municipio": "Pasto",
       "departamento": "Nariño",
       "sedes": [
-        { "id": "caldera-principal", "nombre": "Principal" }
+        {
+          "id": "caldera-principal",
+          "nombre": "I.E.M. La Caldera · Sede Principal"
+        },
+        {
+          "id": "caldera-esc-nva-campo-alegre",
+          "nombre": "ESC NVA CAMPO ALEGRE"
+        },
+        {
+          "id": "caldera-esc-rur-mix-bajo-arrayanes",
+          "nombre": "ESC RUR MIX BAJO ARRAYANES"
+        },
+        {
+          "id": "caldera-esc-rur-mix-la-pradera",
+          "nombre": "ESC RUR MIX LA PRADERA"
+        },
+        {
+          "id": "caldera-esc-rur-mix-san-antonio",
+          "nombre": "ESC RUR MIX SAN ANTONIO"
+        }
       ],
-      "grados": ["3", "4", "5", "6", "7", "8", "9", "10", "11"],
-      "grupos": ["A", "B"]
+      "grados": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "grupos": [
+        "A",
+        "B"
+      ]
     }
   ],
   "secretarias_educacion": [
@@ -46,13 +106,18 @@
       "id": "sed-narino",
       "nombre": "Secretaría de Educación Departamental de Nariño",
       "departamento": "Nariño",
-      "instituciones_ids": ["iem-sjb"]
+      "instituciones_ids": [
+        "iem-sjb"
+      ]
     },
     {
       "id": "sed-pasto",
       "nombre": "Secretaría de Educación Municipal de Pasto",
       "departamento": "Nariño",
-      "instituciones_ids": ["iem-hrs", "iem-la-caldera"]
+      "instituciones_ids": [
+        "iem-hrs",
+        "iem-la-caldera"
+      ]
     }
   ]
 }

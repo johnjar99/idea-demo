@@ -60,6 +60,14 @@ export function pasaFiltro(item, filtro, getPeriodo, getArea, getGrado) {
   if (!vacio(f.asignatura)) {
     if (String(getArea(item)) !== String(f.asignatura)) return false;
   }
+  // SEDE (31-jul-2026). Instituciones como La Caldera tienen varias sedes y hasta ahora no
+  // habia forma de mirarlas por separado. Se compara contra `sede_id`, que es lo que traen
+  // tanto los perfiles como las aplicaciones. Si el item no declara sede, no se filtra fuera:
+  // no vamos a esconder datos viejos por un campo que antes no se llenaba.
+  if (!vacio(f.sede)) {
+    const s = item && (item.sede_id || item.sede);
+    if (s && String(s) !== String(f.sede)) return false;
+  }
   return true;
 }
 
@@ -168,6 +176,14 @@ export function construirBarraFiltros(contenedorEl, campos, valoresPosibles, onC
       .sort((a, b) => Number(a) - Number(b))
       .map(p => ({ value: p, label: etiquetaPeriodo(p) }));
     mkCampo('periodo', 'Periodo', periodos, 'Todos');
+  }
+  if (cmp.sede) {
+    // Las sedes llegan como {id, nombre}. La primera opcion es la institucion entera, y de ahi
+    // se despliega cada sede. Asi el directivo ve el consolidado o una sede concreta.
+    const sedes = (vp.sedes || []).map(s => (s && s.id)
+      ? { value: s.id, label: s.nombre || s.id }
+      : { value: String(s), label: String(s) });
+    mkCampo('sede', 'Sede', sedes, vp.etiquetaTodasLasSedes || 'Toda la institución');
   }
   if (cmp.asignatura) {
     const asigs = (vp.asignaturas || [])

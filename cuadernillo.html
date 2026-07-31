@@ -16,12 +16,16 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     <!-- Driver.js para onboarding -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <!-- driver.css solo hace falta para el tour: se baja sin bloquear el primer pintado. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"
+        media="print" onload="this.media='all';this.onload=null">
   <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
   <!-- Confetti (solo al enviar) -->
   <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
   <!-- ExcelJS no se usa aquí; retirado para acelerar la carga -->
-  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css">  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+  <!-- Hoja única generada por scripts/unificar_css.py: seis hojas en una. Mismo orden de cascada. -->
+  <link rel="stylesheet" href="css/idea.css">
+  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
     <link rel="modulepreload" href="./js/auth.js">
     <link rel="modulepreload" href="./js/calculo.js">
     <link rel="modulepreload" href="./js/db.js">

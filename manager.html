@@ -10,16 +10,20 @@
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Las fuentes no bloquean el pintado: la URL ya trae display=swap, asi que el texto se ve
+       de entrada con la tipografia del sistema y cambia en cuanto llegan Fraunces e Inter. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <!-- bcryptjs retirado: Firebase Auth gestiona contraseñas. Driver.js diferido para no bloquear. -->
   <!-- Driver.js para la guía de Sabio y el tour -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <!-- driver.css solo hace falta para el tour: se baja sin bloquear el primer pintado. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"
+        media="print" onload="this.media='all';this.onload=null">
   <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/idea-custom.css">
-  <link rel="stylesheet" href="css/idea-v2.css">
-  <link rel="stylesheet" href="css/paneles-claros.css">
-  <link rel="stylesheet" href="css/tailwind.css">
+
+  <!-- Hoja única generada por scripts/unificar_css.py: seis hojas en una. Mismo orden de cascada. -->
+  <link rel="stylesheet" href="css/idea.css">
   <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
     <link rel="modulepreload" href="./js/auth.js">
     <link rel="modulepreload" href="./js/calculo.js">
@@ -54,12 +58,12 @@
       <div class="panel-hero-doc__info">
         <span class="panel-hero-doc__chip">PANEL DEL MANAGER</span>
         <h1 class="panel-hero-doc__greeting">Administración</h1>
-        <p class="panel-hero-doc__sub">Asigna grupos a docentes, directivos a su institución y gestiona los reintentos.</p>
+        <p class="panel-hero-doc__sub">Asigna áreas y grados a cada docente, sedes y grupos a los estudiantes, y gestiona los reintentos.</p>
       </div>
     </section>
 
     <nav class="panel-tabs animate-fade-in" style="animation-delay:60ms">
-      <button class="panel-tab activo" data-vista="grupos"><span class="panel-tab__ic">👥</span>Grupos → Docentes</button>
+      <button class="panel-tab activo" data-vista="grupos"><span class="panel-tab__ic">👥</span>Docentes: áreas y grados</button>
       <button class="panel-tab" data-vista="directivos"><span class="panel-tab__ic">🏫</span>Directivos y funcionarios</button>
       <button class="panel-tab" data-vista="estudiantes"><span class="panel-tab__ic">🎓</span>Estudiantes por IE</button>
       <button class="panel-tab" data-vista="borrar-pruebas"><span class="panel-tab__ic">🗑️</span>Borrar pruebas</button>
@@ -67,15 +71,45 @@
       <button class="panel-tab" data-vista="mantenimiento"><span class="panel-tab__ic">🧪</span>Datos demo</button>
     </nav>
 
-    <div class="doc-acciones-grid animate-fade-in" style="animation-delay:120ms;margin-bottom:20px">
-      <a href="directivo.html" class="doc-accion"><span class="doc-accion__ic">🏛️</span><span>Ver panel directivo</span></a>
-      <a href="docente.html" class="doc-accion"><span class="doc-accion__ic">🧑‍🏫</span><span>Ver panel docente</span></a>
+    <div class="idea-card animate-fade-in" style="animation-delay:120ms;margin-bottom:20px">
+      <div class="asig-filtros">
+        <div style="flex:2 1 300px">
+          <label class="label-idea" for="sel-ie-ver">Ver los paneles de la institución</label>
+          <select id="sel-ie-ver" class="input-idea"></select>
+        </div>
+        <div style="flex:0 0 auto;display:flex;gap:10px;flex-wrap:wrap">
+          <button id="btn-ver-directivo" class="btn-secundario" type="button">🏛️ Panel directivo</button>
+          <button id="btn-ver-docente" class="btn-secundario" type="button">🧑‍🏫 Panel docente</button>
+        </div>
+      </div>
+      <p class="text-xs text-slate-500 mt-3">Abre los paneles con los datos de la institución que elijas, no solo los de la de demostración.</p>
     </div>
 
       <!-- A. Grupos → Docentes -->
       <div id="vista-grupos" class="vista animate-fade-in">
-        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Asignar grupos a docentes</h1>
-        <p class="text-slate-600 text-sm mb-6">Marca los grupos que puede ver cada docente. Si no marcas ninguno, el docente ve <strong>todos</strong> los grupos de su institución.</p>
+        <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Asignar grados y áreas a docentes</h1>
+        <p class="text-slate-600 text-sm mb-6">Marca, para cada docente, <strong>qué área dicta en qué grado</strong>. Si no marcas nada, el docente ve <strong>todo</strong> lo de su institución.</p>
+        <div class="idea-card mb-4" style="max-width:900px">
+          <div class="asig-filtros">
+            <div style="flex:1 1 240px">
+              <label class="label-idea">Institución</label>
+              <select id="filtro-ie-doc" class="input-idea"></select>
+            </div>
+            <div style="flex:1 1 150px">
+              <label class="label-idea">Grado</label>
+              <select id="filtro-grado-doc" class="input-idea"></select>
+            </div>
+            <div style="flex:1 1 210px">
+              <label class="label-idea">Área</label>
+              <select id="filtro-area-doc" class="input-idea"></select>
+            </div>
+            <div style="flex:2 1 250px">
+              <label class="label-idea">Buscar por nombre o documento</label>
+              <input id="filtro-texto-doc" class="input-idea" type="search" placeholder="Escribe para filtrar…">
+            </div>
+          </div>
+          <p id="conteo-docentes" class="text-xs text-slate-500 mt-3"></p>
+        </div>
         <div id="lista-docentes"></div>
       </div>
 
@@ -89,7 +123,7 @@
       <!-- B2. Estudiantes por IE -->
       <div id="vista-estudiantes" class="vista hidden">
         <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Estudiantes por institución</h1>
-        <p class="text-slate-600 text-sm mb-6">Elige una institución para ver sus estudiantes con nombre exacto. Puedes cambiarles el <b>grado</b>, el <b>grupo</b> o moverlos a otra <b>institución</b>, y guardar cada cambio.</p>
+        <p class="text-slate-600 text-sm mb-6">Elige una institución para ver sus estudiantes con nombre exacto. Puedes cambiarles el <b>grado</b>, el <b>grupo</b>, la <b>sede</b> o moverlos a otra <b>institución</b>, y guardar cada cambio.</p>
         <div class="idea-card mb-4" style="max-width:560px">
           <label class="label-idea">Institución</label>
           <select id="sel-ie-est" class="input-idea"></select>
@@ -172,73 +206,286 @@
     import { iniciarTour, debeAutoIniciar, botonAyudaFlotante } from './js/tour.js';
     import { cargarDemosTodas } from './js/sembrar-demos.js';
 
+    // Asignar y escribir es potestad EXCLUSIVA del manager. El directivo, el funcionario y el
+    // rector solo MIRAN, y lo hacen desde su propio panel (directivo.html, pestaña "Mi
+    // institución"), que es de solo lectura. Aquí no entra nadie más.
+    // Se lanzan las lecturas ANTES de esperar la sesion: restaurar la sesion de Firebase Auth
+    // cuesta su tiempo y hasta ahora ese tiempo era espera muerta. El SDK de Firestore encola la
+    // peticion hasta tener el token, asi que las dos cosas avanzan a la vez.
+    // Se pide lo INDISPENSABLE para pintar la pantalla de entrada: las instituciones y los
+    // docentes. Son 24 documentos en vez de los 273 de la colección entera, y con eso la
+    // primera vista ya se dibuja. El resto llega despues, en segundo plano.
+    const _datos = Promise.all([
+      db.lista('idea_instituciones'),
+      db.consultarPorCampo('idea_usuarios', 'rol', 'docente'),
+    ]);
+    // Lo que solo hace falta en otras pestañas NO frena el primer pintado.
+    const _usuariosTodos = db.lista('idea_usuarios');
+    const _cuadernillos = db.lista('idea_cuadernillos');
     const ses = await requerirSesion('manager');
     if (!ses) throw new Error('redir');
     document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
     document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href = 'index.html'; });
 
     await db.inicializar();
-    let instituciones = await db.lista('idea_instituciones');
-    let usuarios = await db.lista('idea_usuarios');
-    const cuadernillos = await db.lista('idea_cuadernillos');
+    // Las tres son independientes: se piden A LA VEZ. En serie eran tres viajes al servidor
+    // (~85 ms cada uno solo de red) antes de pintar nada; asi es uno.
+    let [instituciones, usuarios] = await _datos;
+    let cuadernillos = [];
+    // `usuarios` arranca con solo los docentes y se completa en cuanto llega la lista entera.
+    // Las vistas que necesitan a todo el mundo esperan a `listoUsuarios` antes de dibujar.
+    let _usuariosCompletos = false;
+    const listoUsuarios = _usuariosTodos.then(t => {
+      usuarios = t;
+      _usuariosCompletos = true;
+      // Se repinta lo que ya estuviera en pantalla, ahora con los datos completos.
+      try { renderDocentes(); renderDirectivos(); } catch (_) {}
+      return t;
+    }).catch(() => { _usuariosCompletos = true; return usuarios; });
+    _cuadernillos.then(c => { cuadernillos = c; }).catch(() => {});
 
-    async function recargarUsuarios() { usuarios = await db.lista('idea_usuarios'); }
+    async function recargarUsuarios() {
+      usuarios = await db.lista('idea_usuarios');
+      _usuariosCompletos = true;
+    }
+
+    // Los dos accesos de arriba llevaban SIEMPRE a la institución de demostración, porque los
+    // paneles se guían por el institucion_id de quien mira y el del manager apunta a ie-demo.
+    // Ahora se elige la institución y se pasa en la dirección como ?ie=<id>. Los paneles solo
+    // hacen caso de ese parámetro cuando quien entra es manager.
+    {
+      const sel = document.getElementById('sel-ie-ver');
+      if (sel) {
+        sel.innerHTML = instituciones
+          .map(i => '<option value="' + i.id + '">' + escapeHtml(i.nombre) + '</option>').join('');
+        if (ses.institucion_id && instituciones.some(i => i.id === ses.institucion_id)) sel.value = ses.institucion_id;
+        const abrir = (pagina) => { location.href = pagina + '?ie=' + encodeURIComponent(sel.value || ''); };
+        document.getElementById('btn-ver-directivo').addEventListener('click', () => abrir('directivo.html'));
+        document.getElementById('btn-ver-docente').addEventListener('click', () => abrir('docente.html'));
+      }
+    }
 
     // Cambio de vistas (mismo patrón que el panel directivo)
+    // Pestañas que necesitan a TODOS los usuarios, no solo a los docentes. Si aún no ha llegado
+    // la lista completa se espera SOLO al abrirlas, no al entrar al panel.
+    const _VISTAS_CON_TODOS = new Set(['estudiantes', 'borrar-pruebas', 'reintentos']);
     document.querySelectorAll('[data-vista]').forEach(b => {
-      b.addEventListener('click', () => {
+      b.addEventListener('click', async () => {
         document.querySelectorAll('[data-vista]').forEach(x => x.classList.remove('activo'));
         b.classList.add('activo');
         document.querySelectorAll('.vista').forEach(v => v.classList.add('hidden'));
-        document.getElementById(`vista-${b.dataset.vista}`).classList.remove('hidden');
+        const destino = document.getElementById(`vista-${b.dataset.vista}`);
+        destino.classList.remove('hidden');
+        if (_VISTAS_CON_TODOS.has(b.dataset.vista)) {
+          // Estas tres vistas necesitan la lista completa de usuarios y, dos de ellas, tambien
+          // el catalogo de cuadernillos. Se espera AQUI, no al entrar al panel.
+          await Promise.all([listoUsuarios, _cuadernillos]);
+          // Cada vista se dibuja cuando de verdad se abre, ya con sus datos disponibles.
+          try {
+            if (b.dataset.vista === 'estudiantes') renderEstudiantesPorIE();
+            if (b.dataset.vista === 'borrar-pruebas') poblarBorrarPruebas();
+            if (b.dataset.vista === 'reintentos') { poblarSelectoresReintento(); refrescarPermisos(); }
+          } catch (e) { console.warn('[manager] vista', b.dataset.vista, e); }
+        }
       });
     });
 
-    // ===== A. Grupos → Docentes =====
-    function gruposDisponibles(institucionId) {
-      const set = new Set();
-      usuarios
-        .filter(u => u.rol === 'estudiante' && u.institucion_id === institucionId && u.grado && u.grupo)
-        .forEach(u => set.add(`${u.grado}-${u.grupo}`));
-      return [...set].sort();
+    // ===== A. Grados y áreas → Docentes =====
+    // Antes aquí solo se marcaban GRUPOS ("6-A") y el docente veía todas las áreas de ese grupo.
+    // Las planillas de las instituciones son una matriz ÁREA × GRADO, así que eso es lo que se
+    // marca ahora. Se guardan dos campos y no uno:
+    //   asignaciones     -> [{area_slug, grado}]  el detalle fino
+    //   grupos_asignados -> ["3-A","4-A"]         derivado; es la llave que lee el panel docente
+    const AREAS_ASIGNABLES = [
+      { slug: 'lectura_critica',     etiqueta: 'Lenguaje / Lectura' },
+      { slug: 'matematicas',         etiqueta: 'Matemáticas' },
+      { slug: 'ciencias_naturales',  etiqueta: 'C. Naturales' },
+      { slug: 'sociales_ciudadanas', etiqueta: 'Ciudadanas / Sociales' },
+      { slug: 'ingles',              etiqueta: 'Inglés' }
+    ];
+
+    // Los grados que DECLARA la institución mandan; si no los declara, se deducen de sus
+    // estudiantes. Así un grado aparece aunque todavía no tenga a nadie matriculado.
+    function gradosDisponibles(institucionId) {
+      const inst = instituciones.find(i => i.id === institucionId);
+      const decl = (inst && inst.grados) ? inst.grados.map(String) : [];
+      const deEst = usuarios
+        .filter(u => u.rol === 'estudiante' && u.institucion_id === institucionId && u.grado)
+        .map(u => String(u.grado));
+      return [...new Set([...decl, ...deEst])].sort((a, b) => Number(a) - Number(b));
+    }
+
+    // Las sedes REALES de una institución. La Caldera tiene cinco (la principal más cuatro
+    // rurales) y hasta ahora el panel la trataba como una sola cosa: por eso hacía falta esto.
+    function opcionesSede(institucionId, sedeActual) {
+      const inst = instituciones.find(i => i.id === institucionId);
+      const sedes = (inst && inst.sedes) ? inst.sedes : [];
+      if (!sedes.length) return '<option value="">Esta institución no tiene sedes declaradas</option>';
+      return sedes.map(s =>
+        '<option value="' + s.id + '"' + (String(sedeActual || '') === String(s.id) ? ' selected' : '') + '>' +
+        escapeHtml(s.nombre || s.id) + '</option>').join('');
+    }
+
+    // El grupo real del grado (casi siempre "A"). Si el grado aún no tiene estudiantes se asume
+    // "A", que es la convención del proyecto.
+    function grupoDeGrado(institucionId, grado) {
+      const est = usuarios.find(u => u.rol === 'estudiante' && u.institucion_id === institucionId
+        && String(u.grado) === String(grado) && u.grupo);
+      return est ? String(est.grupo) : 'A';
+    }
+
+    function filtrosDocentes() {
+      const val = (id) => (document.getElementById(id) || {}).value || '';
+      return {
+        ie: val('filtro-ie-doc'),
+        grado: val('filtro-grado-doc'),
+        area: val('filtro-area-doc'),
+        texto: val('filtro-texto-doc').trim().toLowerCase()
+      };
+    }
+
+    function poblarFiltrosDocentes() {
+      const selIE = document.getElementById('filtro-ie-doc');
+      if (!selIE || selIE.dataset.listo) return;
+      selIE.innerHTML = '<option value="">Todas las instituciones</option>' +
+        instituciones.map(i => '<option value="' + i.id + '">' + escapeHtml(i.nombre) + '</option>').join('');
+      const gradosTodos = [...new Set(usuarios.filter(u => u.rol === 'estudiante' && u.grado).map(u => String(u.grado)))]
+        .sort((a, b) => Number(a) - Number(b));
+      document.getElementById('filtro-grado-doc').innerHTML = '<option value="">Todos los grados</option>' +
+        gradosTodos.map(g => '<option value="' + g + '">' + g + '°</option>').join('');
+      document.getElementById('filtro-area-doc').innerHTML = '<option value="">Todas las áreas</option>' +
+        AREAS_ASIGNABLES.map(a => '<option value="' + a.slug + '">' + escapeHtml(a.etiqueta) + '</option>').join('');
+      ['filtro-ie-doc', 'filtro-grado-doc', 'filtro-area-doc', 'filtro-texto-doc'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener(id === 'filtro-texto-doc' ? 'input' : 'change', renderDocentes);
+      });
+      selIE.dataset.listo = '1';
     }
 
     function renderDocentes() {
+      poblarFiltrosDocentes();
       const cont = document.getElementById('lista-docentes');
-      const docentes = usuarios.filter(u => u.rol === 'docente');
-      if (!docentes.length) { cont.innerHTML = '<p class="text-slate-500 text-sm">No hay docentes registrados.</p>'; return; }
+      const f = filtrosDocentes();
+      const total = usuarios.filter(u => u.rol === 'docente').length;
+      let docentes = usuarios.filter(u => u.rol === 'docente');
+
+      if (f.ie) docentes = docentes.filter(d => d.institucion_id === f.ie);
+      if (f.texto) docentes = docentes.filter(d =>
+        ((d.nombre_completo || '') + ' ' + (d.usuario || '') + ' ' + (d.numero_documento || ''))
+          .toLowerCase().includes(f.texto));
+
+      // Los filtros de grado y área miran la asignación vigente. Un docente SIN asignación ve
+      // TODO, así que también cuenta como coincidencia: esconderlo daría una idea equivocada.
+      if (f.grado || f.area) {
+        docentes = docentes.filter(d => {
+          const asg = d.asignaciones || [];
+          if (!asg.length && !(d.grupos_asignados || []).length) return true;
+          const porGrado = !f.grado
+            || asg.some(a => String(a.grado) === f.grado)
+            || (d.grupos_asignados || []).some(g => String(g).split('-')[0] === f.grado);
+          const porArea = !f.area || asg.some(a => a.area_slug === f.area);
+          return porGrado && porArea;
+        });
+      }
+
+      const conteo = document.getElementById('conteo-docentes');
+      if (conteo) conteo.textContent = 'Mostrando ' + docentes.length + ' de ' + total + ' docentes.';
+      if (!docentes.length) {
+        cont.innerHTML = '<p class="text-slate-500 text-sm">Ningún docente coincide con estos filtros.</p>';
+        return;
+      }
+
       cont.innerHTML = docentes.map(d => {
         const inst = instituciones.find(i => i.id === d.institucion_id);
-        const grupos = gruposDisponibles(d.institucion_id);
-        const asign = new Set(d.grupos_asignados || []);
-        const checks = grupos.length
-          ? grupos.map(g => `
-              <label class="flex items-center gap-2 text-sm cursor-pointer">
-                <input type="checkbox" data-docente="${d.id}" value="${g}" ${asign.has(g) ? 'checked' : ''}>
-                <span>${g.replace('-', '° ')}</span>
-              </label>`).join('')
-          : '<span class="text-xs text-slate-500">Aún no hay grupos con estudiantes en esta institución.</span>';
-        return `
-          <div class="idea-card mb-4">
-            <div class="flex items-center justify-between gap-3 flex-wrap mb-3">
-              <div>
-                <strong>${escapeHtml(d.nombre_completo || d.usuario || 'N/D')}</strong>
-                <span class="text-xs px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 ml-2">${escapeHtml(inst?.abreviatura || d.institucion_id || 'Sin institución')}</span>
-                <div class="text-xs text-slate-400 mt-0.5">Usuario: ${escapeHtml(d.usuario || 'N/D')}${d.numero_documento ? ' · ' + escapeHtml((d.tipo_documento || 'CC') + ' ' + d.numero_documento) : ''}${d.email ? ' · ' + escapeHtml(d.email) : ''}</div>
-              </div>
-              <button class="btn-idea btn-guardar-grupos" data-docente="${d.id}">Guardar</button>
-            </div>
-            <div class="text-xs text-slate-500 mb-2">Grupos asignados (sin marcar = ve todos):</div>
-            <div class="flex flex-wrap gap-4">${checks}</div>
-          </div>`;
+        const grados = gradosDisponibles(d.institucion_id);
+        const marcadas = new Set((d.asignaciones || []).map(a => a.area_slug + '|' + a.grado));
+        // Compatibilidad hacia atrás: quien todavía no tiene `asignaciones` pero sí grupos, se
+        // muestra con TODAS las áreas de esos grados marcadas, que es justo lo que ve hoy. Así
+        // nadie pierde su asignación por abrir esta pantalla.
+        if (!marcadas.size && (d.grupos_asignados || []).length) {
+          (d.grupos_asignados || []).forEach(g => {
+            const gr = String(g).split('-')[0];
+            AREAS_ASIGNABLES.forEach(a => marcadas.add(a.slug + '|' + gr));
+          });
+        }
+        const filas = grados.map(g =>
+          '<tr>' +
+          '<th>' + g + '°</th>' +
+          AREAS_ASIGNABLES.map(a =>
+            '<td><input type="checkbox" data-docente="' + d.id + '" data-area="' + a.slug + '" data-grado="' + g + '"' +
+            (marcadas.has(a.slug + '|' + g) ? ' checked' : '') +
+            ' aria-label="' + escapeHtml(a.etiqueta) + ' en ' + g + '°"></td>').join('') +
+          '<td class="matriz__acc">' +
+          '<button type="button" class="btn-fila-grado" data-docente="' + d.id + '" data-grado="' + g + '">Todas</button>' +
+          '</td></tr>').join('');
+        const tabla = grados.length
+          ? '<div style="overflow-x:auto"><table class="matriz"><thead><tr>' +
+            '<th class="matriz__esq">Grado</th>' +
+            AREAS_ASIGNABLES.map(a => '<th>' + escapeHtml(a.etiqueta) + '</th>').join('') +
+            '<th></th></tr></thead><tbody>' + filas + '</tbody></table></div>'
+          : '<p class="asig-doc__vacio">Esta institución todavía no declara grados ni tiene estudiantes.</p>';
+        // Resumen legible de lo que tiene marcado hoy, para no obligar a leer la matriz entera.
+        const gradosMarcados = [...new Set([...marcadas].map(k => k.split('|')[1]))].sort((a, b) => Number(a) - Number(b));
+        const resumen = gradosMarcados.length
+          ? gradosMarcados.map(g => '<span class="asig-chip">' + g + '°</span>').join('')
+          : '<span class="asig-chip">Sin asignación · ve todo</span>';
+        return '<div class="asig-doc mb-4">' +
+          '<div class="asig-doc__cab"><div>' +
+          '<div class="asig-doc__nom">' + escapeHtml(d.nombre_completo || d.usuario || 'N/D') +
+          ' <span class="asig-doc__ie">' + escapeHtml((inst && inst.abreviatura) || d.institucion_id || 'Sin institución') + '</span></div>' +
+          '<div class="asig-doc__meta">' + escapeHtml(d.usuario || 'N/D') +
+          (d.numero_documento ? ' · ' + escapeHtml((d.tipo_documento || 'CC') + ' ' + d.numero_documento) : '') +
+          (d.email ? ' · ' + escapeHtml(d.email) : '') + '</div></div>' +
+          '<div class="asig-doc__acciones">' +
+          '<button class="btn-secundario btn-limpiar-asig" data-docente="' + d.id + '" style="font-size:12px">Quitar todo</button>' +
+          '<button class="btn-idea btn-guardar-grupos" data-docente="' + d.id + '">Guardar</button>' +
+          '</div></div>' +
+          '<div class="asig-doc__sede"><label for="sede-' + d.id + '">Sede</label>' +
+          '<select id="sede-' + d.id + '" class="input-idea sel-sede-doc" data-docente="' + d.id + '">' +
+          opcionesSede(d.institucion_id, d.sede_id) + '</select></div>' +
+          '<div class="asig-doc__resumen">Grados asignados: ' + resumen + '</div>' +
+          '<div class="asig-doc__cuerpo">' + tabla + '</div></div>';
       }).join('');
+
+      // Atajo: marcar o desmarcar de un tirón todas las áreas de un grado.
+      cont.querySelectorAll('.btn-fila-grado').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cajas = [...cont.querySelectorAll('input[type=checkbox][data-docente="' + btn.dataset.docente + '"][data-grado="' + btn.dataset.grado + '"]')];
+          const marcar = !cajas.every(c => c.checked);
+          cajas.forEach(c => { c.checked = marcar; });
+        });
+      });
+      cont.querySelectorAll('.btn-limpiar-asig').forEach(btn => {
+        btn.addEventListener('click', () => {
+          cont.querySelectorAll('input[type=checkbox][data-docente="' + btn.dataset.docente + '"]').forEach(c => { c.checked = false; });
+        });
+      });
+
       cont.querySelectorAll('.btn-guardar-grupos').forEach(btn => {
         btn.addEventListener('click', async () => {
           const docId = btn.dataset.docente;
-          const seleccion = [...cont.querySelectorAll(`input[type=checkbox][data-docente="${docId}"]:checked`)].map(c => c.value);
-          await db.actualizar('idea_usuarios', docId, { grupos_asignados: seleccion });
+          const perfil = usuarios.find(u => u.id === docId);
+          const marcadas = [...cont.querySelectorAll('input[type=checkbox][data-docente="' + docId + '"]:checked')]
+            .map(c => ({ area_slug: c.dataset.area, grado: c.dataset.grado }));
+          // `grupos_asignados` se DERIVA de los grados marcados: es lo que sigue leyendo el
+          // panel del docente, así que tiene que quedar coherente con la matriz.
+          const grados = [...new Set(marcadas.map(a => a.grado))].sort((a, b) => Number(a) - Number(b));
+          const grupos = grados.map(g => g + '-' + grupoDeGrado(perfil && perfil.institucion_id, g));
+          // La sede va en el mismo guardado: es parte de la asignación, no un ajuste aparte.
+          const selSede = cont.querySelector('.sel-sede-doc[data-docente="' + docId + '"]');
+          const cambios = { asignaciones: marcadas, grupos_asignados: grupos };
+          if (selSede && selSede.value) cambios.sede_id = selSede.value;
+          try {
+            await db.actualizar('idea_usuarios', docId, cambios);
+          } catch (e) {
+            toast('No se pudo guardar: ' + (e && e.message ? e.message : 'error desconocido'), 'error');
+            return;
+          }
           await recargarUsuarios();
-          toast('Grupos actualizados para el docente', 'exito');
+          toast(marcadas.length
+            ? 'Asignación guardada: ' + marcadas.length + ' área(s) en ' + grados.length + ' grado(s)'
+            : 'Sin marcas: este docente verá todo lo de su institución', 'exito');
+          renderDocentes();
         });
       });
     }
@@ -316,13 +563,14 @@
           <td class="p-2 text-sm"><strong>${escapeHtml(e.nombre_completo || 'N/D')}</strong><div class="text-xs text-slate-400">${escapeHtml(e.usuario || '')}${e.numero_documento ? ' · ' + escapeHtml((e.tipo_documento || 'CC') + ' ' + e.numero_documento) : ''}</div></td>
           <td class="p-2"><select class="input-idea est-grado" style="min-width:78px">${gradoOpts}</select></td>
           <td class="p-2"><select class="input-idea est-grupo" style="min-width:66px">${grupoOpts}</select></td>
+          <td class="p-2"><select class="input-idea est-sede" style="min-width:190px">${opcionesSede(e.institucion_id, e.sede_id)}</select></td>
           <td class="p-2"><select class="input-idea est-inst" style="min-width:170px">${instOpts}</select></td>
           <td class="p-2 text-right"><button class="btn-idea btn-guardar-est">Guardar</button></td>
         </tr>`;
       }).join('');
       cont.innerHTML = `<div class="idea-card"><div class="overflow-x-auto"><table class="w-full">
         <thead><tr class="text-left text-xs text-slate-500 uppercase border-b border-slate-200">
-          <th class="p-2">Estudiante</th><th class="p-2">Grado</th><th class="p-2">Grupo</th><th class="p-2">Institución</th><th class="p-2"></th>
+          <th class="p-2">Estudiante</th><th class="p-2">Grado</th><th class="p-2">Grupo</th><th class="p-2">Sede</th><th class="p-2">Institución</th><th class="p-2"></th>
         </tr></thead><tbody>${filas}</tbody></table></div></div>`;
       cont.querySelectorAll('.btn-guardar-est').forEach(btn => {
         btn.addEventListener('click', async () => {
@@ -331,9 +579,15 @@
           const grado = tr.querySelector('.est-grado').value;
           const grupo = tr.querySelector('.est-grupo').value;
           const institucion_id = tr.querySelector('.est-inst').value;
+          // La sede va en el mismo guardado. Si el estudiante se mueve a otra institucion,
+          // la sede elegida deja de ser valida: se limpia para no dejar una sede huerfana.
+          const selSede = tr.querySelector('.est-sede');
+          const est = usuarios.find(u => u.id === id);
+          const cambioDeIE = est && est.institucion_id !== institucion_id;
+          const sede_id = cambioDeIE ? null : ((selSede && selSede.value) || null);
           btn.disabled = true;
           try {
-            await db.actualizar('idea_usuarios', id, { grado, grupo, institucion_id });
+            await db.actualizar('idea_usuarios', id, { grado, grupo, institucion_id, sede_id });
             await recargarUsuarios();
             toast('Estudiante actualizado', 'exito');
             renderEstudiantesPorIE();
@@ -506,13 +760,10 @@
       }
     });
 
-    // Render inicial
+    // Render inicial: SOLO la pestaña que se ve al entrar. Las otras pertenecen a pestañas
+    // ocultas y ademas necesitan datos que aun no han llegado; se dibujan al abrirlas.
     renderDocentes();
     renderDirectivos();
-    renderEstudiantesPorIE();
-    poblarBorrarPruebas();
-    poblarSelectoresReintento();
-    refrescarPermisos();
 
     // Ayuda de Sabio: botón "?" (tour) + auto-inicio en la primera visita del manager.
     // El botón 📖 (guía completa) lo monta guia-sabio.js automáticamente al importarlo.

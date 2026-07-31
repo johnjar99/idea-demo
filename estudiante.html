@@ -10,13 +10,21 @@
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Las fuentes no bloquean el pintado: la URL ya trae display=swap, asi que el texto se ve
+       de entrada con la tipografia del sistema y cambia en cuanto llegan Fraunces e Inter. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <!-- Driver.js para onboarding -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <!-- driver.css solo hace falta para el tour: se baja sin bloquear el primer pintado. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"
+        media="print" onload="this.media='all';this.onload=null">
   <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
   <!-- ExcelJS y pdf-lib NO se cargan aquí: solo se necesitan al descargar y se cargan bajo demanda, así el panel abre de inmediato. -->
-  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">  <link rel="stylesheet" href="css/tailwind.css">  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
+  <!-- Hoja única generada por scripts/unificar_css.py: seis hojas en una. Mismo orden de cascada. -->
+  <link rel="stylesheet" href="css/idea.css">
+  <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
     <link rel="modulepreload" href="./js/auth.js">
     <link rel="modulepreload" href="./js/cargar-libs.js">
     <link rel="modulepreload" href="./js/certificado.js">
@@ -260,8 +268,11 @@
     // Por estudiante_id: descarga únicamente sus documentos, no toda la colección. Escala
     // con muchos usuarios sin que crezca el tamaño de la lectura. Se cargan una vez y se
     // reutilizan en el bucle (no se relee por cuadernillo).
-    const todas = await db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', ses.user_id);
-    const _permisosEst = await db.consultarPorCampo('idea_permisos_reintento', 'estudiante_id', ses.user_id);
+    // Las dos consultas son del mismo estudiante y no dependen una de otra: van a la vez.
+    const [todas, _permisosEst] = await Promise.all([
+      db.consultarPorCampo('idea_aplicaciones', 'estudiante_id', ses.user_id),
+      db.consultarPorCampo('idea_permisos_reintento', 'estudiante_id', ses.user_id),
+    ]);
     const mias = todas
       .filter(a => a.estudiante_id === ses.user_id && a.estado === 'enviada')
       .sort((a, b) => new Date(a.fecha_envio || a.fecha_fin) - new Date(b.fecha_envio || b.fecha_fin));

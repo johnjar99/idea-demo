@@ -1,0 +1,107 @@
+/* asignacion.css, Matriz de asignación área × grado y fichas de sede del panel de gestión.
+   Sigue el sistema visual del proyecto (idea-custom.css): tarjeta blanca, radio 16, títulos en
+   Plus Jakarta Sans, el rojo de la marca solo como acento y nunca como bloque saturado. */
+
+.asig-doc {
+  border: 1px solid #EEF1F5;
+  border-radius: var(--idea-radius);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 15, 18, 0.04);
+  transition: box-shadow var(--idea-trans);
+}
+.asig-doc:hover { box-shadow: 0 6px 22px rgba(225, 29, 72, 0.08); }
+
+.asig-doc__cab {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 14px; flex-wrap: wrap;
+  padding: 16px 20px;
+  background: linear-gradient(180deg, #FFF7F9 0%, #FFFFFF 100%);
+  border-bottom: 1px solid #F1F3F7;
+}
+.asig-doc__nom {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 700; font-size: 15px; color: var(--idea-negro);
+}
+.asig-doc__meta { font-size: 12px; color: #8A94A6; margin-top: 3px; }
+.asig-doc__ie {
+  font-size: 11px; font-weight: 600; letter-spacing: .02em;
+  padding: 3px 10px; border-radius: 999px;
+  background: #FFE4EA; color: var(--idea-rojo-oscuro); white-space: nowrap;
+}
+.asig-doc__acciones { display: flex; gap: 8px; align-items: center; }
+
+/* Franja de sede: la institución puede tener varias y hay que poder elegirla aquí mismo. */
+.asig-doc__sede {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 12px 20px; border-bottom: 1px solid #F1F3F7; background: #FCFCFD;
+}
+.asig-doc__sede > label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: #8A94A6;
+}
+.asig-doc__sede select { max-width: 340px; margin: 0; }
+
+.asig-doc__cuerpo { padding: 4px 6px 10px; }
+.asig-doc__vacio { padding: 18px 20px; font-size: 13px; color: #8A94A6; }
+.asig-doc__resumen {
+  font-size: 12px; color: #5B6577; padding: 0 20px 14px;
+  display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+}
+.asig-chip {
+  font-size: 11px; font-weight: 600; padding: 2px 9px; border-radius: 999px;
+  background: #F1F3F7; color: #5B6577;
+}
+
+/* --- La matriz --- */
+.matriz { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+.matriz thead th {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .05em;
+  color: #8A94A6; padding: 12px 8px 10px; text-align: center; vertical-align: bottom;
+  white-space: nowrap; border-bottom: 1px solid #EEF1F5;
+}
+.matriz thead th.matriz__esq { text-align: left; padding-left: 14px; }
+.matriz tbody tr:nth-child(odd) { background: #FBFBFD; }
+.matriz tbody tr:hover { background: #FFF5F7; }
+.matriz tbody th {
+  text-align: left; padding: 9px 10px 9px 14px;
+  font-weight: 700; font-size: 13px; color: var(--idea-negro);
+  white-space: nowrap; width: 1%;
+}
+.matriz tbody td { text-align: center; padding: 7px 4px; }
+.matriz tbody td.matriz__acc { text-align: right; padding-right: 12px; white-space: nowrap; }
+
+/* Casilla grande, cómoda de acertar con el dedo, con el rojo de la marca al marcarse. */
+.matriz input[type=checkbox] {
+  appearance: none; -webkit-appearance: none;
+  width: 20px; height: 20px; border-radius: 6px;
+  border: 1.5px solid #D7DCE5; background: #fff; cursor: pointer; vertical-align: middle;
+  transition: background 160ms, border-color 160ms, transform 120ms;
+}
+.matriz input[type=checkbox]:hover { border-color: var(--idea-rojo-claro); }
+.matriz input[type=checkbox]:active { transform: scale(0.92); }
+.matriz input[type=checkbox]:checked {
+  background-color: var(--idea-rojo); border-color: var(--idea-rojo);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5l3 3 6-6'/%3E%3C/svg%3E");
+  background-size: 14px; background-position: center; background-repeat: no-repeat;
+}
+.matriz input[type=checkbox]:focus-visible { outline: 2px solid var(--idea-rojo-claro); outline-offset: 2px; }
+
+.btn-fila-grado {
+  font-size: 11px; padding: 3px 11px; border-radius: 999px;
+  border: 1px solid #E3E7EE; background: #fff; color: #5B6577;
+  cursor: pointer; transition: all 160ms;
+}
+.btn-fila-grado:hover { border-color: var(--idea-rojo-claro); color: var(--idea-rojo); background: #FFF5F7; }
+
+/* Barra de filtros de la pantalla de asignación */
+.asig-filtros { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; }
+.asig-filtros > div { flex: 1 1 200px; min-width: 0; }
+.asig-filtros .input-idea { margin: 0; }
+
+@media (max-width: 720px) {
+  .asig-doc__cab { padding: 14px; }
+  .matriz thead th { font-size: 10px; padding: 10px 4px 8px; }
+  .matriz tbody th { padding-left: 10px; }
+}

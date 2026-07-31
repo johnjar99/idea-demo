@@ -10,7 +10,11 @@
   <!-- Tailwind PRECOMPILADO en css/tailwind.css (sin compilador en vivo, mucho más rápido) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Las fuentes no bloquean el pintado: la URL ya trae display=swap, asi que el texto se ve
+       de entrada con la tipografia del sistema y cambia en cuanto llegan Fraunces e Inter. -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -18,10 +22,12 @@
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <!-- ExcelJS, jsPDF, pdf-lib y html2canvas se cargan BAJO DEMANDA al exportar (js/cargar-libs.js); no bloquean el arranque. -->
     <!-- Driver.js para onboarding -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+  <!-- driver.css solo hace falta para el tour: se baja sin bloquear el primer pintado. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css"
+        media="print" onload="this.media='all';this.onload=null">
   <script defer src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
   <!-- Confetti (solo al celebrar) -->
-  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  <link rel="stylesheet" href="css/tokens.css">  <link rel="stylesheet" href="css/idea-custom.css">  <link rel="stylesheet" href="css/idea-v2.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
   <style>
   /* === Panel Docente - diseño CLARO en tarjetas (mismo lenguaje que el panel del estudiante) === */
   .doc-wrap { max-width: 1120px; margin: 0 auto; padding: 26px 22px 56px; }
@@ -156,7 +162,9 @@
 
   @media (max-width:640px){ .panel-hero-doc__stats{ width:100%; } .panel-hero-doc__greeting{ font-size:24px; } }
   </style>
-  <link rel="stylesheet" href="css/tailwind.css">
+
+  <!-- Hoja única generada por scripts/unificar_css.py: seis hojas en una. Mismo orden de cascada. -->
+  <link rel="stylesheet" href="css/idea.css">
   <!-- MODULEPRELOAD:INICIO (generado por scripts/inyectar_modulepreload.py) -->
     <link rel="modulepreload" href="./js/analisis.js">
     <link rel="modulepreload" href="./js/area-config.js">
@@ -657,8 +665,20 @@
     // esta vacio o falla, el cache queda {} y todo cae al comportamiento por area (11 P1 intacto).
     import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
 
+    // Se lanzan las lecturas ANTES de esperar la sesion: restaurar la sesion de Firebase Auth
+    // cuesta su tiempo y hasta ahora ese tiempo era espera muerta. El SDK de Firestore encola la
+    // peticion hasta tener el token, asi que las dos cosas avanzan a la vez.
+    const _datos = Promise.all([
+      db.lista('idea_cuadernillos'),
+      db.lista('idea_instituciones'),
+    ]);
     const ses = await requerirSesion(['docente', 'directivo', 'funcionario', 'manager']);
     if (!ses) throw new Error('redir');
+    // El manager puede mirar cualquier institución pasando ?ie=<id>. A cualquier otro rol el
+    // parámetro se le IGNORA: el alcance de una persona no puede depender de lo que escriba en
+    // la barra de direcciones. Si el id no existe, se sigue con la institución propia.
+    const _iePedida = new URLSearchParams(location.search).get('ie');
+    if (ses.rol === 'manager' && _iePedida) ses.institucion_id = _iePedida;
     document.getElementById('nombre-usuario').textContent = ses.nombre_completo;
     { const g = document.getElementById('hero-doc-greeting'); if (g) g.textContent = '¡Hola, ' + ((ses.nombre_completo || 'docente').split(' ')[0]) + '!'; }
     document.getElementById('btn-salir').addEventListener('click', async () => { await cerrarSesion(); location.href='index.html'; });
@@ -666,8 +686,21 @@
     await db.inicializar();
     // Precarga de la capa pedagogica por grado (tolerante a error; no bloquea si falla).
     await cargarPedagogiaGrado();
-    const cuadernillos = await db.lista('idea_cuadernillos');
-    const instituciones = await db.lista('idea_instituciones');
+    // Independientes entre si: se piden a la vez y no una detras de otra.
+    const [cuadernillos, instituciones] = await _datos;
+    // Aviso visible de que se está mirando otra institución, para que no haya confusión.
+    if (ses.rol === 'manager' && _iePedida) {
+      const _n = (instituciones.find(i => i.id === _iePedida) || {}).nombre || _iePedida;
+      const _hero = document.querySelector('.panel-hero-doc') || document.querySelector('main');
+      if (_hero) {
+        const _av = document.createElement('p');
+        _av.className = 'text-xs mt-2';
+        _av.style.cssText = 'color:#9F1239;font-weight:600';
+        _av.textContent = 'Viendo como manager: ' + _n;
+        _hero.appendChild(_av);
+      }
+    }
+
     // Lectura DIRIGIDA: solo las aplicaciones de la institución de este usuario (no toda
     // la colección). Escala con muchos usuarios. Si no tiene institución asignada
     // (administrador/manager), trae todas. La bandera `oficial` no se usa (el flujo viejo
@@ -2423,7 +2456,8 @@
 
     // === Panel de Permisos de Reintento ===
     const CUAD_ID_DEFAULT = 'math-11-p1-2023';
-    const allUsers = await db.lista('idea_usuarios');
+    // Solo la gente de esta institución, no la plataforma entera.
+    const allUsers = await db.consultarPorCampo('idea_usuarios', 'institucion_id', ses.institucion_id);
 
     async function refrescarPermisos() {
       const vigentes = await listarPermisosVigentes({ solo_vigentes: true });
