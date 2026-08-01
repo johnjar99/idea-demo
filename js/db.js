@@ -87,11 +87,27 @@ function validarCuadernillo(c) {
 // Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
 // visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
 const SEED_VERSION = '2026-08-01-todo-verificacion';
+
+// La version de contenido NO puede vivir solo aqui. Este archivo lo cachea el navegador, asi que
+// si se queda con una copia vieja de db.js nunca se entera de que hay contenido nuevo y sigue
+// mostrando lo que tenga guardado: es exactamente lo que pasaba al revisar los cuadernillos y
+// verlos sin los cambios. Por eso la version se lee TAMBIEN de datos/_release.json, que ya se
+// pide con cache:'no-store', y manda la mas reciente de las dos.
+async function versionDeContenido() {
+  try {
+    const rel = await fetch('datos/_release.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null);
+    const marca = rel && (rel.seed_version || rel.generado);
+    if (marca) return SEED_VERSION + '|' + marca;
+  } catch (_) {}
+  return SEED_VERSION;
+}
+
 let _sembrado = null;
 async function sembrarSiVacio() {
   let verPrev = null;
   try { verPrev = localStorage.getItem('idea_demo_seed_version'); } catch (_) {}
-  const reseed = verPrev !== SEED_VERSION;
+  const VERSION_VIVA = await versionDeContenido();
+  const reseed = verPrev !== VERSION_VIVA;
 
   // 1) Cuadernillos: leer manifiesto datos/_release.json y cargar los servibles
   //    (estado local | web | vivo). Son los 35 P2 propio + 5 vivos de 11°P1.
@@ -125,7 +141,7 @@ async function sembrarSiVacio() {
   }
 
   // Marca la versión de contenido ya sembrada (para no re-sembrar en cada carga).
-  try { localStorage.setItem('idea_demo_seed_version', SEED_VERSION); } catch (_) {}
+  try { localStorage.setItem('idea_demo_seed_version', VERSION_VIVA); } catch (_) {}
 }
 
 // === Interfaz pública (idéntica a la versión Firestore) ==============================
