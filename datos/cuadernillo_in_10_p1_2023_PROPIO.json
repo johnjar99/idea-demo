@@ -44,21 +44,21 @@
     },
     "ctx-parte2": {
       "titulo": "Conversaciones breves",
-      "texto": "RESPONDE LAS PREGUNTAS 6 A 10. Completa las cinco conversaciones. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2. En las preguntas 6 - 10, marca A, B o C.",
-      "rango_preguntas": "6 a 10",
+      "texto": "RESPONDE LAS PREGUNTAS 12 A 16. Completa las cinco conversaciones. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2. En las preguntas 12 - 16, marca A, B o C.",
+      "rango_preguntas": "12 a 16",
       "imagen": "assets/banco-in-10-p1/ejemplo_conversacion.png"
     },
     "ctx-parte3": {
       "titulo": "Young Readers Club",
       "imagen": "assets/banco-in-10-p1/q11.png",
-      "texto": "Read the text and choose the word that completes each gap.\n\nThe Young Readers Club is a community project that opened ten years ago. The club works in (11)_______ of the small towns near our city, and it (12)_______ children to enjoy books for free. Many families cannot buy books for (13)_______, so the club brings boxes of stories to schools and parks. (14)_______ reading aloud, volunteers help young people improve their words and their confidence. Since 2014, the project (15)_______ helped more than two thousand children (16)_______ love books.",
-      "rango_preguntas": "11 a 16"
+      "texto": "Read the text and choose the word that completes each gap.\n\nThe Young Readers Club is a community project that opened ten years ago. The club works in (17)_______ of the small towns near our city, and it (18)_______ children to enjoy books for free. Many families cannot buy books for (19)_______, so the club brings boxes of stories to schools and parks. (20)_______ reading aloud, volunteers help young people improve their words and their confidence. Since 2014, the project (21)_______ helped more than two thousand children (22)_______ love books.",
+      "rango_preguntas": "17 a 22"
     },
     "ctx-parte4": {
       "titulo": "What Sofía eats on a training day",
       "imagen": "",
       "texto": "Read the text and answer the questions that follow.\n\nSofía is sixteen and she swims with her school team. In primary school she ate candy and potato chips almost daily, and she felt weak in the pool. Last year she gave up fried food. Her coach told her to eat lentils and oats so she could train harder. On Saturday, Sofía got up at five and had arepas with egg at home. Then she took the bus to the sports centre. She has a big breakfast on Saturday because her practice is very long and she cannot go out to eat. At midday she was in a hurry, so she only had a bowl of soup at the sports centre, with a lemonade. At night, her aunt made soup again, and Sofía had it with a cup of hot cocoa. Now she is faster in the pool and feels strong.",
-      "rango_preguntas": "17 a 22"
+      "rango_preguntas": "6 a 11"
     }
   },
   "preguntas": [
@@ -69,15 +69,15 @@
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You do this quietly with a book in your hands.</p>",
       "opciones": {
-        "A": "camping",
-        "B": "cooking",
-        "C": "fishing",
-        "D": "gardening",
+        "A": "gardening",
+        "B": "running",
+        "C": "camping",
+        "D": "reading",
         "E": "painting",
-        "F": "reading",
-        "G": "running"
+        "F": "cooking",
+        "G": "fishing"
       },
-      "clave": "F",
+      "clave": "D",
       "competencia": "a",
       "afirmacion": "1",
       "evidencia": "1.a",
@@ -86,14 +86,14 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico de pasatiempos a partir de una descripción de la actividad, sin apoyo de imagen.",
-      "justificacion_correcta": "Opción F, dado que «reading» (leer) es la actividad que se hace en silencio con un libro en las manos.",
+      "justificacion_correcta": "Opción «reading», dado que «reading» (leer) es la actividad que se hace en silencio con un libro en las manos.",
       "opciones_incorrectas": {
-        "A": "«camping» (acampar) es dormir en una tienda al aire libre, no algo que se haga con un libro en las manos.",
-        "B": "«cooking» (cocinar) se hace con comida en la cocina, no con un libro.",
-        "C": "«fishing» (pescar) se hace esperando junto al agua, no con un libro.",
-        "D": "«gardening» (jardinería) se hace con plantas, no con un libro.",
+        "C": "«camping» (acampar) es dormir en una tienda al aire libre, no algo que se haga con un libro en las manos.",
+        "F": "«cooking» (cocinar) se hace con comida en la cocina, no con un libro.",
+        "G": "«fishing» (pescar) se hace esperando junto al agua, no con un libro.",
+        "A": "«gardening» (jardinería) se hace con plantas, no con un libro.",
         "E": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con pinceles y colores, no con un libro.",
-        "G": "«running» (correr) es moverse rápido, no una actividad silenciosa con un libro."
+        "B": "«running» (correr) es moverse rápido, no una actividad silenciosa con un libro."
       }
     },
     {
@@ -103,15 +103,15 @@
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You do this fast, moving your legs in a park or a race.</p>",
       "opciones": {
-        "A": "camping",
-        "B": "cooking",
-        "C": "fishing",
-        "D": "gardening",
-        "E": "painting",
-        "F": "reading",
-        "G": "running"
+        "A": "gardening",
+        "B": "running",
+        "C": "camping",
+        "D": "reading",
+        "E": "cooking",
+        "F": "painting",
+        "G": "fishing"
       },
-      "clave": "G",
+      "clave": "B",
       "competencia": "a",
       "afirmacion": "1",
       "evidencia": "1.a",
@@ -120,11 +120,11 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico de pasatiempos a partir de una descripción de la actividad.",
-      "justificacion_correcta": "Opción G, dado que «running» (correr) es la actividad en la que se mueven las piernas rápido en un parque o una carrera.",
+      "justificacion_correcta": "Opción «running», dado que «running» (correr) es la actividad en la que se mueven las piernas rápido en un parque o una carrera.",
       "opciones_incorrectas": {
-        "A": "«camping» (acampar) se hace durmiendo en una tienda, no corriendo.",
-        "C": "«fishing» (pescar) se hace esperando junto al agua, no corriendo.",
-        "F": "«reading» (leer) se hace sentado y en silencio, no corriendo."
+        "C": "«camping» (acampar) se hace durmiendo en una tienda, no corriendo.",
+        "G": "«fishing» (pescar) se hace esperando junto al agua, no corriendo.",
+        "D": "«reading» (leer) se hace sentado y en silencio, no corriendo."
       }
     },
     {
@@ -134,15 +134,15 @@
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You do this near a lake or a river, and you wait quietly until you catch something to eat.</p>",
       "opciones": {
-        "A": "camping",
-        "B": "cooking",
-        "C": "fishing",
-        "D": "gardening",
-        "E": "painting",
-        "F": "reading",
-        "G": "running"
+        "A": "fishing",
+        "B": "reading",
+        "C": "running",
+        "D": "camping",
+        "E": "gardening",
+        "F": "cooking",
+        "G": "painting"
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "a",
       "afirmacion": "3",
       "evidencia": "3.a",
@@ -151,11 +151,11 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario de pasatiempos a partir de una descripción que exige inferir el lugar y los objetos.",
-      "justificacion_correcta": "Opción C, dado que «fishing» (pescar) es la actividad que se hace junto a un lago o un río esperando atrapar un pez para comer.",
+      "justificacion_correcta": "Opción «fishing», dado que «fishing» (pescar) es la actividad que se hace junto a un lago o un río esperando atrapar un pez para comer.",
       "opciones_incorrectas": {
-        "A": "«camping» (acampar) también ocurre al aire libre, pero no consiste en atrapar nada para comer.",
-        "D": "«gardening» (jardinería) se hace con plantas en un jardín, no junto a un lago.",
-        "G": "«running» (correr) se hace moviéndose rápido, no esperando junto al agua."
+        "D": "«camping» (acampar) también ocurre al aire libre, pero no consiste en atrapar nada para comer.",
+        "E": "«gardening» (jardinería) se hace con plantas en un jardín, no junto a un lago.",
+        "C": "«running» (correr) se hace moviéndose rápido, no esperando junto al agua."
       }
     },
     {
@@ -165,15 +165,15 @@
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You do this in the kitchen to make food for your family.</p>",
       "opciones": {
-        "A": "camping",
-        "B": "cooking",
-        "C": "fishing",
-        "D": "gardening",
-        "E": "painting",
-        "F": "reading",
-        "G": "running"
+        "A": "reading",
+        "B": "fishing",
+        "C": "running",
+        "D": "painting",
+        "E": "camping",
+        "F": "cooking",
+        "G": "gardening"
       },
-      "clave": "B",
+      "clave": "F",
       "competencia": "a",
       "afirmacion": "1",
       "evidencia": "1.a",
@@ -182,14 +182,14 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico de pasatiempos a partir de una descripción de la actividad.",
-      "justificacion_correcta": "Opción B, dado que «cooking» (cocinar) es la actividad que se hace en la cocina para preparar comida.",
+      "justificacion_correcta": "Opción «cooking», dado que «cooking» (cocinar) es la actividad que se hace en la cocina para preparar comida.",
       "opciones_incorrectas": {
-        "A": "«camping» (acampar) ocurre al aire libre, no en la cocina.",
-        "C": "«fishing» (pescar) se hace junto al agua para atrapar peces, no en la cocina.",
-        "D": "«gardening» (jardinería) se hace fuera, con plantas, no en la cocina.",
-        "E": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con colores, no para preparar comida.",
-        "F": "«reading» (leer) se hace con un libro, no para preparar comida.",
-        "G": "«running» (correr) es un ejercicio, no una forma de preparar comida."
+        "E": "«camping» (acampar) ocurre al aire libre, no en la cocina.",
+        "B": "«fishing» (pescar) se hace junto al agua para atrapar peces, no en la cocina.",
+        "G": "«gardening» (jardinería) se hace fuera, con plantas, no en la cocina.",
+        "D": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con colores, no para preparar comida.",
+        "A": "«reading» (leer) se hace con un libro, no para preparar comida.",
+        "C": "«running» (correr) es un ejercicio, no una forma de preparar comida."
       }
     },
     {
@@ -199,15 +199,15 @@
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You do this outside, putting seeds in the ground and giving water to your plants.</p>",
       "opciones": {
-        "A": "camping",
-        "B": "cooking",
+        "A": "cooking",
+        "B": "painting",
         "C": "fishing",
-        "D": "gardening",
-        "E": "painting",
-        "F": "reading",
-        "G": "running"
+        "D": "camping",
+        "E": "reading",
+        "F": "running",
+        "G": "gardening"
       },
-      "clave": "D",
+      "clave": "G",
       "competencia": "a",
       "afirmacion": "2",
       "evidencia": "2.a",
@@ -216,311 +216,25 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario de pasatiempos a partir de una descripción que combina lugar y acciones cotidianas.",
-      "justificacion_correcta": "Opción D, dado que «gardening» (jardinería) es la actividad de sembrar semillas y regar las plantas afuera.",
+      "justificacion_correcta": "Opción «gardening», dado que «gardening» (jardinería) es la actividad de sembrar semillas y regar las plantas afuera.",
       "opciones_incorrectas": {
-        "A": "«camping» (acampar) se hace al aire libre, pero no consiste en sembrar plantas.",
-        "B": "«cooking» (cocinar) se hace en la cocina, no en el jardín.",
+        "D": "«camping» (acampar) se hace al aire libre, pero no consiste en sembrar plantas.",
+        "A": "«cooking» (cocinar) se hace en la cocina, no en el jardín.",
         "C": "«fishing» (pescar) se hace junto al agua, no plantando semillas."
       }
     },
     {
-      "id": "P10I06",
-      "numero": 6,
-      "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Your new bike is really beautiful!”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "Is it raining?",
-        "B": "Are you tired?",
-        "C": "Thanks a lot!"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": "1",
-      "evidencia": "1.b",
-      "nivel_mcer": "Pre A1",
-      "parte": 2,
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Elegir la réplica adecuada para reaccionar a un cumplido sencillo.",
-      "justificacion_correcta": "Opción C, dado que «Thanks a lot!» es la forma natural de responder cuando alguien hace un cumplido sobre algo tuyo.",
-      "opciones_incorrectas": {
-        "A": "«Is it raining?» pregunta por el clima y no responde al cumplido.",
-        "B": "«Are you tired?» pregunta por el estado del interlocutor y no reacciona al cumplido."
-      }
-    },
-    {
-      "id": "P10I07",
-      "numero": 7,
-      "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Next weekend, I'm travelling to Mompox.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "How old are you?",
-        "B": "Where is that?",
-        "C": "What time is it?"
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": "2",
-      "evidencia": "2.b",
-      "nivel_mcer": "A1",
-      "parte": 2,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la réplica adecuada para reaccionar ante el anuncio de un viaje a un lugar desconocido.",
-      "justificacion_correcta": "Opción B, dado que el interlocutor 1 nombra un lugar que el interlocutor 2 no conoce, así que «Where is that?» pregunta por su ubicación, una reacción pertinente.",
-      "opciones_incorrectas": {
-        "A": "«How old are you?» pregunta por la edad, que no tiene relación con el viaje.",
-        "C": "«What time is it?» pregunta la hora y no responde al anuncio del viaje."
-      }
-    },
-    {
-      "id": "P10I08",
-      "numero": 8,
-      "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Could I try on that red jacket, please?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "Never.",
-        "B": "Of course.",
-        "C": "I'm not sure."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": "1",
-      "evidencia": "1.b",
-      "nivel_mcer": "Pre A1",
-      "parte": 2,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la réplica adecuada para acceder a una petición sencilla.",
-      "justificacion_correcta": "Opción B, dado que ante la petición de probarse una chaqueta, «Of course.» indica que el interlocutor 2 accede con gusto a la solicitud.",
-      "opciones_incorrectas": {
-        "A": "«Never.» niega de forma tajante y no es una respuesta amable a una petición de tienda.",
-        "C": "«I'm not sure.» expresa duda y no concede ni niega la petición."
-      }
-    },
-    {
-      "id": "P10I09",
-      "numero": 9,
-      "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I just got a new puppy yesterday.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "Turn left.",
-        "B": "It's mine.",
-        "C": "What's its name?"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": "1",
-      "evidencia": "1.b",
-      "nivel_mcer": "Pre A1",
-      "parte": 2,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la réplica adecuada para mostrar interés ante una noticia personal.",
-      "justificacion_correcta": "Opción C, dado que «What's its name?» muestra interés por la noticia de la nueva mascota y pregunta por un dato sobre ella.",
-      "opciones_incorrectas": {
-        "A": "«Turn left.» es una indicación de dirección y no reacciona a la noticia.",
-        "B": "«It's mine.» afirma posesión, pero el interlocutor 1 ya dijo que el cachorro es suyo."
-      }
-    },
-    {
-      "id": "P10I10",
-      "numero": 10,
-      "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I can't reach the top shelf. Could you help me?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "Too bad.",
-        "B": "Never mind.",
-        "C": "Sure, which book do you need?"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": "3",
-      "evidencia": "3.b",
-      "nivel_mcer": "A2",
-      "parte": 2,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la réplica adecuada para responder cooperativamente a una petición de ayuda.",
-      "justificacion_correcta": "Opción C, dado que ante la petición de ayuda para alcanzar un estante alto, el interlocutor 2 acepta y pregunta qué necesita, una reacción cooperativa y precisa.",
-      "opciones_incorrectas": {
-        "A": "«Too bad.» expresa lástima y no ofrece la ayuda que se pide.",
-        "B": "«Never mind.» indica que algo no importa, pero aquí sí se pidió ayuda concreta."
-      }
-    },
-    {
-      "id": "P10I11",
-      "numero": 11,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Young Readers Club",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (11) in the text.</p>",
-      "opciones": {
-        "A": "some",
-        "B": "any",
-        "C": "little"
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": "2",
-      "evidencia": "2.c",
-      "nivel_mcer": "A1",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el cuantificador correcto (some/any/little) según el tipo de sustantivo y la oración afirmativa.",
-      "justificacion_correcta": "Opción A, dado que «some» se usa en oraciones afirmativas para una cantidad indeterminada de cosas contables: algunos de los pueblos pequeños. El estudiante debe conocer el uso de los cuantificadores.",
-      "opciones_incorrectas": {
-        "B": "«any» se usa en preguntas y oraciones negativas, y esta oración es afirmativa.",
-        "C": "«little» acompaña sustantivos incontables, pero «towns» (pueblos) es contable."
-      }
-    },
-    {
-      "id": "P10I12",
-      "numero": 12,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Young Readers Club",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (12) in the text.</p>",
-      "opciones": {
-        "A": "helping",
-        "B": "helps",
-        "C": "helped"
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": "2",
-      "evidencia": "2.c",
-      "nivel_mcer": "A1",
-      "parte": 3,
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Seleccionar la forma verbal correcta después de un sujeto en presente simple.",
-      "justificacion_correcta": "Opción B, dado que el sujeto «it» (el club) es tercera persona del singular en presente simple, así que el verbo toma «-s»: «it helps children». El estudiante debe dominar el presente simple.",
-      "opciones_incorrectas": {
-        "A": "«helping» es gerundio y necesitaría un auxiliar («is»), que no aparece.",
-        "C": "«helped» es pasado, y el texto describe lo que el club hace habitualmente, en presente."
-      }
-    },
-    {
-      "id": "P10I13",
-      "numero": 13,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Young Readers Club",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (13) in the text.</p>",
-      "opciones": {
-        "A": "themselves",
-        "B": "yourselves",
-        "C": "ourselves"
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": "3",
-      "evidencia": "3.c",
-      "nivel_mcer": "A2",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el pronombre reflexivo que concuerda con el sujeto plural de tercera persona.",
-      "justificacion_correcta": "Opción A, dado que la oración se refiere a «many families» (terceras personas en plural), de modo que el reflexivo correcto es «themselves». El estudiante debe conocer los pronombres reflexivos.",
-      "opciones_incorrectas": {
-        "B": "«yourselves» concuerda con «you», y el texto habla de las familias, no del lector.",
-        "C": "«ourselves» concuerda con «we», y el texto no habla en primera persona del plural."
-      }
-    },
-    {
-      "id": "P10I14",
-      "numero": 14,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Young Readers Club",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (14) in the text.</p>",
-      "opciones": {
-        "A": "Among",
-        "B": "Through",
-        "C": "Since"
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": "3",
-      "evidencia": "3.c",
-      "nivel_mcer": "A2",
-      "parte": 3,
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Seleccionar la preposición que indica el medio o la manera de lograr algo.",
-      "justificacion_correcta": "Opción B, dado que «Through» indica el medio por el cual se consigue algo: a través de la lectura en voz alta, los voluntarios ayudan a los jóvenes. El estudiante debe conocer el uso de las preposiciones.",
-      "opciones_incorrectas": {
-        "A": "«Among» indica estar en medio de varias personas o cosas, no el medio para lograr algo.",
-        "C": "«Since» indica un punto de partida en el tiempo, no un medio."
-      }
-    },
-    {
-      "id": "P10I15",
-      "numero": 15,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Young Readers Club",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (15) in the text.</p>",
-      "opciones": {
-        "A": "has",
-        "B": "have",
-        "C": "had"
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": "3",
-      "evidencia": "3.c",
-      "nivel_mcer": "A2",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el auxiliar del presente perfecto que concuerda con un sujeto de tercera persona del singular.",
-      "justificacion_correcta": "Opción A, dado que el sujeto «the project» es tercera persona del singular, así que el auxiliar del presente perfecto es «has»: «the project has helped». El estudiante debe usar el presente perfecto.",
-      "opciones_incorrectas": {
-        "B": "«have» es el auxiliar del presente perfecto para las demás personas, no para «it».",
-        "C": "«had» es el auxiliar del pasado perfecto, y «Since 2014» pide presente perfecto."
-      }
-    },
-    {
-      "id": "P10I16",
-      "numero": 16,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Young Readers Club",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (16) in the text.</p>",
-      "opciones": {
-        "A": "when",
-        "B": "where",
-        "C": "who"
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": "2",
-      "evidencia": "2.c",
-      "nivel_mcer": "A1",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el pronombre relativo que reemplaza a un grupo de personas.",
-      "justificacion_correcta": "Opción C, dado que el pronombre relativo «who» es el que reemplaza a personas; aquí se refiere a los «children» (niños) que ahora aman los libros. El estudiante debe conocer los pronombres relativos y sus usos.",
-      "opciones_incorrectas": {
-        "A": "«when» se usa como relativo para reemplazar referencias de tiempo, no de personas.",
-        "B": "«where» se usa para reemplazar referencias de lugar, no a un grupo de personas."
-      }
-    },
-    {
       "id": "P10I17",
-      "numero": 17,
+      "numero": 6,
       "contexto_id": "ctx-parte4",
       "contexto_titulo": "What Sofía eats on a training day",
       "enunciado": "<p class=\"en-stem\">On Saturday, Sofía ate breakfast</p>",
       "opciones": {
-        "A": "at home.",
-        "B": "at the sports centre.",
-        "C": "at school."
+        "A": "at school.",
+        "B": "at home.",
+        "C": "at the sports centre."
       },
-      "clave": "A",
+      "clave": "B",
       "competencia": "d",
       "afirmacion": "2",
       "evidencia": "2.d",
@@ -529,25 +243,25 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Localizar en el texto el lugar donde ocurre una acción cotidiana (el desayuno).",
-      "justificacion_correcta": "Opción A, dado que el texto dice que el sábado Sofía se levantó a las cinco y comió arepas con huevo en casa.",
+      "justificacion_correcta": "Opción «at home», dado que el texto dice que el sábado Sofía se levantó a las cinco y comió arepas con huevo en casa.",
       "opciones_incorrectas": {
-        "B": "el centro deportivo es el lugar al que fue después de desayunar, no donde desayunó.",
-        "C": "el texto menciona el equipo del colegio, pero no dice que ella desayune allí."
+        "C": "el centro deportivo es el lugar al que fue después de desayunar, no donde desayunó.",
+        "A": "el texto menciona el equipo del colegio, pero no dice que ella desayune allí."
       },
       "imagen_figura": ""
     },
     {
       "id": "P10I18",
-      "numero": 18,
+      "numero": 7,
       "contexto_id": "ctx-parte4",
       "contexto_titulo": "What Sofía eats on a training day",
       "enunciado": "<p class=\"en-stem\">For breakfast, she had</p>",
       "opciones": {
-        "A": "candy.",
-        "B": "arepas with egg.",
+        "A": "arepas with egg.",
+        "B": "candy.",
         "C": "soup."
       },
-      "clave": "B",
+      "clave": "A",
       "competencia": "d",
       "afirmacion": "2",
       "evidencia": "2.d",
@@ -556,48 +270,22 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Localizar en el texto qué alimentos consumió la persona en una comida.",
-      "justificacion_correcta": "Opción B, dado que el texto indica que Sofía desayunó arepas con huevo.",
+      "justificacion_correcta": "Opción «arepas with egg», dado que el texto indica que Sofía desayunó arepas con huevo.",
       "opciones_incorrectas": {
-        "A": "los dulces son lo que ella comía en la primaria, no lo que desayunó el sábado.",
+        "B": "los dulces son lo que ella comía en la primaria, no lo que desayunó el sábado.",
         "C": "la sopa fue lo que comió al mediodía y en la noche, no en el desayuno."
       }
     },
     {
       "id": "P10I19",
-      "numero": 19,
+      "numero": 8,
       "contexto_id": "ctx-parte4",
       "contexto_titulo": "What Sofía eats on a training day",
       "enunciado": "<p class=\"en-stem\">Sofía needs a big breakfast because</p>",
       "opciones": {
-        "A": "she does not like soup.",
+        "A": "her practice is very long.",
         "B": "she works at the sports centre.",
-        "C": "her practice is very long."
-      },
-      "clave": "C",
-      "competencia": "d",
-      "afirmacion": "3",
-      "evidencia": "3.d",
-      "nivel_mcer": "A2",
-      "parte": 4,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Localizar en el texto la razón explícita por la que Sofía desayuna mucho.",
-      "justificacion_correcta": "Opción C, dado que el texto explica que ella desayuna mucho porque su entrenamiento es muy largo y no puede salir a comer.",
-      "opciones_incorrectas": {
-        "A": "el texto muestra que ella sí come sopa, dos veces el mismo día, así que no es cierto que no le guste.",
-        "B": "el texto no afirma que ella trabaje en el centro deportivo; solo que entrena allí."
-      }
-    },
-    {
-      "id": "P10I20",
-      "numero": 20,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "What Sofía eats on a training day",
-      "enunciado": "<p class=\"en-stem\">The coach told her to eat</p>",
-      "opciones": {
-        "A": "lentils.",
-        "B": "candy.",
-        "C": "fried food."
+        "C": "she does not like soup."
       },
       "clave": "A",
       "competencia": "d",
@@ -607,23 +295,23 @@
       "parte": 4,
       "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Localizar una recomendación dada por un tercero dentro del texto.",
-      "justificacion_correcta": "Opción A, dado que el texto dice que quien la entrena le recomendó comer lentejas y avena para poder entrenar más fuerte.",
+      "que_evalua": "Localizar en el texto la razón explícita por la que Sofía desayuna mucho.",
+      "justificacion_correcta": "Opción «her practice is very long», dado que el texto explica que ella desayuna mucho porque su entrenamiento es muy largo y no puede salir a comer.",
       "opciones_incorrectas": {
-        "B": "los dulces son lo que ella comía en la primaria, no una recomendación de quien la entrena.",
-        "C": "la comida frita es lo que ella dejó de comer el año pasado, no una recomendación."
+        "C": "el texto muestra que ella sí come sopa, dos veces el mismo día, así que no es cierto que no le guste.",
+        "B": "el texto no afirma que ella trabaje en el centro deportivo; solo que entrena allí."
       }
     },
     {
-      "id": "P10I21",
-      "numero": 21,
+      "id": "P10I20",
+      "numero": 9,
       "contexto_id": "ctx-parte4",
       "contexto_titulo": "What Sofía eats on a training day",
-      "enunciado": "<p class=\"en-stem\">On Saturday, Sofía ate soup</p>",
+      "enunciado": "<p class=\"en-stem\">The coach told her to eat</p>",
       "opciones": {
-        "A": "once.",
-        "B": "twice.",
-        "C": "three times."
+        "A": "candy.",
+        "B": "lentils.",
+        "C": "fried food."
       },
       "clave": "B",
       "competencia": "d",
@@ -631,25 +319,25 @@
       "evidencia": "3.d",
       "nivel_mcer": "A2",
       "parte": 4,
-      "dificultad": "ALTA",
+      "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Contar cuántas veces ocurre un hecho conectando dos menciones separadas del texto.",
-      "justificacion_correcta": "Opción B, dado que el texto menciona la sopa en dos momentos distintos del sábado: un plato al mediodía en el centro deportivo y otro en la noche, preparado por su tía.",
+      "que_evalua": "Localizar una recomendación dada por un tercero dentro del texto.",
+      "justificacion_correcta": "Opción «lentils», dado que el texto dice que quien la entrena le recomendó comer lentejas y avena para poder entrenar más fuerte.",
       "opciones_incorrectas": {
-        "A": "«once» (una vez) toma en cuenta solo una de las dos menciones de la sopa en el texto.",
-        "C": "«three times» (tres veces) cuenta más comidas con sopa de las que menciona el texto."
+        "A": "los dulces son lo que ella comía en la primaria, no una recomendación de quien la entrena.",
+        "C": "la comida frita es lo que ella dejó de comer el año pasado, no una recomendación."
       }
     },
     {
-      "id": "P10I22",
-      "numero": 22,
+      "id": "P10I21",
+      "numero": 10,
       "contexto_id": "ctx-parte4",
       "contexto_titulo": "What Sofía eats on a training day",
-      "enunciado": "<p class=\"en-stem\">What did she have to drink with the last meal of the day?</p>",
+      "enunciado": "<p class=\"en-stem\">On Saturday, Sofía ate soup</p>",
       "opciones": {
-        "A": "lemonade",
-        "B": "orange juice",
-        "C": "hot cocoa"
+        "A": "three times.",
+        "B": "once.",
+        "C": "twice."
       },
       "clave": "C",
       "competencia": "d",
@@ -659,11 +347,323 @@
       "parte": 4,
       "dificultad": "ALTA",
       "estandar": "",
-      "que_evalua": "Localizar la bebida que acompañó la última comida del día.",
-      "justificacion_correcta": "Opción C, dado que el texto dice que en la noche, con la sopa que fue su última comida, Sofía tomó una taza de chocolate caliente.",
+      "que_evalua": "Contar cuántas veces ocurre un hecho conectando dos menciones separadas del texto.",
+      "justificacion_correcta": "Opción «twice», dado que el texto menciona la sopa en dos momentos distintos del sábado: un plato al mediodía en el centro deportivo y otro en la noche, preparado por su tía.",
       "opciones_incorrectas": {
-        "A": "la limonada fue lo que tomó al mediodía, no en la noche.",
+        "B": "«once» (una vez) toma en cuenta solo una de las dos menciones de la sopa en el texto.",
+        "A": "«three times» (tres veces) cuenta más comidas con sopa de las que menciona el texto."
+      }
+    },
+    {
+      "id": "P10I22",
+      "numero": 11,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "What Sofía eats on a training day",
+      "enunciado": "<p class=\"en-stem\">What did she have to drink with the last meal of the day?</p>",
+      "opciones": {
+        "A": "hot cocoa",
+        "B": "orange juice",
+        "C": "lemonade"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Localizar la bebida que acompañó la última comida del día.",
+      "justificacion_correcta": "Opción «hot cocoa», dado que el texto dice que en la noche, con la sopa que fue su última comida, Sofía tomó una taza de chocolate caliente.",
+      "opciones_incorrectas": {
+        "C": "la limonada fue lo que tomó al mediodía, no en la noche.",
         "B": "el texto no menciona que ella bebiera jugo de naranja."
+      }
+    },
+    {
+      "id": "P10I06",
+      "numero": 12,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Your new bike is really beautiful!”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "Thanks a lot!",
+        "B": "Are you tired?",
+        "C": "Is it raining?"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para reaccionar a un cumplido sencillo.",
+      "justificacion_correcta": "Opción «Thanks a lot!», dado que «Thanks a lot!» es la forma natural de responder cuando alguien hace un cumplido sobre algo tuyo.",
+      "opciones_incorrectas": {
+        "C": "«Is it raining?» pregunta por el clima y no responde al cumplido.",
+        "B": "«Are you tired?» pregunta por el estado del interlocutor y no reacciona al cumplido."
+      }
+    },
+    {
+      "id": "P10I07",
+      "numero": 13,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Next weekend, I'm travelling to Mompox.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "How old are you?",
+        "B": "What time is it?",
+        "C": "Where is that?"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.b",
+      "nivel_mcer": "A1",
+      "parte": 2,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para reaccionar ante el anuncio de un viaje a un lugar desconocido.",
+      "justificacion_correcta": "Opción «Where is that?», dado que el interlocutor 1 nombra un lugar que el interlocutor 2 no conoce, así que «Where is that?» pregunta por su ubicación, una reacción pertinente.",
+      "opciones_incorrectas": {
+        "A": "«How old are you?» pregunta por la edad, que no tiene relación con el viaje.",
+        "B": "«What time is it?» pregunta la hora y no responde al anuncio del viaje."
+      }
+    },
+    {
+      "id": "P10I08",
+      "numero": 14,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Could I try on that red jacket, please?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "Of course.",
+        "B": "I'm not sure.",
+        "C": "Never."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para acceder a una petición sencilla.",
+      "justificacion_correcta": "Opción «Of course», dado que ante la petición de probarse una chaqueta, «Of course.» indica que el interlocutor 2 accede con gusto a la solicitud.",
+      "opciones_incorrectas": {
+        "C": "«Never.» niega de forma tajante y no es una respuesta amable a una petición de tienda.",
+        "B": "«I'm not sure.» expresa duda y no concede ni niega la petición."
+      }
+    },
+    {
+      "id": "P10I09",
+      "numero": 15,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I just got a new puppy yesterday.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "I have a cat at home.",
+        "B": "What's its name?",
+        "C": "Sorry to hear that."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "1",
+      "evidencia": "1.b",
+      "nivel_mcer": "Pre A1",
+      "parte": 2,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para mostrar interés ante una noticia personal.",
+      "justificacion_correcta": "Opción «What's its name?», dado que muestra interés por la noticia de la nueva mascota y pregunta por un dato sobre ella.",
+      "opciones_incorrectas": {
+        "A": "«I have a cat at home.» desvía la conversación hacia la mascota propia en vez de reaccionar a la noticia que acaba de dar el otro.",
+        "C": "«Sorry to hear that.» sirve para lamentar una mala noticia, y la de aquí es alegre, así que el registro no corresponde."
+      }
+    },
+    {
+      "id": "P10I10",
+      "numero": 16,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I can't reach the top shelf. Could you help me?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "Never mind.",
+        "B": "Sure, which book do you need?",
+        "C": "Too bad."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "3",
+      "evidencia": "3.b",
+      "nivel_mcer": "A2",
+      "parte": 2,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la réplica adecuada para responder cooperativamente a una petición de ayuda.",
+      "justificacion_correcta": "Opción «Sure, which book do you need?», dado que ante la petición de ayuda para alcanzar un estante alto, el interlocutor 2 acepta y pregunta qué necesita, una reacción cooperativa y precisa.",
+      "opciones_incorrectas": {
+        "C": "«Too bad.» expresa lástima y no ofrece la ayuda que se pide.",
+        "A": "«Never mind.» indica que algo no importa, pero aquí sí se pidió ayuda concreta."
+      }
+    },
+    {
+      "id": "P10I11",
+      "numero": 17,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Young Readers Club",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (17) in the text.</p>",
+      "opciones": {
+        "A": "little",
+        "B": "any",
+        "C": "some"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el cuantificador correcto (some/any/little) según el tipo de sustantivo y la oración afirmativa.",
+      "justificacion_correcta": "Opción «some», dado que «some» se usa en oraciones afirmativas para una cantidad indeterminada de cosas contables: algunos de los pueblos pequeños. El estudiante debe conocer el uso de los cuantificadores.",
+      "opciones_incorrectas": {
+        "B": "«any» se usa en preguntas y oraciones negativas, y esta oración es afirmativa.",
+        "A": "«little» acompaña sustantivos incontables, pero «towns» (pueblos) es contable."
+      }
+    },
+    {
+      "id": "P10I12",
+      "numero": 18,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Young Readers Club",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (18) in the text.</p>",
+      "opciones": {
+        "A": "helping",
+        "B": "helped",
+        "C": "helps"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Seleccionar la forma verbal correcta después de un sujeto en presente simple.",
+      "justificacion_correcta": "Opción «helps», dado que el sujeto «it» (el club) es tercera persona del singular en presente simple, así que el verbo toma «-s»: «it helps children». El estudiante debe dominar el presente simple.",
+      "opciones_incorrectas": {
+        "A": "«helping» es gerundio y necesitaría un auxiliar («is»), que no aparece.",
+        "B": "«helped» es pasado, y el texto describe lo que el club hace habitualmente, en presente."
+      }
+    },
+    {
+      "id": "P10I13",
+      "numero": 19,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Young Readers Club",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (19) in the text.</p>",
+      "opciones": {
+        "A": "ourselves",
+        "B": "themselves",
+        "C": "yourselves"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el pronombre reflexivo que concuerda con el sujeto plural de tercera persona.",
+      "justificacion_correcta": "Opción «themselves», dado que la oración se refiere a «many families» (terceras personas en plural), de modo que el reflexivo correcto es «themselves». El estudiante debe conocer los pronombres reflexivos.",
+      "opciones_incorrectas": {
+        "C": "«yourselves» concuerda con «you», y el texto habla de las familias, no del lector.",
+        "A": "«ourselves» concuerda con «we», y el texto no habla en primera persona del plural."
+      }
+    },
+    {
+      "id": "P10I14",
+      "numero": 20,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Young Readers Club",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (20) in the text.</p>",
+      "opciones": {
+        "A": "Through",
+        "B": "Among",
+        "C": "Since"
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Seleccionar la preposición que indica el medio o la manera de lograr algo.",
+      "justificacion_correcta": "Opción «Through», dado que «Through» indica el medio por el cual se consigue algo: a través de la lectura en voz alta, los voluntarios ayudan a los jóvenes. El estudiante debe conocer el uso de las preposiciones.",
+      "opciones_incorrectas": {
+        "B": "«Among» indica estar en medio de varias personas o cosas, no el medio para lograr algo.",
+        "C": "«Since» indica un punto de partida en el tiempo, no un medio."
+      }
+    },
+    {
+      "id": "P10I15",
+      "numero": 21,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Young Readers Club",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (21) in the text.</p>",
+      "opciones": {
+        "A": "have",
+        "B": "has",
+        "C": "had"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el auxiliar del presente perfecto que concuerda con un sujeto de tercera persona del singular.",
+      "justificacion_correcta": "Opción «has», dado que el sujeto «the project» es tercera persona del singular, así que el auxiliar del presente perfecto es «has»: «the project has helped». El estudiante debe usar el presente perfecto.",
+      "opciones_incorrectas": {
+        "A": "«have» es el auxiliar del presente perfecto para las demás personas, no para «it».",
+        "C": "«had» es el auxiliar del pasado perfecto, y «Since 2014» pide presente perfecto."
+      }
+    },
+    {
+      "id": "P10I16",
+      "numero": 22,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Young Readers Club",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (22) in the text.</p>",
+      "opciones": {
+        "A": "when",
+        "B": "who",
+        "C": "where"
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el pronombre relativo que reemplaza a un grupo de personas.",
+      "justificacion_correcta": "Opción «who», dado que el pronombre relativo «who» es el que reemplaza a personas; aquí se refiere a los «children» (niños) que ahora aman los libros. El estudiante debe conocer los pronombres relativos y sus usos.",
+      "opciones_incorrectas": {
+        "A": "«when» se usa como relativo para reemplazar referencias de tiempo, no de personas.",
+        "C": "«where» se usa para reemplazar referencias de lugar, no a un grupo de personas."
       }
     }
   ],

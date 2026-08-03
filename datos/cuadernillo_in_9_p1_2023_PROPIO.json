@@ -38,42 +38,389 @@
     "ctx-parte1": {
       "titulo": "Parte 1: Vocabulario (emparejamiento)",
       "imagen": "assets/banco-in-9-p1/ejemplo_parte1.png",
-      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones: una palabra ya quedó usada en el ejemplo (0) y otra sobra. Cada palabra se usa una sola vez.",
-      "rango_preguntas": "1 a 5"
+      "texto": "RESPONDE LAS PREGUNTAS 13 A 17. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones: una palabra ya quedó usada en el ejemplo (0) y otra sobra. Cada palabra se usa una sola vez.",
+      "rango_preguntas": "13 a 17"
     },
     "ctx-parte2": {
       "titulo": "Cinco letreros, cinco lugares",
-      "texto": "RESPONDE LAS PREGUNTAS 6 A 10. Cinco jóvenes se encuentran con estos letreros durante el día. Lee lo que dice cada letrero y decide en qué lugar puede estar cada persona. En las preguntas 6 - 10, marca A, B o C.",
-      "rango_preguntas": "6 a 10"
+      "texto": "RESPONDE LAS PREGUNTAS 18 A 22. Cinco jóvenes se encuentran con estos letreros durante el día. Lee lo que dice cada letrero y decide en qué lugar puede estar cada persona. En las preguntas 18 - 22, marca A, B o C.",
+      "rango_preguntas": "18 a 22"
     },
     "ctx-parte3": {
       "titulo": "Conversaciones breves",
       "imagen": "assets/banco-in-9-p1/ejemplo_conversacion.png",
-      "texto": "RESPONDE LAS PREGUNTAS 11 A 15. Completa las cinco conversaciones. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2. Observa primero el ejemplo (0) resuelto. En las preguntas 11 - 15, marca A, B o C.",
-      "rango_preguntas": "11 a 15"
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Completa las cinco conversaciones. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2. Observa primero el ejemplo (0) resuelto. En las preguntas 1 - 5, marca A, B o C.",
+      "rango_preguntas": "1 a 5"
     },
     "ctx-parte4": {
       "titulo": "Small habits can change your whole day.",
       "imagen": "assets/banco-in-9-p1/q16.png",
-      "texto": "Small habits can change your whole day. The (16)_______ habit can make a big difference. Drinking water is simple, (17)_______ it helps your body and your mind. (18)_______ you start your morning with a glass of water, you feel more awake. Some people forget to drink water, so they (19)_______ feel a little tired, but not always. How (20)_______ do you drink water at school? Try to keep a bottle near (21)_______ and drink a little every hour. In the end, one small habit (22)_______ your whole life better.",
-      "rango_preguntas": "16 a 22"
+      "texto": "Small habits can change your whole day. The (6)_______ habit can make a big difference. Drinking water is simple, (7)_______ it helps your body and your mind. (8)_______ you start your morning with a glass of water, you feel more awake. Some people forget to drink water, so they (9)_______ feel a little tired, but not always. How (10)_______ do you drink water at school? Try to keep a bottle near (11)_______ and drink a little every hour. In the end, one small habit (12)_______ your whole life better.",
+      "rango_preguntas": "6 a 12"
     }
   },
   "preguntas": [
     {
-      "id": "P9I01",
+      "id": "P9I11",
       "numero": 1,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Let’s go to the park this afternoon.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "Sure, what time?",
+        "B": "It is blue.",
+        "C": "Over there."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "1",
+      "evidencia": "1.c",
+      "nivel_mcer": "Pre A1",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la intervención adecuada para responder a una invitación sencilla.",
+      "justificacion_correcta": "Opción «Sure, what time?», dado que «Sure, what time?» acepta la invitación y, además, pregunta la hora, una reacción pertinente ante una invitación.",
+      "opciones_incorrectas": {
+        "B": "«It is blue.» describe un color y no responde a una invitación.",
+        "C": "«Over there.» señala un lugar y no responde a la invitación."
+      }
+    },
+    {
+      "id": "P9I12",
+      "numero": 2,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I love playing chess with my cousin on Sundays.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "No, I’m not.",
+        "B": "Yes, I am.",
+        "C": "So do I."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "2",
+      "evidencia": "2.c",
+      "nivel_mcer": "A1",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la intervención adecuada para coincidir con un gusto expresado por el interlocutor.",
+      "justificacion_correcta": "Opción «So do I», dado que «So do I.» expresa que el interlocutor 2 también disfruta esa actividad, la reacción adecuada cuando dos personas coinciden en un gusto.",
+      "opciones_incorrectas": {
+        "A": "«No, I’m not.» es una respuesta negativa a una pregunta con el verbo to be, y aquí no hay ninguna pregunta.",
+        "B": "«Yes, I am.» responde de forma afirmativa a una pregunta con el verbo to be, y el interlocutor 1 no preguntó nada."
+      }
+    },
+    {
+      "id": "P9I13",
+      "numero": 3,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Excuse me, where do I go now?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "I’m fine, thanks.",
+        "B": "Turn left.",
+        "C": "It’s very nice."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": "1",
+      "evidencia": "1.c",
+      "nivel_mcer": "Pre A1",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la intervención adecuada para dar una indicación de lugar.",
+      "justificacion_correcta": "Opción «Turn left», dado que «Turn left.» indica hacia dónde debe ir el interlocutor 1, que es justo lo que pregunta.",
+      "opciones_incorrectas": {
+        "C": "«It’s very nice.» valora algo como agradable, pero no dice hacia dónde debe ir el interlocutor 1.",
+        "A": "«I’m fine, thanks.» responde a una pregunta por el estado de la persona, no a una pregunta por la dirección."
+      }
+    },
+    {
+      "id": "P9I14",
+      "numero": 4,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “How often do you go to the gym?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "Twice a week.",
+        "B": "Yesterday afternoon.",
+        "C": "At 2 o’clock."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la intervención adecuada para responder a una pregunta sobre frecuencia.",
+      "justificacion_correcta": "Opción «Twice a week», dado que «Twice a week.» es una expresión de frecuencia, justo lo que pregunta «How often».",
+      "opciones_incorrectas": {
+        "B": "«Yesterday afternoon.» indica un momento del pasado, no una frecuencia.",
+        "C": "«At 2 o’clock.» indica una hora exacta, no una frecuencia."
+      }
+    },
+    {
+      "id": "P9I15",
+      "numero": 5,
+      "contexto_id": "ctx-parte3",
+      "contexto_titulo": "Conversaciones breves",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “This café is too noisy in the evening.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "opciones": {
+        "A": "You’re welcome.",
+        "B": "It’s brand new.",
+        "C": "I agree."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.c",
+      "nivel_mcer": "A2",
+      "parte": 3,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Elegir la intervención adecuada para manifestar acuerdo ante un juicio del interlocutor.",
+      "justificacion_correcta": "Opción «I agree», dado que «I agree.» manifiesta acuerdo con el juicio de que el café es demasiado ruidoso por la noche.",
+      "opciones_incorrectas": {
+        "B": "«It’s brand new.» informa que el lugar es nuevo, habla de otra característica y no manifiesta acuerdo.",
+        "A": "«You’re welcome.» es la respuesta a un agradecimiento, no sirve para manifestar acuerdo o desacuerdo."
+      }
+    },
+    {
+      "id": "P9I16",
+      "numero": 6,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "[[IMG]]<p class=\"en-stem\">Choose the correct word for blank (6) in the text.</p>",
+      "opciones": {
+        "A": "smallest",
+        "B": "smaller",
+        "C": "small"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "2",
+      "evidencia": "2.d",
+      "nivel_mcer": "A1",
+      "parte": 4,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar la forma del adjetivo (base/comparativa/superlativa) que exige el sentido del texto.",
+      "justificacion_correcta": "Opción «smallest», dado que «the smallest habit» (superlativo precedido de «the») expresa que incluso el hábito MÁS pequeño marca una gran diferencia. El estudiante debe distinguir la forma base, la comparativa y la superlativa del adjetivo.",
+      "opciones_incorrectas": {
+        "B": "«smaller» es comparativo y exigiría comparar con otra cosa («than»), que no aparece.",
+        "C": "«small» es la forma base y, con «the» y la idea de máximo, no transmite el sentido superlativo del texto."
+      },
+      "imagen_figura": "assets/banco-in-9-p1/q16.png"
+    },
+    {
+      "id": "P9I17",
+      "numero": 7,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (7) in the text.</p>",
+      "opciones": {
+        "A": "or",
+        "B": "and",
+        "C": "but"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "1",
+      "evidencia": "1.d",
+      "nivel_mcer": "Pre A1",
+      "parte": 4,
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Seleccionar la conjunción que une dos ideas según su relación lógica.",
+      "justificacion_correcta": "Opción «and», dado que «and» suma dos ideas que van en la misma dirección: beber agua es simple y, además, ayuda al cuerpo y a la mente.",
+      "opciones_incorrectas": {
+        "C": "«but» introduce un contraste, pero las dos ideas no se oponen.",
+        "A": "«or» presenta una alternativa, y aquí no se ofrece una elección entre opciones."
+      }
+    },
+    {
+      "id": "P9I18",
+      "numero": 8,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (8) in the text.</p>",
+      "opciones": {
+        "A": "Except",
+        "B": "If",
+        "C": "Because"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Seleccionar la conjunción condicional que introduce una condición.",
+      "justificacion_correcta": "Opción «If», dado que «If» introduce una condición: si empiezas la mañana con un vaso de agua, entonces te sientes más despierto. Corresponde a un condicional tipo 1.",
+      "opciones_incorrectas": {
+        "C": "«Because» introduce una causa, no una condición.",
+        "A": "«Except» señala una excepción, no la condición que pide la oración."
+      }
+    },
+    {
+      "id": "P9I19",
+      "numero": 9,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (9) in the text.</p>",
+      "opciones": {
+        "A": "may",
+        "B": "should",
+        "C": "must"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el verbo modal cuyo significado conviene al sentido de la oración.",
+      "justificacion_correcta": "Opción «may», dado que «may» expresa posibilidad: quienes olvidan beber agua puede que se sientan cansados durante el día. El estudiante debe conocer el uso de los verbos modales.",
+      "opciones_incorrectas": {
+        "B": "«should» expresa consejo o recomendación, no la posibilidad que pide el texto.",
+        "C": "«must» expresa obligación o certeza fuerte, demasiado tajante para esta idea."
+      }
+    },
+    {
+      "id": "P9I20",
+      "numero": 10,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (10) in the text.</p>",
+      "opciones": {
+        "A": "much",
+        "B": "long",
+        "C": "often"
+      },
+      "clave": "C",
+      "competencia": "d",
+      "afirmacion": "2",
+      "evidencia": "2.d",
+      "nivel_mcer": "A1",
+      "parte": 4,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el adverbio que forma una pregunta de frecuencia (how often).",
+      "justificacion_correcta": "Opción «often», dado que «How often…?» es la estructura usada para preguntar la frecuencia de una acción: cada cuánto bebes agua en el colegio.",
+      "opciones_incorrectas": {
+        "A": "«How much…?» pregunta por la cantidad, como en «how much water do you drink», y aquí lo que se pregunta es cada cuánto se bebe, no cuánta agua.",
+        "B": "«How long…?» pregunta por la duración, es decir cuánto tiempo dura la acción, y confundir duración con frecuencia lleva a esta respuesta."
+      }
+    },
+    {
+      "id": "P9I21",
+      "numero": 11,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (11) in the text.</p>",
+      "opciones": {
+        "A": "yourself",
+        "B": "myself",
+        "C": "himself"
+      },
+      "clave": "A",
+      "competencia": "d",
+      "afirmacion": "3",
+      "evidencia": "3.d",
+      "nivel_mcer": "A2",
+      "parte": 4,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Seleccionar el pronombre reflexivo que concuerda con el sujeto de la oración.",
+      "justificacion_correcta": "Opción «yourself», dado que la oración se dirige a «you» («Try to keep a bottle near yourself…»), de modo que el reflexivo correcto es «yourself». El estudiante debe conocer el uso de los pronombres reflexivos.",
+      "opciones_incorrectas": {
+        "C": "«himself» concuerda con «he», un sujeto distinto del «you» del texto.",
+        "B": "«myself» concuerda con «I», y la oración se dirige a «you», no a «I»."
+      }
+    },
+    {
+      "id": "P9I22",
+      "numero": 12,
+      "contexto_id": "ctx-parte4",
+      "contexto_titulo": "Small habits can change your whole day.",
+      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (12) in the text.</p>",
+      "opciones": {
+        "A": "making",
+        "B": "makes",
+        "C": "made"
+      },
+      "clave": "B",
+      "competencia": "d",
+      "afirmacion": "1",
+      "evidencia": "1.d",
+      "nivel_mcer": "Pre A1",
+      "parte": 4,
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Seleccionar la forma del verbo en presente simple para un sujeto en tercera persona del singular.",
+      "justificacion_correcta": "Opción «makes», dado que el sujeto «one small habit» es tercera persona del singular, así que el verbo en presente simple toma «s»: «one small habit makes your whole life better».",
+      "opciones_incorrectas": {
+        "A": "«making» es gerundio y necesitaría un auxiliar («is»), que no aparece.",
+        "C": "«made» es pasado, y la idea general del texto se expresa en presente simple."
+      }
+    },
+    {
+      "id": "P9I01",
+      "numero": 13,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You use these to see the world around you.</p>",
       "opciones": {
-        "A": "eyes",
-        "B": "nose",
-        "C": "teeth",
-        "D": "legs",
-        "E": "fingers",
+        "A": "tongue",
+        "B": "legs",
+        "C": "fingers",
+        "D": "teeth",
+        "E": "eyes",
         "F": "back",
-        "G": "tongue"
+        "G": "nose"
+      },
+      "clave": "E",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función, sin apoyo de imagen.",
+      "justificacion_correcta": "Opción «eyes», dado que «eyes» (ojos) son las partes del cuerpo que se usan para ver.",
+      "opciones_incorrectas": {
+        "G": "«nose» (nariz) se usa para oler, no para ver.",
+        "D": "«teeth» (dientes) se usan para masticar, no para ver.",
+        "B": "«legs» (piernas) sirven para caminar y correr, no para ver.",
+        "C": "«fingers» (dedos) sirven para tocar y sostener cosas, no para ver.",
+        "F": "«back» (espalda) es la parte de atrás del cuerpo y no interviene en la visión.",
+        "A": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además sirve para saborear, no para ver."
+      }
+    },
+    {
+      "id": "P9I02",
+      "numero": 14,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You use these white parts of your mouth to bite an apple.</p>",
+      "opciones": {
+        "A": "teeth",
+        "B": "fingers",
+        "C": "tongue",
+        "D": "eyes",
+        "E": "back",
+        "F": "nose",
+        "G": "legs"
       },
       "clave": "A",
       "competencia": "a",
@@ -83,96 +430,31 @@
       "parte": 1,
       "dificultad": "BAJA",
       "estandar": "",
-      "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función, sin apoyo de imagen.",
-      "justificacion_correcta": "Opción A, dado que «eyes» (ojos) son las partes del cuerpo que se usan para ver.",
-      "opciones_incorrectas": {
-        "B": "«nose» (nariz) se usa para oler, no para ver.",
-        "C": "«teeth» (dientes) se usan para masticar, no para ver.",
-        "D": "«legs» (piernas) sirven para caminar y correr, no para ver.",
-        "E": "«fingers» (dedos) sirven para tocar y sostener cosas, no para ver.",
-        "F": "«back» (espalda) es la parte de atrás del cuerpo y no interviene en la visión.",
-        "G": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además sirve para saborear, no para ver."
-      }
-    },
-    {
-      "id": "P9I02",
-      "numero": 2,
-      "contexto_id": "ctx-parte1",
-      "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You use these white parts of your mouth to bite an apple.</p>",
-      "opciones": {
-        "A": "eyes",
-        "B": "nose",
-        "C": "teeth",
-        "D": "legs",
-        "E": "fingers",
-        "F": "back",
-        "G": "tongue"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": "1",
-      "evidencia": "1.a",
-      "nivel_mcer": "Pre A1",
-      "parte": 1,
-      "dificultad": "BAJA",
-      "estandar": "",
       "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
-      "justificacion_correcta": "Opción C, dado que «teeth» (dientes) son las partes blancas de la boca que se usan para morder.",
+      "justificacion_correcta": "Opción «teeth», dado que «teeth» (dientes) son las partes blancas de la boca que se usan para morder.",
       "opciones_incorrectas": {
-        "A": "«eyes» (ojos) sirven para ver, no para morder.",
-        "B": "«nose» (nariz) está sobre la boca, pero no sirve para morder.",
-        "D": "«legs» (piernas) no están en la boca ni sirven para morder.",
-        "E": "«fingers» (dedos) pueden sostener la manzana, pero no son las partes blancas de la boca.",
-        "F": "«back» (espalda) no está en la boca ni participa al morder.",
-        "G": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además ayuda a saborear, no a morder."
+        "D": "«eyes» (ojos) sirven para ver, no para morder.",
+        "F": "«nose» (nariz) está sobre la boca, pero no sirve para morder.",
+        "G": "«legs» (piernas) no están en la boca ni sirven para morder.",
+        "B": "«fingers» (dedos) pueden sostener la manzana, pero no son las partes blancas de la boca.",
+        "E": "«back» (espalda) no está en la boca ni participa al morder.",
+        "C": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además ayuda a saborear, no a morder."
       }
     },
     {
       "id": "P9I03",
-      "numero": 3,
+      "numero": 15,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
       "enunciado": "<p class=\"en-stem\">You move these to walk and to run in a race.</p>",
       "opciones": {
-        "A": "eyes",
+        "A": "teeth",
         "B": "nose",
-        "C": "teeth",
-        "D": "legs",
-        "E": "fingers",
+        "C": "eyes",
+        "D": "tongue",
+        "E": "legs",
         "F": "back",
-        "G": "tongue"
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": "1",
-      "evidencia": "1.a",
-      "nivel_mcer": "Pre A1",
-      "parte": 1,
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
-      "justificacion_correcta": "Opción D, dado que «legs» (piernas) son las partes del cuerpo que se mueven para caminar y correr.",
-      "opciones_incorrectas": {
-        "A": "«eyes» (ojos) sirven para ver, no para moverse en una carrera.",
-        "E": "«fingers» (dedos de la mano) se usan para agarrar, no para correr.",
-        "F": "«back» (espalda) sostiene el cuerpo, pero no se usa para caminar."
-      }
-    },
-    {
-      "id": "P9I04",
-      "numero": 4,
-      "contexto_id": "ctx-parte1",
-      "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You have ten of these, and you use them to type on a keyboard.</p>",
-      "opciones": {
-        "A": "eyes",
-        "B": "nose",
-        "C": "teeth",
-        "D": "legs",
-        "E": "fingers",
-        "F": "back",
-        "G": "tongue"
+        "G": "fingers"
       },
       "clave": "E",
       "competencia": "a",
@@ -183,29 +465,29 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
-      "justificacion_correcta": "Opción E, dado que «fingers» (dedos de la mano) son las diez partes que se usan para escribir en un teclado.",
+      "justificacion_correcta": "Opción «legs», dado que «legs» (piernas) son las partes del cuerpo que se mueven para caminar y correr.",
       "opciones_incorrectas": {
-        "C": "«teeth» (dientes) son más de diez y se usan para morder, no para teclear.",
-        "D": "«legs» (piernas) sirven para caminar, no para teclear.",
-        "F": "«back» (espalda) no se usa para escribir en un teclado."
+        "C": "«eyes» (ojos) sirven para ver, no para moverse en una carrera.",
+        "G": "«fingers» (dedos de la mano) se usan para agarrar, no para correr.",
+        "F": "«back» (espalda) sostiene el cuerpo, pero no se usa para caminar."
       }
     },
     {
-      "id": "P9I05",
-      "numero": 5,
+      "id": "P9I04",
+      "numero": 16,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You use this part of your face to smell flowers and food.</p>",
+      "enunciado": "<p class=\"en-stem\">You have ten of these, and you use them to type on a keyboard.</p>",
       "opciones": {
-        "A": "eyes",
+        "A": "teeth",
         "B": "nose",
-        "C": "teeth",
-        "D": "legs",
-        "E": "fingers",
+        "C": "eyes",
+        "D": "tongue",
+        "E": "legs",
         "F": "back",
-        "G": "tongue"
+        "G": "fingers"
       },
-      "clave": "B",
+      "clave": "G",
       "competencia": "a",
       "afirmacion": "1",
       "evidencia": "1.a",
@@ -214,26 +496,84 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
-      "justificacion_correcta": "Opción B, dado que «nose» (nariz) es la parte de la cara que se usa para oler.",
+      "justificacion_correcta": "Opción «fingers», dado que «fingers» (dedos de la mano) son las diez partes que se usan para escribir en un teclado.",
       "opciones_incorrectas": {
-        "A": "«eyes» (ojos) sirven para ver, no para oler.",
-        "C": "«teeth» (dientes) se usan para morder, no para oler.",
-        "D": "«legs» (piernas) sirven para caminar, no para oler.",
-        "E": "«fingers» (dedos) sirven para tocar, no para oler.",
+        "A": "«teeth» (dientes) son más de diez y se usan para morder, no para teclear.",
+        "E": "«legs» (piernas) sirven para caminar, no para teclear.",
+        "F": "«back» (espalda) no se usa para escribir en un teclado."
+      }
+    },
+    {
+      "id": "P9I05",
+      "numero": 17,
+      "contexto_id": "ctx-parte1",
+      "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
+      "enunciado": "<p class=\"en-stem\">You use this part of your face to smell flowers and food.</p>",
+      "opciones": {
+        "A": "legs",
+        "B": "fingers",
+        "C": "nose",
+        "D": "tongue",
+        "E": "teeth",
+        "F": "back",
+        "G": "eyes"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.a",
+      "nivel_mcer": "Pre A1",
+      "parte": 1,
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
+      "justificacion_correcta": "Opción «nose», dado que «nose» (nariz) es la parte de la cara que se usa para oler.",
+      "opciones_incorrectas": {
+        "G": "«eyes» (ojos) sirven para ver, no para oler.",
+        "E": "«teeth» (dientes) se usan para morder, no para oler.",
+        "A": "«legs» (piernas) sirven para caminar, no para oler.",
+        "B": "«fingers» (dedos) sirven para tocar, no para oler.",
         "F": "«back» (espalda) no está en la cara ni percibe olores.",
-        "G": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además se usa para saborear, no para oler."
+        "D": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además se usa para saborear, no para oler."
       }
     },
     {
       "id": "P9I06",
-      "numero": 6,
+      "numero": 18,
       "contexto_id": "ctx-parte2",
       "contexto_titulo": "Cinco letreros, cinco lugares",
       "enunciado": "[[IMG]]<p>Daniela sees this notice at the entrance. Where is she?</p>",
       "opciones": {
-        "A": "in a library",
-        "B": "at a bus station",
-        "C": "at a swimming pool"
+        "A": "at a swimming pool",
+        "B": "in a library",
+        "C": "at a bus station"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.b",
+      "nivel_mcer": "A1",
+      "parte": 2,
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Inferir el lugar donde aparecería un aviso a partir de su contenido.",
+      "justificacion_correcta": "Opción «in a library», dado que pedir silencio mientras otras personas leen solo tiene sentido en una biblioteca, donde leer es la actividad principal.",
+      "opciones_incorrectas": {
+        "C": "en una estación de buses hay anuncios por altavoz y gente hablando; allí nadie pide silencio para leer.",
+        "A": "en una piscina la gente juega y grita, y no es un lugar donde se vaya a leer."
+      },
+      "imagen_figura": "assets/banco-in-9-p1/q06.png"
+    },
+    {
+      "id": "P9I07",
+      "numero": 19,
+      "contexto_id": "ctx-parte2",
+      "contexto_titulo": "Cinco letreros, cinco lugares",
+      "enunciado": "[[IMG]]<p>Mateo sees this notice before his trip. Where is he?</p>",
+      "opciones": {
+        "A": "at an airport",
+        "B": "at a cinema",
+        "C": "at a hotel"
       },
       "clave": "A",
       "competencia": "b",
@@ -244,52 +584,25 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Inferir el lugar donde aparecería un aviso a partir de su contenido.",
-      "justificacion_correcta": "Opción A, dado que pedir silencio mientras otras personas leen solo tiene sentido en una biblioteca, donde leer es la actividad principal.",
+      "justificacion_correcta": "Opción «at an airport», dado que exigir que cada maleta pese menos de 20 kilos es una norma propia de un aeropuerto, donde el equipaje se pesa antes del vuelo.",
       "opciones_incorrectas": {
-        "B": "en una estación de buses hay anuncios por altavoz y gente hablando; allí nadie pide silencio para leer.",
-        "C": "en una piscina la gente juega y grita, y no es un lugar donde se vaya a leer."
-      },
-      "imagen_figura": "assets/banco-in-9-p1/q06.png"
-    },
-    {
-      "id": "P9I07",
-      "numero": 7,
-      "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Cinco letreros, cinco lugares",
-      "enunciado": "[[IMG]]<p>Mateo sees this notice before his trip. Where is he?</p>",
-      "opciones": {
-        "A": "at a hotel",
-        "B": "at an airport",
-        "C": "at a cinema"
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": "2",
-      "evidencia": "2.b",
-      "nivel_mcer": "A1",
-      "parte": 2,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Inferir el lugar donde aparecería un aviso a partir de su contenido.",
-      "justificacion_correcta": "Opción B, dado que exigir que cada maleta pese menos de 20 kilos es una norma propia de un aeropuerto, donde el equipaje se pesa antes del vuelo.",
-      "opciones_incorrectas": {
-        "A": "en un hotel reciben las maletas de los huéspedes, pero no las pesan ni les ponen ese límite.",
-        "C": "en un cine la gente no lleva maletas, así que un límite de peso no tendría sentido."
+        "C": "en un hotel reciben las maletas de los huéspedes, pero no las pesan ni les ponen ese límite.",
+        "B": "en un cine la gente no lleva maletas, así que un límite de peso no tendría sentido."
       },
       "imagen_figura": "assets/banco-in-9-p1/q07.png"
     },
     {
       "id": "P9I08",
-      "numero": 8,
+      "numero": 20,
       "contexto_id": "ctx-parte2",
       "contexto_titulo": "Cinco letreros, cinco lugares",
       "enunciado": "[[IMG]]<p>Sofía sees this sign during a school trip. Where is she?</p>",
       "opciones": {
-        "A": "at a bank",
-        "B": "at a zoo",
-        "C": "in a shoe shop"
+        "A": "in a shoe shop",
+        "B": "at a bank",
+        "C": "at a zoo"
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "b",
       "afirmacion": "1",
       "evidencia": "1.b",
@@ -298,25 +611,25 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer el lugar de un aviso muy sencillo, con apoyo visual del letrero.",
-      "justificacion_correcta": "Opción B, dado que el letrero «Do not feed the animals» (no alimentar a los animales) se pone donde hay animales en exhibición, es decir, en un zoológico.",
+      "justificacion_correcta": "Opción «at a zoo», dado que el letrero «Do not feed the animals» (no alimentar a los animales) se pone donde hay animales en exhibición, es decir, en un zoológico.",
       "opciones_incorrectas": {
-        "A": "en un banco no hay animales a los que alguien pueda darles comida.",
-        "C": "en una zapatería tampoco hay animales, así que el letrero no tendría sentido."
+        "B": "en un banco no hay animales a los que alguien pueda darles comida.",
+        "A": "en una zapatería tampoco hay animales, así que el letrero no tendría sentido."
       },
       "imagen_figura": "assets/banco-in-9-p1/q08.png"
     },
     {
       "id": "P9I09",
-      "numero": 9,
+      "numero": 21,
       "contexto_id": "ctx-parte2",
       "contexto_titulo": "Cinco letreros, cinco lugares",
       "enunciado": "[[IMG]]<p>Andrés sees this sign on the front door. Where is he?</p>",
       "opciones": {
-        "A": "in a living room",
-        "B": "at a river",
-        "C": "at a store"
+        "A": "at a river",
+        "B": "at a store",
+        "C": "in a living room"
       },
-      "clave": "C",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": "1",
       "evidencia": "1.b",
@@ -325,25 +638,25 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer el lugar de un aviso sencillo de horarios, con apoyo visual del letrero.",
-      "justificacion_correcta": "Opción C, dado que un letrero con horario de lunes a viernes, sábado en la mañana y domingo cerrado corresponde a un local comercial que atiende público.",
+      "justificacion_correcta": "Opción «at a store», dado que un letrero con horario de lunes a viernes, sábado en la mañana y domingo cerrado corresponde a un local comercial que atiende público.",
       "opciones_incorrectas": {
-        "A": "la sala de una casa es un espacio privado y no tiene horario de atención al público.",
-        "B": "un río es un lugar abierto al que se puede llegar a cualquier hora, no cierra los domingos."
+        "C": "la sala de una casa es un espacio privado y no tiene horario de atención al público.",
+        "A": "un río es un lugar abierto al que se puede llegar a cualquier hora, no cierra los domingos."
       },
       "imagen_figura": "assets/banco-in-9-p1/q09.png"
     },
     {
       "id": "P9I10",
-      "numero": 10,
+      "numero": 22,
       "contexto_id": "ctx-parte2",
       "contexto_titulo": "Cinco letreros, cinco lugares",
       "enunciado": "[[IMG]]<p>Valentina sees this notice on the wall. Where is she?</p>",
       "opciones": {
-        "A": "in a kitchen",
-        "B": "in a garage",
-        "C": "on a train"
+        "A": "on a train",
+        "B": "in a kitchen",
+        "C": "in a garage"
       },
-      "clave": "A",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": "1",
       "evidencia": "1.b",
@@ -352,325 +665,12 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer el lugar de un aviso muy sencillo a partir de su contenido.",
-      "justificacion_correcta": "Opción A, dado que pedir lavarse las manos antes de cocinar solo tiene sentido donde se prepara la comida, es decir, en una cocina.",
+      "justificacion_correcta": "Opción «in a kitchen», dado que pedir lavarse las manos antes de cocinar solo tiene sentido donde se prepara la comida, es decir, en una cocina.",
       "opciones_incorrectas": {
-        "B": "en un garaje se guardan carros y herramientas, allí no se cocina.",
-        "C": "en un tren los pasajeros viajan, no preparan comida."
+        "C": "en un garaje se guardan carros y herramientas, allí no se cocina.",
+        "A": "en un tren los pasajeros viajan, no preparan comida."
       },
       "imagen_figura": "assets/banco-in-9-p1/q10.png"
-    },
-    {
-      "id": "P9I11",
-      "numero": 11,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Let’s go to the park this afternoon.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "It is blue.",
-        "B": "Sure, what time?",
-        "C": "Over there."
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": "1",
-      "evidencia": "1.c",
-      "nivel_mcer": "Pre A1",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la intervención adecuada para responder a una invitación sencilla.",
-      "justificacion_correcta": "Opción B, dado que «Sure, what time?» acepta la invitación y, además, pregunta la hora, una reacción pertinente ante una invitación.",
-      "opciones_incorrectas": {
-        "A": "«It is blue.» describe un color y no responde a una invitación.",
-        "C": "«Over there.» señala un lugar y no responde a la invitación."
-      }
-    },
-    {
-      "id": "P9I12",
-      "numero": 12,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I love playing chess with my cousin on Sundays.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "So do I.",
-        "B": "No, I’m not.",
-        "C": "Yes, I am."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": "2",
-      "evidencia": "2.c",
-      "nivel_mcer": "A1",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la intervención adecuada para coincidir con un gusto expresado por el interlocutor.",
-      "justificacion_correcta": "Opción A, dado que «So do I.» expresa que el interlocutor 2 también disfruta esa actividad, la reacción adecuada cuando dos personas coinciden en un gusto.",
-      "opciones_incorrectas": {
-        "B": "«No, I’m not.» es una respuesta negativa a una pregunta con el verbo to be, y aquí no hay ninguna pregunta.",
-        "C": "«Yes, I am.» responde de forma afirmativa a una pregunta con el verbo to be, y el interlocutor 1 no preguntó nada."
-      }
-    },
-    {
-      "id": "P9I13",
-      "numero": 13,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Excuse me, where do I go now?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "It’s very nice.",
-        "B": "I’m fine, thanks.",
-        "C": "Turn left."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": "1",
-      "evidencia": "1.c",
-      "nivel_mcer": "Pre A1",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la intervención adecuada para dar una indicación de lugar.",
-      "justificacion_correcta": "Opción C, dado que «Turn left.» indica hacia dónde debe ir el interlocutor 1, que es justo lo que pregunta.",
-      "opciones_incorrectas": {
-        "A": "«It’s very nice.» valora algo como agradable, pero no dice hacia dónde debe ir el interlocutor 1.",
-        "B": "«I’m fine, thanks.» responde a una pregunta por el estado de la persona, no a una pregunta por la dirección."
-      }
-    },
-    {
-      "id": "P9I14",
-      "numero": 14,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “How often do you go to the gym?”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "Yesterday afternoon.",
-        "B": "At 2 o’clock.",
-        "C": "Twice a week."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": "3",
-      "evidencia": "3.c",
-      "nivel_mcer": "A2",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la intervención adecuada para responder a una pregunta sobre frecuencia.",
-      "justificacion_correcta": "Opción C, dado que «Twice a week.» es una expresión de frecuencia, justo lo que pregunta «How often».",
-      "opciones_incorrectas": {
-        "A": "«Yesterday afternoon.» indica un momento del pasado, no una frecuencia.",
-        "B": "«At 2 o’clock.» indica una hora exacta, no una frecuencia."
-      }
-    },
-    {
-      "id": "P9I15",
-      "numero": 15,
-      "contexto_id": "ctx-parte3",
-      "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “This café is too noisy in the evening.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
-      "opciones": {
-        "A": "I agree.",
-        "B": "It’s brand new.",
-        "C": "You’re welcome."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": "3",
-      "evidencia": "3.c",
-      "nivel_mcer": "A2",
-      "parte": 3,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Elegir la intervención adecuada para manifestar acuerdo ante un juicio del interlocutor.",
-      "justificacion_correcta": "Opción A, dado que «I agree.» manifiesta acuerdo con el juicio de que el café es demasiado ruidoso por la noche.",
-      "opciones_incorrectas": {
-        "B": "«It’s brand new.» informa que el lugar es nuevo, habla de otra característica y no manifiesta acuerdo.",
-        "C": "«You’re welcome.» es la respuesta a un agradecimiento, no sirve para manifestar acuerdo o desacuerdo."
-      }
-    },
-    {
-      "id": "P9I16",
-      "numero": 16,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "[[IMG]]<p class=\"en-stem\">Choose the correct word for blank (16) in the text.</p>",
-      "opciones": {
-        "A": "smaller",
-        "B": "small",
-        "C": "smallest"
-      },
-      "clave": "C",
-      "competencia": "d",
-      "afirmacion": "2",
-      "evidencia": "2.d",
-      "nivel_mcer": "A1",
-      "parte": 4,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar la forma del adjetivo (base/comparativa/superlativa) que exige el sentido del texto.",
-      "justificacion_correcta": "Opción C, dado que «the smallest habit» (superlativo precedido de «the») expresa que incluso el hábito MÁS pequeño marca una gran diferencia. El estudiante debe distinguir la forma base, la comparativa y la superlativa del adjetivo.",
-      "opciones_incorrectas": {
-        "A": "«smaller» es comparativo y exigiría comparar con otra cosa («than»), que no aparece.",
-        "B": "«small» es la forma base y, con «the» y la idea de máximo, no transmite el sentido superlativo del texto."
-      },
-      "imagen_figura": "assets/banco-in-9-p1/q16.png"
-    },
-    {
-      "id": "P9I17",
-      "numero": 17,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (17) in the text.</p>",
-      "opciones": {
-        "A": "and",
-        "B": "but",
-        "C": "or"
-      },
-      "clave": "A",
-      "competencia": "d",
-      "afirmacion": "1",
-      "evidencia": "1.d",
-      "nivel_mcer": "Pre A1",
-      "parte": 4,
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Seleccionar la conjunción que une dos ideas según su relación lógica.",
-      "justificacion_correcta": "Opción A, dado que «and» suma dos ideas que van en la misma dirección: beber agua es simple y, además, ayuda al cuerpo y a la mente.",
-      "opciones_incorrectas": {
-        "B": "«but» introduce un contraste, pero las dos ideas no se oponen.",
-        "C": "«or» presenta una alternativa, y aquí no se ofrece una elección entre opciones."
-      }
-    },
-    {
-      "id": "P9I18",
-      "numero": 18,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (18) in the text.</p>",
-      "opciones": {
-        "A": "Because",
-        "B": "Except",
-        "C": "If"
-      },
-      "clave": "C",
-      "competencia": "d",
-      "afirmacion": "3",
-      "evidencia": "3.d",
-      "nivel_mcer": "A2",
-      "parte": 4,
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Seleccionar la conjunción condicional que introduce una condición.",
-      "justificacion_correcta": "Opción C, dado que «If» introduce una condición: si empiezas la mañana con un vaso de agua, entonces te sientes más despierto. Corresponde a un condicional tipo 1.",
-      "opciones_incorrectas": {
-        "A": "«Because» introduce una causa, no una condición.",
-        "B": "«Except» señala una excepción, no la condición que pide la oración."
-      }
-    },
-    {
-      "id": "P9I19",
-      "numero": 19,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (19) in the text.</p>",
-      "opciones": {
-        "A": "should",
-        "B": "may",
-        "C": "must"
-      },
-      "clave": "B",
-      "competencia": "d",
-      "afirmacion": "3",
-      "evidencia": "3.d",
-      "nivel_mcer": "A2",
-      "parte": 4,
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el verbo modal cuyo significado conviene al sentido de la oración.",
-      "justificacion_correcta": "Opción B, dado que «may» expresa posibilidad: quienes olvidan beber agua puede que se sientan cansados durante el día. El estudiante debe conocer el uso de los verbos modales.",
-      "opciones_incorrectas": {
-        "A": "«should» expresa consejo o recomendación, no la posibilidad que pide el texto.",
-        "C": "«must» expresa obligación o certeza fuerte, demasiado tajante para esta idea."
-      }
-    },
-    {
-      "id": "P9I20",
-      "numero": 20,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (20) in the text.</p>",
-      "opciones": {
-        "A": "often",
-        "B": "always",
-        "C": "usually"
-      },
-      "clave": "A",
-      "competencia": "d",
-      "afirmacion": "2",
-      "evidencia": "2.d",
-      "nivel_mcer": "A1",
-      "parte": 4,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el adverbio que forma una pregunta de frecuencia (how often).",
-      "justificacion_correcta": "Opción A, dado que «How often…?» es la estructura usada para preguntar la frecuencia de una acción: cada cuánto bebes agua en el colegio.",
-      "opciones_incorrectas": {
-        "B": "«How always» no es una pregunta correcta; «always» es un adverbio de frecuencia, no la palabra de la pregunta.",
-        "C": "«How usually» tampoco forma una pregunta correcta de frecuencia."
-      }
-    },
-    {
-      "id": "P9I21",
-      "numero": 21,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (21) in the text.</p>",
-      "opciones": {
-        "A": "himself",
-        "B": "yourself",
-        "C": "myself"
-      },
-      "clave": "B",
-      "competencia": "d",
-      "afirmacion": "3",
-      "evidencia": "3.d",
-      "nivel_mcer": "A2",
-      "parte": 4,
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Seleccionar el pronombre reflexivo que concuerda con el sujeto de la oración.",
-      "justificacion_correcta": "Opción B, dado que la oración se dirige a «you» («Try to keep a bottle near yourself…»), de modo que el reflexivo correcto es «yourself». El estudiante debe conocer el uso de los pronombres reflexivos.",
-      "opciones_incorrectas": {
-        "A": "«himself» concuerda con «he», un sujeto distinto del «you» del texto.",
-        "C": "«myself» concuerda con «I», y la oración se dirige a «you», no a «I»."
-      }
-    },
-    {
-      "id": "P9I22",
-      "numero": 22,
-      "contexto_id": "ctx-parte4",
-      "contexto_titulo": "Small habits can change your whole day.",
-      "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (22) in the text.</p>",
-      "opciones": {
-        "A": "makes",
-        "B": "making",
-        "C": "made"
-      },
-      "clave": "A",
-      "competencia": "d",
-      "afirmacion": "1",
-      "evidencia": "1.d",
-      "nivel_mcer": "Pre A1",
-      "parte": 4,
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Seleccionar la forma del verbo en presente simple para un sujeto en tercera persona del singular.",
-      "justificacion_correcta": "Opción A, dado que el sujeto «one small habit» es tercera persona del singular, así que el verbo en presente simple toma «s»: «one small habit makes your whole life better».",
-      "opciones_incorrectas": {
-        "B": "«making» es gerundio y necesitaría un auxiliar («is»), que no aparece.",
-        "C": "«made» es pasado, y la idea general del texto se expresa en presente simple."
-      }
     }
   ],
   "preservar_orden_preguntas": true

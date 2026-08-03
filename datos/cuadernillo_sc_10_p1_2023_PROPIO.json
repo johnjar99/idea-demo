@@ -35,62 +35,230 @@
   },
   "preguntas": [
     {
-      "id": "P10S01",
+      "id": "P10S03",
       "numero": 1,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Tras una jornada de marchas campesinas que bloquearon una carretera nacional, un comentarista de televisión dijo en su programa: «Me bajé del carro y le pregunté a tres campesinos qué exigían, y ninguno supo explicarme bien sus reclamos. Con eso queda demostrado que ningún campesino que bloquea las vías sabe en realidad por qué lo hace; solo buscan llamar la atención».</p></div><p>Respecto al razonamiento del comentarista, ¿cuál de las siguientes afirmaciones es correcta?</p>",
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio, el Concejo Municipal está integrado por trece concejales elegidos por voto popular y pertenecientes a cuatro partidos distintos; a él le corresponde debatir y aprobar los proyectos que presenta el alcalde. Este año varios proyectos han sido devueltos o modificados por concejales de otros partidos. Molesto por esas demoras, el alcalde del municipio, electo también por votación popular, propone una reforma para que el Concejo quede integrado únicamente por miembros de su propio partido. Argumenta que así sus proyectos se aprobarían más rápido y «sin trabas de la oposición».</p></div><p>¿Esta propuesta afecta el funcionamiento democrático del municipio?</p>",
       "opciones": {
-        "A": "El argumento es débil, porque a partir de tres personas no se puede concluir algo sobre todos los campesinos que protestan.",
-        "B": "El argumento es válido, porque tres testimonios bastan para conocer las verdaderas razones de la protesta.",
-        "C": "El argumento es débil, porque el comentarista debió preguntarles a los conductores afectados por el bloqueo.",
-        "D": "El argumento es válido, porque cualquier persona que bloquee una vía no tiene razones legítimas."
+        "A": "Sí, porque el Concejo debe estar conformado por los amigos personales y de confianza del alcalde.",
+        "B": "No, porque un Concejo de un solo partido aprobaría más rápido los proyectos que presenta el alcalde.",
+        "C": "Sí, porque el Concejo debe representar las distintas posturas del municipio, incluida la oposición.",
+        "D": "No, porque el alcalde fue elegido por la mayoría del municipio y por eso puede decidir quién integra el Concejo."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.3",
+      "dificultad": "BAJA",
+      "estandar": "Participo constructivamente en iniciativas o proyectos a favor de la no-violencia en el nivel local o global.",
+      "que_evalua": "La capacidad para comprender el sistema político democrático.",
+      "justificacion_correcta": "La opción «Sí, porque el Concejo debe representar las distintas posturas del municipio, incluida la oposición» es la respuesta correcta porque, al dejar el Concejo en manos de un solo partido, se eliminaría la representación de las diferentes posturas de la comunidad. Una democracia requiere que las distintas voces, incluida la oposición, estén representadas.",
+      "opciones_incorrectas": {
+        "A": "El Concejo no se conforma por amistades ni por relaciones de confianza con el alcalde, sino por representantes de las distintas posturas de la población.",
+        "B": "La rapidez en aprobar los proyectos del alcalde no justifica eliminar el control y la pluralidad democrática.",
+        "D": "Ganar la elección con la mayoría de los votos no autoriza a decidir quién integra el Concejo ni a suprimir la representación de las demás posturas."
+      }
+    },
+    {
+      "id": "P10S13",
+      "numero": 2,
+      "enunciado": "<p>Lee el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio se señala a una fábrica de arrojar desechos a la quebrada de la que bebe el pueblo; desde hace meses el agua baja con espuma. Una junta de acción comunal se planta frente a la oficina ambiental y exige que «cierren esa fábrica ya, sin tanto trámite». La ingeniera a cargo del expediente les contesta: «Estamos tomando muestras del agua y esperando el peritaje del laboratorio. Si sancionamos sin ese respaldo técnico, la fábrica tumba la sanción ante un tribunal y sigue arrojando desechos. Tengan la seguridad de que, con el peritaje en la mano, la sanción va a quedar en firme».</p></div><p>Frente a esta situación, ¿qué persigue cada una de las partes?</p>",
+      "opciones": {
+        "A": "La junta quiere que la fábrica siga arrojando desechos sin sanción alguna, y la oficina quiere sancionarla de inmediato, sin esperar el peritaje.",
+        "B": "La junta quiere dejar mal parada a la oficina ambiental ante el pueblo, y la oficina quiere favorecer a la fábrica demorando el expediente.",
+        "C": "La oficina quiere esconder lo que hallaron las muestras de agua, y la junta quiere alargar el trámite hasta que llegue el peritaje del laboratorio.",
+        "D": "La junta quiere que la fábrica deje de contaminar cuanto antes, y la oficina quiere sustentar la sanción con el peritaje para que no la tumben."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "ALTA",
+      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
+      "que_evalua": "La habilidad para comprender las perspectivas de diferentes actores y establecer relaciones entre ellas.",
+      "justificacion_correcta": "La opción «La junta quiere que la fábrica deje de contaminar cuanto antes, y la oficina quiere sustentar la sanción con el peritaje» es la respuesta correcta porque la junta busca que el daño a la quebrada pare cuanto antes, mientras que la oficina prioriza el respaldo técnico para que la sanción no se caiga en el tribunal. Ambas partes quieren que la fábrica deje de contaminar, pero desde perspectivas distintas.",
+      "opciones_incorrectas": {
+        "A": "La junta no pide que la fábrica siga arrojando desechos, y la oficina rechaza justamente sancionar de inmediato, sin el peritaje del laboratorio.",
+        "B": "La oficina no busca favorecer a la fábrica ni demorar el expediente, sino sancionarla con un respaldo que se sostenga ante el tribunal.",
+        "C": "La oficina no esconde lo que hallaron las muestras: explica por qué necesita el peritaje. La junta tampoco quiere alargar el trámite, pide el cierre ya."
+      }
+    },
+    {
+      "id": "P10S06",
+      "numero": 3,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el consejo de un barrio se discute a quiénes se entregarán unos subsidios de vivienda que asignó la alcaldía. Como los cupos son pocos, hay que fijar un criterio de prioridad. Una líder propone que se prioricen las familias que perdieron su casa en la última temporada de lluvias, entre las cuales hay familias del barrio y familias que llegaron desplazadas de otras regiones. Un asistente pide la palabra y responde: «Yo no estoy de acuerdo con darles casas a las familias que llegaron desplazadas de otras regiones; aunque no conozco a ninguna, seguro que con ellas va a aumentar la delincuencia, porque eso es lo que se ve en las noticias».</p></div><p>¿Por qué podría decirse que la afirmación del asistente contiene un prejuicio?</p>",
+      "opciones": {
+        "A": "Porque juzga negativamente a las familias desplazadas sin conocerlas, basándose solo en lo que ha visto en noticias.",
+        "B": "Porque considera que las familias del barrio no tienen recursos para comprar una vivienda.",
+        "C": "Porque defiende los intereses de las familias más necesitadas del barrio.",
+        "D": "Porque propone que los subsidios se entreguen únicamente a las familias afectadas por las lluvias."
       },
       "clave": "A",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "dificultad": "MEDIA",
+      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
+      "que_evalua": "La habilidad para identificar prejuicios en un enunciado.",
+      "justificacion_correcta": "La opción «Porque juzga negativamente a las familias desplazadas sin conocerlas, basándose solo en…» es la respuesta correcta porque el asistente atribuye un comportamiento negativo (aumentar la delincuencia) a las familias desplazadas sin conocerlas, a partir de una generalización tomada de las noticias: eso es un prejuicio discriminatorio.",
+      "opciones_incorrectas": {
+        "D": "Priorizar a las familias afectadas por las lluvias es la propuesta de la líder, no un prejuicio del asistente.",
+        "C": "Defender a los más necesitados es una acción afirmativa, no un prejuicio.",
+        "B": "El asistente no afirma que las familias del barrio carezcan de recursos; eso no aparece en su enunciado."
+      }
+    },
+    {
+      "id": "P10S19",
+      "numero": 4,
+      "enunciado": "<p>Lee el siguiente fragmento de la Constitución Política de Colombia y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En clase se discute en qué se diferencia la democracia representativa, en la que los ciudadanos eligen a quienes decidirán por ellos, de la participativa, en la que además intervienen directamente en ciertas decisiones. La docente proyecta este fragmento de la Constitución Política de Colombia:</p><p style='font-style:italic'>«Son mecanismos de participación del pueblo en ejercicio de su soberanía: el voto, el plebiscito, el referendo, la consulta popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato. La ley los reglamentará.»</p><p style='font-size:14px'>Constitución Política de Colombia, artículo 103 (fragmento).</p></div><p>¿Qué permite sostener que la Constitución de 1991 impulsa un modelo de democracia participativa?</p>",
+      "opciones": {
+        "A": "Que le encarga a la ley la reglamentación de todos y cada uno de los mecanismos que enumera el artículo.",
+        "B": "Que reconoce el voto como la forma en que los ciudadanos escogen a quienes los gobiernan y toman las decisiones en su nombre durante todo el periodo.",
+        "C": "Que pone en manos de los ciudadanos mecanismos para decidir directamente, como la consulta popular y el cabildo abierto.",
+        "D": "Que reconoce al pueblo como el titular de la soberanía dentro del ordenamiento jurídico del país."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Conozco y sé usar los mecanismos constitucionales de participación que permiten expresar mis opiniones y participar en la toma de decisiones políticas tanto a nivel local como a nivel nacional.",
+      "que_evalua": "La capacidad para comprender el alcance de los mecanismos de participación establecidos en la Constitución.",
+      "justificacion_correcta": "La opción «Que pone en manos de los ciudadanos mecanismos para decidir directamente, como la consulta popular y el cabildo abierto» es la respuesta correcta porque la democracia participativa se caracteriza por permitir que los ciudadanos intervengan de manera directa en las decisiones que los afectan, más allá de elegir representantes; el artículo lo muestra al enumerar mecanismos como la consulta popular, el cabildo abierto y el referendo.",
+      "opciones_incorrectas": {
+        "A": "Que la ley reglamente cada uno de los mecanismos es un asunto de procedimiento y no define el modelo de democracia.",
+        "B": "Escoger mediante el voto a quienes deciden en nombre de los ciudadanos es propio de la democracia representativa; por sí solo no muestra el rasgo participativo.",
+        "D": "Que la soberanía resida en el pueblo también se afirma en la democracia representativa, así que no basta para sostener el carácter participativo."
+      }
+    },
+    {
+      "id": "P10S01",
+      "numero": 5,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Tras una jornada de marchas campesinas que bloquearon dos días una carretera nacional, los noticieros discutieron si los manifestantes tenían motivos claros. En su programa, un comentarista de televisión contó así lo que hizo: «Me bajé del carro y le pregunté a tres campesinos qué exigían, y ninguno supo explicarme bien sus reclamos. Con eso queda demostrado que ningún campesino que bloquea las vías sabe en realidad por qué lo hace; solo buscan llamar la atención». En el bloqueo participaban cientos de personas y el comentarista no consultó ninguna otra fuente antes de sacar esa conclusión.</p></div><p>Respecto al razonamiento del comentarista, ¿cuál de las siguientes afirmaciones es correcta?</p>",
+      "opciones": {
+        "A": "El argumento es válido, porque cualquier persona que bloquee una vía no tiene razones legítimas.",
+        "B": "El argumento es débil, porque a partir de tres personas no se puede concluir algo sobre todos los campesinos que protestan.",
+        "C": "El argumento es débil, porque el comentarista debió preguntarles a los conductores afectados por el bloqueo.",
+        "D": "El argumento es válido, porque tres testimonios bastan para conocer las verdaderas razones de la protesta."
+      },
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "ALTA",
       "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
       "que_evalua": "La capacidad para evaluar los límites de los argumentos que sostienen una afirmación.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la conclusión del comentarista es una generalización injustificada: con solo tres testimonios no es posible establecer una afirmación sobre todos los campesinos que protestan. Para sostener su conclusión necesitaría una muestra representativa.",
+      "justificacion_correcta": "La opción «El argumento es débil, porque a partir de tres personas no se puede concluir algo sobre…» es la respuesta correcta porque la conclusión del comentarista es una generalización injustificada: con solo tres testimonios no es posible establecer una afirmación sobre todos los campesinos que protestan. Para sostener su conclusión necesitaría una muestra representativa.",
       "opciones_incorrectas": {
-        "B": "Tres testimonios no constituyen una muestra suficiente para concluir sobre el conjunto de quienes protestan.",
+        "D": "Tres testimonios no constituyen una muestra suficiente para concluir sobre el conjunto de quienes protestan.",
         "C": "El problema del argumento no es a quién preguntó, sino que generaliza a partir de muy pocos casos.",
-        "D": "Afirmar que quien bloquea una vía no tiene razones legítimas es otra generalización sin sustento."
+        "A": "Afirmar que quien bloquea una vía no tiene razones legítimas es otra generalización sin sustento."
       }
     },
     {
-      "id": "P10S02",
-      "numero": 2,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio, cerca de sesenta familias levantaron sus viviendas en la ribera de un río que se desborda cada invierno. Para reducir el riesgo y mejorar las condiciones de esas familias, la alcaldía aprobó un plan con dos componentes: primero, desalojar la ribera y demoler las construcciones; segundo, entregar a cada familia una vivienda en un terreno seguro y un apoyo económico mientras se muda. Al cerrar el año, por falta de recursos, solo se ejecutó el primer componente.</p></div><p>Si únicamente se aplica el primer componente, ¿qué efecto tendría sobre las familias desalojadas?</p>",
+      "id": "P10S09",
+      "numero": 6,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Las comunidades que viven alrededor de un páramo se encuentran en condiciones de pobreza y le piden al Gobierno medidas para mejorar sus ingresos. El páramo es un ecosistema estratégico: allí se regula el agua y nacen los ríos que abastecen a varias ciudades. El Ministerio de Economía propone autorizar una mina de carbón a cielo abierto dentro del área del páramo, con el argumento de que generaría empleo, regalías y reactivación económica para la región. Frente a esta propuesta, varias organizaciones ambientales sostienen que el Estado debería, en cambio, invertir en vías, en una institución de educación superior y en proyectos de turismo ecológico y agricultura sostenible por fuera del páramo, contratando a la propia comunidad, de modo que el ecosistema se conserve en su estado actual.</p></div><p>¿Qué efecto ambiental traería poner en marcha lo que propone el Ministerio de Economía?</p>",
       "opciones": {
-        "A": "Positivo, porque al quedar fuera de la ribera, el desalojo por sí solo bastaría para resolver su necesidad de vivienda.",
-        "B": "Positivo, porque despejar la ribera recuperaría el cauce del río y eso beneficiaría a las familias.",
-        "C": "Negativo, porque, sin la vivienda prevista, buscarían otro terreno igual de barato y volverían a quedar expuestas a las inundaciones.",
-        "D": "Negativo, porque la ribera quedaría sin construcciones y el municipio perdería un sector poblado."
+        "A": "Perjudicial, pues la mina bloquearía el paso libre de las comunidades vecinas hacia el páramo y sus caminos.",
+        "B": "Favorable, pues al reactivarse la economía de la región disminuiría la contaminación ambiental del páramo.",
+        "C": "Perjudicial, pues la mina a cielo abierto trastornaría los ecosistemas que regulan el agua y afectaría las fuentes que surten a las ciudades.",
+        "D": "Favorable, pues con las regalías de la mina la comunidad tendría con qué cuidar el páramo por su cuenta, sin depender de la ayuda del Estado ni de nadie."
       },
       "clave": "C",
       "competencia": "c",
       "afirmacion": 6,
       "evidencia": "6.1",
       "dificultad": "ALTA",
-      "estandar": "Conozco y sé usar los mecanismos constitucionales de participación que permiten expresar mis opiniones y participar en la toma de decisiones políticas tanto a nivel local como a nivel nacional.",
-      "que_evalua": "La capacidad para analizar los efectos de una posible intervención sobre un grupo.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque, al ejecutar solo el desalojo y dejar por fuera la vivienda de reemplazo y el apoyo económico, lo más probable es que las familias se instalen en otro terreno igual de barato y frágil: el riesgo se traslada y su necesidad de vivienda sigue sin resolverse.",
+      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
+      "que_evalua": "La habilidad para valorar la solución a un problema e identificar su impacto ambiental.",
+      "justificacion_correcta": "La opción «Perjudicial, pues la mina a cielo abierto trastornaría los ecosistemas que regulan el agua» es la respuesta correcta porque una mina de carbón a cielo abierto en un páramo alteraría gravemente los ecosistemas que regulan el agua, deteriorando las fuentes hídricas que abastecen a las ciudades; por eso el impacto ambiental sería negativo.",
       "opciones_incorrectas": {
-        "A": "Sacar a las familias de la ribera no les entrega un lugar donde vivir; sin la vivienda de reemplazo, lo previsible es que se ubiquen en otro sitio expuesto.",
-        "B": "La pregunta indaga por el efecto sobre las familias, no por el estado del cauce; además, despejar la ribera no las beneficia si no reciben lo prometido.",
-        "D": "El enunciado pregunta por el efecto sobre las familias desalojadas, no por lo que ocurra con el sector."
+        "A": "El impacto ambiental se refiere al daño a los ecosistemas, no al acceso de las comunidades al páramo ni a sus caminos.",
+        "B": "Generar empleo o reactivar la economía de la región no reduce la contaminación; la minería a cielo abierto la aumenta.",
+        "D": "Las regalías son un beneficio económico, pero no evitan el daño ambiental que la mina causa al páramo; además, la propuesta no destina esos recursos a la conservación."
       }
     },
     {
-      "id": "P10S03",
-      "numero": 3,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El alcalde de un municipio, electo por votación popular, propone una reforma para que el Concejo Municipal quede integrado únicamente por miembros de su propio partido. Argumenta que así sus proyectos se aprobarían más rápido y «sin trabas de la oposición».</p></div><p>¿Esta propuesta afecta el funcionamiento democrático del municipio?</p>",
+      "id": "P10S07",
+      "numero": 7,
+      "enunciado": "<p>Lee el siguiente instructivo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una línea de atención ciudadana recibe reportes de quienes fueron rechazados en un lugar o recibieron un trato peor que el resto. Para clasificar cada caso y remitirlo a la entidad que corresponde, quien contesta la llamada debe anotar cuál rasgo de la persona provocó ese trato, escogiendo entre estos: la lengua o el acento con que habla, la creencia que profesa, el hecho de ser hombre o mujer, el territorio del que viene o alguna condición del cuerpo que le limite moverse, ver u oír como los demás. Esta mañana entraron cuatro reportes y hay que clasificarlos uno por uno.</p></div><p>De acuerdo con lo anterior, ¿en cuál de estos casos el trato desigual se debe a una condición de discapacidad?</p>",
       "opciones": {
-        "A": "No, porque el alcalde fue elegido por la mayoría y por eso puede decidir quién integra el Concejo.",
-        "B": "No, porque un Concejo de un solo partido aprobaría más rápido los proyectos del alcalde.",
-        "C": "Sí, porque el Concejo debe estar conformado por los amigos personales del alcalde.",
-        "D": "Sí, porque el Concejo debe representar las distintas posturas presentes en el municipio, incluida la oposición."
+        "A": "A un cliente le niegan la atención en un almacén apenas notan que habla con el acento de otra región del país.",
+        "B": "A una familia le niegan el arriendo de un apartamento porque profesa una religión distinta a la del dueño del inmueble.",
+        "C": "A una ingeniera le fijan un salario menor que el de un compañero que cumple exactamente las mismas funciones en la empresa.",
+        "D": "A un joven que se moviliza en silla de ruedas no lo dejan entrar a una biblioteca porque «va a estorbar a los demás»."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
+      "que_evalua": "La capacidad para comprender la aplicación del concepto de discriminación.",
+      "justificacion_correcta": "La opción «A un joven que se moviliza en silla de ruedas no lo dejan entrar a una biblioteca» es la respuesta correcta porque al joven se le impide entrar a la biblioteca a causa de su condición de movilidad, es decir, recibe un trato peor por una discapacidad.",
+      "opciones_incorrectas": {
+        "A": "Aquí el trato desigual se debe al origen geográfico de la persona, delatado por su acento.",
+        "B": "Aquí el trato desigual se debe a la creencia religiosa que profesa la familia.",
+        "C": "Aquí el trato desigual se debe al hecho de ser mujer: mismo trabajo con menor salario."
+      }
+    },
+    {
+      "id": "P10S15",
+      "numero": 8,
+      "enunciado": "<p>Una historiadora investiga las razones que motivaron las primeras luchas de las mujeres colombianas por la igualdad de derechos, en las décadas de 1920 y 1930. En un archivo encuentra el siguiente fragmento, escrito en 1931 por una reconocida lideresa de la época.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«De poco sirve ganarse el propio sustento si ante la ley se sigue siendo menor de edad. Se le atribuye a la mujer la misma capacidad de pensar y de juzgar que a cualquier persona y, acto seguido, se le exige la rúbrica del esposo para que sea él quien disponga de unos bienes que ella ya había perdido por obra del deber de obedecer y de someterse: no hay burla mayor ni afrenta más honda. Por eso las mujeres debemos seguir reclamando, en todos los espacios, lo que es nuestro.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Fragmento de un escrito de una lideresa feminista colombiana, 1931 (adaptado para esta prueba).</p></div><p>¿Le resulta útil ese fragmento a la historiadora para lo que se propone?</p>",
+      "opciones": {
+        "A": "Sí, pues deja ver las desigualdades (no tener igualdad civil ni poder disponer de sus bienes) que dieron origen al reclamo de las mujeres.",
+        "B": "Sí, pues prueba que todas las mujeres del país pensaban exactamente igual que la autora.",
+        "C": "No, pues al tratarse del testimonio de una sola lideresa nada dice sobre los motivos de las mujeres de entonces.",
+        "D": "No, pues la fuente se queda en una opinión personal y no menciona ninguna desigualdad concreta que recayera sobre las mujeres."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "ALTA",
+      "estandar": "Identifico algunas características culturales y sociales de los procesos de transformación que se generaron a partir del desarrollo político y económico de Colombia y el mundo a lo largo del siglo XX.",
+      "que_evalua": "La habilidad para determinar si una fuente es útil para una investigación.",
+      "justificacion_correcta": "La opción «Sí, pues deja ver las desigualdades (no tener igualdad civil ni poder disponer de sus…» es la respuesta correcta porque el fragmento describe desigualdades civiles concretas de la época (que la mujer no pudiera disponer de su patrimonio sin la firma del marido) y el llamado a reclamarlas, que son justamente las razones que la historiadora busca identificar.",
+      "opciones_incorrectas": {
+        "C": "Aunque sea el testimonio de una lideresa, sí aporta información valiosa sobre las razones del reclamo y el ambiente de la época.",
+        "D": "La fuente no es una simple opinión: señala una desigualdad civil concreta (la dependencia de la firma del marido para disponer del patrimonio).",
+        "B": "El fragmento no permite afirmar que todas las mujeres pensaran igual; eso sería una generalización indebida a partir de una sola voz."
+      }
+    },
+    {
+      "id": "P10S05",
+      "numero": 9,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El equipo de voleibol del colegio disputa un torneo interno y necesita ganar el último partido. Lucía descubre que su compañera y amiga del equipo, que es quien lleva la planilla, está alterando los marcadores de los partidos para que su equipo clasifique. Su amiga se da cuenta de que la descubrió y le pide que guarde silencio: «No es para tanto, es solo un torneo del colegio y tú eres mi amiga». Lucía sabe que si habla se romperá la amistad y que su propio equipo quedará por fuera del torneo. A pesar de eso, decide informar al profesor lo que está ocurriendo.</p></div><p>¿Cuál de las siguientes razones explica mejor la decisión de Lucía de informar al profesor?</p>",
+      "opciones": {
+        "A": "Considera que el juego limpio es más importante que la lealtad a una amistad.",
+        "B": "Considera que hacer trampa a veces no trae buenos resultados a largo plazo para el equipo.",
+        "C": "Prefiere quedar bien con su amiga antes que con el profesor del equipo.",
+        "D": "Siente envidia porque su amiga es mejor jugadora y quiere perjudicarla."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.3",
+      "dificultad": "MEDIA",
+      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
+      "que_evalua": "La capacidad para reconocer cómo las creencias cercanas al relativismo moral sustentan una conducta.",
+      "justificacion_correcta": "La opción «Considera que el juego limpio es más importante que la lealtad a una amistad» es la respuesta correcta porque la decisión de Lucía de informar se explica porque privilegió el valor del juego limpio (la honestidad) por encima de la lealtad personal a su amiga.",
+      "opciones_incorrectas": {
+        "B": "Esa razón pragmática sobre los resultados del equipo no explica satisfactoriamente la decisión de denunciar a la amiga.",
+        "C": "Esa razón sustentaría lo contrario: encubrir a la amiga, no informar al profesor.",
+        "D": "La envidia llevaría a un acto malintencionado, no a una denuncia basada en un valor."
+      }
+    },
+    {
+      "id": "P10S14",
+      "numero": 10,
+      "enunciado": "<div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio, varios vecinos denuncian que el alcalde habría firmado un contrato de obra sobrevalorado para pavimentar una vía y que la obra quedó inconclusa. Con la denuncia radicada, se pide al Estado revisar la conducta del alcalde <b>como servidor público</b>, para establecer si faltó a sus deberes en el manejo de los recursos y, de ser así, sancionarlo <b>administrativamente</b>, por ejemplo suspendiéndolo o destituyéndolo del cargo. No se trata, por ahora, de establecer si cometió un delito, sino de revisar cómo cumplió sus funciones.</p></div><p>¿Qué entidad se encarga de vigilar la conducta de los servidores públicos y de sancionarlos cuando cometen faltas en su cargo?</p>",
+      "opciones": {
+        "A": "La Veeduría General de la Nación, que llevaría el seguimiento de las obras públicas.",
+        "B": "La Fiscalía General de la Nación, que investiga y acusa ante los jueces del país.",
+        "C": "La Defensoría del Pueblo, que promueve y protege los derechos humanos de todos los ciudadanos del país.",
+        "D": "La Procuraduría General de la Nación, que vigila la conducta de quienes ejercen cargos públicos."
       },
       "clave": "D",
       "competencia": "a",
@@ -98,204 +266,36 @@
       "evidencia": "1.3",
       "dificultad": "BAJA",
       "estandar": "Participo constructivamente en iniciativas o proyectos a favor de la no-violencia en el nivel local o global.",
-      "que_evalua": "La capacidad para comprender el sistema político democrático.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque, al dejar el Concejo en manos de un solo partido, se eliminaría la representación de las diferentes posturas de la comunidad. Una democracia requiere que las distintas voces, incluida la oposición, estén representadas.",
+      "que_evalua": "El conocimiento sobre los organismos de control.",
+      "justificacion_correcta": "La opción «La Procuraduría General de la Nación» es la respuesta correcta porque la Procuraduría General de la Nación es la entidad encargada de vigilar la conducta de los funcionarios públicos e investigarlos y sancionarlos disciplinariamente cuando faltan a sus deberes o manejan indebidamente los recursos del Estado.",
       "opciones_incorrectas": {
-        "A": "Ganar la elección no autoriza a suprimir la representación de las demás posturas en el Concejo.",
-        "B": "La rapidez en aprobar proyectos no justifica eliminar el control y la pluralidad democrática.",
-        "C": "El Concejo no debe conformarse por amistades, sino por representantes de las distintas posturas de la población."
+        "A": "La «Veeduría General de la Nación» no existe como entidad del Estado; su nombre suena plausible, pero no es la encargada de sancionar a los funcionarios. Las veedurías ciudadanas vigilan la gestión pública, pero no imponen sanciones disciplinarias.",
+        "B": "La Fiscalía investiga y acusa por delitos (responsabilidad penal), no por faltas disciplinarias en el ejercicio del cargo.",
+        "C": "La Defensoría del Pueblo vela por la promoción y protección de los derechos humanos de los ciudadanos; no vigila ni sanciona disciplinariamente a los funcionarios."
       }
     },
     {
-      "id": "P10S04",
-      "numero": 4,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la Sierra Nevada de Santa Marta, varios sitios son considerados sagrados por los pueblos indígenas que habitan allí, pues hacen parte de su cosmovisión y de sus prácticas espirituales. Cumpliendo lo dispuesto en la Constitución Política, una autoridad ambiental decidió cerrar al público el acceso a esos sitios y permitir su uso únicamente a las comunidades indígenas.</p></div><p>Según la Constitución Política de Colombia, ¿qué deber se atiende con esa decisión?</p>",
+      "id": "P10S17",
+      "numero": 11,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una empresa extrae arena y grava del lecho de un río para vender material de construcción y opera con un permiso otorgado hace dos años. Los habitantes del corregimiento vecino sostienen que, desde que empezaron los trabajos, el agua que usan para el consumo y para el riego baja turbia y la pesca ha disminuido; el río es su única fuente de agua. La empresa responde que cumple las normas. Ante la falta de acuerdo, una asociación de habitantes presentó una acción legal para impedir que la empresa siga sacando material del río, y ahora debe sustentarla ante un juez.</p></div><p>¿Cuál de los siguientes enunciados apoya la postura de la asociación que demanda a la empresa?</p>",
       "opciones": {
-        "A": "El de atraer más visitantes a la zona para que la región reciba mayores ingresos.",
-        "B": "El de amparar la diversidad étnica y cultural del país junto con la identidad de los pueblos indígenas.",
-        "C": "El de velar por que quienes recorren los sitios sagrados lo hagan sin riesgos.",
-        "D": "El de mantener a las comunidades indígenas totalmente separadas del resto del país."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "MEDIA",
-      "estandar": "Participo constructivamente en iniciativas o proyectos a favor de la no-violencia en el nivel local o global.",
-      "que_evalua": "Los conocimientos sobre el Estado Social de Derecho y su aplicación.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la Constitución reconoce y protege la diversidad étnica y cultural de la nación; al reservar los sitios sagrados a las comunidades indígenas, el Estado cumple el deber de proteger su identidad cultural.",
-      "opciones_incorrectas": {
-        "A": "El propósito de la medida no es atraer turistas, sino proteger lugares sagrados.",
-        "C": "La medida protege la identidad cultural de los pueblos, no la seguridad de los visitantes.",
-        "D": "Reservar unos sitios sagrados no equivale a aislar por completo a la comunidad, lo que vulneraría sus derechos."
-      }
-    },
-    {
-      "id": "P10S05",
-      "numero": 5,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Lucía descubre que su compañera y amiga del equipo de voleibol está alterando los marcadores de los partidos para que su equipo clasifique. Su amiga le pide que guarde silencio: «No es para tanto, es solo un torneo del colegio y tú eres mi amiga». A pesar de eso, Lucía decide informar al profesor lo que está ocurriendo.</p></div><p>¿Cuál de las siguientes razones explica mejor la decisión de Lucía de informar al profesor?</p>",
-      "opciones": {
-        "A": "Considera que hacer trampa a veces no trae buenos resultados a largo plazo.",
-        "B": "Considera que el juego limpio es más importante que la lealtad a una amistad.",
-        "C": "Prefiere quedar bien con su amiga antes que con el profesor del equipo.",
-        "D": "Siente envidia porque su amiga es mejor jugadora y quiere perjudicarla."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.3",
-      "dificultad": "MEDIA",
-      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
-      "que_evalua": "La capacidad para reconocer cómo las creencias cercanas al relativismo moral sustentan una conducta.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la decisión de Lucía de informar se explica porque privilegió el valor del juego limpio (la honestidad) por encima de la lealtad personal a su amiga.",
-      "opciones_incorrectas": {
-        "A": "Esa razón pragmática no explica satisfactoriamente la decisión de denunciar a la amiga.",
-        "C": "Esa razón sustentaría lo contrario: encubrir a la amiga, no informar al profesor.",
-        "D": "La envidia llevaría a un acto malintencionado, no a una denuncia basada en un valor."
-      }
-    },
-    {
-      "id": "P10S06",
-      "numero": 6,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el consejo de un barrio se discute a quiénes se entregarán unos subsidios de vivienda. Una líder propone que se prioricen las familias que perdieron su casa en la última temporada de lluvias. Un asistente responde: «Yo no estoy de acuerdo con darles casas a las familias que llegaron desplazadas de otras regiones; aunque no conozco a ninguna, seguro que con ellas va a aumentar la delincuencia, porque eso es lo que se ve en las noticias».</p></div><p>¿Por qué podría decirse que la afirmación del asistente contiene un prejuicio?</p>",
-      "opciones": {
-        "A": "Porque propone que los subsidios se entreguen únicamente a las familias afectadas por las lluvias.",
-        "B": "Porque defiende los intereses de las familias más necesitadas del barrio.",
-        "C": "Porque considera que las familias del barrio no tienen recursos para comprar una vivienda.",
-        "D": "Porque juzga negativamente a las familias desplazadas sin conocerlas, basándose solo en lo que ha visto en noticias."
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.3",
-      "dificultad": "MEDIA",
-      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
-      "que_evalua": "La habilidad para identificar prejuicios en un enunciado.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque el asistente atribuye un comportamiento negativo (aumentar la delincuencia) a las familias desplazadas sin conocerlas, a partir de una generalización tomada de las noticias: eso es un prejuicio discriminatorio.",
-      "opciones_incorrectas": {
-        "A": "Priorizar a las familias afectadas por las lluvias es la propuesta de la líder, no un prejuicio del asistente.",
-        "B": "Defender a los más necesitados es una acción afirmativa, no un prejuicio.",
-        "C": "El asistente no afirma que las familias del barrio carezcan de recursos; eso no aparece en su enunciado."
-      }
-    },
-    {
-      "id": "P10S07",
-      "numero": 7,
-      "enunciado": "<p>Lee el siguiente instructivo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una línea de atención ciudadana recibe reportes de quienes fueron rechazados en un lugar o recibieron un trato peor que el resto. Quien contesta la llamada debe anotar cuál rasgo de la persona provocó ese trato: la lengua o el acento con que habla, la creencia que profesa, el hecho de ser hombre o mujer, el territorio del que viene o alguna condición del cuerpo que le limite moverse, ver u oír como los demás.</p></div><p>De acuerdo con lo anterior, ¿en cuál de estos casos el trato desigual se debe a una condición de discapacidad?</p>",
-      "opciones": {
-        "A": "A un cliente le niegan la atención en un almacén apenas notan que habla con el acento de otra región del país.",
-        "B": "A un joven que se moviliza en silla de ruedas no lo dejan entrar a una biblioteca con el argumento de que «va a estorbar a los demás».",
-        "C": "A una ingeniera le fijan un salario menor que el de un compañero que cumple exactamente las mismas funciones.",
-        "D": "A una familia le niegan el arriendo de un apartamento porque profesa una religión distinta a la del dueño."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "MEDIA",
-      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
-      "que_evalua": "La capacidad para comprender la aplicación del concepto de discriminación.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque al joven se le impide entrar a la biblioteca a causa de su condición de movilidad, es decir, recibe un trato peor por una discapacidad.",
-      "opciones_incorrectas": {
-        "A": "Aquí el trato desigual se debe al origen geográfico de la persona, delatado por su acento.",
-        "C": "Aquí el trato desigual se debe al hecho de ser mujer: mismo trabajo con menor salario.",
-        "D": "Aquí el trato desigual se debe a la creencia religiosa de la familia."
-      }
-    },
-    {
-      "id": "P10S08",
-      "numero": 8,
-      "enunciado": "<p>Lee la siguiente información y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En economía se llama <b>división del trabajo</b> al reparto de un proceso de producción en tareas distintas: en lugar de que cada persona realice todas las labores, cada una se especializa en una sola, se vuelve más hábil en ella y el conjunto alcanza a producir más en menos tiempo.</p></div><p>De acuerdo con este concepto, ¿cuál de las siguientes situaciones se explica desde la división del trabajo?</p>",
-      "opciones": {
-        "A": "Una empresa grande compra los pequeños talleres de bicicletas de la región para fijar ella sola el precio de venta.",
-        "B": "Un país vende flores a otro país y, a cambio, le compra fertilizantes.",
-        "C": "En una planta de ensamble de bicicletas, un grupo suelda los marcos, otro monta las ruedas y otro revisa y empaca.",
-        "D": "En un taller de reparación, la misma persona recibe las bicicletas, las arregla, cobra y lleva las cuentas."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
-      "que_evalua": "La habilidad para explicar una situación económica a partir del conocimiento de un concepto social.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque describe exactamente la división del trabajo: el proceso se reparte en tareas especializadas y cada grupo se encarga de una sola, de modo que se produce más en menos tiempo.",
-      "opciones_incorrectas": {
-        "A": "Comprar los talleres pequeños para fijar el precio se relaciona con el monopolio, no con la división del trabajo.",
-        "B": "Vender un producto y comprar otro se relaciona con el intercambio comercial entre países, no con la división del trabajo.",
-        "D": "Que una sola persona haga todas las labores es justamente lo contrario de la división del trabajo."
-      }
-    },
-    {
-      "id": "P10S09",
-      "numero": 9,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Las comunidades que viven alrededor de un páramo se encuentran en condiciones de pobreza y le piden al Gobierno medidas para mejorar sus ingresos. El páramo es un ecosistema estratégico: allí se regula el agua y nacen los ríos que abastecen a varias ciudades. El Ministerio de Economía propone autorizar una mina de carbón a cielo abierto dentro del área del páramo, con el argumento de que generaría empleo, regalías y reactivación económica para la región. Frente a esta propuesta, varias organizaciones ambientales sostienen que el Estado debería, en cambio, invertir en vías, en una institución de educación superior y en proyectos de turismo ecológico y agricultura sostenible por fuera del páramo, contratando a la propia comunidad, de modo que el ecosistema se conserve en su estado actual.</p></div><p>¿Qué efecto ambiental traería poner en marcha lo que propone el Ministerio de Economía?</p>",
-      "opciones": {
-        "A": "Perjudicial, pues abrir la mina a cielo abierto trastornaría los ecosistemas del páramo que regulan el agua y afectaría las fuentes que surten a las ciudades.",
-        "B": "Favorable, pues con las regalías de la mina la comunidad tendría con qué cuidar el páramo por su propia cuenta.",
-        "C": "Perjudicial, pues la mina bloquearía el paso libre de las comunidades vecinas hacia el páramo.",
-        "D": "Favorable, pues al reactivarse la economía de la región disminuiría la contaminación ambiental."
+        "A": "Es inadmisible dañar el agua de la que dependen las familias de una zona para aumentar las ganancias de una empresa.",
+        "B": "Es inadmisible que el agua de riego llegue turbia, porque la empresa debería instalar un filtro que se la entregue limpia a los cultivos.",
+        "C": "Es admisible sacar material de los ríos siempre que la empresa tenga los permisos y cumpla las normas ambientales.",
+        "D": "Sacar material del río le da empleo a la región y abarata la construcción de vivienda."
       },
       "clave": "A",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
       "dificultad": "ALTA",
-      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
-      "que_evalua": "La habilidad para valorar la solución a un problema e identificar su impacto ambiental.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque una mina de carbón a cielo abierto en un páramo alteraría gravemente los ecosistemas que regulan el agua, deteriorando las fuentes hídricas que abastecen a las ciudades; por eso el impacto ambiental sería negativo.",
+      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
+      "que_evalua": "La capacidad para evaluar las posibilidades del uso de una fuente para apoyar argumentos.",
+      "justificacion_correcta": "La opción «Es inadmisible dañar el agua de la que dependen las familias de una zona para aumentar…» es la respuesta correcta porque expresa directamente la razón de la demanda: rechazar que se afecte el agua de la que viven las familias en beneficio de la ganancia de la empresa; por eso apoya la postura de quienes piden detener la extracción.",
       "opciones_incorrectas": {
-        "B": "Las regalías son un beneficio económico, pero no evitan el daño ambiental que la mina causa al páramo; además, la propuesta no destina esos recursos a la conservación.",
-        "C": "El impacto ambiental se refiere al daño a los ecosistemas, no al acceso de las comunidades al páramo.",
-        "D": "Generar empleo o reactivar la economía no reduce la contaminación; la minería a cielo abierto la aumenta."
-      }
-    },
-    {
-      "id": "P10S10",
-      "numero": 10,
-      "enunciado": "<p>En una clase de ciencias políticas, el docente entregó esta ficha de resumen. Léela y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El <b>realismo político</b> explica cómo se comporta una nación frente a las otras:</p><p>Por encima de ellas no manda nadie: no hay un árbitro mundial que pueda obligarlas a cumplir lo que firman.<br>Cada nación calcula con frialdad lo que le conviene y busca acumular poder.<br>Como nadie la cuida, se protege por su cuenta y desconfía de todas las demás, de modo que el choque queda a la vuelta de la esquina.<br>Para no desaparecer, engorda su arsenal y coopera únicamente mientras eso le sirva.</p><p style=\"font-size:13px;color:#6B5F54;margin-top:6px\">Ficha de resumen elaborada para esta prueba.</p></div><p>¿Cuál de los siguientes hechos se explica <b>mejor</b> desde el realismo político?</p>",
-      "opciones": {
-        "A": "Dos países enfrentados firman un acuerdo para reducir sus arsenales y aceptan que un organismo mundial revise si lo están cumpliendo.",
-        "B": "Un país disuelve su ejército y le encarga su defensa a un pacto de protección mutua con los vecinos.",
-        "C": "Un país pasa el dinero de sus fuerzas armadas a la construcción de hospitales y escuelas.",
-        "D": "Un país fabrica en secreto armamento de largo alcance, desconoce un acuerdo que ya había firmado y explica su rearme diciendo que no puede poner su existencia en manos ajenas."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "ALTA",
-      "estandar": "Comprendo que el ejercicio político es el resultado de esfuerzos por resolver conflictos y tensiones que surgen en las relaciones de poder entre los Estados y en el interior de ellos mismos.",
-      "que_evalua": "La habilidad para identificar el uso de modelos conceptuales.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque reúne varias ideas de la ficha a la vez: el país se defiende solo (desconfía y se arma para no desaparecer) y no acepta que nadie por encima de él le imponga lo que firmó, tal como ocurre cuando ningún árbitro manda sobre los países.",
-      "opciones_incorrectas": {
-        "A": "Aceptar que un organismo mundial revise el acuerdo es reconocer un árbitro por encima del país y confiar en el otro, justo lo contrario de lo que dice la ficha.",
-        "B": "Encargarle la defensa a un pacto con los vecinos contradice la idea de que cada país se defiende solo y refuerza sus propias armas.",
-        "C": "Cambiar el dinero de las fuerzas armadas por hospitales y escuelas no se explica desde una lógica de acumular poder."
-      }
-    },
-    {
-      "id": "P10S11",
-      "numero": 11,
-      "enunciado": "<p>En un encuentro de municipios costeros, la alcaldesa de un puerto pesquero pronunció el siguiente discurso. Léelo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Aquí nos han querido convencer de que hay que escoger entre el mar y el trabajo, y no es verdad. Se puede vaciar el golfo en diez años y dejarles a los hijos de este puerto un agua sin peces, o se pueden ordenar las vedas, cuidar los manglares donde se crían las especies y vivir de la pesca por generaciones. El puerto que aprenda a sacar del mar solo lo que el mar alcanza a reponer será el que todavía tenga con qué trabajar cuando a los otros ya no les quede nada.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Discurso de una alcaldesa en un encuentro de municipios costeros (adaptado para esta prueba).</p></div><p>¿Qué permitiría sostener que ese discurso recoge la idea de desarrollo sostenible?</p>",
-      "opciones": {
-        "A": "Que propone frenar por completo la actividad del puerto con tal de que el golfo se recupere.",
-        "B": "Que defiende pescar ahora todo lo que se pueda, aunque el golfo quede sin peces más adelante.",
-        "C": "Que propone tomar del mar solo lo que este alcanza a reponer, de modo que el puerto siga viviendo de la pesca y quienes vengan después también puedan hacerlo.",
-        "D": "Que da por imposible cuidar el golfo y al mismo tiempo sostener el trabajo de los pescadores."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
-      "que_evalua": "La habilidad para identificar las características de modelos conceptuales.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque el desarrollo sostenible consiste en satisfacer las necesidades del presente (aquí, el trabajo de los pescadores) sin comprometer la capacidad de quienes vienen después para satisfacer las suyas; el discurso lo expresa al pedir que se saque del mar solo lo que el mar alcanza a reponer.",
-      "opciones_incorrectas": {
-        "A": "El discurso no pide detener la actividad del puerto, sino ordenarla para que la pesca dure.",
-        "B": "El desarrollo sostenible no antepone la ganancia inmediata al recurso: el discurso advierte que así el golfo queda sin peces.",
-        "D": "El discurso sostiene justamente lo contrario: cuidar el golfo es la manera de que haya trabajo mañana."
+        "C": "Aceptar la extracción con permisos y normas respalda que la actividad continúe, no la postura de quienes piden detenerla.",
+        "B": "Este enunciado se queda en una parte del problema (el agua de riego) y pide un arreglo que la empresa podría hacer mientras sigue sacando material del río; no apoya el reclamo central de detener la extracción.",
+        "D": "Resaltar el empleo y el precio de la vivienda respalda la postura de la empresa, no la de la asociación que demanda."
       }
     },
     {
@@ -303,143 +303,143 @@
       "numero": 12,
       "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cada año mueve más dinero la actividad pesquera que se ejerce sin licencia, sin reporte y por fuera de toda reglamentación, y sus efectos se sienten en varios frentes. Del lado ambiental, se extraen especies sin ningún criterio y el agua termina contaminada por técnicas de explotación que nadie controla. Del lado social y económico, compromete el porvenir del oficio -en especial allí donde la región vive de él- y deja en desventaja a quienes sí se ajustan a la norma. Para combatir este problema, una autoridad ambiental propuso tres medidas:</p></div><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">N.°</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medida propuesta</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;vertical-align:top\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;vertical-align:top\">Obligar a las embarcaciones que faenan en la zona a transmitir información sobre su actividad y sobre las especies que capturan, para controlar la sobrepesca.</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;vertical-align:top\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;vertical-align:top\">Capacitar a los pescadores para que abandonen los métodos de captura de gran capacidad destructora (como las redes de arrastre) que dañan los ecosistemas.</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;vertical-align:top\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;vertical-align:top\">Otorgar un distintivo o sello de calidad a los productos de los pescadores que cumplan la normatividad, para premiar las buenas prácticas.</td></tr></table><p>Entre esas tres medidas puede decirse que existe una relación de</p>",
       "opciones": {
-        "A": "contradicción, pues la primera recae sobre las embarcaciones grandes mientras las otras dos golpean a los pescadores artesanales.",
-        "B": "incompatibilidad, pues los efectos de cada medida se harían visibles en momentos distintos.",
-        "C": "complementariedad, pues cada medida se hace cargo de una faceta distinta del mismo problema de la pesca ilegal.",
-        "D": "equivalencia, pues las tres medidas tienen justamente el mismo efecto sobre la actividad pesquera."
+        "A": "complementariedad, pues cada medida se hace cargo de una faceta distinta del mismo problema de la pesca ilegal.",
+        "B": "equivalencia, pues las tres medidas tienen justamente el mismo efecto sobre la actividad pesquera.",
+        "C": "contradicción, pues la primera recae sobre las embarcaciones grandes mientras las otras dos golpean a los pescadores artesanales.",
+        "D": "incompatibilidad, pues los efectos de cada medida se harían visibles en momentos distintos."
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "c",
       "afirmacion": 6,
       "evidencia": "6.1",
       "dificultad": "ALTA",
       "estandar": "Conozco y sé usar los mecanismos constitucionales de participación que permiten expresar mis opiniones y participar en la toma de decisiones políticas tanto a nivel local como a nivel nacional.",
       "que_evalua": "La habilidad para reconocer relaciones entre las soluciones propuestas a un problema.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque cada medida se dirige a un aspecto distinto del problema de la pesca ilegal (la vigilancia de las capturas, los métodos de explotación destructivos y el reconocimiento de las buenas prácticas); en conjunto se complementan para atacar el problema desde varios frentes.",
+      "justificacion_correcta": "La opción «complementariedad, pues cada medida se hace cargo de una faceta distinta del mismo…» es la respuesta correcta porque cada medida se dirige a un aspecto distinto del problema de la pesca ilegal (la vigilancia de las capturas, los métodos de explotación destructivos y el reconocimiento de las buenas prácticas); en conjunto se complementan para atacar el problema desde varios frentes.",
       "opciones_incorrectas": {
-        "A": "Las tres medidas buscan combatir la pesca ilegal; ninguna perjudica a los pescadores que cumplen la ley, así que no se contradicen.",
-        "B": "El problema no es el momento en que cada medida actúa, sino que se ocupan de aspectos distintos y, por eso, se complementan.",
-        "D": "Las medidas no son equivalentes: cada una atiende un aspecto diferente del problema y produce efectos distintos."
-      }
-    },
-    {
-      "id": "P10S13",
-      "numero": 13,
-      "enunciado": "<p>Lee el siguiente caso y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio se señala a una fábrica de arrojar desechos a la quebrada de la que bebe el pueblo. Una junta de acción comunal se planta frente a la oficina ambiental y exige que «cierren esa fábrica ya, sin tanto trámite». La ingeniera a cargo del expediente les contesta: «Estamos tomando muestras del agua y esperando el peritaje del laboratorio. Si sancionamos sin ese respaldo técnico, la fábrica tumba la sanción ante un tribunal y sigue arrojando desechos. Tengan la seguridad de que, con el peritaje en la mano, la sanción va a quedar en firme».</p></div><p>Frente a esta situación, ¿qué persigue cada una de las partes?</p>",
-      "opciones": {
-        "A": "La junta quiere dejar mal parada a la oficina ambiental, y la oficina quiere favorecer a la fábrica.",
-        "B": "La junta quiere que la fábrica deje de contaminar cuanto antes, y la oficina quiere sustentar la sanción con el peritaje para que la fábrica no logre tumbarla.",
-        "C": "La oficina quiere esconder lo que encontró en el agua, y la junta quiere alargar el trámite.",
-        "D": "La junta quiere que la fábrica siga arrojando desechos sin sanción, y la oficina quiere sancionar de inmediato."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "ALTA",
-      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
-      "que_evalua": "La habilidad para comprender las perspectivas de diferentes actores y establecer relaciones entre ellas.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la junta busca que el daño a la quebrada pare cuanto antes, mientras que la oficina prioriza el respaldo técnico para que la sanción no se caiga en el tribunal. Ambas partes quieren que la fábrica deje de contaminar, pero desde perspectivas distintas.",
-      "opciones_incorrectas": {
-        "A": "La oficina no busca favorecer a la fábrica, sino sancionarla con un respaldo que se sostenga.",
-        "C": "La oficina no esconde lo que halló; explica por qué necesita el peritaje. La junta no quiere alargar nada.",
-        "D": "La junta no pide que la fábrica siga arrojando desechos, y la oficina rechaza sancionar sin el peritaje."
-      }
-    },
-    {
-      "id": "P10S14",
-      "numero": 14,
-      "enunciado": "<p>En un municipio, varios vecinos denuncian que el alcalde habría firmado un contrato de obra sobrevalorado y que la obra quedó inconclusa. Ante esto, se pide al Estado revisar la conducta del alcalde como servidor público, para establecer si faltó a sus deberes en el manejo de los recursos y, de ser así, sancionarlo administrativamente (por ejemplo, suspendiéndolo o destituyéndolo del cargo).</p><p>¿Qué entidad se encarga de vigilar la conducta de los servidores públicos y de sancionarlos cuando cometen faltas en su cargo?</p>",
-      "opciones": {
-        "A": "La Procuraduría General de la Nación.",
-        "B": "La Veeduría General de la Nación.",
-        "C": "La Fiscalía General de la Nación.",
-        "D": "La Defensoría del Pueblo."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.3",
-      "dificultad": "BAJA",
-      "estandar": "Participo constructivamente en iniciativas o proyectos a favor de la no-violencia en el nivel local o global.",
-      "que_evalua": "El conocimiento sobre los organismos de control.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la Procuraduría General de la Nación es la entidad encargada de vigilar la conducta de los funcionarios públicos e investigarlos y sancionarlos disciplinariamente cuando faltan a sus deberes o manejan indebidamente los recursos del Estado.",
-      "opciones_incorrectas": {
-        "B": "La «Veeduría General de la Nación» no existe como entidad del Estado; su nombre suena plausible, pero no es la encargada de sancionar a los funcionarios. Las veedurías ciudadanas vigilan la gestión pública, pero no imponen sanciones disciplinarias.",
-        "C": "La Fiscalía investiga y acusa por delitos (responsabilidad penal), no por faltas disciplinarias en el ejercicio del cargo.",
-        "D": "La Defensoría del Pueblo vela por la promoción y protección de los derechos humanos; no vigila ni sanciona disciplinariamente a los funcionarios."
-      }
-    },
-    {
-      "id": "P10S15",
-      "numero": 15,
-      "enunciado": "<p>Una historiadora investiga las razones que motivaron las primeras luchas de las mujeres colombianas por la igualdad de derechos, en las décadas de 1920 y 1930. En un archivo encuentra el siguiente fragmento, escrito en 1931 por una reconocida lideresa de la época.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«De poco sirve ganarse el propio sustento si ante la ley se sigue siendo menor de edad. Se le atribuye a la mujer la misma capacidad de pensar y de juzgar que a cualquier persona y, acto seguido, se le exige la rúbrica del esposo para que sea él quien disponga de unos bienes que ella ya había perdido por obra del deber de obedecer y de someterse: no hay burla mayor ni afrenta más honda. Por eso las mujeres debemos seguir reclamando, en todos los espacios, lo que es nuestro.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Fragmento de un escrito de una lideresa feminista colombiana, 1931 (adaptado para esta prueba).</p></div><p>¿Le resulta útil ese fragmento a la historiadora para lo que se propone?</p>",
-      "opciones": {
-        "A": "No, pues al tratarse del testimonio de una sola lideresa nada dice sobre los motivos de las mujeres de entonces.",
-        "B": "No, pues la fuente se queda en una opinión personal y no menciona ninguna desigualdad concreta que recayera sobre las mujeres.",
-        "C": "Sí, pues deja ver las desigualdades (no tener igualdad civil ni poder disponer de sus bienes) que dieron origen al reclamo de las mujeres.",
-        "D": "Sí, pues prueba que todas las mujeres del país pensaban exactamente igual que la autora."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "ALTA",
-      "estandar": "Identifico algunas características culturales y sociales de los procesos de transformación que se generaron a partir del desarrollo político y económico de Colombia y el mundo a lo largo del siglo XX.",
-      "que_evalua": "La habilidad para determinar si una fuente es útil para una investigación.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque el fragmento describe desigualdades civiles concretas de la época (que la mujer no pudiera disponer de su patrimonio sin la firma del marido) y el llamado a reclamarlas, que son justamente las razones que la historiadora busca identificar.",
-      "opciones_incorrectas": {
-        "A": "Aunque sea el testimonio de una lideresa, sí aporta información valiosa sobre las razones del reclamo y el ambiente de la época.",
-        "B": "La fuente no es una simple opinión: señala una desigualdad civil concreta (la dependencia de la firma del marido para disponer del patrimonio).",
-        "D": "El fragmento no permite afirmar que todas las mujeres pensaran igual; eso sería una generalización indebida a partir de una sola voz."
+        "C": "Las tres medidas buscan combatir la pesca ilegal; ninguna perjudica a los pescadores que cumplen la ley, así que no se contradicen.",
+        "D": "El problema no es el momento en que cada medida actúa, sino que se ocupan de aspectos distintos y, por eso, se complementan.",
+        "B": "Las medidas no son equivalentes: cada una atiende un aspecto diferente del problema y produce efectos distintos."
       }
     },
     {
       "id": "P10S16",
-      "numero": 16,
+      "numero": 13,
       "enunciado": "<p>Una investigadora estudia cómo se poblaron las afueras de las ciudades latinoamericanas durante la segunda mitad del siglo XX. En un libro académico encuentra el siguiente texto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Muchas familias que dejaron el campo se instalaron en los bordes de las ciudades y allí levantaron sus casas por fuera de los planes oficiales. Con el tiempo formaron comités de barrio que dirigieron sus peticiones a las alcaldías: querían acueducto, alumbrado y, sobre todo, un documento que reconociera como suyo el lote que ocupaban. Las autoridades los trataban como ocupantes pasajeros, sin voz para decidir sobre la ciudad; frente a ese trato, los comités hicieron del barrio una identidad compartida y sostuvieron sus peticiones durante años, hasta que empezaron a ser atendidas.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Adaptado de un libro académico sobre organización barrial en ciudades latinoamericanas (uso educativo).</p></div><p>¿Para cuál de los siguientes objetivos de investigación le sirve este texto?</p>",
       "opciones": {
-        "A": "Describir las condiciones económicas en las que vivían las familias que llegaron a las ciudades.",
-        "B": "Analizar la manera en que las alcaldías planearon el crecimiento de las ciudades latinoamericanas.",
-        "C": "Identificar los motivos que orientaron las peticiones de los pobladores de los barrios surgidos en las afueras de las ciudades.",
-        "D": "Explicar el papel de las exportaciones agrícolas en el desarrollo industrial de la región."
+        "A": "Explicar el papel de las exportaciones agrícolas en el desarrollo industrial de la región.",
+        "B": "Identificar los motivos que orientaron las peticiones de los pobladores de los barrios de las afueras.",
+        "C": "Analizar la manera en que las alcaldías planearon el crecimiento de las ciudades latinoamericanas.",
+        "D": "Describir las condiciones económicas en las que vivían las familias que llegaron a las ciudades."
       },
-      "clave": "C",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "ALTA",
       "estandar": "Identifico algunas características culturales y sociales de los procesos de transformación que se generaron a partir del desarrollo político y económico de Colombia y el mundo a lo largo del siglo XX.",
       "que_evalua": "La habilidad para determinar la utilidad de una fuente con respecto a los objetivos de una investigación.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque el texto señala directamente qué buscaban esos pobladores (acueducto, alumbrado y el reconocimiento del lote como propio) y por qué se organizaron, que es justamente lo que plantea el objetivo de investigación.",
+      "justificacion_correcta": "La opción «Identificar los motivos que orientaron las peticiones de los pobladores de los barrios de las afueras» es la respuesta correcta porque el texto señala directamente qué buscaban esos pobladores (acueducto, alumbrado y el reconocimiento del lote como propio) y por qué se organizaron, que es justamente lo que plantea el objetivo de investigación.",
       "opciones_incorrectas": {
-        "A": "El texto no describe los ingresos ni las condiciones económicas de las familias, sino lo que pedían y cómo se organizaron para pedirlo.",
-        "B": "El texto asume la mirada de los pobladores, no la de las alcaldías, y no explica cómo se planeó el crecimiento de las ciudades.",
-        "D": "El texto no aborda las exportaciones agrícolas ni el desarrollo industrial."
+        "A": "El texto no aborda las exportaciones agrícolas ni el desarrollo industrial.",
+        "C": "El texto asume la mirada de los pobladores, no la de las alcaldías, y no explica cómo se planeó el crecimiento de las ciudades.",
+        "D": "El texto no describe los ingresos ni las condiciones económicas de las familias, sino lo que pedían y cómo se organizaron para pedirlo."
       }
     },
     {
-      "id": "P10S17",
-      "numero": 17,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una empresa extrae arena y grava del lecho de un río para vender material de construcción. Los habitantes del corregimiento vecino sostienen que, desde que empezaron los trabajos, el agua que usan para el consumo y para el riego baja turbia y la pesca ha disminuido. Una asociación de habitantes presentó una acción legal para <b>impedir</b> que la empresa siga sacando material del río.</p></div><p>¿Cuál de los siguientes enunciados <b>apoya</b> la postura de la asociación que demanda a la empresa?</p>",
+      "id": "P10S04",
+      "numero": 14,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la Sierra Nevada de Santa Marta, varios sitios son considerados sagrados por los pueblos indígenas que habitan allí, pues hacen parte de su cosmovisión y de sus prácticas espirituales; en los últimos años el aumento de visitantes empezó a interferir con las ceremonias que allí se realizan. Cumpliendo lo dispuesto en la Constitución Política, una autoridad ambiental decidió cerrar al público el acceso a esos sitios y permitir su uso únicamente a las comunidades indígenas, manteniendo abiertos los demás senderos de la zona.</p></div><p>Según la Constitución Política de Colombia, ¿qué deber se atiende con esa decisión?</p>",
       "opciones": {
-        "A": "Es admisible sacar material de los ríos siempre que la empresa tenga los permisos y cumpla las normas ambientales.",
-        "B": "Es inadmisible que el agua de riego llegue turbia, porque la empresa debería instalar un filtro que se la entregue limpia a los cultivos.",
-        "C": "Es inadmisible dañar el agua de la que dependen las familias de una zona para aumentar las ganancias de una empresa.",
-        "D": "Sacar material del río le da empleo a la región y abarata la construcción de vivienda."
+        "A": "El de atraer más visitantes a la zona para que la región reciba mayores ingresos.",
+        "B": "El de velar por que quienes recorren los sitios sagrados lo hagan sin riesgos.",
+        "C": "El de amparar la diversidad étnica y cultural del país y la identidad de los pueblos indígenas.",
+        "D": "El de mantener a las comunidades indígenas totalmente separadas del resto del país."
       },
       "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Participo constructivamente en iniciativas o proyectos a favor de la no-violencia en el nivel local o global.",
+      "que_evalua": "Los conocimientos sobre el Estado Social de Derecho y su aplicación.",
+      "justificacion_correcta": "La opción «El de amparar la diversidad étnica y cultural del país y la identidad de los pueblos indígenas» es la respuesta correcta porque la Constitución reconoce y protege la diversidad étnica y cultural de la nación; al reservar los sitios sagrados a las comunidades indígenas, el Estado cumple el deber de proteger su identidad cultural.",
+      "opciones_incorrectas": {
+        "A": "El propósito de la medida no es atraer turistas, sino proteger lugares sagrados.",
+        "B": "La medida protege la identidad cultural de los pueblos, no la seguridad de los visitantes.",
+        "D": "Reservar unos sitios sagrados no equivale a aislar por completo a la comunidad, lo que vulneraría sus derechos."
+      }
+    },
+    {
+      "id": "P10S11",
+      "numero": 15,
+      "enunciado": "<p>En un encuentro de municipios costeros, la alcaldesa de un puerto pesquero pronunció el siguiente discurso. Léelo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Aquí nos han querido convencer de que hay que escoger entre el mar y el trabajo, y no es verdad. Se puede vaciar el golfo en diez años y dejarles a los hijos de este puerto un agua sin peces, o se pueden ordenar las vedas, cuidar los manglares donde se crían las especies y vivir de la pesca por generaciones. El puerto que aprenda a sacar del mar solo lo que el mar alcanza a reponer será el que todavía tenga con qué trabajar cuando a los otros ya no les quede nada.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Discurso de una alcaldesa en un encuentro de municipios costeros (adaptado para esta prueba).</p></div><p>¿Qué permitiría sostener que ese discurso recoge la idea de desarrollo sostenible?</p>",
+      "opciones": {
+        "A": "Que propone tomar del mar solo lo que este alcanza a reponer, de modo que el puerto viva de la pesca hoy y también mañana.",
+        "B": "Que da por imposible cuidar el golfo y al mismo tiempo sostener el trabajo de los pescadores del puerto.",
+        "C": "Que defiende pescar ahora todo lo que se pueda, aunque el golfo quede sin peces para los hijos de este puerto más adelante.",
+        "D": "Que propone frenar por completo la actividad del puerto con tal de que el golfo se recupere algún día."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
+      "que_evalua": "La habilidad para identificar las características de modelos conceptuales.",
+      "justificacion_correcta": "La opción «Que propone tomar del mar solo lo que este alcanza a reponer, de modo que el puerto viva de la pesca hoy y también mañana» es la respuesta correcta porque el desarrollo sostenible consiste en satisfacer las necesidades del presente (aquí, el trabajo de los pescadores) sin comprometer la capacidad de quienes vienen después para satisfacer las suyas; el discurso lo expresa al pedir que se saque del mar solo lo que el mar alcanza a reponer.",
+      "opciones_incorrectas": {
+        "B": "El discurso sostiene justamente lo contrario: cuidar el golfo es la manera de que haya trabajo mañana.",
+        "C": "El desarrollo sostenible no antepone la ganancia inmediata al recurso: el discurso advierte que así el golfo queda sin peces para los que vienen después.",
+        "D": "El discurso no pide detener la actividad del puerto, sino ordenarla para que la pesca dure."
+      }
+    },
+    {
+      "id": "P10S20",
+      "numero": 16,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una historiadora sostiene que, a mediados del siglo XX, Colombia siguió una política de <b>industrialización protegida</b>: un conjunto de medidas para encarecer las mercancías traídas de otros países y estimular a las fábricas nacionales, de modo que estas abastecieran el mercado interno. Para sustentarlo, cita un documento oficial de política económica de esos años.</p></div><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Se aumenta del 15 % al 40 % el impuesto de aduana que pagan las telas y el calzado que llegan de otros países, y se abren créditos con intereses bajos para las fábricas nacionales que produzcan esos mismos bienes.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Documento oficial de política económica, mediados del siglo XX (adaptado para esta prueba).</p></div><p>¿Por qué ese documento respalda lo que sostiene la historiadora?</p>",
+      "opciones": {
+        "A": "Porque revela el propósito del Gobierno de conservar el modelo de libre comercio con otros países que regía hasta ese momento.",
+        "B": "Porque deja ver la intención del Gobierno de abrirle paso a la mercancía extranjera y de exponer a las fábricas del país a la libre competencia de los productores de afuera.",
+        "C": "Porque expresa la determinación del Gobierno de subir el salario de los trabajadores de las fábricas de telas y calzado.",
+        "D": "Porque reúne medidas que encarecen lo que llega de afuera y abaratan el crédito a las fábricas nacionales, es decir, resguardan la producción del país."
+      },
+      "clave": "D",
       "competencia": "b",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "ALTA",
-      "estandar": "Expreso rechazo ante toda forma de discriminación o exclusión social y hago uso de los mecanismos democráticos para la superación de la discriminación y el respeto a la diversidad.",
-      "que_evalua": "La capacidad para evaluar las posibilidades del uso de una fuente para apoyar argumentos.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque expresa directamente la razón de la demanda: rechazar que se afecte el agua de la que viven las familias en beneficio de la ganancia de la empresa; por eso apoya la postura de quienes piden detener la extracción.",
+      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
+      "que_evalua": "La capacidad para evaluar en qué medida una fuente apoya argumentos de un autor.",
+      "justificacion_correcta": "La opción «Porque reúne medidas que encarecen lo que llega de afuera y abaratan el crédito a las fábricas nacionales» es la respuesta correcta porque el documento describe el alza del impuesto de aduana a bienes extranjeros y los créditos baratos para las fábricas nacionales, es decir, medidas que encarecen lo de afuera y estimulan la producción interna; eso es precisamente lo que la historiadora entiende por industrialización protegida.",
       "opciones_incorrectas": {
-        "A": "Aceptar la extracción con permisos y normas respalda que la actividad continúe, no la postura de quienes piden detenerla.",
-        "B": "Este enunciado se queda en una parte del problema (el agua de riego) y pide un arreglo que la empresa podría hacer mientras sigue sacando material del río; no apoya el reclamo central de detener la extracción.",
-        "D": "Resaltar el empleo y el precio de la vivienda respalda la postura de la empresa, no la de la asociación que demanda."
+        "A": "Las medidas levantan barreras al comercio con otros países, de modo que se apartan del libre comercio en lugar de conservarlo.",
+        "B": "Subir el impuesto de aduana encarece la mercancía extranjera y resguarda a las fábricas del país; lejos de abrirles paso a los productos de afuera, les pone una barrera.",
+        "C": "El documento no menciona los salarios de los trabajadores, sino los impuestos de aduana y los créditos a las fábricas."
+      }
+    },
+    {
+      "id": "P10S10",
+      "numero": 17,
+      "enunciado": "<p>En una clase de ciencias políticas, el docente entregó esta ficha de resumen. Léela y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El <b>realismo político</b> explica cómo se comporta una nación frente a las otras:</p><p>Por encima de ellas no manda nadie: no hay un árbitro mundial que pueda obligarlas a cumplir lo que firman.<br>Cada nación calcula con frialdad lo que le conviene y busca acumular poder.<br>Como nadie la cuida, se protege por su cuenta y desconfía de todas las demás, de modo que el choque queda a la vuelta de la esquina.<br>Para no desaparecer, engorda su arsenal y coopera únicamente mientras eso le sirva.</p><p style=\"font-size:13px;color:#6B5F54;margin-top:6px\">Ficha de resumen elaborada para esta prueba.</p></div><p>¿Cuál de los siguientes hechos se explica <b>mejor</b> desde el realismo político?</p>",
+      "opciones": {
+        "A": "Dos países enfrentados firman un acuerdo para reducir sus arsenales y aceptan que un organismo mundial los visite y revise si lo están cumpliendo.",
+        "B": "Un país pasa el dinero de sus fuerzas armadas a la construcción de hospitales y escuelas para su población.",
+        "C": "Un país fabrica armamento en secreto, desconoce un acuerdo que ya había firmado y dice que no puede poner su existencia en manos ajenas.",
+        "D": "Un país disuelve su ejército y le encarga su defensa a un pacto de protección mutua con sus países vecinos."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "ALTA",
+      "estandar": "Comprendo que el ejercicio político es el resultado de esfuerzos por resolver conflictos y tensiones que surgen en las relaciones de poder entre los Estados y en el interior de ellos mismos.",
+      "que_evalua": "La habilidad para identificar el uso de modelos conceptuales.",
+      "justificacion_correcta": "La opción «Un país fabrica armamento en secreto, desconoce un acuerdo que ya había firmado y dice que no puede poner su existencia en manos ajenas» es la respuesta correcta porque reúne varias ideas de la ficha a la vez: el país se defiende solo (desconfía y se arma para no desaparecer) y no acepta que nadie por encima de él le imponga lo que firmó, tal como ocurre cuando ningún árbitro manda sobre los países.",
+      "opciones_incorrectas": {
+        "A": "Aceptar que un organismo mundial visite y revise el acuerdo es reconocer un árbitro por encima del país y confiar en el otro, justo lo contrario de lo que dice la ficha.",
+        "B": "Cambiar el dinero de las fuerzas armadas por hospitales y escuelas no se explica desde una lógica de acumular poder.",
+        "D": "Encargarle la defensa a un pacto con los países vecinos contradice la idea de que cada país se defiende solo y refuerza sus propias armas."
       }
     },
     {
@@ -447,71 +447,71 @@
       "numero": 18,
       "enunciado": "<p>Lee el siguiente fragmento de un cuaderno de campo y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Llevo tres meses en la vereda y ya entendí que aquí nadie mide la pobreza en plata. Preguntar cuánto gana una casa no lleva a ninguna parte: casi nadie recibe un sueldo. Cuando dicen que a don Elías le está yendo mal, quieren decir que la chagra no le dio, que se le murió la mula con la que bajaba la carga o que ya nadie lo llama a las mingas. En la ciudad esa misma persona pasaría por acomodada; en la vereda se cuenta entre los que menos tienen. Cada comunidad arma su propia lista de lo que hace falta para vivir bien, y esa lista no se traduce a una sola cifra.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Fragmento de un cuaderno de campo de una antropóloga (adaptado para esta prueba).</p></div><p>Teniendo en cuenta lo anterior, ¿con qué se vinculan las concepciones sociales de la pobreza?</p>",
       "opciones": {
-        "A": "Con la suma exacta de plata que entra a cada casa durante el mes.",
-        "B": "Con aquellos bienes y relaciones que cada comunidad tiene por valiosos e imprescindibles para vivir bien.",
-        "C": "Con el modelo económico que adopta el gobierno de cada país.",
-        "D": "Con la cantidad de habitantes que tiene cada región del territorio."
+        "A": "Con la suma exacta de plata que entra a cada casa de la vereda durante el mes.",
+        "B": "Con la cantidad de habitantes que tiene cada región del territorio.",
+        "C": "Con los bienes y las relaciones que cada comunidad tiene por imprescindibles para vivir bien.",
+        "D": "Con el modelo económico que adopta el gobierno de cada país."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.2",
       "dificultad": "MEDIA",
       "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
       "que_evalua": "La comprensión de un concepto económico y su aplicación.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque el fragmento plantea que la pobreza no se deja reducir a una cifra igual para todos, sino que depende de la lista de lo que cada comunidad tiene por indispensable (allí, la chagra, la mula o ser llamado a las mingas); por eso lo que se entiende por pobreza cambia de un grupo a otro.",
+      "justificacion_correcta": "La opción «Con los bienes y las relaciones que cada comunidad tiene por imprescindibles para vivir bien» es la respuesta correcta porque el fragmento plantea que la pobreza no se deja reducir a una cifra igual para todos, sino que depende de la lista de lo que cada comunidad tiene por indispensable (allí, la chagra, la mula o ser llamado a las mingas); por eso lo que se entiende por pobreza cambia de un grupo a otro.",
       "opciones_incorrectas": {
         "A": "El fragmento rechaza justamente medir la pobreza en plata: allí casi nadie recibe un sueldo y aun así se sabe a quién le va mal.",
-        "C": "El fragmento no habla del modelo económico del gobierno, sino de lo que cada comunidad valora.",
-        "D": "El número de habitantes no tiene relación con lo que el fragmento plantea sobre la pobreza."
+        "B": "El número de habitantes no tiene relación con lo que el fragmento plantea sobre la pobreza.",
+        "D": "El fragmento no habla del modelo económico del gobierno, sino de lo que cada comunidad valora."
       }
     },
     {
-      "id": "P10S19",
+      "id": "P10S02",
       "numero": 19,
-      "enunciado": "<p>Lee el siguiente fragmento de la Constitución Política de Colombia y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Son mecanismos de participación del pueblo en ejercicio de su soberanía: el voto, el plebiscito, el referendo, la consulta popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato. La ley los reglamentará.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Constitución Política de Colombia, artículo 103 (fragmento).</p></div><p>¿Qué permite sostener que la Constitución de 1991 impulsa un modelo de democracia participativa?</p>",
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un municipio, cerca de sesenta familias levantaron sus viviendas en la ribera de un río que se desborda cada invierno; es el único terreno al que pudieron acceder sin pagar. Para reducir el riesgo y mejorar las condiciones de esas familias, la alcaldía aprobó un plan con dos componentes que debían ejecutarse juntos: primero, desalojar la ribera y demoler las construcciones; segundo, entregar a cada familia una vivienda en un terreno seguro y un apoyo económico mientras se muda. Al cerrar el año, por falta de recursos, solo se ejecutó el primer componente y el segundo quedó aplazado sin fecha.</p></div><p>Si únicamente se aplica el primer componente, ¿qué efecto tendría sobre las familias desalojadas?</p>",
       "opciones": {
-        "A": "Que reconoce el voto como la forma en que los ciudadanos escogen a quienes los gobiernan y los representan.",
-        "B": "Que le encarga a la ley la reglamentación de todos los mecanismos que enumera el artículo.",
-        "C": "Que reconoce al pueblo como el titular de la soberanía dentro del ordenamiento del país.",
-        "D": "Que pone en manos de los ciudadanos mecanismos con los que intervienen directamente en las decisiones, como la consulta popular y el cabildo abierto."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "Conozco y sé usar los mecanismos constitucionales de participación que permiten expresar mis opiniones y participar en la toma de decisiones políticas tanto a nivel local como a nivel nacional.",
-      "que_evalua": "La capacidad para comprender el alcance de los mecanismos de participación establecidos en la Constitución.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque la democracia participativa se caracteriza por permitir que los ciudadanos intervengan de manera directa en las decisiones que los afectan, más allá de elegir representantes; el artículo lo muestra al enumerar mecanismos como la consulta popular, el cabildo abierto y el referendo.",
-      "opciones_incorrectas": {
-        "A": "Escoger gobernantes mediante el voto es propio de la democracia representativa; por sí solo no muestra el rasgo participativo.",
-        "B": "Que la ley reglamente los mecanismos es un asunto de procedimiento y no define el modelo de democracia.",
-        "C": "Que la soberanía resida en el pueblo también se afirma en la democracia representativa, así que no basta para sostener el carácter participativo."
-      }
-    },
-    {
-      "id": "P10S20",
-      "numero": 20,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una historiadora sostiene que, a mediados del siglo XX, Colombia siguió una política de <b>industrialización protegida</b>: un conjunto de medidas para encarecer las mercancías traídas de otros países y estimular a las fábricas nacionales, de modo que estas abastecieran el mercado interno. Para sustentarlo, cita un documento oficial de política económica de esos años.</p></div><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style=\"font-style:italic\">«Se aumenta del 15 % al 40 % el impuesto de aduana que pagan las telas y el calzado que llegan de otros países, y se abren créditos con intereses bajos para las fábricas nacionales que produzcan esos mismos bienes.»</p><p style=\"font-size:13px;color:#6B5F54;text-align:right;margin-top:6px\">Documento oficial de política económica, mediados del siglo XX (adaptado para esta prueba).</p></div><p>¿Por qué ese documento respalda lo que sostiene la historiadora?</p>",
-      "opciones": {
-        "A": "Porque deja ver la intención del Gobierno de abrirle paso a la mercancía extranjera y exponer a las fábricas del país a la competencia de afuera.",
-        "B": "Porque reúne medidas (subir el impuesto de aduana a las telas y al calzado que llegan de afuera y dar créditos baratos a las fábricas nacionales) dirigidas a resguardar la producción del país.",
-        "C": "Porque revela el propósito del Gobierno de conservar el modelo de libre comercio que regía hasta ese momento.",
-        "D": "Porque expresa la determinación del Gobierno de subir el salario de los trabajadores de las fábricas."
+        "A": "Positivo, porque al quedar fuera de la ribera, el desalojo por sí solo bastaría para resolver su necesidad de vivienda.",
+        "B": "Negativo, porque, sin la vivienda prevista, buscarían otro terreno igual de barato y volverían a quedar expuestas a las inundaciones.",
+        "C": "Positivo, porque despejar la ribera recuperaría el cauce del río y eso beneficiaría a las familias.",
+        "D": "Negativo, porque la ribera quedaría sin construcciones y el municipio perdería un sector poblado."
       },
       "clave": "B",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.1",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
       "dificultad": "ALTA",
-      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
-      "que_evalua": "La capacidad para evaluar en qué medida una fuente apoya argumentos de un autor.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque el documento describe el alza del impuesto de aduana a bienes extranjeros y los créditos baratos para las fábricas nacionales, es decir, medidas que encarecen lo de afuera y estimulan la producción interna; eso es precisamente lo que la historiadora entiende por industrialización protegida.",
+      "estandar": "Conozco y sé usar los mecanismos constitucionales de participación que permiten expresar mis opiniones y participar en la toma de decisiones políticas tanto a nivel local como a nivel nacional.",
+      "que_evalua": "La capacidad para analizar los efectos de una posible intervención sobre un grupo.",
+      "justificacion_correcta": "La opción «Negativo, porque, sin la vivienda prevista, buscarían otro terreno igual de barato y…» es la respuesta correcta porque, al ejecutar solo el desalojo y dejar por fuera la vivienda de reemplazo y el apoyo económico, lo más probable es que las familias se instalen en otro terreno igual de barato y frágil: el riesgo se traslada y su necesidad de vivienda sigue sin resolverse.",
       "opciones_incorrectas": {
-        "A": "Subir el impuesto de aduana encarece la mercancía extranjera y resguarda a las fábricas del país; no les abre paso a los productos de afuera.",
-        "C": "Las medidas levantan barreras al comercio con otros países, de modo que se apartan del libre comercio en lugar de conservarlo.",
-        "D": "El documento no menciona los salarios, sino los impuestos de aduana y los créditos a las fábricas."
+        "A": "Sacar a las familias de la ribera no les entrega un lugar donde vivir; sin la vivienda de reemplazo, lo previsible es que se ubiquen en otro sitio expuesto.",
+        "C": "La pregunta indaga por el efecto sobre las familias, no por el estado del cauce; además, despejar la ribera no las beneficia si no reciben lo prometido.",
+        "D": "El enunciado pregunta por el efecto sobre las familias desalojadas, no por lo que ocurra con el sector."
+      }
+    },
+    {
+      "id": "P10S08",
+      "numero": 20,
+      "enunciado": "<p>Lee la siguiente información y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la clase de economía se estudia por qué unas formas de organizar la producción rinden más que otras. Una de ellas es la <b>división del trabajo</b>: el reparto de un proceso de producción en tareas distintas, de modo que, en lugar de que cada persona realice todas las labores, cada una se especializa en una sola, se vuelve más hábil en ella y el conjunto alcanza a producir más en menos tiempo. El docente aclara que no toda forma de organizar una empresa corresponde a esta idea y propone revisar cuatro situaciones para distinguirla de otros conceptos vistos en clase.</p></div><p>De acuerdo con este concepto, ¿cuál de las siguientes situaciones se explica desde la división del trabajo?</p>",
+      "opciones": {
+        "A": "En una planta de ensamble de bicicletas, un grupo suelda los marcos, otro monta las ruedas y otro revisa y empaca.",
+        "B": "Una empresa grande compra los pequeños talleres de bicicletas de la región para fijar ella sola el precio de venta.",
+        "C": "En un taller de reparación, la misma persona recibe las bicicletas, las arregla, cobra y lleva las cuentas.",
+        "D": "Un país vende flores a otro país y, a cambio, le compra fertilizantes."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y tomo posición frente a las principales causas y consecuencias políticas, económicas, sociales y ambientales de la aplicación de las diferentes teorías y modelos económicos en el siglo XX y formulo hipótesis que me permitan explicar la situación de Colombia en este contexto.",
+      "que_evalua": "La habilidad para explicar una situación económica a partir del conocimiento de un concepto social.",
+      "justificacion_correcta": "La opción «En una planta de ensamble de bicicletas, un grupo suelda los marcos, otro monta las…» es la respuesta correcta porque describe exactamente la división del trabajo: el proceso se reparte en tareas especializadas y cada grupo se encarga de una sola, de modo que se produce más en menos tiempo.",
+      "opciones_incorrectas": {
+        "B": "Comprar los talleres pequeños para fijar el precio se relaciona con el monopolio, no con la división del trabajo.",
+        "D": "Vender un producto y comprar otro se relaciona con el intercambio comercial entre países, no con la división del trabajo.",
+        "C": "Que una sola persona haga todas las labores es justamente lo contrario de la división del trabajo."
       }
     }
   ],

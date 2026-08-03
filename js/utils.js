@@ -145,7 +145,11 @@ export function renderMath(elemento, _intentos = 0) {
     window.renderMathInElement(el, {
       delimiters: [
         { left: '$$', right: '$$', display: true },
-        { left: '$', right: '$', display: false },
+        // El $ SUELTO ya NO es delimitador. En este proyecto el peso colombiano se escribe con $
+        // en la prosa ("vale $3.200 ... son $22.400"), y KaTeX tomaba todo lo que hubiera entre
+        // los dos signos como una formula: salia LaTeX crudo en rojo y hasta "undefined". Todo el
+        // contenido escribe sus formulas con \( \), asi que no se pierde nada.
+
         { left: '\\(', right: '\\)', display: false },
         { left: '\\[', right: '\\]', display: true }
       ],

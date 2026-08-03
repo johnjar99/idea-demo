@@ -541,8 +541,14 @@
             _lns.filter(l => /^(\d+[.\)]|[•·*-\-])\s/.test(l)).length >= Math.ceil(_lns.length / 2);
           const esVerso = /\n/.test(p) && !esLista;
           const esCortoSub = p.length <= 30 && !/[.!?…»]$/.test(p);
+          // El primer parrafo se trataba SIEMPRE como titulo: negrilla y centrado. Cuando la
+          // lectura arranca directamente en prosa, eso sacaba el primer parrafo entero en
+          // negrilla y centrado, que es justo lo que no debe pasar. Ahora tiene que PARECER
+          // titulo: corto, de una sola linea y sin punto final. El titulo de verdad ya va en
+          // la cabecera de la pagina de lectura, asi que aqui no perdemos nada.
+          const esTitulo = i === 0 && p.length <= 80 && !/\n/.test(p) && !/[.!?…»]$/.test(p);
           let cls = 'ctx-p';
-          if (i === 0) cls += ' ctx-titulo';
+          if (esTitulo) cls += ' ctx-titulo';
           else if (esLista) cls += ' ctx-lista';
           else if (esVerso) cls += ' ctx-verso';
           else if (i === 1 && esCortoSub) cls += ' ctx-subtitulo';

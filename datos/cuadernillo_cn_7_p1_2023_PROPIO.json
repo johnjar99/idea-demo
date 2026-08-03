@@ -42,68 +42,93 @@
   },
   "preguntas": [
     {
-      "id": "P7C01",
+      "id": "P7C10",
       "numero": 1,
-      "enunciado": "<p>Lee la siguiente situación y observa el equipo de la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el laboratorio del colegio, Sofía arma el equipo de la figura para separar una <b>mezcla homogénea</b> de tres líquidos que se disuelven entre sí. La técnica se llama <b>destilación simple</b> y aprovecha que cada sustancia hierve a una temperatura distinta: al calentar poco a poco, la más <b>volátil</b> (la de temperatura de <b>ebullición</b> más baja) hierve primero, pasa a vapor, sube por el tubo inclinado, allí se enfría y vuelve a ser líquida, y cae gota a gota en el vaso de recolección. El termómetro avisa a qué temperatura está saliendo cada fracción.</p><p>Temperaturas de ebullición: <b>acetona, 56 °C</b>; <b>agua, 100 °C</b>; <b>ácido acético, 118 °C</b>.</p>[[IMG]]</div><p>Si la mezcla se calienta de forma gradual, ¿cuál es la <b>primera</b> fracción que cae en el vaso y por qué?</p>",
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un barrio, varias personas presentaron infecciones estomacales después de bañarse en una quebrada cercana. Un grupo de estudiantes desea investigar el problema desde las <b>ciencias naturales</b>. Una <b>pregunta investigable</b> en esta área debe poder responderse con <b>observación y experimentación</b> e indagar por un <b>agente o causa natural</b> del fenómeno, no por aspectos económicos, demográficos u de opinión.</p></div><p>¿Cuál de las siguientes preguntas orientaría mejor una investigación desde las ciencias naturales?</p>",
       "opciones": {
-        "A": "El agua, porque al ser la más abundante de la mezcla se evapora antes que los demás líquidos, sin importar a qué temperatura hierve.",
-        "B": "La acetona, porque es la más volátil: hierve a la temperatura más baja de las tres, así que pasa a vapor y se recoge primero.",
-        "C": "El agua, porque su temperatura de ebullición intermedia (100 °C) hace que pase a vapor antes que la acetona y se recoja primero.",
-        "D": "El ácido acético, porque hervir a la temperatura más alta (118 °C) indica que es el primero en pasar a vapor al calentar la mezcla."
+        "A": "¿Cuánto dinero costaría construir un parque acuático con agua tratada que reemplace la quebrada del barrio?",
+        "B": "¿Qué opinan los vecinos del barrio sobre la decisión de cerrar la quebrada al baño de las personas?",
+        "C": "¿Cuántas personas del barrio acostumbran bañarse de forma habitual en la quebrada durante cada fin de semana?",
+        "D": "¿Qué microorganismos del agua de la quebrada podrían ser el agente causante de las infecciones?"
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de proponer una pregunta de investigación que permita estudiar un fenómeno de las ciencias naturales.",
+      "justificacion_correcta": "La opción «¿Qué microorganismos del agua de la quebrada podrían ser el agente causante de las…» es la respuesta correcta porque indaga por el agente natural (los microorganismos del agua) que podría causar las infecciones, una pregunta que se puede abordar mediante observación y análisis de laboratorio, propios de las ciencias naturales.",
+      "opciones_incorrectas": {
+        "A": "Es incorrecta porque se centra en costos y construcción, un asunto económico, y no en el estudio de un fenómeno natural.",
+        "C": "Es incorrecta porque cuantificar personas es un dato demográfico que no identifica la causa natural de la enfermedad.",
+        "B": "Es incorrecta porque recoger opiniones corresponde a un estudio social, no a una indagación desde las ciencias naturales."
+      }
+    },
+    {
+      "id": "P7C16",
+      "numero": 2,
+      "enunciado": "<p>Lee la situación, observa el esquema del sistema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una fábrica vierte a un río aguas con <b>residuos químicos</b>. Aguas abajo, un pueblo capta agua del mismo río para consumo humano y para <b>regar sus huertas</b>, de modo que la contaminación de la fábrica repercute en la salud de las personas y en sus cultivos. Para intervenir el sistema se instala un <b>filtro de tratamiento</b> (con capas de grava, arena y carbón) que retiene los residuos químicos de la fábrica antes de que el agua siga su curso hacia el pueblo.</p>[[IMG]]</div><p>¿Por qué la incorporación del filtro de tratamiento beneficia al pueblo?</p>",
+      "opciones": {
+        "A": "Porque limpia el agua que el pueblo ya usó y la devuelve al río después de regar las huertas.",
+        "B": "Porque impide que los residuos químicos contaminen el agua que el pueblo bebe y usa para regar sus huertas.",
+        "C": "Porque las capas de carbón, arena y grava le agregan al agua minerales que alimentan los cultivos.",
+        "D": "Porque aumenta la cantidad de agua que baja por el río y así los residuos quedan más diluidos."
       },
       "clave": "B",
       "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de relacionar el efecto de incluir un elemento en un sistema, dada una situación problema.",
+      "justificacion_correcta": "La opción «Porque impide que los residuos químicos contaminen el agua que el pueblo bebe y usa para…» es la respuesta correcta porque el filtro retiene los residuos químicos de la fábrica antes de que el agua siga su curso; así el agua que el pueblo capta para beber y regar llega libre de esa contaminación, lo que protege la salud de las personas y sus cultivos.",
+      "opciones_incorrectas": {
+        "A": "Invierte el lugar del filtro dentro del sistema: está entre la fábrica y el pueblo, así que trata el agua antes de que la gente la use, no después.",
+        "C": "Las capas de carbón, arena y grava retienen lo que el agua trae; el filtro quita, no añade, de modo que no le aporta minerales a los cultivos.",
+        "D": "El filtro no aporta más agua al río ni diluye nada: retira del agua los residuos químicos que venían de la fábrica."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q16.png"
+    },
+    {
+      "id": "P7C15",
+      "numero": 3,
+      "enunciado": "<p>Lee la situación y observa el tubo junto a la tabla de densidades.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un tubo de ensayo, cuatro materiales se ordenan en capas estables según su <b>densidad</b> (masa por unidad de volumen): el corcho (0,2 g/mL) queda arriba, luego el aceite (0,9 g/mL), debajo el agua (1,0 g/mL) y, en el fondo, la miel (1,4 g/mL), porque <b>un material flota sobre otro cuando su densidad es menor</b>. Tomás deja caer con cuidado una <b>cuenta de plástico de densidad 1,1 g/mL</b>.</p>[[IMG]]</div><p>Al estabilizarse, ¿en qué posición quedará la cuenta?</p>",
+      "opciones": {
+        "A": "Quedará entre el aceite y el agua.",
+        "B": "Se hundirá hasta el fondo, por debajo de la miel.",
+        "C": "Flotará en la superficie, por encima del corcho.",
+        "D": "Quedará entre el agua y la miel."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.2",
       "cmc": "Entorno físico",
       "dificultad": "ALTA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden seleccionar, en una destilación simple, cuál componente se separa primero, a partir de los puntos de ebullición dados.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la acetona es la más volátil de las tres sustancias: hierve a 56 °C, la temperatura más baja de todas, así que al calentar poco a poco es la primera en pasar a vapor, la primera que se enfría en el tubo y la primera que cae en el vaso de recolección.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de explicar un fenómeno mediante los conceptos de las ciencias naturales (densidad).",
+      "justificacion_correcta": "La opción «Quedará entre el agua y la miel» es la respuesta correcta porque la cuenta (1,1 g/mL) es más densa que el corcho (0,2), el aceite (0,9) y el agua (1,0), de modo que se hunde a través de esas tres capas; pero es menos densa que la miel (1,4), así que flota sobre ella. Por eso se detiene entre la capa de agua y la de miel.",
       "opciones_incorrectas": {
-        "A": "Es incorrecta porque el orden en que se separan las sustancias lo decide la temperatura a la que hierve cada una, no la cantidad que haya de ella; además el agua hierve a 100 °C y sale después de la acetona.",
-        "C": "Es incorrecta porque, aunque el agua hierve a una temperatura intermedia (100 °C), esa temperatura es mayor que la de la acetona (56 °C); por eso el agua sale después, no antes.",
-        "D": "Es incorrecta porque hervir a la temperatura más alta significa justamente pasar de último al estado de vapor: el ácido acético (118 °C) se separa al final, no al comienzo."
+        "C": "Es incorrecta porque la cuenta (1,1 g/mL) es más densa que el corcho, el aceite y el agua; no puede quedar en la superficie, sino que se hunde hasta hallar un líquido más denso.",
+        "A": "Es incorrecta porque la cuenta también es más densa que el agua (1,1 > 1,0); por eso atraviesa la capa de agua y no se detiene entre el aceite y el agua.",
+        "B": "Es incorrecta porque la cuenta (1,1 g/mL) es menos densa que la miel (1,4); flota sobre la miel y no llega al fondo del tubo."
       },
-      "imagen_figura": "assets/banco-cn-7-p1/q01.png"
-    },
-    {
-      "id": "P7C02",
-      "numero": 2,
-      "enunciado": "<p>Lee la siguiente situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Andrés cuelga de una varilla de madera dos bolitas de cobre iguales, cada una sujeta por un hilo aislante, de modo que quedan una al lado de la otra. Después frota <b>las dos</b> bolitas con el <b>mismo paño de lana</b>: en este <b>proceso de carga por frotamiento</b> el paño entrega a cada bolita el mismo tipo de carga, así que las dos quedan electrizadas con cargas del <b>mismo signo</b> y de tamaño parecido. Entre dos cuerpos cargados aparece una <b>fuerza eléctrica</b>: de atracción cuando los signos son contrarios y de repulsión cuando son iguales. Antes de soltarlas, Andrés se anima a anticipar lo que va a pasar.</p>[[IMG]]</div><p>¿Qué les ocurre a las dos bolitas cuando Andrés las suelta?</p>",
-      "opciones": {
-        "A": "Se quedan quietas y colgando verticales, pues frotar un metal con lana no produce ninguna fuerza entre las bolitas.",
-        "B": "Se atraen y se juntan, porque al frotarlas con el mismo paño quedan con cargas de signo contrario.",
-        "C": "Se repelen y se separan, porque al frotarlas con el mismo paño quedan con cargas del mismo signo.",
-        "D": "Una queda inmóvil y la otra se mueve hacia ella, porque solo una de las dos alcanza a cargarse."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Entorno físico",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden predecir cómo serán las fuerzas eléctricas en un sistema, a partir del conocimiento de las cargas eléctricas.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque, al frotar las dos bolitas con el mismo paño, ambas quedan con carga del mismo signo; entre cargas de igual signo la fuerza eléctrica es de repulsión, de modo que las bolitas se separan una de la otra.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque el frotamiento sí electriza las bolitas; al quedar cargadas aparece una fuerza eléctrica entre ellas y los hilos dejan de colgar verticales.",
-        "B": "Es incorrecta porque frotar las dos con el mismo paño les deja el mismo signo de carga, no signos contrarios; y las cargas iguales se repelen, no se atraen.",
-        "D": "Es incorrecta porque las dos bolitas se frotan en igualdad de condiciones, así que quedan cargadas de forma parecida y sobre cada una actúa una fuerza de la misma magnitud; ninguna puede quedar inmóvil mientras la otra se mueve."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q02.png"
+      "imagen_figura": "assets/banco-cn-7-p1/q15.png"
     },
     {
       "id": "P7C03",
-      "numero": 3,
+      "numero": 4,
       "enunciado": "<p>Lee la situación y observa la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de estudiantes determinó, en el laboratorio, el <b>porcentaje de agua</b> de cuatro alimentos y registró los datos en la tabla. Una buena <b>representación gráfica</b> debe trasladar esos valores <b>sin alterarlos</b>: cada alimento conserva exactamente su porcentaje y se respeta el orden de magnitud entre ellos.</p></div><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Alimento</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Porcentaje de agua</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Sandía</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">92 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Espinaca</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">88 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Banano</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">75 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Pan</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">35 %</td></tr></table><p>De las cuatro gráficas (A, B, C o D), ¿cuál representa <b>fielmente</b> los datos de la tabla?</p>",
       "opciones": {
-        "A": "Gráfica A.",
-        "B": "Gráfica B.",
-        "C": "Gráfica C.",
-        "D": "Gráfica D."
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
-      "clave": "D",
+      "clave": "A",
       "competencia": "c",
       "afirmacion": 3,
       "evidencia": "3.1",
@@ -111,22 +136,357 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden pasar información entre diversos formatos (de una tabla a una gráfica) sin alterarla.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque es la única gráfica de barras cuya altura coincide, alimento por alimento, con el porcentaje de agua de la tabla (sandía 92 %, espinaca 88 %, banano 75 %, pan 35 %), conservando los datos sin alterarlos.",
+      "justificacion_correcta": "La opción «Gráfica D» es la respuesta correcta porque es la única gráfica de barras cuya altura coincide, alimento por alimento, con el porcentaje de agua de la tabla (sandía 92 %, espinaca 88 %, banano 75 %, pan 35 %), conservando los datos sin alterarlos.",
       "opciones_incorrectas": {
-        "A": "Es incorrecta porque las barras asignan a cada alimento un valor que no corresponde a la tabla (por ejemplo, muestra al pan con el mayor porcentaje de agua).",
-        "B": "Es incorrecta porque una gráfica de torta no es adecuada para comparar estos porcentajes independientes (no suman 100 %) y, además, no muestra los valores de la tabla.",
-        "C": "Es incorrecta porque dibuja todas las barras de la misma altura, como si todos los alimentos tuvieran el mismo porcentaje de agua, lo cual contradice la tabla."
+        "C": "Es incorrecta porque las barras asignan a cada alimento un valor que no corresponde a la tabla (por ejemplo, muestra al pan con el mayor porcentaje de agua).",
+        "D": "Es incorrecta porque una gráfica de torta no es adecuada para comparar estos porcentajes independientes (no suman 100 %) y, además, no muestra los valores de la tabla.",
+        "B": "Es incorrecta porque dibuja todas las barras de la misma altura, como si todos los alimentos tuvieran el mismo porcentaje de agua, lo cual contradice la tabla."
       },
       "opciones_imagenes": {
-        "A": "assets/banco-cn-7-p1/q03_opA.png",
-        "B": "assets/banco-cn-7-p1/q03_opB.png",
-        "C": "assets/banco-cn-7-p1/q03_opC.png",
-        "D": "assets/banco-cn-7-p1/q03_opD.png"
+        "C": "assets/banco-cn-7-p1/q03_opA.png",
+        "D": "assets/banco-cn-7-p1/q03_opB.png",
+        "B": "assets/banco-cn-7-p1/q03_opC.png",
+        "A": "assets/banco-cn-7-p1/q03_opD.png"
+      }
+    },
+    {
+      "id": "P7C20",
+      "numero": 5,
+      "enunciado": "<p>Lee la situación, observa las fichas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Durante la semana de la alimentación, una nutricionista visitó el colegio y le pidió a cuatro estudiantes de séptimo que anotaran en una ficha lo que se sirvieron ese día en el restaurante escolar. Antes les explicó que un plato balanceado reúne un alimento de cada uno de los cuatro grupos: <b>carbohidratos</b> (arroz, papa, pan), <b>frutas y verduras</b>, <b>proteínas</b> (pollo, huevo, carne, frijol) y <b>leche y sus derivados</b> (leche, queso, yogur). El plato más balanceado es el que tiene algo de <b>cada</b> grupo. Estas son las cuatro fichas:</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Estudiante</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Lo que se sirvió</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Ana</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">arroz, manzana y pollo</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Bruno</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">pan, zanahoria y queso</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Carla</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">papa, huevo y yogur</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Diego</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">arroz, ensalada, huevo y leche</td></tr></tbody></table></div><p>¿Cuál de los cuatro estudiantes se sirvió el plato más balanceado?</p>",
+      "opciones": {
+        "A": "Diego.",
+        "B": "Bruno.",
+        "C": "Ana.",
+        "D": "Carla."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 9,
+      "evidencia": "9.2",
+      "cmc": "Entorno vivo",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de comparar y seleccionar elementos de acuerdo con un criterio dado.",
+      "justificacion_correcta": "La opción «Diego» es la respuesta correcta porque Diego es el único que reúne un alimento de cada uno de los cuatro grupos: carbohidrato (arroz), verdura (ensalada), proteína (huevo) y leche. A los otros tres compañeros les falta un grupo distinto en cada caso.",
+      "opciones_incorrectas": {
+        "C": "Es incorrecta porque Ana se sirvió carbohidrato (arroz), fruta (manzana) y proteína (pollo), pero en su ficha no aparece leche ni ninguno de sus derivados.",
+        "B": "Es incorrecta porque Bruno se sirvió carbohidrato (pan), verdura (zanahoria) y un derivado de la leche (queso), pero le falta un alimento del grupo de las proteínas.",
+        "D": "Es incorrecta porque Carla se sirvió carbohidrato (papa), proteína (huevo) y un derivado de la leche (yogur), pero le falta un alimento del grupo de las frutas y verduras."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q20.png"
+    },
+    {
+      "id": "P7C12",
+      "numero": 6,
+      "enunciado": "<p>Observa el modelo icónico de la división celular por mitosis y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El modelo representa, paso a paso, lo que ocurre con los <b>cromosomas</b> durante la mitosis. Primero, la <b>célula madre replica su ADN</b>, de modo que cada cromosoma queda formado por <b>dos cromátidas idénticas</b> (esquema en forma de X). Luego las cromátidas se <b>separan</b> y se reparten de manera <b>equitativa</b> hacia los dos polos, originando <b>dos células hijas</b>. La mitosis es la base del crecimiento y la reparación de los tejidos.</p>[[IMG]]</div><p>Según el modelo, ¿por qué cada célula hija posee la misma información genética que la célula madre?</p>",
+      "opciones": {
+        "A": "Porque la célula madre transfiere la mitad de su material genético a una única célula hija.",
+        "B": "Porque cada célula hija sintetiza por su cuenta un material genético nuevo y diferente al original.",
+        "C": "Porque las dos células hijas fusionan su material genético para reconstituir el de la célula madre.",
+        "D": "Porque el ADN se replica y luego las cromátidas se reparten en partes iguales entre las dos células hijas."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Entorno vivo",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de usar la información de un modelo icónico para explicar un fenómeno de las ciencias naturales.",
+      "justificacion_correcta": "La opción «Porque el ADN se replica y luego las cromátidas se reparten en partes iguales entre las…» es la respuesta correcta porque el modelo muestra que primero se replica el ADN (cada cromosoma con dos cromátidas idénticas) y después las cromátidas se separan y reparten equitativamente; así cada célula hija recibe una copia idéntica a la de la célula madre.",
+      "opciones_incorrectas": {
+        "A": "Es incorrecta porque el modelo muestra que el material se duplica y se reparte a dos células hijas, no que se entregue la mitad a una sola.",
+        "C": "Es incorrecta porque el material genético pasa de la célula madre a las hijas, no a la inversa; las hijas no se fusionan para formar a la madre.",
+        "B": "Es incorrecta porque las células hijas heredan copias del ADN de la madre; no lo fabrican de forma independiente."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q12.png"
+    },
+    {
+      "id": "P7C19",
+      "numero": 7,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mariana realizó un experimento sobre la <b>oxidación</b> de clavos de hierro sumergidos en distintos líquidos (agua, agua con sal y aceite). Para divulgar su trabajo elaboró un afiche que contiene únicamente el <b>título</b>, la <b>descripción del procedimiento</b> y una <b>tabla de resultados</b> con el grado de oxidación de cada clavo. Una investigación bien comunicada sigue una estructura lógica: <b>pregunta de investigación → procedimiento → resultados → conclusiones</b>. En el afiche de Mariana faltan dos de esas partes.</p></div><p>¿Qué partes le faltan para que la investigación quede bien comunicada?</p>",
+      "opciones": {
+        "A": "No le falta ninguna, porque los resultados de una investigación solo se pueden dar en tablas.",
+        "B": "Le faltan la pregunta de investigación y las conclusiones a que llegó.",
+        "C": "Le sobran el título y la descripción del procedimiento.",
+        "D": "Le faltan los resultados, que además irían antes del procedimiento."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "cmc": "Entorno físico",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de comunicar de manera adecuada los resultados de una investigación.",
+      "justificacion_correcta": "La opción «Le faltan la pregunta de investigación y las conclusiones a que llegó» es la respuesta correcta porque, según la estructura de una investigación, al afiche le faltan la pregunta que se quiso responder (al inicio) y las conclusiones derivadas de los resultados (al final); el título, el procedimiento y los resultados ya están presentes.",
+      "opciones_incorrectas": {
+        "C": "Es incorrecta porque el título y la descripción del procedimiento son partes necesarias de la comunicación científica; no sobran.",
+        "D": "Es incorrecta porque el orden lógico es primero el procedimiento y luego los resultados que se obtienen al aplicarlo, no al revés.",
+        "A": "Es incorrecta porque los resultados pueden presentarse de varias formas (tablas, gráficas, descripciones o datos), de modo que esa afirmación es falsa."
+      }
+    },
+    {
+      "id": "P7C17",
+      "numero": 8,
+      "enunciado": "<p>Lee la situación, observa los dibujos y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al club de ciencias del colegio le prestaron un microscopio por una semana. Los integrantes prepararon dos láminas: en la primera pusieron un raspado del interior de la mejilla de un compañero y en la segunda una gota del agua estancada del florero del salón. Luego dibujaron en el cuaderno lo que alcanzaron a ver en cada lámina.</p>[[IMG]]<p>La <b>Célula A</b> es la de la mejilla: aparece rodeada solo por su membrana y en su interior se distinguen un <b>núcleo</b> bien delimitado, una <b>mitocondria</b> y varios puntos oscuros. La <b>Célula B</b> es la del agua del florero: está rodeada por una <b>pared celular</b>, su material genético queda suelto en la zona señalada con línea punteada, sin quedar encerrado, y también muestra puntos oscuros. En los dos dibujos, esos puntos oscuros son los <b>ribosomas</b>.</p></div><p>De acuerdo con los dos dibujos, ¿cuál de estas estructuras se encuentra en <b>las dos</b> células?</p>",
+      "opciones": {
+        "A": "Un núcleo bien delimitado que encierra el material genético.",
+        "B": "Los ribosomas.",
+        "C": "Las mitocondrias, donde se libera la energía del alimento.",
+        "D": "La pared celular que la envuelve por fuera y le da forma."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Entorno vivo",
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden identificar la característica común entre dos tipos de células que se presentan.",
+      "justificacion_correcta": "La opción «Los ribosomas» es la respuesta correcta porque los puntos oscuros que corresponden a los ribosomas están dibujados tanto dentro de la célula A como dentro de la célula B; esa es la única estructura que comparten las dos láminas, pues toda célula necesita fabricar proteínas.",
+      "opciones_incorrectas": {
+        "D": "Es incorrecta porque la pared celular se dibujó únicamente alrededor de la célula B; la célula A aparece rodeada solo por su membrana.",
+        "A": "Es incorrecta porque solo la célula A tiene un núcleo bien delimitado; en la célula B el material genético queda suelto en la zona punteada, sin una envoltura que lo encierre.",
+        "C": "Es incorrecta porque las mitocondrias aparecen solamente en el dibujo de la célula A; en el de la célula B no se ve ninguna, y esa célula obtiene su energía por otras vías."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q17.png"
+    },
+    {
+      "id": "P7C05",
+      "numero": 9,
+      "enunciado": "<p>Lee la información, observa la ilustración y la tabla, y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un bosque húmedo crece la planta <b>Cuscuta</b>, llamada «cabello de ángel». Sus tallos son <b>anaranjados, sin partes verdes</b>. Se enrolla sobre otras plantas y, con unas estructuras llamadas <b>haustorios</b>, perfora los vasos conductores del huésped y le extrae savia: tanto el agua y las sales como <b>los azúcares que el huésped ya había fabricado</b>. La Cuscuta no forma raíces en el suelo ni hojas verdes. La tabla compara cómo se nutren cuatro tipos de plantas.</p>[[IMG]]</div><p>¿Cómo se clasifica la nutrición de la <i>Cuscuta</i>?</p>",
+      "opciones": {
+        "A": "Es hemiparásita, porque realiza fotosíntesis y solo extrae agua y minerales de la planta huésped.",
+        "B": "Es holoparásita, porque no realiza fotosíntesis y obtiene del huésped todas las sustancias que necesita, incluidos los azúcares.",
+        "C": "Es epífita, porque crece apoyada sobre otra planta para alcanzar la luz, pero fabrica su propio alimento sin tomar nada de ella.",
+        "D": "Es autótrofa, porque sintetiza su propio alimento mediante la fotosíntesis a partir de luz, agua y CO₂."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Entorno vivo",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden comprender adecuadamente las interacciones de nutrición que se presentan entre organismos de un ecosistema.",
+      "justificacion_correcta": "La opción «Es holoparásita, porque no realiza fotosíntesis y obtiene del huésped todas las…» es la respuesta correcta porque la Cuscuta reúne los rasgos de una holoparásita: sus tallos anaranjados, sin partes verdes, indican que carece de clorofila y no hace fotosíntesis, y además extrae del huésped agua, sales y también los azúcares ya elaborados. En la tabla, esa combinación (no hace fotosíntesis y toma azúcares de otra planta) corresponde únicamente a la holoparásita.",
+      "opciones_incorrectas": {
+        "D": "Es incorrecta porque una planta autótrofa fabrica su propio alimento mediante la fotosíntesis; la Cuscuta, al no tener partes verdes ni clorofila, no puede hacerlo.",
+        "A": "Es incorrecta porque una hemiparásita sí realiza fotosíntesis y solo toma agua y sales del huésped; la Cuscuta no fotosintetiza y, además, le extrae los azúcares ya elaborados.",
+        "C": "Es incorrecta porque una epífita usa a la otra planta solo como soporte y fabrica su propio alimento; la Cuscuta perfora al huésped con haustorios y depende por completo de él."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q05.png"
+    },
+    {
+      "id": "P7C01",
+      "numero": 10,
+      "enunciado": "<p>Lee la siguiente situación y observa el equipo de la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el laboratorio del colegio, Sofía arma el equipo de la figura para separar una <b>mezcla homogénea</b> de tres líquidos que se disuelven entre sí. La técnica se llama <b>destilación simple</b> y aprovecha que cada sustancia hierve a una temperatura distinta: al calentar poco a poco, la más <b>volátil</b> (la de temperatura de <b>ebullición</b> más baja) hierve primero, pasa a vapor, sube por el tubo inclinado, allí se enfría y vuelve a ser líquida, y cae gota a gota en el vaso de recolección. El termómetro avisa a qué temperatura está saliendo cada fracción.</p><p>Temperaturas de ebullición: <b>acetona, 56 °C</b>; <b>agua, 100 °C</b>; <b>ácido acético, 118 °C</b>.</p>[[IMG]]</div><p>Si la mezcla se calienta de forma gradual, ¿cuál es la <b>primera</b> fracción que cae en el vaso y por qué?</p>",
+      "opciones": {
+        "A": "La acetona, porque es la más volátil: hierve a la temperatura más baja de las tres, así que pasa a vapor y se recoge primero.",
+        "B": "El ácido acético, porque hervir a la temperatura más alta (118 °C) indica que es el primero en pasar a vapor al calentar la mezcla.",
+        "C": "El agua, porque su temperatura de ebullición intermedia (100 °C) hace que pase a vapor antes que la acetona y se recoja primero.",
+        "D": "El agua, porque al ser la más abundante de la mezcla se evapora antes que los demás líquidos, sin importar a qué temperatura hierve."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Entorno físico",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden seleccionar, en una destilación simple, cuál componente se separa primero, a partir de los puntos de ebullición dados.",
+      "justificacion_correcta": "La opción «La acetona, porque es la más volátil: hierve a la temperatura más baja de las tres, así…» es la respuesta correcta porque la acetona es la más volátil de las tres sustancias: hierve a 56 °C, la temperatura más baja de todas, así que al calentar poco a poco es la primera en pasar a vapor, la primera que se enfría en el tubo y la primera que cae en el vaso de recolección.",
+      "opciones_incorrectas": {
+        "D": "Es incorrecta porque el orden en que se separan las sustancias lo decide la temperatura a la que hierve cada una, no la cantidad que haya de ella; además el agua hierve a 100 °C y sale después de la acetona.",
+        "C": "Es incorrecta porque, aunque el agua hierve a una temperatura intermedia (100 °C), esa temperatura es mayor que la de la acetona (56 °C); por eso el agua sale después, no antes.",
+        "B": "Es incorrecta porque hervir a la temperatura más alta significa justamente pasar de último al estado de vapor: el ácido acético (118 °C) se separa al final, no al comienzo."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q01.png"
+    },
+    {
+      "id": "P7C13",
+      "numero": 11,
+      "enunciado": "<p>Lee la situación, observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Camilo llegó de primero en la carrera de atletismo del colegio y, al cruzar la meta, sintió que respiraba muy agitado y que el pecho le latía sin parar. En la clase siguiente le preguntó a la profesora por qué le pasaba eso, y ella proyectó este esquema para mostrarle qué camino sigue la sangre mientras él corre.</p>[[IMG]]<p>La flecha azul indica que la sangre <b>pobre en oxígeno</b> sale del corazón y entra a los pulmones por la <b>arteria pulmonar</b>. Allí la sangre toma el oxígeno del aire que Camilo respira y suelta el dióxido de carbono. Ya <b>rica en oxígeno</b>, regresa al corazón por la <b>vena pulmonar</b> (flecha roja) y desde el corazón sale por la <b>aorta</b> hacia las piernas y el resto del cuerpo.</p></div><p>De acuerdo con el esquema, ¿qué tarea cumple cada uno de estos dos órganos mientras Camilo corre?</p>",
+      "opciones": {
+        "A": "Los pulmones cargan la sangre de oxígeno y el corazón la impulsa por la aorta hacia los músculos y los demás órganos.",
+        "B": "El corazón manda a los pulmones sangre rica en oxígeno por la arteria pulmonar, y son los pulmones los que la reparten al resto del cuerpo.",
+        "C": "Los pulmones oxigenan la sangre y son ellos mismos los que la empujan por la aorta hacia las piernas; el corazón solo la recibe cuando vuelve.",
+        "D": "Los pulmones reciben por la vena pulmonar la sangre pobre en oxígeno, la oxigenan y el corazón la devuelve otra vez a los pulmones."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Entorno vivo",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de determinar la relación entre los elementos de un sistema dinámico.",
+      "justificacion_correcta": "La opción «Los pulmones cargan la sangre de oxígeno y el corazón la impulsa por la aorta hacia los…» es la respuesta correcta porque, según el esquema, los pulmones son el sitio donde la sangre se carga de oxígeno, mientras que el corazón es el órgano muscular que la impulsa por la aorta hacia los músculos de Camilo y los demás órganos: son dos tareas distintas que se complementan.",
+      "opciones_incorrectas": {
+        "C": "Es incorrecta porque el órgano que impulsa la sangre por la aorta es el corazón, no los pulmones; los pulmones oxigenan la sangre, pero no la bombean.",
+        "B": "Es incorrecta porque por la arteria pulmonar el corazón envía sangre POBRE en oxígeno, justamente para que se oxigene, y no rica en oxígeno; además, quien reparte la sangre al cuerpo es el corazón y no los pulmones.",
+        "D": "Es incorrecta porque la vena pulmonar lleva hacia el corazón la sangre que ya salió RICA en oxígeno, no la sangre pobre que entra a oxigenarse, y el corazón la envía al cuerpo, no de nuevo a los pulmones."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q13.png"
+    },
+    {
+      "id": "P7C07",
+      "numero": 12,
+      "enunciado": "<p>Lee la información, observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La misión Aurora llevará una sonda a estudiar un planeta vecino. El esquema resume las cuatro etapas del viaje y lo que ocurre en cada una. Conviene tener presentes dos ideas de física: para escapar de la Tierra hay que vencer una atracción gravitatoria muy intensa, y una vez lejos de nuestro planeta, donde casi no hay rozamiento, un cuerpo sigue avanzando por <b>inercia</b> aunque los motores estén apagados.</p>[[IMG]]</div><p>¿En cuál de las cuatro etapas se produce el <b>mayor gasto de energía</b> y por qué?</p>",
+      "opciones": {
+        "A": "En la observación, porque captar muchas imágenes y transmitir todos los datos a la Tierra demanda muchísima energía.",
+        "B": "En el frenado, porque detener por completo a la sonda exige más energía que la usada para ponerla en movimiento.",
+        "C": "En el crucero, porque la larga duración del trayecto obliga a un consumo continuo y elevado de combustible.",
+        "D": "En el despegue, porque debe realizar un gran trabajo contra la intensa gravedad terrestre para acelerar y escapar."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer en qué fase de un proceso ocurre un mayor gasto de energía, a partir de su descripción.",
+      "justificacion_correcta": "La opción «En el despegue, porque debe realizar un gran trabajo contra la intensa gravedad terrestre…» es la respuesta correcta porque en el despegue la sonda está sometida a la intensa gravedad cercana a la Tierra y el cohete debe quemar gran cantidad de combustible para realizar el trabajo necesario para acelerar y vencer esa atracción; es, con diferencia, la fase de mayor consumo energético.",
+      "opciones_incorrectas": {
+        "C": "Es incorrecta porque durante el crucero los motores están casi apagados y la sonda avanza por inercia, de modo que el gasto de energía es mínimo aunque el trayecto sea largo.",
+        "B": "Es incorrecta porque el frenado solo reduce la velocidad con un motor pequeño y no detiene por completo a la sonda; consume mucha menos energía que el despegue.",
+        "A": "Es incorrecta porque captar imágenes y enviar datos requiere muy poca energía en comparación con la quema de combustible del despegue."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q07.png"
+    },
+    {
+      "id": "P7C02",
+      "numero": 13,
+      "enunciado": "<p>Lee la siguiente situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Andrés cuelga de una varilla de madera dos bolitas de cobre iguales, cada una sujeta por un hilo aislante, de modo que quedan una al lado de la otra. Después frota <b>las dos</b> bolitas con el <b>mismo paño de lana</b>: en este <b>proceso de carga por frotamiento</b> el paño entrega a cada bolita el mismo tipo de carga, así que las dos quedan electrizadas con cargas del <b>mismo signo</b> y de tamaño parecido. Entre dos cuerpos cargados aparece una <b>fuerza eléctrica</b>: de atracción cuando los signos son contrarios y de repulsión cuando son iguales. Antes de soltarlas, Andrés se anima a anticipar lo que va a pasar.</p>[[IMG]]</div><p>¿Qué les ocurre a las dos bolitas cuando Andrés las suelta?</p>",
+      "opciones": {
+        "A": "Se atraen y se juntan, porque al frotarlas con el mismo paño quedan con cargas de signo contrario.",
+        "B": "Se quedan quietas y colgando verticales, pues frotar un metal con lana no produce ninguna fuerza entre las bolitas.",
+        "C": "Una queda inmóvil y la otra se mueve hacia ella, porque solo una de las dos alcanza a cargarse.",
+        "D": "Se repelen y se separan, porque al frotarlas con el mismo paño quedan con cargas del mismo signo."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Entorno físico",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden predecir cómo serán las fuerzas eléctricas en un sistema, a partir del conocimiento de las cargas eléctricas.",
+      "justificacion_correcta": "La opción «Se repelen y se separan, porque al frotarlas con el mismo paño quedan con cargas del…» es la respuesta correcta porque, al frotar las dos bolitas con el mismo paño, ambas quedan con carga del mismo signo; entre cargas de igual signo la fuerza eléctrica es de repulsión, de modo que las bolitas se separan una de la otra.",
+      "opciones_incorrectas": {
+        "B": "Es incorrecta porque el frotamiento sí electriza las bolitas; al quedar cargadas aparece una fuerza eléctrica entre ellas y los hilos dejan de colgar verticales.",
+        "A": "Es incorrecta porque frotar las dos con el mismo paño les deja el mismo signo de carga, no signos contrarios; y las cargas iguales se repelen, no se atraen.",
+        "C": "Es incorrecta porque las dos bolitas se frotan en igualdad de condiciones, así que quedan cargadas de forma parecida y sobre cada una actúa una fuerza de la misma magnitud; ninguna puede quedar inmóvil mientras la otra se mueve."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q02.png"
+    },
+    {
+      "id": "P7C11",
+      "numero": 14,
+      "enunciado": "<p>Lee la situación, observa el procedimiento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para determinar cuánta azúcar disuelta contiene un jugo de fruta, unos estudiantes aplicaron este procedimiento: pusieron la balanza en cero con el recipiente vacío; vertieron 1 litro de jugo y lo calentaron hasta <b>evaporar toda el agua</b>; esperaron a que quedara solo el azúcar sólida; y pesaron de nuevo el recipiente. La balanza marcó <b>130 g</b>, de modo que el jugo tenía <b>130 g de azúcar por litro</b>.</p><p>En ciencia, un resultado gana confianza cuando es <b>reproducible</b>: al repetir el experimento con el mismo método y las mismas condiciones debe obtenerse un valor equivalente.</p>[[IMG]]</div><p>Si desean corroborar (replicar) su resultado, ¿qué procedimiento deben realizar?</p>",
+      "opciones": {
+        "A": "Usar solo medio litro del jugo y multiplicar por dos el resultado, para ahorrar tiempo y material en la prueba.",
+        "B": "Repetir los mismos pasos con otro litro del mismo jugo y comparar si se obtiene de nuevo 130 g.",
+        "C": "Disolver 130 g de azúcar en agua y comprobar que esa mezcla se vea igual que el jugo de fruta original.",
+        "D": "Evaporar 1 litro de agua pura sin jugo y medir cuánta azúcar queda al final en el fondo del recipiente."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Entorno físico",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de proponer un diseño experimental que permita replicar resultados obtenidos previamente.",
+      "justificacion_correcta": "La opción «Repetir los mismos pasos con otro litro del mismo jugo y comparar si se obtiene de nuevo…» es la respuesta correcta porque replicar un resultado consiste en repetir el experimento con idéntico método y condiciones para verificar que se obtiene un valor equivalente; usar otro litro del mismo jugo y seguir los mismos pasos es justamente lo que permite corroborarlo.",
+      "opciones_incorrectas": {
+        "A": "Es incorrecta porque modificar la cantidad de jugo y multiplicar no reproduce el experimento original y puede introducir errores de proporción y medición.",
+        "D": "Es incorrecta porque el agua pura no contiene azúcar, de modo que ese procedimiento no verifica la cantidad presente en el jugo.",
+        "C": "Es incorrecta porque preparar una disolución nueva no replica el procedimiento ni mide el azúcar contenida en el jugo original; el parecido visual no es una medición."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q11.png"
+    },
+    {
+      "id": "P7C18",
+      "numero": 15,
+      "enunciado": "<p>Lee la situación y observa la tabla de propiedades.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para fabricar el núcleo de un <b>cable eléctrico</b> seguro, unos estudiantes comparan cuatro materiales según tres propiedades (conductividad eléctrica, flexibilidad y opacidad) y, a partir de la tabla, seleccionan el <b>cobre</b> y el <b>hierro</b>. Identificar el <b>criterio de clasificación</b> consiste en hallar la propiedad que <b>solo</b> esos dos materiales comparten y que, además, resulta pertinente para la función buscada.</p></div><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Material</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">¿Conduce electricidad?</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">¿Es flexible?</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">¿Es opaco?</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Cobre</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Caucho</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Vidrio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Hierro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr></table><p>Según la tabla, ¿cuál fue el criterio por el que los estudiantes escogieron el cobre y el hierro?</p>",
+      "opciones": {
+        "A": "Porque ambos son flexibles.",
+        "B": "Porque ninguno de los dos es opaco.",
+        "C": "Porque ambos son aislantes de la electricidad.",
+        "D": "Porque ambos conducen la electricidad."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 9,
+      "evidencia": "9.2",
+      "cmc": "Entorno físico",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de identificar un criterio de selección en una clasificación de elementos.",
+      "justificacion_correcta": "La opción «Porque ambos conducen la electricidad» es la respuesta correcta porque, según la tabla, el cobre y el hierro son los únicos dos materiales que conducen la electricidad; esa propiedad compartida es justamente la que se necesita en el núcleo de un cable eléctrico.",
+      "opciones_incorrectas": {
+        "A": "Es incorrecta porque, según la tabla, el hierro no es flexible; por tanto, la flexibilidad no es la propiedad que ambos comparten.",
+        "B": "Es incorrecta porque tanto el cobre como el hierro son opacos según la tabla; además, la opacidad no es la propiedad útil para conducir electricidad.",
+        "C": "Es incorrecta porque ser aislante es lo opuesto a lo que indica la tabla: el cobre y el hierro conducen la electricidad, no la aíslan."
+      }
+    },
+    {
+      "id": "P7C09",
+      "numero": 16,
+      "enunciado": "<p>Lee la situación, observa la escena y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región, la población de <b>manatíes</b> declinaba por la <b>presión de caza</b>: algunas familias los cazaban para vender su carne, lo que ponía a la especie en <b>peligro de extinción</b>. Una fundación diseñó una estrategia de <b>conservación</b>: contrató a esas mismas familias como <b>guías de ecoturismo</b>, de modo que ahora llevan visitantes a observar a los manatíes, vigilan su hábitat e impiden la caza. Así, el incentivo económico que antes empujaba a cazarlos pasa a depender de <b>mantenerlos vivos</b>.</p>[[IMG]]</div><p>¿Por qué esta estrategia favorece la conservación de los manatíes?</p>",
+      "opciones": {
+        "A": "Porque protege a los manatíes y, a la vez, da a esas familias un sustento que depende de conservarlos vivos.",
+        "B": "Porque aprovecha que los antiguos cazadores conocen dónde viven los manatíes y la forma más eficaz de capturarlos para venderlos.",
+        "C": "Porque induce a los manatíes a tener menos crías cada año, lo que vuelve más fácil cuidar de toda la población.",
+        "D": "Porque garantiza que ningún manatí de la región volverá a enfermarse ni a morir nunca por causas naturales."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de evaluar el propósito de una estrategia planteada para una situación problema.",
+      "justificacion_correcta": "La opción «Porque protege a los manatíes y, a la vez, da a esas familias un sustento que depende de…» es la respuesta correcta porque la estrategia actúa sobre la causa del problema: elimina la presión de caza al convertir a los cazadores en guías cuyo sustento depende de que los manatíes sigan vivos, protegiendo a la población y vigilando su hábitat.",
+      "opciones_incorrectas": {
+        "B": "Es incorrecta porque el propósito es conservar a los manatíes, no capturarlos; los guías los protegen y vigilan, no los eliminan.",
+        "D": "Es incorrecta porque ninguna estrategia puede evitar por completo las muertes o enfermedades por causas naturales; lo que reduce es la mortalidad por caza.",
+        "C": "Es incorrecta porque conservar una especie amenazada busca que su población se recupere y aumente sus crías, no que las reduzca."
+      },
+      "imagen_figura": "assets/banco-cn-7-p1/q09.png"
+    },
+    {
+      "id": "P7C06",
+      "numero": 17,
+      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Camilo investigó si el <b>tipo de luz</b> (blanca o azul) influye en el crecimiento de plantas de fríjol. La <b>variable respuesta</b> que decidió medir fue la <b>altura</b> de cada planta. Para divulgar su trabajo elaboró una cartelera con el título, la <b>descripción del procedimiento</b> (dos grupos de plantas, uno bajo luz blanca y otro bajo luz azul, sembrados el mismo día y regados igual durante un mes) y, al final, la <b>conclusión</b>: «las plantas con luz blanca crecieron más». No obstante, en la cartelera <b>no aparece ningún registro de la altura medida</b> en cada grupo.</p></div><p>¿Qué elemento es indispensable incluir para que la conclusión de Camilo quede sustentada en evidencia?</p>",
+      "opciones": {
+        "A": "La tabla con los datos de la altura medida en las plantas de cada grupo.",
+        "B": "Un valor de crecimiento promedio del fríjol copiado de un libro de texto.",
+        "C": "Una descripción de la forma y el color de las hojas de cada planta.",
+        "D": "El diseño del procedimiento, que ya aparece descrito en la cartelera."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Entorno vivo",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer las diferentes partes de una investigación científica y cómo deben comunicarse.",
+      "justificacion_correcta": "La opción «La tabla con los datos de la altura medida en las plantas de cada grupo» es la respuesta correcta porque la conclusión afirma una diferencia de crecimiento, y solo los datos medidos de altura en cada grupo constituyen la evidencia empírica que permite sostenerla; sin esos resultados, la afirmación queda sin respaldo.",
+      "opciones_incorrectas": {
+        "C": "Es incorrecta porque la forma o el color de las hojas no es la variable respuesta medida ni interviene en la conclusión sobre la altura.",
+        "D": "Es incorrecta porque el procedimiento ya está descrito en la cartelera; lo que falta no es el diseño sino los resultados obtenidos.",
+        "B": "Es incorrecta porque un promedio tomado de un libro no proviene del experimento de Camilo y, por tanto, no constituye evidencia de su propia investigación."
       }
     },
     {
       "id": "P7C04",
-      "numero": 4,
+      "numero": 18,
       "enunciado": "<p>Lee la situación y observa los esquemas a nivel de partículas.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Las <b>sustancias puras</b> se clasifican según su composición a nivel atómico: un <b>elemento</b> está formado por un <b>único tipo de átomo</b>, mientras que un <b>compuesto</b> está formado por <b>moléculas</b> en las que se enlazan átomos de <b>dos o más tipos</b> distintos en una proporción fija. Los esquemas representan dos materiales: en el <b>Material 1</b> todas las partículas son átomos sueltos de una misma clase; en el <b>Material 2</b> los átomos aparecen <b>enlazados</b> formando moléculas con dos clases de átomo.</p>[[IMG]]</div><p>Con base en los esquemas, ¿cuál material corresponde a un <b>elemento</b> y por qué?</p>",
       "opciones": {
         "A": "El Material 1, porque está constituido por un solo tipo de átomo, sin combinarse con otra clase.",
@@ -142,7 +502,7 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de explicar un sistema (la composición de un material) teniendo en cuenta las partes que lo componen.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque un elemento es una sustancia pura formada por un único tipo de átomo; en el Material 1 todas las partículas son átomos de la misma clase (sin enlazarse con otra), por lo que se clasifica como elemento.",
+      "justificacion_correcta": "La opción «El Material 1, porque está constituido por un solo tipo de átomo, sin combinarse con otra…» es la respuesta correcta porque un elemento es una sustancia pura formada por un único tipo de átomo; en el Material 1 todas las partículas son átomos de la misma clase (sin enlazarse con otra), por lo que se clasifica como elemento.",
       "opciones_incorrectas": {
         "B": "Es incorrecta porque lo que define a un elemento es tener una sola clase de átomo, no su cantidad; además el Material 1 no es una combinación de oxígeno y carbono.",
         "C": "Es incorrecta porque reunir dos tipos de átomos enlazados convierte al Material 2 en un compuesto, no en un elemento.",
@@ -151,93 +511,16 @@
       "imagen_figura": "assets/banco-cn-7-p1/q04.png"
     },
     {
-      "id": "P7C05",
-      "numero": 5,
-      "enunciado": "<p>Lee la información, observa la ilustración y la tabla, y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un bosque húmedo crece la planta <b>Cuscuta</b>, llamada «cabello de ángel». Sus tallos son <b>anaranjados, sin partes verdes</b>. Se enrolla sobre otras plantas y, con unas estructuras llamadas <b>haustorios</b>, perfora los vasos conductores del huésped y le extrae savia: tanto el agua y las sales como <b>los azúcares que el huésped ya había fabricado</b>. La Cuscuta no forma raíces en el suelo ni hojas verdes. La tabla compara cómo se nutren cuatro tipos de plantas.</p>[[IMG]]</div><p>¿Cómo se clasifica la nutrición de la <i>Cuscuta</i>?</p>",
-      "opciones": {
-        "A": "Es autótrofa, porque sintetiza su propio alimento mediante la fotosíntesis a partir de luz, agua y CO₂.",
-        "B": "Es hemiparásita, porque realiza fotosíntesis y solo extrae agua y minerales de la planta huésped.",
-        "C": "Es holoparásita, porque no realiza fotosíntesis y obtiene del huésped todas las sustancias que necesita, incluidos los azúcares.",
-        "D": "Es epífita, porque crece apoyada sobre otra planta para alcanzar la luz, pero fabrica su propio alimento sin tomar nada de ella."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Entorno vivo",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden comprender adecuadamente las interacciones de nutrición que se presentan entre organismos de un ecosistema.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la Cuscuta reúne los rasgos de una holoparásita: sus tallos anaranjados, sin partes verdes, indican que carece de clorofila y no hace fotosíntesis, y además extrae del huésped agua, sales y también los azúcares ya elaborados. En la tabla, esa combinación (no hace fotosíntesis y toma azúcares de otra planta) corresponde únicamente a la holoparásita.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque una planta autótrofa fabrica su propio alimento mediante la fotosíntesis; la Cuscuta, al no tener partes verdes ni clorofila, no puede hacerlo.",
-        "B": "Es incorrecta porque una hemiparásita sí realiza fotosíntesis y solo toma agua y sales del huésped; la Cuscuta no fotosintetiza y, además, le extrae los azúcares ya elaborados.",
-        "D": "Es incorrecta porque una epífita usa a la otra planta solo como soporte y fabrica su propio alimento; la Cuscuta perfora al huésped con haustorios y depende por completo de él."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q05.png"
-    },
-    {
-      "id": "P7C06",
-      "numero": 6,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Camilo investigó si el <b>tipo de luz</b> (blanca o azul) influye en el crecimiento de plantas de fríjol. La <b>variable respuesta</b> que decidió medir fue la <b>altura</b> de cada planta. Para divulgar su trabajo elaboró una cartelera con el título, la <b>descripción del procedimiento</b> (dos grupos de plantas, uno bajo luz blanca y otro bajo luz azul, sembrados el mismo día y regados igual durante un mes) y, al final, la <b>conclusión</b>: «las plantas con luz blanca crecieron más». No obstante, en la cartelera <b>no aparece ningún registro de la altura medida</b> en cada grupo.</p></div><p>¿Qué elemento es indispensable incluir para que la conclusión de Camilo quede sustentada en evidencia?</p>",
-      "opciones": {
-        "A": "Una descripción de la forma y el color de las hojas de cada planta.",
-        "B": "El diseño del procedimiento, que ya aparece descrito en la cartelera.",
-        "C": "Un valor de crecimiento promedio del fríjol copiado de un libro de texto.",
-        "D": "La tabla con los datos de la altura medida en las plantas de cada grupo."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Entorno vivo",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer las diferentes partes de una investigación científica y cómo deben comunicarse.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque la conclusión afirma una diferencia de crecimiento, y solo los datos medidos de altura en cada grupo constituyen la evidencia empírica que permite sostenerla; sin esos resultados, la afirmación queda sin respaldo.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque la forma o el color de las hojas no es la variable respuesta medida ni interviene en la conclusión sobre la altura.",
-        "B": "Es incorrecta porque el procedimiento ya está descrito en la cartelera; lo que falta no es el diseño sino los resultados obtenidos.",
-        "C": "Es incorrecta porque un promedio tomado de un libro no proviene del experimento de Camilo y, por tanto, no constituye evidencia de su propia investigación."
-      }
-    },
-    {
-      "id": "P7C07",
-      "numero": 7,
-      "enunciado": "<p>Lee la información, observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La misión Aurora llevará una sonda a estudiar un planeta vecino. El esquema resume las cuatro etapas del viaje y lo que ocurre en cada una. Conviene tener presentes dos ideas de física: para escapar de la Tierra hay que vencer una atracción gravitatoria muy intensa, y una vez lejos de nuestro planeta, donde casi no hay rozamiento, un cuerpo sigue avanzando por <b>inercia</b> aunque los motores estén apagados.</p>[[IMG]]</div><p>¿En cuál de las cuatro etapas se produce el <b>mayor gasto de energía</b> y por qué?</p>",
-      "opciones": {
-        "A": "En el despegue, porque debe realizar un gran trabajo contra la intensa gravedad terrestre para acelerar y escapar.",
-        "B": "En el crucero, porque la larga duración del trayecto obliga a un consumo continuo y elevado de combustible.",
-        "C": "En el frenado, porque detener por completo a la sonda exige más energía que la usada para ponerla en movimiento.",
-        "D": "En la observación, porque captar muchas imágenes y transmitir todos los datos a la Tierra demanda muchísima energía."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer en qué fase de un proceso ocurre un mayor gasto de energía, a partir de su descripción.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque en el despegue la sonda está sometida a la intensa gravedad cercana a la Tierra y el cohete debe quemar gran cantidad de combustible para realizar el trabajo necesario para acelerar y vencer esa atracción; es, con diferencia, la fase de mayor consumo energético.",
-      "opciones_incorrectas": {
-        "B": "Es incorrecta porque durante el crucero los motores están casi apagados y la sonda avanza por inercia, de modo que el gasto de energía es mínimo aunque el trayecto sea largo.",
-        "C": "Es incorrecta porque el frenado solo reduce la velocidad con un motor pequeño y no detiene por completo a la sonda; consume mucha menos energía que el despegue.",
-        "D": "Es incorrecta porque captar imágenes y enviar datos requiere muy poca energía en comparación con la quema de combustible del despegue."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q07.png"
-    },
-    {
       "id": "P7C08",
-      "numero": 8,
+      "numero": 19,
       "enunciado": "<p>Lee la situación y observa los cuatro diseños (A, B, C y D).</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Valentina plantea la <b>hipótesis</b> de que las plantas de tomate <b>crecen más rápido si se les pone música clásica</b>. Para someterla a prueba dispone de plantas sembradas el mismo día, regadas igual y bajo la misma luz. Un experimento válido debe variar <b>un solo factor</b> (la música) y comparar el <b>grupo experimental</b> con un <b>grupo de control</b>, manteniendo idénticas todas las demás condiciones y dejando transcurrir un tiempo suficiente para que el efecto sea observable.</p></div><p>¿Cuál de los diseños permite comprobar correctamente si la hipótesis es verdadera o falsa?</p>",
       "opciones": {
         "A": "Diseño A.",
-        "B": "Diseño B.",
+        "B": "Diseño D.",
         "C": "Diseño C.",
-        "D": "Diseño D."
+        "D": "Diseño B."
       },
-      "clave": "B",
+      "clave": "D",
       "competencia": "c",
       "afirmacion": 5,
       "evidencia": "5.1",
@@ -245,159 +528,30 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de proponer diseños experimentales que permitan evaluar una hipótesis.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque contrasta un grupo con música (grupo experimental) frente a un grupo sin música (grupo de control), mantiene iguales las demás condiciones y espera varias semanas: así aísla el efecto de la música y da tiempo a que el crecimiento se manifieste.",
+      "justificacion_correcta": "La opción «Diseño B» es la respuesta correcta porque contrasta un grupo con música (grupo experimental) frente a un grupo sin música (grupo de control), mantiene iguales las demás condiciones y espera varias semanas: así aísla el efecto de la música y da tiempo a que el crecimiento se manifieste.",
       "opciones_incorrectas": {
         "A": "Es incorrecta porque el diseño A sí compara un grupo con música con uno sin música, pero solo espera 2 horas: ese tiempo es insuficiente para que un cambio en el crecimiento de las plantas llegue a ser observable, así que no permite comprobar la hipótesis.",
         "C": "Es incorrecta porque comparar música clásica con música rock no aísla el efecto de tener o no música (cambia el tipo, no su presencia), y además el tiempo es insuficiente.",
-        "D": "Es incorrecta porque regar más a un grupo introduce una segunda variable; si las plantas crecen distinto no podría saberse si la causa fue la música o el riego."
+        "B": "Es incorrecta porque regar más a un grupo introduce una segunda variable; si las plantas crecen distinto no podría saberse si la causa fue la música o el riego."
       },
       "opciones_imagenes": {
         "A": "assets/banco-cn-7-p1/q08_opA.png",
-        "B": "assets/banco-cn-7-p1/q08_opB.png",
+        "D": "assets/banco-cn-7-p1/q08_opB.png",
         "C": "assets/banco-cn-7-p1/q08_opC.png",
-        "D": "assets/banco-cn-7-p1/q08_opD.png"
+        "B": "assets/banco-cn-7-p1/q08_opD.png"
       }
-    },
-    {
-      "id": "P7C09",
-      "numero": 9,
-      "enunciado": "<p>Lee la situación, observa la escena y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región, la población de <b>manatíes</b> declinaba por la <b>presión de caza</b>: algunas familias los cazaban para vender su carne, lo que ponía a la especie en <b>peligro de extinción</b>. Una fundación diseñó una estrategia de <b>conservación</b>: contrató a esas mismas familias como <b>guías de ecoturismo</b>, de modo que ahora llevan visitantes a observar a los manatíes, vigilan su hábitat e impiden la caza. Así, el incentivo económico que antes empujaba a cazarlos pasa a depender de <b>mantenerlos vivos</b>.</p>[[IMG]]</div><p>¿Por qué esta estrategia favorece la conservación de los manatíes?</p>",
-      "opciones": {
-        "A": "Porque aprovecha que los antiguos cazadores conocen dónde viven los manatíes y la forma más eficaz de capturarlos para venderlos.",
-        "B": "Porque protege a los manatíes y, a la vez, da a esas familias un sustento que depende de conservarlos vivos.",
-        "C": "Porque garantiza que ningún manatí de la región volverá a enfermarse ni a morir nunca por causas naturales.",
-        "D": "Porque induce a los manatíes a tener menos crías cada año, lo que vuelve más fácil cuidar de toda la población."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de evaluar el propósito de una estrategia planteada para una situación problema.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la estrategia actúa sobre la causa del problema: elimina la presión de caza al convertir a los cazadores en guías cuyo sustento depende de que los manatíes sigan vivos, protegiendo a la población y vigilando su hábitat.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque el propósito es conservar a los manatíes, no capturarlos; los guías los protegen y vigilan, no los eliminan.",
-        "C": "Es incorrecta porque ninguna estrategia puede evitar por completo las muertes o enfermedades por causas naturales; lo que reduce es la mortalidad por caza.",
-        "D": "Es incorrecta porque conservar una especie amenazada busca que su población se recupere y aumente sus crías, no que las reduzca."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q09.png"
-    },
-    {
-      "id": "P7C10",
-      "numero": 10,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un barrio, varias personas presentaron infecciones estomacales después de bañarse en una quebrada cercana. Un grupo de estudiantes desea investigar el problema desde las <b>ciencias naturales</b>. Una <b>pregunta investigable</b> en esta área debe poder responderse con <b>observación y experimentación</b> e indagar por un <b>agente o causa natural</b> del fenómeno, no por aspectos económicos, demográficos u de opinión.</p></div><p>¿Cuál de las siguientes preguntas orientaría mejor una investigación desde las ciencias naturales?</p>",
-      "opciones": {
-        "A": "¿Cuánto dinero costaría construir un parque acuático con agua tratada que reemplace la quebrada del barrio?",
-        "B": "¿Cuántas personas del barrio acostumbran bañarse de forma habitual en la quebrada durante cada fin de semana?",
-        "C": "¿Qué microorganismos del agua de la quebrada podrían ser el agente causante de las infecciones?",
-        "D": "¿Qué opinan los vecinos del barrio sobre la decisión de cerrar la quebrada al baño de las personas?"
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de proponer una pregunta de investigación que permita estudiar un fenómeno de las ciencias naturales.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque indaga por el agente natural (los microorganismos del agua) que podría causar las infecciones, una pregunta que se puede abordar mediante observación y análisis de laboratorio, propios de las ciencias naturales.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque se centra en costos y construcción, un asunto económico, y no en el estudio de un fenómeno natural.",
-        "B": "Es incorrecta porque cuantificar personas es un dato demográfico que no identifica la causa natural de la enfermedad.",
-        "D": "Es incorrecta porque recoger opiniones corresponde a un estudio social, no a una indagación desde las ciencias naturales."
-      }
-    },
-    {
-      "id": "P7C11",
-      "numero": 11,
-      "enunciado": "<p>Lee la situación, observa el procedimiento y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para determinar cuánta azúcar disuelta contiene un jugo de fruta, unos estudiantes aplicaron este procedimiento: pusieron la balanza en cero con el recipiente vacío; vertieron 1 litro de jugo y lo calentaron hasta <b>evaporar toda el agua</b>; esperaron a que quedara solo el azúcar sólida; y pesaron de nuevo el recipiente. La balanza marcó <b>130 g</b>, de modo que el jugo tenía <b>130 g de azúcar por litro</b>.</p><p>En ciencia, un resultado gana confianza cuando es <b>reproducible</b>: al repetir el experimento con el mismo método y las mismas condiciones debe obtenerse un valor equivalente.</p>[[IMG]]</div><p>Si desean corroborar (replicar) su resultado, ¿qué procedimiento deben realizar?</p>",
-      "opciones": {
-        "A": "Usar solo medio litro del jugo y multiplicar por dos el resultado, para ahorrar tiempo y material en la prueba.",
-        "B": "Evaporar 1 litro de agua pura sin jugo y medir cuánta azúcar queda al final en el fondo del recipiente.",
-        "C": "Disolver 130 g de azúcar en agua y comprobar que esa mezcla se vea igual que el jugo de fruta original.",
-        "D": "Repetir los mismos pasos con otro litro del mismo jugo y comparar si se obtiene de nuevo 130 g."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Entorno físico",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de proponer un diseño experimental que permita replicar resultados obtenidos previamente.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque replicar un resultado consiste en repetir el experimento con idéntico método y condiciones para verificar que se obtiene un valor equivalente; usar otro litro del mismo jugo y seguir los mismos pasos es justamente lo que permite corroborarlo.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque modificar la cantidad de jugo y multiplicar no reproduce el experimento original y puede introducir errores de proporción y medición.",
-        "B": "Es incorrecta porque el agua pura no contiene azúcar, de modo que ese procedimiento no verifica la cantidad presente en el jugo.",
-        "C": "Es incorrecta porque preparar una disolución nueva no replica el procedimiento ni mide el azúcar contenida en el jugo original; el parecido visual no es una medición."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q11.png"
-    },
-    {
-      "id": "P7C12",
-      "numero": 12,
-      "enunciado": "<p>Observa el modelo icónico de la división celular por mitosis y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El modelo representa, paso a paso, lo que ocurre con los <b>cromosomas</b> durante la mitosis. Primero, la <b>célula madre replica su ADN</b>, de modo que cada cromosoma queda formado por <b>dos cromátidas idénticas</b> (esquema en forma de X). Luego las cromátidas se <b>separan</b> y se reparten de manera <b>equitativa</b> hacia los dos polos, originando <b>dos células hijas</b>. La mitosis es la base del crecimiento y la reparación de los tejidos.</p>[[IMG]]</div><p>Según el modelo, ¿por qué cada célula hija posee la misma información genética que la célula madre?</p>",
-      "opciones": {
-        "A": "Porque el ADN se replica y luego las cromátidas se reparten en partes iguales entre las dos células hijas.",
-        "B": "Porque la célula madre transfiere la mitad de su material genético a una única célula hija.",
-        "C": "Porque las dos células hijas fusionan su material genético para reconstituir el de la célula madre.",
-        "D": "Porque cada célula hija sintetiza por su cuenta un material genético nuevo y diferente al original."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "cmc": "Entorno vivo",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de usar la información de un modelo icónico para explicar un fenómeno de las ciencias naturales.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque el modelo muestra que primero se replica el ADN (cada cromosoma con dos cromátidas idénticas) y después las cromátidas se separan y reparten equitativamente; así cada célula hija recibe una copia idéntica a la de la célula madre.",
-      "opciones_incorrectas": {
-        "B": "Es incorrecta porque el modelo muestra que el material se duplica y se reparte a dos células hijas, no que se entregue la mitad a una sola.",
-        "C": "Es incorrecta porque el material genético pasa de la célula madre a las hijas, no a la inversa; las hijas no se fusionan para formar a la madre.",
-        "D": "Es incorrecta porque las células hijas heredan copias del ADN de la madre; no lo fabrican de forma independiente."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q12.png"
-    },
-    {
-      "id": "P7C13",
-      "numero": 13,
-      "enunciado": "<p>Lee la situación, observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Camilo llegó de primero en la carrera de atletismo del colegio y, al cruzar la meta, sintió que respiraba muy agitado y que el pecho le latía sin parar. En la clase siguiente le preguntó a la profesora por qué le pasaba eso, y ella proyectó este esquema para mostrarle qué camino sigue la sangre mientras él corre.</p>[[IMG]]<p>La flecha azul indica que la sangre <b>pobre en oxígeno</b> sale del corazón y entra a los pulmones por la <b>arteria pulmonar</b>. Allí la sangre toma el oxígeno del aire que Camilo respira y suelta el dióxido de carbono. Ya <b>rica en oxígeno</b>, regresa al corazón por la <b>vena pulmonar</b> (flecha roja) y desde el corazón sale por la <b>aorta</b> hacia las piernas y el resto del cuerpo.</p></div><p>De acuerdo con el esquema, ¿qué tarea cumple cada uno de estos dos órganos mientras Camilo corre?</p>",
-      "opciones": {
-        "A": "Los pulmones oxigenan la sangre y son ellos mismos los que la empujan por la aorta hacia las piernas; el corazón solo la recibe cuando vuelve.",
-        "B": "Los pulmones cargan la sangre de oxígeno y el corazón la impulsa por la aorta hacia los músculos y los demás órganos.",
-        "C": "El corazón manda a los pulmones sangre rica en oxígeno por la arteria pulmonar, y son los pulmones los que la reparten al resto del cuerpo.",
-        "D": "Los pulmones reciben por la vena pulmonar la sangre pobre en oxígeno, la oxigenan y el corazón la devuelve otra vez a los pulmones."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Entorno vivo",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de determinar la relación entre los elementos de un sistema dinámico.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque, según el esquema, los pulmones son el sitio donde la sangre se carga de oxígeno, mientras que el corazón es el órgano muscular que la impulsa por la aorta hacia los músculos de Camilo y los demás órganos: son dos tareas distintas que se complementan.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque el órgano que impulsa la sangre por la aorta es el corazón, no los pulmones; los pulmones oxigenan la sangre, pero no la bombean.",
-        "C": "Es incorrecta porque por la arteria pulmonar el corazón envía sangre POBRE en oxígeno, justamente para que se oxigene, y no rica en oxígeno; además, quien reparte la sangre al cuerpo es el corazón y no los pulmones.",
-        "D": "Es incorrecta porque la vena pulmonar lleva hacia el corazón la sangre que ya salió RICA en oxígeno, no la sangre pobre que entra a oxigenarse, y el corazón la envía al cuerpo, no de nuevo a los pulmones."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q13.png"
     },
     {
       "id": "P7C14",
-      "numero": 14,
+      "numero": 20,
       "enunciado": "<p>Lee la situación y observa la gráfica.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos investigadores estudian cómo influye la <b>temperatura</b> en la germinación de la lechuga. Sembraron <b>20 semillas</b> a cada una de tres temperaturas (10 °C, 20 °C y 30 °C), manteniendo <b>controladas</b> las demás variables (misma luz, mismo riego, mismo sustrato), y a los 15 días contaron las semillas germinadas (ver gráfica). Concluyen que «<b>dentro del rango estudiado</b>, a mayor temperatura germinan más semillas». Evaluar si una conclusión es válida exige preguntarse si los datos <b>bastan</b> para sostener exactamente lo que se afirma, sin pedir más de lo necesario.</p>[[IMG]]</div><p>¿Alcanzan los resultados de la gráfica para sostener esa conclusión?</p>",
       "opciones": {
-        "A": "No, porque haría falta anotar también la germinación por encima de 30 °C para poder concluir.",
-        "B": "Sí, porque dejan comparar la germinación en las tres temperaturas estudiadas bajo las mismas condiciones.",
-        "C": "No, porque tocaría comparar además con semillas de otra especie, como el rábano.",
-        "D": "Sí, pero solo por lo que germinó a 30 °C; lo de 10 °C y 20 °C no aporta a la conclusión."
+        "A": "No, porque tocaría comparar además con semillas de otra especie, como el rábano.",
+        "B": "Sí, pero solo por lo que germinó a 30 °C; lo de 10 °C y 20 °C no aporta a la conclusión.",
+        "C": "Sí, porque dejan comparar la germinación en las tres temperaturas estudiadas bajo las mismas condiciones.",
+        "D": "No, porque haría falta anotar también la germinación por encima de 30 °C para poder concluir."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "c",
       "afirmacion": 6,
       "evidencia": "6.1",
@@ -405,167 +559,13 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar si la información presentada en una investigación es suficiente para establecer conclusiones.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la gráfica muestra, con las demás variables controladas, cuántas semillas germinaron en cada una de las tres temperaturas estudiadas; eso basta para comparar el efecto de la temperatura dentro del rango investigado, que es justo lo que afirma la conclusión.",
+      "justificacion_correcta": "La opción «Sí, porque dejan comparar la germinación en las tres temperaturas estudiadas bajo las…» es la respuesta correcta porque la gráfica muestra, con las demás variables controladas, cuántas semillas germinaron en cada una de las tres temperaturas estudiadas; eso basta para comparar el efecto de la temperatura dentro del rango investigado, que es justo lo que afirma la conclusión.",
       "opciones_incorrectas": {
-        "A": "Es incorrecta porque la conclusión se limita al rango estudiado (10-30 °C); no es necesario un rango mayor para sostener lo que se afirma.",
-        "C": "Es incorrecta porque la investigación trata solo de la lechuga; comparar con otras especies excede el alcance de esta conclusión.",
-        "D": "Es incorrecta porque la conclusión es sobre la TENDENCIA «a mayor temperatura, más germinación», y precisamente los tres puntos (10, 20 y 30 °C) son los que permiten ver esa tendencia; los valores menores también aportan."
+        "D": "Es incorrecta porque la conclusión se limita al rango estudiado (10-30 °C); no es necesario un rango mayor para sostener lo que se afirma.",
+        "A": "Es incorrecta porque la investigación trata solo de la lechuga; comparar con otras especies excede el alcance de esta conclusión.",
+        "B": "Es incorrecta porque la conclusión es sobre la TENDENCIA «a mayor temperatura, más germinación», y precisamente los tres puntos (10, 20 y 30 °C) son los que permiten ver esa tendencia; los valores menores también aportan."
       },
       "imagen_figura": "assets/banco-cn-7-p1/q14.png"
-    },
-    {
-      "id": "P7C15",
-      "numero": 15,
-      "enunciado": "<p>Lee la situación y observa el tubo junto a la tabla de densidades.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un tubo de ensayo, cuatro materiales se ordenan en capas estables según su <b>densidad</b> (masa por unidad de volumen): el corcho (0,2 g/mL) queda arriba, luego el aceite (0,9 g/mL), debajo el agua (1,0 g/mL) y, en el fondo, la miel (1,4 g/mL), porque <b>un material flota sobre otro cuando su densidad es menor</b>. Tomás deja caer con cuidado una <b>cuenta de plástico de densidad 1,1 g/mL</b>.</p>[[IMG]]</div><p>Al estabilizarse, ¿en qué posición quedará la cuenta?</p>",
-      "opciones": {
-        "A": "Flotará en la superficie, por encima del corcho.",
-        "B": "Quedará entre el aceite y el agua.",
-        "C": "Quedará entre el agua y la miel.",
-        "D": "Se hundirá hasta el fondo, por debajo de la miel."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 7,
-      "evidencia": "7.2",
-      "cmc": "Entorno físico",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de explicar un fenómeno mediante los conceptos de las ciencias naturales (densidad).",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la cuenta (1,1 g/mL) es más densa que el corcho (0,2), el aceite (0,9) y el agua (1,0), de modo que se hunde a través de esas tres capas; pero es menos densa que la miel (1,4), así que flota sobre ella. Por eso se detiene entre la capa de agua y la de miel.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque la cuenta (1,1 g/mL) es más densa que el corcho, el aceite y el agua; no puede quedar en la superficie, sino que se hunde hasta hallar un líquido más denso.",
-        "B": "Es incorrecta porque la cuenta también es más densa que el agua (1,1 > 1,0); por eso atraviesa la capa de agua y no se detiene entre el aceite y el agua.",
-        "D": "Es incorrecta porque la cuenta (1,1 g/mL) es menos densa que la miel (1,4); flota sobre la miel y no llega al fondo del tubo."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q15.png"
-    },
-    {
-      "id": "P7C16",
-      "numero": 16,
-      "enunciado": "<p>Lee la situación, observa el esquema del sistema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una fábrica vierte a un río aguas con <b>residuos químicos</b>. Aguas abajo, un pueblo capta agua del mismo río para consumo humano y para <b>regar sus huertas</b>, de modo que la contaminación de la fábrica repercute en la salud de las personas y en sus cultivos. Para intervenir el sistema se instala un <b>filtro de tratamiento</b> (con capas de grava, arena y carbón) que retiene los residuos químicos de la fábrica antes de que el agua siga su curso hacia el pueblo.</p>[[IMG]]</div><p>¿Por qué la incorporación del filtro de tratamiento beneficia al pueblo?</p>",
-      "opciones": {
-        "A": "Porque hace que la fábrica reduzca poco a poco el número de huertas y cultivos que tiene el pueblo aguas abajo.",
-        "B": "Porque incrementa la cantidad de residuos químicos de la fábrica que terminan llegando al cauce del río.",
-        "C": "Porque genera nuevas sustancias contaminantes que se acumulan en el agua del río y en las huertas del pueblo.",
-        "D": "Porque impide que los residuos químicos contaminen el agua que el pueblo bebe y usa para regar sus huertas."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de relacionar el efecto de incluir un elemento en un sistema, dada una situación problema.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque el filtro retiene los residuos químicos de la fábrica antes de que el agua siga su curso; así el agua que el pueblo capta para beber y regar llega libre de esa contaminación, lo que protege la salud de las personas y sus cultivos.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque el filtro mejora la calidad del agua de riego; no disminuye las huertas ni los cultivos del pueblo.",
-        "B": "Es incorrecta porque el filtro retiene los residuos, de modo que reduce la contaminación que llega al río en lugar de aumentarla.",
-        "C": "Es incorrecta porque el filtro limpia el agua reteniendo contaminantes; no fabrica nuevas sustancias contaminantes."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q16.png"
-    },
-    {
-      "id": "P7C17",
-      "numero": 17,
-      "enunciado": "<p>Lee la situación, observa los dibujos y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al club de ciencias del colegio le prestaron un microscopio por una semana. Los integrantes prepararon dos láminas: en la primera pusieron un raspado del interior de la mejilla de un compañero y en la segunda una gota del agua estancada del florero del salón. Luego dibujaron en el cuaderno lo que alcanzaron a ver en cada lámina.</p>[[IMG]]<p>La <b>Célula A</b> es la de la mejilla: aparece rodeada solo por su membrana y en su interior se distinguen un <b>núcleo</b> bien delimitado, una <b>mitocondria</b> y varios puntos oscuros. La <b>Célula B</b> es la del agua del florero: está rodeada por una <b>pared celular</b>, su material genético queda suelto en la zona señalada con línea punteada, sin quedar encerrado, y también muestra puntos oscuros. En los dos dibujos, esos puntos oscuros son los <b>ribosomas</b>.</p></div><p>De acuerdo con los dos dibujos, ¿cuál de estas estructuras se encuentra en <b>las dos</b> células?</p>",
-      "opciones": {
-        "A": "La pared celular que la envuelve por fuera y le da forma.",
-        "B": "Un núcleo bien delimitado que encierra el material genético.",
-        "C": "Los ribosomas.",
-        "D": "Las mitocondrias, donde se libera la energía del alimento."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 9,
-      "evidencia": "9.1",
-      "cmc": "Entorno vivo",
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden identificar la característica común entre dos tipos de células que se presentan.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque los puntos oscuros que corresponden a los ribosomas están dibujados tanto dentro de la célula A como dentro de la célula B; esa es la única estructura que comparten las dos láminas, pues toda célula necesita fabricar proteínas.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque la pared celular se dibujó únicamente alrededor de la célula B; la célula A aparece rodeada solo por su membrana.",
-        "B": "Es incorrecta porque solo la célula A tiene un núcleo bien delimitado; en la célula B el material genético queda suelto en la zona punteada, sin una envoltura que lo encierre.",
-        "D": "Es incorrecta porque las mitocondrias aparecen solamente en el dibujo de la célula A; en el de la célula B no se ve ninguna, y esa célula obtiene su energía por otras vías."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q17.png"
-    },
-    {
-      "id": "P7C18",
-      "numero": 18,
-      "enunciado": "<p>Lee la situación y observa la tabla de propiedades.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para fabricar el núcleo de un <b>cable eléctrico</b> seguro, unos estudiantes comparan cuatro materiales según tres propiedades (conductividad eléctrica, flexibilidad y opacidad) y, a partir de la tabla, seleccionan el <b>cobre</b> y el <b>hierro</b>. Identificar el <b>criterio de clasificación</b> consiste en hallar la propiedad que <b>solo</b> esos dos materiales comparten y que, además, resulta pertinente para la función buscada.</p></div><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Material</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">¿Conduce electricidad?</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">¿Es flexible?</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">¿Es opaco?</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Cobre</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Caucho</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Vidrio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left;font-weight:600\">Hierro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr></table><p>Según la tabla, ¿cuál fue el criterio por el que los estudiantes escogieron el cobre y el hierro?</p>",
-      "opciones": {
-        "A": "Porque ambos conducen la electricidad.",
-        "B": "Porque ambos son flexibles.",
-        "C": "Porque ninguno de los dos es opaco.",
-        "D": "Porque ambos son aislantes de la electricidad."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 9,
-      "evidencia": "9.2",
-      "cmc": "Entorno físico",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de identificar un criterio de selección en una clasificación de elementos.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque, según la tabla, el cobre y el hierro son los únicos dos materiales que conducen la electricidad; esa propiedad compartida es justamente la que se necesita en el núcleo de un cable eléctrico.",
-      "opciones_incorrectas": {
-        "B": "Es incorrecta porque, según la tabla, el hierro no es flexible; por tanto, la flexibilidad no es la propiedad que ambos comparten.",
-        "C": "Es incorrecta porque tanto el cobre como el hierro son opacos según la tabla; además, la opacidad no es la propiedad útil para conducir electricidad.",
-        "D": "Es incorrecta porque ser aislante es lo opuesto a lo que indica la tabla: el cobre y el hierro conducen la electricidad, no la aíslan."
-      }
-    },
-    {
-      "id": "P7C19",
-      "numero": 19,
-      "enunciado": "<p>Lee la siguiente situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mariana realizó un experimento sobre la <b>oxidación</b> de clavos de hierro sumergidos en distintos líquidos (agua, agua con sal y aceite). Para divulgar su trabajo elaboró un afiche que contiene únicamente el <b>título</b>, la <b>descripción del procedimiento</b> y una <b>tabla de resultados</b> con el grado de oxidación de cada clavo. Una investigación bien comunicada sigue una estructura lógica: <b>pregunta de investigación → procedimiento → resultados → conclusiones</b>. En el afiche de Mariana faltan dos de esas partes.</p></div><p>¿Qué partes le faltan para que la investigación quede bien comunicada?</p>",
-      "opciones": {
-        "A": "Le faltan la pregunta de investigación y las conclusiones a que llegó.",
-        "B": "Le sobran el título y la descripción del procedimiento.",
-        "C": "Le faltan los resultados, que además irían antes del procedimiento.",
-        "D": "No le falta ninguna, porque los resultados de una investigación solo se pueden dar en tablas."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 5,
-      "evidencia": "5.2",
-      "cmc": "Entorno físico",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de comunicar de manera adecuada los resultados de una investigación.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque, según la estructura de una investigación, al afiche le faltan la pregunta que se quiso responder (al inicio) y las conclusiones derivadas de los resultados (al final); el título, el procedimiento y los resultados ya están presentes.",
-      "opciones_incorrectas": {
-        "B": "Es incorrecta porque el título y la descripción del procedimiento son partes necesarias de la comunicación científica; no sobran.",
-        "C": "Es incorrecta porque el orden lógico es primero el procedimiento y luego los resultados que se obtienen al aplicarlo, no al revés.",
-        "D": "Es incorrecta porque los resultados pueden presentarse de varias formas (tablas, gráficas, descripciones o datos), de modo que esa afirmación es falsa."
-      }
-    },
-    {
-      "id": "P7C20",
-      "numero": 20,
-      "enunciado": "<p>Lee la situación, observa las fichas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Durante la semana de la alimentación, una nutricionista visitó el colegio y le pidió a cuatro estudiantes de séptimo que anotaran en una ficha lo que se sirvieron ese día en el restaurante escolar. Antes les explicó que un plato balanceado reúne un alimento de cada uno de los cuatro grupos: <b>carbohidratos</b> (arroz, papa, pan), <b>frutas y verduras</b>, <b>proteínas</b> (pollo, huevo, carne, frijol) y <b>leche y sus derivados</b> (leche, queso, yogur). El plato más balanceado es el que tiene algo de <b>cada</b> grupo. Estas son las cuatro fichas:</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Estudiante</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Lo que se sirvió</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Ana</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">arroz, manzana y pollo</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Bruno</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">pan, zanahoria y queso</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Carla</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">papa, huevo y yogur</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\"><b>Diego</b></td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:left\">arroz, ensalada, huevo y leche</td></tr></tbody></table></div><p>¿Cuál de los cuatro estudiantes se sirvió el plato más balanceado?</p>",
-      "opciones": {
-        "A": "Ana.",
-        "B": "Bruno.",
-        "C": "Carla.",
-        "D": "Diego."
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 9,
-      "evidencia": "9.2",
-      "cmc": "Entorno vivo",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de comparar y seleccionar elementos de acuerdo con un criterio dado.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque Diego es el único que reúne un alimento de cada uno de los cuatro grupos: carbohidrato (arroz), verdura (ensalada), proteína (huevo) y leche. A los otros tres compañeros les falta un grupo distinto en cada caso.",
-      "opciones_incorrectas": {
-        "A": "Es incorrecta porque Ana se sirvió carbohidrato (arroz), fruta (manzana) y proteína (pollo), pero en su ficha no aparece leche ni ninguno de sus derivados.",
-        "B": "Es incorrecta porque Bruno se sirvió carbohidrato (pan), verdura (zanahoria) y un derivado de la leche (queso), pero le falta un alimento del grupo de las proteínas.",
-        "C": "Es incorrecta porque Carla se sirvió carbohidrato (papa), proteína (huevo) y un derivado de la leche (yogur), pero le falta un alimento del grupo de las frutas y verduras."
-      },
-      "imagen_figura": "assets/banco-cn-7-p1/q20.png"
     }
   ],
   "preservar_orden_preguntas": false,

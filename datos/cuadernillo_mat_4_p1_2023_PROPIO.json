@@ -48,117 +48,40 @@
   ],
   "preguntas": [
     {
-      "id": "P4M01",
+      "id": "P4M20",
       "numero": 1,
-      "enunciado": "<p>Lucía cuenta las conchas que recoge en la playa. Cada vez que junta <b>1 concha</b> la dibuja con un círculo, y cuando junta <b>5 conchas</b> las dibuja con una estrella (ver la convención).</p><p><img src=\"assets/banco-mat-4-p1/q01.png\" alt=\"convención\"></p><p>Si Lucía usa solo estos dos dibujos, ¿cuál de las representaciones corresponde a <b>\\(13\\)</b> conchas?</p>",
+      "enunciado": "<p>En la tienda del colegio venden bolsas de confites con forma de osito, revueltos de varios colores, como se ve en la imagen.</p>[[IMG]]<p>Si un niño mete la mano en la bolsa sin mirar y saca un solo confite, ¿de qué color tiene más posibilidades de salir?</p>",
       "opciones": {
-        "A": "Representación A.",
-        "B": "Representación B.",
-        "C": "Representación C.",
-        "D": "Representación D."
+        "A": "Rojo.",
+        "B": "Azul.",
+        "C": "Amarillo.",
+        "D": "Verde."
       },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Describo, comparo y cuantifico situaciones con números, en diferentes contextos y con diversas representaciones.",
-      "que_evalua": "La capacidad para relacionar un número con una representación pictórica en el sistema decimal, teniendo en cuenta el valor posicional.",
-      "justificacion_correcta": "Cada estrella vale \\(5\\) conchas y cada círculo vale \\(1\\). Para \\(13\\) conchas se usan \\(2\\) estrellas \\((10)\\) y \\(3\\) círculos \\((3)\\): \\(5+5+1+1+1 = 13\\). Corresponde a la representación C.",
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "cmc": "Aleatorio",
+      "dificultad": "BAJA",
+      "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
+      "que_evalua": "La capacidad para identificar dentro de un conjunto de elementos con varias características, aquel que tiene una mayor probabilidad de ocurrencia.",
+      "justificacion_correcta": "Sale con más facilidad el color que está en mayor cantidad dentro de la bolsa. Al contar los ositos de la imagen hay \\(4\\) azules, \\(3\\) rojos y \\(1\\) verde, así que el color con más posibilidades de salir es el azul.",
       "opciones_incorrectas": {
-        "A": "Usa \\(1\\) estrella y \\(3\\) círculos: \\(5+3 = 8\\), no llega a \\(13\\).",
-        "B": "Toma \\(1\\) estrella y \\(8\\) círculos sin reagrupar de a \\(5\\) los círculos sobrantes.",
-        "D": "Intercambia la convención: usa \\(3\\) estrellas y \\(2\\) círculos \\((17)\\)."
+        "D": "Solo hay \\(1\\) osito verde, uno de los colores con menor posibilidad de salir.",
+        "C": "No hay ositos amarillos: sacar uno amarillo es un evento imposible.",
+        "A": "Hay \\(3\\) ositos rojos, menos que los \\(4\\) azules."
       },
+      "imagen_figura": "assets/banco-mat-4-p1/q20.png",
       "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p1/q01_opA.png",
-        "B": "assets/banco-mat-4-p1/q01_opB.png",
-        "C": "assets/banco-mat-4-p1/q01_opC.png",
-        "D": "assets/banco-mat-4-p1/q01_opD.png"
+        "B": "assets/banco-mat-4-p1/q20_opA.png",
+        "D": "assets/banco-mat-4-p1/q20_opB.png",
+        "C": "assets/banco-mat-4-p1/q20_opC.png",
+        "A": "assets/banco-mat-4-p1/q20_opD.png"
       }
     },
     {
-      "id": "P4M02",
-      "numero": 2,
-      "enunciado": "<p>Tomás mide la superficie de tres hojas usando cuadritos de \\(1\\ \\text{cm}^{2}\\). La hoja 1 ocupa \\(3\\ \\text{cm}^{2}\\) y la hoja 2 ocupa \\(4\\ \\text{cm}^{2}\\). La hoja 3 se cubre exactamente con \\(6\\) hojas como la 1 y \\(3\\) hojas como la 2.</p>[[IMG]]<p>¿Qué superficie tiene la hoja 3?</p>",
-      "opciones": {
-        "A": "\\(8\\ \\text{cm}^2\\)",
-        "B": "\\(24\\ \\text{cm}^2\\)",
-        "C": "\\(28\\ \\text{cm}^2\\)",
-        "D": "\\(30\\ \\text{cm}^2\\)"
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Construyo y descompongo figuras y sólidos a partir de condiciones dadas.",
-      "que_evalua": "La capacidad para calcular áreas de figuras regulares utilizando patrones de recubrimientos estandarizados.",
-      "justificacion_correcta": "Seis hojas como la 1 aportan \\(6 \\times 3 = 18\\ \\text{cm}^{2}\\) y tres como la 2 aportan \\(3 \\times 4 = 12\\ \\text{cm}^{2}\\). En total, \\(18 + 12 = 30\\ \\text{cm}^{2}\\).",
-      "opciones_incorrectas": {
-        "A": "Suma solo las cantidades de hojas \\((6 + 2 = 8)\\) sin multiplicar por su área.",
-        "B": "Calcula solo \\(6\\times 4 = 24\\) y olvida las hojas tipo 1.",
-        "C": "Cuenta bien \\(24\\) pero suma \\(2\\times 2 = 4\\) en lugar de \\(2\\times 3 = 6\\)."
-      },
-      "imagen_figura": "assets/banco-mat-4-p1/q02.png"
-    },
-    {
-      "id": "P4M03",
-      "numero": 3,
-      "enunciado": "<p>En la casa de Valentina los oficios del día se sortean: cada oficio va escrito en tarjetas iguales que se guardan en una cajita y ella saca una sin mirar. El cuadro muestra todas las tarjetas que hay dentro de la cajita.</p>[[IMG]]<p>¿Cuál es el oficio que <b>menos</b> posibilidades tiene de tocarle a Valentina?</p>",
-      "opciones": {
-        "A": "Servir la comida.",
-        "B": "Limpiar las ventanas.",
-        "C": "Tirar la basura.",
-        "D": "Dar de comer a la mascota."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Aleatorio",
-      "dificultad": "BAJA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad para identificar el evento con un menor grado de posibilidad de ocurrencia.",
-      "justificacion_correcta": "El oficio con menos posibilidades es el que aparece escrito en menos tarjetas. Al contar el cuadro, tirar la basura está escrito una sola vez, mientras que los demás oficios se repiten.",
-      "opciones_incorrectas": {
-        "A": "«Servir la comida» está en dos tarjetas, así que tiene más posibilidad que tirar la basura.",
-        "B": "«Limpiar las ventanas» está en dos tarjetas, así que es más posible que tirar la basura.",
-        "D": "«Dar de comer a la mascota» está en cuatro tarjetas: es la de mayor posibilidad, no la menor."
-      },
-      "imagen_figura": "assets/banco-mat-4-p1/q03.png"
-    },
-    {
-      "id": "P4M04",
-      "numero": 4,
-      "enunciado": "<p>Don Efraín teje hamacas y las guarda en baúles. Cada año teje más hamacas y necesita más baúles: la imagen muestra los baúles que llenó en los años 1, 2 y 3.</p>[[IMG]]<p>Si en el año 4 necesita \\(27\\) baúles, ¿qué regla está siguiendo?</p>",
-      "opciones": {
-        "A": "Llenar el doble de baúles que el año anterior.",
-        "B": "Llenar \\(6\\) baúles más que el año anterior.",
-        "C": "Llenar el triple de baúles que el año anterior.",
-        "D": "Llenar \\(18\\) baúles más que el año anterior."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "ALTA",
-      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
-      "que_evalua": "La capacidad para encontrar el patrón de una sucesión.",
-      "justificacion_correcta": "Al pasar de un año al siguiente, la cantidad de baúles queda multiplicada por \\(3\\): de \\(1\\) a \\(3\\) y de \\(3\\) a \\(9\\). Además, \\(9 \\times 3 = 27\\) confirma la regla.",
-      "opciones_incorrectas": {
-        "A": "Del año 1 al año 2 la cantidad pasa de \\(1\\) a \\(3\\); duplicar daría \\(2\\), y tampoco se cumpliría para \\(9\\) ni para \\(27\\).",
-        "B": "Aumentar \\(6\\) fijos no sirve: del año 1 al año 2 solo aumenta \\(2\\), no \\(6\\).",
-        "D": "Toma la diferencia entre el año 4 \\((27)\\) y el año 3 \\((9)\\), que es \\(18\\), como si fuera la regla de todos los años."
-      },
-      "imagen_figura": "assets/banco-mat-4-p1/q04.png"
-    },
-    {
       "id": "P4M05",
-      "numero": 5,
+      "numero": 2,
       "enunciado": "<p>En la huerta del colegio, el agua que hay en el tanque se reparte por partes iguales entre los surcos que se van a regar. Si se riegan <b>\\(5\\)</b> surcos, cada surco recibe <b>\\(18\\)</b> minutos de agua. ¿Cuántos minutos de agua recibiría cada surco si se regaran <b>\\(6\\)</b> surcos?</p>",
       "opciones": {
         "A": "\\(13\\) minutos.",
@@ -182,14 +105,14 @@
       }
     },
     {
-      "id": "P4M06",
-      "numero": 6,
-      "enunciado": "<p>Valeria y Julián reparten el periódico en bicicleta por el barrio y cada uno llega por su propia ruta hasta la tienda señalada como meta, tal como muestra la imagen. Valeria pedalea por el trayecto 1 y luego por el trayecto 2; Julián baja por el trayecto 3 y sigue por el trayecto 4.</p>[[IMG]]<p>¿Qué se debe hacer para saber qué distancia pedaleó Valeria?</p>",
+      "id": "P4M11",
+      "numero": 3,
+      "enunciado": "<p>Camilo recortó para su cartelera una hoja con forma de <b>triángulo</b> y quiere pegar un botón en cada <b>vértice</b> de la hoja. ¿Cuál de las siguientes imágenes muestra la <b>forma de la hoja</b> con sus <b>vértices</b> bien señalados?</p>",
       "opciones": {
-        "A": "Sumar las distancias del trayecto 1 y del trayecto 2.",
-        "B": "Multiplicar las distancias del trayecto 3 y del trayecto 4.",
-        "C": "Multiplicar las distancias del trayecto 1 y del trayecto 4.",
-        "D": "Sumar las distancias del trayecto 2 y del trayecto 3."
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
       "clave": "A",
       "competencia": "a",
@@ -197,67 +120,158 @@
       "evidencia": "6.1",
       "cmc": "Espacial - métrico",
       "dificultad": "BAJA",
-      "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir.",
-      "que_evalua": "La capacidad para realizar mediciones en sistemas de referencia convencionales.",
-      "justificacion_correcta": "La ruta de Valeria está formada por sus dos trayectos seguidos, así que la distancia que pedaleó se obtiene sumando la distancia del trayecto 1 con la del trayecto 2.",
+      "estandar": "Comparo y clasifico figuras bidimensionales de acuerdo con sus componentes (ángulos, vértices) y características.",
+      "que_evalua": "La capacidad para reconocer componentes de figuras geométricas.",
+      "justificacion_correcta": "Los vértices de un triángulo son los tres puntos donde se juntan sus lados. La imagen «Imagen C» muestra un triángulo con un botón en cada uno de esos tres puntos.",
       "opciones_incorrectas": {
-        "B": "Los trayectos 3 y 4 forman la ruta de Julián, no la de Valeria; además, multiplicar distancias no da una longitud total.",
-        "C": "El trayecto 4 pertenece a la ruta de Julián y, además, multiplicar distancias no calcula un recorrido.",
-        "D": "El trayecto 3 es de Julián y deja por fuera el trayecto 1, que sí pedaleó Valeria."
+        "D": "Es un triángulo, pero los botones están puestos sobre los lados y no en los vértices.",
+        "C": "Tiene los vértices marcados, pero la figura es un cuadrilátero de cuatro vértices, no un triángulo.",
+        "B": "No es un triángulo y, además, los botones están puestos sobre los lados."
       },
-      "imagen_figura": "assets/banco-mat-4-p1/q06.png"
+      "opciones_imagenes": {
+        "D": "assets/banco-mat-4-p1/q11_opA.png",
+        "C": "assets/banco-mat-4-p1/q11_opB.png",
+        "A": "assets/banco-mat-4-p1/q11_opC.png",
+        "B": "assets/banco-mat-4-p1/q11_opD.png"
+      }
     },
     {
-      "id": "P4M07",
-      "numero": 7,
-      "enunciado": "<p>Laura y Javier conversan sobre los dulces que tiene Laura. Javier acierta: después de regalar un dulce, a Laura le quedan \\(8 + 1\\).</p>[[IMG]]<p>¿Qué expresión indica cuántos dulces tenía Laura antes de regalar el suyo?</p>",
+      "id": "P4M13",
+      "numero": 4,
+      "enunciado": "<p>Daniela y Emiliano recogen botellas para reciclar en el parque. Por cada \\(45\\) botellas que recoge Daniela, Emiliano recoge \\(15\\). Si Emiliano llegó a \\(60\\) botellas al final del día, ¿cuántas botellas recogió Daniela?</p>",
       "opciones": {
-        "A": "\\(10 + 3\\)",
-        "B": "\\(10 - 1\\)",
-        "C": "\\(5 + 3\\)",
-        "D": "\\(5 - 2\\)"
+        "A": "\\(135\\) botellas.",
+        "B": "\\(105\\) botellas.",
+        "C": "\\(75\\) botellas.",
+        "D": "\\(180\\) botellas."
       },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 4,
-      "evidencia": "4.2",
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
-      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
-      "que_evalua": "La capacidad para identificar equivalencias entre expresiones numéricas.",
-      "justificacion_correcta": "Después de regalar un dulce le quedan \\(8 + 1 = 9\\). Antes de regalarlo tenía uno más, es decir \\(10\\), que es lo que representa \\(10 - 1\\) al deshacer el regalo.",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad para determinar una constante de proporcionalidad y usarla para hallar un cuarto valor que satisface la proporción.",
+      "justificacion_correcta": "Emiliano recogió \\(60\\) botellas, que son cuatro veces \\(15\\). Como la relación se mantiene, Daniela recogió cuatro veces \\(45\\), es decir \\(180\\) botellas.",
       "opciones_incorrectas": {
-        "A": "Suma \\(3\\) en vez de quitar el dulce; Javier regala, no recibe, y \\(10+3 = 13 \\neq 9\\).",
-        "C": "\\(5 + 3 = 8\\) no corresponde a los \\(9\\) dulces con que debe quedar Javier.",
-        "D": "\\(5 - 2 = 3\\) no tiene relación con los \\(10\\) dulces iniciales de Javier."
-      },
-      "imagen_figura": "assets/banco-mat-4-p1/q07.png"
+        "B": "Suma \\(45\\) y \\(60\\) en lugar de conservar la relación entre las dos cantidades.",
+        "A": "Corresponde a tres veces \\(45\\), no a cuatro veces.",
+        "C": "Añade \\(15\\) a \\(60\\), mezclando las dos recolecciones."
+      }
     },
     {
-      "id": "P4M08",
-      "numero": 8,
-      "enunciado": "<p>Cuatro barrios se enfrentaron en un campeonato relámpago de microfútbol que se definió en dos jornadas. En la gráfica están los goles que anotó cada barrio en la jornada 1 y en la tabla los que anotó en la jornada 2.</p>[[IMG]]<p>Sumando las dos jornadas, ¿cuál barrio anotó más goles?</p>",
+      "id": "P4M01",
+      "numero": 5,
+      "enunciado": "<p>Lucía cuenta las conchas que recoge en la playa. Cada vez que junta <b>1 concha</b> la dibuja con un círculo, y cuando junta <b>5 conchas</b> las dibuja con una estrella (ver la convención).</p><p><img src=\"assets/banco-mat-4-p1/q01.png\" alt=\"convención\"></p><p>Si Lucía usa solo estos dos dibujos, ¿cuál de las representaciones corresponde a <b>\\(13\\)</b> conchas?</p>",
       "opciones": {
-        "A": "Cerezos.",
-        "B": "Palmar.",
-        "C": "Bosque.",
-        "D": "Mirador."
+        "A": "Representación A.",
+        "B": "Representación B.",
+        "C": "Representación D.",
+        "D": "Representación C."
       },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "cmc": "Aleatorio",
-      "dificultad": "ALTA",
-      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
-      "que_evalua": "La capacidad para usar la información presentada en distintos tipos de registro.",
-      "justificacion_correcta": "A cada barrio se le leen los goles de la gráfica y se le suman los de la tabla: \\(7 + 8 = 15\\), \\(4 + 4 = 8\\), \\(3 + 0 = 3\\) y \\(2 + 5 = 7\\). El total más alto es \\(15\\) y corresponde a Cerezos.",
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Describo, comparo y cuantifico situaciones con números, en diferentes contextos y con diversas representaciones.",
+      "que_evalua": "La capacidad para relacionar un número con una representación pictórica en el sistema decimal, teniendo en cuenta el valor posicional.",
+      "justificacion_correcta": "Cada estrella vale \\(5\\) conchas y cada círculo vale \\(1\\). Para \\(13\\) conchas se usan \\(2\\) estrellas \\((10)\\) y \\(3\\) círculos \\((3)\\): \\(5+5+1+1+1 = 13\\). Corresponde a la representación C.",
       "opciones_incorrectas": {
-        "B": "Palmar reúne \\(8\\) goles, menos que los \\(15\\) de Cerezos.",
-        "C": "Bosque reúne \\(3\\) goles, el total más bajo de los cuatro.",
-        "D": "Mirador mejora en la jornada 2, pero reúne \\(7\\) goles; mira una sola jornada y no el total."
+        "A": "Usa \\(1\\) estrella y \\(3\\) círculos: \\(5+3 = 8\\), no llega a \\(13\\).",
+        "B": "Toma \\(1\\) estrella y \\(8\\) círculos sin reagrupar de a \\(5\\) los círculos sobrantes.",
+        "C": "Intercambia la convención: usa \\(3\\) estrellas y \\(2\\) círculos \\((17)\\)."
       },
-      "imagen_figura": "assets/banco-mat-4-p1/q08.png"
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-4-p1/q01_opA.png",
+        "B": "assets/banco-mat-4-p1/q01_opB.png",
+        "D": "assets/banco-mat-4-p1/q01_opC.png",
+        "C": "assets/banco-mat-4-p1/q01_opD.png"
+      }
+    },
+    {
+      "id": "P4M10",
+      "numero": 6,
+      "enunciado": "<p>Cada sábado, Mariana arma \\(7\\) pulseras distintas para la venta del colegio. ¿Cuántas pulseras arma en \\(4\\) sábados?</p>",
+      "opciones": {
+        "A": "\\(4\\) pulseras.",
+        "B": "\\(7\\) pulseras.",
+        "C": "\\(11\\) pulseras.",
+        "D": "\\(28\\) pulseras."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "BAJA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad para identificar una situación multiplicativa y encontrar el resultado.",
+      "justificacion_correcta": "Se repite \\(7\\) tantas veces como sábados hay: \\(7 \\times 4 = 28\\) pulseras.",
+      "opciones_incorrectas": {
+        "A": "Repite el número de sábados en lugar de contar las pulseras.",
+        "B": "Corresponde a un solo sábado.",
+        "C": "Suma los dos números en vez de multiplicarlos."
+      }
+    },
+    {
+      "id": "P4M17",
+      "numero": 7,
+      "enunciado": "<p>Simón se prepara para una carrera de atletismo y en cada entrenamiento gasta menos tiempo en dar una vuelta al parque. La tabla trae el tiempo, en segundos, que gastó en los tres primeros entrenamientos.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Entrenamiento</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tiempo (segundos)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">95</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">88</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">81</td></tr></table><p>Si sigue mejorando de la misma forma, ¿cuántos segundos gastará en el <b>cuarto entrenamiento</b>?</p>",
+      "opciones": {
+        "A": "\\(81\\) segundos.",
+        "B": "\\(7\\) segundos.",
+        "C": "\\(28\\) segundos.",
+        "D": "\\(74\\) segundos."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
+      "que_evalua": "La capacidad para identificar el término siguiente en una secuencia numérica descendente.",
+      "justificacion_correcta": "El tiempo baja de \\(7\\) en \\(7\\) segundos: \\(95 - 88 = 7\\) y \\(88 - 81 = 7\\). Siguiendo el patrón, en el cuarto entrenamiento gasta \\(81 - 7 = 74\\) segundos.",
+      "opciones_incorrectas": {
+        "A": "Repite el tiempo del tercer entrenamiento \\((81)\\) sin aplicar la disminución.",
+        "C": "Multiplica la disminución por el número del entrenamiento \\((7\\times 4 = 28)\\) en lugar de restarla.",
+        "B": "Toma la cantidad que disminuye \\((7)\\) como si fuera el tiempo total del cuarto entrenamiento."
+      }
+    },
+    {
+      "id": "P4M18",
+      "numero": 8,
+      "enunciado": "<p>En el aeropuerto instalaron al revés el aviso azul que indica la sala de embarque. Para dejarlo bien, un técnico lo <b>giró \\(90^\\circ\\) hacia la derecha</b> y quedó como aparece en la imagen.</p>[[IMG]]<p>¿Cuál de las opciones muestra cómo estaba el aviso <b>antes</b> del giro?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
+      "que_evalua": "La capacidad para identificar imágenes luego de aplicarle alguna transformación específica: rotación.",
+      "justificacion_correcta": "Si el aviso quedó bien después de girarlo \\(90^\\circ\\) hacia la derecha, para saber cómo estaba antes hay que deshacer ese giro, es decir, girar el aviso ya corregido \\(90^\\circ\\) hacia la izquierda. Al hacerlo, el avión que ahora apunta hacia la derecha queda apuntando hacia arriba, y así estaba el aviso antes del giro.",
+      "opciones_incorrectas": {
+        "D": "El avión apunta hacia la izquierda: corresponde a un giro de \\(180^\\circ\\) y no a la rotación inversa de \\(90^\\circ\\).",
+        "C": "El avión apunta hacia la derecha, igual que el aviso ya corregido, así que no deshace el giro que hizo el técnico.",
+        "A": "El avión apunta hacia abajo: es el resultado de volver a girar \\(90^\\circ\\) hacia la derecha en lugar de devolverse hacia la izquierda."
+      },
+      "imagen_figura": "assets/banco-mat-4-p1/q18.png",
+      "opciones_imagenes": {
+        "B": "assets/banco-mat-4-p1/q18_opA.png",
+        "D": "assets/banco-mat-4-p1/q18_opB.png",
+        "C": "assets/banco-mat-4-p1/q18_opC.png",
+        "A": "assets/banco-mat-4-p1/q18_opD.png"
+      }
     },
     {
       "id": "P4M09",
@@ -286,255 +300,68 @@
       "imagen_figura": "assets/banco-mat-4-p1/q09.png"
     },
     {
-      "id": "P4M10",
+      "id": "P4M02",
       "numero": 10,
-      "enunciado": "<p>Cada sábado, Mariana arma \\(7\\) pulseras distintas para la venta del colegio. ¿Cuántas pulseras arma en \\(4\\) sábados?</p>",
+      "enunciado": "<p>Tomás mide la superficie de tres hojas usando cuadritos de \\(1\\ \\text{cm}^{2}\\). La hoja 1 ocupa \\(3\\ \\text{cm}^{2}\\) y la hoja 2 ocupa \\(4\\ \\text{cm}^{2}\\). La hoja 3 se cubre exactamente con \\(6\\) hojas como la 1 y \\(3\\) hojas como la 2.</p>[[IMG]]<p>¿Qué superficie tiene la hoja 3?</p>",
       "opciones": {
-        "A": "\\(4\\) pulseras.",
-        "B": "\\(7\\) pulseras.",
-        "C": "\\(11\\) pulseras.",
-        "D": "\\(28\\) pulseras."
+        "A": "\\(8\\ \\text{cm}^2\\)",
+        "B": "\\(24\\ \\text{cm}^2\\)",
+        "C": "\\(28\\ \\text{cm}^2\\)",
+        "D": "\\(30\\ \\text{cm}^2\\)"
       },
       "clave": "D",
       "competencia": "b",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "BAJA",
-      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
-      "que_evalua": "La capacidad para identificar una situación multiplicativa y encontrar el resultado.",
-      "justificacion_correcta": "Se repite \\(7\\) tantas veces como sábados hay: \\(7 \\times 4 = 28\\) pulseras.",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo y descompongo figuras y sólidos a partir de condiciones dadas.",
+      "que_evalua": "La capacidad para calcular áreas de figuras regulares utilizando patrones de recubrimientos estandarizados.",
+      "justificacion_correcta": "Seis hojas como la 1 aportan \\(6 \\times 3 = 18\\ \\text{cm}^{2}\\) y tres como la 2 aportan \\(3 \\times 4 = 12\\ \\text{cm}^{2}\\). En total, \\(18 + 12 = 30\\ \\text{cm}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Repite el número de sábados en lugar de contar las pulseras.",
-        "B": "Corresponde a un solo sábado.",
-        "C": "Suma los dos números en vez de multiplicarlos."
-      }
+        "A": "Suma solo las cantidades de hojas \\((6 + 2 = 8)\\) sin multiplicar por su área.",
+        "B": "Calcula solo \\(6\\times 4 = 24\\) y olvida las hojas tipo 1.",
+        "C": "Cuenta bien \\(24\\) pero suma \\(2\\times 2 = 4\\) en lugar de \\(2\\times 3 = 6\\)."
+      },
+      "imagen_figura": "assets/banco-mat-4-p1/q02.png"
     },
     {
-      "id": "P4M11",
+      "id": "P4M06",
       "numero": 11,
-      "enunciado": "<p>Camilo recortó para su cartelera una hoja con forma de <b>triángulo</b> y quiere pegar un botón en cada <b>vértice</b> de la hoja. ¿Cuál de las siguientes imágenes muestra la <b>forma de la hoja</b> con sus <b>vértices</b> bien señalados?</p>",
+      "enunciado": "<p>Valeria y Julián reparten el periódico en bicicleta por el barrio y cada uno llega por su propia ruta hasta la tienda señalada como meta, tal como muestra la imagen. Valeria pedalea por el trayecto 1 y luego por el trayecto 2; Julián baja por el trayecto 3 y sigue por el trayecto 4.</p>[[IMG]]<p>¿Qué se debe hacer para saber qué distancia pedaleó Valeria?</p>",
       "opciones": {
-        "A": "Imagen A.",
-        "B": "Imagen B.",
-        "C": "Imagen C.",
-        "D": "Imagen D."
+        "A": "Sumar las distancias del trayecto 2 y del trayecto 3.",
+        "B": "Sumar las distancias del trayecto 1 y del trayecto 2.",
+        "C": "Multiplicar las distancias del trayecto 3 y del trayecto 4.",
+        "D": "Multiplicar las distancias del trayecto 1 y del trayecto 4."
       },
-      "clave": "C",
+      "clave": "B",
       "competencia": "a",
       "afirmacion": 6,
       "evidencia": "6.1",
       "cmc": "Espacial - métrico",
       "dificultad": "BAJA",
-      "estandar": "Comparo y clasifico figuras bidimensionales de acuerdo con sus componentes (ángulos, vértices) y características.",
-      "que_evalua": "La capacidad para reconocer componentes de figuras geométricas.",
-      "justificacion_correcta": "Los vértices de un triángulo son los tres puntos donde se juntan sus lados. La imagen C muestra un triángulo con un botón en cada uno de esos tres puntos.",
+      "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir.",
+      "que_evalua": "La capacidad para realizar mediciones en sistemas de referencia convencionales.",
+      "justificacion_correcta": "La ruta de Valeria está formada por sus dos trayectos seguidos, así que la distancia que pedaleó se obtiene sumando la distancia del trayecto 1 con la del trayecto 2.",
       "opciones_incorrectas": {
-        "A": "Es un triángulo, pero los botones están puestos sobre los lados y no en los vértices.",
-        "B": "Tiene los vértices marcados, pero la figura es un cuadrilátero de cuatro vértices, no un triángulo.",
-        "D": "No es un triángulo y, además, los botones están puestos sobre los lados."
+        "C": "Los trayectos 3 y 4 forman la ruta de Julián, no la de Valeria; además, multiplicar distancias no da una longitud total.",
+        "D": "El trayecto 4 pertenece a la ruta de Julián y, además, multiplicar distancias no calcula un recorrido.",
+        "A": "El trayecto 3 es de Julián y deja por fuera el trayecto 1, que sí pedaleó Valeria."
       },
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p1/q11_opA.png",
-        "B": "assets/banco-mat-4-p1/q11_opB.png",
-        "C": "assets/banco-mat-4-p1/q11_opC.png",
-        "D": "assets/banco-mat-4-p1/q11_opD.png"
-      }
-    },
-    {
-      "id": "P4M12",
-      "numero": 12,
-      "enunciado": "<p>Se preguntó a cuatro estudiantes por su curso, su clase favorita y su color preferido. Las respuestas quedaron así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Clase favorita</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Color favorito</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carla</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Salomé</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Verde</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tobías</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Artes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Iván</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Artes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td></tr></table><p>Si se elige a uno de ellos al azar, ¿qué afirmación es cierta?</p>",
-      "opciones": {
-        "A": "Es más probable elegir un estudiante de quinto que prefiera Español que uno de cuarto que prefiera Español.",
-        "B": "Es más probable elegir un estudiante de cuarto que prefiera el rojo que uno de quinto que prefiera el rojo.",
-        "C": "Es más probable elegir un estudiante de quinto que prefiera el azul que uno de cuarto que prefiera el azul.",
-        "D": "Es más probable elegir un estudiante de quinto que prefiera Inglés que uno de cuarto que prefiera Inglés."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Aleatorio",
-      "dificultad": "ALTA",
-      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
-      "que_evalua": "La capacidad para comparar el grado de posibilidad de dos eventos de un mismo experimento aleatorio.",
-      "justificacion_correcta": "Se cuenta cuántos estudiantes cumplen cada condición y se comparan esas cantidades. La afirmación de la opción A es la única que coincide con la tabla.",
-      "opciones_incorrectas": {
-        "B": "El rojo solo lo prefiere Carla (de quinto); en cuarto nadie prefiere el rojo, así que es al revés.",
-        "C": "El azul lo prefieren Salomé (quinto), Tomás y Sergio (cuarto): hay más de cuarto, así que es al revés.",
-        "D": "El inglés solo lo prefiere Sergio (de cuarto); en quinto nadie, así que es al revés."
-      }
-    },
-    {
-      "id": "P4M13",
-      "numero": 13,
-      "enunciado": "<p>Daniela y Emiliano recogen botellas para reciclar en el parque. Por cada \\(45\\) botellas que recoge Daniela, Emiliano recoge \\(15\\). Si Emiliano llegó a \\(60\\) botellas al final del día, ¿cuántas botellas recogió Daniela?</p>",
-      "opciones": {
-        "A": "\\(105\\) botellas.",
-        "B": "\\(180\\) botellas.",
-        "C": "\\(135\\) botellas.",
-        "D": "\\(75\\) botellas."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
-      "que_evalua": "La capacidad para determinar una constante de proporcionalidad y usarla para hallar un cuarto valor que satisface la proporción.",
-      "justificacion_correcta": "Emiliano recogió \\(60\\) botellas, que son cuatro veces \\(15\\). Como la relación se mantiene, Daniela recogió cuatro veces \\(45\\), es decir \\(180\\) botellas.",
-      "opciones_incorrectas": {
-        "A": "Suma \\(45\\) y \\(60\\) en lugar de conservar la relación entre las dos cantidades.",
-        "C": "Corresponde a tres veces \\(45\\), no a cuatro veces.",
-        "D": "Añade \\(15\\) a \\(60\\), mezclando las dos recolecciones."
-      }
-    },
-    {
-      "id": "P4M14",
-      "numero": 14,
-      "enunciado": "<p>Doña Elvira vende empanadas en la puerta del colegio. Al terminar la semana contó lo vendido y dijo: «Vendí <b>\\(90\\)</b> empanadas en total», «Vendí <b>\\(30\\)</b> empanadas de carne» y «Vendí la <b>misma cantidad</b> de empanadas de queso que de pollo». ¿Cuál de las siguientes tablas (A, B, C o D) representa correctamente lo que vendió doña Elvira?</p>",
-      "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr></table>"
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 7,
-      "evidencia": "7.2",
-      "cmc": "Aleatorio",
-      "dificultad": "ALTA",
-      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
-      "que_evalua": "La capacidad para elaborar una tabla de frecuencias de dos entradas, a partir de algunas frecuencias y condiciones de un conjunto de datos.",
-      "justificacion_correcta": "La tabla debe cumplir las tres condiciones: un total de \\(90\\), \\(30\\) empanadas de carne y la misma cantidad de queso que de pollo. En la primera tabla se tiene \\(30 + 24 + 24 + 12 = 90\\), hay \\(30\\) de carne y queso \\(=\\) pollo \\(= 24\\), por eso es la que representa lo vendido.",
-      "opciones_incorrectas": {
-        "B": "Cumple las \\(30\\) de carne y queso \\(=\\) pollo, pero suma \\(30 + 20 + 20 + 15 = 85\\) y no \\(90\\).",
-        "C": "Le falta un tipo de empanada y pone \\(40\\) de carne en lugar de \\(30\\), aunque la suma dé \\(90\\).",
-        "D": "Pone \\(36\\) de carne en lugar de \\(30\\), aunque la suma dé \\(90\\)."
-      }
-    },
-    {
-      "id": "P4M15",
-      "numero": 15,
-      "enunciado": "<p>Don Hernán empezó a vender bolsas de mango biche en el parque. La tabla muestra cuántas bolsas vendió cada día durante seis días.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">3</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">4</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">5</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">6</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolsas vendidas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr></table><p>¿Qué característica cumple la secuencia de números formada por las bolsas vendidas cada día?</p>",
-      "opciones": {
-        "A": "Son divisores de \\(32\\).",
-        "B": "Son múltiplos de \\(2\\).",
-        "C": "Son divisores de \\(2\\).",
-        "D": "Son múltiplos de \\(32\\)."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Justifico regularidades y propiedades de los números, sus relaciones y operaciones.",
-      "que_evalua": "La capacidad para identificar divisores de un número dada una secuencia numérica finita.",
-      "justificacion_correcta": "Los números \\(1, 2, 4, 8, 16\\) y \\(32\\) dividen exactamente a \\(32\\): \\(32\\div 1 = 32,\\ 32\\div 2 = 16,\\ 32\\div 4 = 8,\\ 32\\div 8 = 4,\\ 32\\div 16 = 2,\\ 32\\div 32 = 1\\). Por eso son los divisores de \\(32\\).",
-      "opciones_incorrectas": {
-        "B": "El \\(1\\) no es múltiplo de \\(2\\), así que no todos los números de la secuencia son múltiplos de \\(2\\).",
-        "C": "Solo \\(1\\) y \\(2\\) dividen a \\(2\\); \\(4, 8, 16\\) y \\(32\\) no lo dividen.",
-        "D": "Los múltiplos de \\(32\\) son \\(32, 64, 96, \\dots\\); \\(1, 2, 4, 8\\) y \\(16\\) no lo son."
-      }
-    },
-    {
-      "id": "P4M16",
-      "numero": 16,
-      "enunciado": "<p>Doña Rosa terminó de mercar y en la caja le mostraron el aviso de la imagen, donde el valor que debe pagar aparece escrito en palabras.</p>[[IMG]]<p>¿Cómo se escribe con cifras ese valor?</p>",
-      "opciones": {
-        "A": "$865.000",
-        "B": "$8.650",
-        "C": "$806.050",
-        "D": "$86.050"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Justifico el valor de posición en el sistema de numeración decimal en relación con el conteo recurrente de unidades.",
-      "que_evalua": "La capacidad para escribir un número en su representación simbólica dada su representación en lenguaje natural.",
-      "justificacion_correcta": "En el aviso la parte de los miles es \\(806\\) y después se agregan \\(50\\) pesos, de modo que el valor es $806.050. El \\(0\\) en la posición de las centenas indica que no hay centenas.",
-      "opciones_incorrectas": {
-        "A": "Arma $865.000 juntando las cifras \\(8, 6\\) y \\(5\\) sin respetar la posición de los ceros.",
-        "B": "Escribe solo las cifras \\(8, 6, 5\\) y \\(0\\) como $8.650, y pierde el valor de posición.",
-        "D": "Ubica mal una cifra y obtiene $86.050, con una posición de menos."
-      },
-      "imagen_figura": "assets/banco-mat-4-p1/q16.png"
-    },
-    {
-      "id": "P4M17",
-      "numero": 17,
-      "enunciado": "<p>Simón se prepara para una carrera de atletismo y en cada entrenamiento gasta menos tiempo en dar una vuelta al parque. La tabla trae el tiempo, en segundos, que gastó en los tres primeros entrenamientos.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Entrenamiento</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tiempo (segundos)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">95</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">88</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">81</td></tr></table><p>Si sigue mejorando de la misma forma, ¿cuántos segundos gastará en el <b>cuarto entrenamiento</b>?</p>",
-      "opciones": {
-        "A": "\\(81\\) segundos.",
-        "B": "\\(74\\) segundos.",
-        "C": "\\(28\\) segundos.",
-        "D": "\\(7\\) segundos."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
-      "que_evalua": "La capacidad para identificar el término siguiente en una secuencia numérica descendente.",
-      "justificacion_correcta": "El tiempo baja de \\(7\\) en \\(7\\) segundos: \\(95 - 88 = 7\\) y \\(88 - 81 = 7\\). Siguiendo el patrón, en el cuarto entrenamiento gasta \\(81 - 7 = 74\\) segundos.",
-      "opciones_incorrectas": {
-        "A": "Repite el tiempo del tercer entrenamiento \\((81)\\) sin aplicar la disminución.",
-        "C": "Multiplica la disminución por el número del entrenamiento \\((7\\times 4 = 28)\\) en lugar de restarla.",
-        "D": "Toma la cantidad que disminuye \\((7)\\) como si fuera el tiempo total del cuarto entrenamiento."
-      }
-    },
-    {
-      "id": "P4M18",
-      "numero": 18,
-      "enunciado": "<p>En el aeropuerto instalaron al revés el aviso azul que indica la sala de embarque. Para dejarlo bien, un técnico lo <b>giró \\(90^\\circ\\) hacia la derecha</b> y quedó como aparece en la imagen.</p>[[IMG]]<p>¿Cuál de las opciones muestra cómo estaba el aviso <b>antes</b> del giro?</p>",
-      "opciones": {
-        "A": "Opción A.",
-        "B": "Opción B.",
-        "C": "Opción C.",
-        "D": "Opción D."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 6,
-      "evidencia": "6.2",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
-      "que_evalua": "La capacidad para identificar imágenes luego de aplicarle alguna transformación específica: rotación.",
-      "justificacion_correcta": "Si el aviso quedó bien al girarlo \\(90^\\circ\\) hacia la derecha, para saber cómo estaba antes hay que deshacer ese giro: girarlo \\(90^\\circ\\) hacia la izquierda desde el aviso ya corregido. Esa es la opción A.",
-      "opciones_incorrectas": {
-        "B": "Aplica un giro de \\(180^\\circ\\), no la rotación inversa de \\(90^\\circ\\).",
-        "C": "Deja el aviso igual al corregido, sin deshacer el giro.",
-        "D": "Vuelve a girar \\(90^\\circ\\) hacia la derecha en lugar de devolverse a la izquierda."
-      },
-      "imagen_figura": "assets/banco-mat-4-p1/q18.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p1/q18_opA.png",
-        "B": "assets/banco-mat-4-p1/q18_opB.png",
-        "C": "assets/banco-mat-4-p1/q18_opC.png",
-        "D": "assets/banco-mat-4-p1/q18_opD.png"
-      }
+      "imagen_figura": "assets/banco-mat-4-p1/q06.png"
     },
     {
       "id": "P4M19",
-      "numero": 19,
+      "numero": 12,
       "enunciado": "<p>En el taller de artes, Mariana tomó un bloque de jabón de \\(4\\ \\text{cm} \\times 4\\ \\text{cm} \\times 10\\ \\text{cm}\\) y le sacó una pieza de \\(2\\ \\text{cm} \\times 4\\ \\text{cm} \\times 6\\ \\text{cm}\\) para tallar una silla en miniatura. La imagen muestra el bloque antes y después del corte.</p>[[IMG]]<p>¿Cuál es el volumen de la figura que le quedó a Mariana?</p>",
       "opciones": {
         "A": "\\(208\\ \\text{cm}^3\\)",
-        "B": "\\(160\\ \\text{cm}^3\\)",
+        "B": "\\(112\\ \\text{cm}^3\\)",
         "C": "\\(64\\ \\text{cm}^3\\)",
-        "D": "\\(112\\ \\text{cm}^3\\)"
+        "D": "\\(160\\ \\text{cm}^3\\)"
       },
-      "clave": "D",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 2,
       "evidencia": "2.1",
@@ -545,42 +372,215 @@
       "justificacion_correcta": "El bloque completo mide \\(4 \\times 4 \\times 10 = 160\\ \\text{cm}^{3}\\) y la pieza que se sacó mide \\(2 \\times 4 \\times 6 = 48\\ \\text{cm}^{3}\\). Al restar queda \\(160 - 48 = 112\\ \\text{cm}^{3}\\).",
       "opciones_incorrectas": {
         "A": "Suma los dos volúmenes \\((160 + 48 = 208)\\) en lugar de restarlos.",
-        "B": "Da solo el volumen del bloque inicial \\((160)\\), sin quitar la pieza que se sacó.",
+        "D": "Da solo el volumen del bloque inicial \\((160)\\), sin quitar la pieza que se sacó.",
         "C": "Resta mal usando solo parte de las medidas de la pieza que se sacó y obtiene \\(64\\)."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q19.png"
     },
     {
-      "id": "P4M20",
-      "numero": 20,
-      "enunciado": "<p>En la tienda del colegio venden bolsas de confites con forma de osito, revueltos de varios colores, como se ve en la imagen.</p>[[IMG]]<p>Si un niño mete la mano en la bolsa sin mirar y saca un solo confite, ¿de qué color tiene más posibilidades de salir?</p>",
+      "id": "P4M12",
+      "numero": 13,
+      "enunciado": "<p>Se preguntó a cuatro estudiantes por su curso, su clase favorita y su color preferido. Las respuestas quedaron así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiante</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Clase favorita</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Color favorito</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carla</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Salomé</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Español</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Verde</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tobías</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cuarto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Artes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojo</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Iván</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Quinto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Artes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azul</td></tr></table><p>Si se elige a uno de ellos al azar, ¿qué afirmación es cierta?</p>",
       "opciones": {
-        "A": "Azul.",
-        "B": "Verde.",
-        "C": "Amarillo.",
-        "D": "Rojo."
+        "A": "Es más probable elegir un estudiante de cuarto que prefiera el azul que uno de quinto que prefiera el azul.",
+        "B": "Es más probable elegir un estudiante de quinto que prefiera Español que uno de cuarto que prefiera Español.",
+        "C": "Es más probable elegir un estudiante de cuarto que prefiera el rojo que uno de quinto que prefiera el rojo.",
+        "D": "Es más probable elegir un estudiante de cuarto que prefiera el verde que uno de quinto que prefiera el verde."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad para comparar el grado de posibilidad de dos eventos de un mismo experimento aleatorio.",
+      "justificacion_correcta": "En la tabla, Carla y Salomé son de quinto y prefieren Español: son dos casos favorables. En cuarto, en cambio, nadie prefiere Español, así que ese evento no tiene ningún caso favorable. Como dos casos son más que ninguno, es más probable elegir a un estudiante de quinto que prefiera Español.",
+      "opciones_incorrectas": {
+        "C": "El rojo lo prefieren Carla, de quinto, y Tobías, de cuarto: hay un caso favorable en cada curso, de modo que las dos posibilidades son iguales y ninguna es más probable.",
+        "A": "El azul solo lo prefiere Iván, que es de quinto, y en cuarto nadie lo prefiere, así que la comparación va al revés.",
+        "D": "El verde solo lo prefiere Salomé, que es de quinto, y en cuarto nadie lo prefiere, así que también ocurre lo contrario de lo que afirma."
+      }
+    },
+    {
+      "id": "P4M08",
+      "numero": 14,
+      "enunciado": "<p>Cuatro barrios se enfrentaron en un campeonato relámpago de microfútbol que se definió en dos jornadas. En la gráfica están los goles que anotó cada barrio en la jornada 1 y en la tabla los que anotó en la jornada 2.</p>[[IMG]]<p>Sumando las dos jornadas, ¿cuál barrio anotó más goles?</p>",
+      "opciones": {
+        "A": "Mirador.",
+        "B": "Palmar.",
+        "C": "Bosque.",
+        "D": "Cerezos."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
+      "que_evalua": "La capacidad para usar la información presentada en distintos tipos de registro.",
+      "justificacion_correcta": "A cada barrio se le leen los goles de la gráfica y se le suman los de la tabla: \\(7 + 8 = 15\\), \\(4 + 4 = 8\\), \\(3 + 0 = 3\\) y \\(2 + 5 = 7\\). El total más alto es \\(15\\) y corresponde a Cerezos.",
+      "opciones_incorrectas": {
+        "B": "Palmar reúne \\(8\\) goles, menos que los \\(15\\) de Cerezos.",
+        "C": "Bosque reúne \\(3\\) goles, el total más bajo de los cuatro.",
+        "A": "Mirador mejora en la jornada 2, pero reúne \\(7\\) goles; mira una sola jornada y no el total."
+      },
+      "imagen_figura": "assets/banco-mat-4-p1/q08.png"
+    },
+    {
+      "id": "P4M04",
+      "numero": 15,
+      "enunciado": "<p>Don Efraín teje hamacas y las guarda en baúles. Cada año teje más hamacas y necesita más baúles: la imagen muestra los baúles que llenó en los años 1, 2 y 3.</p>[[IMG]]<p>Si en el año 4 necesita \\(27\\) baúles, ¿qué regla está siguiendo?</p>",
+      "opciones": {
+        "A": "Llenar \\(18\\) baúles más que el año anterior.",
+        "B": "Llenar el triple de baúles que el año anterior.",
+        "C": "Llenar el doble de baúles que el año anterior.",
+        "D": "Llenar \\(6\\) baúles más que el año anterior."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La capacidad para encontrar el patrón de una sucesión.",
+      "justificacion_correcta": "Al pasar de un año al siguiente, la cantidad de baúles queda multiplicada por \\(3\\): de \\(1\\) a \\(3\\) y de \\(3\\) a \\(9\\). Además, \\(9 \\times 3 = 27\\) confirma la regla.",
+      "opciones_incorrectas": {
+        "C": "Del año 1 al año 2 la cantidad pasa de \\(1\\) a \\(3\\); duplicar daría \\(2\\), y tampoco se cumpliría para \\(9\\) ni para \\(27\\).",
+        "D": "Aumentar \\(6\\) fijos no sirve: del año 1 al año 2 solo aumenta \\(2\\), no \\(6\\).",
+        "A": "Toma la diferencia entre el año 4 \\((27)\\) y el año 3 \\((9)\\), que es \\(18\\), como si fuera la regla de todos los años."
+      },
+      "imagen_figura": "assets/banco-mat-4-p1/q04.png"
+    },
+    {
+      "id": "P4M03",
+      "numero": 16,
+      "enunciado": "<p>En la casa de Valentina los oficios del día se sortean: cada oficio va escrito en tarjetas iguales que se guardan en una cajita y ella saca una sin mirar. El cuadro muestra todas las tarjetas que hay dentro de la cajita.</p>[[IMG]]<p>¿Cuál es el oficio que <b>menos</b> posibilidades tiene de tocarle a Valentina?</p>",
+      "opciones": {
+        "A": "Tirar la basura.",
+        "B": "Limpiar las ventanas.",
+        "C": "Servir la comida.",
+        "D": "Dar de comer a la mascota."
       },
       "clave": "A",
       "competencia": "c",
       "afirmacion": 3,
-      "evidencia": "3.2",
+      "evidencia": "3.1",
       "cmc": "Aleatorio",
       "dificultad": "BAJA",
-      "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
-      "que_evalua": "La capacidad para identificar dentro de un conjunto de elementos con varias características, aquel que tiene una mayor probabilidad de ocurrencia.",
-      "justificacion_correcta": "Sale con más facilidad el color que está en mayor cantidad dentro de la bolsa. Al contar los ositos de la imagen hay \\(4\\) azules, \\(3\\) rojos y \\(1\\) verde, así que el color con más posibilidades de salir es el azul.",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La capacidad para identificar el evento con un menor grado de posibilidad de ocurrencia.",
+      "justificacion_correcta": "El oficio con menos posibilidades es el que aparece escrito en menos tarjetas. Al contar el cuadro, tirar la basura está escrito una sola vez, mientras que los demás oficios se repiten.",
       "opciones_incorrectas": {
-        "B": "Solo hay \\(1\\) osito verde, uno de los colores con menor posibilidad de salir.",
-        "C": "No hay ositos amarillos: sacar uno amarillo es un evento imposible.",
-        "D": "Hay \\(3\\) ositos rojos, menos que los \\(4\\) azules."
+        "C": "«Servir la comida» está en dos tarjetas, así que tiene más posibilidad que tirar la basura.",
+        "B": "«Limpiar las ventanas» está en dos tarjetas, así que es más posible que tirar la basura.",
+        "D": "«Dar de comer a la mascota» está en cuatro tarjetas: es la de mayor posibilidad, no la menor."
       },
-      "imagen_figura": "assets/banco-mat-4-p1/q20.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-4-p1/q20_opA.png",
-        "B": "assets/banco-mat-4-p1/q20_opB.png",
-        "C": "assets/banco-mat-4-p1/q20_opC.png",
-        "D": "assets/banco-mat-4-p1/q20_opD.png"
+      "imagen_figura": "assets/banco-mat-4-p1/q03.png"
+    },
+    {
+      "id": "P4M14",
+      "numero": 17,
+      "enunciado": "<p>Doña Elvira vende empanadas en la puerta del colegio. Al terminar la semana contó lo vendido y dijo: «Vendí <b>\\(90\\)</b> empanadas en total», «Vendí <b>\\(30\\)</b> empanadas de carne» y «Vendí la <b>misma cantidad</b> de empanadas de queso que de pollo». ¿Cuál de las siguientes tablas (A, B, C o D) representa correctamente lo que vendió doña Elvira?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
+      "que_evalua": "La capacidad para elaborar una tabla de frecuencias de dos entradas, a partir de algunas frecuencias y condiciones de un conjunto de datos.",
+      "justificacion_correcta": "La tabla debe cumplir las tres condiciones: un total de \\(90\\), \\(30\\) empanadas de carne y la misma cantidad de queso que de pollo. En la primera tabla se tiene \\(30 + 24 + 24 + 12 = 90\\), hay \\(30\\) de carne y queso \\(=\\) pollo \\(= 24\\), por eso es la que representa lo vendido.",
+      "opciones_incorrectas": {
+        "D": "Cumple las \\(30\\) de carne y queso \\(=\\) pollo, pero suma \\(30 + 20 + 20 + 15 = 85\\) y no \\(90\\).",
+        "B": "Le falta un tipo de empanada y pone \\(40\\) de carne en lugar de \\(30\\), aunque la suma dé \\(90\\).",
+        "A": "Pone \\(36\\) de carne en lugar de \\(30\\), aunque la suma dé \\(90\\)."
       }
+    },
+    {
+      "id": "P4M15",
+      "numero": 18,
+      "enunciado": "<p>Don Hernán empezó a vender bolsas de mango biche en el parque. La tabla muestra cuántas bolsas vendió cada día durante seis días.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">3</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">4</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">5</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">6</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolsas vendidas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr></table><p>¿Qué característica cumple la secuencia de números formada por las bolsas vendidas cada día?</p>",
+      "opciones": {
+        "A": "Son divisores de \\(2\\).",
+        "B": "Son divisores de \\(32\\).",
+        "C": "Son múltiplos de \\(32\\).",
+        "D": "Son múltiplos de \\(2\\)."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico regularidades y propiedades de los números, sus relaciones y operaciones.",
+      "que_evalua": "La capacidad para identificar divisores de un número dada una secuencia numérica finita.",
+      "justificacion_correcta": "Los números \\(1, 2, 4, 8, 16\\) y \\(32\\) dividen exactamente a \\(32\\): \\(32\\div 1 = 32,\\ 32\\div 2 = 16,\\ 32\\div 4 = 8,\\ 32\\div 8 = 4,\\ 32\\div 16 = 2,\\ 32\\div 32 = 1\\). Por eso son los divisores de \\(32\\).",
+      "opciones_incorrectas": {
+        "D": "El \\(1\\) no es múltiplo de \\(2\\), así que no todos los números de la secuencia son múltiplos de \\(2\\).",
+        "A": "Solo \\(1\\) y \\(2\\) dividen a \\(2\\); \\(4, 8, 16\\) y \\(32\\) no lo dividen.",
+        "C": "Los múltiplos de \\(32\\) son \\(32, 64, 96, \\dots\\); \\(1, 2, 4, 8\\) y \\(16\\) no lo son."
+      }
+    },
+    {
+      "id": "P4M16",
+      "numero": 19,
+      "enunciado": "<p>Doña Rosa terminó de mercar y en la caja le mostraron el aviso de la imagen, donde el valor que debe pagar aparece escrito en palabras.</p>[[IMG]]<p>¿Cómo se escribe con cifras ese valor?</p>",
+      "opciones": {
+        "A": "$8.650",
+        "B": "$806.050",
+        "C": "$86.050",
+        "D": "$865.000"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico el valor de posición en el sistema de numeración decimal en relación con el conteo recurrente de unidades.",
+      "que_evalua": "La capacidad para escribir un número en su representación simbólica dada su representación en lenguaje natural.",
+      "justificacion_correcta": "En el aviso la parte de los miles es \\(806\\) y después se agregan \\(50\\) pesos, de modo que el valor es $806.050. El \\(0\\) en la posición de las centenas indica que no hay centenas.",
+      "opciones_incorrectas": {
+        "D": "Arma $865.000 juntando las cifras \\(8, 6\\) y \\(5\\) sin respetar la posición de los ceros.",
+        "A": "Escribe solo las cifras \\(8, 6, 5\\) y \\(0\\) como $8.650, y pierde el valor de posición.",
+        "C": "Ubica mal una cifra y obtiene $86.050, con una posición de menos."
+      },
+      "imagen_figura": "assets/banco-mat-4-p1/q16.png"
+    },
+    {
+      "id": "P4M07",
+      "numero": 20,
+      "enunciado": "<p>Laura y Javier conversan sobre los dulces que tiene cada uno. Javier tiene razón: cuando le da \\(1\\) dulce a Laura, ella queda con \\(8 + 1\\) dulces y los dos quedan con la misma cantidad.</p>[[IMG]]<p>¿Qué expresión indica cuántos dulces le quedan a Javier después de darle ese dulce a Laura?</p>",
+      "opciones": {
+        "A": "\\(5 - 2\\)",
+        "B": "\\(10 + 3\\)",
+        "C": "\\(10 - 1\\)",
+        "D": "\\(5 + 3\\)"
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
+      "que_evalua": "La capacidad para identificar equivalencias entre expresiones numéricas.",
+      "justificacion_correcta": "Javier tiene \\(10\\) dulces y le da \\(1\\) a Laura, así que le quedan \\(10 - 1 = 9\\). Laura queda con \\(8 + 1 = 9\\), la misma cantidad, tal como él dice, y por eso la expresión que sirve es \\(10 - 1\\).",
+      "opciones_incorrectas": {
+        "B": "Suma en lugar de restar: Javier entrega el dulce, no lo recibe, y además \\(10 + 3 = 13\\), que no es la cantidad con la que quedan los dos.",
+        "D": "\\(5 + 3 = 8\\) son los dulces que Laura tenía antes de recibir el de Javier, no los que a él le quedan después de darlo.",
+        "A": "\\(5 - 2 = 3\\) no se relaciona ni con los \\(10\\) dulces de Javier ni con los \\(9\\) con los que debe quedar."
+      },
+      "imagen_figura": "assets/banco-mat-4-p1/q07.png"
     }
   ],
   "preservar_orden_preguntas": false

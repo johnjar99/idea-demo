@@ -43,74 +43,16 @@
   ],
   "preguntas": [
     {
-      "id": "P3M01",
-      "numero": 1,
-      "enunciado": "<p>A una hoja rectangular cuadriculada le recortaron una parte del <b>borde de arriba</b>: quedó un hueco en forma de <b>arco</b>, con los lados rectos y la parte superior <b>redondeada</b>, como muestra la figura.</p>[[IMG]]<p>¿Cuál de las piezas A, B, C o D es, exactamente, la parte que <b>recortaron</b> de la hoja?</p>",
-      "opciones": {
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": ""
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Realizo construcciones y diseños utilizando cuerpos y figuras geométricas tridimensionales y dibujos o figuras geométricas bidimensionales.",
-      "que_evalua": "La capacidad para realizar recubrimientos con figuras regulares e irregulares.",
-      "justificacion_correcta": "La pieza recortada tiene forma de cúpula: la base es recta, los dos lados son rectos y la parte de arriba es redondeada (un arco). La opción B es exactamente esa cúpula, con su cuadrícula igual a la del recorte, así que vuelve a encajar casillo por casillo en el hueco.",
-      "opciones_incorrectas": {
-        "A": "Tiene los dos extremos redondeados (arriba y abajo), como una píldora; le falta la base recta, así que no llena el hueco.",
-        "C": "Tiene la base y los lados rectos, pero su parte de arriba es cóncava (hundida hacia adentro) en lugar de redondeada hacia afuera.",
-        "D": "Su parte de arriba es redondeada como la del hueco, pero su base tiene una mordida cóncava (no es plana), así que no encaja."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/s01.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-3-p1/o01a.png",
-        "B": "assets/banco-mat-3-p1/o01b.png",
-        "C": "assets/banco-mat-3-p1/o01c.png",
-        "D": "assets/banco-mat-3-p1/o01d.png"
-      }
-    },
-    {
-      "id": "P3M02",
-      "numero": 2,
-      "enunciado": "<p>En el recreo, Marcos y sus compañeros deciden así quién empieza el juego: cada niño escoge una de las cuatro cajas y saca de ella un papel sin mirar. Quien saque un papel verde arranca la partida. La imagen muestra los papeles que hay dentro de cada caja.</p>[[IMG]]<p>¿Cuál caja le conviene escoger a Marcos para estar seguro de arrancar la partida?</p>",
-      "opciones": {
-        "A": "Caja 1.",
-        "B": "Caja 2.",
-        "C": "Caja 3.",
-        "D": "Caja 4."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Aleatorio",
-      "dificultad": "BAJA",
-      "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
-      "que_evalua": "La capacidad para reconocer el evento que es seguro que ocurra en un experimento aleatorio.",
-      "justificacion_correcta": "Solo hay certeza cuando todos los papeles de la caja son verdes, porque así ningún otro resultado es posible. Eso pasa en la caja 2.",
-      "opciones_incorrectas": {
-        "A": "Tiene papeles verdes y papeles blancos, así que sacar verde apenas es posible, no seguro.",
-        "C": "No tiene ningún papel verde: sacar verde es imposible.",
-        "D": "Tiene papeles de los dos colores y, además, hay más blancos que verdes; no es seguro."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q02.png"
-    },
-    {
       "id": "P3M03",
-      "numero": 3,
+      "numero": 1,
       "enunciado": "<p>Unos niños esperan en fila para entrar al teatro. El primero de la fila es el que está más cerca de la entrada.</p>[[IMG]]<p>¿Quién se encuentra dos puestos delante de Daniel?</p>",
       "opciones": {
-        "A": "Sara.",
-        "B": "Pablo.",
-        "C": "Mateo.",
-        "D": "Tomás."
+        "A": "Pablo.",
+        "B": "Sara.",
+        "C": "Tomás.",
+        "D": "Mateo."
       },
-      "clave": "B",
+      "clave": "A",
       "competencia": "c",
       "afirmacion": 3,
       "evidencia": "3.1",
@@ -120,152 +62,23 @@
       "que_evalua": "La capacidad para reconocer números ordinales.",
       "justificacion_correcta": "Se ubica a Daniel en la fila y se cuentan dos puestos hacia la entrada. Ahí está Pablo.",
       "opciones_incorrectas": {
-        "A": "Sara está detrás de Daniel, no adelante.",
-        "C": "Mateo está solo un puesto adelante de Daniel.",
-        "D": "Tomás está dos puestos detrás de Daniel, en la dirección contraria."
+        "B": "Sara está detrás de Daniel, no adelante.",
+        "D": "Mateo está solo un puesto adelante de Daniel.",
+        "C": "Tomás está dos puestos detrás de Daniel, en la dirección contraria."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q03.png"
     },
     {
-      "id": "P3M04",
-      "numero": 4,
-      "enunciado": "<p>Una profesora anuncia: «voy a entregar \\(4\\) semillas a cada uno de los \\(6\\) estudiantes del grupo».</p><p>¿Con cuál multiplicación se sabe cuántas semillas entregará en total?</p>",
-      "opciones": {
-        "A": "\\(10 \\times 4\\)",
-        "B": "\\(6 \\times 1\\)",
-        "C": "\\(10 \\times 1\\)",
-        "D": "\\(6 \\times 4\\)"
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad para reconocer las cantidades que deben multiplicarse en una situación multiplicativa.",
-      "justificacion_correcta": "Hay \\(6\\) estudiantes y cada uno recibe \\(4\\) semillas, de modo que el total es \\(6 \\times 4 = 24\\).",
-      "opciones_incorrectas": {
-        "A": "Suma los dos números en lugar de tomar la cantidad de estudiantes.",
-        "B": "Entrega una sola semilla por estudiante.",
-        "C": "Combina una suma equivocada con una sola semilla por persona."
-      }
-    },
-    {
-      "id": "P3M05",
-      "numero": 5,
-      "enunciado": "<p>En unas olimpiadas con dos pruebas, los puntos de <b>Manuela</b> están en la tabla y los de <b>Diego</b> en la gráfica de barras.</p>[[IMG]]<p>¿Cuántos puntos le <b>faltaron a Diego en Carrera</b> para igualar los que obtuvo Manuela en esa misma prueba?</p>",
-      "opciones": {
-        "A": "\\(1\\) punto.",
-        "B": "\\(2\\) puntos.",
-        "C": "\\(3\\) puntos.",
-        "D": "\\(4\\) puntos."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Aleatorio",
-      "dificultad": "MEDIA",
-      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
-      "que_evalua": "La capacidad para comparar información presentada en distintos tipos de registro.",
-      "justificacion_correcta": "Manuela obtuvo \\(4\\) puntos en Carrera y Diego obtuvo \\(3\\). A Diego le faltó \\(4 - 3 = 1\\) punto para igualarla.",
-      "opciones_incorrectas": {
-        "B": "Mira solo los puntos de Diego en una prueba sin compararlos con Manuela.",
-        "C": "Toma los puntos de Manuela en Carrera como si fueran lo que le falta a Diego.",
-        "D": "Usa un valor sin hacer la resta entre los dos registros."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q05.png"
-    },
-    {
-      "id": "P3M06",
-      "numero": 6,
-      "enunciado": "<p>Un vendedor dice: <i>«Cada empanada cuesta lo mismo y con <b>\\(10\\) fichas</b> se pueden comprar <b>\\(5\\) empanadas</b>»</i>.</p>[[IMG]]<p>¿Cuántas fichas vale <b>una sola</b> empanada?</p>",
-      "opciones": {
-        "A": "\\(1\\) ficha.",
-        "B": "\\(2\\) fichas.",
-        "C": "\\(5\\) fichas.",
-        "D": "\\(10\\) fichas."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
-      "que_evalua": "La capacidad para identificar la relación entre dos magnitudes.",
-      "justificacion_correcta": "Si con \\(10\\) fichas se compran \\(5\\) empanadas, se cumple que \\(5 \\times (\\text{fichas por empanada}) = 10\\). Como \\(5 \\times 2 = 10\\), cada empanada vale \\(2\\) fichas.",
-      "opciones_incorrectas": {
-        "A": "Relaciona una empanada con una ficha de forma directa.",
-        "C": "Toma las \\(5\\) empanadas como si fueran las fichas de una empanada.",
-        "D": "Conserva el total de \\(10\\) fichas sin repartirlo entre las \\(5\\) empanadas."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q06.png"
-    },
-    {
-      "id": "P3M07",
-      "numero": 7,
-      "enunciado": "<p>Un grupo de niños votó por la mascota que querían para el salón. El pictograma muestra los votos (cada huella es un voto). La mascota elegida fue la que tuvo <b>más</b> votos.</p>[[IMG]]<p>¿Cuál mascota fue la elegida?</p>",
-      "opciones": {
-        "A": "Perro.",
-        "B": "Gato.",
-        "C": "Conejo.",
-        "D": "Tortuga."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Aleatorio",
-      "dificultad": "BAJA",
-      "estandar": "Interpreto cualitativamente datos referidos a situaciones del entorno escolar.",
-      "que_evalua": "La capacidad para hacer uso de las frecuencias de los datos cuando con esta se obtiene algún resultado de una situación, en este caso particular, elegir uno de los datos.",
-      "justificacion_correcta": "Hay que contar las huellas de cada mascota: Perro tuvo \\(6\\) votos, Gato \\(5\\), Conejo \\(4\\) y Tortuga \\(3\\). Como Perro tuvo más votos que las demás (uno más que Gato), fue la mascota elegida.",
-      "opciones_incorrectas": {
-        "B": "Tiene \\(5\\) votos: es la más cercana, pero le falta \\(1\\) voto para alcanzar al perro.",
-        "C": "Tiene \\(4\\) votos, menos que el perro y que el gato.",
-        "D": "Tiene \\(3\\) votos, la cantidad más baja de todas."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q07.png"
-    },
-    {
-      "id": "P3M08",
-      "numero": 8,
-      "enunciado": "<p>En la semana cultural, Camila va a llenar por completo la cartelera del pasillo con afiches iguales, pegados uno junto a otro, sin dejar huecos y sin que ninguno quede encima de otro. Cada afiche mide \\(1\\) cuadro de ancho por \\(2\\) cuadros de alto, es decir, lo mismo que el alto de la cartelera.</p>[[IMG]]<p>¿Cuántos afiches necesita Camila?</p>",
-      "opciones": {
-        "A": "\\(2\\) afiches.",
-        "B": "\\(4\\) afiches.",
-        "C": "\\(6\\) afiches.",
-        "D": "\\(8\\) afiches."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Espacial - métrico",
-      "dificultad": "MEDIA",
-      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
-      "que_evalua": "La capacidad para reconocer el recubrimiento de una forma dada con un patrón no estandarizado.",
-      "justificacion_correcta": "La cartelera mide \\(6\\) cuadros de ancho por \\(2\\) de alto. Como cada afiche ocupa \\(1\\) cuadro de ancho y los \\(2\\) cuadros de alto, se van pegando uno al lado del otro a lo largo del ancho: con \\(6\\) afiches queda cubierta toda la superficie.",
-      "opciones_incorrectas": {
-        "A": "Cuenta apenas una parte de una fila de la cartelera.",
-        "B": "Toma una parte del ancho de la cartelera como si fuera el ancho completo.",
-        "D": "Suma el ancho de la cartelera \\((6)\\) con el alto del afiche \\((2)\\)."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q08.png"
-    },
-    {
       "id": "P3M09",
-      "numero": 9,
+      "numero": 2,
       "enunciado": "<p>Un diseñador partió de la foto pequeña (Figura 1) y obtuvo la foto grande (Figura 2), como se aprecia sobre la cuadrícula.</p>[[IMG]]<p>¿Qué le hizo a la primera foto para obtener la segunda?</p>",
       "opciones": {
-        "A": "La trasladó.",
-        "B": "La amplió.",
-        "C": "La rotó.",
-        "D": "La reflejó."
+        "A": "La reflejó.",
+        "B": "La rotó.",
+        "C": "La amplió.",
+        "D": "La trasladó."
       },
-      "clave": "B",
+      "clave": "C",
       "competencia": "c",
       "afirmacion": 7,
       "evidencia": "7.1",
@@ -275,67 +88,15 @@
       "que_evalua": "La capacidad para reconocer la transformación hecha a una figura geométrica.",
       "justificacion_correcta": "La segunda foto conserva la forma de la primera pero ocupa más cuadros en todas las direcciones: es la misma imagen agrandada, es decir, una ampliación.",
       "opciones_incorrectas": {
-        "A": "Trasladar solo cambia el lugar; el tamaño quedaría igual.",
-        "C": "Rotar gira la figura y tampoco modifica su tamaño.",
-        "D": "Reflejar produce la imagen invertida, del mismo tamaño."
+        "D": "Trasladar solo cambia el lugar; el tamaño quedaría igual.",
+        "B": "Rotar gira la figura y tampoco modifica su tamaño.",
+        "A": "Reflejar produce la imagen invertida, del mismo tamaño."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q09.png"
     },
     {
-      "id": "P3M10",
-      "numero": 10,
-      "enunciado": "<p>Una profesora preguntó a cuatro estudiantes por su deporte favorito y anotó las respuestas. Va a escoger al azar a uno de ellos.</p>[[IMG]]<p>¿Cuál de estas afirmaciones es cierta?</p>",
-      "opciones": {
-        "A": "Tiene más posibilidades salir una niña a quien le guste la natación que un niño a quien le guste.",
-        "B": "Tiene más posibilidades salir un niño a quien le guste el rojo que una niña a quien le guste.",
-        "C": "Tiene más posibilidades salir una niña a quien le guste el verde que un niño a quien le guste.",
-        "D": "Tiene más posibilidades salir un niño a quien le guste el fútbol que una niña a quien le guste."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Aleatorio",
-      "dificultad": "ALTA",
-      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
-      "que_evalua": "La capacidad para comparar el grado de posibilidad de dos eventos de un mismo experimento aleatorio.",
-      "justificacion_correcta": "Se cuenta cuántos estudiantes cumplen cada condición y se comparan esas cantidades. La afirmación de la opción A es la única que coincide con lo que muestra la tabla.",
-      "opciones_incorrectas": {
-        "B": "Se fija en un solo estudiante de la tabla y no compara cuántos cumplen el evento.",
-        "C": "Solo una niña prefiere el verde; eso no lo hace más probable que el mismo evento en niños.",
-        "D": "Un solo niño prefiere el fútbol; no compara bien los casos favorables."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q10.png"
-    },
-    {
-      "id": "P3M11",
-      "numero": 11,
-      "enunciado": "<p>Un jardinero anotó en una tabla cuántas plantas alcanzan a crecer según los litros de agua que usa.</p>[[IMG]]<p>¿Qué se puede afirmar al mirar esa tabla?</p>",
-      "opciones": {
-        "A": "Cuando baja el agua, sube la cantidad de plantas.",
-        "B": "Aunque suba el agua, la cantidad de plantas no cambia.",
-        "C": "Cuando sube el agua, sube la cantidad de plantas.",
-        "D": "Aunque baje el agua, la cantidad de plantas no cambia."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Describo cualitativamente situaciones de cambio y variación utilizando el lenguaje natural, dibujos y gráficas.",
-      "que_evalua": "La capacidad para identificar la relación entre dos magnitudes.",
-      "justificacion_correcta": "Al recorrer la tabla se ve que a cada aumento en los litros de agua le corresponde un aumento en las plantas: las dos cantidades crecen juntas.",
-      "opciones_incorrectas": {
-        "A": "Dice lo contrario de lo que muestran los datos.",
-        "B": "La cantidad de plantas sí cambia al cambiar el agua.",
-        "D": "También afirma que no hay cambio, y la tabla muestra que sí lo hay."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q11.png"
-    },
-    {
       "id": "P3M12",
-      "numero": 12,
+      "numero": 3,
       "enunciado": "<p>Durante el paseo al río, Andrea fue guardando conchas en su balde. Al comenzar llevaba \\(3\\) conchas y al terminar el paseo el balde llegó a \\(8\\). Nadie anotó cuántas guardó en el camino.</p>[[IMG]]<p>¿Cuántas conchas guardó Andrea en el camino?</p>",
       "opciones": {
         "A": "\\(3\\) conchas.",
@@ -360,8 +121,60 @@
       "imagen_figura": "assets/banco-mat-3-p1/q12.png"
     },
     {
+      "id": "P3M08",
+      "numero": 4,
+      "enunciado": "<p>En la semana cultural, Camila va a llenar por completo la cartelera del pasillo con afiches iguales, pegados uno junto a otro, sin dejar huecos y sin que ninguno quede encima de otro. Cada afiche mide \\(1\\) cuadro de ancho por \\(2\\) cuadros de alto, es decir, lo mismo que el alto de la cartelera.</p>[[IMG]]<p>¿Cuántos afiches necesita Camila?</p>",
+      "opciones": {
+        "A": "\\(2\\) afiches.",
+        "B": "\\(4\\) afiches.",
+        "C": "\\(6\\) afiches.",
+        "D": "\\(8\\) afiches."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La capacidad para reconocer el recubrimiento de una forma dada con un patrón no estandarizado.",
+      "justificacion_correcta": "La cartelera mide \\(6\\) cuadros de ancho por \\(2\\) de alto. Como cada afiche ocupa \\(1\\) cuadro de ancho y los \\(2\\) cuadros de alto, se van pegando uno al lado del otro a lo largo del ancho: con \\(6\\) afiches queda cubierta toda la superficie.",
+      "opciones_incorrectas": {
+        "A": "Cuenta apenas una parte de una fila de la cartelera.",
+        "B": "Toma una parte del ancho de la cartelera como si fuera el ancho completo.",
+        "D": "Suma el ancho de la cartelera \\((6)\\) con el alto del afiche \\((2)\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q08.png"
+    },
+    {
+      "id": "P3M07",
+      "numero": 5,
+      "enunciado": "<p>Un grupo de niños votó por la mascota que querían para el salón. El pictograma muestra los votos (cada huella es un voto). La mascota elegida fue la que tuvo <b>más</b> votos.</p>[[IMG]]<p>¿Cuál mascota fue la elegida?</p>",
+      "opciones": {
+        "A": "Conejo.",
+        "B": "Gato.",
+        "C": "Tortuga.",
+        "D": "Perro."
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "BAJA",
+      "estandar": "Interpreto cualitativamente datos referidos a situaciones del entorno escolar.",
+      "que_evalua": "La capacidad para hacer uso de las frecuencias de los datos cuando con esta se obtiene algún resultado de una situación, en este caso particular, elegir uno de los datos.",
+      "justificacion_correcta": "Hay que contar las huellas de cada mascota: Perro tuvo \\(6\\) votos, Gato \\(5\\), Conejo \\(4\\) y Tortuga \\(3\\). Como Perro tuvo más votos que las demás (uno más que Gato), fue la mascota elegida.",
+      "opciones_incorrectas": {
+        "B": "Tiene \\(5\\) votos: es la más cercana, pero le falta \\(1\\) voto para alcanzar al perro.",
+        "A": "Tiene \\(4\\) votos, menos que el perro y que el gato.",
+        "C": "Tiene \\(3\\) votos, la cantidad más baja de todas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q07.png"
+    },
+    {
       "id": "P3M13",
-      "numero": 13,
+      "numero": 6,
       "enunciado": "<p>Don Aníbal, el dueño de la papelería del barrio, guardó en tres sobres iguales el dinero que recibió el sábado. Dentro de cada sobre quedaron \\(\\$1.000\\) y \\(\\$10.000\\), como se ve en la tabla.</p>[[IMG]]<p>¿Cuánto dinero recibió don Aníbal el sábado?</p>",
       "opciones": {
         "A": "\\(\\$3.000\\)",
@@ -386,164 +199,8 @@
       "imagen_figura": "assets/banco-mat-3-p1/q13.png"
     },
     {
-      "id": "P3M14",
-      "numero": 14,
-      "enunciado": "<p>Cada expositor de una feria recibe un puesto con forma de trapecio, como el de la imagen. El borde del puesto se delimita con cinta. La base de abajo viene señalada en tres tramos de \\(4\\) m, \\(3\\) m y \\(4\\) m, y la línea punteada de \\(3\\) m es una marca interior que no lleva cinta.</p>[[IMG]]<p>¿Cuánta cinta se necesita para delimitar el puesto?</p>",
-      "opciones": {
-        "A": "\\(27\\) m",
-        "B": "\\(24\\) m",
-        "C": "\\(19\\) m",
-        "D": "\\(14\\) m"
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "ALTA",
-      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
-      "que_evalua": "La capacidad para hallar el perímetro de un trapecio a partir de la longitud de sus lados y algunas medidas internas que componen el polígono.",
-      "justificacion_correcta": "La cinta recorre solo el borde. Se suman los lados exteriores del trapecio, incluidos los tres tramos de la base, y se deja por fuera la línea punteada, que va por dentro. El total es \\(24\\) m.",
-      "opciones_incorrectas": {
-        "A": "Suma los lados \\((24)\\) y, además, la altura interna \\((3\\text{ m})\\): \\(24 + 3 = 27\\).",
-        "C": "Olvida un lado inclinado: \\(11 + 3 + 5 = 19\\).",
-        "D": "Cuenta solo las dos bases \\((11 + 3 = 14)\\) y olvida los lados inclinados."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q14.png"
-    },
-    {
-      "id": "P3M15",
-      "numero": 15,
-      "enunciado": "<p>Diana armó un pez uniendo por un lado común una pieza con forma de cabeza y un triángulo que hace de cola. Todos los lados vienen con su medida y la línea punteada es la unión entre las dos piezas, que queda por dentro.</p>[[IMG]]<p>¿Cuánto mide el contorno del pez armado?</p>",
-      "opciones": {
-        "A": "\\(26\\) cm",
-        "B": "\\(19\\) cm",
-        "C": "\\(23\\) cm",
-        "D": "\\(13\\) cm"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Espacial - métrico",
-      "dificultad": "ALTA",
-      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
-      "que_evalua": "La capacidad para hallar el perímetro de una figura bidimensional compuesta por triángulos y cuadriláteros.",
-      "justificacion_correcta": "El contorno recorre solo los lados que quedan por fuera. Se suman esos lados y se deja por fuera la línea punteada, que es interior. El resultado es \\(23\\) cm.",
-      "opciones_incorrectas": {
-        "A": "Suma el borde exterior \\((23)\\) y, por error, también la unión interna \\((3\\text{ cm})\\): \\(23 + 3 = 26\\).",
-        "B": "Olvida el lado de la base de la cabeza \\((4\\text{ cm})\\): \\(23 - 4 = 19\\).",
-        "D": "Cuenta solo la cabeza \\((13)\\) y omite por completo los dos lados de la cola."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q15.png"
-    },
-    {
-      "id": "P3M16",
-      "numero": 16,
-      "enunciado": "<p>La tienda escolar va a comprar una caneca de helado para el bazar del sábado. Antes consultó a los niños de <b>dos grupos</b>: el grupo Girasoles anotó sus preferencias en una tabla y el grupo Colibríes en una gráfica de barras. Comprarán el helado que prefieran <b>más</b> niños entre los dos grupos.</p>[[IMG]]<p>¿Cuál helado deben comprar?</p>",
-      "opciones": {
-        "A": "Arequipe.",
-        "B": "Chocolate.",
-        "C": "Mora.",
-        "D": "Vainilla."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "cmc": "Aleatorio",
-      "dificultad": "ALTA",
-      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
-      "que_evalua": "La capacidad para hallar la moda al unir dos conjuntos de datos representados en una tabla y en una gráfica.",
-      "justificacion_correcta": "Al juntar los dos grupos: vainilla \\(5 + 3 = 8\\), chocolate \\(2 + 4 = 6\\) y arequipe \\(3 + 1 = 4\\). El helado que prefieren más niños en total es la vainilla, con \\(8\\).",
-      "opciones_incorrectas": {
-        "A": "El arequipe reúne \\(3 + 1 = 4\\) niños, menos que la vainilla.",
-        "B": "El chocolate es el que más gusta en el grupo Colibríes \\((4)\\), pero al juntar los dos grupos la vainilla \\((8)\\) lo supera; es el error de mirar un solo grupo.",
-        "C": "La mora no aparece entre los helados que eligieron los niños de ninguno de los dos grupos."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q16.png"
-    },
-    {
-      "id": "P3M17",
-      "numero": 17,
-      "enunciado": "<p>Doce fichas están puestas en \\(3\\) filas de \\(4\\) fichas cada una, como muestra la imagen.</p>[[IMG]]<p>¿De qué otra manera se pueden acomodar esas \\(12\\) fichas en filas con la misma cantidad cada una?</p>",
-      "opciones": {
-        "A": "En dos filas de \\(7\\) fichas.",
-        "B": "En dos filas de \\(12\\) fichas.",
-        "C": "En dos filas de \\(6\\) fichas.",
-        "D": "En dos filas de \\(5\\) fichas."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
-      "que_evalua": "La capacidad para construir expresiones multiplicativas con números de una cifra que tengan igual resultado que una multiplicación dada.",
-      "justificacion_correcta": "Al repartir \\(12\\) fichas en dos filas iguales, a cada fila le corresponden \\(12 \\div 2 = 6\\) fichas.",
-      "opciones_incorrectas": {
-        "A": "Dos filas de \\(7\\) suman \\(14\\) fichas, más de las que hay.",
-        "B": "Dos filas de \\(12\\) suman \\(24\\), el doble de las fichas disponibles.",
-        "D": "Dos filas de \\(5\\) suman \\(10\\) y sobrarían dos fichas."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q17.png"
-    },
-    {
-      "id": "P3M18",
-      "numero": 18,
-      "enunciado": "<p>El club de ciencias del colegio hará un paseo en lancha y quiere escoger la isla donde sea más fácil ver delfines. En el muelle les mostraron este registro: por cada isla, en cuántas visitas los paseantes <b>sí vieron</b> delfines, en cuántas <b>no</b> y el total de visitas.</p>[[IMG]]<p>¿A cuál isla les conviene ir para tener <b>mayor probabilidad</b> de ver delfines?</p>",
-      "opciones": {
-        "A": "Palma.",
-        "B": "Blanca.",
-        "C": "Cocos.",
-        "D": "Bonita."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Aleatorio",
-      "dificultad": "ALTA",
-      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
-      "que_evalua": "La capacidad para estimar el evento que tiene mayor probabilidad de ocurrencia dentro de un conjunto de eventos, a partir del reconocimiento de los casos favorables y totales.",
-      "justificacion_correcta": "Hay que comparar la razón entre las veces que vieron delfines y el total de visitas. En Blanca vieron delfines \\(8\\) de \\(12\\) visitas: las veces favorables son el <b>doble</b> de las desfavorables \\((8\\) frente a \\(4)\\). En las demás islas las veces que sí y que no vieron son casi iguales (cerca de la mitad), así que Blanca tiene la mayor probabilidad.",
-      "opciones_incorrectas": {
-        "A": "Palma tiene muchos avistamientos \\((11)\\), pero también muchas visitas \\((21)\\): cerca de la mitad.",
-        "C": "En Cocos vieron delfines \\(4\\) de \\(7\\) visitas, una proporción menor que en Blanca.",
-        "D": "En Bonita vieron delfines \\(6\\) de \\(12\\) visitas, justo la mitad."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q18.png"
-    },
-    {
-      "id": "P3M19",
-      "numero": 19,
-      "enunciado": "<p>En un concurso de baloncesto cada estudiante encestó cierta cantidad de veces. El profesor los ordenó de quien más encestó a quien menos.</p>[[IMG]]<p>¿Quién quedó en el tercer lugar de esa lista?</p>",
-      "opciones": {
-        "A": "Valentina.",
-        "B": "Samuel.",
-        "C": "Mónica.",
-        "D": "Ricardo."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Numérico - variacional",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
-      "que_evalua": "La capacidad para asignar un número ordinal a cada uno de los elementos de un conjunto de números, de acuerdo con un criterio de orden dado.",
-      "justificacion_correcta": "Se ordenan las cantidades de mayor a menor y se mira quién ocupa la tercera posición: ese estudiante es Ricardo.",
-      "opciones_incorrectas": {
-        "A": "Relaciona la cantidad de cestas de Valentina \\((3)\\) con el puesto, en vez de ordenar.",
-        "B": "Ubica a Samuel, que ocupó el segundo puesto, como si fuera el tercero.",
-        "C": "Toma a Mónica, que ocupó el primer puesto, como tercera."
-      },
-      "imagen_figura": "assets/banco-mat-3-p1/q19.png"
-    },
-    {
       "id": "P3M20",
-      "numero": 20,
+      "numero": 7,
       "enunciado": "<p>En la clase de tecnología, Sara programa un robot de juguete para que recorra un <b>tapete</b> con 3 filas y 4 columnas de figuras de colores. El robot avanza <b>una casilla a la vez</b> y solo en las cuatro direcciones de la rosa que aparece en el dibujo: <b>arriba</b>, <b>abajo</b>, <b>izquierda</b> y <b>derecha</b>. El robot espera en el punto de <b>Inicio</b>, marcado a la izquierda de la casilla de la <b>esquina inferior izquierda</b>, y entra al tapete por esa casilla. Sara le ordena entonces, <b>en este orden</b>, cuatro movimientos: primero <b>arriba</b>, después <b>derecha</b>, después <b>derecha</b> y por último <b>arriba</b>.</p>[[IMG]]<p>¿Sobre cuál figura (A, B, C o D) se detiene el robot al terminar?</p>",
       "opciones": {
         "A": "",
@@ -559,7 +216,7 @@
       "dificultad": "ALTA",
       "estandar": "Reconozco y aplico traslaciones y giros sobre una figura.",
       "que_evalua": "La capacidad para determinar la posición final de un elemento al que se aplican tres o más traslaciones que relacionan la ubicación espacial dentro de un sistema de referencia cercano al estudiante.",
-      "justificacion_correcta": "Sigamos al robot casilla por casilla. Al entrar al tapete se ubica en la casilla de la esquina inferior izquierda, donde está el cuadrado morado. El 1.er movimiento es <b>arriba</b>: sube una casilla y pasa a la fila del medio, sobre el círculo morado. El 2.º es <b>derecha</b>: avanza una casilla a la segunda columna, sobre el cuadrado amarillo. El 3.º también es <b>derecha</b>: avanza otra casilla a la tercera columna, sobre el cuadrado rojo. El 4.º y último es <b>arriba</b>: sube una casilla más y llega a la fila de arriba, en esa misma tercera columna. Allí está el <b>cuadrado verde</b>, así que el robot se detiene sobre la figura de la opción B.",
+      "justificacion_correcta": "Sigamos al robot casilla por casilla. Al entrar al tapete se ubica en la casilla de la esquina inferior izquierda, donde está el cuadrado morado. El 1.er movimiento es <b>arriba</b>: sube una casilla y pasa a la fila del medio, sobre el círculo morado. El 2.º es <b>derecha</b>: avanza una casilla a la segunda columna, sobre el cuadrado amarillo. El 3.º también es <b>derecha</b>: avanza otra casilla a la tercera columna, sobre el cuadrado rojo. El 4.º y último es <b>arriba</b>: sube una casilla más y llega a la fila de arriba, en esa misma tercera columna. Allí está el <b>cuadrado verde</b>, así que el robot se detiene sobre la figura del cuadrado verde.",
       "opciones_incorrectas": {
         "A": "Solo tiene en cuenta los dos movimientos <i>arriba</i> y olvida los dos <i>derecha</i>: sube por la primera columna hasta la fila de arriba y queda sobre el círculo amarillo.",
         "C": "Hace los tres primeros movimientos pero olvida el último <i>arriba</i>: se queda en la fila del medio, sobre el cuadrado rojo de la tercera columna.",
@@ -572,6 +229,349 @@
         "C": "assets/banco-mat-3-p1/o20c.png",
         "D": "assets/banco-mat-3-p1/o20d.png"
       }
+    },
+    {
+      "id": "P3M17",
+      "numero": 8,
+      "enunciado": "<p>Doce fichas están puestas en \\(3\\) filas de \\(4\\) fichas cada una, como muestra la imagen.</p>[[IMG]]<p>¿De qué otra manera se pueden acomodar esas \\(12\\) fichas en filas con la misma cantidad cada una?</p>",
+      "opciones": {
+        "A": "En dos filas de \\(12\\) fichas.",
+        "B": "En dos filas de \\(6\\) fichas.",
+        "C": "En dos filas de \\(5\\) fichas.",
+        "D": "En dos filas de \\(7\\) fichas."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
+      "que_evalua": "La capacidad para construir expresiones multiplicativas con números de una cifra que tengan igual resultado que una multiplicación dada.",
+      "justificacion_correcta": "Al repartir \\(12\\) fichas en dos filas iguales, a cada fila le corresponden \\(12 \\div 2 = 6\\) fichas.",
+      "opciones_incorrectas": {
+        "D": "Dos filas de \\(7\\) suman \\(14\\) fichas, más de las que hay.",
+        "A": "Dos filas de \\(12\\) suman \\(24\\), el doble de las fichas disponibles.",
+        "C": "Dos filas de \\(5\\) suman \\(10\\) y sobrarían dos fichas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q17.png"
+    },
+    {
+      "id": "P3M11",
+      "numero": 9,
+      "enunciado": "<p>Un jardinero anotó en una tabla cuántas plantas alcanzan a crecer según los litros de agua que usa.</p>[[IMG]]<p>¿Qué se puede afirmar al mirar esa tabla?</p>",
+      "opciones": {
+        "A": "Cuando sube el agua, sube la cantidad de plantas.",
+        "B": "Aunque baje el agua, la cantidad de plantas no cambia.",
+        "C": "Cuando baja el agua, sube la cantidad de plantas.",
+        "D": "Aunque suba el agua, la cantidad de plantas no cambia."
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Describo cualitativamente situaciones de cambio y variación utilizando el lenguaje natural, dibujos y gráficas.",
+      "que_evalua": "La capacidad para identificar la relación entre dos magnitudes.",
+      "justificacion_correcta": "Al recorrer la tabla se ve que a cada aumento en los litros de agua le corresponde un aumento en las plantas: las dos cantidades crecen juntas.",
+      "opciones_incorrectas": {
+        "C": "Dice lo contrario de lo que muestran los datos.",
+        "D": "La cantidad de plantas sí cambia al cambiar el agua.",
+        "B": "También afirma que no hay cambio, y la tabla muestra que sí lo hay."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q11.png"
+    },
+    {
+      "id": "P3M16",
+      "numero": 10,
+      "enunciado": "<p>La tienda escolar va a comprar una caneca de helado para el bazar del sábado. Antes consultó a los niños de <b>dos grupos</b>: el grupo Girasoles anotó sus preferencias en una tabla y el grupo Colibríes en una gráfica de barras. Comprarán el helado que prefieran <b>más</b> niños entre los dos grupos.</p>[[IMG]]<p>¿Cuál helado deben comprar?</p>",
+      "opciones": {
+        "A": "Mora.",
+        "B": "Chocolate.",
+        "C": "Vainilla.",
+        "D": "Arequipe."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
+      "que_evalua": "La capacidad para hallar la moda al unir dos conjuntos de datos representados en una tabla y en una gráfica.",
+      "justificacion_correcta": "Al juntar los dos grupos: vainilla \\(5 + 3 = 8\\), chocolate \\(2 + 4 = 6\\) y arequipe \\(3 + 1 = 4\\). El helado que prefieren más niños en total es la vainilla, con \\(8\\).",
+      "opciones_incorrectas": {
+        "D": "El arequipe reúne \\(3 + 1 = 4\\) niños, menos que la vainilla.",
+        "B": "El chocolate es el que más gusta en el grupo Colibríes \\((4)\\), pero al juntar los dos grupos la vainilla \\((8)\\) lo supera; es el error de mirar un solo grupo.",
+        "A": "La mora no aparece entre los helados que eligieron los niños de ninguno de los dos grupos."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q16.png"
+    },
+    {
+      "id": "P3M10",
+      "numero": 11,
+      "enunciado": "<p>Una profesora preguntó a cuatro estudiantes por su deporte favorito y por su color favorito, y anotó las respuestas en una tabla. Después va a escoger al azar a uno de esos cuatro estudiantes.</p>[[IMG]]<p>¿Cuál de estas afirmaciones es cierta?</p>",
+      "opciones": {
+        "A": "Tiene más posibilidades salir un niño a quien le guste el verde que una niña a quien le guste.",
+        "B": "Tiene más posibilidades salir una niña a quien le guste la natación que un niño a quien le guste.",
+        "C": "Tiene más posibilidades salir una niña a quien le guste el fútbol que un niño a quien le guste.",
+        "D": "Tiene más posibilidades salir una niña a quien le guste el rojo que un niño a quien le guste."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para comparar el grado de posibilidad de dos eventos de un mismo experimento aleatorio.",
+      "justificacion_correcta": "En la tabla hay dos niñas a las que les gusta la natación y un solo niño al que le gusta la natación. Como dos casos son más que uno, al escoger al azar hay más posibilidades de que salga una niña a la que le guste la natación que un niño al que le guste ese deporte.",
+      "opciones_incorrectas": {
+        "A": "El verde lo escogió una niña y no lo escogió ningún niño, así que la comparación va al revés: hay más posibilidades de que salga la niña.",
+        "C": "El fútbol lo escogió un niño y no lo escogió ninguna niña, así que también ocurre lo contrario de lo que dice la afirmación.",
+        "D": "El rojo lo escogieron dos niños y una sola niña, así que hay más posibilidades de que salga un niño a quien le guste el rojo."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q10.png"
+    },
+    {
+      "id": "P3M01",
+      "numero": 12,
+      "enunciado": "<p>A una hoja rectangular cuadriculada le recortaron una parte del <b>borde de arriba</b>: quedó un hueco en forma de <b>arco</b>, con los lados rectos y la parte superior <b>redondeada</b>, como muestra la figura.</p>[[IMG]]<p>¿Cuál de las piezas A, B, C o D es, exactamente, la parte que <b>recortaron</b> de la hoja?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo construcciones y diseños utilizando cuerpos y figuras geométricas tridimensionales y dibujos o figuras geométricas bidimensionales.",
+      "que_evalua": "La capacidad para realizar recubrimientos con figuras regulares e irregulares.",
+      "justificacion_correcta": "La pieza que recortaron tiene forma de cúpula: la base es recta, los dos lados son rectos y la parte de arriba es redondeada, igual que el arco del hueco. La pieza con esa misma forma y con la cuadrícula del mismo tamaño es la que vuelve a encajar casilla por casilla en el hueco de la hoja.",
+      "opciones_incorrectas": {
+        "A": "Tiene los dos extremos redondeados (arriba y abajo), como una píldora; le falta la base recta, así que no llena el hueco.",
+        "C": "Tiene la base y los lados rectos, pero su parte de arriba es cóncava (hundida hacia adentro) en lugar de redondeada hacia afuera.",
+        "D": "Su parte de arriba es redondeada como la del hueco, pero su base tiene una mordida cóncava (no es plana), así que no encaja."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/s01.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-3-p1/o01a.png",
+        "B": "assets/banco-mat-3-p1/o01b.png",
+        "C": "assets/banco-mat-3-p1/o01c.png",
+        "D": "assets/banco-mat-3-p1/o01d.png"
+      }
+    },
+    {
+      "id": "P3M19",
+      "numero": 13,
+      "enunciado": "<p>En un concurso de baloncesto cada estudiante encestó cierta cantidad de veces. El profesor los ordenó de quien más encestó a quien menos.</p>[[IMG]]<p>¿Quién quedó en el tercer lugar de esa lista?</p>",
+      "opciones": {
+        "A": "Samuel.",
+        "B": "Ricardo.",
+        "C": "Valentina.",
+        "D": "Mónica."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
+      "que_evalua": "La capacidad para asignar un número ordinal a cada uno de los elementos de un conjunto de números, de acuerdo con un criterio de orden dado.",
+      "justificacion_correcta": "Se ordenan las cantidades de mayor a menor y se mira quién ocupa la tercera posición: ese estudiante es Ricardo.",
+      "opciones_incorrectas": {
+        "C": "Relaciona la cantidad de cestas de Valentina \\((3)\\) con el puesto, en vez de ordenar.",
+        "A": "Ubica a Samuel, que ocupó el segundo puesto, como si fuera el tercero.",
+        "D": "Toma a Mónica, que ocupó el primer puesto, como tercera."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q19.png"
+    },
+    {
+      "id": "P3M04",
+      "numero": 14,
+      "enunciado": "<p>Una profesora anuncia: «voy a entregar \\(4\\) semillas a cada uno de los \\(6\\) estudiantes del grupo».</p><p>¿Con cuál multiplicación se sabe cuántas semillas entregará en total?</p>",
+      "opciones": {
+        "A": "\\(4 \\times 4\\)",
+        "B": "\\(6 \\times 4\\)",
+        "C": "\\(6 \\times 6\\)",
+        "D": "\\(7 \\times 4\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad para reconocer las cantidades que deben multiplicarse en una situación multiplicativa.",
+      "justificacion_correcta": "Hay \\(6\\) estudiantes y cada uno recibe \\(4\\) semillas, de modo que el total es \\(6 \\times 4 = 24\\).",
+      "opciones_incorrectas": {
+        "A": "Repite el número de semillas en los dos factores y deja por fuera cuántos estudiantes hay: \\(4 \\times 4 = 16\\).",
+        "C": "Repite el número de estudiantes en los dos factores y olvida cuántas semillas recibe cada uno: \\(6 \\times 6 = 36\\).",
+        "D": "Cuenta a la profesora como si ella también recibiera semillas, y quienes reciben son \\(6\\) estudiantes: \\(7 \\times 4 = 28\\)."
+      }
+    },
+    {
+      "id": "P3M15",
+      "numero": 15,
+      "enunciado": "<p>Diana armó un pez uniendo por un lado común una pieza con forma de cabeza y un triángulo que hace de cola. Todos los lados vienen con su medida y la línea punteada es la unión entre las dos piezas, que queda por dentro.</p>[[IMG]]<p>¿Cuánto mide el contorno del pez armado?</p>",
+      "opciones": {
+        "A": "\\(19\\) cm",
+        "B": "\\(13\\) cm",
+        "C": "\\(26\\) cm",
+        "D": "\\(23\\) cm"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
+      "que_evalua": "La capacidad para hallar el perímetro de una figura bidimensional compuesta por triángulos y cuadriláteros.",
+      "justificacion_correcta": "El contorno recorre solo los lados que quedan por fuera. Se suman esos lados y se deja por fuera la línea punteada, que es interior. El resultado es \\(23\\) cm.",
+      "opciones_incorrectas": {
+        "C": "Suma el borde exterior \\((23)\\) y, por error, también la unión interna \\((3\\text{ cm})\\): \\(23 + 3 = 26\\).",
+        "A": "Olvida el lado de la base de la cabeza \\((4\\text{ cm})\\): \\(23 - 4 = 19\\).",
+        "B": "Cuenta solo la cabeza \\((13)\\) y omite por completo los dos lados de la cola."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q15.png"
+    },
+    {
+      "id": "P3M02",
+      "numero": 16,
+      "enunciado": "<p>En el recreo, Marcos y sus compañeros deciden así quién empieza el juego: cada niño escoge una de las cuatro cajas y saca de ella un papel sin mirar. Quien saque un papel verde arranca la partida. La imagen muestra los papeles que hay dentro de cada caja.</p>[[IMG]]<p>¿Cuál caja le conviene escoger a Marcos para estar seguro de arrancar la partida?</p>",
+      "opciones": {
+        "A": "Caja 1.",
+        "B": "Caja 2.",
+        "C": "Caja 3.",
+        "D": "Caja 4."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Aleatorio",
+      "dificultad": "BAJA",
+      "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
+      "que_evalua": "La capacidad para reconocer el evento que es seguro que ocurra en un experimento aleatorio.",
+      "justificacion_correcta": "Solo hay certeza cuando todos los papeles de la caja son verdes, porque así ningún otro resultado es posible. Eso pasa en la caja 2.",
+      "opciones_incorrectas": {
+        "A": "Tiene papeles verdes y papeles blancos, así que sacar verde apenas es posible, no seguro.",
+        "C": "No tiene ningún papel verde: sacar verde es imposible.",
+        "D": "Tiene papeles de los dos colores y, además, hay más blancos que verdes; no es seguro."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q02.png"
+    },
+    {
+      "id": "P3M06",
+      "numero": 17,
+      "enunciado": "<p>Un vendedor dice: <i>«Cada empanada cuesta lo mismo y con <b>\\(10\\) fichas</b> se pueden comprar <b>\\(5\\) empanadas</b>»</i>.</p>[[IMG]]<p>¿Cuántas fichas vale <b>una sola</b> empanada?</p>",
+      "opciones": {
+        "A": "\\(1\\) ficha.",
+        "B": "\\(2\\) fichas.",
+        "C": "\\(5\\) fichas.",
+        "D": "\\(10\\) fichas."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La capacidad para identificar la relación entre dos magnitudes.",
+      "justificacion_correcta": "Si con \\(10\\) fichas se compran \\(5\\) empanadas, se cumple que \\(5 \\times (\\text{fichas por empanada}) = 10\\). Como \\(5 \\times 2 = 10\\), cada empanada vale \\(2\\) fichas.",
+      "opciones_incorrectas": {
+        "A": "Relaciona una empanada con una ficha de forma directa.",
+        "C": "Toma las \\(5\\) empanadas como si fueran las fichas de una empanada.",
+        "D": "Conserva el total de \\(10\\) fichas sin repartirlo entre las \\(5\\) empanadas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q06.png"
+    },
+    {
+      "id": "P3M14",
+      "numero": 18,
+      "enunciado": "<p>Cada expositor de una feria recibe un puesto con forma de trapecio, como el de la imagen. El borde del puesto se delimita con cinta. La base de abajo viene señalada en tres tramos de \\(4\\) m, \\(3\\) m y \\(4\\) m, y la línea punteada de \\(3\\) m es una marca interior que no lleva cinta.</p>[[IMG]]<p>¿Cuánta cinta se necesita para delimitar el puesto?</p>",
+      "opciones": {
+        "A": "\\(14\\) m",
+        "B": "\\(27\\) m",
+        "C": "\\(19\\) m",
+        "D": "\\(24\\) m"
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La capacidad para hallar el perímetro de un trapecio a partir de la longitud de sus lados y algunas medidas internas que componen el polígono.",
+      "justificacion_correcta": "La cinta recorre solo el borde. Se suman los lados exteriores del trapecio, incluidos los tres tramos de la base, y se deja por fuera la línea punteada, que va por dentro. El total es \\(24\\) m.",
+      "opciones_incorrectas": {
+        "B": "Suma los lados \\((24)\\) y, además, la altura interna \\((3\\text{ m})\\): \\(24 + 3 = 27\\).",
+        "C": "Olvida un lado inclinado: \\(11 + 3 + 5 = 19\\).",
+        "A": "Cuenta solo las dos bases \\((11 + 3 = 14)\\) y olvida los lados inclinados."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q14.png"
+    },
+    {
+      "id": "P3M05",
+      "numero": 19,
+      "enunciado": "<p>En unas olimpiadas con dos pruebas, los puntos de <b>Manuela</b> están en la tabla y los de <b>Diego</b> en la gráfica de barras.</p>[[IMG]]<p>¿Cuántos puntos le <b>faltaron a Diego en Carrera</b> para igualar los que obtuvo Manuela en esa misma prueba?</p>",
+      "opciones": {
+        "A": "\\(1\\) punto.",
+        "B": "\\(2\\) puntos.",
+        "C": "\\(3\\) puntos.",
+        "D": "\\(4\\) puntos."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
+      "que_evalua": "La capacidad para comparar información presentada en distintos tipos de registro.",
+      "justificacion_correcta": "Manuela obtuvo \\(4\\) puntos en Carrera y Diego obtuvo \\(3\\). A Diego le faltó \\(4 - 3 = 1\\) punto para igualarla.",
+      "opciones_incorrectas": {
+        "B": "Mira solo los puntos de Diego en una prueba sin compararlos con Manuela.",
+        "C": "Toma los puntos de Manuela en Carrera como si fueran lo que le falta a Diego.",
+        "D": "Usa un valor sin hacer la resta entre los dos registros."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q05.png"
+    },
+    {
+      "id": "P3M18",
+      "numero": 20,
+      "enunciado": "<p>El club de ciencias del colegio hará un paseo en lancha y quiere escoger la isla donde sea más fácil ver delfines. En el muelle les mostraron este registro: por cada isla, en cuántas visitas los paseantes <b>sí vieron</b> delfines, en cuántas <b>no</b> y el total de visitas.</p>[[IMG]]<p>¿A cuál isla les conviene ir para tener <b>mayor probabilidad</b> de ver delfines?</p>",
+      "opciones": {
+        "A": "Bonita.",
+        "B": "Palma.",
+        "C": "Cocos.",
+        "D": "Blanca."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La capacidad para estimar el evento que tiene mayor probabilidad de ocurrencia dentro de un conjunto de eventos, a partir del reconocimiento de los casos favorables y totales.",
+      "justificacion_correcta": "Hay que comparar la razón entre las veces que vieron delfines y el total de visitas. En Blanca vieron delfines \\(8\\) de \\(12\\) visitas: las veces favorables son el <b>doble</b> de las desfavorables \\((8\\) frente a \\(4)\\). En las demás islas las veces que sí y que no vieron son casi iguales (cerca de la mitad), así que Blanca tiene la mayor probabilidad.",
+      "opciones_incorrectas": {
+        "B": "Palma tiene muchos avistamientos \\((11)\\), pero también muchas visitas \\((21)\\): cerca de la mitad.",
+        "C": "En Cocos vieron delfines \\(4\\) de \\(7\\) visitas, una proporción menor que en Blanca.",
+        "A": "En Bonita vieron delfines \\(6\\) de \\(12\\) visitas, justo la mitad."
+      },
+      "imagen_figura": "assets/banco-mat-3-p1/q18.png"
     }
   ],
   "preservar_orden_preguntas": false

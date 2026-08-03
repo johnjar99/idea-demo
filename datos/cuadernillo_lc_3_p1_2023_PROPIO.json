@@ -33,453 +33,268 @@
     "1.5": "Infiere la intención comunicativa de enunciados del texto"
   },
   "contextos": {
-    "ctx-lectura-1": {
-      "titulo": "Cómo cuidar tu huerta en casa",
-      "texto": "EL DIARIO · Sección Hogar y jardín\n\nCómo cuidar tu huerta en casa\n\nTener una pequeña huerta en casa es una forma sencilla de cultivar alimentos frescos y saludables. La experta Lucía Rendón, del jardín botánico de la ciudad, comparte algunas recomendaciones para que tu huerta crezca sana. En primer lugar, riega las plantas temprano en la mañana, cuando el sol todavía no calienta, porque así el agua no se evapora tan rápido. Usa una tierra buena, mezclada con abono natural, que alimenta el suelo. Si el sol es muy fuerte al mediodía, coloca una sombra ligera sobre las plantas más pequeñas para protegerlas. La mejor época para empezar una huerta es al comenzar la temporada de lluvias, porque la tierra se mantiene húmeda durante más días.",
-      "imagen": "assets/banco-lc-3-p1/q01.png",
-      "rango_preguntas": "1 a 3"
-    },
-    "ctx-lectura-2": {
-      "titulo": "La guacamaya de colores",
-      "texto": "LA GUACAMAYA DE COLORES\n\nHace mucho tiempo, cuando los dioses del bosque terminaron de crear los animales, a cada uno le dieron una tarea. Pero, al terminar, notaron que faltaba un ser que llevara la alegría de un árbol a otro. Para entonces ya se habían acabado el agua y las semillas, que eran los materiales con los que habían hecho a todos los demás animales. Solo les quedaba un trozo de arcilla y unas pocas plumas de colores. Con la arcilla moldearon un ave grande y, sobre ella, pegaron las plumas rojas, azules y amarillas. Cuando terminaron, soplaron sobre el ave y esta abrió los ojos y voló. Así nació la guacamaya, encargada de repartir alegría por la selva. Tan colorida es, que ilumina los árboles donde se posa; y tan libre, que ninguna persona puede encerrarla en una jaula sin que pierda su brillo. Por eso, si ves una guacamaya volando entre los árboles, es porque la alegría anda cerca.",
-      "imagen": "",
-      "rango_preguntas": "4 a 8"
-    },
-    "ctx-lectura-3": {
+    "viaje_del_agua": {
       "titulo": "El calor del sol y el viaje del agua",
-      "texto": "El calor del sol y el viaje del agua\n\nEl agua de una laguna nunca se queda quieta: hace un viaje que se repite una y otra vez. Cuando el sol calienta la laguna, una parte del agua se vuelve vapor y sube muy alto, tan liviana que nadie alcanza a verla. Arriba, donde el aire es frío, ese vapor se junta en gotas diminutas y arma una nube esponjosa. Cuando la nube reúne demasiadas gotas ya no puede sostenerlas y el agua cae al suelo convertida en lluvia. Finalmente, el agua que cayó corre por la quebrada de la ladera y regresa a la laguna, lista para empezar de nuevo el mismo viaje.\n\nPor eso el calor del sol influye en la lluvia que riega los campos: cada etapa del viaje cumple un papel distinto y, como dicen los abuelos, el agua siempre sabe volver a casa.",
+      "rango_preguntas": "1 a 5",
       "imagen": "assets/banco-lc-3-p1/q09.png",
-      "rango_preguntas": "9 a 12"
+      "alt": "Infografía «El calor del sol y el viaje del agua» con cuatro tarjetas numeradas: 1) En la laguna, con una flecha que sube y el texto «El sol calienta el agua»; 2) En el aire, con una flecha que sube hacia una nube y el texto «El vapor sube y se junta»; 3) En la nube, con gotas de lluvia y una flecha que baja y el texto «La nube deja caer la lluvia»; 4) De regreso, con una montaña, una quebrada y una flecha que baja, y el texto «El agua vuelve a la laguna».",
+      "texto": "El agua de una laguna nunca se queda quieta: hace un viaje que se repite una y otra vez. Cuando el sol calienta la laguna, una parte del agua se vuelve vapor y sube muy alto, tan liviana que nadie alcanza a verla. Arriba, donde el aire es frío, ese vapor se junta en gotas diminutas y arma una nube esponjosa. Cuando la nube reúne demasiadas gotas ya no puede sostenerlas y el agua cae al suelo convertida en lluvia. Finalmente, el agua que cayó corre por la quebrada de la ladera y regresa a la laguna, lista para empezar de nuevo el mismo viaje.\n\nPor eso el calor del sol influye en la lluvia que riega los campos: cada etapa del viaje cumple un papel distinto y, como dicen los abuelos, el agua siempre sabe volver a casa."
     },
-    "ctx-lectura-4": {
+    "guacamaya_de_colores": {
+      "titulo": "La guacamaya de colores",
+      "rango_preguntas": "6 a 10",
+      "texto": "Hace mucho tiempo, cuando los dioses del bosque terminaron de crear los animales, a cada uno le dieron una tarea. Pero, al terminar, notaron que faltaba un ser que llevara la alegría de un árbol a otro. Para entonces ya se habían acabado el agua y las semillas, que eran los materiales con los que habían hecho a todos los demás animales. Solo les quedaba un trozo de arcilla y unas pocas plumas de colores. Con la arcilla moldearon un ave grande y, sobre ella, pegaron las plumas rojas, azules y amarillas. Cuando terminaron, soplaron sobre el ave y esta abrió los ojos y voló. Así nació la guacamaya, encargada de repartir alegría por la selva. Tan colorida es, que ilumina los árboles donde se posa; y tan libre, que ninguna persona puede encerrarla en una jaula sin que pierda su brillo. Por eso, si ves una guacamaya volando entre los árboles, es porque la alegría anda cerca."
+    },
+    "como_hacer_una_cometa": {
       "titulo": "Cómo hacer una cometa",
-      "texto": "Cómo hacer una cometa\n\nAntes de armar la cometa, hay que escoger un papel liviano y de colores. Después, sigue con cuidado estos seis pasos:\n\n1. Corta dos varas delgadas de guadua: una larga y otra más corta.\n2. Amarra las dos varas en forma de cruz, con hilo resistente.\n3. Pega el papel sobre las varas, sin dejar arrugas.\n4. Amarra en el centro de la cruz el hilo con el que vas a sostenerla.\n5. Pega en la punta de abajo una cola larga con tiras de tela.\n6. Toma el hilo con las dos manos y sal a la cancha a elevarla.\n\n¡Ten cuidado! Si la cola queda muy corta, la cometa dará vueltas y se caerá. Si el papel queda flojo, se romperá con el viento. Amarra una sola cometa en cada hilo.\n\n¿Sabías que…? En agosto el viento sopla más fuerte en muchas regiones de Colombia y por eso en ese mes las cometas se elevan mejor.",
+      "rango_preguntas": "11 a 15",
       "imagen": "assets/banco-lc-3-p1/q13.png",
-      "rango_preguntas": "13 a 16"
+      "alt": "Esquema circular titulado «Cómo hacer una cometa, paso a paso», con seis círculos numerados alrededor del dibujo de una cometa con su cola: 1) corta las varas, 2) amarra la cruz, 3) pega el papel, 4) amarra el hilo, 5) pon la cola y 6) ¡a volar!",
+      "texto": "Antes de armar la cometa, hay que escoger un papel liviano y de colores. Después, sigue con cuidado estos seis pasos:\n\n1. Corta dos varas delgadas de guadua: una larga y otra más corta.\n2. Amarra las dos varas en forma de cruz, con hilo resistente.\n3. Pega el papel sobre las varas, sin dejar arrugas.\n4. Amarra en el centro de la cruz el hilo con el que vas a sostenerla.\n5. Pega en la punta de abajo una cola larga con tiras de tela.\n6. Toma el hilo con las dos manos y sal a la cancha a elevarla.\n\n¡Ten cuidado! Si la cola queda muy corta, la cometa dará vueltas y se caerá. Si el papel queda flojo, se romperá con el viento. Amarra una sola cometa en cada hilo.\n\n¿Sabías que…? En agosto el viento sopla más fuerte en muchas regiones de Colombia y por eso en ese mes las cometas se elevan mejor."
     },
-    "ctx-lectura-5": {
-      "titulo": "Encerrado entre libros",
-      "texto": "ENCERRADO ENTRE LIBROS\n\nLa tarde del viernes me quedé en la biblioteca del colegio terminando un cuento de dragones. Mis compañeros de tercero recogieron sus maletas, empujaron la puerta de vidrio y salieron corriendo hacia el patio, porque ya había sonado el timbre. Yo no me moví de la mesa: quería saber cómo terminaba la historia.\n\nCuando por fin levanté la cabeza, la sala estaba en silencio y las luces, apagadas. Corrí hasta la puerta y la encontré cerrada con llave. Golpeé el vidrio con las dos manos y grité varias veces, pero afuera solo se oía el viento moviendo los árboles del patio.\n\nMe senté en el piso, entre dos estantes altos, abrazando el cuento. Tenía las manos frías y el corazón golpeándome fuerte. Pensé en mi mamá, que estaría esperándome en la portería, y en la sopa que se iba a enfriar.\n\nEntonces me subí a una banca para mirar por la ventana más alta. Desde allí vi el patio vacío, la portería con el candado puesto y ni una sola persona en la cancha. En ese momento pensé que me tocaría dormir entre los libros.",
-      "imagen": "",
-      "rango_preguntas": "17 a 20"
+    "huerta_en_casa": {
+      "titulo": "Cómo cuidar tu huerta en casa",
+      "rango_preguntas": "16 a 20",
+      "imagen": "assets/banco-lc-3-p1/q01.png",
+      "alt": "Página del periódico EL DIARIO, sección Hogar y jardín, edición del sábado. Lleva el titular «Cómo cuidar tu huerta en casa» y, debajo, la frase «Cultivar alimentos frescos en casa es más fácil de lo que crees». En el centro hay una ilustración de una huerta con una regadera, flores, plantas de tomate y cebolla, con el pie «Una huerta casera bien cuidada». Al final, en dos columnas, la nota explica que tener una huerta en casa es una forma sencilla de cultivar alimentos frescos y que la experta Lucía Rendón, del jardín botánico de la ciudad, recomienda regar temprano, usar buena tierra con abono natural y dar sombra a las plantas más pequeñas.",
+      "texto": "En su sección Hogar y jardín, el periódico EL DIARIO publicó la nota que aparece enseguida para las familias que quieren sembrar en casa. Obsérvala completa antes de responder.\n\nFíjate en el orden en que está armada: arriba, el nombre del periódico y la sección; debajo, el título de la nota y la frase que lo acompaña; en el centro, la fotografía con su pie; y al final, en dos columnas, el cuerpo de la nota, donde la experta Lucía Rendón, del jardín botánico de la ciudad, deja sus recomendaciones."
     }
   },
   "preguntas": [
     {
-      "id": "P3L01",
-      "numero": 1,
-      "enunciado": "<p>¿De qué partes está hecho el texto anterior?</p>",
-      "opciones": {
-        "A": "De título, fotografía y desarrollo.",
-        "B": "De título, imagen y conclusión.",
-        "C": "De título, fotografía y solución.",
-        "D": "De título, imagen y despedida."
-      },
-      "clave": "A",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diferentes clases de textos: manuales, tarjetas, afiches, cartas, periódicos, etc. » Reconozco la función social de los diversos tipos de textos que leo. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para identificar las partes de un texto y la función de cada una según el tipo de texto.",
-      "justificacion_correcta": "Es un texto informativo con tres partes: un título que resalta el tema, una fotografía que ilustra la nota y un cuerpo o desarrollo donde se explica la información. Esa estructura corresponde a la opción A.",
-      "opciones_incorrectas": {
-        "B": "El cuerpo de la nota no es una conclusión: no cierra ni retoma ideas, sino que desarrolla recomendaciones.",
-        "C": "El texto no plantea un problema con su solución, sino consejos para cuidar la huerta.",
-        "D": "El texto no termina con una despedida; presenta el desarrollo de la información."
-      },
-      "imagen_figura": "",
-      "contexto_id": "ctx-lectura-1"
-    },
-    {
-      "id": "P3L02",
-      "numero": 2,
-      "enunciado": "<p>Con las recomendaciones que ofrece, el texto quiere sobre todo</p>",
-      "opciones": {
-        "A": "convencer de que cultivar es muy costoso.",
-        "B": "contar la vida de la experta Lucía Rendón.",
-        "C": "enseñar a cuidar una huerta para que crezca sana.",
-        "D": "describir cómo es un jardín botánico."
-      },
-      "clave": "C",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diferentes clases de textos: manuales, tarjetas, afiches, cartas, periódicos, etc. » Reconozco la función social de los diversos tipos de textos que leo. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para inferir el propósito general del texto y relacionarlo con el lector al que va dirigido.",
-      "justificacion_correcta": "El texto reúne varios consejos (regar temprano, usar buena tierra, dar sombra) cuyo propósito es enseñar al lector a cuidar su huerta para que las plantas crezcan sanas. Por eso la opción correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "El texto no habla de costos; ofrece cuidados sencillos.",
-        "B": "Se nombra a la experta como fuente, pero no se cuenta su vida.",
-        "D": "El jardín botánico solo se menciona de paso; no es el tema del texto."
-      },
-      "contexto_id": "ctx-lectura-1"
-    },
-    {
-      "id": "P3L03",
-      "numero": 3,
-      "enunciado": "<p>En el texto se dice: «Usa una tierra buena, mezclada con <b>abono</b> natural, que alimenta el suelo». Según esta frase, la palabra <b>«abono»</b> se refiere a</p>",
-      "opciones": {
-        "A": "una herramienta para cavar la tierra.",
-        "B": "un material que alimenta el suelo.",
-        "C": "un recipiente para guardar el agua.",
-        "D": "una sombra para las plantas pequeñas."
-      },
-      "clave": "B",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diferentes clases de textos: manuales, tarjetas, afiches, cartas, periódicos, etc. » Reconozco la función social de los diversos tipos de textos que leo. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para identificar el significado de una palabra a partir del contexto del texto.",
-      "justificacion_correcta": "El propio texto explica el significado: el abono se «mezcla con la tierra» y «alimenta el suelo». Por el contexto, entonces, el abono es un material que nutre la tierra para que las plantas crezcan. La respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "El texto no dice que el abono sirva para cavar; se mezcla con la tierra, no la excava.",
-        "C": "El abono no guarda agua; es la regadera la que lleva el agua. El abono mejora el suelo.",
-        "D": "La sombra es otra recomendación distinta del texto; el abono no da sombra, alimenta el suelo."
-      },
-      "contexto_id": "ctx-lectura-1"
-    },
-    {
-      "id": "P3L04",
-      "numero": 4,
-      "enunciado": "<p>De acuerdo con lo leído, ¿de qué hicieron los dioses a los demás animales?</p>",
-      "opciones": {
-        "A": "De agua y de semillas.",
-        "B": "De arcilla y de plumas.",
-        "C": "De hojas y de flores.",
-        "D": "De piedras y de barro."
-      },
-      "clave": "A",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para recuperar información puntual y literal del texto.",
-      "justificacion_correcta": "El texto dice de manera literal que «ya se habían acabado el agua y las semillas, que eran los materiales con los que habían hecho a todos los demás animales». Por eso la respuesta correcta es la A.",
-      "opciones_incorrectas": {
-        "B": "La arcilla y las plumas se usaron solo para la guacamaya, no para los demás animales.",
-        "C": "Las hojas y flores no se mencionan como materiales de creación.",
-        "D": "Las piedras y el barro no aparecen en el texto."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P3L05",
-      "numero": 5,
-      "enunciado": "<p>En la frase «Con la arcilla moldearon un ave», la palabra <b>«moldearon»</b> indica una acción realizada por</p>",
-      "opciones": {
-        "A": "la guacamaya.",
-        "B": "los dioses del bosque.",
-        "C": "las plumas.",
-        "D": "los árboles."
-      },
-      "clave": "B",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para reconocer la función referencial de una palabra y a quién reemplaza dentro del texto.",
-      "justificacion_correcta": "El verbo «moldearon» está en plural y se refiere a un sujeto mencionado antes: «los dioses del bosque», que son quienes hacen las cosas en el relato. Por eso la respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "La guacamaya es creada, no quien crea.",
-        "C": "Las plumas son un material, no realizan la acción.",
-        "D": "Los árboles no participan en la creación del ave."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P3L06",
-      "numero": 6,
-      "enunciado": "<p>Lee este fragmento: «los dioses del bosque… notaron que faltaba un ser que llevara la alegría de un árbol a otro». ¿Cuál opción dice lo mismo con otras palabras?</p>",
-      "opciones": {
-        "A": "Los dioses se dieron cuenta de que hacía falta un animal que repartiera alegría entre los árboles.",
-        "B": "Los animales le pidieron a los dioses que crearan más árboles.",
-        "C": "Los árboles decidieron crear un ave de colores.",
-        "D": "Los dioses estaban tristes porque no había árboles."
-      },
-      "clave": "A",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para reconocer una paráfrasis: decir lo mismo del texto con otras palabras.",
-      "justificacion_correcta": "Parafrasear es decir lo mismo con otras palabras. La opción A conserva la idea del fragmento: los dioses notaron que faltaba un ser para llevar alegría entre los árboles. Por eso es la correcta.",
-      "opciones_incorrectas": {
-        "B": "Cambia el sentido: los animales no piden árboles.",
-        "C": "Contradice el texto: los árboles no crean al ave.",
-        "D": "Inventa un dato (tristeza por falta de árboles) que no está en el texto."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P3L07",
-      "numero": 7,
-      "enunciado": "<p>Según lo leído, ¿para qué crearon los dioses a la guacamaya?</p>",
-      "opciones": {
-        "A": "Para que hubiera alguien que llevara alegría a los árboles.",
-        "B": "Para tener un ave que pudieran meter en una jaula.",
-        "C": "Para conseguir más plumas de colores.",
-        "D": "Para repoblar el bosque, que se había quedado sin animales."
-      },
-      "clave": "A",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para reconocer el motivo o la razón de un hecho ocurrido en la historia.",
-      "justificacion_correcta": "El texto explica que los dioses «notaron que faltaba un ser que llevara la alegría de un árbol a otro». Ese es el motivo de la creación de la guacamaya. La respuesta correcta es la A.",
-      "opciones_incorrectas": {
-        "B": "El texto dice que la guacamaya no puede ser encerrada; no es el motivo.",
-        "C": "Las plumas son un material usado, no la razón de la creación.",
-        "D": "El bosque ya tenía animales; solo faltaba uno con esa tarea."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P3L08",
-      "numero": 8,
-      "enunciado": "<p>Después de que se acabaron el agua y las semillas, ¿qué hicieron los dioses, en orden?</p>",
-      "opciones": {
-        "A": "Primero soplaron las plumas. Luego moldearon el agua. Después crearon semillas. Finalmente la guacamaya voló.",
-        "B": "Primero crearon los árboles. Luego repartieron alegría. Después moldearon un ave. Finalmente la encerraron.",
-        "C": "Primero tomaron la arcilla. Luego moldearon un ave. Después le pegaron las plumas. Finalmente soplaron y voló.",
-        "D": "Primero soplaron el ave. Luego pegaron las plumas. Después tomaron la arcilla. Finalmente la moldearon."
-      },
-      "clave": "C",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para reconocer el orden temporal de las acciones que realizan los personajes.",
-      "justificacion_correcta": "El segundo momento del relato presenta este orden: tomaron la arcilla, moldearon el ave, le pegaron las plumas de colores y al soplar sobre ella, voló. Ese orden corresponde a la opción C.",
-      "opciones_incorrectas": {
-        "A": "Las acciones están desordenadas y algunas no ocurren así.",
-        "B": "Crear los árboles y encerrar al ave no corresponden a este momento.",
-        "D": "Invierte el orden: soplar y moldear no van al inicio."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
       "id": "P3L09",
-      "numero": 9,
+      "numero": 1,
       "enunciado": "<p>¿Con qué fin aparece la palabra «Finalmente» en el texto?</p>",
       "opciones": {
-        "A": "Con el fin de abrir una enumeración.",
-        "B": "Con el fin de cerrar una explicación.",
-        "C": "Con el fin de repetir algo ya dicho.",
-        "D": "Con el fin de plantear una pregunta."
+        "A": "Con el fin de abrir una lista de pasos nuevos.",
+        "B": "Con el fin de plantear una pregunta al lector.",
+        "C": "Con el fin de repetir una etapa ya contada.",
+        "D": "Con el fin de cerrar una explicación."
       },
-      "clave": "B",
+      "clave": "D",
       "competencia": "3",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo y explicativo. » Relaciono gráficas con texto escrito. » Identifico el propósito comunicativo y la idea global de un texto.",
       "que_evalua": "La capacidad para identificar la función de un conector dentro del texto.",
-      "justificacion_correcta": "El texto explica, etapa por etapa, qué le ocurre al agua y usa «Finalmente» para cerrar esa explicación, cuando cuenta que el agua regresa a la laguna. Por eso cumple la función de concluir una explicación: la opción correcta es la B.",
+      "justificacion_correcta": "El texto explica, etapa por etapa, qué le ocurre al agua y usa «Finalmente» para cerrar esa explicación, cuando cuenta que el agua regresa a la laguna. Por eso cumple la función de concluir una explicación: la opción correcta es «Con el fin de cerrar una explicación».",
       "opciones_incorrectas": {
-        "A": "«Finalmente» no abre una lista, la cierra.",
-        "C": "No repite información: agrega la última etapa del viaje.",
-        "D": "No introduce ninguna pregunta."
+        "A": "«Finalmente» no abre la lista de pasos nuevos: cierra el recorrido que ya venía contado.",
+        "B": "El texto no plantea ninguna pregunta al lector en ese punto ni en el resto del párrafo.",
+        "C": "No repite una etapa ya contada: agrega la última, cuando el agua regresa a la laguna."
       },
-      "imagen_figura": "",
-      "contexto_id": "ctx-lectura-3"
+      "contexto_id": "viaje_del_agua"
     },
     {
       "id": "P3L10",
-      "numero": 10,
-      "enunciado": "[[IMG]]<p>En la imagen, las flechas representan</p>",
+      "numero": 2,
+      "enunciado": "<p>En la imagen, las flechas representan</p>",
       "opciones": {
-        "A": "los nombres de cada etapa del viaje.",
-        "B": "el movimiento del agua.",
-        "C": "la altura de las nubes.",
-        "D": "la distancia entre la laguna y el sol."
+        "A": "la altura de las nubes.",
+        "B": "los nombres de cada etapa del viaje.",
+        "C": "la distancia entre la laguna y el sol.",
+        "D": "el movimiento del agua."
       },
-      "clave": "B",
+      "clave": "D",
       "competencia": "2",
       "afirmacion": 2,
       "evidencia": "2.1",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo y explicativo. » Relaciono gráficas con texto escrito. » Identifico el propósito comunicativo y la idea global de un texto.",
       "que_evalua": "La capacidad para inferir la función que cumplen las flechas en un texto con imagen.",
-      "justificacion_correcta": "En el diagrama las flechas cambian de dirección (hacia arriba o hacia abajo) según la etapa, así que representan el movimiento del agua: sube como vapor y baja como lluvia. La opción correcta es la B.",
+      "justificacion_correcta": "En el diagrama las flechas cambian de dirección (hacia arriba o hacia abajo) según la etapa, así que representan el movimiento del agua: sube como vapor y baja como lluvia. La opción correcta es «el movimiento del agua».",
       "opciones_incorrectas": {
-        "A": "Las etapas se nombran con palabras, no con flechas.",
-        "C": "Ninguna flecha señala qué tan alto está la nube.",
-        "D": "El texto no mide ninguna distancia con el sol."
+        "B": "Las etapas se nombran con palabras, no con flechas.",
+        "A": "Ninguna flecha señala qué tan alto está la nube.",
+        "C": "El texto no mide ninguna distancia con el sol."
       },
-      "imagen_figura": "assets/banco-lc-3-p1/q09.png",
-      "contexto_id": "ctx-lectura-3"
+      "contexto_id": "viaje_del_agua"
     },
     {
       "id": "P3L11",
-      "numero": 11,
+      "numero": 3,
       "enunciado": "<p>El texto tiene dos partes. Mientras una parte describe cómo se mueve el agua etapa por etapa, la otra parte</p>",
       "opciones": {
-        "A": "define qué es el vapor y de qué color es.",
-        "B": "da instrucciones, paso a paso, para armar una cometa.",
-        "C": "describe de qué colores son las nubes y las montañas.",
-        "D": "explica cómo el calor del sol influye en la lluvia que riega los campos."
+        "A": "explica por qué el calor del sol influye en la lluvia.",
+        "B": "da instrucciones, paso a paso, para armar una cometa liviana.",
+        "C": "describe de qué colores son las nubes, la laguna y las montañas.",
+        "D": "define qué es el vapor y explica de qué color se ve."
       },
-      "clave": "D",
+      "clave": "A",
       "competencia": "2",
       "afirmacion": 2,
       "evidencia": "2.2",
       "dificultad": "ALTA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo y explicativo. » Relaciono gráficas con texto escrito. » Identifico el propósito comunicativo y la idea global de un texto.",
       "que_evalua": "La capacidad para relacionar y comparar dos partes de un mismo texto.",
-      "justificacion_correcta": "El texto tiene dos partes: una describe el recorrido del agua etapa por etapa, y la otra explica que ese recorrido depende del calor del sol, que hace subir el vapor y termina en la lluvia que riega los campos. Por eso la opción correcta es la D.",
+      "justificacion_correcta": "El texto tiene dos partes: una describe el recorrido del agua etapa por etapa, y la otra explica por qué el calor del sol influye en la lluvia, porque ese calor hace subir el vapor que después cae sobre los campos. Por eso la opción correcta es «explica por qué el calor del sol influye en la lluvia».",
       "opciones_incorrectas": {
-        "A": "El texto nombra el vapor en una sola frase, pero no lo define ni dice su color.",
-        "B": "Este texto no da instrucciones para armar nada; eso aparece en otro de los textos del cuadernillo.",
-        "C": "El texto no se detiene a describir los colores de las nubes ni de las montañas."
+        "B": "Este texto no da instrucciones para armar una cometa liviana; eso aparece en otro de los textos del cuadernillo.",
+        "C": "El texto nombra la nube, la laguna y la ladera, pero no se detiene a describir de qué color son.",
+        "D": "El texto nombra el vapor en una sola frase, pero no lo define ni explica de qué color se ve."
       },
-      "contexto_id": "ctx-lectura-3"
+      "contexto_id": "viaje_del_agua"
     },
     {
       "id": "P3L12",
-      "numero": 12,
-      "enunciado": "[[IMG]]<p>El propósito de los textos que aparecen en los recuadros, debajo de cada imagen, es</p>",
+      "numero": 4,
+      "enunciado": "<p>El propósito de los textos que aparecen en los recuadros, debajo de cada imagen, es</p>",
       "opciones": {
-        "A": "indicar cuánto cuesta el agua de la laguna.",
-        "B": "describir qué le pasa al agua en cada etapa.",
-        "C": "nombrar a quién escribió el texto.",
-        "D": "explicar de qué color es el agua."
+        "A": "describir qué le pasa al agua en cada etapa.",
+        "B": "indicar cuánto cuesta el agua de la laguna.",
+        "C": "explicar de qué color es el agua.",
+        "D": "nombrar a quién escribió el texto."
       },
-      "clave": "B",
+      "clave": "A",
       "competencia": "1",
       "afirmacion": 1,
       "evidencia": "1.3",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo y explicativo. » Relaciono gráficas con texto escrito. » Identifico el propósito comunicativo y la idea global de un texto.",
       "que_evalua": "La capacidad para identificar la función de la información que aparece debajo de las imágenes.",
-      "justificacion_correcta": "Debajo de cada imagen hay un recuadro que describe, en orden, qué le ocurre al agua: el sol la calienta, el vapor sube, la nube deja caer la lluvia y el agua vuelve a la laguna. Esa información acompaña y explica el dibujo. Por eso la opción correcta es la B.",
+      "justificacion_correcta": "Debajo de cada imagen hay un recuadro que describe, en orden, qué le ocurre al agua: el sol la calienta, el vapor sube, la nube deja caer la lluvia y el agua vuelve a la laguna. Esa información acompaña y explica el dibujo. Por eso la opción correcta es «describir qué le pasa al agua en cada etapa».",
       "opciones_incorrectas": {
-        "A": "Los recuadros no hablan de precios.",
-        "C": "No mencionan al autor del texto.",
-        "D": "No se refieren al color del agua."
+        "B": "Los recuadros no hablan de precios.",
+        "D": "No mencionan al autor del texto.",
+        "C": "No se refieren al color del agua."
       },
-      "imagen_figura": "assets/banco-lc-3-p1/q09.png",
-      "contexto_id": "ctx-lectura-3"
+      "contexto_id": "viaje_del_agua"
     },
     {
-      "id": "P3L13",
-      "numero": 13,
-      "enunciado": "<p>En la frase «<b>Antes</b> de armar la cometa, hay que escoger un papel liviano», la palabra «Antes» sirve para</p>",
+      "id": "P3L17",
+      "numero": 5,
+      "enunciado": "<p>De acuerdo con el texto, ¿qué hace que una parte del agua de la laguna se convierta en vapor?</p>",
       "opciones": {
-        "A": "indicar en qué momento se debe hacer una acción.",
-        "B": "señalar que la cometa ya quedó armada.",
-        "C": "describir cómo es el papel que se usa.",
-        "D": "mostrar quién arma la cometa."
+        "A": "El aire frío de la parte alta.",
+        "B": "El calor del sol.",
+        "C": "La lluvia que cae desde la nube.",
+        "D": "La quebrada que baja por la ladera."
       },
-      "clave": "A",
+      "clave": "B",
       "competencia": "3",
       "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
-      "que_evalua": "La capacidad para identificar la función de una palabra dentro de un enunciado.",
-      "justificacion_correcta": "La palabra «Antes» relaciona dos acciones e indica el momento en que se hace una de ellas: escoger el papel ocurre antes de armar la cometa. Por eso cumple la función de indicar el momento. La respuesta correcta es la A.",
+      "evidencia": "3.2",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para identificar quién realiza una acción descrita en el texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «El calor del sol». El texto dice que, cuando el sol calienta la laguna, una parte del agua se vuelve vapor y sube muy alto.",
       "opciones_incorrectas": {
-        "B": "No dice que la cometa ya esté armada; indica un paso previo.",
-        "C": "No describe el papel.",
-        "D": "No señala quién hace la acción."
+        "A": "El aire frío de arriba no produce el vapor: lo que hace es juntarlo en gotas para armar la nube.",
+        "C": "La lluvia es el agua que ya viene bajando desde la nube, en una etapa posterior del viaje.",
+        "D": "Por la quebrada corre el agua que regresa a la laguna cuando el viaje termina."
       },
-      "imagen_figura": "",
-      "contexto_id": "ctx-lectura-4"
+      "contexto_id": "viaje_del_agua"
     },
     {
-      "id": "P3L14",
-      "numero": 14,
-      "enunciado": "<p>Según el texto, ¿qué hay que evitar para que la cometa no se caiga?</p>",
+      "id": "P3L04",
+      "numero": 6,
+      "enunciado": "<p>De acuerdo con lo leído, ¿de qué hicieron los dioses a los demás animales?</p>",
       "opciones": {
-        "A": "Amarrar las varas en forma de cruz.",
-        "B": "Escoger un papel liviano y de colores.",
-        "C": "Dejar la cola demasiado corta.",
-        "D": "Tomar el hilo con las dos manos."
+        "A": "De piedras y de barro.",
+        "B": "De agua y de semillas.",
+        "C": "De hojas y de flores.",
+        "D": "De arcilla y de plumas."
+      },
+      "clave": "B",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para recuperar información puntual y literal del texto.",
+      "justificacion_correcta": "El texto dice de manera literal que «ya se habían acabado el agua y las semillas, que eran los materiales con los que habían hecho a todos los demás animales». Por eso la respuesta correcta es «De agua y de semillas».",
+      "opciones_incorrectas": {
+        "D": "La arcilla y las plumas se usaron solo para la guacamaya, no para los demás animales.",
+        "C": "Las hojas y flores no se mencionan como materiales de creación.",
+        "A": "Las piedras y el barro no aparecen en el texto."
+      },
+      "contexto_id": "guacamaya_de_colores"
+    },
+    {
+      "id": "P3L05",
+      "numero": 7,
+      "enunciado": "<p>En la frase «Con la arcilla moldearon un ave», la palabra <b>«moldearon»</b> indica una acción realizada por</p>",
+      "opciones": {
+        "A": "los dioses del bosque.",
+        "B": "la guacamaya recién creada.",
+        "C": "los árboles del bosque.",
+        "D": "las plumas de colores."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para reconocer la función referencial de una palabra y a quién reemplaza dentro del texto.",
+      "justificacion_correcta": "El verbo «moldearon» está en plural y se refiere a un sujeto mencionado antes: «los dioses del bosque», que son quienes hacen las cosas en el relato. Por eso la respuesta correcta es «los dioses del bosque».",
+      "opciones_incorrectas": {
+        "B": "La guacamaya recién creada es el resultado de esa acción, no quien la realiza.",
+        "C": "Los árboles del bosque reciben la alegría, pero no participan en la creación del ave.",
+        "D": "Las plumas de colores son un material que se pega sobre el ave, no realizan la acción."
+      },
+      "contexto_id": "guacamaya_de_colores"
+    },
+    {
+      "id": "P3L06",
+      "numero": 8,
+      "enunciado": "<p>Lee este fragmento: «los dioses del bosque… notaron que faltaba un ser que llevara la alegría de un árbol a otro». ¿Cuál opción dice lo mismo con otras palabras?</p>",
+      "opciones": {
+        "A": "Los árboles decidieron crear un ave que llevara alegría de uno a otro.",
+        "B": "Los animales le pidieron a los dioses un ave que alegrara el bosque.",
+        "C": "Los dioses vieron que faltaba un animal que alegrara los árboles.",
+        "D": "Los dioses estaban tristes porque ya no quedaban árboles en el bosque."
+      },
+      "clave": "C",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para reconocer una paráfrasis: decir lo mismo del texto con otras palabras.",
+      "justificacion_correcta": "Parafrasear es decir lo mismo con otras palabras. La opción «Los dioses vieron que faltaba un animal que alegrara los árboles» conserva la idea del fragmento: los dioses notaron que hacía falta un ser encargado de llevar alegría de un árbol a otro. Por eso es la correcta.",
+      "opciones_incorrectas": {
+        "A": "Contradice el texto: los árboles reciben la alegría, no deciden crear al ave.",
+        "B": "Cambia el sentido: en el relato los animales no le piden nada a los dioses.",
+        "D": "Inventa un dato: el texto no dice que los dioses estuvieran tristes ni que faltaran árboles."
+      },
+      "contexto_id": "guacamaya_de_colores"
+    },
+    {
+      "id": "P3L07",
+      "numero": 9,
+      "enunciado": "<p>Según lo leído, ¿para qué crearon los dioses a la guacamaya?</p>",
+      "opciones": {
+        "A": "Para conseguir más plumas de colores.",
+        "B": "Para tener un ave que pudieran meter en una jaula.",
+        "C": "Para que hubiera alguien que llevara alegría a los árboles.",
+        "D": "Para repoblar el bosque, que se había quedado sin animales."
       },
       "clave": "C",
       "competencia": "3",
       "afirmacion": 3,
       "evidencia": "3.2",
       "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
-      "que_evalua": "La capacidad para ubicar información literal del texto para resolver un problema planteado.",
-      "justificacion_correcta": "El texto advierte: «Si la cola queda muy corta, la cometa dará vueltas y se caerá». Entonces, para que la cometa no se caiga, hay que evitar dejar la cola demasiado corta. La respuesta correcta es la C.",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para reconocer el motivo o la razón de un hecho ocurrido en la historia.",
+      "justificacion_correcta": "El texto explica que los dioses «notaron que faltaba un ser que llevara la alegría de un árbol a otro». Ese es el motivo de la creación de la guacamaya. La respuesta correcta es «Para que hubiera alguien que llevara alegría a los árboles».",
       "opciones_incorrectas": {
-        "A": "Amarrar las varas en cruz es un paso recomendado, no un riesgo.",
-        "B": "Escoger un papel liviano es necesario antes de armarla.",
-        "D": "Tomar el hilo con las manos es parte de los pasos, no la hace caer."
+        "B": "El texto dice que la guacamaya no puede ser encerrada; no es el motivo.",
+        "A": "Las plumas son un material usado, no la razón de la creación.",
+        "D": "El bosque ya tenía animales; solo faltaba uno con esa tarea."
       },
-      "contexto_id": "ctx-lectura-4"
+      "contexto_id": "guacamaya_de_colores"
     },
     {
-      "id": "P3L15",
-      "numero": 15,
-      "enunciado": "<p>El texto dice que «en agosto el viento sopla más fuerte en muchas regiones de Colombia y por eso en ese mes las cometas se elevan mejor». ¿Qué se puede concluir de esta idea?</p>",
+      "id": "P3L08",
+      "numero": 10,
+      "enunciado": "<p>Después de que se acabaron el agua y las semillas, ¿qué hicieron los dioses, en orden?</p>",
       "opciones": {
-        "A": "Las cometas hacen que el viento sople más fuerte.",
-        "B": "Volar cometas resulta mejor cuando hay más viento.",
-        "C": "El viento fuerte impide que las cometas se eleven.",
-        "D": "Solo en el mes de agosto se pueden volar cometas."
-      },
-      "clave": "B",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.3",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
-      "que_evalua": "La capacidad para identificar una conclusión a partir de una idea del texto.",
-      "justificacion_correcta": "Si en agosto el viento sopla más fuerte y por eso las cometas se elevan mejor, se concluye que volar cometas sale mejor cuando hay más viento. La respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "El texto no dice que las cometas cambien el viento.",
-        "C": "Es lo contrario: el viento fuerte ayuda a que se eleven.",
-        "D": "No dice que agosto sea el único mes para volarlas."
-      },
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P3L16",
-      "numero": 16,
-      "enunciado": "[[IMG]]<p>La imagen con los pasos numerados que acompaña al texto, ¿para qué está?</p>",
-      "opciones": {
-        "A": "Para enseñar de qué modo se arregla una cometa rota.",
-        "B": "Para mostrar, paso por paso, cómo se hace una cometa.",
-        "C": "Para indicar cuántos metros sube la cometa cada minuto.",
-        "D": "Para explicar cómo es el hilo por dentro."
-      },
-      "clave": "B",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.3",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
-      "que_evalua": "La capacidad para relacionar elementos lingüísticos y no lingüísticos (texto e imagen).",
-      "justificacion_correcta": "La imagen muestra una secuencia de pasos numerados que coinciden con las instrucciones del texto: cortar las varas, amarrar la cruz, pegar el papel, amarrar el hilo, poner la cola y salir a elevarla. Su propósito es representar paso a paso cómo se hace una cometa. La respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "No trata de arreglar una cometa dañada.",
-        "C": "No muestra la altura que alcanza ni el tiempo.",
-        "D": "No explica cómo es el hilo por dentro."
-      },
-      "imagen_figura": "assets/banco-lc-3-p1/q16.png",
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P3L17",
-      "numero": 17,
-      "enunciado": "<p>Según lo leído, ¿quiénes empujaron la puerta de vidrio para salir?</p>",
-      "opciones": {
-        "A": "La persona que cerró con llave.",
-        "B": "La mamá que lo esperaba afuera.",
-        "C": "El niño que se quedó leyendo.",
-        "D": "Los compañeros de tercero."
+        "A": "Primero soplaron el ave. Luego pegaron las plumas. Después tomaron la arcilla. Finalmente la moldearon.",
+        "B": "Primero soplaron las plumas. Luego moldearon el agua. Después crearon semillas. Finalmente la guacamaya voló.",
+        "C": "Primero crearon los árboles. Luego repartieron alegría. Después moldearon un ave. Finalmente la encerraron.",
+        "D": "Primero tomaron la arcilla. Luego moldearon un ave. Después le pegaron las plumas. Finalmente soplaron y voló."
       },
       "clave": "D",
       "competencia": "3",
@@ -487,24 +302,249 @@
       "evidencia": "3.2",
       "dificultad": "BAJA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para identificar quién realiza una acción descrita en el texto.",
-      "justificacion_correcta": "El texto dice de manera literal: «Mis compañeros de tercero recogieron sus maletas, empujaron la puerta de vidrio y salieron corriendo hacia el patio». La respuesta correcta es la D.",
+      "que_evalua": "La capacidad para reconocer el orden temporal de las acciones que realizan los personajes.",
+      "justificacion_correcta": "El segundo momento del relato presenta este orden: tomaron la arcilla, moldearon el ave, le pegaron las plumas de colores y al soplar sobre ella, voló. Ese orden corresponde a la opción «Primero tomaron la arcilla. Luego moldearon un ave. Después le pegaron las plumas.…».",
       "opciones_incorrectas": {
-        "A": "El relato no cuenta quién cerró con llave; el niño solo encontró la puerta cerrada.",
-        "B": "La mamá estaba esperando afuera, en la portería, no dentro de la biblioteca.",
-        "C": "El niño aclara que no se movió de la mesa porque quería terminar el cuento."
+        "B": "Las acciones están desordenadas y algunas no ocurren así.",
+        "C": "Crear los árboles y encerrar al ave no corresponden a este momento.",
+        "A": "Invierte el orden: soplar y moldear no van al inicio."
       },
-      "contexto_id": "ctx-lectura-5"
+      "contexto_id": "guacamaya_de_colores"
+    },
+    {
+      "id": "P3L13",
+      "numero": 11,
+      "enunciado": "<p>En la frase «<b>Antes</b> de armar la cometa, hay que escoger un papel liviano», la palabra «Antes» sirve para</p>",
+      "opciones": {
+        "A": "mostrar quién debe escoger el papel liviano.",
+        "B": "describir cómo debe ser el papel que se usa.",
+        "C": "indicar en qué momento se hace una acción.",
+        "D": "señalar que la cometa ya quedó armada del todo."
+      },
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
+      "que_evalua": "La capacidad para identificar la función de una palabra dentro de un enunciado.",
+      "justificacion_correcta": "La palabra «Antes» relaciona dos acciones e indica el momento en que se hace una de ellas: escoger el papel ocurre antes de armar la cometa. Por eso la respuesta correcta es «indicar en qué momento se hace una acción».",
+      "opciones_incorrectas": {
+        "A": "La palabra «Antes» no señala quién debe escoger el papel liviano, sino cuándo hacerlo.",
+        "B": "No describe cómo debe ser el papel; eso lo dicen las palabras «liviano y de colores».",
+        "D": "No dice que la cometa ya quedó armada del todo: indica un paso anterior a armarla."
+      },
+      "contexto_id": "como_hacer_una_cometa"
+    },
+    {
+      "id": "P3L14",
+      "numero": 12,
+      "enunciado": "<p>Según el texto, ¿qué hay que evitar para que la cometa no se caiga?</p>",
+      "opciones": {
+        "A": "Escoger un papel liviano y de colores.",
+        "B": "Tomar el hilo con las dos manos.",
+        "C": "Amarrar las varas en forma de cruz.",
+        "D": "Dejar la cola demasiado corta."
+      },
+      "clave": "D",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
+      "que_evalua": "La capacidad para ubicar información literal del texto para resolver un problema planteado.",
+      "justificacion_correcta": "El texto advierte: «Si la cola queda muy corta, la cometa dará vueltas y se caerá». Entonces, para que la cometa no se caiga, hay que evitar dejar la cola demasiado corta. La respuesta correcta es «Dejar la cola demasiado corta».",
+      "opciones_incorrectas": {
+        "C": "Amarrar las varas en cruz es un paso recomendado, no un riesgo.",
+        "A": "Escoger un papel liviano es necesario antes de armarla.",
+        "B": "Tomar el hilo con las manos es parte de los pasos, no la hace caer."
+      },
+      "contexto_id": "como_hacer_una_cometa"
+    },
+    {
+      "id": "P3L15",
+      "numero": 13,
+      "enunciado": "<p>El texto dice que «en agosto el viento sopla más fuerte en muchas regiones de Colombia y por eso en ese mes las cometas se elevan mejor». ¿Qué se puede concluir de esta idea?</p>",
+      "opciones": {
+        "A": "Volar cometas resulta mejor cuando hay más viento.",
+        "B": "El viento fuerte impide que las cometas se eleven.",
+        "C": "Las cometas hacen que el viento sople más fuerte.",
+        "D": "Solo en el mes de agosto se pueden volar cometas."
+      },
+      "clave": "A",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
+      "que_evalua": "La capacidad para identificar una conclusión a partir de una idea del texto.",
+      "justificacion_correcta": "Si en agosto el viento sopla más fuerte y por eso las cometas se elevan mejor, se concluye que volar cometas sale mejor cuando hay más viento. La respuesta correcta es «Volar cometas resulta mejor cuando hay más viento».",
+      "opciones_incorrectas": {
+        "C": "El texto no dice que las cometas cambien el viento.",
+        "B": "Es lo contrario: el viento fuerte ayuda a que se eleven.",
+        "D": "No dice que agosto sea el único mes para volarlas."
+      },
+      "contexto_id": "como_hacer_una_cometa"
+    },
+    {
+      "id": "P3L16",
+      "numero": 14,
+      "enunciado": "<p>La imagen con los pasos numerados que acompaña al texto, ¿para qué está?</p>",
+      "opciones": {
+        "A": "Para explicar cómo es el hilo por dentro.",
+        "B": "Para enseñar de qué modo se arregla una cometa rota.",
+        "C": "Para mostrar, paso por paso, cómo se hace una cometa.",
+        "D": "Para indicar cuántos metros sube la cometa cada minuto."
+      },
+      "clave": "C",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.3",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo manuales e instructivos. » Describo eventos de manera secuencial. » Elaboro instrucciones que evidencian secuencias lógicas. » Relaciono gráficas con texto escrito.",
+      "que_evalua": "La capacidad para relacionar elementos lingüísticos y no lingüísticos (texto e imagen).",
+      "justificacion_correcta": "La imagen muestra una secuencia de pasos numerados que coinciden con las instrucciones del texto: cortar las varas, amarrar la cruz, pegar el papel, amarrar el hilo, poner la cola y salir a elevarla. Su propósito es representar paso a paso cómo se hace una cometa. La respuesta correcta es «Para mostrar, paso por paso, cómo se hace una cometa».",
+      "opciones_incorrectas": {
+        "B": "No trata de arreglar una cometa dañada.",
+        "D": "No muestra la altura que alcanza ni el tiempo.",
+        "A": "No explica cómo es el hilo por dentro."
+      },
+      "contexto_id": "como_hacer_una_cometa"
+    },
+    {
+      "id": "P3L20",
+      "numero": 15,
+      "enunciado": "<p>El texto incluye esta advertencia:</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>«¡Ten cuidado! Si la cola queda muy corta, la cometa dará vueltas y se caerá».</p></div><p>¿Para qué escribió esa frase quien hizo el instructivo?</p>",
+      "opciones": {
+        "A": "Para contar quién inventó las cometas de papel.",
+        "B": "Para avisar de un descuido que echa a perder el vuelo.",
+        "C": "Para pedir que las varas se corten de guadua y no de otro material.",
+        "D": "Para explicar de qué colores conviene pintar el papel."
+      },
+      "clave": "B",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.5",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para reconocer la intención comunicativa de un enunciado dentro del texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Para avisar de un descuido que echa a perder el vuelo». La frase interrumpe la lista de pasos para llamar la atención sobre algo que puede salir mal: si la cola queda corta, la cometa da vueltas y se cae.",
+      "opciones_incorrectas": {
+        "A": "El instructivo no cuenta el origen ni la historia de las cometas.",
+        "C": "La guadua se nombra en el primer paso, y allí no hay ninguna advertencia.",
+        "D": "La frase no dice nada sobre los colores del papel."
+      },
+      "contexto_id": "como_hacer_una_cometa"
+    },
+    {
+      "id": "P3L01",
+      "numero": 16,
+      "enunciado": "<p>¿De qué partes está hecho el texto anterior?</p>",
+      "opciones": {
+        "A": "De título, fotografía y solución.",
+        "B": "De título, imagen y despedida.",
+        "C": "De título, imagen y conclusión.",
+        "D": "De título, fotografía y desarrollo."
+      },
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diferentes clases de textos: manuales, tarjetas, afiches, cartas, periódicos, etc. » Reconozco la función social de los diversos tipos de textos que leo. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para identificar las partes de un texto y la función de cada una según el tipo de texto.",
+      "justificacion_correcta": "Es un texto informativo con tres partes: un título que resalta el tema, una fotografía que ilustra la nota y un cuerpo o desarrollo donde se explica la información. Esa estructura corresponde a la opción «De título, fotografía y desarrollo».",
+      "opciones_incorrectas": {
+        "C": "El cuerpo de la nota no es una conclusión: no cierra ni retoma ideas, sino que desarrolla recomendaciones.",
+        "A": "El texto no plantea un problema con su solución, sino consejos para cuidar la huerta.",
+        "B": "El texto no termina con una despedida; presenta el desarrollo de la información."
+      },
+      "contexto_id": "huerta_en_casa"
+    },
+    {
+      "id": "P3L02",
+      "numero": 17,
+      "enunciado": "<p>Con las recomendaciones que ofrece, el texto quiere sobre todo</p>",
+      "opciones": {
+        "A": "describir cómo es el jardín botánico de la ciudad.",
+        "B": "convencer de que cultivar en casa es muy costoso.",
+        "C": "contar la vida de la experta Lucía Rendón y su trabajo.",
+        "D": "enseñar a cuidar una huerta para que crezca sana."
+      },
+      "clave": "D",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diferentes clases de textos: manuales, tarjetas, afiches, cartas, periódicos, etc. » Reconozco la función social de los diversos tipos de textos que leo. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para inferir el propósito general del texto y relacionarlo con el lector al que va dirigido.",
+      "justificacion_correcta": "El texto reúne varios consejos (regar temprano, usar buena tierra, dar sombra) cuyo propósito es enseñar al lector a cuidar su huerta para que las plantas crezcan sanas. Por eso la opción correcta es «enseñar a cuidar una huerta para que crezca sana».",
+      "opciones_incorrectas": {
+        "A": "El jardín botánico de la ciudad solo se nombra de paso, para presentar a la experta.",
+        "B": "El texto no habla de lo que cuesta cultivar en casa; ofrece cuidados sencillos.",
+        "C": "Se nombra a la experta como fuente de los consejos, pero no se cuenta su vida ni su trabajo."
+      },
+      "contexto_id": "huerta_en_casa"
+    },
+    {
+      "id": "P3L03",
+      "numero": 18,
+      "enunciado": "<p>En la nota, la experta recomienda: «usa buena tierra con <b>abono</b> natural». Según esa frase, la palabra <b>«abono»</b> se refiere a</p>",
+      "opciones": {
+        "A": "una sombra para las plantas pequeñas.",
+        "B": "una herramienta para cavar la tierra.",
+        "C": "un material que alimenta el suelo.",
+        "D": "un recipiente para guardar el agua."
+      },
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diferentes clases de textos: manuales, tarjetas, afiches, cartas, periódicos, etc. » Reconozco la función social de los diversos tipos de textos que leo. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para identificar el significado de una palabra a partir del contexto del texto.",
+      "justificacion_correcta": "En la nota, el abono va siempre junto a la tierra: se aconseja usar buena tierra «con abono natural» para que las plantas crezcan sanas. Lo que se le agrega a la tierra con ese fin es un material que la nutre. Por eso la respuesta correcta es «un material que alimenta el suelo».",
+      "opciones_incorrectas": {
+        "B": "La nota no dice que el abono sirva para cavar; el abono se mezcla con la tierra, no la excava.",
+        "D": "El abono no guarda agua; es la regadera la que lleva el agua. El abono mejora el suelo.",
+        "A": "La sombra es otra de las recomendaciones de la nota; el abono no da sombra, alimenta el suelo."
+      },
+      "contexto_id": "huerta_en_casa"
+    },
+    {
+      "id": "P3L19",
+      "numero": 19,
+      "enunciado": "<p>En la nota del periódico se distinguen dos voces: la de quien publica la información y la de quien da los consejos para la huerta. ¿A quién pertenece la voz que da los consejos?</p>",
+      "opciones": {
+        "A": "Al periódico EL DIARIO, que publica la nota en su sección Hogar y jardín.",
+        "B": "A la experta Lucía Rendón, del jardín botánico de la ciudad.",
+        "C": "A las familias que leen la sección Hogar y jardín en casa.",
+        "D": "Al pie que acompaña la fotografía de la huerta casera."
+      },
+      "clave": "B",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.4",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
+      "que_evalua": "La capacidad para identificar y caracterizar al narrador del texto (las voces del relato).",
+      "justificacion_correcta": "La respuesta correcta es la opción «A la experta Lucía Rendón, del jardín botánico de la ciudad». El cuerpo de la nota dice que ella comparte algunas recomendaciones y, enseguida, aparecen los consejos de regar temprano, usar buena tierra con abono natural y dar sombra a las plantas más pequeñas.",
+      "opciones_incorrectas": {
+        "A": "El periódico publica la nota en su sección Hogar y jardín y le presta el espacio, pero los consejos los aporta la persona experta que allí se cita.",
+        "C": "Las familias que leen esa sección en casa son las lectoras a quienes se dirigen los consejos, no quienes los dan.",
+        "D": "El pie de la fotografía solo nombra lo que se ve, «Una huerta casera bien cuidada», y no aconseja nada."
+      },
+      "contexto_id": "huerta_en_casa"
     },
     {
       "id": "P3L18",
-      "numero": 18,
-      "enunciado": "<p>Lee este enunciado, que NO hace parte del texto: «Después de golpear un rato la reja, comprendí desde la ventana que nadie vendría hasta la mañana». ¿Qué relación tiene ese enunciado con «Encerrado entre libros»?</p>",
+      "numero": 20,
+      "enunciado": "<p>Lee ahora este aviso, que NO hace parte de la nota del periódico:</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p style='text-align:center'><b>Aviso del comité ambiental</b></p><p>Vecinos: para que las materas del corredor se mantengan verdes, rieguen a primera hora de la mañana, cambien la tierra cada seis meses y cuelguen una malla que dé sombra cuando el sol pegue muy fuerte.</p></div><p>¿Qué tienen en común ese aviso y la nota del periódico?</p>",
       "opciones": {
-        "A": "Que relatan hechos que no se parecen en nada.",
-        "B": "Que los dos son textos con instrucciones.",
-        "C": "Que relatan vivencias semejantes.",
-        "D": "Que el personaje se llama igual en los dos."
+        "A": "Los dos cuentan la historia del jardín botánico de la ciudad y de sus plantas.",
+        "B": "Los dos anuncian la venta de semillas y de abono natural.",
+        "C": "Los dos recomiendan cómo cuidar las plantas para que crezcan sanas.",
+        "D": "Los dos explican por qué el sol calienta más en los meses de verano."
       },
       "clave": "C",
       "competencia": "2",
@@ -513,63 +553,13 @@
       "dificultad": "ALTA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
       "que_evalua": "La capacidad para establecer relaciones de contenido y forma entre dos textos.",
-      "justificacion_correcta": "Los dos son relatos en primera persona en los que alguien queda encerrado, golpea pidiendo ayuda y, al mirar desde una ventana, entiende que nadie lo va a sacar. Por eso cuentan experiencias parecidas: la opción C.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Los dos recomiendan cómo cuidar las plantas para que crezcan sanas». El aviso pide regar temprano, cambiar la tierra y dar sombra, y la nota aconseja regar temprano, usar buena tierra con abono y dar sombra a las plantas más pequeñas; los dos textos entregan recomendaciones de cuidado.",
       "opciones_incorrectas": {
-        "A": "No son distintos: comparten la misma situación de quedar encerrado.",
-        "B": "Ninguno de los dos explica cómo hacer algo paso a paso.",
-        "D": "El texto no le da un nombre propio al personaje."
+        "A": "El jardín botánico se nombra en la nota solo para presentar a la experta, y en el aviso no aparece ni él ni sus plantas.",
+        "B": "Ninguno de los dos ofrece semillas ni abono natural a la venta.",
+        "D": "El sol se menciona como algo de lo que hay que proteger las plantas; no se explica por qué calienta más en unos meses."
       },
-      "contexto_id": "ctx-lectura-5"
-    },
-    {
-      "id": "P3L19",
-      "numero": 19,
-      "enunciado": "<p>En el texto, quien narra la historia es</p>",
-      "opciones": {
-        "A": "la bibliotecaria que guarda los libros.",
-        "B": "un vigilante que hace la ronda de la noche.",
-        "C": "un estudiante que quedó encerrado.",
-        "D": "la mamá que espera en la portería."
-      },
-      "clave": "C",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.4",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para identificar y caracterizar al narrador del texto (las voces del relato).",
-      "justificacion_correcta": "El que cuenta la historia habla en primera persona («me quedé en la biblioteca», «corrí hasta la puerta») y es uno de los estudiantes de tercero que se quedó adentro. Por eso el narrador es un estudiante encerrado: la opción C.",
-      "opciones_incorrectas": {
-        "A": "La bibliotecaria no aparece en el relato.",
-        "B": "En el texto nadie hace una ronda; afuera solo se oye el viento.",
-        "D": "La mamá está esperando afuera y no es quien cuenta la historia."
-      },
-      "contexto_id": "ctx-lectura-5"
-    },
-    {
-      "id": "P3L20",
-      "numero": 20,
-      "enunciado": "<p>Al escribir «pensé que me tocaría dormir entre los libros», ¿qué busca el narrador?</p>",
-      "opciones": {
-        "A": "Busca dejar claro que nunca lo sacaron de la biblioteca.",
-        "B": "Busca explicar cómo se ordenan los libros en los estantes.",
-        "C": "Busca transmitir la angustia de verse encerrado.",
-        "D": "Busca señalar que prefería quedarse a dormir allí."
-      },
-      "clave": "C",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.5",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo fábulas, cuentos, relatos mitológicos y leyendas. » Comprendo elementos como el tiempo, el espacio, las acciones y los personajes. » Identifico el propósito comunicativo y la idea global de un texto.",
-      "que_evalua": "La capacidad para reconocer la intención comunicativa de un enunciado dentro del texto.",
-      "justificacion_correcta": "La frase aparece justo después de que el niño ve el patio vacío y la portería con candado. Su intención es expresar la preocupación de sentirse atrapado. La respuesta correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "Como habla en pasado, se entiende que después pudo contar lo que le pasó.",
-        "B": "La frase no trata sobre el orden de los libros.",
-        "D": "No expresa gusto por quedarse; expresa preocupación."
-      },
-      "contexto_id": "ctx-lectura-5"
+      "contexto_id": "huerta_en_casa"
     }
   ],
   "preservar_orden_preguntas": true

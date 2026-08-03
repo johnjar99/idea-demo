@@ -45,8 +45,234 @@
   ],
   "preguntas": [
     {
-      "id": "P10C01",
+      "id": "P10C10",
       "numero": 1,
+      "enunciado": "<p>Observa el diagrama de fases y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para explicar por qué una misma sustancia puede presentarse como sólido, líquido o gas según las condiciones a las que se la someta, la docente proyecta un <b>diagrama de fases</b>. En él, el eje vertical lleva la <b>presión</b>, en atmósferas, y el horizontal la <b>temperatura</b>, en grados Celsius; cada región del plano corresponde a un estado. Sobre ese diagrama se señalaron dos condiciones de trabajo, los puntos <b>1</b> y <b>2</b>: están a la <b>misma altura</b> en el eje de presión (misma presión) y el punto 2 está más a la derecha (mayor temperatura) que el punto 1, de manera que la flecha que va del uno al otro es horizontal.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones representa correctamente el cambio que sufre la sustancia al pasar del punto 1 al punto 2?</p>",
+      "opciones": {
+        "A": "De sólido a gas a presión constante, porque entre los dos puntos solo aumenta la temperatura.",
+        "B": "De gas a sólido, porque entre los dos puntos la temperatura va bajando.",
+        "C": "De sólido a gas, porque entre los dos puntos suben tanto la presión como la temperatura.",
+        "D": "De sólido a gas, porque entre los dos puntos lo que va subiendo es la presión."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "componente": "Procesos químicos",
+      "cmc": "Procesos químicos",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden explicar un cambio de fase de una sustancia usando un modelo (diagrama presión-temperatura).",
+      "justificacion_correcta": "La opción «Sólido → gas a presión constante, aumentando solo la temperatura» es correcta. El punto 1 está en la región sólida y el 2 en la gaseosa; como ambos están a la misma presión, solo cambia la temperatura, que aumenta. Por eso la sustancia pasa de sólido a gas a presión constante (sublimación), tal como muestra la opción «Sólido → gas a presión constante, aumentando solo la temperatura».",
+      "opciones_incorrectas": {
+        "B": "Muestra gas→sólido con la temperatura bajando; pero la temperatura aumenta y el cambio es sólido→gas.",
+        "D": "Muestra la presión subiendo; la presión es la misma en ambos puntos, lo que cambia es la temperatura.",
+        "C": "Muestra ambas variables subiendo; la presión no cambia (misma altura de 1 y 2)."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q10.png"
+    },
+    {
+      "id": "P10C02",
+      "numero": 2,
+      "enunciado": "<p>Observa la recta de clasificación y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller de química de un colegio técnico, un docente prepara con el curso de décimo una práctica sobre enlaces. Hace reaccionar por separado con <b>cloro</b> gaseoso tres muestras rotuladas <b>J</b>, <b>Z</b> y <b>Q</b>, para obtener el <b>cloruro</b> de cada una. El montaje se arma bajo campana extractora y las muestras se toman con pinzas de porcelana, porque el cloro es tóxico y ataca la piel. Antes de escribir las fórmulas hay que anticipar qué clase de unión se forma en cada caso. El tipo de unión se predice restando las dos electronegatividades \\((\\Delta)\\): covalente no polar si \\(0\\le\\Delta<0{,}4\\), covalente polar si \\(0{,}4\\le\\Delta<1{,}7\\) e iónica si \\(\\Delta\\ge 1{,}7\\). La recta de la figura reparte esos tres tramos y sitúa en ellos cada muestra. Las electronegatividades anotadas en el tablero son: cloro \\(=3{,}2\\); <b>J</b> \\(=0{,}9\\); <b>Z</b> \\(=2{,}5\\); <b>Q</b> \\(=2{,}1\\).</p>[[IMG]]</div><p>Con esos valores, ¿cuál opción señala el cloruro cuya unión resulta de tipo <b>iónico</b>?</p>",
+      "opciones": {
+        "A": "Los cloruros de Z y de Q.",
+        "B": "Únicamente el cloruro de Z.",
+        "C": "Los cloruros de J y de Q.",
+        "D": "Únicamente el cloruro de J."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.3",
+      "componente": "Procesos químicos",
+      "cmc": "Procesos químicos",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de relacionar propiedades atómicas como la electronegatividad con el tipo de enlace que se forma.",
+      "justificacion_correcta": "La opción «Únicamente el cloruro de J» es correcta. Frente al cloro, la resta con J vale \\(3{,}2-0{,}9=2{,}3\\), que al ser \\(\\ge 1{,}7\\) cae en el tramo iónico de la recta. Con Z la resta vale \\(3{,}2-2{,}5=0{,}7\\) y con Q vale \\(3{,}2-2{,}1=1{,}1\\): las dos quedan en el tramo covalente polar. Por eso el único cloruro con unión iónica es el de J, como señala la opción «Únicamente el cloruro de J».",
+      "opciones_incorrectas": {
+        "A": "Reúne los cloruros de Z \\((\\Delta=0{,}7)\\) y de Q \\((\\Delta=1{,}1)\\), que caen en el tramo covalente polar y no en el iónico.",
+        "C": "Incluye el cloruro de J, que sí es iónico, pero le suma el de Q \\((\\Delta=1{,}1)\\), que es covalente polar.",
+        "B": "Señala el cloruro de Z \\((\\Delta=0{,}7)\\), cuya resta está en el tramo covalente polar."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q02.png"
+    },
+    {
+      "id": "P10C13",
+      "numero": 3,
+      "enunciado": "<p>Observa las dos situaciones y lee el enunciado.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el parque, Camila sale a trotar con su perro y lo lleva sujeto con una correa; el piso está seco y la correa es lo único que une a los dos. La figura recoge dos momentos del paseo. En la <b>situación 1</b> se ve a la niña y a su perro corriendo los dos hacia la <b>derecha</b>, con la correa floja. En la <b>situación 2</b>, ya pasados unos segundos, ella tira de la correa hasta que el perro queda <b>detenido</b>. Entre un momento y el otro, la rapidez del perro pasó de un valor apreciable a cero, y conviene recordar que un cuerpo solo cambia su velocidad si sobre él actúa una <b>fuerza neta</b> distinta de cero. Camila quiere entender qué fuerza produjo ese cambio.</p>[[IMG]]</div><p>¿Cuál de estas opciones describe bien la fuerza neta que hizo detener al perro?</p>",
+      "opciones": {
+        "A": "Apunta hacia la izquierda, en sentido contrario al movimiento, y por eso lo frena.",
+        "B": "Apunta hacia la derecha, en el mismo sentido en que venía el movimiento.",
+        "C": "Apunta hacia la izquierda, pero se debe al peso de la niña.",
+        "D": "Apunta hacia la derecha, porque la rapidez va disminuyendo."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "componente": "Procesos físicos",
+      "cmc": "Procesos físicos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar las características que debe tener una fuerza para lograr un resultado deseado (dinámica newtoniana).",
+      "justificacion_correcta": "La opción «Apunta hacia la izquierda, en sentido contrario al movimiento, y por eso lo frena» es correcta. El perro iba hacia la derecha; para detenerlo se necesita una aceleración en sentido contrario (hacia la izquierda). Como fuerza y aceleración tienen la misma dirección, la fuerza neta apunta hacia la izquierda, opuesta al movimiento, como muestra la opción «Apunta hacia la izquierda, en sentido contrario al movimiento, y por eso lo frena».",
+      "opciones_incorrectas": {
+        "B": "Muestra la fuerza hacia la derecha (en la dirección del movimiento); eso lo aceleraría, no lo frenaría.",
+        "C": "Apunta la fuerza a la izquierda pero la atribuye al peso de la niña, que no determina esa dirección.",
+        "D": "Muestra la fuerza hacia la derecha; que la rapidez baje confirma el frenado, pero la fuerza va en contra del movimiento."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q13_ia2.png"
+    },
+    {
+      "id": "P10C06",
+      "numero": 4,
+      "enunciado": "<p>Observa el termómetro con los estados de la sustancia y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Daniela debe reportar en el informe de su práctica de química la <b>densidad</b> de un disolvente <b>a 90 °C</b>, que es la temperatura a la que ese disolvente se usa en el proceso que están estudiando. Su plan es tomar cierto volumen con una pipeta graduada, pesarlo en la balanza analítica y calcular \\(\\rho=\\dfrac{m}{V}\\). Antes de empezar revisa la ficha técnica y encuentra el dato que aparece en el esquema, donde cada franja del termómetro señala un estado: por debajo de 5 °C el disolvente es sólido, por encima de 70 °C es gaseoso y <b>solo se mantiene líquido entre 5 °C y 70 °C</b>. Con ese dato tiene que decidir si sigue adelante.</p>[[IMG]]</div><p>¿Qué debe hacer Daniela con su plan y por qué?</p>",
+      "opciones": {
+        "A": "Cambiarlo, porque a 90 °C el disolvente ya no está en estado líquido.",
+        "B": "Dejarlo como está, porque la pipeta graduada mide directamente la densidad.",
+        "C": "Dejarlo como está, porque el disolvente se mantiene líquido a cualquier temperatura.",
+        "D": "Cambiarlo, porque con una pipeta graduada no se puede medir el volumen de un líquido."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "componente": "Procesos químicos",
+      "cmc": "Procesos químicos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden ajustar un experimento propuesto teniendo en cuenta nueva información relevante.",
+      "justificacion_correcta": "La opción «Cambiarlo, porque a 90 °C el disolvente ya no está en estado líquido» es correcta. El esquema muestra que el disolvente solo permanece líquido entre 5 °C y 70 °C, así que a 90 °C ya estaría en estado gaseoso. Un procedimiento pensado para tomar un líquido con pipeta y pesarlo no sirve en esas condiciones, de modo que Daniela debe modificar su plan.",
+      "opciones_incorrectas": {
+        "B": "Mantiene el plan suponiendo que la pipeta entrega la densidad; ese instrumento solo mide volumen, y la densidad hay que calcularla con la masa.",
+        "C": "Mantiene el plan suponiendo que el disolvente siempre es líquido, cuando la ficha técnica limita ese estado al rango de 5 °C a 70 °C.",
+        "D": "Propone el cambio por una razón falsa: con una pipeta graduada sí se mide el volumen de un líquido. El problema está en la temperatura de trabajo."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q06.png"
+    },
+    {
+      "id": "P10C03",
+      "numero": 5,
+      "enunciado": "<p>Observa la gráfica de los datos y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la práctica sobre gases, una estudiante encerró una muestra de aire en una jeringa conectada a un manómetro y sumergió el conjunto en un baño que mantuvo la <b>temperatura constante</b> durante toda la sesión. Fue comprimiendo la jeringa poco a poco y en cada paso anotó la <b>presión</b>, en atmósferas, y el <b>volumen</b>, en mililitros; cada punto de la gráfica es una de esas mediciones. Al terminar escribió esta conclusión: «si aumenta el volumen del gas, disminuye su temperatura». El docente le pide revisarla frente a las variables que de verdad intervinieron.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) resume, con flechas, cómo se comportan la presión (P), el volumen (V) y la temperatura (T) en el experimento. ¿Cuál diagrama justifica por qué la conclusión es <b>incorrecta</b>?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "componente": "Procesos químicos",
+      "cmc": "Procesos químicos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de evaluar una conclusión teniendo en cuenta los resultados y las variables de una investigación.",
+      "justificacion_correcta": "La opción «B» es correcta. La temperatura se mantuvo constante durante todo el experimento; el diagrama «B» la muestra como «constante», de modo que no puede afirmarse nada sobre cómo cambia. Una variable que no varía no puede aparecer en la conclusión.",
+      "opciones_incorrectas": {
+        "A": "Muestra la temperatura subiendo, como si cambiara igual que la presión, pero la T fue constante.",
+        "D": "Solo relaciona P y V; aunque es cierto, no valida una conclusión sobre la temperatura, que no cambió.",
+        "B": "Marca la temperatura como «no medible»; en realidad sí se puede medir, solo que aquí se mantuvo constante."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q03.png",
+      "opciones_imagenes": {
+        "A": "assets/banco-cn-10-p1/q03_opA.png",
+        "C": "assets/banco-cn-10-p1/q03_opB.png",
+        "D": "assets/banco-cn-10-p1/q03_opC.png",
+        "B": "assets/banco-cn-10-p1/q03_opD.png"
+      }
+    },
+    {
+      "id": "P10C11",
+      "numero": 6,
+      "enunciado": "<p>Observa las dos maneras de agarrar la herramienta y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller del colegio, Valeria tiene que soltar la tuerca que sujeta un panel solar a su poste para poder reorientarlo, y para eso cuenta con una herramienta de mango largo. La tuerca está muy apretada y ella quiere gastar la menor fuerza posible. Puede agarrarla por la <b>mitad del mango</b> (Manera 1) o por la <b>punta del mango</b> (Manera 2), como muestra la figura, donde una flecha marca en cada caso la distancia \\(d\\). En los dos casos la tuerca es el eje de giro y la fuerza se aplica hacia abajo. Recuerda que el momento de una fuerza se calcula con \\(\\tau = F\\cdot d\\), donde \\(d\\) es la distancia entre el eje y el punto en el que se aplica la fuerza, y que soltar esa tuerca exige siempre el mismo momento.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones describe la manera de soltar la tuerca haciendo <b>menos fuerza</b>?</p>",
+      "opciones": {
+        "A": "Agarrarla por la mitad del mango, con lo cual habría que dar menos vueltas a la tuerca.",
+        "B": "Agarrarla por la punta del mango, con lo cual habría que aplicar menos fuerza sobre el mango.",
+        "C": "Agarrarla por la mitad del mango, con lo cual habría que aplicar más fuerza sobre el mango.",
+        "D": "Agarrarla por la punta del mango, con lo cual habría que dar más vueltas a la tuerca."
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "componente": "Procesos físicos",
+      "cmc": "Procesos físicos",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden argumentar la mejor manera de realizar una acción usando el concepto de torque (ley de la palanca).",
+      "justificacion_correcta": "La opción «Agarrarla por la punta del mango, aplicando menos fuerza» es correcta. Como \\(\\tau=F\\cdot d\\), al agarrar la herramienta por la punta del mango la distancia \\(d\\) hasta el eje es mayor, de modo que se necesita <b>menos fuerza</b> para conseguir el mismo momento y soltar la tuerca. El número de vueltas, en cambio, es el mismo en las dos maneras.",
+      "opciones_incorrectas": {
+        "C": "Elige la manera que exige más fuerza; una herramienta de mango largo se usa justamente para lo contrario.",
+        "D": "Asocia la manera 2 con dar más vueltas, y el punto de agarre no cambia el número de vueltas.",
+        "A": "Asocia la manera 1 con dar menos vueltas; las vueltas son iguales y lo que cambia es la fuerza necesaria."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q11.png"
+    },
+    {
+      "id": "P10C15",
+      "numero": 7,
+      "enunciado": "<p>Observa las cuatro gráficas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cuatro equipos de décimo cronometraron, en segundos, lo que tarda una <b>pastilla efervescente</b> en disolverse por completo dentro de tres bebidas: <b>agua</b>, <b>limonada</b> y <b>té</b>. Con cada bebida repitieron la medida dos veces, primero con la bebida <b>fría</b> y luego con la bebida <b>caliente</b>. Cada equipo llevó sus medidas a un diagrama de barras y los cuatro diagramas salieron distintos.</p></div><p>En las medidas tomadas, dentro de una misma bebida el tiempo con la bebida caliente siempre resultó <b>menor</b> que con la bebida fría y, al comparar las tres bebidas, la <b>limonada</b> fue la de menor tiempo y el <b>agua</b> la de mayor tiempo, tanto en frío como en caliente. ¿Cuál de las gráficas reproduce esas dos tendencias?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "componente": "Procesos químicos",
+      "cmc": "Procesos químicos",
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar los datos de una gráfica y reconocer tendencias.",
+      "justificacion_correcta": "La opción «C» es correcta. En la gráfica «C» la barra de la bebida caliente queda por debajo de la de la bebida fría en las tres bebidas y, además, la limonada aparece como la de menor tiempo y el agua como la de mayor tiempo, tanto en frío como en caliente. Es la única gráfica que reproduce las dos tendencias a la vez.",
+      "opciones_incorrectas": {
+        "A": "En la gráfica A los tiempos en caliente sí quedan por debajo de los de frío, pero la limonada aparece como la de mayor tiempo de las tres, tanto en frío como en caliente, cuando en realidad fue la de menor tiempo.",
+        "C": "En la gráfica B los tiempos en caliente también quedan por debajo de los de frío, pero el agua aparece como la de menor tiempo del grupo, tanto en frío como en caliente, cuando esa bebida fue la de mayor tiempo de las tres.",
+        "B": "En la gráfica D los tiempos en caliente quedan por encima de los de frío, y eso contradice que con la bebida caliente el tiempo siempre resulte menor."
+      },
+      "opciones_imagenes": {
+        "A": "assets/banco-cn-10-p1/q15_opA.png",
+        "C": "assets/banco-cn-10-p1/q15_opB.png",
+        "D": "assets/banco-cn-10-p1/q15_opC.png",
+        "B": "assets/banco-cn-10-p1/q15_opD.png"
+      }
+    },
+    {
+      "id": "P10C16",
+      "numero": 8,
+      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Marcela amasa pan en su casa cada semana y siempre usa la misma cantidad de levadura. Ha notado que la masa crece más rápido cuando la deja tapada cerca del horno encendido que cuando la deja en el patio, al frío, y quiere saber si eso ocurre siempre o fue casualidad. Entonces plantea esta hipótesis: <b>«mientras más alta sea la temperatura, más rápido produce gas la levadura y más rápido crece la masa»</b>. Para ponerla a prueba tendrá que montar una comparación en la que solo cambie el factor que su hipótesis señala, dejando igual todo lo demás, y medir el resultado con la misma regla en todos los casos.</p></div><p>¿Cuál de los siguientes procedimientos le permite comprobar su hipótesis?</p>",
+      "opciones": {
+        "A": "Preparar porciones iguales de masa, dejar cada una a una temperatura distinta y medir cuánto crece en el mismo tiempo.",
+        "B": "Medir cuánto crece una sola porción de masa dejada a una única temperatura durante toda la mañana de trabajo.",
+        "C": "Comparar tres marcas distintas de levadura dejando todas las porciones en el mismo sitio de la cocina y medir cuánto crecen.",
+        "D": "Amasar el pan con más harina que de costumbre, dejar siempre la masa en el mismo sitio de la cocina y medir cuánto crece."
+      },
+      "clave": "A",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "componente": "Procesos vivos",
+      "cmc": "Procesos vivos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer el procedimiento experimental adecuado para comprobar una hipótesis.",
+      "justificacion_correcta": "La opción «Preparar porciones iguales de masa, dejar cada una a una temperatura distinta y medir…» es correcta. La hipótesis relaciona la temperatura con la rapidez con que la levadura hace crecer la masa, así que para ponerla a prueba hay que preparar porciones iguales, exponerlas a temperaturas distintas y medir en cada una cuánto crece en el mismo tiempo, dejando lo demás sin cambios.",
+      "opciones_incorrectas": {
+        "D": "Cambia la cantidad de harina y mantiene la temperatura: no pone a prueba lo que afirma la hipótesis.",
+        "C": "Cambia la marca de la levadura en vez de la temperatura, con lo cual estudia otra variable.",
+        "B": "Con una sola porción a una única temperatura no hay con qué comparar, así que no se puede saber si la temperatura influye."
+      }
+    },
+    {
+      "id": "P10C01",
+      "numero": 9,
       "enunciado": "<p>Observa las dos bolsas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al almacén de un puesto de salud rural llegaron <b>dos bolsas de 1 litro</b>: una de <b>suero fisiológico</b> y otra de <b>agua estéril</b> para lavado de material. Cada rótulo informa la cantidad de sal con una unidad distinta, y cada unidad se calcula así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Unidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cómo se calcula</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\% \\text{p/v}\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{g de sal}}{100\\ \\text{mL de solución}}\\times 100\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">ppm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{mg de sal}}{1\\ \\text{L de solución}}\\)</td></tr></table><p>La auxiliar del puesto de salud tiene presente que \\(1\\ \\text{g}=1000\\ \\text{mg}\\) y que \\(1\\ \\text{L}=1000\\ \\text{mL}\\). La bolsa de suero fisiológico está rotulada \\(0{,}9\\ \\%\\ \\text{p/v}\\) y la de agua estéril, \\(10\\ \\text{ppm}\\).</p>[[IMG]]</div><p>Según esas dos formas de calcular, ¿cuál opción señala la bolsa que aporta <b>más sal</b> junto con la masa que realmente hay en su litro?</p>",
       "opciones": {
         "A": "La bolsa de 0,9 % p/v: tiene 9 g de sal en su litro.",
@@ -63,7 +289,7 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden hacer inferencias a partir de un modelo químico de concentración para una situación particular.",
-      "justificacion_correcta": "La opción A es correcta. Al despejar la masa en cada rótulo se obtiene: en \\(0{,}9\\ \\%\\ \\text{p/v}\\) hay \\(0{,}9\\ \\text{g}\\) por cada \\(100\\ \\text{mL}\\), es decir \\(9\\ \\text{g}\\) en \\(1\\ \\text{L}\\); en \\(10\\ \\text{ppm}\\) hay \\(10\\ \\text{mg}\\), o sea \\(0{,}01\\ \\text{g}\\), en \\(1\\ \\text{L}\\). Como \\(9\\ \\text{g}\\) es muchísimo más que \\(0{,}01\\ \\text{g}\\), la bolsa más concentrada es la de \\(0{,}9\\ \\%\\ \\text{p/v}\\), y la opción A le asigna la masa correcta.",
+      "justificacion_correcta": "La opción «La bolsa de 0,9 % p/v: tiene 9 g de sal en su litro» es correcta. Al despejar la masa en cada rótulo se obtiene: en \\(0{,}9\\ \\%\\ \\text{p/v}\\) hay \\(0{,}9\\ \\text{g}\\) por cada \\(100\\ \\text{mL}\\), es decir \\(9\\ \\text{g}\\) en \\(1\\ \\text{L}\\); en \\(10\\ \\text{ppm}\\) hay \\(10\\ \\text{mg}\\), o sea \\(0{,}01\\ \\text{g}\\), en \\(1\\ \\text{L}\\). Como \\(9\\ \\text{g}\\) es muchísimo más que \\(0{,}01\\ \\text{g}\\), la bolsa más concentrada es la de \\(0{,}9\\ \\%\\ \\text{p/v}\\), y la opción «La bolsa de 0,9 % p/v: tiene 9 g de sal en su litro» le asigna la masa correcta.",
       "opciones_incorrectas": {
         "B": "Acierta con la bolsa más concentrada, pero le asigna \\(900\\ \\text{g}\\); en su litro hay \\(9\\ \\text{g}\\) de sal.",
         "C": "Traslada los \\(9\\ \\text{g}\\) a la bolsa de 10 ppm, que en 1 L apenas tiene \\(0{,}01\\ \\text{g}\\).",
@@ -72,156 +298,16 @@
       "imagen_figura": "assets/banco-cn-10-p1/q01.png"
     },
     {
-      "id": "P10C02",
-      "numero": 2,
-      "enunciado": "<p>Observa la recta de clasificación y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller de química, un docente hace reaccionar por separado con <b>cloro</b> gaseoso tres muestras rotuladas <b>J</b>, <b>Z</b> y <b>Q</b>, para obtener el <b>cloruro</b> de cada una. El montaje se arma bajo campana extractora y las muestras se toman con pinzas de porcelana. El tipo de unión que se forma se predice restando las dos electronegatividades \\((\\Delta)\\): covalente no polar si \\(0\\le\\Delta<0{,}4\\), covalente polar si \\(0{,}4\\le\\Delta<1{,}7\\) e iónica si \\(\\Delta\\ge 1{,}7\\). Las electronegatividades anotadas en el tablero son: cloro \\(=3{,}2\\); <b>J</b> \\(=0{,}9\\); <b>Z</b> \\(=2{,}5\\); <b>Q</b> \\(=2{,}1\\).</p>[[IMG]]</div><p>Con esos valores, ¿cuál opción señala el cloruro cuya unión resulta de tipo <b>iónico</b>?</p>",
-      "opciones": {
-        "A": "Los cloruros de Z y de Q.",
-        "B": "Los cloruros de J y de Q.",
-        "C": "Únicamente el cloruro de J.",
-        "D": "Únicamente el cloruro de Z."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.3",
-      "componente": "Procesos químicos",
-      "cmc": "Procesos químicos",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de relacionar propiedades atómicas como la electronegatividad con el tipo de enlace que se forma.",
-      "justificacion_correcta": "La opción C es correcta. Frente al cloro, la resta con J vale \\(3{,}2-0{,}9=2{,}3\\), que al ser \\(\\ge 1{,}7\\) cae en el tramo iónico de la recta. Con Z la resta vale \\(3{,}2-2{,}5=0{,}7\\) y con Q vale \\(3{,}2-2{,}1=1{,}1\\): las dos quedan en el tramo covalente polar. Por eso el único cloruro con unión iónica es el de J, como señala la opción C.",
-      "opciones_incorrectas": {
-        "A": "Reúne los cloruros de Z \\((\\Delta=0{,}7)\\) y de Q \\((\\Delta=1{,}1)\\), que caen en el tramo covalente polar y no en el iónico.",
-        "B": "Incluye el cloruro de J, que sí es iónico, pero le suma el de Q \\((\\Delta=1{,}1)\\), que es covalente polar.",
-        "D": "Señala el cloruro de Z \\((\\Delta=0{,}7)\\), cuya resta está en el tramo covalente polar."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q02.png"
-    },
-    {
-      "id": "P10C03",
-      "numero": 3,
-      "enunciado": "<p>Observa la gráfica de los datos y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una estudiante midió la <b>presión</b> y el <b>volumen</b> de una muestra de gas manteniendo la <b>temperatura constante</b>; cada punto de la gráfica es una medición. A partir de esos datos concluyó: «si aumenta el volumen del gas, disminuye su temperatura».</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) resume, con flechas, cómo se comportan la presión (P), el volumen (V) y la temperatura (T) en el experimento. ¿Cuál diagrama justifica por qué la conclusión es <b>incorrecta</b>?</p>",
-      "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "componente": "Procesos químicos",
-      "cmc": "Procesos químicos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de evaluar una conclusión teniendo en cuenta los resultados y las variables de una investigación.",
-      "justificacion_correcta": "La opción B es correcta. La temperatura se mantuvo constante durante todo el experimento; el diagrama B la muestra como «constante», de modo que no puede afirmarse nada sobre cómo cambia. Una variable que no varía no puede aparecer en la conclusión.",
-      "opciones_incorrectas": {
-        "A": "Muestra la temperatura subiendo, como si cambiara igual que la presión, pero la T fue constante.",
-        "C": "Solo relaciona P y V; aunque es cierto, no valida una conclusión sobre la temperatura, que no cambió.",
-        "D": "Marca la temperatura como «no medible»; en realidad sí se puede medir, solo que aquí se mantuvo constante."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q03.png",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-10-p1/q03_opA.png",
-        "B": "assets/banco-cn-10-p1/q03_opB.png",
-        "C": "assets/banco-cn-10-p1/q03_opC.png",
-        "D": "assets/banco-cn-10-p1/q03_opD.png"
-      }
-    },
-    {
-      "id": "P10C04",
-      "numero": 4,
-      "enunciado": "<p>Observa la cartelera y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una salida de campo a la franja donde el río desemboca en el mar, un curso encuentra la cartelera que aparece abajo. Allí se afirma que, cuando las lluvias vuelven menos salada el agua, la población de <b>manglar</b> se reduce. En la guía de la salida, en cambio, los estudiantes leen que el manglar solo prospera en esa franja y que el <b>exceso de sal le hace daño</b>: por eso desarrolló <b>raíces en zanco</b> y <b>glándulas que expulsan la sal sobrante</b>. Ese año llovió varias semanas seguidas y la sal del agua bajó bastante.</p>[[IMG]]</div><p>De acuerdo con lo que dice la guía, ¿qué le pasa a la población de manglar cuando el agua se vuelve menos salada?</p>",
-      "opciones": {
-        "A": "Aumenta, porque se reduce el daño que le causaba el exceso de sal.",
-        "B": "Se queda sin hojas y sin raíces por faltarle la sal.",
-        "C": "Disminuye, tal como lo afirma la cartelera.",
-        "D": "Le aparecen glándulas nuevas para expulsar más sal."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "componente": "Procesos vivos",
-      "cmc": "Procesos vivos",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer los efectos que ocurren en una especie tras un cambio en su ecosistema.",
-      "justificacion_correcta": "La opción A es correcta. La guía señala que el exceso de sal le hace daño al manglar y que por eso la planta gasta energía expulsándola. Si el agua se vuelve menos salada, ese daño disminuye, las condiciones se hacen más favorables y la población tiende a aumentar.",
-      "opciones_incorrectas": {
-        "B": "Una planta sin hojas ni raíces no tendría sostén ni haría fotosíntesis; además, tener menos sal alrededor no destruye esos órganos.",
-        "C": "Repite lo que dice la cartelera, y eso contradice la guía: para que el manglar se reduzca tendría que subir la sal, no bajar.",
-        "D": "Las glándulas que expulsan sal ya existen en la planta, y un agua menos salada no hace aparecer órganos nuevos."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q04_ia.png"
-    },
-    {
-      "id": "P10C05",
-      "numero": 5,
-      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de décimo quiere responder esta pregunta: <b>¿cómo influye la intensidad de la luz en la cantidad de oxígeno que libera la elodea, una planta acuática?</b> En la ficha del laboratorio encuentran que la elodea trabaja bien entre 18 °C y 24 °C, que necesita agua con bicarbonato disuelto y que el oxígeno que libera sale en burbujas que se pueden contar. Disponen de cinco vasos iguales con un tallo de elodea del mismo tamaño en cada uno, cinco lámparas regulables y un cronómetro. Tienen presente que en un montaje válido solo debe cambiar aquello que se está investigando.</p></div><p>¿Cuál de estos montajes les permite responder la pregunta de investigación?</p>",
-      "opciones": {
-        "A": "Usar un solo vaso al que se le acerca la lámpara poco a poco y contar las burbujas una única vez, al terminar la jornada.",
-        "B": "Usar los cinco vasos con cinco intensidades de luz distintas, pero cada uno a su propia temperatura y con su propia cantidad de bicarbonato.",
-        "C": "Usar los cinco vasos con la misma intensidad de luz y distinta cantidad de bicarbonato, contando las burbujas en cada uno.",
-        "D": "Usar los cinco vasos con cinco intensidades de luz distintas, todos a la misma temperatura, con la misma agua y con tallos iguales, contando las burbujas cada cinco minutos."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 9,
-      "evidencia": "9.1",
-      "componente": "Procesos vivos",
-      "cmc": "Procesos vivos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden plantear un procedimiento experimental adecuado a los parámetros y variables de una pregunta de investigación.",
-      "justificacion_correcta": "La opción D es correcta. Para saber cómo influye la intensidad de la luz hay que <b>variarla</b> entre los vasos y dejar iguales las demás condiciones: temperatura, agua con bicarbonato y tamaño del tallo. Así, cualquier diferencia en el número de burbujas solo puede atribuirse a la luz, y contarlas cada cinco minutos permite comparar la rapidez con que cada vaso produce oxígeno.",
-      "opciones_incorrectas": {
-        "A": "Trabaja con un solo vaso y con un único conteo final, de modo que no hay con qué comparar el efecto de cada intensidad de luz.",
-        "B": "Cambia la luz, pero también la temperatura y el bicarbonato; así no se sabría cuál de las tres condiciones produjo la diferencia.",
-        "C": "Deja fija la luz y varía el bicarbonato: eso responde otra pregunta, no la que el grupo se planteó."
-      }
-    },
-    {
-      "id": "P10C06",
-      "numero": 6,
-      "enunciado": "<p>Observa el termómetro con los estados de la sustancia y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Daniela debe reportar en su informe la <b>densidad</b> de un disolvente <b>a 90 °C</b>. Su plan es tomar cierto volumen con una pipeta graduada, pesarlo en la balanza y calcular \\(\\rho=\\dfrac{m}{V}\\). Antes de empezar revisa la ficha técnica del disolvente y encuentra el dato que aparece en el esquema: <b>solo se mantiene líquido entre 5 °C y 70 °C</b>.</p>[[IMG]]</div><p>¿Qué debe hacer Daniela con su plan y por qué?</p>",
-      "opciones": {
-        "A": "Dejarlo como está, porque la pipeta graduada mide directamente la densidad.",
-        "B": "Dejarlo como está, porque el disolvente se mantiene líquido a cualquier temperatura.",
-        "C": "Cambiarlo, porque con una pipeta graduada no se puede medir el volumen de un líquido.",
-        "D": "Cambiarlo, porque a 90 °C el disolvente ya no está en estado líquido."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 9,
-      "evidencia": "9.1",
-      "componente": "Procesos químicos",
-      "cmc": "Procesos químicos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden ajustar un experimento propuesto teniendo en cuenta nueva información relevante.",
-      "justificacion_correcta": "La opción D es correcta. El esquema muestra que el disolvente solo permanece líquido entre 5 °C y 70 °C, así que a 90 °C ya estaría en estado gaseoso. Un procedimiento pensado para tomar un líquido con pipeta y pesarlo no sirve en esas condiciones, de modo que Daniela debe modificar su plan.",
-      "opciones_incorrectas": {
-        "A": "Mantiene el plan suponiendo que la pipeta entrega la densidad; ese instrumento solo mide volumen, y la densidad hay que calcularla con la masa.",
-        "B": "Mantiene el plan suponiendo que el disolvente siempre es líquido, cuando la ficha técnica limita ese estado al rango de 5 °C a 70 °C.",
-        "C": "Propone el cambio por una razón falsa: con una pipeta graduada sí se mide el volumen de un líquido. El problema está en la temperatura de trabajo."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q06.png"
-    },
-    {
       "id": "P10C07",
-      "numero": 7,
+      "numero": 10,
       "enunciado": "<p>Observa el esquema del cambio en el ADN y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>A un río llegó la descarga de una sustancia capaz de dañar el ADN. Al revisar los peces de la zona, un equipo de biólogos halló el cambio que muestra el esquema: dentro de un triplete de la secuencia cambió una base (C por G) y, como cada triplete indica cuál aminoácido se coloca en la cadena, la proteína que se arma <b>ya no funciona bien</b>. En los animales, un cambio en el ADN solo pasa a la siguiente generación si ocurrió en una <b>célula germinal</b>, es decir, en las que producen los gametos, y no en las células somáticas que forman los tejidos del cuerpo.</p>[[IMG]]</div><p>Si el cambio apareció en un pez macho, ¿en cuál de sus células tuvo que ocurrir para que también aparezca en sus <b>crías</b>?</p>",
       "opciones": {
-        "A": "En una célula de la piel, que es somática.",
-        "B": "En una célula de las branquias, que es somática.",
-        "C": "En una célula del hígado, que es somática.",
-        "D": "En un espermatozoide, la célula germinal que dará origen a la descendencia."
+        "A": "En una célula de las branquias del pez, que es somática.",
+        "B": "En un espermatozoide, que es una célula germinal.",
+        "C": "En una célula de la piel, que es somática.",
+        "D": "En una célula del hígado, que es somática."
       },
-      "clave": "D",
+      "clave": "B",
       "competencia": "b",
       "afirmacion": 5,
       "evidencia": "5.1",
@@ -230,355 +316,25 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes comprenden la relación entre mutaciones del ADN, la síntesis de proteínas y la posibilidad de que un cambio se herede.",
-      "justificacion_correcta": "La opción D es correcta. Solo los cambios que quedan en las células reproductoras pasan a la descendencia, porque son esas células las que aportan el ADN del nuevo individuo. En un macho, esa célula es el espermatozoide, como señala la opción D.",
+      "justificacion_correcta": "La opción «En un espermatozoide, que es una célula germinal» es correcta. Solo los cambios que quedan en las células reproductoras pasan a la descendencia, porque son esas células las que aportan el ADN del nuevo individuo. En un pez macho, esa célula germinal es el espermatozoide.",
       "opciones_incorrectas": {
-        "A": "Un cambio en la piel afecta ese tejido del pez, pero no viaja a la siguiente generación.",
-        "B": "Un cambio en las branquias puede afectar la respiración del pez y aun así no se hereda.",
-        "C": "Un cambio en el hígado se queda en ese órgano y no llega a las crías."
+        "C": "Un cambio en la piel afecta ese tejido del pez, pero no viaja a la siguiente generación.",
+        "A": "Un cambio en las branquias puede afectar la respiración del pez y aun así no se hereda.",
+        "D": "Un cambio en el hígado se queda en ese órgano y no llega a las crías."
       },
       "imagen_figura": "assets/banco-cn-10-p1/q07.png"
     },
     {
-      "id": "P10C08",
-      "numero": 8,
-      "enunciado": "<p>Observa el mapa y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un boletín de sanidad agrícola explica por qué en ciertos años se pierden cosechas enteras de sorgo y mijo. El insecto responsable <b>se alimenta solo de hojas, tallos y brotes</b> y en condiciones normales vive en baja densidad dentro de la zona clara del mapa. Cuando se encadenan varias temporadas secas, su número se dispara y grupos inmensos vuelan hasta la zona oscura, donde antes casi no llegaba, y consumen toda la vegetación que encuentran a su paso.</p>[[IMG]]</div><p>¿Por qué la llegada de esos grupos golpea tan fuerte a la zona oscura?</p>",
-      "opciones": {
-        "A": "Porque el insecto se vuelve cazador y empieza a comerse a los animales de la zona que se alimentan de plantas.",
-        "B": "Porque llega en cantidades enormes, desborda a los animales de la zona que se alimentan de plantas y agota la vegetación disponible.",
-        "C": "Porque forma una barrera física que impide el desplazamiento de las demás especies.",
-        "D": "Porque se cruza con los insectos propios de la zona y de ahí salen especies nuevas."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "componente": "Procesos vivos",
-      "cmc": "Procesos vivos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer las consecuencias de la alteración de un ecosistema.",
-      "justificacion_correcta": "La opción B es correcta. El insecto se alimenta de plantas, es decir, ocupa el mismo lugar que los consumidores primarios de la zona invadida. Al llegar en cantidades enormes los supera en número y acaba con la vegetación, de modo que esos consumidores se quedan sin alimento y toda la red trófica se desequilibra.",
-      "opciones_incorrectas": {
-        "A": "Supone que el insecto pasa a cazar animales; su alimentación sigue siendo de hojas, tallos y brotes.",
-        "C": "Atribuye el daño a un bloqueo del desplazamiento, y no es eso lo que afecta a la zona sino el consumo de la vegetación.",
-        "D": "Plantea la aparición de especies nuevas por cruce entre insectos distintos, algo que no ocurre en esta situación."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q08_ia.png"
-    },
-    {
-      "id": "P10C09",
-      "numero": 9,
-      "enunciado": "<p>Observa el esquema de las cuatro descargas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una brigada ambiental escolar le hace seguimiento a una laguna del municipio, a la que llegan cuatro descargas distintas. Desde hace un año rigen dos acuerdos: el restaurante del sector clasifica sus residuos, recoge el aceite usado en canecas y lava con detergentes que no alteran el pH; y en los cultivos vecinos quedó prohibido aplicar plaguicidas y fertilizantes de síntesis. Aun así, en la última visita la brigada anota que sobre el agua flota una <b>capa negra y aceitosa</b> y que el <b>pH está por encima de lo normal</b>.</p>[[IMG]]</div><p>¿Cuál de las cuatro descargas explica lo que anotó la brigada?</p>",
-      "opciones": {
-        "A": "La del agua lluvia, que llega con pH ácido.",
-        "B": "La del riego de los cultivos, por los plaguicidas que arrastra.",
-        "C": "La del restaurante, por el aceite y el detergente que bota.",
-        "D": "La del lavadero de autos: aceites de motor y detergentes industriales que dejan capa aceitosa y suben el pH."
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "componente": "Ciencia, tecnología y sociedad",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer la causa que genera una problemática ambiental a partir de la información dada.",
-      "justificacion_correcta": "La opción D es correcta. La capa negra y aceitosa junto con un pH por encima de lo normal coinciden con los aceites de motor y los detergentes industriales del lavadero de autos, que es la única descarga sobre la cual no se tomó ninguna medida.",
-      "opciones_incorrectas": {
-        "A": "El agua lluvia llega con pH ácido, es decir bajo, y no aporta la capa aceitosa que se ve en la laguna.",
-        "B": "Los plaguicidas y fertilizantes de síntesis están prohibidos en esos cultivos, así que el riego no puede ser la causa.",
-        "C": "El restaurante clasifica sus residuos, recoge el aceite usado y usa detergentes que no alteran el pH, de modo que su descarga no produce esos dos efectos."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q09_ia2.png"
-    },
-    {
-      "id": "P10C10",
-      "numero": 10,
-      "enunciado": "<p>Observa el diagrama de fases y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El diagrama muestra los estados de una sustancia según su <b>presión</b> y su <b>temperatura</b>. Los puntos <b>1</b> y <b>2</b> están a la <b>misma altura</b> en el eje de presión (misma presión) y el punto 2 está más a la derecha (mayor temperatura) que el punto 1.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones representa correctamente el cambio al pasar del punto 1 al 2?</p>",
-      "opciones": {
-        "A": "Gas → sólido, con la temperatura bajando.",
-        "B": "Sólido → gas, con la presión subiendo.",
-        "C": "Sólido → gas a presión constante, aumentando solo la temperatura.",
-        "D": "Sólido → gas, con la presión y la temperatura subiendo."
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "componente": "Procesos químicos",
-      "cmc": "Procesos químicos",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden explicar un cambio de fase de una sustancia usando un modelo (diagrama presión-temperatura).",
-      "justificacion_correcta": "La opción C es correcta. El punto 1 está en la región sólida y el 2 en la gaseosa; como ambos están a la misma presión, solo cambia la temperatura, que aumenta. Por eso la sustancia pasa de sólido a gas a presión constante (sublimación), tal como muestra la opción C.",
-      "opciones_incorrectas": {
-        "A": "Muestra gas→sólido con la temperatura bajando; pero la temperatura aumenta y el cambio es sólido→gas.",
-        "B": "Muestra la presión subiendo; la presión es la misma en ambos puntos, lo que cambia es la temperatura.",
-        "D": "Muestra ambas variables subiendo; la presión no cambia (misma altura de 1 y 2)."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q10.png"
-    },
-    {
-      "id": "P10C11",
-      "numero": 11,
-      "enunciado": "<p>Observa las dos maneras de agarrar la herramienta y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller del colegio, Valeria tiene que soltar la tuerca que sujeta un panel solar a su poste y para eso cuenta con una herramienta de mango largo. Puede agarrarla por la <b>mitad del mango</b> (Manera 1) o por la <b>punta del mango</b> (Manera 2). En los dos casos la tuerca es el eje de giro y la fuerza se aplica hacia abajo. Recuerda que el momento de una fuerza se calcula con \\(\\tau = F\\cdot d\\), donde \\(d\\) es la distancia entre el eje y el punto en el que se aplica la fuerza.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones describe la manera de soltar la tuerca haciendo <b>menos fuerza</b>?</p>",
-      "opciones": {
-        "A": "Agarrarla por la mitad del mango, aplicando más fuerza.",
-        "B": "Agarrarla por la punta del mango, dando más vueltas.",
-        "C": "Agarrarla por la mitad del mango, dando menos vueltas.",
-        "D": "Agarrarla por la punta del mango, aplicando menos fuerza."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "componente": "Procesos físicos",
-      "cmc": "Procesos físicos",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden argumentar la mejor manera de realizar una acción usando el concepto de torque (ley de la palanca).",
-      "justificacion_correcta": "La opción D es correcta. Como \\(\\tau=F\\cdot d\\), al agarrar la herramienta por la punta del mango la distancia \\(d\\) hasta el eje es mayor, de modo que se necesita <b>menos fuerza</b> para conseguir el mismo momento y soltar la tuerca. El número de vueltas, en cambio, es el mismo en las dos maneras.",
-      "opciones_incorrectas": {
-        "A": "Elige la manera que exige más fuerza; una herramienta de mango largo se usa justamente para lo contrario.",
-        "B": "Asocia la manera 2 con dar más vueltas, y el punto de agarre no cambia el número de vueltas.",
-        "C": "Asocia la manera 1 con dar menos vueltas; las vueltas son iguales y lo que cambia es la fuerza necesaria."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q11.png"
-    },
-    {
-      "id": "P10C12",
-      "numero": 12,
-      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región se consumen tortugas de una especie en la que <b>cada cría nace macho o hembra al azar</b> y en la que se necesitan machos para <b>fecundar</b> los huevos que ponen las hembras. Como medida de conservación se propone <b>consumir solo los machos</b> adultos, sin tocar las hembras ni los huevos, pensando que así la población no se verá afectada.</p></div><p>¿Cuál de las siguientes opciones explica por qué la medida <b>no</b> conserva la especie a largo plazo?</p>",
-      "opciones": {
-        "A": "Al retirar machos en cada generación quedan cada vez menos para fecundar; bajan los huevos fértiles y la población decae.",
-        "B": "Como no se tocan las hembras ni los huevos, la población se mantiene estable indefinidamente.",
-        "C": "La población crece, porque al haber menos machos las hembras ponen más huevos.",
-        "D": "La medida solo fracasaría si, además, se destruyera el hábitat donde anidan."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "componente": "Ciencia, tecnología y sociedad",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar y argumentar por qué una medida para conservar la biodiversidad no es viable a largo plazo.",
-      "justificacion_correcta": "La opción A es correcta. Si solo se cazan los machos, generación tras generación quedan cada vez menos para fecundar a las hembras; con menos fecundación se ponen menos huevos y la población disminuye, como muestra la opción A (de generación en generación bajan los machos y los huevos).",
-      "opciones_incorrectas": {
-        "B": "Muestra una población que se reemplaza y queda estable; con el tiempo habrá menos machos y menos postura.",
-        "C": "Muestra que se consume todo (machos, hembras y huevos); la medida solo caza machos, no aumenta el consumo de todo.",
-        "D": "Muestra la reducción del hábitat de anidación; la medida se refiere a qué individuos se cazan, no al hábitat."
-      }
-    },
-    {
-      "id": "P10C13",
-      "numero": 13,
-      "enunciado": "<p>Observa las dos situaciones y lee el enunciado.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la <b>situación 1</b> se ve a una niña y a su perro corriendo los dos hacia la <b>derecha</b>. En la <b>situación 2</b>, ya pasados unos segundos, ella tira de la correa hasta que el perro queda <b>detenido</b>.</p>[[IMG]]</div><p>¿Cuál de estas opciones describe bien la fuerza neta que hizo detener al perro?</p>",
-      "opciones": {
-        "A": "Apunta hacia la derecha, en el mismo sentido en que venía el movimiento.",
-        "B": "Apunta hacia la izquierda, en sentido contrario al movimiento, y por eso lo frena.",
-        "C": "Apunta hacia la izquierda, pero se debe al peso de la niña.",
-        "D": "Apunta hacia la derecha, porque la rapidez va disminuyendo."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "componente": "Procesos físicos",
-      "cmc": "Procesos físicos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar las características que debe tener una fuerza para lograr un resultado deseado (dinámica newtoniana).",
-      "justificacion_correcta": "La opción B es correcta. El perro iba hacia la derecha; para detenerlo se necesita una aceleración en sentido contrario (hacia la izquierda). Como fuerza y aceleración tienen la misma dirección, la fuerza neta apunta hacia la izquierda, opuesta al movimiento, como muestra la opción B.",
-      "opciones_incorrectas": {
-        "A": "Muestra la fuerza hacia la derecha (en la dirección del movimiento); eso lo aceleraría, no lo frenaría.",
-        "C": "Apunta la fuerza a la izquierda pero la atribuye al peso de la niña, que no determina esa dirección.",
-        "D": "Muestra la fuerza hacia la derecha; que la rapidez baje confirma el frenado, pero la fuerza va en contra del movimiento."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q13_ia2.png"
-    },
-    {
-      "id": "P10C14",
-      "numero": 14,
-      "enunciado": "<p>Observa el proceso de reciclaje y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una planta de reciclaje, una <b>botella de plástico</b> se lava y luego se <b>muele</b>, convirtiéndola en muchos <b>pequeños trozos</b> que se acumulan. No ocurre ningún cambio químico.</p>[[IMG]]</div><p>De acuerdo con el proceso, ¿cuál <b>propiedad de la botella cambia</b> al molerla?</p>",
-      "opciones": {
-        "A": "La masa.",
-        "B": "El volumen que ocupa.",
-        "C": "La composición química.",
-        "D": "El estado físico."
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "componente": "Ciencia, tecnología y sociedad",
-      "cmc": "Ciencia, tecnología y sociedad",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar un proceso para determinar qué cambia y qué permanece constante durante su realización.",
-      "justificacion_correcta": "La opción B es correcta. Al molerla, el plástico se parte en trozos que se compactan y ocupan un <b>volumen</b> distinto del de la botella entera; la opción B muestra ese cambio de volumen. La masa, la composición y el estado sólido no cambian.",
-      "opciones_incorrectas": {
-        "A": "Muestra la masa: se conserva, pues los trozos juntos pesan lo mismo que la botella original.",
-        "C": "Muestra la composición química: al no haber cambio químico, sigue siendo la misma.",
-        "D": "Muestra el estado: el plástico es sólido antes y después de la molienda."
-      },
-      "imagen_figura": "assets/banco-cn-10-p1/q14_ia2.png"
-    },
-    {
-      "id": "P10C15",
-      "numero": 15,
-      "enunciado": "<p>Observa las cuatro gráficas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cuatro equipos de décimo cronometraron, en segundos, lo que tarda una <b>pastilla efervescente</b> en disolverse por completo dentro de tres bebidas: <b>agua</b>, <b>limonada</b> y <b>té</b>. Con cada bebida repitieron la medida dos veces, primero con la bebida <b>fría</b> y luego con la bebida <b>caliente</b>. Cada equipo llevó sus medidas a un diagrama de barras y los cuatro diagramas salieron distintos.</p></div><p>En las medidas tomadas, dentro de una misma bebida el tiempo con la bebida caliente siempre resultó <b>menor</b> que con la bebida fría y, al comparar las tres bebidas, la <b>limonada</b> fue la de menor tiempo y el <b>agua</b> la de mayor tiempo, tanto en frío como en caliente. ¿Cuál de las gráficas reproduce esas dos tendencias?</p>",
-      "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
-      "componente": "Procesos químicos",
-      "cmc": "Procesos químicos",
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar los datos de una gráfica y reconocer tendencias.",
-      "justificacion_correcta": "La opción C es correcta. En la gráfica C la barra de la bebida caliente queda por debajo de la de la bebida fría en las tres bebidas y, además, la limonada aparece como la de menor tiempo y el agua como la de mayor tiempo, tanto en frío como en caliente. Es la única gráfica que reproduce las dos tendencias a la vez.",
-      "opciones_incorrectas": {
-        "A": "En la gráfica A los tiempos en caliente sí quedan por debajo de los de frío, pero la limonada aparece como la de mayor tiempo de las tres, tanto en frío como en caliente, cuando en realidad fue la de menor tiempo.",
-        "B": "En la gráfica B los tiempos en caliente también quedan por debajo de los de frío, pero el agua aparece como la de menor tiempo del grupo, tanto en frío como en caliente, cuando esa bebida fue la de mayor tiempo de las tres.",
-        "D": "En la gráfica D los tiempos en caliente quedan por encima de los de frío, y eso contradice que con la bebida caliente el tiempo siempre resulte menor."
-      },
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-10-p1/q15_opA.png",
-        "B": "assets/banco-cn-10-p1/q15_opB.png",
-        "C": "assets/banco-cn-10-p1/q15_opC.png",
-        "D": "assets/banco-cn-10-p1/q15_opD.png"
-      }
-    },
-    {
-      "id": "P10C16",
-      "numero": 16,
-      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Marcela amasa pan en su casa y nota que la masa crece más rápido cuando la deja cerca del horno encendido que cuando la deja en el patio, al frío. Entonces plantea esta hipótesis: <b>«mientras más alta sea la temperatura, más rápido produce gas la levadura y más rápido crece la masa»</b>.</p></div><p>¿Cuál de los siguientes procedimientos le permite comprobar su hipótesis?</p>",
-      "opciones": {
-        "A": "Amasar el pan con más harina y dejar siempre la masa en el mismo sitio.",
-        "B": "Comparar tres marcas de levadura dejando todas las porciones en el mismo sitio.",
-        "C": "Preparar varias porciones iguales de masa, dejar cada una a una temperatura distinta y medir cuánto crece cada porción en el mismo tiempo.",
-        "D": "Medir cuánto crece una sola porción de masa dejada a una única temperatura."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 9,
-      "evidencia": "9.1",
-      "componente": "Procesos vivos",
-      "cmc": "Procesos vivos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer el procedimiento experimental adecuado para comprobar una hipótesis.",
-      "justificacion_correcta": "La opción C es correcta. La hipótesis relaciona la temperatura con la rapidez con que la levadura hace crecer la masa, así que para ponerla a prueba hay que preparar porciones iguales, exponerlas a temperaturas distintas y medir en cada una cuánto crece en el mismo tiempo, dejando lo demás sin cambios.",
-      "opciones_incorrectas": {
-        "A": "Cambia la cantidad de harina y mantiene la temperatura: no pone a prueba lo que afirma la hipótesis.",
-        "B": "Cambia la marca de la levadura en vez de la temperatura, con lo cual estudia otra variable.",
-        "D": "Con una sola porción a una única temperatura no hay con qué comparar, así que no se puede saber si la temperatura influye."
-      }
-    },
-    {
-      "id": "P10C17",
-      "numero": 17,
-      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un colegio de páramo, un estudiante echa <b>200 g de agua</b> en un frasco plástico graduado, anota el volumen que señala la escala del frasco y lo deja destapado en el patio durante una noche en la que la temperatura baja hasta -4 °C. A la mañana siguiente el agua está convertida en hielo y la superficie quedó <b>por encima</b> del volumen que había anotado.</p></div><p>¿Qué hipótesis alcanza a comprobarse con este experimento?</p>",
-      "opciones": {
-        "A": "Que lo que hace cambiar de estado al agua es el recipiente en el que se guarda.",
-        "B": "Que una misma masa de agua ocupa más espacio en estado sólido que en estado líquido.",
-        "C": "Que al enfriarse mucho el agua pasa directamente al estado gaseoso.",
-        "D": "Que el agua se congela igual a cualquier temperatura."
-      },
-      "clave": "B",
-      "competencia": "c",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "componente": "Procesos físicos",
-      "cmc": "Procesos físicos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar la relación entre una hipótesis y el diseño experimental que la pone a prueba.",
-      "justificacion_correcta": "La opción B es correcta. La masa de agua sigue siendo la misma (200 g) y, al volverse hielo, el nivel sube por encima del volumen anotado: la misma cantidad de agua ocupa más espacio en estado sólido que en estado líquido. Justamente por eso el estudiante anotó el volumen inicial, para poder comparar.",
-      "opciones_incorrectas": {
-        "A": "El frasco no cambia el estado del agua; lo que la convirtió en hielo fue la baja temperatura de la noche.",
-        "C": "El agua pasó de líquida a sólida, no a vapor, así que el experimento no comprueba eso.",
-        "D": "Para sostener esa idea habría que probar varias temperaturas, y además no haría falta anotar el volumen del agua."
-      }
-    },
-    {
-      "id": "P10C18",
-      "numero": 18,
-      "enunciado": "<p>Lee la situación y observa la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un joven leyó que junto al piso de una calle el aire se mueve con calma, mientras que en la azotea de los edificios se arman pequeños remolinos de polvo. Para verlo por sí mismo midió, en los dos sitios, la altura y la rapidez del viento:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Sitio</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Altura (m)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Rapidez del viento (m/s)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Remolinos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Junto al piso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1,5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1,2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">En la azotea</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12,0</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6,8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr></table><p>Con esos datos afirma: «hay remolinos en la azotea porque a mayor altura, mayor rapidez del viento».</p></div><p>¿Cuál de las siguientes opciones clasifica correctamente esa afirmación, con la razón adecuada?</p>",
-      "opciones": {
-        "A": "Es una suposición, porque faltó medir en otros edificios.",
-        "B": "Es una hipótesis, porque en muchos sitios altos se arman remolinos.",
-        "C": "Es una hipótesis, porque se apoya en los datos que él mismo midió (a mayor altura, mayor rapidez del viento).",
-        "D": "Es una suposición, porque el viento sopla igual a cualquier altura."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 9,
-      "evidencia": "9.1",
-      "componente": "Procesos físicos",
-      "cmc": "Procesos físicos",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar si una afirmación sobre un fenómeno se basa en resultados y puede considerarse una hipótesis.",
-      "justificacion_correcta": "La opción C es correcta. La afirmación propone una explicación para los remolinos y se apoya en las medidas que el joven tomó: donde la altura es mayor, la rapidez del viento también lo es y aparecen los remolinos. Una explicación posible sustentada en evidencia es, precisamente, una hipótesis.",
-      "opciones_incorrectas": {
-        "A": "La reduce a una suposición por no medir en otros edificios; la afirmación ya se apoya en los datos que él tomó en estos dos sitios.",
-        "B": "La llama hipótesis por lo que ocurre en otros lugares, y lo que la sustenta son las medidas de altura y rapidez de la tabla.",
-        "D": "Afirma que el viento sopla igual a cualquier altura, y la tabla muestra lo contrario: 1,2 m/s junto al piso frente a 6,8 m/s en la azotea."
-      }
-    },
-    {
-      "id": "P10C19",
-      "numero": 19,
-      "enunciado": "<p>Lee la situación y observa las cuatro gráficas.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una motociclista de mensajería hizo un recorrido por la ciudad. El equipo de rastreo de la moto guardó su <b>rapidez</b> a lo largo del tiempo y el registro quedó repartido en cuatro intervalos. En medio del trayecto, el paso de un tren la obligó a quedarse quieta un buen rato antes de continuar.</p></div><p>Estar quieta significa que la rapidez vale cero, y cada gráfica (A, B, C o D) pone ese valor en un intervalo distinto. Ten en cuenta que una moto frena y arranca poco a poco, de modo que en el registro la rapidez cambia de manera continua, sin saltos de un intervalo al siguiente. ¿Cuál gráfica corresponde al recorrido que hizo la motociclista?</p>",
-      "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 4,
-      "evidencia": "4.3",
-      "componente": "Procesos físicos",
-      "cmc": "Procesos físicos",
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar una gráfica y extraer la información relevante para una situación problema.",
-      "justificacion_correcta": "La opción C es correcta. En la gráfica C la moto va a 15 m/s durante el intervalo 1, baja poco a poco hasta cero a lo largo del intervalo 2, se mantiene en cero todo el intervalo 3 y vuelve a acelerar en el intervalo 4. Ese cero sostenido en la mitad del recorrido es el rato en que la motociclista esperó el paso del tren, y es la única gráfica en la que la rapidez cambia sin saltos.",
-      "opciones_incorrectas": {
-        "A": "En la gráfica A la moto aparece quieta durante el intervalo 1, es decir al comienzo y no en la mitad del recorrido; además la rapidez salta de golpe de 0 a 15 m/s al empezar el intervalo 2.",
-        "B": "En la gráfica B la rapidez pasa de 15 m/s a cero de un intervalo al otro y enseguida salta a 8 m/s: son cambios bruscos que una moto que frena y arranca poco a poco no alcanza a hacer.",
-        "D": "En la gráfica D la moto queda quieta durante el intervalo 4, o sea al final del recorrido, cuando la situación dice que se detuvo en la mitad y después continuó."
-      },
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-10-p1/q19_opA.png",
-        "B": "assets/banco-cn-10-p1/q19_opB.png",
-        "C": "assets/banco-cn-10-p1/q19_opC.png",
-        "D": "assets/banco-cn-10-p1/q19_opD.png"
-      }
-    },
-    {
       "id": "P10C20",
-      "numero": 20,
-      "enunciado": "<p>Observa la figura y elige el diagrama de fuerzas correcto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una <b>gota de agua</b> cae en diagonal y golpea un <b>balón</b>. Por la tercera ley de Newton, al tocarse aparecen la fuerza de <b>acción</b> (de la gota sobre el balón) y la de <b>reacción</b> (del balón sobre la gota): de igual magnitud, sentido opuesto y <b>perpendiculares a la superficie de contacto</b>.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) dibuja un par de flechas sobre el punto de contacto. ¿Cuál diagrama representa correctamente las fuerzas de acción y reacción?</p>",
+      "numero": 11,
+      "enunciado": "<p>Observa la figura y elige el diagrama de fuerzas correcto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de física analiza fotografías de alta velocidad tomadas durante un partido bajo la lluvia. En una de ellas, una <b>gota de agua</b> cae en diagonal y golpea un <b>balón</b> quieto en el pasto; la línea roja de la figura marca la <b>superficie de contacto</b>, inclinada porque la gota llega de lado. Por la tercera ley de Newton, al tocarse aparecen la fuerza de <b>acción</b> (de la gota sobre el balón) y la de <b>reacción</b> (del balón sobre la gota): de igual magnitud, sentido opuesto y <b>perpendiculares a la superficie de contacto</b>. El grupo debe escoger el dibujo que representa bien ese par.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) dibuja un par de flechas sobre el punto de contacto. ¿Cuál diagrama representa correctamente las fuerzas de acción y reacción?</p>",
       "opciones": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
-      "clave": "A",
+      "clave": "D",
       "competencia": "a",
       "afirmacion": 3,
       "evidencia": "3.1",
@@ -587,18 +343,262 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer el modelo de fuerzas adecuado para un sistema donde dos objetos interactúan (acción y reacción).",
-      "justificacion_correcta": "La opción A es correcta. Las fuerzas de acción y reacción son de igual magnitud y sentido opuesto y, por ser fuerzas de contacto, deben ser <b>perpendiculares a la superficie de contacto</b> (la diagonal donde la gota toca el balón). El diagrama A es el único que las muestra opuestas y perpendiculares a ese contacto.",
+      "justificacion_correcta": "La opción «A» es correcta. Las fuerzas de acción y reacción son de igual magnitud y sentido opuesto y, por ser fuerzas de contacto, deben ser <b>perpendiculares a la superficie de contacto</b> (la diagonal donde la gota toca el balón). El diagrama «A» es el único que las muestra opuestas y perpendiculares a ese contacto.",
       "opciones_incorrectas": {
-        "B": "Muestra las fuerzas verticales, no perpendiculares a la superficie de contacto entre la gota y el balón.",
-        "C": "Muestra las fuerzas en el mismo plano de la superficie de contacto, no perpendiculares a ella.",
-        "D": "Muestra las fuerzas horizontales, no perpendiculares a la superficie de contacto."
+        "C": "Muestra las fuerzas verticales, no perpendiculares a la superficie de contacto entre la gota y el balón.",
+        "A": "Muestra las fuerzas en el mismo plano de la superficie de contacto, no perpendiculares a ella.",
+        "B": "Muestra las fuerzas horizontales, no perpendiculares a la superficie de contacto."
       },
       "imagen_figura": "assets/banco-cn-10-p1/q20.png",
       "opciones_imagenes": {
-        "A": "assets/banco-cn-10-p1/q20_opA.png",
-        "B": "assets/banco-cn-10-p1/q20_opB.png",
-        "C": "assets/banco-cn-10-p1/q20_opC.png",
-        "D": "assets/banco-cn-10-p1/q20_opD.png"
+        "D": "assets/banco-cn-10-p1/q20_opA.png",
+        "C": "assets/banco-cn-10-p1/q20_opB.png",
+        "A": "assets/banco-cn-10-p1/q20_opC.png",
+        "B": "assets/banco-cn-10-p1/q20_opD.png"
+      }
+    },
+    {
+      "id": "P10C09",
+      "numero": 12,
+      "enunciado": "<p>Observa el esquema de las cuatro descargas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una brigada ambiental escolar le hace seguimiento cada mes a una laguna del municipio, a la que llegan cuatro descargas, que el esquema identifica: la del restaurante del sector, la de un lavadero de autos, la del riego de los cultivos vecinos y la del agua lluvia. Desde hace un año rigen dos acuerdos: el restaurante clasifica sus residuos, recoge el aceite usado en canecas y lava con detergentes que no alteran el pH; y en los cultivos vecinos quedó prohibido aplicar plaguicidas y fertilizantes de síntesis. Aun así, en la última visita la brigada anota que sobre el agua flota una <b>capa negra y aceitosa</b> y que el <b>pH está por encima de lo normal</b>.</p>[[IMG]]</div><p>¿Cuál de las cuatro descargas explica lo que anotó la brigada?</p>",
+      "opciones": {
+        "A": "La del riego de los cultivos, por los plaguicidas que el agua arrastra desde los surcos.",
+        "B": "La del lavadero de autos, por los aceites de motor y los detergentes industriales.",
+        "C": "La del restaurante, por el aceite de cocina y el detergente que salen de sus lavaplatos.",
+        "D": "La del agua lluvia, que baja por la calle y llega a la laguna con un pH ácido."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "componente": "Ciencia, tecnología y sociedad",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer la causa que genera una problemática ambiental a partir de la información dada.",
+      "justificacion_correcta": "La opción «La del lavadero de autos, por los aceites de motor y los detergentes industriales» es correcta. La capa negra y aceitosa junto con un pH por encima de lo normal coinciden con los aceites de motor y los detergentes industriales del lavadero de autos, que es la única descarga sobre la cual no se tomó ninguna medida.",
+      "opciones_incorrectas": {
+        "D": "El agua lluvia llega con pH ácido, es decir bajo, y no aporta la capa aceitosa que se ve en la laguna.",
+        "A": "Los plaguicidas y fertilizantes de síntesis están prohibidos en esos cultivos, así que el riego no puede ser la causa.",
+        "C": "El restaurante clasifica sus residuos, recoge el aceite usado y usa detergentes que no alteran el pH, de modo que su descarga no produce esos dos efectos."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q09_ia2.png"
+    },
+    {
+      "id": "P10C05",
+      "numero": 13,
+      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de décimo quiere responder esta pregunta: <b>¿cómo influye la intensidad de la luz en la cantidad de oxígeno que libera la elodea, una planta acuática?</b> En la ficha del laboratorio encuentran que la elodea trabaja bien entre 18 °C y 24 °C, que necesita agua con bicarbonato disuelto como fuente de carbono y que el oxígeno que libera sale en burbujas que se pueden contar a simple vista. Disponen de cinco vasos iguales con un tallo de elodea del mismo tamaño en cada uno, cinco lámparas regulables y un cronómetro. Tienen presente que en un montaje válido solo debe cambiar aquello que se está investigando, porque de lo contrario no se sabría a qué atribuir las diferencias.</p></div><p>¿Cuál de estos montajes les permite responder la pregunta de investigación?</p>",
+      "opciones": {
+        "A": "Usar los cinco vasos con cinco intensidades de luz distintas, pero cada uno a su propia temperatura y con su propia cantidad de bicarbonato.",
+        "B": "Usar los cinco vasos con la misma intensidad de luz y distinta cantidad de bicarbonato, contando las burbujas en cada uno.",
+        "C": "Usar los cinco vasos con cinco intensidades de luz, iguales en temperatura, agua y tallo, y contar las burbujas cada cinco minutos.",
+        "D": "Usar un solo vaso al que se le acerca la lámpara poco a poco y contar las burbujas una única vez, al terminar la jornada."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "componente": "Procesos vivos",
+      "cmc": "Procesos vivos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden plantear un procedimiento experimental adecuado a los parámetros y variables de una pregunta de investigación.",
+      "justificacion_correcta": "La opción «Usar los cinco vasos con cinco intensidades de luz, iguales en temperatura, agua y…» es correcta. Para saber cómo influye la intensidad de la luz hay que <b>variarla</b> entre los vasos y dejar iguales las demás condiciones: temperatura, agua con bicarbonato y tamaño del tallo. Así, cualquier diferencia en el número de burbujas solo puede atribuirse a la luz, y contarlas cada cinco minutos permite comparar la rapidez con que cada vaso produce oxígeno.",
+      "opciones_incorrectas": {
+        "D": "Trabaja con un solo vaso y con un único conteo final, de modo que no hay con qué comparar el efecto de cada intensidad de luz.",
+        "A": "Cambia la luz, pero también la temperatura y el bicarbonato; así no se sabría cuál de las tres condiciones produjo la diferencia.",
+        "B": "Deja fija la luz y varía el bicarbonato: eso responde otra pregunta, no la que el grupo se planteó."
+      }
+    },
+    {
+      "id": "P10C12",
+      "numero": 14,
+      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región ribereña se consumen desde hace décadas tortugas de una especie que tarda varios años en llegar a la edad reproductiva. En esa especie <b>cada cría nace macho o hembra al azar</b>, de modo que nadie puede escoger cuántos de cada uno nacen, y se necesitan machos para <b>fecundar</b> los huevos que ponen las hembras. Preocupada por la disminución de la especie, la autoridad ambiental estudia una medida de conservación: permitir el consumo de <b>solo los machos</b> adultos, sin tocar las hembras ni los huevos, con el argumento de que las hembras seguirían poniendo la misma cantidad de huevos y la población no se vería afectada.</p></div><p>¿Cuál de las siguientes opciones explica por qué la medida <b>no</b> conserva la especie a largo plazo?</p>",
+      "opciones": {
+        "A": "La población crece, porque al haber menos machos las hembras ponen más huevos.",
+        "B": "Como no se tocan las hembras ni los huevos, la población se mantiene estable indefinidamente.",
+        "C": "Al retirar machos en cada generación quedan menos para fecundar y la población decae.",
+        "D": "La medida solo fracasaría si, además, se destruyera el hábitat donde anidan."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "componente": "Ciencia, tecnología y sociedad",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar y argumentar por qué una medida para conservar la biodiversidad no es viable a largo plazo.",
+      "justificacion_correcta": "La opción «Al retirar machos en cada generación quedan menos para fecundar y la población decae» es correcta. Si solo se cazan los machos, generación tras generación quedan cada vez menos para fecundar a las hembras; con menos fecundación hay menos huevos fértiles y la población disminuye.",
+      "opciones_incorrectas": {
+        "B": "Aunque no se toquen las hembras ni los huevos, con menos machos cada generación fecunda menos huevos y la población baja.",
+        "A": "El número de huevos que pone una hembra no sube porque haya menos machos; lo que baja es la cantidad de huevos fecundados.",
+        "D": "La medida falla por sí sola: al retirar machos se reduce la fecundación, sin que haga falta que además se destruya el hábitat."
+      }
+    },
+    {
+      "id": "P10C17",
+      "numero": 15,
+      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un colegio de páramo, un estudiante quiere poner a prueba una idea que se discutió en clase y para eso monta un experimento sencillo. Echa <b>200 g de agua</b>, pesados en la balanza del laboratorio, en un frasco plástico graduado, anota el volumen que señala la escala del frasco y lo deja destapado en el patio durante una noche en la que la temperatura baja hasta -4 °C. Nadie agrega ni saca agua del frasco durante la noche, así que la masa sigue siendo la misma. A la mañana siguiente el agua está convertida en hielo y la superficie quedó <b>por encima</b> del volumen que había anotado la tarde anterior.</p></div><p>¿Qué hipótesis alcanza a comprobarse con este experimento?</p>",
+      "opciones": {
+        "A": "Que lo que hace cambiar de estado al agua es el recipiente en el que se la guarda.",
+        "B": "Que el agua se congela por igual a cualquier temperatura del ambiente.",
+        "C": "Que una misma masa de agua ocupa más espacio en estado sólido que en estado líquido.",
+        "D": "Que al enfriarse mucho el agua pasa directamente al estado gaseoso."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "componente": "Procesos físicos",
+      "cmc": "Procesos físicos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar la relación entre una hipótesis y el diseño experimental que la pone a prueba.",
+      "justificacion_correcta": "La opción «Que una misma masa de agua ocupa más espacio en estado sólido que en estado líquido» es correcta. La masa de agua sigue siendo la misma (200 g) y, al volverse hielo, el nivel sube por encima del volumen anotado: la misma cantidad de agua ocupa más espacio en estado sólido que en estado líquido. Justamente por eso el estudiante anotó el volumen inicial, para poder comparar.",
+      "opciones_incorrectas": {
+        "A": "El frasco no cambia el estado del agua; lo que la convirtió en hielo fue la baja temperatura de la noche.",
+        "D": "El agua pasó de líquida a sólida, no a vapor, así que el experimento no comprueba eso.",
+        "B": "Para sostener esa idea habría que probar varias temperaturas, y además no haría falta anotar el volumen del agua."
+      }
+    },
+    {
+      "id": "P10C04",
+      "numero": 16,
+      "enunciado": "<p>Observa la cartelera y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una salida de campo a la franja donde el río desemboca en el mar, un curso encuentra la cartelera que aparece abajo. Allí se afirma que la sal en exceso le hace falta al manglar y que, cuando las lluvias vuelven menos salada el agua, la población de <b>manglar</b> se reduce. En la guía de la salida los estudiantes leen algo distinto: que el manglar prospera en esa franja porque tolera la sal mejor que las demás plantas, pero que el <b>exceso de sal le hace daño</b>; por eso desarrolló <b>raíces en zanco</b> y <b>glándulas que expulsan la sal sobrante</b>, y en eso gasta parte de su energía. Ese año llovió varias semanas seguidas y la sal del agua bajó bastante.</p>[[IMG]]</div><p>De acuerdo con lo que dice la guía, ¿qué le pasa a la población de manglar cuando el agua se vuelve menos salada?</p>",
+      "opciones": {
+        "A": "Disminuye, tal como lo afirma la cartelera que encontraron en la salida de campo.",
+        "B": "Aumenta, porque se reduce el daño que le causaba el exceso de sal del agua.",
+        "C": "Se queda sin hojas y sin raíces, porque le falta la sal que necesitaba para vivir.",
+        "D": "Le aparecen glándulas nuevas, para alcanzar a expulsar una cantidad mayor de sal."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "componente": "Procesos vivos",
+      "cmc": "Procesos vivos",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer los efectos que ocurren en una especie tras un cambio en su ecosistema.",
+      "justificacion_correcta": "La opción «Aumenta, porque se reduce el daño que le causaba el exceso de sal» es correcta. La guía señala que el exceso de sal le hace daño al manglar y que por eso la planta gasta energía expulsándola. Si el agua se vuelve menos salada, ese daño disminuye, las condiciones se hacen más favorables y la población tiende a aumentar.",
+      "opciones_incorrectas": {
+        "C": "Una planta sin hojas ni raíces no tendría sostén ni haría fotosíntesis; además, tener menos sal alrededor no destruye esos órganos.",
+        "A": "Repite lo que dice la cartelera, y eso contradice la guía: para que el manglar se reduzca tendría que subir la sal, no bajar.",
+        "D": "Las glándulas que expulsan sal ya existen en la planta, y un agua menos salada no hace aparecer órganos nuevos."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q04_ia.png"
+    },
+    {
+      "id": "P10C18",
+      "numero": 17,
+      "enunciado": "<p>Lee la situación y observa la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un joven leyó que junto al piso de una calle el aire se mueve con calma, mientras que en la azotea de los edificios se arman pequeños remolinos de polvo. Para verlo por sí mismo consiguió prestado un anemómetro de mano. El mismo día y a la misma hora midió en los dos sitios la <b>altura</b> sobre el suelo y la <b>rapidez del viento</b>, y anotó además si veía o no remolinos:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Sitio</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Altura (m)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Rapidez del viento (m/s)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Remolinos</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Junto al piso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1,5</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1,2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">No</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">En la azotea</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12,0</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6,8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sí</td></tr></table><p>Con esos datos escribe en su cuaderno: «hay remolinos en la azotea porque a mayor altura, mayor rapidez del viento».</p></div><p>¿Cuál de las siguientes opciones clasifica correctamente esa afirmación, con la razón adecuada?</p>",
+      "opciones": {
+        "A": "Es una suposición, porque faltó medir en otros edificios de la ciudad.",
+        "B": "Es una hipótesis, porque se apoya en los datos que él mismo midió.",
+        "C": "Es una hipótesis, porque en muchos sitios altos se arman remolinos de polvo.",
+        "D": "Es una suposición, porque el viento sopla igual a cualquier altura del edificio."
+      },
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "componente": "Procesos físicos",
+      "cmc": "Procesos físicos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden determinar si una afirmación sobre un fenómeno se basa en resultados y puede considerarse una hipótesis.",
+      "justificacion_correcta": "La opción «Es una hipótesis, porque se apoya en los datos que él mismo midió» es correcta. La afirmación propone una explicación para los remolinos y se apoya en las medidas que el joven tomó: donde la altura es mayor, la rapidez del viento también lo es y aparecen los remolinos. Una explicación posible sustentada en evidencia es, precisamente, una hipótesis.",
+      "opciones_incorrectas": {
+        "A": "La reduce a una suposición por no medir en otros edificios; la afirmación ya se apoya en los datos que él tomó en estos dos sitios.",
+        "C": "La llama hipótesis por lo que ocurre en otros lugares, y lo que la sustenta son las medidas de altura y rapidez de la tabla.",
+        "D": "Afirma que el viento sopla igual a cualquier altura, y la tabla muestra lo contrario: 1,2 m/s junto al piso frente a 6,8 m/s en la azotea."
+      }
+    },
+    {
+      "id": "P10C14",
+      "numero": 18,
+      "enunciado": "<p>Observa el proceso de reciclaje y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una planta de reciclaje, las botellas de plástico que llegan de las rutas de recolección pasan por tres etapas antes de venderse a la industria, y la figura las muestra en orden. Primero cada <b>botella de plástico</b> se lava con agua para quitarle los residuos de bebida; después se <b>muele</b> en un molino de cuchillas, que la convierte en muchos <b>pequeños trozos</b>; por último los trozos se acumulan en un montón, listos para empacarse. En todo el recorrido <b>no ocurre ningún cambio químico</b>: el material que sale del molino sigue siendo el mismo plástico que entró. Aun así, algo de la botella sí cambió.</p>[[IMG]]</div><p>De acuerdo con el proceso, ¿cuál <b>propiedad de la botella cambia</b> al molerla?</p>",
+      "opciones": {
+        "A": "La composición química, es decir, la clase de material del que está hecha.",
+        "B": "El estado físico, es decir, si el material se presenta como sólido, líquido o gas.",
+        "C": "La masa, es decir, la cantidad de materia que hay en total.",
+        "D": "El volumen que ocupa, es decir, el espacio que el material llena."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "componente": "Ciencia, tecnología y sociedad",
+      "cmc": "Ciencia, tecnología y sociedad",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar un proceso para determinar qué cambia y qué permanece constante durante su realización.",
+      "justificacion_correcta": "La opción «El volumen que ocupa» es correcta. Al molerla, el plástico se parte en trozos que se compactan y ocupan un <b>volumen</b> distinto del de la botella entera; la opción «El volumen que ocupa» muestra ese cambio de volumen. La masa, la composición y el estado sólido no cambian.",
+      "opciones_incorrectas": {
+        "C": "Muestra la masa: se conserva, pues los trozos juntos pesan lo mismo que la botella original.",
+        "A": "Muestra la composición química: al no haber cambio químico, sigue siendo la misma.",
+        "B": "Muestra el estado: el plástico es sólido antes y después de la molienda."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q14_ia2.png"
+    },
+    {
+      "id": "P10C08",
+      "numero": 19,
+      "enunciado": "<p>Observa el mapa y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un boletín de sanidad agrícola explica por qué en ciertos años se pierden cosechas enteras de sorgo y mijo en una región. El insecto responsable <b>se alimenta solo de hojas, tallos y brotes</b> y en condiciones normales vive en baja densidad dentro de la zona clara del mapa, sin causar daños de consideración. Cuando se encadenan varias temporadas secas, su número se dispara y grupos inmensos vuelan hasta la zona oscura, donde antes casi no llegaba, y consumen toda la vegetación que encuentran a su paso. En esa zona oscura hay cultivos de sorgo y mijo y vive además la fauna herbívora propia de la región, que depende de esa misma vegetación para alimentarse.</p>[[IMG]]</div><p>¿Por qué la llegada de esos grupos golpea tan fuerte a la zona oscura?</p>",
+      "opciones": {
+        "A": "Porque llega en cantidades enormes y consume la vegetación de la que viven los animales de la zona.",
+        "B": "Porque se cruza con los insectos propios de la zona y de ahí salen especies nuevas.",
+        "C": "Porque el insecto se vuelve cazador y empieza a comerse a los animales de la zona que se alimentan de plantas.",
+        "D": "Porque forma una barrera física que impide el desplazamiento de las demás especies."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "componente": "Procesos vivos",
+      "cmc": "Procesos vivos",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer las consecuencias de la alteración de un ecosistema.",
+      "justificacion_correcta": "La opción «Porque llega en cantidades enormes y consume la vegetación de la que viven los…» es correcta. El insecto se alimenta de plantas, es decir, ocupa el mismo lugar que los consumidores primarios de la zona invadida. Al llegar en cantidades enormes los supera en número y acaba con la vegetación, de modo que esos consumidores se quedan sin alimento y toda la red trófica se desequilibra.",
+      "opciones_incorrectas": {
+        "C": "Supone que el insecto pasa a cazar animales; su alimentación sigue siendo de hojas, tallos y brotes.",
+        "D": "Atribuye el daño a un bloqueo del desplazamiento, y no es eso lo que afecta a la zona sino el consumo de la vegetación.",
+        "B": "Plantea la aparición de especies nuevas por cruce entre insectos distintos, algo que no ocurre en esta situación."
+      },
+      "imagen_figura": "assets/banco-cn-10-p1/q08_ia.png"
+    },
+    {
+      "id": "P10C19",
+      "numero": 20,
+      "enunciado": "<p>Lee la situación y observa las cuatro gráficas.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una motociclista de mensajería hizo un recorrido por la ciudad para entregar un paquete al otro lado del río. El equipo de rastreo guardó su <b>rapidez</b>, en metros por segundo, a lo largo del tiempo, y el registro quedó repartido en cuatro intervalos de igual duración. En medio del trayecto, al llegar a la línea férrea, el paso de un tren la obligó a quedarse quieta un buen rato antes de continuar.</p></div><p>Estar quieta significa que la rapidez vale cero, y cada gráfica (A, B, C o D) pone ese valor en un intervalo distinto. Ten en cuenta que una moto frena y arranca poco a poco, de modo que en el registro la rapidez cambia de manera continua, sin saltos de un intervalo al siguiente. ¿Cuál gráfica corresponde al recorrido que hizo la motociclista?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.3",
+      "componente": "Procesos físicos",
+      "cmc": "Procesos físicos",
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar una gráfica y extraer la información relevante para una situación problema.",
+      "justificacion_correcta": "La opción «C» es correcta. En la gráfica «C» la moto va a 15 m/s durante el intervalo 1, baja poco a poco hasta cero a lo largo del intervalo 2, se mantiene en cero todo el intervalo 3 y vuelve a acelerar en el intervalo 4. Ese cero sostenido en la mitad del recorrido es el rato en que la motociclista esperó el paso del tren, y es la única gráfica en la que la rapidez cambia sin saltos.",
+      "opciones_incorrectas": {
+        "B": "En la gráfica A la moto aparece quieta durante el intervalo 1, es decir al comienzo y no en la mitad del recorrido; además la rapidez salta de golpe de 0 a 15 m/s al empezar el intervalo 2.",
+        "C": "En la gráfica B la rapidez pasa de 15 m/s a cero de un intervalo al otro y enseguida salta a 8 m/s: son cambios bruscos que una moto que frena y arranca poco a poco no alcanza a hacer.",
+        "D": "En la gráfica D la moto queda quieta durante el intervalo 4, o sea al final del recorrido, cuando la situación dice que se detuvo en la mitad y después continuó."
+      },
+      "opciones_imagenes": {
+        "B": "assets/banco-cn-10-p1/q19_opA.png",
+        "C": "assets/banco-cn-10-p1/q19_opB.png",
+        "A": "assets/banco-cn-10-p1/q19_opC.png",
+        "D": "assets/banco-cn-10-p1/q19_opD.png"
       }
     }
   ],

@@ -62,226 +62,16 @@
       "imagen_figura": "assets/banco-mat-11-p1/q01.png"
     },
     {
-      "id": "P-math-11-p1-02",
-      "numero": 2,
-      "enunciado": "<p>Una profesora entregó la misma figura sombreada a tres estudiantes y les pidió girarla \\(90^\\circ\\) en sentido antihorario respecto al origen del plano.</p>[[IMG]]<p>¿Cuáles de los tres resultados están bien hechos?</p>",
-      "opciones": {
-        "A": "Solo I y II.",
-        "B": "Solo II y III.",
-        "C": "Solo I y III.",
-        "D": "Los tres: I, II y III."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Geometría",
-      "dificultad": "BAJA",
-      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana y otros y en particular de las curvas y figuras cónicas.",
-      "que_evalua": "La capacidad para identificar las rotaciones de figuras geométricas que cumplen con una condición dada.",
-      "justificacion_correcta": "Un giro de \\(90^\\circ\\) en sentido antihorario conserva la forma y el tamaño y cambia la posición de manera determinada. Solo los resultados I y II cumplen esas condiciones.",
-      "opciones_incorrectas": {
-        "B": "Da por correcto al estudiante III, que rotó en sentido horario.",
-        "C": "Descarta al estudiante II, que sí rotó correctamente.",
-        "D": "Acepta los tres sin notar el sentido equivocado del estudiante III."
-      },
-      "imagen_figura": "assets/banco-mat-11-p1/q02.png"
-    },
-    {
-      "id": "P-math-11-p1-03",
-      "numero": 3,
-      "enunciado": "<p>La tabla recoge con quién comercia cada país: a quién le vende y de quién compra.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">País</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>S, M</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R, V</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>V, M</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>S</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>V</i></td></tr></table><p>¿Cuál de las siguientes tablas recoge esa misma información?</p>",
-      "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, R</i></td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, R</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R, V, Q</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>T, R</i></td></tr></table>"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Estadística",
-      "dificultad": "ALTA",
-      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
-      "que_evalua": "La capacidad para identificar los valores asociados a un dato en particular a partir de la información presentada en una tabla.",
-      "justificacion_correcta": "El país M no tiene fila propia: hay que rastrearlo dentro de las celdas. M aparece en la columna 'Compra productos de:' de P y de R, lo que significa que esos países compran a M, es decir, M les VENDE a P y a R. En cambio, M no aparece en ninguna celda de la columna 'Vende productos a:', así que ningún país le vende a M; por tanto, M NO COMPRA de nadie. La tabla correcta es 'Vende a: P, R / Compra de: Ninguno'.",
-      "opciones_incorrectas": {
-        "A": "Supone que M no aparece en ninguna columna, ignorando que P y R lo registran como su proveedor.",
-        "B": "Invierte las columnas: pone en 'compra' lo que en realidad M vende a P y R.",
-        "D": "Copia las relaciones de otro país de la tabla en lugar de rastrear M."
-      }
-    },
-    {
-      "id": "P-math-11-p1-04",
-      "numero": 4,
-      "enunciado": "<p>Para un torneo interno, un entrenador debe formar al azar una pareja de \\(2\\) jugadores entre los preseleccionados. Al contar las posibilidades encuentra que existen exactamente \\(21\\) parejas distintas.</p><p>¿Cuántos jugadores preseleccionó?</p>",
-      "opciones": {
-        "A": "\\(42\\)",
-        "B": "\\(21\\)",
-        "C": "\\(7\\)",
-        "D": "\\(6\\)"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.3",
-      "cmc": "Estadística",
-      "dificultad": "ALTA",
-      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
-      "que_evalua": "La capacidad para calcular el cardinal del conjunto del que se van a elegir elementos al azar a partir del número de elecciones y del total de combinaciones posibles.",
-      "justificacion_correcta": "El número de parejas que se pueden formar con \\(n\\) jugadores es \\(\\dfrac{n(n-1)}{2}\\). Igualando a \\(21\\) se obtiene \\(n = 7\\).",
-      "opciones_incorrectas": {
-        "A": "Resuelve \\(n(n-1) = 42\\) pero olvida dividir entre \\(2\\), quedándose con \\(42\\).",
-        "B": "Toma el número de parejas \\((21)\\) como si fuera el total de jugadores.",
-        "D": "Da \\(n-1\\) en lugar de \\(n\\) al resolver \\(n(n-1) = 42\\)."
-      }
-    },
-    {
-      "id": "P-math-11-p1-05",
-      "numero": 5,
-      "enunciado": "<p>Una caja contiene \\(4\\) fichas verdes, \\(4\\) amarillas y \\(16\\) azules. Camilo sostiene que, al sacar una ficha sin mirar, los tres colores tienen la misma probabilidad de salir.</p><p>¿Tiene razón Camilo?</p>",
-      "opciones": {
-        "A": "Sí, porque hay tres colores distintos en la caja.",
-        "B": "No, porque no se conoce el número total de fichas de la caja.",
-        "C": "Sí, porque las fichas están repartidas de la misma forma.",
-        "D": "No, porque hay más fichas de un color que de los otros dos."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Estadística",
-      "dificultad": "BAJA",
-      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
-      "que_evalua": "La capacidad para justificar la validez de una afirmación sobre una probabilidad a partir de la descripción de los elementos de un conjunto.",
-      "justificacion_correcta": "Las azules son \\(16\\) frente a \\(4\\) de cada uno de los otros colores. Al haber muchas más de un color, ese color tiene más probabilidad y la afirmación no se sostiene.",
-      "opciones_incorrectas": {
-        "A": "El número de colores no determina la probabilidad de cada uno.",
-        "B": "El total sí se conoce; el problema no está en desconocerlo.",
-        "C": "Las cantidades no son iguales, así que el reparto no es uniforme."
-      }
-    },
-    {
-      "id": "P-math-11-p1-06",
-      "numero": 6,
-      "enunciado": "<p>Después de una temporada de lluvias, el campanario de una capilla veredal quedó ladeado y el equipo técnico de la alcaldía midió cuánto se desvió. En la figura, la línea punteada es perpendicular al piso y el campanario forma con ella un ángulo de <b>\\(7^\\circ\\)</b>.</p>[[IMG]]<p>¿Cuánto mide el ángulo que el campanario forma con el <b>piso</b>, marcado con '?' en la figura?</p>",
-      "opciones": {
-        "A": "\\(7^\\circ\\)",
-        "B": "\\(17^\\circ\\)",
-        "C": "\\(83^\\circ\\)",
-        "D": "\\(90^\\circ\\)"
-      },
-      "clave": "C",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Geometría",
-      "dificultad": "BAJA",
-      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana.",
-      "que_evalua": "La capacidad para identificar el ángulo complementario a un ángulo dado.",
-      "justificacion_correcta": "La línea punteada es perpendicular al piso, así que forma con él un ángulo de \\(90^\\circ\\). Como el campanario se desvió \\(7^\\circ\\) de esa línea, el ángulo que forma con el piso mide \\(90^\\circ - 7^\\circ = 83^\\circ\\).",
-      "opciones_incorrectas": {
-        "A": "Repite el ángulo de desviación sin restarlo de \\(90^\\circ\\).",
-        "B": "Suma \\(10^\\circ\\) por un error de cálculo.",
-        "D": "Da el ángulo recto sin descontar la desviación del campanario."
-      },
-      "imagen_figura": "assets/banco-mat-11-p1/q06.png"
-    },
-    {
-      "id": "P-math-11-p1-07",
-      "numero": 7,
-      "enunciado": "<p>En un centro deportivo se va a renovar el borde de la piscina infantil, el de la de recreación y el de la de entrenamiento. Cada borde se cubre con adoquines turquesa y blancos colocados de forma alternada, y la parte interior queda libre para el agua. Las figuras 1, 2 y 3 muestran cómo va quedando cada diseño.</p>[[IMG]]<p>Al comparar cada figura con la siguiente, ¿qué sucede con los adoquines?</p>",
-      "opciones": {
-        "A": "Los adoquines turquesa aumentan de cuatro en cuatro al pasar de una figura a la siguiente.",
-        "B": "Los adoquines blancos aumentan de seis en seis al crecer el tamaño del borde.",
-        "C": "En cada diseño los adoquines turquesa son el doble de los blancos.",
-        "D": "En cada diseño los adoquines blancos son la tercera parte de los turquesa."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "cmc": "Álgebra y Cálculo",
-      "dificultad": "ALTA",
-      "estandar": "Comparo y contrasto las propiedades de los números para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
-      "que_evalua": "La capacidad para identificar un patrón a partir de un conjunto de figuras dadas.",
-      "justificacion_correcta": "Al comparar una figura con la siguiente, la cantidad de adoquines turquesa sube siempre lo mismo: pasa de \\(8\\) a \\(12\\) y luego de \\(12\\) a \\(16\\), es decir cuatro más cada vez.",
-      "opciones_incorrectas": {
-        "B": "Los adoquines blancos también van \\(8, 12, 16\\): aumentan de cuatro en cuatro, no de seis en seis.",
-        "C": "En cada diseño hay la misma cantidad de adoquines turquesa que de blancos, no el doble.",
-        "D": "Los adoquines blancos igualan a los turquesa; no son su tercera parte."
-      },
-      "imagen_figura": "assets/banco-mat-11-p1/q07.png"
-    },
-    {
-      "id": "P-math-11-p1-08",
-      "numero": 8,
-      "enunciado": "<p>En el parqueadero de un centro comercial la tarifa se cobra por bloques: si el vehículo permanece menos de \\(3\\) horas se pagan \\(\\$4.000\\); entre \\(3\\) y menos de \\(9\\) horas, \\(\\$12.000\\); entre \\(9\\) y menos de \\(13\\) horas, \\(\\$22.000\\); y de \\(13\\) horas en adelante rige la tarifa de día completo, \\(\\$14.000\\). Dentro de cada bloque la tarifa no varía, y salta justo al cumplirse la hora con que abre el bloque siguiente.</p><p>¿Cuál de las siguientes gráficas (A, B, C o D) relaciona las horas de permanencia con la tarifa que se paga?</p>",
-      "opciones": {
-        "A": "Gráfica A.",
-        "B": "Gráfica B.",
-        "C": "Gráfica C.",
-        "D": "Gráfica D."
-      },
-      "clave": "A",
-      "competencia": "a",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "cmc": "Álgebra y Cálculo",
-      "dificultad": "ALTA",
-      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales.",
-      "que_evalua": "La capacidad para construir la gráfica asociada a una función a trozos descrita en una tabla.",
-      "justificacion_correcta": "La tarifa se mantiene constante dentro de cada bloque de horas y da un salto al pasar de un bloque al siguiente, así que la gráfica es escalonada: cuatro tramos horizontales, a la altura de \\(4.000\\), \\(12.000\\), \\(22.000\\) y \\(14.000\\) pesos, en ese orden. La gráfica A es la única que presenta esos cuatro tramos constantes con esas alturas, y en cada salto el punto lleno queda a la izquierda y el hueco a la derecha, tal como lo dice el enunciado: quien completa \\(3\\) horas ya paga \\(\\$12.000\\). El último tramo termina en punta de flecha porque de \\(13\\) horas en adelante la tarifa no vuelve a cambiar.",
-      "opciones_incorrectas": {
-        "B": "Une los valores con una línea continua, como si la tarifa subiera y bajara poco a poco con las horas.",
-        "C": "Asigna las alturas a bloques de horas equivocados.",
-        "D": "Muestra puntos aislados, no los tramos constantes de la función."
-      },
-      "opciones_imagenes": {
-        "A": "assets/banco-mat-11-p1/q08_opA.png",
-        "B": "assets/banco-mat-11-p1/q08_opB.png",
-        "C": "assets/banco-mat-11-p1/q08_opC.png",
-        "D": "assets/banco-mat-11-p1/q08_opD.png"
-      }
-    },
-    {
-      "id": "P-math-11-p1-09",
-      "numero": 9,
-      "enunciado": "<p>En la entrada del colegio se preguntó a <b>\\(400\\)</b> familias cómo llega su hijo cada mañana. La gráfica reparte las respuestas: a pie \\(15\\%\\), en bicicleta \\(20\\%\\), en bus escolar \\(45\\%\\) y en carro \\(20\\%\\). La leyenda separa a quienes llegan sin motor (a pie o en bicicleta) de quienes llegan en vehículo motorizado (bus escolar o carro).</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones es verdadera según los resultados?</p>",
-      "opciones": {
-        "A": "Más de \\(150\\) familias llegan en bus escolar.",
-        "B": "Las familias que llegan sin motor superan en número a las que llegan en vehículo motorizado.",
-        "C": "Menos de \\(200\\) familias llegan en vehículo motorizado.",
-        "D": "Más familias llegan a pie que en carro."
-      },
-      "clave": "A",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Estadística",
-      "dificultad": "BAJA",
-      "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
-      "que_evalua": "La capacidad para establecer una afirmación verdadera a partir de la información presentada en una gráfica.",
-      "justificacion_correcta": "El \\(45\\%\\) de \\(400\\) es \\(180\\) familias que llegan en bus escolar, y \\(180\\) es más de \\(150\\). Esa es la única afirmación verdadera.",
-      "opciones_incorrectas": {
-        "B": "Sin motor \\(= 15\\%+20\\% = 35\\%\\) \\((140\\) familias\\()\\); en vehículo motorizado \\(= 45\\%+20\\% = 65\\%\\) \\((260)\\). Las motorizadas son más, no menos.",
-        "C": "En vehículo motorizado hay \\(65\\%\\) de \\(400 = 260\\) familias, que no es menos de \\(200\\).",
-        "D": "A pie es \\(15\\%\\) \\((60\\) familias\\()\\) y en carro \\(20\\%\\) \\((80)\\); hay menos a pie, así que la comparación está invertida."
-      },
-      "imagen_figura": "assets/banco-mat-11-p1/q09.png"
-    },
-    {
       "id": "P-math-11-p1-10",
-      "numero": 10,
+      "numero": 2,
       "enunciado": "<p>Para la muestra folclórica del colegio se cuenta con <b>tres CD</b>, rotulados CD1, CD2 y CD3, y en cada uno hay pistas de <b>sanjuanero (S)</b> y de <b>mapalé (M)</b>. Se escoge al azar una pista del CD1, luego una del CD2 y, por último, una del CD3. ¿Cuál de los siguientes diagramas de árbol (A, B, C o D) representa correctamente este experimento?</p>",
       "opciones": {
-        "A": "Diagrama A.",
-        "B": "Diagrama B.",
-        "C": "Diagrama C.",
-        "D": "Diagrama D."
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
-      "clave": "A",
+      "clave": "C",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.2",
@@ -289,124 +79,22 @@
       "dificultad": "ALTA",
       "estandar": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos.",
       "que_evalua": "La capacidad para representar un experimento aleatorio mediante un diagrama de árbol.",
-      "justificacion_correcta": "El experimento tiene tres etapas (un CD por etapa) y en cada una hay dos posibilidades, S o M. El diagrama A es el único en el que TODOS los nodos, en los tres niveles, se abren correctamente en S y M; presenta tres niveles de ramificación y \\(2\\times 2\\times 2 = 8\\) trayectorias, todas distintas y bien etiquetadas.",
+      "justificacion_correcta": "El experimento tiene tres etapas (un CD por etapa) y en cada una hay dos posibilidades, S o M. El diagrama «Diagrama A» es el único en el que TODOS los nodos, en los tres niveles, se abren correctamente en S y M; presenta tres niveles de ramificación y \\(2\\times 2\\times 2 = 8\\) trayectorias, todas distintas y bien etiquetadas.",
       "opciones_incorrectas": {
-        "B": "El árbol está completo, pero en la primera pareja de hojas del CD3 aparece S, S en lugar de S y M: una rama del último nivel quedó mal etiquetada.",
-        "C": "El árbol está completo, pero la pareja de nodos del CD2 que cuelga de la rama S del primer CD aparece como S, S en lugar de S y M: el segundo nivel tiene una etiqueta repetida.",
-        "D": "El árbol está completo, pero en la última pareja de hojas del CD3 aparece M, M en lugar de S y M: una rama del último nivel quedó mal etiquetada."
+        "A": "El árbol está completo, pero en la primera pareja de hojas del CD3 aparece S, S en lugar de S y M: una rama del último nivel quedó mal etiquetada.",
+        "D": "El árbol está completo, pero la pareja de nodos del CD2 que cuelga de la rama S del primer CD aparece como S, S en lugar de S y M: el segundo nivel tiene una etiqueta repetida.",
+        "B": "El árbol está completo, pero en la última pareja de hojas del CD3 aparece M, M en lugar de S y M: una rama del último nivel quedó mal etiquetada."
       },
       "opciones_imagenes": {
-        "A": "assets/banco-mat-11-p1/q10_opA.png",
-        "B": "assets/banco-mat-11-p1/q10_opB.png",
-        "C": "assets/banco-mat-11-p1/q10_opC.png",
-        "D": "assets/banco-mat-11-p1/q10_opD.png"
-      }
-    },
-    {
-      "id": "P-math-11-p1-11",
-      "numero": 11,
-      "enunciado": "<p>En una planta de lácteos se vigila la temperatura, en grados Celsius, de la cámara donde fermenta el cuajo durante las tres primeras horas del proceso. La gráfica registra ese comportamiento.</p>[[IMG]]<p>¿Qué expresión describe esa curva?</p>",
-      "opciones": {
-        "A": "\\(T = 2\\,\\cos\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\)",
-        "B": "\\(T = 3\\,\\cos\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 39\\)",
-        "C": "\\(T = 2\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\)",
-        "D": "\\(T = 3\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 39\\)"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "cmc": "Geometría",
-      "dificultad": "ALTA",
-      "estandar": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
-      "que_evalua": "La capacidad para construir la función trigonométrica que representa una curva en una gráfica dada.",
-      "justificacion_correcta": "La curva arranca en el valor central \\((37)\\) y sube, que es el comportamiento del seno, y se aleja de ese valor central \\(2\\) unidades hacia arriba \\((39)\\) y \\(2\\) hacia abajo \\((35)\\), así que su amplitud es \\(2\\). Con el periodo de \\(3\\) horas que muestra la gráfica, la expresión es la de la opción C.",
-      "opciones_incorrectas": {
-        "A": "Acierta la amplitud y el valor central, pero usa coseno; el coseno en \\(t=0\\) parte del máximo \\((39)\\), no del valor central, así que no corresponde a esta curva.",
-        "B": "Usa coseno (parte del máximo, no del valor central) y toma amplitud \\(3\\) y centro \\(39\\), que no coinciden con la curva.",
-        "D": "Acierta el seno, pero toma amplitud \\(3\\) y centro \\(39\\) en lugar de \\(2\\) y \\(37\\); la curva no llega a \\(42\\) ni baja a \\(36\\)."
-      },
-      "imagen_figura": "assets/banco-mat-11-p1/q11.png"
-    },
-    {
-      "id": "P-math-11-p1-12",
-      "numero": 12,
-      "enunciado": "<p>Una motocicleta alcanza como máximo \\(120\\) kilómetros por hora. Andrés sostiene que, yendo a esa velocidad, en \\(120\\) horas la motocicleta recorrerá \\(1\\) kilómetro.</p><p>¿Es cierto lo que dice Andrés?</p>",
-      "opciones": {
-        "A": "Sí, porque al dividir \\(120\\) entre \\(120\\) horas se obtiene \\(1\\) kilómetro.",
-        "B": "No, porque en \\(120\\) horas la motocicleta recorre \\(120\\) kilómetros.",
-        "C": "Sí, porque \\(120\\) dividido entre \\(1\\) da el valor \\(120\\).",
-        "D": "No, porque a su velocidad máxima en una hora recorre \\(120\\) kilómetros."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "cmc": "Álgebra y Cálculo",
-      "dificultad": "BAJA",
-      "estandar": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva.",
-      "que_evalua": "La capacidad para analizar la validez de una afirmación sobre la interpretación de una razón de cambio.",
-      "justificacion_correcta": "A su velocidad máxima la motocicleta recorre \\(120\\) kilómetros en una sola hora, de modo que en \\(120\\) horas recorrería muchísimo más que un kilómetro. La afirmación confunde la unidad de la velocidad.",
-      "opciones_incorrectas": {
-        "A": "Acepta la afirmación falsa dividiendo la velocidad entre el tiempo.",
-        "B": "En \\(120\\) horas se recorren \\(14.400\\) km, no \\(120\\) km.",
-        "C": "Es un cálculo numérico sin sentido físico."
-      }
-    },
-    {
-      "id": "P-math-11-p1-13",
-      "numero": 13,
-      "enunciado": "<p>La figura está formada por los cuadrados <b>P</b> y <b>R</b> y por el triángulo rectángulo <b>S</b>.</p>[[IMG]]<p>Si el área del cuadrado P es <b>\\(100\\ \\text{m}^2\\)</b> y el área del cuadrado R es <b>\\(64\\ \\text{m}^2\\)</b>, ¿cuál es el área total de la figura?</p>",
-      "opciones": {
-        "A": "\\(80\\ \\text{m}^2\\)",
-        "B": "\\(164\\ \\text{m}^2\\)",
-        "C": "\\(204\\ \\text{m}^2\\)",
-        "D": "\\(244\\ \\text{m}^2\\)"
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.3",
-      "cmc": "Geometría",
-      "dificultad": "ALTA",
-      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
-      "que_evalua": "La capacidad para hallar áreas de figuras compuestas, dadas algunas de sus medidas.",
-      "justificacion_correcta": "El lado de P es \\(\\sqrt{100} = 10\\) m y el de R es \\(\\sqrt{64} = 8\\) m. El triángulo rectángulo S comparte sus catetos con esos lados, así que mide \\(10\\) y \\(8\\); su área es \\(\\dfrac{10\\times 8}{2} = 40\\ \\text{m}^2\\). El área total es \\(100 + 64 + 40 = 204\\ \\text{m}^2\\).",
-      "opciones_incorrectas": {
-        "A": "Toma solo el triángulo y, además, multiplica los catetos sin dividir entre \\(2\\) \\((10\\times 8 = 80)\\), ignorando los dos cuadrados.",
-        "B": "Suma únicamente las áreas de los dos cuadrados \\((100+64)\\) y olvida el triángulo.",
-        "D": "Suma los cuadrados pero calcula el triángulo sin dividir entre \\(2\\) \\((10\\times 8 = 80)\\): \\(100+64+80 = 244\\)."
-      },
-      "imagen_figura": "assets/banco-mat-11-p1/q13.png"
-    },
-    {
-      "id": "P-math-11-p1-14",
-      "numero": 14,
-      "enunciado": "<p>La cantidad de personas conectadas a la transmisión en vivo de la izada de bandera de un colegio se modela con la expresión <b>\\(P = 3^{x+1} + 5\\)</b>, donde \\(x\\) es el número de minutos transcurridos desde que empezó la transmisión. ¿Cuál de las siguientes tablas presenta correctamente algunas parejas de tiempo y cantidad de personas conectadas?</p>",
-      "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">21</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">81</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">86</td></tr></table>"
-      },
-      "clave": "D",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Álgebra y Cálculo",
-      "dificultad": "ALTA",
-      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
-      "que_evalua": "La capacidad para calcular parejas ordenadas, relacionadas mediante funciones exponenciales en contextos aplicados.",
-      "justificacion_correcta": "Al evaluar \\(P = 3^{x+1} + 5\\): para \\(x=1\\), \\(3^2 + 5 = 9 + 5 = 14\\); para \\(x=2\\), \\(3^3 + 5 = 27 + 5 = 32\\); para \\(x=3\\), \\(3^4 + 5 = 81 + 5 = 86\\). La tabla correcta es la D.",
-      "opciones_incorrectas": {
-        "A": "Aplica una regla lineal (de la forma \\(6x+3\\)) en lugar de la exponencial: \\(9, 15, 21\\) crecen de seis en seis.",
-        "B": "Calcula solo \\(3^{x+1}\\) y olvida sumar la constante \\(5\\): \\(9, 27, 81\\).",
-        "C": "Acierta el primer valor \\((14)\\) pero luego suma de seis en seis \\((14, 20, 26)\\), ignorando el crecimiento exponencial."
+        "C": "assets/banco-mat-11-p1/q10_opA.png",
+        "A": "assets/banco-mat-11-p1/q10_opB.png",
+        "D": "assets/banco-mat-11-p1/q10_opC.png",
+        "B": "assets/banco-mat-11-p1/q10_opD.png"
       }
     },
     {
       "id": "P-math-11-p1-15",
-      "numero": 15,
+      "numero": 3,
       "enunciado": "<p>Los litros de agua, en millones, que quedan en un embalse tras aplicar un plan de ahorro se describen con \\(g(x) = 2 + \\sqrt{15 - x}\\), donde \\(x\\) son las semanas transcurridas.</p><p>¿Para qué valores de \\(x\\) tiene sentido esa expresión?</p>",
       "opciones": {
         "A": "\\(x \\ge 15\\)",
@@ -430,33 +118,140 @@
       }
     },
     {
-      "id": "P-math-11-p1-16",
-      "numero": 16,
-      "enunciado": "<p>En la feria de matemáticas del colegio hay una ruleta con nueve casillas iguales, numeradas del \\(1\\) al \\(9\\). Cada participante la hace girar dos veces y gana un bono cuando el número de la segunda vuelta es el triple del número de la primera.</p><p>¿Qué probabilidad hay de ganar el bono?</p>",
+      "id": "P-math-11-p1-20",
+      "numero": 4,
+      "enunciado": "<p>Para la portada de su cuaderno, Mariana contorneó sobre cartulina verde una plantilla ovalada de acrílico y obtuvo la curva cerrada de la figura, que su profesora llamó elipse. Doblando la cartulina en dos direcciones marcó el cruce de los dobleces y desde ahí, con una regla, tomó mediciones hacia la curva en muchas direcciones distintas. A la mayor de esas mediciones la profesora la llama semieje mayor, y a la menor, semieje menor. Mariana sostiene lo siguiente: si esas dos anotaciones de su cuaderno dieran el mismo resultado, la curva contorneada sería una circunferencia. La plantilla, que vino en el estuche de geometría, permite contornear óvalos de varios tamaños.</p>[[IMG]]<p>¿Es correcta la conclusión de Mariana?</p>",
       "opciones": {
-        "A": "\\(\\dfrac{2}{81}\\)",
-        "B": "\\(\\dfrac{3}{81}\\)",
-        "C": "\\(\\dfrac{4}{81}\\)",
-        "D": "\\(\\dfrac{6}{81}\\)"
+        "A": "No, porque que el semieje mayor y el menor midan lo mismo no garantiza que todas las distancias del centro a la curva sean iguales.",
+        "B": "No, porque las distancias del centro a la curva siempre son distintas, así que los dos semiejes nunca pueden medir lo mismo.",
+        "C": "Sí, porque una curva en la que el semieje mayor mide distinto del menor nunca puede ser una circunferencia.",
+        "D": "Sí, porque cada distancia del centro a la curva queda entre la del semieje menor y la del semieje mayor; si esas dos son iguales, todas lo son."
       },
-      "clave": "B",
+      "clave": "D",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo curvas y o lugares geométricos.",
+      "que_evalua": "La capacidad para deducir características de una cónica, dadas condiciones sobre su construcción.",
+      "justificacion_correcta": "El semieje menor y el semieje mayor son, respectivamente, la menor y la mayor de las distancias que van del centro a la curva. Si esas dos dieran el mismo resultado, todas las distancias del centro a la curva medirían lo mismo, y una curva cuyos puntos están todos a igual distancia del centro es una circunferencia.",
+      "opciones_incorrectas": {
+        "B": "Parte de que las distancias del centro a la curva siempre son distintas, lo cual es falso.",
+        "A": "Niega la conclusión y desconoce que las demás distancias quedan entre la menor y la mayor.",
+        "C": "Concluye que sí, pero justifica el caso de semiejes con medidas diferentes, no el caso de igualdad que se plantea."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q20.png"
+    },
+    {
+      "id": "P-math-11-p1-04",
+      "numero": 5,
+      "enunciado": "<p>Para un torneo interno, un entrenador debe formar al azar una pareja de \\(2\\) jugadores entre los preseleccionados. Al contar las posibilidades encuentra que existen exactamente \\(21\\) parejas distintas.</p><p>¿Cuántos jugadores preseleccionó?</p>",
+      "opciones": {
+        "A": "\\(21\\)",
+        "B": "\\(6\\)",
+        "C": "\\(42\\)",
+        "D": "\\(7\\)"
+      },
+      "clave": "D",
       "competencia": "b",
       "afirmacion": 2,
       "evidencia": "2.3",
       "cmc": "Estadística",
       "dificultad": "ALTA",
-      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad.",
-      "que_evalua": "La capacidad para calcular la probabilidad de un evento en contextos usuales trabajados en el aula (dados, canicas, cartas, etc.).",
-      "justificacion_correcta": "Las parejas favorables son \\((1,3)\\), \\((2,6)\\) y \\((3,9)\\), es decir tres, sobre los \\(9\\times 9 = 81\\) resultados posibles de las dos vueltas: \\(\\dfrac{3}{81}\\).",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La capacidad para calcular el cardinal del conjunto del que se van a elegir elementos al azar a partir del número de elecciones y del total de combinaciones posibles.",
+      "justificacion_correcta": "El número de parejas que se pueden formar con \\(n\\) jugadores es \\(\\dfrac{n(n-1)}{2}\\). Igualando a \\(21\\) se obtiene \\(n = 7\\).",
       "opciones_incorrectas": {
-        "A": "Cuenta solo dos parejas favorables y deja por fuera una de las tres que cumplen la condición.",
-        "C": "Sobrecuenta: agrega una pareja en la que el segundo número no es el triple del primero.",
-        "D": "Suma también las parejas invertidas \\((3, 1)\\), \\((6, 2)\\) y \\((9, 3)\\), en las que el segundo número es la tercera parte, no el triple, del primero."
+        "C": "Resuelve \\(n(n-1) = 42\\) pero olvida dividir entre \\(2\\), quedándose con \\(42\\).",
+        "A": "Toma el número de parejas \\((21)\\) como si fuera el total de jugadores.",
+        "B": "Da \\(n-1\\) en lugar de \\(n\\) al resolver \\(n(n-1) = 42\\)."
+      }
+    },
+    {
+      "id": "P-math-11-p1-08",
+      "numero": 6,
+      "enunciado": "<p>En el parqueadero de un centro comercial la tarifa se cobra por bloques: si el vehículo permanece menos de \\(3\\) horas se pagan \\(\\$4.000\\); entre \\(3\\) y menos de \\(9\\) horas, \\(\\$12.000\\); entre \\(9\\) y menos de \\(13\\) horas, \\(\\$22.000\\); y de \\(13\\) horas en adelante rige la tarifa de día completo, \\(\\$14.000\\). Dentro de cada bloque la tarifa no varía, y salta justo al cumplirse la hora con que abre el bloque siguiente.</p><p>¿Cuál de las siguientes gráficas (A, B, C o D) relaciona las horas de permanencia con la tarifa que se paga?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales.",
+      "que_evalua": "La capacidad para construir la gráfica asociada a una función a trozos descrita en una tabla.",
+      "justificacion_correcta": "La tarifa se mantiene constante dentro de cada bloque de horas y da un salto al pasar de un bloque al siguiente, así que la gráfica es escalonada: cuatro tramos horizontales, a la altura de \\(4.000\\), \\(12.000\\), \\(22.000\\) y \\(14.000\\) pesos, en ese orden. La gráfica «Gráfica A» es la única que presenta esos cuatro tramos constantes con esas alturas, y en cada salto el punto lleno queda a la izquierda y el hueco a la derecha, tal como lo dice el enunciado: quien completa \\(3\\) horas ya paga \\(\\$12.000\\). El último tramo termina en punta de flecha porque de \\(13\\) horas en adelante la tarifa no vuelve a cambiar.",
+      "opciones_incorrectas": {
+        "A": "Une los valores con una línea continua, como si la tarifa subiera y bajara poco a poco con las horas.",
+        "C": "Asigna las alturas a bloques de horas equivocados.",
+        "B": "Muestra puntos aislados, no los tramos constantes de la función."
+      },
+      "opciones_imagenes": {
+        "D": "assets/banco-mat-11-p1/q08_opA.png",
+        "A": "assets/banco-mat-11-p1/q08_opB.png",
+        "C": "assets/banco-mat-11-p1/q08_opC.png",
+        "B": "assets/banco-mat-11-p1/q08_opD.png"
+      }
+    },
+    {
+      "id": "P-math-11-p1-05",
+      "numero": 7,
+      "enunciado": "<p>Una caja contiene \\(4\\) fichas verdes, \\(4\\) amarillas y \\(16\\) azules. Camilo sostiene que, al sacar una ficha sin mirar, los tres colores tienen la misma probabilidad de salir.</p><p>¿Tiene razón Camilo?</p>",
+      "opciones": {
+        "A": "Sí, porque hay tres colores distintos en la caja.",
+        "B": "No, porque no se conoce el número total de fichas de la caja.",
+        "C": "No, porque hay más fichas de un color que de los otros dos.",
+        "D": "Sí, porque las fichas están repartidas de la misma forma."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La capacidad para justificar la validez de una afirmación sobre una probabilidad a partir de la descripción de los elementos de un conjunto.",
+      "justificacion_correcta": "Las azules son \\(16\\) frente a \\(4\\) de cada uno de los otros colores. Al haber muchas más de un color, ese color tiene más probabilidad y la afirmación no se sostiene.",
+      "opciones_incorrectas": {
+        "A": "El número de colores no determina la probabilidad de cada uno.",
+        "B": "El total sí se conoce; el problema no está en desconocerlo.",
+        "D": "Las cantidades no son iguales, así que el reparto no es uniforme."
+      }
+    },
+    {
+      "id": "P-math-11-p1-14",
+      "numero": 8,
+      "enunciado": "<p>La cantidad de personas conectadas a la transmisión en vivo de la izada de bandera de un colegio se modela con la expresión <b>\\(P = 3^{x+1} + 5\\)</b>, donde \\(x\\) es el número de minutos transcurridos desde que empezó la transmisión. ¿Cuál de las siguientes tablas presenta correctamente algunas parejas de tiempo y cantidad de personas conectadas?</p>",
+      "opciones": {
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">21</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">27</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">81</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">26</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">x (minutos)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">P (personas)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">14</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">86</td></tr></table>"
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La capacidad para calcular parejas ordenadas, relacionadas mediante funciones exponenciales en contextos aplicados.",
+      "justificacion_correcta": "Al evaluar \\(P = 3^{x+1} + 5\\): para \\(x=1\\), \\(3^2 + 5 = 9 + 5 = 14\\); para \\(x=2\\), \\(3^3 + 5 = 27 + 5 = 32\\); para \\(x=3\\), \\(3^4 + 5 = 81 + 5 = 86\\). La tabla correcta es «x (minutos) P (personas) 1 14 2 32 3 86».",
+      "opciones_incorrectas": {
+        "A": "Aplica una regla lineal (de la forma \\(6x+3\\)) en lugar de la exponencial: \\(9, 15, 21\\) crecen de seis en seis.",
+        "B": "Calcula solo \\(3^{x+1}\\) y olvida sumar la constante \\(5\\): \\(9, 27, 81\\).",
+        "C": "Acierta el primer valor \\((14)\\) pero luego suma de seis en seis \\((14, 20, 26)\\), ignorando el crecimiento exponencial."
       }
     },
     {
       "id": "P-math-11-p1-17",
-      "numero": 17,
+      "numero": 9,
       "enunciado": "<p>La administradora de una papelería de barrio revisó cuántas unidades vendió de dos productos durante los seis meses que lleva abierto el local, como recoge la gráfica.</p>[[IMG]]<p>¿Qué afirmación se sostiene con esos datos?</p>",
       "opciones": {
         "A": "Las ventas del producto 1 crecen a medida que pasan los meses.",
@@ -481,42 +276,68 @@
       "imagen_figura": "assets/banco-mat-11-p1/q17.png"
     },
     {
-      "id": "P-math-11-p1-18",
-      "numero": 18,
-      "enunciado": "<p>Sobre la recta numérica, un saltamontes arranca en el punto \\(3\\), con las unidades medidas en metros. Salta \\(6\\) metros hacia el oriente, después \\(2\\) metros hacia el occidente y por último \\(3\\) metros hacia el oriente.</p>[[IMG]]<p>¿Qué operación permite saber en qué punto termina?</p>",
+      "id": "P-math-11-p1-02",
+      "numero": 10,
+      "enunciado": "<p>Una profesora entregó la misma figura sombreada a tres estudiantes y les pidió girarla \\(90^\\circ\\) en sentido antihorario respecto al origen del plano.</p>[[IMG]]<p>¿Cuáles de los tres resultados están bien hechos?</p>",
       "opciones": {
-        "A": "Sumar 6 metros y 3 metros, restarle 2 metros y, por último, restarle la posición inicial de 3 metros.",
-        "B": "Sumar 6 metros y 3 metros, restarle 2 metros y, por último, sumarle la posición inicial de 3 metros.",
-        "C": "Sumar 6 metros y 2 metros, restarle 3 metros y, por último, restarle la posición inicial de 3 metros.",
-        "D": "Sumar 6 metros y 2 metros, restarle 3 metros y, por último, sumarle la posición inicial de 3 metros."
+        "A": "Los tres: I, II y III.",
+        "B": "Solo I y II.",
+        "C": "Solo I y III.",
+        "D": "Solo II y III."
       },
       "clave": "B",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "cmc": "Álgebra y Cálculo",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
       "dificultad": "BAJA",
-      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales).",
-      "que_evalua": "La capacidad para explicar las operaciones entre números enteros usando la recta numérica.",
-      "justificacion_correcta": "Los saltos hacia el oriente se suman y los del occidente se restan, partiendo de la posición inicial: se suman \\(6\\) y \\(3\\) metros, se resta \\(2\\) y se cuenta desde el punto \\(3\\).",
+      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana y otros y en particular de las curvas y figuras cónicas.",
+      "que_evalua": "La capacidad para identificar las rotaciones de figuras geométricas que cumplen con una condición dada.",
+      "justificacion_correcta": "Un giro de \\(90^\\circ\\) en sentido antihorario conserva la forma y el tamaño y cambia la posición de manera determinada. Solo los resultados I y II cumplen esas condiciones.",
       "opciones_incorrectas": {
-        "A": "Agrupa bien los movimientos (suma 6 y 3, resta 2) pero resta la posición inicial en lugar de sumarla, como si la partida fuera hacia el occidente.",
-        "C": "Equivoca los dos ejes: agrupa mal (suma 6 y 2, resta 3, intercambiando un movimiento al oriente con el del occidente) y además resta la posición inicial.",
-        "D": "Agrupa mal los movimientos (suma 6 y 2, resta 3, intercambiando oriente y occidente) aunque suma correctamente la posición inicial."
+        "D": "Da por correcto al estudiante III, que rotó en sentido horario.",
+        "C": "Descarta al estudiante II, que sí rotó correctamente.",
+        "A": "Acepta los tres sin notar el sentido equivocado del estudiante III."
       },
-      "imagen_figura": "assets/banco-mat-11-p1/q18.png"
+      "imagen_figura": "assets/banco-mat-11-p1/q02.png"
+    },
+    {
+      "id": "P-math-11-p1-09",
+      "numero": 11,
+      "enunciado": "<p>En la entrada del colegio se preguntó a <b>\\(400\\)</b> familias cómo llega su hijo cada mañana. La gráfica reparte las respuestas: a pie \\(15\\%\\), en bicicleta \\(20\\%\\), en bus escolar \\(45\\%\\) y en carro \\(20\\%\\). La leyenda separa a quienes llegan sin motor (a pie o en bicicleta) de quienes llegan en vehículo motorizado (bus escolar o carro).</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones es verdadera según los resultados?</p>",
+      "opciones": {
+        "A": "Más familias llegan a pie que en carro.",
+        "B": "Las familias que llegan sin motor superan en número a las que llegan en vehículo motorizado.",
+        "C": "Más de \\(150\\) familias llegan en bus escolar.",
+        "D": "Menos de \\(200\\) familias llegan en vehículo motorizado."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
+      "que_evalua": "La capacidad para establecer una afirmación verdadera a partir de la información presentada en una gráfica.",
+      "justificacion_correcta": "El \\(45\\%\\) de \\(400\\) es \\(180\\) familias que llegan en bus escolar, y \\(180\\) es más de \\(150\\). Esa es la única afirmación verdadera.",
+      "opciones_incorrectas": {
+        "B": "Sin motor \\(= 15\\%+20\\% = 35\\%\\) \\((140\\) familias\\()\\); en vehículo motorizado \\(= 45\\%+20\\% = 65\\%\\) \\((260)\\). Las motorizadas son más, no menos.",
+        "D": "En vehículo motorizado hay \\(65\\%\\) de \\(400 = 260\\) familias, que no es menos de \\(200\\).",
+        "A": "A pie es \\(15\\%\\) \\((60\\) familias\\()\\) y en carro \\(20\\%\\) \\((80)\\); hay menos a pie, así que la comparación está invertida."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q09.png"
     },
     {
       "id": "P-math-11-p1-19",
-      "numero": 19,
+      "numero": 12,
       "enunciado": "<p>El bosquejo corresponde al corte lateral de una rampa de acceso, con sus cuatro lados rotulados X, Y, Z y W. Los cuadritos dibujados en las dos esquinas de abajo indican que Y forma ángulo recto con X y que W también forma ángulo recto con X.</p>[[IMG]]<p>¿Qué razón explica que Y y W sean paralelos entre sí?</p>",
       "opciones": {
-        "A": "Porque los lados W y X tienen la misma medida.",
-        "B": "Porque cada uno de esos dos lados forma ángulo recto con el lado X.",
-        "C": "Porque toda figura de cuatro lados tiene siempre dos lados paralelos.",
-        "D": "Porque a la figura le basta con tener un ángulo recto para que dos de sus lados sean paralelos."
+        "A": "Porque cada uno de esos dos lados forma ángulo recto con el lado X.",
+        "B": "Porque los lados W y X tienen la misma medida.",
+        "C": "Porque a la figura le basta con tener un ángulo recto para que dos de sus lados sean paralelos.",
+        "D": "Porque toda figura de cuatro lados tiene siempre dos lados paralelos."
       },
-      "clave": "B",
+      "clave": "A",
       "competencia": "c",
       "afirmacion": 3,
       "evidencia": "3.1",
@@ -526,37 +347,216 @@
       "que_evalua": "La capacidad para justificar relaciones de paralelismo entre segmentos de recta utilizando propiedades de los ángulos que componen las figuras planas.",
       "justificacion_correcta": "Dos rectas perpendiculares a una misma recta son paralelas entre sí. Como Y y W forman ángulo recto con X, quedan paralelos.",
       "opciones_incorrectas": {
-        "A": "Que dos lados tengan la misma medida no implica que sean paralelos.",
-        "C": "Hay figuras de cuatro lados sin ningún par de lados paralelos, como el trapezoide.",
-        "D": "Tener un solo ángulo recto no garantiza que dos lados sean paralelos."
+        "B": "Que dos lados tengan la misma medida no implica que sean paralelos.",
+        "D": "Hay figuras de cuatro lados sin ningún par de lados paralelos, como el trapezoide.",
+        "C": "Tener un solo ángulo recto no garantiza que dos lados sean paralelos."
       },
       "imagen_figura": "assets/banco-mat-11-p1/q19.png"
     },
     {
-      "id": "P-math-11-p1-20",
-      "numero": 20,
-      "enunciado": "<p>Para la portada de su cuaderno, Mariana contorneó sobre cartulina verde una plantilla ovalada de acrílico y obtuvo la curva cerrada de la figura, que su profesora llamó elipse. Doblando la cartulina en dos direcciones marcó el cruce de los dobleces y desde ahí, con una regla, tomó mediciones hacia la curva en muchas direcciones distintas. A la mayor de esas mediciones la profesora la llama semieje mayor, y a la menor, semieje menor. Mariana sostiene lo siguiente: si esas dos anotaciones de su cuaderno dieran el mismo resultado, la curva contorneada sería una circunferencia. La plantilla, que vino en el estuche de geometría, permite contornear óvalos de varios tamaños.</p>[[IMG]]<p>¿Es correcta la conclusión de Mariana?</p>",
+      "id": "P-math-11-p1-03",
+      "numero": 13,
+      "enunciado": "<p>La tabla recoge con quién comercia cada país: a quién le vende y de quién compra.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">País</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>S, M</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R, V</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>Q, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>V, M</i></td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>S</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, T</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>V</i></td></tr></table><p>¿Cuál de las siguientes tablas recoge esa misma información?</p>",
       "opciones": {
-        "A": "No, porque las distancias del centro a la curva siempre son distintas, así que los dos semiejes nunca pueden medir lo mismo.",
-        "B": "No, porque que el semieje mayor y el menor midan lo mismo no garantiza que todas las distancias del centro a la curva sean iguales.",
-        "C": "Sí, porque cada distancia del centro a la curva queda entre la del semieje menor y la del semieje mayor; si esas dos son iguales, todas lo son.",
-        "D": "Sí, porque una curva en la que el semieje mayor mide distinto del menor nunca puede ser una circunferencia."
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>R, V, Q</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>T, R</i></td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, R</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>P, R</i></td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le vende a:</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Le compra a:</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\"><i>A nadie</i></td></tr></table>"
+      },
+      "clave": "B",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La capacidad para identificar los valores asociados a un dato en particular a partir de la información presentada en una tabla.",
+      "justificacion_correcta": "El país M no tiene fila propia: hay que rastrearlo dentro de las celdas. M aparece en la columna 'Compra productos de:' de P y de R, lo que significa que esos países compran a M, es decir, M les VENDE a P y a R. En cambio, M no aparece en ninguna celda de la columna 'Vende productos a:', así que ningún país le vende a M; por tanto, M NO COMPRA de nadie. La tabla correcta es 'Vende a: P, R / Compra de: Ninguno'.",
+      "opciones_incorrectas": {
+        "D": "Supone que M no aparece en ninguna columna, ignorando que P y R lo registran como su proveedor.",
+        "C": "Invierte las columnas: pone en 'compra' lo que en realidad M vende a P y R.",
+        "A": "Copia las relaciones de otro país de la tabla en lugar de rastrear M."
+      }
+    },
+    {
+      "id": "P-math-11-p1-13",
+      "numero": 14,
+      "enunciado": "<p>La figura está formada por los cuadrados <b>P</b> y <b>R</b> y por el triángulo rectángulo <b>S</b>.</p>[[IMG]]<p>Si el área del cuadrado P es <b>\\(100\\ \\text{m}^2\\)</b> y el área del cuadrado R es <b>\\(64\\ \\text{m}^2\\)</b>, ¿cuál es el área total de la figura?</p>",
+      "opciones": {
+        "A": "\\(80\\ \\text{m}^2\\)",
+        "B": "\\(164\\ \\text{m}^2\\)",
+        "C": "\\(204\\ \\text{m}^2\\)",
+        "D": "\\(244\\ \\text{m}^2\\)"
+      },
+      "clave": "C",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
+      "que_evalua": "La capacidad para hallar áreas de figuras compuestas, dadas algunas de sus medidas.",
+      "justificacion_correcta": "El lado de P es \\(\\sqrt{100} = 10\\) m y el de R es \\(\\sqrt{64} = 8\\) m. El triángulo rectángulo S comparte sus catetos con esos lados, así que mide \\(10\\) y \\(8\\); su área es \\(\\dfrac{10\\times 8}{2} = 40\\ \\text{m}^2\\). El área total es \\(100 + 64 + 40 = 204\\ \\text{m}^2\\).",
+      "opciones_incorrectas": {
+        "A": "Toma solo el triángulo y, además, multiplica los catetos sin dividir entre \\(2\\) \\((10\\times 8 = 80)\\), ignorando los dos cuadrados.",
+        "B": "Suma únicamente las áreas de los dos cuadrados \\((100+64)\\) y olvida el triángulo.",
+        "D": "Suma los cuadrados pero calcula el triángulo sin dividir entre \\(2\\) \\((10\\times 8 = 80)\\): \\(100+64+80 = 244\\)."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q13.png"
+    },
+    {
+      "id": "P-math-11-p1-06",
+      "numero": 15,
+      "enunciado": "<p>Después de una temporada de lluvias, el campanario de una capilla veredal quedó ladeado y el equipo técnico de la alcaldía midió cuánto se desvió. En la figura, la línea punteada es perpendicular al piso y el campanario forma con ella un ángulo de <b>\\(7^\\circ\\)</b>.</p>[[IMG]]<p>¿Cuánto mide el ángulo que el campanario forma con el <b>piso</b>, marcado con '?' en la figura?</p>",
+      "opciones": {
+        "A": "\\(7^\\circ\\)",
+        "B": "\\(17^\\circ\\)",
+        "C": "\\(83^\\circ\\)",
+        "D": "\\(90^\\circ\\)"
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "BAJA",
+      "estandar": "Identifico características de localización de objetos geométricos en sistemas de representación cartesiana.",
+      "que_evalua": "La capacidad para identificar el ángulo complementario a un ángulo dado.",
+      "justificacion_correcta": "La línea punteada es perpendicular al piso, así que forma con él un ángulo de \\(90^\\circ\\). Como el campanario se desvió \\(7^\\circ\\) de esa línea, el ángulo que forma con el piso mide \\(90^\\circ - 7^\\circ = 83^\\circ\\).",
+      "opciones_incorrectas": {
+        "A": "Repite el ángulo de desviación sin restarlo de \\(90^\\circ\\).",
+        "B": "Suma \\(10^\\circ\\) por un error de cálculo.",
+        "D": "Da el ángulo recto sin descontar la desviación del campanario."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q06.png"
+    },
+    {
+      "id": "P-math-11-p1-12",
+      "numero": 16,
+      "enunciado": "<p>Una motocicleta alcanza como máximo \\(120\\) kilómetros por hora. Andrés sostiene que, yendo a esa velocidad, en \\(120\\) horas la motocicleta recorrerá \\(1\\) kilómetro.</p><p>¿Es cierto lo que dice Andrés?</p>",
+      "opciones": {
+        "A": "No, porque en \\(120\\) horas la motocicleta recorre \\(120\\) kilómetros.",
+        "B": "Sí, porque al dividir \\(120\\) entre \\(120\\) horas se obtiene \\(1\\) kilómetro.",
+        "C": "No, porque a su velocidad máxima en una hora recorre \\(120\\) kilómetros.",
+        "D": "Sí, porque \\(120\\) dividido entre \\(1\\) da el valor \\(120\\)."
       },
       "clave": "C",
       "competencia": "c",
       "afirmacion": 3,
-      "evidencia": "3.3",
-      "cmc": "Geometría",
-      "dificultad": "MEDIA",
-      "estandar": "Reconozco y describo curvas y o lugares geométricos.",
-      "que_evalua": "La capacidad para deducir características de una cónica, dadas condiciones sobre su construcción.",
-      "justificacion_correcta": "El semieje menor y el semieje mayor son, respectivamente, la menor y la mayor de las distancias que van del centro a la curva. Si esas dos dieran el mismo resultado, todas las distancias del centro a la curva medirían lo mismo, y una curva cuyos puntos están todos a igual distancia del centro es una circunferencia.",
+      "evidencia": "3.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Interpreto la noción de derivada como razón de cambio y como valor de la pendiente de la tangente a una curva.",
+      "que_evalua": "La capacidad para analizar la validez de una afirmación sobre la interpretación de una razón de cambio.",
+      "justificacion_correcta": "A su velocidad máxima la motocicleta recorre \\(120\\) kilómetros en una sola hora, de modo que en \\(120\\) horas recorrería muchísimo más que un kilómetro. La afirmación confunde la unidad de la velocidad.",
       "opciones_incorrectas": {
-        "A": "Parte de que las distancias del centro a la curva siempre son distintas, lo cual es falso.",
-        "B": "Niega la conclusión y desconoce que las demás distancias quedan entre la menor y la mayor.",
-        "D": "Concluye que sí, pero justifica el caso de semiejes con medidas diferentes, no el caso de igualdad que se plantea."
+        "B": "Acepta la afirmación falsa dividiendo la velocidad entre el tiempo.",
+        "A": "En \\(120\\) horas se recorren \\(14.400\\) km, no \\(120\\) km.",
+        "D": "Es un cálculo numérico sin sentido físico."
+      }
+    },
+    {
+      "id": "P-math-11-p1-18",
+      "numero": 17,
+      "enunciado": "<p>Sobre la recta numérica, un saltamontes arranca en el punto \\(3\\), con las unidades medidas en metros. Salta \\(6\\) metros hacia el oriente, después \\(2\\) metros hacia el occidente y por último \\(3\\) metros hacia el oriente.</p>[[IMG]]<p>¿Qué operación permite saber en qué punto termina?</p>",
+      "opciones": {
+        "A": "Sumar 6 metros y 2 metros, restarle 3 metros y, por último, restarle la posición inicial de 3 metros.",
+        "B": "Sumar 6 metros y 2 metros, restarle 3 metros y, por último, sumarle la posición inicial de 3 metros.",
+        "C": "Sumar 6 metros y 3 metros, restarle 2 metros y, por último, restarle la posición inicial de 3 metros.",
+        "D": "Sumar 6 metros y 3 metros, restarle 2 metros y, por último, sumarle la posición inicial de 3 metros."
       },
-      "imagen_figura": "assets/banco-mat-11-p1/q20.png"
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales).",
+      "que_evalua": "La capacidad para explicar las operaciones entre números enteros usando la recta numérica.",
+      "justificacion_correcta": "Los saltos hacia el oriente se suman y los del occidente se restan, partiendo de la posición inicial: se suman \\(6\\) y \\(3\\) metros, se resta \\(2\\) y se cuenta desde el punto \\(3\\).",
+      "opciones_incorrectas": {
+        "C": "Agrupa bien los movimientos (suma 6 y 3, resta 2) pero resta la posición inicial en lugar de sumarla, como si la partida fuera hacia el occidente.",
+        "A": "Equivoca los dos ejes: agrupa mal (suma 6 y 2, resta 3, intercambiando un movimiento al oriente con el del occidente) y además resta la posición inicial.",
+        "B": "Agrupa mal los movimientos (suma 6 y 2, resta 3, intercambiando oriente y occidente) aunque suma correctamente la posición inicial."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q18.png"
+    },
+    {
+      "id": "P-math-11-p1-16",
+      "numero": 18,
+      "enunciado": "<p>En la feria de matemáticas del colegio hay una ruleta con nueve casillas iguales, numeradas del \\(1\\) al \\(9\\). Cada participante la hace girar dos veces y gana un bono cuando el número de la segunda vuelta es el triple del número de la primera.</p><p>¿Qué probabilidad hay de ganar el bono?</p>",
+      "opciones": {
+        "A": "\\(\\dfrac{2}{81}\\)",
+        "B": "\\(\\dfrac{3}{81}\\)",
+        "C": "\\(\\dfrac{4}{81}\\)",
+        "D": "\\(\\dfrac{6}{81}\\)"
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad.",
+      "que_evalua": "La capacidad para calcular la probabilidad de un evento en contextos usuales trabajados en el aula (dados, canicas, cartas, etc.).",
+      "justificacion_correcta": "Las parejas favorables son \\((1,3)\\), \\((2,6)\\) y \\((3,9)\\), es decir tres, sobre los \\(9\\times 9 = 81\\) resultados posibles de las dos vueltas: \\(\\dfrac{3}{81}\\).",
+      "opciones_incorrectas": {
+        "A": "Cuenta solo dos parejas favorables y deja por fuera una de las tres que cumplen la condición.",
+        "C": "Sobrecuenta: agrega una pareja en la que el segundo número no es el triple del primero.",
+        "D": "Suma también las parejas invertidas \\((3, 1)\\), \\((6, 2)\\) y \\((9, 3)\\), en las que el segundo número es la tercera parte, no el triple, del primero."
+      }
+    },
+    {
+      "id": "P-math-11-p1-07",
+      "numero": 19,
+      "enunciado": "<p>En un centro deportivo se va a renovar el borde de la piscina infantil, el de la de recreación y el de la de entrenamiento. Cada borde se cubre con adoquines turquesa y blancos colocados de forma alternada, y la parte interior queda libre para el agua. Las figuras 1, 2 y 3 muestran cómo va quedando cada diseño.</p>[[IMG]]<p>Al comparar cada figura con la siguiente, ¿qué sucede con los adoquines?</p>",
+      "opciones": {
+        "A": "En cada diseño los adoquines blancos son la tercera parte de los turquesa.",
+        "B": "En cada diseño los adoquines turquesa son el doble de los blancos.",
+        "C": "Los adoquines turquesa aumentan de cuatro en cuatro al pasar de una figura a la siguiente.",
+        "D": "Los adoquines blancos aumentan de seis en seis al crecer el tamaño del borde."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Álgebra y Cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Comparo y contrasto las propiedades de los números para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La capacidad para identificar un patrón a partir de un conjunto de figuras dadas.",
+      "justificacion_correcta": "Al comparar una figura con la siguiente, la cantidad de adoquines turquesa sube siempre lo mismo: pasa de \\(8\\) a \\(12\\) y luego de \\(12\\) a \\(16\\), es decir cuatro más cada vez.",
+      "opciones_incorrectas": {
+        "D": "Los adoquines blancos también van \\(8, 12, 16\\): aumentan de cuatro en cuatro, no de seis en seis.",
+        "B": "En cada diseño hay la misma cantidad de adoquines turquesa que de blancos, no el doble.",
+        "A": "Los adoquines blancos igualan a los turquesa; no son su tercera parte."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q07.png"
+    },
+    {
+      "id": "P-math-11-p1-11",
+      "numero": 20,
+      "enunciado": "<p>En una planta de lácteos se vigila la temperatura, en grados Celsius, de la cámara donde fermenta el cuajo durante las tres primeras horas del proceso. La gráfica registra ese comportamiento.</p>[[IMG]]<p>¿Qué expresión describe esa curva?</p>",
+      "opciones": {
+        "A": "\\(T = 2\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\)",
+        "B": "\\(T = 2\\,\\cos\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 37\\)",
+        "C": "\\(T = 3\\,\\sen\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 39\\)",
+        "D": "\\(T = 3\\,\\cos\\!\\left(\\dfrac{2\\pi t}{3}\\right) + 39\\)"
+      },
+      "clave": "A",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
+      "que_evalua": "La capacidad para construir la función trigonométrica que representa una curva en una gráfica dada.",
+      "justificacion_correcta": "La curva arranca en el valor central \\((37)\\) y sube, que es el comportamiento del seno, y se aleja de ese valor central \\(2\\) unidades hacia arriba \\((39)\\) y \\(2\\) hacia abajo \\((35)\\), así que su amplitud es \\(2\\). Con el periodo de \\(3\\) horas que muestra la gráfica, la expresión es la de la opción «T = 2\\,\\!(2 t/3) + 37».",
+      "opciones_incorrectas": {
+        "B": "Acierta la amplitud y el valor central, pero usa coseno; el coseno en \\(t=0\\) parte del máximo \\((39)\\), no del valor central, así que no corresponde a esta curva.",
+        "D": "Usa coseno (parte del máximo, no del valor central) y toma amplitud \\(3\\) y centro \\(39\\), que no coinciden con la curva.",
+        "C": "Acierta el seno, pero toma amplitud \\(3\\) y centro \\(39\\) en lugar de \\(2\\) y \\(37\\); la curva no llega a \\(42\\) ni baja a \\(36\\)."
+      },
+      "imagen_figura": "assets/banco-mat-11-p1/q11.png"
     }
   ],
   "preservar_orden_preguntas": false

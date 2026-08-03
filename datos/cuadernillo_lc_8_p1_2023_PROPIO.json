@@ -30,449 +30,114 @@
     "2.3": "Infiere la intención comunicativa de enunciados del texto"
   },
   "contextos": {
-    "ctx-lectura-1": {
-      "titulo": "La nadadora del Pacífico",
-      "texto": "LA NADADORA DEL PACÍFICO CRUZÓ EL GOLFO DE TRIBUGÁ\n\n18 de septiembre de 2025\n\nMariana Cuero nunca había intentado una travesía de aguas abiertas en su propio país.\n\nLa nadadora chocoana Mariana Cuero, actual campeona nacional de aguas abiertas, cruzó este miércoles el imponente golfo de Tribugá nadando una asombrosa distancia de 18 kilómetros en seis horas y cuarenta minutos, y llegó a la orilla sin asistencia ni flotadores, proeza que realizó por primera vez en su propia tierra y que la llenó de «emoción». Las autoridades del Chocó midieron la temperatura del mar en apenas veintitrés grados, casi cuatro menos de lo habitual en la zona para esta época.\n\nAsí lo expresó Cuero, conocida como «la sirena del Pacífico», tras lanzarse al agua desde una pequeña lancha a tres kilómetros de la costa de Nuquí, en un mar de fuerte oleaje con olas de hasta dos metros. Cuero, que salió del agua exhausta y con los labios morados por el frío, pero sonriente, dijo estar «muy feliz de mostrarle este deporte a Colombia».\n\nY es que esta deportista, de apenas veintiséis años, afirmó que casi nunca ha recibido reconocimiento en casa, pese a haber ganado el primer puesto el pasado mes de agosto en una competencia de aguas abiertas en el lago Titicaca, a más de tres mil ochocientos metros de altura, y a haber cruzado antes el estrecho de Gibraltar, el canal de la Mancha entre Inglaterra y Francia, y la helada bahía de San Francisco. La travesía estaba prevista para las seis de la mañana, pero solo pudo iniciarla cuatro horas después, pues una marejada peligrosa, advertida desde la madrugada por los pescadores de la región, lo impedía. Antes de secarse, Cuero pidió apoyo del Estado para los deportes poco conocidos como el suyo, recordó que entrena sin patrocinio ni piscina olímpica, y afirmó con firmeza ante las cámaras que «no todo en el país tiene que ser fútbol».\n\nTomado y adaptado de una nota de prensa deportiva.",
-      "imagen": "",
-      "rango_preguntas": "1 a 3"
-    },
-    "ctx-lectura-2": {
-      "titulo": "La diversidad de las lenguas humanas",
-      "texto": "La diversidad de las lenguas humanas\n\nLas primeras lenguas humanas surgieron hace decenas de miles de años entre comunidades pequeñas y dispersas, integradas apenas por unas pocas docenas de personas que apenas necesitaban un puñado de palabras para nombrar su entorno inmediato. Con el paso de los milenios, algunos de esos grupos se separaron y se trasladaron a regiones radicalmente distintas: unos a las gélidas estepas barridas por el viento del norte, otros a los húmedos valles del trópico cubiertos de selva y otros a las islas remotas perdidas en medio del océano. Puesto que cada grupo vivía aislado de los demás y debía nombrar realidades que ningún otro pueblo conocía, sus formas de hablar fueron transformándose en direcciones divergentes. El resultado fue la aparición de familias de lenguas profundamente diferentes entre sí, a cada una de las cuales los lingüistas han asignado posteriormente un nombre.\n\nLos grupos que poblaron Europa y buena parte de Asia desarrollaron la vasta familia indoeuropea, a la que pertenecen, por ejemplo, el español, el persa y el hindi. Estas lenguas, dotadas de numerosos sonidos y de complejas terminaciones para marcar el tiempo, el género y el número, se adaptaron a sociedades que recorrían grandes distancias por tierra y que comerciaban entre regiones lejanas. Por su parte, varias regiones montañosas del este de Asia fueron pobladas por hablantes de lenguas tonales, en las que una misma sílaba cambia por completo de significado según el tono ascendente o descendente con que se pronuncie; algunas de esas lenguas se han hablado de forma ininterrumpida durante miles de años, lo que las convierte en las más duraderas que se conocen. Es improbable que semejante registro llegue a ser superado: muchos lingüistas dudan seriamente de que siquiera una fracción de los cientos de lenguas actuales siga viva dentro de cien años, de manera que varios miles de años de continuidad quedan, realmente, fuera de su alcance.\n\nTexto de elaboración propia con fines de evaluación.",
-      "imagen": "",
-      "rango_preguntas": "4 a 8"
-    },
-    "ctx-lectura-3": {
-      "titulo": "El barco que dibuja el fondo",
-      "texto": "El barco que dibuja el fondo\n\nCada febrero, el buque Manglar recorre la bahía de Cispatá para actualizar las cartas de navegación. En esas aguas cargadas de barro ningún tripulante alcanza a distinguir el lecho desde la cubierta y, sin embargo, la tripulación sabe dónde hay un banco de arena, por dónde cruza un cardumen y cuánta agua queda bajo la quilla. Todo eso se lo indica una ecosonda.\n\n«La ecosonda es un invento ingenioso: el buque averigua qué hay debajo escuchando el regreso de sus propios chasquidos», dice Carla Restrepo, hidrógrafa del Instituto del Mar. Bajo la quilla va un transductor que dispara chasquidos brevísimos; cada chasquido baja por el agua, tropieza con el lecho o con un cardumen y devuelve un eco que recoge un micrófono sumergido.\n\nLa cifra de profundidad sale de un cronómetro: mientras más tarda el eco en subir, más hondo está el lecho. Y para saber hacia qué costado queda el obstáculo, la ecosonda compara cuál de sus dos micrófonos recogió primero el eco; si fue el de estribor, el banco de arena queda a estribor.\n\nCon todo, varios hidrógrafos han advertido que la ecosonda se equivoca cuando la bahía se encrespa: la espuma que el oleaje empuja bajo la quilla estorba los chasquidos apenas salen del transductor. Por eso las campañas de sondeo se suspenden en plena marejada y se reanudan cuando el agua vuelve a quedar quieta.\n\nTexto de elaboración propia con fines de evaluación.",
-      "imagen": "assets/banco-lc-8-p1/q11.png",
-      "rango_preguntas": "9 a 12"
-    },
-    "ctx-lectura-4": {
+    "farol_plaza": {
       "titulo": "El farol",
-      "texto": "EL FAROL\n\nLos tres amigos discutían acaloradamente bajo el alero de la tienda, mientras la llovizna repiqueteaba sobre el zinc. La disputa había empezado porque la noche anterior Beto, Lalo y Tomás, estando en la soledad de la plaza del pueblo, se habían topado con un extraño farol de luz azulada que flotaba, quieto y silencioso, sobre el agua negra de la fuente; y ahora los tres se atribuían el mérito de haberlo descubierto.\n\n-Yo fui el primero que lo vi -decía Beto, golpeándose el pecho-. Por eso me siento con más derecho que ustedes a contarlo.\n\nBeto contó que esa noche un calor pegajoso no lo dejaba dormir, así que salió a vagar sin rumbo hasta la plaza. Se tendió en el borde de piedra de la fuente, en aquel sublime abandono, y, cuando alzó por fin la vista al cielo, allí estaba el farol, suspendido en el aire como una luna pequeña y enferma.\n\n-Yo también lo vi esa noche -lo interrumpió Lalo-, y mucho antes que tú. Yo aguardaba en la esquina a que pasara el sereno para preguntarle la hora, cuando esa lumbre apareció sobre la fuente. Me dejó sin habla; era de un azul profundo, un azul como jamás había visto en mi vida, ni en sueños.\n\n-Déjense de cuentos -bufó entonces Tomás-. Cuando Lalo cruzó la esquina, yo venía pisándole los talones, en silencio, para darle un buen susto. Ya estaba agazapado tras el muro, con las manos llenas de barro, listo para saltar sobre él, cuando el farol pasó casi rozándome la cara. La primera impresión me dejó clavado en el sitio: creí que era el espíritu de un ahogado, pero deseché la idea enseguida, porque los espíritus no zumban como un panal de avispas. La luz se detuvo sobre la fuente; podía oír nítidamente su zumbido, sentir su frío. Y fue entonces cuando apareció Beto, husmeando, pero gracias al cielo no me vio escondido.\n\n-Con permiso -dijo de pronto una voz delgada, salida de ninguna parte, y se hizo un silencio espeso. El farol se elevó entre los tres, ascendió despacio por encima de los tejados y, al perderse detrás de la vieja torre de la iglesia, pareció parpadear una sola vez. Los tres amigos se quedaron repitiendo tontamente, bajo el alero y la llovizna: «¡Me parpadeó a mí!».\n\nMinificción de elaboración propia con fines de evaluación.",
-      "imagen": "",
-      "rango_preguntas": "13 a 17"
+      "rango_preguntas": "1 a 5",
+      "texto": "Los tres amigos discutían acaloradamente bajo el alero de la tienda, mientras la llovizna repiqueteaba sobre el zinc. La disputa había empezado porque la noche anterior Beto, Lalo y Tomás, estando en la soledad de la plaza del pueblo, se habían topado con un extraño farol de luz azulada que flotaba, quieto y silencioso, sobre el agua negra de la fuente; y ahora los tres se atribuían el mérito de haberlo descubierto.\n\n-Yo fui el primero que lo vi -decía Beto, golpeándose el pecho-. Por eso me siento con más derecho que ustedes a contarlo.\n\nBeto contó que esa noche un calor pegajoso no lo dejaba dormir, así que salió a vagar sin rumbo hasta la plaza. Se tendió en el borde de piedra de la fuente, en aquel sublime abandono, y, cuando alzó por fin la vista al cielo, allí estaba el farol, suspendido en el aire como una luna pequeña y enferma.\n\n-Yo también lo vi esa noche -lo interrumpió Lalo-, y mucho antes que tú. Yo aguardaba en la esquina a que pasara el sereno para preguntarle la hora, cuando esa lumbre apareció sobre la fuente. Me dejó sin habla; era de un azul profundo, un azul como jamás había visto en mi vida, ni en sueños.\n\n-Déjense de cuentos -bufó entonces Tomás-. Cuando Lalo cruzó la esquina, yo venía pisándole los talones, en silencio, para darle un buen susto. Ya estaba agazapado tras el muro, con las manos llenas de barro, listo para saltar sobre él, cuando el farol pasó casi rozándome la cara. La primera impresión me dejó clavado en el sitio: creí que era el espíritu de un ahogado, pero deseché la idea enseguida, porque los espíritus no zumban como un panal de avispas. La luz se detuvo sobre la fuente; podía oír nítidamente su zumbido, sentir su frío. Y fue entonces cuando apareció Beto, husmeando, pero gracias al cielo no me vio escondido.\n\n-Con permiso -dijo de pronto una voz delgada, salida de ninguna parte, y se hizo un silencio espeso. El farol se elevó entre los tres, ascendió despacio por encima de los tejados y, al perderse detrás de la vieja torre de la iglesia, pareció parpadear una sola vez. Los tres amigos se quedaron repitiendo tontamente, bajo el alero y la llovizna: «¡Me parpadeó a mí!».\n\nMinificción de elaboración propia con fines de evaluación."
     },
-    "ctx-lectura-5": {
+    "nadadora_pacifico": {
+      "titulo": "La nadadora del Pacífico",
+      "rango_preguntas": "6 a 10",
+      "texto": "CRUZÓ A NADO EL GOLFO DE TRIBUGÁ, SIN ASISTENCIA Y CONTRA OLAS DE DOS METROS\n\n18 de septiembre de 2025\n\nMariana Cuero nunca había intentado una travesía de aguas abiertas en su propio país.\n\nLa nadadora chocoana Mariana Cuero, actual campeona nacional de aguas abiertas, cruzó este miércoles el imponente golfo de Tribugá nadando una asombrosa distancia de 18 kilómetros en seis horas y cuarenta minutos, y llegó a la orilla sin asistencia ni flotadores, proeza que realizó por primera vez en su propia tierra y que la llenó de «emoción». Las autoridades del Chocó midieron la temperatura del mar en apenas veintitrés grados, casi cuatro menos de lo habitual en la zona para esta época.\n\nAsí lo expresó Cuero, conocida como «la sirena del Pacífico», tras lanzarse al agua desde una pequeña lancha a tres kilómetros de la costa de Nuquí, en un mar de fuerte oleaje con olas de hasta dos metros. Cuero, que salió del agua exhausta y con los labios morados por el frío, pero sonriente, dijo estar «muy feliz de mostrarle este deporte a Colombia».\n\nY es que esta deportista, de apenas veintiséis años, afirmó que casi nunca ha recibido reconocimiento en casa, pese a haber ganado el primer puesto el pasado mes de agosto en una competencia de aguas abiertas en el lago Titicaca, a más de tres mil ochocientos metros de altura, y a haber cruzado antes el estrecho de Gibraltar, el canal de la Mancha entre Inglaterra y Francia, y la helada bahía de San Francisco. La travesía estaba prevista para las seis de la mañana, pero solo pudo iniciarla cuatro horas después, pues una marejada peligrosa, advertida desde la madrugada por los pescadores de la región, lo impedía. Antes de secarse, Cuero pidió apoyo del Estado para los deportes poco conocidos como el suyo, recordó que entrena sin patrocinio ni piscina olímpica, y afirmó con firmeza ante las cámaras que «no todo en el país tiene que ser fútbol».\n\nTomado y adaptado de una nota de prensa deportiva."
+    },
+    "ecosonda_manglar": {
+      "titulo": "El barco que dibuja el fondo",
+      "rango_preguntas": "11 a 15",
+      "imagen": "assets/banco-lc-8-p1/q11.png",
+      "alt": "Esquema del funcionamiento de una ecosonda: un buque en la superficie, la flecha del chasquido enviado que baja hasta un obstáculo del fondo y la flecha del eco que regresa hasta la quilla, con la nota de que la profundidad se mide por el tiempo que tarda en volver el eco.",
+      "texto": "Cada febrero, el buque Manglar recorre la bahía de Cispatá para actualizar las cartas de navegación. En esas aguas cargadas de barro ningún tripulante alcanza a distinguir el lecho desde la cubierta y, sin embargo, la tripulación sabe dónde hay un banco de arena, por dónde cruza un cardumen y cuánta agua queda bajo la quilla. Todo eso se lo indica una ecosonda.\n\n«La ecosonda es un invento ingenioso: el buque averigua qué hay debajo escuchando el regreso de sus propios chasquidos», dice Carla Restrepo, hidrógrafa del Instituto del Mar. Bajo la quilla va un transductor que dispara chasquidos brevísimos; cada chasquido baja por el agua, tropieza con el lecho o con un cardumen y devuelve un eco que recoge un micrófono sumergido.\n\nLa cifra de profundidad sale de un cronómetro: mientras más tarda el eco en subir, más hondo está el lecho. Y para saber hacia qué costado queda el obstáculo, la ecosonda compara cuál de sus dos micrófonos recogió primero el eco; si fue el de estribor, el banco de arena queda a estribor.\n\nCon todo, varios hidrógrafos han advertido que la ecosonda se equivoca cuando la bahía se encrespa: la espuma que el oleaje empuja bajo la quilla estorba los chasquidos apenas salen del transductor. Por eso las campañas de sondeo se suspenden en plena marejada y se reanudan cuando el agua vuelve a quedar quieta.\n\nTexto de elaboración propia con fines de evaluación."
+    },
+    "reloj_pared": {
       "titulo": "El reloj de la pared",
-      "texto": "EL RELOJ DE LA PARED\n\n¡Terco reloj de cuerda, viejo aparato de la sala,\nde esfera amarillenta y de aguja sin piedad,\nque en las tardes de octubre yo apenas escuchaba...\nesta noche, en mi cuarto, no me dejas respirar!\n\nMontañas de cuadernos, apuntes en desorden,\nsubrayados de afán como muros de papel...\nTú y yo, dos desvelados por culpa de mi olvido,\nseguimos en la mesa sin saber qué va a caer.\n\nCuéntame, aguja terca, cuántas horas me restan...\nQué torpeza pedirle a mi pobre memoria,\nen una madrugada de tinto y de bostezos,\nlo que en tres meses largos no me puse a estudiar.\n\nDevuélveme, si puedes, aquellas tardes lentas\nque gasté en la ventana contando la llovizna;\nme duele confesarlo, pero por distraído\nllegaré con los ojos hinchados al pupitre,\nmirando el cuestionario como quien llega tarde,\n¡y todo por dejarlo para la última noche!\n\nPoema de elaboración propia con fines de evaluación.",
-      "imagen": "",
-      "rango_preguntas": "18 a 20"
+      "rango_preguntas": "16 a 20",
+      "texto": "¡Terco reloj de cuerda, viejo aparato de la sala,\nde esfera amarillenta y de aguja sin piedad,\nque en las tardes de octubre yo apenas escuchaba...\nesta noche, en mi cuarto, no me dejas respirar!\n\nMontañas de cuadernos, apuntes en desorden,\nsubrayados de afán como muros de papel...\nTú y yo, dos desvelados por culpa de mi olvido,\nseguimos en la mesa sin saber qué va a caer.\n\nCuéntame, aguja terca, cuántas horas me restan...\nQué torpeza pedirle a mi pobre memoria,\nen una madrugada de tinto y de bostezos,\nlo que en tres meses largos no me puse a estudiar.\n\nDevuélveme, si puedes, aquellas tardes lentas\nque gasté en la ventana contando la llovizna;\nme duele confesarlo, pero por distraído\nllegaré con los ojos hinchados al pupitre,\nmirando el cuestionario como quien llega tarde,\n¡y todo por dejarlo para la última noche!\n\nPoema de elaboración propia con fines de evaluación."
     }
   },
-  "preservar_orden_preguntas": true,
   "preguntas": [
     {
-      "id": "P8L01",
-      "numero": 1,
-      "enunciado": "<p>¿Con qué intención escribe el autor giros como «proeza que realizó por primera vez» y «asombrosa distancia»?</p>",
-      "opciones": {
-        "A": "Para agrandar lo ocurrido y despertar así más interés en quien lee.",
-        "B": "Para contar el hecho sin tomar partido y que resulte más creíble.",
-        "C": "Para disimular lo dura que fue la prueba y suavizar la noticia.",
-        "D": "Para narrar lo sucedido con objetividad y darle así peso a la noticia."
-      },
-      "clave": "A",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
-      "que_evalua": "La capacidad para identificar estrategias retóricas en un texto.",
-      "justificacion_correcta": "La respuesta correcta es la opción A porque, en las expresiones citadas, el autor señala detalles únicos («realizó por primera vez») y utiliza el adjetivo «asombrosa» para engrandecer los hechos y hacer la lectura más atractiva al lector.",
-      "opciones_incorrectas": {
-        "B": "El autor no habla de un modo neutro: usa adjetivos como «asombrosa» e «imponente» para engrandecer los hechos.",
-        "C": "El autor no oculta nada con esas expresiones; al contrario, resalta la dificultad de la travesía.",
-        "D": "Esas expresiones no explican los hechos (no los justifican ni aclaran sus causas), sino que los engrandecen."
-      },
-      "contexto_id": "ctx-lectura-1"
-    },
-    {
-      "id": "P8L02",
-      "numero": 2,
-      "enunciado": "<p>Según el tercer párrafo, ¿qué deja ver la frase «muy feliz de mostrarle este deporte a Colombia»?</p>",
-      "opciones": {
-        "A": "Deja ver lo bien que se siente de que en el país se conozca un deporte poco visto.",
-        "B": "Deja ver el gusto que le dio conocer sitios donde nunca había estado.",
-        "C": "Deja ver lo sorprendida que está de poder nadar semejante distancia.",
-        "D": "Deja ver el temor que le produjo lo bravo que estaba el mar."
-      },
-      "clave": "A",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Elaboro resúmenes y esquemas que dan cuenta del sentido de un texto. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
-      "que_evalua": "La capacidad para identificar una paráfrasis de un enunciado a partir de una lectura global de un texto.",
-      "justificacion_correcta": "La respuesta correcta es la opción A porque la frase citada expresa la satisfacción que siente Mariana Cuero por mostrarle a Colombia las aguas abiertas, un deporte que pocos en el país conocen.",
-      "opciones_incorrectas": {
-        "B": "El texto no da a entender que sea la primera vez que la deportista visita esos lugares; es colombiana y la cita no habla de lugares nuevos.",
-        "C": "La cita no menciona la distancia ni el asombro por nadar tantos kilómetros.",
-        "D": "El miedo es un tema que no aparece en el enunciado de la pregunta ni en esa parte del texto."
-      },
-      "contexto_id": "ctx-lectura-1"
-    },
-    {
-      "id": "P8L03",
-      "numero": 3,
-      "enunciado": "<p>¿De qué trata, ante todo, esta noticia?</p>",
-      "opciones": {
-        "A": "De lo bueno que resulta nadar en distintos mares del planeta.",
-        "B": "De los riesgos que supone nadar en el golfo de Tribugá.",
-        "C": "Del peso que tienen en el país deportes como el fútbol.",
-        "D": "De la hazaña deportiva que consiguió una nadadora."
-      },
-      "clave": "D",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo, narrativo, explicativo y argumentativo. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
-      "que_evalua": "La capacidad para identificar el tema principal del que trata un texto.",
-      "justificacion_correcta": "La respuesta correcta es la opción D porque el texto trata sobre los logros de Mariana Cuero, deportista de aguas abiertas que triunfa cruzando mares y golfos.",
-      "opciones_incorrectas": {
-        "A": "Aunque se mencionan varios mares que la nadadora ha cruzado, el texto no habla de las ventajas de nadar en ellos.",
-        "B": "El texto menciona el fuerte oleaje, pero los peligros de nadar en el golfo no son el tema de la noticia.",
-        "C": "El fútbol solo se menciona para resaltar la idea de que se debe apoyar a otros deportes, no como tema central."
-      },
-      "contexto_id": "ctx-lectura-1"
-    },
-    {
-      "id": "P8L04",
-      "numero": 4,
-      "enunciado": "<p>¿A qué recurso acude el autor para dejar ver que hubo varias familias de lenguas?</p>",
-      "opciones": {
-        "A": "A indicar que las lenguas más antiguas nacieron en comunidades chicas y separadas entre sí.",
-        "B": "A mencionar por su nombre varias familias, como la indoeuropea o las lenguas tonales.",
-        "C": "A advertir que en cien años podrían perderse centenares de lenguas de hoy.",
-        "D": "A retratar los distintos territorios que habitaron los grupos humanos, de donde salieron lenguas distintas."
-      },
-      "clave": "D",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
-      "que_evalua": "La habilidad del lector para captar la estrategia global de un autor al presentar una idea.",
-      "justificacion_correcta": "La opción correcta es la D porque el autor sostiene que la variedad de lenguas es el producto de la diversidad de regiones que habitaron los grupos humanos; para ilustrarlo describe esas regiones (estepas, valles, islas) y explica cómo cada entorno dio lugar a lenguas distintas.",
-      "opciones_incorrectas": {
-        "A": "Aunque las lenguas surgieron en comunidades dispersas, ese dato no muestra por sí mismo que hubo familias distintas; no es la estrategia del autor.",
-        "B": "El autor nombra algunas familias, pero no para demostrar que existieron familias distintas: sería un razonamiento circular («hubo familias distintas porque hubo familias distintas»).",
-        "C": "Que muchas lenguas puedan desaparecer no es la estrategia que usa el autor para ilustrar la diversidad de familias lingüísticas."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P8L05",
-      "numero": 5,
-      "enunciado": "<p>De las siguientes opciones, ¿cuál resume bien el primer párrafo?</p>",
-      "opciones": {
-        "A": "Debido a las regiones tan distintas donde habitaban, los grupos humanos desarrollaron lenguas diferentes. Así surgieron la familia indoeuropea y las lenguas tonales, que tienen sonidos y reglas distintos entre sí.",
-        "B": "Las primeras lenguas surgieron en Europa hace decenas de miles de años y luego se trasladaron al trópico y a las islas. Las lenguas cambiaron de maneras diferentes según el lugar donde se hablaban.",
-        "C": "Las primeras lenguas surgieron en comunidades pequeñas y dispersas; con el tiempo, algunos grupos se separaron y se fueron a regiones muy distintas. Como vivían aislados, sus formas de hablar cambiaron en direcciones diferentes y aparecieron familias de lenguas muy distintas.",
-        "D": "Hace decenas de miles de años aparecieron las primeras lenguas y pronto se extendieron por el mundo, dando lugar al español, al hindi y a las lenguas tonales, que tienen rasgos diferentes entre sí."
-      },
-      "clave": "C",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Elaboro resúmenes y esquemas que dan cuenta del sentido de un texto. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
-      "que_evalua": "La capacidad de reconocer oraciones o fragmentos con un significado equivalente.",
-      "justificacion_correcta": "La opción correcta es la C porque recoge fielmente las tres ideas del primer párrafo: que las primeras lenguas surgieron en comunidades pequeñas y dispersas, que algunos grupos se separaron y migraron a regiones muy distintas, y que ese aislamiento hizo que sus formas de hablar cambiaran en direcciones diferentes hasta formar familias de lenguas muy distintas.",
-      "opciones_incorrectas": {
-        "A": "La enumeración de las familias concretas (indoeuropea, tonales) pertenece al segundo párrafo, no al primero, así que no es un resumen del primer párrafo.",
-        "B": "Contiene un error: el primer párrafo no dice que las primeras lenguas surgieran en Europa, sino en comunidades pequeñas y dispersas que luego se separaron.",
-        "D": "Menciona ejemplos (español, hindi, lenguas tonales) que aparecen en el segundo párrafo, no en el primero."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P8L06",
-      "numero": 6,
-      "enunciado": "<p>Según el texto, ¿durante cuánto tiempo se han hablado de forma continua algunas lenguas tonales del este de Asia?</p>",
-      "opciones": {
-        "A": "Durante cien años.",
-        "B": "Durante decenas de miles de años, como todas las lenguas.",
-        "C": "Durante miles de años.",
-        "D": "Durante cientos de años, igual que las lenguas actuales."
-      },
-      "clave": "C",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, capítulos, organización, etc. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
-      "que_evalua": "La capacidad para ubicar información explícita o literal en un texto, atendiendo al tiempo en que ocurren los hechos.",
-      "justificacion_correcta": "La respuesta correcta es la C. El texto dice explícitamente que «algunas de esas lenguas se han hablado de forma continua durante miles de años, lo que las convierte en las más duraderas que se conocen».",
-      "opciones_incorrectas": {
-        "A": "El texto menciona los cien años para dudar de que muchas lenguas actuales sigan vivas en ese plazo, no como la duración de las lenguas tonales.",
-        "B": "«Decenas de miles de años» se refiere al surgimiento de las primeras lenguas humanas en general, no a la duración continua de las lenguas tonales.",
-        "D": "El texto no afirma que esas lenguas se hayan hablado solo durante cientos de años; dice miles de años."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P8L07",
-      "numero": 7,
-      "enunciado": "<p>¿Qué se propuso, sobre todo, quien escribió el texto?</p>",
-      "opciones": {
-        "A": "Acercarle a cualquier lector un asunto científico: por qué hay tantas lenguas.",
-        "B": "Exponerles a los lingüistas una descripción técnica de la gramática.",
-        "C": "Aventurar una hipótesis todavía sin comprobar para zanjar un problema del texto.",
-        "D": "Contar con recursos literarios una historia inventada para entretener."
-      },
-      "clave": "A",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente. » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.",
-      "que_evalua": "La capacidad para entender el propósito general del texto o del autor y establecer el enunciatario (posible audiencia) a quien va dirigido.",
-      "justificacion_correcta": "La opción correcta es la A porque el modo en que el autor expresa sus ideas y el contenido de lo que dice dejan claro su interés en describir cómo se diversificaron las lenguas, pero explicado para un público general.",
-      "opciones_incorrectas": {
-        "B": "El texto se refiere a los lingüistas como terceros que «han asignado un nombre» a las familias de lenguas, lo que da a entender que se dirige a un público no especializado.",
-        "C": "El texto no plantea una hipótesis dudosa: el autor afirma y se compromete con la verdad de lo que dice.",
-        "D": "El autor no presenta una historia de ficción, sino una descripción de hechos basada en el conocimiento disponible."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P8L08",
-      "numero": 8,
-      "enunciado": "<p>¿De qué se ocupa el texto principalmente?</p>",
-      "opciones": {
-        "A": "De los distintos caminos por los que se formaron las lenguas humanas.",
-        "B": "Del recorrido del español desde que apareció.",
-        "C": "Del recorrido de las lenguas tonales del oriente asiático.",
-        "D": "De los territorios donde ha habitado el ser humano."
-      },
-      "clave": "A",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo, narrativo, explicativo y argumentativo. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
-      "que_evalua": "La capacidad para abstraer el tema y sintetizar el contenido global para construir el sentido global.",
-      "justificacion_correcta": "La respuesta correcta es la A porque el texto se dedica a exponer algunas de las diferentes formas en que se desarrollaron las lenguas humanas según las regiones que habitaron los grupos.",
-      "opciones_incorrectas": {
-        "B": "El español se menciona solo como ejemplo de la familia indoeuropea; no es el tema central del texto.",
-        "C": "Las lenguas tonales son uno de los ejemplos del texto, no el tema principal.",
-        "D": "Las regiones se mencionan para explicar por qué las lenguas se diversificaron, no como tema central."
-      },
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P8L09",
-      "numero": 9,
-      "enunciado": "<p>La hidrógrafa Carla Restrepo sostiene que la ecosonda es un invento ingenioso. ¿Cuál de estos planteamientos le hace una crítica válida?</p>",
-      "opciones": {
-        "A": "«Con la ecosonda no se alcanza a ubicar un cardumen cuando el agua está cargada de barro».",
-        "B": "«La ecosonda trabaja disparando chasquidos brevísimos desde el transductor».",
-        "C": "«La ecosonda saca la profundidad del tiempo que tarda el eco en subir».",
-        "D": "«Cuando la bahía se encrespa, no se puede confiar en la ecosonda»."
-      },
-      "clave": "D",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Propongo hipótesis de interpretación para cada uno de los tipos de texto que he leído. » Infiero otros sentidos en cada uno de los textos que leo, relacionándolos con su sentido global y con el contexto en el cual se han producido, reconociendo rasgos sociológicos, ideológicos, científicos y culturales.",
-      "que_evalua": "La capacidad para identificar enunciados que cuestionan una tesis en un texto.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque es la única que ofrece una crítica válida a lo que sostiene la hidrógrafa. Ella dice que la ecosonda es un invento ingenioso para averiguar qué hay bajo la quilla; señalar que con la bahía encrespada el aparato falla pone en duda ese ingenio, pues un invento que se equivoca en una situación tan corriente no sería tan ingenioso como ella piensa.",
-      "opciones_incorrectas": {
-        "A": "Contradice lo que dice el primer párrafo, donde se afirma que con la ecosonda la tripulación sí sabe por dónde cruza un cardumen aunque el agua esté cargada de barro; no es una crítica válida, sino una idea falsa según el texto.",
-        "B": "Solo describe en qué consiste el trabajo de la ecosonda; no cuestiona su ingenio.",
-        "C": "Describe de dónde sale la cifra de profundidad, pero el tiempo que tarda el eco en subir no le quita ingenio al invento."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P8L10",
-      "numero": 10,
-      "enunciado": "<p>¿Qué clase de secuencia predomina en el texto?</p>",
-      "opciones": {
-        "A": "Una secuencia narrativa, porque se relata lo que ocurrió en una travesía por la bahía.",
-        "B": "Una secuencia instructiva, porque se indica paso a paso cómo manejar una ecosonda.",
-        "C": "Una secuencia argumentativa, porque se sostiene un punto de vista sobre los buques de sondeo.",
-        "D": "Una secuencia explicativa, porque se recurre a definiciones y ejemplos para dar cuenta de un fenómeno."
-      },
-      "clave": "D",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Reconozco las características de los diversos tipos de texto que leo. » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente.",
-      "que_evalua": "La capacidad para identificar la secuencia predominante en un texto.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque este es un texto explicativo, cuyo propósito es dar a entender cómo trabaja la ecosonda mediante definiciones y ejemplos.",
-      "opciones_incorrectas": {
-        "A": "No se relata una historia: el texto explica cómo trabaja un aparato, no narra hechos que hayan ocurrido en una travesía.",
-        "B": "No se dan instrucciones ni pasos para manejar el aparato.",
-        "C": "El texto no defiende una opinión ni da argumentos a favor de una postura; explica cómo funciona algo."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P8L11",
-      "numero": 11,
-      "enunciado": "<p>Revisa el esquema que acompaña al texto y responde.</p>[[IMG]]<p>Al relacionar el esquema con la advertencia que los hidrógrafos hacen al final del texto, se llega a la idea de que, cuando la bahía se encrespa,</p>",
-      "opciones": {
-        "A": "los chasquidos de la ecosonda siguen su recorrido sin ninguna alteración.",
-        "B": "la espuma del oleaje estorba los chasquidos que el transductor dispara.",
-        "C": "los chasquidos llegan hasta el lecho, pero ya no logran regresar como eco.",
-        "D": "el buque cambia de rumbo y se aparta de la ruta de los chasquidos."
-      },
-      "clave": "B",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Propongo hipótesis de interpretación para cada uno de los tipos de texto que he leído. » Infiero otros sentidos en cada uno de los textos que leo, relacionándolos con su sentido global y con el contexto en el cual se han producido, reconociendo rasgos sociológicos, ideológicos, científicos y culturales.",
-      "que_evalua": "La capacidad para inferir conclusiones implícitas en el texto a partir de una lectura global.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque el cierre del texto advierte que la ecosonda se equivoca cuando la bahía se encrespa, ya que la espuma que el oleaje empuja bajo la quilla estorba los chasquidos apenas salen del transductor. El esquema muestra ese recorrido de ida y vuelta, la señal que baja y el eco que sube, de modo que lo que se altera con el oleaje es lo que el aparato dispara.",
-      "opciones_incorrectas": {
-        "A": "Contradice el texto: el cierre señala justamente que la bahía encrespada sí altera el trabajo de la ecosonda.",
-        "C": "El texto habla de una espuma que estorba los chasquidos al salir, no de un eco que se pierda en el camino de regreso.",
-        "D": "El texto no dice que el oleaje desvíe la ruta del buque; lo que menciona es el estorbo de la espuma."
-      },
-      "imagen_figura": "assets/banco-lc-8-p1/q11.png",
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P8L12",
-      "numero": 12,
-      "enunciado": "<p>Según el texto, la tripulación del buque Manglar usa la ecosonda porque</p>",
-      "opciones": {
-        "A": "en esas aguas cargadas de barro no alcanza a ver el lecho desde la cubierta.",
-        "B": "necesita avisarles a otros buques que se acerca una marejada.",
-        "C": "de esa manera se esconde de otros buques dentro de la bahía.",
-        "D": "de esa forma navega mejor cuando la bahía está encrespada."
-      },
-      "clave": "A",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, capítulos, organización, etc. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
-      "que_evalua": "La capacidad para ubicar información explícita o literal en un texto.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque el texto afirma que «en esas aguas cargadas de barro ningún tripulante alcanza a distinguir el lecho desde la cubierta» y que, aun así, la tripulación sabe dónde hay un banco de arena, por dónde cruza un cardumen y cuánta agua queda bajo la quilla, porque todo eso se lo indica una ecosonda.",
-      "opciones_incorrectas": {
-        "B": "El texto nunca menciona que la ecosonda sirva para avisarles algo a otros buques.",
-        "C": "El texto no dice que la ecosonda sirva para esconderse de otros buques.",
-        "D": "El último párrafo afirma lo contrario: la ecosonda se equivoca cuando la bahía se encrespa."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
       "id": "P8L13",
-      "numero": 13,
+      "numero": 1,
       "enunciado": "<p>¿Por causa de quién se desata el conflicto del relato?</p>",
       "opciones": {
-        "A": "Por causa de Beto.",
-        "B": "Por causa del sereno.",
-        "C": "Por causa de aquel farol tan raro.",
-        "D": "Por causa de Tomás."
+        "A": "Por causa del farol.",
+        "B": "Por causa de Beto.",
+        "C": "Por causa de Tomás.",
+        "D": "Por causa del sereno."
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "3",
       "afirmacion": 3,
       "evidencia": "3.1",
       "dificultad": "BAJA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos.",
       "que_evalua": "Esta pregunta evalúa la capacidad para identificar un conflicto narrado de manera explícita en el texto y la causa de ese conflicto.",
-      "justificacion_correcta": "La respuesta correcta es la opción C porque el extraño farol es el origen del conflicto entre los tres amigos, quienes discuten a lo largo de la historia sobre quién fue el primero en verlo.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Por causa del farol» porque el extraño farol de luz azulada es el origen del conflicto entre los tres amigos, quienes discuten a lo largo de la historia sobre quién fue el primero en verlo.",
       "opciones_incorrectas": {
-        "A": "Beto es uno de los amigos que participan en la discusión, pero no es la causa de esta.",
-        "B": "El sereno solo se menciona de pasada; no aparece como personaje ni causa el conflicto.",
-        "D": "Tomás es otro de los amigos que discuten, pero no es la causa del conflicto."
+        "B": "Beto es uno de los amigos que participan en la discusión, pero no es la causa de esta.",
+        "C": "Tomás es otro de los amigos que discuten, pero no es la causa del conflicto.",
+        "D": "El sereno solo se menciona de pasada; no aparece como personaje ni causa el conflicto."
       },
-      "contexto_id": "ctx-lectura-4"
+      "contexto_id": "farol_plaza"
     },
     {
       "id": "P8L14",
-      "numero": 14,
+      "numero": 2,
       "enunciado": "<p>¿Para qué aparece el guion largo (-) en este relato?</p>",
       "opciones": {
-        "A": "Para marcar que ahí habla un personaje.",
-        "B": "Para avisar que el narrador está aclarando algo.",
-        "C": "Para marcar que entra un personaje nuevo al relato.",
+        "A": "Para avisar que el narrador está aclarando algo.",
+        "B": "Para marcar que entra un personaje nuevo al relato.",
+        "C": "Para marcar que ahí habla un personaje.",
         "D": "Para precisar cómo se sienten los protagonistas."
       },
-      "clave": "A",
+      "clave": "C",
       "competencia": "3",
       "afirmacion": 3,
       "evidencia": "3.2",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído. » Elaboro hipótesis de lectura de diferentes textos, a partir de la revisión de sus características como: forma de presentación, títulos y manejo de la lengua.",
       "que_evalua": "La capacidad para identificar la función de un signo de puntuación en un texto.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque en el texto el guion largo o raya se utiliza para indicar cuándo un personaje habla.",
+      "justificacion_correcta": "La opción «Para marcar que ahí habla un personaje» es la respuesta correcta porque en el texto el guion largo o raya se utiliza para indicar cuándo un personaje habla.",
       "opciones_incorrectas": {
-        "B": "Esta es una función del guion largo que no aparece en el texto.",
-        "C": "Es una función posible del guion largo, pero no la que cumple en este texto.",
+        "A": "Esta es una función del guion largo que no aparece en el texto.",
+        "B": "Es una función posible del guion largo, pero no la que cumple en este texto.",
         "D": "Es una función posible del guion largo, pero tampoco la que cumple aquí."
       },
-      "contexto_id": "ctx-lectura-4"
+      "contexto_id": "farol_plaza"
     },
     {
       "id": "P8L15",
-      "numero": 15,
+      "numero": 3,
       "enunciado": "<p>¿Sobre qué discutían los amigos en el relato?</p>",
       "opciones": {
-        "A": "Sobre un farol de otro pueblo que los tres conocían de antes.",
-        "B": "Sobre cuál de ellos alcanzó a ver primero el farol de la plaza.",
-        "C": "Sobre a quién le correspondía quedarse con el farol de la fuente.",
-        "D": "Sobre unos faroles azules que salen encima de las fuentes."
+        "A": "Sobre a quién le correspondía quedarse con el farol de la fuente.",
+        "B": "Sobre un farol de otro pueblo que los tres conocían de antes.",
+        "C": "Sobre unos faroles azules que salen encima de las fuentes.",
+        "D": "Sobre cuál de ellos alcanzó a ver primero el farol de la plaza."
       },
-      "clave": "B",
+      "clave": "D",
       "competencia": "2",
       "afirmacion": 2,
       "evidencia": "2.2",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Formulo hipótesis de comprensión acerca de las obras literarias que leo teniendo en cuenta género, temática, época y región. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos. » Comprendo el sentido global de cada uno de los textos que leo.",
       "que_evalua": "La capacidad para inferir el tema de la discusión de una parte de un texto literario a través de la comprensión global de este.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque toda la discusión de los amigos gira en torno a quién vio primero el farol; a lo largo del texto cada personaje interviene para contar por qué, según su versión, fue el primero en verlo.",
+      "justificacion_correcta": "La opción «Sobre cuál de ellos alcanzó a ver primero el farol de la plaza» es la respuesta correcta porque toda la discusión de los amigos gira en torno a quién vio primero el farol; a lo largo del texto cada personaje interviene para contar por qué, según su versión, fue el primero en verlo.",
       "opciones_incorrectas": {
-        "A": "El texto presenta el farol como algo extraño y nunca antes visto, no como algo que ya conocían.",
-        "C": "Los amigos no discuten por quedarse con el farol, sino por quién lo vio primero.",
-        "D": "El texto trata de un farol concreto y único, no de los faroles azules en general."
+        "B": "El texto presenta el farol como algo extraño y nunca antes visto, no como algo que ya conocían.",
+        "A": "Los amigos no discuten por quedarse con el farol, sino por quién lo vio primero.",
+        "C": "El texto trata de un farol concreto y único, no de los faroles azules en general."
       },
-      "contexto_id": "ctx-lectura-4"
+      "contexto_id": "farol_plaza"
     },
     {
       "id": "P8L16",
-      "numero": 16,
+      "numero": 4,
       "enunciado": "<p>De acuerdo con la historia, el farol se elevó y desapareció cuando</p>",
       "opciones": {
-        "A": "los tres amigos discutían por haberlo descubierto.",
+        "A": "el sereno pasó por la plaza dando la hora.",
         "B": "Beto estaba sentado en el borde de la fuente.",
         "C": "Tomás por fin saltó para asustar a Lalo.",
-        "D": "el sereno pasó por la plaza dando la hora."
-      },
-      "clave": "A",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos.",
-      "que_evalua": "La capacidad para identificar y ordenar temporalmente diferentes hechos narrados de manera explícita en un texto literario.",
-      "justificacion_correcta": "La respuesta correcta es la opción A porque, según el texto, el farol se eleva entre los tres y desaparece tras la torre de la iglesia mientras los amigos discutían sobre quién lo había descubierto.",
-      "opciones_incorrectas": {
-        "B": "Que Beto se sentara en la fuente es un hecho de la noche anterior, no el momento en que el farol desaparece.",
-        "C": "El texto dice que Tomás se quedó paralizado y no llegó a saltar para asustar a Lalo.",
-        "D": "El sereno solo se menciona como alguien a quien Lalo esperaba; no es el momento de la desaparición."
-      },
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P8L17",
-      "numero": 17,
-      "enunciado": "<p>El orden en el que ocurren los hechos de la historia es</p>",
-      "opciones": {
-        "A": "El farol desaparece tras la iglesia. Cada amigo da su versión. Los amigos discuten quién lo vio primero. Beto camina hasta la plaza.",
-        "B": "Los amigos se paralizan de miedo. La luz se detiene sobre la fuente. Discusión bajo el alero. El farol se eleva.",
-        "C": "Tomás salta sobre Lalo. Beto llega a la plaza. Los amigos discuten. El farol parpadea y se va.",
-        "D": "Los amigos discuten quién vio primero el farol. Cada uno da su versión. El farol se eleva entre ellos. El farol desaparece tras la iglesia."
+        "D": "los tres amigos discutían por haberlo descubierto."
       },
       "clave": "D",
       "competencia": "3",
@@ -481,48 +146,98 @@
       "dificultad": "BAJA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos.",
       "que_evalua": "La capacidad para identificar y ordenar temporalmente diferentes hechos narrados de manera explícita en un texto literario.",
-      "justificacion_correcta": "La opción D es la respuesta correcta, ya que es la única que identifica adecuadamente el orden en que suceden los hechos relatados: primero, los amigos discuten sobre quién vio primero el farol; luego, cada uno da su versión y, finalmente, el farol se eleva entre ellos y desaparece tras la torre de la iglesia.",
+      "justificacion_correcta": "La respuesta correcta es la opción «los tres amigos discutían por haberlo descubierto» porque, según el texto, el farol se eleva entre los tres y desaparece tras la torre de la iglesia mientras los amigos discutían sobre quién lo había descubierto.",
       "opciones_incorrectas": {
-        "A": "Ubica la desaparición del farol al comienzo, cuando en realidad la historia inicia con la discusión.",
-        "B": "Incluye hechos en un orden contrario al del texto y omite la discusión inicial como punto de partida.",
-        "C": "Afirma que Tomás salta sobre Lalo, algo que no ocurre en el texto, donde Tomás queda paralizado."
+        "B": "Que Beto se sentara en la fuente es un hecho de la noche anterior, no el momento en que el farol desaparece.",
+        "C": "El texto dice que Tomás se quedó paralizado y no llegó a saltar para asustar a Lalo.",
+        "A": "El sereno solo se menciona como alguien a quien Lalo esperaba; no es el momento de la desaparición."
       },
-      "contexto_id": "ctx-lectura-4"
+      "contexto_id": "farol_plaza"
     },
     {
-      "id": "P8L18",
-      "numero": 18,
-      "enunciado": "<p>Para la voz del poema, ¿qué es esa noche de estudio?</p>",
+      "id": "P8L17",
+      "numero": 5,
+      "enunciado": "<p>El orden en el que ocurren los hechos de la historia es</p>",
       "opciones": {
-        "A": "Es la oportunidad de mostrar todo lo que ha aprendido.",
-        "B": "Es una carrera contra el tiempo que ya no alcanza a ganar.",
-        "C": "Es el castigo que los profesores les imponen a los alumnos.",
-        "D": "Es la prueba de que quien trasnocha aprende más que los demás."
+        "A": "Los amigos se paralizan de miedo. La luz se detiene sobre la fuente. Discusión bajo el alero. El farol se eleva.",
+        "B": "El farol desaparece tras la iglesia. Cada amigo da su versión. Los amigos discuten quién lo vio primero. Beto camina hasta la plaza.",
+        "C": "Los amigos discuten quién vio primero el farol. Cada uno da su versión. El farol se eleva entre ellos. El farol desaparece tras la iglesia.",
+        "D": "Tomás salta sobre Lalo. Beto llega a la plaza. Los amigos discuten. El farol parpadea y se va."
+      },
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Comprendo elementos constitutivos de obras literarias, tales como tiempo, espacio, función de los personajes, lenguaje, atmósferas, diálogos, escenas, entre otros. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos.",
+      "que_evalua": "La capacidad para identificar y ordenar temporalmente diferentes hechos narrados de manera explícita en un texto literario.",
+      "justificacion_correcta": "La opción «Los amigos discuten quién vio primero el farol. Cada uno da su versión. El farol se eleva…» es la respuesta correcta, ya que es la única que identifica adecuadamente el orden en que suceden los hechos relatados: primero, los amigos discuten sobre quién vio primero el farol; luego, cada uno da su versión y, finalmente, el farol se eleva entre ellos y desaparece tras la torre de la iglesia.",
+      "opciones_incorrectas": {
+        "B": "Ubica la desaparición del farol al comienzo, cuando en realidad la historia inicia con la discusión.",
+        "A": "Incluye hechos en un orden contrario al del texto y omite la discusión inicial como punto de partida.",
+        "D": "Afirma que Tomás salta sobre Lalo, algo que no ocurre en el texto, donde Tomás queda paralizado."
+      },
+      "contexto_id": "farol_plaza"
+    },
+    {
+      "id": "P8L06",
+      "numero": 6,
+      "enunciado": "<p>Según la noticia, la travesía estaba prevista para las seis de la mañana. ¿Cuándo pudo iniciarla la nadadora?</p>",
+      "opciones": {
+        "A": "A la madrugada del día siguiente.",
+        "B": "Cuatro horas después de lo previsto.",
+        "C": "Dos horas antes de lo previsto.",
+        "D": "Al atardecer, seis horas y cuarenta minutos después."
       },
       "clave": "B",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Formulo hipótesis de comprensión acerca de las obras literarias que leo teniendo en cuenta género, temática, época y región. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos. » Comprendo el sentido global de cada uno de los textos que leo.",
-      "que_evalua": "La capacidad para inferir conclusiones implícitas en el texto a partir de una lectura global.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque quien habla vive esa noche como un apuro sin salida frente al reloj. La aguja le resulta «sin piedad», le pregunta «cuántas horas me restan» y reconoce que es «torpeza» pedirle a la memoria «en una madrugada» lo que «en tres meses largos» no estudió: el tiempo se le acabó.",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, capítulos, organización, etc. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
+      "que_evalua": "La capacidad para ubicar información explícita o literal en un texto, atendiendo al tiempo en que ocurren los hechos.",
+      "justificacion_correcta": "La respuesta correcta es «Cuatro horas después de lo previsto». El texto dice que «la travesía estaba prevista para las seis de la mañana, pero solo pudo iniciarla cuatro horas después», porque una marejada peligrosa se lo impedía.",
       "opciones_incorrectas": {
-        "A": "El poema no presenta la noche como una ocasión favorable; quien habla llega al examen como «quien llega tarde».",
-        "C": "En el poema nadie impone un castigo: el desvelo es consecuencia del propio descuido de quien habla.",
-        "D": "El poema no sostiene que trasnochar deje mejores resultados; muestra lo contrario, ojos hinchados y falta de preparación."
+        "A": "La travesía no se aplazó para otro día: la nadadora cruzó el golfo ese mismo miércoles.",
+        "C": "El retraso ocurrió después de la hora prevista, no antes de ella.",
+        "D": "Seis horas y cuarenta minutos es lo que duró el cruce, no la demora de la salida."
       },
-      "contexto_id": "ctx-lectura-5"
+      "contexto_id": "nadadora_pacifico"
     },
     {
-      "id": "P8L19",
-      "numero": 19,
-      "enunciado": "<p>Cuando la voz del poema le habla a su reloj, ¿de qué le habla sobre todo?</p>",
+      "id": "P8L02",
+      "numero": 7,
+      "enunciado": "<p>Según el tercer párrafo, ¿qué deja ver la frase «muy feliz de mostrarle este deporte a Colombia»?</p>",
       "opciones": {
-        "A": "Le habla de las tardes tranquilas que pasaron juntos en la sala.",
-        "B": "Le habla del fastidio que le produce recordar aquellas tardes.",
-        "C": "Le habla del error que cometió al dejar el estudio para el final.",
-        "D": "Le habla de lo satisfecho que se siente estudiando de madrugada."
+        "A": "Deja ver el gusto que le dio conocer sitios donde nunca había estado.",
+        "B": "Deja ver el temor que le produjo lo bravo que estaba el mar.",
+        "C": "Deja ver lo bien que se siente de mostrar un deporte poco visto.",
+        "D": "Deja ver lo sorprendida que está de poder nadar semejante distancia."
+      },
+      "clave": "C",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Elaboro resúmenes y esquemas que dan cuenta del sentido de un texto. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
+      "que_evalua": "La capacidad para identificar una paráfrasis de un enunciado a partir de una lectura global de un texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Deja ver lo bien que se siente de mostrar un deporte poco visto» porque la frase citada expresa la satisfacción que siente Mariana Cuero por mostrarle a Colombia las aguas abiertas, un deporte que pocos en el país conocen.",
+      "opciones_incorrectas": {
+        "A": "El texto no da a entender que sea la primera vez que la deportista visita esos lugares; es colombiana y la cita no habla de lugares nuevos.",
+        "B": "El miedo es un tema que no aparece en el enunciado de la pregunta ni en esa parte del texto.",
+        "D": "La cita no menciona la distancia ni el asombro por nadar tantos kilómetros."
+      },
+      "contexto_id": "nadadora_pacifico"
+    },
+    {
+      "id": "P8L03",
+      "numero": 8,
+      "enunciado": "<p>¿De qué trata, ante todo, esta noticia?</p>",
+      "opciones": {
+        "A": "Del peso que tienen en el país deportes como el fútbol.",
+        "B": "De los riesgos que supone nadar en el golfo de Tribugá.",
+        "C": "De la hazaña deportiva que consiguió una nadadora.",
+        "D": "De lo bueno que resulta nadar en distintos mares del planeta."
       },
       "clave": "C",
       "competencia": "2",
@@ -530,39 +245,315 @@
       "evidencia": "2.2",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo, narrativo, explicativo y argumentativo. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
-      "que_evalua": "La capacidad para hacer una lectura global con el objetivo de inferir el tema principal de un texto literario.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque a lo largo del poema quien habla se dirige a su reloj para reconocer su descuido: antes «apenas» lo escuchaba en las tardes de octubre, ahora los dos están «desvelados por culpa de mi olvido» y el cierre lo dice sin rodeos, «y todo por dejarlo para la última noche».",
+      "que_evalua": "La capacidad para identificar el tema principal del que trata un texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «De la hazaña deportiva que consiguió una nadadora» porque el texto trata sobre los logros de Mariana Cuero, deportista de aguas abiertas que triunfa cruzando mares y golfos.",
       "opciones_incorrectas": {
-        "A": "Las tardes pasadas se mencionan como lo que quisiera recuperar, pero el tema del poema no son esos recuerdos.",
+        "D": "Aunque se mencionan varios mares que la nadadora ha cruzado, el texto no habla de las ventajas de nadar en ellos.",
+        "B": "El texto menciona el fuerte oleaje, pero los peligros de nadar en el golfo no son el tema de la noticia.",
+        "A": "El fútbol solo se menciona para resaltar la idea de que se debe apoyar a otros deportes, no como tema central."
+      },
+      "contexto_id": "nadadora_pacifico"
+    },
+    {
+      "id": "P8L01",
+      "numero": 9,
+      "enunciado": "<p>¿Con qué intención escribe el autor giros como «proeza que realizó por primera vez» y «asombrosa distancia»?</p>",
+      "opciones": {
+        "A": "Para disimular lo dura que fue la prueba y suavizar la noticia.",
+        "B": "Para narrar lo sucedido con objetividad y darle así peso a la noticia.",
+        "C": "Para agrandar lo ocurrido y despertar así más interés en quien lee.",
+        "D": "Para contar el hecho sin tomar partido y que resulte más creíble."
+      },
+      "clave": "C",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
+      "que_evalua": "La capacidad para identificar estrategias retóricas en un texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Para agrandar lo ocurrido y despertar así más interés en quien lee» porque, en las expresiones citadas, el autor señala detalles únicos («realizó por primera vez») y utiliza el adjetivo «asombrosa» para engrandecer los hechos y hacer la lectura más atractiva al lector.",
+      "opciones_incorrectas": {
+        "D": "El autor no habla de un modo neutro: usa adjetivos como «asombrosa» e «imponente» para engrandecer los hechos.",
+        "A": "El autor no oculta nada con esas expresiones; al contrario, resalta la dificultad de la travesía.",
+        "B": "Esas expresiones no explican los hechos (no los justifican ni aclaran sus causas), sino que los engrandecen."
+      },
+      "contexto_id": "nadadora_pacifico"
+    },
+    {
+      "id": "P8L07",
+      "numero": 10,
+      "enunciado": "<p>¿Qué se propuso, sobre todo, quien escribió esta nota?</p>",
+      "opciones": {
+        "A": "Explicarles a los nadadores de alto rendimiento la técnica de las aguas abiertas.",
+        "B": "Convencer a los lectores de que dejen de ver fútbol.",
+        "C": "Darle a conocer al público del país una hazaña deportiva que casi nadie sigue.",
+        "D": "Enseñar paso a paso cómo se prepara una travesía en mar abierto."
+      },
+      "clave": "C",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente. » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce.",
+      "que_evalua": "La capacidad para entender el propósito general del texto o del autor y establecer el enunciatario (posible audiencia) a quien va dirigido.",
+      "justificacion_correcta": "La opción correcta es «Darle a conocer al público del país una hazaña deportiva que casi nadie sigue» porque la nota está escrita para cualquier lector: cuenta la travesía, ubica el golfo, recuerda los cruces anteriores de la deportista y recoge su reclamo de que las aguas abiertas casi no reciben reconocimiento en el país.",
+      "opciones_incorrectas": {
+        "A": "No hay explicaciones técnicas dirigidas a deportistas: la travesía se cuenta con palabras que entiende cualquiera.",
+        "B": "La frase sobre el fútbol es de la nadadora y pide apoyo para los deportes poco conocidos; nunca invita a dejar de ver fútbol.",
+        "D": "La nota no da pasos ni instrucciones para preparar una travesía."
+      },
+      "contexto_id": "nadadora_pacifico"
+    },
+    {
+      "id": "P8L12",
+      "numero": 11,
+      "enunciado": "<p>Según el texto, la tripulación del buque Manglar usa la ecosonda porque</p>",
+      "opciones": {
+        "A": "de esa manera se esconde de otros buques dentro de la bahía.",
+        "B": "en esas aguas de barro no alcanza a ver el lecho desde la cubierta.",
+        "C": "necesita avisarles a otros buques que se acerca una marejada peligrosa.",
+        "D": "de esa forma navega mejor cuando la bahía está encrespada."
+      },
+      "clave": "B",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, capítulos, organización, etc. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
+      "que_evalua": "La capacidad para ubicar información explícita o literal en un texto.",
+      "justificacion_correcta": "La opción «en esas aguas de barro no alcanza a ver el lecho desde la cubierta» es la respuesta correcta porque el texto afirma que «en esas aguas cargadas de barro ningún tripulante alcanza a distinguir el lecho desde la cubierta» y que, aun así, la tripulación sabe dónde hay un banco de arena, por dónde cruza un cardumen y cuánta agua queda bajo la quilla, porque todo eso se lo indica una ecosonda.",
+      "opciones_incorrectas": {
+        "A": "El texto no dice que la ecosonda sirva para esconderse de otros buques.",
+        "C": "El texto nunca menciona que la ecosonda sirva para avisarles a otros buques que viene una marejada peligrosa.",
+        "D": "El último párrafo afirma lo contrario: la ecosonda se equivoca cuando la bahía se encrespa."
+      },
+      "contexto_id": "ecosonda_manglar"
+    },
+    {
+      "id": "P8L08",
+      "numero": 12,
+      "enunciado": "<p>¿De qué se ocupa el texto principalmente?</p>",
+      "opciones": {
+        "A": "De las tareas que cumple cada tripulante del buque Manglar.",
+        "B": "De los peligros que corren las embarcaciones en la bahía de Cispatá.",
+        "C": "De la vida de la hidrógrafa que trabaja en el Instituto del Mar.",
+        "D": "De cómo un aparato averigua qué hay bajo el agua y de sus límites."
+      },
+      "clave": "D",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo, narrativo, explicativo y argumentativo. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
+      "que_evalua": "La capacidad para abstraer el tema y sintetizar el contenido global para construir el sentido global.",
+      "justificacion_correcta": "La respuesta correcta es «De cómo un aparato averigua qué hay bajo el agua y de sus límites» porque el texto explica de dónde salen los datos que la tripulación no puede ver, cómo el transductor dispara chasquidos y recoge el eco, cómo se calcula la profundidad y el costado del obstáculo, y en qué situación el aparato se equivoca.",
+      "opciones_incorrectas": {
+        "A": "La tripulación se menciona para mostrar que nadie alcanza a ver el lecho, no para describir el trabajo de cada quien.",
+        "B": "El texto habla de bancos de arena y de marejada, pero no trata de los peligros de navegar por la bahía.",
+        "C": "Carla Restrepo aparece como la voz que explica el aparato; su vida no es el asunto del texto."
+      },
+      "contexto_id": "ecosonda_manglar"
+    },
+    {
+      "id": "P8L10",
+      "numero": 13,
+      "enunciado": "<p>¿Qué clase de secuencia predomina en el texto?</p>",
+      "opciones": {
+        "A": "Una secuencia instructiva, porque se indica paso a paso cómo manejar una ecosonda.",
+        "B": "Una secuencia explicativa, porque se usan definiciones y ejemplos para dar cuenta de un fenómeno.",
+        "C": "Una secuencia narrativa, porque se relata lo que ocurrió en una travesía por la bahía.",
+        "D": "Una secuencia argumentativa, porque se defiende un punto de vista sobre los buques que hacen sondeos."
+      },
+      "clave": "B",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Reconozco las características de los diversos tipos de texto que leo. » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente.",
+      "que_evalua": "La capacidad para identificar la secuencia predominante en un texto.",
+      "justificacion_correcta": "La opción «Una secuencia explicativa, porque se usan definiciones y ejemplos para dar cuenta de un fenómeno» es la respuesta correcta porque este es un texto explicativo, cuyo propósito es dar a entender cómo trabaja la ecosonda mediante definiciones y ejemplos.",
+      "opciones_incorrectas": {
+        "A": "No se dan instrucciones ni pasos para manejar el aparato.",
+        "C": "No se relata una historia: el texto explica cómo trabaja un aparato, no narra hechos que hayan ocurrido en una travesía.",
+        "D": "El texto no defiende un punto de vista sobre los buques que hacen sondeos: explica cómo funciona un aparato."
+      },
+      "contexto_id": "ecosonda_manglar"
+    },
+    {
+      "id": "P8L11",
+      "numero": 14,
+      "enunciado": "<p>Revisa el esquema que acompaña al texto y responde.</p> <p>Al relacionar el esquema con la advertencia que los hidrógrafos hacen al final del texto, se llega a la idea de que, cuando la bahía se encrespa,</p>",
+      "opciones": {
+        "A": "el buque cambia de rumbo y se aparta de la ruta de los chasquidos.",
+        "B": "los chasquidos de la ecosonda siguen su recorrido sin ninguna alteración.",
+        "C": "los chasquidos llegan hasta el lecho, pero ya no logran regresar como eco.",
+        "D": "la espuma del oleaje estorba los chasquidos que el transductor dispara."
+      },
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Propongo hipótesis de interpretación para cada uno de los tipos de texto que he leído. » Infiero otros sentidos en cada uno de los textos que leo, relacionándolos con su sentido global y con el contexto en el cual se han producido, reconociendo rasgos sociológicos, ideológicos, científicos y culturales.",
+      "que_evalua": "La capacidad para inferir conclusiones implícitas en el texto a partir de una lectura global.",
+      "justificacion_correcta": "La opción «la espuma del oleaje estorba los chasquidos que el transductor dispara» es la respuesta correcta porque el cierre del texto advierte que la ecosonda se equivoca cuando la bahía se encrespa, ya que la espuma que el oleaje empuja bajo la quilla estorba los chasquidos apenas salen del transductor. El esquema muestra ese recorrido de ida y vuelta, la señal que baja y el eco que sube, de modo que lo que se altera con el oleaje es lo que el aparato dispara.",
+      "opciones_incorrectas": {
+        "B": "Contradice el texto: el cierre señala justamente que la bahía encrespada sí altera el trabajo de la ecosonda.",
+        "C": "El texto habla de una espuma que estorba los chasquidos al salir, no de un eco que se pierda en el camino de regreso.",
+        "A": "El texto no dice que el oleaje desvíe la ruta del buque; lo que menciona es el estorbo de la espuma."
+      },
+      "contexto_id": "ecosonda_manglar"
+    },
+    {
+      "id": "P8L09",
+      "numero": 15,
+      "enunciado": "<p>La hidrógrafa Carla Restrepo sostiene que la ecosonda es un invento ingenioso. ¿Cuál de estos planteamientos le hace una crítica válida?</p>",
+      "opciones": {
+        "A": "«Cuando la bahía se encrespa, no se puede confiar en la ecosonda».",
+        "B": "«La ecosonda trabaja disparando chasquidos brevísimos desde el transductor».",
+        "C": "«La ecosonda saca la profundidad del tiempo que tarda el eco en subir».",
+        "D": "«Con la ecosonda no se alcanza a ubicar un cardumen cuando el agua está cargada de barro»."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Propongo hipótesis de interpretación para cada uno de los tipos de texto que he leído. » Infiero otros sentidos en cada uno de los textos que leo, relacionándolos con su sentido global y con el contexto en el cual se han producido, reconociendo rasgos sociológicos, ideológicos, científicos y culturales.",
+      "que_evalua": "La capacidad para identificar enunciados que cuestionan una tesis en un texto.",
+      "justificacion_correcta": "La opción «Cuando la bahía se encrespa, no se puede confiar en la ecosonda» es la respuesta correcta porque es la única que ofrece una crítica válida a lo que sostiene la hidrógrafa. Ella dice que la ecosonda es un invento ingenioso para averiguar qué hay bajo la quilla; señalar que con la bahía encrespada el aparato falla pone en duda ese ingenio, pues un invento que se equivoca en una situación tan corriente no sería tan ingenioso como ella piensa.",
+      "opciones_incorrectas": {
+        "D": "Contradice lo que dice el primer párrafo, donde se afirma que con la ecosonda la tripulación sí sabe por dónde cruza un cardumen aunque el agua esté cargada de barro; no es una crítica válida, sino una idea falsa según el texto.",
+        "B": "Solo describe en qué consiste el trabajo de la ecosonda; no cuestiona su ingenio.",
+        "C": "Describe de dónde sale la cifra de profundidad, pero el tiempo que tarda el eco en subir no le quita ingenio al invento."
+      },
+      "contexto_id": "ecosonda_manglar"
+    },
+    {
+      "id": "P8L19",
+      "numero": 16,
+      "enunciado": "<p>Cuando la voz del poema le habla a su reloj, ¿de qué le habla sobre todo?</p>",
+      "opciones": {
+        "A": "Le habla del error que cometió al dejar el estudio para el final.",
+        "B": "Le habla del fastidio que le produce recordar aquellas tardes.",
+        "C": "Le habla de las tardes tranquilas que pasaron juntos en la sala.",
+        "D": "Le habla de lo satisfecho que se siente estudiando de madrugada."
+      },
+      "clave": "A",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Leo diversos tipos de texto: descriptivo, informativo, narrativo, explicativo y argumentativo. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
+      "que_evalua": "La capacidad para hacer una lectura global con el objetivo de inferir el tema principal de un texto literario.",
+      "justificacion_correcta": "La opción «Le habla del error que cometió al dejar el estudio para el final» es la respuesta correcta porque a lo largo del poema quien habla se dirige a su reloj para reconocer su descuido: antes «apenas» lo escuchaba en las tardes de octubre, ahora los dos están «desvelados por culpa de mi olvido» y el cierre lo dice sin rodeos, «y todo por dejarlo para la última noche».",
+      "opciones_incorrectas": {
+        "C": "Las tardes pasadas se mencionan como lo que quisiera recuperar, pero el tema del poema no son esos recuerdos.",
         "B": "Quien habla no siente fastidio por aquellas tardes; al contrario, pide que se las devuelvan.",
         "D": "El poema expresa lo opuesto: pesar por el desvelo y por haber postergado el estudio, no satisfacción."
       },
-      "contexto_id": "ctx-lectura-5"
+      "contexto_id": "reloj_pared"
+    },
+    {
+      "id": "P8L05",
+      "numero": 17,
+      "enunciado": "<p>De las siguientes opciones, ¿cuál dice con otras palabras lo mismo que la tercera estrofa del poema?</p>",
+      "opciones": {
+        "A": "Quien habla le reclama al reloj por haberlo despertado antes de tiempo y decide volver a la cama hasta que amanezca por completo.",
+        "B": "Quien habla le pregunta al reloj cuánto tiempo le queda y admite que es un desatino aprender en una noche lo de tres meses.",
+        "C": "Quien habla recuerda las tardes de octubre en que oía el reloj de la sala mientras repasaba con calma sus apuntes de clase.",
+        "D": "Quien habla le agradece al reloj las horas de más que le regaló para repasar todo lo que tenía pendiente."
+      },
+      "clave": "B",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Elaboro resúmenes y esquemas que dan cuenta del sentido de un texto. » Comprendo el sentido global de cada uno de los textos que leo, la intención de quien lo produce y las características del contexto en el que se produce.",
+      "que_evalua": "La capacidad de reconocer oraciones o fragmentos con un significado equivalente.",
+      "justificacion_correcta": "La opción correcta es «Quien habla le pregunta al reloj cuánto tiempo le queda y admite que es un desatino aprender en una noche lo de tres meses» porque recoge las dos ideas de la estrofa: la pregunta «cuántas horas me restan» dirigida a la aguja y el reconocimiento de que es «torpeza» pedirle a la memoria, en una sola madrugada, «lo que en tres meses largos no me puse a estudiar».",
+      "opciones_incorrectas": {
+        "A": "En la estrofa nadie vuelve a la cama: quien habla sigue en la mesa, desvelado y contando las horas.",
+        "C": "Las tardes de octubre se nombran en la primera estrofa, y allí quien habla «apenas» escuchaba el reloj, no repasaba sus apuntes.",
+        "D": "La estrofa no expresa agradecimiento, sino apuro: el tiempo se le acabó y lo reconoce."
+      },
+      "contexto_id": "reloj_pared"
+    },
+    {
+      "id": "P8L18",
+      "numero": 18,
+      "enunciado": "<p>Para la voz del poema, ¿qué es esa noche de estudio?</p>",
+      "opciones": {
+        "A": "Es una carrera contra el tiempo que ya no alcanza a ganar.",
+        "B": "Es la oportunidad de mostrar todo lo que ha aprendido.",
+        "C": "Es la prueba de que quien trasnocha aprende más que los demás.",
+        "D": "Es el castigo que los profesores les imponen a los alumnos."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Formulo hipótesis de comprensión acerca de las obras literarias que leo teniendo en cuenta género, temática, época y región. » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos. » Comprendo el sentido global de cada uno de los textos que leo.",
+      "que_evalua": "La capacidad para inferir conclusiones implícitas en el texto a partir de una lectura global.",
+      "justificacion_correcta": "La opción «Es una carrera contra el tiempo que ya no alcanza a ganar» es la respuesta correcta porque quien habla vive esa noche como un apuro sin salida frente al reloj. La aguja le resulta «sin piedad», le pregunta «cuántas horas me restan» y reconoce que es «torpeza» pedirle a la memoria «en una madrugada» lo que «en tres meses largos» no estudió: el tiempo se le acabó.",
+      "opciones_incorrectas": {
+        "B": "El poema no presenta la noche como una ocasión favorable; quien habla llega al examen como «quien llega tarde».",
+        "D": "En el poema nadie impone un castigo: el desvelo es consecuencia del propio descuido de quien habla.",
+        "C": "El poema no sostiene que trasnochar deje mejores resultados; muestra lo contrario, ojos hinchados y falta de preparación."
+      },
+      "contexto_id": "reloj_pared"
+    },
+    {
+      "id": "P8L04",
+      "numero": 19,
+      "enunciado": "<p>¿A qué recurso acude el autor para dejar ver el peso que tiene el tiempo en esa madrugada?</p>",
+      "opciones": {
+        "A": "A dirigirse al reloj como si pudiera oírlo y responderle.",
+        "B": "A citar las palabras del profesor que anunció el examen de mañana.",
+        "C": "A enumerar una por una las materias que le falta repasar.",
+        "D": "A comparar su cuarto con el de un compañero más aplicado."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
+      "que_evalua": "La habilidad del lector para captar la estrategia global de un autor al presentar una idea.",
+      "justificacion_correcta": "La opción correcta es «A dirigirse al reloj como si pudiera oírlo y responderle» porque el poema entero está escrito como un reclamo al aparato de la sala: lo llama «terco reloj de cuerda», le pide «cuéntame, aguja terca, cuántas horas me restan» y le ruega «devuélveme, si puedes, aquellas tardes lentas». Al convertirlo en interlocutor, el tiempo deja de ser un fondo y se vuelve el otro protagonista de la noche.",
+      "opciones_incorrectas": {
+        "B": "En el poema no habla ningún profesor ni se cita a nadie que anuncie un examen.",
+        "C": "Nunca se enumeran materias: lo que se acumula son cuadernos, apuntes y subrayados de afán.",
+        "D": "No aparece ningún compañero con quien compararse."
+      },
+      "contexto_id": "reloj_pared"
     },
     {
       "id": "P8L20",
       "numero": 20,
       "enunciado": "<p>Ya de madrugada, entre cuadernos regados, tinto frío y bostezos, quien habla levanta la vista de sus apuntes subrayados de afán y le suelta estas palabras al viejo reloj de cuerda que cuelga en la sala:</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>«Cuéntame, aguja terca, cuántas horas me restan…»</p></div><p>Con ese verso, la voz del poema</p>",
       "opciones": {
-        "A": "está explicando algo.",
-        "B": "está planteando una pregunta.",
-        "C": "está afirmando algo.",
+        "A": "está planteando una pregunta.",
+        "B": "está afirmando algo.",
+        "C": "está explicando algo.",
         "D": "está poniendo un ejemplo."
       },
-      "clave": "B",
+      "clave": "A",
       "competencia": "2",
       "afirmacion": 2,
       "evidencia": "2.3",
       "dificultad": "ALTA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Reconozco en las obras literarias procedimientos narrativos, líricos y dramáticos. » Caracterizo los textos de acuerdo con la intención comunicativa de quien los produce. » Analizo los aspectos textuales, conceptuales y formales de cada uno de los textos que leo.",
       "que_evalua": "La capacidad para identificar qué hace el autor por medio de un enunciado en un texto literario.",
-      "justificacion_correcta": "La opción B es la respuesta correcta, pues en ese verso quien habla interroga al reloj sobre «cuántas horas» le quedan, y con esa pregunta expresa su angustia y su desconcierto ante el tiempo que se le agota.",
+      "justificacion_correcta": "La opción «está planteando una pregunta» es la respuesta correcta, pues en ese verso quien habla interroga al reloj sobre «cuántas horas» le quedan, y con esa pregunta expresa su angustia y su desconcierto ante el tiempo que se le agota.",
       "opciones_incorrectas": {
-        "A": "En el verso no se explica nada; se plantea una pregunta.",
-        "C": "El verso no afirma algo: formula una pregunta.",
+        "C": "En el verso no se explica nada; se plantea una pregunta.",
+        "B": "El verso no afirma algo: formula una pregunta.",
         "D": "El verso no ofrece un ejemplo de un concepto más general."
       },
-      "contexto_id": "ctx-lectura-5"
+      "contexto_id": "reloj_pared"
     }
-  ]
+  ],
+  "preservar_orden_preguntas": true
 }

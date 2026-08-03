@@ -734,11 +734,27 @@
     // Filtrar apps según rol
     let appsVisibles = todasApps;
     if (ses.rol === 'docente') {
+      // El docente ve SOLO lo suyo, y "lo suyo" tiene dos dimensiones:
+      //   grupos_asignados -> en qué grado y grupo enseña ("6-A", "6-B")
+      //   asignaciones     -> QUÉ ÁREA dicta en cada grado ({area_slug, grado})
+      // Antes solo se miraba la primera, así que un docente de Matemáticas de 6° veía también
+      // Lenguaje, Sociales, Ciencias e Inglés de 6°: justo lo que el manager había separado.
+      // Un docente sin asignación sigue viendo todo lo de su institución, que es el
+      // comportamiento de siempre para quien aún no se ha configurado.
       const gruposAsig = (ses.grupos_asignados || []).map(s => String(s).toUpperCase());
+      const areasAsig = ses.asignaciones || [];
+      // Coincide si el área y el grado son suyos y, cuando la asignación declara grupo, también
+      // el grupo. Una asignación antigua sin `grupo` vale para todos los grupos de ese grado,
+      // que es lo que significaba antes de que existiera esa columna.
+      const dicta = (slug, grado, grupo) => areasAsig.some(x =>
+        x.area_slug === slug && String(x.grado) === String(grado) &&
+        (!x.grupo || String(x.grupo).toUpperCase() === String(grupo).toUpperCase()));
       appsVisibles = todasApps.filter(a => {
         if (a.institucion_id !== ses.institucion_id) return false;
-        const claveGrupo = `${a.grado}-${normGrupo(a.grupo)}`;
-        return gruposAsig.length === 0 || gruposAsig.includes(claveGrupo.toUpperCase());
+        const grupo = normGrupo(a.grupo);
+        const pasaGrupo = gruposAsig.length === 0 || gruposAsig.includes(`${a.grado}-${grupo}`.toUpperCase());
+        const pasaArea = areasAsig.length === 0 || dicta(slugDeArea(a.area), a.grado, grupo);
+        return pasaGrupo && pasaArea;
       });
     } else if ((ses.rol === 'directivo' || ses.rol === 'funcionario') && ses.institucion_id) {
       // Directivo o funcionario CON institución asignada: solo su institución.
@@ -762,7 +778,12 @@
     };
     const ORDEN_SLUG = ['matematicas', 'lectura_critica', 'sociales_ciudadanas', 'ciencias_naturales', 'ingles'];
     function slugDeArea(txt) {
-      const s = (txt || '').toString().toLowerCase();
+      // OJO, esto costo un fallo en produccion: hay que QUITAR LOS ACENTOS antes de comparar.
+      // "Matematicas" en los datos viene con tilde, y /matemat/ NO casa con "matema'ticas", asi
+      // que el area quedaba sin identificar (null) y el filtro por area escondia TODAS las
+      // pruebas de Matematicas a sus propios docentes. Normalizar es obligatorio.
+      const s = (txt || '').toString().toLowerCase()
+        .normalize('NFD').replace(/[̀-ͯ]/g, '');
       if (/matemat|numeric/.test(s)) return 'matematicas';
       if (/lectura|lenguaje|lengua|critic/.test(s)) return 'lectura_critica';
       if (/social|ciudadan|competenc|historia|geograf/.test(s)) return 'sociales_ciudadanas';
@@ -903,6 +924,28 @@
               const sub = appsVisibles.filter(a =>
                 pasaFiltro(a, f, _periodoDeApp, (x) => x.area, (x) => x.grado));
               renderAcordeones(sub);
+              // Los desplegables se acotan entre si: al elegir un grado, la lista de areas pasa a
+              // ser SOLO la de ese grado. Antes ofrecia todas las areas del docente en todos sus
+              // grados, y en 4° aparecia un area que solo dicta en 5°: confuso y sin sentido.
+              const selGrado = contFiltros.querySelector('select[data-campo="grado"]');
+              const selArea = contFiltros.querySelector('select[data-campo="asignatura"]');
+              if (!selArea) return;
+              const gradoElegido = selGrado && selGrado.value && selGrado.value !== '__todos__'
+                ? String(selGrado.value) : null;
+              const permitidas = [...new Set(appsVisibles
+                .filter(a => !gradoElegido || String(a.grado) === gradoElegido)
+                .map(a => a.area).filter(Boolean))];
+              const elegida = selArea.value;
+              [...selArea.options].forEach(op => {
+                const esTodas = !op.value || op.value === '__todos__';
+                op.hidden = !esTodas && !permitidas.includes(op.value);
+              });
+              // Si el area que estaba elegida no existe en el grado nuevo, se vuelve a "Todas"
+              // y se repinta: dejarla elegida mostraria una lista vacia sin explicacion.
+              if (elegida && elegida !== '__todos__' && !permitidas.includes(elegida)) {
+                selArea.value = '__todos__';
+                selArea.dispatchEvent(new Event('change', { bubbles: true }));
+              }
             });
         }
       }
@@ -2520,10 +2563,12 @@
       // Filtrar estudiantes según rol
       let candidatos = allUsers.filter(u => u.rol === 'estudiante');
       if (ses.rol === 'docente') {
-        const gruposAsig = ses.grupos_asignados || [];
+        // Aquí basta con el grado y el grupo: un permiso de reintento es para un estudiante,
+        // no para un área. Si el docente enseña en ese grupo, puede habilitarle el reintento.
+        const gruposAsig = (ses.grupos_asignados || []).map(s => String(s).toUpperCase());
         candidatos = candidatos.filter(u =>
           u.institucion_id === ses.institucion_id &&
-          (gruposAsig.length === 0 || gruposAsig.includes(`${u.grado}-${u.grupo}`)));
+          (gruposAsig.length === 0 || gruposAsig.includes(`${u.grado}-${String(u.grupo || '').trim().toUpperCase()}`)));
       } else if (ses.rol === 'directivo') {
         candidatos = candidatos.filter(u => u.institucion_id === ses.institucion_id);
       }

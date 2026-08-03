@@ -88,7 +88,7 @@
       <!-- A. Grupos → Docentes -->
       <div id="vista-grupos" class="vista animate-fade-in">
         <h1 class="text-2xl font-bold mb-1" style="font-family:'Plus Jakarta Sans'">Asignar grados y áreas a docentes</h1>
-        <p class="text-slate-600 text-sm mb-6">Marca, para cada docente, <strong>qué área dicta en qué grado</strong>. Si no marcas nada, el docente ve <strong>todo</strong> lo de su institución.</p>
+        <p class="text-slate-600 text-sm mb-6">Marca, para cada docente, <strong>qué área dicta en qué grado</strong>. Si no marcas nada, el docente ve <strong>todo</strong> lo de su institución. También puedes corregirle la <strong>institución</strong> y la <strong>sede</strong>; al cambiar de institución la asignación se limpia y hay que marcarla de nuevo.</p>
         <div class="idea-card mb-4" style="max-width:900px">
           <div class="asig-filtros">
             <div style="flex:1 1 240px">
@@ -304,15 +304,29 @@
       { slug: 'ingles',              etiqueta: 'Inglés' }
     ];
 
-    // Los grados que DECLARA la institución mandan; si no los declara, se deducen de sus
-    // estudiantes. Así un grado aparece aunque todavía no tenga a nadie matriculado.
-    function gradosDisponibles(institucionId) {
+    // Las filas de la matriz son GRADO Y GRUPO, no solo grado: en un colegio con dos grupos por
+    // grado hay que poder decir que una docente dicta Lenguaje en 3° A y otra el mismo Lenguaje
+    // en 3° B. Los grados y los grupos salen de lo que DECLARA la institución; si no los declara,
+    // se deducen de sus estudiantes, para que una fila exista aunque el grupo esté aún vacío.
+    function filasDisponibles(institucionId) {
       const inst = instituciones.find(i => i.id === institucionId);
-      const decl = (inst && inst.grados) ? inst.grados.map(String) : [];
-      const deEst = usuarios
-        .filter(u => u.rol === 'estudiante' && u.institucion_id === institucionId && u.grado)
-        .map(u => String(u.grado));
-      return [...new Set([...decl, ...deEst])].sort((a, b) => Number(a) - Number(b));
+      const grados = [...new Set([
+        ...((inst && inst.grados) ? inst.grados.map(String) : []),
+        ...usuarios.filter(u => u.rol === 'estudiante' && u.institucion_id === institucionId && u.grado)
+          .map(u => String(u.grado)),
+      ])].sort((a, b) => Number(a) - Number(b));
+      // Los grupos REALES de cada grado; si el grado no tiene estudiantes se usan los que declare
+      // la institución y, en último caso, el grupo "A", que es la convención del proyecto.
+      const declGrupos = (inst && inst.grupos && inst.grupos.length) ? inst.grupos.map(String) : ['A'];
+      const filas = [];
+      for (const g of grados) {
+        const propios = [...new Set(usuarios
+          .filter(u => u.rol === 'estudiante' && u.institucion_id === institucionId
+            && String(u.grado) === g && u.grupo)
+          .map(u => String(u.grupo).trim().toUpperCase()))].sort();
+        (propios.length ? propios : declGrupos).forEach(gr => filas.push({ grado: g, grupo: gr }));
+      }
+      return filas;
     }
 
     // Las sedes REALES de una institución. La Caldera tiene cinco (la principal más cuatro
@@ -326,13 +340,7 @@
         escapeHtml(s.nombre || s.id) + '</option>').join('');
     }
 
-    // El grupo real del grado (casi siempre "A"). Si el grado aún no tiene estudiantes se asume
-    // "A", que es la convención del proyecto.
-    function grupoDeGrado(institucionId, grado) {
-      const est = usuarios.find(u => u.rol === 'estudiante' && u.institucion_id === institucionId
-        && String(u.grado) === String(grado) && u.grupo);
-      return est ? String(est.grupo) : 'A';
-    }
+
 
     function filtrosDocentes() {
       const val = (id) => (document.getElementById(id) || {}).value || '';
@@ -397,37 +405,47 @@
 
       cont.innerHTML = docentes.map(d => {
         const inst = instituciones.find(i => i.id === d.institucion_id);
-        const grados = gradosDisponibles(d.institucion_id);
-        const marcadas = new Set((d.asignaciones || []).map(a => a.area_slug + '|' + a.grado));
-        // Compatibilidad hacia atrás: quien todavía no tiene `asignaciones` pero sí grupos, se
-        // muestra con TODAS las áreas de esos grados marcadas, que es justo lo que ve hoy. Así
-        // nadie pierde su asignación por abrir esta pantalla.
+        const filas = filasDisponibles(d.institucion_id);
+        // La llave de una casilla es área|grado|grupo.
+        const marcadas = new Set();
+        (d.asignaciones || []).forEach(a => {
+          if (a.grupo) { marcadas.add(a.area_slug + '|' + a.grado + '|' + String(a.grupo).toUpperCase()); return; }
+          // Asignación antigua SIN grupo: valía para todos los grupos de ese grado.
+          filas.filter(f => f.grado === String(a.grado))
+            .forEach(f => marcadas.add(a.area_slug + '|' + f.grado + '|' + f.grupo));
+        });
+        // Compatibilidad: quien no tiene `asignaciones` pero sí grupos, se muestra con TODAS las
+        // áreas de esos grupos marcadas, que es justo lo que ve hoy. Nadie pierde nada por abrir
+        // esta pantalla.
         if (!marcadas.size && (d.grupos_asignados || []).length) {
           (d.grupos_asignados || []).forEach(g => {
-            const gr = String(g).split('-')[0];
-            AREAS_ASIGNABLES.forEach(a => marcadas.add(a.slug + '|' + gr));
+            const [gr, gp] = String(g).toUpperCase().split('-');
+            AREAS_ASIGNABLES.forEach(a => marcadas.add(a.slug + '|' + gr + '|' + (gp || 'A')));
           });
         }
-        const filas = grados.map(g =>
+        const cuerpo = filas.map(f =>
           '<tr>' +
-          '<th>' + g + '°</th>' +
+          '<th>' + f.grado + '° <span style="color:#8A94A6;font-weight:600">' + f.grupo + '</span></th>' +
           AREAS_ASIGNABLES.map(a =>
-            '<td><input type="checkbox" data-docente="' + d.id + '" data-area="' + a.slug + '" data-grado="' + g + '"' +
-            (marcadas.has(a.slug + '|' + g) ? ' checked' : '') +
-            ' aria-label="' + escapeHtml(a.etiqueta) + ' en ' + g + '°"></td>').join('') +
+            '<td><input type="checkbox" data-docente="' + d.id + '" data-area="' + a.slug +
+            '" data-grado="' + f.grado + '" data-grupo="' + f.grupo + '"' +
+            (marcadas.has(a.slug + '|' + f.grado + '|' + f.grupo) ? ' checked' : '') +
+            ' aria-label="' + escapeHtml(a.etiqueta) + ' en ' + f.grado + '° ' + f.grupo + '"></td>').join('') +
           '<td class="matriz__acc">' +
-          '<button type="button" class="btn-fila-grado" data-docente="' + d.id + '" data-grado="' + g + '">Todas</button>' +
+          '<button type="button" class="btn-fila-grado" data-docente="' + d.id +
+          '" data-grado="' + f.grado + '" data-grupo="' + f.grupo + '">Todas</button>' +
           '</td></tr>').join('');
-        const tabla = grados.length
+        const tabla = filas.length
           ? '<div style="overflow-x:auto"><table class="matriz"><thead><tr>' +
-            '<th class="matriz__esq">Grado</th>' +
+            '<th class="matriz__esq">Grado y grupo</th>' +
             AREAS_ASIGNABLES.map(a => '<th>' + escapeHtml(a.etiqueta) + '</th>').join('') +
-            '<th></th></tr></thead><tbody>' + filas + '</tbody></table></div>'
+            '<th></th></tr></thead><tbody>' + cuerpo + '</tbody></table></div>'
           : '<p class="asig-doc__vacio">Esta institución todavía no declara grados ni tiene estudiantes.</p>';
         // Resumen legible de lo que tiene marcado hoy, para no obligar a leer la matriz entera.
-        const gradosMarcados = [...new Set([...marcadas].map(k => k.split('|')[1]))].sort((a, b) => Number(a) - Number(b));
-        const resumen = gradosMarcados.length
-          ? gradosMarcados.map(g => '<span class="asig-chip">' + g + '°</span>').join('')
+        const filasMarcadas = [...new Set([...marcadas].map(k => { const p = k.split('|'); return p[1] + '-' + p[2]; }))]
+          .sort((a, b) => Number(a.split('-')[0]) - Number(b.split('-')[0]) || a.localeCompare(b));
+        const resumen = filasMarcadas.length
+          ? filasMarcadas.map(g => '<span class="asig-chip">' + g.replace('-', '° ') + '</span>').join('')
           : '<span class="asig-chip">Sin asignación · ve todo</span>';
         return '<div class="asig-doc mb-4">' +
           '<div class="asig-doc__cab"><div>' +
@@ -440,7 +458,13 @@
           '<button class="btn-secundario btn-limpiar-asig" data-docente="' + d.id + '" style="font-size:12px">Quitar todo</button>' +
           '<button class="btn-idea btn-guardar-grupos" data-docente="' + d.id + '">Guardar</button>' +
           '</div></div>' +
-          '<div class="asig-doc__sede"><label for="sede-' + d.id + '">Sede</label>' +
+          '<div class="asig-doc__sede">' +
+          '<label for="ie-' + d.id + '">Institución</label>' +
+          '<select id="ie-' + d.id + '" class="input-idea sel-ie-doc" data-docente="' + d.id + '">' +
+          instituciones.map(i => '<option value="' + i.id + '"' +
+            (d.institucion_id === i.id ? ' selected' : '') + '>' + escapeHtml(i.nombre) + '</option>').join('') +
+          '</select>' +
+          '<label for="sede-' + d.id + '">Sede</label>' +
           '<select id="sede-' + d.id + '" class="input-idea sel-sede-doc" data-docente="' + d.id + '">' +
           opcionesSede(d.institucion_id, d.sede_id) + '</select></div>' +
           '<div class="asig-doc__resumen">Grados asignados: ' + resumen + '</div>' +
@@ -450,9 +474,18 @@
       // Atajo: marcar o desmarcar de un tirón todas las áreas de un grado.
       cont.querySelectorAll('.btn-fila-grado').forEach(btn => {
         btn.addEventListener('click', () => {
-          const cajas = [...cont.querySelectorAll('input[type=checkbox][data-docente="' + btn.dataset.docente + '"][data-grado="' + btn.dataset.grado + '"]')];
+          const cajas = [...cont.querySelectorAll('input[type=checkbox][data-docente="' + btn.dataset.docente +
+            '"][data-grado="' + btn.dataset.grado + '"][data-grupo="' + btn.dataset.grupo + '"]')];
           const marcar = !cajas.every(c => c.checked);
           cajas.forEach(c => { c.checked = marcar; });
+        });
+      });
+      // Al cambiar de institución, las sedes que se ofrecen son las de la institución nueva:
+      // una sede de La Caldera no existe en San Juan Bautista.
+      cont.querySelectorAll('.sel-ie-doc').forEach(sel => {
+        sel.addEventListener('change', () => {
+          const sede = cont.querySelector('.sel-sede-doc[data-docente="' + sel.dataset.docente + '"]');
+          if (sede) sede.innerHTML = opcionesSede(sel.value, null);
         });
       });
       cont.querySelectorAll('.btn-limpiar-asig').forEach(btn => {
@@ -466,15 +499,26 @@
           const docId = btn.dataset.docente;
           const perfil = usuarios.find(u => u.id === docId);
           const marcadas = [...cont.querySelectorAll('input[type=checkbox][data-docente="' + docId + '"]:checked')]
-            .map(c => ({ area_slug: c.dataset.area, grado: c.dataset.grado }));
-          // `grupos_asignados` se DERIVA de los grados marcados: es lo que sigue leyendo el
-          // panel del docente, así que tiene que quedar coherente con la matriz.
-          const grados = [...new Set(marcadas.map(a => a.grado))].sort((a, b) => Number(a) - Number(b));
-          const grupos = grados.map(g => g + '-' + grupoDeGrado(perfil && perfil.institucion_id, g));
-          // La sede va en el mismo guardado: es parte de la asignación, no un ajuste aparte.
+            .map(c => ({ area_slug: c.dataset.area, grado: c.dataset.grado, grupo: c.dataset.grupo }));
+          // `grupos_asignados` se DERIVA de las filas marcadas: es lo que sigue leyendo el panel
+          // del docente, así que tiene que quedar coherente con la matriz.
+          const grupos = [...new Set(marcadas.map(a => a.grado + '-' + a.grupo))]
+            .sort((a, b) => Number(a.split('-')[0]) - Number(b.split('-')[0]) || a.localeCompare(b));
+          const grados = [...new Set(marcadas.map(a => a.grado))];
+          // La institución y la sede van en el mismo guardado: son parte de la asignación.
           const selSede = cont.querySelector('.sel-sede-doc[data-docente="' + docId + '"]');
-          const cambios = { asignaciones: marcadas, grupos_asignados: grupos };
-          if (selSede && selSede.value) cambios.sede_id = selSede.value;
+          const selIE = cont.querySelector('.sel-ie-doc[data-docente="' + docId + '"]');
+          const ieNueva = selIE ? selIE.value : (perfil && perfil.institucion_id);
+          const cambioDeIE = !!(perfil && ieNueva && perfil.institucion_id !== ieNueva);
+
+          // Si el docente cambia de institución, sus grados, grupos y áreas dejan de tener
+          // sentido: pertenecen al colegio del que sale. Se limpian y se avisa, en vez de
+          // arrastrar una asignación que ya no significa nada.
+          const cambios = cambioDeIE
+            ? { institucion_id: ieNueva, sede_id: (selSede && selSede.value) || null,
+                asignaciones: [], grupos_asignados: [] }
+            : { asignaciones: marcadas, grupos_asignados: grupos };
+          if (!cambioDeIE && selSede && selSede.value) cambios.sede_id = selSede.value;
           try {
             await db.actualizar('idea_usuarios', docId, cambios);
           } catch (e) {
@@ -482,9 +526,14 @@
             return;
           }
           await recargarUsuarios();
-          toast(marcadas.length
-            ? 'Asignación guardada: ' + marcadas.length + ' área(s) en ' + grados.length + ' grado(s)'
-            : 'Sin marcas: este docente verá todo lo de su institución', 'exito');
+          if (cambioDeIE) {
+            const nom = (instituciones.find(i => i.id === ieNueva) || {}).nombre || ieNueva;
+            toast('Docente trasladado a ' + nom + '. Su asignación quedó en blanco: márcala de nuevo.', 'exito');
+          } else {
+            toast(marcadas.length
+              ? 'Asignación guardada: ' + marcadas.length + ' área(s) en ' + grados.length + ' grado(s)'
+              : 'Sin marcas: este docente verá todo lo de su institución', 'exito');
+          }
           renderDocentes();
         });
       });

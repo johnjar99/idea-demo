@@ -44,82 +44,300 @@
   ],
   "preguntas": [
     {
-      "id": "P6CN01",
+      "id": "P6CN10",
       "numero": 1,
+      "enunciado": "<p>Lee la situación, observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el patio de un colegio hay demasiados mosquitos adultos volando y el curso de sexto quiere bajar su número sin usar venenos. Con ayuda de la profesora arman cinco jaulas de malla iguales, cada una con 80 mosquitos adultos y una batea con agua. En la primera jaula no meten ningún animal; en las otras cuatro ponen, por separado, una libélula, un pez que nada en la batea, una lombriz y un sapo. Al cabo de una semana cuentan los mosquitos que quedan vivos en cada jaula y llevan el resultado a la gráfica.</p>[[IMG]]</div><p>De acuerdo con la gráfica, ¿cuál de los cuatro debería soltar el curso en el patio para bajar más los mosquitos?</p>",
+      "opciones": {
+        "A": "El pez.",
+        "B": "La libélula.",
+        "C": "El sapo.",
+        "D": "La lombriz."
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "dificultad": "BAJA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes toman una decisión en una situación problema a partir de las evidencias obtenidas en una investigación.",
+      "justificacion_correcta": "La opción «La libélula» es la respuesta correcta porque, según la gráfica, la jaula de la libélula es la que menos mosquitos vivos deja al final: unos 16 de los 80 iniciales, la barra más baja de todas. Por eso la libélula es la que más baja el número de mosquitos.",
+      "opciones_incorrectas": {
+        "A": "En la jaula del pez quedaron vivos los 80 mosquitos, los mismos que en la jaula sin ningún animal: el pez no alcanza a los mosquitos que vuelan, así que no hubo ninguna reducción.",
+        "D": "En la jaula de la lombriz también quedaron vivos los 80 mosquitos: la lombriz se alimenta de restos del suelo y no caza insectos en el aire, así que no hubo ninguna reducción.",
+        "C": "En la jaula del sapo quedaron vivos unos 35 mosquitos: sí hubo reducción, pero bastante menor que la de la libélula."
+      },
+      "componente": "Entorno vivo",
+      "imagen_figura": "assets/banco-cn-6-p1/q10.png"
+    },
+    {
+      "id": "P6CN04",
+      "numero": 2,
+      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una zona rural donde hay colmenas y también antenas de telefonía celular, los apicultores vienen notando menos abejas cada año. Tatiana, que estudia el caso, plantea la siguiente hipótesis:</p><p><b>A medida que se instalan más antenas de telefonía celular en un campo, el número de abejas disminuye de forma sostenida, porque las ondas interfieren con la orientación de las abejas y dificultan que regresen a su colmena.</b></p><p>Para ponerla a prueba, Tatiana contará el número de abejas de la zona a medida que aumenta el número de antenas instaladas, sin cambiar nada más: las mismas colmenas, el mismo campo y los mismos cultivos. Antes de empezar quiere dibujar cómo tendrían que verse los resultados si su hipótesis resultara cierta, y cuatro compañeros le proponen cuatro gráficas distintas.</p></div><p>Si la hipótesis de Tatiana fuera cierta, ¿cuál de las siguientes gráficas (A, B, C o D) representaría los resultados esperados?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "B",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes representan de manera gráfica una hipótesis sobre la relación entre dos variables.",
+      "justificacion_correcta": "La opción «Gráfica A» es la respuesta correcta porque la hipótesis describe una relación inversa y sostenida: a más antenas, menos abejas; por eso la curva debe descender de manera continua a medida que aumentan las antenas.",
+      "opciones_incorrectas": {
+        "D": "La gráfica B sube y luego baja, de modo que no representa una disminución continua como la planteada.",
+        "C": "La gráfica C muestra que las abejas aumentan con más antenas, justo lo contrario de la hipótesis.",
+        "A": "La gráfica D hace que las abejas disminuyan y luego vuelvan a aumentar, lo que contradice la hipótesis."
+      },
+      "componente": "Ciencia, tecnología y sociedad",
+      "opciones_imagenes": {
+        "B": "assets/banco-cn-6-p1/q04A.png",
+        "D": "assets/banco-cn-6-p1/q04B.png",
+        "C": "assets/banco-cn-6-p1/q04C.png",
+        "A": "assets/banco-cn-6-p1/q04D.png"
+      }
+    },
+    {
+      "id": "P6CN19",
+      "numero": 3,
+      "enunciado": "<p>Lee la situación, compara los dos bosques de la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una especie de salamandra necesita <b>troncos húmedos y caídos</b> para esconderse de sus depredadores y poner sus huevos, porque sus huevos se secan si quedan al descubierto. Estas salamandras viven tanto en el bosque 1 como en el bosque 2, dos bosques vecinos que tienen la misma temperatura y la misma cantidad de insectos de los que se alimentan; tampoco hay diferencias en los depredadores de la zona. Sin embargo, como muestra la figura, el bosque 1 recibe más lluvia y tiene muchos más troncos caídos y húmedos que el bosque 2, donde el suelo se ve seco y hay un solo tronco. Al contar los animales, los investigadores encontraron una mayor cantidad de salamandras en el bosque 1 que en el bosque 2.</p>[[IMG]]</div><p>¿Por qué podría haber más salamandras en el bosque 1 que en el bosque 2?</p>",
+      "opciones": {
+        "A": "Porque en el bosque 1 hay más troncos húmedos donde esconderse y poner sus huevos.",
+        "B": "Porque en el bosque 2 la temperatura es mayor y las salamandras se mueren de calor.",
+        "C": "Porque en el bosque 1 las salamandras dejan de comer insectos y se alimentan de los troncos.",
+        "D": "Porque en el bosque 1 hay más insectos disponibles para alimentar a las salamandras."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "dificultad": "ALTA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes explican cómo un factor ambiental afecta el tamaño de las poblaciones de una especie en un ecosistema.",
+      "justificacion_correcta": "La opción «Porque en el bosque 1 hay más troncos húmedos donde esconderse y poner sus huevos» es la respuesta correcta porque la única diferencia entre los dos bosques es la cantidad de troncos húmedos y caídos; al haber más en el bosque 1, las salamandras disponen de más sitios para esconderse y reproducirse, lo que explica que sean más numerosas.",
+      "opciones_incorrectas": {
+        "B": "El enunciado indica que la temperatura es igual en ambos bosques, de modo que no explica la diferencia.",
+        "C": "Las salamandras se alimentan de insectos; los troncos les sirven de refugio, no de alimento.",
+        "D": "La cantidad de insectos es la misma en los dos bosques, por lo que no puede ser la causa."
+      },
+      "componente": "Entorno vivo",
+      "imagen_figura": "assets/banco-cn-6-p1/q19.png"
+    },
+    {
+      "id": "P6CN20",
+      "numero": 4,
+      "enunciado": "<p>Lee la situación, observa los objetos, analiza la tabla y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mientras lava la loza en el patio, Sara deja caer dentro de la ponchera con agua tres cosas que estaban sobre la mesa: un clavo, el tapón de un termo y una pulsera. Antes de meter la mano para recogerlas, busca en su cuaderno de Ciencias la densidad de cada material. Allí también tiene anotado que el agua tiene una densidad de <b>1 g/mL</b> y que un objeto se sostiene en la superficie cuando su densidad es <b>menor</b> que la del agua.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Objeto</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Material</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Densidad (g/mL)</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Clavo</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Acero</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">7,8</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Tapón</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Corcho</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">0,2</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Pulsera</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Plata</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">10,5</td></tr></tbody></table></div><p>De acuerdo con la tabla, ¿cuál de los tres objetos se quedará en la superficie y no habrá que sacarlo del fondo de la ponchera?</p>",
+      "opciones": {
+        "A": "El clavo y la pulsera, porque son los objetos más pesados.",
+        "B": "Solo la pulsera, porque la plata tiene la densidad más alta de la tabla.",
+        "C": "Solo el tapón, porque la densidad del corcho está por debajo de la del agua.",
+        "D": "Solo el clavo, porque está hecho de acero."
+      },
+      "clave": "C",
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes analizan una tabla con las características de varios objetos para determinar cómo será su comportamiento en una situación dada.",
+      "justificacion_correcta": "La opción «Solo el tapón, porque la densidad del corcho está por debajo de la del agua» es la respuesta correcta porque el corcho del tapón tiene una densidad de 0,2 g/mL, un valor menor que el del agua (1 g/mL), y por eso se queda en la superficie; el acero y la plata, con densidades mayores, se van al fondo.",
+      "opciones_incorrectas": {
+        "D": "El clavo es de acero, material con una densidad de 7,8 g/mL, muy por encima de la del agua, así que se hunde.",
+        "B": "La plata de la pulsera tiene 10,5 g/mL, la densidad más alta de la tabla; tener más densidad que el agua hace que el objeto se hunda, no que se sostenga en la superficie.",
+        "A": "Que dos objetos sean los más pesados no significa que se sostengan en el agua: lo que decide es que la densidad del material sea menor que la del agua, y la del acero y la plata es mayor."
+      },
+      "componente": "Entorno físico",
+      "imagen_figura": "assets/banco-cn-6-p1/q20.png"
+    },
+    {
+      "id": "P6CN16",
+      "numero": 5,
+      "enunciado": "<p>Lee la situación, analiza la tabla y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para el proyecto de Ciencias, Mariana quiere saber cómo cambia la temperatura del aire a lo largo de un día escolar. Colgó un termómetro a la sombra, en el mismo punto del patio del colegio, y anotó la temperatura cada dos horas, desde las 8 de la mañana hasta las 2 de la tarde. Los cuatro datos que registró son los de la siguiente tabla, donde a cada hora le corresponde una temperatura en grados Celsius:</p><table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Hora del día</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Temperatura (°C)</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">8</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">16</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">10</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">20</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">12</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">26</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">14</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">24</td></tr></tbody></table><p>Ahora debe pasar esos datos a una gráfica para el informe, poniendo la hora en el eje horizontal y la temperatura en el vertical. Cuatro compañeros le muestran cuatro gráficas distintas.</p></div><p>¿Cuál de las siguientes gráficas (A, B, C o D) representa correctamente los datos de la tabla?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes representan, en una gráfica, una serie de datos presentados inicialmente en una tabla.",
+      "justificacion_correcta": "La opción «Gráfica A» es la respuesta correcta porque sus puntos coinciden exactamente con cada pareja de datos de la tabla: (8; 16), (10; 20), (12; 26) y (14; 24).",
+      "opciones_incorrectas": {
+        "B": "La gráfica B reordena las temperaturas de menor a mayor y altera la relación hora-temperatura de la tabla.",
+        "A": "En la gráfica C solo el dato de la hora 12 coincide con la tabla; los demás no.",
+        "C": "La gráfica D muestra la hora 14 con 30 °C, cuando en la tabla ese valor es 24 °C."
+      },
+      "componente": "Entorno físico",
+      "opciones_imagenes": {
+        "D": "assets/banco-cn-6-p1/q16A.png",
+        "B": "assets/banco-cn-6-p1/q16B.png",
+        "A": "assets/banco-cn-6-p1/q16C.png",
+        "C": "assets/banco-cn-6-p1/q16D.png"
+      }
+    },
+    {
+      "id": "P6CN09",
+      "numero": 6,
+      "enunciado": "<p>Lee la situación, observa los modelos y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mientras prepara el desayuno, Valentina deja un trozo de mantequilla sólida en una sartén caliente y observa que, con el calor, la mantequilla se derrite hasta volverse líquida y se extiende por el fondo. Le pregunta a su profesora qué le pasó por dentro a la mantequilla, si sigue siendo la misma sustancia. La profesora le explica que, al calentarse, las partículas que forman la mantequilla <b>aflojan sus uniones</b> y se separan un poco unas de otras, de modo que pueden moverse y cambiar de posición, pero <b>sin separarse del todo</b>: siguen estando cerca unas de otras. Cuatro modelos intentan dibujar ese cambio con círculos que representan las partículas.</p></div><p>¿Cuál de los siguientes modelos (A, B, C o D) representa mejor el cambio en la distribución de las partículas de la mantequilla, del estado sólido al líquido?</p>",
+      "opciones": {
+        "A": "Modelo D.",
+        "B": "Modelo A.",
+        "C": "Modelo C.",
+        "D": "Modelo B."
+      },
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes determinan cuál es el modelo que mejor representa la distribución de las partículas de una sustancia al cambiar de estado.",
+      "justificacion_correcta": "La opción «Modelo D» es la respuesta correcta porque en el estado sólido las partículas se muestran juntas y ordenadas y, al pasar a líquido, se separan un poco y ganan algo de movimiento, pero siguen estando cercanas, tal como describe la profesora.",
+      "opciones_incorrectas": {
+        "B": "Muestra el cambio al revés: parte de partículas sueltas y termina con partículas juntas y ordenadas.",
+        "D": "El estado final aparece con las partículas completamente sueltas, lo cual corresponde al estado gaseoso, no al líquido.",
+        "C": "Parte de partículas completamente sueltas, lo que describiría un estado gaseoso inicial y no un sólido."
+      },
+      "componente": "Entorno físico",
+      "opciones_imagenes": {
+        "B": "assets/banco-cn-6-p1/q09A.png",
+        "D": "assets/banco-cn-6-p1/q09B.png",
+        "C": "assets/banco-cn-6-p1/q09C.png",
+        "A": "assets/banco-cn-6-p1/q09D.png"
+      }
+    },
+    {
+      "id": "P6CN12",
+      "numero": 7,
+      "enunciado": "<p>Lee la situación, observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la clase de Ciencias se hace un montaje para ver qué le ocurre al agua cuando cambia de estado. Se coloca un poco de agua dentro de una botella plástica y se tapa la boca con un globo desinflado, de manera que nada pueda entrar ni salir de la botella. Como muestra la figura, mientras la botella está en una bandeja con <b>agua fría</b> el globo permanece desinflado; al pasarla a una bandeja con <b>agua caliente</b>, el agua del interior se evapora y el globo se infla. El vapor que llena el globo proviene del agua que estaba en la botella, y no se agregó ninguna otra sustancia al montaje.</p>[[IMG]]</div><p>Cuando el agua pasa de estado líquido a gaseoso (vapor), el agua aumenta su</p>",
+      "opciones": {
+        "A": "volumen, porque el material del globo reacciona químicamente con el vapor de agua y por eso se estira y se infla.",
+        "B": "masa, porque en estado gaseoso el calor crea moléculas de agua nuevas que antes no estaban en la botella.",
+        "C": "volumen, porque en estado gaseoso las moléculas de agua se separan más unas de otras y ocupan más espacio.",
+        "D": "masa, porque el calor transforma parte del plástico de la botella en moléculas de agua que pasan al globo."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes comprenden qué propiedad de una sustancia se modifica cuando cambia de estado y por qué ocurre ese cambio.",
+      "justificacion_correcta": "La opción «volumen, porque en estado gaseoso las moléculas de agua se separan más unas de otras y…» es la respuesta correcta porque, al pasar a gaseoso, las moléculas de agua se separan unas de otras y ocupan más espacio; por eso el vapor llena e infla el globo, lo que evidencia un aumento de volumen.",
+      "opciones_incorrectas": {
+        "B": "La cantidad de moléculas (la masa) no cambia al cambiar de estado; solo cambia la distancia entre ellas.",
+        "A": "El globo no reacciona con el vapor; simplemente se infla porque el vapor ocupa más volumen.",
+        "D": "El plástico no se transforma en agua; las moléculas siguen siendo de agua antes y después del cambio."
+      },
+      "componente": "Entorno físico",
+      "imagen_figura": "assets/banco-cn-6-p1/q12.png"
+    },
+    {
+      "id": "P6CN14",
+      "numero": 8,
+      "enunciado": "<p>Lee la situación, observa la ficha y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El <b>loro orejiamarillo</b> es una especie que anida en las palmas de cera de los bosques andinos de Colombia y que hoy está en peligro de extinción, es decir, que quedan tan pocos individuos que la especie podría desaparecer. Como indica la ficha de la especie, una de sus principales amenazas es la <b>captura ilegal de pichones</b> para venderlos como mascotas: cada pichón que sale del nido es un adulto que nunca llegará a reproducirse. Una campaña ambiental de la región pide a las personas denunciar ante las autoridades a quienes comercien con estos loros, en lugar de comprarlos para liberarlos.</p>[[IMG]]</div><p>¿Por qué denunciar la venta de loros ante las autoridades contribuye a evitar la extinción de esta especie?</p>",
+      "opciones": {
+        "A": "Porque eleva el precio de venta de los loros capturados y así muy pocas personas pueden comprarlos.",
+        "B": "Porque asegura que los compradores cuiden mejor a los pichones de loro que ya tienen en sus casas.",
+        "C": "Porque, al intervenir las autoridades y sancionar el comercio ilegal, se desestimula la captura de pichones.",
+        "D": "Porque enseña a los loros silvestres a vivir lejos de las personas que los quieren comprar como mascotas."
+      },
+      "clave": "C",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes argumentan cómo una medida contra el tráfico de especies contribuye a su conservación.",
+      "justificacion_correcta": "La opción «Porque, al intervenir las autoridades y sancionar el comercio ilegal, se desestimula la…» es la respuesta correcta porque, al denunciar, las autoridades intervienen y sancionan el comercio ilegal; esto desestimula la captura de pichones y protege a la especie de la extinción.",
+      "opciones_incorrectas": {
+        "D": "La denuncia no modifica el comportamiento de los loros, sino que frena su captura ilegal en el medio silvestre.",
+        "A": "Denunciar busca frenar el comercio ilegal, no encarecer la venta de los animales capturados.",
+        "B": "El problema es la captura ilegal en el medio silvestre; el buen trato de los compradores no la evita."
+      },
+      "componente": "Ciencia, tecnología y sociedad",
+      "imagen_figura": "assets/banco-cn-6-p1/q14.png"
+    },
+    {
+      "id": "P6CN01",
+      "numero": 9,
       "enunciado": "<p>Lee la siguiente información y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Las iguanas terrestres son reptiles que no nadan largas distancias en mar abierto. Hoy se encuentran tanto en el continente americano como en algunas islas oceánicas separadas de tierra firme por cientos de kilómetros de océano. En ambos lugares los paleontólogos han hallado fósiles muy semejantes y las poblaciones actuales comparten casi los mismos rasgos. Una hipótesis sostiene que esas islas estuvieron unidas al continente hace millones de años y que, al fragmentarse y separarse las masas de tierra, cada porción se llevó consigo parte de la población de iguanas.</p>[[IMG]]</div><p>Con base en la información, ¿cuál es la explicación más aceptable de que existan hoy iguanas terrestres tan semejantes en el continente y en islas tan alejadas entre sí?</p>",
       "opciones": {
         "A": "Las iguanas son reptiles acuáticos que nadan en mar abierto y colonizaron por sí mismas las islas más lejanas del océano.",
-        "B": "Aves marinas transportaron iguanas adultas a través de cientos de kilómetros de océano abierto hasta poblar las islas más alejadas.",
-        "C": "Las islas y el continente formaron una sola masa de tierra y, al fragmentarse, cada porción heredó parte de la misma población de iguanas.",
-        "D": "Las poblaciones de las islas y del continente surgieron por separado, a partir de antepasados distintos y sin un origen común."
+        "B": "Las poblaciones de las islas y del continente surgieron por separado, a partir de antepasados distintos y sin un origen común.",
+        "C": "Aves marinas transportaron iguanas adultas a través de cientos de kilómetros de océano abierto hasta poblar las islas más alejadas.",
+        "D": "Las islas y el continente fueron una sola masa de tierra que se fragmentó, y cada porción heredó parte de la misma población."
       },
-      "clave": "C",
+      "clave": "D",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.1",
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden comprender que especies hoy separadas por barreras geográficas tuvieron un origen común antes de que las masas de tierra se fragmentaran.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque es coherente con la información: las masas de tierra estuvieron unidas y, al fragmentarse, cada porción conservó parte de una misma población ancestral; eso explica que los fósiles y las poblaciones actuales sean tan semejantes pese a la distancia.",
+      "justificacion_correcta": "La opción «Las islas y el continente fueron una sola masa de tierra que se fragmentó, y cada…» es la respuesta correcta porque es coherente con la información: las masas de tierra estuvieron unidas y, al fragmentarse, cada porción conservó parte de una misma población ancestral; eso explica que los fósiles y las poblaciones actuales sean tan semejantes pese a la distancia.",
       "opciones_incorrectas": {
         "A": "El texto precisa que estas iguanas son terrestres y no nadan largas distancias en mar abierto, así que no pudieron cruzar el océano por sí mismas.",
-        "B": "Ninguna evidencia respalda que las aves trasladen iguanas adultas a través de cientos de kilómetros de mar.",
-        "D": "Un origen independiente, a partir de antepasados distintos, no explicaría que los fósiles y las poblaciones de ambos lugares sean tan parecidos."
+        "C": "Ninguna evidencia respalda que las aves trasladen iguanas adultas a través de cientos de kilómetros de mar.",
+        "B": "Un origen independiente, a partir de antepasados distintos, no explicaría que los fósiles y las poblaciones de ambos lugares sean tan parecidos."
       },
       "componente": "Entorno vivo",
       "imagen_figura": "assets/banco-cn-6-p1/q01.png"
     },
     {
-      "id": "P6CN02",
-      "numero": 2,
-      "enunciado": "<p>Lee la situación, observa el modelo de muestra y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la huerta escolar, los estudiantes de sexto contaron durante una semana los seres vivos que viven en las eras de acelga y cilantro. Con ese conteo obtuvieron estos porcentajes:</p><p>• 60 % plantas de acelga y cilantro, que fabrican su propio alimento.<br>• 25 % pulgones, que chupan la savia de esas plantas.<br>• 12 % mariquitas, que se comen a los pulgones.<br>• 3 % cucaracheros, aves que se comen a las mariquitas.</p><p>Para armar una pirámide ecológica, en la <b>base</b> van los <b>productores</b>, es decir, los que fabrican su propio alimento; encima se ubican los consumidores, uno sobre otro, según de quién se alimentan, y el tamaño de cada nivel <b>disminuye</b> hacia la cima.</p></div><p>¿Cuál de las siguientes pirámides (A, B, C o D) organiza bien los cuatro grupos con su porcentaje?</p>",
+      "id": "P6CN18",
+      "numero": 10,
+      "enunciado": "<p>Lee la descripción, observa el diagrama y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la clase de Ciencias se estudian las relaciones que se establecen entre dos seres vivos que conviven, mirando en cada caso qué gana y qué pierde cada uno. Para trabajarlas, el docente presenta el caso de la garza y el ganado en los potreros. En ellos, las garzas se posan sobre el lomo del ganado y se comen las garrapatas y los insectos que parasitan a las vacas. Como muestra el diagrama, con una nota para cada uno de los dos animales, la garza obtiene alimento y, al mismo tiempo, el ganado queda libre de los parásitos que le chupan la sangre y le hacen daño. Ninguno de los dos sale perjudicado del encuentro.</p>[[IMG]]</div><p>De acuerdo con la descripción, ¿cómo es la relación ecológica entre la garza y el ganado?</p>",
       "opciones": {
-        "A": "Pirámide A.",
-        "B": "Pirámide B.",
-        "C": "Pirámide C.",
-        "D": "Pirámide D."
+        "A": "Comensalismo: la garza obtiene alimento y el ganado ni gana ni pierde con su presencia.",
+        "B": "Mutualismo: tanto la garza como el ganado obtienen un beneficio de la relación.",
+        "C": "Parasitismo: la garza se alimenta a costa del ganado y le causa un daño al hacerlo.",
+        "D": "Competencia: la garza y el ganado se disputan el mismo alimento y los dos salen perjudicados."
       },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "MEDIA",
+      "clave": "B",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "BAJA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden registrar correctamente una serie de datos en una representación gráfica, respetando la estructura del modelo.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque deja en la base a los productores con el 60 % y sobre ellos ubica, en orden, al grupo que se alimenta de las plantas con el 25 %, al que se come a ese grupo con el 12 % y al de la cima con el 3 %, de manera que cada nivel resulta más pequeño que el de abajo.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen el tipo de relación ecológica entre dos seres vivos a partir de la descripción de sus interacciones.",
+      "justificacion_correcta": "La opción «Mutualismo: tanto la garza como el ganado obtienen un beneficio de la relación» es la respuesta correcta porque en el encuentro los dos ganan algo: la garza consigue alimento con las garrapatas y el ganado queda libre de los parásitos que le chupan la sangre. A la relación en la que ambos participantes salen beneficiados se le llama mutualismo.",
       "opciones_incorrectas": {
-        "B": "La pirámide B queda al revés: pone en la base al grupo del 3 %, que va en la cima, y deja a los productores arriba.",
-        "C": "La pirámide C cambia de puesto los dos niveles del medio, pues deja el 12 % debajo del 25 %, cuando el grupo que se alimenta de las plantas debe ir de primero.",
-        "D": "La pirámide D pone en la base al grupo del 25 %, que se alimenta de las plantas, y deja a los productores encima, cuando la base le corresponde a quien fabrica su propio alimento."
+        "A": "En el comensalismo uno de los dos ni gana ni pierde, y aquí el ganado sí gana, porque queda libre de las garrapatas.",
+        "C": "En el parasitismo uno vive a costa del otro y lo perjudica; los parásitos de este caso son las garrapatas, no la garza, que precisamente se las come.",
+        "D": "No hay competencia: la garza come garrapatas y el ganado come pasto, de modo que no se disputan el mismo alimento."
       },
       "componente": "Entorno vivo",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-6-p1/q02A.png",
-        "B": "assets/banco-cn-6-p1/q02B.png",
-        "C": "assets/banco-cn-6-p1/q02C.png",
-        "D": "assets/banco-cn-6-p1/q02D.png"
-      }
+      "imagen_figura": "assets/banco-cn-6-p1/q18.png"
     },
     {
       "id": "P6CN03",
-      "numero": 3,
-      "enunciado": "<p>Lee la situación, observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un barrio se acumula gran cantidad de basura porque el camión recolector pasa solo una vez al mes. Para resolverlo, la junta del barrio propone quemar las basuras cada semana en un lote ubicado junto a una escuela. Como muestra el esquema, el humo de la quema se desplazaría con el viento hacia la escuela, de modo que estudiantes y vecinos respirarían aire cargado de partículas y gases tóxicos durante varias horas.</p>[[IMG]]</div><p>De acuerdo con lo anterior, ¿la solución propuesta por la junta es adecuada para la población en general?</p>",
+      "numero": 11,
+      "enunciado": "<p>Lee la situación, observa el esquema y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un barrio se acumula gran cantidad de basura en las esquinas porque el camión recolector pasa solo una vez al mes. Para resolverlo, la junta del barrio propone <b>quemar las basuras cada semana</b> en un lote ubicado junto a una escuela, y sostiene que así el barrio se vería limpio. Como muestra el esquema, el viento del sector sopla siempre en la misma dirección, de modo que el humo de la quema se desplazaría hacia la escuela; estudiantes y vecinos respirarían aire cargado de partículas y gases tóxicos durante varias horas cada vez. Antes de aprobar la propuesta, la junta debe valorar sus efectos sobre toda la población del sector.</p>[[IMG]]</div><p>De acuerdo con lo anterior, ¿la solución propuesta por la junta es adecuada para la población en general?</p>",
       "opciones": {
-        "A": "Sí, porque elimina rápidamente la basura acumulada y mejora el aspecto y el olor del barrio para todos los vecinos.",
+        "A": "No, porque el humo de la quema deteriora el aire y afecta la salud de los estudiantes y vecinos de la escuela.",
         "B": "Sí, porque el humo se eleva y se disipa en pocas horas en el aire, sin llegar a afectar a las personas cercanas.",
-        "C": "No, porque el humo de la quema deteriora la calidad del aire y afecta la salud de los estudiantes y vecinos de la escuela.",
+        "C": "Sí, porque elimina rápidamente la basura acumulada y mejora el aspecto y el olor del barrio para todos los vecinos.",
         "D": "No, porque quemar basura en un lote junto a la escuela requiere permisos que tardan mucho tiempo en otorgarse."
       },
-      "clave": "C",
+      "clave": "A",
       "competencia": "a",
       "afirmacion": 1,
       "evidencia": "1.2",
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden valorar una posible solución a una problemática, considerando los efectos sobre la población afectada.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la propuesta resuelve un problema pero genera otro de mayor impacto: el humo contamina el aire que respiran las personas cercanas a la escuela y pone en riesgo su salud.",
+      "justificacion_correcta": "La opción «No, porque el humo de la quema deteriora el aire y afecta la salud de los estudiantes…» es la respuesta correcta porque la propuesta resuelve un problema pero genera otro de mayor impacto: el humo contamina el aire que respiran las personas cercanas a la escuela y pone en riesgo su salud.",
       "opciones_incorrectas": {
-        "A": "Mejorar el aspecto del barrio no compensa el daño a la salud de la población cercana a la escuela.",
+        "C": "Mejorar el aspecto del barrio no compensa el daño a la salud de la población cercana a la escuela.",
         "B": "El humo de la quema sí contamina el aire y puede provocar enfermedades respiratorias.",
         "D": "El asunto de fondo no son los permisos, sino el perjuicio a la salud de quienes están cerca."
       },
@@ -127,258 +345,144 @@
       "imagen_figura": "assets/banco-cn-6-p1/q03.png"
     },
     {
-      "id": "P6CN04",
-      "numero": 4,
-      "enunciado": "<p>Lee la situación y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Tatiana plantea la siguiente hipótesis:</p><p style='font-style:italic'>A medida que se instalan más antenas de telefonía celular en un campo, el número de abejas disminuye de forma sostenida, porque las ondas interfieren con la orientación de las abejas y dificultan que regresen a su colmena.</p><p>Para ponerla a prueba, Tatiana contará el número de abejas a medida que aumenta el número de antenas instaladas en la zona.</p></div><p>Si la hipótesis de Tatiana fuera cierta, ¿cuál de las siguientes gráficas (A, B, C o D) representaría los resultados esperados?</p>",
+      "id": "P6CN07",
+      "numero": 12,
+      "enunciado": "<p>Lee la situación, observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un juego de boliche escolar armado en el corredor, Camilo lanza una bola empujándola con la mano desde el punto de lanzamiento. La bola rueda <b>4 metros</b> y se detiene sin alcanzar los bolos, que están ubicados a <b>6 metros</b> de ese punto, tal como se observa en la figura. Camilo quiere que, en su siguiente lanzamiento, <b>la misma bola</b> llegue hasta los bolos y los derribe. La pista es la misma, el piso es el mismo y el punto de lanzamiento no se mueve, así que lo único que él puede cambiar es la manera de empujar la bola.</p>[[IMG]]</div><p>Para conseguirlo, en el lanzamiento siguiente lo que Camilo tiene que hacer es</p>",
       "opciones": {
-        "A": "Gráfica A.",
-        "B": "Gráfica B.",
-        "C": "Gráfica C.",
-        "D": "Gráfica D."
-      },
-      "clave": "A",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes representan de manera gráfica una hipótesis sobre la relación entre dos variables.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque la hipótesis describe una relación inversa y sostenida: a más antenas, menos abejas; por eso la curva debe descender de manera continua a medida que aumentan las antenas.",
-      "opciones_incorrectas": {
-        "B": "La gráfica B sube y luego baja, de modo que no representa una disminución continua como la planteada.",
-        "C": "La gráfica C muestra que las abejas aumentan con más antenas, justo lo contrario de la hipótesis.",
-        "D": "La gráfica D hace que las abejas disminuyan y luego vuelvan a aumentar, lo que contradice la hipótesis."
-      },
-      "componente": "Ciencia, tecnología y sociedad",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-6-p1/q04A.png",
-        "B": "assets/banco-cn-6-p1/q04B.png",
-        "C": "assets/banco-cn-6-p1/q04C.png",
-        "D": "assets/banco-cn-6-p1/q04D.png"
-      }
-    },
-    {
-      "id": "P6CN05",
-      "numero": 5,
-      "enunciado": "<p>Lee la situación, observa la cartelera y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Sofía y Andrés investigaron el efecto de la música en el crecimiento de plantas de frijol. Expusieron un grupo de plantas a música una hora diaria y dejaron otro grupo sin música. En la cartelera presentaron la <b>pregunta</b> de investigación, la <b>metodología</b> (los dos grupos de plantas) y los <b>resultados</b> (la altura promedio de cada grupo al cabo de un mes). Al revisarla, sus compañeros notaron que faltaba un componente esencial del informe.</p>[[IMG]]</div><p>¿Qué información les faltó incluir a Sofía y Andrés para comunicar apropiadamente su investigación?</p>",
-      "opciones": {
-        "A": "Faltó indicar la altura promedio de las plantas, pues ese dato no aparece por ningún lado.",
-        "B": "Faltó probar el efecto de otro tipo de sonido distinto de la música.",
-        "C": "Faltó incluir un grupo de plantas al que no se le aplicara ningún tratamiento.",
-        "D": "Faltó escribir las conclusiones que se desprenden de los resultados obtenidos."
+        "A": "usar una bola de más masa y empujarla con la misma fuerza.",
+        "B": "soltar la bola más despacio para que ruede con más cuidado.",
+        "C": "empujar la bola con menos fuerza que antes.",
+        "D": "empujar la bola con más fuerza que antes."
       },
       "clave": "D",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes analizan la presentación de una investigación y determinan qué información hace falta para comunicarla apropiadamente.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque la cartelera presenta pregunta, metodología y resultados, pero omite las conclusiones, que son la parte del informe donde se interpreta lo hallado y se responde a la pregunta de investigación.",
-      "opciones_incorrectas": {
-        "A": "La altura promedio sí está presente: forma parte de los resultados que registraron en la tabla.",
-        "B": "El objetivo era el efecto de la música; probar otros sonidos no era necesario para comunicar este estudio.",
-        "C": "El grupo sin música ya cumple la función de grupo de control, de modo que ese sí estaba incluido."
-      },
-      "componente": "Ciencia, tecnología y sociedad",
-      "imagen_figura": "assets/banco-cn-6-p1/q05.png"
-    },
-    {
-      "id": "P6CN06",
-      "numero": 6,
-      "enunciado": "<p>Lee la situación, observa el diagrama de las etapas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una zona costera funciona un proyecto turístico. Durante su operación se desarrollan, en orden, las cuatro etapas que muestra el diagrama: observación de aves desde senderos, recolección de conchas vacías, construcción de una caseta de madera y vertimiento de las aguas con jabón y aceites de la cocina directamente al mar.</p>[[IMG]]</div><p>Según el diagrama, ¿cuál de estas etapas genera una contaminación directa sobre el ecosistema marino?</p>",
-      "opciones": {
-        "A": "La observación de aves desde los senderos señalizados.",
-        "B": "La recolección de conchas vacías en la playa.",
-        "C": "El vertimiento de aguas con jabón y aceites directamente al mar.",
-        "D": "La construcción de la caseta de madera para vender comida."
-      },
-      "clave": "C",
-      "competencia": "c",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes determinan cuál de varias actividades produce una contaminación directa sobre un ecosistema.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque arrojar al mar aguas con jabón y aceites introduce sustancias contaminantes que se dispersan en el agua y afectan a los organismos de todo el ecosistema marino.",
-      "opciones_incorrectas": {
-        "A": "Caminar por senderos para observar aves no libera sustancias contaminantes al mar.",
-        "B": "Recoger unas pocas conchas vacías no genera sustancias que contaminen el agua del mar.",
-        "D": "Construir una caseta altera un punto localizado, pero no vierte contaminantes a todo el mar."
-      },
-      "componente": "Ciencia, tecnología y sociedad",
-      "imagen_figura": "assets/banco-cn-6-p1/q06.png"
-    },
-    {
-      "id": "P6CN07",
-      "numero": 7,
-      "enunciado": "<p>Lee la situación, observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un juego de boliche escolar, Camilo lanza una bola que rueda 4 metros y se detiene <b>antes</b> de alcanzar los bolos, ubicados a 6 metros del punto de lanzamiento, como se observa en la figura. Camilo quiere que, en su siguiente lanzamiento, la misma bola llegue hasta los bolos y los derribe.</p>[[IMG]]</div><p>Para conseguirlo, en el lanzamiento siguiente lo que Camilo tiene que hacer es</p>",
-      "opciones": {
-        "A": "empujar la bola con más fuerza que antes.",
-        "B": "usar una bola de más masa y empujarla con la misma fuerza.",
-        "C": "empujar la bola con menos fuerza que antes.",
-        "D": "soltar la bola más despacio para que ruede con más cuidado."
-      },
-      "clave": "A",
       "competencia": "c",
       "afirmacion": 4,
       "evidencia": "4.1",
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes identifican qué cambio se debe realizar en una fuerza para obtener el efecto deseado.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque, si con la fuerza anterior la bola solo recorrió 4 m, al aplicar una fuerza mayor saldrá con más velocidad y podrá cubrir los 6 m hasta los bolos.",
+      "justificacion_correcta": "La opción «empujar la bola con más fuerza que antes» es la respuesta correcta porque, si con la fuerza anterior la bola solo recorrió 4 m, al aplicar una fuerza mayor saldrá con más velocidad y podrá cubrir los 6 m hasta los bolos.",
       "opciones_incorrectas": {
-        "B": "Con mayor masa y el mismo empuje, la bola adquiere menos aceleración y recorrería incluso menos distancia.",
+        "A": "Con mayor masa y el mismo empuje, la bola adquiere menos aceleración y recorrería incluso menos distancia.",
         "C": "Disminuir la fuerza haría que la bola recorriera una distancia aún menor que 4 m.",
-        "D": "Lanzar más lento significa menor velocidad inicial y, por tanto, menor distancia recorrida."
+        "B": "Lanzar más lento significa menor velocidad inicial y, por tanto, menor distancia recorrida."
       },
       "componente": "Entorno físico",
       "imagen_figura": "assets/banco-cn-6-p1/q07.png"
     },
     {
-      "id": "P6CN08",
-      "numero": 8,
-      "enunciado": "<p>Lee la situación, observa las figuras y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el laboratorio del colegio, Mariana observa al microscopio una gota de agua tomada del tanque de la huerta. Allí encuentra un ser vivo de una sola célula: se ve <b>redonda</b>, tiene <b>un solo núcleo pequeño</b> y está rodeada por una <b>pared celular gruesa</b>. La profesora le explica que esa célula madre se parte en dos y que cada célula hija recibe las mismas características de ella.</p></div><p>Según lo anterior, ¿en cuál de las siguientes figuras (A, B, C o D) quedaron bien dibujadas las dos células hijas que se forman?</p>",
+      "id": "P6CN15",
+      "numero": 13,
+      "enunciado": "<p>Lee la situación, observa las viñetas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un colegio aparecieron varios casos de gripa en pocos días y la enfermera fue a hablar con los cursos. Les explica que el virus de la gripa se transmite por dos vías: las <b>gotitas</b> que salen despedidas al toser o estornudar, que otra persona puede respirar, y las <b>manos contaminadas</b>, que llevan el virus a los pupitres, los pasamanos y luego a la cara. Por eso recomienda dos medidas concretas, ilustradas en las viñetas que dejó pegadas en el salón: lavarse bien las manos con jabón y con frecuencia, y cubrirse la boca con el codo al estornudar. Un estudiante pregunta por qué justamente esas dos.</p>[[IMG]]</div><p>¿Por qué estas dos medidas ayudan a prevenir la propagación de la gripa entre los estudiantes?</p>",
       "opciones": {
-        "A": "Figura A.",
-        "B": "Figura B.",
-        "C": "Figura C.",
-        "D": "Figura D."
+        "A": "Porque interrumpen las vías por las que el virus pasa de una persona a otra: las manos y las gotitas.",
+        "B": "Porque aumentan las defensas del cuerpo de cada estudiante cada vez que se lava bien las manos con jabón.",
+        "C": "Porque hacen que el virus de la gripa se vuelva más débil y deje de contagiar al contacto con el agua.",
+        "D": "Porque mejoran el aspecto y el aseo general del colegio y así los estudiantes se ven más ordenados."
       },
-      "clave": "B",
+      "clave": "A",
+      "competencia": "a",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes explican por qué ciertas medidas sanitarias ayudan a prevenir la propagación de una enfermedad.",
+      "justificacion_correcta": "La opción «Porque interrumpen las vías por las que el virus pasa de una persona a otra: las manos y…» es la respuesta correcta porque lavarse las manos y cubrirse al estornudar cortan las vías por las que el virus se transmite (manos y gotitas), de modo que disminuye su propagación entre las personas.",
+      "opciones_incorrectas": {
+        "D": "El aseo general del colegio no explica de manera directa por qué se reduce el contagio del virus.",
+        "C": "El agua no debilita al virus; lo que hace el lavado es arrastrarlo y eliminarlo de las manos.",
+        "B": "Lavarse las manos elimina virus de la piel, pero no aumenta por sí mismo las defensas del cuerpo."
+      },
+      "componente": "Ciencia, tecnología y sociedad",
+      "imagen_figura": "assets/banco-cn-6-p1/q15.png"
+    },
+    {
+      "id": "P6CN08",
+      "numero": 14,
+      "enunciado": "<p>Lee la situación, observa las figuras y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el laboratorio del colegio, Mariana observa al microscopio una gota de agua tomada del tanque de la huerta. Entre lo que se mueve en la gota encuentra un ser vivo formado por <b>una sola célula</b>, y lo dibuja en su cuaderno con tres rasgos bien marcados: se ve redonda, tiene <b>un solo núcleo</b> pequeño y está rodeada por una <b>pared celular gruesa</b>. La profesora le explica que esa célula madre se parte en dos y que cada célula hija recibe las mismas características de ella, de modo que las hijas deben verse igual que la madre. Cuatro compañeros dibujaron cómo quedarían las dos células hijas.</p></div><p>Según lo anterior, ¿en cuál de las siguientes figuras (A, B, C o D) quedaron bien dibujadas las dos células hijas que se forman?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
       "competencia": "c",
       "afirmacion": 4,
       "evidencia": "4.2",
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes comprenden que las células hijas heredan las características de la célula madre.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque las dos células hijas conservan lo mismo que tenía la célula madre: forma redonda, un solo núcleo pequeño y una pared celular gruesa alrededor.",
+      "justificacion_correcta": "La opción «Figura B» es la respuesta correcta porque las dos células hijas conservan lo mismo que tenía la célula madre: forma redonda, un solo núcleo pequeño y una pared celular gruesa alrededor.",
       "opciones_incorrectas": {
         "A": "En la figura A las dos células no son iguales entre sí y cada una aparece con dos núcleos, cuando debían quedar con uno solo, como la célula madre.",
-        "C": "En la figura C las células se ven ovaladas y sin la pared gruesa, lo que contradice las características de la célula madre.",
-        "D": "En la figura D una de las células quedó sin núcleo, así que no conserva todas las características de la célula madre."
+        "B": "En la figura C las células se ven ovaladas y sin la pared gruesa, lo que contradice las características de la célula madre.",
+        "C": "En la figura D una de las células quedó sin núcleo, así que no conserva todas las características de la célula madre."
       },
       "componente": "Entorno vivo",
       "opciones_imagenes": {
         "A": "assets/banco-cn-6-p1/q08A.png",
-        "B": "assets/banco-cn-6-p1/q08B.png",
-        "C": "assets/banco-cn-6-p1/q08C.png",
-        "D": "assets/banco-cn-6-p1/q08D.png"
+        "D": "assets/banco-cn-6-p1/q08B.png",
+        "B": "assets/banco-cn-6-p1/q08C.png",
+        "C": "assets/banco-cn-6-p1/q08D.png"
       }
     },
     {
-      "id": "P6CN09",
-      "numero": 9,
-      "enunciado": "<p>Lee la situación, observa los modelos y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Valentina deja un trozo de mantequilla sólida en una sartén caliente. Con el calor, la mantequilla se derrite hasta volverse líquida. Su profesora le explica que, al calentarse, las partículas que forman la mantequilla aflojan sus uniones y se separan un poco unas de otras, de modo que pueden moverse y cambiar de posición, pero sin separarse del todo.</p></div><p>¿Cuál de los siguientes modelos (A, B, C o D) representa mejor el cambio en la distribución de las partículas de la mantequilla, del estado sólido al líquido?</p>",
+      "id": "P6CN17",
+      "numero": 15,
+      "enunciado": "<p>Lee la situación, observa la escena y la gráfica, y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos científicos querían saber si las aves atacan menos a las mariposas de colores llamativos. Para averiguarlo colocaron, a lo largo de un río, modelos de mariposas hechos en cartulina y sujetos a las ramas. Un grupo de modelos tenía <b>colores brillantes</b> (naranja y negro), típicos de mariposas que advierten ser tóxicas, y el otro grupo tenía <b>colores apagados</b> (café). Los dos grupos quedaron en el mismo tramo del río y con el mismo número de modelos. Después de tres días recogieron los modelos, contaron las marcas de picotazos de aves en cada grupo y las registraron en la gráfica. No tomaron ningún otro dato.</p>[[IMG]]</div><p>De acuerdo con la investigación, ¿cuál de las siguientes preguntas se puede contestar con los datos obtenidos?</p>",
       "opciones": {
-        "A": "Modelo A.",
-        "B": "Modelo B.",
-        "C": "Modelo C.",
-        "D": "Modelo D."
+        "A": "¿Cuál de los dos grupos de mariposas vive más tiempo en el río?",
+        "B": "¿En qué parte del río se posan con más frecuencia las mariposas reales?",
+        "C": "¿De qué se alimentan las aves que habitan a la orilla del río?",
+        "D": "¿Influye el color de los modelos en el número de picotazos de las aves?"
       },
       "clave": "D",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes determinan cuál es el modelo que mejor representa la distribución de las partículas de una sustancia al cambiar de estado.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque en el estado sólido las partículas se muestran juntas y ordenadas y, al pasar a líquido, se separan un poco y ganan algo de movimiento, pero siguen estando cercanas, tal como describe la profesora.",
-      "opciones_incorrectas": {
-        "A": "Muestra el cambio al revés: parte de partículas sueltas y termina con partículas juntas y ordenadas.",
-        "B": "El estado final aparece con las partículas completamente sueltas, lo cual corresponde al estado gaseoso, no al líquido.",
-        "C": "Parte de partículas completamente sueltas, lo que describiría un estado gaseoso inicial y no un sólido."
-      },
-      "componente": "Entorno físico",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-6-p1/q09A.png",
-        "B": "assets/banco-cn-6-p1/q09B.png",
-        "C": "assets/banco-cn-6-p1/q09C.png",
-        "D": "assets/banco-cn-6-p1/q09D.png"
-      }
-    },
-    {
-      "id": "P6CN10",
-      "numero": 10,
-      "enunciado": "<p>Lee la situación, observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el patio de un colegio hay demasiados mosquitos adultos volando y el curso de sexto quiere bajar su número sin usar venenos. Con ayuda de la profesora arman cinco jaulas de malla iguales, cada una con 80 mosquitos adultos y una batea con agua. En la primera jaula no meten ningún animal; en las otras cuatro ponen, por separado, una libélula, un pez que nada en la batea, una lombriz y un sapo. Al cabo de una semana cuentan los mosquitos que quedan vivos en cada jaula y llevan el resultado a la gráfica.</p>[[IMG]]</div><p>De acuerdo con la gráfica, ¿cuál de los cuatro debería soltar el curso en el patio para bajar más los mosquitos?</p>",
-      "opciones": {
-        "A": "La libélula.",
-        "B": "El pez.",
-        "C": "La lombriz.",
-        "D": "El sapo."
-      },
-      "clave": "A",
       "competencia": "b",
       "afirmacion": 6,
       "evidencia": "6.1",
-      "dificultad": "BAJA",
+      "dificultad": "ALTA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes toman una decisión en una situación problema a partir de las evidencias obtenidas en una investigación.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque, según la gráfica, la jaula de la libélula es la que menos mosquitos vivos deja al final: unos 16 de los 80 iniciales, la barra más baja de todas. Por eso la libélula es la que más baja el número de mosquitos.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes determinan qué pregunta puede contestarse a partir de la descripción de una investigación y de sus resultados.",
+      "justificacion_correcta": "La opción «¿Influye el color de los modelos en el número de picotazos de las aves?» es la respuesta correcta porque los científicos registraron el color de los modelos y el número de picotazos; al comparar ambos datos pueden establecer si el color influye en la cantidad de ataques de las aves.",
       "opciones_incorrectas": {
-        "B": "En la jaula del pez quedaron vivos los 80 mosquitos, los mismos que en la jaula sin ningún animal: el pez no alcanza a los mosquitos que vuelan, así que no hubo ninguna reducción.",
-        "C": "En la jaula de la lombriz también quedaron vivos los 80 mosquitos: la lombriz se alimenta de restos del suelo y no caza insectos en el aire, así que no hubo ninguna reducción.",
-        "D": "En la jaula del sapo quedaron vivos unos 35 mosquitos: sí hubo reducción, pero bastante menor que la de la libélula."
+        "B": "No se tomaron datos sobre el lugar donde se posan las mariposas reales.",
+        "C": "El estudio no registró qué comen las aves, así que no puede responder esa pregunta.",
+        "A": "Se usaron modelos de cartulina, no mariposas vivas, de modo que no hay datos sobre cuánto viven."
       },
       "componente": "Entorno vivo",
-      "imagen_figura": "assets/banco-cn-6-p1/q10.png"
+      "imagen_figura": "assets/banco-cn-6-p1/q17.png"
     },
     {
-      "id": "P6CN11",
-      "numero": 11,
-      "enunciado": "<p>Lee la situación, observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos estudiantes midieron, en el laboratorio, una propiedad de cuatro objetos sólidos hechos de distintos materiales (aluminio, vidrio, hueso e icopor). Para cada objeto dividieron su masa entre el volumen que ocupaba y registraron el resultado, en gramos sobre centímetro cúbico (g/cm³), en la gráfica.</p>[[IMG]]</div><p>Con esa información, ¿qué título le corresponde a la gráfica?</p>",
+      "id": "P6CN06",
+      "numero": 16,
+      "enunciado": "<p>Lee la situación, observa el diagrama de las etapas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una zona costera funciona un proyecto turístico y la corporación ambiental debe revisar si alguna de sus actividades le está haciendo daño al mar. Para eso pidió que se describiera la operación paso a paso. Durante su funcionamiento se desarrollan, en el orden que muestra el diagrama, las cuatro etapas siguientes: observación de aves desde senderos señalizados, recolección de conchas vacías en la playa, construcción de una caseta de madera para vender comida y vertimiento de las aguas con jabón y aceites de la cocina directamente al mar, sin ningún tratamiento previo.</p>[[IMG]]</div><p>Según el diagrama, ¿cuál de estas etapas genera una contaminación directa sobre el ecosistema marino?</p>",
       "opciones": {
-        "A": "Densidad de líquidos.",
-        "B": "Volumen de sólidos.",
-        "C": "Densidad de sólidos.",
-        "D": "Masa de líquidos."
-      },
-      "clave": "C",
-      "competencia": "b",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes seleccionan un título adecuado para una gráfica que representa los datos obtenidos durante una investigación.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque la propiedad medida (masa dividida entre volumen, en g/cm³) es la densidad y los objetos medidos eran sólidos; por eso el título adecuado es «Densidad de sólidos».",
-      "opciones_incorrectas": {
-        "A": "Los objetos medidos son sólidos, no líquidos.",
-        "B": "Lo graficado es la densidad (g/cm³), no el volumen, aunque el volumen se haya usado para calcularla.",
-        "D": "Los datos corresponden a densidad y los objetos son sólidos, no a masa de líquidos."
-      },
-      "componente": "Entorno físico",
-      "imagen_figura": "assets/banco-cn-6-p1/q11.png"
-    },
-    {
-      "id": "P6CN12",
-      "numero": 12,
-      "enunciado": "<p>Lee la situación, observa la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Se coloca un poco de agua dentro de una botella plástica y se tapa la boca con un globo desinflado. Como muestra la figura, mientras la botella está en agua fría el globo permanece desinflado; al pasarla a agua caliente, el agua se evapora y el globo se infla. El vapor que llena el globo proviene del agua que estaba en la botella.</p>[[IMG]]</div><p>Cuando el agua pasa de estado líquido a gaseoso (vapor), el agua aumenta su</p>",
-      "opciones": {
-        "A": "masa, porque en estado gaseoso el calor crea moléculas de agua nuevas que antes no estaban en la botella.",
-        "B": "volumen, porque el material del globo reacciona químicamente con el vapor de agua y por eso se estira y se infla.",
-        "C": "masa, porque el calor transforma parte del plástico de la botella en moléculas de agua que pasan al globo.",
-        "D": "volumen, porque en estado gaseoso las moléculas de agua se separan más unas de otras y ocupan más espacio."
+        "A": "La construcción de la caseta de madera, porque ocupa un pedazo de playa y cambia el paisaje de la orilla.",
+        "B": "La recolección de conchas vacías, porque retira de la playa el material que sirve de refugio a otros animales.",
+        "C": "La observación de aves desde los senderos, porque el paso de los turistas ahuyenta a las aves de la zona.",
+        "D": "El vertimiento de las aguas con jabón y aceites de la cocina, que llegan al mar sin ningún tratamiento."
       },
       "clave": "D",
-      "competencia": "a",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "dificultad": "MEDIA",
+      "competencia": "c",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "dificultad": "BAJA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes comprenden qué propiedad de una sustancia se modifica cuando cambia de estado y por qué ocurre ese cambio.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque, al pasar a gaseoso, las moléculas de agua se separan unas de otras y ocupan más espacio; por eso el vapor llena e infla el globo, lo que evidencia un aumento de volumen.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes determinan cuál de varias actividades produce una contaminación directa sobre un ecosistema.",
+      "justificacion_correcta": "La opción «El vertimiento de las aguas con jabón y aceites de la cocina, que llegan al mar sin…» es la respuesta correcta porque arrojar esas aguas sin tratarlas mete sustancias extrañas dentro del agua misma: se dispersan en ella y llegan a los organismos de todo el ecosistema marino. Las demás etapas alteran la playa o incomodan a los animales, pero no vierten sustancias al mar.",
       "opciones_incorrectas": {
-        "A": "La cantidad de moléculas (la masa) no cambia al cambiar de estado; solo cambia la distancia entre ellas.",
-        "B": "El globo no reacciona con el vapor; simplemente se infla porque el vapor ocupa más volumen.",
-        "C": "El plástico no se transforma en agua; las moléculas siguen siendo de agua antes y después del cambio."
+        "A": "Levantar la caseta ocupa un pedazo de orilla y cambia el paisaje; confundir esa alteración del terreno con la contaminación deja de lado que allí no se arroja ninguna sustancia al agua.",
+        "B": "Recoger conchas retira material de la playa y puede dejar sin refugio a algunos animales, pero sacar algo del ecosistema no es lo mismo que introducirle sustancias contaminantes.",
+        "C": "El paso de los turistas puede espantar a las aves; perturbar a los animales es un daño, aunque no ensucia el agua del mar."
       },
-      "componente": "Entorno físico",
-      "imagen_figura": "assets/banco-cn-6-p1/q12.png"
+      "componente": "Ciencia, tecnología y sociedad",
+      "imagen_figura": "assets/banco-cn-6-p1/q06.png"
     },
     {
       "id": "P6CN13",
-      "numero": 13,
-      "enunciado": "<p>Lee la situación, observa los envases, analiza la tabla y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El médico le recomendó a Daniel tomar leche con <b>poca azúcar y poca grasa</b>, pero con <b>suficiente calcio</b> para fortalecer sus huesos. Para el médico, <b>poca</b> significa no pasar de <b>6 g de azúcar</b> ni de <b>4 g de grasa</b> por vaso, y <b>suficiente calcio</b> es <b>al menos 250 mg</b>. En el supermercado, Daniel compara cuatro marcas de leche; los valores por vaso aparecen en la tabla.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Marca</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Azúcar (g)</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Grasa (g)</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Calcio (mg)</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 1</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">5</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">4</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">240</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 2</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">6</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">3</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">260</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 3</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">7</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">3</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">300</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 4</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">5</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">5</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">280</td></tr></tbody></table></div><p>Según la recomendación del médico, ¿cuál marca es la más conveniente para Daniel?</p>",
+      "numero": 17,
+      "enunciado": "<p>Lee la situación, observa los envases, analiza la tabla y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Daniel está en crecimiento y el médico le recomendó tomar leche con <b>poca azúcar</b> y <b>poca grasa</b>, pero con <b>suficiente calcio</b> para fortalecer sus huesos. Para el médico, poca significa no pasar de 6 g de azúcar ni de 4 g de grasa por vaso, y suficiente calcio es al menos 250 mg por vaso. En el supermercado, Daniel encuentra cuatro marcas de leche y compara sus etiquetas; los valores por vaso, en gramos y en miligramos, aparecen en la tabla. La marca que escoja tiene que cumplir <b>las tres condiciones a la vez</b>, no basta con que cumpla una o dos.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Marca</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Azúcar (g)</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Grasa (g)</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Calcio (mg)</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 1</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">5</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">4</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">240</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 2</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">6</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">3</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">260</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 3</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">7</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">3</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">300</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Marca 4</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">5</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">5</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">280</td></tr></tbody></table></div><p>Según la recomendación del médico, ¿cuál marca es la más conveniente para Daniel?</p>",
       "opciones": {
         "A": "La marca 1.",
         "B": "La marca 2.",
@@ -392,7 +496,7 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes comparan las etiquetas de diferentes marcas de un producto para determinar cuál es más conveniente en una situación dada.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la marca 2 es la única que cumple las tres condiciones a la vez: azúcar 6 g (no pasa de 6 g), grasa 3 g (no pasa de 4 g) y calcio 260 mg (al menos 250 mg). Cada una de las otras marcas incumple exactamente una condición por un margen pequeño, de modo que hay que revisar las tres columnas y no dejarse llevar por un solo dato: la marca 2 no es la de menor azúcar ni la de menor grasa ni la de mayor calcio, pero es la única que respeta los tres límites.",
+      "justificacion_correcta": "La opción «La marca 2» es la respuesta correcta porque la marca 2 es la única que cumple las tres condiciones a la vez: azúcar 6 g (no pasa de 6 g), grasa 3 g (no pasa de 4 g) y calcio 260 mg (al menos 250 mg). Cada una de las otras marcas incumple exactamente una condición por un margen pequeño, de modo que hay que revisar las tres columnas y no dejarse llevar por un solo dato: la marca 2 no es la de menor azúcar ni la de menor grasa ni la de mayor calcio, pero es la única que respeta los tres límites.",
       "opciones_incorrectas": {
         "A": "La marca 1 tiene poca azúcar (5 g) y poca grasa (4 g), pero su calcio es de 240 mg, apenas por debajo de los 250 mg exigidos, así que no aporta suficiente calcio.",
         "C": "La marca 3 tiene poca grasa (3 g) y buen calcio (300 mg), pero su azúcar es de 7 g y supera el límite de 6 g.",
@@ -402,66 +506,14 @@
       "imagen_figura": "assets/banco-cn-6-p1/q13.png"
     },
     {
-      "id": "P6CN14",
-      "numero": 14,
-      "enunciado": "<p>Lee la situación, observa la ficha y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El loro orejiamarillo es una especie en peligro de extinción. Como indica la ficha, una de sus principales amenazas es la captura ilegal de pichones para venderlos como mascotas. Una campaña ambiental pide a las personas <b>denunciar ante las autoridades</b> a quienes comercien con estos loros.</p>[[IMG]]</div><p>¿Por qué denunciar la venta de loros ante las autoridades contribuye a evitar la extinción de esta especie?</p>",
+      "id": "P6CN11",
+      "numero": 18,
+      "enunciado": "<p>Lee la situación, observa la gráfica y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos estudiantes midieron en el laboratorio una misma propiedad en cuatro objetos sólidos hechos de distintos materiales: aluminio, vidrio, hueso e icopor. Para cada objeto siguieron el mismo procedimiento: pesaron el objeto en la balanza para conocer su masa, midieron el volumen que ocupaba y luego <b>dividieron la masa entre el volumen</b>. El resultado de esa división lo registraron, en gramos sobre centímetro cúbico (g/cm³), en la gráfica de barras. Al terminar se dieron cuenta de que la gráfica quedó sin título y deben ponerle uno que diga qué se midió y en qué clase de objetos.</p>[[IMG]]</div><p>Con esa información, ¿qué título le corresponde a la gráfica?</p>",
       "opciones": {
-        "A": "Porque enseña a los loros silvestres a vivir lejos de las personas que los quieren comprar como mascotas.",
-        "B": "Porque eleva el precio de venta de los loros capturados y así muy pocas personas pueden comprarlos.",
-        "C": "Porque asegura que los compradores cuiden mejor a los pichones de loro que ya tienen en sus casas.",
-        "D": "Porque, al intervenir las autoridades y sancionar el comercio ilegal, se desestimula la captura de pichones."
-      },
-      "clave": "D",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes argumentan cómo una medida contra el tráfico de especies contribuye a su conservación.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque, al denunciar, las autoridades intervienen y sancionan el comercio ilegal; esto desestimula la captura de pichones y protege a la especie de la extinción.",
-      "opciones_incorrectas": {
-        "A": "La denuncia no modifica el comportamiento de los loros, sino que frena su captura ilegal en el medio silvestre.",
-        "B": "Denunciar busca frenar el comercio ilegal, no encarecer la venta de los animales capturados.",
-        "C": "El problema es la captura ilegal en el medio silvestre; el buen trato de los compradores no la evita."
-      },
-      "componente": "Ciencia, tecnología y sociedad",
-      "imagen_figura": "assets/banco-cn-6-p1/q14.png"
-    },
-    {
-      "id": "P6CN15",
-      "numero": 15,
-      "enunciado": "<p>Lee la situación, observa las viñetas y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un colegio aparecieron varios casos de gripa. La enfermera explica que el virus de la gripa se transmite por las gotitas que salen al toser o estornudar y por las manos contaminadas. Por eso recomienda dos medidas, ilustradas en las viñetas: <b>lavarse bien las manos con frecuencia</b> y <b>cubrirse la boca con el codo al estornudar</b>.</p>[[IMG]]</div><p>¿Por qué estas dos medidas ayudan a prevenir la propagación de la gripa entre los estudiantes?</p>",
-      "opciones": {
-        "A": "Porque mejoran el aspecto y el aseo general del colegio y así los estudiantes se ven más ordenados.",
-        "B": "Porque interrumpen las vías por las que el virus pasa de una persona a otra: las manos y las gotitas.",
-        "C": "Porque hacen que el virus de la gripa se vuelva más débil y deje de contagiar al contacto con el agua.",
-        "D": "Porque aumentan las defensas del cuerpo de cada estudiante cada vez que se lava bien las manos con jabón."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 5,
-      "evidencia": "5.1",
-      "dificultad": "MEDIA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes explican por qué ciertas medidas sanitarias ayudan a prevenir la propagación de una enfermedad.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque lavarse las manos y cubrirse al estornudar cortan las vías por las que el virus se transmite (manos y gotitas), de modo que disminuye su propagación entre las personas.",
-      "opciones_incorrectas": {
-        "A": "El aseo general del colegio no explica de manera directa por qué se reduce el contagio del virus.",
-        "C": "El agua no debilita al virus; lo que hace el lavado es arrastrarlo y eliminarlo de las manos.",
-        "D": "Lavarse las manos elimina virus de la piel, pero no aumenta por sí mismo las defensas del cuerpo."
-      },
-      "componente": "Ciencia, tecnología y sociedad",
-      "imagen_figura": "assets/banco-cn-6-p1/q15.png"
-    },
-    {
-      "id": "P6CN16",
-      "numero": 16,
-      "enunciado": "<p>Lee la situación, analiza la tabla y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mariana registró la temperatura del aire en el patio del colegio a distintas horas del día, como muestra la siguiente tabla:</p><table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Hora del día</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Temperatura (°C)</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">8</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">16</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">10</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">20</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">12</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">26</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">14</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">24</td></tr></tbody></table></div><p>¿Cuál de las siguientes gráficas (A, B, C o D) representa correctamente los datos de la tabla?</p>",
-      "opciones": {
-        "A": "Gráfica A.",
-        "B": "Gráfica B.",
-        "C": "Gráfica C.",
-        "D": "Gráfica D."
+        "A": "Densidad de sólidos.",
+        "B": "Volumen de sólidos.",
+        "C": "Densidad de líquidos.",
+        "D": "Masa de líquidos."
       },
       "clave": "A",
       "competencia": "b",
@@ -469,124 +521,72 @@
       "evidencia": "3.1",
       "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes representan, en una gráfica, una serie de datos presentados inicialmente en una tabla.",
-      "justificacion_correcta": "La opción A es la respuesta correcta porque sus puntos coinciden exactamente con cada pareja de datos de la tabla: (8; 16), (10; 20), (12; 26) y (14; 24).",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes seleccionan un título adecuado para una gráfica que representa los datos obtenidos durante una investigación.",
+      "justificacion_correcta": "La opción «Densidad de sólidos» es la respuesta correcta porque la propiedad medida (masa dividida entre volumen, en g/cm³) es la densidad y los objetos medidos eran sólidos; por eso el título adecuado es «Densidad de sólidos».",
       "opciones_incorrectas": {
-        "B": "La gráfica B reordena las temperaturas de menor a mayor y altera la relación hora-temperatura de la tabla.",
-        "C": "En la gráfica C solo el dato de la hora 12 coincide con la tabla; los demás no.",
-        "D": "La gráfica D muestra la hora 14 con 30 °C, cuando en la tabla ese valor es 24 °C."
+        "C": "Los objetos medidos son sólidos, no líquidos.",
+        "B": "Lo graficado es la densidad (g/cm³), no el volumen, aunque el volumen se haya usado para calcularla.",
+        "D": "Los datos corresponden a densidad y los objetos son sólidos, no a masa de líquidos."
       },
       "componente": "Entorno físico",
-      "opciones_imagenes": {
-        "A": "assets/banco-cn-6-p1/q16A.png",
-        "B": "assets/banco-cn-6-p1/q16B.png",
-        "C": "assets/banco-cn-6-p1/q16C.png",
-        "D": "assets/banco-cn-6-p1/q16D.png"
-      }
+      "imagen_figura": "assets/banco-cn-6-p1/q11.png"
     },
     {
-      "id": "P6CN17",
-      "numero": 17,
-      "enunciado": "<p>Lee la situación, observa la escena y la gráfica, y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Unos científicos colocaron, a lo largo de un río, modelos de mariposas hechos en cartulina. Un grupo de modelos tenía colores brillantes (naranja y negro), típicos de mariposas que advierten ser tóxicas, y el otro grupo tenía colores apagados (café). Después de tres días, contaron las marcas de picotazos de aves en cada grupo y las registraron en la gráfica. No tomaron ningún otro dato.</p>[[IMG]]</div><p>De acuerdo con la investigación, ¿cuál de las siguientes preguntas se puede contestar con los datos obtenidos?</p>",
+      "id": "P6CN05",
+      "numero": 19,
+      "enunciado": "<p>Lee la situación, observa la cartelera y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Sofía y Andrés investigaron el efecto de la música en el crecimiento de plantas de frijol. Expusieron un grupo de veinte plantas a música una hora diaria y dejaron otro grupo de veinte sin música, con las mismas condiciones de luz, agua y suelo, durante un mes. Al terminar prepararon la cartelera con la que expondrán en la feria: allí presentaron la pregunta de investigación, la metodología, es decir, los dos grupos de plantas y el trato que recibió cada uno, y los resultados, con la altura promedio de cada grupo al cabo del mes. Al revisarla, sus compañeros notaron que faltaba un componente esencial del informe.</p>[[IMG]]</div><p>¿Qué información les faltó incluir a Sofía y Andrés para comunicar apropiadamente su investigación?</p>",
       "opciones": {
-        "A": "¿En qué parte del río se posan con más frecuencia las mariposas reales?",
-        "B": "¿Influye el color de los modelos en el número de picotazos de las aves?",
-        "C": "¿De qué se alimentan las aves que habitan a la orilla del río?",
-        "D": "¿Cuál de los dos grupos de mariposas vive más tiempo en el río?"
-      },
-      "clave": "B",
-      "competencia": "b",
-      "afirmacion": 6,
-      "evidencia": "6.1",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes determinan qué pregunta puede contestarse a partir de la descripción de una investigación y de sus resultados.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque los científicos registraron el color de los modelos y el número de picotazos; al comparar ambos datos pueden establecer si el color influye en la cantidad de ataques de las aves.",
-      "opciones_incorrectas": {
-        "A": "No se tomaron datos sobre el lugar donde se posan las mariposas reales.",
-        "C": "El estudio no registró qué comen las aves, así que no puede responder esa pregunta.",
-        "D": "Se usaron modelos de cartulina, no mariposas vivas, de modo que no hay datos sobre cuánto viven."
-      },
-      "componente": "Entorno vivo",
-      "imagen_figura": "assets/banco-cn-6-p1/q17.png"
-    },
-    {
-      "id": "P6CN18",
-      "numero": 18,
-      "enunciado": "<p>Lee la descripción, observa el diagrama y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p><b>Garza y ganado:</b> en los potreros, las garzas se posan sobre el lomo del ganado y se comen las garrapatas y los insectos que parasitan a las vacas. Como muestra el diagrama, la garza obtiene alimento y, al mismo tiempo, el ganado queda libre de los parásitos que le hacen daño.</p>[[IMG]]</div><p>De acuerdo con la descripción, ¿cómo es la relación ecológica entre la garza y el ganado?</p>",
-      "opciones": {
-        "A": "Solo la garza se beneficia y el ganado no recibe ningún beneficio.",
-        "B": "Solo el ganado se beneficia y la garza no recibe ningún beneficio.",
-        "C": "Tanto la garza como el ganado se benefician de la relación.",
-        "D": "La garza se beneficia y el ganado se perjudica con la relación."
+        "A": "Faltó indicar la altura promedio de las plantas, pues ese dato no aparece por ningún lado.",
+        "B": "Faltó probar el efecto de otro tipo de sonido distinto de la música.",
+        "C": "Faltó escribir las conclusiones que se desprenden de los resultados obtenidos.",
+        "D": "Faltó incluir un grupo de plantas al que no se le aplicara ningún tratamiento."
       },
       "clave": "C",
-      "competencia": "c",
-      "afirmacion": 4,
-      "evidencia": "4.1",
-      "dificultad": "BAJA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes reconocen el tipo de relación ecológica entre dos seres vivos a partir de la descripción de sus interacciones.",
-      "justificacion_correcta": "La opción C es la respuesta correcta porque ambos organismos obtienen algo positivo: la garza consigue alimento y el ganado se libra de los parásitos; por tanto, los dos se benefician de la relación.",
-      "opciones_incorrectas": {
-        "A": "El ganado también se beneficia, pues se libra de las garrapatas; no solo la garza.",
-        "B": "La garza también se beneficia, porque obtiene alimento; no es solo el ganado.",
-        "D": "La descripción no menciona ningún perjuicio para el ganado; al contrario, la relación lo favorece."
-      },
-      "componente": "Entorno vivo",
-      "imagen_figura": "assets/banco-cn-6-p1/q18.png"
-    },
-    {
-      "id": "P6CN19",
-      "numero": 19,
-      "enunciado": "<p>Lee la situación, compara los dos bosques de la figura y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una especie de salamandra necesita troncos húmedos y caídos para esconderse y poner sus huevos. Estas salamandras viven en el bosque 1 y en el bosque 2, que tienen la <b>misma temperatura</b> y la <b>misma cantidad de insectos</b> de los que se alimentan. Sin embargo, como muestra la figura, el bosque 1 recibe más lluvia y tiene <b>muchos más troncos caídos y húmedos</b>, además de una <b>mayor cantidad de salamandras</b> que el bosque 2.</p>[[IMG]]</div><p>¿Por qué podría haber más salamandras en el bosque 1 que en el bosque 2?</p>",
-      "opciones": {
-        "A": "Porque en el bosque 2 la temperatura es mayor y las salamandras se mueren de calor.",
-        "B": "Porque en el bosque 1 hay más troncos húmedos donde esconderse y poner sus huevos.",
-        "C": "Porque en el bosque 1 las salamandras dejan de comer insectos y se alimentan de los troncos.",
-        "D": "Porque en el bosque 1 hay más insectos disponibles para alimentar a las salamandras."
-      },
-      "clave": "B",
-      "competencia": "a",
-      "afirmacion": 7,
-      "evidencia": "7.1",
-      "dificultad": "ALTA",
-      "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes explican cómo un factor ambiental afecta el tamaño de las poblaciones de una especie en un ecosistema.",
-      "justificacion_correcta": "La opción B es la respuesta correcta porque la única diferencia entre los dos bosques es la cantidad de troncos húmedos y caídos; al haber más en el bosque 1, las salamandras disponen de más sitios para esconderse y reproducirse, lo que explica que sean más numerosas.",
-      "opciones_incorrectas": {
-        "A": "El enunciado indica que la temperatura es igual en ambos bosques, de modo que no explica la diferencia.",
-        "C": "Las salamandras se alimentan de insectos; los troncos les sirven de refugio, no de alimento.",
-        "D": "La cantidad de insectos es la misma en los dos bosques, por lo que no puede ser la causa."
-      },
-      "componente": "Entorno vivo",
-      "imagen_figura": "assets/banco-cn-6-p1/q19.png"
-    },
-    {
-      "id": "P6CN20",
-      "numero": 20,
-      "enunciado": "<p>Lee la situación, observa los objetos, analiza la tabla y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Mientras lava la loza en el patio, Sara deja caer dentro de la ponchera con agua tres cosas que estaban sobre la mesa: un clavo, el tapón de un termo y una pulsera. Antes de meter la mano para recogerlas, busca en su cuaderno de Ciencias la densidad de cada material. Allí también tiene anotado que el agua tiene una densidad de <b>1 g/mL</b> y que un objeto se sostiene en la superficie cuando su densidad es <b>menor</b> que la del agua.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-size:15px\"><thead><tr><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Objeto</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Material</th><th style=\"padding:6px 12px;border:1px solid #C7163C;background:#F1ECE3;font-weight:700;font-family:Georgia,serif;text-align:center\">Densidad (g/mL)</th></tr></thead><tbody><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Clavo</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Acero</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">7,8</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Tapón</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Corcho</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">0,2</td></tr><tr><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Pulsera</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">Plata</td><td style=\"padding:6px 12px;border:1px solid #C7163C;font-family:Georgia,serif;text-align:center\">10,5</td></tr></tbody></table></div><p>De acuerdo con la tabla, ¿cuál de los tres objetos se quedará en la superficie y no habrá que sacarlo del fondo de la ponchera?</p>",
-      "opciones": {
-        "A": "Solo el clavo, porque está hecho de acero.",
-        "B": "Solo la pulsera, porque la plata tiene la densidad más alta de la tabla.",
-        "C": "El clavo y la pulsera, porque son los objetos más pesados.",
-        "D": "Solo el tapón, porque la densidad del corcho está por debajo de la del agua."
-      },
-      "clave": "D",
-      "competencia": "c",
-      "afirmacion": 8,
-      "evidencia": "8.1",
+      "competencia": "b",
+      "afirmacion": 3,
+      "evidencia": "3.1",
       "dificultad": "MEDIA",
       "estandar": "",
-      "que_evalua": "Esta pregunta evalúa si los estudiantes analizan una tabla con las características de varios objetos para determinar cómo será su comportamiento en una situación dada.",
-      "justificacion_correcta": "La opción D es la respuesta correcta porque el corcho del tapón tiene una densidad de 0,2 g/mL, un valor menor que el del agua (1 g/mL), y por eso se queda en la superficie; el acero y la plata, con densidades mayores, se van al fondo.",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes analizan la presentación de una investigación y determinan qué información hace falta para comunicarla apropiadamente.",
+      "justificacion_correcta": "La opción «Faltó escribir las conclusiones que se desprenden de los resultados obtenidos» es la respuesta correcta porque la cartelera presenta pregunta, metodología y resultados, pero omite las conclusiones, que son la parte del informe donde se interpreta lo hallado y se responde a la pregunta de investigación.",
       "opciones_incorrectas": {
-        "A": "El clavo es de acero, material con una densidad de 7,8 g/mL, muy por encima de la del agua, así que se hunde.",
-        "B": "La plata de la pulsera tiene 10,5 g/mL, la densidad más alta de la tabla; tener más densidad que el agua hace que el objeto se hunda, no que se sostenga en la superficie.",
-        "C": "Que dos objetos sean los más pesados no significa que se sostengan en el agua: lo que decide es que la densidad del material sea menor que la del agua, y la del acero y la plata es mayor."
+        "A": "La altura promedio sí está presente: forma parte de los resultados que registraron en la tabla.",
+        "B": "El objetivo era el efecto de la música; probar otros sonidos no era necesario para comunicar este estudio.",
+        "D": "El grupo sin música ya cumple la función de grupo de control, de modo que ese sí estaba incluido."
       },
-      "componente": "Entorno físico",
-      "imagen_figura": "assets/banco-cn-6-p1/q20.png"
+      "componente": "Ciencia, tecnología y sociedad",
+      "imagen_figura": "assets/banco-cn-6-p1/q05.png"
+    },
+    {
+      "id": "P6CN02",
+      "numero": 20,
+      "enunciado": "<p>Lee la situación, observa el modelo de muestra y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En la huerta escolar, los estudiantes de sexto contaron durante una semana los seres vivos que viven en las eras de acelga y cilantro. Con ese conteo obtuvieron estos porcentajes:</p><p>• 60 % plantas de acelga y cilantro, que fabrican su propio alimento.<br>• 25 % pulgones, que chupan la savia de esas plantas.<br>• 12 % mariquitas, que se comen a los pulgones.<br>• 3 % cucaracheros, aves que se comen a las mariquitas.</p><p>Para armar una pirámide ecológica, en la <b>base</b> van los <b>productores</b>, es decir, los que fabrican su propio alimento; encima se ubican los consumidores, uno sobre otro, según de quién se alimentan, y el tamaño de cada nivel <b>disminuye</b> hacia la cima.</p></div><p>¿Cuál de las siguientes pirámides (A, B, C o D) organiza bien los cuatro grupos con su porcentaje?</p>",
+      "opciones": {
+        "A": "Pirámide C.",
+        "B": "Pirámide B.",
+        "C": "Pirámide D.",
+        "D": "Pirámide A."
+      },
+      "clave": "D",
+      "competencia": "b",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "MEDIA",
+      "estandar": "",
+      "que_evalua": "Esta pregunta evalúa si los estudiantes pueden registrar correctamente una serie de datos en una representación gráfica, respetando la estructura del modelo.",
+      "justificacion_correcta": "La opción «Pirámide A» es la respuesta correcta porque deja en la base a los productores con el 60 % y sobre ellos ubica, en orden, al grupo que se alimenta de las plantas con el 25 %, al que se come a ese grupo con el 12 % y al de la cima con el 3 %, de manera que cada nivel resulta más pequeño que el de abajo.",
+      "opciones_incorrectas": {
+        "B": "La pirámide B queda al revés: pone en la base al grupo del 3 %, que va en la cima, y deja a los productores arriba.",
+        "A": "La pirámide C cambia de puesto los dos niveles del medio, pues deja el 12 % debajo del 25 %, cuando el grupo que se alimenta de las plantas debe ir de primero.",
+        "C": "La pirámide D pone en la base al grupo del 25 %, que se alimenta de las plantas, y deja a los productores encima, cuando la base le corresponde a quien fabrica su propio alimento."
+      },
+      "componente": "Entorno vivo",
+      "opciones_imagenes": {
+        "D": "assets/banco-cn-6-p1/q02A.png",
+        "B": "assets/banco-cn-6-p1/q02B.png",
+        "A": "assets/banco-cn-6-p1/q02C.png",
+        "C": "assets/banco-cn-6-p1/q02D.png"
+      }
     }
   ],
   "preservar_orden_preguntas": false

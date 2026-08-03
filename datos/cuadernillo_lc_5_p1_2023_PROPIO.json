@@ -31,98 +31,141 @@
     "1.4": "Infiere la intención comunicativa de enunciados del texto"
   },
   "contextos": {
-    "ctx-lectura-1": {
-      "titulo": "¿Las plantas también se enferman?",
-      "texto": "¿LAS PLANTAS TAMBIÉN SE ENFERMAN?\n\nAntes se creía que solo los animales podían enfermarse; sin embargo, hoy se sabe que las plantas también pueden debilitarse y enfermar. Te decimos cómo notarlo y qué hacer.\n\nCómo detectarlo: hojas caídas y amarillas, tierra demasiado seca, hojas quemadas por el sol o presencia de pequeños insectos en el tallo.\n\nCausas en plantas de interior: reciben muy poca luz, las riegan en exceso o el aire es muy seco.\n\nCausas en plantas de exterior: las quema el sol fuerte, les falta agua en verano o las atacan insectos.\n\nQué hacer: si tu planta se ve marchita, revisa el riego y la luz; si sigue débil, consulta con un jardinero, una persona que sabe de plantas y la ayudará a recuperarse.",
-      "imagen": "assets/banco-lc-5-p1/q01.png",
-      "rango_preguntas": "1 a 4"
-    },
-    "ctx-lectura-2": {
-      "titulo": "¿Qué hacer ante una picadura de abeja?",
-      "texto": "¿QUÉ HACER ANTE UNA PICADURA DE ABEJA?\n\n¿Qué es? Una picadura de abeja es la herida pequeña que deja el aguijón del insecto en la piel.\n\nCausas: acercarse a una colmena o pisar una abeja descalzo.\n\nSíntomas: dolor en la zona, enrojecimiento, hinchazón, picazón y, a veces, calor en la piel.\n\nCómo actuar ante una picadura: primero retira el aguijón con cuidado; luego lava la zona con agua y jabón; después aplica un paño frío sobre la picadura; por último, vigila a la persona y, si se hincha mucho, llama a urgencias.\n\nCómo prevenirla: no te acerques a las colmenas, usa zapatos al caminar sobre el pasto y evita los perfumes dulces en el campo, porque atraen a las abejas.",
-      "imagen": "assets/banco-lc-5-p1/ia_abeja.png",
-      "rango_preguntas": "5 a 8"
-    },
-    "ctx-lectura-3": {
-      "titulo": "La biblioteca de San Isidro enseñará a armar instrumentos de guadua",
-      "texto": "LA BIBLIOTECA DE SAN ISIDRO ENSEÑARÁ A ARMAR INSTRUMENTOS DE GUADUA\n\nLos niños del barrio podrán armar ellos mismos las flautas y los tambores.\n\nLa Biblioteca Pública de San Isidro quiere que la música tradicional del río vuelva a sonar en el barrio y, por esa razón, abrió un proyecto para construir instrumentos con guadua traída de las fincas vecinas. Diana Erazo, directora de la biblioteca, dio a conocer el lunes la decisión. A partir de esta semana, la biblioteca dará a los niños del barrio la oportunidad de armar ellos mismos las flautas y los tambores. Además de construirlos, los niños escucharán explicaciones sobre los ritmos que se tocan a orillas del río.\n\nLa biblioteca se unió con la casa de la música La Rivera, un local del centro del pueblo donde Marcos Quiñones repara instrumentos desde hace veinticinco años. Quiñones contó que nunca antes había trabajado con niños tan pequeños y que le pareció una buena idea. «La guadua se corta, se seca y se afina; con paciencia suena tan bien como la madera fina», dijo mientras mostraba una flauta terminada. Esta idea acerca a los niños a la música de su tierra y vale la pena aplaudirla.",
-      "imagen": "",
-      "rango_preguntas": "9 a 12"
-    },
-    "ctx-lectura-4": {
-      "titulo": "Un oso perezoso se subió a un poste del parque y volvió al bosque",
-      "texto": "UN OSO PEREZOSO SE SUBIÓ A UN POSTE DEL PARQUE Y VOLVIÓ AL BOSQUE\n\n14 de abril de 2023\n\nTodo empezó el martes en la mañana, en el parque principal de Puerto Naranjo. Fabiola Chaux, que vende jugos frente al parque, notó un bulto café enredado en lo alto del poste de la luz. Parecía un nido de hojas secas, pero el bulto se movía despacio: era un oso perezoso de tres dedos que había trepado casi ocho metros y se había quedado quieto junto a los cables.\n\nEn menos de una hora llegaron los bomberos voluntarios y Nury Bastidas, bióloga de la corporación ambiental. Lo primero fue pedir que cortaran la energía del sector, porque el animal estaba a un paso de los cables. Mientras tanto, los vecinos acordonaron el pie del poste con una cinta para que nadie se acercara.\n\nDos bomberos subieron por la escalera y acercaron una rama larga al lomo del perezoso. Nadie lo jaló ni lo empujó: el animal se agarró solo y bajó a su ritmo, que es lento. Ya en el suelo, los bomberos lo envolvieron en una cobija para resguardarlo del sol mientras la bióloga lo revisaba. Pesa apenas cuatro kilos y no tenía ninguna herida.\n\nEsa misma tarde lo llevaron a la Reserva La Palma, a veinte minutos del pueblo, y lo soltaron en un yarumo, que es el árbol donde estos animales encuentran su comida. Hoy vive libre en ese bosque y los guardas de la reserva lo han vuelto a ver dos veces.\n\n«Al comienzo creímos que era un nido de hojas», contó Fabiola Chaux. Nury Bastidas explicó que estos rescates se repiten cada vez más: no lleva una cuenta exacta de los animales atendidos este año, pero casi todos aparecen cuando el monte queda lejos y los postes quedan cerca.",
-      "imagen": "assets/banco-lc-5-p1/ia_fosil.png",
-      "rango_preguntas": "13 a 16"
-    },
-    "ctx-lectura-5": {
+    "algas_problema_o_ayuda": {
       "titulo": "Las algas, ¿un problema o una ayuda?",
-      "texto": "LAS ALGAS, ¿UN PROBLEMA O UNA AYUDA?\n\nCon frecuencia, las personas creen que todas las algas del mar son sucias o inútiles. Sin embargo, esta idea no es cierta, pues las algas tienen distintas utilidades. Estas se clasifican según su uso en comestibles, peligrosas y medicinales.\n\nLas algas comestibles son aquellas que no perjudican al cuerpo. Por el contrario, aportan vitaminas y minerales necesarios para una dieta sana. A la hora de elegir algas para comer es importante tener precaución, pues podríamos confundirlas con algas peligrosas por su aspecto.\n\nPor su parte, las algas peligrosas contienen sustancias que dañan a quien las consume; pueden causar dolor de estómago y otros malestares. Por esta razón hay que evitar su uso. Finalmente, las algas medicinales producen sustancias que se usan para preparar remedios contra ciertas enfermedades.\n\nAdaptado de un texto de divulgación científica.",
-      "imagen": "",
-      "rango_preguntas": "17 a 20"
+      "rango_preguntas": "1 a 5",
+      "texto": "Con frecuencia, las personas creen que todas las algas del mar son sucias o inútiles. Sin embargo, esta idea no es cierta, pues las algas tienen distintas utilidades. Estas se clasifican según su uso en comestibles, peligrosas y medicinales.\n\nLas algas comestibles son aquellas que no perjudican al cuerpo. Por el contrario, aportan vitaminas y minerales necesarios para una dieta sana. A la hora de elegir algas para comer es importante tener precaución, pues podríamos confundirlas con algas peligrosas por su aspecto.\n\nPor su parte, las algas peligrosas contienen sustancias que dañan a quien las consume; pueden causar dolor de estómago y otros malestares. Por esta razón hay que evitar su uso. Finalmente, las algas medicinales producen sustancias que se usan para preparar remedios contra ciertas enfermedades.\n\nAdaptado de un texto de divulgación científica."
+    },
+    "picadura_de_abeja": {
+      "titulo": "¿Qué hacer ante una picadura de abeja?",
+      "rango_preguntas": "6 a 10",
+      "imagen": "assets/banco-lc-5-p1/ia_abeja.png",
+      "alt": "Infografía «¿Qué hacer ante una picadura de abeja?», organizada en cinco secciones numeradas. 1) ¿Qué es?: una picadura de abeja es la herida pequeña que deja el aguijón del insecto en la piel, con el dibujo de una abeja y de un brazo enrojecido. 2) Causas: acercarse a una colmena y pisar una abeja descalzo, con dos ilustraciones señaladas por triángulos de advertencia. 3) Síntomas: cinco círculos rotulados dolor en la zona, enrojecimiento, hinchazón, picazón y, a veces, calor en la piel, junto a un niño que se sostiene el brazo. 4) ¿Cómo actuar ante una picadura?: cinco pasos unidos por flechas, retira el aguijón con cuidado, lava la zona con agua y jabón, aplica un paño frío sobre la picadura, vigila a la persona y, si se hincha mucho, llama a urgencias. 5) ¿Cómo prevenirla?: tres recuadros, no te acerques a las colmenas, usa zapatos al caminar sobre el pasto y evita los perfumes dulces en el campo porque atraen a las abejas.",
+      "texto": "¿Qué es? Una picadura de abeja es la herida pequeña que deja el aguijón del insecto en la piel.\n\nCausas: acercarse a una colmena o pisar una abeja descalzo.\n\nSíntomas: dolor en la zona, enrojecimiento, hinchazón, picazón y, a veces, calor en la piel.\n\nCómo actuar ante una picadura: primero retira el aguijón con cuidado; luego lava la zona con agua y jabón; después aplica un paño frío sobre la picadura; por último, vigila a la persona y, si se hincha mucho, llama a urgencias.\n\nCómo prevenirla: no te acerques a las colmenas, usa zapatos al caminar sobre el pasto y evita los perfumes dulces en el campo, porque atraen a las abejas."
+    },
+    "instrumentos_de_guadua": {
+      "titulo": "La biblioteca de San Isidro enseñará a armar instrumentos de guadua",
+      "rango_preguntas": "11 a 15",
+      "texto": "Los niños del barrio podrán armar ellos mismos las flautas y los tambores.\n\nLa Biblioteca Pública de San Isidro quiere que la música tradicional del río vuelva a sonar en el barrio y, por esa razón, abrió un proyecto para construir instrumentos con guadua traída de las fincas vecinas. Diana Erazo, directora de la biblioteca, dio a conocer el lunes la decisión. A partir de esta semana, la biblioteca dará a los niños del barrio la oportunidad de armar ellos mismos las flautas y los tambores. Además de construirlos, los niños escucharán explicaciones sobre los ritmos que se tocan a orillas del río.\n\nLa biblioteca se unió con la casa de la música La Rivera, un local del centro del pueblo donde Marcos Quiñones repara instrumentos desde hace veinticinco años. Quiñones contó que nunca antes había trabajado con niños tan pequeños y que le pareció una buena idea. «La guadua se corta, se seca y se afina; con paciencia suena tan bien como la madera fina», dijo mientras mostraba una flauta terminada. Esta idea acerca a los niños a la música de su tierra y vale la pena aplaudirla."
+    },
+    "rescate_del_oso_perezoso": {
+      "titulo": "Un oso perezoso se subió a un poste del parque y volvió al bosque",
+      "rango_preguntas": "16 a 20",
+      "imagen": "assets/banco-lc-5-p1/ia_fosil.png",
+      "alt": "Página de noticia titulada «Un oso perezoso se subió a un poste del parque y volvió al bosque», fechada el 14 de abril de 2023. Un recuadro resume que en el parque de Puerto Naranjo apareció un oso perezoso trepado en un poste de la luz, que subió casi ocho metros y se quedó junto a los cables, que los bomberos lo bajaron sano y que esa tarde volvió al bosque. Al lado hay un círculo con un mapa y el rótulo «Parque de Puerto Naranjo». La ilustración principal muestra el poste con el perezoso arriba, la medida «Casi 8 metros», dos bomberos con escalera y una persona más, y el pie «Dos bomberos bajaron al oso perezoso del poste del parque de Puerto Naranjo». Abajo, la franja «Así fue el rescate» con cuatro pasos: 1) lo que parecía un nido de hojas, 2) resultó ser un oso perezoso, 3) los bomberos lo bajaron del poste y 4) hoy vive libre en la Reserva La Palma. A la derecha, tres recuadros con las palabras de Fabiola Chaux, la petición de cortar la energía y la explicación de la bióloga Nury Bastidas, y un recuadro final «Reserva La Palma» que indica que hoy vive libre en un yarumo del bosque, a veinte minutos del pueblo.",
+      "texto": "14 de abril de 2023\n\nTodo empezó el martes en la mañana, en el parque principal de Puerto Naranjo. Fabiola Chaux, que vende jugos frente al parque, notó un bulto café enredado en lo alto del poste de la luz. Parecía un nido de hojas secas, pero el bulto se movía despacio: era un oso perezoso de tres dedos que había trepado casi ocho metros y se había quedado quieto junto a los cables.\n\nEn menos de una hora llegaron los bomberos voluntarios y Nury Bastidas, bióloga de la corporación ambiental. Lo primero fue pedir que cortaran la energía del sector, porque el animal estaba a un paso de los cables. Mientras tanto, los vecinos acordonaron el pie del poste con una cinta para que nadie se acercara.\n\nDos bomberos subieron por la escalera y acercaron una rama larga al lomo del perezoso. Nadie lo jaló ni lo empujó: el animal se agarró solo y bajó a su ritmo, que es lento. Ya en el suelo, los bomberos lo envolvieron en una cobija para resguardarlo del sol mientras la bióloga lo revisaba. Pesa apenas cuatro kilos y no tenía ninguna herida.\n\nEsa misma tarde lo llevaron a la Reserva La Palma, a veinte minutos del pueblo, y lo soltaron en un yarumo, que es el árbol donde estos animales encuentran su comida. Hoy vive libre en ese bosque y los guardas de la reserva lo han vuelto a ver dos veces.\n\n«Al comienzo creímos que era un nido de hojas», contó Fabiola Chaux. Nury Bastidas explicó que estos rescates se repiten cada vez más: no lleva una cuenta exacta de los animales atendidos este año, pero casi todos aparecen cuando el monte queda lejos y los postes quedan cerca."
     }
   },
   "preguntas": [
     {
-      "id": "P5L01",
+      "id": "P5L17",
       "numero": 1,
-      "enunciado": "[[IMG]]<p>Dentro de la infografía, ¿cómo se relacionan la imagen de la planta y el título del texto?</p>",
+      "enunciado": "<p>Lee el siguiente enunciado del texto: «Estas se clasifican según su uso en comestibles, peligrosas <b>y</b> medicinales».  En «Estas se clasifican según su uso en comestibles, peligrosas y medicinales», ¿con qué fin aparece la palabra «y»?</p>",
       "opciones": {
-        "A": "El título dice lo contrario de lo que se ve en la imagen.",
-        "B": "La imagen contesta aquello que el título pregunta.",
-        "C": "El título cuenta lo que sucede en la imagen.",
-        "D": "La imagen vuelve a plantear la pregunta del título."
+        "A": "Con el fin de enfrentar dos maneras de ver las algas.",
+        "B": "Con el fin de marcar por qué ocurre una clasificación.",
+        "C": "Con el fin de sumar el último elemento de la lista.",
+        "D": "Con el fin de dar paso a un ejemplo de alga."
       },
-      "clave": "B",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.1",
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
       "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas. » Entiendo el lenguaje empleado en infografías y otros tipos de textos con imágenes fijas. » Doy cuenta de algunas estrategias empleadas para comunicar a través del lenguaje no verbal.",
-      "que_evalua": "La capacidad para identificar la relación entre una imagen y un texto.",
-      "justificacion_correcta": "El título es una pregunta: «¿Las plantas también se enferman?». La imagen principal muestra una planta marchita, de hojas caídas, es decir, una planta enferma. Así, la imagen responde a la pregunta del título: sí, las plantas se enferman. Por eso la respuesta correcta es la B.",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
+      "que_evalua": "La capacidad para identificar la función de un conector en un enunciado de un texto.",
+      "justificacion_correcta": "En el enunciado se enumeran tres clases de algas y la palabra «y» une el último elemento de esa lista («medicinales») con los anteriores. Cumple, entonces, la función de agregar el último elemento. La respuesta correcta es «Con el fin de sumar el último elemento de la lista».",
       "opciones_incorrectas": {
-        "A": "El título no afirma nada que contradiga la imagen; solo formula una pregunta.",
-        "C": "El título no describe la imagen; hace una pregunta.",
-        "D": "La imagen no repite la pregunta: la responde mostrando una planta enferma."
+        "A": "No enfrenta dos maneras de ver las algas: suma elementos de una misma lista.",
+        "B": "El conector «y» no señala por qué ocurre la clasificación de las algas.",
+        "D": "No introduce un ejemplo de alga, sino el cierre de la enumeración."
       },
-      "imagen_figura": "assets/banco-lc-5-p1/q01.png",
-      "contexto_id": "ctx-lectura-1"
+      "contexto_id": "algas_problema_o_ayuda"
     },
     {
-      "id": "P5L02",
+      "id": "P5L18",
       "numero": 2,
-      "enunciado": "<p>Lee con atención las dos listas de la sección <b>Causas</b> (interior y exterior). ¿Qué se concluye al compararlas?</p>",
+      "enunciado": "<p>Tomado en conjunto, ¿qué sostiene el texto anterior?</p>",
       "opciones": {
-        "A": "Que a las plantas de interior y de exterior las enferma, sobre todo, el exceso de agua.",
-        "B": "Que las plantas de interior y las de exterior se enferman por causas diferentes.",
-        "C": "Que el sol fuerte es la principal causa de enfermedad tanto dentro como fuera de casa.",
-        "D": "Que las plantas de interior se enferman por las mismas causas que las de exterior."
+        "A": "Que mucha gente rechaza las algas porque ignora para qué sirven.",
+        "B": "Que no hay forma de distinguir las clases de algas, porque todas se ven igual.",
+        "C": "Que con cualquier alga se pueden preparar remedios contra males graves.",
+        "D": "Que, por sus características, hay algas peligrosas y algas provechosas."
       },
-      "clave": "B",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Elaboro hipótesis acerca del sentido global de los textos, antes y durante el proceso de lectura; para el efecto, me apoyo en mis conocimientos previos, las imágenes y los títulos.",
-      "que_evalua": "La capacidad para inferir conclusiones implícitas en un texto a partir de una lectura global.",
-      "justificacion_correcta": "La sección presenta dos listas distintas, una para las plantas de interior y otra para las de exterior, y ninguna causa se repite entre ellas: a las de interior las daña, por ejemplo, el exceso de riego o la falta de luz, mientras que a las de exterior las daña el sol fuerte o la falta de agua. Al compararlas se concluye que unas y otras se enferman por causas diferentes. La respuesta correcta es la B.",
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.3",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
+      "que_evalua": "La capacidad para identificar el tema del que trata un texto.",
+      "justificacion_correcta": "El texto explica que las algas se clasifican en comestibles, peligrosas y medicinales, según su uso. La idea general es que, de acuerdo con sus características, unas algas son peligrosas y otras provechosas para el ser humano. La respuesta correcta es «Que, por sus características, hay algas peligrosas y algas provechosas».",
       "opciones_incorrectas": {
-        "A": "El exceso de agua aparece solo en la lista de interior; no es una causa común a ambas.",
-        "C": "El sol fuerte figura solo en la lista de exterior, no en la de interior.",
-        "D": "Es lo contrario de lo que muestran las listas: no comparten ninguna causa."
+        "A": "Es solo una idea inicial que el texto corrige, no la idea general.",
+        "B": "El texto dice lo contrario: por sus características se pueden distinguir las clases de algas.",
+        "C": "El texto aclara que solo ciertas algas (las medicinales) sirven para remedios, no cualquiera."
       },
-      "contexto_id": "ctx-lectura-1"
+      "contexto_id": "algas_problema_o_ayuda"
+    },
+    {
+      "id": "P5L19",
+      "numero": 3,
+      "enunciado": "<p>En el texto se lee: «Por esta razón hay que evitar su uso». Al escribir esa frase, el autor busca</p>",
+      "opciones": {
+        "A": "discutir la opinión de quienes preparan remedios con algas.",
+        "B": "animar a los lectores a probar cualquier alga que vean en la playa.",
+        "C": "poner en duda que algunas algas causen malestares.",
+        "D": "prevenir al lector sobre el daño que producen ciertas algas."
+      },
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.4",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Identifico la intención comunicativa de cada uno de los textos leídos.",
+      "que_evalua": "La capacidad para deducir la intención expresada en una parte o fragmento del texto.",
+      "justificacion_correcta": "La frase aparece justo después de explicar que las algas peligrosas contienen sustancias que dañan a quien las consume. Al pedir que se evite su uso, el autor previene al lector sobre ese daño. La respuesta correcta es «prevenir al lector sobre el daño que producen ciertas algas».",
+      "opciones_incorrectas": {
+        "B": "La frase pide evitar esas algas, no invita a probarlas.",
+        "C": "El texto afirma que esas algas causan malestares; la frase no lo pone en duda.",
+        "A": "La frase habla de las algas peligrosas, no de las medicinales ni de quienes las usan."
+      },
+      "contexto_id": "algas_problema_o_ayuda"
+    },
+    {
+      "id": "P5L20",
+      "numero": 4,
+      "enunciado": "<p>Tal como aparece en el segundo párrafo, ¿qué palabra equivale a «perjudican»?</p>",
+      "opciones": {
+        "A": "Pierden.",
+        "B": "Ayudan.",
+        "C": "Dañan.",
+        "D": "Asustan."
+      },
+      "clave": "C",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
+      "que_evalua": "La capacidad para deducir el significado de una expresión en un texto.",
+      "justificacion_correcta": "El texto dice que «las algas comestibles… no perjudican al cuerpo» y que «aportan vitaminas». Por oposición, perjudicar es lo contrario de aportar bien: es dañar. El sinónimo es «dañan». La respuesta correcta es «Dañan».",
+      "opciones_incorrectas": {
+        "B": "«Ayudan» es lo contrario de «perjudican».",
+        "D": "«Asustan» se refiere al miedo, no a hacer daño al cuerpo.",
+        "A": "«Pierden» no tiene relación con el sentido de «perjudican» en el texto."
+      },
+      "contexto_id": "algas_problema_o_ayuda"
     },
     {
       "id": "P5L03",
-      "numero": 3,
-      "enunciado": "<p>Por lo que allí se dice, ¿a quién está dirigido sobre todo el texto?</p>",
+      "numero": 5,
+      "enunciado": "<p>Por lo que explica y por la manera sencilla como está escrito, ¿a quién está dirigido sobre todo este texto?</p>",
       "opciones": {
-        "A": "A biólogos dedicados al estudio de las plantas.",
-        "B": "A quienes venden materas y abonos.",
-        "C": "A quienes tienen plantas en su casa.",
-        "D": "A quienes fabrican herramientas de jardinería."
+        "A": "A los cocineros de restaurantes especializados en algas del mar.",
+        "B": "A los químicos que fabrican medicamentos en un laboratorio del país.",
+        "C": "A los lectores que quieren saber para qué sirven las algas.",
+        "D": "A los pescadores que necesitan una guía para recoger algas del mar."
       },
       "clave": "C",
       "competencia": "2",
@@ -131,23 +174,226 @@
       "dificultad": "ALTA",
       "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Identifico la intención comunicativa de cada uno de los textos leídos.",
       "que_evalua": "La capacidad para identificar la audiencia a la que va dirigida un texto a partir de sus características.",
-      "justificacion_correcta": "El texto reúne consejos sencillos para notar cuándo una planta se enferma y qué hacer. Esa información le es útil a quien tiene plantas en casa y quiere cuidarlas. Por eso la respuesta correcta es la C.",
+      "justificacion_correcta": "La respuesta correcta es la opción «A los lectores que quieren saber para qué sirven las algas». El texto empieza corrigiendo una creencia común y explica con palabras sencillas los tres usos de las algas, sin términos técnicos ni instrucciones de trabajo; le sirve, entonces, a quien quiere enterarse de para qué sirven.",
       "opciones_incorrectas": {
-        "A": "El lenguaje es sencillo y general, no técnico como el que usaría un especialista.",
-        "B": "No hay información sobre venta de macetas ni de abonos que sirva a un vendedor.",
-        "D": "El texto no trata de fabricar herramientas de jardín."
+        "A": "No trae recetas ni indicaciones de cocina para preparar algas del mar.",
+        "B": "No explica con qué sustancias ni de qué manera se preparan los remedios en un laboratorio.",
+        "D": "No dice dónde ni cómo se recogen las algas del mar."
       },
-      "contexto_id": "ctx-lectura-1"
+      "contexto_id": "algas_problema_o_ayuda"
+    },
+    {
+      "id": "P5L05",
+      "numero": 6,
+      "enunciado": "<p>Observa la infografía completa. Relaciona lo que aparece en la sección <b>2. Causas</b> con lo que aparece en la sección <b>5. ¿Cómo prevenirla?</b>.</p> <p>A partir de esa relación, ¿qué se puede concluir?</p>",
+      "opciones": {
+        "A": "Que toda picadura de abeja termina necesitando una llamada a urgencias.",
+        "B": "Que las abejas solo pican a quienes usan zapatos en el campo.",
+        "C": "Que acercarse a las colmenas aumenta el riesgo de ser picado.",
+        "D": "Que lavar la zona con agua y jabón evita por completo cualquier picadura."
+      },
+      "clave": "C",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Elaboro hipótesis acerca del sentido global de los textos, antes y durante el proceso de lectura; para el efecto, me apoyo en mis conocimientos previos, las imágenes y los títulos.",
+      "que_evalua": "La capacidad para inferir conclusiones implícitas en un texto a partir de una lectura global, relacionando texto escrito e imágenes.",
+      "justificacion_correcta": "En la sección de causas la infografía señala «acercarse a una colmena» y, de manera coherente, en la sección de prevención aconseja «no te acerques a las colmenas». Al relacionar ambas secciones se concluye que acercarse a las colmenas aumenta el riesgo de ser picado; por eso, justamente, se previene evitándolas. La respuesta correcta es «Que acercarse a las colmenas aumenta el riesgo de ser picado».",
+      "opciones_incorrectas": {
+        "D": "Lavar la zona es un paso para actuar después de la picadura, no una forma de evitarla.",
+        "B": "La infografía aconseja usar zapatos como prevención; no dice que las abejas piquen a quien los usa.",
+        "A": "Llamar a urgencias se indica solo si la persona se hincha mucho, no en toda picadura."
+      },
+      "contexto_id": "picadura_de_abeja"
+    },
+    {
+      "id": "P5L06",
+      "numero": 7,
+      "enunciado": "<p>Observa cómo están organizadas las primeras secciones de la infografía.</p>[[IMG]]<p>¿Qué estrategia usa para explicar la picadura de abeja?</p>",
+      "opciones": {
+        "A": "Define qué es, presenta las causas, los síntomas y cómo actuar.",
+        "B": "Compara la picadura de abeja con la de otros insectos.",
+        "C": "Presenta solo recomendaciones para evitar las colmenas.",
+        "D": "Cuenta una historia sobre una persona picada por una abeja."
+      },
+      "clave": "A",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Reconozco las características de los diversos tipos de texto que leo. » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, organización, etc. » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente.",
+      "que_evalua": "La capacidad para reconocer la estrategia utilizada por el texto, en este caso la infografía, para presentar su contenido.",
+      "justificacion_correcta": "La infografía organiza la información en secciones numeradas: primero define qué es la picadura (1), luego presenta las causas (2), después los síntomas (3) y, finalmente, cómo actuar (4) y cómo prevenir (5). Esa es la estrategia. La respuesta correcta es «Define qué es, presenta las causas, los síntomas y cómo actuar».",
+      "opciones_incorrectas": {
+        "D": "La infografía no narra una historia; presenta información organizada por secciones.",
+        "B": "No compara la picadura con la de otros insectos.",
+        "C": "No se limita a recomendaciones: define, da causas y síntomas."
+      },
+      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja_estructura.png",
+      "contexto_id": "picadura_de_abeja"
+    },
+    {
+      "id": "P5L07",
+      "numero": 8,
+      "enunciado": "<p>Observa el dibujo del tercer paso de la sección <b>4. ¿Cómo actuar?</b> (la persona que pone un paño sobre la piel).</p>[[IMG]]<p>¿Qué relación tiene ese dibujo con el texto que lo acompaña?</p>",
+      "opciones": {
+        "A": "El dibujo explica al tiempo todas las acciones señaladas en la infografía.",
+        "B": "El texto critica la acción que se presenta en el dibujo.",
+        "C": "El texto contradice lo que se presenta en el dibujo.",
+        "D": "El dibujo ilustra una sola de las acciones señaladas en la infografía."
+      },
+      "clave": "D",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas. » Entiendo el lenguaje empleado en infografías y otros tipos de textos con imágenes fijas. » Doy cuenta de algunas estrategias empleadas para comunicar a través del lenguaje no verbal.",
+      "que_evalua": "La capacidad para identificar la relación entre una imagen del texto y lo que se dice.",
+      "justificacion_correcta": "Ese dibujo muestra cómo se aplica un paño frío sobre la picadura, que es una sola de las pautas de actuación de la sección (retirar el aguijón, lavar, aplicar el paño, vigilar). Por eso el dibujo ilustra una sola de las acciones señaladas en la infografía. La respuesta correcta es «El dibujo ilustra una sola de las acciones señaladas en la infografía».",
+      "opciones_incorrectas": {
+        "A": "Cada dibujo de la sección ilustra un paso distinto; ese dibujo muestra solo el del paño frío.",
+        "C": "Dibujo y texto coinciden; no se contradicen.",
+        "B": "El texto no critica la acción; la indica como recomendación."
+      },
+      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja_actuar.png",
+      "contexto_id": "picadura_de_abeja"
+    },
+    {
+      "id": "P5L08",
+      "numero": 9,
+      "enunciado": "<p>Fíjate en los dos primeros pasos de la sección <b>4. ¿Cómo actuar?</b>.</p>[[IMG]]<p>Según la infografía, ¿qué se debe hacer inmediatamente después de retirar el aguijón?</p>",
+      "opciones": {
+        "A": "Llamar a urgencias de inmediato.",
+        "B": "No acercarse a las colmenas.",
+        "C": "Lavar la zona con agua y jabón.",
+        "D": "Aplicar un paño frío sobre la picadura."
+      },
+      "clave": "C",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
+      "que_evalua": "La capacidad para ubicar información literal en un texto atendiendo a las secuencias lógicas o acciones dentro de un proceso.",
+      "justificacion_correcta": "En la sección «¿Cómo actuar?» el orden es: primero retirar el aguijón, luego lavar la zona con agua y jabón, después aplicar un paño frío y, por último, vigilar a la persona. Justo después de retirar el aguijón viene lavar la zona. La respuesta correcta es «Lavar la zona con agua y jabón».",
+      "opciones_incorrectas": {
+        "D": "Aplicar el paño frío va después de lavar la zona, no inmediatamente.",
+        "A": "Llamar a urgencias es el último paso y solo si la persona se hincha mucho.",
+        "B": "No acercarse a las colmenas es una pauta de prevención, no de actuación."
+      },
+      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja_pasos.png",
+      "contexto_id": "picadura_de_abeja"
     },
     {
       "id": "P5L04",
-      "numero": 4,
-      "enunciado": "<p>Si tras revisar el riego y la luz la planta continúa débil, ¿qué aconseja el texto?</p>",
+      "numero": 10,
+      "enunciado": "<p>Según la sección <b>5. ¿Cómo prevenirla?</b>, ¿qué se debe evitar en el campo porque atrae a las abejas?</p>",
       "opciones": {
-        "A": "Trasplantarla de matera todos los días.",
-        "B": "Suspenderle el riego por completo.",
-        "C": "Sacarla al sol más fuerte.",
-        "D": "Buscar el consejo de un jardinero."
+        "A": "Los zapatos cerrados.",
+        "B": "Los perfumes dulces.",
+        "C": "Los paños fríos.",
+        "D": "El agua con jabón."
+      },
+      "clave": "B",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
+      "que_evalua": "La capacidad para ubicar información literal en un texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Los perfumes dulces». La sección de prevención dice que hay que evitar los perfumes dulces en el campo, porque atraen a las abejas.",
+      "opciones_incorrectas": {
+        "A": "La infografía aconseja justamente usar zapatos al caminar sobre el pasto.",
+        "C": "El paño frío es uno de los pasos para actuar cuando la picadura ya ocurrió.",
+        "D": "Lavar con agua y jabón también es un paso posterior a la picadura, no algo que atraiga a las abejas."
+      },
+      "contexto_id": "picadura_de_abeja"
+    },
+    {
+      "id": "P5L09",
+      "numero": 11,
+      "enunciado": "<p>¿Qué se logra en el texto con el uso de las comillas « »?</p>",
+      "opciones": {
+        "A": "Se recogen las reacciones de los niños del barrio.",
+        "B": "Se marcan las opiniones de la directora de la biblioteca.",
+        "C": "Se destacan las propuestas centrales de quien escribe.",
+        "D": "Se traen las palabras de alguien que participa en el proyecto."
+      },
+      "clave": "D",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
+      "que_evalua": "La capacidad del estudiante de identificar la función de un signo de puntuación en un texto.",
+      "justificacion_correcta": "Las comillas encierran lo que dijo Marcos Quiñones, quien repara instrumentos en la casa de la música que se unió con la biblioteca: «La guadua se corta, se seca y se afina…». Así, las comillas sirven para incluir las palabras de alguien involucrado en el proyecto. La respuesta correcta es «Se traen las palabras de alguien que participa en el proyecto».",
+      "opciones_incorrectas": {
+        "A": "Lo entrecomillado no son reacciones de los niños del barrio.",
+        "B": "Las palabras citadas son de quien repara los instrumentos, no de la directora de la biblioteca.",
+        "C": "No son propuestas del autor, sino las palabras de una persona citada."
+      },
+      "contexto_id": "instrumentos_de_guadua"
+    },
+    {
+      "id": "P5L10",
+      "numero": 12,
+      "enunciado": "<p>Por el modo en que se expone la información, este texto es</p>",
+      "opciones": {
+        "A": "un artículo de enciclopedia, pues detalla los pasos de un proceso.",
+        "B": "una reseña, pues valora las cualidades de un lugar para recomendarlo.",
+        "C": "un cuento, pues narra en orden una historia inventada.",
+        "D": "una noticia, pues da cuenta de un hecho reciente."
+      },
+      "clave": "D",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Identifico la intención comunicativa de cada uno de los textos leídos.",
+      "que_evalua": "La capacidad para identificar qué tipo de texto ha leído a partir de su forma, estilo y contenido.",
+      "justificacion_correcta": "El texto informa sobre un hecho real y reciente, la biblioteca que enseñará a armar instrumentos de guadua, recoge la voz de quien participa en el proyecto y responde a las preguntas propias de una noticia (qué, quién, cómo, cuándo, dónde). Por eso es una noticia. La respuesta correcta es «una noticia, pues da cuenta de un hecho reciente».",
+      "opciones_incorrectas": {
+        "A": "No explica detalladamente los pasos de un proceso como un artículo enciclopédico.",
+        "C": "No es un cuento: se basa en datos y hechos reales, no en una historia inventada.",
+        "B": "No evalúa un lugar para recomendarlo, como haría una reseña."
+      },
+      "contexto_id": "instrumentos_de_guadua"
+    },
+    {
+      "id": "P5L11",
+      "numero": 13,
+      "enunciado": "<p>En el texto se afirma que los niños del barrio San Isidro</p>",
+      "opciones": {
+        "A": "podrán armar ellos mismos las flautas y los tambores.",
+        "B": "se unieron con una fábrica de guadua de otro pueblo.",
+        "C": "ya saben todo sobre los ritmos que se tocan en la región.",
+        "D": "deben ser aplaudidos por inventar los instrumentos de guadua."
+      },
+      "clave": "A",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "dificultad": "BAJA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
+      "que_evalua": "La capacidad para ubicar información literal en el texto.",
+      "justificacion_correcta": "El texto dice de manera literal que la biblioteca «dará a los niños del barrio la oportunidad de armar ellos mismos las flautas y los tambores». Por eso la respuesta correcta es «podrán armar ellos mismos las flautas y los tambores».",
+      "opciones_incorrectas": {
+        "D": "El texto no dice que los niños inventaran los instrumentos de guadua.",
+        "B": "Quien se unió con la casa de la música fue la biblioteca, no una fábrica de guadua de otro pueblo.",
+        "C": "El texto dice que escucharán explicaciones, no que ya lo sepan todo."
+      },
+      "contexto_id": "instrumentos_de_guadua"
+    },
+    {
+      "id": "P5L12",
+      "numero": 14,
+      "enunciado": "<p>Según el texto, en la Biblioteca de San Isidro decidieron construir instrumentos de guadua debido a que</p>",
+      "opciones": {
+        "A": "querían vender los instrumentos de guadua en el pueblo.",
+        "B": "se unieron con la casa de la música La Rivera del centro.",
+        "C": "necesitaban materiales de guadua para arreglar la biblioteca.",
+        "D": "quieren que la música del río vuelva a sonar en el barrio."
       },
       "clave": "D",
       "competencia": "3",
@@ -155,50 +401,100 @@
       "evidencia": "3.1",
       "dificultad": "BAJA",
       "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
-      "que_evalua": "La capacidad para ubicar información literal en un texto.",
-      "justificacion_correcta": "La sección «Qué hacer» dice de manera literal: «si sigue débil, consulta con un jardinero». Esa es la recomendación. La respuesta correcta es la D.",
+      "que_evalua": "La capacidad para ubicar información literal en el texto.",
+      "justificacion_correcta": "El texto afirma: «La Biblioteca Pública de San Isidro quiere que la música tradicional del río vuelva a sonar en el barrio y, por esa razón, abrió un proyecto para construir instrumentos con guadua». Esa es la razón. La respuesta correcta es «quieren que la música del río vuelva a sonar en el barrio».",
       "opciones_incorrectas": {
-        "A": "El texto no recomienda cambiarla de maceta cada día.",
-        "B": "No aconseja dejar de regarla; aconseja revisar el riego.",
-        "C": "El sol fuerte es una causa de enfermedad, no una recomendación."
+        "A": "El texto no menciona la venta de los instrumentos de guadua como razón del proyecto.",
+        "B": "Unirse con la casa de la música La Rivera es una consecuencia de la decisión, no su motivo.",
+        "C": "El texto no habla de arreglar la biblioteca ni de conseguir materiales para ella."
       },
-      "contexto_id": "ctx-lectura-1"
+      "contexto_id": "instrumentos_de_guadua"
     },
     {
-      "id": "P5L05",
-      "numero": 5,
-      "enunciado": "<p>Observa la infografía completa. Relaciona lo que aparece en la sección <b>2. Causas</b> con lo que aparece en la sección <b>5. ¿Cómo prevenirla?</b>.</p>[[IMG]]<p>A partir de esa relación, ¿qué se puede concluir?</p>",
+      "id": "P5L02",
+      "numero": 15,
+      "enunciado": "<p>Relaciona lo que busca la biblioteca con lo que aporta la casa de la música La Rivera. A partir de esa relación, ¿qué se puede concluir?</p>",
       "opciones": {
-        "A": "Que lavar la zona con agua y jabón evita por completo cualquier picadura.",
-        "B": "Que acercarse a las colmenas aumenta el riesgo de ser picado.",
-        "C": "Que las abejas solo pican a quienes usan zapatos en el campo.",
-        "D": "Que toda picadura de abeja termina necesitando una llamada a urgencias."
+        "A": "Que la biblioteca dejará de prestar libros para dedicarse solo a la música del río.",
+        "B": "Que los instrumentos de guadua suenan mejor que las flautas de madera fina.",
+        "C": "Que Marcos Quiñones aprenderá de los niños del barrio a construir flautas.",
+        "D": "Que el proyecto junta el interés de la biblioteca con el oficio de Quiñones."
       },
-      "clave": "B",
+      "clave": "D",
       "competencia": "2",
       "afirmacion": 2,
       "evidencia": "2.1",
       "dificultad": "ALTA",
       "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Elaboro hipótesis acerca del sentido global de los textos, antes y durante el proceso de lectura; para el efecto, me apoyo en mis conocimientos previos, las imágenes y los títulos.",
-      "que_evalua": "La capacidad para inferir conclusiones implícitas en un texto a partir de una lectura global, relacionando texto escrito e imágenes.",
-      "justificacion_correcta": "En la sección de causas la infografía señala «acercarse a una colmena» y, de manera coherente, en la sección de prevención aconseja «no te acerques a las colmenas». Al relacionar ambas secciones se concluye que acercarse a las colmenas aumenta el riesgo de ser picado; por eso, justamente, se previene evitándolas. La respuesta correcta es la B.",
+      "que_evalua": "La capacidad para inferir conclusiones implícitas en un texto a partir de una lectura global.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Que el proyecto junta el interés de la biblioteca con el oficio de Quiñones». La biblioteca quiere que la música tradicional del río vuelva a sonar en el barrio y, para lograrlo, se unió con la casa de la música donde Marcos Quiñones repara instrumentos desde hace veinticinco años.",
       "opciones_incorrectas": {
-        "A": "Lavar la zona es un paso para actuar después de la picadura, no una forma de evitarla.",
-        "C": "La infografía aconseja usar zapatos como prevención; no dice que las abejas piquen a quien los usa.",
-        "D": "Llamar a urgencias se indica solo si la persona se hincha mucho, no en toda picadura."
+        "A": "El texto no dice que la biblioteca deje de prestar libros para dedicarse solo a la música.",
+        "B": "Quiñones afirma que la guadua suena tan bien como la madera fina, no que suene mejor.",
+        "C": "Quiñones es quien pone el oficio; el texto cuenta que nunca había trabajado con niños tan pequeños, no que vaya a aprender de ellos."
       },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja.png",
-      "contexto_id": "ctx-lectura-2"
+      "contexto_id": "instrumentos_de_guadua"
     },
     {
-      "id": "P5L06",
-      "numero": 6,
-      "enunciado": "<p>Observa cómo están organizadas las primeras secciones de la infografía.</p>[[IMG]]<p>¿Qué estrategia usa para explicar la picadura de abeja?</p>",
+      "id": "P5L13",
+      "numero": 16,
+      "enunciado": "<p>En la noticia se lee: «los bomberos lo envolvieron en una cobija para <b>resguardarlo</b> del sol».</p> <p>Tal como aparece ahí, ¿qué palabra equivale a «resguardarlo»?</p>",
       "opciones": {
-        "A": "Cuenta una historia sobre una persona picada por una abeja.",
-        "B": "Define qué es, presenta las causas, los síntomas y cómo actuar.",
-        "C": "Compara la picadura de abeja con la de otros insectos.",
-        "D": "Presenta solo recomendaciones para evitar las colmenas."
+        "A": "Protegerlo.",
+        "B": "Empujarlo.",
+        "C": "Esconderlo.",
+        "D": "Prestarlo."
+      },
+      "clave": "A",
+      "competencia": "1",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
+      "que_evalua": "La capacidad de los estudiantes para deducir el significado que tienen ciertas expresiones en el contexto del texto.",
+      "justificacion_correcta": "En la frase, la cobija se pone encima para que al animal no le dé el sol, es decir, para cuidarlo. La palabra que conserva ese sentido es «protegerlo». La respuesta correcta es «Protegerlo».",
+      "opciones_incorrectas": {
+        "C": "«Esconderlo» es quitarlo de la vista, y la cobija no se puso para que nadie lo viera, sino para que no le diera el sol.",
+        "D": "«Prestarlo» es entregarlo por un tiempo a otra persona, sentido que no encaja en la frase.",
+        "B": "«Empujarlo» es moverlo con fuerza, y el texto aclara que nadie lo jaló ni lo empujó."
+      },
+      "contexto_id": "rescate_del_oso_perezoso"
+    },
+    {
+      "id": "P5L14",
+      "numero": 17,
+      "enunciado": "<p>Mira la fotografía del rescate en el parque, con la medida «Casi 8 metros» al lado del poste.</p>[[IMG]]<p>Con esa imagen y con lo que cuenta la noticia, ¿qué se puede concluir?</p>",
+      "opciones": {
+        "A": "Que ese perezoso es el animal más grande que ha llegado al parque.",
+        "B": "Que la fotografía la tomó un vecino del parque.",
+        "C": "Que los bomberos del pueblo se dedican a criar animales silvestres.",
+        "D": "Que el perezoso quedó muy alto y hoy vive libre en la reserva."
+      },
+      "clave": "D",
+      "competencia": "2",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "dificultad": "ALTA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Elaboro hipótesis acerca del sentido global de los textos, antes y durante el proceso de lectura; para el efecto, me apoyo en mis conocimientos previos, las imágenes y los títulos.",
+      "que_evalua": "La capacidad de los estudiantes para inferir y hacer conclusiones de la información general del texto o de una de sus partes.",
+      "justificacion_correcta": "En la fotografía, el perezoso está en lo alto del poste, casi a la altura que marca la medida «Casi 8 metros», y la noticia añade que esa misma tarde lo soltaron en la Reserva La Palma. De ahí se concluye que quedó muy alto y que hoy vive libre allí. La respuesta correcta es «Que el perezoso quedó muy alto y hoy vive libre en la reserva».",
+      "opciones_incorrectas": {
+        "C": "Ni la fotografía ni la noticia dicen que los bomberos críen animales; ese día solo bajaron al perezoso del poste.",
+        "A": "El texto no compara el tamaño de los animales que han llegado al parque, solo cuenta cuánto subió este.",
+        "B": "La noticia nunca dice quién tomó la fotografía."
+      },
+      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil_foto.png",
+      "contexto_id": "rescate_del_oso_perezoso"
+    },
+    {
+      "id": "P5L15",
+      "numero": 18,
+      "enunciado": "<p>Fíjate en el titular de la noticia y en la manera sencilla como está escrita.</p>[[IMG]]<p>Por su contenido y su lenguaje, ¿a quién va dirigida principalmente?</p>",
+      "opciones": {
+        "A": "A los biólogos que estudian animales silvestres.",
+        "B": "A los lectores en general de la región.",
+        "C": "A las personas que crían animales en sus fincas.",
+        "D": "A quienes se dedican a reparar las redes de energía."
       },
       "clave": "B",
       "competencia": "2",
@@ -206,25 +502,51 @@
       "evidencia": "2.2",
       "dificultad": "ALTA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Reconozco las características de los diversos tipos de texto que leo. » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, organización, etc. » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente.",
-      "que_evalua": "La capacidad para reconocer la estrategia utilizada por el texto, en este caso la infografía, para presentar su contenido.",
-      "justificacion_correcta": "La infografía organiza la información en secciones numeradas: primero define qué es la picadura (1), luego presenta las causas (2), después los síntomas (3) y, finalmente, cómo actuar (4) y cómo prevenir (5). Esa es la estrategia. La respuesta correcta es la B.",
+      "que_evalua": "La capacidad de los estudiantes para identificar la audiencia a la cual se dirige el texto, atendiendo al vocabulario, la profundidad y el medio de publicación.",
+      "justificacion_correcta": "El titular y el relato cuentan lo ocurrido con palabras sencillas, sin términos difíciles, como una noticia que cualquiera puede entender. Por eso va dirigida a los lectores en general de la región. La respuesta correcta es «A los lectores en general de la región».",
       "opciones_incorrectas": {
-        "A": "La infografía no narra una historia; presenta información organizada por secciones.",
-        "C": "No compara la picadura con la de otros insectos.",
-        "D": "No se limita a recomendaciones: define, da causas y síntomas."
+        "A": "No emplea el lenguaje especializado que buscaría un biólogo.",
+        "D": "No entra en detalles técnicos sobre los cables ni sobre el corte de energía.",
+        "C": "No se dirige a quienes crían animales; cuenta un hecho de interés para todos."
       },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja_estructura.png",
-      "contexto_id": "ctx-lectura-2"
+      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil_titular.png",
+      "contexto_id": "rescate_del_oso_perezoso"
     },
     {
-      "id": "P5L07",
-      "numero": 7,
-      "enunciado": "<p>Observa el dibujo del tercer paso de la sección <b>4. ¿Cómo actuar?</b> (la persona que pone un paño sobre la piel).</p>[[IMG]]<p>¿Qué relación tiene ese dibujo con el texto que lo acompaña?</p>",
+      "id": "P5L16",
+      "numero": 19,
+      "enunciado": "<p>En la franja «Así fue el rescate», el segundo paso dice: «…<b>resultó</b> ser un oso perezoso».</p>[[IMG]]<p>¿Qué palabra significa lo mismo que «resultó» en esa frase?</p>",
       "opciones": {
-        "A": "El dibujo explica al tiempo todas las acciones señaladas en la infografía.",
-        "B": "El dibujo ilustra una sola de las acciones señaladas en la infografía.",
-        "C": "El texto contradice lo que se presenta en el dibujo.",
-        "D": "El texto critica la acción que se presenta en el dibujo."
+        "A": "Ocultó.",
+        "B": "Supuso.",
+        "C": "Aparentó.",
+        "D": "Acabó siendo."
+      },
+      "clave": "D",
+      "competencia": "3",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "dificultad": "MEDIA",
+      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
+      "que_evalua": "La capacidad para identificar el sinónimo de una palabra dentro del texto (sinonimia contextual).",
+      "justificacion_correcta": "En la franja, «resultó ser» indica que aquello que parecía un nido de hojas al final terminó confirmándose como un oso perezoso. Por eso el sinónimo en ese contexto es «acabó siendo». La respuesta correcta es «Acabó siendo».",
+      "opciones_incorrectas": {
+        "C": "«Aparentó» habla de una impresión que puede ser falsa, justo lo contrario de lo que ya se confirmó.",
+        "B": "«Supuso» es imaginar algo sin certeza, sentido ajeno a un dato comprobado.",
+        "A": "«Ocultó» es esconder, y en la frase nada se esconde."
+      },
+      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil_hallazgo.png",
+      "contexto_id": "rescate_del_oso_perezoso"
+    },
+    {
+      "id": "P5L01",
+      "numero": 20,
+      "enunciado": "<p>En la parte de arriba, junto al resumen, aparece un círculo con un mapa y el rótulo «Parque de Puerto Naranjo». ¿Qué relación tiene ese círculo con lo que cuenta la noticia?</p>",
+      "opciones": {
+        "A": "Dibuja el camino que siguió el perezoso hasta la reserva.",
+        "B": "Señala el lugar donde ocurrió lo que se cuenta.",
+        "C": "Indica la altura a la que subió el animal por el poste.",
+        "D": "Presenta el sitio del bosque donde vive hoy el perezoso."
       },
       "clave": "B",
       "competencia": "1",
@@ -232,345 +554,14 @@
       "evidencia": "1.1",
       "dificultad": "MEDIA",
       "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Relaciono gráficas con texto escrito, ya sea completándolas o explicándolas. » Entiendo el lenguaje empleado en infografías y otros tipos de textos con imágenes fijas. » Doy cuenta de algunas estrategias empleadas para comunicar a través del lenguaje no verbal.",
-      "que_evalua": "La capacidad para identificar la relación entre una imagen del texto y lo que se dice.",
-      "justificacion_correcta": "Ese dibujo muestra cómo se aplica un paño frío sobre la picadura, que es una sola de las pautas de actuación de la sección (retirar el aguijón, lavar, aplicar el paño, vigilar). Por eso el dibujo ilustra una sola de las acciones señaladas en la infografía. La respuesta correcta es la B.",
+      "que_evalua": "La capacidad para identificar la relación entre una imagen y un texto.",
+      "justificacion_correcta": "La respuesta correcta es la opción «Señala el lugar donde ocurrió lo que se cuenta». El círculo trae un mapa con un punto marcado y el rótulo «Parque de Puerto Naranjo», que es justamente el sitio donde apareció el animal según el primer párrafo de la noticia.",
       "opciones_incorrectas": {
-        "A": "Cada dibujo de la sección ilustra un paso distinto; ese dibujo muestra solo el del paño frío.",
-        "C": "Dibujo y texto coinciden; no se contradicen.",
-        "D": "El texto no critica la acción; la indica como recomendación."
+        "A": "El traslado a la Reserva La Palma se cuenta con palabras, y en ese mapa no hay ningún recorrido dibujado.",
+        "C": "La altura aparece en la ilustración del rescate, con la medida «Casi 8 metros» al lado del poste.",
+        "D": "El sitio donde vive hoy es la Reserva La Palma, que tiene su propio recuadro más abajo."
       },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja_actuar.png",
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P5L08",
-      "numero": 8,
-      "enunciado": "<p>Fíjate en los dos primeros pasos de la sección <b>4. ¿Cómo actuar?</b>.</p>[[IMG]]<p>Según la infografía, ¿qué se debe hacer inmediatamente después de retirar el aguijón?</p>",
-      "opciones": {
-        "A": "Aplicar un paño frío sobre la picadura.",
-        "B": "Lavar la zona con agua y jabón.",
-        "C": "Llamar a urgencias de inmediato.",
-        "D": "No acercarse a las colmenas."
-      },
-      "clave": "B",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
-      "que_evalua": "La capacidad para ubicar información literal en un texto atendiendo a las secuencias lógicas o acciones dentro de un proceso.",
-      "justificacion_correcta": "En la sección «¿Cómo actuar?» el orden es: primero retirar el aguijón, luego lavar la zona con agua y jabón, después aplicar un paño frío y, por último, vigilar a la persona. Justo después de retirar el aguijón viene lavar la zona. La respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "Aplicar el paño frío va después de lavar la zona, no inmediatamente.",
-        "C": "Llamar a urgencias es el último paso y solo si la persona se hincha mucho.",
-        "D": "No acercarse a las colmenas es una pauta de prevención, no de actuación."
-      },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_abeja_pasos.png",
-      "contexto_id": "ctx-lectura-2"
-    },
-    {
-      "id": "P5L09",
-      "numero": 9,
-      "enunciado": "<p>¿Qué se logra en el texto con el uso de las comillas « »?</p>",
-      "opciones": {
-        "A": "Se recogen las reacciones de los niños del barrio.",
-        "B": "Se marcan las opiniones de la directora de la biblioteca.",
-        "C": "Se traen las palabras de alguien que participa en el proyecto.",
-        "D": "Se destacan las propuestas centrales de quien escribe."
-      },
-      "clave": "C",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
-      "que_evalua": "La capacidad del estudiante de identificar la función de un signo de puntuación en un texto.",
-      "justificacion_correcta": "Las comillas encierran lo que dijo Marcos Quiñones, quien repara instrumentos en la casa de la música que se unió con la biblioteca: «La guadua se corta, se seca y se afina…». Así, las comillas sirven para incluir las palabras de alguien involucrado en el proyecto. La respuesta correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "Lo entrecomillado no son reacciones de los niños del barrio.",
-        "B": "Las palabras citadas son de quien repara los instrumentos, no de la directora de la biblioteca.",
-        "D": "No son propuestas del autor, sino las palabras de una persona citada."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P5L10",
-      "numero": 10,
-      "enunciado": "<p>Por el modo en que se expone la información, este texto es</p>",
-      "opciones": {
-        "A": "un artículo de enciclopedia, pues detalla los pasos de un proceso.",
-        "B": "un cuento, pues narra en orden una historia inventada.",
-        "C": "una noticia, pues da cuenta de un hecho reciente.",
-        "D": "una reseña, pues valora las cualidades de un lugar para recomendarlo."
-      },
-      "clave": "C",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Identifico la intención comunicativa de cada uno de los textos leídos.",
-      "que_evalua": "La capacidad para identificar qué tipo de texto ha leído a partir de su forma, estilo y contenido.",
-      "justificacion_correcta": "El texto informa sobre un hecho real y reciente, la biblioteca que enseñará a armar instrumentos de guadua, recoge la voz de quien participa en el proyecto y responde a las preguntas propias de una noticia (qué, quién, cómo, cuándo, dónde). Por eso es una noticia. La respuesta correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "No explica detalladamente los pasos de un proceso como un artículo enciclopédico.",
-        "B": "No es un cuento: se basa en datos y hechos reales, no en una historia inventada.",
-        "D": "No evalúa un lugar para recomendarlo, como haría una reseña."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P5L11",
-      "numero": 11,
-      "enunciado": "<p>En el texto se afirma que los niños del barrio San Isidro</p>",
-      "opciones": {
-        "A": "deben ser aplaudidos por inventar los instrumentos de guadua.",
-        "B": "se unieron con una fábrica de guadua de otro pueblo.",
-        "C": "ya saben todo sobre los ritmos que se tocan en la región.",
-        "D": "podrán armar ellos mismos las flautas y los tambores."
-      },
-      "clave": "D",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
-      "que_evalua": "La capacidad para ubicar información literal en el texto.",
-      "justificacion_correcta": "El texto dice de manera literal que la biblioteca «dará a los niños del barrio la oportunidad de armar ellos mismos las flautas y los tambores». Por eso la respuesta correcta es la D.",
-      "opciones_incorrectas": {
-        "A": "El texto no dice que los niños inventaran los instrumentos de guadua.",
-        "B": "Quien se unió con la casa de la música fue la biblioteca, no una fábrica de guadua de otro pueblo.",
-        "C": "El texto dice que escucharán explicaciones, no que ya lo sepan todo."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P5L12",
-      "numero": 12,
-      "enunciado": "<p>Según el texto, en la Biblioteca de San Isidro decidieron construir instrumentos de guadua debido a que</p>",
-      "opciones": {
-        "A": "se unieron con la casa de la música La Rivera.",
-        "B": "quieren que la música tradicional del río vuelva a sonar en el barrio.",
-        "C": "querían vender instrumentos en el pueblo.",
-        "D": "necesitaban materiales para arreglar la biblioteca."
-      },
-      "clave": "B",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.1",
-      "dificultad": "BAJA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Utilizo estrategias de búsqueda, selección y almacenamiento de información para mis procesos de producción y comprensión textual.",
-      "que_evalua": "La capacidad para ubicar información literal en el texto.",
-      "justificacion_correcta": "El texto afirma: «La Biblioteca Pública de San Isidro quiere que la música tradicional del río vuelva a sonar en el barrio y, por esa razón, abrió un proyecto para construir instrumentos con guadua». Esa es la razón. La respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "Unirse con la casa de la música es una consecuencia de la decisión, no su motivo.",
-        "C": "El texto no menciona la venta de instrumentos como razón.",
-        "D": "El texto no habla de arreglar la biblioteca."
-      },
-      "contexto_id": "ctx-lectura-3"
-    },
-    {
-      "id": "P5L13",
-      "numero": 13,
-      "enunciado": "<p>En la noticia se lee: «los bomberos lo envolvieron en una cobija para <b>resguardarlo</b> del sol».</p>[[IMG]]<p>Tal como aparece ahí, ¿qué palabra equivale a «resguardarlo»?</p>",
-      "opciones": {
-        "A": "Esconderlo.",
-        "B": "Protegerlo.",
-        "C": "Prestarlo.",
-        "D": "Empujarlo."
-      },
-      "clave": "B",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
-      "que_evalua": "La capacidad de los estudiantes para deducir el significado que tienen ciertas expresiones en el contexto del texto.",
-      "justificacion_correcta": "En la frase, la cobija se pone encima para que al animal no le dé el sol, es decir, para cuidarlo. La palabra que conserva ese sentido es «protegerlo». La respuesta correcta es la B.",
-      "opciones_incorrectas": {
-        "A": "«Esconderlo» es quitarlo de la vista, y la cobija no se puso para que nadie lo viera, sino para que no le diera el sol.",
-        "C": "«Prestarlo» es entregarlo por un tiempo a otra persona, sentido que no encaja en la frase.",
-        "D": "«Empujarlo» es moverlo con fuerza, y el texto aclara que nadie lo jaló ni lo empujó."
-      },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil.png",
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P5L14",
-      "numero": 14,
-      "enunciado": "<p>Mira la fotografía del rescate en el parque, con la medida «Casi 8 metros» al lado del poste.</p>[[IMG]]<p>Con esa imagen y con lo que cuenta la noticia, ¿qué se puede concluir?</p>",
-      "opciones": {
-        "A": "Que los bomberos del pueblo se dedican a criar animales silvestres.",
-        "B": "Que ese perezoso es el animal más grande que ha llegado al parque.",
-        "C": "Que el perezoso quedó muy alto y hoy vive libre en la reserva.",
-        "D": "Que la fotografía la tomó un vecino del parque."
-      },
-      "clave": "C",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.1",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Elaboro hipótesis acerca del sentido global de los textos, antes y durante el proceso de lectura; para el efecto, me apoyo en mis conocimientos previos, las imágenes y los títulos.",
-      "que_evalua": "La capacidad de los estudiantes para inferir y hacer conclusiones de la información general del texto o de una de sus partes.",
-      "justificacion_correcta": "En la fotografía, el perezoso está en lo alto del poste, casi a la altura que marca la medida «Casi 8 metros», y la noticia añade que esa misma tarde lo soltaron en la Reserva La Palma. De ahí se concluye que quedó muy alto y que hoy vive libre allí. La respuesta correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "Ni la fotografía ni la noticia dicen que los bomberos críen animales; ese día solo bajaron al perezoso del poste.",
-        "B": "El texto no compara el tamaño de los animales que han llegado al parque, solo cuenta cuánto subió este.",
-        "D": "La noticia nunca dice quién tomó la fotografía."
-      },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil_foto.png",
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P5L15",
-      "numero": 15,
-      "enunciado": "<p>Fíjate en el titular de la noticia y en la manera sencilla como está escrita.</p>[[IMG]]<p>Por su contenido y su lenguaje, ¿a quién va dirigida principalmente?</p>",
-      "opciones": {
-        "A": "A los biólogos que estudian animales silvestres.",
-        "B": "A quienes se dedican a reparar las redes de energía.",
-        "C": "A las personas que crían animales en sus fincas.",
-        "D": "A los lectores en general de la región."
-      },
-      "clave": "D",
-      "competencia": "2",
-      "afirmacion": 2,
-      "evidencia": "2.2",
-      "dificultad": "ALTA",
-      "estandar": "Este ítem se relaciona con los siguientes subprocesos de los estándares: » Reconozco las características de los diversos tipos de texto que leo. » Identifico las principales características formales del texto: formato de presentación, títulos, graficación, organización, etc. » Relaciono la forma y el contenido de los textos que leo y muestro cómo se influyen mutuamente.",
-      "que_evalua": "La capacidad de los estudiantes para identificar la audiencia a la cual se dirige el texto, atendiendo al vocabulario, la profundidad y el medio de publicación.",
-      "justificacion_correcta": "El titular y el relato cuentan lo ocurrido con palabras sencillas, sin términos difíciles, como una noticia que cualquiera puede entender. Por eso va dirigida a los lectores en general de la región. La respuesta correcta es la D.",
-      "opciones_incorrectas": {
-        "A": "No emplea el lenguaje especializado que buscaría un biólogo.",
-        "B": "No entra en detalles técnicos sobre los cables ni sobre el corte de energía.",
-        "C": "No se dirige a quienes crían animales; cuenta un hecho de interés para todos."
-      },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil_titular.png",
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P5L16",
-      "numero": 16,
-      "enunciado": "<p>En la franja «Así fue el rescate», el segundo paso dice: «…<b>resultó</b> ser un oso perezoso».</p>[[IMG]]<p>¿Qué palabra significa lo mismo que «resultó» en esa frase?</p>",
-      "opciones": {
-        "A": "Acabó siendo.",
-        "B": "Aparentó.",
-        "C": "Supuso.",
-        "D": "Ocultó."
-      },
-      "clave": "A",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
-      "que_evalua": "La capacidad para identificar el sinónimo de una palabra dentro del texto (sinonimia contextual).",
-      "justificacion_correcta": "En la franja, «resultó ser» indica que aquello que parecía un nido de hojas al final terminó confirmándose como un oso perezoso. Por eso el sinónimo en ese contexto es «acabó siendo». La respuesta correcta es la A.",
-      "opciones_incorrectas": {
-        "B": "«Aparentó» habla de una impresión que puede ser falsa, justo lo contrario de lo que ya se confirmó.",
-        "C": "«Supuso» es imaginar algo sin certeza, sentido ajeno a un dato comprobado.",
-        "D": "«Ocultó» es esconder, y en la frase nada se esconde."
-      },
-      "imagen_figura": "assets/banco-lc-5-p1/ia_fosil_hallazgo.png",
-      "contexto_id": "ctx-lectura-4"
-    },
-    {
-      "id": "P5L17",
-      "numero": 17,
-      "enunciado": "<p>Lee el siguiente enunciado del texto: «Estas se clasifican según su uso en comestibles, peligrosas <b>y</b> medicinales».  En «Estas se clasifican según su uso en comestibles, peligrosas y medicinales», ¿con qué fin aparece la palabra «y»?</p>",
-      "opciones": {
-        "A": "Con el fin de sumar el último elemento de una enumeración.",
-        "B": "Con el fin de marcar por qué ocurre una acción.",
-        "C": "Con el fin de enfrentar dos maneras de ver algo.",
-        "D": "Con el fin de dar paso a un ejemplo."
-      },
-      "clave": "A",
-      "competencia": "3",
-      "afirmacion": 3,
-      "evidencia": "3.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
-      "que_evalua": "La capacidad para identificar la función de un conector en un enunciado de un texto.",
-      "justificacion_correcta": "En el enunciado se enumeran tres clases de algas y la palabra «y» une el último elemento de esa lista («medicinales») con los anteriores. Cumple, entonces, la función de agregar el último elemento de una enumeración. La respuesta correcta es la A.",
-      "opciones_incorrectas": {
-        "B": "El conector «y» no señala causas en esta frase.",
-        "C": "No opone dos puntos de vista; suma elementos de una lista.",
-        "D": "No introduce un ejemplo, sino el cierre de la enumeración."
-      },
-      "contexto_id": "ctx-lectura-5"
-    },
-    {
-      "id": "P5L18",
-      "numero": 18,
-      "enunciado": "<p>Tomado en conjunto, ¿qué sostiene el texto anterior?</p>",
-      "opciones": {
-        "A": "Que mucha gente rechaza las algas porque ignora para qué sirven.",
-        "B": "Que con cualquier alga se pueden preparar remedios contra males graves.",
-        "C": "Que, por sus características, hay algas peligrosas y algas provechosas para el ser humano.",
-        "D": "Que no hay forma de distinguir las clases de algas, porque todas se ven igual."
-      },
-      "clave": "C",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.3",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
-      "que_evalua": "La capacidad para identificar el tema del que trata un texto.",
-      "justificacion_correcta": "El texto explica que las algas se clasifican en comestibles, peligrosas y medicinales, según su uso. La idea general es que, de acuerdo con sus características, unas algas son peligrosas y otras útiles para el ser humano. La respuesta correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "Es solo una idea inicial que el texto corrige, no la idea general.",
-        "B": "El texto aclara que solo ciertas algas (las medicinales) sirven para remedios, no cualquiera.",
-        "D": "El texto dice lo contrario: por sus características se pueden distinguir las clases de algas."
-      },
-      "contexto_id": "ctx-lectura-5"
-    },
-    {
-      "id": "P5L19",
-      "numero": 19,
-      "enunciado": "<p>En el texto se lee: «Por esta razón hay que evitar su uso». Al escribir esa frase, el autor busca</p>",
-      "opciones": {
-        "A": "animar a los lectores a probar cualquier alga que vean en la playa.",
-        "B": "poner en duda que algunas algas causen malestares.",
-        "C": "prevenir al lector sobre el daño que producen ciertas algas.",
-        "D": "discutir la opinión de quienes preparan remedios con algas."
-      },
-      "clave": "C",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.4",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Identifico la intención comunicativa de cada uno de los textos leídos.",
-      "que_evalua": "La capacidad para deducir la intención expresada en una parte o fragmento del texto.",
-      "justificacion_correcta": "La frase aparece justo después de explicar que las algas peligrosas contienen sustancias que dañan a quien las consume. Al pedir que se evite su uso, el autor previene al lector sobre ese daño. La respuesta correcta es la C.",
-      "opciones_incorrectas": {
-        "A": "La frase pide evitar esas algas, no invita a probarlas.",
-        "B": "El texto afirma que esas algas causan malestares; la frase no lo pone en duda.",
-        "D": "La frase habla de las algas peligrosas, no de las medicinales ni de quienes las usan."
-      },
-      "contexto_id": "ctx-lectura-5"
-    },
-    {
-      "id": "P5L20",
-      "numero": 20,
-      "enunciado": "<p>Tal como aparece en el segundo párrafo, ¿qué palabra equivale a «perjudican»?</p>",
-      "opciones": {
-        "A": "Dañan.",
-        "B": "Ayudan.",
-        "C": "Asustan.",
-        "D": "Pierden."
-      },
-      "clave": "A",
-      "competencia": "1",
-      "afirmacion": 1,
-      "evidencia": "1.2",
-      "dificultad": "MEDIA",
-      "estandar": "Este ítem se relaciona con el siguiente subproceso de los estándares: » Comprendo los aspectos formales y conceptuales (en especial: características de las oraciones y formas de relación entre ellas), al interior de cada texto leído.",
-      "que_evalua": "La capacidad para deducir el significado de una expresión en un texto.",
-      "justificacion_correcta": "El texto dice que «las algas comestibles… no perjudican al cuerpo» y que «aportan vitaminas». Por oposición, perjudicar es lo contrario de aportar bien: es dañar. El sinónimo es «dañan». La respuesta correcta es la A.",
-      "opciones_incorrectas": {
-        "B": "«Ayudan» es lo contrario de «perjudican».",
-        "C": "«Asustan» se refiere al miedo, no a hacer daño al cuerpo.",
-        "D": "«Pierden» no tiene relación con el sentido de «perjudican» en el texto."
-      },
-      "contexto_id": "ctx-lectura-5"
+      "contexto_id": "rescate_del_oso_perezoso"
     }
   ],
   "preservar_orden_preguntas": true

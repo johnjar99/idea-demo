@@ -334,7 +334,10 @@
       [/ciencias naturales|natural|ambiental/, 'ciencias naturales'],
       [/ingl|english/, 'inglés']
     ];
-    const _areaTxt = (cuadernillo.area || '').toLowerCase();
+    // Sin quitar los acentos, /matemat/ no casa con "matematicas" (lleva tilde) y el area se
+    // quedaba sin identificar. Mismo fallo que escondia Matematicas en el panel del docente.
+    const _areaTxt = (cuadernillo.area || '').toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '');
     const areaSlug = (CLAVE_RECURSOS.find(([re]) => re.test(_areaTxt)) || [null, _areaTxt])[1];
     const recursosPorArea = {
       'matemáticas': {
