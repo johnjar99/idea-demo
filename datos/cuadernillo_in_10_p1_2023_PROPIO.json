@@ -38,7 +38,7 @@
   "contextos": {
     "ctx-parte1": {
       "titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones, así que sobran dos; cada palabra se usa una sola vez.",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones: una palabra ya quedó usada en el ejemplo (0) y otra sobra. Cada palabra se usa una sola vez.",
       "rango_preguntas": "1 a 5",
       "imagen": "assets/banco-in-10-p1/ejemplo_parte1.png"
     },
@@ -55,9 +55,9 @@
       "rango_preguntas": "11 a 16"
     },
     "ctx-parte4": {
-      "titulo": "A day in Sofía's kitchen",
+      "titulo": "What Sofía eats on a training day",
       "imagen": "",
-      "texto": "Read the text and answer the questions that follow.\n\nTwo years ago, Sofía decided to cook all her meals at home, and she never buys fast food now, either. When she was a child, she ate a lot of fried snacks and candy. When she first changed her diet, she felt very tired. A nurse told her to eat beans and oranges to get more energy. Yesterday, she woke up early and had eggs and bread for breakfast at home before going to the market. She usually eats a big breakfast because she does not stop to eat again until the evening. In the afternoon she only drank a glass of juice while she worked. For dinner she cooked fish with rice and a few vegetables; she tasted a small piece while it was cooking and then ate the rest at the table, and she drank water with it. It is important to plan your meals.",
+      "texto": "Read the text and answer the questions that follow.\n\nSofía is sixteen and she swims with her school team. In primary school she ate candy and potato chips almost daily, and she felt weak in the pool. Last year she gave up fried food. Her coach told her to eat lentils and oats so she could train harder. On Saturday, Sofía got up at five and had arepas with egg at home. Then she took the bus to the sports centre. She has a big breakfast on Saturday because her practice is very long and she cannot go out to eat. At midday she was in a hurry, so she only had a bowl of soup at the sports centre, with a lemonade. At night, her aunt made soup again, and Sofía had it with a cup of hot cocoa. Now she is faster in the pool and feels strong.",
       "rango_preguntas": "17 a 22"
     }
   },
@@ -88,9 +88,12 @@
       "que_evalua": "Reconocer vocabulario básico de pasatiempos a partir de una descripción de la actividad, sin apoyo de imagen.",
       "justificacion_correcta": "Opción F, dado que «reading» (leer) es la actividad que se hace en silencio con un libro en las manos.",
       "opciones_incorrectas": {
+        "A": "«camping» (acampar) es dormir en una tienda al aire libre, no algo que se haga con un libro en las manos.",
         "B": "«cooking» (cocinar) se hace con comida en la cocina, no con un libro.",
+        "C": "«fishing» (pescar) se hace esperando junto al agua, no con un libro.",
         "D": "«gardening» (jardinería) se hace con plantas, no con un libro.",
-        "E": "«painting» (pintar) se hace con pinceles y colores, no con un libro."
+        "E": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con pinceles y colores, no con un libro.",
+        "G": "«running» (correr) es moverse rápido, no una actividad silenciosa con un libro."
       }
     },
     {
@@ -181,9 +184,12 @@
       "que_evalua": "Reconocer vocabulario básico de pasatiempos a partir de una descripción de la actividad.",
       "justificacion_correcta": "Opción B, dado que «cooking» (cocinar) es la actividad que se hace en la cocina para preparar comida.",
       "opciones_incorrectas": {
+        "A": "«camping» (acampar) ocurre al aire libre, no en la cocina.",
+        "C": "«fishing» (pescar) se hace junto al agua para atrapar peces, no en la cocina.",
         "D": "«gardening» (jardinería) se hace fuera, con plantas, no en la cocina.",
-        "E": "«painting» (pintar) se hace con colores, no para preparar comida.",
-        "F": "«reading» (leer) se hace con un libro, no para preparar comida."
+        "E": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con colores, no para preparar comida.",
+        "F": "«reading» (leer) se hace con un libro, no para preparar comida.",
+        "G": "«running» (correr) es un ejercicio, no una forma de preparar comida."
       }
     },
     {
@@ -507,12 +513,12 @@
       "id": "P10I17",
       "numero": 17,
       "contexto_id": "ctx-parte4",
-      "contexto_titulo": "A day in Sofía's kitchen",
-      "enunciado": "<p class=\"en-stem\">Yesterday, Sofía ate breakfast</p>",
+      "contexto_titulo": "What Sofía eats on a training day",
+      "enunciado": "<p class=\"en-stem\">On Saturday, Sofía ate breakfast</p>",
       "opciones": {
         "A": "at home.",
-        "B": "at the market.",
-        "C": "at a restaurant."
+        "B": "at the sports centre.",
+        "C": "at school."
       },
       "clave": "A",
       "competencia": "d",
@@ -523,10 +529,10 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Localizar en el texto el lugar donde ocurre una acción cotidiana (el desayuno).",
-      "justificacion_correcta": "Opción A, dado que el texto dice que ayer Sofía desayunó huevos y pan en casa antes de salir al mercado.",
+      "justificacion_correcta": "Opción A, dado que el texto dice que el sábado Sofía se levantó a las cinco y comió arepas con huevo en casa.",
       "opciones_incorrectas": {
-        "B": "el mercado es el lugar al que fue después de desayunar, no donde desayunó.",
-        "C": "el texto no menciona ningún restaurante; además, ella nunca compra comida rápida."
+        "B": "el centro deportivo es el lugar al que fue después de desayunar, no donde desayunó.",
+        "C": "el texto menciona el equipo del colegio, pero no dice que ella desayune allí."
       },
       "imagen_figura": ""
     },
@@ -534,12 +540,12 @@
       "id": "P10I18",
       "numero": 18,
       "contexto_id": "ctx-parte4",
-      "contexto_titulo": "A day in Sofía's kitchen",
+      "contexto_titulo": "What Sofía eats on a training day",
       "enunciado": "<p class=\"en-stem\">For breakfast, she had</p>",
       "opciones": {
         "A": "candy.",
-        "B": "eggs and bread.",
-        "C": "rice and fish."
+        "B": "arepas with egg.",
+        "C": "soup."
       },
       "clave": "B",
       "competencia": "d",
@@ -550,22 +556,22 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Localizar en el texto qué alimentos consumió la persona en una comida.",
-      "justificacion_correcta": "Opción B, dado que el texto indica que Sofía desayunó huevos y pan.",
+      "justificacion_correcta": "Opción B, dado que el texto indica que Sofía desayunó arepas con huevo.",
       "opciones_incorrectas": {
-        "A": "los dulces son lo que ella comía de niña, no lo que desayunó ayer.",
-        "C": "el arroz con pescado fue su cena, no su desayuno."
+        "A": "los dulces son lo que ella comía en la primaria, no lo que desayunó el sábado.",
+        "C": "la sopa fue lo que comió al mediodía y en la noche, no en el desayuno."
       }
     },
     {
       "id": "P10I19",
       "numero": 19,
       "contexto_id": "ctx-parte4",
-      "contexto_titulo": "A day in Sofía's kitchen",
+      "contexto_titulo": "What Sofía eats on a training day",
       "enunciado": "<p class=\"en-stem\">Sofía needs a big breakfast because</p>",
       "opciones": {
-        "A": "she never eats vegetables.",
-        "B": "she works at the market.",
-        "C": "she does not eat again until the evening."
+        "A": "she does not like soup.",
+        "B": "she works at the sports centre.",
+        "C": "her practice is very long."
       },
       "clave": "C",
       "competencia": "d",
@@ -576,22 +582,22 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Localizar en el texto la razón explícita por la que Sofía desayuna mucho.",
-      "justificacion_correcta": "Opción C, dado que el texto explica que ella desayuna mucho porque no vuelve a comer hasta la noche, así que necesita energía para todo el día.",
+      "justificacion_correcta": "Opción C, dado que el texto explica que ella desayuna mucho porque su entrenamiento es muy largo y no puede salir a comer.",
       "opciones_incorrectas": {
-        "A": "el texto dice que ella sí come verduras en la cena, no que nunca las coma.",
-        "B": "el texto no afirma que ella trabaje en el mercado; solo que fue allí tras desayunar."
+        "A": "el texto muestra que ella sí come sopa, dos veces el mismo día, así que no es cierto que no le guste.",
+        "B": "el texto no afirma que ella trabaje en el centro deportivo; solo que entrena allí."
       }
     },
     {
       "id": "P10I20",
       "numero": 20,
       "contexto_id": "ctx-parte4",
-      "contexto_titulo": "A day in Sofía's kitchen",
-      "enunciado": "<p class=\"en-stem\">The nurse told her to eat</p>",
+      "contexto_titulo": "What Sofía eats on a training day",
+      "enunciado": "<p class=\"en-stem\">The coach told her to eat</p>",
       "opciones": {
-        "A": "beans.",
+        "A": "lentils.",
         "B": "candy.",
-        "C": "fried snacks."
+        "C": "fried food."
       },
       "clave": "A",
       "competencia": "d",
@@ -602,18 +608,18 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Localizar una recomendación dada por un tercero dentro del texto.",
-      "justificacion_correcta": "Opción A, dado que el texto dice que la enfermera le recomendó comer frijoles y naranjas para tener más energía.",
+      "justificacion_correcta": "Opción A, dado que el texto dice que quien la entrena le recomendó comer lentejas y avena para poder entrenar más fuerte.",
       "opciones_incorrectas": {
-        "B": "los dulces son lo que ella comía de niña, no una recomendación de la enfermera.",
-        "C": "los pasabocas fritos son parte de lo que ella dejó de comer, no una recomendación."
+        "B": "los dulces son lo que ella comía en la primaria, no una recomendación de quien la entrena.",
+        "C": "la comida frita es lo que ella dejó de comer el año pasado, no una recomendación."
       }
     },
     {
       "id": "P10I21",
       "numero": 21,
       "contexto_id": "ctx-parte4",
-      "contexto_titulo": "A day in Sofía's kitchen",
-      "enunciado": "<p class=\"en-stem\">Yesterday, Sofía ate fish</p>",
+      "contexto_titulo": "What Sofía eats on a training day",
+      "enunciado": "<p class=\"en-stem\">On Saturday, Sofía ate soup</p>",
       "opciones": {
         "A": "once.",
         "B": "twice.",
@@ -628,22 +634,22 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Contar cuántas veces ocurre un hecho conectando dos menciones separadas del texto.",
-      "justificacion_correcta": "Opción B, dado que el texto dice que en la cena Sofía probó un pequeño trozo del pescado mientras se cocinaba y luego comió el resto en la mesa, es decir, lo comió dos veces.",
+      "justificacion_correcta": "Opción B, dado que el texto menciona la sopa en dos momentos distintos del sábado: un plato al mediodía en el centro deportivo y otro en la noche, preparado por su tía.",
       "opciones_incorrectas": {
-        "A": "«once» (una vez) ignora que primero probó un trozo mientras cocinaba y luego comió el resto en la cena.",
-        "C": "«three times» (tres veces) cuenta más comidas con pescado de las que menciona el texto."
+        "A": "«once» (una vez) toma en cuenta solo una de las dos menciones de la sopa en el texto.",
+        "C": "«three times» (tres veces) cuenta más comidas con sopa de las que menciona el texto."
       }
     },
     {
       "id": "P10I22",
       "numero": 22,
       "contexto_id": "ctx-parte4",
-      "contexto_titulo": "A day in Sofía's kitchen",
-      "enunciado": "<p class=\"en-stem\">What did she drink with the last meal she had?</p>",
+      "contexto_titulo": "What Sofía eats on a training day",
+      "enunciado": "<p class=\"en-stem\">What did she have to drink with the last meal of the day?</p>",
       "opciones": {
-        "A": "juice",
-        "B": "milk",
-        "C": "water"
+        "A": "lemonade",
+        "B": "orange juice",
+        "C": "hot cocoa"
       },
       "clave": "C",
       "competencia": "d",
@@ -654,10 +660,10 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Localizar la bebida que acompañó la última comida del día.",
-      "justificacion_correcta": "Opción C, dado que el texto dice que Sofía tomó agua con la cena, que fue su última comida del día.",
+      "justificacion_correcta": "Opción C, dado que el texto dice que en la noche, con la sopa que fue su última comida, Sofía tomó una taza de chocolate caliente.",
       "opciones_incorrectas": {
-        "A": "el jugo fue lo que tomó en la tarde, no en la cena.",
-        "B": "el texto no menciona que ella bebiera leche."
+        "A": "la limonada fue lo que tomó al mediodía, no en la noche.",
+        "B": "el texto no menciona que ella bebiera jugo de naranja."
       }
     }
   ],

@@ -56,12 +56,12 @@
     {
       "id": "P-math-9-p1-01",
       "numero": 1,
-      "enunciado": "<p>La gráfica registra la rapidez de un dron, en metros por segundo, durante los primeros \\(120\\) segundos de vuelo.</p>[[IMG]]<p>¿Cuál fue el valor más alto de rapidez que marcó el dron?</p>",
+      "enunciado": "<p>El tablero de una bomba de riego registró el caudal de agua, en litros por minuto, a lo largo de los \\(90\\) minutos que estuvo encendida.</p>[[IMG]]<p>¿Cuál fue el caudal más alto que alcanzó la bomba?</p>",
       "opciones": {
-        "A": "\\(60\\ \\dfrac{\\text{m}}{\\text{s}}\\)",
-        "B": "\\(50\\ \\dfrac{\\text{m}}{\\text{s}}\\)",
-        "C": "\\(40\\ \\dfrac{\\text{m}}{\\text{s}}\\)",
-        "D": "\\(30\\ \\dfrac{\\text{m}}{\\text{s}}\\)"
+        "A": "\\(60\\ \\dfrac{\\text{L}}{\\text{min}}\\)",
+        "B": "\\(50\\ \\dfrac{\\text{L}}{\\text{min}}\\)",
+        "C": "\\(40\\ \\dfrac{\\text{L}}{\\text{min}}\\)",
+        "D": "\\(30\\ \\dfrac{\\text{L}}{\\text{min}}\\)"
       },
       "clave": "A",
       "competencia": "a",
@@ -71,11 +71,11 @@
       "dificultad": "BAJA",
       "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
       "que_evalua": "La capacidad para identificar un valor representativo a partir de una gráfica que modela el comportamiento de una variable.",
-      "justificacion_correcta": "Se busca el punto más alto de la curva y se lee su valor en el eje vertical: son \\(60\\) metros por segundo.",
+      "justificacion_correcta": "Se busca el punto más alto de la curva y se lee su valor en el eje vertical: son \\(60\\) litros por minuto, entre los \\(40\\) y los \\(50\\) minutos.",
       "opciones_incorrectas": {
-        "B": "Toma el segundo pico de la curva \\(\\left(50\\ \\tfrac{\\text{m}}{\\text{s}}\\text{ hacia el final}\\right)\\) en lugar del valor más alto.",
-        "C": "Lee el valor donde la curva cambia de pendiente por primera vez \\(\\left(40\\ \\tfrac{\\text{m}}{\\text{s}}\\right)\\), no el máximo.",
-        "D": "Toma el valor del último instante registrado \\(\\left(30\\ \\tfrac{\\text{m}}{\\text{s}}\\text{ a los }120\\text{ s}\\right)\\), confundiendo el final con el máximo."
+        "B": "Toma el segundo pico de la curva \\(\\left(50\\ \\tfrac{\\text{L}}{\\text{min}}\\text{ hacia el final}\\right)\\) en lugar del valor más alto.",
+        "C": "Lee el valor donde la curva cambia de pendiente por primera vez \\(\\left(40\\ \\tfrac{\\text{L}}{\\text{min}}\\right)\\), no el máximo.",
+        "D": "Toma el valor del último instante registrado \\(\\left(30\\ \\tfrac{\\text{L}}{\\text{min}}\\text{ a los }90\\text{ min}\\right)\\), confundiendo el final con el máximo."
       },
       "imagen_figura": "assets/banco-mat-9-p1/q01.png"
     },
@@ -133,11 +133,11 @@
     {
       "id": "P-math-9-p1-04",
       "numero": 4,
-      "enunciado": "<p>Una empresa quiere saber cuánta baldosa necesita para cubrir el piso de una bodega, cuyo plano (dividido en zonas) se muestra en la figura.</p>[[IMG]]<p>¿Cuál procedimiento permite hallar el área de toda la bodega?</p>",
+      "enunciado": "<p>En el salón comunal del barrio van a instalar tapete nuevo y necesitan calcular cuánto material comprar. El croquis del salón, repartido en zonas numeradas, aparece en la imagen.</p>[[IMG]]<p>¿Cuál procedimiento permite hallar el área de todo el salón?</p>",
       "opciones": {
         "A": "Multiplicar por tres el área de la zona 3.",
         "B": "Sumar las áreas de las zonas 4, 5 y 6 y multiplicar el resultado por dos.",
-        "C": "Hallar el área de una de las celdas iguales en que está dividido el plano y multiplicarla por el número total de celdas que caben en la bodega.",
+        "C": "Hallar el área de una de las celdas iguales en que está repartido el croquis y multiplicarla por el número total de celdas que caben en el salón.",
         "D": "Determinar el área de la zona 2 y multiplicarla por seis, que es el total de zonas."
       },
       "clave": "C",
@@ -148,10 +148,10 @@
       "dificultad": "MEDIA",
       "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
       "que_evalua": "La capacidad para encontrar el procedimiento que permite calcular correctamente el área de una figura bidimensional compuesta.",
-      "justificacion_correcta": "El plano está dividido en celdas congruentes (todas del mismo tamaño). El área total se obtiene calculando el área de una sola celda y multiplicándola por la cantidad de celdas iguales que caben en toda la bodega.",
+      "justificacion_correcta": "El croquis está repartido en celdas congruentes, todas del mismo tamaño. El área total se obtiene calculando el área de una sola celda y multiplicándola por la cantidad de celdas iguales que caben en todo el salón.",
       "opciones_incorrectas": {
-        "A": "Las zonas no son todas iguales a la zona 3, así que multiplicarla por tres no cubre la bodega completa.",
-        "B": "Las zonas 4, 5 y 6 no forman la mitad exacta de la bodega; su doble no da el área total.",
+        "A": "Las zonas no son todas iguales a la zona 3, así que multiplicarla por tres no da el salón completo.",
+        "B": "Las zonas 4, 5 y 6 no forman la mitad exacta del salón; su doble no da el área total.",
         "D": "Las zonas no son congruentes con la zona 2, por lo que multiplicarla por seis no corresponde al área real."
       },
       "imagen_figura": "assets/banco-mat-9-p1/q04.png"
@@ -159,12 +159,12 @@
     {
       "id": "P-math-9-p1-05",
       "numero": 5,
-      "enunciado": "<p>La vitrina de una zapatería muestra los \\(12\\) modelos que quedan en bodega: cada modelo junta una de las \\(4\\) telas del catálogo con uno de los \\(3\\) grosores de suela, delgada, mediana o gruesa, tal como aparece en la imagen.</p>[[IMG]]<p>Entre los clientes del sábado se rifa uno de esos \\(12\\) modelos, escogido al azar. ¿Cuál de los siguientes resultados tiene una probabilidad de \\(\\dfrac{1}{3}\\)?</p>",
+      "enunciado": "<p>Una zapatería exhibe en su vitrina los \\(12\\) modelos que le quedan en bodega: cada modelo combina uno de los cuatro colores de cuero disponibles con una de las tres alturas de plataforma, baja, media o alta, tal como aparece en la imagen.</p>[[IMG]]<p>Entre los clientes del sábado se rifa uno de esos \\(12\\) modelos, tomado al azar. ¿Cuál de los siguientes resultados tiene una probabilidad de \\(\\dfrac{1}{3}\\)?</p>",
       "opciones": {
-        "A": "Que el modelo rifado sea de tela 3 con suela gruesa.",
-        "B": "Que el modelo rifado lleve suela delgada o suela gruesa.",
-        "C": "Que el modelo rifado lleve suela mediana.",
-        "D": "Que el modelo rifado sea de tela 2 o de tela 4."
+        "A": "Que el modelo rifado sea del color 3 con plataforma alta.",
+        "B": "Que el modelo rifado lleve plataforma baja o plataforma alta.",
+        "C": "Que el modelo rifado lleve plataforma media.",
+        "D": "Que el modelo rifado sea del color 2 o del color 4."
       },
       "clave": "C",
       "competencia": "a",
@@ -174,11 +174,11 @@
       "dificultad": "ALTA",
       "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
       "que_evalua": "La capacidad para calcular una probabilidad a partir del número de casos favorables y de casos totales.",
-      "justificacion_correcta": "Los \\(12\\) modelos tienen la misma posibilidad de salir. Con suela mediana hay \\(4\\) modelos, uno por cada tela, así que la probabilidad es \\(\\dfrac{4}{12} = \\dfrac{1}{3}\\).",
+      "justificacion_correcta": "Los \\(12\\) modelos tienen la misma posibilidad de salir. Con plataforma media hay \\(4\\) modelos, uno por cada color, así que la probabilidad es \\(\\dfrac{4}{12} = \\dfrac{1}{3}\\).",
       "opciones_incorrectas": {
         "A": "Es un solo modelo entre los \\(12\\): la probabilidad sería \\(\\dfrac{1}{12}\\) y no \\(\\dfrac{1}{3}\\).",
-        "B": "Suela delgada o gruesa reúne \\(8\\) modelos: \\(\\dfrac{8}{12} = \\dfrac{2}{3}\\).",
-        "D": "Las telas 2 y 4 aparecen con los \\(3\\) grosores cada una, o sea \\(6\\) modelos: \\(\\dfrac{6}{12} = \\dfrac{1}{2}\\)."
+        "B": "Plataforma baja o alta reúne \\(8\\) modelos: \\(\\dfrac{8}{12} = \\dfrac{2}{3}\\).",
+        "D": "Los colores 2 y 4 aparecen con las \\(3\\) alturas cada uno, o sea \\(6\\) modelos: \\(\\dfrac{6}{12} = \\dfrac{1}{2}\\)."
       },
       "imagen_figura": "assets/banco-mat-9-p1/q05.png"
     },
@@ -287,7 +287,7 @@
     {
       "id": "P-math-9-p1-10",
       "numero": 10,
-      "enunciado": "<p>Seis estudiantes se postulan para representar al curso: Ana, Beto, Carla, Diana, Esteban y Felipe. El docente escribe los seis nombres en papeles iguales y saca uno al azar.</p><p>¿Qué probabilidad tiene Diana de resultar elegida?</p>",
+      "enunciado": "<p>El club de ajedrez del colegio tiene seis integrantes: Ana, Beto, Carla, Diana, Esteban y Felipe. Para escoger quién viajará al torneo intercolegiado, el entrenador guarda en una bolsa seis balotas idénticas, una por cada integrante, y saca una sin mirar.</p><p>¿Qué probabilidad tiene Diana de resultar elegida?</p>",
       "opciones": {
         "A": "\\(\\dfrac{1}{2}\\)",
         "B": "\\(\\dfrac{1}{4}\\)",
@@ -302,22 +302,22 @@
       "dificultad": "BAJA",
       "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
       "que_evalua": "La capacidad para calcular una probabilidad a partir de la cantidad de casos favorables y casos totales.",
-      "justificacion_correcta": "Hay un papel favorable, el de Diana, entre seis papeles igualmente posibles: la probabilidad es \\(\\dfrac{1}{6}\\).",
+      "justificacion_correcta": "Hay una sola balota favorable, la de Diana, entre seis balotas igualmente posibles: la probabilidad es \\(\\dfrac{1}{6}\\).",
       "opciones_incorrectas": {
-        "A": "Correspondería a dos candidatos, no a seis.",
-        "B": "Correspondería a cuatro candidatos.",
-        "C": "Deja por fuera a uno de los seis postulados."
+        "A": "Correspondería a un sorteo entre dos integrantes, no entre seis.",
+        "B": "Correspondería a un sorteo entre cuatro integrantes.",
+        "C": "Deja por fuera a uno de los seis integrantes del club."
       }
     },
     {
       "id": "P-math-9-p1-11",
       "numero": 11,
-      "enunciado": "<p>Una carpintería vende cajas organizadoras con la forma y las medidas de la imagen: la <b>cara frontal</b> mide \\(12\\ \\text{cm}\\) de ancho por \\(5\\ \\text{cm}\\) de alto y la <b>cara lateral</b> tiene \\(8\\ \\text{cm}\\) de fondo. A cada caja le pegan una ficha con cuatro de sus atributos, pero en la última tanda la impresora dejó en blanco cómo se llaman dos de ellos.</p>[[IMG]]<p>Si \\(12\\times 8 = 96\\), \\(12\\times 5 = 60\\), \\(12\\times 8\\times 5 = 480\\) y \\(2\\times(12+8) = 40\\), ¿cuál de las siguientes fichas nombra <b>correctamente</b> los cuatro atributos?</p>",
+      "enunciado": "<p>Una carpintería vende cajas organizadoras con la forma y las dimensiones de la imagen: \\(12\\ \\text{cm}\\) de ancho, \\(8\\ \\text{cm}\\) de fondo y \\(5\\ \\text{cm}\\) de alto. A cada caja le pegan una ficha con cuatro de sus atributos, pero en la última tanda la impresora dejó en blanco cómo se llaman dos de ellos.</p>[[IMG]]<p>Si \\(12\\times 8 = 96\\), \\(12\\times 5 = 60\\), \\(12\\times 8\\times 5 = 480\\) y \\(2\\times(12+8) = 40\\), ¿cuál de las siguientes fichas nombra <b>correctamente</b> los cuatro atributos?</p>",
       "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área total de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Volumen de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peso de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Precio de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área frontal</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peso de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>"
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la cara de adelante</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área total de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la cara de adelante</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Volumen de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peso de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la cara de adelante</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Perímetro de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atributo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">96 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Precio de la caja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">480 cm³</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Área de la cara de adelante</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">60 cm²</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Peso de la base</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40 cm</td></tr></table>"
       },
       "clave": "B",
       "competencia": "c",
@@ -338,12 +338,12 @@
     {
       "id": "P-math-9-p1-12",
       "numero": 12,
-      "enunciado": "<p>En una obra, la cantidad de baldosas que se necesita para cubrir un metro de sendero es igual a \\(100\\) dividido entre el ancho de la baldosa, donde ese ancho se expresa en centímetros.</p><p>Si el ancho de la baldosa es \\(a\\), ¿cuál expresión permite saber cuántas baldosas se necesitan para cubrir \\(250\\) metros de sendero?</p>",
+      "enunciado": "<p>En una fábrica de velas, cada molde se llena con \\(720\\) gramos de cera derretida. Como cada vela consume \\(c\\) gramos, de un solo molde salen \\(\\dfrac{720}{c}\\) velas.</p><p>¿Cuál expresión permite saber cuántas velas se obtienen al vaciar \\(45\\) moldes?</p>",
       "opciones": {
-        "A": "\\(\\dfrac{100}{250}\\)",
-        "B": "\\(250\\times\\dfrac{a}{100}\\)",
-        "C": "\\(\\dfrac{100}{a}\\times 250\\)",
-        "D": "\\(\\dfrac{100}{a}\\)"
+        "A": "\\(\\dfrac{720}{45}\\)",
+        "B": "\\(45\\times\\dfrac{c}{720}\\)",
+        "C": "\\(\\dfrac{720}{c}\\times 45\\)",
+        "D": "\\(\\dfrac{720}{c}\\)"
       },
       "clave": "C",
       "competencia": "c",
@@ -353,11 +353,11 @@
       "dificultad": "MEDIA",
       "estandar": "Modelo situaciones de variación con funciones polinómicas.",
       "que_evalua": "La capacidad para identificar la expresión algebraica que modela una situación de variación.",
-      "justificacion_correcta": "Para un metro de sendero se necesitan \\(\\dfrac{100}{a}\\) baldosas. Para \\(250\\) metros se necesitan \\(250\\) veces esa cantidad: \\(\\dfrac{100}{a} \\times 250\\).",
+      "justificacion_correcta": "De un molde salen \\(\\dfrac{720}{c}\\) velas. Con \\(45\\) moldes se obtienen \\(45\\) veces esa cantidad: \\(\\dfrac{720}{c} \\times 45\\).",
       "opciones_incorrectas": {
-        "A": "Usa \\(250\\) como si fuera el ancho de la baldosa y deja por fuera la variable \\(a\\): \\(\\dfrac{100}{250}\\).",
-        "B": "Invierte la división: multiplica por \\(\\dfrac{a}{100}\\) en vez de dividir entre \\(a\\).",
-        "D": "Da las baldosas de \\(1\\) metro \\(\\left(\\dfrac{100}{a}\\right)\\) y olvida multiplicar por los \\(250\\) metros."
+        "A": "Usa \\(45\\) como si fuera lo que consume cada vela y deja por fuera la variable \\(c\\): \\(\\dfrac{720}{45}\\).",
+        "B": "Invierte la división: multiplica por \\(\\dfrac{c}{720}\\) en vez de dividir entre \\(c\\).",
+        "D": "Da las velas de un solo molde \\(\\left(\\dfrac{720}{c}\\right)\\) y olvida multiplicar por los \\(45\\) moldes."
       }
     },
     {

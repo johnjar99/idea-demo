@@ -47,12 +47,12 @@
     {
       "id": "P10C01",
       "numero": 1,
-      "enunciado": "<p>Observa las dos bolsas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al almacén de un puesto de salud rural llegaron <b>dos bolsas de solución salina</b> de <b>1 litro</b> cada una. Cada rótulo informa la concentración de sal con una unidad distinta, y cada unidad se calcula así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Unidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cómo se calcula</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\% \\text{p/v}\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{g de sal}}{100\\ \\text{mL de solución}}\\times 100\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">ppm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{mg de sal}}{1\\ \\text{L de solución}}\\)</td></tr></table><p>La auxiliar del puesto de salud tiene presente que \\(1\\ \\text{g}=1000\\ \\text{mg}\\) y que \\(1\\ \\text{L}=1000\\ \\text{mL}\\). Una bolsa está rotulada \\(10\\ \\%\\ \\text{p/v}\\) y la otra, \\(10\\ \\text{ppm}\\).</p>[[IMG]]</div><p>Según esas dos formas de calcular, ¿cuál opción señala la bolsa que aporta <b>más sal</b> junto con la masa que realmente hay en su litro?</p>",
+      "enunciado": "<p>Observa las dos bolsas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al almacén de un puesto de salud rural llegaron <b>dos bolsas de 1 litro</b>: una de <b>suero fisiológico</b> y otra de <b>agua estéril</b> para lavado de material. Cada rótulo informa la cantidad de sal con una unidad distinta, y cada unidad se calcula así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Unidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cómo se calcula</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\% \\text{p/v}\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{g de sal}}{100\\ \\text{mL de solución}}\\times 100\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">ppm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{mg de sal}}{1\\ \\text{L de solución}}\\)</td></tr></table><p>La auxiliar del puesto de salud tiene presente que \\(1\\ \\text{g}=1000\\ \\text{mg}\\) y que \\(1\\ \\text{L}=1000\\ \\text{mL}\\). La bolsa de suero fisiológico está rotulada \\(0{,}9\\ \\%\\ \\text{p/v}\\) y la de agua estéril, \\(10\\ \\text{ppm}\\).</p>[[IMG]]</div><p>Según esas dos formas de calcular, ¿cuál opción señala la bolsa que aporta <b>más sal</b> junto con la masa que realmente hay en su litro?</p>",
       "opciones": {
-        "A": "La bolsa de 10 % p/v: tiene 100 g de sal en su litro.",
-        "B": "La bolsa de 10 % p/v: tiene 1.000 g de sal en su litro.",
-        "C": "La bolsa de 10 ppm: tiene 100 g de sal en su litro.",
-        "D": "La bolsa de 10 ppm: tiene 1.000 g de sal en su litro."
+        "A": "La bolsa de 0,9 % p/v: tiene 9 g de sal en su litro.",
+        "B": "La bolsa de 0,9 % p/v: tiene 900 g de sal en su litro.",
+        "C": "La bolsa de 10 ppm: tiene 9 g de sal en su litro.",
+        "D": "La bolsa de 10 ppm: tiene 900 g de sal en su litro."
       },
       "clave": "A",
       "competencia": "a",
@@ -63,23 +63,23 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden hacer inferencias a partir de un modelo químico de concentración para una situación particular.",
-      "justificacion_correcta": "La opción A es correcta. Al despejar la masa en cada rótulo se obtiene: en \\(10\\ \\%\\ \\text{p/v}\\) hay \\(10\\ \\text{g}\\) por cada \\(100\\ \\text{mL}\\), es decir \\(100\\ \\text{g}\\) en \\(1\\ \\text{L}\\); en \\(10\\ \\text{ppm}\\) hay \\(10\\ \\text{mg}\\), o sea \\(0{,}01\\ \\text{g}\\), en \\(1\\ \\text{L}\\). Como \\(100\\ \\text{g}\\) es muchísimo más que \\(0{,}01\\ \\text{g}\\), la bolsa más concentrada es la de \\(10\\ \\%\\ \\text{p/v}\\), y la opción A le asigna la masa correcta.",
+      "justificacion_correcta": "La opción A es correcta. Al despejar la masa en cada rótulo se obtiene: en \\(0{,}9\\ \\%\\ \\text{p/v}\\) hay \\(0{,}9\\ \\text{g}\\) por cada \\(100\\ \\text{mL}\\), es decir \\(9\\ \\text{g}\\) en \\(1\\ \\text{L}\\); en \\(10\\ \\text{ppm}\\) hay \\(10\\ \\text{mg}\\), o sea \\(0{,}01\\ \\text{g}\\), en \\(1\\ \\text{L}\\). Como \\(9\\ \\text{g}\\) es muchísimo más que \\(0{,}01\\ \\text{g}\\), la bolsa más concentrada es la de \\(0{,}9\\ \\%\\ \\text{p/v}\\), y la opción A le asigna la masa correcta.",
       "opciones_incorrectas": {
-        "B": "Acierta con la bolsa más concentrada, pero le asigna \\(1.000\\ \\text{g}\\); en su litro hay \\(100\\ \\text{g}\\) de sal.",
-        "C": "Traslada los \\(100\\ \\text{g}\\) a la bolsa de 10 ppm, que en 1 L apenas tiene \\(0{,}01\\ \\text{g}\\).",
-        "D": "Escoge la bolsa menos concentrada y además le pone \\(1.000\\ \\text{g}\\), cuando en su litro hay \\(0{,}01\\ \\text{g}\\)."
+        "B": "Acierta con la bolsa más concentrada, pero le asigna \\(900\\ \\text{g}\\); en su litro hay \\(9\\ \\text{g}\\) de sal.",
+        "C": "Traslada los \\(9\\ \\text{g}\\) a la bolsa de 10 ppm, que en 1 L apenas tiene \\(0{,}01\\ \\text{g}\\).",
+        "D": "Escoge la bolsa menos concentrada y además le pone \\(900\\ \\text{g}\\), cuando en su litro hay \\(0{,}01\\ \\text{g}\\)."
       },
       "imagen_figura": "assets/banco-cn-10-p1/q01.png"
     },
     {
       "id": "P10C02",
       "numero": 2,
-      "enunciado": "<p>Observa la recta de clasificación y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una práctica de laboratorio se calientan al aire tres muestras de elementos distintos, rotuladas <b>J</b>, <b>Z</b> y <b>Q</b>, para estudiar el óxido que forma cada una al combinarse con el oxígeno. El tipo de unión entre dos átomos se predice con la <b>diferencia de electronegatividad</b> \\((\\Delta)\\): covalente no polar si \\(0\\le\\Delta<0{,}4\\), covalente polar si \\(0{,}4\\le\\Delta<1{,}7\\) e iónico si \\(\\Delta\\ge 1{,}7\\). Las electronegatividades registradas en la práctica son: oxígeno \\(=3{,}4\\); <b>J</b> \\(=1{,}0\\); <b>Z</b> \\(=2{,}6\\); <b>Q</b> \\(=2{,}0\\).</p>[[IMG]]</div><p>Con esos valores, ¿cuál opción indica el óxido cuya unión con el oxígeno resulta de tipo <b>iónico</b>?</p>",
+      "enunciado": "<p>Observa la recta de clasificación y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller de química, un docente hace reaccionar por separado con <b>cloro</b> gaseoso tres muestras rotuladas <b>J</b>, <b>Z</b> y <b>Q</b>, para obtener el <b>cloruro</b> de cada una. El montaje se arma bajo campana extractora y las muestras se toman con pinzas de porcelana. El tipo de unión que se forma se predice restando las dos electronegatividades \\((\\Delta)\\): covalente no polar si \\(0\\le\\Delta<0{,}4\\), covalente polar si \\(0{,}4\\le\\Delta<1{,}7\\) e iónica si \\(\\Delta\\ge 1{,}7\\). Las electronegatividades anotadas en el tablero son: cloro \\(=3{,}2\\); <b>J</b> \\(=0{,}9\\); <b>Z</b> \\(=2{,}5\\); <b>Q</b> \\(=2{,}1\\).</p>[[IMG]]</div><p>Con esos valores, ¿cuál opción señala el cloruro cuya unión resulta de tipo <b>iónico</b>?</p>",
       "opciones": {
-        "A": "Los óxidos de Z (Δ = 0,8) y de Q (Δ = 1,4): en los dos la unión es covalente polar.",
-        "B": "Los óxidos de J (Δ = 2,4) y de Q (Δ = 1,4).",
-        "C": "Solo el óxido de J (Δ = 2,4): es la única unión iónica.",
-        "D": "Solo el óxido de Z (Δ = 0,8): unión covalente polar."
+        "A": "Los cloruros de Z y de Q.",
+        "B": "Los cloruros de J y de Q.",
+        "C": "Únicamente el cloruro de J.",
+        "D": "Únicamente el cloruro de Z."
       },
       "clave": "C",
       "competencia": "b",
@@ -90,11 +90,11 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad de relacionar propiedades atómicas como la electronegatividad con el tipo de enlace que se forma.",
-      "justificacion_correcta": "La opción C es correcta. Frente al oxígeno, la diferencia con J vale \\(3{,}4-1{,}0=2{,}4\\), que al ser \\(\\ge 1{,}7\\) cae en el tramo iónico de la recta. Con Z la diferencia vale \\(0{,}8\\) y con Q vale \\(1{,}4\\): las dos quedan en el tramo covalente polar. Por eso el único óxido con unión iónica es el de J, como señala la opción C.",
+      "justificacion_correcta": "La opción C es correcta. Frente al cloro, la resta con J vale \\(3{,}2-0{,}9=2{,}3\\), que al ser \\(\\ge 1{,}7\\) cae en el tramo iónico de la recta. Con Z la resta vale \\(3{,}2-2{,}5=0{,}7\\) y con Q vale \\(3{,}2-2{,}1=1{,}1\\): las dos quedan en el tramo covalente polar. Por eso el único cloruro con unión iónica es el de J, como señala la opción C.",
       "opciones_incorrectas": {
-        "A": "Reúne los óxidos de Z \\((\\Delta=0{,}8)\\) y de Q \\((\\Delta=1{,}4)\\), que caen en el tramo covalente polar y no en el iónico.",
-        "B": "Incluye el óxido de J, que sí es iónico, pero le suma el de Q \\((\\Delta=1{,}4)\\), que es covalente polar.",
-        "D": "Señala el óxido de Z \\((\\Delta=0{,}8)\\), cuya diferencia está en el tramo covalente polar."
+        "A": "Reúne los cloruros de Z \\((\\Delta=0{,}7)\\) y de Q \\((\\Delta=1{,}1)\\), que caen en el tramo covalente polar y no en el iónico.",
+        "B": "Incluye el cloruro de J, que sí es iónico, pero le suma el de Q \\((\\Delta=1{,}1)\\), que es covalente polar.",
+        "D": "Señala el cloruro de Z \\((\\Delta=0{,}7)\\), cuya resta está en el tramo covalente polar."
       },
       "imagen_figura": "assets/banco-cn-10-p1/q02.png"
     },
@@ -429,7 +429,7 @@
     {
       "id": "P10C15",
       "numero": 15,
-      "enunciado": "<p>Observa las cuatro gráficas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de décimo consultó en una base de datos de estructuras moleculares la <b>longitud de enlace</b> (en Å) que se reporta para tres parejas de átomos unidos, primero con un enlace <b>sencillo</b> y luego con uno <b>doble</b>: carbono con carbono (C-C), carbono con oxígeno (C-O) y carbono con nitrógeno (C-N). Cada integrante llevó los datos a una gráfica y los resultados no coincidieron.</p></div><p>Se sabe que, para una misma pareja de átomos, el enlace doble siempre resulta <b>más corto</b> que el sencillo y que, al comparar las tres parejas entre sí, el <b>C-O</b> es el más corto y el <b>C-C</b> el más largo, tanto en los enlaces sencillos como en los dobles. ¿Cuál de las gráficas reproduce esas tendencias?</p>",
+      "enunciado": "<p>Observa las cuatro gráficas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Cuatro equipos de décimo cronometraron, en segundos, lo que tarda una <b>pastilla efervescente</b> en disolverse por completo dentro de tres bebidas: <b>agua</b>, <b>limonada</b> y <b>té</b>. Con cada bebida repitieron la medida dos veces, primero con la bebida <b>fría</b> y luego con la bebida <b>caliente</b>. Cada equipo llevó sus medidas a un diagrama de barras y los cuatro diagramas salieron distintos.</p></div><p>En las medidas tomadas, dentro de una misma bebida el tiempo con la bebida caliente siempre resultó <b>menor</b> que con la bebida fría y, al comparar las tres bebidas, la <b>limonada</b> fue la de menor tiempo y el <b>agua</b> la de mayor tiempo, tanto en frío como en caliente. ¿Cuál de las gráficas reproduce esas dos tendencias?</p>",
       "opciones": {
         "A": "A",
         "B": "B",
@@ -445,11 +445,11 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar los datos de una gráfica y reconocer tendencias.",
-      "justificacion_correcta": "La opción C es correcta. En la gráfica C la barra del enlace doble queda por debajo de la del sencillo en las tres parejas y, además, el C-O aparece como el más corto y el C-C como el más largo, tanto entre los sencillos como entre los dobles. Es la única gráfica que reproduce las dos tendencias a la vez.",
+      "justificacion_correcta": "La opción C es correcta. En la gráfica C la barra de la bebida caliente queda por debajo de la de la bebida fría en las tres bebidas y, además, la limonada aparece como la de menor tiempo y el agua como la de mayor tiempo, tanto en frío como en caliente. Es la única gráfica que reproduce las dos tendencias a la vez.",
       "opciones_incorrectas": {
-        "A": "En la gráfica A los enlaces dobles sí quedan más cortos que sus sencillos, pero el C-O aparece como el más largo de los tres, tanto en los sencillos como en los dobles, cuando en realidad es el más corto.",
-        "B": "En la gráfica B los enlaces dobles también quedan más cortos que sus sencillos, pero el C-C aparece como el más corto del grupo, tanto en los sencillos como en los dobles, cuando ese enlace es el más largo de los tres.",
-        "D": "En la gráfica D los enlaces dobles quedan más largos que sus sencillos, y eso contradice que el doble siempre resulte más corto."
+        "A": "En la gráfica A los tiempos en caliente sí quedan por debajo de los de frío, pero la limonada aparece como la de mayor tiempo de las tres, tanto en frío como en caliente, cuando en realidad fue la de menor tiempo.",
+        "B": "En la gráfica B los tiempos en caliente también quedan por debajo de los de frío, pero el agua aparece como la de menor tiempo del grupo, tanto en frío como en caliente, cuando esa bebida fue la de mayor tiempo de las tres.",
+        "D": "En la gráfica D los tiempos en caliente quedan por encima de los de frío, y eso contradice que con la bebida caliente el tiempo siempre resulte menor."
       },
       "opciones_imagenes": {
         "A": "assets/banco-cn-10-p1/q15_opA.png",
@@ -571,7 +571,7 @@
     {
       "id": "P10C20",
       "numero": 20,
-      "enunciado": "<p>Observa la figura del choque y elige el diagrama de fuerzas correcto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una <b>gota de agua</b> cae en diagonal y choca contra una <b>pelota</b>. Por la tercera ley de Newton, en el choque aparecen la fuerza de <b>acción</b> (de la gota sobre la pelota) y la de <b>reacción</b> (de la pelota sobre la gota): de igual magnitud, sentido opuesto y <b>perpendiculares a la superficie de contacto</b>.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) muestra un par de vectores sobre el punto de contacto. ¿Cuál diagrama representa correctamente las fuerzas de acción y reacción?</p>",
+      "enunciado": "<p>Observa la figura y elige el diagrama de fuerzas correcto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una <b>gota de agua</b> cae en diagonal y golpea un <b>balón</b>. Por la tercera ley de Newton, al tocarse aparecen la fuerza de <b>acción</b> (de la gota sobre el balón) y la de <b>reacción</b> (del balón sobre la gota): de igual magnitud, sentido opuesto y <b>perpendiculares a la superficie de contacto</b>.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) dibuja un par de flechas sobre el punto de contacto. ¿Cuál diagrama representa correctamente las fuerzas de acción y reacción?</p>",
       "opciones": {
         "A": "A",
         "B": "B",
@@ -587,9 +587,9 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden reconocer el modelo de fuerzas adecuado para un sistema donde dos objetos interactúan (acción y reacción).",
-      "justificacion_correcta": "La opción A es correcta. Las fuerzas de acción y reacción son de igual magnitud y sentido opuesto y, por ser fuerzas de contacto, deben ser <b>perpendiculares a la superficie de contacto</b> (la diagonal del choque). El diagrama A es el único que las muestra opuestas y perpendiculares a ese contacto.",
+      "justificacion_correcta": "La opción A es correcta. Las fuerzas de acción y reacción son de igual magnitud y sentido opuesto y, por ser fuerzas de contacto, deben ser <b>perpendiculares a la superficie de contacto</b> (la diagonal donde la gota toca el balón). El diagrama A es el único que las muestra opuestas y perpendiculares a ese contacto.",
       "opciones_incorrectas": {
-        "B": "Muestra las fuerzas verticales, no perpendiculares a la superficie de contacto entre gota y pelota.",
+        "B": "Muestra las fuerzas verticales, no perpendiculares a la superficie de contacto entre la gota y el balón.",
         "C": "Muestra las fuerzas en el mismo plano de la superficie de contacto, no perpendiculares a ella.",
         "D": "Muestra las fuerzas horizontales, no perpendiculares a la superficie de contacto."
       },

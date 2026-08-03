@@ -59,12 +59,12 @@
     {
       "id": "P-math-6-p1-01",
       "numero": 1,
-      "enunciado": "<p>En la figura se muestra el plano de un barrio. Las líneas verticales son las <b>carreras</b> y las horizontales son las <b>calles</b>. En el plano están ubicadas una <b>tienda</b> y una <b>escuela</b>.</p>[[IMG]]<p>¿Cuál es la ubicación de la <b>escuela</b> respecto a la <b>tienda</b>?</p>",
+      "enunciado": "<p>El dibujo corresponde al mapa de una urbanización. Las líneas verticales son las <b>avenidas</b> y las horizontales son los <b>senderos</b>. En el mapa están señaladas una <b>tienda</b> y una <b>escuela</b>.</p>[[IMG]]<p>¿Cuál es la ubicación de la <b>escuela</b> respecto a la <b>tienda</b>?</p>",
       "opciones": {
-        "A": "4 carreras hacia el oriente y 4 calles hacia el norte.",
-        "B": "6 carreras hacia el oriente y 7 calles hacia el norte.",
-        "C": "4 carreras hacia el occidente y 4 calles hacia el sur.",
-        "D": "7 carreras hacia el oriente y 8 calles hacia el norte."
+        "A": "4 avenidas hacia el oriente y 4 senderos hacia el norte.",
+        "B": "6 avenidas hacia el oriente y 7 senderos hacia el norte.",
+        "C": "4 avenidas hacia el occidente y 4 senderos hacia el sur.",
+        "D": "7 avenidas hacia el oriente y 8 senderos hacia el norte."
       },
       "clave": "A",
       "competencia": "a",
@@ -74,18 +74,18 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico características de localización de objetos en sistemas de representación cartesiana y geográfica.",
       "que_evalua": "La capacidad para reconocer la ubicación de puntos en el plano cartesiano y realizar movimientos a través de paralelas y perpendiculares del plano.",
-      "justificacion_correcta": "La tienda está en la carrera \\(2\\) con calle \\(3\\) y la escuela en la carrera \\(6\\) con calle \\(7\\). Para ir de la tienda a la escuela hay que avanzar \\(6-2 = 4\\) carreras hacia el oriente y \\(7-3 = 4\\) calles hacia el norte.",
+      "justificacion_correcta": "La tienda está en la avenida \\(2\\) con el sendero \\(3\\) y la escuela en la avenida \\(6\\) con el sendero \\(7\\). Para ir de la tienda a la escuela hay que avanzar \\(6-2 = 4\\) avenidas hacia el oriente y \\(7-3 = 4\\) senderos hacia el norte.",
       "opciones_incorrectas": {
         "B": "Toma las coordenadas absolutas de la escuela \\((6\\) y \\(7)\\) en lugar de la diferencia respecto a la tienda.",
-        "C": "Invierte el sentido de los desplazamientos: hacia el occidente y el sur en vez de oriente y norte.",
-        "D": "Considera el total de carreras y calles del plano \\((7\\) y \\(8)\\), no el desplazamiento entre los dos lugares."
+        "C": "Invierte el sentido de los dos desplazamientos: occidente y sur en vez de oriente y norte.",
+        "D": "Considera el total de avenidas y senderos del mapa \\((7\\) y \\(8)\\), no el desplazamiento entre los dos lugares."
       },
       "imagen_figura": "assets/banco-mat-6-p1/q01.png"
     },
     {
       "id": "P-math-6-p1-02",
       "numero": 2,
-      "enunciado": "<p>En un colegio, Geometría se califica de \\(0\\) a \\(5\\) y se aprueba con \\(3\\) o más. El pictograma recoge las notas que obtuvo un curso.</p>[[IMG]]<p>¿Cuántos estudiantes del curso aprobaron la asignatura?</p>",
+      "enunciado": "<p>En un colegio, Artística se califica de \\(0\\) a \\(5\\) y la gana quien obtiene \\(3\\) o más. El pictograma reúne las notas que sacó un curso.</p>[[IMG]]<p>¿Cuántos estudiantes del curso ganaron Artística?</p>",
       "opciones": {
         "A": "\\(8\\) estudiantes.",
         "B": "\\(10\\) estudiantes.",
@@ -100,11 +100,11 @@
       "dificultad": "ALTA",
       "estandar": "Comparo e interpreto datos provenientes de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
       "que_evalua": "La capacidad para reconocer el significado de las convenciones establecidas en las gráficas y determinar las frecuencias de ocurrencia de eventos en contextos escolares.",
-      "justificacion_correcta": "Se suman los estudiantes que aparecen en las notas de \\(3\\), \\(4\\) y \\(5\\), que son las que aprueban, teniendo en cuenta cuántos estudiantes representa cada símbolo del pictograma. Ese total es \\(20\\).",
+      "justificacion_correcta": "Ganan quienes obtienen \\(3\\) o más: la fila 'Desde 3 hasta menos de 4' aporta \\(8\\) figuras y la fila 'Superior o igual a 4' aporta \\(2\\), es decir \\(8 + 2 = 10\\) figuras. Como cada figura vale \\(2\\) estudiantes, el total es \\(10 \\times 2 = 20\\) estudiantes.",
       "opciones_incorrectas": {
-        "A": "Cuenta solo las \\(8\\) figuras de 'Desde 3 hasta menos de 4' y olvida la fila 'Superior o igual a 4', además de no multiplicar por \\(2\\).",
-        "B": "Cuenta correctamente las \\(10\\) figuras que aprueban, pero olvida que cada una vale \\(2\\) estudiantes.",
-        "D": "Cuenta todas las figuras del pictograma \\((3+5+1+8+2 = 11)\\) sin separar a quienes aprueban; al multiplicar por \\(2\\) obtiene \\(22\\)."
+        "A": "Cuenta solo las \\(8\\) figuras de 'Desde 3 hasta menos de 4', deja por fuera la fila 'Superior o igual a 4' y además no multiplica por \\(2\\).",
+        "B": "Cuenta bien las \\(10\\) figuras que ganan, pero olvida que cada una vale \\(2\\) estudiantes.",
+        "D": "Incluye también la fila 'Desde 2 hasta menos de 3', que aporta \\(1\\) figura, llega a \\(8 + 2 + 1 = 11\\) figuras y obtiene \\(11 \\times 2 = 22\\)."
       },
       "imagen_figura": "assets/banco-mat-6-p1/q02.png"
     },
@@ -267,12 +267,12 @@
     {
       "id": "P-math-6-p1-09",
       "numero": 9,
-      "enunciado": "<p>Una juguetería anotó en tarjetas cuántos juguetes despachó en cuatro meses seguidos.</p>[[IMG]]<p>Del segundo mes en adelante, ¿cómo cambia de un mes al siguiente la cantidad de juguetes despachados?</p>",
+      "enunciado": "<p>En una papelería registraron en fichas cuántos cuadernos empacaron durante cuatro semanas seguidas.</p>[[IMG]]<p>De la segunda semana en adelante, ¿cómo cambia de una semana a la siguiente la cantidad de cuadernos empacados?</p>",
       "opciones": {
-        "A": "Sube \\(30\\) juguetes cada mes.",
-        "B": "Baja \\(4\\) juguetes respecto al mes anterior.",
-        "C": "Sube \\(40\\) juguetes cada mes.",
-        "D": "Baja \\(5\\) juguetes respecto al mes anterior."
+        "A": "Sube \\(30\\) cuadernos cada semana.",
+        "B": "Baja \\(4\\) cuadernos respecto a la semana anterior.",
+        "C": "Sube \\(40\\) cuadernos cada semana.",
+        "D": "Baja \\(5\\) cuadernos respecto a la semana anterior."
       },
       "clave": "C",
       "competencia": "c",
@@ -282,11 +282,11 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
       "que_evalua": "La capacidad para establecer relaciones de cambio dado un patrón establecido.",
-      "justificacion_correcta": "Al restar cada tarjeta con la anterior se obtiene siempre la misma diferencia, y es positiva: de un mes al siguiente se despachan \\(40\\) juguetes más.",
+      "justificacion_correcta": "Al restar cada ficha con la anterior siempre queda la misma diferencia y es positiva: \\(190 - 150 = 40\\), \\(230 - 190 = 40\\) y \\(270 - 230 = 40\\). De una semana a la siguiente se empacan \\(40\\) cuadernos más.",
       "opciones_incorrectas": {
-        "A": "La diferencia entre meses consecutivos no es \\(30\\); basta restar dos tarjetas seguidas para comprobarlo.",
-        "B": "La cantidad no baja: cada tarjeta muestra un valor mayor que la anterior.",
-        "D": "Además de equivocar el sentido del cambio, usa una diferencia que no aparece."
+        "A": "Reconoce que la cantidad sube, pero calcula mal la diferencia y toma \\(30\\) en vez de \\(40\\).",
+        "B": "Mira solo la cifra de las decenas \\((5\\) y \\(9)\\) y la lee como una bajada de \\(4\\), cuando cada ficha muestra un valor mayor que la anterior.",
+        "D": "Invierte el sentido del cambio y toma la cifra de las decenas de la primera ficha, que es \\(5\\), como si fuera la diferencia entre semanas."
       },
       "imagen_figura": "assets/banco-mat-6-p1/q09.png"
     },
@@ -472,7 +472,7 @@
     {
       "id": "P-math-6-p1-17",
       "numero": 17,
-      "enunciado": "<p>En un club hay una piscina para <b>adultos</b> (con forma de cuadrado, con sus cuatro ángulos rectos marcados) y una para <b>niños</b> con la misma forma e iguales dimensiones, pero girada, como muestra la figura.</p>[[IMG]]<p>¿Cuál es la <b>suma de los 4 ángulos internos</b> de la piscina para niños?</p>",
+      "enunciado": "<p>En un parque hay dos jardines con la misma forma y el mismo tamaño. El jardín de <b>Rosas</b> es un cuadrado y tiene marcados sus cuatro ángulos rectos; el jardín de <b>Girasoles</b> es igual, pero está girado, como aparece en el dibujo.</p>[[IMG]]<p>¿Cuál es la <b>suma de los 4 ángulos internos</b> del jardín de Girasoles?</p>",
       "opciones": {
         "A": "\\(450^\\circ\\)",
         "B": "\\(360^\\circ\\)",
@@ -487,11 +487,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
       "que_evalua": "La capacidad para reconocer características en figuras geométricas congruentes.",
-      "justificacion_correcta": "Las dos piscinas son congruentes, así que tienen los mismos ángulos. La piscina de adultos es un cuadrado con cuatro ángulos rectos \\((90^\\circ\\) cada uno\\()\\), y su suma es \\(4 \\times 90^\\circ = 360^\\circ\\). La piscina para niños, congruente con ella, también suma \\(360^\\circ\\).",
+      "justificacion_correcta": "Los dos jardines son congruentes, así que tienen los mismos ángulos. El jardín de Rosas es un cuadrado con cuatro ángulos rectos, de \\(90^\\circ\\) cada uno, y su suma es \\(4 \\times 90^\\circ = 360^\\circ\\). El jardín de Girasoles, congruente con él, también suma \\(360^\\circ\\).",
       "opciones_incorrectas": {
-        "A": "Suma cinco ángulos de \\(90^\\circ\\) en vez de cuatro \\((5\\times 90 = 450)\\).",
+        "A": "Suma cinco ángulos de \\(90^\\circ\\) en vez de cuatro \\((5 \\times 90 = 450)\\).",
         "C": "Usa la suma de los ángulos de un triángulo \\((180^\\circ)\\) en lugar de la de un cuadrilátero.",
-        "D": "Confunde la suma de los ángulos con la medida de un lado \\((5\\) m, redondeado a \\(20)\\)."
+        "D": "Confunde la suma de los ángulos con el perímetro del jardín: toma el lado de \\(5\\) m del dibujo y calcula \\(4 \\times 5 = 20\\)."
       },
       "imagen_figura": "assets/banco-mat-6-p1/q17.png"
     },

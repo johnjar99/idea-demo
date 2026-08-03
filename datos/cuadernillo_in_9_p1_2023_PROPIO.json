@@ -38,7 +38,7 @@
     "ctx-parte1": {
       "titulo": "Parte 1: Vocabulario (emparejamiento)",
       "imagen": "assets/banco-in-9-p1/ejemplo_parte1.png",
-      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones, así que sobran dos; cada palabra se usa una sola vez.",
+      "texto": "RESPONDE LAS PREGUNTAS 1 A 5. Lee cada descripción en inglés y elige, entre las opciones, la palabra que le corresponde. Hay siete palabras y cinco descripciones: una palabra ya quedó usada en el ejemplo (0) y otra sobra. Cada palabra se usa una sola vez.",
       "rango_preguntas": "1 a 5"
     },
     "ctx-parte2": {
@@ -88,7 +88,10 @@
       "opciones_incorrectas": {
         "B": "«nose» (nariz) se usa para oler, no para ver.",
         "C": "«teeth» (dientes) se usan para masticar, no para ver.",
-        "G": "«tongue» (lengua) se usa para saborear y hablar, no para ver."
+        "D": "«legs» (piernas) sirven para caminar y correr, no para ver.",
+        "E": "«fingers» (dedos) sirven para tocar y sostener cosas, no para ver.",
+        "F": "«back» (espalda) es la parte de atrás del cuerpo y no interviene en la visión.",
+        "G": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además sirve para saborear, no para ver."
       }
     },
     {
@@ -119,7 +122,10 @@
       "opciones_incorrectas": {
         "A": "«eyes» (ojos) sirven para ver, no para morder.",
         "B": "«nose» (nariz) está sobre la boca, pero no sirve para morder.",
-        "G": "«tongue» (lengua) ayuda a saborear, no a morder."
+        "D": "«legs» (piernas) no están en la boca ni sirven para morder.",
+        "E": "«fingers» (dedos) pueden sostener la manzana, pero no son las partes blancas de la boca.",
+        "F": "«back» (espalda) no está en la boca ni participa al morder.",
+        "G": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además ayuda a saborear, no a morder."
       }
     },
     {
@@ -212,7 +218,10 @@
       "opciones_incorrectas": {
         "A": "«eyes» (ojos) sirven para ver, no para oler.",
         "C": "«teeth» (dientes) se usan para morder, no para oler.",
-        "G": "«tongue» (lengua) se usa para saborear, no para oler."
+        "D": "«legs» (piernas) sirven para caminar, no para oler.",
+        "E": "«fingers» (dedos) sirven para tocar, no para oler.",
+        "F": "«back» (espalda) no está en la cara ni percibe olores.",
+        "G": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además se usa para saborear, no para oler."
       }
     },
     {
@@ -459,7 +468,7 @@
       "numero": 15,
       "contexto_id": "ctx-parte3",
       "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “This street is very noisy in the afternoon.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “This café is too noisy in the evening.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
       "opciones": {
         "A": "I agree.",
         "B": "It’s brand new.",
@@ -474,9 +483,9 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Elegir la intervención adecuada para manifestar acuerdo ante un juicio del interlocutor.",
-      "justificacion_correcta": "Opción A, dado que «I agree.» manifiesta acuerdo con el juicio de que la calle es muy ruidosa por la tarde.",
+      "justificacion_correcta": "Opción A, dado que «I agree.» manifiesta acuerdo con el juicio de que el café es demasiado ruidoso por la noche.",
       "opciones_incorrectas": {
-        "B": "«It’s brand new.» informa que algo es nuevo, habla de otra característica y no manifiesta acuerdo.",
+        "B": "«It’s brand new.» informa que el lugar es nuevo, habla de otra característica y no manifiesta acuerdo.",
         "C": "«You’re welcome.» es la respuesta a un agradecimiento, no sirve para manifestar acuerdo o desacuerdo."
       }
     },

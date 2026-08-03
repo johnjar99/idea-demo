@@ -62,12 +62,12 @@
     {
       "id": "P-math-10-p1-02",
       "numero": 2,
-      "enunciado": "<p>Observa el siguiente <b>prisma triangular</b>: tiene dos bases con forma de triángulo (una arriba y otra abajo) y tres caras laterales rectangulares.</p><p>Los cuatro moldes (desarrollos planos) tienen <b>tres rectángulos y dos triángulos</b>.</p>[[IMG]]<p>¿Con cuál de ellos se puede armar exactamente este prisma, de modo que al plegarlo cada cara coincida con su vecina (aristas de igual longitud) y ningún triángulo se superponga a otro?</p>",
+      "enunciado": "<p>En el taller de empaques, Valentina arma cajas con forma de <b>prisma triangular</b>: dos bases triangulares, una arriba y otra abajo, y tres caras laterales rectangulares.</p><p>Cada una de las plantillas de cartón que aparecen abajo está formada por <b>tres rectángulos y dos triángulos</b>.</p>[[IMG]]<p>¿Con cuál de ellas puede armar exactamente ese prisma, de modo que al plegarla cada cara coincida con su vecina, con aristas de igual longitud, y ningún triángulo quede montado sobre otro?</p>",
       "opciones": {
-        "A": "Molde A.",
-        "B": "Molde B.",
-        "C": "Molde C.",
-        "D": "Molde D."
+        "A": "Plantilla A.",
+        "B": "Plantilla B.",
+        "C": "Plantilla C.",
+        "D": "Plantilla D."
       },
       "clave": "C",
       "competencia": "b",
@@ -77,11 +77,11 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco y describo curvas y/o lugares geométricos.",
       "que_evalua": "La capacidad para determinar el desarrollo plano asociado a un objeto tridimensional dado.",
-      "justificacion_correcta": "Para armar el prisma, los tres rectángulos deben formar una banda contigua y cada triángulo debe pegarse, por su base, a un rectángulo DISTINTO, con la base del triángulo de la misma longitud que el lado del rectángulo. El molde C cumple todo esto: al plegar la banda, un triángulo tapa la base superior y el otro la inferior, sin que se superpongan. Los demás fallan aunque tengan el mismo número de caras.",
+      "justificacion_correcta": "Para armar la caja, los tres rectángulos deben formar una banda contigua y cada triángulo debe pegarse, por su base, a un rectángulo DISTINTO, con la base del triángulo de la misma longitud que el lado del rectángulo. La plantilla C cumple todo esto: al plegar la banda, un triángulo tapa la base de arriba y el otro la de abajo, sin montarse. Las demás fallan aunque tengan el mismo número de caras.",
       "opciones_incorrectas": {
         "A": "Sus triángulos son más anchos que el rectángulo al que se pegan: al plegar, esas aristas no coinciden en longitud, así que las caras no encajan.",
-        "B": "Coloca los dos triángulos sobre rectángulos vecinos compartiendo un vértice; al plegar caen hacia la misma base, se superponen y dejan la otra base sin cubrir.",
-        "D": "No forma una banda contigua de tres rectángulos: los dispone en cruz, de modo que las caras laterales no quedan unidas y el prisma no cierra."
+        "B": "Coloca los dos triángulos sobre rectángulos vecinos compartiendo un vértice; al plegar caen hacia la misma base, quedan montados uno sobre otro y dejan la otra base sin cubrir.",
+        "D": "No forma una banda contigua de tres rectángulos: los dispone en cruz, de modo que las caras laterales no quedan unidas y la caja no cierra."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q02.png",
       "opciones_imagenes": {
@@ -145,12 +145,12 @@
     {
       "id": "P-math-10-p1-05",
       "numero": 5,
-      "enunciado": "<p>La casa de la cultura de un municipio abrió cuatro cursos en la jornada de la tarde. Cada persona paga el valor de una sesión por cada sesión que tome a la semana. La tabla resume cuánta gente quedó matriculada en \\(1\\), \\(2\\) o \\(3\\) sesiones semanales y el valor que cobra cada curso por sesión.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Matriculados a 1 sesión</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Matriculados a 2 sesiones</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Matriculados a 3 sesiones</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor de la sesión</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Robótica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(150\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(95\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(65\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$12.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Pintura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(150\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(105\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(75\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Música</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(150\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(90\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(70\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$10.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Natación</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(200\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(125\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(85\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr></table><p>Con esos datos, un practicante levantó la gráfica de ingresos semanales, es decir, matriculados \\(\\times\\) valor de la sesión \\(\\times\\) número de sesiones.</p>[[IMG]]<p>Al revisar la gráfica se ve que hay algo que no cuadra, porque los ingresos que vienen de:</p>",
+      "enunciado": "<p>La casa de la cultura de un municipio abrió cuatro talleres en la jornada de la tarde. Cada persona paga el valor de una clase por cada clase que tome a la semana. La tabla resume cuánta gente quedó matriculada en \\(1\\), \\(2\\) o \\(3\\) clases a la semana y el valor que cobra cada taller por clase.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Taller</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Matriculados a 1 clase</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Matriculados a 2 clases</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Matriculados a 3 clases</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Valor de la clase</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Robótica</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(150\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(95\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(65\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$12.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Pintura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(150\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(105\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(75\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Guitarra</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(150\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(90\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(70\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$10.000</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:left\">Teatro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(200\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(125\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(85\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">$8.000</td></tr></table><p>Con esos datos, un practicante levantó la gráfica del dinero de la semana, es decir, matriculados \\(\\times\\) valor de la clase \\(\\times\\) número de clases.</p>[[IMG]]<p>Al revisar la gráfica se ve que hay algo que no cuadra, porque el dinero que entra por:</p>",
       "opciones": {
-        "A": "una sesión de natación tendrían que ser los más altos de los cuatro cursos.",
-        "B": "dos y de tres sesiones tendrían que superar a los de una sesión en los cuatro cursos.",
-        "C": "pintura y de natación tendrían que coincidir, porque cobran lo mismo por sesión.",
-        "D": "tres sesiones de robótica y de natación tendrían que dar barras del mismo alto."
+        "A": "una clase de teatro tendría que ser el más alto de los cuatro talleres.",
+        "B": "dos y por tres clases tendría que superar al de una clase en los cuatro talleres.",
+        "C": "pintura y por teatro tendría que coincidir, porque cobran lo mismo por clase.",
+        "D": "tres clases de robótica y de teatro tendría que dar barras del mismo alto."
       },
       "clave": "B",
       "competencia": "a",
@@ -160,11 +160,11 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
       "que_evalua": "La capacidad para identificar una inconsistencia de la información presentada en una gráfica.",
-      "justificacion_correcta": "Quien toma dos o tres sesiones paga dos o tres veces el valor de la sesión, así que su aporte pesa más. Con los datos de la tabla, en los cuatro cursos el ingreso de dos y de tres sesiones queda por encima del de una sola: en pintura, por ejemplo, son $1.680.000 y $1.800.000 frente a $1.200.000. En la gráfica esas barras aparecen más bajas que las de una sesión, y ahí está la falla.",
+      "justificacion_correcta": "Quien toma dos o tres clases paga dos o tres veces el valor de la clase, así que su aporte pesa más. Con los datos de la tabla, en los cuatro talleres el dinero que entra por dos y por tres clases queda por encima del de una sola: en pintura, por ejemplo, son $1.680.000 y $1.800.000 frente a $1.200.000. En la gráfica esas barras aparecen más bajas que las de una clase, y ahí está la falla.",
       "opciones_incorrectas": {
-        "A": "Natación es el curso con más gente matriculada a una sesión, pero cobra menos por sesión que robótica: $1.600.000 frente a $1.800.000. Tener más gente no obliga a tener el ingreso más alto.",
-        "C": "Pintura y natación cobran lo mismo por sesión, pero no tienen la misma cantidad de matriculados, de modo que sus ingresos no tienen por qué coincidir.",
-        "D": "Nada obliga a que esas dos barras queden iguales: con los datos de la tabla son $2.340.000 en robótica y $2.040.000 en natación."
+        "A": "Teatro es el taller con más gente matriculada a una clase, pero cobra menos por clase que robótica: $1.600.000 frente a $1.800.000. Tener más gente no obliga a recibir el monto más alto.",
+        "C": "Pintura y teatro cobran lo mismo por clase, pero no tienen la misma cantidad de matriculados, de modo que lo que recogen no tiene por qué coincidir.",
+        "D": "Nada obliga a que esas dos barras queden iguales: con los datos de la tabla son $2.340.000 en robótica y $2.040.000 en teatro."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q05.png"
     },
@@ -254,12 +254,12 @@
     {
       "id": "P-math-10-p1-09",
       "numero": 9,
-      "enunciado": "<p>Un jardín circular de \\(20\\ \\mathrm{m}^{2}\\) está rodeado por una reja, también circular, separada del jardín por un camino de piedra de \\(10\\ \\mathrm{m}\\).</p>[[IMG]]<p>¿Alcanza esa información para calcular cuánto mide la reja?</p>",
+      "enunciado": "<p>En el parque del barrio hay un cantero de flores con forma de círculo y área de \\(48\\ \\mathrm{m}^{2}\\). Alrededor de él se levantó una baranda, también circular, y entre las dos quedó una franja de césped de \\(3\\ \\mathrm{m}\\) de ancho, como se ve en la imagen.</p>[[IMG]]<p>¿Alcanza esa información para calcular cuánto mide la baranda?</p>",
       "opciones": {
-        "A": "Sí, porque basta usar la fórmula del área de un círculo con radio \\(10\\ \\mathrm{m}\\) para hallar el camino.",
-        "B": "No, porque hay dos radios distintos que dan el área del jardín y no se sabe cuál usar.",
-        "C": "Sí, porque el área del jardín define su radio, y al sumarle \\(10\\ \\mathrm{m}\\) se obtiene el radio de la reja, con el que se calcula su perímetro.",
-        "D": "No, porque es imposible conocer el radio de la reja: la figura solo da datos del jardín."
+        "A": "Sí, porque basta usar la fórmula del área de un círculo con radio \\(3\\ \\mathrm{m}\\) para hallar la franja.",
+        "B": "No, porque hay dos radios distintos que dan el área del cantero y no se sabe cuál usar.",
+        "C": "Sí, porque el área del cantero define su radio, y al sumarle \\(3\\ \\mathrm{m}\\) se obtiene el radio de la baranda, con el que se calcula su perímetro.",
+        "D": "No, porque es imposible conocer el radio de la baranda: la imagen solo da datos del cantero."
       },
       "clave": "C",
       "competencia": "c",
@@ -269,18 +269,18 @@
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
       "que_evalua": "La capacidad para justificar la posibilidad de calcular un perímetro con la información dada.",
-      "justificacion_correcta": "Del área del jardín se despeja su radio, y sumándole los \\(10\\ \\mathrm{m}\\) del camino se obtiene el radio de la reja, con el que se calcula su longitud.",
+      "justificacion_correcta": "Del área del cantero se despeja su radio, y sumándole los \\(3\\ \\mathrm{m}\\) de la franja se obtiene el radio de la baranda, con el que se calcula su longitud.",
       "opciones_incorrectas": {
-        "A": "El radio de \\(10\\ \\mathrm{m}\\) es la separación, no el del jardín; además el camino no es un círculo lleno.",
-        "B": "La ecuación \\(\\pi r^{2} = 20\\) determina un único radio positivo; no hay ambigüedad.",
-        "D": "El radio del jardín sí se conoce a partir de su área, y con la separación se obtiene el de la reja."
+        "A": "Los \\(3\\ \\mathrm{m}\\) son el ancho de la franja, no el radio del cantero; además la franja no es un círculo lleno.",
+        "B": "La ecuación \\(\\pi r^{2} = 48\\) determina un único radio positivo; no hay ambigüedad.",
+        "D": "El radio del cantero sí se conoce a partir de su área, y con el ancho de la franja se obtiene el de la baranda."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q09.png"
     },
     {
       "id": "P-math-10-p1-10",
       "numero": 10,
-      "enunciado": "<p>En una obra se va a instalar una tubería recta (la línea roja) que atraviesa los dos muros paralelos de una zanja, como muestra la figura.</p>[[IMG]]<p>En la obra se midió el ángulo \\(\\gamma\\) y falta conocer \\(\\beta\\). Un técnico propone este camino: <b>Paso 1.</b> como \\(\\gamma\\) y \\(\\alpha\\) son opuestos por el vértice, \\(\\alpha = \\gamma\\); <b>Paso 2.</b> como \\(\\alpha\\) y \\(\\beta\\) quedan a lado y lado de la tubería entre muros paralelos, \\(\\beta = \\alpha\\). ¿Es correcto el camino que propone el técnico?</p>",
+      "enunciado": "<p>En una obra de acueducto los operarios abrieron una zanja entre dos muros paralelos de concreto y van a instalar por ahí una tubería (la línea roja) que los cruza en diagonal, como se ve en la imagen.</p>[[IMG]]<p>Con el goniómetro ya se midió \\(\\gamma\\) y falta averiguar \\(\\beta\\). El maestro de obra propone lo siguiente. <b>Primero.</b> Como \\(\\gamma\\) y \\(\\alpha\\) son opuestos por el vértice, \\(\\alpha = \\gamma\\). <b>Enseguida.</b> Como \\(\\alpha\\) y \\(\\beta\\) quedan a lado y lado de la tubería entre muros paralelos, \\(\\beta = \\alpha\\). ¿Es correcto lo que propone el maestro de obra?</p>",
       "opciones": {
         "A": "No, porque \\(\\gamma\\) y \\(\\alpha\\) son complementarios y \\(\\alpha\\) y \\(\\beta\\) son opuestos por el vértice.",
         "B": "Sí, porque \\(\\gamma\\) y \\(\\alpha\\) son suplementarios y entre los dos suman \\(90^\\circ\\).",
@@ -295,11 +295,11 @@
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
       "que_evalua": "La capacidad para justificar la veracidad de una afirmación sobre una estrategia para determinar la medida de un ángulo.",
-      "justificacion_correcta": "El paso 1 está bien: \\(\\gamma\\) y \\(\\alpha\\) son opuestos por el vértice en el muro inferior, así que \\(\\alpha = \\gamma\\). El paso 2 falla: \\(\\alpha\\) queda entre los dos muros y \\(\\beta\\) queda por fuera, al otro lado de la tubería, de manera que no son iguales sino que suman \\(180^\\circ\\). Lo correcto es \\(\\beta = 180^\\circ - \\gamma\\).",
+      "justificacion_correcta": "El primer paso está bien: \\(\\gamma\\) y \\(\\alpha\\) son opuestos por el vértice en el muro de abajo, así que \\(\\alpha = \\gamma\\). El segundo falla: \\(\\alpha\\) queda entre los dos muros y \\(\\beta\\) queda por fuera, al otro lado de la tubería, de manera que no son iguales sino que suman \\(180^\\circ\\). Lo correcto es \\(\\beta = 180^\\circ - \\gamma\\).",
       "opciones_incorrectas": {
         "A": "El veredicto es acertado, pero las razones no: \\(\\gamma\\) y \\(\\alpha\\) no suman \\(90^\\circ\\), son iguales, y \\(\\alpha\\) y \\(\\beta\\) no comparten vértice porque están en muros distintos.",
         "B": "Suplementarios quiere decir que suman \\(180^\\circ\\), no \\(90^\\circ\\); además \\(\\gamma\\) y \\(\\alpha\\) son iguales, no suplementarios.",
-        "D": "\\(\\alpha\\) y \\(\\beta\\) no miden lo mismo: entre los dos completan \\(180^\\circ\\), así que el paso 2 lleva a un valor equivocado."
+        "D": "\\(\\alpha\\) y \\(\\beta\\) no miden lo mismo: entre los dos completan \\(180^\\circ\\), así que el segundo paso lleva a un valor equivocado."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q10.png"
     },
@@ -433,12 +433,12 @@
     {
       "id": "P-math-10-p1-16",
       "numero": 16,
-      "enunciado": "<p>Tres nadadores compitieron en una prueba. Uno de ellos hizo un tiempo de \\(36\\) segundos y el <b>promedio</b> de los tres tiempos fue de \\(40\\) segundos. ¿Cuál de los siguientes pares podría corresponder a los tiempos de los otros dos nadadores?</p>",
+      "enunciado": "<p>En el vivero del colegio se midió la altura de tres plántulas de café. Una de ellas mide \\(24\\) cm y el <b>promedio</b> de las tres alturas es \\(30\\) cm.</p><p>¿Cuál de los siguientes pares podría corresponder a las alturas de las otras dos plántulas?</p>",
       "opciones": {
-        "A": "\\(40\\) y \\(40\\) segundos.",
-        "B": "\\(36\\) y \\(44\\) segundos.",
-        "C": "\\(38\\) y \\(46\\) segundos.",
-        "D": "\\(42\\) y \\(48\\) segundos."
+        "A": "\\(30\\) y \\(30\\) cm.",
+        "B": "\\(24\\) y \\(36\\) cm.",
+        "C": "\\(28\\) y \\(38\\) cm.",
+        "D": "\\(32\\) y \\(40\\) cm."
       },
       "clave": "C",
       "competencia": "b",
@@ -448,11 +448,11 @@
       "dificultad": "MEDIA",
       "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
       "que_evalua": "La capacidad para identificar los datos que están asociados con el valor promedio de estos.",
-      "justificacion_correcta": "Si el promedio de los tres tiempos es \\(40\\), la suma total es \\(40 \\times 3 = 120\\). Como uno es \\(36\\), los otros dos deben sumar \\(120 - 36 = 84\\). El par \\(38\\) y \\(46\\) suma \\(84\\), así que es el correcto.",
+      "justificacion_correcta": "Si el promedio de las tres alturas es \\(30\\), la suma de las tres es \\(30 \\times 3 = 90\\). Como una mide \\(24\\), las otras dos deben sumar \\(90 - 24 = 66\\). El par \\(28\\) y \\(38\\) suma \\(66\\), así que es el que sirve.",
       "opciones_incorrectas": {
-        "A": "\\(40 + 40 = 80\\), distinto de \\(84\\); supone que el promedio debe estar entre los datos.",
-        "B": "\\(36 + 44 = 80\\), distinto de \\(84\\) que es lo requerido.",
-        "D": "\\(42 + 48 = 90\\), distinto de \\(84\\)."
+        "A": "\\(30 + 30 = 60\\), distinto de \\(66\\); supone que el promedio tiene que repetirse en los datos.",
+        "B": "\\(24 + 36 = 60\\), distinto de \\(66\\): repite la altura conocida y completa hasta un total equivocado.",
+        "D": "\\(32 + 40 = 72\\), distinto de \\(66\\)."
       }
     },
     {
@@ -509,12 +509,12 @@
     {
       "id": "P-math-10-p1-19",
       "numero": 19,
-      "enunciado": "<p>Para una feria, cada estudiante lleva su regalo dentro de una caja. Todas las cajas son idénticas y miden \\(10\\) cm de largo, \\(10\\) cm de alto y \\(30\\) cm de ancho. En la imagen aparecen las \\(12\\) cajas apiladas.</p>[[IMG]]<p>¿Qué espacio ocupa toda la pila?</p>",
+      "enunciado": "<p>En una bodega de mudanzas se apilaron \\(12\\) baúles idénticos, como aparece en la imagen. Cada baúl mide \\(20\\) cm de frente, \\(20\\) cm de alto y \\(40\\) cm de fondo.</p>[[IMG]]<p>¿Qué espacio ocupa toda la pila?</p>",
       "opciones": {
-        "A": "\\(3.000\\ \\mathrm{cm}^3\\)",
+        "A": "\\(16.000\\ \\mathrm{cm}^3\\)",
         "B": "\\(12.000\\ \\mathrm{cm}^3\\)",
-        "C": "\\(36.000\\ \\mathrm{cm}^3\\)",
-        "D": "\\(300.000\\ \\mathrm{cm}^3\\)"
+        "C": "\\(192.000\\ \\mathrm{cm}^3\\)",
+        "D": "\\(1.600.000\\ \\mathrm{cm}^3\\)"
       },
       "clave": "C",
       "competencia": "b",
@@ -524,18 +524,18 @@
       "dificultad": "MEDIA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
       "que_evalua": "La capacidad para calcular el volumen de una figura tridimensional conformada por varios paralelepípedos.",
-      "justificacion_correcta": "Cada caja ocupa \\(10 \\times 10 \\times 30 = 3.000\\ \\mathrm{cm}^{3}\\) y hay \\(12\\): \\(3.000 \\times 12 = 36.000\\ \\mathrm{cm}^{3}\\).",
+      "justificacion_correcta": "Cada baúl ocupa \\(20 \\times 20 \\times 40 = 16.000\\ \\mathrm{cm}^{3}\\) y hay \\(12\\): \\(16.000 \\times 12 = 192.000\\ \\mathrm{cm}^{3}\\).",
       "opciones_incorrectas": {
-        "A": "Calcula el volumen de una sola caja \\((3.000\\ \\mathrm{cm}^3)\\) y olvida que son \\(12\\).",
-        "B": "Asocia el número de cajas \\((12)\\) con \\(12.000\\ \\mathrm{cm}^3\\) sin usar el volumen real de cada caja.",
-        "D": "Multiplica mal las dimensiones (por ejemplo \\(100 \\times 100 \\times 30\\)) y obtiene \\(300.000\\ \\mathrm{cm}^3\\)."
+        "A": "Calcula el volumen de un solo baúl \\((16.000\\ \\mathrm{cm}^3)\\) y olvida que son \\(12\\).",
+        "B": "Asocia el número de baúles \\((12)\\) con \\(12.000\\ \\mathrm{cm}^3\\) sin usar el volumen real de cada baúl.",
+        "D": "Multiplica mal las dimensiones \\((200 \\times 200 \\times 40)\\) y obtiene \\(1.600.000\\ \\mathrm{cm}^3\\)."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q19.png"
     },
     {
       "id": "P-math-10-p1-20",
       "numero": 20,
-      "enunciado": "<p>Un cultivo arranca con \\(2^{5}\\) bacterias y su población se duplica cada hora, tal como recoge el esquema.</p>[[IMG]]<p>¿Cuántas bacterias habrá tres horas después?</p>",
+      "enunciado": "<p>En el laboratorio del colegio se observa al microscopio una gota de agua con \\(2^{5}\\) microorganismos; cada hora esa cantidad se multiplica por \\(2\\), como recoge el esquema.</p>[[IMG]]<p>¿Cuántos microorganismos habrá tres horas más tarde?</p>",
       "opciones": {
         "A": "\\(2^{8}\\)",
         "B": "\\(2^{7}\\)",
@@ -550,11 +550,11 @@
       "dificultad": "MEDIA",
       "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
       "que_evalua": "La capacidad para determinar la expresión que representa una situación a partir de una expresión inicial.",
-      "justificacion_correcta": "Duplicar tres veces equivale a multiplicar por \\(2^{3}\\): \\(2^{5} \\times 2^{3} = 2^{8}\\).",
+      "justificacion_correcta": "Multiplicar por \\(2\\) tres veces equivale a multiplicar por \\(2^{3}\\): \\(2^{5} \\times 2^{3} = 2^{8}\\).",
       "opciones_incorrectas": {
         "B": "Suma solo \\(2\\) al exponente \\((5 + 2 = 7)\\) en vez de sumar \\(3\\), dando \\(2^{7}\\).",
         "C": "Multiplica los exponentes \\((5 \\times 3 = 15)\\) en lugar de sumarlos, obteniendo \\(2^{15}\\).",
-        "D": "Suma solo \\(1\\) al exponente \\((5 + 1 = 6)\\), como si la población se duplicara una sola vez."
+        "D": "Suma solo \\(1\\) al exponente \\((5 + 1 = 6)\\), como si la cantidad se multiplicara por \\(2\\) una sola vez."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q20.png"
     }

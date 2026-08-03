@@ -260,12 +260,12 @@
     {
       "id": "P-math-5-p1-09",
       "numero": 9,
-      "enunciado": "<p>En el club de ciencias del colegio cuidan cuatro peceras identificadas como Acuario 1, Acuario 2, Acuario 3 y Acuario 4. En unas nadan peces blancos, en otras peces negros y en otras de los dos colores, como se ve en la imagen.</p>[[IMG]]<p>Si un estudiante mete la red y saca un pez sin mirar, ¿en cuál pecera es seguro que sacará un pez negro?</p>",
+      "enunciado": "<p>En el laboratorio de biología del colegio hay cuatro peceras rotuladas con los nombres Coral, Burbuja, Estrella y Marea. Dentro de cada una nadan peces oscuros, peces claros o de los dos tonos, según el dibujo.</p>[[IMG]]<p>Si alguien mete la red en una sola pecera y atrapa un pez sin mirar, ¿en cuál de ellas es <b>seguro</b> que atrapará un pez oscuro?</p>",
       "opciones": {
-        "A": "Acuario 1.",
-        "B": "Acuario 2.",
-        "C": "Acuario 3.",
-        "D": "Acuario 4."
+        "A": "La pecera Coral.",
+        "B": "La pecera Burbuja.",
+        "C": "La pecera Estrella.",
+        "D": "La pecera Marea."
       },
       "clave": "B",
       "competencia": "a",
@@ -275,11 +275,11 @@
       "dificultad": "BAJA",
       "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
       "que_evalua": "La capacidad para diferenciar los eventos posibles de los imposibles.",
-      "justificacion_correcta": "Un evento es seguro cuando no existe otra posibilidad. En el Acuario 2 todos los peces son negros, así que el pez que salga será negro sin importar cuál se atrape.",
+      "justificacion_correcta": "Un evento es seguro cuando no queda ninguna otra posibilidad. En la pecera Burbuja los tres peces son oscuros, así que el pez que salga será oscuro sin importar cuál se atrape.",
       "opciones_incorrectas": {
-        "A": "En el Acuario 1 todos los peces son blancos, de modo que sacar uno negro es imposible.",
-        "C": "En el Acuario 3 hay peces negros y también uno blanco: sacar negro es posible, pero no seguro.",
-        "D": "En el Acuario 4 solo un pez es negro y los otros son blancos, así que el resultado no está garantizado."
+        "A": "En la pecera Coral los tres peces son claros, de modo que atrapar uno oscuro es imposible.",
+        "C": "En la pecera Estrella hay dos peces oscuros y uno claro: atrapar uno oscuro es posible, pero no seguro.",
+        "D": "En la pecera Marea solo uno de los tres peces es oscuro, así que el resultado no está garantizado."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q09.png"
     },
@@ -312,12 +312,12 @@
     {
       "id": "P-math-5-p1-11",
       "numero": 11,
-      "enunciado": "<p>Para medir el borde de una ventana se usaron lápices iguales, como muestra la figura: a lo alto caben \\(6\\) lápices y a lo ancho caben \\(2\\) lápices.</p>[[IMG]]<p>¿Cuál es el <b>perímetro</b> de la ventana, medido en lápices?</p>",
+      "enunciado": "<p>Para medir el contorno de un tablero se usaron marcadores iguales, como aparece en el dibujo: a lo ancho caben \\(6\\) marcadores y a lo alto caben \\(2\\).</p>[[IMG]]<p>¿Cuál es el <b>perímetro</b> del tablero, medido en marcadores?</p>",
       "opciones": {
-        "A": "\\(16\\) lápices.",
-        "B": "\\(12\\) lápices.",
-        "C": "\\(8\\) lápices.",
-        "D": "\\(4\\) lápices."
+        "A": "\\(16\\) marcadores.",
+        "B": "\\(12\\) marcadores.",
+        "C": "\\(8\\) marcadores.",
+        "D": "\\(4\\) marcadores."
       },
       "clave": "A",
       "competencia": "b",
@@ -327,11 +327,11 @@
       "dificultad": "MEDIA",
       "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir (longitudes, distancias, áreas de superficies, volúmenes de cuerpos sólidos, volúmenes de líquidos y capacidades de recipientes).",
       "que_evalua": "La capacidad para calcular perímetros, utilizando unidades de medida no estandarizadas.",
-      "justificacion_correcta": "El perímetro suma los cuatro lados. Los dos lados largos miden \\(6\\) lápices cada uno y los dos cortos \\(2\\) lápices cada uno: \\(6 + 6 + 2 + 2 = 16\\) lápices.",
+      "justificacion_correcta": "El perímetro suma los cuatro lados. Los dos lados largos miden \\(6\\) marcadores cada uno y los dos cortos miden \\(2\\) marcadores cada uno: \\(6 + 6 + 2 + 2 = 16\\) marcadores.",
       "opciones_incorrectas": {
-        "B": "Suma solo un lado largo y un lado corto \\((6 + 6\\) o \\(6 + 2 + ...)\\), tomando \\(12\\) lápices.",
-        "C": "Suma solo los lápices que se ven en la figura \\((6 + 2)\\), sin tener en cuenta los lados opuestos.",
-        "D": "Resta los lápices observados \\((6 - 2)\\) en lugar de sumar los cuatro lados."
+        "B": "Suma solo los dos lados largos \\((6 + 6 = 12)\\) y deja por fuera los dos lados cortos.",
+        "C": "Suma solo los marcadores que aparecen dibujados \\((6 + 2 = 8)\\), sin contar los dos lados opuestos.",
+        "D": "Resta las dos medidas \\((6 - 2 = 4)\\) en lugar de sumar los cuatro lados."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q11.png"
     },

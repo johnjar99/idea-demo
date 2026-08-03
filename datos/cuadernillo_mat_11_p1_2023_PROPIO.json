@@ -217,7 +217,7 @@
     {
       "id": "P-math-11-p1-08",
       "numero": 8,
-      "enunciado": "<p>En un parque temático, el valor del pasaporte de ingreso depende de la edad de quien lo compra: desde \\(0\\) y hasta menos de \\(8\\) años cuesta \\(\\$5.000\\); desde \\(8\\) y hasta menos de \\(16\\) años, \\(\\$7.000\\); desde \\(16\\) y hasta menos de \\(56\\) años, \\(\\$10.000\\); y desde los \\(56\\) años en adelante, \\(\\$6.000\\).</p><p>¿Cuál de las siguientes gráficas (A, B, C o D) relaciona correctamente la edad con el costo del pasaporte?</p>",
+      "enunciado": "<p>En el parqueadero de un centro comercial la tarifa se cobra por bloques: si el vehículo permanece menos de \\(3\\) horas se pagan \\(\\$4.000\\); entre \\(3\\) y menos de \\(9\\) horas, \\(\\$12.000\\); entre \\(9\\) y menos de \\(13\\) horas, \\(\\$22.000\\); y de \\(13\\) horas en adelante rige la tarifa de día completo, \\(\\$14.000\\). Dentro de cada bloque la tarifa no varía, y salta justo al cumplirse la hora con que abre el bloque siguiente.</p><p>¿Cuál de las siguientes gráficas (A, B, C o D) relaciona las horas de permanencia con la tarifa que se paga?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -232,10 +232,10 @@
       "dificultad": "ALTA",
       "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales.",
       "que_evalua": "La capacidad para construir la gráfica asociada a una función a trozos descrita en una tabla.",
-      "justificacion_correcta": "El valor del pasaporte se mantiene constante dentro de cada rango de edad y da un salto al pasar de un rango al siguiente, así que la gráfica es escalonada: cuatro tramos horizontales, a la altura de \\(5\\), \\(7\\), \\(10\\) y \\(6\\) (miles de pesos), en ese orden. La gráfica A es la única que presenta esos cuatro tramos constantes con esas alturas, y en cada salto el punto lleno queda a la izquierda y el hueco a la derecha, tal como lo dice el enunciado: el que cumple \\(8\\) años ya paga \\(\\$7.000\\).",
+      "justificacion_correcta": "La tarifa se mantiene constante dentro de cada bloque de horas y da un salto al pasar de un bloque al siguiente, así que la gráfica es escalonada: cuatro tramos horizontales, a la altura de \\(4.000\\), \\(12.000\\), \\(22.000\\) y \\(14.000\\) pesos, en ese orden. La gráfica A es la única que presenta esos cuatro tramos constantes con esas alturas, y en cada salto el punto lleno queda a la izquierda y el hueco a la derecha, tal como lo dice el enunciado: quien completa \\(3\\) horas ya paga \\(\\$12.000\\). El último tramo termina en punta de flecha porque de \\(13\\) horas en adelante la tarifa no vuelve a cambiar.",
       "opciones_incorrectas": {
-        "B": "Une los valores con una línea continua, como si el costo cambiara gradualmente con la edad.",
-        "C": "Asigna las alturas a rangos de edad equivocados.",
+        "B": "Une los valores con una línea continua, como si la tarifa subiera y bajara poco a poco con las horas.",
+        "C": "Asigna las alturas a bloques de horas equivocados.",
         "D": "Muestra puntos aislados, no los tramos constantes de la función."
       },
       "opciones_imagenes": {
@@ -248,12 +248,12 @@
     {
       "id": "P-math-11-p1-09",
       "numero": 9,
-      "enunciado": "<p>En el punto de atención de la terminal de transporte se encuestó a <b>\\(400\\)</b> usuarios sobre la atención que recibieron. La gráfica muestra los porcentajes obtenidos: Malo \\(10\\%\\), Regular \\(20\\%\\), Bueno \\(45\\%\\) y Excelente \\(25\\%\\). La leyenda agrupa a los usuarios <b>insatisfechos</b> (Malo o Regular) y <b>satisfechos</b> (Bueno o Excelente).</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones es verdadera según los resultados?</p>",
+      "enunciado": "<p>En la entrada del colegio se preguntó a <b>\\(400\\)</b> familias cómo llega su hijo cada mañana. La gráfica reparte las respuestas: a pie \\(15\\%\\), en bicicleta \\(20\\%\\), en bus escolar \\(45\\%\\) y en carro \\(20\\%\\). La leyenda separa a quienes llegan sin motor (a pie o en bicicleta) de quienes llegan en vehículo motorizado (bus escolar o carro).</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones es verdadera según los resultados?</p>",
       "opciones": {
-        "A": "Más de \\(150\\) usuarios calificaron la atención como Buena.",
-        "B": "Los usuarios insatisfechos superan en número a los usuarios satisfechos.",
-        "C": "Menos de \\(200\\) usuarios quedaron satisfechos con la atención.",
-        "D": "Más usuarios calificaron la atención como Malo que como Excelente."
+        "A": "Más de \\(150\\) familias llegan en bus escolar.",
+        "B": "Las familias que llegan sin motor superan en número a las que llegan en vehículo motorizado.",
+        "C": "Menos de \\(200\\) familias llegan en vehículo motorizado.",
+        "D": "Más familias llegan a pie que en carro."
       },
       "clave": "A",
       "competencia": "c",
@@ -263,11 +263,11 @@
       "dificultad": "BAJA",
       "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
       "que_evalua": "La capacidad para establecer una afirmación verdadera a partir de la información presentada en una gráfica.",
-      "justificacion_correcta": "El \\(45\\%\\) de \\(400\\) es \\(180\\) usuarios que calificaron la atención como Buena, y \\(180\\) es más de \\(150\\). Esa es la única afirmación verdadera.",
+      "justificacion_correcta": "El \\(45\\%\\) de \\(400\\) es \\(180\\) familias que llegan en bus escolar, y \\(180\\) es más de \\(150\\). Esa es la única afirmación verdadera.",
       "opciones_incorrectas": {
-        "B": "Insatisfechos \\(= 10\\%+20\\% = 30\\%\\) \\((120\\) usuarios\\()\\); satisfechos \\(= 45\\%+25\\% = 70\\%\\) \\((280)\\). Los satisfechos son más, no menos.",
-        "C": "Satisfechos \\(= 70\\%\\) de \\(400 = 280\\) usuarios, que no es menos de \\(200\\).",
-        "D": "Malo es \\(10\\%\\) \\((40\\) usuarios\\()\\) y Excelente \\(25\\%\\) \\((100)\\); hay menos en Malo, así que la comparación está invertida."
+        "B": "Sin motor \\(= 15\\%+20\\% = 35\\%\\) \\((140\\) familias\\()\\); en vehículo motorizado \\(= 45\\%+20\\% = 65\\%\\) \\((260)\\). Las motorizadas son más, no menos.",
+        "C": "En vehículo motorizado hay \\(65\\%\\) de \\(400 = 260\\) familias, que no es menos de \\(200\\).",
+        "D": "A pie es \\(15\\%\\) \\((60\\) familias\\()\\) y en carro \\(20\\%\\) \\((80)\\); hay menos a pie, así que la comparación está invertida."
       },
       "imagen_figura": "assets/banco-mat-11-p1/q09.png"
     },
@@ -535,12 +535,12 @@
     {
       "id": "P-math-11-p1-20",
       "numero": 20,
-      "enunciado": "<p>En el taller de dibujo técnico, Camilo trazó la elipse de la figura. En ella, el semieje mayor es el segmento más largo que va del centro a la curva y el semieje menor es el más corto. Camilo afirma que, si al medir los dos semiejes obtiene el mismo resultado, lo que dibujó es una circunferencia.</p>[[IMG]]<p>¿Es correcta la afirmación de Camilo?</p>",
+      "enunciado": "<p>Para la portada de su cuaderno, Mariana contorneó sobre cartulina verde una plantilla ovalada de acrílico y obtuvo la curva cerrada de la figura, que su profesora llamó elipse. Doblando la cartulina en dos direcciones marcó el cruce de los dobleces y desde ahí, con una regla, tomó mediciones hacia la curva en muchas direcciones distintas. A la mayor de esas mediciones la profesora la llama semieje mayor, y a la menor, semieje menor. Mariana sostiene lo siguiente: si esas dos anotaciones de su cuaderno dieran el mismo resultado, la curva contorneada sería una circunferencia. La plantilla, que vino en el estuche de geometría, permite contornear óvalos de varios tamaños.</p>[[IMG]]<p>¿Es correcta la conclusión de Mariana?</p>",
       "opciones": {
-        "A": "No, porque los segmentos que van del centro a la curva siempre miden distinto, así que los dos semiejes nunca pueden ser iguales.",
-        "B": "No, porque que el semieje mayor y el menor midan lo mismo no garantiza que todos los segmentos del centro a la curva midan igual.",
-        "C": "Sí, porque cada segmento del centro a la curva mide entre lo que mide el semieje menor y lo que mide el mayor; si esos dos miden lo mismo, todos miden lo mismo.",
-        "D": "Sí, porque una figura en la que el semieje mayor mide distinto del menor nunca puede ser una circunferencia."
+        "A": "No, porque las distancias del centro a la curva siempre son distintas, así que los dos semiejes nunca pueden medir lo mismo.",
+        "B": "No, porque que el semieje mayor y el menor midan lo mismo no garantiza que todas las distancias del centro a la curva sean iguales.",
+        "C": "Sí, porque cada distancia del centro a la curva queda entre la del semieje menor y la del semieje mayor; si esas dos son iguales, todas lo son.",
+        "D": "Sí, porque una curva en la que el semieje mayor mide distinto del menor nunca puede ser una circunferencia."
       },
       "clave": "C",
       "competencia": "c",
@@ -550,10 +550,10 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco y describo curvas y o lugares geométricos.",
       "que_evalua": "La capacidad para deducir características de una cónica, dadas condiciones sobre su construcción.",
-      "justificacion_correcta": "El semieje menor y el mayor son, respectivamente, el más corto y el más largo de los segmentos que van del centro a la curva. Si esos dos miden lo mismo, todos los segmentos del centro a la curva miden lo mismo, y una figura cuyos puntos están todos a la misma distancia del centro es una circunferencia.",
+      "justificacion_correcta": "El semieje menor y el semieje mayor son, respectivamente, la menor y la mayor de las distancias que van del centro a la curva. Si esas dos dieran el mismo resultado, todas las distancias del centro a la curva medirían lo mismo, y una curva cuyos puntos están todos a igual distancia del centro es una circunferencia.",
       "opciones_incorrectas": {
-        "A": "Parte de que los segmentos del centro a la curva siempre miden distinto, lo cual es falso.",
-        "B": "Niega la conclusión y desconoce que los demás segmentos quedan entre el más corto y el más largo.",
+        "A": "Parte de que las distancias del centro a la curva siempre son distintas, lo cual es falso.",
+        "B": "Niega la conclusión y desconoce que las demás distancias quedan entre la menor y la mayor.",
         "D": "Concluye que sí, pero justifica el caso de semiejes con medidas diferentes, no el caso de igualdad que se plantea."
       },
       "imagen_figura": "assets/banco-mat-11-p1/q20.png"

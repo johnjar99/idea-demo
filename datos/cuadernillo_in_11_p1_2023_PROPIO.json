@@ -50,8 +50,8 @@
       "imagen": "assets/banco-in-11-p1/ejemplo_conversacion.png"
     },
     "ctx-parte3": {
-      "titulo": "The History of Chocolate",
-      "texto": "Lee el siguiente texto.\n\nChocolate is one of the most popular treats in the world. It is made from the seeds of the cacao tree, which first grew in the rainforests of Central and South America. Today, the country that produces the most cacao is Ivory Coast, in Africa, followed by Ghana and then Indonesia.\n\nPeople love chocolate because it tastes sweet and it gives you quick energy. Making a simple chocolate drink is not difficult: you only need cacao, sugar and warm milk. For this reason, hot chocolate became a favourite drink in many cold countries.\n\nThe Maya and the Aztecs drank chocolate long before Europeans did. They mixed it with water and spices, but they did not add sugar. Some people say that the explorer Christopher Columbus made chocolate famous in Europe, but this is not true. It was the Spanish who took cacao to Spain in the 16th century and added sugar to it.\n\nWhen chocolate arrived in Europe, both rich families and, later, ordinary people enjoyed it. Although many people only know about sweet chocolate bars, there are hundreds of recipes, and chocolate is used in cakes, drinks and sauces. Good chocolate has few ingredients, so it can be stored for a long time.",
+      "titulo": "From the Pod to Your Cup",
+      "texto": "Lee el siguiente texto.\n\nEvery bar of chocolate starts as a fruit. The cacao tree gives heavy pods, and inside each pod there are about forty seeds covered with a white pulp. Growers open the pods with a knife, leave the seeds under big leaves for a week and then dry them in the sun. Almost all the sacks come from warm lands near the Equator: Ivory Coast harvests more cacao than anyone else, Ghana is in second place and Indonesia in third.\n\nTwo things keep chocolate on the shopping list of many homes. The first one is its sweet flavour, which almost every child likes at once. The second one is heat: a cup of hot chocolate warms a person from the inside in a few minutes. Making that cup at home takes only three things: cacao, sugar and hot milk. That is why families in the cold towns of the mountains drink it at breakfast and again at night.\n\nChocolate was not always sweet. The Maya and the Aztecs were already drinking it when nobody in Europe knew the plant, and they made it with water, chilli and other spices, without a single spoon of sugar. Some people say that Christopher Columbus made chocolate famous in Europe, but this is not true. It was the Spanish who took cacao to Spain, mixed it with sugar and turned it into a warm drink for rich houses.\n\nToday the shelves are full of bars, but chocolate also goes into cakes, biscuits and a dark sauce that cooks in Oaxaca serve with meat. A good bar has few ingredients, so it can wait for months in a cupboard without losing its flavour. That is the last stop of a journey that begins inside a pod.",
       "rango_preguntas": "9 a 14",
       "imagen": "assets/banco-in-11-p1/q09.png"
     },
@@ -63,7 +63,7 @@
     },
     "ctx-parte5": {
       "titulo": "Quinoa",
-      "texto": "Quinoa is one of the (0) oldest crops of the Andes. And yes, quinoa is a seed, (20) __________ a cereal, even if cooks boil it like rice. Potatoes are the food that Andean families cook most often; quinoa is the (21) _______ one on that list.\n\nThe best quinoa is (22) ______ on cold plains more than 3,000 metres above sea level. Merchants carried the first sacks of quinoa (23) _______ North American markets in the 1980s. Farmers in Bolivia and Peru still keep the seeds of the plants they like best, and small mills now sell quinoa flour in many towns.\n\nQuinoa is (24) ______ in protein, and a warm bowl of it keeps hunger away for hours. Besides, new clinical (25) ______ shows that eating quinoa may help people with diabetes.\n\nQuinoa appears today in soups, salads and breads. In many Andean towns, families eat it at least twice a week, and this old habit is coming back in big cities too.",
+      "texto": "Quinoa is one of the (0) oldest crops of the Andes. And yes, quinoa is a seed, (20) __________ a cereal, even if cooks boil it like rice. Andean families cook potatoes more often than any other crop, and quinoa is the (21) _______ most common one in their kitchens.\n\nThe best quinoa is (22) ______ on cold plains more than 3,000 metres above sea level. Merchants carried the first sacks of quinoa (23) _______ North American markets in the 1980s. Farmers in Bolivia and Peru still keep the seeds of the plants they like best, and small mills now sell quinoa flour in many towns.\n\nQuinoa is (24) ______ in protein, and a warm bowl of it keeps hunger away for hours. The clinical (25) ______ published last year in Peru compared 40 patients who ate quinoa soup twice a week with 40 who did not, and the quinoa group had lower sugar levels in the blood.\n\nQuinoa appears today in soups, salads and breads. In many Andean towns, families eat it at least twice a week, and this old habit is coming back in big cities too.",
       "rango_preguntas": "20 a 25"
     }
   },
@@ -320,8 +320,8 @@
       "id": "P11I09",
       "numero": 9,
       "contexto_id": "ctx-parte3",
-      "contexto_titulo": "The History of Chocolate",
-      "enunciado": "<p class=\"en-stem\">The second country that produces the most cacao is</p>",
+      "contexto_titulo": "From the Pod to Your Cup",
+      "enunciado": "<p class=\"en-stem\">The second country in the cacao harvest is</p>",
       "opciones": {
         "A": "Indonesia.",
         "B": "Ghana.",
@@ -336,22 +336,22 @@
       "dificultad": "Baja",
       "estandar": "Identifica información general y específica de un texto corto.",
       "que_evalua": "Si el estudiante puede localizar información específica sobre la producción de cacao en el primer párrafo.",
-      "justificacion_correcta": "La opción B (Ghana) es la correcta porque al final del primer párrafo se indica que el mayor productor es Ivory Coast, followed by Ghana, es decir, Ghana es el segundo.",
+      "justificacion_correcta": "La opción B (Ghana) es la correcta porque el primer párrafo dice que Ivory Coast recoge más cacao que nadie y que Ghana ocupa el segundo lugar: 'Ghana is in second place'.",
       "opciones_incorrectas": {
-        "A": "Indonesia se menciona como tercer productor, no como el segundo.",
-        "C": "Ivory Coast es el primer productor, no el segundo."
+        "A": "Indonesia aparece en tercer lugar, no en el segundo.",
+        "C": "Ivory Coast es el primero de la lista, no el segundo."
       }
     },
     {
       "id": "P11I10",
       "numero": 10,
       "contexto_id": "ctx-parte3",
-      "contexto_titulo": "The History of Chocolate",
+      "contexto_titulo": "From the Pod to Your Cup",
       "enunciado": "<p class=\"en-stem\">People love chocolate because it</p>",
       "opciones": {
         "A": "is hard to make.",
         "B": "needs cold milk.",
-        "C": "tastes sweet."
+        "C": "has a sweet flavour."
       },
       "clave": "C",
       "competencia": "c",
@@ -362,20 +362,20 @@
       "dificultad": "Baja",
       "estandar": "Identifica información general y específica de un texto corto.",
       "que_evalua": "Si el estudiante puede identificar la razón por la que el chocolate es tan apreciado según el segundo párrafo.",
-      "justificacion_correcta": "La opción C (tastes sweet) es la correcta porque el segundo párrafo afirma que a la gente le gusta el chocolate porque sabe dulce: 'it tastes sweet'.",
+      "justificacion_correcta": "La opción C (has a sweet flavour) es la correcta porque el segundo párrafo dice que la primera razón para tener chocolate en la lista de compras es su sabor dulce: 'its sweet flavour'.",
       "opciones_incorrectas": {
-        "A": "El texto dice lo contrario: preparar una bebida simple de chocolate no es difícil.",
-        "B": "El texto menciona leche tibia (warm milk), no leche fría."
+        "A": "El texto dice lo contrario: hacer una taza en casa solo pide cacao, azúcar y leche caliente.",
+        "B": "El texto menciona leche caliente (hot milk), no leche fría."
       }
     },
     {
       "id": "P11I11",
       "numero": 11,
       "contexto_id": "ctx-parte3",
-      "contexto_titulo": "The History of Chocolate",
+      "contexto_titulo": "From the Pod to Your Cup",
       "enunciado": "<p class=\"en-stem\">According to paragraph 2, what makes a warm cup of chocolate popular where the weather is cold?</p>",
       "opciones": {
-        "A": "It gives the body quick energy.",
+        "A": "It warms a person from the inside.",
         "B": "It can be bought in every shop.",
         "C": "It is prepared without sugar."
       },
@@ -388,7 +388,7 @@
       "dificultad": "Media",
       "estandar": "Analiza textos para comprender ideas principales y específicas.",
       "que_evalua": "Si el estudiante comprende por qué el chocolate caliente se volvió popular en ciertos países, conectando información del texto.",
-      "justificacion_correcta": "La opción A (It gives the body quick energy) es la correcta porque el segundo párrafo dice que el chocolate da energía rápida ('gives you quick energy') y allí mismo se cuenta que la bebida caliente de chocolate se volvió la favorita en muchos países fríos; ninguna de las otras dos opciones se afirma en ese párrafo.",
+      "justificacion_correcta": "La opción A (It warms a person from the inside) es la correcta porque el segundo párrafo dice que una taza de chocolate caliente calienta a la persona por dentro en pocos minutos y, por esa razón, las familias de los pueblos fríos de la montaña lo toman en el desayuno y otra vez en la noche; ninguna de las otras dos opciones se afirma en ese párrafo.",
       "opciones_incorrectas": {
         "B": "El texto no afirma que la bebida de chocolate se consiga en todas las tiendas.",
         "C": "Preparar la bebida sin azúcar se dice de mayas y aztecas, y no es la razón de su popularidad donde hace frío."
@@ -398,12 +398,12 @@
       "id": "P11I12",
       "numero": 12,
       "contexto_id": "ctx-parte3",
-      "contexto_titulo": "The History of Chocolate",
-      "enunciado": "<p class=\"en-stem\">According to paragraph 3, what did the Spanish do with cacao in the 16th century?</p>",
+      "contexto_titulo": "From the Pod to Your Cup",
+      "enunciado": "<p class=\"en-stem\">According to paragraph 3, what did the Spanish do with cacao?</p>",
       "opciones": {
         "A": "They planted cacao trees in their gardens.",
         "B": "They carried cacao to Spain and added sugar to it.",
-        "C": "They were praised all over the world."
+        "C": "They gave cacao to other kings to become famous."
       },
       "clave": "B",
       "competencia": "c",
@@ -414,17 +414,17 @@
       "dificultad": "Baja",
       "estandar": "Identifica información general y específica de un texto corto.",
       "que_evalua": "Si el estudiante puede identificar quién llevó el cacao a España.",
-      "justificacion_correcta": "La opción B (They carried cacao to Spain and added sugar to it) es la correcta porque el tercer párrafo afirma que fueron los españoles quienes llevaron el cacao a España en el siglo XVI y le añadieron azúcar: 'the Spanish who took cacao to Spain'.",
+      "justificacion_correcta": "La opción B (They carried cacao to Spain and added sugar to it) es la correcta porque el tercer párrafo dice que fueron los españoles quienes llevaron el cacao a España y lo mezclaron con azúcar: 'the Spanish who took cacao to Spain, mixed it with sugar'.",
       "opciones_incorrectas": {
-        "A": "El texto no dice que los españoles sembraran árboles de cacao; el cacao crecía en las selvas de América.",
-        "C": "El texto no atribuye ningún elogio ni reconocimiento a los españoles, solo cuenta lo que hicieron con el cacao."
+        "A": "El texto no dice que los españoles sembraran árboles de cacao; el cacao se recoge en tierras cálidas cerca del Ecuador.",
+        "C": "El texto no dice que los españoles regalaran cacao a otros reyes ni que buscaran fama con él; solo cuenta que lo llevaron a España y le añadieron azúcar."
       }
     },
     {
       "id": "P11I13",
       "numero": 13,
       "contexto_id": "ctx-parte3",
-      "contexto_titulo": "The History of Chocolate",
+      "contexto_titulo": "From the Pod to Your Cup",
       "enunciado": "<p class=\"en-stem\">According to the text, who made chocolate famous in Europe?</p>",
       "opciones": {
         "A": "The Spanish",
@@ -440,9 +440,9 @@
       "dificultad": "Media",
       "estandar": "Identifica información general y específica de un texto corto.",
       "que_evalua": "Si el estudiante distingue la información verdadera del mito mencionado en el texto sobre quién hizo famoso el chocolate.",
-      "justificacion_correcta": "La opción A (The Spanish) es la correcta porque el texto aclara que no fue Columbus, sino los españoles, quienes llevaron el cacao a España y le añadieron azúcar.",
+      "justificacion_correcta": "La opción A (The Spanish) es la correcta porque el texto aclara que la historia de Columbus no es cierta y que fueron los españoles quienes llevaron el cacao a España y lo convirtieron en una bebida dulce.",
       "opciones_incorrectas": {
-        "B": "Los mayas bebían chocolate antes que los europeos, pero no fueron ellos quienes lo hicieron famoso en Europa.",
+        "B": "Los mayas ya bebían chocolate cuando en Europa nadie conocía la planta, pero no fueron ellos quienes lo hicieron famoso allí.",
         "C": "Christopher Columbus se menciona como una creencia popular incorrecta; el texto dice 'this is not true'."
       }
     },
@@ -450,7 +450,7 @@
       "id": "P11I14",
       "numero": 14,
       "contexto_id": "ctx-parte3",
-      "contexto_titulo": "The History of Chocolate",
+      "contexto_titulo": "From the Pod to Your Cup",
       "enunciado": "<p class=\"en-stem\">Good chocolate can be kept for a long time because it</p>",
       "opciones": {
         "A": "is only sold in bars.",
@@ -466,10 +466,10 @@
       "dificultad": "Media",
       "estandar": "Comprende las relaciones entre distintas partes del texto y la secuencia de los eventos mencionados.",
       "que_evalua": "Si el estudiante conecta dos ideas separadas del último párrafo (pocos ingredientes y conservación) para inferir por qué el buen chocolate dura tanto.",
-      "justificacion_correcta": "La opción C (has few ingredients) es la correcta porque el estudiante debe conectar dos ideas del último párrafo: que el buen chocolate tiene pocos ingredientes y que, por esa razón ('so'), puede almacenarse mucho tiempo. La conservación es la consecuencia, no la causa.",
+      "justificacion_correcta": "La opción C (has few ingredients) es la correcta porque el estudiante debe conectar dos ideas del último párrafo: que una buena barra tiene pocos ingredientes y que, por esa razón ('so'), puede esperar meses en la alacena sin perder su sabor. La conservación es la consecuencia, no la causa.",
       "opciones_incorrectas": {
-        "A": "Que se venda en barras no se afirma; el texto dice que el chocolate se usa también en pasteles, bebidas y salsas, y eso no explica su conservación.",
-        "B": "Mezclar con especias se dice de la bebida de mayas y aztecas, no del buen chocolate que se conserva."
+        "A": "Que solo se venda en barras no se afirma; el último párrafo dice que el chocolate también va en pasteles, galletas y una salsa oscura, y eso no explica su conservación.",
+        "B": "Mezclarlo con especias se dice de la bebida de mayas y aztecas, no de la buena barra que se conserva."
       }
     },
     {
@@ -645,7 +645,7 @@
       "numero": 21,
       "contexto_id": "ctx-parte5",
       "contexto_titulo": "Quinoa - Parte 5",
-      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(21)</strong> en el texto <em>Quinoa</em>.</p><p class=\"en-stem\">“Potatoes are the food that Andean families cook most often; quinoa is the <span class=\"en-blank\">(21) _______</span> one on that list.”</p>",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(21)</strong> en el texto <em>Quinoa</em>.</p><p class=\"en-stem\">“Andean families cook potatoes more often than any other crop, and quinoa is the <span class=\"en-blank\">(21) _______</span> most common one in their kitchens.”</p>",
       "opciones": {
         "A": "two",
         "B": "both",
@@ -661,11 +661,11 @@
       "dificultad": "Media",
       "estandar": "Usa adecuadamente estructuras y patrones gramaticales de uso frecuente en inglés.",
       "que_evalua": "Si el estudiante conoce el uso de los números ordinales en inglés para indicar posición en una lista.",
-      "justificacion_correcta": "La opción D (second) es la correcta porque la frase pide un número ordinal para indicar el lugar que ocupa la quinua en esa lista: 'the second one'.",
+      "justificacion_correcta": "La opción D (second) es la correcta porque la frase pide un número ordinal que indique el puesto de la quinua entre los cultivos que más se cocinan: si la papa va primero, la quinua es 'the second most common one'.",
       "opciones_incorrectas": {
-        "A": "two es un número cardinal, no indica posición en una lista.",
-        "B": "both se refiere a dos elementos juntos, no a una posición.",
-        "C": "twice indica que algo ocurre dos veces, no una posición en una lista."
+        "A": "two es un número cardinal: cuenta elementos, pero no señala el puesto que ocupa la quinua.",
+        "B": "both se refiere a dos elementos tomados juntos, no al puesto de uno de ellos.",
+        "C": "twice indica que algo ocurre dos veces, no el puesto dentro de un orden."
       }
     },
     {
@@ -757,7 +757,7 @@
       "numero": 25,
       "contexto_id": "ctx-parte5",
       "contexto_titulo": "Quinoa - Parte 5",
-      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(25)</strong> en el texto <em>Quinoa</em>.</p><p class=\"en-stem\">“Besides, new clinical <span class=\"en-blank\">(25) ______</span> shows that eating quinoa may help people with diabetes.”</p>",
+      "enunciado": "<p class=\"en-instruccion\">Selecciona la palabra que mejor completa el espacio <strong>(25)</strong> en el texto <em>Quinoa</em>.</p><p class=\"en-stem\">“The clinical <span class=\"en-blank\">(25) ______</span> published last year in Peru compared 40 patients who ate quinoa soup twice a week with 40 who did not, and the quinoa group had lower sugar levels in the blood.”</p>",
       "opciones": {
         "A": "operation",
         "B": "prescription",
@@ -773,11 +773,11 @@
       "dificultad": "Alta",
       "estandar": "Reconoce el significado de frases nominales que usan adjetivos especializados en contextos científicos.",
       "que_evalua": "Si el estudiante conoce el significado de sustantivos con campo semántico médico-científico en inglés.",
-      "justificacion_correcta": "La opción C (research) es la correcta porque 'clinical research' (investigación clínica) es el sustantivo que nombra el proceso científico que aporta información nueva sobre los efectos de un alimento.",
+      "justificacion_correcta": "La opción C (research) es la correcta porque 'clinical research' (investigación clínica) es el sustantivo que nombra el estudio científico que se publica, compara grupos de pacientes y produce conocimiento nuevo sobre un alimento.",
       "opciones_incorrectas": {
-        "A": "operation se refiere a una cirugía o procedimiento, no a la producción de conocimiento.",
-        "B": "prescription es la receta que da un médico, no un proceso de investigación.",
-        "D": "drug se refiere a un medicamento, no a un proceso científico."
+        "A": "operation se refiere a una cirugía, algo que se le practica a un paciente, no a un estudio que se publica y compara grupos.",
+        "B": "prescription es la receta que da un médico, no un estudio que se publica.",
+        "D": "drug se refiere a un medicamento, no al estudio científico que lo evalúa."
       }
     }
   ],
