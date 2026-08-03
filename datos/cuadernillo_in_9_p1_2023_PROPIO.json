@@ -55,7 +55,7 @@
     "ctx-parte4": {
       "titulo": "Small habits can change your whole day.",
       "imagen": "assets/banco-in-9-p1/q16.png",
-      "texto": "Small habits can change your whole day. The (6)_______ habit can make a big difference. Drinking water is simple, (7)_______ it helps your body and your mind. (8)_______ you start your morning with a glass of water, you feel more awake. Some people forget to drink water, so they (9)_______ feel a little tired, but not always. How (10)_______ do you drink water at school? Try to keep a bottle near (11)_______ and drink a little every hour. In the end, one small habit (12)_______ your whole life better.",
+      "texto": "Small habits can change your whole day. The (6)_______ habit can make a big difference. Drinking water helps your body and your mind, (7)_______ few students do it at school. (8)_______ you start your morning with a glass of water, you feel more awake. Some people forget to drink water, so they (9)_______ feel a little tired, but not always. How (10)_______ do you drink water at school? Try to keep a bottle near (11)_______ and drink a little every hour. In the end, one small habit (12)_______ your whole life better.",
       "rango_preguntas": "6 a 12"
     }
   },
@@ -225,8 +225,8 @@
       "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (7) in the text.</p>",
       "opciones": {
         "A": "or",
-        "B": "and",
-        "C": "but"
+        "B": "but",
+        "C": "and"
       },
       "clave": "B",
       "competencia": "d",
@@ -237,10 +237,10 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Seleccionar la conjunción que une dos ideas según su relación lógica.",
-      "justificacion_correcta": "Opción «and», dado que «and» suma dos ideas que van en la misma dirección: beber agua es simple y, además, ayuda al cuerpo y a la mente.",
+      "justificacion_correcta": "Opción «but», dado que «but» une dos ideas que se oponen: beber agua ayuda al cuerpo y a la mente y, aun así, pocos estudiantes lo hacen en el colegio.",
       "opciones_incorrectas": {
-        "C": "«but» introduce un contraste, pero las dos ideas no se oponen.",
-        "A": "«or» presenta una alternativa, y aquí no se ofrece una elección entre opciones."
+        "C": "«and» suma dos ideas que van en la misma dirección, y aquí la segunda contradice lo que se esperaría de la primera.",
+        "A": "«or» presenta una alternativa entre dos posibilidades, y aquí no hay que elegir entre dos cosas."
       }
     },
     {
@@ -412,7 +412,7 @@
       "numero": 14,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You use these white parts of your mouth to bite an apple.</p>",
+      "enunciado": "<p class=\"en-stem\">You use these white parts of your mouth to eat.</p>",
       "opciones": {
         "A": "teeth",
         "B": "fingers",
@@ -431,14 +431,14 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
-      "justificacion_correcta": "Opción «teeth», dado que «teeth» (dientes) son las partes blancas de la boca que se usan para morder.",
+      "justificacion_correcta": "Opción «teeth», dado que «teeth» (dientes) son las partes blancas de la boca que se usan para comer.",
       "opciones_incorrectas": {
-        "D": "«eyes» (ojos) sirven para ver, no para morder.",
-        "F": "«nose» (nariz) está sobre la boca, pero no sirve para morder.",
-        "G": "«legs» (piernas) no están en la boca ni sirven para morder.",
-        "B": "«fingers» (dedos) pueden sostener la manzana, pero no son las partes blancas de la boca.",
-        "E": "«back» (espalda) no está en la boca ni participa al morder.",
-        "C": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además ayuda a saborear, no a morder."
+        "D": "«eyes» (ojos) sirven para ver, no para comer.",
+        "F": "«nose» (nariz) está sobre la boca, pero no sirve para comer.",
+        "G": "«legs» (piernas) no están en la boca ni sirven para comer.",
+        "B": "«fingers» (dedos) pueden llevar la comida a la boca, pero no son las partes blancas de la boca.",
+        "E": "«back» (espalda) no está en la boca ni participa al comer.",
+        "C": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además ayuda a saborear y no es una parte blanca."
       }
     },
     {
@@ -477,7 +477,7 @@
       "numero": 16,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You have ten of these, and you use them to type on a keyboard.</p>",
+      "enunciado": "<p class=\"en-stem\">You have ten of these and you use them to write.</p>",
       "opciones": {
         "A": "teeth",
         "B": "nose",
@@ -496,11 +496,14 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario básico del cuerpo a partir de una descripción de su función.",
-      "justificacion_correcta": "Opción «fingers», dado que «fingers» (dedos de la mano) son las diez partes que se usan para escribir en un teclado.",
+      "justificacion_correcta": "Opción «fingers», dado que «fingers» (dedos de la mano) son las diez partes del cuerpo que se usan para escribir.",
       "opciones_incorrectas": {
-        "A": "«teeth» (dientes) son más de diez y se usan para morder, no para teclear.",
-        "E": "«legs» (piernas) sirven para caminar, no para teclear.",
-        "F": "«back» (espalda) no se usa para escribir en un teclado."
+        "A": "«teeth» (dientes) se usan para morder, no para escribir, y además no son diez.",
+        "B": "«nose» (nariz) sirve para oler, no para escribir.",
+        "C": "«eyes» (ojos) sirven para ver, no para escribir.",
+        "D": "«tongue» (lengua) ya quedó usada en el ejemplo (0), así que no está disponible; además sirve para saborear, no para escribir.",
+        "E": "«legs» (piernas) sirven para caminar, no para escribir.",
+        "F": "«back» (espalda) no se usa para escribir."
       }
     },
     {

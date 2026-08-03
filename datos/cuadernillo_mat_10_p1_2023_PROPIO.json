@@ -88,7 +88,7 @@
     {
       "id": "P-math-10-p1-11",
       "numero": 3,
-      "enunciado": "<p>Dos personas hicieron mercado. La primera se llevó el conjunto \\(C_1\\) y la segunda el conjunto \\(C_2\\). Se llama \\(V\\) al conjunto de todas las verduras. Alguien sostiene que \\((C_1 \\cup C_2) \\cap V\\) representa las verduras que compraron entre las dos.</p><p>¿Está en lo cierto?</p>",
+      "enunciado": "<p>En una casa viven dos personas y cada una hizo su propio mercado.</p><p>La primera se llevó el conjunto \\(C_1\\): banano, manzana, cebolla, zanahoria y pepino.</p><p>La segunda se llevó el conjunto \\(C_2\\): mango, piña, banano, cebolla y espinaca.</p><p>Se llama \\(V\\) al conjunto de todas las verduras. Alguien sostiene que \\((C_1 \\cup C_2) \\cap V\\) representa las verduras que compraron entre las dos.</p><p>¿Está en lo cierto?</p>",
       "opciones": {
         "A": "No, porque \\((C_1 \\cup C_2) \\cap V\\) equivale a todo \\(V\\).",
         "B": "No, porque dentro del paréntesis debería ir \\(C_1 \\cap C_2\\) para tomar lo comprado por ambas.",
@@ -103,11 +103,11 @@
       "dificultad": "ALTA",
       "estandar": "Reconozco cómo diferentes maneras de presentación de información pueden originar distintas interpretaciones.",
       "que_evalua": "La capacidad para argumentar, usando propiedades de las operaciones entre conjuntos.",
-      "justificacion_correcta": "La unión reúne lo que compraron las dos y la intersección con \\(V\\) se queda solo con las verduras, de modo que la expresión sí representa lo que se afirma. Además, por la propiedad distributiva, \\((C_1 \\cup C_2) \\cap V = (C_1 \\cap V) \\cup (C_2 \\cap V)\\).",
+      "justificacion_correcta": "La unión reúne todo lo que compraron las dos y la intersección con \\(V\\) se queda solo con las verduras, que aquí son cebolla, zanahoria, pepino y espinaca. Además, por la propiedad distributiva, \\((C_1 \\cup C_2) \\cap V = (C_1 \\cap V) \\cup (C_2 \\cap V)\\), es decir, las verduras de la primera reunidas con las de la segunda.",
       "opciones_incorrectas": {
-        "A": "\\((C_1 \\cup C_2) \\cap V\\) no es todo \\(V\\): solo quedan las verduras efectivamente compradas.",
-        "B": "Se quiere lo comprado por <i>cualquiera</i> de las dos, así que va la unión \\(C_1 \\cup C_2\\), no la intersección.",
-        "C": "\\(C_1 \\cup C_2\\) reúne lo de ambas personas, no solo lo común; la justificación confunde unión con intersección."
+        "A": "\\((C_1 \\cup C_2) \\cap V\\) no es todo \\(V\\): quedan únicamente las verduras efectivamente compradas, cebolla, zanahoria, pepino y espinaca.",
+        "B": "Se quiere lo comprado por cualquiera de las dos, así que va la unión \\(C_1 \\cup C_2\\); la intersección \\(C_1 \\cap C_2\\) dejaría solo banano y cebolla.",
+        "C": "\\(C_1 \\cup C_2\\) reúne lo de ambas personas, no solo lo común; esa justificación confunde la unión con la intersección."
       }
     },
     {
@@ -139,7 +139,7 @@
     {
       "id": "P-math-10-p1-03",
       "numero": 5,
-      "enunciado": "<p>En el triángulo \\(PQR\\) vale la ley del coseno \\(p^{2} = q^{2} + r^{2} - 2\\,q\\,r\\,\\cos P\\). Según la imagen, el ángulo en \\(P\\) mide \\(60^\\circ\\), el lado \\(r = 6\\) y además \\(r = 3q\\).</p>[[IMG]]<p>¿Cuánto mide el lado \\(p\\)?</p>",
+      "enunciado": "<p>En el triángulo \\(PQR\\) vale la ley del coseno \\(p^{2} = q^{2} + r^{2} - 2\\,q\\,r\\,\\cos P\\). Según la imagen, el ángulo en \\(P\\) mide \\(60^\\circ\\), el lado \\(r = 6\\) y además \\(r = 3q\\). Recuerde que \\(\\cos 60^\\circ = \\dfrac{1}{2}\\).</p>[[IMG]]<p>¿Cuánto mide el lado \\(p\\)?</p>",
       "opciones": {
         "A": "\\(\\sqrt{12}\\)",
         "B": "\\(28\\)",
@@ -158,7 +158,7 @@
       "opciones_incorrectas": {
         "C": "Cambia el signo del último término: \\(p^{2} = 4 + 36 + 12 = 52\\), como si la ley del coseno sumara en lugar de restar.",
         "B": "Calcula bien \\(p^{2} = 28\\) pero olvida tomar la raíz cuadrada y deja \\(p = 28\\).",
-        "A": "Resta el producto \\(2qr\\) completo sin multiplicar por \\(\\cos 60^\\circ\\): \\(4 + 36 - 24 - \\dots\\), llegando a \\(\\sqrt{12}\\)."
+        "A": "Se queda solo con el término que se resta, \\(2\\,q\\,r\\,\\cos P = 2(2)(6)\\left(\\dfrac{1}{2}\\right) = 12\\), y le saca la raíz sin sumar antes \\(q^{2}\\) y \\(r^{2}\\)."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q03.png"
     },
@@ -167,10 +167,10 @@
       "numero": 6,
       "enunciado": "<p>En un concurso quedan <b>\\(6\\) finalistas</b> y se entregarán <b>\\(2\\) becas iguales</b> (no hay primer ni segundo lugar: las dos becas son idénticas). ¿De cuántas formas distintas se pueden repartir las dos becas entre los finalistas?</p>",
       "opciones": {
-        "A": "\\(6 \\times 2 = 12\\)",
-        "B": "\\(\\dbinom{6}{2} = 15\\)",
-        "C": "\\(6 \\times 5 = 30\\)",
-        "D": "\\(6! = 720\\)"
+        "A": "\\(12\\)",
+        "B": "\\(15\\)",
+        "C": "\\(30\\)",
+        "D": "\\(720\\)"
       },
       "clave": "B",
       "competencia": "b",
@@ -182,8 +182,8 @@
       "que_evalua": "La capacidad para realizar conteos simples utilizando combinaciones.",
       "justificacion_correcta": "Como las dos becas son iguales, el orden de elección no importa, así que se usa una combinación: \\(\\dbinom{6}{2} = \\dfrac{6!}{2!\\,(6-2)!} = \\dfrac{6\\times 5}{2} = 15\\) formas.",
       "opciones_incorrectas": {
-        "A": "Multiplica el número de finalistas por el de becas \\((6\\times 2)\\), lo cual no corresponde al conteo.",
-        "C": "Cuenta como si el orden importara \\((6\\times 5 = 30)\\): así cada par se contaría dos veces.",
+        "A": "Multiplica el número de finalistas por el de becas \\((6\\times 2 = 12)\\), lo cual no corresponde al conteo.",
+        "C": "Cuenta como si el orden importara \\((6\\times 5 = 30)\\): así cada pareja quedaría contada dos veces.",
         "D": "Calcula todas las ordenaciones de los \\(6\\) finalistas \\((6! = 720)\\), ignorando que solo se eligen \\(2\\) y sin orden."
       }
     },
@@ -298,7 +298,7 @@
     {
       "id": "P-math-10-p1-17",
       "numero": 11,
-      "enunciado": "<p>Una empresa proyecta la cantidad de usuarios de su videojuego según los años \\(x\\) desde el lanzamiento, como muestra la gráfica (una parábola con vértice en \\((3,\\,9)\\) que corta el eje horizontal en \\(x = 0\\) y \\(x = 6\\)).</p>[[IMG]]<p>¿Qué ecuación corresponde a esta gráfica?</p>",
+      "enunciado": "<p>Una empresa proyecta la cantidad de usuarios de su videojuego según los años \\(x\\) desde el lanzamiento, como muestra la gráfica.</p>[[IMG]]<p>¿Qué ecuación corresponde a esta gráfica?</p>",
       "opciones": {
         "A": "\\(y = x^{2} + 3x - 9\\)",
         "B": "\\(y = -x^{2} + 6x\\)",
@@ -313,7 +313,7 @@
       "dificultad": "MEDIA",
       "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
       "que_evalua": "La capacidad para relacionar la gráfica de una función cuadrática con su correspondiente representación algebraica.",
-      "justificacion_correcta": "La parábola abre hacia abajo (coeficiente principal negativo) y corta el eje en \\(x=0\\) y \\(x=6\\), así que es \\(y = -x(x-6) = -x^{2} + 6x\\). Su vértice está en \\(x = 3\\), donde \\(y = -9 + 18 = 9\\), tal como muestra la gráfica.",
+      "justificacion_correcta": "En la gráfica la parábola abre hacia abajo, de modo que el coeficiente principal es negativo, y corta el eje horizontal en \\(x = 0\\) y \\(x = 6\\), así que su ecuación es \\(y = -x(x-6) = -x^{2} + 6x\\). El vértice queda entonces en \\(x = 3\\), donde \\(y = -9 + 18 = 9\\), que es el punto más alto de la curva.",
       "opciones_incorrectas": {
         "A": "Abre hacia arriba (coeficiente \\(+1\\)) y no pasa por el origen como exige la gráfica.",
         "D": "También abre hacia arriba y tiene término independiente \\(-6\\); no corta en \\(x=0\\).",
@@ -350,12 +350,12 @@
     {
       "id": "P-math-10-p1-07",
       "numero": 13,
-      "enunciado": "<p>Una aplicación de inventario resalta en verde los códigos que son múltiplos de \\(6\\). Para reconocerlos aplica esta regla: un número es múltiplo de \\(6\\) si es par y, además, la suma de sus cifras es un múltiplo de \\(3\\). Por ejemplo, \\(1.734\\) cumple las dos cosas, pues termina en \\(4\\) y \\(1+7+3+4=15\\).</p><p>¿Cuál de estos códigos NO queda resaltado en verde?</p>",
+      "enunciado": "<p>Una aplicación de inventario resalta en verde los códigos que son múltiplos de \\(6\\). Para reconocerlos aplica esta regla: un número es múltiplo de \\(6\\) si es par y, además, la suma de sus cifras es un múltiplo de \\(3\\). Por ejemplo, \\(174\\) cumple las dos cosas, pues termina en \\(4\\) y \\(1+7+4=12\\).</p><p>¿Cuál de estos códigos NO queda resaltado en verde?</p>",
       "opciones": {
-        "A": "\\(78.324\\)",
-        "B": "\\(37.214\\)",
-        "C": "\\(34.512\\)",
-        "D": "\\(25.470\\)"
+        "A": "\\(342\\)",
+        "B": "\\(214\\)",
+        "C": "\\(528\\)",
+        "D": "\\(456\\)"
       },
       "clave": "B",
       "competencia": "b",
@@ -365,17 +365,17 @@
       "dificultad": "MEDIA",
       "estandar": "Utilizo argumentos de la teoría de números para justificar relaciones que involucran números naturales.",
       "que_evalua": "La capacidad para determinar si un número cumple con condiciones de divisibilidad dadas.",
-      "justificacion_correcta": "Los cuatro códigos son pares, así que lo que decide es la suma de las cifras: \\(3+4+5+1+2=15\\), \\(2+5+4+7+0=18\\) y \\(7+8+3+2+4=24\\) son múltiplos de \\(3\\), mientras que \\(3+7+2+1+4=17\\) no lo es. Por eso \\(37.214\\) no cumple la regla.",
+      "justificacion_correcta": "Los cuatro códigos son pares, así que lo que decide es la suma de las cifras: \\(3+4+2=9\\), \\(5+2+8=15\\) y \\(4+5+6=15\\) son múltiplos de \\(3\\), mientras que \\(2+1+4=7\\) no lo es. Por eso \\(214\\) no cumple la regla.",
       "opciones_incorrectas": {
-        "C": "\\(34.512\\) es par y \\(3+4+5+1+2=15\\) es múltiplo de \\(3\\); sí cumple la regla.",
-        "D": "\\(25.470\\) es par y \\(2+5+4+7+0=18\\) es múltiplo de \\(3\\); sí cumple la regla.",
-        "A": "\\(78.324\\) es par y \\(7+8+3+2+4=24\\) es múltiplo de \\(3\\); sí cumple la regla."
+        "C": "\\(528\\) es par y \\(5+2+8=15\\) es múltiplo de \\(3\\); sí cumple la regla.",
+        "D": "\\(456\\) es par y \\(4+5+6=15\\) es múltiplo de \\(3\\); sí cumple la regla.",
+        "A": "\\(342\\) es par y \\(3+4+2=9\\) es múltiplo de \\(3\\); sí cumple la regla."
       }
     },
     {
       "id": "P-math-10-p1-06",
       "numero": 14,
-      "enunciado": "<p>En una banda transportadora, una pieza \\(K\\) se desliza a lo largo del riel recto \\(QT\\). Un sensor fijo \\(D\\), instalado justo debajo de \\(T\\) a una distancia \\(h\\) del riel, mide todo el tiempo la distancia \\(DK\\). El ángulo \\(\\alpha\\) que forma \\(DK\\) con el riel cumple \\(\\operatorname{sen}\\alpha = \\dfrac{h}{DK}\\), de donde \\(DK = \\dfrac{h}{\\operatorname{sen}\\alpha}\\). La distancia más grande posible es \\(DQ\\) (cuando \\(\\alpha\\) es mínimo) y la más pequeña es \\(h\\) (cuando \\(\\alpha = 90^\\circ\\)).</p>[[IMG]]<p>¿Cuál de las gráficas representa cómo cambia \\(DK\\) a medida que \\(\\alpha\\) aumenta?</p>",
+      "enunciado": "<p>En una banda transportadora, una pieza \\(K\\) se desliza a lo largo del riel recto \\(QT\\). Un sensor fijo \\(D\\), instalado justo debajo de \\(T\\) a una distancia \\(h\\) del riel, mide todo el tiempo la distancia \\(DK\\). El ángulo \\(\\alpha\\) que forma \\(DK\\) con el riel cumple \\(\\operatorname{sen}\\alpha = \\dfrac{h}{DK}\\), de donde \\(DK = \\dfrac{h}{\\operatorname{sen}\\alpha}\\).</p>[[IMG]]<p>¿Cuál de las gráficas representa cómo cambia \\(DK\\) a medida que \\(\\alpha\\) aumenta?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -390,11 +390,11 @@
       "dificultad": "MEDIA",
       "estandar": "Modelo situaciones de variación periódica con funciones trigonométricas e interpreto y utilizo sus derivadas.",
       "que_evalua": "La capacidad para identificar la gráfica asociada a una expresión trigonométrica dada.",
-      "justificacion_correcta": "Como \\(DK = \\dfrac{h}{\\operatorname{sen}\\alpha}\\), al aumentar \\(\\alpha\\) el seno crece y \\(DK\\) disminuye. La curva debe partir del valor máximo \\(DQ\\) (cuando \\(\\alpha\\) es pequeño) y bajar hasta el valor mínimo \\(h\\) (cuando \\(\\alpha = 90^\\circ\\)), sin llegar a cero. La gráfica «Gráfica B» muestra ese descenso entre \\(DQ\\) y \\(h\\).",
+      "justificacion_correcta": "Como \\(DK = \\dfrac{h}{\\operatorname{sen}\\alpha}\\), al aumentar \\(\\alpha\\) crece el seno y por lo tanto \\(DK\\) disminuye. Cuando \\(K\\) está en \\(Q\\) el ángulo es el más pequeño del recorrido y la distancia toma su valor mayor, \\(DQ\\); cuando \\(K\\) llega a \\(T\\) el ángulo vale \\(90^\\circ\\) y la distancia se reduce a \\(h\\), que es el valor mínimo. La gráfica buscada es la que desciende desde \\(DQ\\) hasta \\(h\\) sin llegar a cero.",
       "opciones_incorrectas": {
-        "B": "Muestra una distancia constante, como si \\(DK\\) no dependiera de \\(\\alpha\\).",
-        "C": "Hace que \\(DK\\) baje hasta \\(0\\), ignorando que la distancia mínima es \\(h\\), no \\(0\\).",
-        "D": "También presenta un valor constante; no refleja la variación de \\(DK\\) con \\(\\alpha\\)."
+        "B": "Muestra la distancia constante en el valor \\(h\\), como si \\(DK\\) no dependiera de \\(\\alpha\\).",
+        "C": "Hace que \\(DK\\) baje hasta \\(0\\), ignorando que la distancia mínima es \\(h\\) y no cero.",
+        "D": "Muestra la distancia constante en el valor \\(DQ\\); tampoco refleja la variación de \\(DK\\) con \\(\\alpha\\)."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q06.png",
       "opciones_imagenes": {
@@ -535,12 +535,12 @@
     {
       "id": "P-math-10-p1-19",
       "numero": 20,
-      "enunciado": "<p>En una bodega de mudanzas se apilaron \\(12\\) baúles idénticos, como aparece en la imagen. Cada baúl mide \\(20\\) cm de frente, \\(20\\) cm de alto y \\(40\\) cm de fondo.</p>[[IMG]]<p>¿Qué espacio ocupa toda la pila?</p>",
+      "enunciado": "<p>En una bodega de mudanzas se apilaron \\(12\\) baúles idénticos, como aparece en la imagen. Cada baúl mide \\(10\\) cm de frente, \\(10\\) cm de alto y \\(30\\) cm de fondo.</p>[[IMG]]<p>¿Qué espacio ocupa toda la pila?</p>",
       "opciones": {
         "A": "\\(12.000\\ \\mathrm{cm}^3\\)",
-        "B": "\\(16.000\\ \\mathrm{cm}^3\\)",
-        "C": "\\(1.600.000\\ \\mathrm{cm}^3\\)",
-        "D": "\\(192.000\\ \\mathrm{cm}^3\\)"
+        "B": "\\(3.000\\ \\mathrm{cm}^3\\)",
+        "C": "\\(300.000\\ \\mathrm{cm}^3\\)",
+        "D": "\\(36.000\\ \\mathrm{cm}^3\\)"
       },
       "clave": "D",
       "competencia": "b",
@@ -550,11 +550,11 @@
       "dificultad": "MEDIA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
       "que_evalua": "La capacidad para calcular el volumen de una figura tridimensional conformada por varios paralelepípedos.",
-      "justificacion_correcta": "Cada baúl ocupa \\(20 \\times 20 \\times 40 = 16.000\\ \\mathrm{cm}^{3}\\) y hay \\(12\\): \\(16.000 \\times 12 = 192.000\\ \\mathrm{cm}^{3}\\).",
+      "justificacion_correcta": "Cada baúl ocupa \\(10 \\times 10 \\times 30 = 3.000\\ \\mathrm{cm}^{3}\\) y hay \\(12\\) baúles iguales: \\(3.000 \\times 12 = 36.000\\ \\mathrm{cm}^{3}\\).",
       "opciones_incorrectas": {
-        "B": "Calcula el volumen de un solo baúl \\((16.000\\ \\mathrm{cm}^3)\\) y olvida que son \\(12\\).",
+        "B": "Calcula el volumen de un solo baúl \\((3.000\\ \\mathrm{cm}^3)\\) y olvida que son \\(12\\).",
         "A": "Asocia el número de baúles \\((12)\\) con \\(12.000\\ \\mathrm{cm}^3\\) sin usar el volumen real de cada baúl.",
-        "C": "Multiplica mal las dimensiones \\((200 \\times 200 \\times 40)\\) y obtiene \\(1.600.000\\ \\mathrm{cm}^3\\)."
+        "C": "Multiplica mal las dimensiones \\((100 \\times 100 \\times 30)\\) y obtiene \\(300.000\\ \\mathrm{cm}^3\\)."
       },
       "imagen_figura": "assets/banco-mat-10-p1/q19.png"
     }

@@ -47,9 +47,9 @@
     {
       "id": "P10C10",
       "numero": 1,
-      "enunciado": "<p>Observa el diagrama de fases y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para explicar por qué una misma sustancia puede presentarse como sólido, líquido o gas según las condiciones a las que se la someta, la docente proyecta un <b>diagrama de fases</b>. En él, el eje vertical lleva la <b>presión</b>, en atmósferas, y el horizontal la <b>temperatura</b>, en grados Celsius; cada región del plano corresponde a un estado. Sobre ese diagrama se señalaron dos condiciones de trabajo, los puntos <b>1</b> y <b>2</b>: están a la <b>misma altura</b> en el eje de presión (misma presión) y el punto 2 está más a la derecha (mayor temperatura) que el punto 1, de manera que la flecha que va del uno al otro es horizontal.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones representa correctamente el cambio que sufre la sustancia al pasar del punto 1 al punto 2?</p>",
+      "enunciado": "<p>Observa el diagrama de fases y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para explicar por qué una misma sustancia puede presentarse como sólido, líquido o gas según las condiciones a las que se la someta, la docente proyecta un <b>diagrama de fases</b>. En él, el eje vertical lleva la <b>presión</b>, en atmósferas, y el horizontal la <b>temperatura</b>, en grados Celsius; cada región del plano corresponde a un estado. Sobre ese diagrama se señalaron dos condiciones de trabajo, los puntos <b>1</b> y <b>2</b>, unidos por una flecha.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones representa correctamente el cambio que sufre la sustancia al pasar del punto 1 al punto 2?</p>",
       "opciones": {
-        "A": "De sólido a gas a presión constante, porque entre los dos puntos solo aumenta la temperatura.",
+        "A": "De sólido a gas, porque entre los dos puntos solo aumenta la temperatura.",
         "B": "De gas a sólido, porque entre los dos puntos la temperatura va bajando.",
         "C": "De sólido a gas, porque entre los dos puntos suben tanto la presión como la temperatura.",
         "D": "De sólido a gas, porque entre los dos puntos lo que va subiendo es la presión."
@@ -63,7 +63,7 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden explicar un cambio de fase de una sustancia usando un modelo (diagrama presión-temperatura).",
-      "justificacion_correcta": "La opción «Sólido → gas a presión constante, aumentando solo la temperatura» es correcta. El punto 1 está en la región sólida y el 2 en la gaseosa; como ambos están a la misma presión, solo cambia la temperatura, que aumenta. Por eso la sustancia pasa de sólido a gas a presión constante (sublimación), tal como muestra la opción «Sólido → gas a presión constante, aumentando solo la temperatura».",
+      "justificacion_correcta": "La opción «De sólido a gas, porque entre los dos puntos solo aumenta la temperatura» es correcta. En el diagrama el punto 1 queda dentro de la región del sólido y el punto 2 dentro de la del gas; los dos están a la misma altura del eje de presión, de modo que la presión no cambia y lo único que aumenta es la temperatura. Por eso la sustancia pasa directamente de sólido a gas sin volverse líquida.",
       "opciones_incorrectas": {
         "B": "Muestra gas→sólido con la temperatura bajando; pero la temperatura aumenta y el cambio es sólido→gas.",
         "D": "Muestra la presión subiendo; la presión es la misma en ambos puntos, lo que cambia es la temperatura.",
@@ -101,7 +101,7 @@
     {
       "id": "P10C13",
       "numero": 3,
-      "enunciado": "<p>Observa las dos situaciones y lee el enunciado.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el parque, Camila sale a trotar con su perro y lo lleva sujeto con una correa; el piso está seco y la correa es lo único que une a los dos. La figura recoge dos momentos del paseo. En la <b>situación 1</b> se ve a la niña y a su perro corriendo los dos hacia la <b>derecha</b>, con la correa floja. En la <b>situación 2</b>, ya pasados unos segundos, ella tira de la correa hasta que el perro queda <b>detenido</b>. Entre un momento y el otro, la rapidez del perro pasó de un valor apreciable a cero, y conviene recordar que un cuerpo solo cambia su velocidad si sobre él actúa una <b>fuerza neta</b> distinta de cero. Camila quiere entender qué fuerza produjo ese cambio.</p>[[IMG]]</div><p>¿Cuál de estas opciones describe bien la fuerza neta que hizo detener al perro?</p>",
+      "enunciado": "<p>Observa las dos situaciones y lee el enunciado.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el parque, Camila sale a trotar con su perro y lo lleva sujeto con una correa; el piso está seco y la correa es lo único que une a los dos. La figura recoge dos momentos del paseo, separados por unos segundos. Camila quiere entender qué fuerza produjo el cambio que se ve entre un momento y el otro.</p>[[IMG]]</div><p>¿Cuál de estas opciones describe bien la fuerza neta que hizo detener al perro?</p>",
       "opciones": {
         "A": "Apunta hacia la izquierda, en sentido contrario al movimiento, y por eso lo frena.",
         "B": "Apunta hacia la derecha, en el mismo sentido en que venía el movimiento.",
@@ -188,7 +188,7 @@
     {
       "id": "P10C11",
       "numero": 6,
-      "enunciado": "<p>Observa las dos maneras de agarrar la herramienta y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller del colegio, Valeria tiene que soltar la tuerca que sujeta un panel solar a su poste para poder reorientarlo, y para eso cuenta con una herramienta de mango largo. La tuerca está muy apretada y ella quiere gastar la menor fuerza posible. Puede agarrarla por la <b>mitad del mango</b> (Manera 1) o por la <b>punta del mango</b> (Manera 2), como muestra la figura, donde una flecha marca en cada caso la distancia \\(d\\). En los dos casos la tuerca es el eje de giro y la fuerza se aplica hacia abajo. Recuerda que el momento de una fuerza se calcula con \\(\\tau = F\\cdot d\\), donde \\(d\\) es la distancia entre el eje y el punto en el que se aplica la fuerza, y que soltar esa tuerca exige siempre el mismo momento.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones describe la manera de soltar la tuerca haciendo <b>menos fuerza</b>?</p>",
+      "enunciado": "<p>Observa las dos maneras de agarrar la herramienta y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el taller del colegio, Valeria tiene que soltar la tuerca que sujeta un panel solar a su poste para poder reorientarlo, y para eso cuenta con una herramienta de mango largo. La tuerca está muy apretada y ella quiere gastar la menor fuerza posible. Puede agarrarla por la <b>mitad del mango</b> (Manera 1) o por la <b>punta del mango</b> (Manera 2), como muestra la figura. En los dos casos la tuerca es el eje de giro y la fuerza se aplica hacia abajo sobre el mango.</p>[[IMG]]</div><p>¿Cuál de las siguientes opciones describe la manera de soltar la tuerca haciendo <b>menos fuerza</b>?</p>",
       "opciones": {
         "A": "Agarrarla por la mitad del mango, con lo cual habría que dar menos vueltas a la tuerca.",
         "B": "Agarrarla por la punta del mango, con lo cual habría que aplicar menos fuerza sobre el mango.",
@@ -204,7 +204,7 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden argumentar la mejor manera de realizar una acción usando el concepto de torque (ley de la palanca).",
-      "justificacion_correcta": "La opción «Agarrarla por la punta del mango, aplicando menos fuerza» es correcta. Como \\(\\tau=F\\cdot d\\), al agarrar la herramienta por la punta del mango la distancia \\(d\\) hasta el eje es mayor, de modo que se necesita <b>menos fuerza</b> para conseguir el mismo momento y soltar la tuerca. El número de vueltas, en cambio, es el mismo en las dos maneras.",
+      "justificacion_correcta": "La opción «Agarrarla por la punta del mango, aplicando menos fuerza» es correcta. Cuanto más lejos de la tuerca se agarre el mango, menos fuerza hay que hacer para producir el mismo efecto de giro sobre ella; por eso este tipo de herramientas se fabrica con el mango largo. El número de vueltas, en cambio, es el mismo en las dos maneras.",
       "opciones_incorrectas": {
         "C": "Elige la manera que exige más fuerza; una herramienta de mango largo se usa justamente para lo contrario.",
         "D": "Asocia la manera 2 con dar más vueltas, y el punto de agarre no cambia el número de vueltas.",
@@ -247,7 +247,7 @@
     {
       "id": "P10C16",
       "numero": 8,
-      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Marcela amasa pan en su casa cada semana y siempre usa la misma cantidad de levadura. Ha notado que la masa crece más rápido cuando la deja tapada cerca del horno encendido que cuando la deja en el patio, al frío, y quiere saber si eso ocurre siempre o fue casualidad. Entonces plantea esta hipótesis: <b>«mientras más alta sea la temperatura, más rápido produce gas la levadura y más rápido crece la masa»</b>. Para ponerla a prueba tendrá que montar una comparación en la que solo cambie el factor que su hipótesis señala, dejando igual todo lo demás, y medir el resultado con la misma regla en todos los casos.</p></div><p>¿Cuál de los siguientes procedimientos le permite comprobar su hipótesis?</p>",
+      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Marcela amasa pan en su casa cada semana y siempre usa la misma cantidad de levadura. Ha notado que la masa crece más rápido cuando la deja tapada cerca del horno encendido que cuando la deja en el patio, al frío, y quiere saber si eso ocurre siempre o fue casualidad. Entonces plantea esta hipótesis: <b>«mientras más alta sea la temperatura, más rápido produce gas la levadura y más rápido crece la masa»</b>. Cuatro personas de su cuadra le proponen cuatro maneras distintas de ponerla a prueba.</p></div><p>¿Cuál de los siguientes procedimientos le permite comprobar su hipótesis?</p>",
       "opciones": {
         "A": "Preparar porciones iguales de masa, dejar cada una a una temperatura distinta y medir cuánto crece en el mismo tiempo.",
         "B": "Medir cuánto crece una sola porción de masa dejada a una única temperatura durante toda la mañana de trabajo.",
@@ -273,7 +273,7 @@
     {
       "id": "P10C01",
       "numero": 9,
-      "enunciado": "<p>Observa las dos bolsas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al almacén de un puesto de salud rural llegaron <b>dos bolsas de 1 litro</b>: una de <b>suero fisiológico</b> y otra de <b>agua estéril</b> para lavado de material. Cada rótulo informa la cantidad de sal con una unidad distinta, y cada unidad se calcula así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Unidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cómo se calcula</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\% \\text{p/v}\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{g de sal}}{100\\ \\text{mL de solución}}\\times 100\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">ppm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{mg de sal}}{1\\ \\text{L de solución}}\\)</td></tr></table><p>La auxiliar del puesto de salud tiene presente que \\(1\\ \\text{g}=1000\\ \\text{mg}\\) y que \\(1\\ \\text{L}=1000\\ \\text{mL}\\). La bolsa de suero fisiológico está rotulada \\(0{,}9\\ \\%\\ \\text{p/v}\\) y la de agua estéril, \\(10\\ \\text{ppm}\\).</p>[[IMG]]</div><p>Según esas dos formas de calcular, ¿cuál opción señala la bolsa que aporta <b>más sal</b> junto con la masa que realmente hay en su litro?</p>",
+      "enunciado": "<p>Observa las dos bolsas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Al almacén de un puesto de salud rural llegaron <b>dos bolsas de 1 litro</b>: una de <b>suero fisiológico</b> y otra de <b>agua estéril</b> para lavado de material. Cada rótulo informa la cantidad de sal con una unidad distinta, y cada unidad se calcula así:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Unidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cómo se calcula</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\% \\text{p/v}\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{g de sal}}{\\text{mL de solución}}\\times 100\\%\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">ppm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(\\dfrac{\\text{mg de sal}}{1\\ \\text{L de solución}}\\)</td></tr></table><p>La auxiliar del puesto de salud tiene presente que \\(1\\ \\text{g}=1000\\ \\text{mg}\\) y que \\(1\\ \\text{L}=1000\\ \\text{mL}\\). La bolsa de suero fisiológico está rotulada \\(0{,}9\\ \\%\\ \\text{p/v}\\) y la de agua estéril, \\(10\\ \\text{ppm}\\).</p>[[IMG]]</div><p>Según esas dos formas de calcular, ¿cuál opción señala la bolsa que aporta <b>más sal</b> junto con la masa que realmente hay en su litro?</p>",
       "opciones": {
         "A": "La bolsa de 0,9 % p/v: tiene 9 g de sal en su litro.",
         "B": "La bolsa de 0,9 % p/v: tiene 900 g de sal en su litro.",
@@ -300,12 +300,12 @@
     {
       "id": "P10C07",
       "numero": 10,
-      "enunciado": "<p>Observa el esquema del cambio en el ADN y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>A un río llegó la descarga de una sustancia capaz de dañar el ADN. Al revisar los peces de la zona, un equipo de biólogos halló el cambio que muestra el esquema: dentro de un triplete de la secuencia cambió una base (C por G) y, como cada triplete indica cuál aminoácido se coloca en la cadena, la proteína que se arma <b>ya no funciona bien</b>. En los animales, un cambio en el ADN solo pasa a la siguiente generación si ocurrió en una <b>célula germinal</b>, es decir, en las que producen los gametos, y no en las células somáticas que forman los tejidos del cuerpo.</p>[[IMG]]</div><p>Si el cambio apareció en un pez macho, ¿en cuál de sus células tuvo que ocurrir para que también aparezca en sus <b>crías</b>?</p>",
+      "enunciado": "<p>Observa el esquema del cambio en el ADN y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>A un río llegó la descarga de una sustancia capaz de dañar el ADN. Al revisar los peces de la zona, un equipo de biólogos halló el cambio que muestra el esquema: dentro de un triplete de la secuencia cambió una base (C por G) y, como cada triplete indica cuál aminoácido se coloca en la cadena, la proteína que se arma <b>ya no funciona bien</b>.</p>[[IMG]]</div><p>Si el cambio apareció en un pez macho, ¿en cuál de sus células tuvo que ocurrir para que también aparezca en sus <b>crías</b>?</p>",
       "opciones": {
-        "A": "En una célula de las branquias del pez, que es somática.",
-        "B": "En un espermatozoide, que es una célula germinal.",
-        "C": "En una célula de la piel, que es somática.",
-        "D": "En una célula del hígado, que es somática."
+        "A": "En una célula de las branquias del pez.",
+        "B": "En un espermatozoide del pez.",
+        "C": "En una célula de la piel del pez.",
+        "D": "En una célula del hígado del pez."
       },
       "clave": "B",
       "competencia": "b",
@@ -316,7 +316,7 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes comprenden la relación entre mutaciones del ADN, la síntesis de proteínas y la posibilidad de que un cambio se herede.",
-      "justificacion_correcta": "La opción «En un espermatozoide, que es una célula germinal» es correcta. Solo los cambios que quedan en las células reproductoras pasan a la descendencia, porque son esas células las que aportan el ADN del nuevo individuo. En un pez macho, esa célula germinal es el espermatozoide.",
+      "justificacion_correcta": "La opción «En un espermatozoide del pez» es correcta. De todas las células de un animal, solo las que forman los gametos aportan ADN al nuevo individuo; por eso un cambio que quede en ellas viaja a la descendencia. Las branquias, la piel y el hígado forman tejidos del cuerpo del pez: un cambio allí afecta a ese pez, pero se acaba con él.",
       "opciones_incorrectas": {
         "C": "Un cambio en la piel afecta ese tejido del pez, pero no viaja a la siguiente generación.",
         "A": "Un cambio en las branquias puede afectar la respiración del pez y aun así no se hereda.",
@@ -327,7 +327,7 @@
     {
       "id": "P10C20",
       "numero": 11,
-      "enunciado": "<p>Observa la figura y elige el diagrama de fuerzas correcto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de física analiza fotografías de alta velocidad tomadas durante un partido bajo la lluvia. En una de ellas, una <b>gota de agua</b> cae en diagonal y golpea un <b>balón</b> quieto en el pasto; la línea roja de la figura marca la <b>superficie de contacto</b>, inclinada porque la gota llega de lado. Por la tercera ley de Newton, al tocarse aparecen la fuerza de <b>acción</b> (de la gota sobre el balón) y la de <b>reacción</b> (del balón sobre la gota): de igual magnitud, sentido opuesto y <b>perpendiculares a la superficie de contacto</b>. El grupo debe escoger el dibujo que representa bien ese par.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) dibuja un par de flechas sobre el punto de contacto. ¿Cuál diagrama representa correctamente las fuerzas de acción y reacción?</p>",
+      "enunciado": "<p>Observa la figura y elige el diagrama de fuerzas correcto.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un grupo de física analiza fotografías de alta velocidad tomadas durante un partido bajo la lluvia. En una de ellas, una <b>gota de agua</b> cae en diagonal y golpea un <b>balón</b> quieto en el pasto; la línea roja de la figura marca la <b>superficie de contacto</b>. Por la tercera ley de Newton, al tocarse aparecen la fuerza de <b>acción</b> (de la gota sobre el balón) y la de <b>reacción</b> (del balón sobre la gota), de igual magnitud y sentido opuesto. El grupo debe escoger el dibujo que representa bien ese par.</p>[[IMG]]</div><p>Cada diagrama (A, B, C o D) dibuja un par de flechas sobre el punto de contacto. ¿Cuál diagrama representa correctamente las fuerzas de acción y reacción?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -360,7 +360,7 @@
     {
       "id": "P10C09",
       "numero": 12,
-      "enunciado": "<p>Observa el esquema de las cuatro descargas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una brigada ambiental escolar le hace seguimiento cada mes a una laguna del municipio, a la que llegan cuatro descargas, que el esquema identifica: la del restaurante del sector, la de un lavadero de autos, la del riego de los cultivos vecinos y la del agua lluvia. Desde hace un año rigen dos acuerdos: el restaurante clasifica sus residuos, recoge el aceite usado en canecas y lava con detergentes que no alteran el pH; y en los cultivos vecinos quedó prohibido aplicar plaguicidas y fertilizantes de síntesis. Aun así, en la última visita la brigada anota que sobre el agua flota una <b>capa negra y aceitosa</b> y que el <b>pH está por encima de lo normal</b>.</p>[[IMG]]</div><p>¿Cuál de las cuatro descargas explica lo que anotó la brigada?</p>",
+      "enunciado": "<p>Observa el esquema de las cuatro descargas y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Una brigada ambiental escolar le hace seguimiento cada mes a una laguna del municipio, a la que llegan cuatro descargas, que el esquema identifica: la del restaurante del sector, la de un lavadero de autos, la del riego de los cultivos vecinos y la del agua lluvia. Desde hace un año rigen dos acuerdos: el restaurante clasifica sus residuos, recoge el aceite usado en canecas y lava con detergentes que no alteran el pH; y en los cultivos vecinos quedó prohibido aplicar plaguicidas y fertilizantes de síntesis. Aun así, en la última visita la brigada encuentra la laguna tal como aparece en el esquema y anota además que el <b>pH está por encima de lo normal</b>.</p>[[IMG]]</div><p>¿Cuál de las cuatro descargas explica lo que anotó la brigada?</p>",
       "opciones": {
         "A": "La del riego de los cultivos, por los plaguicidas que el agua arrastra desde los surcos.",
         "B": "La del lavadero de autos, por los aceites de motor y los detergentes industriales.",
@@ -413,7 +413,7 @@
     {
       "id": "P10C12",
       "numero": 14,
-      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región ribereña se consumen desde hace décadas tortugas de una especie que tarda varios años en llegar a la edad reproductiva. En esa especie <b>cada cría nace macho o hembra al azar</b>, de modo que nadie puede escoger cuántos de cada uno nacen, y se necesitan machos para <b>fecundar</b> los huevos que ponen las hembras. Preocupada por la disminución de la especie, la autoridad ambiental estudia una medida de conservación: permitir el consumo de <b>solo los machos</b> adultos, sin tocar las hembras ni los huevos, con el argumento de que las hembras seguirían poniendo la misma cantidad de huevos y la población no se vería afectada.</p></div><p>¿Cuál de las siguientes opciones explica por qué la medida <b>no</b> conserva la especie a largo plazo?</p>",
+      "enunciado": "<p>Lee la siguiente situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una región ribereña se consumen desde hace décadas tortugas de una especie que tarda varios años en llegar a la edad reproductiva y en la que <b>cada cría nace macho o hembra al azar</b>, de modo que nadie puede escoger cuántos de cada uno nacen. Preocupada por la disminución de la especie, la autoridad ambiental estudia una medida de conservación: permitir el consumo de <b>solo los machos</b> adultos, sin tocar las hembras ni los huevos, con el argumento de que las hembras seguirían poniendo la misma cantidad de huevos y la población no se vería afectada.</p></div><p>¿Cuál de las siguientes opciones explica por qué la medida <b>no</b> conserva la especie a largo plazo?</p>",
       "opciones": {
         "A": "La población crece, porque al haber menos machos las hembras ponen más huevos.",
         "B": "Como no se tocan las hembras ni los huevos, la población se mantiene estable indefinidamente.",
@@ -465,12 +465,12 @@
     {
       "id": "P10C04",
       "numero": 16,
-      "enunciado": "<p>Observa la cartelera y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una salida de campo a la franja donde el río desemboca en el mar, un curso encuentra la cartelera que aparece abajo. Allí se afirma que la sal en exceso le hace falta al manglar y que, cuando las lluvias vuelven menos salada el agua, la población de <b>manglar</b> se reduce. En la guía de la salida los estudiantes leen algo distinto: que el manglar prospera en esa franja porque tolera la sal mejor que las demás plantas, pero que el <b>exceso de sal le hace daño</b>; por eso desarrolló <b>raíces en zanco</b> y <b>glándulas que expulsan la sal sobrante</b>, y en eso gasta parte de su energía. Ese año llovió varias semanas seguidas y la sal del agua bajó bastante.</p>[[IMG]]</div><p>De acuerdo con lo que dice la guía, ¿qué le pasa a la población de manglar cuando el agua se vuelve menos salada?</p>",
+      "enunciado": "<p>Observa la cartelera y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una salida de campo a la franja donde el río desemboca en el mar, un curso encuentra la cartelera que aparece abajo. En la guía de la salida los estudiantes leen otra explicación: en esa franja el <b>manglar</b> es casi la única planta que prospera porque tolera la sal mucho mejor que las demás especies de la región, que no alcanzan a establecerse donde el agua es salada; para lograrlo desarrolló <b>raíces en zanco</b> y <b>glándulas que expulsan la sal sobrante</b>, y en eso gasta buena parte de su energía. Ese año llovió varias semanas seguidas y la sal del agua bajó bastante.</p>[[IMG]]</div><p>De acuerdo con lo que dice la guía, ¿qué le pasa a la población de manglar cuando el agua se vuelve menos salada, y por qué?</p>",
       "opciones": {
-        "A": "Disminuye, tal como lo afirma la cartelera que encontraron en la salida de campo.",
-        "B": "Aumenta, porque se reduce el daño que le causaba el exceso de sal del agua.",
-        "C": "Se queda sin hojas y sin raíces, porque le falta la sal que necesitaba para vivir.",
-        "D": "Le aparecen glándulas nuevas, para alcanzar a expulsar una cantidad mayor de sal."
+        "A": "Aumenta, porque se ahorra el gasto de energía que le exigían sus glándulas de sal.",
+        "B": "Disminuye, porque pierde la ventaja de la sal y otras plantas se establecen allí.",
+        "C": "Disminuye, porque el manglar necesita el exceso de sal para poder vivir.",
+        "D": "Se mantiene igual, porque al manglar le da lo mismo el nivel de sal del agua."
       },
       "clave": "B",
       "competencia": "b",
@@ -481,11 +481,11 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden establecer los efectos que ocurren en una especie tras un cambio en su ecosistema.",
-      "justificacion_correcta": "La opción «Aumenta, porque se reduce el daño que le causaba el exceso de sal» es correcta. La guía señala que el exceso de sal le hace daño al manglar y que por eso la planta gasta energía expulsándola. Si el agua se vuelve menos salada, ese daño disminuye, las condiciones se hacen más favorables y la población tiende a aumentar.",
+      "justificacion_correcta": "La opción «Disminuye, porque pierde la ventaja de la sal y otras plantas se establecen allí» es correcta. Según la guía, el manglar no necesita el exceso de sal: lo que hace es soportarlo mejor que ninguna otra planta, y esa tolerancia es la que le deja esa franja casi para él solo. Cuando el agua se vuelve menos salada, la sal deja de mantener afuera a las demás especies, esas plantas se establecen y le ganan el espacio, de modo que la población de manglar se reduce.",
       "opciones_incorrectas": {
-        "C": "Una planta sin hojas ni raíces no tendría sostén ni haría fotosíntesis; además, tener menos sal alrededor no destruye esos órganos.",
-        "A": "Repite lo que dice la cartelera, y eso contradice la guía: para que el manglar se reduzca tendría que subir la sal, no bajar.",
-        "D": "Las glándulas que expulsan sal ya existen en la planta, y un agua menos salada no hace aparecer órganos nuevos."
+        "A": "Ahorrarse el gasto de las glándulas suena favorable, pero la guía señala que es la sal la que mantiene lejos a las plantas competidoras; sin ella el manglar pierde su franja.",
+        "C": "Acierta en que la población se reduce, pero repite el motivo de la cartelera: según la guía el manglar no necesita el exceso de sal, apenas lo tolera mejor que las otras plantas.",
+        "D": "El nivel de sal sí le importa, porque es lo que decide si las demás especies pueden o no crecer en esa franja."
       },
       "imagen_figura": "assets/banco-cn-10-p1/q04_ia.png"
     },
@@ -518,12 +518,12 @@
     {
       "id": "P10C14",
       "numero": 18,
-      "enunciado": "<p>Observa el proceso de reciclaje y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una planta de reciclaje, las botellas de plástico que llegan de las rutas de recolección pasan por tres etapas antes de venderse a la industria, y la figura las muestra en orden. Primero cada <b>botella de plástico</b> se lava con agua para quitarle los residuos de bebida; después se <b>muele</b> en un molino de cuchillas, que la convierte en muchos <b>pequeños trozos</b>; por último los trozos se acumulan en un montón, listos para empacarse. En todo el recorrido <b>no ocurre ningún cambio químico</b>: el material que sale del molino sigue siendo el mismo plástico que entró. Aun así, algo de la botella sí cambió.</p>[[IMG]]</div><p>De acuerdo con el proceso, ¿cuál <b>propiedad de la botella cambia</b> al molerla?</p>",
+      "enunciado": "<p>Observa el proceso de reciclaje y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En una planta de reciclaje, las botellas de plástico que llegan de las rutas de recolección se lavan con agua para quitarles los residuos de bebida y después pasan por el molino de cuchillas que muestra la figura. Lo que sale del molino se acumula en un montón, listo para empacarse y venderse a la industria.</p>[[IMG]]</div><p>De acuerdo con el proceso, ¿cuál <b>propiedad de la botella cambia</b> al molerla?</p>",
       "opciones": {
-        "A": "La composición química, es decir, la clase de material del que está hecha.",
-        "B": "El estado físico, es decir, si el material se presenta como sólido, líquido o gas.",
-        "C": "La masa, es decir, la cantidad de materia que hay en total.",
-        "D": "El volumen que ocupa, es decir, el espacio que el material llena."
+        "A": "La composición química del material.",
+        "B": "El estado físico del material.",
+        "C": "La masa total del material.",
+        "D": "El volumen que ocupa el material."
       },
       "clave": "D",
       "competencia": "b",
@@ -534,7 +534,7 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes pueden analizar un proceso para determinar qué cambia y qué permanece constante durante su realización.",
-      "justificacion_correcta": "La opción «El volumen que ocupa» es correcta. Al molerla, el plástico se parte en trozos que se compactan y ocupan un <b>volumen</b> distinto del de la botella entera; la opción «El volumen que ocupa» muestra ese cambio de volumen. La masa, la composición y el estado sólido no cambian.",
+      "justificacion_correcta": "La opción «El volumen que ocupa el material» es correcta. Los trozos que salen del molino se acomodan de otra manera y ocupan un espacio distinto del que ocupaba la botella entera, de modo que el volumen sí cambia. La masa se conserva, porque no se pierde ni se agrega materia; el plástico sigue siendo el mismo material y sigue siendo sólido, así que ni la composición química ni el estado cambian.",
       "opciones_incorrectas": {
         "C": "Muestra la masa: se conserva, pues los trozos juntos pesan lo mismo que la botella original.",
         "A": "Muestra la composición química: al no haber cambio químico, sigue siendo la misma.",
@@ -545,7 +545,7 @@
     {
       "id": "P10C08",
       "numero": 19,
-      "enunciado": "<p>Observa el mapa y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un boletín de sanidad agrícola explica por qué en ciertos años se pierden cosechas enteras de sorgo y mijo en una región. El insecto responsable <b>se alimenta solo de hojas, tallos y brotes</b> y en condiciones normales vive en baja densidad dentro de la zona clara del mapa, sin causar daños de consideración. Cuando se encadenan varias temporadas secas, su número se dispara y grupos inmensos vuelan hasta la zona oscura, donde antes casi no llegaba, y consumen toda la vegetación que encuentran a su paso. En esa zona oscura hay cultivos de sorgo y mijo y vive además la fauna herbívora propia de la región, que depende de esa misma vegetación para alimentarse.</p>[[IMG]]</div><p>¿Por qué la llegada de esos grupos golpea tan fuerte a la zona oscura?</p>",
+      "enunciado": "<p>Observa el mapa y lee la situación.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un boletín de sanidad agrícola explica por qué en ciertos años se pierden cosechas enteras de sorgo y mijo en una región. El insecto responsable <b>se alimenta solo de hojas, tallos y brotes</b> y en condiciones normales vive en baja densidad dentro de la zona clara del mapa, sin causar daños de consideración. Cuando se encadenan varias temporadas secas, su número se dispara y grupos inmensos vuelan hasta la zona oscura, donde antes casi no llegaba. En esa zona oscura hay cultivos de sorgo y mijo y vive además la fauna herbívora propia de la región.</p>[[IMG]]</div><p>¿Por qué la llegada de esos grupos golpea tan fuerte a la zona oscura?</p>",
       "opciones": {
         "A": "Porque llega en cantidades enormes y consume la vegetación de la que viven los animales de la zona.",
         "B": "Porque se cruza con los insectos propios de la zona y de ahí salen especies nuevas.",

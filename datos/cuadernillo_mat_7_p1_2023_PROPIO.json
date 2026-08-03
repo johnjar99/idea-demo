@@ -140,12 +140,12 @@
     {
       "id": "P-math-7-p1-17",
       "numero": 4,
-      "enunciado": "<p><b>Marcela</b> compró insumos para el club de robótica y recibió esta factura:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descripción</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio unitario</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sensor de distancia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">128.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rollo de filamento</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">45.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">270.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Juego de cables</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">54.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Batería recargable</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">112.000 pesos</td></tr></table><p>Para el mes siguiente, Marcela necesita la misma cantidad de <b>sensores</b> y de <b>rollos de filamento</b>, pero el proveedor le avisa que el sensor costará 38.000 pesos y el rollo, 52.000. pesos ¿Cuál expresión permite calcular lo que pagará por esos dos insumos?</p>",
+      "enunciado": "<p><b>Marcela</b> compró insumos para el club de robótica y recibió esta factura:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descripción</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio unitario</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sensor de distancia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">128.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rollo de filamento</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">45.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">270.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Juego de cables</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">54.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Batería recargable</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">112.000 pesos</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">Precio total de la factura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">564.000 pesos</td></tr></table><p>¿Cuál de las siguientes operaciones es equivalente al valor total de la factura?</p>",
       "opciones": {
-        "A": "\\(4 \\times (\\$52.000) + 6 \\times (\\$38.000)\\)",
-        "B": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\$38.000)\\)",
-        "C": "\\((4 + 6) \\times (\\$38.000 + \\$52.000)\\)",
-        "D": "\\(4 \\times (\\$38.000) + 6 \\times (\\$52.000)\\)"
+        "A": "\\(4 \\times (\\$54.000) + 6 \\times (\\$60.000)\\)",
+        "B": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\$60.000 + \\$54.000)\\)",
+        "C": "\\((4 + 6) \\times (\\$60.000 + \\$54.000)\\)",
+        "D": "\\(4 \\times (\\$60.000) + 6 \\times (\\$54.000)\\)"
       },
       "clave": "D",
       "competencia": "c",
@@ -155,22 +155,22 @@
       "dificultad": "ALTA",
       "estandar": "Justifico procedimientos aritméticos utilizando las relaciones y propiedades de las operaciones.",
       "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales, como la asociativa y la distributiva del producto respecto a la suma.",
-      "justificacion_correcta": "Cada insumo se paga multiplicando su cantidad por su precio unitario, y después se suman los dos productos. Son \\(4\\) sensores a \\(\\$38.000\\) y \\(6\\) rollos a \\(\\$52.000\\), es decir \\(4 \\times \\$38.000 + 6 \\times \\$52.000\\).",
+      "justificacion_correcta": "Dos insumos se compraron en cantidad \\(4\\), el sensor a \\(\\$32.000\\) y la batería a \\(\\$28.000\\), y sus precios suman \\(\\$60.000\\); por la propiedad distributiva esa parte de la factura vale \\(4 \\times \\$60.000\\). Los otros dos se compraron en cantidad \\(6\\), el rollo a \\(\\$45.000\\) y el juego de cables a \\(\\$9.000\\), que suman \\(\\$54.000\\), de modo que aportan \\(6 \\times \\$54.000\\). En total \\(4 \\times \\$60.000 + 6 \\times \\$54.000 = \\$240.000 + \\$324.000 = \\$564.000\\), el valor de la factura.",
       "opciones_incorrectas": {
-        "C": "Suma primero las cantidades y los precios, y luego multiplica. Eso le cobra a cada sensor también el precio del rollo, y al revés.",
-        "B": "Duplica las cantidades sin razón y le aplica a los rollos el precio del sensor.",
-        "A": "Cruza los precios: le pone al sensor el precio del rollo y al rollo el del sensor."
+        "A": "Agrupa bien los precios pero intercambia las cantidades: le aplica \\(4\\) a los insumos que se compraron \\(6\\) veces y al revés, con lo que llega a \\(\\$576.000\\).",
+        "B": "Duplica las cantidades y además le cobra a cada artículo los cuatro precios juntos: \\((8 + 12) \\times \\$114.000 = \\$2.280.000\\).",
+        "C": "Suma primero las cantidades y luego los precios, de modo que cada uno de los \\(10\\) artículos pagaría los cuatro precios: \\(10 \\times \\$114.000 = \\$1.140.000\\)."
       }
     },
     {
       "id": "P-math-7-p1-01",
       "numero": 5,
-      "enunciado": "<p>En una jornada de adopción de mascotas, el <b>\\(75\\%\\)</b> de los animales que llegaron al albergue encontró un hogar ese mismo día. Si <b>\\(27\\)</b> animales fueron adoptados, ¿cuántos animales llegaron al albergue?</p>",
+      "enunciado": "<p>En una jornada de adopción de mascotas, el <b>\\(50\\%\\)</b> de los animales que llegaron al albergue encontró un hogar ese mismo día. Si <b>\\(30\\)</b> animales fueron adoptados, ¿cuántos animales llegaron al albergue?</p>",
       "opciones": {
-        "A": "\\(20\\) animales",
-        "B": "\\(34\\) animales",
-        "C": "\\(36\\) animales",
-        "D": "\\(102\\) animales"
+        "A": "\\(15\\) animales",
+        "B": "\\(45\\) animales",
+        "C": "\\(60\\) animales",
+        "D": "\\(80\\) animales"
       },
       "clave": "C",
       "competencia": "a",
@@ -180,11 +180,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
       "que_evalua": "La capacidad para calcular valores asociados a una situación de proporcionalidad.",
-      "justificacion_correcta": "Los \\(27\\) adoptados son el \\(75\\%\\) del total, así que el total se obtiene dividiendo: \\(27 \\div 0{,}75 = 36\\). También por regla de tres: si \\(75\\) corresponde a \\(27\\), entonces \\(100\\) corresponde a \\(36\\).",
+      "justificacion_correcta": "Los \\(30\\) adoptados son la mitad del total, así que el total es el doble: \\(30 \\times 2 = 60\\). También por regla de tres: si \\(50\\) corresponde a \\(30\\), entonces \\(100\\) corresponde a \\(60\\).",
       "opciones_incorrectas": {
-        "A": "Resulta de aplicarle el \\(75\\%\\) a los \\(27\\) adoptados en lugar de dividir. Ese camino da un número menor que \\(27\\), y el total nunca puede ser menor que la parte.",
-        "B": "Suma una cantidad al azar a los adoptados. El porcentaje no se resuelve sumando.",
-        "D": "Suma el número de adoptados y el número del porcentaje, \\(27 + 75\\), que son cantidades de naturaleza distinta y no se pueden sumar."
+        "A": "Le aplica el \\(50\\%\\) a los \\(30\\) adoptados en lugar de dividir: \\(30 \\times 0{,}5 = 15\\). El total nunca puede ser menor que la parte.",
+        "B": "Le suma a los \\(30\\) adoptados la mitad de esa misma cantidad \\((30 + 15 = 45)\\), en lugar de duplicarla.",
+        "D": "Suma el número de adoptados y el número del porcentaje, \\(30 + 50\\), que son cantidades de naturaleza distinta y no se pueden sumar."
       }
     },
     {
@@ -348,12 +348,12 @@
     {
       "id": "P-math-7-p1-11",
       "numero": 12,
-      "enunciado": "<p>Para un taller de encuadernación se abrieron \\(320\\) cupos y hasta hoy se ha inscrito el <b>\\(15\\%\\)</b> de ellos. ¿Cuántas personas se han inscrito?</p>",
+      "enunciado": "<p>Para un taller de encuadernación se abrieron \\(180\\) cupos y hasta hoy se ha inscrito el <b>\\(20\\%\\)</b> de ellos. ¿Cuántas personas se han inscrito?</p>",
       "opciones": {
-        "A": "\\(80\\) personas",
-        "B": "\\(305\\) personas",
-        "C": "\\(15\\) personas",
-        "D": "\\(48\\) personas"
+        "A": "\\(45\\) personas",
+        "B": "\\(160\\) personas",
+        "C": "\\(20\\) personas",
+        "D": "\\(36\\) personas"
       },
       "clave": "D",
       "competencia": "a",
@@ -363,11 +363,11 @@
       "dificultad": "BAJA",
       "estandar": "Resuelvo y formulo problemas en contextos de medidas relativas y de variaciones en las medidas.",
       "que_evalua": "La capacidad para calcular porcentajes de números naturales es situaciones cotidianas.",
-      "justificacion_correcta": "El \\(15\\%\\) de \\(320\\) es \\(320 \\times 0{,}15 = 48\\). También puede pensarse como \\(320 \\div 100 = 3{,}2\\) personas por cada \\(1\\%\\), y \\(3{,}2 \\times 15 = 48\\).",
+      "justificacion_correcta": "El \\(20\\%\\) es la quinta parte del total, así que basta dividir: \\(180 \\div 5 = 36\\). Por el otro camino, \\(180 \\times 0{,}20 = 36\\).",
       "opciones_incorrectas": {
-        "C": "Repite el número del porcentaje sin aplicarlo al total. El \\(15\\%\\) no significa \\(15\\) personas salvo que el total fuera \\(100\\).",
-        "A": "Corresponde al \\(25\\%\\) de \\(320\\), no al \\(15\\%\\).",
-        "B": "Resta el número del porcentaje al total, \\(320 - 15\\), que mezcla un porcentaje con una cantidad de personas."
+        "C": "Repite el número del porcentaje sin aplicarlo al total. El \\(20\\%\\) no significa \\(20\\) personas, salvo que el total fuera \\(100\\).",
+        "A": "Corresponde al \\(25\\%\\) de \\(180\\), no al \\(20\\%\\).",
+        "B": "Resta el número del porcentaje al total, \\(180 - 20\\), y así mezcla un porcentaje con una cantidad de personas."
       }
     },
     {
@@ -567,7 +567,7 @@
     {
       "id": "P-math-7-p1-19",
       "numero": 20,
-      "enunciado": "<p><b>Camila</b> lleva el registro de la basura que su curso separa para reciclar. Esta semana anotó, cada vez que llenó una caneca, el material que predominaba en ella:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Material predominante</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vidrio</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr></table><p>¿Cuál fue el material que predominó en más canecas durante la semana?</p>",
+      "enunciado": "<p><b>Camila</b> lleva el registro de la basura que su curso separa para reciclar. Esta semana anotó, cada vez que llenó una caneca, el material que predominaba en ella:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Material predominante</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vidrio</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Lunes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Martes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vidrio</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Miércoles</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Jueves</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Cartón</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papel</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Vidrio</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Viernes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Plástico</td></tr></table><p>¿Cuál fue el material que predominó en más canecas durante la semana?</p>",
       "opciones": {
         "A": "Cartón.",
         "B": "Plástico.",
@@ -582,11 +582,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
       "que_evalua": "La capacidad para analizar datos representados en tablas y determinar la moda de estos.",
-      "justificacion_correcta": "Se cuenta cuántas veces aparece cada material: cartón \\(5\\), plástico \\(3\\), papel \\(2\\) y vidrio \\(1\\). El que más se repite, es decir la moda, es el cartón.",
+      "justificacion_correcta": "Se cuenta cuántas veces aparece cada material en las \\(20\\) canecas: cartón \\(8\\), plástico \\(5\\), papel \\(4\\) y vidrio \\(3\\). El que más se repite, es decir la moda, es el cartón.",
       "opciones_incorrectas": {
-        "C": "El papel aparece \\(2\\) veces, menos que el cartón.",
-        "D": "El vidrio aparece una sola vez: es el material menos frecuente, no el más frecuente.",
-        "B": "El plástico aparece \\(3\\) veces, una menos que las \\(5\\) del cartón."
+        "C": "El papel aparece \\(4\\) veces, la mitad de las \\(8\\) del cartón.",
+        "D": "El vidrio aparece \\(3\\) veces: es el material menos frecuente, no el más frecuente.",
+        "B": "El plástico aparece \\(5\\) veces, tres menos que las \\(8\\) del cartón."
       }
     }
   ],

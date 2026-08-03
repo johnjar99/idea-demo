@@ -254,10 +254,10 @@
       "numero": 9,
       "enunciado": "<p>La administradora de una papelería de barrio revisó cuántas unidades vendió de dos productos durante los seis meses que lleva abierto el local, como recoge la gráfica.</p>[[IMG]]<p>¿Qué afirmación se sostiene con esos datos?</p>",
       "opciones": {
-        "A": "Las ventas del producto 1 crecen a medida que pasan los meses.",
-        "B": "Las ventas del producto 1 bajan a medida que pasan los meses.",
-        "C": "Las ventas del producto 2 bajan a medida que pasan los meses.",
-        "D": "Las ventas del producto 2 no guardan ninguna relación con el paso de los meses."
+        "A": "Las ventas del producto 1 bajan la misma cantidad de unidades cada mes.",
+        "B": "Las ventas del producto 1 son inversamente proporcionales al mes.",
+        "C": "Las ventas del producto 2 son inversamente proporcionales al mes.",
+        "D": "Las ventas del producto 2 no guardan ninguna relación de proporcionalidad con el mes."
       },
       "clave": "B",
       "competencia": "a",
@@ -267,11 +267,11 @@
       "dificultad": "ALTA",
       "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables.",
       "que_evalua": "La capacidad para reconocer relaciones de proporcionalidad entre variables que representan situaciones cotidianas.",
-      "justificacion_correcta": "Las ventas del producto 1 bajan mes a mes: van de \\(60\\) unidades en el mes 1 a \\(10\\) en el mes 6. De hecho, el producto entre las ventas y el mes se mantiene en \\(60\\) \\((60\\times 1,\\ 30\\times 2,\\ 20\\times 3,\\ \\dots)\\), de modo que las ventas del producto 1 y el mes son inversamente proporcionales.",
+      "justificacion_correcta": "En el producto 1 el producto entre el número del mes y las ventas de ese mes se mantiene siempre en \\(60\\): \\(1\\times 60\\), \\(2\\times 30\\), \\(3\\times 20\\), \\(4\\times 15\\), \\(5\\times 12\\) y \\(6\\times 10\\). Que ese producto sea constante es justamente la condición de la proporcionalidad inversa: cuando el mes se duplica, las ventas se reducen a la mitad.",
       "opciones_incorrectas": {
-        "A": "Las ventas del producto 1 disminuyen de un mes al siguiente \\((60, 30, 20, 15, 12, 10)\\); una relación directa exigiría que aumentaran.",
-        "C": "El producto 2 aumenta cuando avanza el mes \\((\\text{ventas}\\div\\text{mes}\\text{ constante} = 10)\\), así que es directamente proporcional, no inversamente.",
-        "D": "El producto 2 sí guarda proporcionalidad: el cociente \\(\\text{ventas}\\div\\text{mes}\\) es constante e igual a \\(10\\)."
+        "A": "La caída no es de la misma cantidad cada mes: de \\(60\\) a \\(30\\) baja \\(30\\) unidades, de \\(30\\) a \\(20\\) baja \\(10\\) y de \\(15\\) a \\(12\\) baja \\(3\\), así que la disminución no es constante.",
+        "C": "Las ventas del producto 2 aumentan con el mes y su cociente \\(\\text{ventas}\\div\\text{mes}\\) se mantiene en \\(10\\); esa es una proporcionalidad directa, no inversa.",
+        "D": "El producto 2 sí guarda proporcionalidad con el mes: \\(10\\div 1 = 20\\div 2 = 30\\div 3 = 10\\), un cociente constante."
       },
       "imagen_figura": "assets/banco-mat-11-p1/q17.png"
     },

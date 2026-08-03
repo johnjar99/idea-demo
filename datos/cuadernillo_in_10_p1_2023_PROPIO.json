@@ -51,7 +51,7 @@
     "ctx-parte3": {
       "titulo": "Young Readers Club",
       "imagen": "assets/banco-in-10-p1/q11.png",
-      "texto": "Read the text and choose the word that completes each gap.\n\nThe Young Readers Club is a community project that opened ten years ago. The club works in (17)_______ of the small towns near our city, and it (18)_______ children to enjoy books for free. Many families cannot buy books for (19)_______, so the club brings boxes of stories to schools and parks. (20)_______ reading aloud, volunteers help young people improve their words and their confidence. Since 2014, the project (21)_______ helped more than two thousand children (22)_______ love books.",
+      "texto": "Read the text and choose the word that completes each gap.\n\nThe Young Readers Club is a community project that opened ten years ago. The club works in (17)_______ of the small towns near our city, and it opens its doors every Saturday to (18)_______ children to enjoy books for free. Many families cannot buy books for (19)_______, so the club brings boxes of stories to schools and parks. (20)_______ reading aloud, volunteers help young people improve their words and their confidence. Since 2014, the project (21)_______ helped more than two thousand children (22)_______ love books.",
       "rango_preguntas": "17 a 22"
     },
     "ctx-parte4": {
@@ -132,7 +132,7 @@
       "numero": 3,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You do this near a lake or a river, and you wait quietly until you catch something to eat.</p>",
+      "enunciado": "<p class=\"en-stem\">You do this near a river to catch fish.</p>",
       "opciones": {
         "A": "fishing",
         "B": "reading",
@@ -151,11 +151,14 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario de pasatiempos a partir de una descripción que exige inferir el lugar y los objetos.",
-      "justificacion_correcta": "Opción «fishing», dado que «fishing» (pescar) es la actividad que se hace junto a un lago o un río esperando atrapar un pez para comer.",
+      "justificacion_correcta": "Opción «fishing», dado que «fishing» (pescar) es la actividad que se hace junto a un río para atrapar peces.",
       "opciones_incorrectas": {
-        "D": "«camping» (acampar) también ocurre al aire libre, pero no consiste en atrapar nada para comer.",
-        "E": "«gardening» (jardinería) se hace con plantas en un jardín, no junto a un lago.",
-        "C": "«running» (correr) se hace moviéndose rápido, no esperando junto al agua."
+        "B": "«reading» (leer) se hace con un libro, no junto a un río.",
+        "C": "«running» (correr) es moverse rápido, no esperar junto a un río.",
+        "D": "«camping» (acampar) también ocurre al aire libre, pero no consiste en atrapar peces.",
+        "E": "«gardening» (jardinería) se hace con plantas en un jardín, no junto a un río.",
+        "F": "«cooking» (cocinar) se hace en la cocina, no junto a un río.",
+        "G": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con colores, no junto a un río."
       }
     },
     {
@@ -197,7 +200,7 @@
       "numero": 5,
       "contexto_id": "ctx-parte1",
       "contexto_titulo": "Parte 1: Vocabulario (emparejamiento)",
-      "enunciado": "<p class=\"en-stem\">You do this outside, putting seeds in the ground and giving water to your plants.</p>",
+      "enunciado": "<p class=\"en-stem\">You do this outside with seeds and plants.</p>",
       "opciones": {
         "A": "cooking",
         "B": "painting",
@@ -216,11 +219,14 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer vocabulario de pasatiempos a partir de una descripción que combina lugar y acciones cotidianas.",
-      "justificacion_correcta": "Opción «gardening», dado que «gardening» (jardinería) es la actividad de sembrar semillas y regar las plantas afuera.",
+      "justificacion_correcta": "Opción «gardening», dado que «gardening» (jardinería) es la actividad que se hace afuera con semillas y plantas.",
       "opciones_incorrectas": {
-        "D": "«camping» (acampar) se hace al aire libre, pero no consiste en sembrar plantas.",
-        "A": "«cooking» (cocinar) se hace en la cocina, no en el jardín.",
-        "C": "«fishing» (pescar) se hace junto al agua, no plantando semillas."
+        "A": "«cooking» (cocinar) se hace en la cocina, no afuera con semillas.",
+        "B": "«painting» (pintar) ya quedó usada en el ejemplo (0), así que no está disponible; además se hace con colores, no con semillas.",
+        "C": "«fishing» (pescar) se hace junto al agua, no con semillas y plantas.",
+        "D": "«camping» (acampar) se hace al aire libre, pero no con semillas ni plantas.",
+        "E": "«reading» (leer) se hace con un libro, no con semillas y plantas.",
+        "F": "«running» (correr) es un ejercicio, no una actividad con semillas y plantas."
       }
     },
     {
@@ -385,9 +391,9 @@
       "numero": 12,
       "contexto_id": "ctx-parte2",
       "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “Your new bike is really beautiful!”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “The flowers in this park are lovely.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
       "opciones": {
-        "A": "Thanks a lot!",
+        "A": "Aren't they?",
         "B": "Are you tired?",
         "C": "Is it raining?"
       },
@@ -400,10 +406,10 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Elegir la réplica adecuada para reaccionar a un cumplido sencillo.",
-      "justificacion_correcta": "Opción «Thanks a lot!», dado que «Thanks a lot!» es la forma natural de responder cuando alguien hace un cumplido sobre algo tuyo.",
+      "justificacion_correcta": "Opción «Aren't they?», dado que la pregunta coletilla («question tag») en negativo sirve para mostrar acuerdo entusiasta con lo que el otro acaba de decir: sí, las flores son preciosas.",
       "opciones_incorrectas": {
-        "C": "«Is it raining?» pregunta por el clima y no responde al cumplido.",
-        "B": "«Are you tired?» pregunta por el estado del interlocutor y no reacciona al cumplido."
+        "C": "«Is it raining?» pregunta por el clima y no reacciona al comentario sobre las flores.",
+        "B": "«Are you tired?» pregunta por el estado del interlocutor y no reacciona al comentario sobre las flores."
       }
     },
     {
@@ -463,10 +469,10 @@
       "numero": 15,
       "contexto_id": "ctx-parte2",
       "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I just got a new puppy yesterday.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “My cousin Marta arrived from Bogotá yesterday.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
       "opciones": {
-        "A": "I have a cat at home.",
-        "B": "What's its name?",
+        "A": "I have a cousin in Cali.",
+        "B": "What's she like?",
         "C": "Sorry to hear that."
       },
       "clave": "B",
@@ -478,9 +484,9 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Elegir la réplica adecuada para mostrar interés ante una noticia personal.",
-      "justificacion_correcta": "Opción «What's its name?», dado que muestra interés por la noticia de la nueva mascota y pregunta por un dato sobre ella.",
+      "justificacion_correcta": "Opción «What's she like?», dado que es la fórmula que se usa para pedir una descripción de cómo es una persona, y con ella el interlocutor muestra interés por la noticia que acaba de recibir.",
       "opciones_incorrectas": {
-        "A": "«I have a cat at home.» desvía la conversación hacia la mascota propia en vez de reaccionar a la noticia que acaba de dar el otro.",
+        "A": "«I have a cousin in Cali.» desvía la conversación hacia la familia propia en vez de reaccionar a la noticia que acaba de dar el otro.",
         "C": "«Sorry to hear that.» sirve para lamentar una mala noticia, y la de aquí es alegre, así que el registro no corresponde."
       }
     },
@@ -543,9 +549,9 @@
       "contexto_titulo": "Young Readers Club",
       "enunciado": "<p class=\"en-stem\">Choose the correct word for blank (18) in the text.</p>",
       "opciones": {
-        "A": "helping",
-        "B": "helped",
-        "C": "helps"
+        "A": "teaching",
+        "B": "teaches",
+        "C": "teach"
       },
       "clave": "C",
       "competencia": "c",
@@ -556,10 +562,10 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Seleccionar la forma verbal correcta después de un sujeto en presente simple.",
-      "justificacion_correcta": "Opción «helps», dado que el sujeto «it» (el club) es tercera persona del singular en presente simple, así que el verbo toma «-s»: «it helps children». El estudiante debe dominar el presente simple.",
+      "justificacion_correcta": "Opción «teach», dado que después de «to» con valor de finalidad el verbo va en infinitivo sin conjugar: el club abre sus puertas «to teach children to enjoy books». El estudiante debe distinguir el infinitivo de propósito de las formas conjugadas.",
       "opciones_incorrectas": {
-        "A": "«helping» es gerundio y necesitaría un auxiliar («is»), que no aparece.",
-        "B": "«helped» es pasado, y el texto describe lo que el club hace habitualmente, en presente."
+        "A": "«teaching» es gerundio y no puede ir detrás de «to» cuando este introduce la finalidad.",
+        "B": "«teaches» es la forma conjugada de la tercera persona del presente y tampoco puede seguir a «to»."
       }
     },
     {

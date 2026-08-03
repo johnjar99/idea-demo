@@ -194,8 +194,8 @@
       "opciones": {
         "A": "mayor, porque con dos cajones Simón necesita menos fuerza y por eso llegan más lejos.",
         "B": "mayor, porque al apilar el segundo cajón el peso se reparte y superan los 4 metros.",
-        "C": "menor, porque al aumentar la masa con la misma fuerza la aceleración disminuye.",
-        "D": "igual, porque en las dos figuras la fuerza aplicada es exactamente la misma."
+        "C": "menor, porque la misma fuerza tiene que mover el doble de carga.",
+        "D": "igual, porque en las dos figuras la fuerza que aplica Simón es exactamente la misma."
       },
       "clave": "C",
       "competencia": "b",
@@ -204,11 +204,11 @@
       "dificultad": "ALTA",
       "estandar": "",
       "que_evalua": "Esta pregunta evalúa si los estudiantes tienen la capacidad para comparar masas y fuerzas a partir de una información y un modelo brindado.",
-      "justificacion_correcta": "La opción «menor, porque al aumentar la masa con la misma fuerza la aceleración disminuye» es la respuesta correcta porque, con la misma fuerza aplicada, al aumentar la masa disminuye la aceleración; por eso, en el mismo tiempo, los dos cajones juntos recorren menos que el cajón solo.",
+      "justificacion_correcta": "La opción «menor, porque la misma fuerza tiene que mover el doble de carga» es la respuesta correcta porque en la Figura 2 Simón empuja dos cajones idénticos con la misma fuerza y durante el mismo tiempo que en la Figura 1: esa fuerza tiene que arrastrar el doble de peso, el conjunto avanza más despacio y en ese tiempo alcanza a recorrer menos de los 4 metros.",
       "opciones_incorrectas": {
-        "A": "Mover más masa exige más fuerza, no menos, y con la misma fuerza los cajones no llegan más lejos.",
-        "D": "Aunque la fuerza es la misma, la masa cambió; por eso la aceleración y el recorrido no pueden ser iguales.",
-        "B": "El peso no se reparte, se suma: con más masa cuesta más moverlos y recorren menos de 4 metros."
+        "A": "Mover el doble de peso exige más fuerza, no menos, y con la misma fuerza los cajones tampoco llegan más lejos.",
+        "D": "La fuerza sí es la misma en las dos figuras, pero el peso que hay que mover cambió; por eso el recorrido en el mismo tiempo no puede ser igual.",
+        "B": "El peso del segundo cajón no se reparte, se suma al del primero: cuesta más moverlos y por eso recorren menos de 4 metros."
       },
       "componente": "Entorno físico",
       "imagen_figura": "assets/banco-cn-8-p1/q09.png"
@@ -216,7 +216,7 @@
     {
       "id": "P8CN10",
       "numero": 7,
-      "enunciado": "<p>Lee la siguiente situación y observa los cuadros de Punnett.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un criadero de cuyes de pelo <b>negro</b> nació una cría de pelo <b>blanco</b>. La veterinaria explica que el color depende de un gen con dos versiones: «R», que produce pelo negro y domina sobre la otra, y «r», que produce pelo blanco y solo se nota cuando la cría recibe dos copias de ella. Si el padre y la madre son de pelo negro pero cada uno lleva además la versión «r» (Rr), una de cada cuatro crías puede nacer con las dos copias «r» (rr) y, por tanto, de pelo blanco.</p></div><p>¿Cuál de los cuadros de Punnett (A, B, C o D) representa el cruce que explica el nacimiento de la cría blanca?</p>",
+      "enunciado": "<p>Lee la siguiente situación y observa los cuadros de Punnett.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En un criadero de cuyes de pelo <b>negro</b> nació una cría de pelo <b>blanco</b>. La veterinaria explica que el color depende de un gen con dos versiones: «R», que produce pelo negro y domina sobre la otra, y «r», que produce pelo blanco y solo se nota cuando la cría recibe dos copias de ella. El padre y la madre de esa cría son los dos de pelo <b>negro</b>.</p></div><p>¿Cuál de los cuadros de Punnett (A, B, C o D) representa el cruce que explica el nacimiento de la cría blanca?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -302,11 +302,11 @@
       "enunciado": "<p>Lee la siguiente situación y observa los pósteres.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El comité ambiental del colegio debe decidir qué bombillo LED instalar en el corredor de la biblioteca. Para eso probó tres bombillos (X, Y y Z) y registró hasta dónde llegaba la luz de cada uno. Con esos datos concluyó que el bombillo Z es el más conveniente. Ahora el comité tiene que presentar el trabajo en un póster, con todas sus secciones en un orden lógico.</p></div><p>Lee el contenido de cada póster. ¿Cuál de ellos (A, B, C o D) presenta mejor el trabajo realizado?</p>",
       "opciones": {
         "A": "Póster A.",
-        "B": "Póster C.",
-        "C": "Póster D.",
-        "D": "Póster B."
+        "C": "Póster C.",
+        "D": "Póster D.",
+        "B": "Póster B."
       },
-      "clave": "D",
+      "clave": "B",
       "competencia": "a",
       "afirmacion": 6,
       "evidencia": "6.1",
@@ -316,15 +316,15 @@
       "justificacion_correcta": "La opción «Póster B» es la respuesta correcta porque trae las cuatro secciones en un orden lógico (pregunta, procedimiento, resultados y conclusión) y, además, su conclusión concuerda con los resultados: el bombillo Z es el que llega más lejos con su luz.",
       "opciones_incorrectas": {
         "A": "El póster A no incluye el procedimiento y ubica la conclusión antes de los resultados.",
-        "B": "El póster C no presenta la conclusión y coloca el procedimiento después de los resultados.",
-        "C": "El póster D tiene todas las secciones en orden, pero su conclusión está equivocada: dice que el mejor es el bombillo Y, cuando los resultados señalan al Z."
+        "C": "El póster C no presenta la conclusión y coloca el procedimiento después de los resultados.",
+        "D": "El póster D tiene todas las secciones en orden, pero su conclusión está equivocada: dice que el mejor es el bombillo Y, cuando los resultados señalan al Z."
       },
       "componente": "Entorno físico",
       "opciones_imagenes": {
         "A": "assets/banco-cn-8-p1/q08_opA.png",
-        "D": "assets/banco-cn-8-p1/q08_opB.png",
-        "B": "assets/banco-cn-8-p1/q08_opC.png",
-        "C": "assets/banco-cn-8-p1/q08_opD.png"
+        "B": "assets/banco-cn-8-p1/q08_opB.png",
+        "C": "assets/banco-cn-8-p1/q08_opC.png",
+        "D": "assets/banco-cn-8-p1/q08_opD.png"
       }
     },
     {
@@ -382,7 +382,7 @@
     {
       "id": "P8CN03",
       "numero": 13,
-      "enunciado": "<p>Lee la siguiente situación y observa el montaje.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Marcela y su equipo prepararon en el laboratorio un extracto morado de pétalos macerados en alcohol. Ahora quieren recuperar el alcohol y dejar el pigmento en el fondo del balón, así que arman el equipo de la figura: el mechero calienta la mezcla, cada líquido pasa a estado de vapor a distinta temperatura, el vapor sube por el tubo de vidrio inclinado y por fuera de ese tubo circula <b>agua fría</b>. El líquido recuperado cae gota a gota en el erlenmeyer.</p>[[IMG]]</div><p>En esta separación, ¿qué función cumple la pieza rotulada como <b>condensador</b>?</p>",
+      "enunciado": "<p>Lee la siguiente situación y observa el montaje.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Marcela y su equipo prepararon en el laboratorio un extracto morado de pétalos macerados en alcohol. Ahora quieren recuperar el alcohol y dejar el pigmento en el fondo del balón, así que arman el equipo de la figura y encienden el mechero.</p>[[IMG]]</div><p>En esta separación, ¿qué función cumple la pieza rotulada como <b>condensador</b>?</p>",
       "opciones": {
         "A": "Vuelve líquido el vapor que llega del balón, porque el agua fría que circula por fuera le baja la temperatura.",
         "B": "Revuelve el agua fría con la mezcla del balón, de modo que al calentarse cada líquido se aparta de los demás.",
@@ -433,7 +433,7 @@
     {
       "id": "P8CN01",
       "numero": 15,
-      "enunciado": "<p>Lee la siguiente situación y observa la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el club de ciencias, Tomás recibió una ficha con el tamaño del átomo de cinco elementos. De cada uno la ficha trae dos datos: el número de <b>periodo</b> en el que se ubica y cuánto mide su <b>radio atómico</b>, en picómetros (pm).</p></div><p style='text-align:center'><img src='assets/banco-cn-8-p1/q01.png' alt='Tabla del radio atómico de los metales alcalinos' style='max-width:520px;width:100%'></p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Después de revisar los cinco elementos, Tomás sostiene lo siguiente: «entre mayor sea el número de periodo del elemento, mayor es su radio atómico».</p></div><p>Para respaldar esa afirmación, la gráfica tiene que mostrar cómo cambia el radio atómico <b>a medida que aumenta el periodo</b>. ¿Cuál de las cuatro gráficas lo hace?</p>",
+      "enunciado": "<p>Lee la siguiente situación y observa la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el club de ciencias, Tomás recibió una ficha con el tamaño del átomo de cinco elementos. De cada uno la ficha trae dos datos: el número de <b>periodo</b> en el que se ubica y cuánto mide su <b>radio atómico</b>, en picómetros (pm).</p></div><p style='text-align:center'><img src='assets/banco-cn-8-p1/q01.png' alt='Tabla del radio atómico de los metales alcalinos' style='max-width:520px;width:100%'></p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Después de revisar los cinco elementos, Tomás sostiene lo siguiente: «entre mayor sea el número de periodo del elemento, mayor es su radio atómico», y quiere llevar los datos de la ficha a una gráfica que respalde lo que dice.</p></div><p>¿Cuál de las cuatro gráficas respalda esa afirmación?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -464,14 +464,14 @@
     {
       "id": "P8CN15",
       "numero": 16,
-      "enunciado": "<p>Lee la situación y observa los montajes.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En las tortugas marinas, la <b>temperatura de la arena</b> donde se entierran los huevos podría determinar el sexo de las crías. Un estudiante propone la hipótesis de que <b>a mayor temperatura nacen más hembras</b>. Para ponerla a prueba, un experimento válido debe <b>cambiar una sola variable</b> (la temperatura) y <b>mantener iguales las demás condiciones</b> (el mismo sustrato y el mismo número de huevos), de modo que cualquier diferencia en el sexo de las crías pueda atribuirse a la temperatura. El estudiante compara los cuatro montajes A, B, C y D.</p></div><p>¿Cuál de los montajes permite comprobar adecuadamente la hipótesis del estudiante?</p>",
+      "enunciado": "<p>Lee la situación y observa los montajes.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En las tortugas marinas, la <b>temperatura de la arena</b> donde se entierran los huevos podría determinar el sexo de las crías. Un estudiante propone la hipótesis de que <b>a mayor temperatura nacen más hembras</b> y, para ponerla a prueba, compara los cuatro montajes A, B, C y D, cada uno con sus propias condiciones.</p></div><p>¿Cuál de los montajes permite comprobar adecuadamente la hipótesis del estudiante?</p>",
       "opciones": {
-        "A": "Montaje C.",
+        "C": "Montaje C.",
         "B": "Montaje B.",
-        "C": "Montaje D.",
-        "D": "Montaje A."
+        "D": "Montaje D.",
+        "A": "Montaje A."
       },
-      "clave": "D",
+      "clave": "A",
       "competencia": "a",
       "afirmacion": 6,
       "evidencia": "6.2",
@@ -481,15 +481,15 @@
       "justificacion_correcta": "La opción «Montaje A» es la respuesta correcta porque compara dos grupos cuya única diferencia es la temperatura (26 °C y 32 °C), manteniendo igual el sustrato (arena), y luego cuenta hembras y machos.",
       "opciones_incorrectas": {
         "B": "El montaje B usa la misma temperatura (29 °C) en los dos grupos, por lo que no permite comparar el efecto de la temperatura.",
-        "A": "El montaje C cambia a la vez la temperatura y el sustrato (arena y piedras), introduciendo otra variable que impide aislar el efecto de la temperatura.",
-        "C": "El montaje D tiene un solo grupo, así que no hay con qué comparar para comprobar la hipótesis."
+        "C": "El montaje C cambia a la vez la temperatura y el sustrato (arena y piedras), introduciendo otra variable que impide aislar el efecto de la temperatura.",
+        "D": "El montaje D tiene un solo grupo, así que no hay con qué comparar para comprobar la hipótesis."
       },
       "componente": "Entorno vivo",
       "opciones_imagenes": {
-        "D": "assets/banco-cn-8-p1/q15_opA.png",
+        "A": "assets/banco-cn-8-p1/q15_opA.png",
         "B": "assets/banco-cn-8-p1/q15_opB.png",
-        "A": "assets/banco-cn-8-p1/q15_opC.png",
-        "C": "assets/banco-cn-8-p1/q15_opD.png"
+        "C": "assets/banco-cn-8-p1/q15_opC.png",
+        "D": "assets/banco-cn-8-p1/q15_opD.png"
       }
     },
     {
