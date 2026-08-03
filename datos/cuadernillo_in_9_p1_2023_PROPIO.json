@@ -42,8 +42,8 @@
       "rango_preguntas": "1 a 5"
     },
     "ctx-parte2": {
-      "titulo": "Avisos y letreros",
-      "texto": "RESPONDE LAS PREGUNTAS 6 A 10. ¿Dónde puedes ver estos avisos? Lee cada letrero y, en las preguntas 6 - 10, marca A, B o C.",
+      "titulo": "Cinco letreros, cinco lugares",
+      "texto": "RESPONDE LAS PREGUNTAS 6 A 10. Cinco jóvenes se encuentran con estos letreros durante el día. Lee lo que dice cada letrero y decide en qué lugar puede estar cada persona. En las preguntas 6 - 10, marca A, B o C.",
       "rango_preguntas": "6 a 10"
     },
     "ctx-parte3": {
@@ -219,12 +219,12 @@
       "id": "P9I06",
       "numero": 6,
       "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Avisos y letreros",
-      "enunciado": "[[IMG]]<p>Where can you see this notice?</p>",
+      "contexto_titulo": "Cinco letreros, cinco lugares",
+      "enunciado": "[[IMG]]<p>Daniela sees this notice at the entrance. Where is she?</p>",
       "opciones": {
         "A": "in a library",
-        "B": "at a stadium",
-        "C": "in a market"
+        "B": "at a bus station",
+        "C": "at a swimming pool"
       },
       "clave": "A",
       "competencia": "b",
@@ -235,10 +235,10 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Inferir el lugar donde aparecería un aviso a partir de su contenido.",
-      "justificacion_correcta": "Opción A, dado que pedir silencio mientras otros leen solo tiene sentido en una biblioteca.",
+      "justificacion_correcta": "Opción A, dado que pedir silencio mientras otras personas leen solo tiene sentido en una biblioteca, donde leer es la actividad principal.",
       "opciones_incorrectas": {
-        "B": "en un estadio el ambiente es ruidoso y nadie pide silencio para leer.",
-        "C": "en un mercado la gente habla y vende en voz alta; no se pide silencio para leer."
+        "B": "en una estación de buses hay anuncios por altavoz y gente hablando; allí nadie pide silencio para leer.",
+        "C": "en una piscina la gente juega y grita, y no es un lugar donde se vaya a leer."
       },
       "imagen_figura": "assets/banco-in-9-p1/q06.png"
     },
@@ -246,12 +246,12 @@
       "id": "P9I07",
       "numero": 7,
       "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Avisos y letreros",
-      "enunciado": "[[IMG]]<p>Where can you see this notice?</p>",
+      "contexto_titulo": "Cinco letreros, cinco lugares",
+      "enunciado": "[[IMG]]<p>Mateo sees this notice before his trip. Where is he?</p>",
       "opciones": {
         "A": "at a hotel",
         "B": "at an airport",
-        "C": "at a park"
+        "C": "at a cinema"
       },
       "clave": "B",
       "competencia": "b",
@@ -262,10 +262,10 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Inferir el lugar donde aparecería un aviso a partir de su contenido.",
-      "justificacion_correcta": "Opción B, dado que limitar el peso de cada maleta es una norma propia de un aeropuerto, antes de un viaje en avión.",
+      "justificacion_correcta": "Opción B, dado que exigir que cada maleta pese menos de 20 kilos es una norma propia de un aeropuerto, donde el equipaje se pesa antes del vuelo.",
       "opciones_incorrectas": {
-        "A": "en un hotel se reciben maletas, pero no se controla su peso con esa regla.",
-        "C": "en un parque la gente no lleva maletas con límite de peso."
+        "A": "en un hotel reciben las maletas de los huéspedes, pero no las pesan ni les ponen ese límite.",
+        "C": "en un cine la gente no lleva maletas, así que un límite de peso no tendría sentido."
       },
       "imagen_figura": "assets/banco-in-9-p1/q07.png"
     },
@@ -273,12 +273,12 @@
       "id": "P9I08",
       "numero": 8,
       "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Avisos y letreros",
-      "enunciado": "[[IMG]]<p>Where can you see this sign?</p>",
+      "contexto_titulo": "Cinco letreros, cinco lugares",
+      "enunciado": "[[IMG]]<p>Sofía sees this sign during a school trip. Where is she?</p>",
       "opciones": {
-        "A": "in a hospital",
+        "A": "at a bank",
         "B": "at a zoo",
-        "C": "in a library"
+        "C": "in a shoe shop"
       },
       "clave": "B",
       "competencia": "b",
@@ -289,10 +289,10 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer el lugar de un aviso muy sencillo, con apoyo visual del letrero.",
-      "justificacion_correcta": "Opción B, dado que el letrero «Do not feed the animals» (no alimentar a los animales) es propio de un zoológico.",
+      "justificacion_correcta": "Opción B, dado que el letrero «Do not feed the animals» (no alimentar a los animales) se pone donde hay animales en exhibición, es decir, en un zoológico.",
       "opciones_incorrectas": {
-        "A": "en un hospital no hay animales para alimentar.",
-        "C": "en una biblioteca no hay animales."
+        "A": "en un banco no hay animales a los que alguien pueda darles comida.",
+        "C": "en una zapatería tampoco hay animales, así que el letrero no tendría sentido."
       },
       "imagen_figura": "assets/banco-in-9-p1/q08.png"
     },
@@ -300,11 +300,11 @@
       "id": "P9I09",
       "numero": 9,
       "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Avisos y letreros",
-      "enunciado": "[[IMG]]<p>Where can you see this sign?</p>",
+      "contexto_titulo": "Cinco letreros, cinco lugares",
+      "enunciado": "[[IMG]]<p>Andrés sees this sign on the front door. Where is he?</p>",
       "opciones": {
-        "A": "in a bedroom",
-        "B": "on a beach",
+        "A": "in a living room",
+        "B": "at a river",
         "C": "at a store"
       },
       "clave": "C",
@@ -316,10 +316,10 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer el lugar de un aviso sencillo de horarios, con apoyo visual del letrero.",
-      "justificacion_correcta": "Opción C, dado que un letrero con horario de atención de lunes a viernes y cierre el domingo corresponde a una tienda o local comercial.",
+      "justificacion_correcta": "Opción C, dado que un letrero con horario de lunes a viernes, sábado en la mañana y domingo cerrado corresponde a un local comercial que atiende público.",
       "opciones_incorrectas": {
-        "A": "un dormitorio es un espacio privado y no tiene horario de atención al público.",
-        "B": "una playa abierta no tiene un horario de cierre como el del letrero."
+        "A": "la sala de una casa es un espacio privado y no tiene horario de atención al público.",
+        "B": "un río es un lugar abierto al que se puede llegar a cualquier hora, no cierra los domingos."
       },
       "imagen_figura": "assets/banco-in-9-p1/q09.png"
     },
@@ -327,12 +327,12 @@
       "id": "P9I10",
       "numero": 10,
       "contexto_id": "ctx-parte2",
-      "contexto_titulo": "Avisos y letreros",
-      "enunciado": "[[IMG]]<p>Where can you see this notice?</p>",
+      "contexto_titulo": "Cinco letreros, cinco lugares",
+      "enunciado": "[[IMG]]<p>Valentina sees this notice on the wall. Where is she?</p>",
       "opciones": {
         "A": "in a kitchen",
-        "B": "in a garden",
-        "C": "on a bus"
+        "B": "in a garage",
+        "C": "on a train"
       },
       "clave": "A",
       "competencia": "b",
@@ -343,10 +343,10 @@
       "dificultad": "BAJA",
       "estandar": "",
       "que_evalua": "Reconocer el lugar de un aviso muy sencillo a partir de su contenido.",
-      "justificacion_correcta": "Opción A, dado que un aviso que pide lavarse las manos antes de cocinar solo tiene sentido en una cocina.",
+      "justificacion_correcta": "Opción A, dado que pedir lavarse las manos antes de cocinar solo tiene sentido donde se prepara la comida, es decir, en una cocina.",
       "opciones_incorrectas": {
-        "B": "en un jardín no se cocina, así que el aviso no aplicaría.",
-        "C": "en un bus no se prepara comida."
+        "B": "en un garaje se guardan carros y herramientas, allí no se cocina.",
+        "C": "en un tren los pasajeros viajan, no preparan comida."
       },
       "imagen_figura": "assets/banco-in-9-p1/q10.png"
     },
@@ -381,7 +381,7 @@
       "numero": 12,
       "contexto_id": "ctx-parte3",
       "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I love eating fruit because it is healthy.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “I love playing chess with my cousin on Sundays.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
       "opciones": {
         "A": "So do I.",
         "B": "No, I’m not.",
@@ -396,10 +396,10 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Elegir la intervención adecuada para coincidir con un gusto expresado por el interlocutor.",
-      "justificacion_correcta": "Opción A, dado que «So do I.» expresa que el interlocutor 2 también comparte ese gusto, una reacción adecuada cuando dos personas coinciden en una opinión.",
+      "justificacion_correcta": "Opción A, dado que «So do I.» expresa que el interlocutor 2 también disfruta esa actividad, la reacción adecuada cuando dos personas coinciden en un gusto.",
       "opciones_incorrectas": {
-        "B": "«No, I don’t.» es una respuesta negativa a una pregunta, pero aquí no hay pregunta.",
-        "C": "«Yes, I do.» responde de forma afirmativa a una pregunta, y el enunciado no es una pregunta."
+        "B": "«No, I’m not.» es una respuesta negativa a una pregunta con el verbo to be, y aquí no hay ninguna pregunta.",
+        "C": "«Yes, I am.» responde de forma afirmativa a una pregunta con el verbo to be, y el interlocutor 1 no preguntó nada."
       }
     },
     {
@@ -424,8 +424,8 @@
       "que_evalua": "Elegir la intervención adecuada para dar una indicación de lugar.",
       "justificacion_correcta": "Opción C, dado que «Turn left.» indica hacia dónde debe ir el interlocutor 1, que es justo lo que pregunta.",
       "opciones_incorrectas": {
-        "A": "«Nice place.» describe un lugar, pero no dice hacia dónde ir.",
-        "B": "«I am here.» indica la ubicación del interlocutor 2, no la dirección que se pregunta."
+        "A": "«It’s very nice.» valora algo como agradable, pero no dice hacia dónde debe ir el interlocutor 1.",
+        "B": "«I’m fine, thanks.» responde a una pregunta por el estado de la persona, no a una pregunta por la dirección."
       }
     },
     {
@@ -459,7 +459,7 @@
       "numero": 15,
       "contexto_id": "ctx-parte3",
       "contexto_titulo": "Conversaciones breves",
-      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “This classroom is very dirty.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
+      "enunciado": "<p class=\"en-instruccion\">Completa la conversación. Lee lo que dice el Interlocutor 1 y elige la mejor respuesta del Interlocutor 2.</p><div class=\"en-dialogo\"><p class=\"en-turno\"><span class=\"en-rol\">Interlocutor 1:</span> “This street is very noisy in the afternoon.”</p><p class=\"en-turno en-turno-prompt\"><span class=\"en-rol\">Interlocutor 2:</span> <em>Elige A, B o C.</em></p></div>",
       "opciones": {
         "A": "I agree.",
         "B": "It’s brand new.",
@@ -474,10 +474,10 @@
       "dificultad": "MEDIA",
       "estandar": "",
       "que_evalua": "Elegir la intervención adecuada para manifestar acuerdo ante un juicio del interlocutor.",
-      "justificacion_correcta": "Opción A, dado que «I agree.» manifiesta acuerdo con el juicio de que el salón está muy sucio.",
+      "justificacion_correcta": "Opción A, dado que «I agree.» manifiesta acuerdo con el juicio de que la calle es muy ruidosa por la tarde.",
       "opciones_incorrectas": {
-        "B": "«It’s ready.» indica que algo terminó, no manifiesta acuerdo.",
-        "C": "«Thank you.» se usa para agradecer, no para manifestar acuerdo o desacuerdo."
+        "B": "«It’s brand new.» informa que algo es nuevo, habla de otra característica y no manifiesta acuerdo.",
+        "C": "«You’re welcome.» es la respuesta a un agradecimiento, no sirve para manifestar acuerdo o desacuerdo."
       }
     },
     {

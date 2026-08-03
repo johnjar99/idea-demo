@@ -86,7 +86,7 @@ function validarCuadernillo(c) {
 // --- Siembra inicial (solo si la base está vacía) ------------------------------------
 // Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
 // visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
-const SEED_VERSION = '2026-08-01-todo-verificacion';
+const SEED_VERSION = '2026-08-02-escenarios-p1';
 
 // La version de contenido NO puede vivir solo aqui. Este archivo lo cachea el navegador, asi que
 // si se queda con una copia vieja de db.js nunca se entera de que hay contenido nuevo y sigue

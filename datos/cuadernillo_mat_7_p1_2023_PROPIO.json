@@ -196,7 +196,7 @@
     {
       "id": "P-math-7-p1-06",
       "numero": 6,
-      "enunciado": "<p>Un diseñador dibujó en el plano cartesiano la pieza que aparece en la gráfica.</p>[[IMG]]<p>La pieza se baja <b>3 unidades</b> y, hecho eso, se corre <b>4 unidades hacia la derecha</b>. ¿En cuál de las gráficas queda después de esos dos desplazamientos?</p>",
+      "enunciado": "<p>Marcela arma el logotipo de su emisora escolar en un programa de dibujo. La pieza que ya ubicó sobre el plano de coordenadas se ve en la gráfica.</p>[[IMG]]<p>Marcela baja la pieza <b>3 unidades</b> y después la corre <b>4 unidades hacia la derecha</b>. ¿En cuál de las gráficas queda la pieza después de esos dos movimientos?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -211,11 +211,11 @@
       "dificultad": "MEDIA",
       "estandar": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
       "que_evalua": "La capacidad para realizar traslaciones en el plano cartesiano.",
-      "justificacion_correcta": "Trasladar no cambia la forma ni el tamaño de la pieza: solo la mueve. Bajar \\(3\\) unidades resta \\(3\\) a cada coordenada vertical, y moverse \\(4\\) a la derecha suma \\(4\\) a cada coordenada horizontal. La gráfica A es la única donde la pieza conserva su forma y aparece en esa posición.",
+      "justificacion_correcta": "Al trasladar una figura no cambian ni su forma ni su tamaño: solo cambia su posición. Bajarla \\(3\\) unidades le resta \\(3\\) a cada coordenada vertical y correrla \\(4\\) a la derecha le suma \\(4\\) a cada coordenada horizontal. La gráfica A es la única donde la pieza conserva su forma y aparece en esa posición.",
       "opciones_incorrectas": {
-        "B": "Realiza el segundo movimiento hacia la izquierda en lugar de hacia la derecha.",
-        "C": "Mueve el polígono a la derecha pero no lo baja las 3 unidades.",
-        "D": "Baja el polígono las 3 unidades pero olvida moverlo a la derecha."
+        "B": "Hace el segundo movimiento hacia la izquierda y no hacia la derecha.",
+        "C": "Corre la pieza a la derecha, pero no la baja las \\(3\\) unidades.",
+        "D": "Baja la pieza las \\(3\\) unidades, pero olvida correrla a la derecha."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q06.png",
       "opciones_imagenes": {
@@ -285,7 +285,7 @@
     {
       "id": "P-math-7-p1-09",
       "numero": 9,
-      "enunciado": "<p>En la feria de la ciencia hay un puesto donde se gana un premio si, sin mirar, se saca una <b>esfera negra</b> en un solo intento. El participante puede elegir una de las cuatro bolsas que se muestran.</p>[[IMG]]<p>¿Con cuál bolsa tiene más posibilidades de ganar?</p>",
+      "enunciado": "<p>Camila y sus primos van a jugar parqués y, para decidir quién arranca, cada uno saca con los ojos cerrados una sola esfera de una bolsa: arranca el que saque una <b>esfera negra</b>. A Camila le dieron a escoger de cuál de las cuatro bolsas saca.</p>[[IMG]]<p>¿Con cuál bolsa tiene más posibilidades de sacar una esfera negra?</p>",
       "opciones": {
         "A": "Con la bolsa 1.",
         "B": "Con la bolsa 2.",
@@ -300,11 +300,11 @@
       "dificultad": "ALTA",
       "estandar": "Conjeturo acerca del resultado de un experimento aleatorio usando proporcionalidad y nociones básicas de probabilidad.",
       "que_evalua": "La capacidad para calcular la probabilidad de eventos simples en contextos escolares.",
-      "justificacion_correcta": "La posibilidad de sacar una esfera negra se mide comparando, en cada bolsa, cuántas esferas negras hay frente al total de esferas. Gana más posibilidades la bolsa donde esa razón es mayor, que es la bolsa 2.",
+      "justificacion_correcta": "En cada bolsa hay que comparar cuántas esferas negras hay con el total de esferas de esa misma bolsa. En la bolsa 2 son \\(4\\) negras de \\(5\\) esferas, y esa razón es mayor que la de cualquier otra bolsa, así que con ella Camila tiene más posibilidades.",
       "opciones_incorrectas": {
-        "A": "Fijarse solo en cuántas esferas negras hay no basta: hay que compararlas con el total de esferas de esa misma bolsa.",
-        "C": "Su razón entre esferas negras y total es menor que la de la bolsa 2.",
-        "D": "Es la bolsa donde la proporción de esferas negras es de las más bajas."
+        "A": "Tiene \\(4\\) esferas negras, las mismas de la bolsa 2, pero además \\(3\\) blancas: \\(4\\) de \\(7\\) es menos que \\(4\\) de \\(5\\). Contar solo las negras no basta.",
+        "C": "Su razón entre esferas negras y total de esferas es \\(4\\) de \\(7\\), menor que la de la bolsa 2.",
+        "D": "Es la bolsa con menos esferas, pero su razón es \\(2\\) de \\(3\\), que sigue siendo menor que \\(4\\) de \\(5\\)."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q09.png"
     },
@@ -388,7 +388,7 @@
     {
       "id": "P-math-7-p1-13",
       "numero": 13,
-      "enunciado": "<p>La terraza de un taller está cubierta con baldosas cuadradas iguales, cada una de \\(4\\ \\text{dm}^{2}\\) de área, y tiene la forma que muestra la figura.</p>[[IMG]]<p>¿Cuánto mide en total la superficie de la terraza?</p>",
+      "enunciado": "<p>Para la cartelera del colegio, el grupo de séptimo armó un mosaico pegando fichas de cartón todas iguales, cada una de \\(2\\) dm de lado y \\(4\\ \\text{dm}^{2}\\) de área. El mosaico quedó con la forma que muestra la figura.</p>[[IMG]]<p>¿Cuál es el área total del mosaico?</p>",
       "opciones": {
         "A": "\\(36 \\times 2\\ \\text{dm}^{2}\\)",
         "B": "\\(24 \\times 4\\ \\text{dm}^{2}\\)",
@@ -403,11 +403,11 @@
       "dificultad": "MEDIA",
       "estandar": "Calculo áreas y volúmenes a través de composición y descomposición de figuras y cuerpos.",
       "que_evalua": "La capacidad para calcular áreas descomponiendo figuras en figuras de área conocida.",
-      "justificacion_correcta": "El área total se obtiene multiplicando cuántas baldosas hay por el área de cada una. En la figura se cuentan \\(24\\) baldosas y cada una mide \\(4\\ \\text{dm}^{2}\\), de modo que el área es \\(24 \\times 4\\ \\text{dm}^{2}\\).",
+      "justificacion_correcta": "El área total se obtiene multiplicando cuántas fichas hay por el área de cada una. En la figura se cuentan \\(24\\) fichas y cada una mide \\(4\\ \\text{dm}^{2}\\), de modo que el área del mosaico es \\(24 \\times 4\\ \\text{dm}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Cuenta mal las baldosas y además usa \\(2\\) en lugar de \\(4\\) como área de cada una.",
-        "C": "Toma la mitad de las baldosas y también un área equivocada por baldosa.",
-        "D": "Usa el área correcta por baldosa, pero cuenta apenas \\(6\\) de las \\(24\\) que hay."
+        "A": "Cuenta mal las fichas y además toma \\(2\\) en lugar de \\(4\\) como área de cada una.",
+        "C": "Toma la mitad de las fichas y también un área equivocada por ficha.",
+        "D": "Usa el área correcta por ficha, pero cuenta apenas \\(6\\) de las \\(24\\) que hay."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q13.png"
     },
@@ -464,7 +464,7 @@
     {
       "id": "P-math-7-p1-16",
       "numero": 16,
-      "enunciado": "<p>En un taller de empaques se fabricó una caja con forma de cubo, como la que aparece en la figura. Ahora piden una caja más grande, también cúbica, cuyas aristas midan <b>el doble</b> de las de la primera.</p>[[IMG]]<p>¿Qué volumen tendrá esa caja más grande?</p>",
+      "enunciado": "<p>En el gimnasio del colegio hay un módulo de espuma con forma de cubo, como el de la figura. Para el salón nuevo van a mandar hacer otro módulo, también cúbico, pero con el lado del doble de largo.</p>[[IMG]]<p>¿Cuál será el volumen del módulo nuevo?</p>",
       "opciones": {
         "A": "\\(96\\ \\text{m}^{3}\\)",
         "B": "\\(64\\ \\text{m}^{3}\\)",
@@ -479,11 +479,11 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas usando modelos geométricos.",
       "que_evalua": "La capacidad para construir un sólido juntando varios paralelepípedos, y luego calcular su volumen.",
-      "justificacion_correcta": "El volumen de un cubo es la arista elevada al cubo. Si la arista se duplica, el volumen queda multiplicado por \\(2^{3} = 8\\). Con la arista de la figura, la caja nueva tiene un volumen de \\(64\\ \\text{m}^{3}\\).",
+      "justificacion_correcta": "El volumen de un cubo se halla multiplicando el lado por sí mismo tres veces. El módulo de la figura tiene \\(2\\) m de lado, así que ocupa \\(2 \\times 2 \\times 2 = 8\\ \\text{m}^{3}\\). El módulo nuevo tiene \\(4\\) m de lado, entonces su volumen es \\(4 \\times 4 \\times 4 = 64\\ \\text{m}^{3}\\), es decir, ocho veces el primero.",
       "opciones_incorrectas": {
-        "A": "No corresponde a ninguna potencia de la arista duplicada.",
-        "C": "Resulta de multiplicar el volumen original por \\(4\\), como si el cambio afectara solo a dos dimensiones y no a las tres.",
-        "D": "Resulta de duplicar el volumen original. Duplicar la arista no duplica el volumen: lo multiplica por ocho."
+        "A": "El número \\(96\\) no sale de multiplicar el lado nuevo por sí mismo tres veces: corresponde al área de las seis caras del cubo nuevo, no a su volumen.",
+        "C": "Resulta de multiplicar el volumen original por \\(4\\), \\(8 \\times 4 = 32\\), como si el cambio afectara solo a dos dimensiones y no a las tres.",
+        "D": "Resulta de duplicar el volumen original, \\(8 \\times 2 = 16\\). Duplicar el lado no duplica el volumen: lo multiplica por ocho."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q16.png"
     },
@@ -515,7 +515,7 @@
     {
       "id": "P-math-7-p1-18",
       "numero": 18,
-      "enunciado": "<p>La Figura 1 muestra el diseño de una baldosa con forma de octágono regular de \\(5\\) m de lado, cuyo ángulo interno mide \\(135^\\circ\\). La Figura 2 muestra la baldosa ampliada que quiere fabricar el taller, también octagonal y regular, pero de \\(10\\) m de lado.</p>[[IMG]]<p>Si la baldosa ampliada debe ser semejante a la de la Figura 1, ¿cuánto mide cada uno de sus ángulos internos?</p>",
+      "enunciado": "<p>En la mitad del prado del colegio hay una tarima de madera con forma de polígono regular de ocho lados, de \\(5\\) m por lado, en la que cada ángulo interno mide \\(135^\\circ\\), como en la Figura 1. Para las izadas de bandera quieren una tarima más amplia, con la misma forma pero de \\(10\\) m por lado, como en la Figura 2.</p>[[IMG]]<p>Si la tarima grande debe ser semejante a la de la Figura 1, ¿cuánto mide cada uno de sus ángulos internos?</p>",
       "opciones": {
         "A": "\\(270^\\circ\\)",
         "B": "\\(135^\\circ\\)",
@@ -530,10 +530,10 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
       "que_evalua": "La capacidad para reconocer las condiciones para que dos o más figuras sean semejantes.",
-      "justificacion_correcta": "En dos figuras semejantes los lados cambian en la misma proporción, pero los ángulos se conservan. Por eso, aunque el lado pase de \\(5\\) m a \\(10\\) m, cada ángulo interno sigue midiendo \\(135^\\circ\\).",
+      "justificacion_correcta": "En dos figuras semejantes los lados crecen en la misma proporción, pero los ángulos se conservan. Por eso, aunque el lado pase de \\(5\\) m a \\(10\\) m, cada ángulo interno de la tarima grande sigue midiendo \\(135^\\circ\\).",
       "opciones_incorrectas": {
-        "A": "Duplica el ángulo porque se duplicó el lado. En una semejanza los ángulos no cambian.",
-        "C": "Toma la mitad del ángulo, como si al agrandar la figura los ángulos se redujeran.",
+        "A": "Duplica el ángulo porque el lado se duplicó. En una semejanza los ángulos no cambian.",
+        "C": "Toma la mitad del ángulo, como si al agrandar la figura los ángulos se hicieran más pequeños.",
         "D": "Divide el ángulo entre diez, mezclando la medida del lado con la del ángulo."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q18.png"
@@ -566,7 +566,7 @@
     {
       "id": "P-math-7-p1-20",
       "numero": 20,
-      "enunciado": "<p>Un tanque para recoger agua lluvia tiene forma de prisma rectangular de \\(6\\) m de largo, \\(4\\) m de ancho y \\(1{,}5\\) m de alto. En un costado lleva una etiqueta que se rasgó y quedó incompleta, como se ve en la figura.</p>[[IMG]]<p>¿Cómo debería quedar la etiqueta completa?</p>",
+      "enunciado": "<p>En el centro recreativo del municipio hay una piscina para niños con forma de caja rectangular: \\(6\\) m de largo, \\(4\\) m de ancho y \\(1{,}5\\) m de profundidad. La ficha técnica que va pegada junto a la escalera se rompió y a los dos datos que trae ya no se les alcanza a leer la unidad, como se ve en la figura.</p>[[IMG]]<p>¿Cómo debe quedar la ficha técnica una vez la corrijan?</p>",
       "opciones": {
         "A": "<div style=\"display:inline-block;border:1px solid #3D332C;border-radius:4px;padding:8px 14px;font-family:Georgia,serif;font-size:13px;background:#FBF7EF\">Volumen de la piscina: \\(36\\ \\text{m}^3\\)<br>Área de la base de la piscina: \\(24\\ \\text{m}^3\\)</div>",
         "B": "<div style=\"display:inline-block;border:1px solid #3D332C;border-radius:4px;padding:8px 14px;font-family:Georgia,serif;font-size:13px;background:#FBF7EF\">Volumen de la piscina: \\(36\\ \\text{m}^2\\)<br>Área de la base de la piscina: \\(24\\ \\text{m}^2\\)</div>",
@@ -581,11 +581,11 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico relaciones entre distintas unidades utilizadas para medir cantidades de la misma magnitud.",
       "que_evalua": "La capacidad para establecer y distinguir las unidades de medida apropiadas para el área y volumen de un prisma a partir de las medidas de sus aristas.",
-      "justificacion_correcta": "El volumen del prisma es \\(6 \\times 4 \\times 1{,}5 = 36\\), y como se multiplican tres longitudes el resultado va en metros cúbicos: \\(36\\ \\text{m}^{3}\\). El área de la base es \\(6 \\times 4 = 24\\), y al multiplicar dos longitudes va en metros cuadrados: \\(24\\ \\text{m}^{2}\\).",
+      "justificacion_correcta": "El volumen de la piscina es \\(6 \\times 4 \\times 1{,}5 = 36\\) y, como se multiplican tres longitudes, va en metros cúbicos: \\(36\\ \\text{m}^{3}\\). El área de la base es \\(6 \\times 4 = 24\\) y, como se multiplican dos longitudes, va en metros cuadrados: \\(24\\ \\text{m}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Acierta los números pero le pone al área de la base una unidad que no corresponde.",
+        "A": "Acierta los números, pero al área de la base le pone metros cúbicos, que es la unidad del volumen.",
         "B": "Expresa el volumen en metros cuadrados, cuando multiplicar tres longitudes da metros cúbicos.",
-        "D": "Equivoca las dos unidades a la vez."
+        "D": "Equivoca las dos unidades a la vez: el volumen en metros cuadrados y el área de la base en metros cúbicos."
       },
       "imagen_figura": "assets/banco-mat-7-p1/q20.png"
     }

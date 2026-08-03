@@ -184,12 +184,12 @@
     {
       "id": "P11CN06",
       "numero": 6,
-      "enunciado": "<p>Observa el circuito y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El circuito de la figura tiene una <b>batería</b>, seis bombillos (B1 a B6) y un <b>interruptor</b>. Cuando el interruptor está cerrado, todos los bombillos alumbran. El bombillo <b>B3</b> está conectado <b>en serie</b> con el interruptor, en una rama; el bombillo <b>B2</b> está en una rama <b>paralela</b> que no pasa por el interruptor, y los bombillos <b>B1, B4, B5</b> y <b>B6</b> están en el lazo principal conectado a la batería.</p>[[IMG]]</div><p>¿Cuál(es) bombillo(s) se apagará(n) cuando el interruptor cambie a «abierto» y no deje pasar corriente por su rama?</p>",
+      "enunciado": "<p>Lee la situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para la muestra empresarial del colegio, Sebastián arma la vitrina de su estand con seis bombillos numerados de <b>B1</b> a <b>B6</b>, alimentados por una sola <b>batería</b>. En la rama donde quedó el bombillo <b>B3</b> intercaló una llave de encendido, la que aparece dibujada en rojo en la figura, para poder apagar ese punto sin tocar el resto de la vitrina. El bombillo <b>B2</b> quedó en una rama <b>paralela</b> que no pasa por esa llave, y <b>B1, B4, B5</b> y <b>B6</b> quedaron en el lazo principal conectado a la batería. Con la llave cerrada, los seis bombillos quedan encendidos.</p>[[IMG]]</div><p>Cuando Sebastián deje la llave abierta y por esa rama no pase corriente, ¿cuál o cuáles bombillos quedarán apagados?</p>",
       "opciones": {
-        "A": "Se apagan B1 y B6.",
-        "B": "Se apagan B2 y B3.",
-        "C": "Se apaga solo B3.",
-        "D": "Se apagan todos los bombillos."
+        "A": "Quedan apagados B1 y B6.",
+        "B": "Quedan apagados B2 y B3.",
+        "C": "Queda apagado únicamente B3.",
+        "D": "Quedan apagados los seis bombillos."
       },
       "clave": "C",
       "competencia": "b",
@@ -200,11 +200,11 @@
       "dificultad": "ALTA",
       "estandar": "Relaciono voltaje y corriente con los diferentes elementos de un circuito eléctrico complejo y para todo el sistema.",
       "que_evalua": "Si los estudiantes pueden predecir qué va a pasar en un circuito al modificar alguno de sus componentes.",
-      "justificacion_correcta": "La opción C es correcta. Al abrir el interruptor solo se interrumpe la rama que está en serie con él, y allí está únicamente B3, que se apaga. B2 está en una rama paralela con su propio camino cerrado, y B1, B4, B5 y B6 siguen en el lazo principal de la batería, así que todos esos permanecen encendidos.",
+      "justificacion_correcta": "La opción C es correcta. Al dejar la llave abierta solo se corta la rama en la que ella está intercalada, y en esa rama está únicamente B3, que se apaga. B2 pertenece a una rama paralela que conserva su propio camino cerrado, y B1, B4, B5 y B6 siguen en el lazo principal de la batería, así que esos cinco bombillos continúan encendidos.",
       "opciones_incorrectas": {
-        "A": "B1 y B6 están en el lazo principal de la batería; su camino no depende del interruptor, así que no se apagan.",
-        "B": "B2 está en una rama paralela independiente del interruptor; conserva un camino cerrado y se mantiene encendido.",
-        "D": "Solo se corta la rama en serie con el interruptor; los demás bombillos conservan camino para la corriente."
+        "A": "B1 y B6 están en el lazo principal de la batería; su camino no pasa por la llave, de modo que siguen encendidos.",
+        "B": "B2 está en una rama paralela que no depende de la llave; mantiene su camino cerrado y no se apaga.",
+        "D": "Solo se interrumpe la rama donde está la llave; los demás bombillos conservan un camino por donde circula la corriente."
       },
       "imagen_figura": "assets/banco-cn-11-p1/q06.png"
     },
@@ -237,12 +237,12 @@
     {
       "id": "P11CN08",
       "numero": 8,
-      "enunciado": "<p>Observa el cruce y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En cierta planta, el color de la flor depende de un solo gen. La figura muestra el cruce entre un parental de genotipo <b>MM</b> (homocigoto dominante) y otro de genotipo <b>mm</b> (homocigoto recesivo). Cada descendiente recibe <b>un alelo de cada parental</b>.</p>[[IMG]]</div><p>¿Cuál de las siguientes tablas muestra correctamente los genotipos de los parentales y de la descendencia de este cruce?</p>",
+      "enunciado": "<p>Lee la situación y observa el cuadro.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el vivero del colegio, los estudiantes polinizaron a mano dos matas de la misma especie. La <b>mata 1</b> es la de flores moradas, marcada <b>MM</b>, y la <b>mata 2</b> es la de flores rosadas, marcada <b>mm</b>. En esta especie el color de la flor depende de un solo gen y cada semilla que se forma recibe <b>un alelo de cada mata</b>. En el cuadro de la figura se organizaron las combinaciones que pueden salir.</p>[[IMG]]</div><p>¿Cuál de las siguientes tablas resume correctamente la combinación de alelos de las dos matas polinizadas y de las plantas que crecen a partir de esas semillas?</p>",
       "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descendencia</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descendencia</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mm</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descendencia</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Parental 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descendencia</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mm</td></tr></table>"
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th colspan=\"3\" style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tabla 1</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Plantas hijas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th colspan=\"3\" style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tabla 2</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Plantas hijas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mm</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th colspan=\"3\" style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tabla 3</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Plantas hijas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th colspan=\"3\" style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tabla 4</th></tr><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mata 2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Plantas hijas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">MM</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">mm</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mm</td></tr></table>"
       },
       "clave": "D",
       "competencia": "b",
@@ -253,23 +253,23 @@
       "dificultad": "MEDIA",
       "estandar": "Explico la relación entre el ADN, el ambiente y la diversidad de los seres vivos.",
       "que_evalua": "Si los estudiantes tienen la capacidad para comprender las leyes de Mendel y reconocer la herencia de un cruce monohíbrido.",
-      "justificacion_correcta": "La opción D es correcta. Un parental MM solo aporta el alelo M y un parental mm solo aporta el alelo m; por tanto, cada descendiente recibe un M y un m, y su genotipo es Mm (heterocigoto). Los parentales se mantienen MM y mm.",
+      "justificacion_correcta": "La opción D es correcta. La mata marcada MM solo puede aportar el alelo M y la mata marcada mm solo puede aportar el alelo m; por eso cada semilla recibe un M y un m, y la planta que crece de ella es Mm, es decir, heterocigota. Las dos matas polinizadas conservan sus combinaciones de partida, MM y mm.",
       "opciones_incorrectas": {
-        "A": "La descendencia no puede ser MM: el parental mm no puede aportar un alelo M, así que es imposible obtener MM.",
-        "B": "Los parentales del cruce son MM y mm, no mm y mm; con esos parentales la descendencia es Mm, no mm.",
-        "C": "La descendencia no puede ser mm: el parental MM no aporta ningún alelo m, así que todo descendiente lleva al menos un M."
+        "A": "Las plantas hijas no pueden ser MM: la mata mm no tiene ningún alelo M para aportar, así que esa combinación es imposible.",
+        "B": "Las matas polinizadas son MM y mm, no mm y mm; además, con dos matas mm las plantas hijas serían mm y no Mm.",
+        "C": "Las plantas hijas no pueden ser mm: la mata MM no aporta ningún alelo m, de manera que toda semilla lleva por lo menos un M."
       },
       "imagen_figura": "assets/banco-cn-11-p1/q08.png"
     },
     {
       "id": "P11CN09",
       "numero": 9,
-      "enunciado": "<p>Observa el modelo de meiosis y responde.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>El modelo representa la formación de células sexuales en una célula con dos cromosomas. Las letras <b>R, G</b> y <b>r, g</b> son alelos de dos genes. La célula duplica sus cromosomas, las cromátidas <b>no hermanas</b> intercambian segmentos y, al final, se forman <b>cuatro células sexuales</b>. Observa que las combinaciones de alelos de las cuatro células finales no son todas iguales.</p>[[IMG]]</div><p>¿Qué proceso de la meiosis hace que las células sexuales que resultan lleven información genética distinta?</p>",
+      "enunciado": "<p>Lee la situación y observa el esquema.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>En el laboratorio de biología se proyecta el esquema con el que se explica cómo una célula de la flor de un lirio forma sus gametos. La célula parte de un par de <b>homólogos</b>: uno lleva las versiones <b>R</b> y <b>G</b> de dos rasgos hereditarios, y el otro lleva las versiones <b>r</b> y <b>g</b> de esos mismos rasgos. Primero se copia el ADN; después los homólogos se aparean e intercambian segmentos en el punto llamado <b>quiasma</b>, y al terminar las dos divisiones quedan <b>cuatro gametos</b>. Al compararlos se ve que dos de ellos llevan combinaciones que no estaban en la célula de partida.</p>[[IMG]]</div><p>¿Qué paso de este proceso hace que los cuatro gametos no lleven todos la misma información hereditaria?</p>",
       "opciones": {
-        "A": "El entrecruzamiento entre cromátidas que no son hermanas.",
-        "B": "La duplicación de los cromosomas que ocurre antes.",
-        "C": "El reparto del citoplasma cuando termina la división.",
-        "D": "El simple hecho de que los genes estén en los cromosomas."
+        "A": "El intercambio de segmentos entre los homólogos apareados, en el quiasma.",
+        "B": "La copia del ADN que se hace al comienzo del proceso.",
+        "C": "El reparto del citoplasma cuando terminan las dos divisiones.",
+        "D": "El hecho de que cada gen ocupe un sitio fijo dentro del material hereditario."
       },
       "clave": "A",
       "competencia": "b",
@@ -280,11 +280,11 @@
       "dificultad": "ALTA",
       "estandar": "Explico la relación entre el ADN, el ambiente y la diversidad de los seres vivos.",
       "que_evalua": "Si los estudiantes pueden interpretar un modelo de meiosis y reconocer el proceso que origina la variación.",
-      "justificacion_correcta": "La opción A es correcta. En el modelo, las cromátidas no hermanas intercambian segmentos durante el entrecruzamiento; por eso aparecen combinaciones nuevas de alelos (como R con g, o r con G) que no estaban en la célula inicial. Ese intercambio es el origen de la variación genética.",
+      "justificacion_correcta": "La opción A es correcta. En el esquema, los homólogos apareados se intercambian segmentos en el quiasma y por eso salen gametos con combinaciones nuevas, como R junto a g o r junto a G, que no existían en la célula de partida. Ese intercambio es el origen de la variación.",
       "opciones_incorrectas": {
-        "B": "La duplicación produce cromátidas hermanas idénticas; por sí sola copia la información, no genera combinaciones nuevas.",
-        "C": "La separación del citoplasma reparte el contenido entre las células, pero no crea nuevas combinaciones de alelos.",
-        "D": "Que existan genes en los cromosomas es la condición de partida; la variación surge cuando se recombinan por entrecruzamiento."
+        "B": "Copiar el ADN produce copias idénticas de cada homólogo: multiplica la información, pero por sí sola no arma combinaciones nuevas.",
+        "C": "Repartir el citoplasma distribuye el contenido entre las células que se forman, sin cambiar cuáles versiones de cada rasgo lleva cada una.",
+        "D": "Que cada gen tenga un sitio fijo es la condición de partida; la variación aparece cuando los homólogos se intercambian segmentos."
       },
       "imagen_figura": "assets/banco-cn-11-p1/q09.png"
     },
@@ -370,12 +370,12 @@
     {
       "id": "P11CN13",
       "numero": 13,
-      "enunciado": "<p>Lee la situación y observa la tabla de geometrías.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La <b>geometría</b> de una molécula depende del número de <b>enlaces</b> del átomo central y de sus <b>pares de electrones libres</b>, como muestra la tabla.</p><p>En el agua (\\(\\text{H}_2\\text{O}\\)), el oxígeno central forma <b>2 enlaces</b> (a dos hidrógenos) y conserva <b>2 pares de electrones libres</b>. Si ese oxígeno <b>captara un protón</b> (\\(\\text{H}^+\\)) para formar el ion <b>hidronio</b> (\\(\\text{H}_3\\text{O}^+\\)), uno de sus pares libres pasaría a formar un nuevo enlace: el oxígeno quedaría con <b>3 enlaces</b> y <b>1 par libre</b>.</p>[[IMG]]</div><p>De acuerdo con la tabla, ¿qué geometría tendría el ion hidronio \\(\\text{H}_3\\text{O}^+\\)?</p>",
+      "enunciado": "<p>Lee la situación y consulta la tabla.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>La <b>geometría</b> de una molécula depende del número de <b>enlaces</b> del átomo central y del número de <b>pares de electrones libres</b> que le quedan, como se resume en la tabla.</p><p>En una planta de agroquímicos se maneja tricloruro de fósforo, \\(\\text{PCl}_3\\). En esa molécula el átomo central es el <b>fósforo</b>: de sus cinco electrones de valencia usa tres para unirse a un cloro cada uno, y los dos que sobran le quedan como <b>un par libre</b>.</p>[[IMG]]</div><p>De acuerdo con la tabla, ¿qué geometría tiene la molécula de \\(\\text{PCl}_3\\)?</p>",
       "opciones": {
-        "A": "Pirámide trigonal, porque tendría 3 enlaces y 1 par de electrones libre.",
-        "B": "Tetraédrica, porque el oxígeno seguiría teniendo 4 pares de electrones alrededor.",
-        "C": "Angular, porque mantendría la misma forma del agua \\(\\text{H}_2\\text{O}\\).",
-        "D": "Lineal, porque los 3 hidrógenos se alinearían con el oxígeno."
+        "A": "Pirámide trigonal, porque el fósforo queda con 3 enlaces y 1 par de electrones libre.",
+        "B": "Tetraédrica, porque alrededor del fósforo quedan cuatro grupos de electrones.",
+        "C": "Angular, porque el par libre deja al fósforo con solo 2 enlaces y 2 pares libres.",
+        "D": "Lineal, porque los tres cloros se alinean con el fósforo."
       },
       "clave": "A",
       "competencia": "a",
@@ -386,11 +386,11 @@
       "dificultad": "ALTA",
       "estandar": "Explico la relación entre la estructura de los átomos y los enlaces que realiza.",
       "que_evalua": "Si los estudiantes tienen la capacidad para identificar la geometría molecular de una estructura química y justificar su selección.",
-      "justificacion_correcta": "La opción A es correcta. Según la tabla, 3 enlaces y 1 par libre corresponden a la geometría de pirámide trigonal. El hidronio \\(\\text{H}_3\\text{O}^+\\) tiene justamente 3 enlaces (a los tres hidrógenos) y 1 par libre en el oxígeno, así que su geometría es pirámide trigonal.",
+      "justificacion_correcta": "La opción A es correcta. Según la tabla, al átomo central con 3 enlaces y 1 par libre le corresponde la geometría de pirámide trigonal, y eso es justo lo que pasa con el fósforo del \\(\\text{PCl}_3\\): tres enlaces, uno con cada cloro, y un par de electrones sin enlazar.",
       "opciones_incorrectas": {
-        "B": "La tetraédrica requiere 4 enlaces y 0 pares libres; el hidronio tiene 3 enlaces y 1 par libre, no encaja.",
-        "C": "La angular corresponde a 2 enlaces y 2 pares libres (el agua); al ganar un protón el hidronio cambia a 3 enlaces y 1 par libre.",
-        "D": "La lineal exige 2 enlaces y 0 pares libres; el hidronio tiene 3 enlaces y un par libre, así que no es lineal."
+        "B": "La tabla reserva la geometría tetraédrica para 4 enlaces y 0 pares libres; el fósforo forma 3 enlaces y conserva un par libre.",
+        "C": "La angular corresponde a 2 enlaces y 2 pares libres; el fósforo se une a tres cloros y le queda un solo par libre.",
+        "D": "La lineal exige 2 enlaces y 0 pares libres; con tres cloros enlazados y un par libre la molécula no puede quedar alineada."
       },
       "imagen_figura": "assets/banco-cn-11-p1/q13.png"
     },
@@ -563,12 +563,12 @@
     {
       "id": "P11CN20",
       "numero": 20,
-      "enunciado": "<p>Lee la situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Un estudiante deja rodar <b>la misma esfera de madera</b> por una rampa a la que puede cambiar el <b>ángulo de inclinación</b>. Para varios ángulos distintos, mide la <b>rapidez</b> con que la esfera llega al final de la rampa y registra cada resultado.</p>[[IMG]]</div><p>¿Qué alcanza a establecerse con este experimento?</p>",
+      "enunciado": "<p>Lee la situación y observa la figura.</p><div class=\"texto-lectura\" style=\"background:#FBF7F3;border-left:3px solid #C7163C;padding:10px 14px;border-radius:8px;margin:8px 0\"><p>Para la feria de ciencias, Mariana apoya una tabla lisa sobre unos ladrillos y suelta siempre <b>la misma canica</b> desde el borde de arriba. Un sensor puesto al final del recorrido registra la <b>rapidez</b> con que la canica llega abajo. Mariana repite el ensayo cambiando el <b>ángulo</b> de la tabla, primero 18°, luego 32° y por último 50°, tal como aparece en la figura, y anota el dato de cada ensayo.</p>[[IMG]]</div><p>¿Qué pregunta alcanza a responderse con los datos que Mariana está tomando?</p>",
       "opciones": {
-        "A": "De qué modo cambia el peso de la esfera de madera al variar el ángulo de la rampa.",
-        "B": "De qué modo cambia la rapidez con que la esfera llega al final según el ángulo de la rampa.",
-        "C": "Qué tanto aguanta la esfera de madera los golpes que recibe al caer al final.",
-        "D": "Cuánto se hunde la superficie de la rampa por el peso de la esfera de madera."
+        "A": "Cómo cambia el peso de la canica cuando se modifica el ángulo de la tabla.",
+        "B": "Cómo cambia la rapidez con que la canica llega abajo según el ángulo de la tabla.",
+        "C": "Qué tanto resiste la canica los golpes que recibe al final del recorrido.",
+        "D": "Cuánto se hunde la superficie de la tabla por el peso de la canica."
       },
       "clave": "B",
       "competencia": "c",
@@ -579,11 +579,11 @@
       "dificultad": "BAJA",
       "estandar": "Observo y formulo preguntas específicas sobre aplicaciones de teorías científicas.",
       "que_evalua": "Si los estudiantes tienen la capacidad para determinar qué pregunta puede contestarse a partir de un diseño experimental descrito.",
-      "justificacion_correcta": "La opción B es correcta. En el experimento se modifica intencionalmente el ángulo (variable independiente) y se mide la rapidez final (variable dependiente). Como esas son las dos variables que cambian y se registran, lo que puede determinarse es cómo varía la rapidez según el ángulo.",
+      "justificacion_correcta": "La opción B es correcta. Mariana cambia a propósito el ángulo de la tabla, que es la variable independiente, y mide la rapidez de llegada, que es la variable dependiente. Como esos son los dos datos que varían y quedan registrados en cada ensayo, lo que puede establecerse es cómo depende la rapidez del ángulo.",
       "opciones_incorrectas": {
-        "A": "Siempre se usa la misma esfera; su peso es constante y no varía con el ángulo, así que eso no se estudia.",
-        "C": "La esfera no choca contra nada en el experimento, por lo que no se evalúa su resistencia a los golpes.",
-        "D": "El ángulo lo cambia el estudiante a propósito; no es una deformación de la rampa por el peso de la esfera."
+        "A": "Siempre se suelta la misma canica, de modo que su peso es el mismo en los tres ensayos y no es algo que este montaje mida.",
+        "C": "La canica no choca contra nada: el sensor registra rapidez, no daños, así que la resistencia a los golpes queda por fuera del montaje.",
+        "D": "El ángulo lo cambia Mariana moviendo los ladrillos; el montaje no mide ninguna deformación de la tabla."
       },
       "imagen_figura": "assets/banco-cn-11-p1/q20.png"
     }

@@ -77,7 +77,7 @@
     {
       "id": "P3M02",
       "numero": 2,
-      "enunciado": "<p>En una rifa, Liliana elige una caja y saca de ella una tarjeta sin mirar. Si la tarjeta es verde, gana otra boleta. La imagen muestra las tarjetas que hay en cada caja.</p>[[IMG]]<p>¿Qué caja le conviene elegir para ganar con certeza?</p>",
+      "enunciado": "<p>En el recreo, Marcos y sus compañeros deciden así quién empieza el juego: cada niño escoge una de las cuatro cajas y saca de ella un papel sin mirar. Quien saque un papel verde arranca la partida. La imagen muestra los papeles que hay dentro de cada caja.</p>[[IMG]]<p>¿Cuál caja le conviene escoger a Marcos para estar seguro de arrancar la partida?</p>",
       "opciones": {
         "A": "Caja 1.",
         "B": "Caja 2.",
@@ -92,11 +92,11 @@
       "dificultad": "BAJA",
       "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
       "que_evalua": "La capacidad para reconocer el evento que es seguro que ocurra en un experimento aleatorio.",
-      "justificacion_correcta": "Solo hay certeza cuando todas las tarjetas de la caja son verdes, porque entonces no existe otro resultado posible. Eso ocurre en la caja 2.",
+      "justificacion_correcta": "Solo hay certeza cuando todos los papeles de la caja son verdes, porque así ningún otro resultado es posible. Eso pasa en la caja 2.",
       "opciones_incorrectas": {
-        "A": "Tiene tarjetas verdes y blancas, así que sacar verde es solo posible, no seguro.",
-        "C": "No tiene ninguna tarjeta verde: sacar verde es imposible.",
-        "D": "Tiene los dos colores, pero hay más blancas que verdes; no es seguro."
+        "A": "Tiene papeles verdes y papeles blancos, así que sacar verde apenas es posible, no seguro.",
+        "C": "No tiene ningún papel verde: sacar verde es imposible.",
+        "D": "Tiene papeles de los dos colores y, además, hay más blancos que verdes; no es seguro."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q02.png"
     },
@@ -232,7 +232,7 @@
     {
       "id": "P3M08",
       "numero": 8,
-      "enunciado": "<p>Sobre un escritorio cuadriculado se quieren ubicar cuadernos del tamaño de la figura, sin sobreponerlos y cubriendo toda la superficie. Cada cuaderno ocupa \\(1\\) cuadro de ancho por \\(2\\) cuadros de alto, igual que el alto del escritorio.</p>[[IMG]]<p>¿Cuántos cuadernos caben en total?</p>",
+      "enunciado": "<p>En la feria del colegio, Camila quiere tapar por completo el escritorio de su salón con cuadernos iguales, puestos uno junto a otro, sin dejar huecos y sin que ninguno quede encima de otro. Cada cuaderno mide \\(1\\) cuadro de ancho por \\(2\\) cuadros de alto, es decir, lo mismo que el alto del escritorio.</p>[[IMG]]<p>¿Cuántos cuadernos necesita Camila?</p>",
       "opciones": {
         "A": "\\(2\\) cuadernos.",
         "B": "\\(4\\) cuadernos.",
@@ -247,10 +247,10 @@
       "dificultad": "MEDIA",
       "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
       "que_evalua": "La capacidad para reconocer el recubrimiento de una forma dada con un patrón no estandarizado.",
-      "justificacion_correcta": "El escritorio mide \\(6\\) cuadros de ancho por \\(2\\) de alto. Como cada cuaderno ocupa \\(1\\) cuadro de ancho y los \\(2\\) de alto, se ponen uno al lado del otro a lo largo del ancho: caben \\(6\\) cuadernos que cubren toda la superficie.",
+      "justificacion_correcta": "El escritorio mide \\(6\\) cuadros de ancho por \\(2\\) de alto. Como cada cuaderno ocupa \\(1\\) cuadro de ancho y los \\(2\\) cuadros de alto, se van colocando uno al lado del otro a lo largo del ancho: con \\(6\\) cuadernos queda tapada toda la superficie.",
       "opciones_incorrectas": {
-        "A": "Tiene en cuenta solo una parte de una fila del escritorio.",
-        "B": "Toma parte del ancho del escritorio como si fuera el total.",
+        "A": "Cuenta apenas una parte de una fila del escritorio.",
+        "B": "Toma una parte del ancho del escritorio como si fuera el ancho completo.",
         "D": "Suma el ancho del escritorio \\((6)\\) con el alto del cuaderno \\((2)\\)."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q08.png"
@@ -362,7 +362,7 @@
     {
       "id": "P3M13",
       "numero": 13,
-      "enunciado": "<p>Pedro repartió su dinero en tres montones iguales y en cada montón puso un billete de \\(\\$1.000\\) y uno de \\(\\$5.000\\).</p>[[IMG]]<p>¿Con cuánto dinero cuenta Pedro?</p>",
+      "enunciado": "<p>Don Aníbal, el dueño de la tienda del barrio, separó en tres montones el dinero que recibió durante la mañana. En cada montón quedó un billete de \\(\\$1.000\\) y un billete de \\(\\$5.000\\), como se ve en la tabla.</p>[[IMG]]<p>¿Cuánto dinero recibió don Aníbal en la mañana?</p>",
       "opciones": {
         "A": "\\(\\$3.000\\)",
         "B": "\\(\\$15.000\\)",
@@ -377,11 +377,11 @@
       "dificultad": "MEDIA",
       "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
       "que_evalua": "La capacidad para realizar multiplicaciones en contextos con valores asociados a dinero.",
-      "justificacion_correcta": "Cada montón reúne \\(1.000 + 5.000 = 6.000\\) pesos, y hay tres montones: \\(6.000 \\times 3 = 18.000\\) pesos.",
+      "justificacion_correcta": "En cada montón hay \\(1.000 + 5.000 = 6.000\\) pesos y los montones son tres: \\(6.000 \\times 3 = 18.000\\) pesos.",
       "opciones_incorrectas": {
-        "A": "Cuenta solo los billetes de mil de los tres montones.",
-        "B": "Cuenta solo los billetes de cinco mil.",
-        "D": "Duplica el total sin razón."
+        "A": "Cuenta apenas los tres billetes de mil.",
+        "B": "Cuenta apenas los tres billetes de cinco mil.",
+        "D": "Duplica sin motivo el total de los tres montones."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q13.png"
     },
@@ -440,11 +440,11 @@
     {
       "id": "P3M16",
       "numero": 16,
-      "enunciado": "<p>Una profesora preguntó en <b>dos cursos</b> por el sabor de torta preferido: el curso 301 en una tabla y el curso 302 en una gráfica de barras. Va a preparar la torta del sabor con <b>más</b> votos juntando los dos cursos.</p>[[IMG]]<p>¿De qué sabor debe ser la torta?</p>",
+      "enunciado": "<p>La tienda escolar va a comprar una caneca de helado para el bazar del sábado. Antes preguntó a los niños de <b>dos cursos</b> cuál sabor de helado les gusta más: el curso 301 respondió en una tabla y el curso 302 en una gráfica de barras. Comprarán el sabor que reúna <b>más</b> votos juntando los dos cursos.</p>[[IMG]]<p>¿Cuál sabor de helado deben comprar?</p>",
       "opciones": {
         "A": "Arequipe.",
         "B": "Chocolate.",
-        "C": "Pera.",
+        "C": "Mora.",
         "D": "Vainilla."
       },
       "clave": "D",
@@ -455,11 +455,11 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
       "que_evalua": "La capacidad para hallar la moda al unir dos conjuntos de datos representados en una tabla y en una gráfica.",
-      "justificacion_correcta": "Al unir los dos cursos: Vainilla \\(5 + 3 = 8\\), Chocolate \\(2 + 4 = 6\\), Arequipe \\(3 + 1 = 4\\). El sabor con más votos en total es vainilla, con \\(8\\).",
+      "justificacion_correcta": "Al juntar los dos cursos: Vainilla \\(5 + 3 = 8\\), Chocolate \\(2 + 4 = 6\\), Arequipe \\(3 + 1 = 4\\). El sabor con más votos en total es vainilla, con \\(8\\).",
       "opciones_incorrectas": {
-        "A": "Arequipe suma \\(3 + 1 = 4\\), menos que vainilla.",
-        "B": "Chocolate es el más votado en el curso 302 \\((4)\\), pero al unir los dos cursos vainilla \\((8)\\) lo supera; es el error de mirar un solo curso.",
-        "C": "Pera no aparece en ninguno de los dos cursos."
+        "A": "Arequipe reúne \\(3 + 1 = 4\\) votos, menos que vainilla.",
+        "B": "Chocolate es el más votado en el curso 302 \\((4)\\), pero al juntar los dos cursos vainilla \\((8)\\) lo supera; es el error de mirar un solo curso.",
+        "C": "La mora no aparece entre los sabores votados en ninguno de los dos cursos."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q16.png"
     },
@@ -492,7 +492,7 @@
     {
       "id": "P3M18",
       "numero": 18,
-      "enunciado": "<p>Sofía quiere ir a la isla donde sea más probable ver delfines. La tabla muestra, en cada isla, cuántas veces los turistas <b>sí vieron</b> delfines, cuántas <b>no</b> y el total de visitas.</p>[[IMG]]<p>¿A cuál isla debe ir para tener <b>mayor probabilidad</b> de ver delfines?</p>",
+      "enunciado": "<p>El club de ciencias del colegio hará un paseo en lancha y quiere escoger la isla donde sea más fácil ver delfines. En el muelle les mostraron este registro: por cada isla, en cuántas visitas los paseantes <b>sí vieron</b> delfines, en cuántas <b>no</b> y el total de visitas.</p>[[IMG]]<p>¿A cuál isla les conviene ir para tener <b>mayor probabilidad</b> de ver delfines?</p>",
       "opciones": {
         "A": "Palma.",
         "B": "Blanca.",
@@ -510,8 +510,8 @@
       "justificacion_correcta": "Hay que comparar la razón entre las veces que vieron delfines y el total de visitas. En Blanca vieron delfines \\(8\\) de \\(12\\) visitas: las veces favorables son el <b>doble</b> de las desfavorables \\((8\\) frente a \\(4)\\). En las demás islas las veces que sí y que no vieron son casi iguales (cerca de la mitad), así que Blanca tiene la mayor probabilidad.",
       "opciones_incorrectas": {
         "A": "Palma tiene muchos avistamientos \\((11)\\), pero también muchas visitas \\((21)\\): cerca de la mitad.",
-        "C": "En Cocos vieron delfines \\(4\\) de \\(7\\), una proporción menor que en Blanca.",
-        "D": "En Bonita vieron \\(6\\) de \\(12\\), justo la mitad de las visitas."
+        "C": "En Cocos vieron delfines \\(4\\) de \\(7\\) visitas, una proporción menor que en Blanca.",
+        "D": "En Bonita vieron delfines \\(6\\) de \\(12\\) visitas, justo la mitad."
       },
       "imagen_figura": "assets/banco-mat-3-p1/q18.png"
     },
@@ -544,7 +544,7 @@
     {
       "id": "P3M20",
       "numero": 20,
-      "enunciado": "<p>Un robot se mueve por un <b>tapete</b> que tiene 3 filas y 4 columnas de figuras de colores. Avanza <b>una casilla a la vez</b> según la rosa de direcciones del dibujo: <b>arriba</b>, <b>abajo</b>, <b>izquierda</b> y <b>derecha</b>. El robot parte del punto de <b>Inicio</b>, marcado a la izquierda de la casilla de la <b>esquina inferior izquierda</b>, y entra al tapete por esa casilla. Luego realiza, <b>en este orden</b>, cuatro desplazamientos: primero <b>arriba</b>, después <b>derecha</b>, después <b>derecha</b> y por último <b>arriba</b>.</p>[[IMG]]<p>¿Sobre cuál figura (A, B, C o D) queda la <b>posición final</b> del robot?</p>",
+      "enunciado": "<p>En la clase de tecnología, Sara programa un robot de juguete para que recorra un <b>tapete</b> con 3 filas y 4 columnas de figuras de colores. El robot avanza <b>una casilla a la vez</b> y solo en las cuatro direcciones de la rosa que aparece en el dibujo: <b>arriba</b>, <b>abajo</b>, <b>izquierda</b> y <b>derecha</b>. El robot espera en el punto de <b>Inicio</b>, marcado a la izquierda de la casilla de la <b>esquina inferior izquierda</b>, y entra al tapete por esa casilla. Sara le ordena entonces, <b>en este orden</b>, cuatro movimientos: primero <b>arriba</b>, después <b>derecha</b>, después <b>derecha</b> y por último <b>arriba</b>.</p>[[IMG]]<p>¿Sobre cuál figura (A, B, C o D) se detiene el robot al terminar?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -559,10 +559,10 @@
       "dificultad": "ALTA",
       "estandar": "Reconozco y aplico traslaciones y giros sobre una figura.",
       "que_evalua": "La capacidad para determinar la posición final de un elemento al que se aplican tres o más traslaciones que relacionan la ubicación espacial dentro de un sistema de referencia cercano al estudiante.",
-      "justificacion_correcta": "Sigamos al robot casilla por casilla. Al entrar al tapete se ubica en la casilla de la esquina inferior izquierda, donde está el cuadrado morado. El 1.er desplazamiento es <b>arriba</b>: sube una casilla y pasa a la fila del medio, sobre el círculo morado. El 2.º es <b>derecha</b>: avanza una casilla a la segunda columna, sobre el cuadrado amarillo. El 3.º también es <b>derecha</b>: avanza otra casilla a la tercera columna, sobre el cuadrado rojo. El 4.º y último es <b>arriba</b>: sube una casilla más y llega a la fila de arriba, en esa misma tercera columna. Esa casilla tiene el <b>cuadrado verde</b>, así que la posición final del robot es la opción B.",
+      "justificacion_correcta": "Sigamos al robot casilla por casilla. Al entrar al tapete se ubica en la casilla de la esquina inferior izquierda, donde está el cuadrado morado. El 1.er movimiento es <b>arriba</b>: sube una casilla y pasa a la fila del medio, sobre el círculo morado. El 2.º es <b>derecha</b>: avanza una casilla a la segunda columna, sobre el cuadrado amarillo. El 3.º también es <b>derecha</b>: avanza otra casilla a la tercera columna, sobre el cuadrado rojo. El 4.º y último es <b>arriba</b>: sube una casilla más y llega a la fila de arriba, en esa misma tercera columna. Allí está el <b>cuadrado verde</b>, así que el robot se detiene sobre la figura de la opción B.",
       "opciones_incorrectas": {
-        "A": "Solo tiene en cuenta los dos desplazamientos <i>arriba</i> y olvida los dos <i>derecha</i>: sube por la primera columna hasta la fila de arriba y queda sobre el círculo amarillo.",
-        "C": "Hace los tres primeros pasos pero olvida el último <i>arriba</i>: se queda en la fila del medio, sobre el cuadrado rojo de la tercera columna.",
+        "A": "Solo tiene en cuenta los dos movimientos <i>arriba</i> y olvida los dos <i>derecha</i>: sube por la primera columna hasta la fila de arriba y queda sobre el círculo amarillo.",
+        "C": "Hace los tres primeros movimientos pero olvida el último <i>arriba</i>: se queda en la fila del medio, sobre el cuadrado rojo de la tercera columna.",
         "D": "Avanza un <i>derecha</i> de más y termina en la cuarta columna de la fila de arriba, sobre el triángulo amarillo."
       },
       "imagen_figura": "assets/banco-mat-3-p1/s20.png",

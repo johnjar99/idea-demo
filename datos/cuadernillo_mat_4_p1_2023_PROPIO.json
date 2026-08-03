@@ -107,7 +107,7 @@
     {
       "id": "P4M03",
       "numero": 3,
-      "enunciado": "<p>Todos los días, la mamá de Sara anota las tareas del hogar en papelitos iguales, los echa en una bolsa y Sara toma uno sin mirar. El cuadro muestra los papelitos antes de guardarlos.</p>[[IMG]]<p>¿Qué tarea es la que más posibilidades tiene de tocarle a Sara?</p>",
+      "enunciado": "<p>En la casa de Valentina los oficios del día se sortean: cada oficio va escrito en tarjetas iguales que se guardan en una cajita y ella saca una sin mirar. El cuadro muestra todas las tarjetas que hay dentro de la cajita.</p>[[IMG]]<p>¿Cuál es el oficio que <b>menos</b> posibilidades tiene de tocarle a Valentina?</p>",
       "opciones": {
         "A": "Servir la comida.",
         "B": "Limpiar las ventanas.",
@@ -122,23 +122,23 @@
       "dificultad": "BAJA",
       "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
       "que_evalua": "La capacidad para identificar el evento con un menor grado de posibilidad de ocurrencia.",
-      "justificacion_correcta": "La tarea con más posibilidades es la que está escrita en más papelitos. Al contar el cuadro, esa tarea es tirar la basura.",
+      "justificacion_correcta": "El oficio con menos posibilidades es el que aparece escrito en menos tarjetas. Al contar el cuadro, tirar la basura está escrito una sola vez, mientras que los demás oficios se repiten.",
       "opciones_incorrectas": {
-        "A": "«Servir la comida» está en dos papelitos: tiene más posibilidad que la basura.",
-        "B": "«Limpiar las ventanas» está en dos papelitos: más posible que la basura.",
-        "D": "«Dar de comer a la mascota» es la de mayor posibilidad (cuatro papelitos), no la menor."
+        "A": "«Servir la comida» está en dos tarjetas, así que tiene más posibilidad que tirar la basura.",
+        "B": "«Limpiar las ventanas» está en dos tarjetas, así que es más posible que tirar la basura.",
+        "D": "«Dar de comer a la mascota» está en cuatro tarjetas: es la de mayor posibilidad, no la menor."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q03.png"
     },
     {
       "id": "P4M04",
       "numero": 4,
-      "enunciado": "<p>Cada año, unos duendes mineros llevan más cofres de oro al dragón que cuida la montaña. La imagen muestra lo que llevaron en los años 1, 2 y 3.</p>[[IMG]]<p>Si en el año 4 llevaran \\(27\\) cofres, ¿qué regla estarían siguiendo?</p>",
+      "enunciado": "<p>Don Efraín teje hamacas y las guarda en baúles. Cada año teje más hamacas y necesita más baúles: la imagen muestra los baúles que llenó en los años 1, 2 y 3.</p>[[IMG]]<p>Si en el año 4 necesita \\(27\\) baúles, ¿qué regla está siguiendo?</p>",
       "opciones": {
-        "A": "Llevar el doble de cofres que el año anterior.",
-        "B": "Llevar \\(6\\) cofres más que el año anterior.",
-        "C": "Llevar el triple de cofres que el año anterior.",
-        "D": "Llevar \\(18\\) cofres más que el año anterior."
+        "A": "Llenar el doble de baúles que el año anterior.",
+        "B": "Llenar \\(6\\) baúles más que el año anterior.",
+        "C": "Llenar el triple de baúles que el año anterior.",
+        "D": "Llenar \\(18\\) baúles más que el año anterior."
       },
       "clave": "C",
       "competencia": "c",
@@ -148,10 +148,10 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
       "que_evalua": "La capacidad para encontrar el patrón de una sucesión.",
-      "justificacion_correcta": "Al comparar un año con el siguiente, la cantidad de cofres queda multiplicada por \\(3\\) cada vez, y \\(9 \\times 3 = 27\\) confirma la regla.",
+      "justificacion_correcta": "Al pasar de un año al siguiente, la cantidad de baúles queda multiplicada por \\(3\\): de \\(1\\) a \\(3\\) y de \\(3\\) a \\(9\\). Además, \\(9 \\times 3 = 27\\) confirma la regla.",
       "opciones_incorrectas": {
-        "A": "Del año 1 al 2 la cantidad pasa de \\(1\\) a \\(3\\); duplicar daría \\(2\\), y no se cumpliría para \\(9\\) ni \\(27\\).",
-        "B": "Aumentar \\(6\\) fijos no sirve: del año 1 al 2 solo aumenta \\(2\\), no \\(6\\).",
+        "A": "Del año 1 al año 2 la cantidad pasa de \\(1\\) a \\(3\\); duplicar daría \\(2\\), y tampoco se cumpliría para \\(9\\) ni para \\(27\\).",
+        "B": "Aumentar \\(6\\) fijos no sirve: del año 1 al año 2 solo aumenta \\(2\\), no \\(6\\).",
         "D": "Toma la diferencia entre el año 4 \\((27)\\) y el año 3 \\((9)\\), que es \\(18\\), como si fuera la regla de todos los años."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q04.png"
@@ -159,12 +159,12 @@
     {
       "id": "P4M05",
       "numero": 5,
-      "enunciado": "<p>En una clase de exposiciones, el profesor reparte el tiempo total de la clase en partes iguales entre los grupos. Si se forman <b>\\(4\\)</b> grupos, cada uno expone durante <b>\\(15\\)</b> minutos. ¿Cuántos minutos expondría cada grupo si se formaran <b>\\(5\\)</b> grupos?</p>",
+      "enunciado": "<p>En la huerta del colegio, el agua que hay en el tanque se reparte por partes iguales entre los surcos que se van a regar. Si se riegan <b>\\(5\\)</b> surcos, cada surco recibe <b>\\(18\\)</b> minutos de agua. ¿Cuántos minutos de agua recibiría cada surco si se regaran <b>\\(6\\)</b> surcos?</p>",
       "opciones": {
-        "A": "\\(11\\) minutos.",
-        "B": "\\(12\\) minutos.",
-        "C": "\\(13\\) minutos.",
-        "D": "\\(14\\) minutos."
+        "A": "\\(13\\) minutos.",
+        "B": "\\(15\\) minutos.",
+        "C": "\\(16\\) minutos.",
+        "D": "\\(17\\) minutos."
       },
       "clave": "B",
       "competencia": "b",
@@ -174,22 +174,22 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
       "que_evalua": "La capacidad para identificar una situación de proporcionalidad y encontrar el valor que se requiere.",
-      "justificacion_correcta": "El tiempo total de la clase es \\(4\\times 15 = 60\\) minutos. Ese tiempo se reparte ahora entre \\(5\\) grupos, y como a más grupos menos tiempo para cada uno, cada grupo expone \\(60 \\div 5 = 12\\) minutos.",
+      "justificacion_correcta": "El agua del tanque alcanza para \\(5 \\times 18 = 90\\) minutos de riego en total. Ese tiempo se reparte ahora entre \\(6\\) surcos y, como a más surcos menos tiempo para cada uno, cada surco recibe \\(90 \\div 6 = 15\\) minutos.",
       "opciones_incorrectas": {
-        "A": "Resta \\(15 - 4 = 11\\) mezclando los minutos con la cantidad de grupos.",
-        "C": "Escoge un valor intermedio sin repartir el tiempo total \\((60)\\) entre los \\(5\\) grupos.",
-        "D": "Resta solo \\(1\\) minuto \\((15 - 1 = 14)\\), como si un grupo más quitara un minuto."
+        "A": "Resta \\(18 - 5 = 13\\), mezclando los minutos de agua con la cantidad de surcos.",
+        "C": "Escoge un valor intermedio sin repartir el tiempo total \\((90)\\) entre los \\(6\\) surcos.",
+        "D": "Resta solo \\(1\\) minuto \\((18 - 1 = 17)\\), como si un surco más quitara un minuto."
       }
     },
     {
       "id": "P4M06",
       "numero": 6,
-      "enunciado": "<p>Antonio y Carlos hacen cada uno un recorrido de dos tramos hasta la misma meta, como muestra la imagen. Antonio pasa por el tramo 1 y el tramo 2; Carlos pasa por el tramo 3 y el tramo 4.</p>[[IMG]]<p>¿Qué hay que calcular para saber cuánto recorrió Antonio?</p>",
+      "enunciado": "<p>Antonio y Carlos reparten el periódico en bicicleta por el barrio y cada uno llega por su propia ruta hasta la tienda señalada como meta, tal como muestra la imagen. Antonio pedalea por el tramo 1 y luego por el tramo 2; Carlos baja por el tramo 3 y sigue por el tramo 4.</p>[[IMG]]<p>¿Qué se debe hacer para saber qué distancia pedaleó Antonio?</p>",
       "opciones": {
-        "A": "La suma de las distancias de los tramos 1 y 2.",
-        "B": "El producto de las distancias de los tramos 3 y 4.",
-        "C": "El producto de las distancias de los tramos 1 y 4.",
-        "D": "La suma de las distancias de los tramos 2 y 3."
+        "A": "Sumar las distancias del tramo 1 y del tramo 2.",
+        "B": "Multiplicar las distancias del tramo 3 y del tramo 4.",
+        "C": "Multiplicar las distancias del tramo 1 y del tramo 4.",
+        "D": "Sumar las distancias del tramo 2 y del tramo 3."
       },
       "clave": "A",
       "competencia": "a",
@@ -199,11 +199,11 @@
       "dificultad": "BAJA",
       "estandar": "Diferencio y ordeno, en objetos y eventos, propiedades o atributos que se puedan medir.",
       "que_evalua": "La capacidad para realizar mediciones en sistemas de referencia convencionales.",
-      "justificacion_correcta": "El recorrido de Antonio es la unión de sus dos tramos, así que su distancia total es la suma de las distancias del tramo 1 y del tramo 2.",
+      "justificacion_correcta": "La ruta de Antonio está formada por sus dos tramos seguidos, así que la distancia que pedaleó se obtiene sumando la distancia del tramo 1 con la del tramo 2.",
       "opciones_incorrectas": {
-        "B": "Los tramos 3 y 4 los recorrió Carlos, no Antonio; además multiplicar tramos no da una longitud total.",
-        "C": "El tramo 4 es de Carlos y, además, multiplicar distancias no calcula un recorrido total.",
-        "D": "El tramo 3 es de Carlos; deja por fuera el tramo 1 que sí recorrió Antonio."
+        "B": "Los tramos 3 y 4 forman la ruta de Carlos, no la de Antonio; además, multiplicar distancias no da una longitud total.",
+        "C": "El tramo 4 pertenece a la ruta de Carlos y, además, multiplicar distancias no calcula un recorrido.",
+        "D": "El tramo 3 es de Carlos y deja por fuera el tramo 1, que sí pedaleó Antonio."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q06.png"
     },
@@ -236,7 +236,7 @@
     {
       "id": "P4M08",
       "numero": 8,
-      "enunciado": "<p>Cuatro equipos disputaron un torneo del colegio en dos rondas. La gráfica recoge los puntos de la primera ronda y la tabla los de la segunda.</p>[[IMG]]<p>Al juntar las dos rondas, ¿qué equipo reunió más puntos?</p>",
+      "enunciado": "<p>Cuatro equipos de la cuadra jugaron un campeonato relámpago de microfútbol que se definió en dos rondas. La gráfica muestra los puntos que hizo cada equipo en la ronda 1 y la tabla los que hizo en la ronda 2.</p>[[IMG]]<p>Sumando las dos rondas, ¿cuál equipo quedó con más puntos?</p>",
       "opciones": {
         "A": "Equipo 1.",
         "B": "Equipo 2.",
@@ -251,11 +251,11 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
       "que_evalua": "La capacidad para usar la información presentada en distintos tipos de registro.",
-      "justificacion_correcta": "Para cada equipo se lee su puntaje en la gráfica de la primera ronda, se le suma el de la tabla de la segunda y se comparan los cuatro totales. El más alto es el del equipo 1.",
+      "justificacion_correcta": "A cada equipo se le leen los puntos de la gráfica y se le suman los de la tabla: \\(7 + 8 = 15\\), \\(4 + 4 = 8\\), \\(3 + 0 = 3\\) y \\(2 + 5 = 7\\). El total más alto es \\(15\\) y corresponde al equipo 1.",
       "opciones_incorrectas": {
-        "B": "El equipo 2 suma \\(8\\), menos que los \\(15\\) del equipo 1.",
-        "C": "El equipo 3 suma \\(3\\), el menor de todos.",
-        "D": "El equipo 4 sube en la ronda 2, pero suma \\(7\\), menos que el equipo 1; mira solo una ronda."
+        "B": "El equipo 2 reúne \\(8\\) puntos, menos que los \\(15\\) del equipo 1.",
+        "C": "El equipo 3 reúne \\(3\\) puntos, el total más bajo de los cuatro.",
+        "D": "El equipo 4 mejora en la ronda 2, pero reúne \\(7\\) puntos; mira una sola ronda y no el total."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q08.png"
     },
@@ -313,7 +313,7 @@
     {
       "id": "P4M11",
       "numero": 11,
-      "enunciado": "<p>Matías pintó sobre una hoja con forma de <b>triángulo</b> y, para enmarcarla, quiere marcar con una bolita cada <b>vértice</b> de la hoja. ¿Cuál de las siguientes imágenes muestra la <b>forma de la hoja</b> con sus <b>vértices</b> bien señalados?</p>",
+      "enunciado": "<p>Camilo recortó para su cartelera una hoja con forma de <b>triángulo</b> y quiere pegar un botón en cada <b>vértice</b> de la hoja. ¿Cuál de las siguientes imágenes muestra la <b>forma de la hoja</b> con sus <b>vértices</b> bien señalados?</p>",
       "opciones": {
         "A": "Imagen A.",
         "B": "Imagen B.",
@@ -328,11 +328,11 @@
       "dificultad": "BAJA",
       "estandar": "Comparo y clasifico figuras bidimensionales de acuerdo con sus componentes (ángulos, vértices) y características.",
       "que_evalua": "La capacidad para reconocer componentes de figuras geométricas.",
-      "justificacion_correcta": "Los vértices de un triángulo son los tres puntos donde se unen sus lados. La imagen C muestra un triángulo con una bolita en cada uno de sus tres vértices.",
+      "justificacion_correcta": "Los vértices de un triángulo son los tres puntos donde se juntan sus lados. La imagen C muestra un triángulo con un botón en cada uno de esos tres puntos.",
       "opciones_incorrectas": {
-        "A": "Es un triángulo, pero las bolitas están sobre los lados, no en los vértices.",
-        "B": "Tiene los vértices marcados, pero la figura es un cuadrilátero (cuatro vértices), no un triángulo.",
-        "D": "No es un triángulo y, además, las bolitas están sobre los lados."
+        "A": "Es un triángulo, pero los botones están puestos sobre los lados y no en los vértices.",
+        "B": "Tiene los vértices marcados, pero la figura es un cuadrilátero de cuatro vértices, no un triángulo.",
+        "D": "No es un triángulo y, además, los botones están puestos sobre los lados."
       },
       "opciones_imagenes": {
         "A": "assets/banco-mat-4-p1/q11_opA.png",
@@ -369,12 +369,12 @@
     {
       "id": "P4M13",
       "numero": 13,
-      "enunciado": "<p>Andrea y Diego recogen mandarinas en la misma finca. Por cada \\(60\\) mandarinas que recoge Andrea, Diego recoge \\(20\\). Si Diego terminó el día con \\(80\\) mandarinas, ¿cuántas recogió Andrea?</p>",
+      "enunciado": "<p>Luisa y Tomás recogen botellas para reciclar en el parque. Por cada \\(45\\) botellas que recoge Luisa, Tomás recoge \\(15\\). Si Tomás terminó la jornada con \\(60\\) botellas, ¿cuántas botellas recogió Luisa?</p>",
       "opciones": {
-        "A": "\\(140\\) mandarinas.",
-        "B": "\\(240\\) mandarinas.",
-        "C": "\\(180\\) mandarinas.",
-        "D": "\\(100\\) mandarinas."
+        "A": "\\(105\\) botellas.",
+        "B": "\\(180\\) botellas.",
+        "C": "\\(135\\) botellas.",
+        "D": "\\(75\\) botellas."
       },
       "clave": "B",
       "competencia": "b",
@@ -384,22 +384,22 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
       "que_evalua": "La capacidad para determinar una constante de proporcionalidad y usarla para hallar un cuarto valor que satisface la proporción.",
-      "justificacion_correcta": "Diego recogió \\(80\\), que son cuatro veces \\(20\\). Como la relación se mantiene, Andrea recogió cuatro veces \\(60\\), es decir \\(240\\) mandarinas.",
+      "justificacion_correcta": "Tomás recogió \\(60\\) botellas, que son cuatro veces \\(15\\). Como la relación se mantiene, Luisa recogió cuatro veces \\(45\\), es decir \\(180\\) botellas.",
       "opciones_incorrectas": {
-        "A": "Suma \\(60\\) y \\(80\\) en lugar de conservar la relación.",
-        "C": "Corresponde a tres veces \\(60\\), no a cuatro.",
-        "D": "Añade \\(20\\) a \\(80\\), mezclando las dos recolecciones."
+        "A": "Suma \\(45\\) y \\(60\\) en lugar de conservar la relación entre las dos cantidades.",
+        "C": "Corresponde a tres veces \\(45\\), no a cuatro veces.",
+        "D": "Añade \\(15\\) a \\(60\\), mezclando las dos recolecciones."
       }
     },
     {
       "id": "P4M14",
       "numero": 14,
-      "enunciado": "<p>Ramiro vende disfraces. Él afirma: «Vendí <b>\\(60\\)</b> disfraces en total», «Vendí <b>\\(15\\)</b> disfraces de payaso» y «Vendí la <b>misma cantidad</b> de tigre que de bruja». ¿Cuál de las siguientes tablas (A, B, C o D) representa correctamente lo que vendió Ramiro?</p>",
+      "enunciado": "<p>Doña Elvira vende empanadas en la puerta del colegio. Al terminar la semana contó lo vendido y dijo: «Vendí <b>\\(90\\)</b> empanadas en total», «Vendí <b>\\(30\\)</b> empanadas de carne» y «Vendí la <b>misma cantidad</b> de empanadas de queso que de pollo». ¿Cuál de las siguientes tablas (A, B, C o D) representa correctamente lo que vendió doña Elvira?</p>",
       "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Disfraz</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Payaso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tigre</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pirata</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Disfraz</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Payaso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tigre</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pirata</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Disfraz</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Payaso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tigre</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Disfraz</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Payaso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Tigre</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruja</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pirata</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr></table>"
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empanada</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad vendida</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Carne</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Queso</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pollo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">24</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Papa</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr></table>"
       },
       "clave": "A",
       "competencia": "b",
@@ -409,17 +409,17 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
       "que_evalua": "La capacidad para elaborar una tabla de frecuencias de dos entradas, a partir de algunas frecuencias y condiciones de un conjunto de datos.",
-      "justificacion_correcta": "La tabla debe cumplir las tres condiciones: total \\(60\\), \\(15\\) de payaso y tigre igual a bruja. En la opción A: \\(15 + 16 + 16 + 13 = 60\\), hay \\(15\\) de payaso y tigre \\(=\\) bruja \\(= 16\\). Es la correcta.",
+      "justificacion_correcta": "La tabla debe cumplir las tres condiciones: un total de \\(90\\), \\(30\\) empanadas de carne y la misma cantidad de queso que de pollo. En la primera tabla se tiene \\(30 + 24 + 24 + 12 = 90\\), hay \\(30\\) de carne y queso \\(=\\) pollo \\(= 24\\), por eso es la que representa lo vendido.",
       "opciones_incorrectas": {
-        "B": "Cumple payaso \\(= 15\\) y tigre \\(=\\) bruja, pero suma \\(15+12+12+10 = 49\\), no \\(60\\).",
-        "C": "Le falta un tipo de disfraz y pone \\(30\\) de payaso; no respeta los \\(15\\) de payaso ni los \\(60\\) en total.",
-        "D": "Pone \\(20\\) de payaso en lugar de \\(15\\), aunque la suma dé \\(60\\)."
+        "B": "Cumple las \\(30\\) de carne y queso \\(=\\) pollo, pero suma \\(30 + 20 + 20 + 15 = 85\\) y no \\(90\\).",
+        "C": "Le falta un tipo de empanada y pone \\(40\\) de carne en lugar de \\(30\\), aunque la suma dé \\(90\\).",
+        "D": "Pone \\(36\\) de carne en lugar de \\(30\\), aunque la suma dé \\(90\\)."
       }
     },
     {
       "id": "P4M15",
       "numero": 15,
-      "enunciado": "<p>Camila pegó estampas en su álbum durante seis semanas. La tabla muestra cuántas estampas tenía cada semana.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Semana</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">3</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">4</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">5</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">6</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Estampas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr></table><p>¿Qué característica cumple la secuencia de números formada por las cantidades de estampas de cada semana?</p>",
+      "enunciado": "<p>Don Hernán empezó a vender bolsas de mango biche en el parque. La tabla muestra cuántas bolsas vendió cada día durante seis días.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">1</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">2</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">3</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">4</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">5</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">6</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bolsas vendidas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">16</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32</td></tr></table><p>¿Qué característica cumple la secuencia de números formada por las bolsas vendidas cada día?</p>",
       "opciones": {
         "A": "Son divisores de \\(32\\).",
         "B": "Son múltiplos de \\(2\\).",
@@ -437,14 +437,14 @@
       "justificacion_correcta": "Los números \\(1, 2, 4, 8, 16\\) y \\(32\\) dividen exactamente a \\(32\\): \\(32\\div 1 = 32,\\ 32\\div 2 = 16,\\ 32\\div 4 = 8,\\ 32\\div 8 = 4,\\ 32\\div 16 = 2,\\ 32\\div 32 = 1\\). Por eso son los divisores de \\(32\\).",
       "opciones_incorrectas": {
         "B": "El \\(1\\) no es múltiplo de \\(2\\), así que no todos los números de la secuencia son múltiplos de \\(2\\).",
-        "C": "Solo \\(1\\) y \\(2\\) dividen a \\(2\\); \\(4, 8, 16\\) y \\(32\\) no.",
+        "C": "Solo \\(1\\) y \\(2\\) dividen a \\(2\\); \\(4, 8, 16\\) y \\(32\\) no lo dividen.",
         "D": "Los múltiplos de \\(32\\) son \\(32, 64, 96, \\dots\\); \\(1, 2, 4, 8\\) y \\(16\\) no lo son."
       }
     },
     {
       "id": "P4M16",
       "numero": 16,
-      "enunciado": "<p>Un comerciante preguntó cuánto debía pagar y el tendero le mostró el cartel de la imagen, donde el valor está escrito con palabras: «ochocientos seis mil cincuenta pesos».</p>[[IMG]]<p>¿Cómo se escribe ese valor con cifras?</p>",
+      "enunciado": "<p>Doña Rosa terminó de mercar y en la caja le mostraron el aviso de la imagen, donde el valor que debe pagar aparece escrito en palabras.</p>[[IMG]]<p>¿Cómo se escribe con cifras ese valor?</p>",
       "opciones": {
         "A": "$865.000",
         "B": "$8.650",
@@ -459,10 +459,10 @@
       "dificultad": "MEDIA",
       "estandar": "Justifico el valor de posición en el sistema de numeración decimal en relación con el conteo recurrente de unidades.",
       "que_evalua": "La capacidad para escribir un número en su representación simbólica dada su representación en lenguaje natural.",
-      "justificacion_correcta": "Ochocientos seis mil son \\(806.000\\) y cincuenta más dan \\(806.050\\). El cero en las centenas indica que no hay centenas.",
+      "justificacion_correcta": "En el aviso la parte de los miles es \\(806\\) y después se agregan \\(50\\) pesos, de modo que el valor es $806.050. El \\(0\\) en la posición de las centenas indica que no hay centenas.",
       "opciones_incorrectas": {
-        "A": "Arma $865.000 leyendo \\(8, 6, 5\\) seguidos sin respetar las posiciones de los ceros.",
-        "B": "Escribe solo las cifras \\(8, 6, 5, 0\\) como $8.650, perdiendo el valor de posición.",
+        "A": "Arma $865.000 juntando las cifras \\(8, 6\\) y \\(5\\) sin respetar la posición de los ceros.",
+        "B": "Escribe solo las cifras \\(8, 6, 5\\) y \\(0\\) como $8.650, y pierde el valor de posición.",
         "D": "Ubica mal una cifra y obtiene $86.050, con una posición de menos."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q16.png"
@@ -527,7 +527,7 @@
     {
       "id": "P4M19",
       "numero": 19,
-      "enunciado": "<p>Un carpintero partió de un bloque de madera de \\(4\\ \\text{cm} \\times 4\\ \\text{cm} \\times 10\\ \\text{cm}\\) y cortó por las líneas punteadas, retirando una pieza de \\(2\\ \\text{cm} \\times 4\\ \\text{cm} \\times 6\\ \\text{cm}\\).</p>[[IMG]]<p>¿Qué volumen le quedó al bloque después del corte?</p>",
+      "enunciado": "<p>En el taller de artes, Mariana tomó un bloque de jabón de \\(4\\ \\text{cm} \\times 4\\ \\text{cm} \\times 10\\ \\text{cm}\\) y le sacó una pieza de \\(2\\ \\text{cm} \\times 4\\ \\text{cm} \\times 6\\ \\text{cm}\\) para tallar una silla en miniatura. La imagen muestra el bloque antes y después del corte.</p>[[IMG]]<p>¿Cuál es el volumen de la figura que le quedó a Mariana?</p>",
       "opciones": {
         "A": "\\(208\\ \\text{cm}^3\\)",
         "B": "\\(160\\ \\text{cm}^3\\)",
@@ -542,18 +542,18 @@
       "dificultad": "ALTA",
       "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
       "que_evalua": "La capacidad para calcular el volumen de una figura que se obtiene al extraer un paralelepípedo de otro paralelepípedo de mayores dimensiones.",
-      "justificacion_correcta": "El bloque entero mide \\(4 \\times 4 \\times 10 = 160\\ \\text{cm}^{3}\\) y la pieza retirada \\(2 \\times 4 \\times 6 = 48\\ \\text{cm}^{3}\\). Al restar queda \\(160 - 48 = 112\\ \\text{cm}^{3}\\).",
+      "justificacion_correcta": "El bloque completo mide \\(4 \\times 4 \\times 10 = 160\\ \\text{cm}^{3}\\) y la pieza que se sacó mide \\(2 \\times 4 \\times 6 = 48\\ \\text{cm}^{3}\\). Al restar queda \\(160 - 48 = 112\\ \\text{cm}^{3}\\).",
       "opciones_incorrectas": {
         "A": "Suma los dos volúmenes \\((160 + 48 = 208)\\) en lugar de restarlos.",
-        "B": "Da solo el volumen del bloque inicial \\((160)\\), sin quitar la pieza retirada.",
-        "C": "Resta mal usando solo parte de las medidas de la pieza retirada y obtiene \\(64\\)."
+        "B": "Da solo el volumen del bloque inicial \\((160)\\), sin quitar la pieza que se sacó.",
+        "C": "Resta mal usando solo parte de las medidas de la pieza que se sacó y obtiene \\(64\\)."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q19.png"
     },
     {
       "id": "P4M20",
       "numero": 20,
-      "enunciado": "<p>Un paquete de gomitas masticables trae varios colores mezclados, como se ve en la imagen.</p>[[IMG]]<p>Si alguien mete la mano sin mirar y saca una gomita, ¿qué color tiene más posibilidades de salir?</p>",
+      "enunciado": "<p>En la tienda del colegio venden bolsas de confites con forma de osito, revueltos de varios colores, como se ve en la imagen.</p>[[IMG]]<p>Si un niño mete la mano en la bolsa sin mirar y saca un solo confite, ¿de qué color tiene más posibilidades de salir?</p>",
       "opciones": {
         "A": "Azul.",
         "B": "Verde.",
@@ -568,11 +568,11 @@
       "dificultad": "BAJA",
       "estandar": "Explico -desde mi experiencia- la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
       "que_evalua": "La capacidad para identificar dentro de un conjunto de elementos con varias características, aquel que tiene una mayor probabilidad de ocurrencia.",
-      "justificacion_correcta": "Sale con más facilidad el color que aparece en mayor cantidad dentro del paquete. Al contar las gomitas de la imagen, ese color es el azul.",
+      "justificacion_correcta": "Sale con más facilidad el color que está en mayor cantidad dentro de la bolsa. Al contar los ositos de la imagen hay \\(4\\) azules, \\(3\\) rojos y \\(1\\) verde, así que el color con más posibilidades de salir es el azul.",
       "opciones_incorrectas": {
-        "B": "Solo hay \\(1\\) gomita verde: es de las de menor posibilidad.",
-        "C": "No hay gomitas amarillas: sacar amarilla es un evento imposible.",
-        "D": "Hay \\(3\\) gomitas rojas, menos que las \\(4\\) azules."
+        "B": "Solo hay \\(1\\) osito verde, uno de los colores con menor posibilidad de salir.",
+        "C": "No hay ositos amarillos: sacar uno amarillo es un evento imposible.",
+        "D": "Hay \\(3\\) ositos rojos, menos que los \\(4\\) azules."
       },
       "imagen_figura": "assets/banco-mat-4-p1/q20.png",
       "opciones_imagenes": {

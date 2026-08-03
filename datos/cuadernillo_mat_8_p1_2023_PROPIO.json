@@ -221,12 +221,12 @@
     {
       "id": "P8M07",
       "numero": 7,
-      "enunciado": "<p>Se lanza tres veces una moneda corriente, en la que cara y sello tienen la misma posibilidad. El diagrama de árbol recoge todos los resultados que pueden darse.</p>[[IMG]]<p>¿Cuál de estas afirmaciones NO se puede sostener a partir del diagrama?</p>",
+      "enunciado": "<p>En el torneo interclases el árbitro define el orden de saque lanzando tres veces seguidas una chapa equilibrada: en cada lanzamiento tiene la misma posibilidad de caer de un lado o del otro. El diagrama de árbol reúne todos los recorridos que puede seguir esa ronda de tres lanzamientos.</p>[[IMG]]<p>¿Cuál de estas afirmaciones NO se puede sostener a partir del diagrama?</p>",
       "opciones": {
-        "A": "Se puede contar en cuántos casos se obtienen dos sellos seguidos.",
-        "B": "Se puede contar en cuántos casos se obtienen únicamente caras.",
-        "C": "Se puede hallar la probabilidad de obtener exactamente una cara.",
-        "D": "Se puede saber con anticipación si en el siguiente lanzamiento saldrá sello."
+        "A": "Se puede contar en cuántos recorridos el mismo lado sale dos veces seguidas.",
+        "B": "Se puede identificar el único recorrido en el que las tres veces cae en cara.",
+        "C": "Se puede calcular la probabilidad de que en la ronda caiga en cara exactamente una vez.",
+        "D": "Se puede saber por anticipado de qué lado caerá la chapa en el cuarto lanzamiento."
       },
       "clave": "D",
       "competencia": "c",
@@ -236,11 +236,11 @@
       "dificultad": "ALTA",
       "estandar": "Uso conceptos básicos de probabilidad (espacio muestral, evento, independencia, etc.).",
       "que_evalua": "La capacidad para decidir qué información se puede o no determinar a partir de un diagrama de árbol de un experimento aleatorio.",
-      "justificacion_correcta": "El diagrama enumera los resultados posibles y permite contarlos y calcular probabilidades, pero no permite anticipar qué saldrá en un lanzamiento concreto: el azar no se puede predecir. Esa es la afirmación de la opción D.",
+      "justificacion_correcta": "El diagrama enumera los 8 recorridos posibles, así que sirve para contarlos y para calcular probabilidades; lo que no permite es anticipar el resultado de un lanzamiento nuevo, porque el azar no se puede predecir.",
       "opciones_incorrectas": {
-        "A": "Sí se pueden contar, en el árbol, los casos con dos sellos seguidos.",
-        "B": "Sí se puede contar el único caso en que salen solo caras \\((CCC)\\).",
-        "C": "Sí se puede hallar la probabilidad de obtener exactamente una cara, contando los casos favorables sobre los 8 posibles."
+        "A": "Sí se puede: basta recorrer el árbol y contar los caminos en los que un mismo lado se repite dos veces seguidas.",
+        "B": "Sí se puede: en el árbol hay un solo camino en el que las tres veces cae en cara.",
+        "C": "Sí se puede: se cuentan los recorridos favorables sobre los 8 posibles."
       },
       "imagen_figura": "assets/banco-mat-8-p1/q07.png"
     },
@@ -272,12 +272,12 @@
     {
       "id": "P8M09",
       "numero": 9,
-      "enunciado": "<p>En la imagen aparecen dos fichas cuadradas: el lado de la ficha 1 mide \\(5\\ \\text{cm}\\) y el de la ficha 2 mide \\(8\\ \\text{cm}\\).</p>[[IMG]]<p>¿Qué habría que hacerle a la ficha 1 para que quedara congruente con la ficha 2?</p>",
+      "enunciado": "<p>Sara arma un mosaico con piezas de cerámica en forma de cuadrado. La ficha 1 tiene \\(5\\ \\text{cm}\\) de lado y la ficha 2 tiene \\(8\\ \\text{cm}\\) de lado.</p>[[IMG]]<p>¿Qué cambio hay que hacerle a la ficha 1 para que quede congruente con la ficha 2?</p>",
       "opciones": {
-        "A": "Quitar \\(3\\) cm a cada lado.",
-        "B": "Añadir \\(3\\) cm solo a dos de sus lados.",
-        "C": "Añadir \\(6\\) cm solo a dos de sus lados.",
-        "D": "Añadir \\(3\\) cm a cada lado."
+        "A": "Quitarle \\(3\\) cm a cada lado.",
+        "B": "Agregarle \\(3\\) cm solo a dos de sus lados.",
+        "C": "Agregarle \\(6\\) cm solo a dos de sus lados.",
+        "D": "Agregarle \\(3\\) cm a cada lado."
       },
       "clave": "D",
       "competencia": "c",
@@ -287,18 +287,18 @@
       "dificultad": "MEDIA",
       "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
       "que_evalua": "La capacidad para determinar características que se deben cumplir para que dos figuras bidimensionales sean congruentes.",
-      "justificacion_correcta": "Dos figuras son congruentes cuando coinciden en forma y tamaño. Para pasar de un cuadrado de lado \\(5\\) a uno de lado \\(8\\) hay que sumar \\(3\\) cm a todos los lados, porque si no dejaría de ser cuadrado.",
+      "justificacion_correcta": "Dos figuras son congruentes si coinciden en forma y en tamaño. Para pasar de un cuadrado de lado \\(5\\) a uno de lado \\(8\\) hay que sumarle \\(3\\) cm a todos los lados, porque si solo se cambian algunos la pieza deja de ser un cuadrado.",
       "opciones_incorrectas": {
-        "A": "Disminuir el lado aleja la ficha 1 de los 8 cm de la ficha 2.",
-        "B": "Cambiar solo dos lados haría que la ficha dejara de ser un cuadrado.",
-        "C": "Iguala el perímetro \\((32 - 20 = 12)\\) cambiando solo dos lados, en vez de cada lado."
+        "A": "Al quitarle centímetros, la ficha 1 se aleja todavía más de los 8 cm de la ficha 2.",
+        "B": "Si solo crecen dos lados, la pieza deja de tener sus cuatro lados iguales.",
+        "C": "Iguala el perímetro \\((32 - 20 = 12)\\) repartiendo el aumento en dos lados, en vez de cambiar cada lado."
       },
       "imagen_figura": "assets/banco-mat-8-p1/q09.png"
     },
     {
       "id": "P8M10",
       "numero": 10,
-      "enunciado": "<p>Una empresa de mensajería cobra \\(\\$5.000\\) fijos por los envíos de menos de \\(5\\ \\text{kg}\\). A partir de ese peso el cobro sube como muestra la gráfica.</p>[[IMG]]<p>¿Qué clase de relación hay entre el peso y el costo por encima de los \\(5\\ \\text{kg}\\)?</p>",
+      "enunciado": "<p>Doña Amparo vende fruta en la galería y lleva los pedidos a domicilio. Cobra \\(\\$5.000\\) fijos cuando el pedido pesa menos de \\(5\\ \\text{kg}\\); de ahí en adelante el cobro sube como muestra la gráfica.</p>[[IMG]]<p>Por encima de los \\(5\\ \\text{kg}\\), ¿qué clase de relación hay entre el peso del pedido y lo que cobra doña Amparo?</p>",
       "opciones": {
         "A": "Una relación cuadrática.",
         "B": "Una relación lineal creciente.",
@@ -313,11 +313,11 @@
       "dificultad": "BAJA",
       "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
       "que_evalua": "La capacidad para describir el comportamiento de una variable que depende de otra, a partir de su representación gráfica.",
-      "justificacion_correcta": "Por encima de \\(5\\ \\text{kg}\\) los puntos de la gráfica quedan alineados y el costo sube a medida que sube el peso: es una relación lineal creciente.",
+      "justificacion_correcta": "Por encima de \\(5\\ \\text{kg}\\) los puntos de la gráfica quedan alineados y el cobro aumenta a medida que aumenta el peso: la relación es lineal creciente.",
       "opciones_incorrectas": {
-        "A": "Asocia el aumento con una curva cuadrática, sin notar que el incremento por kilogramo es constante.",
-        "C": "Invierte el sentido del cambio: el costo sube, no baja.",
-        "D": "Toma el tramo fijo inicial y supone que toda la gráfica es constante."
+        "A": "Asocia el aumento con una curva cuadrática, sin notar que el incremento por kilogramo es siempre el mismo.",
+        "C": "Invierte el sentido del cambio: el cobro sube, no baja.",
+        "D": "Se queda con el tramo fijo del comienzo y supone que toda la gráfica es constante."
       },
       "imagen_figura": "assets/banco-mat-8-p1/q10.png"
     },
@@ -349,7 +349,7 @@
     {
       "id": "P8M12",
       "numero": 12,
-      "enunciado": "<p>En clase de geometría el profesor recuerda que la señal de PARE tiene forma de octágono regular y que sus lados se emparejan de dos en dos por ser paralelos. La imagen rotula los lados con las letras q, r, s, t, u, v, w y p.</p>[[IMG]]<p>¿En qué opción están bien formadas todas las parejas de lados paralelos?</p>",
+      "enunciado": "<p>Para el taller de artes, Mariana dibuja el contorno de una baldosa que tiene forma de polígono regular de ocho lados y rotula sus lados con las letras q, r, s, t, u, v, w y p, como se ve en la imagen.</p>[[IMG]]<p>¿En cuál opción están bien emparejados todos los lados que son paralelos entre sí?</p>",
       "opciones": {
         "A": "p con q; r con s; t con u; v con w.",
         "B": "q con u; w con s; p con r; v con t.",
@@ -364,23 +364,23 @@
       "dificultad": "MEDIA",
       "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
       "que_evalua": "La capacidad para identificar líneas paralelas en una figura geométrica.",
-      "justificacion_correcta": "En un octágono regular cada lado es paralelo al que queda justo enfrente, es decir, al que está cuatro posiciones más adelante. Al aplicar esa regla a los rótulos de la figura se obtienen las parejas de la opción D.",
+      "justificacion_correcta": "En un polígono regular de ocho lados, cada lado es paralelo al que le queda justo enfrente, es decir, al que está cuatro posiciones más adelante. Al aplicar esa regla a los rótulos del dibujo se obtienen las parejas q con u, r con v, s con w y t con p.",
       "opciones_incorrectas": {
-        "A": "Empareja lados contiguos (vecinos), no lados opuestos.",
-        "B": "Mezcla algunos pares opuestos con otros que no lo son.",
-        "C": "Agrupa los lados de tres en tres, lo que no corresponde a parejas paralelas."
+        "A": "Empareja lados vecinos, no lados opuestos.",
+        "B": "Mezcla algunas parejas de lados opuestos con otras que no lo son.",
+        "C": "Agrupa los lados de tres en tres, y así no se forman parejas de lados paralelos."
       },
       "imagen_figura": "assets/banco-mat-8-p1/q12.png"
     },
     {
       "id": "P8M13",
       "numero": 13,
-      "enunciado": "<p>El profesor de educación física hizo trotar media hora a cuatro atletas y midió cuánto avanzó cada uno.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atleta</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Distancia (km)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mara</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(8{,}25\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Yuri</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(8{,}134\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruno</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(8{,}2\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Celia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(8{,}07\\)</td></tr></table><p>Si el primer puesto es para quien más avanzó, ¿cómo queda la clasificación?</p>",
+      "enunciado": "<p>En la jornada ambiental del colegio, cuatro equipos pesaron el compost que sacaron de la huerta.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Equipo</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Compost recogido (kg)</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Girasol</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6{,}4\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6{,}275\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Guadua</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6{,}35\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Chontaduro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6{,}09\\)</td></tr></table><p>Si el primer puesto es para el equipo que más compost obtuvo, ¿cómo queda la clasificación?</p>",
       "opciones": {
-        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atleta</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Yuri</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mara</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruno</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Celia</td></tr></table>",
-        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atleta</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mara</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruno</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Yuri</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Celia</td></tr></table>",
-        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atleta</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mara</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Yuri</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruno</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Celia</td></tr></table>",
-        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Atleta</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Celia</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Yuri</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bruno</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mara</td></tr></table>"
+        "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Equipo</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Girasol</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Guadua</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Chontaduro</td></tr></table>",
+        "B": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Equipo</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Girasol</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Guadua</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Chontaduro</td></tr></table>",
+        "C": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Equipo</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Girasol</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Guadua</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Chontaduro</td></tr></table>",
+        "D": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Puesto</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Equipo</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">1.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Chontaduro</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">2.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Colibrí</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">3.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Guadua</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">4.°</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Girasol</td></tr></table>"
       },
       "clave": "B",
       "competencia": "a",
@@ -390,11 +390,11 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
       "que_evalua": "La capacidad para ordenar, de mayor a menor, un conjunto de números decimales.",
-      "justificacion_correcta": "Para comparar decimales conviene igualar las cifras: \\(8{,}250\\); \\(8{,}134\\); \\(8{,}200\\); \\(8{,}070\\). De mayor a menor quedan Mara, Bruno, Yuri y Celia.",
+      "justificacion_correcta": "Para comparar decimales conviene igualar la cantidad de cifras: \\(6{,}400\\); \\(6{,}275\\); \\(6{,}350\\); \\(6{,}090\\). De mayor a menor quedan Girasol, Guadua, Colibrí y Chontaduro.",
       "opciones_incorrectas": {
-        "A": "Ordena por la cantidad de cifras tras la coma, colocando a Yuri \\((8{,}134)\\) por encima de Bruno \\((8{,}2)\\).",
-        "C": "Confunde \\(8{,}134\\) con \\(8{,}2\\) e intercambia a Yuri y a Bruno.",
-        "D": "Ordena al revés, de menor a mayor distancia."
+        "A": "Supone que el número con más cifras después de la coma \\((6{,}275)\\) es el mayor.",
+        "C": "Confunde \\(6{,}275\\) con \\(6{,}35\\) e intercambia a Colibrí con Guadua.",
+        "D": "Ordena al revés, de menor a mayor cantidad de compost."
       }
     },
     {
@@ -452,7 +452,7 @@
     {
       "id": "P8M16",
       "numero": 16,
-      "enunciado": "<p>Lucía registró cuánto creció su estatura (en \\(\\text{cm}\\)) durante 5 años consecutivos y encontró que la <b>moda</b> del crecimiento anual fue <b>\\(7{,}5\\ \\text{cm}\\)</b>. ¿Cuál de las siguientes gráficas (A, B, C o D) podría corresponder a la cantidad de centímetros que aumentó cada año?</p>",
+      "enunciado": "<p>Durante cinco años seguidos, Lucía anotó cuántos centímetros le creció la estatura en cada año. Al revisar sus datos vio que la <b>moda</b> del crecimiento anual fue <b>\\(7{,}5\\ \\text{cm}\\)</b>. ¿Cuál de las gráficas (A, B, C o D) puede corresponder a lo que anotó Lucía?</p>",
       "opciones": {
         "A": "Gráfica A.",
         "B": "Gráfica B.",
@@ -467,9 +467,9 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
       "que_evalua": "La capacidad para establecer el conjunto de datos que corresponde a una medida de tendencia central dada como es la moda.",
-      "justificacion_correcta": "La moda es el dato que más se repite. En la gráfica C el valor \\(7{,}5\\ \\text{cm}\\) aparece dos veces (en el año 2 y en el año 5) y los demás solo una vez, así que la moda es \\(7{,}5\\ \\text{cm}\\).",
+      "justificacion_correcta": "La moda es el dato que más se repite. En la gráfica C el valor \\(7{,}5\\ \\text{cm}\\) aparece dos veces (en el año 2 y en el año 5) y los demás aparecen una sola vez, así que la moda es \\(7{,}5\\ \\text{cm}\\).",
       "opciones_incorrectas": {
-        "A": "El \\(7{,}5\\) no aparece; los datos que se repiten son \\(7{,}0\\) y \\(7{,}2\\).",
+        "A": "El \\(7{,}5\\) aparece una sola vez, en el año 3; los datos que se repiten son \\(7{,}0\\) y \\(7{,}2\\), así que la moda no es \\(7{,}5\\).",
         "B": "Los valores que se repiten son \\(7{,}3\\) y \\(7{,}7\\); ninguno es \\(7{,}5\\).",
         "D": "Ningún valor se repite, por lo que ese conjunto no tiene moda \\(7{,}5\\)."
       },
@@ -508,7 +508,7 @@
     {
       "id": "P8M18",
       "numero": 18,
-      "enunciado": "<p>Daniel puso una linterna detrás de una estrella de cartón y la sombra se proyectó más grande sobre la pared. Los rayos salen de la linterna y pasan por los vértices de la estrella.</p>[[IMG]]<p>¿Qué transformación relaciona la estrella con su sombra?</p>",
+      "enunciado": "<p>Valeria monta un teatro de sombras en el salón: sostiene una estrella de cartón frente a la luz y, sobre la pared, la sombra se ve más grande que la estrella. Todos los rayos salen de un mismo punto y pasan por las puntas de la estrella.</p>[[IMG]]<p>¿Qué transformación lleva la estrella de cartón hasta la sombra de la pared?</p>",
       "opciones": {
         "A": "Una traslación.",
         "B": "Una reflexión.",
@@ -523,11 +523,11 @@
       "dificultad": "MEDIA",
       "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
       "que_evalua": "La capacidad para identificar la transformación realizada a una figura.",
-      "justificacion_correcta": "La sombra conserva la forma de la estrella pero es más grande, y todos sus puntos quedan alineados con la linterna. Esa transformación, que agranda desde un punto fijo, es una homotecia.",
+      "justificacion_correcta": "La sombra conserva la forma de la estrella pero es más grande, y cada una de sus puntas queda alineada con el punto del que sale la luz. Esa transformación, que agranda una figura desde un punto fijo, es una homotecia.",
       "opciones_incorrectas": {
-        "A": "En una traslación la figura solo se desplaza, sin cambiar de tamaño.",
-        "B": "En una reflexión la figura se invierte como en un espejo, sin agrandarse.",
-        "D": "La sombra es más grande que la estrella, así que no es una reducción."
+        "A": "En una traslación la figura solo se corre de lugar, sin cambiar de tamaño.",
+        "B": "En una reflexión la figura se invierte como en un espejo y conserva su tamaño.",
+        "D": "La sombra es más grande que la estrella, así que no hubo una reducción."
       },
       "imagen_figura": "assets/banco-mat-8-p1/q18.png"
     },

@@ -234,7 +234,7 @@
     {
       "id": "P-math-5-p1-08",
       "numero": 8,
-      "enunciado": "<p>El visor de la caja registradora muestra el total a pagar como \\(300 + 500 + 300\\).</p>[[IMG]]<p>¿Qué otra operación da ese mismo total?</p>",
+      "enunciado": "<p>Julián compró tres refrigerios en el kiosco del parque y en la pantalla del punto de pago apareció lo que debía cancelar.</p>[[IMG]]<p>¿Con cuál de las siguientes operaciones se obtiene ese mismo valor?</p>",
       "opciones": {
         "A": "\\((2 \\times 300) + (2 \\times 500)\\)",
         "B": "\\((2 \\times 300) + 500\\)",
@@ -249,18 +249,18 @@
       "dificultad": "MEDIA",
       "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
       "que_evalua": "La capacidad para establecer relaciones entre expresiones.",
-      "justificacion_correcta": "El \\(300\\) aparece dos veces y el \\(500\\) una sola, así que la suma equivale a \\((2 \\times 300) + 500\\).",
+      "justificacion_correcta": "En la pantalla el \\(300\\) aparece dos veces y el \\(500\\) una sola vez, por eso el total se puede escribir como \\((2 \\times 300) + 500\\).",
       "opciones_incorrectas": {
-        "A": "Cuenta el \\(500\\) dos veces, cuando en el visor aparece una sola.",
-        "C": "Reemplaza el \\(500\\) por \\(800\\), que no aparece en el visor.",
-        "D": "Duplica además un valor que no está en la operación."
+        "A": "Toma el \\(500\\) dos veces, aunque en la pantalla aparece una sola vez.",
+        "C": "Cambia el \\(500\\) por \\(800\\), un valor que no aparece en la pantalla.",
+        "D": "Duplica el \\(300\\) y además un valor de \\(800\\) que no está en la operación."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q08.png"
     },
     {
       "id": "P-math-5-p1-09",
       "numero": 9,
-      "enunciado": "<p>En la sala de una tienda de mascotas hay cuatro acuarios y en cada uno nadan peces blancos y peces negros, como se ve en la imagen.</p>[[IMG]]<p>Si alguien mete la red en un acuario sin mirar, ¿en cuál de ellos tiene la certeza de sacar un pez negro?</p>",
+      "enunciado": "<p>En el club de ciencias del colegio cuidan cuatro peceras identificadas como Acuario 1, Acuario 2, Acuario 3 y Acuario 4. En unas nadan peces blancos, en otras peces negros y en otras de los dos colores, como se ve en la imagen.</p>[[IMG]]<p>Si un estudiante mete la red y saca un pez sin mirar, ¿en cuál pecera es seguro que sacará un pez negro?</p>",
       "opciones": {
         "A": "Acuario 1.",
         "B": "Acuario 2.",
@@ -275,11 +275,11 @@
       "dificultad": "BAJA",
       "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
       "que_evalua": "La capacidad para diferenciar los eventos posibles de los imposibles.",
-      "justificacion_correcta": "Solo se puede tener certeza cuando no hay otra posibilidad, es decir, cuando en el acuario todos los peces son negros. Ese es el acuario 2.",
+      "justificacion_correcta": "Un evento es seguro cuando no existe otra posibilidad. En el Acuario 2 todos los peces son negros, así que el pez que salga será negro sin importar cuál se atrape.",
       "opciones_incorrectas": {
-        "A": "Tiene peces de los dos colores, así que podría salir uno blanco.",
-        "C": "También mezcla colores: sacar negro es posible, pero no seguro.",
-        "D": "Contiene peces blancos, de modo que el resultado no está garantizado."
+        "A": "En el Acuario 1 todos los peces son blancos, de modo que sacar uno negro es imposible.",
+        "C": "En el Acuario 3 hay peces negros y también uno blanco: sacar negro es posible, pero no seguro.",
+        "D": "En el Acuario 4 solo un pez es negro y los otros son blancos, así que el resultado no está garantizado."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q09.png"
     },
@@ -413,7 +413,7 @@
     {
       "id": "P-math-5-p1-15",
       "numero": 15,
-      "enunciado": "<p>Camilo pintó en su cuaderno un dibujo con tres colores: amarillo, rojo y azul. Las medidas de la imagen están en centímetros.</p>[[IMG]]<p>¿Cuánto suma en total la superficie que pintó?</p>",
+      "enunciado": "<p>En la clase de artes, Valentina cubrió parte de una cartulina con papel de tres colores: amarillo, rojo y azul. Las medidas de la figura están dadas en centímetros.</p>[[IMG]]<p>¿Cuál es el área total que quedó cubierta con papel de color?</p>",
       "opciones": {
         "A": "\\(38\\ \\text{cm}^2\\)",
         "B": "\\(34\\ \\text{cm}^2\\)",
@@ -428,23 +428,23 @@
       "dificultad": "ALTA",
       "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
       "que_evalua": "La capacidad para determinar el área total de una región compuesta por tres rectángulos de diferentes medidas.",
-      "justificacion_correcta": "Se calcula el área de cada región de color y se suman las tres. El total es \\(34\\ \\text{cm}^{2}\\).",
+      "justificacion_correcta": "Se halla el área de cada región y se suman las tres: amarillo \\(2 \\times 4 = 8\\), rojo \\(4 \\times 6 = 24\\) y azul \\(2 \\times 1 = 2\\), es decir \\(8 + 24 + 2 = 34\\ \\text{cm}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Calcula perímetros en lugar de áreas y los suma, obteniendo un valor cercano de \\(38\\).",
-        "C": "Suma los lados de cada rectángulo en vez de multiplicarlos \\((2+4)+(4+6)+(2+1) = 19\\).",
-        "D": "Usa la fórmula del área del triángulo \\(\\left(\\dfrac{b\\times h}{2}\\right)\\) en cada rectángulo, llegando a \\(17\\)."
+        "A": "Halla el perímetro de cada región en lugar del área y los suma: \\(12 + 20 + 6 = 38\\).",
+        "C": "Suma los lados de cada rectángulo en vez de multiplicarlos: \\((2+4) + (4+6) + (2+1) = 19\\).",
+        "D": "Aplica la fórmula del área del triángulo \\(\\left(\\dfrac{b \\times h}{2}\\right)\\) en cada rectángulo: \\(4 + 12 + 1 = 17\\)."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q15.png"
     },
     {
       "id": "P-math-5-p1-16",
       "numero": 16,
-      "enunciado": "<p>Eliana tiene un rompecabezas rectangular al que le falta una ficha para quedar completo: el hueco tiene la forma de cruz que se muestra arriba, con todos sus brazos de \\(2\\ \\text{cm}\\).</p>[[IMG]]<p>¿Cuál de las fichas A, B, C o D es <b>congruente</b> con el hueco, es decir, encaja exactamente?</p>",
+      "enunciado": "<p>Sara arma un mosaico sobre una base de cartulina morada y le falta una sola pieza para completarlo: el espacio vacío tiene forma de cruz y cada uno de sus brazos mide \\(2\\ \\text{cm}\\).</p>[[IMG]]<p>¿Cuál de las piezas A, B, C o D es <b>congruente</b> con ese espacio, es decir, encaja exactamente?</p>",
       "opciones": {
-        "A": "Ficha A.",
-        "B": "Ficha B.",
-        "C": "Ficha C.",
-        "D": "Ficha D."
+        "A": "Pieza A.",
+        "B": "Pieza B.",
+        "C": "Pieza C.",
+        "D": "Pieza D."
       },
       "clave": "A",
       "competencia": "a",
@@ -454,11 +454,11 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
       "que_evalua": "La capacidad para establecer relaciones de congruencia entre dos polígonos dadas las medidas de sus segmentos.",
-      "justificacion_correcta": "Dos figuras son congruentes si tienen exactamente la misma forma y las mismas medidas. La ficha A es una cruz con los cuatro brazos de \\(2\\ \\text{cm}\\), igual que el hueco, por lo que encaja perfectamente.",
+      "justificacion_correcta": "Dos figuras son congruentes cuando tienen la misma forma y las mismas medidas. La pieza A es una cruz con sus cuatro brazos de \\(2\\ \\text{cm}\\), igual que el espacio vacío, por eso encaja perfectamente.",
       "opciones_incorrectas": {
-        "B": "Su brazo derecho mide \\(3\\ \\text{cm}\\) y el inferior \\(1\\ \\text{cm}\\): las medidas no coinciden con el hueco.",
-        "C": "Su brazo inferior es más largo \\((3\\ \\text{cm})\\) y termina en \\(1\\ \\text{cm}\\): no es congruente con el hueco.",
-        "D": "Tiene la misma forma de cruz, pero su brazo inferior mide \\(3\\ \\text{cm}\\), distinto de los \\(2\\ \\text{cm}\\) del hueco."
+        "B": "Su brazo derecho mide \\(3\\ \\text{cm}\\) y el inferior \\(1\\ \\text{cm}\\): esas medidas no coinciden con las del espacio vacío.",
+        "C": "Su brazo inferior mide \\(3\\ \\text{cm}\\) de alto y solo \\(1\\ \\text{cm}\\) de ancho, así que no es congruente con el espacio.",
+        "D": "Tiene la misma forma de cruz, pero su brazo inferior mide \\(3\\ \\text{cm}\\) y no \\(2\\ \\text{cm}\\) como el del espacio."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q16.png",
       "opciones_imagenes": {
@@ -502,12 +502,12 @@
     {
       "id": "P-math-5-p1-18",
       "numero": 18,
-      "enunciado": "<p>Nicol anota cuántas personas visitan un pueblo durante las fiestas.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Día</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Visitantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(3.180\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(2.045\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(860\\)</td></tr></table><p>Sumando los tres días, ¿cuántas personas visitaron el pueblo?</p>",
+      "enunciado": "<p>Marisol atiende el punto de reciclaje del barrio y anota cuántas botellas plásticas recibe cada semana.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Semana</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Botellas recibidas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(2.470\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(1.365\\)</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(940\\)</td></tr></table><p>Sumando las tres semanas, ¿cuántas botellas recibió Marisol en total?</p>",
       "opciones": {
-        "A": "\\(6.085\\)",
-        "B": "\\(5.225\\)",
-        "C": "\\(5.085\\)",
-        "D": "\\(2.905\\)"
+        "A": "\\(4.775\\)",
+        "B": "\\(3.835\\)",
+        "C": "\\(3.775\\)",
+        "D": "\\(2.305\\)"
       },
       "clave": "A",
       "competencia": "b",
@@ -517,17 +517,17 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
       "que_evalua": "La capacidad para resolver situaciones aditivas de composición que involucran más de dos cantidades.",
-      "justificacion_correcta": "Se suman los tres días: \\(3.180 + 2.045 + 860 = 6.085\\) visitantes.",
+      "justificacion_correcta": "Se suman las tres semanas: \\(2.470 + 1.365 + 940 = 4.775\\) botellas.",
       "opciones_incorrectas": {
-        "B": "Suma solo los dos primeros días y deja el tercero por fuera.",
-        "C": "Pierde una unidad de millar al sumar.",
-        "D": "Suma únicamente los dos últimos días."
+        "B": "Suma solo las dos primeras semanas y deja la tercera por fuera: \\(2.470 + 1.365 = 3.835\\).",
+        "C": "Pierde una unidad de millar al sumar y obtiene \\(3.775\\).",
+        "D": "Suma únicamente las dos últimas semanas: \\(1.365 + 940 = 2.305\\)."
       }
     },
     {
       "id": "P-math-5-p1-19",
       "numero": 19,
-      "enunciado": "<p>Manuel vende fresas con chocolate en dos presentaciones: la caja pequeña lleva \\(4\\) fresas y la grande lleva \\(6\\), como se ve en la imagen. En la jornada vendió \\(3\\) cajas pequeñas y \\(4\\) cajas grandes.</p>[[IMG]]<p>¿Cuál de estas operaciones NO sirve para saber cuántas fresas vendió?</p>",
+      "enunciado": "<p>En el bazar del colegio, el puesto de la huerta empaca la cosecha en dos tamaños de caja: la caja pequeña lleva \\(4\\) frutas y la caja grande lleva \\(6\\), como se ve en la imagen.</p>[[IMG]]<p>En la jornada se vendieron \\(3\\) cajas pequeñas y \\(4\\) cajas grandes, y Sofía escribió la operación \\((3 \\times 4) + (4 \\times 6)\\) para saber cuántas frutas salieron en total.</p><p>¿Cuál de las siguientes operaciones es equivalente a la que escribió Sofía?</p>",
       "opciones": {
         "A": "\\((3 + 4) \\times (4 + 6)\\)",
         "B": "\\(4 \\times (3 + 6)\\)",
@@ -542,11 +542,11 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y formulo problemas cuya estrategia de solución requiera de las relaciones y propiedades de los números naturales y sus operaciones.",
       "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales como la conmutativa y la distributiva del producto sobre la suma.",
-      "justificacion_correcta": "El total sale de multiplicar cada presentación por su cantidad de fresas y sumar. La expresión \\(4 \\times (3 + 6)\\) mezcla la cantidad de cajas con las fresas por caja y no representa la situación.",
+      "justificacion_correcta": "Como \\(3 \\times 4 = 4 \\times 3\\), la operación se puede escribir \\((4 \\times 3) + (4 \\times 6)\\); al sacar el factor común \\(4\\) queda \\(4 \\times (3 + 6) = 36\\), el mismo total de frutas.",
       "opciones_incorrectas": {
-        "A": "Suma los factores dentro de cada paréntesis en lugar de aplicar la propiedad distributiva.",
-        "C": "Multiplica \\(3 \\times 6\\) dentro del paréntesis en vez de sumar \\(3 + 6\\).",
-        "D": "Intercambia los factores que acompañan a cada caja \\((3\\) con \\(6)\\), de modo que altera la operación y ya no da el mismo total."
+        "A": "Suma los números dentro de cada paréntesis y luego multiplica: \\((3+4) \\times (4+6) = 70\\), que no es el total.",
+        "C": "Multiplica \\(3 \\times 6\\) dentro del paréntesis en vez de sumar: \\(4 \\times 18 = 72\\).",
+        "D": "Intercambia los factores que acompañan a cada caja: \\((3 \\times 6) + (4 \\times 4) = 34\\), un total distinto."
       },
       "imagen_figura": "assets/banco-mat-5-p1/q19.png"
     },
