@@ -213,10 +213,10 @@
       "numero": 7,
       "enunciado": "<p>En un ejercicio de entrenamiento, un jugador lanza el balón por encima de la cancha hacia un <b>muro</b> de <b>\\(4\\) metros</b> de alto que cierra el fondo. Un sensor marca el punto en el que el balón, ya de bajada, pasa por los <b>\\(2{,}5\\) metros</b> de altura. El esquema recoge la trayectoria y esas dos medidas.</p>[[IMG]]<p>¿Cuál de las siguientes afirmaciones es <b>verdadera</b>?</p>",
       "opciones": {
-        "A": "La altura del balón es mínima justo en la mitad del recorrido.",
+        "A": "La altura que alcanza el balón es mínima justo en la mitad del recorrido que hace hasta el muro.",
         "B": "Hay dos instantes distintos del recorrido en los que el balón está a \\(2{,}5\\) metros de altura.",
-        "C": "El balón nunca supera los \\(2{,}5\\) metros de altura.",
-        "D": "El balón toca el muro exactamente en su punto más alto."
+        "C": "El balón nunca llega a superar los \\(2{,}5\\) metros de altura en todo su recorrido hasta el muro.",
+        "D": "El balón toca el muro justo cuando alcanza el punto más alto de toda su trayectoria."
       },
       "clave": "B",
       "competencia": "b",
@@ -457,7 +457,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
       "que_evalua": "La capacidad para determinar el conjunto de datos que corresponde a un valor de mediana definido.",
-      "justificacion_correcta": "El indicador publicado describe la <b>mediana</b>, que debe valer \\(12\\) minutos. En la tabla B hay \\(4+6+5+7+11+8+6 = 47\\) pacientes, cantidad impar, de modo que la mediana ocupa la posición \\(\\dfrac{47+1}{2} = 24\\). Las frecuencias acumuladas son \\(4, 10, 15, 22, 33, 41, 47\\): la posición \\(24\\) queda entre \\(22\\) y \\(33\\), es decir, sobre el valor \\(12\\) minutos.",
+      "justificacion_correcta": "El indicador publicado describe la <b>mediana</b>, que debe valer \\(12\\) minutos. En la tabla «Tiempo de espera (min) Cantidad de pacientes 8 4 9 6 10 5 11 7 12 11 13 8 14 6» hay \\(4+6+5+7+11+8+6 = 47\\) pacientes, cantidad impar, de modo que la mediana ocupa la posición \\(\\dfrac{47+1}{2} = 24\\). Las frecuencias acumuladas son \\(4, 10, 15, 22, 33, 41, 47\\): la posición \\(24\\) queda entre \\(22\\) y \\(33\\), es decir, sobre el valor \\(12\\) minutos.",
       "opciones_incorrectas": {
         "A": "Aquí \\(12\\) es el tiempo más frecuente \\((16\\) pacientes\\()\\), pero eso es la moda. Con \\(50\\) datos, las acumuladas \\(14, 26, 42, 50\\) dejan las posiciones \\(25\\) y \\(26\\) sobre \\(11\\) minutos.",
         "B": "Tiene también \\(47\\) pacientes, pero sus acumuladas \\(7, 15, 21, 30, 37, 42, 47\\) hacen que la posición \\(24\\) caiga en \\(11\\) minutos, no en \\(12\\).",
@@ -508,7 +508,7 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico relaciones entre propiedades de las gráficas y propiedades de las ecuaciones algebraicas.",
       "que_evalua": "La capacidad para identificar propiedades de expresiones algebraicas y encontrar valores de la variable dependiente, dados algunos de los valores de la variable independiente.",
-      "justificacion_correcta": "Se reemplaza cada \\(x\\) en la expresión: \\(h(-7) = -(-7)^2 - 6(-7) + 91 = -49 + 42 + 91 = 84\\); \\(h(0) = 91\\); \\(h(3) = -9 - 18 + 91 = 64\\); \\(h(5) = -25 - 30 + 91 = 36\\). La tabla que recoge esos cuatro valores es la A.",
+      "justificacion_correcta": "Se reemplaza cada \\(x\\) en la expresión: \\(h(-7) = -(-7)^2 - 6(-7) + 91 = -49 + 42 + 91 = 84\\); \\(h(0) = 91\\); \\(h(3) = -9 - 18 + 91 = 64\\); \\(h(5) = -25 - 30 + 91 = 36\\). La tabla que recoge esos cuatro valores es «x h -7 84 0 91 3 64 5 36».",
       "opciones_incorrectas": {
         "A": "Supone que si \\(x = 0\\) la altura también es \\(0\\), sin reemplazar; el término independiente hace que \\(h(0) = 91\\).",
         "B": "Pierde el signo del cuadrado en \\(-(-7)^2\\): usa \\(+49\\) en vez de \\(-49\\) y le queda \\(h(-7) = 182\\).",

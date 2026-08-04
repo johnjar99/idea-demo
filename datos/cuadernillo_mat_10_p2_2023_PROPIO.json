@@ -104,7 +104,7 @@
       "dificultad": "MEDIA",
       "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
       "que_evalua": "La capacidad de los estudiantes para encontrar una tabla con datos que cumplen con un promedio aritmético y una cantidad total dados.",
-      "justificacion_correcta": "Con \\(60\\) votantes y promedio \\(3\\), la suma de todas las calificaciones debe ser \\(60 \\times 3 = 180\\). La tabla A reparte \\(10\\), \\(10\\), \\(20\\), \\(10\\) y \\(10\\) votos, que suman los \\(60\\) ciclistas, y sus calificaciones suman \\((1\\times 10)+(2\\times 10)+(3\\times 20)+(4\\times 10)+(5\\times 10) = 180\\). Es la única que cumple las dos condiciones al tiempo.",
+      "justificacion_correcta": "Con \\(60\\) votantes y promedio \\(3\\), la suma de todas las calificaciones debe ser \\(60 \\times 3 = 180\\).  reparte \\(10\\), \\(10\\), \\(20\\), \\(10\\) y \\(10\\) votos, que suman los \\(60\\) ciclistas, y sus calificaciones suman \\((1\\times 10)+(2\\times 10)+(3\\times 20)+(4\\times 10)+(5\\times 10) = 180\\). Es la única que cumple las dos condiciones al tiempo.",
       "opciones_incorrectas": {
         "B": "Su promedio también vale \\(3\\), pero reúne apenas \\(40\\) votos: no corresponde a los \\(60\\) ciclistas del sondeo.",
         "C": "Reúne los \\(60\\) votos, pero sus calificaciones suman \\(25+20+0+40+75 = 160\\) y el promedio queda por debajo de \\(3\\).",
@@ -225,9 +225,9 @@
       "numero": 8,
       "enunciado": "<p>Una plataforma ofrece cursos en video gratuitos que se financian con pauta comercial. Un usuario anotó, para cuatro de esos cursos, cuánto dura cada uno y qué <b>porcentaje de ese tiempo</b> ocupan los anuncios:</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Duración total (min)</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Tiempo en anuncios</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 1</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">45</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 2</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">120</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 3</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">90</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">18 %</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Curso 4</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">75</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">22 %</td></tr></table><p>Con esos cuatro porcentajes armó el diagrama circular de la figura, tomando cada uno como una tajada del mismo círculo. ¿Cuál es la falla de fondo de esa representación?</p>",
       "opciones": {
-        "A": "Porque no tuvo en cuenta cuánto dura cada uno de los cursos.",
-        "B": "Porque los cuatro porcentajes no completan el \\(100\\,\\%\\).",
-        "C": "Porque las tajadas no quedaron ordenadas de mayor a menor.",
+        "A": "Porque no tuvo en cuenta cuánto dura en minutos cada uno de los cuatro cursos.",
+        "B": "Porque los cuatro porcentajes anotados no completan entre todos el \\(100\\,\\%\\) del círculo.",
+        "C": "Porque las tajadas del diagrama no quedaron ordenadas de mayor a menor tamaño.",
         "D": "Porque cada porcentaje corresponde a un curso distinto y no a las partes de una misma cantidad."
       },
       "clave": "D",
@@ -289,7 +289,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
       "que_evalua": "La capacidad de los estudiantes para elaborar gráficas de barras a partir de información presentada en tablas.",
-      "justificacion_correcta": "La gráfica B es la única que dibuja, para cada uno de los cuatro grupos, una barra de votos a favor y otra de votos en contra con los valores exactos de las dos tablas: Docentes \\(24\\) y \\(8\\), Auxiliares \\(12\\) y \\(6\\), Acudientes de la mañana \\(18\\) y \\(14\\), Acudientes de la tarde \\(16\\) y \\(9\\).",
+      "justificacion_correcta": "La gráfica que dibuja dos barras por grupo es la única que dibuja, para cada uno de los cuatro grupos, una barra de votos a favor y otra de votos en contra con los valores exactos de las dos tablas: Docentes \\(24\\) y \\(8\\), Auxiliares \\(12\\) y \\(6\\), Acudientes de la mañana \\(18\\) y \\(14\\), Acudientes de la tarde \\(16\\) y \\(9\\).",
       "opciones_incorrectas": {
         "A": "Reúne en una sola barra los votos a favor y en contra de cada grupo, con lo que desaparece la comparación entre ambos.",
         "C": "Conserva los cuatro grupos, pero les intercambia los valores entre una tabla y otra.",
@@ -345,7 +345,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
       "que_evalua": "La capacidad del estudiante de construir el diagrama de Venn de una encuesta a partir de información textual (dada en lenguaje natural).",
-      "justificacion_correcta": "El reparto correcto es el del diagrama C. Se empieza por el centro, donde van los \\(3\\) afiliados de las tres disciplinas. Cada región doble se obtiene descontándole ese centro al total del par: \\(7-3=4\\) en fútbol y tenis, \\(8-3=5\\) en fútbol y natación, \\(5-3=2\\) en tenis y natación. Por último, cada región individual sale de restarle al total de la disciplina lo ya ubicado: \\(18-(4+5+3)=6\\) solo fútbol, \\(16-(4+2+3)=7\\) solo tenis y \\(19-(5+2+3)=9\\) solo natación.",
+      "justificacion_correcta": "El reparto correcto es el que reparte esas cantidades. Se empieza por el centro, donde van los \\(3\\) afiliados de las tres disciplinas. Cada región doble se obtiene descontándole ese centro al total del par: \\(7-3=4\\) en fútbol y tenis, \\(8-3=5\\) en fútbol y natación, \\(5-3=2\\) en tenis y natación. Por último, cada región individual sale de restarle al total de la disciplina lo ya ubicado: \\(18-(4+5+3)=6\\) solo fútbol, \\(16-(4+2+3)=7\\) solo tenis y \\(19-(5+2+3)=9\\) solo natación.",
       "opciones_incorrectas": {
         "A": "Deja los totales de cada par (\\(7\\), \\(8\\) y \\(5\\)) en las regiones dobles sin descontarles el centro de \\(3\\).",
         "B": "Escribe \\(18\\), \\(16\\) y \\(19\\) en las regiones individuales, como si esos totales fueran los de quienes practican una sola disciplina.",
@@ -454,7 +454,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
       "que_evalua": "La capacidad de extraer fragmentos de información cuantitativa y elaborar representaciones gráficas con ellas.",
-      "justificacion_correcta": "La correcta es la A. Las horas de Estudio son la <i>longitud</i> del segmento «Estudio» dentro de cada barra apilada, no la posición donde ese segmento termina: Ana \\(4\\) h, Beto \\(3\\) h, Cris \\(5\\) h y Deri \\(2\\) h. La gráfica A levanta exactamente esas cuatro alturas.",
+      "justificacion_correcta": ". Las horas de Estudio son la <i>longitud</i> del segmento «Estudio» dentro de cada barra apilada, no la posición donde ese segmento termina: Ana \\(4\\) h, Beto \\(3\\) h, Cris \\(5\\) h y Deri \\(2\\) h. La gráfica correcta es la que levanta exactamente esas cuatro alturas.",
       "opciones_incorrectas": {
         "B": "Grafica el acumulado Dormir + Estudio, es decir, el punto donde <i>termina</i> el segmento (\\(11\\), \\(9\\), \\(13\\) y \\(11\\)), y no su longitud.",
         "C": "Toma por error el segmento anterior, el de Dormir (\\(7\\), \\(6\\), \\(8\\) y \\(9\\)).",

@@ -91,9 +91,9 @@
       "enunciado": "<p>El comité de movilidad de un colegio consultó a los <b>\\(240\\)</b> estudiantes de la jornada de la tarde sobre el medio en que llegan a clase. Los resultados fueron: <b>\\(15\\%\\)</b> en bicicleta, <b>\\(35\\%\\)</b> en bus, <b>\\(30\\%\\)</b> a pie y el <b>\\(20\\%\\)</b> restante en metro. ¿Cuál de las siguientes representaciones traduce correctamente esos porcentajes a cantidades de estudiantes?</p>",
       "opciones": {
         "A": "<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medio de transporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad de estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bicicleta</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">36</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Bus</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">84</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">A pie</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">72</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Metro</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">48</td></tr></table>",
-        "B": "Gráfica B.",
-        "C": "Gráfica C.",
-        "D": "Gráfica D."
+        "B": "",
+        "C": "",
+        "D": ""
       },
       "clave": "A",
       "competencia": "a",
@@ -103,9 +103,9 @@
       "dificultad": "MEDIA",
       "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
       "que_evalua": "La capacidad de los estudiantes para calcular partes de un todo a partir de la cantidad total y los porcentajes de cada parte, y buscar una representación alterna de estas cantidades en forma de tabla, diagramas de barras o diagramas circulares.",
-      "justificacion_correcta": "Cada porcentaje se convierte en cantidad sobre los \\(240\\) estudiantes: \\(0{,}15\\times 240 = 36\\) en bicicleta, \\(0{,}35\\times 240 = 84\\) en bus, \\(0{,}30\\times 240 = 72\\) a pie y \\(0{,}20\\times 240 = 48\\) en metro. La tabla de la opción B recoge justamente \\(36, 84, 72\\) y \\(48\\), cifras que suman \\(240\\).",
+      "justificacion_correcta": "Cada porcentaje se convierte en cantidad sobre los \\(240\\) estudiantes: \\(0{,}15\\times 240 = 36\\) en bicicleta, \\(0{,}35\\times 240 = 84\\) en bus, \\(0{,}30\\times 240 = 72\\) a pie y \\(0{,}20\\times 240 = 48\\) en metro. La tabla de la opción «Medio de transporte Cantidad de estudiantes Bicicleta 36 Bus 84 A pie 72 Metro 48» recoge justamente \\(36, 84, 72\\) y \\(48\\), cifras que suman \\(240\\).",
       "opciones_incorrectas": {
-        "A": "El diagrama de barras repite los porcentajes \\((15, 35, 30, 20)\\) como si fueran estudiantes; esos valores suman \\(100\\) y no \\(240\\).",
+        "B": "El diagrama de barras repite los porcentajes \\((15, 35, 30, 20)\\) como si fueran estudiantes; esos valores suman \\(100\\) y no \\(240\\).",
         "C": "El diagrama de barras horizontales intercambia las cantidades de 'a pie' y 'metro': muestra \\(48\\) a pie y \\(72\\) en metro, cuando corresponde lo contrario.",
         "D": "El diagrama circular asigna \\(84\\) estudiantes al metro, el mismo valor del bus, con lo cual el total llega a \\(276\\) y no a \\(240\\)."
       },
@@ -145,10 +145,10 @@
       "numero": 5,
       "enunciado": "<p>Al programar una animación, <b>Sebastián</b> debe multiplicar los polinomios \\(4t^{5} - t^{2} + 6\\) y \\(-2t^{3} + 7t\\). Antes de operar anticipa que el mayor exponente de la variable en el producto será <b>\\(8\\)</b>. ¿Cuál valoración de esa anticipación es acertada?</p>",
       "opciones": {
-        "A": "No es acertada: el producto conserva el grado mayor de los dos factores, es decir, \\(5\\).",
-        "B": "No es acertada: los grados de los factores se multiplican, de modo que el mayor exponente sería \\(15\\).",
+        "A": "No es acertada: el producto conserva el grado mayor de los dos factores, es decir, \\(5\\), de modo que el exponente no alcanza a crecer.",
+        "B": "No es acertada: los grados de los dos factores se multiplican entre sí, de modo que el mayor exponente del producto sería \\(15\\).",
         "C": "Es acertada: el término dominante sale de \\(4t^{5}\\cdot(-2t^{3}) = -8t^{8}\\), y al multiplicar potencias de igual base los exponentes se suman.",
-        "D": "No es acertada: el grado mayor se duplica, de modo que el exponente sería \\(10\\)."
+        "D": "No es acertada: el grado mayor del primer factor simplemente se duplica, de modo que el mayor exponente del producto sería \\(10\\)."
       },
       "clave": "C",
       "competencia": "c",

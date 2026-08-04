@@ -93,7 +93,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto, produzco y comparo representaciones gráficas adecuadas para presentar diversos tipos de datos. (diagramas de barras, diagramas circulares.)",
       "que_evalua": "La capacidad para representar en un diagrama circular un conjunto de probabilidades, reconociendo que el círculo completo equivale a la probabilidad total.",
-      "justificacion_correcta": "El círculo completo representa toda la probabilidad. El sector más grande debe quedar para el resultado más probable, \\(\\frac{2}{4}\\) (que salga \\(1\\) cara), y los otros dos sectores deben ser iguales entre sí y de la mitad de tamaño, \\(\\frac{1}{4}\\) (que salgan \\(0\\) o \\(2\\) caras). El diagrama C reparte el círculo exactamente así.",
+      "justificacion_correcta": "El círculo completo representa toda la probabilidad. El sector más grande debe quedar para el resultado más probable, \\(\\frac{2}{4}\\) (que salga \\(1\\) cara), y los otros dos sectores deben ser iguales entre sí y de la mitad de tamaño, \\(\\frac{1}{4}\\) (que salgan \\(0\\) o \\(2\\) caras).  reparte el círculo exactamente así.",
       "opciones_incorrectas": {
         "A": "Le da el sector grande \\(\\left(\\frac{2}{4}\\right)\\) al resultado «\\(0\\) caras» y deja «\\(1\\) cara» en un cuarto del círculo: intercambia la probabilidad mayor con una de las menores.",
         "B": "Comete el mismo cambio con otra disposición de los sectores: el más grande vuelve a quedar rotulado como «\\(0\\) caras», cuando a ese resultado le corresponde \\(\\frac{1}{4}\\).",
@@ -150,7 +150,7 @@
       "dificultad": "MEDIA",
       "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
       "que_evalua": "La capacidad para decidir cuál conjunto de datos enteros es compatible con un promedio dado, reconstruyendo el total a partir de la media y del número de datos.",
-      "justificacion_correcta": "Si el promedio es \\(9\\) en \\(5\\) paradas, el total recogido debe ser \\(9 \\times 5 = 45\\). En la tabla A: \\(11+7+9+12+6 = 45\\), y \\(45 \\div 5 = 9\\). Ninguna otra tabla llega a \\(45\\).",
+      "justificacion_correcta": "Si el promedio es \\(9\\) en \\(5\\) paradas, el total recogido debe ser \\(9 \\times 5 = 45\\). En la tabla «Parada P1 P2 P3 P4 P5 Estudiantes recogidos 11 7 9 12 6»: \\(11+7+9+12+6 = 45\\), y \\(45 \\div 5 = 9\\). Ninguna otra tabla llega a \\(45\\).",
       "opciones_incorrectas": {
         "A": "Tiene tres paradas con \\(9\\) estudiantes y por eso parece la indicada, pero suma \\(42\\) y el promedio es \\(8{,}4\\).",
         "C": "Suma \\(8+9+10+7+6 = 40\\), de manera que el promedio queda en \\(8\\) y no en \\(9\\).",
@@ -226,7 +226,7 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco la relación entre un conjunto de datos y su representación.",
       "que_evalua": "La capacidad para reconocer cuál tabla de frecuencias es compatible con una afirmación sobre la moda de un conjunto de datos.",
-      "justificacion_correcta": "El material que más se repite (la moda) tiene que ser el cartón. En la tabla B el cartón registra la frecuencia más alta \\((34)\\) y ningún otro material la alcanza, así que es la única tabla compatible con lo que observó el comité.",
+      "justificacion_correcta": "El material que más se repite (la moda) tiene que ser el cartón. En la tabla «Material Depósitos Vidrio 21 Cartón 34 Latas 13 Plástico 9» el cartón registra la frecuencia más alta \\((34)\\) y ningún otro material la alcanza, así que es la única tabla compatible con lo que observó el comité.",
       "opciones_incorrectas": {
         "A": "El cartón figura arriba en la lista, pero la frecuencia mayor es la del plástico \\((37)\\); además vidrio y latas empatan, lo que tampoco corresponde al conteo descrito.",
         "B": "Las columnas están ordenadas de menor a mayor y el cartón aparece de último, pero la frecuencia más alta sigue siendo la del vidrio \\((37)\\): el orden de las columnas no define la moda.",
@@ -264,10 +264,10 @@
       "numero": 9,
       "enunciado": "<p>El distintivo del club de ajedrez del barrio es el de la figura. Para la vitrina se mandó a imprimir una ficha con ese distintivo, pero al montarla en el soporte quedó <b>de cabeza</b>, es decir, girada <b>media vuelta</b> \\((180^\\circ)\\).</p>[[IMG]]<p>¿Cuál de las imágenes muestra la ficha tal como quedó en la vitrina?</p>",
       "opciones": {
-        "A": "Imagen A.",
-        "B": "Imagen B.",
-        "C": "Imagen C.",
-        "D": "Imagen D."
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
       },
       "clave": "B",
       "competencia": "b",
@@ -277,7 +277,7 @@
       "dificultad": "MEDIA",
       "estandar": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
       "que_evalua": "La capacidad para predecir el resultado de aplicar una rotación de media vuelta a una figura y distinguirlo de una reflexión o de una copia deformada.",
-      "justificacion_correcta": "Un giro de media vuelta produce una figura congruente con la de partida: conserva el tamaño y la forma, y solo cambia la orientación. En la imagen B el contorno aparece invertido punto por punto (lo que estaba arriba quedó abajo y lo de la derecha quedó a la izquierda) y la pieza también quedó de cabeza, que es justo lo que ocurre al girar \\(180^\\circ\\).",
+      "justificacion_correcta": "Un giro de media vuelta produce una figura congruente con la de partida: conserva el tamaño y la forma, y solo cambia la orientación. En la imagen «Imagen B» el contorno aparece invertido punto por punto (lo que estaba arriba quedó abajo y lo de la derecha quedó a la izquierda) y la pieza también quedó de cabeza, que es justo lo que ocurre al girar \\(180^\\circ\\).",
       "opciones_incorrectas": {
         "A": "Corresponde a un reflejo, como en un espejo, y no a un giro: aunque la pieza aparece invertida, los cortes del contorno quedaron en el costado equivocado.",
         "D": "La pieza sigue de pie, en la misma posición del original, y lo único que cambió de lado fue el corte en V del borde: en un giro de media vuelta la pieza también tiene que quedar invertida."
@@ -308,7 +308,7 @@
       "dificultad": "MEDIA",
       "estandar": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
       "que_evalua": "La capacidad para aplicar una reflexión sobre un eje vertical a una figura irregular y distinguirla de una traslación o de una copia deformada.",
-      "justificacion_correcta": "En una reflexión cada punto pasa al otro lado del eje a la misma distancia: la mitad nueva conserva el tamaño y la forma, pero queda con la <b>orientación invertida</b> (lo que apuntaba a la izquierda apunta ahora a la derecha) y el punto del ojo aparece a la misma altura, a igual distancia de la línea. La opción C cumple las tres condiciones a la vez.",
+      "justificacion_correcta": "En una reflexión cada punto pasa al otro lado del eje a la misma distancia: la mitad nueva conserva el tamaño y la forma, pero queda con la <b>orientación invertida</b> (lo que apuntaba a la izquierda apunta ahora a la derecha) y el punto del ojo aparece a la misma altura, a igual distancia de la línea.  cumple las tres condiciones a la vez.",
       "opciones_incorrectas": {
         "A": "Copia la mitad y la <b>traslada</b> hacia la derecha sin voltearla: la parte nueva conserva la misma orientación, así que es una traslación y no una reflexión.",
         "B": "Voltea la mitad respecto a un eje <b>horizontal</b>, de arriba abajo, en lugar de hacerlo respecto a la línea vertical: el saliente y el punto quedan a una altura distinta.",
@@ -570,7 +570,7 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco la relación entre un conjunto de datos y su representación.",
       "que_evalua": "La capacidad para reconocer qué gráfica de barras conserva toda la información de una tabla de doble entrada, sin perder ninguna de sus series.",
-      "justificacion_correcta": "La gráfica debe traer, en cada etapa, una barra de hombres y otra de mujeres con las alturas exactas de la tabla: \\(40\\) y \\(55\\) en niños, \\(80\\) y \\(30\\) en jóvenes, \\(10\\) y \\(20\\) en adultos. La gráfica B es la única que dibuja las dos series con esos valores.",
+      "justificacion_correcta": "La gráfica debe traer, en cada etapa, una barra de hombres y otra de mujeres con las alturas exactas de la tabla: \\(40\\) y \\(55\\) en niños, \\(80\\) y \\(30\\) en jóvenes, \\(10\\) y \\(20\\) en adultos.  es la única que dibuja las dos series con esos valores.",
       "opciones_incorrectas": {
         "A": "Repite los datos de los hombres en las dos barras de cada etapa \\((40\\) y \\(40\\); \\(80\\) y \\(80\\); \\(10\\) y \\(10)\\), de modo que la información de las mujeres desaparece.",
         "C": "Hace lo contrario: dibuja los datos de las mujeres en las dos barras \\((55\\), \\(30\\) y \\(20)\\) y deja por fuera a los hombres.",
