@@ -12,7 +12,7 @@
 import {
   promedioGrupo, correctasPorPreguntaGrupo,
   logroPorCompetencia, logroPorAfirmacion, logroPorEvidencia, logroPorCMC, logroPorDimensionSecundaria,
-  calcularNivel, logroGrupoPor
+  calcularNivel, logroGrupoPor, aciertosDe
 } from './calculo.js';
 import { configArea, tieneDimensionSecundaria, ordenCategoriasDim } from './area-config.js';
 // Capa ADITIVA por grado: lectura SINCRONA desde cache (el bootstrap precarga el JSON).
@@ -396,7 +396,7 @@ export function histogramaPuntajes(aplicaciones) {
 export function matrizHeatmap(aplicaciones, cuadernillo) {
   const n = cuadernillo.preguntas.length;
   const filas = [...aplicaciones].sort((a, b) => a.estudiante_nombre.localeCompare(b.estudiante_nombre));
-  const matriz = filas.map(a => (a.aciertos_por_pregunta || new Array(n).fill(0)).slice(0, n));
+  const matriz = filas.map(a => (aciertosDe(a, cuadernillo).length ? aciertosDe(a, cuadernillo) : new Array(n).fill(0)).slice(0, n));
   const detalles = filas.map(a => {
     return cuadernillo.preguntas.map(p => {
       const resp = (a.respuestas || []).find(r => r.pregunta_id === p.id);
@@ -426,7 +426,7 @@ export function estudiantesEnRiesgo(aplicaciones, cuadernillo) {
   return aplicaciones
     .filter(a => a.nivel === 'BAJO')
     .map(a => {
-      const log = logroPorCompetencia(a.aciertos_por_pregunta || [], cuadernillo);
+      const log = logroPorCompetencia(a, cuadernillo);
       const minComp = Object.keys(log).reduce((acc, k) => log[k] <= log[acc] ? k : acc, Object.keys(log)[0]);
       const nombreComp = cuadernillo.competencias[minComp] || minComp;
       let estrategias = estrategiasPorCompetencia(cuadernillo, minComp);
@@ -489,8 +489,8 @@ export function comparativoIndividual(aplicacionEstudiante, aplicacionesGrupo, c
   // logroPorDimensionSecundaria; si no (LC, SC) cae a un objeto vacío.
   const _hayDim2Cmp = tieneDimensionSecundaria(cuadernillo);
   const grupoLogDim2 = _hayDim2Cmp ? logroGrupoPor(logroPorDimensionSecundaria, aplicacionesGrupo, cuadernillo) : {};
-  const indLogComp = logroPorCompetencia(aplicacionEstudiante.aciertos_por_pregunta || [], cuadernillo);
-  const indLogDim2 = _hayDim2Cmp ? logroPorDimensionSecundaria(aplicacionEstudiante.aciertos_por_pregunta || [], cuadernillo) : {};
+  const indLogComp = logroPorCompetencia(aplicacionEstudiante, cuadernillo);
+  const indLogDim2 = _hayDim2Cmp ? logroPorDimensionSecundaria(aplicacionEstudiante, cuadernillo) : {};
   const delta = (ind, grp) => {
     const out = {};
     for (const k of Object.keys(grp)) {
@@ -742,7 +742,7 @@ export function tasaPorDificultad(aplicaciones, cuadernillo) {
     for (const a of aplicaciones) {
       const idx = cuadernillo.preguntas.indexOf(p);
       out[dif].total++;
-      if ((a.aciertos_por_pregunta || [])[idx] === 1) out[dif].aciertos++;
+      if (aciertosDe(a, cuadernillo)[idx] === 1) out[dif].aciertos++;
     }
   }
   const r = {};
@@ -769,8 +769,8 @@ export function discriminacionPorPregunta(aplicaciones, cuadernillo) {
   const sup = ordenadas.slice(0, t);
   const inf = ordenadas.slice(-t);
   return cuadernillo.preguntas.map((p, idx) => {
-    const aSup = sup.filter(a => (a.aciertos_por_pregunta || [])[idx] === 1).length;
-    const aInf = inf.filter(a => (a.aciertos_por_pregunta || [])[idx] === 1).length;
+    const aSup = sup.filter(a => aciertosDe(a, cuadernillo)[idx] === 1).length;
+    const aInf = inf.filter(a => aciertosDe(a, cuadernillo)[idx] === 1).length;
     return Math.round(((aSup - aInf) / t) * 100);
   });
 }
@@ -821,7 +821,7 @@ export function indiceDificultadPorPregunta(aplicaciones, cuadernillo) {
   const n = aplicaciones.length;
   if (!n) return cuadernillo.preguntas.map(() => 0);
   return cuadernillo.preguntas.map((p, idx) => {
-    const aciertos = aplicaciones.filter(a => (a.aciertos_por_pregunta || [])[idx] === 1).length;
+    const aciertos = aplicaciones.filter(a => aciertosDe(a, cuadernillo)[idx] === 1).length;
     return Math.round((aciertos / n) * 100) / 100;
   });
 }
@@ -839,8 +839,8 @@ export function correlacionPuntoBiserial(aplicaciones, cuadernillo) {
   const sd = desviacionEstandar(puntajesTotal);
   if (sd === 0) return cuadernillo.preguntas.map(() => 0);
   return cuadernillo.preguntas.map((p, idx) => {
-    const acertados = aplicaciones.filter(a => (a.aciertos_por_pregunta || [])[idx] === 1);
-    const no_acertados = aplicaciones.filter(a => (a.aciertos_por_pregunta || [])[idx] !== 1);
+    const acertados = aplicaciones.filter(a => aciertosDe(a, cuadernillo)[idx] === 1);
+    const no_acertados = aplicaciones.filter(a => aciertosDe(a, cuadernillo)[idx] !== 1);
     if (!acertados.length || !no_acertados.length) return 0;
     const mA = acertados.reduce((s, a) => s + (a.puntaje || 0), 0) / acertados.length;
     const p_val = acertados.length / n;

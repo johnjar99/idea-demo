@@ -7,7 +7,7 @@
 
 import {
   logroPorCompetencia, logroPorAfirmacion, logroPorEvidencia, logroPorCMC, logroPorDimensionSecundaria,
-  promedioGrupo, correctasPorPreguntaGrupo, logroGrupoPor
+  promedioGrupo, correctasPorPreguntaGrupo, logroGrupoPor, aciertosDe
 } from './calculo.js';
 import { conclusionesProfundas, estudiantesEnRiesgo } from './analisis.js';
 import { configArea, tieneDimensionSecundaria, valorDimSecundaria, ordenCategoriasDim, etiquetasMarco, panelesVisibles, codigoAfirmacion, semaforoDesempeno } from './area-config.js';
@@ -174,7 +174,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   cuadernillo.preguntas.forEach((p, i) => {
     const r = aplicacion.respuestas.find(x => x.pregunta_id === p.id);
     const elegida = r?.opcion_elegida_real || 'N/D';
-    const acierto = aplicacion.aciertos_por_pregunta[i] === 1;
+    const acierto = aciertosDe(aplicacion, cuadernillo)[i] === 1;
     const row = wsD.addRow([
       p.numero, p.id, p.que_evalua.replace(/\$[^$]*\$/g, '[fórmula]'),
       p.competencia, p.afirmacion, p.evidencia, (_hayDim2R ? (valorDimSecundaria(p, cuadernillo) || '') : ''), p.dificultad,
@@ -196,7 +196,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   const _ETxlsR = etiquetasMarco(cuadernillo);
   const _PVxlsR = panelesVisibles(cuadernillo);
   if (_PVxlsR.competencia !== false) {
-    const lc = logroPorCompetencia(aplicacion.aciertos_por_pregunta, cuadernillo);
+    const lc = logroPorCompetencia(aplicacion, cuadernillo);
     Object.keys(lc).forEach(k => {
       const r = wsC.addRow([_ETxlsR.competencia_singular, `${k}. ${cuadernillo.competencias[k] || k}`, lc[k]]);
       r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(9); c.alignment = alignCenter; });
@@ -206,14 +206,14 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   // logroPorAfirmacion ya filtra implícitamente las que tienen preguntas
   // (Object.keys del resultado solo incluye claves con totales > 0).
   if (_PVxlsR.afirmacion !== false) {
-    const la = logroPorAfirmacion(aplicacion.aciertos_por_pregunta, cuadernillo);
+    const la = logroPorAfirmacion(aplicacion, cuadernillo);
     Object.keys(la).sort((a,b)=>+a-+b).forEach(k => {
       const r = wsC.addRow([_ETxlsR.afirmacion_singular, `${_ETxlsR.afirmacion_codigo} ${codigoAfirmacion(cuadernillo, k)}`, la[k]]);
       r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(9); });
     });
   }
   if (_PVxlsR.evidencia !== false) {
-    const le = logroPorEvidencia(aplicacion.aciertos_por_pregunta, cuadernillo);
+    const le = logroPorEvidencia(aplicacion, cuadernillo);
     Object.keys(le).sort().forEach(k => {
       const r = wsC.addRow([_ETxlsR.evidencia_singular, k, le[k]]);
       r.eachCell({ includeEmpty: true }, c => { c.border = borderThin; c.font = fontNormal(9); });
@@ -221,7 +221,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   }
   // Dimensión secundaria del área (CMC en MAT, Componente en CN, MCER en Inglés, omitida en LC/SC)
   if (tieneDimensionSecundaria(cuadernillo)) {
-    const _lDim2 = logroPorDimensionSecundaria(aplicacion.aciertos_por_pregunta, cuadernillo);
+    const _lDim2 = logroPorDimensionSecundaria(aplicacion, cuadernillo);
     const _etDim2 = configArea(cuadernillo).dimension_secundaria.etiqueta_corta;
     Object.keys(_lDim2).forEach(k => {
       const r = wsC.addRow([_etDim2, k, _lDim2[k]]);
@@ -452,7 +452,7 @@ export async function exportarReporteGrupoExcel(aplicaciones, cuadernillo, conte
     // Celdas de respuesta verde/rojo
     cuadernillo.preguntas.forEach((p, idx) => {
       const col = 6 + idx;
-      const acierto = a.aciertos_por_pregunta[idx] === 1;
+      const acierto = aciertosDe(a, cuadernillo)[idx] === 1;
       const celda = row.getCell(col);
       celda.fill = fillSolid(acierto ? COLOR.verdeAcierto : COLOR.rojoError);
       celda.font = fontBold(9, acierto ? COLOR.alto : COLOR.bajo);

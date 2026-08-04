@@ -50,12 +50,59 @@ export function calcularResultados(aplicacion, cuadernillo) {
 }
 
 /**
+ * Realinea los aciertos con el ORDEN ACTUAL del cuadernillo.
+ *
+ * El problema que resuelve. `aciertos_por_pregunta` se guarda POR POSICIÓN, y todas las funciones
+ * de logro recorren `cuadernillo.preguntas` por índice. Mientras el cuadernillo no se toque eso
+ * funciona; pero si alguna vez se reordenan las preguntas (el des-EPA estructural lo hace a
+ * propósito, para que nuestro cuadernillo no vaya en el orden del original), la posición i deja de
+ * apuntar a la misma pregunta y los aciertos ya registrados se le atribuirían a la afirmación
+ * equivocada. El puntaje no cambia, pero sí el desglose que alimentan el panel docente, el plan de
+ * mejora, los descargables y el diagnóstico de Sabio.
+ *
+ * Lo que hace. Si la aplicación conserva sus `respuestas` (que llevan `pregunta_id`), reconstruye
+ * el arreglo contra el orden actual emparejando por identificador, que es lo único estable. Si no
+ * las conserva (aplicaciones antiguas), devuelve el arreglo guardado tal cual, que es lo mejor
+ * disponible.
+ *
+ * Acepta también un arreglo directamente, para no romper las llamadas que ya lo pasaban.
+ *
+ * @param {Object|number[]} aplicacion aplicación completa, o el arreglo de aciertos
+ * @param {Cuadernillo} cuadernillo
+ * @returns {number[]} binario, en el orden actual del cuadernillo
+ */
+const _cacheAciertos = new WeakMap();
+
+export function aciertosDe(aplicacion, cuadernillo) {
+  if (Array.isArray(aplicacion)) return aplicacion;
+  if (!aplicacion || typeof aplicacion !== 'object') return [];
+  const preguntas = (cuadernillo && cuadernillo.preguntas) || [];
+  const respuestas = aplicacion.respuestas;
+  if (!Array.isArray(respuestas) || !respuestas.length || !preguntas.length) {
+    return aplicacion.aciertos_por_pregunta || [];
+  }
+  // La caché se indexa por la IDENTIDAD del objeto cuadernillo, no por su id: dos versiones del
+  // mismo cuadernillo comparten id y longitud, y usar eso como llave devolvía el arreglo de la
+  // otra versión. Es exactamente el error que buscamos evitar, cometido dentro del arreglo.
+  let porCuadernillo = _cacheAciertos.get(aplicacion);
+  if (!porCuadernillo) { porCuadernillo = new WeakMap(); _cacheAciertos.set(aplicacion, porCuadernillo); }
+  if (porCuadernillo.has(cuadernillo)) return porCuadernillo.get(cuadernillo);
+
+  const elegidaPorId = new Map();
+  for (const r of respuestas) elegidaPorId.set(r.pregunta_id, r.opcion_elegida_real);
+  const out = preguntas.map(p => (elegidaPorId.get(p.id) === p.clave ? 1 : 0));
+  porCuadernillo.set(cuadernillo, out);
+  return out;
+}
+
+/**
  * Calcula porcentajes de logro por competencia.
- * @param {number[]} aciertos array binario en orden original
+ * @param {Object|number[]} aciertos aplicación completa (preferido) o arreglo binario
  * @param {Cuadernillo} cuadernillo
  * @returns {Object} { 'a': 65, 'b': 50, 'c': 80 }
  */
-export function logroPorCompetencia(aciertos, cuadernillo) {
+export function logroPorCompetencia(entrada, cuadernillo) {
+  const aciertos = aciertosDe(entrada, cuadernillo);
   const totales = {};
   const correctas = {};
   cuadernillo.preguntas.forEach((p, i) => {
@@ -69,7 +116,8 @@ export function logroPorCompetencia(aciertos, cuadernillo) {
   return resultado;
 }
 
-export function logroPorAfirmacion(aciertos, cuadernillo) {
+export function logroPorAfirmacion(entrada, cuadernillo) {
+  const aciertos = aciertosDe(entrada, cuadernillo);
   const totales = {};
   const correctas = {};
   cuadernillo.preguntas.forEach((p, i) => {
@@ -82,7 +130,8 @@ export function logroPorAfirmacion(aciertos, cuadernillo) {
   return r;
 }
 
-export function logroPorEvidencia(aciertos, cuadernillo) {
+export function logroPorEvidencia(entrada, cuadernillo) {
+  const aciertos = aciertosDe(entrada, cuadernillo);
   const totales = {};
   const correctas = {};
   cuadernillo.preguntas.forEach((p, i) => {
@@ -100,7 +149,8 @@ export function logroPorEvidencia(aciertos, cuadernillo) {
  * area-config.js. Compatibilidad: la versión legacy logroPorCMC sigue funcionando
  * leyendo p.cmc directamente.
  */
-export function logroPorDimensionSecundaria(aciertos, cuadernillo) {
+export function logroPorDimensionSecundaria(entrada, cuadernillo) {
+  const aciertos = aciertosDe(entrada, cuadernillo);
   // Determinar el campo a leer: cmc, componente o nivel_mcer.
   // Sin import dinámico para no introducir dependencia circular:
   // resolvemos inline con prioridad cmc → componente → nivel_mcer.
@@ -125,7 +175,8 @@ export function logroPorDimensionSecundaria(aciertos, cuadernillo) {
  * Si una pregunta no tiene `cmc` se usa `componente` como fallback (CN duplica
  * ambos campos con el mismo valor).
  */
-export function logroPorCMC(aciertos, cuadernillo) {
+export function logroPorCMC(entrada, cuadernillo) {
+  const aciertos = aciertosDe(entrada, cuadernillo);
   const totales = {};
   const correctas = {};
   cuadernillo.preguntas.forEach((p, i) => {
@@ -155,8 +206,9 @@ export function correctasPorPreguntaGrupo(aplicaciones, cuadernillo) {
   const n = cuadernillo.preguntas.length;
   const t = new Array(n).fill(0);
   for (const a of aplicaciones) {
-    if (!a.aciertos_por_pregunta) continue;
-    for (let i = 0; i < n; i++) t[i] += (a.aciertos_por_pregunta[i] || 0);
+    const ac = aciertosDe(a, cuadernillo);
+    if (!ac.length) continue;
+    for (let i = 0; i < n; i++) t[i] += (ac[i] || 0);
   }
   return t;
 }
@@ -168,7 +220,8 @@ export function logroGrupoPor(funcionLogro, aplicaciones, cuadernillo) {
   if (!aplicaciones.length) return {};
   const acumulado = {};
   for (const a of aplicaciones) {
-    const r = funcionLogro(a.aciertos_por_pregunta || [], cuadernillo);
+    // se pasa la aplicación completa, no su arreglo: aciertosDe la realinea con el orden actual
+    const r = funcionLogro(a, cuadernillo);
     for (const k of Object.keys(r)) {
       acumulado[k] = (acumulado[k] || []).concat(r[k]);
     }

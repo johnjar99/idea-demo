@@ -161,7 +161,7 @@
     import './js/guia-sabio.js';
     import { requerirSesion, cerrarSesion } from './js/auth.js';
     import { donutAciertos, barrasHorizontalesLogro, lineaEvolucion } from './js/graficos.js';
-    import { logroPorCompetencia, COLOR_NIVEL } from './js/calculo.js';
+    import { logroPorCompetencia, COLOR_NIVEL, aciertosDe } from './js/calculo.js';
     import { etiquetasMarco } from './js/area-config.js';
     import { formatDateTime, escapeHtml, segundosAReloj, toast, renderMath } from './js/utils.js';
     import { srcImagenPregunta, onerrorPlaceholder, srcLiviano, onerrorLiviano } from './js/extractor-imagenes.js';
@@ -283,7 +283,7 @@
     })().catch(e => console.warn('[resultado] comparativos:', e));
 
     // === Tus 3 fortalezas y oportunidades específicas ===
-    const aciertos = aplicacion.aciertos_por_pregunta || [];
+    const aciertos = aciertosDe(aplicacion, cuadernillo);
     const fortPreg = cuadernillo.preguntas
       .map((p, i) => ({ p, acertada: aciertos[i] === 1 }))
       .filter(x => x.acertada)
@@ -320,7 +320,7 @@
     // guía de orientación ICFES. Si no hay match exacto se cae a un set genérico
     // del área. Nunca aparecen recursos de Matemáticas en un informe de Lectura
     // Crítica (ni viceversa).
-    const logroPorComp = logroPorCompetencia(aplicacion.aciertos_por_pregunta || [], cuadernillo);
+    const logroPorComp = logroPorCompetencia(aplicacion, cuadernillo);
     const compDebil = Object.keys(logroPorComp).reduce((a, b) => logroPorComp[a] <= logroPorComp[b] ? a : b);
     // El campo `area` cambia de nombre segun la banda de grados ("Lenguaje",
     // "Competencias Comunicativas en Lenguaje: Lectura", "Lectura Critica"...), asi que NO se
@@ -484,7 +484,7 @@
     })().catch(e => console.warn('[resultado] disclaimer:', e));
 
     // Barras competencias
-    const logroComp = logroPorCompetencia(aplicacion.aciertos_por_pregunta || [], cuadernillo);
+    const logroComp = logroPorCompetencia(aplicacion, cuadernillo);
     const etiquetasComp = {};
     for (const k of Object.keys(cuadernillo.competencias)) etiquetasComp[k] = `${k}. ${cuadernillo.competencias[k]}`;
     barrasHorizontalesLogro(document.getElementById('barras-competencias'), logroComp, {
@@ -544,7 +544,7 @@
     // Grid de preguntas - tooltip con competencia (post-prueba, modo review)
     const grid = document.getElementById('grid-preguntas');
     cuadernillo.preguntas.forEach((preg, i) => {
-      const acierto = aplicacion.aciertos_por_pregunta[i] === 1;
+      const acierto = aciertosDe(aplicacion, cuadernillo)[i] === 1;
       const b = document.createElement('button');
       b.className = `aspect-square rounded-lg font-bold text-sm transition border-2 ${acierto ? 'bg-emerald-100 border-emerald-500 text-emerald-700' : 'bg-red-100 border-red-500 text-red-700'} hover:scale-105`;
       b.textContent = preg.numero;

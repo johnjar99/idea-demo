@@ -645,7 +645,8 @@
     import { barrasHorizontalesLogro, lineaEvolucion, barrasAgrupadas, PALETA } from './js/graficos.js';
     import {
       logroGrupoPor, logroPorCompetencia, logroPorAfirmacion, logroPorEvidencia, logroPorCMC, logroPorDimensionSecundaria,
-      promedioGrupo, correctasPorPreguntaGrupo, generarConclusiones, calcularNivel, COLOR_NIVEL
+      promedioGrupo, correctasPorPreguntaGrupo, generarConclusiones, calcularNivel, COLOR_NIVEL,
+      aciertosDe
     } from './js/calculo.js';
     import { configArea, tieneDimensionSecundaria, ordenCategoriasDim, valorDimSecundaria, etiquetasMarco, panelesVisibles, codigoAfirmacion, semaforoDesempeno, SEMAFORO_CORTES } from './js/area-config.js';
     import { exportarReporteGrupoExcel } from './js/export-excel.js';
@@ -1629,7 +1630,7 @@
         for (let q = 0; q < nPregs; q++) {
           const r = a.respuestas.find(x => x.pregunta_id === cuadActual.preguntas[q].id);
           const elegida = r?.opcion_elegida_real || '';
-          const acertada = a.aciertos_por_pregunta[q] === 1;
+          const acertada = aciertosDe(a, cuadActual)[q] === 1;
           html += `<td class="${elegida ? (acertada ? 'acierto' : 'error') : 'vacio'}">${elegida || 'N/D'}</td>`;
         }
         html += `<td><strong>${a.total_correctas}</strong></td>`;
@@ -2349,7 +2350,7 @@
         // Calcular delta por afirmación cuando aplique (caso Inglés)
         let _bloqueAfir = '';
         if (_usarAfirComoPrincipal) {
-          const _indLogAfir = logroPorAfirmacion(ultimo.aciertos_por_pregunta || [], cuadActual);
+          const _indLogAfir = logroPorAfirmacion(ultimo, cuadActual);
           const _grpLogAfir = logroGrupoPor(logroPorAfirmacion, aplicacionesActuales, cuadActual);
           const _afirsUsadas = new Set((cuadActual.preguntas || []).map(p => String(p.afirmacion)));
           const _keys = Object.keys(_grpLogAfir).filter(k => _afirsUsadas.has(String(k))).sort((a,b)=>+a-+b);
