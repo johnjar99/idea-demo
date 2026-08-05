@@ -142,10 +142,10 @@
       "numero": 4,
       "enunciado": "<p><b>Marcela</b> compró insumos para el club de robótica y recibió esta factura:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descripción</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio unitario</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sensor de distancia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">128.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rollo de filamento</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">45.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">270.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Juego de cables</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">54.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Batería recargable</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">112.000 pesos</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">Precio total de la factura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">564.000 pesos</td></tr></table><p>¿Cuál de las siguientes operaciones es equivalente al valor total de la factura?</p>",
       "opciones": {
-        "A": "\\(4 \\times (\\$54.000) + 6 \\times (\\$60.000)\\)",
-        "B": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\$60.000 + \\$54.000)\\)",
-        "C": "\\((4 + 6) \\times (\\$60.000 + \\$54.000)\\)",
-        "D": "\\(4 \\times (\\$60.000) + 6 \\times (\\$54.000)\\)"
+        "A": "\\(4 \\times (\\\\(54.000) + 6 \\times (\\\\)60.000)\\)",
+        "B": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\\\(60.000 + \\\\)54.000)\\)",
+        "C": "\\((4 + 6) \\times (\\\\(60.000 + \\\\)54.000)\\)",
+        "D": "\\(4 \\times (\\\\(60.000) + 6 \\times (\\\\)54.000)\\)"
       },
       "clave": "D",
       "competencia": "c",
@@ -155,11 +155,11 @@
       "dificultad": "ALTA",
       "estandar": "Justifico procedimientos aritméticos utilizando las relaciones y propiedades de las operaciones.",
       "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales, como la asociativa y la distributiva del producto respecto a la suma.",
-      "justificacion_correcta": "Dos insumos se compraron en cantidad \\(4\\), el sensor a \\(\\$32.000\\) y la batería a \\(\\$28.000\\), y sus precios suman \\(\\$60.000\\); por la propiedad distributiva esa parte de la factura vale \\(4 \\times \\$60.000\\). Los otros dos se compraron en cantidad \\(6\\), el rollo a \\(\\$45.000\\) y el juego de cables a \\(\\$9.000\\), que suman \\(\\$54.000\\), de modo que aportan \\(6 \\times \\$54.000\\). En total \\(4 \\times \\$60.000 + 6 \\times \\$54.000 = \\$240.000 + \\$324.000 = \\$564.000\\), el valor de la factura.",
+      "justificacion_correcta": "Dos insumos se compraron en cantidad \\(4\\), el sensor a \\(\\$32.000\\) y la batería a \\(\\$28.000\\), y sus precios suman \\(\\$60.000\\); por la propiedad distributiva esa parte de la factura vale \\(4 \\times \\$60.000\\). Los otros dos se compraron en cantidad \\(6\\), el rollo a \\(\\$45.000\\) y el juego de cables a \\(\\$9.000\\), que suman \\(\\$54.000\\), de modo que aportan \\(6 \\times \\$54.000\\). En total \\(4 \\times \\\\(60.000 + 6 \\times \\\\)54.000 = \\\\(240.000 + \\\\)324.000 = \\$564.000\\), el valor de la factura.",
       "opciones_incorrectas": {
         "A": "Agrupa bien los precios pero intercambia las cantidades: le aplica \\(4\\) a los insumos que se compraron \\(6\\) veces y al revés, con lo que llega a \\(\\$576.000\\).",
-        "B": "Duplica las cantidades y además le cobra a cada artículo los cuatro precios juntos: \\((8 + 12) \\times \\$114.000 = \\$2.280.000\\).",
-        "C": "Suma primero las cantidades y luego los precios, de modo que cada uno de los \\(10\\) artículos pagaría los cuatro precios: \\(10 \\times \\$114.000 = \\$1.140.000\\)."
+        "B": "Duplica las cantidades y además le cobra a cada artículo los cuatro precios juntos: \\((8 + 12) \\times \\\\(114.000 = \\\\)2.280.000\\).",
+        "C": "Suma primero las cantidades y luego los precios, de modo que cada uno de los \\(10\\) artículos pagaría los cuatro precios: \\(10 \\times \\\\(114.000 = \\\\)1.140.000\\)."
       }
     },
     {
