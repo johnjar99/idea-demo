@@ -744,6 +744,11 @@
       // comportamiento de siempre para quien aún no se ha configurado.
       const gruposAsig = (ses.grupos_asignados || []).map(s => String(s).toUpperCase());
       const areasAsig = ses.asignaciones || [];
+      // SEDE. La Caldera tiene cinco sedes y CADA UNA tiene su propio 3-A. Sin esta condición,
+      // la docente de Campo Alegre y el docente de la sede principal veían exactamente el mismo
+      // grupo de estudiantes, que es justo lo que se reportó. Si el docente no tiene sede
+      // asignada, no se filtra: ve toda su institución, como hasta ahora.
+      const sedeDocente = ses.sede_id || null;
       // Coincide si el área y el grado son suyos y, cuando la asignación declara grupo, también
       // el grupo. Una asignación antigua sin `grupo` vale para todos los grupos de ese grado,
       // que es lo que significaba antes de que existiera esa columna.
@@ -755,7 +760,10 @@
         const grupo = normGrupo(a.grupo);
         const pasaGrupo = gruposAsig.length === 0 || gruposAsig.includes(`${a.grado}-${grupo}`.toUpperCase());
         const pasaArea = areasAsig.length === 0 || dicta(slugDeArea(a.area), a.grado, grupo);
-        return pasaGrupo && pasaArea;
+        // La prueba sin sede no se descarta: hay registros antiguos que no la traen y esconderlos
+        // dejaría al docente sin datos que sí son suyos.
+        const pasaSede = !sedeDocente || !a.sede_id || String(a.sede_id) === String(sedeDocente);
+        return pasaGrupo && pasaArea && pasaSede;
       });
     } else if ((ses.rol === 'directivo' || ses.rol === 'funcionario') && ses.institucion_id) {
       // Directivo o funcionario CON institución asignada: solo su institución.
@@ -2573,6 +2581,7 @@
         const gruposAsig = (ses.grupos_asignados || []).map(s => String(s).toUpperCase());
         candidatos = candidatos.filter(u =>
           u.institucion_id === ses.institucion_id &&
+          (!ses.sede_id || !u.sede_id || String(u.sede_id) === String(ses.sede_id)) &&
           (gruposAsig.length === 0 || gruposAsig.includes(`${u.grado}-${String(u.grupo || '').trim().toUpperCase()}`)));
       } else if (ses.rol === 'directivo') {
         candidatos = candidatos.filter(u => u.institucion_id === ses.institucion_id);
