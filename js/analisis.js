@@ -670,8 +670,22 @@ export function conclusionesProfundas(aplicaciones, cuadernillo) {
     `<p>Como complemento al monitoreo cuantitativo, se sugiere implementar un proceso de evaluación cualitativa mediante observación de aula, ` +
     `revisión de portafolios y entrevistas semiestructuradas con los estudiantes en riesgo, con el fin de identificar factores asociados al desempeño ` +
     `que el instrumento estandarizado no captura por completo. Esta triangulación metodológica fortalece la validez del diagnóstico ` +
-    `y orienta de manera más certera las decisiones pedagógicas. La fórmula utilizada para la proyección agregada es: ` +
-    `$\\text{Índice Global} = \\dfrac{Mat\\cdot 3 + LC\\cdot 3 + Soc\\cdot 3 + CN\\cdot 3 + Ing\\cdot 1}{13} \\Rightarrow \\text{Puntaje SABER} = \\text{Índice Global}\\times 5$.</p>`;
+    `y orienta de manera más certera las decisiones pedagógicas.` +
+    // La fórmula del Índice Global pondera las CINCO áreas de Saber 11. En 3° y 4° solo se evalúan
+    // dos áreas y en 8° cuatro, así que mostrarla ahí induce a error: se reserva para 9° en
+    // adelante. Para la banda de básica va un cierre que habla de la proyección al examen de
+    // Estado sin prometer un cálculo que todavía no puede hacerse.
+    // OJO con el delimitador: se usa \\( \\) y NO $. El $ dejó de ser delimitador de KaTeX el
+    // 3-ago-2026 porque en el contenido se escribe el peso colombiano con ese signo; dejarlo aquí
+    // es lo que hacía salir la fórmula como texto crudo.
+    (Number(cuadernillo.grado) >= 9
+      ? ` La fórmula utilizada para la proyección agregada es: ` +
+        `\\(\\text{Índice Global} = \\dfrac{Mat\\cdot 3 + LC\\cdot 3 + Soc\\cdot 3 + CN\\cdot 3 + Ing\\cdot 1}{13} \\Rightarrow \\text{Puntaje SABER} = \\text{Índice Global}\\times 5\\).</p>`
+      : `</p><p>En este grado la prueba todavía no cubre todas las áreas que evalúa el examen de Estado, ` +
+        `de modo que no corresponde traducir el resultado a un puntaje de Saber 11. Lo que sí procede es leerlo ` +
+        `como una línea de base: los desempeños que se consoliden ahora en ${area.toLowerCase()} son los que ` +
+        `sostendrán el trabajo de los grados siguientes, y es en esa continuidad, y no en una cifra proyectada, ` +
+        `donde se juega el resultado del examen al terminar el bachillerato.</p>`);
 
   // === Capa POR GRADO (aditiva): interpretaciones especificas del grado ===
   // Si existe pedagogia[area_slug][grado].interpretaciones, sus textos *_extra se

@@ -1823,7 +1823,11 @@
         if (imgPath) {
           contenidoOpcion = `<img src="${imgPath}" alt="Opción ${k}" style="max-width:100%; max-height:180px; display:block; margin:6px 0">`;
         } else {
-          contenidoOpcion = `<span style="font-size:14px">${escapeHtml(textoOpcion)}</span>`;
+          // NO se escapa: las opciones del banco son HTML de autoría propia (tablas de datos,
+          // negritas, fórmulas). Al escaparlas, una opción que es una tabla se veía como código
+          // fuente en pantalla. El enunciado, dos líneas más abajo, siempre se insertó sin
+          // escapar; esto solo lo pone de acuerdo. No hay entrada de usuario en este campo.
+          contenidoOpcion = `<span style="font-size:14px">${textoOpcion}</span>`;
         }
         opcionesHTML += `
           <div style="display:flex; gap:12px; align-items:flex-start; padding:12px 14px; background:${esCorrecta ? '#ECFDF5' : '#FAFAFA'}; border:2px solid ${esCorrecta ? '#10B981' : '#E5E7EB'}; border-radius:12px; margin-bottom:10px;">
