@@ -6,6 +6,11 @@
 //
 // Requiere pdf-lib cargado globalmente (window.PDFLib), pdf-lib@1.17 via CDN.
 
+// normPeriodo / romanoPeriodo: el nombre del archivo y la portada imprimian `P${periodo}` en
+// crudo, asi que un cuadernillo con periodo "III" salia como "PIII" y uno con "I" como "PI". El
+// numero va en arabigo en el nombre del archivo (P1/P2/P3) y en romano en la portada.
+import { normPeriodo, romanoPeriodo } from './filtros-navegacion.js';
+
 function urlPdfOriginal(cuadernillo) {
   if (!cuadernillo || !cuadernillo.id) return null;
   return `assets/cuadernillos-pdf/${cuadernillo.id}.pdf`;
@@ -53,7 +58,7 @@ async function descargarPdfDirecto(cuadernillo, url) {
     throw new Error(`No se encontró el cuadernillo en ${url}.`);
   }
   const blob = await res.blob();
-  const nombre = `IDEA_Cuadernillo_${(cuadernillo.area || 'area').replace(/\s+/g, '_')}_${cuadernillo.grado || ''}-P${cuadernillo.periodo || ''}.pdf`;
+  const nombre = `IDEA_Cuadernillo_${(cuadernillo.area || 'area').replace(/\s+/g, '_')}_${cuadernillo.grado || ''}-P${normPeriodo(cuadernillo.periodo) || ''}.pdf`;
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
   link.download = nombre;
@@ -95,7 +100,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
   const pdfOrig = await PDFDocument.load(bytesOriginal);
   const pdfOut = await PDFDocument.create();
 
-  pdfOut.setTitle(`IDEA · Cuadernillo ${cuadernillo.area} ${cuadernillo.grado}° P${cuadernillo.periodo}`);
+  pdfOut.setTitle(`IDEA · Cuadernillo ${cuadernillo.area} ${cuadernillo.grado}° P${normPeriodo(cuadernillo.periodo)}`);
   pdfOut.setAuthor('Plataforma IDEA');
   pdfOut.setSubject(`Prueba diagnóstica · ${cuadernillo.area} · Grado ${cuadernillo.grado}°`);
   pdfOut.setCreator('Plataforma IDEA · exportar cuadernillo');
@@ -145,7 +150,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
   textoCentrado(portada, cuadernillo.area || 'Cuadernillo', 180, { font: fontBold, size: 32, color: cNegro });
 
   // Subtítulo: grado + periodo
-  textoCentrado(portada, `Grado ${cuadernillo.grado || ''}° · Período ${cuadernillo.periodo || ''}`, 215, { font: fontReg, size: 16, color: cRojo });
+  textoCentrado(portada, `Grado ${cuadernillo.grado || ''}° · Período ${romanoPeriodo(cuadernillo.periodo) || ''}`, 215, { font: fontReg, size: 16, color: cRojo });
 
   // Línea divisoria dorada
   portada.drawRectangle({ x: pW/2 - 80, y: pH - 240, width: 160, height: 1.5, color: cDorado });
@@ -291,7 +296,7 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
   // ============= SERIALIZAR + DESCARGAR =============
   const pdfBytes = await pdfOut.save();
   const blob = new Blob([pdfBytes], { type: 'application/pdf' });
-  const nombre = `IDEA_Cuadernillo_${(cuadernillo.area || 'area').replace(/\s+/g, '_')}_${cuadernillo.grado || ''}-P${cuadernillo.periodo || ''}.pdf`;
+  const nombre = `IDEA_Cuadernillo_${(cuadernillo.area || 'area').replace(/\s+/g, '_')}_${cuadernillo.grado || ''}-P${normPeriodo(cuadernillo.periodo) || ''}.pdf`;
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
   link.download = nombre;

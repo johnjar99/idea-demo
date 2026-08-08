@@ -15,23 +15,35 @@
 // =============================================================================
 
 /**
- * Normaliza un periodo a "1" | "2" | "3".
- * Acepta "1"/"I", "2"/"II", "3"/"III" (con o sin espacios, mayúsc/minúsc).
+ * Normaliza un periodo a "1" | "2" | "3". ESTA es la única función de normalización de periodo
+ * que deben usar los paneles: si cada pantalla se inventa la suya, un periodo escrito de otra
+ * forma se agrupa aparte y su promedio desaparece en N/D (ya pasó con la tendencia del docente).
+ *
+ * Acepta, sin distinguir mayúsculas ni espacios:
+ *   "1" / "I",  "2" / "II",  "3" / "III"
+ *   "p1" / "P2" / "p3"            (como en los ids de cuadernillo)
+ *   "Período I" / "Periodo 2"     (con o sin tilde, prefijo suelto)
  * Cualquier otro valor se devuelve como String(p) sin tocar (no rompe).
  */
 export function normPeriodo(p) {
-  const s = String(p ?? '').trim().toUpperCase();
+  let s = String(p ?? '').trim().toUpperCase();
+  // Quita el prefijo: "PERÍODO ", "PERIODO ", o la "P" pegada de "P1"/"PIII".
+  s = s.replace(/^PER[IÍ]ODO\s*/, '').replace(/^P(?=[0-9IV])/, '').trim();
   if (s === '1' || s === 'I')   return '1';
   if (s === '2' || s === 'II')  return '2';
   if (s === '3' || s === 'III') return '3';
   return String(p ?? '');
 }
 
+/** Romano del periodo: "I" | "II" | "III". Si no se reconoce, devuelve lo normalizado tal cual. */
+export function romanoPeriodo(p) {
+  const n = normPeriodo(p);
+  return { '1': 'I', '2': 'II', '3': 'III' }[n] || n;
+}
+
 /** Etiqueta legible de un periodo: "Periodo I" | "Periodo II" | "Periodo III". */
 export function etiquetaPeriodo(p) {
-  const n = normPeriodo(p);
-  const rom = { '1': 'I', '2': 'II', '3': 'III' }[n] || n;
-  return `Periodo ${rom}`;
+  return `Periodo ${romanoPeriodo(p)}`;
 }
 
 // Sentinela de "sin filtro". Si un <select> tiene este value (o vacío), pasa todo.

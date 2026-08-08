@@ -124,7 +124,7 @@
       "dificultad": "MEDIA",
       "estandar": "Describo y represento situaciones de variación relacionando diferentes representaciones (diagramas, expresiones verbales generalizadas y tablas).",
       "que_evalua": "La capacidad para reconocer y representar relaciones lineales.",
-      "justificacion_correcta": "Cada vez que se agrega una máquina, el número de zapatos aumenta \\(2\\) (de \\(4\\) a \\(6\\), a \\(8\\), \\(\\dots\\)); el aumento es constante, así que la relación es lineal y los puntos quedan alineados en una recta creciente. La gráfica «Gráfica A» muestra ese comportamiento.",
+      "justificacion_correcta": "Cada vez que se agrega una máquina, el número de zapatos aumenta \\(2\\) (de \\(4\\) a \\(6\\), a \\(8\\), \\(\\dots\\)); el aumento es constante, así que la relación es lineal. Es correcta la gráfica en la que los puntos quedan alineados sobre una recta creciente.",
       "opciones_incorrectas": {
         "A": "Muestra una relación decreciente, como si más máquinas produjeran menos zapatos.",
         "C": "Muestra un crecimiento cada vez más rápido (no constante), que no corresponde a una relación lineal.",
@@ -142,10 +142,10 @@
       "numero": 4,
       "enunciado": "<p><b>Marcela</b> compró insumos para el club de robótica y recibió esta factura:</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Descripción</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio unitario</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio total</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Sensor de distancia</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">32.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">128.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rollo de filamento</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">45.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">270.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Juego de cables</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(6\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">54.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Batería recargable</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">\\(4\\)</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">28.000 pesos</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">112.000 pesos</td></tr><tr><td colspan=\"3\" style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">Precio total de la factura</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center;font-weight:700;color:#A8132F\">564.000 pesos</td></tr></table><p>¿Cuál de las siguientes operaciones es equivalente al valor total de la factura?</p>",
       "opciones": {
-        "A": "\\(4 \\times (\\\\(54.000) + 6 \\times (\\\\)60.000)\\)",
-        "B": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\\\(60.000 + \\\\)54.000)\\)",
-        "C": "\\((4 + 6) \\times (\\\\(60.000 + \\\\)54.000)\\)",
-        "D": "\\(4 \\times (\\\\(60.000) + 6 \\times (\\\\)54.000)\\)"
+        "A": "\\(4 \\times (\\$54.000) + 6 \\times (\\$60.000)\\)",
+        "B": "\\(\\big((4 \\times 2) + (6 \\times 2)\\big) \\times (\\$60.000 + \\$54.000)\\)",
+        "C": "\\((4 + 6) \\times (\\$60.000 + \\$54.000)\\)",
+        "D": "\\(4 \\times (\\$60.000) + 6 \\times (\\$54.000)\\)"
       },
       "clave": "D",
       "competencia": "c",
@@ -155,11 +155,11 @@
       "dificultad": "ALTA",
       "estandar": "Justifico procedimientos aritméticos utilizando las relaciones y propiedades de las operaciones.",
       "que_evalua": "La capacidad para encontrar expresiones aritméticas equivalentes entre sí, usando las propiedades en algunas operaciones con números naturales, como la asociativa y la distributiva del producto respecto a la suma.",
-      "justificacion_correcta": "Dos insumos se compraron en cantidad \\(4\\), el sensor a \\(\\$32.000\\) y la batería a \\(\\$28.000\\), y sus precios suman \\(\\$60.000\\); por la propiedad distributiva esa parte de la factura vale \\(4 \\times \\$60.000\\). Los otros dos se compraron en cantidad \\(6\\), el rollo a \\(\\$45.000\\) y el juego de cables a \\(\\$9.000\\), que suman \\(\\$54.000\\), de modo que aportan \\(6 \\times \\$54.000\\). En total \\(4 \\times \\\\(60.000 + 6 \\times \\\\)54.000 = \\\\(240.000 + \\\\)324.000 = \\$564.000\\), el valor de la factura.",
+      "justificacion_correcta": "Dos insumos se compraron en cantidad \\(4\\), el sensor a \\(\\$32.000\\) y la batería a \\(\\$28.000\\), y sus precios suman \\(\\$60.000\\); por la propiedad distributiva esa parte de la factura vale \\(4 \\times \\$60.000\\). Los otros dos se compraron en cantidad \\(6\\), el rollo a \\(\\$45.000\\) y el juego de cables a \\(\\$9.000\\), que suman \\(\\$54.000\\), de modo que aportan \\(6 \\times \\$54.000\\). En total \\(4 \\times \\$60.000 + 6 \\times \\$54.000 = \\$240.000 + \\$324.000 = \\$564.000\\), el valor de la factura.",
       "opciones_incorrectas": {
         "A": "Agrupa bien los precios pero intercambia las cantidades: le aplica \\(4\\) a los insumos que se compraron \\(6\\) veces y al revés, con lo que llega a \\(\\$576.000\\).",
-        "B": "Duplica las cantidades y además le cobra a cada artículo los cuatro precios juntos: \\((8 + 12) \\times \\\\(114.000 = \\\\)2.280.000\\).",
-        "C": "Suma primero las cantidades y luego los precios, de modo que cada uno de los \\(10\\) artículos pagaría los cuatro precios: \\(10 \\times \\\\(114.000 = \\\\)1.140.000\\)."
+        "B": "Duplica las cantidades y además le cobra a cada artículo los cuatro precios juntos: \\((8 + 12) \\times \\$114.000 = \\$2.280.000\\).",
+        "C": "Suma primero las cantidades y luego los precios, de modo que cada uno de los \\(10\\) artículos pagaría los cuatro precios: \\(10 \\times \\$114.000 = \\$1.140.000\\)."
       }
     },
     {
@@ -281,7 +281,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto, produzco y comparo representaciones gráficas adecuadas para presentar diversos tipos de datos (diagramas de barras, diagramas circulares).",
       "que_evalua": "La capacidad para reconocer información relevante en tablas y construir diagramas de barras.",
-      "justificacion_correcta": "En la tabla, Australia tiene \\(7\\) de oro y \\(12\\) de bronce; Brasil, \\(3\\) de oro y \\(9\\) de bronce; Jamaica, \\(4\\) de oro y \\(4\\) de bronce. El diagrama «Diagrama D» muestra exactamente esas parejas de barras para los tres países pedidos.",
+      "justificacion_correcta": "En la tabla, Australia tiene \\(7\\) de oro y \\(12\\) de bronce; Brasil, \\(3\\) de oro y \\(9\\) de bronce; Jamaica, \\(4\\) de oro y \\(4\\) de bronce. Es correcto el diagrama que muestra exactamente esas parejas de barras para los tres países pedidos.",
       "opciones_incorrectas": {
         "A": "Usa las medallas de oro y de plata (no de bronce) de los tres países correctos.",
         "B": "Toma los países equivocados (Australia, Brasil y Canadá) en lugar de Australia, Brasil y Jamaica.",
@@ -388,7 +388,7 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico características de localización de objetos en sistemas de representación cartesiana y geográfica.",
       "que_evalua": "La capacidad para ubicar puntos en el plano cartesiano y realizar movimientos de estos a través de paralelas y prependiculares del plano.",
-      "justificacion_correcta": "Avanzar hacia el norte sube el punto \\(4\\) unidades sobre el eje vertical y avanzar hacia el oriente lo corre \\(2\\) unidades hacia la derecha sobre el eje horizontal. La gráfica «Gráfica A» es la que ubica el auto en ese punto.",
+      "justificacion_correcta": "Avanzar hacia el norte sube el punto \\(4\\) unidades sobre el eje vertical y avanzar hacia el oriente lo corre \\(2\\) unidades hacia la derecha sobre el eje horizontal. Es correcta la gráfica que ubica el auto en ese punto.",
       "opciones_incorrectas": {
         "A": "Intercambia las direcciones: avanza 4 al oriente y 2 al norte.",
         "B": "Solo aplica el movimiento al norte y olvida el desplazamiento al oriente.",
@@ -420,7 +420,7 @@
       "dificultad": "MEDIA",
       "estandar": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
       "que_evalua": "La capacidad para realizar traslaciones en el plano cartesiano.",
-      "justificacion_correcta": "Al trasladar una figura no cambian ni su forma ni su tamaño: solo cambia su posición. Bajarla \\(3\\) unidades le resta \\(3\\) a cada coordenada vertical y correrla \\(4\\) a la derecha le suma \\(4\\) a cada coordenada horizontal. La gráfica «Gráfica A» es la única donde la pieza conserva su forma y aparece en esa posición.",
+      "justificacion_correcta": "Al trasladar una figura no cambian ni su forma ni su tamaño: solo cambia su posición. Bajarla \\(3\\) unidades le resta \\(3\\) a cada coordenada vertical y correrla \\(4\\) a la derecha le suma \\(4\\) a cada coordenada horizontal. Es correcta la única gráfica en la que la pieza conserva su forma y aparece en esa posición.",
       "opciones_incorrectas": {
         "D": "Hace el segundo movimiento hacia la izquierda y no hacia la derecha.",
         "A": "Corre la pieza a la derecha, pero no la baja las \\(3\\) unidades.",

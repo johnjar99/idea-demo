@@ -241,34 +241,58 @@ function _slugYGrado(cuadernillo) {
   if (esVivoProtegido(cuadernillo)) return { slug: null, grado: null, periodo: null };
   return { slug: areaSlugDeCuadernillo(cuadernillo), grado: cuadernillo.grado, periodo: cuadernillo.periodo };
 }
+// Busca una clave en un diccionario de estrategias TOLERANDO diferencias de mayúsculas y de
+// acentos. Nace de un fallo real y silencioso: `cuadernillo_mat_11_p1` rotula su componente
+// "Álgebra y Cálculo" (C mayúscula) mientras la celda de pedagogía y los cuadernillos de P2 y P3
+// lo escriben "Álgebra y cálculo", así que 7 de sus 20 ítems se quedaban sin estrategia y el
+// panel caía al texto genérico por área sin avisar de nada. Las áreas de Ciencias tienen la
+// misma clase de divergencia de grafía entre periodos. Se resuelve en la lectura, no en el dato:
+// así ninguna diferencia de mayúscula vuelve a apagar la pedagogía de un periodo.
+function _lista(dic, clave) {
+  if (!dic || clave == null) return null;
+  const exacta = dic[clave] ?? dic[String(clave)];
+  if (Array.isArray(exacta) && exacta.length) return exacta;
+  const n = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+  const buscada = n(clave);
+  for (const k of Object.keys(dic)) {
+    if (n(k) === buscada) {
+      const v = dic[k];
+      if (Array.isArray(v) && v.length) return v;
+    }
+  }
+  return null;
+}
 function estrategiasPorCompetencia(cuadernillo, comp) {
   // 1) Capa POR GRADO (aditiva). Si hay celda, manda.
   const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
     const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_competencia', periodo);
-    if (porGrado && porGrado[comp] && porGrado[comp].length) return porGrado[comp];
+    const l = _lista(porGrado, comp);
+    if (l) return l;
   }
   // 2) FALLBACK: contenido por area actual (intacto).
   const set = ESTRATEGIAS_POR_AREA[_areaSlug(cuadernillo)] || ESTRATEGIAS_POR_AREA['matemáticas'];
-  return (set.competencia && set.competencia[comp]) || [];
+  return _lista(set.competencia, comp) || [];
 }
 function estrategiasPorCMC(cuadernillo, cmc) {
   const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
     const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_cmc', periodo);
-    if (porGrado && porGrado[cmc] && porGrado[cmc].length) return porGrado[cmc];
+    const l = _lista(porGrado, cmc);
+    if (l) return l;
   }
   const set = ESTRATEGIAS_POR_AREA[_areaSlug(cuadernillo)] || ESTRATEGIAS_POR_AREA['matemáticas'];
-  return (set.cmc && set.cmc[cmc]) || [];
+  return _lista(set.cmc, cmc) || [];
 }
 function estrategiasPorAfirmacion(cuadernillo, afirmacion) {
   const { slug, grado, periodo } = _slugYGrado(cuadernillo);
   if (slug) {
     const porGrado = pedagogiaDeSync(slug, grado, 'estrategias_por_afirmacion', periodo);
-    if (porGrado && porGrado[String(afirmacion)] && porGrado[String(afirmacion)].length) return porGrado[String(afirmacion)];
+    const l = _lista(porGrado, afirmacion);
+    if (l) return l;
   }
   const set = ESTRATEGIAS_POR_AREA[_areaSlug(cuadernillo)] || ESTRATEGIAS_POR_AREA['matemáticas'];
-  return (set.afirmacion && set.afirmacion[String(afirmacion)]) || [];
+  return _lista(set.afirmacion, afirmacion) || [];
 }
 // Compatibilidad legacy con código que aún importa estos nombres
 const ESTRATEGIAS_POR_COMPETENCIA = ESTRATEGIAS_POR_AREA['matemáticas'].competencia;

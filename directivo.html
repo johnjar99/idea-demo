@@ -173,7 +173,7 @@
     import { escapeHtml, toast } from './js/utils.js';
     import { iniciarTour, debeAutoIniciar, botonAyudaFlotante } from './js/tour.js';
     import { evaluarGrupoExcelencia, generarCertificadoExcelenciaPDF } from './js/certificado.js';
-    import { construirBarraFiltros, normPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
+    import { construirBarraFiltros, normPeriodo, romanoPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
     import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
 
     // Se lanzan las lecturas ANTES de esperar la sesion: restaurar la sesion de Firebase Auth
@@ -420,20 +420,33 @@
     (function renderCertificados() {
       const cont = document.getElementById('lista-certificados');
       if (!cont) return;
-      // Agrupar las aplicaciones por institución+grado+grupo en UNA pasada (O(apps)), y pasar a
-      // evaluarGrupoExcelencia solo el grupo correspondiente (evita re-escanear todo por combo).
+      // Agrupar las aplicaciones por institución+grado+grupo+PERIODO en UNA pasada (O(apps)), y
+      // pasar a evaluarGrupoExcelencia solo el grupo correspondiente (evita re-escanear todo).
+      //
+      // El PERIODO entra en la llave (8-ago-2026). Antes no estaba, y eso tenía dos consecuencias:
+      // el periodo del certificado se sacaba del PRIMER cuadernillo del grado sin mirar el periodo
+      // (con P1 y P2 en catálogo nunca decía el correcto), y evaluarGrupoExcelencia recibía TODOS
+      // los cuadernillos del grado, es decir los 5 de P1 más los 5 de P2, de modo que exigía diez
+      // áreas completas y ningún grupo podía cumplirlo. El reconocimiento es POR PERIODO.
+      // El periodo se resuelve por el CUADERNILLO presentado, no por el campo `periodo` de la
+      // aplicación: el periodo es una propiedad de la prueba, y hay aplicaciones (las sembradas en
+      // la demo, y registros antiguos) cuyo campo no concuerda con el cuadernillo al que apuntan.
+      const _perDeCuad = new Map(cuadernillos.map(cu => [cu.id, romanoPeriodo(cu.periodo) || 'I']));
+      const _perApp = a => _perDeCuad.get(a.cuadernillo_id) || romanoPeriodo(a.periodo) || 'I';
       const combos = new Map();
       for (const a of apps) {
-        const k = `${a.institucion_id}|${a.grado}|${normGrupo(a.grupo)}`;
-        if (!combos.has(k)) combos.set(k, { institucion_id: a.institucion_id, grado: a.grado, grupo: normGrupo(a.grupo), apps: [] });
+        const per = _perApp(a);
+        const k = `${a.institucion_id}|${a.grado}|${normGrupo(a.grupo)}|${per}`;
+        if (!combos.has(k)) combos.set(k, { institucion_id: a.institucion_id, grado: a.grado, grupo: normGrupo(a.grupo), periodo: per, apps: [] });
         combos.get(k).apps.push(a);
       }
       const reconocidos = [];
       for (const c of combos.values()) {
-        let ev; try { ev = evaluarGrupoExcelencia({ institucionId: c.institucion_id, grado: c.grado, grupo: c.grupo, cuadernillos, apps: c.apps }); } catch (_) { continue; }
+        // Solo las áreas de ESE periodo cuentan como "todas las áreas".
+        const cuadsPer = cuadernillos.filter(cu => (romanoPeriodo(cu.periodo) || 'I') === c.periodo);
+        let ev; try { ev = evaluarGrupoExcelencia({ institucionId: c.institucion_id, grado: c.grado, grupo: c.grupo, cuadernillos: cuadsPer, apps: c.apps }); } catch (_) { continue; }
         const instC = instituciones.find(i => i.id === c.institucion_id);
-        const periodo = (cuadernillos.find(cu => String(cu.grado) === String(c.grado))?.periodo) || 'I';
-        ev.excelentes.forEach(e => reconocidos.push({ ...e, grado: c.grado, grupo: c.grupo, institucion: instC, periodo }));
+        ev.excelentes.forEach(e => reconocidos.push({ ...e, grado: c.grado, grupo: c.grupo, institucion: instC, periodo: c.periodo }));
       }
       reconocidos.sort((a, b) => b.promedio - a.promedio);
       // El certificado va SOLO para el estudiante que ocupa el PRIMER PUESTO (mayor promedio general).

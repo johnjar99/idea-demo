@@ -360,6 +360,8 @@
     import { construirWordHtml } from './js/plan-mejora-word.js';
     import { generarPlanAccionIA } from './js/sabio-ia.js';
     import { sabioSVG } from './js/sabio.js';
+    // normPeriodo: única forma de agrupar por periodo. "I", "1", "p1" y "Período I" son el mismo.
+    import { romanoPeriodo } from './js/filtros-navegacion.js';
     // Capa pedagogica POR GRADO (aditiva): precarga del cache antes de generar el plan,
     // para que sabio-ia.js (sincrono) la lea. Si falta, cae a la plantilla por area.
     import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
@@ -415,7 +417,14 @@
 
     const trayectoria = { I: null, II: null, III: null };
     for (const a of apsGrupo) {
-      const p = a.periodo || 'I';
+      // Se normaliza SIEMPRE: una aplicación puede traer "I", "1", "p1" o "Período I" según de
+      // dónde salió el cuadernillo, y antes cada grafía creaba una clave fantasma cuyo puntaje se
+      // perdía en N/D. Sin periodo (aplicaciones anteriores al campo, que solo podían ser de P1)
+      // se cuenta en I; con un periodo presente pero irreconocible NO se inventa cubo.
+      const p = a.periodo == null || String(a.periodo).trim() === ''
+        ? 'I'
+        : romanoPeriodo(a.periodo);
+      if (!p || !(p in trayectoria)) continue;
       if (!trayectoria[p]) trayectoria[p] = [];
       trayectoria[p].push(a);
     }

@@ -660,7 +660,7 @@
     import { srcLiviano, onerrorLiviano } from './js/extractor-imagenes.js';
     import { enviarMensaje, listarMensajesEnviados, listarHilo, PLANTILLAS_DOCENTE } from './js/mensajes.js';
     import { evaluarGrupoExcelencia, generarCertificadoExcelenciaPDF } from './js/certificado.js';
-    import { construirBarraFiltros, normPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
+    import { construirBarraFiltros, normPeriodo, romanoPeriodo, pasaFiltro } from './js/filtros-navegacion.js';
     // Capa pedagogica POR GRADO (aditiva): se precarga en el cache de modulo ANTES de
     // renderizar, para que analisis.js (sincrono) la lea con pedagogiaDeSync. Si el JSON
     // esta vacio o falla, el cache queda {} y todo cae al comportamiento por area (11 P1 intacto).
@@ -804,7 +804,7 @@
       const slug = slugDeArea(txt);
       return (slug && AREA_META[slug]) || { sigla: (txt || '·').slice(0, 3).toUpperCase(), color: '#64748B' };
     }
-    const _perLabel = (p) => { const s = String(p || '').toUpperCase(); return (s === 'I' || s === '1') ? 'P1' : (s === 'II' || s === '2') ? 'P2' : (s === 'III' || s === '3') ? 'P3' : ''; };
+    const _perLabel = (p) => { const n = normPeriodo(p); return (n === '1' || n === '2' || n === '3') ? ('P' + n) : ''; };
 
     // `grupos` y `cursos` se mantienen como referencias estables (let) porque
     // seleccionarGrupo() las consulta por clausura (grupos.get(k)). renderAcordeones()
@@ -872,7 +872,10 @@
           let sa = ORDEN_SLUG.indexOf(slugDeArea(a.area)); let sb = ORDEN_SLUG.indexOf(slugDeArea(b.area));
           sa = sa < 0 ? 99 : sa; sb = sb < 0 ? 99 : sb;
           if (sa !== sb) return sa - sb;
-          return String(_perDeItem(a) || '').localeCompare(String(_perDeItem(b) || ''));
+          // Orden NUMÉRICO del periodo. Con localeCompare crudo el orden era alfabético
+          // ("1" < "I" < "II" < "III"), así que un P1 escrito "1" se colaba antes que los demás.
+          const _np = x => Number(normPeriodo(_perDeItem(x))) || 99;
+          return _np(a) - _np(b);
         });
         items.forEach(it => {
           const meta = metaDeArea(it.area);
@@ -1038,9 +1041,19 @@
       if (old) old.remove();
       if (!cuadActual || !grupoActivo) return;
       const institucionId = (grupoActivo.apps[0] && grupoActivo.apps[0].institucion_id) || ses.institucion_id;
+      // El reconocimiento es POR PERIODO: "todas las áreas" son las de ESTE periodo, no las de
+      // todo el catálogo del grado. Sin este filtro, con P1 y P2 (y luego P3) en el catálogo el
+      // grado exigía 10 o 15 áreas completas y nunca aparecía un solo certificado.
+      // El periodo se resuelve por el CUADERNILLO presentado, no por el campo `periodo` de la
+      // aplicación: el periodo es una propiedad de la prueba, y hay aplicaciones (las sembradas en
+      // la demo, y registros antiguos) cuyo campo no concuerda con el cuadernillo al que apuntan.
+      const _perCert = romanoPeriodo(cuadActual.periodo) || 'I';
+      const _cuadsCert = cuadernillos.filter(cu => (romanoPeriodo(cu.periodo) || 'I') === _perCert);
+      const _idsCert = new Set(_cuadsCert.map(cu => cu.id));
+      const _appsCert = todasApps.filter(a => _idsCert.has(a.cuadernillo_id));
       const evalG = evaluarGrupoExcelencia({
         institucionId, grado: grupoActivo.grado, grupo: grupoActivo.grupo,
-        cuadernillos, apps: todasApps
+        cuadernillos: _cuadsCert, apps: _appsCert
       });
       const inst = instituciones.find(i => i.id === institucionId) || {};
       const sec = document.createElement('div');
@@ -1074,7 +1087,7 @@
             <div><strong>${escapeHtml(e.nombre || 'N/D')}</strong> <span style="color:#78716c;font-size:13px">· promedio ${e.promedio}/100</span></div>
             <button class="btn-secundario btn-cert-uno" data-i="${i}" style="white-space:nowrap">📄 Certificado</button>
           </div>`).join('');
-        const _perDoc = (cuadActual?.periodo) || 'I';
+        const _perDoc = _perCert;
         const genCert = (e) => generarCertificadoExcelenciaPDF({
           estudiante: { nombre: e.nombre, tipo_documento: e.tipo_documento, documento: e.documento, grado: grupoActivo.grado, grupo: grupoActivo.grupo },
           institucion: inst, promedio: e.promedio, nivel: e.nivel, periodo: _perDoc, fecha: new Date()
@@ -1260,9 +1273,13 @@
         charts.tendencia?.destroy();
         // Tendencia con datos REALES por período (NO se fabrican períodos).
         // Con un solo período presentado se muestra un único punto real.
+        // El periodo se NORMALIZA a romano antes de agrupar: "I", "1", "p1" y "Período I" son el
+        // mismo periodo, y sin normalizar cada grafía abría su propio punto en la línea (P1
+        // aparecía dos veces, con la mitad de los estudiantes en cada punto).
         const porPerTend = {};
-        aplicacionesActuales.forEach(a => { const k = a.periodo || 'I'; (porPerTend[k] = porPerTend[k] || []).push(a); });
-        const persTend = Object.keys(porPerTend).sort();
+        aplicacionesActuales.forEach(a => { const k = romanoPeriodo(a.periodo) || 'I'; (porPerTend[k] = porPerTend[k] || []).push(a); });
+        const _ordPer = p => ({ I: 1, II: 2, III: 3 })[p] || 99;
+        const persTend = Object.keys(porPerTend).sort((a, b) => _ordPer(a) - _ordPer(b));
         const labels = persTend.map(p => `Período ${p}`);
         const datos = persTend.map(p => promedioGrupo(porPerTend[p]));
         charts.tendencia = new Chart(c3, {
@@ -2250,14 +2267,17 @@
       if (charts.evol)    { charts.evol.destroy();    charts.evol    = null; }
       if (charts.compAgr) { charts.compAgr.destroy(); charts.compAgr = null; }
 
-      // Agrupar aplicaciones por periodo, o por intento si todos son del mismo periodo
+      // Agrupar aplicaciones por periodo, o por intento si todos son del mismo periodo.
+      // Periodo NORMALIZADO a romano (ver la tendencia de arriba): sin esto, "1" y "I" abrían dos
+      // cubos distintos y el histórico mostraba una evolución inventada entre dos mitades de P1.
       const porPeriodo = {};
       aplicacionesActuales.forEach(a => {
-        const k = a.periodo || 'I';
+        const k = romanoPeriodo(a.periodo) || 'I';
         if (!porPeriodo[k]) porPeriodo[k] = [];
         porPeriodo[k].push(a);
       });
-      const periodos = Object.keys(porPeriodo).sort();
+      const _ordPerHist = p => ({ I: 1, II: 2, III: 3 })[p] || 99;
+      const periodos = Object.keys(porPeriodo).sort((a, b) => _ordPerHist(a) - _ordPerHist(b));
       const seccion = document.getElementById('seccion-historico');
       // Mostrar SIEMPRE la sección con datos reales (antes se ocultaba con 1 período,
       // por eso el panel "desaparecía"). Un período → un punto / un grupo de barras;

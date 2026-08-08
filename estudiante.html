@@ -208,6 +208,11 @@
       ? _periodoGuardado
       : (_periodosDisp[0] || '1');
     const _pasaPeriodo = (c) => normPeriodo(c.periodo) === normPeriodo(_periodoFiltro);
+    // El Sabio del panel también necesita saber QUÉ PERIODO está mirando el estudiante. Sin esto
+    // el chat resolvía siempre la capa por grado (el P2 de su grado), así que un estudiante que
+    // está en P1 recibía las estrategias de P2. Se refresca al cambiar el selector (más abajo).
+    const _sabioPeriodo = () => { window.SABIO_CTX = Object.assign({}, window.SABIO_CTX, { periodo: _periodoFiltro }); };
+    _sabioPeriodo();
     const listaCuad = document.getElementById('lista-cuadernillos');
     listaCuad.innerHTML = '';
 
@@ -398,6 +403,7 @@
             // llegara vacío, conservamos el actual para no mostrar todo.
             _periodoFiltro = f.periodo || _periodoFiltro;
             try { localStorage.setItem(_LS_PERIODO, normPeriodo(_periodoFiltro)); } catch (_) {}
+            _sabioPeriodo();
             await renderCuadernillosEnriquecidos();
           },
           { sinTodos: ['periodo'], valoresIniciales: { periodo: _periodoFiltro } }
