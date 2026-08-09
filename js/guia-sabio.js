@@ -183,7 +183,20 @@ export function abrirAsistenteSabioIA(pagina = 'index') {
     <div class="sia-body" id="sia-body">${(() => {
       // Sugerencias PERSONALIZADAS por rol (la página indica el rol) y, para el docente,
       // por el área y grado del grupo abierto (window.SABIO_CTX, fijado al seleccionar grupo).
-      const rol = { estudiante: 'estudiante', docente: 'docente', directivo: 'directivo', manager: 'manager' }[pagina] || '';
+      // El mapa tiene que cubrir TODAS las páginas que abren el asistente, no solo las cuatro que
+      // se llaman como su rol. 'resultado', 'cuadernillo' y 'plan-mejora' faltaban, así que `rol`
+      // quedaba vacío y peticionesPara('') caía al bloque genérico, que está escrito para
+      // docentes: al estudiante que acababa de terminar su prueba se le ofrecía "Dame estrategias
+      // para enseñar fracciones en 5°", y encima de un grado que no era el suyo.
+      const rol = {
+        estudiante: 'estudiante',
+        resultado: 'estudiante',
+        cuadernillo: 'estudiante',
+        docente: 'docente',
+        'plan-mejora': 'docente',
+        directivo: 'directivo',
+        manager: 'manager',
+      }[pagina] || '';
       const chips = peticionesPara(rol, (window.SABIO_CTX || {}));
       if (!chips || !chips.length) return '';
       return `<div class="sia-sugerencias"><div class="sia-sug-t">💡 ¿No sabes qué pedir? Toca una idea:</div>${chips.map(p => `<button type="button" class="sia-sug">${p}</button>`).join('')}</div>`;

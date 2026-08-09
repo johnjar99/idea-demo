@@ -173,7 +173,12 @@ export async function poblarDatosDemo(opciones = {}) {
     if (!estudiante) continue;
     // Genera aplicaciones para todos los cuadernillos disponibles
     for (const cuadActual of cuadernillos) {
-      const nPeriodos = 2 + (Math.floor(Math.random() * 2));
+      // Los TRES periodos, siempre. Antes eran 2 o 3 al azar, y como PERIODOS va en orden
+      // I, II, III el que se quedaba fuera era SIEMPRE el III: la mitad de los estudiantes
+      // sembrados no tenía ni una prueba de Período III, así que sus gráficas de tendencia,
+      // su comparativa de grupo y los filtros por periodo del panel del docente se veían a
+      // medias justo en el periodo que se está validando. La variedad ya la da `perfil`.
+      const nPeriodos = PERIODOS.length;
       for (let i = 0; i < nPeriodos; i++) {
         const periodo = PERIODOS[i];
         const objetivo = Math.max(15, Math.min(100, perfil.perfil[i] + Math.floor(Math.random() * 8 - 4)));

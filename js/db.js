@@ -9,7 +9,8 @@
 // (instrumentoidea.com / Firestore). Esta es la garantía de aislamiento del sandbox.
 //
 // Siembra (db.inicializar): a diferencia de producción (no-op), aquí SÍ sembramos en la
-// primera carga: cuadernillos (los 35 P2 propio + 5 vivos 11°P1, leídos de datos/_release.json),
+// primera carga: cuadernillos (todo lo que datos/_release.json marca servible; de esos, los
+// listados solo OFRECEN el banco propio, ver `_esPropio`),
 // instituciones (datos/instituciones.json + IE Demo) y los perfiles fijos de demostración.
 
 import { uuid, nowIso } from './utils.js';
@@ -86,7 +87,7 @@ function validarCuadernillo(c) {
 // --- Siembra inicial (solo si la base está vacía) ------------------------------------
 // Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
 // visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
-const SEED_VERSION = '2026-08-08-p1-visual-2';
+const SEED_VERSION = '2026-08-08-solo-p3';
 
 // La version de contenido NO puede vivir solo aqui. Este archivo lo cachea el navegador, asi que
 // si se queda con una copia vieja de db.js nunca se entera de que hay contenido nuevo y sigue
@@ -121,6 +122,11 @@ async function sembrarSiVacio() {
       for (const [, e] of ents) {
         try {
           const c = await fetch('datos/' + e.archivo, { cache: 'no-store' }).then(r => r.json());
+          // Se siembran TODOS los servibles, incluidos los heredados del Icfes. Que no se ofrezcan
+          // es cosa del LISTADO (ver `_esPropio` más abajo), no de la siembra: si no estuvieran en
+          // la base, db.obtener() no podría resolverlos por id y las pruebas ya presentadas contra
+          // ellos se quedarían sin puntaje, sin nivel y sin revisión pregunta por pregunta.
+          // Es exactamente el reparto que hace producción (js/db.js de idea-plataforma-firebase).
           if (c && c.id) await idbPut('idea_cuadernillos', c);
         } catch (_) {}
       }
@@ -144,11 +150,33 @@ async function sembrarSiVacio() {
   try { localStorage.setItem('idea_demo_seed_version', VERSION_VIVA); } catch (_) {}
 }
 
+// NINGÚN CUADERNILLO DEL ICFES SE OFRECE (orden del 8-ago-2026). Solo se ofrece el banco PROPIO,
+// que es el que lleva `-propio-` en su id; todo lo demás es material derivado del Icfes (los cinco
+// heredados de 11° P1 y los cascarones cien-*, soci-*, math-*, lc-*).
+//
+// Igual que en producción, esto afecta a los LISTADOS y NO a db.obtener(): las pruebas ya
+// presentadas se siguen resolviendo por id, así que ni las notas ni los reportes históricos se
+// rompen. Por eso la siembra guarda todos y el filtro vive aquí.
+const _esPropio = c => /-propio-/.test(String(c?.id || ''));
+
+// LA PÁGINA DE PRUEBA SIRVE EL PERIODO QUE TODAVÍA NO ESTÁ EN PRODUCCIÓN, Y SOLO ESE.
+// Desde el 8-ago-2026, el Período I y el Período II viven en instrumentoidea.com, así que aquí
+// estorban: esta página existe para revisar y validar el periodo siguiente antes de lanzarlo, y
+// mezclarlo con los que ya están lanzados es justo lo que hizo que P1 pareciera revisado durante
+// semanas sin estarlo. Hoy el periodo en prueba es el III.
+//
+// Se filtra en el LISTADO, no en la siembra: db.obtener() sigue resolviendo cualquier cuadernillo
+// por su id, así que un resultado ya presentado contra P1 o P2 conserva su nota, su análisis y su
+// revisión pregunta por pregunta. Ese matiz ya nos costó un fallo: filtrar al sembrar los rompía.
+const PERIODO_EN_PRUEBA = /-p3-/;
+const _esPeriodoEnPrueba = c => PERIODO_EN_PRUEBA.test(String(c?.id || ''));
+
 // === Interfaz pública (idéntica a la versión Firestore) ==============================
 export const db = {
   async lista(coleccion) {
     if (_mem[coleccion]) return _mem[coleccion];
-    const arr = await idbGetAll(coleccion);
+    let arr = await idbGetAll(coleccion);
+    if (coleccion === 'idea_cuadernillos') arr = arr.filter(c => _esPropio(c) && _esPeriodoEnPrueba(c));
     _mem[coleccion] = arr;
     return arr;
   },

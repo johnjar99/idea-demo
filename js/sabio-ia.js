@@ -71,8 +71,18 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
   const cfg = configArea(cuadernillo);
   const hayDim2 = tieneDimensionSecundaria(cuadernillo);
   const dim2Nombre = cfg?.dimension_secundaria?.etiqueta_singular || 'componente';
-  // Base pedagógica experta por área y grado (estrategias y ejemplos investigados).
-  let expertas = null; try { const ak = areaKeyDe(cuadernillo, cfg); if (ak) expertas = estrategiasPedagogicas(ak, cuadernillo.grado); } catch { expertas = null; }
+  // Base pedagógica experta por área, grado y PERIODO (estrategias y ejemplos investigados).
+  // El periodo se pasa explícitamente: sin él, estrategiasPedagogicas() dejaba `opts.periodo`
+  // en undefined y toda la capa `sabio_conocimiento` de pedagogia_por_periodo.json quedaba
+  // muerta, de modo que P1, P2 y P3 del mismo área y grado recibían el MISMO texto.
+  // Los 5 vivos (11° P1) quedan exentos con `null`, igual que la capa de plan de mejora de
+  // abajo: con periodo null se resuelve por grado, que es su comportamiento validado.
+  let expertas = null;
+  try {
+    const ak = areaKeyDe(cuadernillo, cfg);
+    const perExp = esVivoProtegido(cuadernillo) ? null : cuadernillo.periodo;
+    if (ak) expertas = estrategiasPedagogicas(ak, cuadernillo.grado, { periodo: perExp });
+  } catch { expertas = null; }
   let expIdx = 0;
 
   // Capa POR GRADO (aditiva): sugerencias de plan de mejora especificas de este grado.
@@ -80,6 +90,9 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
   //   - sugPorComp[comp], sugPorAfir[n], sugPorDim2[cat]  (indexadas, prioridad por dimension)
   //   - sugPlanGrado (cola plana de respaldo)
   // Si no hay celda por grado, todos quedan vacios => comportamiento actual intacto.
+  // Clave insensible a mayúsculas y acentos, para que una diferencia de grafía entre el
+  // cuadernillo y la celda de pedagogía no apague la sugerencia.
+  const _clv = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
   const sugPorComp = {}, sugPorAfir = {}, sugPorDim2 = {}, sugPlanGrado = [];
   try {
     const slugPG = esVivoProtegido(cuadernillo) ? null : areaSlugDeCuadernillo(cuadernillo);
@@ -87,7 +100,11 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
     if (pm && typeof pm === 'object') {
       Object.entries(pm.competencia || {}).forEach(([k, arr]) => { if (Array.isArray(arr) && arr.length) { sugPorComp[k] = arr.slice(); sugPlanGrado.push(...arr); } });
       Object.entries(pm.afirmacion || {}).forEach(([k, arr]) => { if (Array.isArray(arr) && arr.length) { sugPorAfir[String(k)] = arr.slice(); sugPlanGrado.push(...arr); } });
-      Object.entries(pm.dim_secundaria || {}).forEach(([k, arr]) => { if (Array.isArray(arr) && arr.length) { sugPorDim2[k] = arr.slice(); sugPlanGrado.push(...arr); } });
+      // La dimensión secundaria se indexa además por su forma sin acentos ni mayúsculas: el
+      // componente de mat 11 P1 se rotula "Álgebra y Cálculo" en el cuadernillo y "Álgebra y
+      // cálculo" en la celda de pedagogía, y con índice sensible a la mayúscula la sugerencia
+      // del plan no se encontraba nunca.
+      Object.entries(pm.dim_secundaria || {}).forEach(([k, arr]) => { if (Array.isArray(arr) && arr.length) { sugPorDim2[k] = arr.slice(); sugPorDim2[_clv(k)] = arr.slice(); sugPlanGrado.push(...arr); } });
     }
   } catch { /* fallback total */ }
   let sugIdx = 0;
@@ -116,7 +133,10 @@ export function generarPlanAccionIA(apsGrupo, cuadernillo) {
     // Capa POR GRADO: sugerencias del plan de mejora especificas del grado, articuladas a la
     // dimension del foco (afirmacion / dim secundaria / competencia) y, si no, la cola plana.
     if (!e.length && afir != null && sugPorAfir[String(afir)]) e = sugPorAfir[String(afir)].filter(x => !usadasEstr.has(x)).slice(0, 1);
-    if (!e.length && dim2 != null && sugPorDim2[dim2]) e = sugPorDim2[dim2].filter(x => !usadasEstr.has(x)).slice(0, 1);
+    if (!e.length && dim2 != null) {
+      const _sd = sugPorDim2[dim2] || sugPorDim2[_clv(dim2)];
+      if (_sd) e = _sd.filter(x => !usadasEstr.has(x)).slice(0, 1);
+    }
     if (!e.length && comp != null && sugPorComp[comp]) e = sugPorComp[comp].filter(x => !usadasEstr.has(x)).slice(0, 1);
     while (!e.length && sugIdx < sugPlanGrado.length) { const c = sugPlanGrado[sugIdx++]; if (!usadasEstr.has(c)) e = [c]; }
     if (!e.length && expertas && expertas.estrategias && expIdx < expertas.estrategias.length) e = [expertas.estrategias[expIdx++]];

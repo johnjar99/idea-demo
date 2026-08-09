@@ -41,10 +41,26 @@ export const onerrorPlaceholder = `this.onerror=null;this.src='${PLACEHOLDER_GEN
 // En pantalla se pide la copia liviana y, si por cualquier razón no existe, el navegador cae al
 // PNG original y solo si ese también falla aparece el placeholder. Así la prueba nunca se rompe.
 
+// No TODAS las figuras tienen copia liviana, y es a propósito: en los dibujos de líneas el PNG ya
+// es óptimo y el WebP pesa MÁS, así que generar_webp.py descarta esa copia. El problema era que la
+// página la pedía igual: la figura se veía (el onerror cae al PNG), pero cada una dejaba un 404
+// rojo en la consola, 64 en total entre P1, P2 y P3. Con esta lista, generada por el mismo script
+// que decide el descarte, la copia liviana ni se pide cuando se sabe que no existe.
+import { SIN_WEBP } from './sin-webp.js';
+
 /** Ruta de la copia liviana (.webp) de un PNG. Cualquier otra extensión se devuelve igual. */
 export function srcLiviano(ruta) {
   if (!ruta || typeof ruta !== 'string') return ruta;
-  return /\.png$/i.test(ruta) ? ruta.replace(/\.png$/i, '.webp') : ruta;
+  if (!/\.png$/i.test(ruta)) return ruta;
+  const rel = ruta.replace(/^\.?\//, '');
+  // Las figuras de assets/cuadernillo-* son las de los cuadernillos heredados del Icfes, que ya no
+  // se ofrecen en ningún listado. NUNCA han tenido copia liviana (generar_webp.py solo mira
+  // assets/banco-*) y son 1.348, así que no se van a generar: se piden en PNG y ya. Sin esta regla,
+  // abrir el resultado de una prueba antigua llenaba la consola de 404 (42 en una sola pantalla).
+  if (/^assets\/cuadernillo-/i.test(rel)) return ruta;
+  // Sin copia liviana conocida: se sirve el PNG directamente, sin petición fallida de por medio.
+  if (SIN_WEBP.has(rel)) return ruta;
+  return ruta.replace(/\.png$/i, '.webp');
 }
 
 /**

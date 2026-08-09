@@ -1,0 +1,609 @@
+{
+  "id": "mat-5-p3-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "5",
+  "periodo": "III",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas · Grado 5° · Período III (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA · ítems y figuras de autoría propia alineados a los Estándares Básicos de Competencias (marco público). El Período III es de creación íntegramente propia: no adapta figuras ni textos de cuadernillos de terceros.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Resolución de problemas",
+    "b": "Razonamiento",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Resuelve problemas aditivos, multiplicativos y de proporción",
+    "2": "Resuelve problemas de medición de perímetro, de área y superficie, de capacidad y volumen de diversos objetos",
+    "3": "Resuelve problemas de medición que requieran el uso de patrones estandarizados o no estandarizados",
+    "4": "Explica las características y las propiedades de secuencias, numéricas o geométricas, y expresiones numéricas",
+    "5": "Comprende las condiciones de semejanza y congruencia en figuras poligonales",
+    "6": "Analiza datos representados de diferentes formas",
+    "7": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión",
+    "8": "Reconoce las propiedades de las fracciones, los números naturales, la representación decimal, las operaciones y las relaciones en distintos contextos",
+    "9": "Interpreta la naturaleza y posibilidad de ocurrencia de eventos aleatorios simples",
+    "10": "Descubre regularidades de las secuencias, la ordenación y sobre las equivalencias entre las situaciones aditivas y multiplicativas (arreglos rectangulares, producto cartesiano, adición repetida)",
+    "11": "Explica la naturaleza de los eventos posibles, imposibles o seguros"
+  },
+  "evidencias": {
+    "1.1": "Utiliza la proporcionalidad en contextos de relacionamiento de magnitudes",
+    "1.2": "Usa adiciones y productos en contextos escolares y extraescolares",
+    "2.1": "Utiliza estrategias no estandarizadas (recubrimientos y patrones no convencionales) para encontrar perímetros, áreas y volúmenes de diferentes objetos, en contextos escolares y extraescolares",
+    "2.2": "Utiliza estrategias estandarizadas (fórmulas) para encontrar perímetros, áreas o superficie y volumen o capacidad de diferentes objetos, en contextos escolares y extraescolares",
+    "3.1": "Usa patrones estandarizados para enfrentar situaciones de medición",
+    "4.1": "Establece equivalencias a partir de las relaciones, propiedades o dependencia entre magnitudes y expresiones numéricas",
+    "4.2": "Describe propiedades y relaciones entre cantidades y magnitudes y sus operaciones",
+    "5.1": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "5.2": "Usa adiciones y productos en contextos escolares y extraescolares",
+    "6.1": "Determina diferencias y similitudes en distintas representaciones de conjuntos de datos de una misma situación",
+    "7.1": "Identifica la imagen o la preimagen de una figura a partir de una transformación en un sistema de referencia cercano al contexto inmediato: arriba, abajo, derecha, izquierda",
+    "7.2": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "8.1": "Representa fracciones y decimales de distintas formas",
+    "9.1": "Expresa el grado de probabilidad de un evento, usando frecuencias o razones",
+    "10.1": "Determina equivalencias entre modelos aditivos o multiplicativos, considerando los procesos de transformación y composición",
+    "11.1": "Determina cuándo un evento es posible, imposible o seguro"
+  },
+  "cmc": [
+    "Numérico - variacional",
+    "Espacial - métrico",
+    "Aleatorio"
+  ],
+  "preservar_orden_preguntas": false,
+  "preguntas": [
+    {
+      "id": "P3-mat-5-01",
+      "numero": 1,
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La habilidad para valorar la anticipación de otra persona sobre una situación de proporcionalidad, contrastándola con la razón que se conserva entre las dos magnitudes.",
+      "enunciado": "<p>Don Gilberto tiene una panadería en Duitama y todos los días amasa pandeboyanos con la misma receta, sin cambiarle nunca las cantidades. Él sabe de memoria que con <b>4 libras de harina</b> le salen <b>48 pandeboyanos</b>, ni uno más ni uno menos. Esta semana la rectora del colegio le encargó <b>84 pandeboyanos</b> para el refrigerio de la izada de bandera, y hay que comprar exactamente la harina que se necesita, porque la que sobra se endurece y con la que falta le queda mal al colegio.</p>[[IMG]]<p>Braulio, el hijo de don Gilberto, mira el encargo y <b>anticipa que</b> con 8 libras de harina alcanza, porque 84 pandeboyanos es casi el doble de 48.</p><p>¿Es acertada la anticipación de Braulio?</p>",
+      "opciones": {
+        "A": "No, porque cada libra rinde 12 pandeboyanos y para 84 hacen falta 7 libras.",
+        "B": "Sí, porque 84 es casi el doble de 48 y con 8 libras queda apenas un poco de sobra.",
+        "C": "No, porque cada libra rinde 12 pandeboyanos y hay que comprar 12 libras de harina.",
+        "D": "No, porque los 84 pandeboyanos se reparten entre las 4 libras y se piden 21 libras."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «No, porque cada libra rinde 12 pandeboyanos y para 84 hacen falta 7 libras» es correcta porque la receta no cambia nunca: si 4 libras dan 48 pandeboyanos, cada libra rinde \\(48\\div 4=12\\). Para llegar a los 84 del encargo se necesitan \\(84\\div 12=7\\) libras, de modo que Braulio se pasa en una libra y con las 8 saldrían \\(8\\times 12=96\\) pandeboyanos.",
+      "opciones_incorrectas": {
+        "B": "El número 84 sí está cerca del doble de 48, pero en una receta que no cambia lo que se conserva es la razón y no la cercanía: con 8 libras sobrarían doce pandeboyanos, que es justo lo que don Gilberto quiere evitar.",
+        "C": "El número 12 está bien calculado y dice cuántos pandeboyanos rinde una libra, aunque responde otra pregunta: lo que se busca es cuántas libras exige el encargo de la rectora.",
+        "D": "Dividir 84 entre 4 cambia el papel de los datos, pues las 4 libras no son grupos en que se reparten los pandeboyanos sino la harina de la receta original."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q01.png",
+      "imagen_alt": "La receta de la panadería: cuatro libras de harina dan cuarenta y ocho pandeboyanos, y debajo, la cantidad de harina que se busca para llegar a ochenta y cuatro pandeboyanos."
+    },
+    {
+      "id": "P3-mat-5-02",
+      "numero": 2,
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas en situaciones de proporcionalidad directa, inversa y producto de medidas.",
+      "que_evalua": "La habilidad para comparar cuatro presentaciones de un producto calculando el precio de una sola unidad en cada una.",
+      "enunciado": "<p>Doña Herlinda vende arepas de choclo en la galería de Pereira y las empaca en cuatro presentaciones distintas. Todas las arepas son iguales entre sí y todas salen del mismo horno, de manera que lo único que cambia de una presentación a otra es cuántas arepas trae la bolsa y cuánto cuesta esa bolsa. Ernesto llegó a comprar las arepas del desayuno del internado y le interesa que cada arepa le salga lo más barata posible, sin importarle cuántas bolsas tenga que cargar.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Presentación</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Arepas por bolsa</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio de la bolsa</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Pequeña</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4.200 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mediana</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6.500 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Grande</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">9.000 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Familiar</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">13.000 pesos</td></tr></table><p>¿Cuál presentación le conviene comprar a Ernesto?</p>",
+      "opciones": {
+        "A": "La bolsa familiar, que trae veinte arepas por 13.000 pesos.",
+        "B": "La bolsa mediana, que trae diez arepas por 6.500 pesos.",
+        "C": "La bolsa grande, que trae quince arepas por 9.000 pesos.",
+        "D": "La bolsa pequeña, que trae seis arepas por 4.200 pesos."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «La bolsa grande, que trae quince arepas por 9.000 pesos» es correcta porque para comparar presentaciones de distinto tamaño hay que mirar cuánto cuesta una sola arepa en cada una: \\(4200\\div 6=700\\), \\(6500\\div 10=650\\), \\(9000\\div 15=600\\) y \\(13000\\div 20=650\\) pesos. La bolsa grande deja cada arepa en 600 pesos, el precio más bajo de las cuatro.",
+      "opciones_incorrectas": {
+        "A": "La bolsa familiar es la que más arepas trae y la que más dinero pide, pero al repartir su precio entre las veinte arepas cada una queda en 650 pesos, cincuenta pesos más que en la bolsa grande.",
+        "B": "La bolsa mediana mejora a la pequeña, aunque sus diez arepas salen a 650 pesos cada una, precio que iguala al de la familiar y que la grande deja atrás.",
+        "D": "La bolsa pequeña cuesta menos que todas, aunque también es la que menos arepas trae: cada una sale a 700 pesos, el precio más alto de la tabla."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q02.png",
+      "imagen_alt": "Las cuatro presentaciones dibujadas al mismo tamaño: la bolsa pequeña con seis arepas, la mediana con diez, la grande con quince y la familiar con veinte."
+    },
+    {
+      "id": "P3-mat-5-03",
+      "numero": 3,
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno de compra y vuelto, y señalar el paso en el que se dejó por fuera uno de los gastos.",
+      "enunciado": "<p>Sara es la tesorera del grado quinto y le encargaron comprar el refrigerio para la salida al río. En la tienda del barrio se llevó <b>8 paquetes de galletas</b> a <b>2.400 pesos</b> cada paquete y <b>15 jugos</b> a <b>1.800 pesos</b> cada jugo. Para pagar entregó los <b>60.000 pesos</b> que había recogido entre todos sus compañeros, y el vuelto hay que reintegrarlo al curso el lunes.</p>[[IMG]]<p>De regreso al salón, Sara anotó en el cuaderno de la tesorería los siguientes pasos para saber cuánto vuelto le quedó:</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:620px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> Las galletas costaron \\(8\\times 2.400=19.200\\) pesos.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Los jugos costaron \\(15\\times 1.800=27.000\\) pesos.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Entonces el vuelto es \\(60.000-19.200=40.800\\) pesos.</div></div><p>¿En cuál paso se equivocó Sara y qué debería decir ese paso?</p>",
+      "opciones": {
+        "A": "En el paso 1, porque los 8 paquetes se reparten entre los 2.400 pesos.",
+        "B": "En el paso 3, porque se restan los dos gastos y el vuelto es 13.800 pesos.",
+        "C": "En ninguno, porque los tres pasos siguen el orden en que se hizo la compra.",
+        "D": "En el paso 2, porque los 15 jugos se suman con los 1.800 pesos de cada uno."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «En el paso 3, porque se restan los dos gastos y el vuelto es 13.800 pesos» es correcta porque los dos primeros pasos están bien hechos: las galletas suman \\(8\\times 2400=19200\\) pesos y los jugos \\(15\\times 1800=27000\\) pesos. El error aparece al final, cuando Sara le descuenta a los 60.000 pesos únicamente las galletas, pues la cuenta completa es \\(60000-19200-27000=13800\\) pesos.",
+      "opciones_incorrectas": {
+        "A": "Multiplicar los paquetes por lo que cuesta cada uno es justamente lo que hay que hacer al comienzo, y ese paso deja bien contados los 19.200 pesos de las galletas.",
+        "C": "El orden de los pasos sí corresponde a la compra, pero el último deja los quince jugos sin pagar y por eso entrega un vuelto mayor del que Sara recibió.",
+        "D": "Sumar 15 con 1.800 junta jugos con pesos, que son cantidades de distinta clase; lo que corresponde es multiplicar, como quedó escrito en ese paso."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q03.png",
+      "imagen_alt": "Lo que Sara compró en la tienda: ocho paquetes de galletas de 2.400 pesos cada uno, quince jugos de 1.800 pesos cada uno y el billete de 60.000 pesos con que pagó."
+    },
+    {
+      "id": "P3-mat-5-04",
+      "numero": 4,
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La habilidad para recubrir una superficie con un patrón no estandarizado y determinar cuántas unidades se necesitan.",
+      "enunciado": "<p>En la escuela de la vereda El Placer están enchapando el piso del quiosco. Don Aurelio, el maestro de obra, dibujó en el tablero el piso completo dividido en cuadritos del mismo tamaño y, al lado, la baldosa cuadrada que va a pegar. Todas las baldosas son iguales entre sí, se pueden girar antes de pegarlas y no se pueden partir ni montar una encima de otra.</p>[[IMG]]<p>¿Cuántas baldosas necesita don Aurelio para cubrir todo el piso del quiosco?</p>",
+      "opciones": {
+        "A": "Necesita 24 baldosas, porque el piso tiene 24 cuadritos en total.",
+        "B": "Necesita 12 baldosas, porque cada baldosa cubre dos cuadritos del piso.",
+        "C": "Necesita 8 baldosas, porque los 24 cuadritos se reparten de tres en tres.",
+        "D": "Necesita 6 baldosas, porque cada baldosa cubre cuatro cuadritos del piso."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «Necesita 6 baldosas, porque cada baldosa cubre cuatro cuadritos del piso» es correcta porque el piso está formado por \\(6\\times 4=24\\) cuadritos y cada baldosa cubre \\(2\\times 2=4\\) de esos cuadritos a la vez. Al repartir los 24 cuadritos entre las baldosas resultan \\(24\\div 4=6\\) baldosas, que alcanzan justo para poner tres a lo largo y dos a lo ancho.",
+      "opciones_incorrectas": {
+        "A": "El número 24 es la cantidad de cuadritos que tiene el piso, no de baldosas: cada baldosa del dibujo tapa cuatro cuadritos de una sola vez.",
+        "B": "Ese conteo supone que cada baldosa cubre dos cuadritos, cuando la baldosa del dibujo es cuadrada y cubre cuatro.",
+        "C": "Ese resultado sale de repartir los 24 cuadritos de tres en tres, pero la baldosa cubre cuatro cuadritos y no tres."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q04.png",
+      "imagen_alt": "Piso rectangular dividido en seis cuadritos de largo por cuatro de ancho y, al lado, la baldosa cuadrada que cubre dos cuadritos por dos."
+    },
+    {
+      "id": "P3-mat-5-05",
+      "numero": 5,
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Utilizo diferentes procedimientos de cálculo para hallar el área de la superficie exterior y el volumen de algunos cuerpos sólidos.",
+      "que_evalua": "La habilidad para valorar la conclusión de otra persona sobre cuánto material comprar, calculando el área con la fórmula y decidiendo qué hacer con lo que sobra.",
+      "enunciado": "<p>Don Hernán sembró una huerta escolar rectangular en un colegio de Tuluá para que los estudiantes de quinto cultiven cilantro y cebolla. La huerta mide <b>12 metros de largo</b> y <b>7 metros de ancho</b>, y antes de sembrar hay que abonar toda la superficie, sin dejar pedazos sin tratar. En el almacén agropecuario le explicaron que <b>un bulto de abono alcanza para 20 metros cuadrados</b> y que los bultos se venden completos, porque allí no los fraccionan.</p>[[IMG]]<p>Después de mirar el plano, don Hernán <b>concluye que</b> con cuatro bultos le alcanza, porque 84 dividido entre 20 da cuatro.</p><p>¿Es acertada la conclusión de don Hernán?</p>",
+      "opciones": {
+        "A": "No, porque con cuatro bultos quedan 4 metros cuadrados sin abonar y hacen falta cinco.",
+        "B": "Sí, porque 84 dividido entre 20 da cuatro bultos exactos para toda la huerta.",
+        "C": "No, porque el contorno de la huerta mide 38 metros y con dos bultos queda abonada.",
+        "D": "No, porque hace falta un bulto por cada metro cuadrado, es decir 84 bultos."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «No, porque con cuatro bultos quedan 4 metros cuadrados sin abonar y hacen falta cinco» es correcta porque la superficie de la huerta se halla multiplicando sus dos lados, \\(12\\times 7=84\\) metros cuadrados, y cada bulto rinde 20. Con cuatro bultos se cubren \\(4\\times 20=80\\) metros cuadrados y sobran 4 sin tratar, así que hay que comprar un bulto más aunque de ese último quede abono guardado.",
+      "opciones_incorrectas": {
+        "B": "La división está bien hecha, pero 84 no es múltiplo de 20 y el residuo también hay que abonarlo: quedarse en cuatro bultos deja un pedazo de huerta sin tratar.",
+        "C": "El número 38 corresponde al contorno de la huerta y sirve para cercarla, no para abonarla, pues el abono se reparte sobre la superficie, que se mide en metros cuadrados.",
+        "D": "Ese conteo supone que cada bulto alcanza para un solo metro cuadrado, cuando en el almacén le explicaron que rinde para veinte."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q05.png",
+      "imagen_alt": "La huerta escolar dibujada como un rectángulo de 12 metros de largo por 7 de ancho, cuadriculado en metros cuadrados, y al lado un cuadro de 20 metros cuadrados que representa lo que abona un bulto."
+    },
+    {
+      "id": "P3-mat-5-06",
+      "numero": 6,
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "BAJA",
+      "estandar": "Selecciono unidades, tanto convencionales como estandarizadas, apropiadas para diferentes mediciones.",
+      "que_evalua": "La habilidad para seleccionar la unidad estandarizada que corresponde a la magnitud que se está midiendo.",
+      "enunciado": "<p>Doña Consuelo es la manipuladora de alimentos del restaurante escolar de una escuela de Aguachica y cada mañana anota en una planilla varias medidas del refrigerio. Hoy le toca registrar <b>cuánta agua de panela quedó en la olla grande</b> después del desayuno, porque con lo que sobre se prepara la merienda de la tarde. La olla está marcada por dentro con rayas numeradas, así que ella solo tiene que escribir en la planilla el número y la unidad que corresponde.</p>[[IMG]]<p>¿En qué unidad debe registrar doña Consuelo lo que quedó en la olla?</p>",
+      "opciones": {
+        "A": "En metros, porque hay que medir qué tan alta es la olla.",
+        "B": "En litros, porque mide cuánto líquido cabe en la olla.",
+        "C": "En gramos, porque mide cuánto pesa la olla con todo.",
+        "D": "En horas, porque mide cuánto duró el desayuno escolar."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «En litros, porque mide cuánto líquido cabe en la olla» es correcta porque lo que doña Consuelo tiene que registrar es la cantidad de agua de panela que sobró, es decir una capacidad, y el litro es la unidad estandarizada con la que se mide cuánto líquido cabe en un recipiente.",
+      "opciones_incorrectas": {
+        "A": "El metro mide longitudes y serviría para saber qué tan alta o qué tan ancha es la olla, pero no dice cuánta bebida quedó adentro.",
+        "C": "El gramo mide masa y sí se usa para pesar los ingredientes secos del refrigerio, aunque la planilla pide la cantidad de bebida que sobró.",
+        "D": "La hora mide duraciones y serviría para anotar a qué horas se sirvió el desayuno, no para decir cuánta agua de panela quedó en la olla."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q06.png",
+      "imagen_alt": "La olla grande del restaurante escolar con el agua de panela que sobró y las rayas numeradas del uno al cinco marcadas por dentro."
+    },
+    {
+      "id": "P3-mat-5-07",
+      "numero": 7,
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas cuya estrategia de solución requiera de las relaciones y propiedades de los números naturales y sus operaciones.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno de descomposición de un factor y señalar el paso en el que se rompe la equivalencia con el producto original.",
+      "enunciado": "<p>Yamile atiende la caja de una papelería en Cartago y acaba de recibir un pedido de <b>25 cajas de lápices</b>, con <b>12 lápices</b> en cada caja. La calculadora se le descargó y tiene que decirle al cliente cuántos lápices hay en total antes de que se vaya, porque de ese número depende el precio. Ovidio, el auxiliar, le propone descomponer los números y hacer la cuenta de memoria, como les enseñaron en la escuela.</p>[[IMG]]<p>Ovidio escribió en el respaldo de la factura los siguientes pasos:</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:620px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> El 12 se descompone como \\(10+2\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Las 25 cajas por 10 lápices dan \\(25\\times 10=250\\) lápices.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> A esos 250 se les suma 2 y el pedido tiene 252 lápices.</div></div><p>¿En cuál paso está el error y qué debería decir ese paso?</p>",
+      "opciones": {
+        "A": "En el paso 1, porque el 12 se descompone como 6 más 6 y no como 10 más 2.",
+        "B": "En ninguno, porque descomponer el 12 lleva siempre al total del pedido.",
+        "C": "En el paso 3, porque se le suma 25 por 2, es decir 50, y quedan 300 lápices.",
+        "D": "En el paso 2, porque 25 por 10 da 2.500 y no 250 lápices en las cajas."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «En el paso 3, porque se le suma 25 por 2, es decir 50, y quedan 300 lápices» es correcta porque multiplicar por una suma equivale a multiplicar por cada sumando y juntar después los resultados. Los dos primeros pasos están bien, y el tercero debe agregar los 2 lápices que aporta CADA una de las 25 cajas: \\(25\\times 12=25\\times 10+25\\times 2=250+50=300\\) lápices.",
+      "opciones_incorrectas": {
+        "A": "Descomponer el 12 como \\(6+6\\) también sería válido, de modo que el primer paso no está equivocado: el 12 sí se puede escribir como \\(10+2\\).",
+        "B": "Descomponer el 12 lleva al total solamente si los dos pedazos se multiplican por las 25 cajas, y en el último paso uno de ellos se sumó sin multiplicar.",
+        "D": "El producto \\(25\\times 10\\) sí da 250, porque multiplicar por 10 agrega un cero a las 25 cajas y no dos, como haría falta para llegar a 2.500."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q07.png",
+      "imagen_alt": "Una caja abierta con sus doce lápices y, al lado, las veinticinco cajas iguales que llegaron en el pedido."
+    },
+    {
+      "id": "P3-mat-5-08",
+      "numero": 8,
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Predigo patrones de variación en una secuencia numérica, geométrica o gráfica.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno sobre la regularidad de una secuencia geométrica y señalar el paso en el que se cuenta mal el número de términos agregados.",
+      "enunciado": "<p>En la clase de geometría, el profesor Aníbal repartió palillos entre los estudiantes de quinto y armó en el tablero los tres primeros pasos de una fila de cuadrados: cada paso agrega un cuadrado nuevo a la derecha, y ese cuadrado nuevo se apoya en un palillo del cuadrado anterior, de manera que no hay que poner ese lado otra vez. Camilo quiere saber cuántos palillos necesita para armar la <b>figura 8</b>, pero no le alcanzan los palillos para ir armando una figura tras otra hasta llegar allá.</p>[[IMG]]<p>Camilo escribió en su cuaderno los siguientes pasos:</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:620px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> La figura 1 se arma con 4 palillos.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Cada cuadrado que se agrega gasta 3 palillos más, porque aprovecha uno del anterior.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Entonces la figura 8 lleva \\(4+8\\times 3=28\\) palillos.</div></div><p>¿En cuál paso se equivocó Camilo y qué debería decir ese paso?</p>",
+      "opciones": {
+        "A": "En el paso 2, porque cada cuadrado nuevo gasta 4 palillos y la figura 8 lleva 32.",
+        "B": "En ninguno, porque los tres pasos respetan el palillo que comparten los cuadrados.",
+        "C": "En el paso 1, porque la figura 1 se arma con 3 palillos y la figura 8 lleva 24.",
+        "D": "En el paso 3, porque al primer cuadrado se le agregan siete y quedan 25 palillos."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «En el paso 3, porque al primer cuadrado se le agregan siete y quedan 25 palillos» es correcta porque los dos primeros pasos están bien: el primer cuadrado gasta 4 palillos y cada uno que se agrega gasta 3. En la figura 8 hay un cuadrado inicial y siete agregados, y no ocho, de manera que el total es \\(4+7\\times 3=4+21=25\\) palillos.",
+      "opciones_incorrectas": {
+        "A": "Contar 4 palillos por cada cuadrado nuevo repite el lado que dos cuadrados vecinos comparten, y en el tablero se ve que la figura 2 lleva 7 palillos y no 8.",
+        "B": "El palillo compartido sí quedó bien contado en el segundo paso, pero el tercero suma el aumento una vez de más y por eso llega a 28.",
+        "C": "La figura 1 es un cuadrado suelto y ningún cuadrado se cierra con tres palillos, como se comprueba en el primer dibujo del tablero."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q08.png",
+      "imagen_alt": "Los tres primeros pasos de una fila de cuadrados armados con palillos: uno, dos y tres cuadrados que comparten los lados vecinos, con 4, 7 y 10 palillos respectivamente."
+    },
+    {
+      "id": "P3-mat-5-09",
+      "numero": 9,
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Construyo igualdades y desigualdades numéricas como representación de relaciones entre distintos datos.",
+      "que_evalua": "La habilidad para describir la relación entre dos magnitudes a partir de dos equilibrios registrados en una balanza.",
+      "enunciado": "<p>Doña Rosalba compra fruta al por mayor en la plaza de Fusagasugá y usa una balanza de dos platillos para comprobar lo que le entregan. Esta mañana hizo dos comprobaciones y las anotó en su cuaderno. Primero puso en un platillo una <b>caja de tomates</b> y en el otro <b>4 canastas de mora</b> iguales entre sí, y la balanza quedó equilibrada. Después puso en un platillo <b>2 de esas mismas canastas de mora</b> y en el otro una pesa de <b>6 kilogramos</b>, y la balanza también quedó equilibrada.</p>[[IMG]]<p>¿Cuánto pesa la caja de tomates de doña Rosalba?</p>",
+      "opciones": {
+        "A": "Pesa 12 kilogramos, porque cada canasta de mora pesa 3 kilogramos.",
+        "B": "Pesa 6 kilogramos, porque esa es la pesa que equilibró las canastas.",
+        "C": "Pesa 24 kilogramos, porque cada una de las 4 canastas pesa 6 kilogramos.",
+        "D": "Pesa 9 kilogramos, porque son 6 kilogramos más los 3 de otra canasta."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «Pesa 12 kilogramos, porque cada canasta de mora pesa 3 kilogramos» es correcta porque la segunda comprobación dice que 2 canastas de mora equilibran 6 kilogramos, de donde cada canasta pesa \\(6\\div 2=3\\) kilogramos. Como la caja de tomates equilibra 4 canastas iguales, su peso es \\(4\\times 3=12\\) kilogramos.",
+      "opciones_incorrectas": {
+        "B": "Los 6 kilogramos son el peso de dos canastas de mora juntas, no el de la caja de tomates, que equilibra el doble de canastas.",
+        "C": "Ese resultado aparece al multiplicar las 4 canastas por los 6 kilogramos, sin reparar en que esos 6 kilogramos corresponden a dos canastas y no a una.",
+        "D": "El valor 9 kilogramos suma los 6 kilogramos de dos canastas con los 3 de una tercera, y deja por fuera la cuarta canasta que también equilibra la caja."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q09.png",
+      "imagen_alt": "Las dos comprobaciones en la balanza: la caja de tomates equilibra cuatro canastas de mora, y dos de esas canastas equilibran una pesa de seis kilogramos."
+    },
+    {
+      "id": "P3-mat-5-10",
+      "numero": 10,
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La habilidad para distinguir una figura congruente de otras semejantes usando la medida de sus lados.",
+      "enunciado": "<p>En el colegio de Santa Rosa de Cabal se rompió una pieza triangular del vitral de la capilla y Sandra, que trabaja el vidrio, tiene que reponerla. Para que el vitral quede como estaba, la pieza nueva debe encajar exactamente en el hueco: no puede sobrar ni faltar vidrio por ningún lado. Por fortuna Sandra alcanzó a medir la pieza rota antes de botarla y anotó las medidas de sus tres lados en el dibujo que tiene sobre la mesa de trabajo.</p>[[IMG]]<p>En el taller hay cuatro piezas de vidrio ya cortadas, dibujadas todas a la misma escala y con sus medidas. ¿Cuál de esas piezas encaja exactamente en el hueco del vitral?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "B",
+      "justificacion_correcta": "El triángulo de lados 6, 8 y 10 centímetros es el que encaja, porque para llenar el hueco la pieza nueva tiene que ser congruente con la que se rompió, y dos triángulos son congruentes cuando sus tres lados miden lo mismo. La pieza rota mide 6, 8 y 10 centímetros, y esas mismas tres medidas son las de la pieza escogida.",
+      "opciones_incorrectas": {
+        "A": "El triángulo de 12, 16 y 20 centímetros tiene la misma forma de la pieza rota, porque sus lados son el doble de los de ella, pero al ser más grande no cabría dentro del hueco del vitral.",
+        "C": "El triángulo de 6, 8 y 12 centímetros coincide en dos de sus lados con la pieza rota, aunque el tercero mide 12 y no 10 centímetros, de modo que cierra de otra manera y deja vidrio por fuera.",
+        "D": "El triángulo de 3, 4 y 5 centímetros conserva la forma de la pieza rota reducida a la mitad, así que al ponerlo en el hueco quedaría vidrio faltante alrededor."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q10.png",
+      "imagen_alt": "Triángulo rectángulo que representa la pieza rota del vitral, con lados rotulados de 6, 8 y 10 centímetros.",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-5-p3/q10_opA.png",
+        "B": "assets/banco-mat-5-p3/q10_opB.png",
+        "C": "assets/banco-mat-5-p3/q10_opC.png",
+        "D": "assets/banco-mat-5-p3/q10_opD.png"
+      }
+    },
+    {
+      "id": "P3-mat-5-11",
+      "numero": 11,
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La habilidad para valorar la afirmación de otra persona sobre las medidas de una figura, usando la congruencia con otra que está en distinta posición.",
+      "enunciado": "<p>En una carpintería de Chinchiná están armando el respaldo de una banca con dos piezas de madera en forma de ele. Las dos piezas salieron del mismo molde, de manera que son <b>congruentes</b>: la segunda es la primera puesta al revés, girada media vuelta sobre la mesa. El operario alcanzó a rotular todas las medidas de la primera pieza, pero en la segunda se le borraron dos y quedaron marcadas con un signo de interrogación.</p>[[IMG]]<p>Wilson, el aprendiz del taller, <b>afirma que</b> esos dos lados borrados miden 3 centímetros y 6 centímetros, porque son las dos primeras medidas que él lee en la primera pieza.</p><p>¿Es acertada la afirmación de Wilson?</p>",
+      "opciones": {
+        "A": "Sí, porque al girar media vuelta la pieza los lados de 5 y 4 pasan a medir 3 y 6.",
+        "B": "No, porque el giro encoge la pieza y esos dos lados quedan en 2,5 y 2 centímetros.",
+        "C": "No, porque el giro no cambia medidas y esos lados miden 5 y 4 centímetros.",
+        "D": "No, porque esos dos lados son el más largo y el brazo delgado, de 8 y 2 centímetros."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «No, porque el giro no cambia medidas y esos lados miden 5 y 4 centímetros» es correcta porque las dos piezas son congruentes y un giro de media vuelta no alarga ni encoge ningún lado. Al recorrer el contorno de la segunda pieza desde el lado de 8 centímetros se llega al escalón, que en la primera pieza mide 5 centímetros, y enseguida al lado que baja, que en la primera mide 4 centímetros.",
+      "opciones_incorrectas": {
+        "A": "Un giro cambia el lugar que ocupa cada lado, pero no su medida, de modo que ningún lado de 5 centímetros puede quedar convertido en uno de 3.",
+        "B": "Esas medidas suponen que al girar la pieza sus lados se reducen a la mitad, cuando un giro cambia la posición de la figura y le conserva íntegro el tamaño.",
+        "D": "Las medidas de 8 y 2 centímetros corresponden al lado más largo y al brazo delgado, que en la segunda pieza también aparecen rotulados en el dibujo."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q11.png",
+      "imagen_alt": "Dos piezas iguales en forma de ele; la primera tiene rotulados sus seis lados y la segunda, girada media vuelta, tiene dos lados marcados con signo de interrogación."
+    },
+    {
+      "id": "P3-mat-5-12",
+      "numero": 12,
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Identifico y justifico relaciones de congruencia y semejanza entre figuras.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno de conteo de piezas congruentes y señalar el paso en el que se aplicó la operación equivocada.",
+      "enunciado": "<p>En el parque principal de un municipio del Tolima están armando el piso de un quiosco con baldosas en forma de rombo, todas <b>congruentes entre sí</b>, de modo que ninguna es más grande ni más pequeña que las otras y todas encajan igual. El diseño aprobado lleva <b>7 filas</b> y cada fila lleva <b>9 baldosas</b>, sin espacios libres y sin baldosas partidas. Cuando el maestro de obra llegó esta mañana, los ayudantes ya habían pegado <b>12 baldosas</b> repartidas entre la primera y la segunda fila.</p>[[IMG]]<p>Nicolás, uno de los ayudantes, escribió estos pasos para encargar en la ferretería las baldosas que faltan:</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:620px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> El piso terminado lleva \\(7\\times 9=63\\) baldosas.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> De esas, los ayudantes ya pegaron 12 baldosas.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Entonces hay que encargar \\(63+12=75\\) baldosas.</div></div><p>¿En cuál paso se equivocó Nicolás y qué debería decir ese paso?</p>",
+      "opciones": {
+        "A": "En el paso 1, porque el piso lleva 7 más 9, es decir 16 baldosas en total.",
+        "B": "En ninguno, porque el encargo tiene que alcanzar para el piso entero del quiosco.",
+        "C": "En el paso 2, porque las baldosas ya pegadas están contadas dos veces en el plano.",
+        "D": "En el paso 3, porque las 12 ya pegadas se restan y hay que encargar 51 baldosas."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «En el paso 3, porque las 12 ya pegadas se restan y hay que encargar 51 baldosas» es correcta porque los dos primeros pasos están bien: al ser todas las baldosas congruentes y no quedar espacios libres, el piso terminado lleva \\(7\\times 9=63\\) baldosas y 12 ya están puestas. El error aparece al final, cuando Nicolás suma en lugar de restar, pues lo que falta se averigua con \\(63-12=51\\).",
+      "opciones_incorrectas": {
+        "A": "Sumar 7 y 9 junta las filas con las baldosas de una sola fila, que son cantidades de distinta clase; para saber cuántas baldosas cubren el piso hay que multiplicar.",
+        "B": "El encargo sí debe alcanzar para el piso entero, pero una parte del piso ya está enchapada y esas 12 baldosas no hay que volverlas a comprar.",
+        "C": "Las 12 baldosas del plano aparecen una sola vez, señaladas en otro color justamente para no confundirlas con las que todavía faltan."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q12.png",
+      "imagen_alt": "El plano del piso del quiosco: siete filas de nueve baldosas en forma de rombo, con las doce que los ayudantes ya pegaron señaladas en otro color."
+    },
+    {
+      "id": "P3-mat-5-13",
+      "numero": 13,
+      "competencia": "b",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Comparo diferentes representaciones del mismo conjunto de datos.",
+      "que_evalua": "La habilidad para valorar la conclusión de otra persona al confrontar dos representaciones del mismo conjunto de datos, usando la convención del pictograma.",
+      "enunciado": "<p>Doña Amparo, la bibliotecaria de un colegio de Sogamoso, lleva el registro de los libros que presta cada mes. Para la cartelera del pasillo dibujó un pictograma en el que <b>cada libro dibujado representa 5 préstamos</b>, y para el informe de la rectoría escribió además una tabla con esos mismos datos. En uno de los meses las dos carteleras no dicen lo mismo y hay que corregir el registro antes de entregarlo.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Mes</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Préstamos según la tabla</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Marzo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Abril</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">20</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Mayo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Junio</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table><p>El personero revisa las dos carteleras y <b>concluye que</b> el mes que no coincide es junio, porque es el que menos libros dibujados tiene.</p><p>¿Es acertada la conclusión del personero?</p>",
+      "opciones": {
+        "A": "No, porque el mes que no coincide es mayo: siete libros valen 35 y la tabla dice 30.",
+        "B": "Sí, porque junio tiene apenas tres libros dibujados y es el mes de menos préstamos.",
+        "C": "No, porque el mes que no coincide es abril, donde cuatro libros valen 24 préstamos.",
+        "D": "No, porque el mes que no coincide es marzo, donde seis libros valen 36 préstamos."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «No, porque el mes que no coincide es mayo: siete libros valen 35 y la tabla dice 30» es correcta porque cada libro dibujado vale 5 préstamos, de manera que los siete libros de mayo equivalen a \\(7\\times 5=35\\) préstamos y la tabla registra 30 para ese mismo mes. En junio, en cambio, los tres libros dan \\(3\\times 5=15\\), que es justo lo que anota la tabla.",
+      "opciones_incorrectas": {
+        "B": "Junio sí es el mes con menos libros dibujados, pero tener pocos préstamos no es lo mismo que estar mal anotado: sus tres libros equivalen a 15 préstamos y la tabla registra 15.",
+        "C": "Ese conteo le da 6 préstamos a cada libro dibujado, cuando la convención de la cartelera dice 5: los cuatro libros de abril valen \\(4\\times 5=20\\), igual que la tabla.",
+        "D": "Ese conteo también cambia la convención por 6 préstamos en vez de 5: los seis libros de marzo valen \\(6\\times 5=30\\), que es lo que anota la tabla."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q13.png",
+      "imagen_alt": "Pictograma de préstamos por mes con seis libros en marzo, cuatro en abril, siete en mayo y tres en junio; cada libro dibujado representa cinco préstamos."
+    },
+    {
+      "id": "P3-mat-5-14",
+      "numero": 14,
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
+      "que_evalua": "La habilidad para identificar la imagen de una figura después de reflejarla respecto de una línea dada.",
+      "enunciado": "<p>Los estudiantes de quinto de una escuela de Montería están pintando un mural con figuras repetidas. Yesenia pintó primero un banderín con el <b>asta hacia abajo</b> y la <b>punta señalando hacia la derecha</b>, y enseguida marcó en la pared una <b>línea vertical con tiza</b>. Para terminar el mural le falta pintar, al otro lado de esa línea, el <b>reflejo</b> del banderín: la misma figura como se vería si la línea de tiza fuera un espejo, del mismo tamaño y a la misma distancia de la línea.</p>[[IMG]]<p>¿Cuál dibujo muestra cómo queda el mural cuando Yesenia termine de pintar?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "B",
+      "justificacion_correcta": "El mural que corresponde es el que tiene el segundo banderín con la punta señalando hacia la izquierda y el asta abajo, a la misma distancia de la línea de tiza que el primero. Así se ve una figura frente a un espejo: conserva el tamaño y la posición del asta, y lo único que cambia es el lado hacia donde apunta la tela.",
+      "opciones_incorrectas": {
+        "A": "En ese mural el segundo banderín conserva la punta hacia la derecha, igual que el primero, de manera que la figura solo se corrió a lo largo de la pared; frente a un espejo la punta tiene que quedar apuntando hacia el otro lado.",
+        "C": "En ese mural el asta del banderín quedó acostada sobre la pared y la tela apunta hacia arriba, que es lo que se obtiene al girar la figura un cuarto de vuelta y no al reflejarla en la línea de tiza.",
+        "D": "En ese mural la punta sí quedó señalando hacia la izquierda, pero la tela bajó hasta el pie del asta, que es el resultado de darle media vuelta a la figura; en un reflejo la tela sigue arriba."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q14.png",
+      "imagen_alt": "La pared del mural con una línea vertical de tiza y, a la izquierda de la línea, el banderín que Yesenia ya pintó, con el asta hacia abajo y la punta señalando hacia la derecha.",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-5-p3/q14_opA.png",
+        "B": "assets/banco-mat-5-p3/q14_opB.png",
+        "C": "assets/banco-mat-5-p3/q14_opC.png",
+        "D": "assets/banco-mat-5-p3/q14_opD.png"
+      }
+    },
+    {
+      "id": "P3-mat-5-15",
+      "numero": 15,
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y verifico los resultados de aplicar transformaciones a figuras en el plano para construir diseños.",
+      "que_evalua": "La habilidad para valorar la afirmación de otra persona sobre el efecto de un giro, reconociendo que la imagen conserva forma y tamaño y sigue siendo congruente.",
+      "enunciado": "<p>Ana Lucía arma con su hermano un rompecabezas de madera y le queda una sola pieza por poner. La pieza no entra en el hueco tal como está, así que ella la toma, le da <b>media vuelta</b> sobre la mesa sin levantarla y vuelve a intentarlo. En el dibujo aparecen la pieza como estaba al comienzo y la misma pieza después del giro.</p>[[IMG]]<p>El hermano <b>asegura que</b> así ya no sirve, porque al girarla la pieza quedó distinta de como era.</p><p>¿Es acertado lo que asegura el hermano?</p>",
+      "opciones": {
+        "A": "Sí, porque al girarla la pieza cambió de forma y ya no encaja en el hueco.",
+        "B": "No, porque el giro le conserva la forma, aunque le acorta un poco los lados.",
+        "C": "No, porque el giro solo le cambia la posición y sigue siendo congruente.",
+        "D": "Sí, porque al quedar en otra posición la pieza deja de ser congruente."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «No, porque el giro solo le cambia la posición y sigue siendo congruente» es correcta porque un giro mueve la pieza sobre la mesa, pero no alarga, no encoge ni deforma ninguno de sus lados. Por eso la pieza girada y la pieza inicial se pueden superponer exactamente, y sí sirve para el hueco del rompecabezas.",
+      "opciones_incorrectas": {
+        "A": "En el dibujo se reconoce el mismo contorno antes y después del giro, solo que apuntando hacia el otro lado, de modo que la forma no cambió.",
+        "B": "El giro sí conserva la forma, pero tampoco le acorta los lados: si las medidas cambiaran, la pieza dejaría de encajar en el hueco.",
+        "D": "Estar en otra posición no rompe la congruencia, pues dos figuras son congruentes cuando tienen la misma forma y el mismo tamaño, sin importar cómo estén colocadas."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q15.png",
+      "imagen_alt": "Una pieza en forma de ele y la misma pieza después de girarla media vuelta sobre la mesa."
+    },
+    {
+      "id": "P3-mat-5-16",
+      "numero": 16,
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Utilizo la notación decimal para expresar fracciones en diferentes contextos y relaciono estas dos notaciones con la de los porcentajes.",
+      "que_evalua": "La habilidad para representar una misma parte de un todo como fracción y como número decimal.",
+      "enunciado": "<p>En la clase de matemáticas, el profesor Ramiro le entregó a cada estudiante una cuadrícula grande dividida en <b>100 cuadritos iguales</b> para trabajar la relación entre las fracciones y los decimales. Valentina pintó de color algunos cuadritos, como se ve en el dibujo, y ahora tiene que escribir en su cuaderno, <b>de dos maneras distintas</b>, qué parte de toda la cuadrícula quedó pintada: primero con una fracción y después con un número decimal.</p>[[IMG]]<p>¿Cómo debe escribir Valentina la parte pintada de la cuadrícula?</p>",
+      "opciones": {
+        "A": "Cuarenta y cinco décimos, que se escriben \\(\\frac{45}{10}\\) o 4,5.",
+        "B": "Cuarenta y cinco milésimos, que se escriben \\(\\frac{45}{1000}\\) o 0,045.",
+        "C": "Cuarenta y cinco centésimos, que se escriben \\(\\frac{45}{100}\\) o 0,045.",
+        "D": "Cuarenta y cinco centésimos, que se escriben \\(\\frac{45}{100}\\) o 0,45."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «Cuarenta y cinco centésimos…» es correcta porque la cuadrícula está partida en 100 cuadritos iguales y hay 45 pintados, de modo que la parte pintada es \\(\\frac{45}{100}\\) del total. Como el denominador es 100, esa fracción se escribe con dos cifras decimales, 0,45, y las dos formas nombran la misma cantidad.",
+      "opciones_incorrectas": {
+        "A": "Los décimos parten el todo en 10 pedazos y no en 100; además \\(\\frac{45}{10}\\) equivale a 4,5, es decir cuatro cuadrículas y media, mucho más de lo que Valentina pintó.",
+        "B": "Los milésimos parten el todo en 1.000 pedazos, cuando la cuadrícula del dibujo solo tiene 100 cuadritos, y 0,045 corresponde a una parte diez veces menor que la pintada.",
+        "C": "La fracción \\(\\frac{45}{100}\\) está bien escrita, pero su forma decimal es 0,45 y no 0,045: el número 0,045 tiene los 45 en el lugar de los milésimos."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q16.png",
+      "imagen_alt": "Cuadrícula de cien cuadritos iguales con cuarenta y cinco de ellos pintados de color."
+    },
+    {
+      "id": "P3-mat-5-17",
+      "numero": 17,
+      "competencia": "c",
+      "afirmacion": 8,
+      "evidencia": "8.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto las fracciones en diferentes contextos: situaciones de medición, relaciones parte todo, cociente, razones y proporciones.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno de comparación de fracciones y decimales, y señalar el paso en el que se ordena con una regla falsa.",
+      "enunciado": "<p>Cuatro estudiantes de quinto de un colegio de Ibagué compraron cada uno una pizza personal del <b>mismo tamaño</b> y anotaron en el tablero del salón qué parte de su pizza alcanzaron a comerse durante el descanso. Cada uno lo escribió a su manera, unos con fracción y otro con coma decimal, tal como quedó en el tablero. La profesora Ligia les pidió organizar los cuatro datos <b>de menor a mayor</b>.</p>[[IMG]]<p>Karen pasó al tablero y escribió estos pasos:</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:620px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> Lo de Nicolás es \\(\\frac{3}{5}=\\frac{60}{100}\\) y lo de Esteban es \\(\\frac{17}{25}=\\frac{68}{100}\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Lo mío es \\(\\frac{7}{10}=\\frac{70}{100}\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Lo de Daniela, 0,65, es la cantidad menor de todas, porque es el único dato escrito con coma; el orden queda Daniela, Nicolás, Esteban y Karen.</div></div><p>¿En cuál paso se equivocó Karen y qué debería decir ese paso?</p>",
+      "opciones": {
+        "A": "En el paso 1, porque tres quintos equivalen a 35 centésimos y no a 60 centésimos.",
+        "B": "En el paso 3, porque 0,65 son 65 centésimos y el dato menor es el de Nicolás.",
+        "C": "En ninguno, porque una cantidad escrita con coma siempre es menor que una fracción.",
+        "D": "En el paso 2, porque siete décimos equivalen a 17 centésimos y no a 70 centésimos."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «En el paso 3, porque 0,65 son 65 centésimos y el dato menor es el de Nicolás» es correcta porque llevar una cantidad a centésimos no depende de cómo esté escrita: 0,65 equivale a \\(\\frac{65}{100}\\). Con los cuatro datos en centésimos, 60, 65, 68 y 70, el menor es el de Nicolás y el orden de menor a mayor queda Nicolás, Daniela, Esteban y Karen.",
+      "opciones_incorrectas": {
+        "A": "La conversión del primer paso está bien hecha: \\(\\frac{3}{5}\\) equivale a \\(\\frac{60}{100}\\), porque al multiplicar por 20 arriba y abajo la fracción no cambia de valor.",
+        "C": "Estar escrita con coma no hace pequeña a una cantidad: 0,65 supera a los 60 centésimos de Nicolás y es menor que los 68 de Esteban.",
+        "D": "El segundo paso también está bien: \\(\\frac{7}{10}\\) equivale a \\(\\frac{70}{100}\\), y 17 centésimos sería una porción mucho menor que la que se comió Karen."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q17.png",
+      "imagen_alt": "El tablero del salón con lo que anotó cada estudiante: Nicolás tres quintos, Daniela cero coma sesenta y cinco, Esteban diecisiete veinticincoavos y Karen siete décimos."
+    },
+    {
+      "id": "P3-mat-5-18",
+      "numero": 18,
+      "competencia": "c",
+      "afirmacion": 9,
+      "evidencia": "9.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La habilidad para expresar la posibilidad de un evento comparando los casos favorables con el total de casos posibles.",
+      "enunciado": "<p>En la jornada de la ciencia, el curso de quinto armó una bolsa con balotas de colores para un juego de azar. Doña Alba, la docente, contó las balotas delante de todos y anotó en el tablero cuántas hay de cada color, como aparece en la tabla. Todas las balotas tienen el mismo tamaño y el mismo peso, de manera que ninguna se distingue al tacto. Un estudiante con los ojos vendados va a meter la mano y a sacar una sola balota, sin mirar.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Color de la balota</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Cantidad</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Rojas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Azules</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Verdes</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Amarillas</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2</td></tr></table><p>¿Qué posibilidad tiene el estudiante de sacar una balota azul?</p>",
+      "opciones": {
+        "A": "Una de cada cuatro, porque en la bolsa hay cuatro colores.",
+        "B": "Seis de cada catorce, porque hay catorce balotas de otro color.",
+        "C": "Seis de cada veinte, es decir tres de cada diez balotas.",
+        "D": "Seis de cada seis, porque las balotas azules son seis."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «Seis de cada veinte, es decir tres de cada diez balotas» es correcta porque en la bolsa hay \\(8+6+4+2=20\\) balotas en total y seis de ellas son azules. La posibilidad de sacar una azul se expresa comparando esos seis casos favorables con las veinte balotas que pueden salir, razón que equivale a tres de cada diez.",
+      "opciones_incorrectas": {
+        "A": "En la bolsa hay cuatro colores, pero no hay la misma cantidad de balotas de cada uno: las azules son seis y las amarillas apenas dos, así que los colores no se reparten por igual.",
+        "B": "El número catorce cuenta solamente las balotas que no son azules, cuando la comparación debe hacerse contra el total de balotas que hay dentro de la bolsa.",
+        "D": "Las balotas azules sí son seis, aunque compararlas consigo mismas daría por seguro que siempre sale una azul, y en la bolsa hay balotas de otros tres colores."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q18.png",
+      "imagen_alt": "Las veinte balotas que hay dentro de la bolsa: ocho rojas, seis azules, cuatro verdes y dos amarillas, todas del mismo tamaño."
+    },
+    {
+      "id": "P3-mat-5-19",
+      "numero": 19,
+      "competencia": "b",
+      "afirmacion": 10,
+      "evidencia": "10.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "BAJA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición, transformación, comparación e igualación.",
+      "que_evalua": "La habilidad para reconocer que una suma repetida y una multiplicación son dos caminos equivalentes para contar un arreglo rectangular.",
+      "enunciado": "<p>En la huerta de la escuela, los estudiantes de quinto sembraron cebolla larga en surcos parejos. El profesor Wilmar les mostró la siembra vista desde arriba: hay <b>6 surcos</b> y en cada surco quedaron <b>8 matas</b>, sin que sobre ni falte ninguna y sin que ningún surco tenga más matas que otro. Ahora los estudiantes tienen que anotar en la bitácora cuántas matas sembraron en total, y el profesor les pidió que no las contaran una por una.</p>[[IMG]]<p>¿Qué operación permite hallar el total de matas sembradas?</p>",
+      "opciones": {
+        "A": "Sumar 6 y 8, porque son los surcos y las matas de cada surco.",
+        "B": "Multiplicar 6 por 6, porque hay que contar una vez cada surco.",
+        "C": "Sumar ocho veces el 6 y restarle 6, porque sobran los surcos.",
+        "D": "Multiplicar 6 por 8, porque es lo mismo que sumar seis veces el 8."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «Multiplicar 6 por 8, porque es lo mismo que sumar seis veces el 8» es correcta porque los surcos forman un arreglo rectangular en el que todos los grupos tienen el mismo tamaño. Sumar \\(8+8+8+8+8+8\\) y multiplicar \\(6\\times 8\\) llevan al mismo resultado, 48 matas, y la multiplicación evita contar mata por mata.",
+      "opciones_incorrectas": {
+        "A": "Sumar 6 y 8 junta los surcos con las matas de un solo surco, que son cantidades de distinta clase, y da 14, muy por debajo de lo que se sembró.",
+        "B": "Multiplicar 6 por 6 repite el número de surcos y deja por fuera el dato de cuántas matas quedaron en cada uno, que son ocho.",
+        "C": "Sumar ocho veces el 6 sí llega a 48 matas, pero al restarle después los 6 surcos se descuentan matas que de verdad están sembradas en la huerta."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q19.png",
+      "imagen_alt": "La siembra vista desde arriba: seis surcos horizontales con ocho matas de cebolla cada uno."
+    },
+    {
+      "id": "P3-mat-5-20",
+      "numero": 20,
+      "competencia": "b",
+      "afirmacion": 11,
+      "evidencia": "11.1",
+      "cmc": "Aleatorio",
+      "dificultad": "BAJA",
+      "estandar": "Conjeturo y pongo a prueba predicciones acerca de la posibilidad de ocurrencia de eventos.",
+      "que_evalua": "La habilidad para reconocer cuál resultado de un experimento aleatorio ocurre siempre, es decir, cuál es un evento seguro.",
+      "enunciado": "<p>En un colegio de Riohacha se sortea entre los estudiantes de grado quinto quién iza la bandera el próximo lunes. La coordinadora escribió en <b>30 papeletas iguales</b> los nombres de los 30 estudiantes del curso, <b>18 niñas y 12 niños</b>, dobló todas las papeletas de la misma manera y las echó en una bolsa. En la bolsa no quedó ninguna papeleta con un nombre distinto de los del curso. La rectora va a sacar una sola papeleta sin mirar.</p>[[IMG]]<p>¿Cuál de los siguientes resultados es seguro en ese sorteo?</p>",
+      "opciones": {
+        "A": "Que la papeleta traiga el nombre de un estudiante de grado quinto.",
+        "B": "Que la papeleta traiga el nombre de una de las niñas del curso.",
+        "C": "Que la papeleta traiga el nombre de uno de los niños del curso.",
+        "D": "Que la papeleta traiga el nombre de la profesora de sociales."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «Que la papeleta traiga el nombre de un estudiante de grado quinto» es correcta porque las 30 papeletas de la bolsa traen únicamente nombres de estudiantes de ese curso y no hay ninguna con otro nombre. Salga la papeleta que salga, el resultado se cumple siempre, y por eso el evento se llama seguro.",
+      "opciones_incorrectas": {
+        "B": "Sacar el nombre de una niña es lo más probable, porque hay 18 papeletas con nombres de niñas, pero no es seguro: también pueden salir los otros 12 nombres.",
+        "C": "Sacar el nombre de un niño es posible, ya que hay 12 papeletas con nombres de niños, aunque igual pueden salir las 18 papeletas restantes.",
+        "D": "El nombre de la profesora no está escrito en ninguna de las 30 papeletas, de modo que ese resultado no es seguro sino imposible."
+      },
+      "imagen_figura": "assets/banco-mat-5-p3/q20.png",
+      "imagen_alt": "La bolsa del sorteo con las treinta papeletas dobladas de la misma manera, dieciocho con nombres de niñas y doce con nombres de niños."
+    }
+  ]
+}

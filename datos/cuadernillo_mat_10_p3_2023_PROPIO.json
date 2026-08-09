@@ -1,0 +1,586 @@
+{
+  "id": "mat-10-p3-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "10",
+  "periodo": "III",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas · Grado 10° · Período III (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA · ítems y figuras de autoría propia alineados a los Estándares Básicos de Competencias (marco público). El Período III es de creación íntegramente propia: no adapta figuras ni textos de cuadernillos de terceros.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Interpretación y Representación",
+    "b": "Formulación y Ejecución",
+    "c": "Argumentación"
+  },
+  "afirmaciones": {
+    "1": "Comprende y transforma la información cuantitativa y esquemática presentada en distintos formatos.",
+    "2": "Frente a un problema que involucre información cuantitativa, plantea e implementa estrategias que lleven a soluciones adecuadas.",
+    "3": "Valida procedimientos y estrategias matemáticas utilizadas para dar solución a problemas."
+  },
+  "evidencias": {
+    "1.1": "Da cuenta de las características básicas de la información presentada en distintos formatos.",
+    "1.2": "Transforma la representación de una o más piezas de información.",
+    "2.1": "Diseña planes para la solución de problemas que involucran información cuantitativa o esquemática.",
+    "2.2": "Ejecuta un plan de solución para un problema que involucra información cuantitativa o esquemática.",
+    "2.3": "Resuelve un problema que involucra información cuantitativa o esquemática.",
+    "3.1": "Plantea afirmaciones que sustentan o refutan una interpretación dada a la información disponible.",
+    "3.3": "Establece la validez o pertinencia de una solución propuesta a un problema dado."
+  },
+  "cmc": [
+    "Estadística",
+    "Álgebra y cálculo",
+    "Geometría"
+  ],
+  "preservar_orden_preguntas": false,
+  "preguntas": [
+    {
+      "id": "P3-mat-10-01",
+      "numero": 1,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "BAJA",
+      "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
+      "que_evalua": "La habilidad para leer una tabla de datos y determinar el rango del conjunto registrado.",
+      "enunciado": "<p>Doña Aurora vende arepas de choclo en el parque de Consacá y quiere saber qué tan parejas fueron sus ventas de la semana antes de decidir cuánta masa encarga para la siguiente.</p><p>La tabla registra las arepas que vendió en cada uno de los seis días que abrió el puesto, desde el lunes hasta el sábado.</p>[[IMG]]<p>¿Cuál fue el rango de las ventas diarias de esa semana?</p>",
+      "opciones": {
+        "A": "\\(45\\) arepas, que es la diferencia entre el día de mayor y el de menor venta.",
+        "B": "\\(80\\) arepas, que es la cantidad vendida el sábado, el día más movido.",
+        "C": "\\(53{,}8\\) arepas, que es el promedio diario de las ventas de la semana.",
+        "D": "\\(50\\) arepas, que es la diferencia entre lo vendido el sábado y el miércoles."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «\\(45\\) arepas, que es la diferencia entre el día de mayor y el de menor venta» es correcta porque el rango de un conjunto de datos se obtiene restando el valor mínimo del máximo: la venta más alta fue de \\(80\\) arepas el sábado y la más baja de \\(35\\) el martes, de modo que \\(80-35=45\\).",
+      "opciones_incorrectas": {
+        "B": "Ese es el dato más alto de la tabla, no la distancia entre el dato más alto y el más bajo, que es lo que mide el rango.",
+        "C": "Ese valor es el promedio de los seis días y describe el centro de las ventas, no qué tan separados quedaron los extremos.",
+        "D": "Toma como mínimo el miércoles, que vendió \\(52\\) arepas, cuando el día de menor venta fue el martes con \\(35\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q01.png",
+      "imagen_alt": "Tabla de dos columnas con las arepas que se vendieron cada día: lunes 48, martes 35, miércoles 52, jueves 41, viernes 67 y sábado 80."
+    },
+    {
+      "id": "P3-mat-10-02",
+      "numero": 2,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La habilidad para comparar dos series en un gráfico de barras agrupadas e identificar dónde la diferencia entre ellas es mayor.",
+      "enunciado": "<p>El consejo de una emisora comunitaria de Túquerres contrató un estudio de audiencia porque quiere saber en qué franja le está ganando terreno la emisora vecina.</p><p>La gráfica reúne los oyentes que registró cada emisora en las cuatro franjas del día.</p>[[IMG]]<p>¿En cuál franja la diferencia de audiencia entre las dos emisoras fue mayor?</p>",
+      "opciones": {
+        "A": "En la franja de la mañana, donde la diferencia es de \\(30\\) oyentes.",
+        "B": "En la franja del mediodía, donde la diferencia es de \\(15\\) oyentes.",
+        "C": "En la franja de la tarde, donde la diferencia es de \\(35\\) oyentes.",
+        "D": "En la franja de la noche, donde la diferencia es de \\(5\\) oyentes."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «En la franja de la tarde, donde la diferencia es de \\(35\\) oyentes» es correcta porque en esa franja una emisora registra \\(140\\) oyentes y la otra \\(105\\), y ninguna de las demás franjas alcanza esa separación: en la mañana la diferencia es de \\(30\\), al mediodía de \\(15\\) y en la noche de apenas \\(5\\).",
+      "opciones_incorrectas": {
+        "A": "La mañana es la segunda franja más despareja, con \\(120\\) contra \\(90\\) oyentes, pero sus \\(30\\) de diferencia no superan a los de la tarde.",
+        "B": "Al mediodía las dos emisoras quedan cerca, con \\(95\\) contra \\(110\\) oyentes, de modo que allí la diferencia es de las más pequeñas del día.",
+        "D": "La noche es la franja con más oyentes en total, y por eso llama la atención, pero las dos barras casi se igualan en \\(180\\) y \\(175\\)."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q02.png",
+      "imagen_alt": "Gráfico de barras agrupadas con los oyentes de dos emisoras en cuatro franjas: mañana 120 y 90, mediodía 95 y 110, tarde 140 y 105, noche 180 y 175."
+    },
+    {
+      "id": "P3-mat-10-03",
+      "numero": 3,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La habilidad para interpretar el punto máximo de una gráfica en términos de la situación que representa.",
+      "enunciado": "<p>En la clase de física, el profesor Aníbal grabó el saque de un jugador del equipo del colegio y llevó al tablero la gráfica que describe la altura del balón.</p><p>La gráfica relaciona el tiempo transcurrido desde el saque, en segundos, con la altura del balón, en metros. El punto más alto de la curva aparece marcado.</p>[[IMG]]<p>¿Qué significa ese punto marcado en la situación del saque?</p>",
+      "opciones": {
+        "A": "Que el balón sube \\(20\\) metros por cada \\(2\\) segundos que dura su vuelo.",
+        "B": "Que el balón tarda \\(2\\) segundos en caer al suelo desde los \\(20\\) metros.",
+        "C": "Que a los \\(20\\) segundos el balón llega a su altura máxima, de \\(2\\) metros.",
+        "D": "Que a los \\(2\\) segundos el balón llega a su altura máxima, de \\(20\\) metros."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «Que a los \\(2\\) segundos el balón llega a su altura máxima, de \\(20\\) metros» es correcta porque el punto marcado tiene abscisa \\(2\\) en el eje del tiempo y ordenada \\(20\\) en el eje de la altura, y es el punto más alto de toda la curva: antes de él la altura crece y después decrece.",
+      "opciones_incorrectas": {
+        "A": "Convierte el punto en una razón constante de subida, cuando la gráfica es curva y la altura crece cada vez más lento hasta detenerse.",
+        "B": "Describe la caída, que en la gráfica ocurre después del punto marcado y termina a los \\(4\\) segundos, no en el instante señalado.",
+        "C": "Intercambia los dos ejes: lee el tiempo en la escala de la altura y la altura en la del tiempo, y el saque duraría veinte segundos."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q03.png",
+      "imagen_alt": "Gráfica de una parábola que describe la altura del balón entre los cero y los cuatro segundos, con el punto más alto marcado en los dos segundos y veinte metros."
+    },
+    {
+      "id": "P3-mat-10-04",
+      "numero": 4,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La habilidad para leer las cotas de un plano y expresar la relación entre dos de sus medidas.",
+      "enunciado": "<p>La rectora de una institución de Pasto pidió revisar el plano de la rampa de acceso, porque un padre de familia en silla de ruedas se quejó de que la pendiente es demasiado empinada.</p><p>El plano muestra la rampa vista de lado: el avance horizontal y la altura que salva aparecen acotados.</p>[[IMG]]<p>¿Cuál es la razón entre la altura que salva la rampa y su avance horizontal?</p>",
+      "opciones": {
+        "A": "\\(12{,}5\\), porque avanza doce metros y medio por cada metro de altura.",
+        "B": "\\(0{,}08\\), porque sube ocho centímetros por cada metro que avanza.",
+        "C": "\\(0{,}8\\), porque sube ochenta centímetros por cada metro que avanza.",
+        "D": "\\(10{,}8\\), porque suma el avance horizontal y la altura de la rampa."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «\\(0{,}08\\), porque sube ocho centímetros por cada metro que avanza» es correcta porque la razón pedida es la altura dividida entre el avance, \\(0{,}8\\) entre \\(10\\), lo que da \\(0{,}08\\); dicho en las unidades del plano, la rampa gana ocho centímetros de altura en cada metro recorrido.",
+      "opciones_incorrectas": {
+        "A": "Invierte la razón: divide el avance entre la altura y responde cuánto se avanza por metro de altura, que es la pregunta contraria.",
+        "C": "Toma la altura tal como aparece en el plano sin dividirla entre el avance, de modo que confunde una medida con una razón.",
+        "D": "Suma las dos cotas en lugar de compararlas, y una suma de longitudes no expresa la inclinación de la rampa."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q04.png",
+      "imagen_alt": "Plano lateral de una rampa de acceso: el avance horizontal mide diez metros y la altura que salva es de cero coma ocho metros."
+    },
+    {
+      "id": "P3-mat-10-05",
+      "numero": 5,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "BAJA",
+      "estandar": "Establezco relaciones y diferencias entre diferentes notaciones de números reales para decidir sobre su uso en una situación dada.",
+      "que_evalua": "La habilidad para transformar un número decimal a la notación científica que le corresponde.",
+      "enunciado": "<p>Un laboratorio de materiales entrega sus informes en notación científica, y la practicante debe pasar a ese formato el diámetro que acaba de medir con el calibrador.</p><p>El calibrador marcó que el diámetro del cable es de \\(0{,}0045\\) metros y el formato del informe exige notación científica, con un solo dígito distinto de cero antes de la coma.</p>[[IMG]]<p>¿Cómo queda escrito ese diámetro en el informe?</p>",
+      "opciones": {
+        "A": "\\(45 \\times 10^{-4}\\) metros, porque el primer factor puede ser cualquier entero.",
+        "B": "\\(4{,}5 \\times 10^{3}\\) metros, porque el exponente cuenta los ceros del número.",
+        "C": "\\(4{,}5 \\times 10^{-3}\\) metros, porque la coma se corre tres lugares a la derecha.",
+        "D": "\\(0{,}45 \\times 10^{-2}\\) metros, porque así se conserva la coma del valor medido."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «\\(4{,}5 \\times 10^{-3}\\) metros, porque la coma se corre tres lugares a la derecha» es correcta porque al mover la coma de \\(0{,}0045\\) tres lugares se obtiene \\(4{,}5\\), y cada movimiento hacia la derecha se compensa con una unidad negativa en el exponente, lo que deja \\(4{,}5 \\times 10^{-3}\\).",
+      "opciones_incorrectas": {
+        "A": "El valor numérico sí coincide, pero la notación científica exige un solo dígito antes de la coma y aquí el primer factor tiene dos.",
+        "B": "Deja el exponente positivo, con lo cual el resultado sería de miles de metros y no de milésimas, que es lo que midió el calibrador.",
+        "D": "Conserva el cero antes de la coma, así que el primer factor es menor que uno y no cumple el formato exigido por el informe."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q05.png",
+      "imagen_alt": "Calibrador sujetando un cable entre sus mordazas, con la pantalla marcando cero coma cero cero cuarenta y cinco metros."
+    },
+    {
+      "id": "P3-mat-10-06",
+      "numero": 6,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.2",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
+      "que_evalua": "La habilidad para transformar las frecuencias de una tabla en el diagrama circular que las representa.",
+      "enunciado": "<p>El comité ambiental del colegio quiere presentar en la izada de bandera un diagrama circular con lo que se recogió en la campaña de separación de residuos.</p><p>La tabla resume los kilos que se recogieron de cada clase de residuo, y sobre ella hay que armar el diagrama, en el que cada sector debe guardar con el círculo entero la misma proporción que su residuo guarda con el total recogido.</p>[[IMG]]<p>¿Cuál de los siguientes diagramas circulares representa esos datos?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "B",
+      "justificacion_correcta": "El diagrama en el que los orgánicos ocupan el sector más grande, el papel el segundo y el vidrio el más pequeño es correcto porque el total recogido fue \\(90+60+120+30=300\\) kilos: los orgánicos aportan \\(120\\), que son \\(144\\) grados; el papel \\(90\\), que son \\(108\\); el plástico \\(60\\), que son \\(72\\); y el vidrio \\(30\\), que son \\(36\\). Los cuatro sectores quedan en la misma proporción que los kilos de la tabla.",
+      "opciones_incorrectas": {
+        "A": "El diagrama que parte el círculo en cuatro sectores iguales supone que de los cuatro residuos se recogió la misma cantidad, cuando la tabla registra desde \\(30\\) hasta \\(120\\) kilos.",
+        "C": "El diagrama que le da al papel el sector más grande cambia entre sí las dos cantidades mayores: de orgánicos se recogieron \\(120\\) kilos y de papel \\(90\\), de modo que el sector mayor le corresponde a los orgánicos.",
+        "D": "El diagrama que le da al plástico el sector más grande lee la tabla al revés, porque del plástico se recogieron \\(60\\) kilos y de los orgánicos el doble, y aun así los orgánicos aparecen con la mitad del sector."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q06.png",
+      "imagen_alt": "Tabla de dos columnas con los kilos recogidos de cada residuo: papel 90, plástico 60, orgánicos 120 y vidrio 30.",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-10-p3/o06a.png",
+        "B": "assets/banco-mat-10-p3/o06b.png",
+        "C": "assets/banco-mat-10-p3/o06c.png",
+        "D": "assets/banco-mat-10-p3/o06d.png"
+      }
+    },
+    {
+      "id": "P3-mat-10-07",
+      "numero": 7,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.2",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Describo y modelo fenómenos periódicos del mundo real usando relaciones y funciones trigonométricas.",
+      "que_evalua": "La habilidad para transformar la descripción verbal de una medición indirecta en la razón trigonométrica que la representa.",
+      "enunciado": "<p>Una topógrafa debe reportar el ancho de un río en un tramo donde no puede cruzar, y solo dispone de un teodolito y de la altura de una antena que se ve en la otra orilla.</p><p>Desde un punto de la orilla, la topógrafa apunta el teodolito a la punta de una antena que está justo al frente, en la otra orilla, y registra un ángulo de elevación de \\(34^{\\circ}\\). La antena mide \\(28\\) metros de alto y su base está al nivel del piso.</p>[[IMG]]<p>¿Cuál expresión permite hallar el ancho \\(d\\) del río?</p>",
+      "opciones": {
+        "A": "\\(d = 28 \\times \\tan 34^{\\circ}\\), porque la tangente multiplica al lado conocido.",
+        "B": "\\(d = \\dfrac{28}{\\sin 34^{\\circ}}\\), porque el seno relaciona la altura con el ancho.",
+        "C": "\\(d = 28 \\times \\cos 34^{\\circ}\\), porque el coseno corresponde al lado adyacente.",
+        "D": "\\(d = \\dfrac{28}{\\tan 34^{\\circ}}\\), porque la altura es el cateto opuesto al ángulo."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «\\(d = \\dfrac{28}{\\tan 34^{\\circ}}\\), porque la altura es el cateto opuesto al ángulo» es correcta porque la antena y el ancho del río son los dos catetos del triángulo rectángulo, con la antena opuesta al ángulo de \\(34^{\\circ}\\) y el ancho adyacente a él. Entonces \\(\\tan 34^{\\circ} = \\dfrac{28}{d}\\), y al despejar queda el ancho como el cociente.",
+      "opciones_incorrectas": {
+        "A": "Multiplicar en vez de dividir invierte la relación: entregaría un ancho menor que la altura de la antena, cuando el ángulo medido es agudo.",
+        "B": "El seno vincula el cateto opuesto con la hipotenusa, y la hipotenusa aquí sería la visual del teodolito, que no es lo que se pregunta.",
+        "C": "El coseno también involucra la hipotenusa, así que con la sola altura de la antena no queda determinado el ancho del río."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q07.png",
+      "imagen_alt": "Corte lateral del río: en una orilla el teodolito apunta con un ángulo de treinta y cuatro grados a la punta de la antena de veintiocho metros que está en la otra orilla, y el ancho del río aparece marcado como d."
+    },
+    {
+      "id": "P3-mat-10-08",
+      "numero": 8,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.1",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La habilidad para valorar un plan de recolección de datos ajeno y establecer qué le falta para estimar sin sesgo una característica de toda la población.",
+      "enunciado": "<p>El personero estudiantil quiere llevar al consejo directivo una cifra confiable sobre el tiempo que los estudiantes dedican a las tareas fuera de clase.</p><p>En el colegio hay estudiantes de sexto a once, en jornada de la mañana y de la tarde, como muestra el esquema, y el personero quiere presentar el promedio de horas diarias de tarea del colegio entero. Un compañero le propone este plan de recolección.</p>[[IMG]]<div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">El plan que le propone su compañero</div><div style=\"margin:4px 0\">Paso 1. Publicar la encuesta en la cartelera y dejarla abierta una semana.</div><div style=\"margin:4px 0\">Paso 2. Promediar las horas que reporten quienes hayan decidido contestarla.</div></div><p>¿Qué le falta a ese plan para que la cifra represente a todo el colegio?</p>",
+      "opciones": {
+        "A": "Seleccionar al azar estudiantes de todos los grados y de las dos jornadas, porque solo así el grupo se parece al colegio entero.",
+        "B": "Preguntarles además a los diez estudiantes con el mejor promedio académico, porque son los que más tiempo le dedican a la tarea.",
+        "C": "Dejar la encuesta abierta un mes y no una semana, porque con más tiempo contestan más estudiantes y el promedio se asienta.",
+        "D": "No le falta nada, porque cualquiera del colegio puede contestar la encuesta y por eso quienes respondan representan a todos."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «Seleccionar al azar estudiantes de todos los grados y de las dos jornadas» es correcta porque una encuesta que se deja abierta la contestan sobre todo quienes tienen algo que decir del tema, y ese grupo no se parece al conjunto de los estudiantes. Solo una selección que le dé posibilidad de salir a cualquiera, cubriendo los seis grados y las dos jornadas que existen, produce un grupo parecido a la población que se quiere describir.",
+      "opciones_incorrectas": {
+        "B": "Los mejores promedios son un grupo escogido justamente por una característica ligada al estudio, así que su tiempo de tarea sigue sin representar al de los demás.",
+        "C": "Más tiempo abierta no corrige el problema, porque sigue respondiendo quien quiere y acumular respuestas voluntarias no vuelve representativo al grupo.",
+        "D": "Poder contestar no es lo mismo que ser escogido, porque allí quien decide si entra a la muestra es el propio estudiante y eso inclina el resultado."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q08.png",
+      "imagen_alt": "Esquema de la población del colegio: una cuadrícula con los grados de sexto a once en las columnas y las jornadas de la mañana y de la tarde en las filas, cada casilla con un grupo de estudiantes."
+    },
+    {
+      "id": "P3-mat-10-09",
+      "numero": 9,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.2",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo y contrasto las propiedades de los números (naturales, enteros, racionales y reales) y las de sus relaciones y operaciones para construir, manejar y utilizar apropiadamente los distintos sistemas numéricos.",
+      "que_evalua": "La habilidad para ejecutar un plan de solución que aplica dos porcentajes distintos a partes distintas de un mismo conjunto, revisando dónde se rompe la ejecución ajena.",
+      "enunciado": "<p>Don Efrén compró por mayor un lote de camisetas para venderlas en las fiestas del pueblo y quiere saber cuánto recaudó al final de la temporada.</p><p>Don Efrén compró \\(240\\) camisetas a \\(18\\,000\\) pesos cada una. Vendió el \\(70\\,\\%\\) del lote con un recargo del \\(40\\,\\%\\) sobre lo que le costó cada camiseta, y las restantes con un recargo del \\(15\\,\\%\\), también sobre el costo. Su ayudante hizo esta cuenta de lo que entró en caja.</p>[[IMG]]<div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">La cuenta del ayudante</div><div style=\"margin:4px 0\">Paso 1. Camisetas de cada grupo: \\(168\\) con el recargo mayor y \\(72\\) con el menor.</div><div style=\"margin:4px 0\">Paso 2. Precio de venta de cada una: \\(18\\,000 \\times 1{,}40 = 25\\,200\\) pesos y \\(18\\,000 \\times 1{,}15 = 20\\,700\\) pesos.</div><div style=\"margin:4px 0\">Paso 3. Total recibido: \\(240 \\times 25\\,200 = 6\\,048\\,000\\) pesos.</div></div><p>¿En cuál paso está el error y cuánto recibió don Efrén por todo el lote?</p>",
+      "opciones": {
+        "A": "En el paso \\(3\\), porque hay que restarle lo que costó el lote, así que quedan \\(1\\,404\\,000\\) pesos.",
+        "B": "En el paso \\(3\\), porque cada grupo se vendió a su propio precio, así que entran \\(5\\,724\\,000\\) pesos.",
+        "C": "En el paso \\(1\\), porque el lote se repartió por mitades iguales, así que entran \\(5\\,508\\,000\\) pesos.",
+        "D": "En ninguno, porque salieron las \\(240\\) camisetas del lote, así que entran \\(6\\,048\\,000\\) pesos."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «En el paso \\(3\\), porque cada grupo se vendió a su propio precio» es correcta porque el ayudante multiplicó las \\(240\\) camisetas por el precio del grupo de recargo mayor. Las \\(168\\) del primer grupo entran a \\(25\\,200\\) pesos, es decir \\(4\\,233\\,600\\), y las \\(72\\) restantes a \\(20\\,700\\) pesos, es decir \\(1\\,490\\,400\\); la suma de los dos grupos da \\(5\\,724\\,000\\) pesos.",
+      "opciones_incorrectas": {
+        "A": "Restarle el costo entrega la ganancia del negocio, y lo que se pregunta es el dinero que entró en caja por la venta del lote.",
+        "C": "El primer paso está bien, porque el enunciado dice que con el recargo mayor se vendió el \\(70\\,\\%\\) del lote y no la mitad.",
+        "D": "Dar por buena la cuenta deja en pie el error del último paso, donde las \\(72\\) camisetas del recargo menor se cobraron al precio del otro grupo."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q09.png",
+      "imagen_alt": "Barra que representa las doscientas cuarenta camisetas del lote, partida en el setenta por ciento vendido con recargo del cuarenta por ciento y el treinta por ciento restante vendido con recargo del quince por ciento."
+    },
+    {
+      "id": "P3-mat-10-10",
+      "numero": 10,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
+      "que_evalua": "La habilidad para resolver un problema que involucra el cálculo de la probabilidad de un evento simple.",
+      "enunciado": "<p>El grado décimo organizó una rifa para financiar la salida pedagógica y Camila quiere saber qué tan probable es que el premio termine en su casa.</p><p>Se vendieron \\(250\\) boletas numeradas y se sortea un único premio entre todas ellas. Camila compró \\(8\\) boletas y su hermano compró \\(5\\), y ninguno de los otros miembros de la familia compró.</p>[[IMG]]<p>¿Cuál es la probabilidad de que el premio le quede a alguien de esa familia?</p>",
+      "opciones": {
+        "A": "\\(\\frac{8}{250}\\), porque solo cuenta quien compró la mayor cantidad de boletas.",
+        "B": "\\(\\frac{2}{250}\\), porque en la familia hay dos personas que compraron boletas.",
+        "C": "\\(\\frac{13}{250}\\), porque la familia reúne trece de las doscientas cincuenta.",
+        "D": "\\(\\frac{13}{500}\\), porque cada uno participa en un sorteo independiente del otro."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «\\(\\frac{13}{250}\\), porque la familia reúne trece de las doscientas cincuenta» es correcta porque los casos favorables son todas las boletas de la familia, \\(8+5=13\\), y los casos posibles son las \\(250\\) boletas vendidas, ya que el premio es uno solo y cualquier boleta puede salir.",
+      "opciones_incorrectas": {
+        "A": "Cuenta únicamente las boletas de Camila y deja por fuera las cinco de su hermano, que también le darían el premio a la familia.",
+        "B": "Cuenta personas en lugar de boletas, cuando lo que entra al sorteo es cada boleta y no cada comprador.",
+        "D": "Duplica los casos posibles como si hubiera dos sorteos, cuando se rifa un único premio entre las mismas \\(250\\) boletas."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q10.png",
+      "imagen_alt": "Tómbola de la rifa rotulada con doscientas cincuenta boletas y un solo premio, y al lado los dos paquetes de boletas: ocho de Camila y cinco de su hermano."
+    },
+    {
+      "id": "P3-mat-10-11",
+      "numero": 11,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.3",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
+      "que_evalua": "La habilidad para resolver un problema de conteo distinguiendo si el orden de la selección modifica o no el resultado.",
+      "enunciado": "<p>La coordinación de convivencia debe conformar el comité que atenderá los casos del último periodo y quiere saber cuántas conformaciones distintas son posibles.</p><p>Se postularon \\(8\\) estudiantes y el comité queda conformado por \\(3\\) de ellos. Los tres integrantes cumplen exactamente la misma función, de manera que el comité formado por Ana, Beto y Caro es el mismo que el formado por Caro, Ana y Beto.</p>[[IMG]]<p>¿De cuántas maneras distintas puede quedar conformado el comité?</p>",
+      "opciones": {
+        "A": "De \\(336\\) maneras, porque cada puesto del comité se asigna a una persona distinta.",
+        "B": "De \\(24\\) maneras, porque son ocho postulados repartidos en los tres cupos.",
+        "C": "De \\(512\\) maneras, porque cada uno de los tres cupos lo puede ocupar cualquiera.",
+        "D": "De \\(56\\) maneras, porque el orden en que se escogen los tres no cambia el comité."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «De \\(56\\) maneras, porque el orden en que se escogen los tres no cambia el comité» es correcta porque hay \\(8 \\times 7 \\times 6 = 336\\) formas de escoger tres personas en orden, pero cada comité aparece allí \\(3 \\times 2 \\times 1 = 6\\) veces, una por cada orden posible de los mismos tres nombres. Al dividir, \\(336 \\div 6 = 56\\).",
+      "opciones_incorrectas": {
+        "A": "Ese conteo es correcto solo si los tres cargos fueran distintos, y el enunciado aclara que los tres integrantes cumplen la misma función.",
+        "B": "Multiplica los ocho postulados por los tres cupos, una operación que no corresponde a ninguna manera de escoger a los integrantes del comité.",
+        "C": "Corresponde a permitir que una misma persona ocupe varios cupos, cuando el comité está formado por tres estudiantes diferentes."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q11.png",
+      "imagen_alt": "Los ocho estudiantes postulados en fila y, debajo, dos listas con los mismos tres nombres en orden distinto, señaladas como el mismo comité."
+    },
+    {
+      "id": "P3-mat-10-12",
+      "numero": 12,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas que involucren magnitudes cuyos valores medios se suelen definir indirectamente como razones entre valores de otras magnitudes, como la velocidad media, la aceleración media y la densidad media.",
+      "que_evalua": "La habilidad para resolver un problema de velocidad media decidiendo cuál de dos métodos de cálculo la describe, y reconociendo que no equivale al promedio de las velocidades.",
+      "enunciado": "<p>El contador de una cooperativa lechera revisa el viaje diario del camión recolector para calcular el consumo real de combustible en la ruta de montaña.</p><p>El camión sube \\(120\\) kilómetros hasta la vereda a una velocidad de \\(40\\) kilómetros por hora y regresa por la misma vía, esos mismos \\(120\\) kilómetros, a \\(60\\) kilómetros por hora. Para reportar la velocidad media del viaje completo, en la oficina se discutieron dos métodos.</p>[[IMG]]<div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Los dos métodos que se discutieron en la oficina</div><div style=\"margin:4px 0\">Método 1. Sumar las dos velocidades y dividir entre dos, porque los dos tramos miden lo mismo.</div><div style=\"margin:4px 0\">Método 2. Hallar cuánto dura cada tramo, sumar los dos tiempos y dividir los \\(240\\) kilómetros entre ese total.</div></div><p>¿Cuál de los dos métodos lleva a la velocidad media del viaje y qué valor entrega?</p>",
+      "opciones": {
+        "A": "El método \\(1\\), y da \\(50\\) kilómetros por hora, porque los dos tramos tienen la misma longitud.",
+        "B": "El método \\(2\\), y da \\(48\\) kilómetros por hora, porque el viaje toma tres horas y luego dos.",
+        "C": "Los dos métodos, porque ambos entregan los \\(50\\) kilómetros por hora del viaje completo.",
+        "D": "Ninguno de los dos, porque falta saber cuánto combustible gastó el camión en cada tramo."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «El método \\(2\\), y da \\(48\\) kilómetros por hora» es correcta porque la velocidad media es la distancia total dividida entre el tiempo total: la subida toma \\(120 \\div 40 = 3\\) horas y el regreso \\(120 \\div 60 = 2\\) horas, de modo que \\(240 \\div 5 = 48\\).",
+      "opciones_incorrectas": {
+        "A": "Promediar las dos velocidades solo valdría si el camión gastara el mismo tiempo en cada tramo, y aquí gasta tres horas subiendo contra dos bajando.",
+        "C": "Los dos métodos no coinciden, porque el primero entrega \\(50\\) y el segundo \\(48\\), de manera que uno de los dos está describiendo mal el viaje.",
+        "D": "El combustible no hace falta, porque la velocidad media queda determinada por la distancia recorrida y por el tiempo que se gastó en recorrerla."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q12.png",
+      "imagen_alt": "Perfil de la ruta del camión: la subida de ciento veinte kilómetros a cuarenta kilómetros por hora hasta la vereda y el regreso de ciento veinte kilómetros a sesenta kilómetros por hora."
+    },
+    {
+      "id": "P3-mat-10-13",
+      "numero": 13,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "MEDIA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La habilidad para resolver un problema que exige plantear un sistema de dos ecuaciones con dos incógnitas.",
+      "enunciado": "<p>Un artesano de Sandoná llevó sombreros y bolsos de iraca a la feria del municipio y al cerrar el puesto quiere reconstruir cuántas piezas de cada clase vendió.</p><p>Los sombreros se venden a \\(45\\,000\\) pesos y los bolsos a \\(30\\,000\\) pesos cada uno. En la feria salieron \\(28\\) piezas en total, entre sombreros y bolsos, y el artesano recaudó \\(1\\,065\\,000\\) pesos.</p>[[IMG]]<p>¿Cuántos sombreros vendió el artesano en la feria?</p>",
+      "opciones": {
+        "A": "\\(13\\) sombreros, porque los bolsos fueron los que más salieron en la feria.",
+        "B": "\\(23\\) sombreros, porque el recaudo se reparte entre el precio del sombrero.",
+        "C": "\\(15\\) sombreros, porque con \\(13\\) bolsos se completan las \\(28\\) piezas vendidas.",
+        "D": "\\(28\\) sombreros, porque todas las piezas se cobraron al mismo precio de venta."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «\\(15\\) sombreros, porque con \\(13\\) bolsos se completan las \\(28\\) piezas vendidas» es correcta porque si \\(s\\) son los sombreros y \\(b\\) los bolsos, entonces \\(s+b=28\\) y \\(45\\,000s+30\\,000b=1\\,065\\,000\\). Reemplazando \\(b=28-s\\) queda \\(15\\,000s=225\\,000\\), es decir \\(s=15\\), y el recaudo se comprueba: \\(15\\) sombreros más \\(13\\) bolsos dan el total.",
+      "opciones_incorrectas": {
+        "A": "Ese es el número de bolsos: si fueran los sombreros, el recaudo bajaría a \\(1\\,035\\,000\\) pesos y no coincidiría con lo registrado.",
+        "B": "Divide el recaudo entre el precio del sombrero e ignora que parte del dinero entró por la venta de los bolsos.",
+        "D": "Supone que todas las piezas fueron sombreros, con lo cual el recaudo habría llegado a \\(1\\,260\\,000\\) pesos."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q13.png",
+      "imagen_alt": "Tarjeta del puesto de iraca en la feria: el sombrero a cuarenta y cinco mil pesos, el bolso a treinta mil pesos, veintiocho piezas vendidas y un recaudo de un millón sesenta y cinco mil pesos."
+    },
+    {
+      "id": "P3-mat-10-14",
+      "numero": 14,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La habilidad para resolver un problema que exige calcular el área de una región compuesta a partir de un plano, revisando dónde falla el cálculo ajeno.",
+      "enunciado": "<p>El rector de una escuela rural pidió cotizar la baldosa del patio, que no es rectangular porque en una esquina se dejó una zona verde que no se va a intervenir.</p><p>El plano muestra el patio: sería un rectángulo de \\(14\\) por \\(9\\) metros si no fuera porque en una esquina se reservó la zona verde, marcada con línea punteada, que no lleva baldosa. Un auxiliar entregó esta cuenta de la baldosa que hay que cotizar.</p>[[IMG]]<div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">La cuenta del auxiliar</div><div style=\"margin:4px 0\">Paso 1. Rectángulo que encierra el terreno: \\(14 \\times 9 = 126\\) metros cuadrados.</div><div style=\"margin:4px 0\">Paso 2. Zona verde reservada: \\(5 + 4 = 9\\) metros cuadrados.</div><div style=\"margin:4px 0\">Paso 3. Baldosa que se cotiza: \\(126 - 9 = 117\\) metros cuadrados.</div></div><p>¿En cuál paso está el error y cuánta baldosa se necesita para el patio?</p>",
+      "opciones": {
+        "A": "En el paso \\(3\\), porque las dos áreas se suman y no se restan, así que se cotizan \\(135\\) metros cuadrados.",
+        "B": "En el paso \\(2\\), porque la zona verde no se descuenta, así que se cotizan los \\(126\\) metros cuadrados del rectángulo.",
+        "C": "En ninguno, porque la cuenta ya descuenta la zona verde y deja los \\(117\\) metros cuadrados anotados.",
+        "D": "En el paso \\(2\\), porque el área de la zona verde se multiplica y no se suma, así que se cotizan \\(106\\) metros cuadrados."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «En el paso \\(2\\), porque el área de la zona verde se multiplica y no se suma» es correcta porque esa zona es un rectángulo de \\(5\\) por \\(4\\) metros y su área es \\(20\\) metros cuadrados, no \\(9\\). Descontándola del rectángulo que encierra el terreno queda \\(126-20=106\\) metros cuadrados de baldosa.",
+      "opciones_incorrectas": {
+        "A": "El error no está en la resta, porque descontar la zona verde es justamente lo que corresponde: esa esquina no lleva baldosa.",
+        "B": "La zona verde sí se descuenta, porque el plano la marca como reservada y la baldosa se cotiza solo sobre la superficie que se va a intervenir.",
+        "C": "Dar por buena la cuenta deja en pie el error de la zona verde, cuya área se obtiene multiplicando sus lados y no sumándolos."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q14.png",
+      "imagen_alt": "Plano de un patio con forma de ele: un rectángulo de catorce por nueve metros al que se le recorta en una esquina una zona verde rectangular de cinco por cuatro metros."
+    },
+    {
+      "id": "P3-mat-10-15",
+      "numero": 15,
+      "competencia": "b",
+      "afirmacion": "2",
+      "evidencia": "2.3",
+      "cmc": "Geometría",
+      "dificultad": "MEDIA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La habilidad para resolver un problema de medición indirecta aplicando una razón trigonométrica en un triángulo rectángulo.",
+      "enunciado": "<p>El cuerpo de bomberos de Ipiales practica el rescate en un edificio de apartamentos y necesita saber hasta qué piso alcanza la escalera que lleva la máquina.</p><p>La escalera mide \\(12\\) metros y queda apoyada contra la fachada formando un ángulo de \\(30^{\\circ}\\) con el piso, como muestra el esquema. Cada piso del edificio tiene \\(3\\) metros de altura.</p>[[IMG]]<p>¿A qué altura de la fachada llega el extremo superior de la escalera?</p>",
+      "opciones": {
+        "A": "A \\(6\\) metros, porque la altura es la escalera por el seno de \\(30^{\\circ}\\).",
+        "B": "A \\(10{,}4\\) metros, porque la altura es la escalera por el coseno de \\(30^{\\circ}\\).",
+        "C": "A \\(24\\) metros, porque la escalera es la mitad de la altura que se alcanza.",
+        "D": "A \\(4\\) metros, porque la altura resulta de dividir la escalera entre \\(30\\)."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «A \\(6\\) metros, porque la altura es la escalera por el seno de \\(30^{\\circ}\\)» es correcta porque la escalera es la hipotenusa del triángulo rectángulo y la altura buscada es el cateto opuesto al ángulo del piso, de modo que \\(h = 12 \\times \\operatorname{sen} 30^{\\circ} = 12 \\times 0{,}5 = 6\\) metros, es decir dos pisos del edificio.",
+      "opciones_incorrectas": {
+        "B": "El coseno entrega el cateto adyacente, que aquí es la distancia entre la base de la escalera y la fachada, no la altura sobre ella.",
+        "C": "Duplica la longitud de la escalera, cuando la altura alcanzada siempre es menor que la escalera por ser esta la hipotenusa.",
+        "D": "Divide la longitud entre el número de grados, una operación que no corresponde a ninguna razón entre los lados del triángulo."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q15.png",
+      "imagen_alt": "Esquema de una escalera de doce metros apoyada contra la fachada de un edificio, formando un ángulo de treinta grados con el piso."
+    },
+    {
+      "id": "P3-mat-10-16",
+      "numero": 16,
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.1",
+      "cmc": "Estadística",
+      "dificultad": "ALTA",
+      "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
+      "que_evalua": "La habilidad para plantear la afirmación que refuta una interpretación dada a la comparación de dos promedios.",
+      "enunciado": "<p>Un periódico local publicó la comparación entre las dos sedes de un colegio y el rector la citó en la reunión de padres para explicar en cuál se enseña mejor.</p><p>El periódico informó que en la sede norte el promedio del simulacro pasó de \\(280\\) a \\(310\\) puntos, mientras que en la sede sur pasó de \\(340\\) a \\(350\\), y acompañó la nota con la gráfica de los cuatro promedios. Ante los padres, el rector sostiene que en la sede norte se enseña mejor, porque subió treinta puntos y la otra solo diez.</p>[[IMG]]<p>¿Qué afirmación refuta esa conclusión del rector?</p>",
+      "opciones": {
+        "A": "Que el promedio de la sede sur también subió durante ese mismo periodo escolar.",
+        "B": "Que la sede norte partió de un puntaje mucho más bajo, donde subir treinta puntos cuesta menos.",
+        "C": "Que los puntajes de un simulacro no sirven para medir lo que aprenden los estudiantes.",
+        "D": "Que la sede norte tiene más estudiantes matriculados que la sede sur del colegio."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «Que la sede norte partió de un puntaje mucho más bajo, donde subir treinta puntos cuesta menos» es correcta porque el tamaño del aumento depende del punto de partida: la sede sur ya estaba en \\(340\\) y terminó en \\(350\\), por encima de los \\(310\\) que alcanzó la norte. Comparar solo el crecimiento, sin mirar el nivel de partida ni el de llegada, no sostiene la conclusión del rector.",
+      "opciones_incorrectas": {
+        "A": "Es cierto que la sede sur también subió, pero eso mismo aparece en la nota del periódico y no contradice al rector: él ya reconoce ese aumento de diez puntos.",
+        "C": "Poner en duda el simulacro descarta los dos resultados por igual, así que no muestra dónde se rompe el razonamiento que compara las dos sedes.",
+        "D": "El número de matriculados no interviene en la comparación, porque lo que se comparan son promedios y no cantidades de estudiantes."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q16.png",
+      "imagen_alt": "Gráfico de barras con el promedio de los dos simulacros en cada sede: la sede norte pasa de 280 a 310 puntos y la sede sur de 340 a 350, con el eje vertical desde cero."
+    },
+    {
+      "id": "P3-mat-10-17",
+      "numero": 17,
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.3",
+      "cmc": "Álgebra y cálculo",
+      "dificultad": "ALTA",
+      "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
+      "que_evalua": "La habilidad para establecer si las soluciones de una ecuación son pertinentes frente al contexto del problema.",
+      "enunciado": "<p>En la clase de álgebra, Andrés modeló con una ecuación el jardín que el curso quiere sembrar y le presentó al profesor los dos valores que obtuvo.</p><p>El jardín es rectangular, su largo mide \\(3\\) metros más que su ancho y debe ocupar \\(54\\) metros cuadrados, como muestra el esquema. Andrés planteó la ecuación \\(x(x+3)=54\\), donde \\(x\\) es el ancho en metros, obtuvo \\(x=6\\) y \\(x=-9\\), y afirma que el ancho del jardín puede ser cualquiera de esos dos valores.</p>[[IMG]]<p>¿Es acertada esa afirmación de Andrés?</p>",
+      "opciones": {
+        "A": "Sí, porque los dos valores satisfacen la ecuación que él planteó al comienzo.",
+        "B": "Sí, porque el signo negativo solo indica que el jardín se mide en el otro sentido.",
+        "C": "No, porque un ancho de \\(-9\\) metros no puede corresponder a un jardín real.",
+        "D": "No, porque una ecuación de segundo grado no puede tener dos soluciones distintas."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «No, porque un ancho de \\(-9\\) metros no puede corresponder a un jardín real» es correcta porque la ecuación efectivamente admite las dos raíces, pero \\(x\\) representa una longitud y ninguna longitud es negativa. Solo \\(x=6\\) sirve, y con ella el largo mide \\(9\\) metros y el área da los \\(54\\) metros cuadrados pedidos.",
+      "opciones_incorrectas": {
+        "A": "Que un valor satisfaga la ecuación no basta: el modelo restringe a \\(x\\) a ser una medida, y ese filtro es parte de resolver el problema.",
+        "B": "El signo no indica un sentido de medición, porque en el modelo \\(x\\) es la longitud del ancho y no una coordenada sobre un eje.",
+        "D": "Una ecuación de segundo grado sí puede tener dos raíces reales distintas, y de hecho esta las tiene; lo que falla es aceptarlas las dos."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q17.png",
+      "imagen_alt": "Esquema del jardín rectangular: el ancho está rotulado como x metros, el largo como x más 3 metros y en el centro se indica que el área es de 54 metros cuadrados."
+    },
+    {
+      "id": "P3-mat-10-18",
+      "numero": 18,
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "ALTA",
+      "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
+      "que_evalua": "La habilidad para establecer la validez de una propuesta que relaciona el cambio de una longitud con el cambio del volumen.",
+      "enunciado": "<p>El maestro de obra de una vereda debe ampliar el tanque que surte el acueducto y le propuso a la junta una solución que le parece sencilla y económica.</p><p>El tanque actual tiene forma de cubo y la comunidad necesita que almacene exactamente el doble de agua. El maestro de obra propone construir otro tanque cúbico con el doble de arista, como muestra el esquema, y argumenta que así el tanque tendrá el doble de capacidad.</p>[[IMG]]<p>¿Es válida la propuesta del maestro de obra?</p>",
+      "opciones": {
+        "A": "Sí, porque el volumen del cubo es proporcional a la medida de cada arista.",
+        "B": "No, porque al duplicar la arista el volumen aumenta apenas un cincuenta por ciento.",
+        "C": "Sí, porque duplicar la arista duplica también el área de cada una de las seis caras.",
+        "D": "No, porque al duplicar la arista el volumen del tanque queda multiplicado por ocho."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «No, porque al duplicar la arista el volumen del tanque queda multiplicado por ocho» es correcta porque el volumen de un cubo de arista \\(a\\) es \\(a^{3}\\), y con arista \\(2a\\) resulta \\((2a)^{3}=8a^{3}\\). La comunidad terminaría con ocho veces el agua que pidió, y el tanque de doble capacidad exige una arista de \\(a\\sqrt[3]{2}\\), cercana a \\(1{,}26\\) veces la actual.",
+      "opciones_incorrectas": {
+        "A": "El volumen no es proporcional a la arista sino a su cubo, y por eso un cambio pequeño en la arista produce un cambio mucho mayor en la capacidad.",
+        "B": "Ese aumento es demasiado pequeño: al duplicar la arista el volumen no crece a la mitad más, sino a ocho veces el original.",
+        "C": "El área de cada cara no se duplica sino que se cuadruplica, y en todo caso la capacidad depende del volumen y no del área."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q18.png",
+      "imagen_alt": "Dos tanques cúbicos dibujados en perspectiva: el actual, de arista a, y el que propone el maestro de obra, de arista dos a, que se ve mucho más voluminoso."
+    },
+    {
+      "id": "P3-mat-10-19",
+      "numero": 19,
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.3",
+      "cmc": "Estadística",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco cómo diferentes maneras de presentación de información pueden originar distintas interpretaciones.",
+      "que_evalua": "La habilidad para establecer si la forma de presentar unos datos en una gráfica es adecuada para lo que se quiere mostrar.",
+      "enunciado": "<p>En una capacitación sobre uso de datos, la instructora proyectó la gráfica con la que un vendedor le mostró a su jefe cómo había crecido la tienda.</p><p>En la gráfica del vendedor, que aparece a continuación, el eje vertical no arranca en cero sino en \\(950\\) unidades, de modo que la barra del segundo año se ve casi tres veces más alta que la del primero. Las ventas rotuladas pasaron de \\(980\\) a \\(1\\,040\\) unidades.</p>[[IMG]]<p>¿Es adecuada esa forma de presentar el crecimiento de la tienda?</p>",
+      "opciones": {
+        "A": "No, porque el eje recortado agranda a la vista un aumento que no llega al siete por ciento.",
+        "B": "Sí, porque recortar el eje deja ver mejor la diferencia entre los dos años comparados.",
+        "C": "No, porque las gráficas de barras no sirven para comparar ventas de años distintos.",
+        "D": "Sí, porque las cifras rotuladas son las reales y cualquiera puede verificarlas allí."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «No, porque el eje recortado agranda a la vista un aumento que no llega al siete por ciento» es correcta porque las ventas subieron \\(60\\) unidades sobre \\(980\\), es decir cerca del \\(6\\,\\%\\), mientras que las alturas dibujadas son \\(30\\) y \\(90\\) por encima del corte, lo que hace ver una barra tres veces mayor. La proporción entre las barras deja de representar la proporción entre los datos.",
+      "opciones_incorrectas": {
+        "B": "Ver mejor la diferencia es útil solo si la imagen conserva la proporción; aquí el recorte cambia esa proporción y por eso induce a error.",
+        "C": "Las barras sí sirven para comparar dos años: el problema no está en el tipo de gráfica sino en dónde se cortó el eje vertical.",
+        "D": "Que las cifras estén escritas ayuda a quien las lea con cuidado, pero la impresión que deja la imagen sigue siendo desproporcionada."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q19.png",
+      "imagen_alt": "Gráfico de barras del vendedor con el eje vertical arrancando en 950 unidades: la barra del primer año llega a 980 y la del segundo a 1.040, y esta se ve casi tres veces más alta."
+    },
+    {
+      "id": "P3-mat-10-20",
+      "numero": 20,
+      "competencia": "c",
+      "afirmacion": "3",
+      "evidencia": "3.3",
+      "cmc": "Geometría",
+      "dificultad": "BAJA",
+      "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
+      "que_evalua": "La habilidad para establecer si la magnitud calculada es la pertinente para responder la pregunta planteada.",
+      "enunciado": "<p>Jhoana va a cercar el gallinero que armó en el patio de su casa y quiere llegar a la ferretería sabiendo exactamente cuánta malla debe comprar.</p><p>El gallinero es un rectángulo de \\(6\\) metros de largo por \\(4\\) de ancho, y la malla va a rodearlo por los cuatro lados, como muestra el dibujo. Para saber cuánta malla comprar, Jhoana multiplicó el largo por el ancho y anotó que debe pedir \\(24\\) metros.</p>[[IMG]]<p>¿Es acertado el cálculo que hizo Jhoana?</p>",
+      "opciones": {
+        "A": "No, porque la malla rodea el borde y lo que se necesita es el perímetro.",
+        "B": "Sí, porque el área indica cuánto terreno hay que cubrir con la malla comprada.",
+        "C": "No, porque para cercar el gallinero hay que calcular el volumen que encierra.",
+        "D": "Sí, porque el área y el perímetro coinciden en cualquier gallinero rectangular."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «No, porque la malla rodea el borde y lo que se necesita es el perímetro» es correcta porque la malla se compra por metros de longitud y va sobre el contorno, que mide \\(6+4+6+4=20\\) metros. El producto del largo por el ancho da la superficie encerrada, que es otra magnitud y se mide en metros cuadrados.",
+      "opciones_incorrectas": {
+        "B": "La malla no cubre el terreno por dentro sino que lo bordea, de modo que lo que hay que medir es el contorno y no la superficie.",
+        "C": "El volumen corresponde a cuerpos con tres dimensiones, y aquí el gallinero se describe con un largo y un ancho sobre el piso.",
+        "D": "Área y perímetro solo coinciden numéricamente en casos aislados, y aquí dan \\(24\\) y \\(20\\); además se miden en unidades distintas."
+      },
+      "imagen_figura": "assets/banco-mat-10-p3/q20.png",
+      "imagen_alt": "Dibujo del gallinero: un rectángulo de seis metros de largo por cuatro de ancho con la malla resaltada sobre los cuatro lados y los postes en las esquinas."
+    }
+  ]
+}

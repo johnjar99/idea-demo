@@ -265,36 +265,16 @@
         <div class="idx-login-body">
           <h2>Bienvenido de nuevo</h2>
           <p class="cap">Ingresa con tu cuenta para continuar.</p>
-          <div class="tabs-login idx-tabs">
-            <button class="activo" data-tab="login">Iniciar sesión</button>
-            <button data-tab="registro">Registrarse</button>
-          </div>
+          <!-- El registro público se retiró el 8-ago-2026: cualquiera podía crearse una
+               cuenta eligiendo su propio rol e institución, incluido el de administrador.
+               Los perfiles los crea el manager desde su panel. -->
           <form id="form-login" class="tab-contenido">
             <div class="mb-3"><label class="label-idea">Usuario, documento o correo</label><input type="text" name="identificador" class="input-idea" placeholder="Tu usuario o documento" required></div>
             <div class="mb-4"><label class="label-idea">Contraseña</label><input type="password" name="password" class="input-idea" placeholder="Tu contraseña" required></div>
             <button type="submit" class="btn-idea">Ingresar →</button>
             <p id="err-login" class="text-red-600 text-sm mt-3 text-center"></p>
           </form>
-          <form id="form-registro" class="tab-contenido hidden">
-            <div class="mb-3"><label class="label-idea">Nombre completo</label><input type="text" name="nombre_completo" class="input-idea" required></div>
-            <div class="grid grid-cols-2 gap-3 mb-3">
-              <div><label class="label-idea">Tipo doc</label><select name="tipo_documento" class="input-idea" required><option value="CC">CC</option><option value="TI">TI</option><option value="CE">CE</option><option value="RC">RC</option></select></div>
-              <div><label class="label-idea">Número documento</label><input type="text" name="numero_documento" class="input-idea" required></div>
-            </div>
-            <div class="grid grid-cols-2 gap-3 mb-3">
-              <div><label class="label-idea">Sexo</label><select name="sexo" class="input-idea" required><option value="M">Masculino</option><option value="F">Femenino</option><option value="N">No especifica</option></select></div>
-              <div><label class="label-idea">Rol</label><select name="rol" class="input-idea" required id="select-rol"><option value="estudiante">Estudiante</option><option value="docente">Docente</option><option value="directivo">Directivo</option><option value="funcionario">Funcionario</option></select></div>
-            </div>
-            <div class="mb-3"><label class="label-idea">Correo</label><input type="email" name="email" class="input-idea" required></div>
-            <div class="mb-3"><label class="label-idea">Contraseña (mín 6)</label><input type="password" name="password" class="input-idea" required></div>
-            <div class="mb-3"><label class="label-idea">Institución</label><select name="institucion_id" class="input-idea" id="select-institucion"></select></div>
-            <div class="grid grid-cols-2 gap-3 mb-4" id="campos-estudiante">
-              <div><label class="label-idea">Grado</label><select name="grado" class="input-idea"><option value="">--</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
-              <div><label class="label-idea">Grupo</label><input type="text" name="grupo" class="input-idea" placeholder="A, B, 1°..."></div>
-            </div>
-            <button type="submit" class="btn-idea">Crear cuenta</button>
-            <p id="err-registro" class="text-red-600 text-sm mt-3 text-center"></p>
-          </form>
+          <p class="cap" style="margin-top:14px;text-align:center">¿No tienes cuenta? Tu institución te la entrega. Escribe a quien coordina el Instrumento IDEA en tu colegio.</p>
         </div>
       </div>
       </div>
@@ -307,7 +287,7 @@
   <script type="module">
     import { db } from './js/db.js';
     import './js/guia-sabio.js';
-    import { registrar, iniciarSesion, obtenerSesion } from './js/auth.js';
+    import { iniciarSesion, obtenerSesion } from './js/auth.js';
     import { toast } from './js/utils.js';
     import { sabioSVG } from './js/sabio.js?v=v10';
     import { Gradient } from './js/mesh-gradient.js';
@@ -407,21 +387,13 @@
     const REDIRECT_POR_ROL={estudiante:'estudiante.html',docente:'docente.html',directivo:'directivo.html',funcionario:'directivo.html',manager:'manager.html'};
     const ses=await obtenerSesion(); if(ses) window.location.href=REDIRECT_POR_ROL[ses.rol];
     await db.inicializar();
-    try{ const insts=await db.lista('idea_instituciones'); const sel=document.getElementById('select-institucion');
-      insts.forEach(i=>{const o=document.createElement('option');o.value=i.id;o.textContent=i.abreviatura;sel.appendChild(o);}); }catch(e){console.warn(e.message);}
-    document.querySelectorAll('.tabs-login button').forEach(btn=>btn.addEventListener('click',()=>{
-      document.querySelectorAll('.tabs-login button').forEach(b=>b.classList.remove('activo')); btn.classList.add('activo');
-      const t=btn.dataset.tab; document.getElementById('form-login').classList.toggle('hidden',t!=='login'); document.getElementById('form-registro').classList.toggle('hidden',t!=='registro'); }));
-    document.getElementById('select-rol').addEventListener('change',e=>{document.getElementById('campos-estudiante').style.display=e.target.value==='estudiante'?'':'none';});
+    // Ya no se listan las instituciones aquí: la portada es PÚBLICA (sin sesión) y esa
+    // lectura ni siquiera está permitida. La usaba solo el registro público, que se retiró.
     document.getElementById('form-login').addEventListener('submit',async e=>{ e.preventDefault(); const fd=new FormData(e.target);
       try{ const s=await iniciarSesion({identificador:fd.get('identificador'),password:fd.get('password')});
         document.getElementById('login-sabio').innerHTML=sabioSVG('celebrando',86); toast(`¡Bienvenido, ${s.nombre_completo.split(' ')[0]}!`,'exito');
         setTimeout(()=>window.location.href=REDIRECT_POR_ROL[s.rol],850);
       }catch(err){ document.getElementById('err-login').textContent=err.message; document.getElementById('login-sabio').innerHTML=sabioSVG('pensativo',86);} });
-    document.getElementById('form-registro').addEventListener('submit',async e=>{ e.preventDefault(); const fd=new FormData(e.target);
-      try{ await registrar({nombre_completo:fd.get('nombre_completo'),tipo_documento:fd.get('tipo_documento'),numero_documento:fd.get('numero_documento'),sexo:fd.get('sexo'),email:fd.get('email'),password:fd.get('password'),rol:fd.get('rol'),institucion_id:fd.get('institucion_id'),grado:fd.get('grado'),grupo:fd.get('grupo')});
-        toast('Cuenta creada. Inicia sesión con tu documento.','exito'); document.querySelector('[data-tab="login"]').click();
-      }catch(err){ document.getElementById('err-registro').textContent=err.message; } });
   </script>
 </body>
 </html>

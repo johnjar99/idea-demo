@@ -1,0 +1,603 @@
+{
+  "id": "mat-3-p3-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "3",
+  "periodo": "III",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas · Grado 3° · Período III (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA · ítems y figuras de autoría propia alineados a los Estándares Básicos de Competencias (marco público). El Período III es de creación íntegramente propia: no adapta figuras ni textos de cuadernillos de terceros.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Resolución de problemas",
+    "b": "Razonamiento",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Resuelve situaciones aditivas y multiplicativas en diferentes contextos",
+    "2": "Resuelve problemas de medición que requieran el uso de patrones estandarizados o no estandarizados",
+    "3": "Resuelve problemas que requieran el uso de frecuencias de datos representados a partir de diferentes formas: lenguaje natural, gráficas o tablas",
+    "4": "Descubre regularidades de las secuencias, la ordenación y sobre las equivalencias entre las situaciones aditivas y multiplicativas (arreglos rectangulares, producto cartesiano, adición repetida)",
+    "5": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "6": "Reconoce el significado, el uso y equivalencia de números naturales y fracciones simples (1/2, 1/3, 1/4), y la codificación numérica en la secuenciación, la mensurabilidad y la asignación",
+    "7": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión"
+  },
+  "evidencias": {
+    "1.1": "Usa estrategias aditivas de transformación y composición para dar solución a diferentes problemas",
+    "1.2": "Usa estrategias multiplicativas para dar solución a diferentes problemas",
+    "2.1": "Usa patrones estandarizados para enfrentar situaciones de medición",
+    "2.2": "Usa patrones no estandarizados para enfrentar situaciones de medición",
+    "3.1": "Usa la moda o la frecuencia para solucionar situaciones en las cuales se han organizado los datos usando varios tipos de registro",
+    "3.2": "Usa la moda o la frecuencia de los datos para solucionar situaciones en las cuales se han organizado los datos a partir de gráficas, listas, tablas o lenguaje natural",
+    "4.1": "Determina equivalencias entre modelos aditivos o multiplicativos, considerando los procesos de transformación y composición",
+    "4.2": "Describe las regularidades en secuencias creadas a partir de objetos numéricos o mediciones de objetos geométricos",
+    "5.1": "Determina cuándo un evento es posible, imposible o seguro",
+    "5.2": "Toma decisiones a partir de la comparación del nivel de posibilidad de un evento simple",
+    "6.1": "Asigna códigos numéricos, textuales y simbólicos, en sistema decimal a diferentes objetos y situaciones en las que existe orden",
+    "6.2": "Usa estrategias aditivas de transformación y composición para dar solución a diferentes problemas",
+    "7.1": "Señala los atributos medibles de una figura junto con sus posibles unidades y magnitudes",
+    "7.2": "Identifica la imagen o la preimagen de una figura a partir de una transformación en un sistema de referencia cercano al contexto inmediato: arriba, abajo, derecha, izquierda"
+  },
+  "cmc": [
+    "Numérico - variacional",
+    "Espacial - métrico",
+    "Aleatorio"
+  ],
+  "preservar_orden_preguntas": false,
+  "preguntas": [
+    {
+      "id": "P3-mat-3-01",
+      "numero": 1,
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "BAJA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición y de transformación.",
+      "que_evalua": "La habilidad para componer dos cantidades y aplicarle después una transformación de disminución al total obtenido, valorando una cuenta ajena que se detiene antes de tiempo.",
+      "enunciado": "<p>Doña Aura vende desayunos en la plaza de mercado de Popayán y cada mañana anota en un cuaderno lo que va despachando. El martes entregó <b>38 desayunos</b> antes de las siete de la mañana y <b>27 desayunos</b> entre las siete y las nueve. Cuando ya estaba recogiendo el puesto, tres clientes que habían encargado su desayuno le avisaron que no iban a pasar por él, así que doña Aura tachó esos tres pedidos de la lista, como se ve en la hoja de su cuaderno.</p><p>Al cerrar el puesto, su sobrino Camilo mira la hoja y <b>sostiene que</b> ese martes se entregaron <b>65 desayunos</b>, porque esa es la suma de los dos renglones de la mañana.</p>[[IMG]]<p>¿Es acertada la cuenta de Camilo?</p>",
+      "opciones": {
+        "A": "Sí es acertada, porque 38 y 27 juntos dan 65 desayunos.",
+        "B": "No es acertada, porque a esos 65 hay que quitarles 3.",
+        "C": "No es acertada, porque con los cancelados serían 68.",
+        "D": "No es acertada, porque al restar todo quedan 8 desayunos."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «No es acertada, porque a esos 65 hay que quitarles 3» es correcta porque Camilo se detuvo en la composición de las dos entregas de la mañana, \\(38+27=65\\), y esa cuenta todavía tiene adentro los tres pedidos que los clientes cancelaron. Al aplicarle al total la disminución que falta, \\(65-3=62\\), quedan los desayunos que de verdad salieron del puesto.",
+      "opciones_incorrectas": {
+        "A": "La suma de los dos renglones de la mañana está bien hecha, pero avalar ahí la cuenta deja adentro los tres pedidos que los clientes cancelaron y que doña Aura tachó de la lista.",
+        "C": "Esa corrección va en el sentido contrario: suma los tres pedidos cancelados en vez de quitarlos, \\(65+3=68\\), y una cancelación disminuye el total, no lo aumenta.",
+        "D": "Ese número sale de restar todo lo que aparece en la hoja, \\(38-27-3\\), aunque las dos entregas de la mañana se acumulan y por eso van sumadas entre sí."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q01.png",
+      "imagen_alt": "Hoja del cuaderno de doña Aura del martes, con tres apuntes: treinta y ocho desayunos antes de las siete de la mañana, veintisiete desayunos de siete a nueve y tres desayunos de pedidos cancelados, este último renglón tachado."
+    },
+    {
+      "id": "P3-mat-3-02",
+      "numero": 2,
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición y de transformación.",
+      "que_evalua": "La habilidad para hallar una cantidad intermedia que no aparece escrita y usarla después en una segunda transformación, revisando un procedimiento ya escrito.",
+      "enunciado": "<p>Yenny administra la tienda escolar de una institución de Túquerres y lleva en una libreta el control de las cajas de leche. El lunes en la mañana la bodega tenía <b>145 cajas</b>. Ese mismo lunes llegó un pedido nuevo y, después de guardarlo, la bodega quedó con <b>210 cajas</b>. El martes los estudiantes se llevaron <b>78 cajas</b> y el miércoles no se vendió ninguna porque no hubo clase. Yenny olvidó anotar cuántas cajas traía el pedido, como se ve en la figura, así que dejó escritos <b>estos pasos</b> para completar la libreta.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> El pedido es lo que hizo crecer la bodega, así que a las 210 cajas que quedaron después de guardarlo les resto las 145 que había en la mañana: el pedido traía 65 cajas.<br><b>Paso 2.</b> El martes salieron 78 cajas, así que a las 145 del comienzo les resto esas 78: quedan 67 cajas.<br><b>Paso 3.</b> El miércoles no hubo clase ni venta, así que la bodega sigue con 67 cajas.</div>[[IMG]]<p>¿En cuál paso está el error y por qué?</p>",
+      "opciones": {
+        "A": "En el paso 2, porque las 78 salen de las 210, no de las 145.",
+        "B": "En el paso 1, porque el pedido se halla sumando 210 y 145.",
+        "C": "En el paso 3, porque sin venta la bodega vuelve a las 145.",
+        "D": "En ningún paso, porque las tres cuentas están bien hechas."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «En el paso 2, porque las 78 salen de las 210, no de las 145» es correcta porque el primer paso halló bien la cantidad intermedia que faltaba, \\(210-145=65\\) cajas de pedido, y a partir de ahí la bodega ya no tiene \\(145\\) cajas sino \\(210\\). La segunda transformación tiene que aplicarse sobre ese total nuevo, \\(210-78=132\\), y no sobre el total viejo.",
+      "opciones_incorrectas": {
+        "B": "El primer paso es justamente el que está bien: el pedido se halla restando, \\(210-145\\), porque las \\(210\\) cajas ya incluyen las \\(145\\) que estaban guardadas desde antes, y sumarlas contaría dos veces las mismas cajas.",
+        "C": "El tercer paso razona bien que un día sin venta deja el total intacto; lo que arrastra es el resultado equivocado del paso anterior, porque la bodega nunca regresa a las \\(145\\) cajas del comienzo.",
+        "D": "Las tres cuentas están escritas con claridad, pero una de ellas le resta las cajas vendidas al total que la bodega tenía ANTES de guardar el pedido, y para entonces ese total ya había cambiado."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q02.png",
+      "imagen_alt": "Línea de tiempo de la bodega de leche con cuatro momentos: el lunes en la mañana con ciento cuarenta y cinco cajas, el lunes ya con el pedido guardado con doscientas diez cajas, el martes al cerrar la venta con un signo de interrogación después de llevarse setenta y ocho cajas, y el miércoles al cerrar el día con otro signo de interrogación porque no hubo clase."
+    },
+    {
+      "id": "P3-mat-3-03",
+      "numero": 3,
+      "competencia": "a",
+      "afirmacion": 1,
+      "evidencia": "1.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Uso diversas estrategias de cálculo (especialmente cálculo mental) y de estimación para resolver problemas en situaciones aditivas y multiplicativas.",
+      "que_evalua": "La habilidad para repartir una cantidad en grupos iguales y calcular después el valor de varios de esos grupos, valorando una afirmación ajena sobre ese cálculo.",
+      "enunciado": "<p>Don Gilberto tiene una arepería en Sonsón y cada madrugada empaca las arepas que va a repartir entre las tiendas del pueblo. Hoy hizo <b>96 arepas</b> y las acomodó en <b>8 canastos</b>, poniendo la misma cantidad en cada canasto para que ninguna tienda quede con menos. Cuando ya tenía todo listo, el dueño de un restaurante le pidió <b>dos canastos completos</b> para el almuerzo del día, los que aparecen señalados en la figura.</p><p>Su ayudante <b>afirma que</b> el restaurante se lleva <b>16 arepas</b>, porque de cada uno de los ocho canastos salen dos arepas para ese pedido.</p>[[IMG]]<p>¿Es acertado lo que afirma el ayudante?</p>",
+      "opciones": {
+        "A": "Sí es acertado, porque de cada canasto salen dos arepas.",
+        "B": "No es acertado, porque el pedido es un canasto de 12.",
+        "C": "No es acertado, porque cada canasto lleva 12 y son dos: 24.",
+        "D": "No es acertado, porque dos canastos son la mitad de las 96."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «No es acertado, porque cada canasto lleva 12 y son dos: 24» es correcta porque las \\(96\\) arepas se repartieron en partes iguales entre los \\(8\\) canastos, de modo que en cada uno quedaron \\(96\\div 8=12\\) arepas. El pedido son dos canastos completos, así que el restaurante se lleva \\(12+12=24\\) arepas y no las que dice el ayudante.",
+      "opciones_incorrectas": {
+        "A": "El ayudante repartió \\(2\\) arepas en cada uno de los ocho canastos, y lo que el restaurante encargó son dos canastos enteros de los que ya estaban armados, con todo lo que llevan adentro.",
+        "B": "La cantidad que cabe en un canasto está bien hallada, pero corregir así la afirmación deja el pedido en un solo canasto y el restaurante encargó dos.",
+        "D": "Esa corrección lleva el pedido hasta cuatro canastos, es decir a la mitad de la producción de la madrugada, y lo encargado son únicamente dos."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q03.png",
+      "imagen_alt": "Ocho canastos iguales de arepas en fila, con una llave que abarca los ocho y dice que las noventa y seis arepas se repartieron en partes iguales entre ellos. Los dos primeros canastos están encerrados en un recuadro que los señala como los del restaurante."
+    },
+    {
+      "id": "P3-mat-3-04",
+      "numero": 4,
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La habilidad para leer una longitud en un patrón estandarizado cuando el objeto no empieza en la marca del cero, valorando la lectura que hizo otra persona.",
+      "enunciado": "<p>En la clase de tecnología, el profesor Iván les pidió a los estudiantes de tercero medir con la regla las piezas del rompecabezas de madera que están armando. Camila puso su pieza sobre la regla como muestra la figura, sin hacerla coincidir con la marca del cero, y <b>afirma que</b> la pieza mide <b>14 centímetros</b>, porque ese es el número de la regla donde la pieza termina.</p>[[IMG]]<p>¿Es acertada la medida que anotó Camila?</p>",
+      "opciones": {
+        "A": "Sí es acertada, porque la pieza termina en la marca 14.",
+        "B": "No es acertada, porque mide 17, que es 3 más 14.",
+        "C": "No es acertada, porque mide 3, donde empieza la pieza.",
+        "D": "No es acertada, porque mide 11, lo que va de 3 a 14."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «No es acertada, porque mide 11, lo que va de 3 a 14» es correcta porque la regla mide la distancia entre los dos extremos del objeto y no el número donde este termina. La pieza empieza en la marca \\(3\\) y termina en la marca \\(14\\), así que ocupa \\(14-3=11\\) centímetros de la regla.",
+      "opciones_incorrectas": {
+        "A": "El número que Camila leyó sí es el que la regla marca en el extremo derecho de la pieza, pero tomarlo como medida supone que la pieza arranca en el cero, y en la figura arranca más adelante.",
+        "B": "Esa corrección suma las dos marcas de los extremos, \\(3+14\\), cuando lo que se busca es la distancia que hay entre ellas, y una distancia se obtiene restando.",
+        "C": "Esa corrección señala dónde queda apoyado el extremo izquierdo de la pieza, aunque ese número por sí solo indica una posición sobre la regla y no el largo del objeto."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q04.png",
+      "imagen_alt": "Una regla graduada de cero a dieciséis centímetros con una pieza de madera apoyada encima, que empieza en la marca tres y termina en la marca catorce."
+    },
+    {
+      "id": "P3-mat-3-05",
+      "numero": 5,
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La habilidad para comparar una longitud dada en metros con varias longitudes dadas en centímetros, valorando una anticipación hecha antes de medir.",
+      "enunciado": "<p>Aurora es modista en el barrio San Vicente de Cali y le quedó un retazo de tela de <b>2 metros</b> de largo. Para el disfraz que le encargaron necesita cortar del mismo retazo, y a lo largo, <b>tres tiras de 45 centímetros</b> cada una. Aurora sabe que un metro tiene <b>100 centímetros</b> y quiere estar segura antes de dar el primer corte, porque una vez corte la tela ya no puede devolverla al rollo. La figura muestra el retazo y las tres tiras que necesita.</p><p>Mirando la tela extendida, Aurora <b>anticipa que</b> el retazo <b>no le va a alcanzar</b>, porque tres tiras seguidas le parecen más largas que los dos metros que tiene.</p>[[IMG]]<p>¿Qué valoración de esa anticipación es acertada?</p>",
+      "opciones": {
+        "A": "Es acertada, porque a las tres tiras les faltan 35 centímetros.",
+        "B": "No es acertada, porque las tiras dan justo los 2 metros.",
+        "C": "No es acertada, porque las tiras dan 135 y le sobran 65.",
+        "D": "No es acertada, porque le sobran 155 centímetros de tela."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «No es acertada, porque las tiras dan 135 y le sobran 65» es correcta porque las dos longitudes hay que expresarlas en la misma unidad antes de compararlas: el retazo mide \\(2\\times 100=200\\) centímetros y las tres tiras juntas necesitan \\(45+45+45=135\\) centímetros. Como \\(135\\) es menor que \\(200\\), la tela sí alcanza y quedan \\(200-135=65\\) centímetros, de modo que la anticipación falla.",
+      "opciones_incorrectas": {
+        "A": "Esa valoración le da la razón a la anticipación, pero la resta que la sostiene compara los \\(135\\) centímetros de las tiras con un retazo de un solo metro, y el retazo mide dos.",
+        "B": "Un corte exacto dejaría el retazo sin sobrante, aunque para eso las tres tiras tendrían que sumar \\(200\\) centímetros y entre las tres suman \\(135\\).",
+        "D": "Ese sobrante aparece cuando del retazo se descuenta una sola tira de \\(45\\) centímetros, y para el disfraz hay que sacar tres tiras, no una."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q05.png",
+      "imagen_alt": "El retazo de tela de Aurora dibujado como una franja acotada en dos metros y, debajo, las tres tiras que necesita el disfraz, cada una acotada en cuarenta y cinco centímetros."
+    },
+    {
+      "id": "P3-mat-3-06",
+      "numero": 6,
+      "competencia": "a",
+      "afirmacion": 2,
+      "evidencia": "2.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Realizo y describo procesos de medición con patrones arbitrarios y algunos estandarizados, de acuerdo al contexto.",
+      "que_evalua": "La habilidad para explicar por qué una misma longitud arroja resultados distintos cuando se mide con un patrón no estandarizado, valorando la explicación que da un compañero.",
+      "enunciado": "<p>En el salón de tercero, la profesora Ligia les propuso medir el largo del tablero sin usar la regla: había que ir poniendo la mano abierta una vez tras otra, es decir, medir en <b>cuartas</b>. La figura muestra cómo le quedó el tablero a Samuel cuando terminó de medirlo con su cuarta. Después la profesora midió ese mismo tablero con su propia cuarta, que es más grande que la de Samuel, y a ella le dieron <b>menos cuartas</b> que a él.</p><p>Samuel <b>afirma que</b> alguno de los dos tuvo que contar mal, porque un tablero que no se ha movido no puede dar dos números distintos.</p>[[IMG]]<p>¿Por qué el mismo tablero arroja dos resultados distintos?</p>",
+      "opciones": {
+        "A": "Porque la cuarta de cada persona tiene un tamaño distinto.",
+        "B": "Porque Samuel midió el tablero por el lado más largo.",
+        "C": "Porque la cuarta solo sirve para medir cosas pequeñas.",
+        "D": "Porque la profesora contó mal las cuartas de su mano."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «Porque la cuarta de cada persona tiene un tamaño distinto» es correcta porque la cuarta es un patrón que no está estandarizado: depende de la mano de quien mide. Como la cuarta de la profesora es más grande, cabe menos veces a lo largo del tablero, y por eso a ella le da un número menor aunque el tablero siga midiendo exactamente lo mismo.",
+      "opciones_incorrectas": {
+        "B": "Medir por un lado o por otro sí cambia el resultado en una figura con lados desiguales, pero aquí los dos midieron el mismo largo del mismo tablero.",
+        "C": "La cuarta se usa sobre todo en objetos pequeños, aunque nada impide llevarla a un tablero: el problema no es el tamaño del objeto sino que el patrón cambia de persona a persona.",
+        "D": "Un error de conteo daría una diferencia por azar, mientras que aquí la diferencia era previsible desde antes de contar, porque una de las dos manos es más grande."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q06.png",
+      "imagen_alt": "El tablero del salón dividido en ocho casillas iguales seguidas, numeradas de uno a ocho, donde cada casilla representa una cuarta de la mano de Samuel."
+    },
+    {
+      "id": "P3-mat-3-07",
+      "numero": 7,
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo preguntas que requieran para su solución coleccionar y analizar datos del entorno próximo.",
+      "que_evalua": "La habilidad para completar una frecuencia que falta en una tabla y usar el conjunto completo para identificar el dato que más se repite, siguiendo un procedimiento escrito.",
+      "enunciado": "<p>En una escuela de El Tambo, la rectora quiere saber cuál refrigerio piden más los estudiantes de tercero para encargar ese en mayor cantidad. La docente le preguntó a <b>los 45 estudiantes</b> del grado, uno por uno, y organizó las respuestas en la planilla que aparece en la figura. Al imprimirla se borró una de las casillas, pero se sabe que cada estudiante eligió un solo refrigerio y que todos respondieron. Para no decidir a la carrera, la docente dejó escritos <b>estos pasos</b>.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Sumar las tres frecuencias que todavía se alcanzan a leer en la planilla.<br><b>Paso 2.</b> Restarle esa suma a los 45 estudiantes del grado, para saber cuánto valía la casilla borrada.<br><b>Paso 3.</b> Comparar las cuatro frecuencias, ya completas, y quedarse con la mayor.</div>[[IMG]]<p>Siguiendo esos pasos, ¿cuál refrigerio debe encargar la rectora en mayor cantidad?</p>",
+      "opciones": {
+        "A": "El yogur, porque 8 es lo anotado y en la casilla borrada iba menos.",
+        "B": "Las galletas, porque 11 es la mayor que se alcanza a leer.",
+        "C": "La fruta, porque 9 estudiantes la eligieron en la planilla.",
+        "D": "La arepa con queso, porque su casilla borrada vale 17."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «La arepa con queso, porque su casilla borrada vale 17» es correcta porque los cuatro refrigerios se reparten los \\(45\\) estudiantes del grado: el primer paso suma lo visible, \\(9+11+8=28\\), y el segundo se lo resta al total, \\(45-28=17\\). Con la planilla ya completa, el tercer paso deja a la arepa con queso por encima de las galletas, la fruta y el yogur.",
+      "opciones_incorrectas": {
+        "A": "El yogur aparece en la planilla con su frecuencia bien leída, pero nada obliga a que la casilla sin imprimir valiera menos: para saber cuánto valía hay que restarle a los cuarenta y cinco lo que ya está anotado, y ahí resulta mayor.",
+        "B": "Las galletas son el refrigerio con más votos entre los que quedaron visibles, aunque quedarse ahí es saltarse los dos primeros pasos, que son los que destapan una frecuencia mayor.",
+        "C": "La fruta tiene una frecuencia correctamente leída en la planilla, sin embargo queda por debajo de las galletas y también del refrigerio cuya casilla se borró."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q07.png",
+      "imagen_alt": "Planilla de dos columnas. En la izquierda van cuatro refrigerios, en este orden: fruta, arepa con queso, galletas y yogur. En la derecha, cuántos estudiantes eligieron cada uno: la fruta tiene nueve, las galletas once y el yogur ocho, mientras que la segunda fila quedó sin número porque la impresión lo tapó. Al pie dice que respondieron los cuarenta y cinco estudiantes del grado, uno por uno."
+    },
+    {
+      "id": "P3-mat-3-08",
+      "numero": 8,
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Represento datos relativos a mi entorno usando objetos concretos, pictogramas y diagramas de barras.",
+      "que_evalua": "La habilidad para agrupar los datos de un diagrama de barras en dos conjuntos y comparar los totales de esos conjuntos, revisando un procedimiento ya escrito.",
+      "enunciado": "<p>Norberto atiende la papelería escolar de un colegio de Ipiales y lleva un diagrama de barras con los cuadernos que vendió cada semana del mes. Antes de hacer el pedido nuevo quiere saber <b>en cuántos cuadernos superan sus dos mejores semanas a las dos peores</b>, sin importar el orden en que aparecen en el diagrama. Un practicante de la papelería le dejó <b>estos pasos</b> con la cuenta ya hecha.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Las dos semanas de más venta son la tercera con 30 y la primera con 24, que juntas dan 54 cuadernos.<br><b>Paso 2.</b> Las dos semanas de menos venta son la segunda con 18 y la cuarta con 12, que juntas dan 30 cuadernos.<br><b>Paso 3.</b> Para saber en cuánto supera un grupo al otro, junto los dos totales: 54 más 30 son 84 cuadernos.</div>[[IMG]]<p>¿En cuál paso está el error y por qué?</p>",
+      "opciones": {
+        "A": "En el paso 1, porque la mejor semana es la de 24 cuadernos.",
+        "B": "En el paso 3, porque los grupos se comparan restando: 24.",
+        "C": "En el paso 2, porque las dos peores semanas suman 42.",
+        "D": "En ningún paso, porque el resultado de 84 está bien hallado."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «En el paso 3, porque los grupos se comparan restando: 24» es correcta porque los dos primeros pasos agrupan bien las barras: las de mayor venta suman \\(30+24=54\\) y las de menor venta suman \\(18+12=30\\). Lo que falla es el último: para saber en cuánto supera un grupo al otro se resta, \\(54-30=24\\), y no se suma, porque una suma dice cuántos cuadernos se vendieron en el mes y no la distancia entre los dos grupos.",
+      "opciones_incorrectas": {
+        "A": "El primer paso está bien armado: la barra más alta del diagrama es la de \\(30\\) cuadernos y la que le sigue es la de \\(24\\), de modo que esas dos son las semanas de más venta.",
+        "C": "El segundo paso también está bien: las dos barras más bajas son las de \\(18\\) y \\(12\\) cuadernos, que juntas dan \\(30\\); la cifra propuesta aquí no sale de sumar esas dos barras.",
+        "D": "Los dos primeros pasos sí están bien hechos, pero el resultado final junta los dos grupos en lugar de enfrentarlos, y \\(84\\) es todo lo que vendió la papelería en el mes."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q08.png",
+      "imagen_alt": "Diagrama de barras con los cuadernos vendidos cada semana: veinticuatro en la primera, dieciocho en la segunda, treinta en la tercera y doce en la cuarta."
+    },
+    {
+      "id": "P3-mat-3-09",
+      "numero": 9,
+      "competencia": "a",
+      "afirmacion": 3,
+      "evidencia": "3.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
+      "que_evalua": "La habilidad para leer un pictograma cuyo símbolo representa varias unidades y determinar con él el dato de mayor frecuencia, valorando una lectura ajena que ignora la equivalencia.",
+      "enunciado": "<p>Doña Consuelo es la bibliotecaria de una institución de Chiquinquirá y al terminar el mes arma un pictograma con los libros que prestó cada grado. El grado que más libros prestó recibe el permiso de escoger primero los títulos nuevos que llegan a la biblioteca. En el pictograma, <b>cada libro dibujado equivale a 4 libros prestados</b>, tal como aparece anotado debajo de la figura.</p><p>Un estudiante que ayuda en la biblioteca <b>afirma que</b> el permiso es para el grado quinto, <b>que prestó 6 libros</b>, porque su fila es la que tiene seis libros dibujados.</p>[[IMG]]<p>¿Es acertado lo que afirma el estudiante que ayuda?</p>",
+      "opciones": {
+        "A": "No es acertado, porque quinto prestó 24, que es 6 por 4.",
+        "B": "Sí es acertado, porque su fila tiene seis libros dibujados.",
+        "C": "No es acertado, porque el permiso es de tercero, con 20.",
+        "D": "No es acertado, porque el permiso es de sexto, con 8 libros."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «No es acertado, porque quinto prestó 24, que es 6 por 4» es correcta porque el grado que el estudiante señala sí es el que encabeza el pictograma, pero la cifra que le atribuye son los libros DIBUJADOS y no los prestados. Como cada dibujo vale cuatro préstamos, el total de quinto es \\(6\\times 4=24\\), por encima de los \\(20\\) de tercero, los \\(12\\) de cuarto y los \\(8\\) de sexto.",
+      "opciones_incorrectas": {
+        "B": "Contar los dibujos de la fila más larga sirve para saber quién encabeza el pictograma, pero no para decir cuántos libros se prestaron: falta aplicar la equivalencia anotada debajo de la figura.",
+        "C": "El total de tercero está bien convertido con la equivalencia del pictograma, aunque su fila tiene un libro dibujado menos que la del grado que encabeza la lista.",
+        "D": "El grado sexto tiene el total correctamente convertido, sin embargo su fila es la más corta del pictograma y por eso queda en el último lugar."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q09.png",
+      "imagen_alt": "Pictograma de libros prestados por grado, con cinco libros dibujados en tercero, tres en cuarto, seis en quinto y dos en sexto."
+    },
+    {
+      "id": "P3-mat-3-10",
+      "numero": 10,
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
+      "que_evalua": "La habilidad para representar un arreglo rectangular mediante una adición repetida equivalente al total de elementos.",
+      "enunciado": "<p>En la huerta escolar de una institución de Guaduas, los estudiantes de tercero sembraron matas de cilantro formando el arreglo rectangular de la figura: cuatro hileras y en cada hilera la misma cantidad de matas. La profesora les pidió escribir en el tablero una operación que permita saber cuántas matas hay en total <b>sin contarlas una por una</b>, explicando qué representa cada número de la operación.</p>[[IMG]]<p>¿Cuál de las siguientes operaciones da el total de matas de la huerta?</p>",
+      "opciones": {
+        "A": "\\(6+4\\), porque hay seis columnas y cuatro hileras.",
+        "B": "\\(6+6+6+6+6+6\\), porque en la huerta hay seis columnas.",
+        "C": "\\(6+6+6+6\\), porque cada una de las cuatro hileras lleva seis.",
+        "D": "\\(4+4+4+4\\), porque la hilera se repite cuatro veces."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «\\(6+6+6+6\\), porque cada una de las cuatro hileras lleva seis» es correcta porque en la figura cada hilera tiene seis matas y hay cuatro hileras iguales, de modo que el total se obtiene sumando el seis tantas veces como hileras hay: \\(6+6+6+6=24\\) matas.",
+      "opciones_incorrectas": {
+        "A": "Los dos números que aparecen ahí son los del arreglo, pero sumarlos cuenta apenas una hilera y una columna; el arreglo pide repetir la hilera completa tantas veces como hileras haya.",
+        "B": "La suma repite el número correcto, aunque lo repite seis veces, que es la cantidad de columnas, y el resultado \\(36\\) supera las matas que se ven en la figura.",
+        "D": "La operación repite cuatro veces, que sí es el número de hileras, pero repite el cuatro en lugar del seis y así cuenta solo las cuatro primeras matas de cada hilera."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q10.png",
+      "imagen_alt": "Arreglo rectangular de matas de cilantro con cuatro hileras y seis matas en cada hilera."
+    },
+    {
+      "id": "P3-mat-3-11",
+      "numero": 11,
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Reconozco y genero equivalencias entre expresiones numéricas y describo cómo cambian los símbolos aunque el valor siga igual.",
+      "que_evalua": "La habilidad para reconocer la expresión multiplicativa equivalente a una situación en la que cada grupo igual cambió de tamaño, valorando la operación que alguien anticipó.",
+      "enunciado": "<p>Marcela prepara las bolsas de dulces para el cumpleaños de su hijo en Barrancabermeja. Ya tiene armadas <b>5 bolsas</b> con <b>7 dulces</b> cada una y, cuando iba a cerrarlas, se dio cuenta de que quedaban dulces sueltos, como muestra la figura, y decidió agregarle <b>2 dulces más a cada bolsa</b>. Ahora necesita una sola operación que le diga cuántos dulces requiere en total para las cinco bolsas ya completas.</p><p>Sin hacer la cuenta, Marcela <b>anticipa que</b> la operación que le sirve es \\(5\\times 7+2\\), porque son cinco bolsas de siete dulces y después el agregado.</p>[[IMG]]<p>¿Qué valoración de esa anticipación es acertada?</p>",
+      "opciones": {
+        "A": "Es acertada, porque el agregado entra una sola vez al final.",
+        "B": "No es acertada, porque cada bolsa queda con nueve: \\(5\\times 9\\).",
+        "C": "No es acertada, porque una bolsa llena lleva \\(7+2\\) dulces.",
+        "D": "No es acertada, porque lo agregado son \\(5\\times 2\\) dulces."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «No es acertada, porque cada bolsa queda con nueve» es correcta porque los dos dulces se agregan a cada una de las bolsas y no una sola vez al total, así que el tamaño del grupo cambia de \\(7\\) a \\(9\\) mientras las bolsas siguen siendo cinco iguales. La operación que le sirve a Marcela es \\(5\\times 9=45\\), diez dulces más de los que anticipó.",
+      "opciones_incorrectas": {
+        "A": "La anticipación reconoce bien las cinco bolsas de siete dulces, pero suma los dos dulces una sola vez y en la situación se agregan dos a CADA bolsa, es decir diez en total.",
+        "C": "Esa corrección dice cuántos dulces lleva una bolsa ya completa, aunque describe una sola bolsa y Marcela necesita el total de las cinco.",
+        "D": "Esa corrección cuenta bien los dulces que se agregaron al final, sin embargo deja por fuera los siete dulces que cada bolsa ya tenía antes del agregado."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q11.png",
+      "imagen_alt": "Cinco bolsas de dulces iguales, cada una con siete dulces adentro, y al lado un montón de dulces sueltos con la anotación de que a cada bolsa se le agregan dos dulces."
+    },
+    {
+      "id": "P3-mat-3-12",
+      "numero": 12,
+      "competencia": "b",
+      "afirmacion": 4,
+      "evidencia": "4.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y describo regularidades y patrones en distintos contextos (numérico, geométrico, musical, entre otros).",
+      "que_evalua": "La habilidad para describir la regularidad de una secuencia de figuras y usarla para anticipar un término que no está dibujado.",
+      "enunciado": "<p>En la clase de geometría, los estudiantes de tercero de una escuela de Duitama están armando una fila de cuadrados con palillos iguales. La figura muestra las tres primeras: la primera figura lleva un cuadrado, la segunda lleva dos cuadrados pegados y la tercera lleva tres, y cada cuadrado nuevo aprovecha un palillo del cuadrado anterior. El profesor quiere saber cuántos palillos repartir para <b>la figura cinco</b> antes de armarla.</p><p>Sin contarlos, un estudiante <b>anticipa que</b> la figura cinco va a llevar <b>20 palillos</b>, porque son cinco cuadrados y cada cuadrado necesita cuatro palillos.</p>[[IMG]]<p>¿Qué valoración de esa anticipación es acertada?</p>",
+      "opciones": {
+        "A": "No es acertada, porque la figura cinco lleva 13 palillos.",
+        "B": "Es acertada, porque cada cuadrado necesita cuatro palillos.",
+        "C": "No es acertada, porque la figura cinco lleva 15 palillos.",
+        "D": "No es acertada, porque crece de tres en tres y llega a 16."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «No es acertada, porque crece de tres en tres y llega a 16» es correcta porque las figuras dibujadas llevan \\(4\\), \\(7\\) y \\(10\\) palillos, de modo que cada cuadrado que se agrega suma tres palillos y no cuatro, pues aprovecha uno del cuadrado vecino. Siguiendo esa regularidad, la figura cuatro lleva \\(13\\) y la figura cinco lleva \\(16\\).",
+      "opciones_incorrectas": {
+        "A": "Esa corrección continúa bien la regularidad de sumar tres, pero se detiene en la figura cuatro y lo que se anticipa es la figura cinco, un paso más adelante.",
+        "B": "La anticipación cuenta cuatro palillos propios para cada cuadrado, aunque en la figura los cuadrados vecinos comparten un palillo y por eso el total crece de tres en tres y no de cuatro en cuatro.",
+        "C": "El número tres corresponde a lo que crece la secuencia en cada paso, sin embargo la figura uno ya parte de cuatro palillos y ese arranque también entra en el total."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q12.png",
+      "imagen_alt": "Tres figuras hechas con palillos: la primera con un cuadrado, la segunda con dos cuadrados pegados y la tercera con tres cuadrados pegados en fila."
+    },
+    {
+      "id": "P3-mat-3-13",
+      "numero": 13,
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "BAJA",
+      "estandar": "Explico (desde mi experiencia) la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
+      "que_evalua": "La habilidad para reconocer que un evento es imposible cuando el resultado esperado no está entre los resultados que la situación permite.",
+      "enunciado": "<p>En el día de la familia, la profesora Ligia organizó una rifa para los estudiantes de tercero. Metió en una bolsa de tela <b>12 balotas</b>, como muestra la figura: cinco rojas, cuatro verdes y tres amarillas, todas del mismo tamaño y del mismo material. Cada estudiante mete la mano sin mirar y saca una sola balota. Andrés espera su turno y <b>afirma que</b> va a sacar una <b>balota azul</b>, porque el azul es su color favorito y nunca le ha fallado.</p>[[IMG]]<p>¿Qué se puede decir de lo que Andrés afirma que va a ocurrir?</p>",
+      "opciones": {
+        "A": "Es posible, aunque cuesta más que sacar una roja.",
+        "B": "Es seguro, porque la bolsa tiene balotas de colores.",
+        "C": "Es imposible, porque no hay balotas azules en la bolsa.",
+        "D": "Es posible, porque quedan balotas que nadie ha contado."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «Es imposible, porque no hay balotas azules en la bolsa» es correcta porque en la bolsa solo hay balotas rojas, verdes y amarillas, que entre las tres suman las \\(12\\) que la profesora metió. Un evento es imposible cuando su resultado no está entre los que la situación permite, y sacar azul no está entre ellos.",
+      "opciones_incorrectas": {
+        "A": "Comparar la dificultad de dos colores tiene sentido cuando los dos están en la bolsa, y el azul no aparece en ninguna de las tres cantidades que se enumeran.",
+        "B": "La bolsa efectivamente tiene balotas de varios colores, pero eso no vuelve seguro ningún color en particular y menos uno que no está adentro.",
+        "D": "Las balotas de la bolsa ya están contadas una a una, cinco rojas, cuatro verdes y tres amarillas, así que no queda ninguna sin contar que pueda ser azul."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q13.png",
+      "imagen_alt": "Bolsa de tela abierta con doce balotas del mismo tamaño adentro: cinco rojas, cuatro verdes y tres amarillas."
+    },
+    {
+      "id": "P3-mat-3-14",
+      "numero": 14,
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Explico (desde mi experiencia) la posibilidad o imposibilidad de ocurrencia de eventos cotidianos.",
+      "que_evalua": "La habilidad para distinguir cuál de varios eventos es seguro a partir de la composición completa de un conjunto, valorando lo que otra persona da por seguro.",
+      "enunciado": "<p>Don Efrén entrena el equipo de microfútbol de una escuela de Sogamoso y guarda las camisetas en un cajón. La figura muestra el cajón completo: <b>las 14 camisetas son blancas</b> y cada una lleva impreso un número en la espalda, <b>6 con número par</b> y <b>8 con número impar</b>. Antes del partido, don Efrén mete la mano en el cajón y saca una camiseta <b>sin mirar</b> cuál es.</p><p>Mientras mete la mano, don Efrén <b>asegura que</b>, saque la que saque, va a salir una <b>camiseta blanca</b>.</p>[[IMG]]<p>¿Es acertado lo que asegura don Efrén?</p>",
+      "opciones": {
+        "A": "Sí es acertado, porque las 14 del cajón son blancas.",
+        "B": "No es acertado, porque solo 6 llevan número par.",
+        "C": "No es acertado, porque las de número impar no pueden salir.",
+        "D": "No es acertado, porque también podría salir una roja."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «Sí es acertado, porque las 14 del cajón son blancas» es correcta porque las \\(6\\) camisetas de número par y las \\(8\\) de número impar son todas blancas, de modo que las \\(14\\) del cajón lo son. Un evento es seguro cuando ocurre con cualquiera de los resultados posibles, y aquí no hay ninguna camiseta de otro color que pueda desmentir a don Efrén.",
+      "opciones_incorrectas": {
+        "B": "Las camisetas de número par sí están en el cajón y pueden salir, pero el color no depende del número: esas seis camisetas también son blancas y no le quitan la razón a lo que él asegura.",
+        "C": "Las camisetas de número impar son las más numerosas del cajón, con ocho unidades, de manera que lejos de ser imposible sacarlas es el resultado más frecuente, y además son blancas.",
+        "D": "El color rojo sería un resultado posible en un cajón con camisetas de varios colores, y en la figura las catorce camisetas del cajón son blancas."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q14.png",
+      "imagen_alt": "Cajón con catorce camisetas blancas numeradas en la espalda: seis llevan número par y ocho llevan número impar. Ninguna camiseta es de otro color."
+    },
+    {
+      "id": "P3-mat-3-15",
+      "numero": 15,
+      "competencia": "b",
+      "afirmacion": 5,
+      "evidencia": "5.2",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Predigo si la posibilidad de ocurrencia de un evento es mayor que la de otro.",
+      "que_evalua": "La habilidad para decidir entre dos alternativas comparando la parte que los casos favorables representan dentro de cada total.",
+      "enunciado": "<p>En la feria escolar de un colegio de Montería hay dos urnas para el juego de las fichas y cada estudiante puede sacar una sola ficha, de una sola urna, sin mirar hacia adentro. Quien saque una ficha premiada se lleva un libro. La figura muestra las dos urnas con sus fichas: la <b>azul</b> tiene <b>5 fichas premiadas de 10</b> y la <b>verde</b> tiene <b>6 fichas premiadas de 18</b>. Camilo quiere escoger la urna donde tenga <b>más posibilidad</b> de ganarse el libro.</p><p>Un compañero que hace la fila con él le <b>sostiene que</b> le conviene la <b>urna verde</b>, porque en esa hay más fichas premiadas que en la otra.</p>[[IMG]]<p>¿En cuál de las dos urnas le conviene meter la mano a Camilo?</p>",
+      "opciones": {
+        "A": "En la verde, porque tiene más fichas premiadas.",
+        "B": "En la verde, porque es la urna con más fichas.",
+        "C": "En cualquiera de las dos, porque ambas dan premio.",
+        "D": "En la azul, porque una de cada dos fichas está premiada."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «En la azul, porque una de cada dos fichas está premiada» es correcta porque la posibilidad no depende del número de premios por sí solo, sino de la parte que esos premios representan del total de la urna. En la azul hay \\(5\\) premiadas entre \\(10\\) fichas, es decir la mitad, mientras que en la verde hay \\(6\\) entre \\(18\\), es decir la tercera parte.",
+      "opciones_incorrectas": {
+        "A": "La urna verde sí tiene una ficha premiada más que la azul, pero también tiene muchas más fichas sin premio, y esa ficha extra se pierde entre las dieciocho.",
+        "B": "El tamaño de la urna está bien leído en la figura, aunque tener más fichas no ayuda a ganar: lo que ayuda es que una parte grande de ellas esté premiada.",
+        "C": "Las dos urnas reparten premios, sin embargo no los reparten en la misma proporción, y la pregunta pide escoger aquella donde ganar sea más fácil."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q15.png",
+      "imagen_alt": "Dos urnas de la feria con sus fichas. La urna azul tiene diez fichas y cinco de ellas están marcadas como premiadas. La urna verde tiene dieciocho fichas y seis de ellas están marcadas como premiadas."
+    },
+    {
+      "id": "P3-mat-3-16",
+      "numero": 16,
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "BAJA",
+      "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
+      "que_evalua": "La habilidad para interpretar un código en el que cada parte indica una posición dentro de un orden establecido.",
+      "enunciado": "<p>Para la salida pedagógica al parque de Piedecuesta, el rector le entregó a cada estudiante una ficha con el <b>código de su silla</b> en el bus. El código se lee así: primero va el <b>número de la fila</b>, contando desde el puesto del conductor hacia atrás, y después va la <b>letra del puesto</b> dentro de esa fila, contando desde la ventana. Sara recibió la ficha <b>7B</b> y Julián recibió la ficha <b>4B</b>, como se ve en la figura.</p>[[IMG]]<p>¿Qué le indica a Sara el código de su ficha sobre el lugar donde debe sentarse?</p>",
+      "opciones": {
+        "A": "Que va en la silla 7 del bus, porque el código las cuenta seguidas.",
+        "B": "Que va en la fila 7 y en el segundo puesto, porque el número va primero.",
+        "C": "Que va en la fila 2 y en el séptimo puesto, porque la letra manda primero.",
+        "D": "Que va en la fila 7 y comparte silla con Julián, porque los dos códigos terminan igual."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «Que va en la fila 7 y en el segundo puesto, porque el número va primero» es correcta porque en ese código la primera parte nombra la fila y la segunda parte nombra el puesto dentro de ella. El \\(7\\) ubica a Sara en la séptima fila contando desde el conductor, y la segunda letra del abecedario la ubica en el segundo puesto contando desde la ventana.",
+      "opciones_incorrectas": {
+        "A": "Contar sillas corridas de principio a fin es otra forma válida de numerar un bus, pero el código de esta salida separa la fila del puesto y por eso trae dos partes y no una.",
+        "C": "Las dos partes del código están reconocidas, aunque quedaron leídas al revés: el número va primero porque señala la fila y la letra después porque señala el puesto.",
+        "D": "El número de fila coincide con el de Sara solo en apariencia, pues la ficha de Julián empieza en cuatro y ubica su silla tres filas más adelante."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q16.png",
+      "imagen_alt": "Las dos fichas de la salida pedagógica, cada una con el título código de silla. La de Sara tiene impreso siete B y la de Julián tiene impreso cuatro B."
+    },
+    {
+      "id": "P3-mat-3-17",
+      "numero": 17,
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Reconozco significados del número en diferentes contextos (medición, conteo, comparación, codificación, localización entre otros).",
+      "que_evalua": "La habilidad para ordenar códigos de tres cifras formados por los mismos dígitos atendiendo al valor posicional.",
+      "enunciado": "<p>En la biblioteca de una escuela de Riohacha, cada libro lleva pegado un <b>código de tres cifras</b> y los libros se acomodan en el estante <b>de menor a mayor</b>, de izquierda a derecha, para poder encontrarlos rápido. Doña Nubia recibió cuatro libros devueltos con los códigos <b>703</b>, <b>370</b>, <b>730</b> y <b>307</b>, y se dio cuenta de que los cuatro están formados con los mismos tres dígitos cambiados de lugar. Los siguientes dibujos muestran cuatro maneras distintas de acomodar esos cuatro libros en el estante.</p>[[IMG]]<p>¿En cuál de esos estantes quedan los libros como doña Nubia los necesita?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
+      "justificacion_correcta": "El estante que empieza en 307 y sigue con 370, 703 y 730 deja los libros como se necesitan, porque en un número de tres cifras manda primero la cifra de las centenas: los dos códigos que empiezan por \\(3\\) valen menos que los que empiezan por \\(7\\). Dentro de cada pareja se compara la cifra siguiente, y así \\(307\\) va antes que \\(370\\) y \\(703\\) va antes que \\(730\\).",
+      "opciones_incorrectas": {
+        "A": "El estante que arranca en 730 y termina en 307 usa correctamente el valor de las centenas, pero acomoda los libros de mayor a menor y en la biblioteca se ordenan empezando por el código más pequeño.",
+        "B": "El estante que arranca en 307 parte bien del código más pequeño, aunque enseguida pone 703 antes que 370 y mezcla los que empiezan por \\(7\\) con los que empiezan por \\(3\\), y las centenas mandan sobre las decenas.",
+        "C": "El estante que arranca en 370 separa las dos parejas por su cifra de centenas, sin embargo dentro de cada pareja el orden queda invertido: \\(370\\) no puede ir antes que \\(307\\)."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q17.png",
+      "imagen_alt": "Los cuatro libros devueltos, todavía sin acomodar, con los códigos setecientos tres, trescientos setenta, setecientos treinta y trescientos siete, y debajo el estante vacío con una flecha que indica que se acomoda de menor a mayor.",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-3-p3/q17a.png",
+        "B": "assets/banco-mat-3-p3/q17b.png",
+        "C": "assets/banco-mat-3-p3/q17c.png",
+        "D": "assets/banco-mat-3-p3/q17d.png"
+      }
+    },
+    {
+      "id": "P3-mat-3-18",
+      "numero": 18,
+      "competencia": "c",
+      "afirmacion": 6,
+      "evidencia": "6.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas en situaciones aditivas de composición y de transformación.",
+      "que_evalua": "La habilidad para hallar el código que ocupa una posición dada dentro de una numeración ordenada, componiendo aditivamente los grupos completos anteriores.",
+      "enunciado": "<p>En un colegio de Zipaquirá los casilleros del pasillo están numerados en orden, fila por fila y siempre de izquierda a derecha: la primera fila lleva los casilleros del <b>1 al 10</b>, la segunda va del <b>11 al 20</b>, la tercera del <b>21 al 30</b> y así sucesivamente, con <b>diez casilleros en cada fila</b>. A Mariana le asignaron el casillero que queda en la <b>cuarta fila</b>, en el <b>séptimo lugar</b> contando desde la izquierda, señalado en la figura, pero la placa con el número se le despegó. Para no contar casillero por casillero, Mariana siguió <b>estos pasos</b>.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Contar cuántas filas COMPLETAS quedaron numeradas antes de la suya.<br><b>Paso 2.</b> Averiguar cuántos casilleros suman esas filas completas, sabiendo que cada fila lleva diez.<br><b>Paso 3.</b> Agregarle a ese total el lugar que ella ocupa dentro de su propia fila.</div>[[IMG]]<p>Siguiendo esos pasos, ¿qué número le corresponde al casillero de Mariana?</p>",
+      "opciones": {
+        "A": "El casillero 37, porque a los 30 anteriores les suma 7.",
+        "B": "El casillero 47, porque a los 40 anteriores les suma 7.",
+        "C": "El casillero 11, porque suma la fila con el lugar de ella.",
+        "D": "El casillero 40, porque la cuarta fila termina en ese número."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «El casillero 37, porque a los 30 anteriores les suma 7» es correcta porque antes de la cuarta fila ya quedaron numeradas tres filas completas, es decir \\(10+10+10=30\\) casilleros. El de Mariana es el séptimo de la fila siguiente, así que a esos treinta hay que agregarles siete: \\(30+7=37\\).",
+      "opciones_incorrectas": {
+        "B": "La forma de componer está bien planteada, pero cuenta cuatro filas completas antes de la de Mariana, y ella está justamente dentro de la cuarta fila, no después.",
+        "C": "Los dos números que se suman son los que aparecen en el enunciado, aunque el cuatro nombra una fila entera de diez casilleros y no un casillero suelto.",
+        "D": "Ese número cierra correctamente la cuarta fila, sin embargo corresponde al último casillero de la fila y a Mariana le tocó el séptimo."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q18.png",
+      "imagen_alt": "Pasillo con cuatro filas de diez casilleros cada una. La primera fila está numerada del uno al diez, la segunda del once al veinte y la tercera del veintiuno al treinta. La cuarta fila todavía no tiene puestas las placas y una flecha señala su séptimo casillero como el de Mariana."
+    },
+    {
+      "id": "P3-mat-3-19",
+      "numero": 19,
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco en los objetos propiedades o atributos que se puedan medir (longitud, área, volumen, capacidad, peso y masa) y, en los eventos, su duración.",
+      "que_evalua": "La habilidad para elegir el atributo medible de una figura que responde a una necesidad concreta y la unidad que le corresponde.",
+      "enunciado": "<p>El profesor Ramiro entrena al equipo de la escuela en Villavicencio y mandó pintar de nuevo la raya blanca que bordea la cancha de microfútbol, porque ya casi no se ve. La cancha tiene la forma y las medidas que aparecen en la figura. Antes de ir a comprar la pintura, el profesor tiene que saber <b>cuánta raya</b> va a pintar, así que necesita decidir qué atributo de la cancha debe medir y en qué unidad se expresa.</p>[[IMG]]<p>¿Qué debe medir el profesor Ramiro y en qué unidad?</p>",
+      "opciones": {
+        "A": "El área en metros cuadrados, porque la raya rodea la cancha.",
+        "B": "El contorno en metros, porque la raya recorre el borde.",
+        "C": "El ancho en metros cuadrados, porque basta con un lado.",
+        "D": "La duración en minutos, porque el partido se mide así."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «El contorno en metros, porque la raya recorre el borde» es correcta porque lo que se recorre a lo largo de un borde es una longitud, y las longitudes se expresan en metros. Sumando los cuatro lados de la figura, \\(18+10+18+10=56\\), el profesor necesita pintura para \\(56\\) metros de raya.",
+      "opciones_incorrectas": {
+        "A": "El área dice cuánta superficie tiene la cancha por dentro y se mide en metros cuadrados, pero eso serviría para sembrarla de grama, no para pintar la raya del borde.",
+        "C": "El ancho es una de las medidas de la figura y va en metros, aunque por sí solo cubre un lado y la raya recorre los cuatro; además el metro cuadrado no mide longitudes.",
+        "D": "La duración es un atributo medible, y en minutos, sin embargo pertenece al partido y no a la cancha, de modo que no dice cuánta pintura se necesita."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q19.png",
+      "imagen_alt": "Cancha de microfútbol rectangular con la línea de mitad y el círculo central, acotada en dieciocho metros de largo y diez metros de ancho."
+    },
+    {
+      "id": "P3-mat-3-20",
+      "numero": 20,
+      "competencia": "c",
+      "afirmacion": 7,
+      "evidencia": "7.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Represento el espacio circundante para establecer relaciones espaciales.",
+      "que_evalua": "La habilidad para determinar la posición que ocupa un objeto después de una traslación descrita con las palabras derecha y abajo.",
+      "enunciado": "<p>En el patio de una escuela de Tunja las materas están puestas sobre una cuadrícula pintada en el piso. Las <b>filas</b> se cuentan de <b>1 a 4 de arriba hacia abajo</b> y las <b>columnas</b> se cuentan de <b>1 a 5 de izquierda a derecha</b>, tal como aparece en la figura, donde se ve dónde está hoy la matera de geranios. El rector pidió correrla <b>dos casillas hacia la derecha</b> y después <b>una casilla hacia abajo</b>, sin sacarla de la cuadrícula. Los siguientes dibujos muestran la misma cuadrícula con la matera puesta en cuatro casillas distintas.</p>[[IMG]]<p>¿Cuál de esos dibujos muestra dónde queda la matera después de los dos movimientos?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "C",
+      "justificacion_correcta": "El dibujo que deja la matera en la fila 3 y la columna 4 recoge los dos movimientos, porque la matera empieza en la fila \\(2\\) y la columna \\(2\\). Correrla dos casillas hacia la derecha cambia solo la columna, que pasa de \\(2\\) a \\(4\\), y bajarla una casilla cambia solo la fila, que pasa de \\(2\\) a \\(3\\), porque las filas se cuentan de arriba hacia abajo.",
+      "opciones_incorrectas": {
+        "A": "El dibujo que deja la matera en la fila 2 y la columna 4 cuenta bien el desplazamiento hacia la derecha sobre las columnas, pero le falta el segundo movimiento, que baja la matera una fila.",
+        "B": "El dibujo que deja la matera en la fila 4 y la columna 3 usa los dos números del resultado, aunque los intercambia: lo que llega hasta cuatro es la columna, porque el movimiento largo fue hacia el lado.",
+        "D": "El dibujo que deja la matera en la fila 1 y la columna 4 tiene bien hallada la columna, sin embargo sube la matera una fila en lugar de bajarla, y en esta cuadrícula bajar significa pasar a un número de fila mayor."
+      },
+      "imagen_figura": "assets/banco-mat-3-p3/q20.png",
+      "imagen_alt": "Cuadrícula del patio con cuatro filas y cinco columnas rotuladas, con la matera de geranios ubicada en la segunda fila y la segunda columna.",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-3-p3/q20a.png",
+        "B": "assets/banco-mat-3-p3/q20b.png",
+        "C": "assets/banco-mat-3-p3/q20c.png",
+        "D": "assets/banco-mat-3-p3/q20d.png"
+      }
+    }
+  ]
+}

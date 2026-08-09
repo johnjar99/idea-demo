@@ -246,9 +246,12 @@
           <button id="btn-descargar-cuadernillo" class="doc-accion" title="Descarga el cuadernillo original del grupo activo en PDF para imprimir o consultar"><span class="doc-accion__ic">📘</span><span>Cuadernillo</span></button>
           <button id="btn-panel-permisos" class="doc-accion"><span class="doc-accion__ic">🔑</span><span>Permisos</span><span id="badge-permisos" class="ml-1 hidden text-xs bg-amber-400 text-black rounded-full px-1.5">0</span></button>
           <button id="btn-backup" class="doc-accion" title="Descargar respaldo JSON de todas las aplicaciones, usuarios y configuraciones"><span class="doc-accion__ic">💾</span><span>Respaldar</span></button>
-          <button id="btn-restore" class="doc-accion" title="Restaurar desde un respaldo JSON previamente descargado"><span class="doc-accion__ic">📂</span><span>Restaurar</span></button>
+          <!-- RETIRADO el 8-ago-2026: el botón "Restaurar" llamaba a db.importarBackup(), que
+               BORRA los documentos que no estén en el archivo y reemplaza las ocho colecciones.
+               Cualquier docente podía vaciar la plataforma entera con un archivo mal hecho.
+               Restaurar un respaldo es una operación de administración: la hace el manager con
+               scripts/, y las reglas de Firestore solo le dejan escribir a él. -->
         </div>
-        <input type="file" id="input-restore" accept="application/json" class="hidden">
       </section>
 
       <!-- Bienvenida compacta -->
@@ -665,6 +668,7 @@
     // renderizar, para que analisis.js (sincrono) la lea con pedagogiaDeSync. Si el JSON
     // esta vacio o falla, el cache queda {} y todo cae al comportamiento por area (11 P1 intacto).
     import { cargarPedagogiaGrado } from './js/pedagogia-grado.js';
+    import { refrescarResumenes } from './js/resumenes.js';
 
     // Se lanzan las lecturas ANTES de esperar la sesion: restaurar la sesion de Firebase Auth
     // cuesta su tiempo y hasta ahora ese tiempo era espera muerta. El SDK de Firestore encola la
@@ -708,6 +712,20 @@
     // la ponía en el último intento); más abajo se elige UNA entrega válida por integridad.
     const todasAppsRaw = await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id);
     const todasApps = todasAppsRaw.filter(a => a.estado === 'enviada');
+
+    // RESÚMENES AGREGADOS POR GRUPO (idea_resumenes). El estudiante ya no puede leer las
+    // pruebas de sus compañeros para compararse: lee un documento con SOLO números
+    // (promedio, conteo, mejor, reparto por nivel). Ese documento se refresca aquí, de
+    // forma oportunista, con las aplicaciones que este panel ya tiene en memoria: no
+    // cuesta ni una lectura extra de aplicaciones, escribe solo lo que cambió y como
+    // mucho una vez cada 30 minutos por navegador. En segundo plano: si falla, no rompe
+    // el panel. El recálculo completo lo hace el manager con scripts/resumenes_grupo.mjs.
+    (async () => {
+      const fichas = {};
+      for (const c of cuadernillos) fichas[c.id] = { area: c.area ?? null, periodo: c.periodo ?? null };
+      const r = await refrescarResumenes(ses, todasApps, fichas);
+      if (r.escritos) console.info('[resumenes] actualizados', r.escritos, 'de', r.total);
+    })().catch(e => console.warn('[resumenes]', e));
 
     // Normaliza el grupo para que mayúsculas/espacios NO creen grupos fantasma
     // ("a" vs "A"). "a" → "A", "1° " → "1°".
@@ -3049,10 +3067,6 @@
       }
     });
 
-    document.getElementById('btn-restore').addEventListener('click', () => {
-      document.getElementById('input-restore').click();
-    });
-
     // Pie del análisis del grupo: navegación + descargables (reutiliza los handlers existentes).
     (function wirePieGrupo() {
       const proxy = (id) => { const b = document.getElementById(id); if (b) b.click(); };
@@ -3070,40 +3084,6 @@
       document.getElementById('btn-grupo-pdf')?.addEventListener('click', () => proxy('btn-exportar-pdf'));
       document.getElementById('btn-grupo-cuadernillo')?.addEventListener('click', () => proxy('btn-descargar-cuadernillo'));
     })();
-
-    document.getElementById('input-restore').addEventListener('change', async (e) => {
-      const f = e.target.files?.[0];
-      if (!f) return;
-      try {
-        const text = await f.text();
-        const a = await db.analizarBackup(text);
-        // Construir preview
-        const fila = (r) => `<tr>
-          <td class="px-2 py-1">${escapeHtml(r.coleccion)}</td>
-          <td class="px-2 py-1 text-right">${r.actuales}</td>
-          <td class="px-2 py-1 text-right ${r.sera_sobreescrita ? 'text-amber-700 font-bold' : 'text-slate-400'}">${r.nuevos}</td>
-        </tr>`;
-        const html = `Vas a SOBRESCRIBIR los datos actuales con el contenido del archivo "${f.name}".\n\nBackup fechado: ${a.fecha || 'no especificado'}\n\nResumen:\n` +
-          a.resumen.map(r => `  ${r.coleccion}: actual ${r.actuales} → backup ${r.nuevos}${r.sera_sobreescrita ? ' (se sobreescribirá)' : ''}`).join('\n') +
-          (a.errores.length ? `\n\n❌ ERRORES DETECTADOS:\n${a.errores.join('\n')}` : '\n\n✅ Backup válido.') +
-          '\n\n¿Continuar?';
-        if (!a.es_valido) {
-          toast('Backup inválido: ' + a.errores[0], 'error');
-          e.target.value = '';
-          return;
-        }
-        if (!confirm(html)) {
-          e.target.value = '';
-          return;
-        }
-        const r = await db.importarBackup(text);
-        toast(`Respaldo restaurado: ${r.restauradas} colecciones`, 'exito');
-        setTimeout(() => location.reload(), 1200);
-      } catch (err) {
-        toast('Error al restaurar: ' + err.message, 'error');
-      }
-      e.target.value = '';
-    });
 
     // Tour de onboarding
     botonAyudaFlotante(ses.rol === 'directivo' ? 'directivo' : 'docente');

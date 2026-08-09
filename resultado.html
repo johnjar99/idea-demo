@@ -168,6 +168,7 @@
     import { exportarResultadoEstudianteExcel } from './js/export-excel.js';
     import { sabioConBurbuja, mensajeSabioPorNivel } from './js/sabio.js';
     import { cargarPedagogiaGrado, esVivoProtegido } from './js/pedagogia-grado.js';
+    import { obtenerResumenGrupo } from './js/resumenes.js';
 
     const params = new URLSearchParams(location.search);
     const aplicacionId = params.get('id');
@@ -230,37 +231,26 @@
     }
 
     // === Comparativos contra grupo (en segundo plano, no bloquea el dashboard) ===
+    // ANTES: se leían TODAS las aplicaciones de la institución y se filtraban aquí. Eso
+    // obligaba a que un estudiante pudiera ver las pruebas de sus compañeros, y de toda su
+    // IE. AHORA se lee UN documento agregado (idea_resumenes) que solo trae números:
+    // promedio, conteo, máximo y reparto por nivel. La tarjeta se ve exactamente igual.
+    // El resumen lo publican el manager (scripts/resumenes_grupo.mjs) y los paneles del
+    // personal de la IE; el estudiante solo lo LEE. Si aún no existe (grupo sin entregas
+    // consolidadas), la tarjeta no se muestra, igual que antes con una sola entrega.
     (async () => {
-    const _normGrupo = (g) => String(g ?? '').trim().toUpperCase();
-    // Lectura DIRIGIDA por institución (no toda la colección) y luego se acota al grupo.
-    const _enviadasGrupo = (await db.consultarPorCampo('idea_aplicaciones', 'institucion_id', ses.institucion_id)).filter(a =>
-      a.cuadernillo_id === cuadernillo.id &&
-      a.grado === ses.grado &&
-      _normGrupo(a.grupo) === _normGrupo(ses.grupo) &&
-      a.estado === 'enviada'
-    );
-    // UNA entrega válida por estudiante (la más reciente con permiso autorizado; si no,
-    // la primera). Evita que un reintento no autorizado infle o distorsione el promedio.
-    const _tsR = (a) => new Date(a.fecha_envio || a.fecha_fin || a.fecha_creacion || 0).getTime();
-    const _mapaGrupo = new Map();
-    for (const a of _enviadasGrupo) {
-      const ek = a.estudiante_id || a.estudiante_nombre;
-      if (!_mapaGrupo.has(ek)) _mapaGrupo.set(ek, []);
-      _mapaGrupo.get(ek).push(a);
-    }
-    const todasGrupo = [..._mapaGrupo.values()].map(lista => {
-      const cp = lista.filter(a => a.permiso_usado);
-      if (cp.length) return cp.sort((x, y) => _tsR(y) - _tsR(x))[0];
-      return lista.slice().sort((x, y) => _tsR(x) - _tsR(y))[0];
+    const resumen = await obtenerResumenGrupo({
+      institucion_id: ses.institucion_id,
+      sede_id: ses.sede_id,
+      grado: ses.grado,
+      grupo: ses.grupo,
+      cuadernillo_id: cuadernillo.id
     });
-    if (todasGrupo.length > 1) {
+    if (resumen && resumen.n > 1) {
       const cardComp = document.getElementById('card-comparativos');
       cardComp.style.display = '';
-      const puntajes = todasGrupo.map(a => a.puntaje);
-      const promGrupo = Math.round(puntajes.reduce((s,v)=>s+v,0)/puntajes.length);
-      const mejorGrupo = Math.max(...puntajes);
-      const mias = todasGrupo.filter(a => a.estudiante_id === ses.user_id).sort((a,b)=>new Date(a.fecha_envio)-new Date(b.fecha_envio));
-      const miMejor = Math.max(...mias.map(a => a.puntaje));
+      const promGrupo = resumen.promedio;
+      const mejorGrupo = resumen.mejor;
 
       const cont = document.getElementById('comparativos-container');
       cont.innerHTML = `

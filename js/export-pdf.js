@@ -20,6 +20,10 @@ import { cargarLibsPDF } from './cargar-libs.js';
 // Capa pedagogica por grado: el export precarga el cache para ser autonomo (conclusionesProfundas
 // es sincrono y la lee de cache). Si el JSON falta, el cache queda {} y se usa el fallback por area.
 import { cargarPedagogiaGrado } from './pedagogia-grado.js';
+// romanoPeriodo: normalizador ÚNICO de periodo. El PDF del plan comparaba `p.periodo === per`
+// contra ['I','II','III'] en crudo, así que un plan guardado con periodo "1" o "p1" imprimía
+// "0 puntos sobre 100" en el diagnóstico y N/D en las tres filas de la trayectoria.
+import { romanoPeriodo } from './filtros-navegacion.js';
 
 // Paleta del PDF derivada de THEME (single source of truth).
 // Las claves se mantienen para compatibilidad con el código existente.
@@ -110,7 +114,12 @@ function dibujarHeader(doc, titulo, pagina, total, logo) {
   doc.text(titulo, 24, 14);
   doc.setFontSize(8);
   doc.setTextColor(...C.dorado);
-  doc.text(`Página ${pagina} de ${total}`, w - 6, 11, { align: 'right' });
+  // `total = null` significa "todavía no se sabe cuántas páginas van a salir": no se escribe nada
+  // y el contador lo pone al final la pasada que sí conoce doc.internal.getNumberOfPages().
+  // Antes se escribía un total adivinado y luego se tapaba con un rectángulo, pero tapar no borra:
+  // el texto viejo seguía en el flujo del PDF, así que quien leyera el archivo (o copiara y pegara)
+  // veía "Página 5 de 10" en un reporte de 7 páginas, y repetido.
+  if (total != null) doc.text(`Página ${pagina} de ${total}`, w - 6, 11, { align: 'right' });
   doc.setTextColor(...C.negro);
 }
 
@@ -354,7 +363,9 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
   const w = doc.internal.pageSize.getWidth();
   const h = doc.internal.pageSize.getHeight();
   const logo = await loadLogoBase64();
-  const total = 10;
+  // Nada de totales adivinados: el reporte crece o encoge según cuántos bloques entren, así que el
+  // contador se escribe al final, cuando ya se sabe el número real de páginas (ver más abajo).
+  const total = null;
   const titulo = `${cuadernillo.area} · ${contexto.grado}° ${contexto.grupo} · Período ${cuadernillo.periodo}`;
   const kpi = kpiGrupo(aplicaciones);
   const conclusiones = conclusionesProfundas(aplicaciones, cuadernillo);
@@ -1202,13 +1213,11 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
 
   dibujarFooter(doc);
 
-  // v4: Reescribir "Página X de Y" con el total REAL de paginas (puede ser > 10 por overflow)
+  // Contador de páginas, en la única pasada que conoce el total real. Los encabezados se
+  // dibujaron con `total = null`, así que aquí no hay nada que tapar: se escribe y ya.
   const totalReal = doc.internal.getNumberOfPages();
   for (let pg = 1; pg <= totalReal; pg++) {
     doc.setPage(pg);
-    // Tapar la zona del contador de pagina con un rectángulo negro
-    doc.setFillColor(...C.negro);
-    doc.rect(w - 50, 5, 45, 12, 'F');
     doc.setTextColor(...C.dorado);
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);
@@ -1294,7 +1303,10 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
     .replace(/…/g, '...').replace(/[✓✔]/g, '').replace(/ /g, ' ');
 
   // ============= PAGINA 1: PORTADA =============
-  dibujarHeader(doc, titulo, p, 1, logo);
+  // Sin total: los encabezados de este plan se numeran al final (ver la pasada del contador),
+  // cuando ya se sabe cuantas paginas salieron. Antes cada pagina se anunciaba "de si misma"
+  // ("Pagina 3 de 3" en la 3 de 5) y esa cadena quedaba en el flujo del PDF aunque se tapara.
+  dibujarHeader(doc, titulo, p, null, logo);
   doc.setFillColor(...C.marfil);
   doc.rect(0, 20, w, h - 20, 'F');
 
@@ -1375,7 +1387,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   const ensurePage = (currentY, neededHeight) => {
     if (currentY + neededHeight > h - 25) {
       doc.addPage(); p++;
-      dibujarHeader(doc, titulo, p, p, logo);
+      dibujarHeader(doc, titulo, p, null, logo);
       dibujarFooter(doc);
       return 32;
     }
@@ -1407,12 +1419,14 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
 
   // ============= PAGINA 2: DIAGNOSTICO + TRAYECTORIA =============
   doc.addPage(); p++;
-  dibujarHeader(doc, titulo, p, p, logo);
+  dibujarHeader(doc, titulo, p, null, logo);
   let y = 32;
 
   y = seccionTitulo(y, 1, 'Diagnóstico de partida');
-  const promPlan = plan.puntajes_periodos?.find(pp => pp.periodo === plan.periodo)?.puntaje || 0;
-  let diag = `El grupo evaluado con el Instrumento IDEA en ${plan.area} de grado ${plan.grado}° ${plan.grupo} obtuvo durante el período ${plan.periodo} un promedio de ${promPlan} puntos sobre 100. `;
+  const _perPlan = romanoPeriodo(plan.periodo);
+  const _puntPlan = plan.puntajes_periodos?.find(pp => romanoPeriodo(pp.periodo) === _perPlan)?.puntaje;
+  const promPlan = _puntPlan != null ? _puntPlan : 0;
+  let diag = `El grupo evaluado con el Instrumento IDEA en ${plan.area} de grado ${plan.grado}° ${plan.grupo} obtuvo durante el período ${_perPlan} un promedio de ${promPlan} puntos sobre 100. `;
   diag += `Este diagnóstico sirve como punto de partida para focalizar las acciones pedagógicas en las competencias y evidencias con menor logro. `;
   diag += `La lectura cuantitativa del desempeño grupal debe articularse con la observación cualitativa del docente en aula para construir un plan de mejora coherente con el contexto institucional.`;
   y = textoExperto(y, diag);
@@ -1437,7 +1451,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
     doc.rect(15, y, w - 30, 8);
     doc.setTextColor(...C.negro); doc.setFont('helvetica', 'normal'); doc.setFontSize(10);
     doc.text(`Período ${per}`, 20, y + 5.5);
-    const v = plan.puntajes_periodos?.find(p => p.periodo === per)?.puntaje;
+    const v = plan.puntajes_periodos?.find(p => romanoPeriodo(p.periodo) === per)?.puntaje;
     doc.setFont('helvetica', 'bold');
     doc.text(v != null ? String(v) : 'N/D', w/2 + 10, y + 5.5, { align: 'center' });
     y += 8;
@@ -1712,8 +1726,6 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
   const totalReal = doc.internal.getNumberOfPages();
   for (let pg = 1; pg <= totalReal; pg++) {
     doc.setPage(pg);
-    doc.setFillColor(...C.negro);
-    doc.rect(w - 50, 6, 44, 8, 'F');
     doc.setTextColor(...C.dorado);
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);

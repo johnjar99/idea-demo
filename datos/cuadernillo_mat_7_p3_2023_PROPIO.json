@@ -1,0 +1,610 @@
+{
+  "id": "mat-7-p3-propio-2023",
+  "area": "Matemáticas",
+  "area_slug": "matematicas",
+  "grado": "7",
+  "periodo": "III",
+  "version": "2023",
+  "nombre": "Cuadernillo de Matemáticas · Grado 7° · Período III (Banco propio IDEA)",
+  "fuente": "Banco propio IDEA · ítems y figuras de autoría propia alineados a los Estándares Básicos de Competencias (marco público). El Período III es de creación íntegramente propia: no adapta figuras ni textos de cuadernillos de terceros.",
+  "tiempo_minutos": 60,
+  "num_preguntas": 20,
+  "instrucciones": "Lee detenidamente cada pregunta y elige una única respuesta. Es importante que no dejes ninguna pregunta sin responder. Organiza tu tiempo: cuentas con una (1) hora para terminar.",
+  "competencias": {
+    "a": "Resolución de problemas",
+    "b": "Razonamiento",
+    "c": "Comunicación"
+  },
+  "afirmaciones": {
+    "1": "Resuelve problemas aditivos, multiplicativos, de proporcionalidad o de linealidad en contextos aplicados",
+    "2": "Resuelve problemas que requieren diferentes procedimientos de cálculo para hallar medidas de superficies y volúmenes",
+    "3": "Resuelve problemas que requieran el uso de frecuencias de datos representados a partir de diferentes formas: lenguaje natural, gráficas o tablas",
+    "4": "Resuelve problemas que requieren el uso de la distribución de los datos o medidas estadísticas: moda, mediana y promedio",
+    "5": "Explica las características y las propiedades de secuencias, numéricas o geométricas, y expresiones numéricas",
+    "6": "Comprende las condiciones de semejanza y congruencia en figuras poligonales",
+    "7": "Analiza datos representados de diferentes formas",
+    "8": "Expresa una misma información en diferentes lenguajes: natural, simbólico o textual, en contextos matemáticos o aplicados",
+    "9": "Reconoce el uso y las propiedades de los números reales y sus operaciones en distintos contextos aplicados",
+    "10": "Reconoce las características medibles y de posición de objetos bidimensionales y de movimientos simples de estos: rotación, traslación y reflexión",
+    "11": "Reconoce distintos tipos de representación de uno o varios conjuntos de datos",
+    "12": "Explica la naturaleza de los eventos posibles, imposibles o seguros",
+    "13": "Explica las características y las propiedades de secuencias, numéricas o geométricas, y expresiones numéricas",
+    "14": "Analiza datos representados de diferentes formas"
+  },
+  "evidencias": {
+    "1.1": "Usa las propiedades de las operaciones, la proporcionalidad directa o inversa en situaciones en las cuales las magnitudes están relacionadas",
+    "2.1": "Calcula áreas y volúmenes de formas comunes cuando las fórmulas para ello no se ofrecen en la situación",
+    "3.1": "Usa la moda o la frecuencia de los datos para solucionar situaciones en las cuales se han organizado los datos a partir de gráficas, listas, tablas o lenguaje natural",
+    "3.2": "Identifica información de uno o varios conjuntos de datos en distintas representaciones",
+    "4.1": "Usa el promedio para enfrentar situaciones de centralización e interpretación del comportamiento de un conjunto de datos",
+    "5.1": "Determina patrones y propiedades de las secuencias numéricas o geométricas",
+    "5.2": "Establece equivalencias a partir de las relaciones, propiedades o dependencia entre magnitudes y expresiones numéricas",
+    "6.1": "Determina figuras semejantes o las condiciones para que se dé la semejanza",
+    "6.2": "Determina figuras congruentes o las condiciones para que se dé la congruencia",
+    "7.1": "Toma decisiones sobre una situación a partir de representaciones de uno o más conjuntos de datos",
+    "8.1": "Relaciona un fenómeno, o situación de variación, en diversas estructuras con el lenguaje gráfico o con algunos elementos que lo representan",
+    "9.1": "Describe propiedades de los números y sus operaciones",
+    "10.1": "Señala los atributos medibles de una figura junto con sus posibles unidades y magnitudes",
+    "10.2": "Identifica la imagen o la preimagen de una figura a partir de una transformación en un sistema de referencia cercano al contexto inmediato: arriba, abajo, derecha, izquierda",
+    "11.1": "Elabora diversas representaciones de uno o varios conjuntos de datos",
+    "12.1": "Determina cuándo un evento es posible, imposible o seguro",
+    "13.1": "Establece equivalencias a partir de las relaciones, propiedades o dependencia entre magnitudes y expresiones numéricas",
+    "14.1": "Toma decisiones sobre una situación a partir de representaciones de uno o más conjuntos de datos"
+  },
+  "cmc": [
+    "Numérico - variacional",
+    "Espacial - métrico",
+    "Aleatorio"
+  ],
+  "preservar_orden_preguntas": false,
+  "preguntas": [
+    {
+      "id": "P3-mat-7-01",
+      "numero": 1,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Justifico el uso de representaciones y procedimientos en situaciones de proporcionalidad directa e inversa.",
+      "que_evalua": "La habilidad para resolver una situación de proporcionalidad directa reconociendo el valor de la unidad.",
+      "enunciado": "<p>Doña Emperatriz vende envueltos de choclo en la galería de Buga y siempre trabaja con la misma receta, de modo que el rendimiento no le cambia de un día para otro. Ella tiene medido que con <b>12 mazorcas</b> le salen <b>30 envueltos</b>, tal como muestra el dibujo. Esta semana el colegio del barrio le encargó <b>105 envueltos</b> para el día de la familia y doña Emperatriz tiene que ir esta misma tarde a la plaza a comprar el maíz, porque el jueves ya no consigue mazorca fresca. Necesita saber exactamente cuántas mazorcas comprar, ni una más ni una menos, porque lo que le sobre se le daña.</p>[[IMG]]<p>¿Cuántas mazorcas debe comprar doña Emperatriz para ese encargo?</p>",
+      "opciones": {
+        "A": "36 mazorcas, porque el pedido es el triple del rendimiento conocido.",
+        "B": "42 mazorcas, porque cada mazorca rinde dos envueltos y medio.",
+        "C": "48 mazorcas, porque el pedido cabe cuatro veces en el rendimiento conocido.",
+        "D": "87 mazorcas, porque a las doce hay que sumarles los envueltos que faltan."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «42 mazorcas, porque cada mazorca rinde dos envueltos y medio» es correcta porque el rendimiento por mazorca se obtiene dividiendo, \\(30\\div 12=2{,}5\\) envueltos por mazorca. Con ese valor de la unidad, las mazorcas que exige el encargo son \\(105\\div 2{,}5=42\\). El mismo resultado sale de la proporción \\(\\dfrac{12}{30}=\\dfrac{x}{105}\\).",
+      "opciones_incorrectas": {
+        "A": "El pedido no es el triple sino tres veces y media el rendimiento conocido, de manera que con 36 mazorcas solo alcanzarían 90 envueltos.",
+        "C": "Ese conteo redondea el factor hacia arriba y deja 120 envueltos, quince más de los encargados, y a doña Emperatriz le sobraría maíz que se le daña.",
+        "D": "Ese razonamiento suma la diferencia de envueltos a las mazorcas, pero mazorcas y envueltos son magnitudes distintas y no se pueden sumar entre sí."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q01.png",
+      "imagen_alt": "Doce mazorcas dibujadas a la izquierda, una flecha que dice rinden y treinta envueltos a la derecha, con el encargo de ciento cinco envueltos anotado abajo."
+    },
+    {
+      "id": "P3-mat-7-02",
+      "numero": 2,
+      "competencia": "a",
+      "afirmacion": "1",
+      "evidencia": "1.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Justifico el uso de representaciones y procedimientos en situaciones de proporcionalidad directa e inversa.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno de proporcionalidad inversa y localizar el paso en el que deja de responder lo que se pregunta.",
+      "enunciado": "<p>En una vereda de El Tambo, en el Cauca, la junta del acueducto contrató el arreglo del tanque. El maestro de obra calculó que <b>6 albañiles</b> trabajando al mismo ritmo terminan la obra en <b>24 días</b>. Los seis empezaron puntuales y ya llevan <b>6 días</b> trabajando, pero la junta necesita el tanque listo antes de la temporada de lluvias, así que consiguió el dinero para que a partir de mañana sean <b>9 albañiles</b>, todos con el mismo rendimiento de los que ya estaban.</p>[[IMG]]<p>La presidenta de la junta tiene que anunciarles a las familias cuántos días habrá durado la obra en total, contando desde el primer día en que se empezó a trabajar, y para eso el tesorero le entregó por escrito los siguientes pasos.</p><p><b>Paso 1.</b> La obra completa equivale a \\(6\\times 24=144\\) jornadas de un albañil.<br><b>Paso 2.</b> En los seis días ya trabajados se hicieron \\(6\\times 6=36\\) jornadas, de modo que faltan \\(144-36=108\\).<br><b>Paso 3.</b> Con nueve albañiles esas jornadas se cubren en \\(108\\div 9=12\\) días, así que la obra habrá durado 12 días.</p><p>¿En cuál paso está el error y por qué?</p>",
+      "opciones": {
+        "A": "En el paso uno, porque la obra se mide en días y no en jornadas, de manera que multiplicar seis por veinticuatro no dice nada.",
+        "B": "En el paso dos, porque a las ciento cuarenta y cuatro jornadas hay que restarles los seis días que ya pasaron, no treinta y seis.",
+        "C": "En el paso tres, porque los doce días que faltan hay que sumarlos a los seis ya trabajados: la obra dura dieciocho días.",
+        "D": "En ninguno de los tres, porque los cálculos y la conclusión son correctos y la obra habrá durado doce días en total."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «En el paso tres, porque los doce días que faltan hay que sumarlos a los seis ya trabajados» es correcta porque los dos primeros pasos están bien hechos: la obra completa son \\(6\\times 24=144\\) jornadas, en los seis días iniciales se hicieron \\(36\\) y faltan \\(108\\), que nueve albañiles cubren en \\(108\\div 9=12\\) días. Lo que falla es la conclusión, que reporta esos doce días como si fueran el total; contando desde el primer día de trabajo la obra dura \\(6+12=18\\) días.",
+      "opciones_incorrectas": {
+        "A": "Los dos factores del primer paso son un número de albañiles y un número de días, y su producto son jornadas de trabajo, que es precisamente la unidad con la que después se reparte lo que falta.",
+        "B": "Restarle seis a ciento cuarenta y cuatro mezclaría días con jornadas: los seis días que ya pasaron los trabajaron seis albañiles a la vez, y por eso lo hecho son treinta y seis jornadas y no seis.",
+        "D": "Los tres cálculos aritméticos están bien resueltos, pero la conclusión no responde lo que la presidenta necesita anunciar, que es la duración total contada desde el primer día de trabajo."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q02.png",
+      "imagen_alt": "Dos tarjetas: arriba el cálculo del maestro con seis albañiles para veinticuatro días y abajo lo que pasó, seis albañiles los primeros seis días y nueve albañiles desde mañana, con el total por averiguar."
+    },
+    {
+      "id": "P3-mat-7-03",
+      "numero": 3,
+      "competencia": "a",
+      "afirmacion": "2",
+      "evidencia": "2.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Calculo áreas y volúmenes a través de composición y descomposición de figuras y cuerpos.",
+      "que_evalua": "La habilidad para hallar el área de una figura compuesta descomponiéndola en rectángulos.",
+      "enunciado": "<p>Don Hernando administra el salón comunal de un barrio de Garzón, en el Huila, y va a mandar enchapar el piso del patio, que tiene la forma de la siguiente figura porque una esquina la ocupa el cuarto de las herramientas. El maestro le pidió el número exacto de metros cuadrados, ya que la baldosa se pide por metro cuadrado y las que sobren no se las reciben de vuelta en el depósito.</p>[[IMG]]<p>¿Cuántos metros cuadrados de baldosa debe pedir don Hernando?</p>",
+      "opciones": {
+        "A": "76 metros cuadrados, que es el rectángulo grande menos el pedazo faltante.",
+        "B": "96 metros cuadrados, que es el rectángulo completo de doce por ocho metros.",
+        "C": "116 metros cuadrados, que es el rectángulo grande más el pedazo faltante.",
+        "D": "40 metros cuadrados, que es lo que suman los seis lados del contorno."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «76 metros cuadrados, que es el rectángulo grande menos el pedazo faltante» es correcta porque el patio cabe dentro de un rectángulo de \\(12\\times 8=96\\) metros cuadrados al que le falta la esquina del cuarto de herramientas, que mide \\(5\\times 4=20\\) metros cuadrados. La superficie que hay que enchapar es entonces \\(96-20=76\\) metros cuadrados.",
+      "opciones_incorrectas": {
+        "B": "El rectángulo de doce por ocho es la envolvente del patio, pero incluye la esquina de veinte metros cuadrados que ocupa el cuarto de herramientas y que no se va a enchapar.",
+        "C": "La descomposición está bien vista, aunque la esquina que falta se agrega en vez de descontarse, y el patio no puede tener más superficie que el rectángulo que lo contiene.",
+        "D": "El valor 40 corresponde a la suma de los seis lados del contorno, que se mide en metros lineales y sirve para el zócalo, no para la superficie del piso."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q03.png",
+      "imagen_alt": "Patio en forma de ele: un rectángulo de doce por ocho metros al que le falta una esquina de cinco por cuatro metros."
+    },
+    {
+      "id": "P3-mat-7-04",
+      "numero": 4,
+      "competencia": "a",
+      "afirmacion": "3",
+      "evidencia": "3.1",
+      "cmc": "Aleatorio",
+      "dificultad": "BAJA",
+      "estandar": "Reconozco la relación entre un conjunto de datos y su representación.",
+      "que_evalua": "La habilidad para identificar el dato más frecuente de un registro y usarlo para tomar una decisión.",
+      "enunciado": "<p>Marleny confecciona uniformes en un taller de Sincelejo y lleva el registro de las camisetas que vendió el semestre pasado en el colegio del barrio, organizado por talla. En la pared del taller pegó ese registro dibujado, con una camiseta por cada camiseta vendida. Ahora tiene que comprar la tela para el siguiente semestre y quiere pedir más metros de la talla que se le vende con mayor frecuencia, porque es la que se le agota primero y la que la obliga a rechazar pedidos.</p>[[IMG]]<p>¿De cuál talla debe pedir más tela y por qué razón?</p>",
+      "opciones": {
+        "A": "De la talla S, porque es la que menos veces aparece en el registro.",
+        "B": "De la talla M, porque queda justo en la mitad de la lista de tallas.",
+        "C": "De la talla XL, porque es la más grande de las tallas que se vendieron.",
+        "D": "De la talla L, porque es la que más veces aparece en el registro de ventas."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «De la talla L, porque es la que más veces aparece en el registro de ventas» es correcta porque la talla que se agota primero es la de mayor frecuencia, y en el registro la fila de la L reúne \\(23\\) camisetas, por encima de las \\(15\\) de la M, las \\(11\\) de la XL y las \\(8\\) de la S.",
+      "opciones_incorrectas": {
+        "A": "La talla S es en efecto la que aparece en el registro, pero con la frecuencia más baja de las cuatro, de modo que es de la que menos tela necesita el taller.",
+        "B": "La talla M ocupa el segundo lugar en ventas y queda en la mitad de la lista por su tamaño, aunque ese lugar en la lista no dice nada sobre cuántas camisetas se vendieron.",
+        "C": "La talla XL es la más grande y por eso gasta más tela por prenda, pero solo se vendieron once camisetas y no es la que obliga a rechazar pedidos."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q04.png",
+      "imagen_alt": "Registro dibujado de las camisetas vendidas por talla: ocho camisetas en la fila de la talla S, quince en la M, veintitrés en la L y once en la XL."
+    },
+    {
+      "id": "P3-mat-7-05",
+      "numero": 5,
+      "competencia": "a",
+      "afirmacion": "3",
+      "evidencia": "3.2",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Comparo e interpreto datos provenientes de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
+      "que_evalua": "La habilidad para valorar cuál de cuatro lecturas de un diagrama de barras es la única que los datos sostienen con exactitud.",
+      "enunciado": "<p>La cooperativa lechera de un municipio de Boyacá reúne la leche que le entregan cinco veredas y publicó en la cartelera el acopio del mes pasado en la siguiente gráfica.</p>[[IMG]]<p>El gerente va a intervenir en la asamblea y propone que se anuncie uno de los siguientes cuatro datos, todos leídos de esa misma gráfica y cada uno con la razón en la que se apoya. El revisor fiscal le advirtió que solo puede anunciar aquel cuya razón se sostenga con exactitud, porque el año pasado un anuncio mal leído terminó en una queja de los productores. ¿Cuál de los cuatro datos puede anunciar el gerente sin equivocarse?</p>",
+      "opciones": {
+        "A": "Que El Placer acopió el doble que Buenavista, porque ciento sesenta litros son el doble de noventa.",
+        "B": "Que San Isidro acopió setenta litros más que Las Cruces, porque doscientos menos ciento treinta son setenta.",
+        "C": "Que las cinco veredas juntas pasaron de mil litros, porque cinco veredas de más de cien litros suman más de mil.",
+        "D": "Que Buenavista acopió la mitad que La Esperanza, porque noventa es la mitad de ciento veinte."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «Que San Isidro acopió setenta litros más que Las Cruces, porque doscientos menos ciento treinta son setenta» es correcta porque la barra de San Isidro llega a \\(200\\) litros y la de Las Cruces a \\(130\\), de modo que la comparación no exige estimar nada: la resta entre las dos alturas es exactamente \\(200-130=70\\) litros.",
+      "opciones_incorrectas": {
+        "A": "El Placer sí acopió más que Buenavista, pero \\(160\\) no es el doble de \\(90\\): el doble serían \\(180\\) litros, así que la razón ofrecida exagera la diferencia real.",
+        "C": "La suma de las cinco veredas es \\(120+200+160+90+130=700\\) litros, cifra alta pero muy por debajo de los mil, y la razón tampoco se sostiene porque dos veredas no llegan a los ciento treinta litros.",
+        "D": "Buenavista quedó por debajo de La Esperanza, aunque \\(90\\) no es la mitad de \\(120\\): la mitad serían \\(60\\) litros y la brecha real entre las dos veredas es mucho más estrecha."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q05.png",
+      "imagen_alt": "Diagrama de barras con los litros acopiados por cada vereda: La Esperanza ciento veinte, San Isidro doscientos, El Placer ciento sesenta, Buenavista noventa y Las Cruces ciento treinta."
+    },
+    {
+      "id": "P3-mat-7-06",
+      "numero": 6,
+      "competencia": "a",
+      "afirmacion": "4",
+      "evidencia": "4.1",
+      "cmc": "Aleatorio",
+      "dificultad": "MEDIA",
+      "estandar": "Uso medidas de tendencia central (media, mediana, moda) para interpretar comportamiento de un conjunto de datos.",
+      "que_evalua": "La habilidad para decidir cuál de dos procedimientos ajenos recupera el dato que falta cuando se conoce el promedio que debe alcanzar el conjunto.",
+      "enunciado": "<p>Yeimi cursa séptimo en un colegio de Girardot y en Matemáticas el periodo se cierra con <b>cinco notas</b> que valen todas lo mismo. Hasta ahora la profesora le ha registrado cuatro: <b>3,8</b> · <b>4,2</b> · <b>3,5</b> · <b>4,0</b>. A Yeimi le interesa terminar el periodo con un promedio de <b>4,0</b> exactos, porque ese es el puntaje mínimo que le piden en la casa para dejarla ir a la salida pedagógica.</p>[[IMG]]<p>Dos compañeras le escribieron los siguientes pasos para averiguar cuánto tiene que sacar en la quinta nota.</p><p><b>Método 1.</b> Como el promedio que Yeimi quiere es \\(4{,}0\\), la quinta nota tiene que ser \\(4{,}0\\).<br><b>Método 2.</b> Las cinco notas deben sumar \\(4{,}0\\times 5=20{,}0\\); como las cuatro registradas suman \\(15{,}5\\), la quinta es \\(20{,}0-15{,}5=4{,}5\\).</p><p>¿Cuál de los dos métodos le sirve a Yeimi y por qué?</p>",
+      "opciones": {
+        "A": "El Método 2, porque fijar el promedio equivale a fijar la suma de las cinco notas.",
+        "B": "El Método 1, porque repetir el promedio buscado sirve con cualquier conjunto de notas.",
+        "C": "El Método 1, porque las cuatro notas ya registradas promedian cuatro coma cero exactos.",
+        "D": "Ninguno de los dos, porque con cuatro notas ya puestas el promedio final no se puede escoger."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «El Método 2, porque fijar el promedio equivale a fijar la suma de las cinco notas» es correcta porque un promedio de \\(4{,}0\\) en cinco notas obliga a que la suma sea \\(4{,}0\\times 5=20{,}0\\). Las cuatro registradas suman \\(3{,}8+4{,}2+3{,}5+4{,}0=15{,}5\\), de modo que la quinta debe ser \\(20{,}0-15{,}5=4{,}5\\), y con ella el promedio queda en \\(4{,}0\\) exactos.",
+      "opciones_incorrectas": {
+        "B": "Repetir el promedio buscado solo funciona cuando lo ya registrado promedia justamente ese valor: con \\(4{,}0\\) en la quinta nota la suma llega a \\(19{,}5\\) y el promedio se queda en \\(3{,}9\\).",
+        "C": "Las cuatro notas registradas suman \\(15{,}5\\) y promedian \\(3{,}875\\), es decir que van por debajo de \\(4{,}0\\), y por eso la quinta nota tiene que compensar esa diferencia y no repetirla.",
+        "D": "La quinta nota todavía no existe y es justamente la que Yeimi puede influir: con \\(4{,}5\\) el promedio de las cinco llega a \\(4{,}0\\), de modo que la meta sí está a su alcance."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q06.png",
+      "imagen_alt": "Gráfica con las cuatro notas ya registradas de Yeimi, tres coma ocho, cuatro coma dos, tres coma cinco y cuatro coma cero, una quinta barra vacía con un signo de interrogación y una línea punteada en cuatro coma cero."
+    },
+    {
+      "id": "P3-mat-7-07",
+      "numero": 7,
+      "competencia": "b",
+      "afirmacion": "5",
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La habilidad para generalizar el patrón de una secuencia de figuras y usarlo con un caso lejano.",
+      "enunciado": "<p>En el restaurante escolar de una institución de Ocaña las mesas son cuadradas y se juntan en una sola fila larga, pegando cada mesa nueva por un lado de la anterior. Cuando hay una sola mesa se sientan seis estudiantes; al juntar dos mesas caben diez; al juntar tres caben catorce, tal como se ve en el dibujo. Para el almuerzo de despedida la coordinadora va a juntar <b>12 mesas</b> en una sola fila y necesita saber cuántos puestos quedan disponibles, porque tiene que decidir cuántos cursos entran en el primer turno.</p>[[IMG]]<p>¿Cuántos estudiantes se pueden sentar en la fila de doce mesas?</p>",
+      "opciones": {
+        "A": "48 estudiantes, porque cada mesa aporta cuatro puestos a la fila.",
+        "B": "72 estudiantes, porque cada mesa conserva sus seis puestos originales.",
+        "C": "50 estudiantes, porque a cuatro puestos por mesa se suman dos de las puntas.",
+        "D": "46 estudiantes, porque a los cuarenta y ocho se les quitan los dos extremos."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «50 estudiantes, porque a cuatro puestos por mesa se suman dos de las puntas» es correcta porque cada mesa aporta dos puestos arriba y dos abajo, y además la fila deja libre un puesto en cada punta. El patrón es entonces \\(4n+2\\), que reproduce los casos dibujados (\\(6\\), \\(10\\) y \\(14\\)) y para doce mesas da \\(4\\times 12+2=50\\).",
+      "opciones_incorrectas": {
+        "A": "El conteo de cuatro puestos por mesa es acertado para los lados largos, pero olvida los dos puestos de las puntas, que en la fila siguen estando disponibles.",
+        "B": "Multiplicar por seis serviría si las mesas estuvieran separadas, aunque al pegarlas cada unión tapa dos puestos y la fila pierde los lados que quedan en contacto.",
+        "D": "Ese cálculo quita los puestos de las puntas en lugar de sumarlos, cuando en los extremos de la fila las dos sillas de cabecera sí caben."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q07.png",
+      "imagen_alt": "Tres arreglos de mesas cuadradas en fila con sus puestos: una mesa con seis puestos, dos mesas con diez y tres mesas con catorce."
+    },
+    {
+      "id": "P3-mat-7-08",
+      "numero": 8,
+      "competencia": "b",
+      "afirmacion": "5",
+      "evidencia": "5.2",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco y generalizo propiedades de las relaciones entre números racionales (simétrica, transitiva, etc.) y de las operaciones entre ellos (conmutativa, asociativa, etc.) en diferentes contextos.",
+      "que_evalua": "La habilidad para reconocer cuándo dos expresiones numéricas distintas producen siempre el mismo valor.",
+      "enunciado": "<p>Doña Betty atiende una papelería frente a un colegio de Duitama y cobra los trabajos escritos de una sola manera: <b>150 pesos</b> por cada hoja fotocopiada y <b>3.000 pesos</b> fijos por el anillado, sin importar cuántas hojas lleve el trabajo. Para no repetir la cuenta con cada cliente, su hijo Camilo le escribió en un cartel la expresión \\(150n+3000\\), donde \\(n\\) es el número de hojas. Un estudiante de once le propuso cambiar ese cartel por otra expresión que, según él, cobra lo mismo, y doña Betty solo aceptaría el cambio si el resultado coincidiera para cualquier número de hojas, sea un trabajo de diez o de doscientas.</p>[[IMG]]<p>¿Cuál de las siguientes expresiones cobra siempre lo mismo que la del cartel?</p>",
+      "opciones": {
+        "A": "\\(150n + 20\\), que le suma veinte pesos al valor de las fotocopias.",
+        "B": "\\(3000n + 150\\), que multiplica el anillado por el número de hojas.",
+        "C": "\\(150(n + 3000)\\), que suma el anillado antes de multiplicar por el precio.",
+        "D": "\\(150(n + 20)\\), que cuenta el anillado como si fueran veinte hojas más."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «\\(150(n + 20)\\), que cuenta el anillado como si fueran veinte hojas más» es correcta porque al repartir el factor sobre la suma queda \\(150n+150\\times 20=150n+3000\\), que es exactamente lo que dice el cartel. La lectura tiene sentido en la papelería: el anillado cuesta lo mismo que veinte hojas fotocopiadas.",
+      "opciones_incorrectas": {
+        "A": "La expresión \\(150n+20\\) cobra bien las fotocopias, pero reemplaza los \\(3000\\) pesos del anillado por apenas \\(20\\), y a doña Betty le faltarían \\(2980\\) pesos en cada trabajo.",
+        "B": "La expresión \\(3000n+150\\) intercambia los papeles de las dos cantidades: cobra el anillado por cada hoja, de modo que un trabajo de diez hojas costaría \\(30150\\) pesos.",
+        "C": "La expresión \\(150(n+3000)\\) suma antes de multiplicar y el anillado termina multiplicado por \\(150\\), con lo cual el cargo fijo sube a \\(450000\\) pesos."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q08.png",
+      "imagen_alt": "Cartel de la papelería con los dos cobros, ciento cincuenta pesos la hoja fotocopiada y tres mil pesos el anillado, y abajo la expresión ciento cincuenta ene más tres mil."
+    },
+    {
+      "id": "P3-mat-7-09",
+      "numero": 9,
+      "competencia": "b",
+      "afirmacion": "6",
+      "evidencia": "6.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
+      "que_evalua": "La habilidad para hallar el lado desconocido de una figura semejante conservando la razón entre las dimensiones.",
+      "enunciado": "<p>Sebastián maneja la imprenta de un colegio de Pamplona y le encargaron ampliar el afiche de la feria de la ciencia. El afiche original mide <b>15 centímetros</b> de ancho por <b>9 centímetros</b> de alto. La ampliación tiene que quedar semejante al original, es decir con la misma forma, porque si la máquina estira la imagen solo en un sentido las letras y el logo salen deformados y el rector no recibe el trabajo. En la cartelera donde va pegada la ampliación cabe un ancho de <b>25 centímetros</b> exactos, así que Sebastián debe decirle al operario qué alto programar.</p>[[IMG]]<p>¿Cuánto debe medir el alto de la ampliación?</p>",
+      "opciones": {
+        "A": "15 centímetros, porque los dos lados crecen en la misma proporción.",
+        "B": "19 centímetros, porque al alto se le suman los diez que creció el ancho.",
+        "C": "12 centímetros, porque el alto crece la mitad de lo que creció el ancho.",
+        "D": "27 centímetros, porque el alto se triplica igual que el número de lados."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «15 centímetros, porque los dos lados crecen en la misma proporción» es correcta porque en dos figuras semejantes la razón entre lados correspondientes es la misma: \\(25\\div 15=\\dfrac{5}{3}\\). Aplicando esa razón al alto queda \\(9\\times\\dfrac{5}{3}=15\\) centímetros, y en efecto \\(\\dfrac{25}{15}=\\dfrac{15}{9}\\).",
+      "opciones_incorrectas": {
+        "B": "Sumarle al alto los diez centímetros que creció el ancho mantiene la diferencia entre los lados, pero la semejanza conserva la razón, no la diferencia, y la imagen quedaría achatada.",
+        "C": "Reducir el crecimiento a la mitad supone que el alto cambia más despacio que el ancho, y en una ampliación semejante los dos lados se multiplican por el mismo número.",
+        "D": "Triplicar el alto lo llevaría a \\(27\\) centímetros, cuando el ancho apenas creció de \\(15\\) a \\(25\\), es decir menos del doble, y la ampliación saldría estirada hacia arriba."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q09.png",
+      "imagen_alt": "Dos rectángulos semejantes: el afiche original de quince por nueve centímetros y la ampliación de veinticinco centímetros de ancho con el alto desconocido."
+    },
+    {
+      "id": "P3-mat-7-10",
+      "numero": 10,
+      "competencia": "b",
+      "afirmacion": "6",
+      "evidencia": "6.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas que involucren relaciones y propiedades de semejanza y congruencia usando representaciones visuales.",
+      "que_evalua": "La habilidad para valorar cuál dato ajeno garantiza de verdad la congruencia entre dos figuras y cuál solo parece garantizarla.",
+      "enunciado": "<p>Don Silvio repara pisos en Manizales y tiene que reponer una baldosa triangular que se partió. La baldosa rota tiene la forma y las medidas del dibujo.</p>[[IMG]]<p>En el depósito le ofrecen cuatro baldosas y de cada una le dan un solo dato, sin dejarlo medirlas ni probarlas en el hueco. El dependiente le asegura que con el dato del mismo perímetro ya se la puede llevar tranquilo. Don Silvio no se fía y quiere escoger aquella de la que pueda estar seguro, con el dato que le den y nada más, de que es <b>congruente</b> con la rota, es decir de que tiene la misma forma y el mismo tamaño y encaja sin recortes. ¿Cuál de los cuatro datos se lo garantiza?</p>",
+      "opciones": {
+        "A": "Los tres ángulos iguales a los de la rota, porque con los mismos ángulos la baldosa tiene la misma forma.",
+        "B": "Dos lados de treinta y cuarenta con el ángulo recto entre ellos, porque esos tres datos fijan un solo triángulo.",
+        "C": "El mismo perímetro de ciento veinte centímetros, porque el contorno de las dos baldosas mide lo mismo.",
+        "D": "La misma área de seiscientos centímetros cuadrados, porque las dos baldosas cubren la misma superficie."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «Dos lados de treinta y cuarenta con el ángulo recto entre ellos, porque esos tres datos fijan un solo triángulo» es correcta porque dos lados y el ángulo que forman entre ellos determinan el triángulo por completo: con los catetos de \\(30\\) y \\(40\\) centímetros y el ángulo recto en medio, el tercer lado queda obligado a medir \\(50\\) y no existe ninguna otra baldosa que cumpla esos datos.",
+      "opciones_incorrectas": {
+        "A": "Tener los tres ángulos iguales garantiza la misma forma, es decir la semejanza, pero no el mismo tamaño: una baldosa de lados \\(60\\), \\(80\\) y \\(100\\) centímetros cumple ese dato y no cabe en el hueco.",
+        "C": "El perímetro de \\(120\\) centímetros lo cumplen muchos triángulos distintos, por ejemplo uno de lados \\(40\\), \\(40\\) y \\(40\\), que tiene el mismo contorno y una forma completamente diferente: el dependiente se equivoca.",
+        "D": "La misma área de \\(600\\) centímetros cuadrados también la alcanzan triángulos de otra forma, por ejemplo uno de base \\(60\\) y altura \\(20\\) centímetros, que no encaja en el hueco."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q10.png",
+      "imagen_alt": "Baldosa triangular rectángulo con catetos de treinta y cuarenta centímetros y una hipotenusa de cincuenta centímetros."
+    },
+    {
+      "id": "P3-mat-7-11",
+      "numero": 11,
+      "competencia": "b",
+      "afirmacion": "7",
+      "evidencia": "7.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
+      "que_evalua": "La habilidad para revisar una recomendación ajena y decidir entre dos alternativas comparando la proporción y no el conteo absoluto.",
+      "enunciado": "<p>La rectora de una escuela de Tumaco tiene que renovar el contrato de los refrigerios escolares y le llegaron las cifras del semestre pasado de los dos proveedores que se presentaron. El consejo directivo dejó por escrito el criterio con el que se decide: gana el proveedor que devuelva la <b>menor proporción</b> de refrigerios por mal estado, porque cada refrigerio devuelto es un niño que se quedó sin comer ese día, y no el que acumule menos casos sueltos.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Proveedor</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Refrigerios entregados</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Devueltos por mal estado</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Precio por refrigerio</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">El Manantial</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">240</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">12</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2.400 pesos</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">La Cosecha</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">80</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">8</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">2.200 pesos</td></tr></table><p>El almacenista le entregó a la rectora los siguientes pasos y con ellos concluye que la escuela debe contratar a La Cosecha.</p><p><b>Paso 1.</b> El Manantial devolvió \\(12\\) refrigerios y La Cosecha devolvió \\(8\\).<br><b>Paso 2.</b> Como \\(8\\) es menor que \\(12\\), La Cosecha devolvió menos.<br><b>Paso 3.</b> Entonces se contrata a La Cosecha.</p><p>¿Cuál proveedor debe contratar la rectora según el criterio del acta y por qué?</p>",
+      "opciones": {
+        "A": "La Cosecha, porque acumuló ocho devoluciones frente a las doce del otro proveedor.",
+        "B": "La Cosecha, porque cobra doscientos pesos menos por cada refrigerio entregado.",
+        "C": "El Manantial, porque devuelve uno de cada veinte y La Cosecha, uno de cada diez.",
+        "D": "El Manantial, porque entregó el triple de refrigerios que La Cosecha en el semestre."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «El Manantial, porque devuelve uno de cada veinte y La Cosecha, uno de cada diez» es correcta porque la proporción se obtiene comparando las devoluciones con lo entregado: \\(12\\div 240=\\dfrac{1}{20}\\) para El Manantial y \\(8\\div 80=\\dfrac{1}{10}\\) para La Cosecha, es decir la mitad. Los dos primeros pasos del almacenista cuentan bien; donde su recomendación falla es en el último, porque el acta no compara casos sueltos sino proporciones.",
+      "opciones_incorrectas": {
+        "A": "El conteo de ocho devoluciones contra doce está bien leído, que es lo que dicen los dos primeros pasos, pero compara dos proveedores que no entregaron lo mismo: La Cosecha entregó la tercera parte de los refrigerios.",
+        "B": "Los doscientos pesos de diferencia en el precio son reales y pesan en el presupuesto, aunque el criterio que el consejo directivo dejó por escrito no es el precio sino la proporción de devoluciones.",
+        "D": "El volumen entregado por El Manantial sí es tres veces mayor, pero entregar más no es en sí mismo una ventaja: es justamente el dato con el que hay que dividir las devoluciones."
+      }
+    },
+    {
+      "id": "P3-mat-7-12",
+      "numero": 12,
+      "competencia": "c",
+      "afirmacion": "8",
+      "evidencia": "8.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Identifico las características de las diversas gráficas cartesianas (de puntos, continuas, formadas por segmentos, etc.) en relación con la situación que representan.",
+      "que_evalua": "La habilidad para traducir a lenguaje natural una gráfica por segmentos y contrastar ese relato con una conclusión ajena.",
+      "enunciado": "<p>En la sede rural de un colegio de Sabanalarga el tanque que surte los lavamanos se llena con una bomba eléctrica. Doña Judith, que hace el aseo, midió con una regla el nivel del agua cada <b>diez minutos</b> durante <b>cuarenta minutos</b> y llevó los datos a la siguiente gráfica.</p>[[IMG]]<p>El coordinador, que no alcanzó a ver el registro completo, sostiene que la bomba estuvo subiendo el nivel del agua sin parar durante los cuarenta minutos y que por eso no hay nada que revisar. Doña Judith no está de acuerdo y pide que alguien cuente en palabras, tramo por tramo, lo que la gráfica muestra esa mañana. ¿Cuál de los siguientes relatos corresponde a lo que muestra la gráfica?</p>",
+      "opciones": {
+        "A": "El nivel subió sin parar los cuarenta minutos, porque la línea nunca se detiene ni cae.",
+        "B": "El nivel bajó al comienzo y solo subió al final, porque la línea arranca hacia abajo.",
+        "C": "El nivel subió despacio al principio y mucho más rápido al final, sin pausas, porque la línea se empina.",
+        "D": "El nivel subió, se quedó quieto, volvió a subir y al final bajó, porque la línea tiene cuatro tramos."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «El nivel subió, se quedó quieto, volvió a subir y al final bajó, porque la línea tiene cuatro tramos» es correcta porque la gráfica pasa de \\(0\\) a \\(40\\) centímetros en los primeros diez minutos, se mantiene en \\(40\\) entre el minuto diez y el veinte, vuelve a subir hasta \\(70\\) en el minuto treinta y termina en \\(30\\) a los cuarenta minutos, de modo que lo que el coordinador dio por hecho no ocurrió.",
+      "opciones_incorrectas": {
+        "A": "Subir sin parar describiría una línea siempre ascendente, y la gráfica tiene un tramo horizontal entre los minutos diez y veinte y otro que desciende al final: ahí falla lo que sostuvo el coordinador.",
+        "B": "La gráfica nunca baja al comienzo: arranca en cero y en los primeros diez minutos gana cuarenta centímetros, que es el tramo de subida más pronunciado de toda la mañana.",
+        "C": "El primer tramo sube cuarenta centímetros en diez minutos y el tercero sube treinta en otros diez, de manera que el comienzo es más rápido que el final, y además hay una pausa en medio."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q12.png",
+      "imagen_alt": "Gráfica del nivel del agua del tanque cada diez minutos: cero, cuarenta, cuarenta, setenta y treinta centímetros."
+    },
+    {
+      "id": "P3-mat-7-13",
+      "numero": 13,
+      "competencia": "c",
+      "afirmacion": "9",
+      "evidencia": "9.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "BAJA",
+      "estandar": "Resuelvo y formulo problemas utilizando propiedades básicas de la teoría de números, como las de la igualdad, las de las distintas formas de la desigualdad y las de la adición, sustracción, multiplicación, división y potenciación.",
+      "que_evalua": "La habilidad para reconocer la propiedad de las operaciones que justifica un procedimiento de cálculo mental escrito paso a paso.",
+      "enunciado": "<p>Doña Rosa prepara empanadas en un barrio de Neiva y le encargaron <b>25 bandejas</b> con <b>36 empanadas</b> cada una para el bazar de la parroquia. Para saber cuántas empanadas son en total, ella no multiplica de una vez sino que sigue los siguientes pasos.</p><p><b>Paso 1.</b> Calcula \\(25\\times 30=750\\).<br><b>Paso 2.</b> Calcula \\(25\\times 6=150\\).<br><b>Paso 3.</b> Suma los dos resultados y obtiene \\(900\\) empanadas.</p>[[IMG]]<p>Su sobrina, que estudia séptimo, afirma que ese atajo no es una casualidad sino una propiedad de las operaciones que se estudia en clase. ¿Cuál propiedad de las operaciones justifica los tres pasos de doña Rosa?</p>",
+      "opciones": {
+        "A": "La conmutativa, porque permite cambiar el orden de los dos factores sin alterar el producto.",
+        "B": "La distributiva, porque permite repartir el factor entre las dos partes en que se abrió la suma.",
+        "C": "La asociativa, porque permite agrupar de otra manera tres o más factores de un producto.",
+        "D": "La del elemento neutro, porque deja el número igual cuando se lo multiplica por uno."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «La distributiva, porque permite repartir el factor entre las dos partes en que se abrió la suma» es correcta porque doña Rosa descompuso \\(36\\) en \\(30+6\\) y multiplicó el \\(25\\) por cada sumando: \\(25\\times(30+6)=25\\times 30+25\\times 6=750+150=900\\). Ese reparto del factor sobre una suma es justamente la propiedad distributiva, y por eso el atajo le funciona siempre y no solo con estos números.",
+      "opciones_incorrectas": {
+        "A": "La conmutativa permite escribir \\(36\\times 25\\) en lugar de \\(25\\times 36\\), lo cual es cierto, pero no explica por qué se puede partir el \\(36\\) en dos sumandos y multiplicar cada uno por separado.",
+        "C": "La asociativa cambia la agrupación de tres o más factores, como en \\(2\\times(3\\times 5)=(2\\times 3)\\times 5\\), y en los pasos de doña Rosa lo que aparece es una suma, no un tercer factor.",
+        "D": "La propiedad del elemento neutro dice que multiplicar por uno deja el número igual, y ninguno de los tres pasos de doña Rosa usa el número uno."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q13.png",
+      "imagen_alt": "Arreglo de veinticinco filas de empanadas partido en dos bloques por una línea: uno de treinta empanadas por fila y otro de seis por fila."
+    },
+    {
+      "id": "P3-mat-7-14",
+      "numero": 14,
+      "competencia": "c",
+      "afirmacion": "10",
+      "evidencia": "10.1",
+      "cmc": "Espacial - métrico",
+      "dificultad": "BAJA",
+      "estandar": "Identifico relaciones entre distintas unidades utilizadas para medir cantidades de la misma magnitud.",
+      "que_evalua": "La habilidad para asociar cada atributo medible de un objeto con la unidad que le corresponde.",
+      "enunciado": "<p>Don Elías se encarga del mantenimiento en una escuela de Aguachica y anotó tres pendientes para el arreglo de la cancha múltiple. El primero es comprar la <b>cinta</b> que va a bordear todo el contorno de la cancha. El segundo es comprar la <b>pintura</b> que va a cubrir toda la superficie de juego. El tercero es <b>llenar el tanque</b> que surte las duchas del camerino. En la ferretería le pidieron que dijera en qué unidad va cada cantidad, porque cada producto se cobra de manera distinta y una equivocación le devuelve el pedido.</p>[[IMG]]<p>¿En qué unidad debe pedir don Elías cada una de las tres cantidades?</p>",
+      "opciones": {
+        "A": "La cinta en metros cuadrados, la pintura en metros y el agua en litros.",
+        "B": "La cinta en litros, la pintura en metros cuadrados y el agua en metros.",
+        "C": "La cinta en metros, la pintura en metros cuadrados y el agua en litros.",
+        "D": "La cinta en metros, la pintura en litros y el agua en metros cuadrados."
+      },
+      "clave": "C",
+      "justificacion_correcta": "La opción «La cinta en metros, la pintura en metros cuadrados y el agua en litros» es correcta porque la cinta bordea el contorno y mide una longitud, que va en metros; la pintura cubre la superficie de juego y mide un área, que va en metros cuadrados; y el agua ocupa el tanque y mide una capacidad, que va en litros.",
+      "opciones_incorrectas": {
+        "A": "El agua en litros está bien asignada, pero el contorno de la cancha es una longitud y la superficie de juego es un área, de modo que las dos primeras unidades quedaron intercambiadas.",
+        "B": "Medir la superficie de juego en metros cuadrados es acertado, aunque la cinta del contorno no se compra por litros y el agua del tanque no se mide en metros.",
+        "D": "La cinta en metros corresponde a una longitud y está bien, pero la pintura cubre una superficie y no se cobra por litros de la cancha, y el agua ocupa un volumen y no se mide en metros cuadrados."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q14.png",
+      "imagen_alt": "Esquema de la cancha múltiple con el contorno resaltado donde va la cinta, la superficie de juego donde va la pintura y, al lado, el tanque que hay que llenar de agua."
+    },
+    {
+      "id": "P3-mat-7-15",
+      "numero": 15,
+      "competencia": "c",
+      "afirmacion": "10",
+      "evidencia": "10.2",
+      "cmc": "Espacial - métrico",
+      "dificultad": "MEDIA",
+      "estandar": "Predigo y comparo los resultados de aplicar transformaciones rígidas (traslaciones, rotaciones, reflexiones) y homotecias (ampliaciones y reducciones) sobre figuras bidimensionales en situaciones matemáticas y en el arte.",
+      "que_evalua": "La habilidad para determinar la imagen de un punto cuando la figura se traslada a la derecha y hacia abajo.",
+      "enunciado": "<p>En la clase de artes de un colegio de Zipaquirá, Karen dibujó sobre papel cuadriculado el molde de un banderín para la izada de bandera. La punta del banderín, que es el vértice por donde va amarrada la cuerda, quedó marcada con un punto en el lugar que muestra la cuadrícula. La profesora le pidió correr el molde completo <b>5 cuadros a la derecha</b> y <b>2 cuadros hacia abajo</b>, sin girarlo y sin cambiarle el tamaño, para que quepan dos banderines en la misma hoja. Karen necesita saber en qué punto va a quedar la punta después de ese movimiento.</p>[[IMG]]<p>¿En qué punto de la cuadrícula queda la punta del banderín?</p>",
+      "opciones": {
+        "A": "En el punto \\((7,4)\\), cinco unidades a la derecha y dos hacia abajo.",
+        "B": "En el punto \\((7,6)\\), porque el movimiento solo corre el molde de lado.",
+        "C": "En el punto \\((2,4)\\), porque el movimiento solo baja el molde dos cuadros.",
+        "D": "En el punto \\((7,8)\\), porque los dos cuadros se cuentan hacia arriba."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «En el punto \\((7,4)\\), cinco unidades a la derecha y dos hacia abajo» es correcta porque la punta está dibujada en \\((2,6)\\) y en una traslación cada coordenada cambia por su cuenta: correrse a la derecha suma en la primera, \\(2+5=7\\), y bajar resta en la segunda, \\(6-2=4\\).",
+      "opciones_incorrectas": {
+        "B": "El punto \\((7,6)\\) recoge bien el corrimiento de cinco cuadros a la derecha, pero deja la punta a la misma altura y desconoce los dos cuadros que el molde debe bajar.",
+        "C": "El punto \\((2,4)\\) aplica bien la bajada de dos cuadros, aunque conserva la punta en la misma columna e ignora los cinco cuadros de desplazamiento hacia la derecha.",
+        "D": "El punto \\((7,8)\\) mueve la punta hacia arriba en vez de hacia abajo: subir sumaría en la segunda coordenada, y la profesora pidió bajar el molde dos cuadros."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q15.png",
+      "imagen_alt": "Cuadrícula con el molde triangular de un banderín cuya punta está marcada en el punto de coordenadas dos y seis."
+    },
+    {
+      "id": "P3-mat-7-16",
+      "numero": 16,
+      "competencia": "b",
+      "afirmacion": "5",
+      "evidencia": "5.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "MEDIA",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La habilidad para descubrir la regla con que crece una secuencia de figuras y aplicarla al término siguiente.",
+      "enunciado": "<p>En la clase de artes de una escuela de Marinilla, don Jairo enseña a componer grecas con fichas cuadradas de barro. En el tablero dejó pegadas las tres primeras figuras de una greca, y les advirtió a los estudiantes que todas se arman con la misma regla, de modo que cada figura sale de la anterior sin que la greca cambie de forma.</p>[[IMG]]<p>Ahora don Jairo le pide a Yeison que arme la <b>figura 4</b>, que es la que va pegada al final de la greca, y le recuerda que ya no queda barro para volver a hornear fichas si se equivoca. ¿Cuál de las siguientes es la figura 4 de la greca?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "D",
+      "justificacion_correcta": "La figura que continúa la greca alarga en una ficha cada uno de los cuatro brazos y deja el centro donde estaba, que es lo que ocurre entre la figura 1 y la figura 2 y otra vez entre la figura 2 y la figura 3: los brazos miden una, dos y tres fichas, así que en la figura 4 miden cuatro y la greca completa reúne diecisiete fichas, \\(4\\times 4+1=17\\).",
+      "opciones_incorrectas": {
+        "A": "Esa figura tiene los cuatro brazos de cinco fichas, que es la medida que le corresponde a la figura 5: de cada figura a la que sigue, cada brazo crece una sola ficha y no dos.",
+        "B": "Esa figura deja los cuatro brazos en tres fichas, como venían, y agrega las cuatro fichas nuevas en las esquinas del centro, con lo cual la greca engorda por el medio y pierde la forma de cruz que traía.",
+        "C": "Esa figura alarga a cuatro fichas los dos brazos horizontales y deja los dos verticales en tres, de manera que crece solo hacia los lados y la greca deja de ser pareja en las cuatro direcciones."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q16.png",
+      "imagen_alt": "Las tres primeras figuras de la greca, en forma de cruz: la figura 1 con brazos de una ficha, la figura 2 con brazos de dos y la figura 3 con brazos de tres.",
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-7-p3/q16_opA.png",
+        "B": "assets/banco-mat-7-p3/q16_opB.png",
+        "C": "assets/banco-mat-7-p3/q16_opC.png",
+        "D": "assets/banco-mat-7-p3/q16_opD.png"
+      }
+    },
+    {
+      "id": "P3-mat-7-17",
+      "numero": 17,
+      "competencia": "c",
+      "afirmacion": "11",
+      "evidencia": "11.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Interpreto, produzco y comparo representaciones gráficas adecuadas para presentar diversos tipos de datos. (diagramas de barras, diagramas circulares.)",
+      "que_evalua": "La habilidad para valorar una propuesta ajena de representación y escoger el diagrama circular en el que cada sector guarda la proporción del dato que representa.",
+      "enunciado": "<p>El comité de deportes de un colegio de Villavicencio les preguntó a los <b>120 estudiantes</b> de séptimo cuál deporte quieren practicar en la jornada extendida y organizó las respuestas en la siguiente tabla.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Deporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Fútbol</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Voleibol</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Baloncesto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">25</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Atletismo</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">15</td></tr></table><p>El comité tiene que llevar esos datos a un <b>diagrama circular</b> para el periódico escolar, y uno de sus integrantes sostiene que basta con partir la circunferencia en cuatro sectores iguales, porque los deportes que se preguntaron son cuatro. La circunferencia completa abarca 360 grados y los cuatro sectores deben repartírsela sin que sobre ni falte espacio, cada uno del tamaño que le corresponde a su grupo. ¿Cuál de los siguientes diagramas circulares representa lo que dice la tabla?</p>",
+      "opciones": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "clave": "C",
+      "justificacion_correcta": "El diagrama que sirve le da a cada deporte un sector que ocupa dentro de los \\(360\\) grados la misma parte que su grupo ocupa dentro de los \\(120\\) estudiantes. Como \\(360\\div 120=3\\) grados por estudiante, al fútbol le corresponden \\(150\\) grados, es decir un poco menos de medio círculo, al voleibol \\(90\\), al baloncesto \\(75\\) y al atletismo \\(45\\), y esos cuatro sectores completan la circunferencia.",
+      "opciones_incorrectas": {
+        "A": "Ese diagrama usa el número de estudiantes como si ya fueran grados, y así los cuatro sectores suman apenas \\(120\\) grados y dejan en blanco las dos terceras partes del círculo.",
+        "B": "Ese diagrama es el que propone el integrante del comité: parte la circunferencia en cuatro sectores iguales, que sí la completan, pero borra las diferencias entre los deportes, que van desde \\(50\\) hasta \\(15\\) estudiantes.",
+        "D": "Ese diagrama dibuja los cuatro tamaños de sector correctos, aunque se los reparte al revés: le entrega el sector más grande al atletismo, que es el deporte que menos estudiantes escogieron, y el más pequeño al fútbol."
+      },
+      "opciones_imagenes": {
+        "A": "assets/banco-mat-7-p3/q17_opA.png",
+        "B": "assets/banco-mat-7-p3/q17_opB.png",
+        "C": "assets/banco-mat-7-p3/q17_opC.png",
+        "D": "assets/banco-mat-7-p3/q17_opD.png"
+      }
+    },
+    {
+      "id": "P3-mat-7-18",
+      "numero": 18,
+      "competencia": "b",
+      "afirmacion": "12",
+      "evidencia": "12.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Conjeturo acerca del resultado de un experimento aleatorio usando proporcionalidad y nociones básicas de probabilidad.",
+      "que_evalua": "La habilidad para distinguir un evento seguro de uno posible cuando se extraen varios objetos a la vez.",
+      "enunciado": "<p>En la sala de profesores de un colegio de Riohacha hay una caja con <b>8 esferos azules</b> y <b>4 esferos negros</b>, todos del mismo tamaño y del mismo peso, revueltos y sin ninguna marca por fuera. El coordinador va a sacar <b>5 esferos</b> de una sola vez, sin mirar dentro de la caja y sin devolver ninguno, para repartirlos entre los profesores que están calificando. Antes de meter la mano quiere saber qué puede afirmar con total certeza sobre los cinco esferos que va a sacar, es decir qué hecho no puede fallarle sin importar cuáles le toquen.</p>[[IMG]]<p>¿Cuál de los siguientes hechos es seguro?</p>",
+      "opciones": {
+        "A": "Que entre los cinco esferos salga al menos uno azul, porque los negros son cuatro.",
+        "B": "Que entre los cinco esferos salgan exactamente tres azules y dos negros.",
+        "C": "Que los cinco esferos que salgan sean negros, porque en la caja hay negros.",
+        "D": "Que ninguno de los cinco esferos sea azul, porque puede tocarle solo negros."
+      },
+      "clave": "A",
+      "justificacion_correcta": "La opción «Que entre los cinco esferos salga al menos uno azul, porque los negros son cuatro» es correcta porque en la caja solo hay \\(4\\) esferos negros: aun en el caso más extremo, en el que los cuatro negros salgan juntos, el quinto esfero tiene que venir del grupo de los azules. Por eso ese hecho ocurre siempre y es seguro.",
+      "opciones_incorrectas": {
+        "B": "Sacar exactamente tres azules y dos negros es un resultado posible y hasta bastante probable, pero no está garantizado: también podrían salir cuatro azules y un negro.",
+        "C": "Sacar los cinco negros es imposible, no seguro: en la caja hay apenas cuatro esferos negros y no alcanzan para completar los cinco que va a sacar el coordinador.",
+        "D": "Que ningún esfero sea azul exigiría cinco negros, y como solo hay cuatro en la caja ese hecho tampoco puede ocurrir en ninguna extracción."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q18.png",
+      "imagen_alt": "Caja con doce esferos revueltos, ocho azules y cuatro negros, y una flecha que indica que se sacan cinco de una sola vez sin mirar."
+    },
+    {
+      "id": "P3-mat-7-19",
+      "numero": 19,
+      "competencia": "b",
+      "afirmacion": "13",
+      "evidencia": "13.1",
+      "cmc": "Numérico - variacional",
+      "dificultad": "ALTA",
+      "estandar": "Justifico procedimientos aritméticos utilizando las relaciones y propiedades de las operaciones.",
+      "que_evalua": "La habilidad para revisar un procedimiento ajeno de porcentajes y hallar el descuento único equivalente a dos descuentos aplicados uno después del otro.",
+      "enunciado": "<p>Nubia entró a un almacén de Bucaramanga a comprar un saco que cuesta <b>80.000 pesos</b>. El aviso de la vitrina anuncia un <b>20 por ciento</b> de descuento y, además, en la caja le aplican un <b>10 por ciento</b> adicional que se calcula sobre el valor que ya quedó rebajado, no sobre el precio del aviso.</p>[[IMG]]<p>Nubia sostiene que entonces le están haciendo un 30 por ciento de descuento, y para convencer a su hermana le escribió los siguientes pasos.</p><p><b>Paso 1.</b> El primer descuento es del 20 por ciento y el segundo, del 10 por ciento.<br><b>Paso 2.</b> Los dos juntos suman \\(20+10=30\\).<br><b>Paso 3.</b> Entonces el descuento único equivalente es del 30 por ciento.</p><p>La hermana no está de acuerdo y le propone averiguar cuál sería el único descuento que, aplicado de una sola vez sobre los 80.000 pesos, dejaría exactamente el mismo precio final. ¿A qué descuento único equivalen en realidad esos dos descuentos seguidos?</p>",
+      "opciones": {
+        "A": "A un descuento del 30 por ciento, porque los dos porcentajes se suman.",
+        "B": "A un descuento del 28 por ciento, porque el segundo se calcula sobre lo ya rebajado.",
+        "C": "A un descuento del 20 por ciento, porque manda el porcentaje más grande.",
+        "D": "A un descuento del 18 por ciento, porque los dos porcentajes se multiplican."
+      },
+      "clave": "B",
+      "justificacion_correcta": "La opción «A un descuento del 28 por ciento, porque el segundo se calcula sobre lo ya rebajado» es correcta porque el primer descuento deja el saco en \\(80000-16000=64000\\) pesos y el segundo se toma sobre esa cifra: \\(10\\%\\) de \\(64000\\) son \\(6400\\), y el precio final queda en \\(57600\\) pesos. La rebaja total es de \\(22400\\) pesos, que sobre \\(80000\\) equivale al \\(28\\%\\).",
+      "opciones_incorrectas": {
+        "A": "Sumar los dos porcentajes daría un precio final de \\(56000\\) pesos, y ese resultado solo se obtendría si el segundo descuento se calculara sobre los \\(80000\\) del precio original.",
+        "C": "Quedarse con el porcentaje mayor deja el saco en \\(64000\\) pesos y desconoce por completo el descuento adicional que el almacén aplica en la caja.",
+        "D": "Multiplicar \\(20\\) por \\(10\\) y dividir entre \\(100\\) no tiene sentido aquí: ese valor daría una rebaja de \\(14400\\) pesos, menor que la del primer descuento por sí solo."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q19.png",
+      "imagen_alt": "Esquema de los dos descuentos uno detrás del otro: el saco de ochenta mil pesos, el veinte por ciento de la vitrina, el precio ya rebajado, el diez por ciento de la caja sobre ese valor y el precio final por averiguar."
+    },
+    {
+      "id": "P3-mat-7-20",
+      "numero": 20,
+      "competencia": "b",
+      "afirmacion": "14",
+      "evidencia": "14.1",
+      "cmc": "Aleatorio",
+      "dificultad": "ALTA",
+      "estandar": "Resuelvo y formulo problemas a partir de un conjunto de datos provenientes de observaciones, consultas o experimentos.",
+      "que_evalua": "La habilidad para escoger entre dos conjuntos de datos con el mismo promedio atendiendo a cuánto varían.",
+      "enunciado": "<p>El consejo directivo de un colegio de Chiquinquirá tiene que escoger una de las dos rutas escolares para el próximo año y mandó registrar, mes por mes durante el periodo, cuántos minutos de retraso tuvo cada una al llegar al colegio. Los datos quedaron en la siguiente gráfica. El criterio quedó escrito en el acta: se contrata la ruta más <b>confiable</b>, es decir aquella con la que las familias puedan anticipar a qué hora llega el bus, y no la que en un mes suelto haya llegado más temprano.</p>[[IMG]]<p>¿Cuál ruta debe contratar el consejo directivo y por qué razón?</p>",
+      "opciones": {
+        "A": "La ruta Norte, porque en dos de los cuatro meses tuvo el retraso más bajo.",
+        "B": "La ruta Norte, porque su mejor mes llegó a solo cuatro minutos de retraso.",
+        "C": "Cualquiera de las dos, porque las dos promedian ocho minutos de retraso.",
+        "D": "La ruta Sur, porque con el mismo promedio sus retrasos varían mucho menos."
+      },
+      "clave": "D",
+      "justificacion_correcta": "La opción «La ruta Sur, porque con el mismo promedio sus retrasos varían mucho menos» es correcta porque las dos rutas promedian \\(8\\) minutos, pero la Norte va de \\(4\\) a \\(12\\) minutos, con una diferencia de \\(8\\) entre su mejor y su peor mes, mientras la Sur se mueve entre \\(7\\) y \\(9\\), con una diferencia de \\(2\\). Ese margen estrecho es lo que permite anticipar la hora de llegada.",
+      "opciones_incorrectas": {
+        "A": "La ruta Norte sí tiene los dos meses de menor retraso, pero también tiene los dos peores, y una ruta que un mes llega a los cuatro minutos y al siguiente a los doce no deja anticipar nada.",
+        "B": "Los cuatro minutos del mejor mes de la ruta Norte son el mejor registro de toda la gráfica, aunque el acta advierte expresamente que la decisión no se toma con un mes suelto.",
+        "C": "El promedio de ocho minutos efectivamente coincide en las dos rutas, y por eso mismo el promedio solo no alcanza para decidir: hay que mirar cuánto se aparta cada ruta de ese valor."
+      },
+      "imagen_figura": "assets/banco-mat-7-p3/q20.png",
+      "imagen_alt": "Gráfica de barras agrupadas con los minutos de retraso de cada mes: la ruta Norte con cuatro, doce, cinco y once, y la ruta Sur con ocho, siete, nueve y ocho."
+    }
+  ]
+}
