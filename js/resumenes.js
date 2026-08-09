@@ -29,12 +29,29 @@
 // Node no puede importar este modulo (arrastra el SDK de Firebase por URL del CDN).
 // Si tocas una, toca la otra: el id del documento tiene que coincidir exactamente.
 
+// DOS ENTORNOS, UNA SOLA TARJETA
+// En produccion este modulo trabaja contra Firestore, como se describe arriba. En la pagina
+// de prueba (idea-demo) NO hay Firestore: firebase-init.js exporta `fdb = null` a proposito,
+// para que el sandbox no pueda hablar con la base real bajo ninguna circunstancia. Cuando
+// esto se escribio, el modulo se propago tal cual al demo y la tarjeta comparativa quedo
+// muerta alli para los tres periodos (regresion del 8-ago-2026).
+//
+// La solucion NO es abrir la lectura de pruebas ajenas en produccion. Es que el demo, que
+// guarda todo en IndexedDB del propio navegador, calcule el agregado en el momento a partir
+// de los datos que ya tiene: mismo calculo (calcularResumenes), misma forma de documento y
+// misma tarjeta en pantalla, sin coleccion publicada y sin una sola lectura remota. En el
+// demo eso no filtra nada de nadie porque no hay datos de personas reales; en produccion
+// este camino NO se toma nunca, porque alli `fdb` existe.
 import { fdb } from './firebase-init.js';
+import { db } from './db.js';
 import {
   collection, doc, getDoc, getDocs, query, where, writeBatch
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 export const COLECCION_RESUMENES = 'idea_resumenes';
+
+// True en produccion y en localhost servido contra Firestore; false SOLO en el sandbox.
+const HAY_FIRESTORE = !!fdb;
 
 // Grupo normalizado: "a" y " A " son el mismo grupo. Igual que en docente.html.
 export function normalizarGrupo(g) {
@@ -148,6 +165,8 @@ export function calcularResumenes(aplicaciones, fichasCuadernillo = {}) {
  * la comparativa, igual que hoy cuando el grupo tiene una sola entrega.
  */
 export async function obtenerResumenGrupo(eje) {
+  if (!HAY_FIRESTORE) return resumenGrupoLocal(eje);
+
   // Se intenta con la sede del perfil y, si no hay documento, SIN sede. Hay pruebas
   // antiguas en produccion que no traen sede_id: para esos grupos el resumen se archiva
   // bajo la clave sin sede, y sin este segundo intento el estudiante no veria su
@@ -160,11 +179,56 @@ export async function obtenerResumenGrupo(eje) {
       const snap = await getDoc(doc(fdb, COLECCION_RESUMENES, clave));
       if (snap.exists()) return { id: snap.id, ...snap.data() };
     } catch (e) {
-      console.warn('[resumenes] no se pudo leer el resumen del grupo:', e.code || e.message);
-      return null;
+      // OJO: aqui NO se puede devolver. Un documento que todavia no existe da
+      // permission-denied (las reglas desreferencian resource.data y con resource == null
+      // la evaluacion falla), asi que salir en el catch dejaba la segunda clave —la que
+      // cubre las pruebas antiguas sin sede_id— como codigo muerto. Se anota y se sigue
+      // probando; si ninguna clave da documento, se devuelve null al final.
+      console.warn('[resumenes] no se pudo leer el resumen del grupo con la clave', clave, ':', e.code || e.message);
     }
   }
   return null;
+}
+
+/**
+ * SANDBOX (idea-demo). Calcula el agregado del grupo en el momento, desde IndexedDB.
+ * Devuelve exactamente la misma forma de documento que produce calcularResumenes(), para
+ * que resultado.html pinte la tarjeta sin enterarse de en que entorno esta.
+ *
+ * Se lee por cuadernillo (consulta dirigida, no la coleccion entera) y se acota despues al
+ * grupo del estudiante. La sede NO entra en el filtro: hay pruebas sembradas sin sede_id y
+ * exigirla dejaria la tarjeta vacia, que es justo el sintoma que se esta corrigiendo.
+ */
+async function resumenGrupoLocal(eje) {
+  try {
+    const grado = String(eje.grado ?? '');
+    const grupo = normalizarGrupo(eje.grupo);
+    const delCuadernillo = await db.consultarPorCampo('idea_aplicaciones', 'cuadernillo_id', eje.cuadernillo_id);
+    const delGrupo = (delCuadernillo || []).filter(a =>
+      a && a.estado === 'enviada'
+      && (!eje.institucion_id || a.institucion_id === eje.institucion_id)
+      && String(a.grado ?? '') === grado
+      && normalizarGrupo(a.grupo) === grupo
+    );
+    if (!delGrupo.length) return null;
+    // Se reutiliza el MISMO calculo que publica produccion (una entrega por estudiante,
+    // promedio, mejor, minimo y reparto por nivel), asi que los numeros de la tarjeta son
+    // los mismos que veria el estudiante si el agregado estuviera publicado. Se uniforman
+    // institucion y sede para que las entregas caigan TODAS en un solo cubo: si no, unas
+    // pruebas con sede y otras sin ella darian dos agregados y la tarjeta mostraria solo
+    // medio grupo.
+    const uniformes = delGrupo.map(a => ({
+      ...a,
+      institucion_id: eje.institucion_id || a.institucion_id || '_',
+      sede_id: eje.sede_id ?? null
+    }));
+    const [resumen] = calcularResumenes(uniformes, {});
+    if (!resumen) return null;
+    return { ...resumen, id: claveResumen(eje) };
+  } catch (e) {
+    console.warn('[resumenes] no se pudo calcular el resumen local del grupo:', e && (e.code || e.message));
+    return null;
+  }
 }
 
 // --- Refresco oportunista desde los paneles del personal --------------------------
@@ -187,6 +251,10 @@ function _mismos(a, b) {
  * @param {Object} opts { forzar:boolean }
  */
 export async function refrescarResumenes(ses, aplicacionesEnviadas, fichasCuadernillo = {}, opts = {}) {
+  // En el sandbox no hay nada que publicar: obtenerResumenGrupo() calcula el agregado en el
+  // momento desde IndexedDB, asi que la coleccion `idea_resumenes` no hace falta. Se sale
+  // limpio y sin console.warn, en vez de intentar un writeBatch contra `fdb = null`.
+  if (!HAY_FIRESTORE) return { escritos: 0, motivo: 'sandbox: el resumen se calcula al leerlo' };
   if (!ses || ses.rol === 'estudiante') return { escritos: 0, motivo: 'rol no autorizado' };
   if (!ses.institucion_id) return { escritos: 0, motivo: 'sin institucion' };
   if (!opts.forzar) {

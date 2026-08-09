@@ -3058,12 +3058,22 @@
 
     // === Backup / Restore ===
     document.getElementById('btn-backup').addEventListener('click', async () => {
-      if (!confirm('Se descargará un archivo JSON con todas las aplicaciones, usuarios y configuraciones. ¿Continuar?')) return;
+      if (!confirm('Se descargará un archivo JSON con las aplicaciones, usuarios y configuraciones de tu institución. ¿Continuar?')) return;
       try {
-        await db.exportarBackup();
-        toast('Respaldo descargado correctamente', 'exito');
+        // Se pasa la sesión para que el respaldo salga ACOTADO a lo que este usuario puede
+        // leer (su institución y su propia mensajería). Antes se pedían las ocho
+        // colecciones sin filtro, las reglas denegaban la primera y el botón no descargaba
+        // nada ni avisaba de nada: fallaba en silencio.
+        const r = await db.exportarBackup(ses);
+        if (r && r.fallos && r.fallos.length) {
+          toast('Respaldo descargado, pero sin: ' + r.fallos.map(f => f.coleccion).join(', '), 'aviso', 6000);
+          console.warn('[respaldo] colecciones no incluidas:', r.fallos);
+        } else {
+          toast('Respaldo descargado correctamente', 'exito');
+        }
       } catch (e) {
-        toast('Error al respaldar: ' + e.message, 'error');
+        toast('No se pudo generar el respaldo: ' + (e && (e.message || e.code) || 'error desconocido'), 'error', 6000);
+        console.error('[respaldo]', e);
       }
     });
 

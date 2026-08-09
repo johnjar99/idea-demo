@@ -126,7 +126,7 @@ function _fechaLarga(d) {
 /**
  * Genera y descarga el certificado de reconocimiento en PDF (A4 VERTICAL), identidad IDEA.
  * @param {object} p
- * @param {object} p.estudiante  { nombre, tipo_documento, documento, grado, grupo }
+ * @param {object} p.estudiante  { nombre, grado, grupo }. El documento NO se imprime.
  * @param {object} p.institucion { nombre, abreviatura, municipio, departamento, logo|logo_url }
  * @param {number} p.promedio    promedio global (0..100)
  * @param {string} [p.nivel]     nivel global; si no, se calcula del promedio
@@ -169,14 +169,11 @@ export async function generarCertificadoExcelenciaPDF({ estudiante, institucion,
   const escudo = await _cargarImagen(institucion?.logo || institucion?.logo_url);
   let y = 18;
   const escH = 30;
+  // Si la IE no tiene escudo cargado NO se dibuja nada: ni recuadro ni rótulo. El hueco queda
+  // limpio y el resto del certificado conserva exactamente la misma posición.
   if (escudo) {
     const w2 = Math.min(40, escH * (escudo.ratio || 1));
     try { doc.addImage(escudo.dataUrl, 'PNG', cx - w2 / 2, y, w2, escH); } catch (_) {}
-  } else {
-    doc.setDrawColor(...ORO_CLARO); doc.setLineWidth(0.4);
-    doc.roundedRect(cx - 17, y, 34, escH, 2.5, 2.5);
-    doc.setFont('helvetica', 'normal'); doc.setFontSize(7); doc.setTextColor(198, 186, 165);
-    doc.text('ESCUDO IE', cx, y + escH / 2 + 1.5, { align: 'center' });
   }
   y += escH + 12;
 
@@ -220,10 +217,13 @@ export async function generarCertificadoExcelenciaPDF({ estudiante, institucion,
   [-62, 62].forEach(dx => { const xx = cx + dx; doc.triangle(xx, y - 0.4, xx + 2, y + 1, xx, y + 2.4, 'F'); doc.triangle(xx, y - 0.4, xx - 2, y + 1, xx, y + 2.4, 'F'); });
   y += 8;
 
-  const docTxt = estudiante?.documento ? `${estudiante.tipo_documento || 'CC'} ${estudiante.documento}` : '';
-  const ggTxt = `Grado ${estudiante?.grado ?? ''}° · Grupo ${_normGrupo(estudiante?.grupo)}`;
+  // El número de documento NO se imprime: el certificado es un papel que se entrega en mano y se
+  // fotografía, así que no debe llevar dato identificatorio más allá del nombre.
+  // El símbolo de grado (°) y el punto medio (·) se salen de la fuente estándar de jsPDF y
+  // aparecen como viñetas ("5•-2"), por eso el grado se escribe en texto plano.
+  const ggTxt = `Grado ${estudiante?.grado ?? ''} - Grupo ${_normGrupo(estudiante?.grupo)}`;
   doc.setFont('helvetica', 'normal'); doc.setFontSize(10.5); doc.setTextColor(...GRIS);
-  doc.text([docTxt, ggTxt].filter(Boolean).join('   ·   '), cx, y, { align: 'center' });
+  doc.text(ggTxt, cx, y, { align: 'center' });
   y += 12;
 
   // Cuerpo con palabras clave + nivel dinámico.

@@ -87,7 +87,7 @@ function validarCuadernillo(c) {
 // --- Siembra inicial (solo si la base está vacía) ------------------------------------
 // Versión de contenido: súbela cuando cambien los cuadernillos/instituciones para que un
 // visitante que ya abrió el demo re-siembre automáticamente (sin tener que limpiar el navegador).
-const SEED_VERSION = '2026-08-08-solo-p3';
+const SEED_VERSION = '2026-08-09-comparativa-y-consultas-acotadas';
 
 // La version de contenido NO puede vivir solo aqui. Este archivo lo cachea el navegador, asi que
 // si se queda con una copia vieja de db.js nunca se entera de que hay contenido nuevo y sigue
@@ -269,9 +269,21 @@ export const db = {
   validarCuadernillo,
 
   // === Backup / Restore (usan la interfaz pública) ===
-  async exportarBackup() {
-    const backup = { version: '1.0', fecha: nowIso(), colecciones: {} };
-    for (const c of COLECCIONES) backup.colecciones[c] = await this.lista(c);
+  // Misma firma y misma forma de retorno que producción: recibe la sesión (aquí no hace
+  // falta acotar nada, porque IndexedDB es del propio navegador y no hay reglas que
+  // denieguen) y devuelve `fallos` para que docente.html avise igual en los dos entornos.
+  async exportarBackup(ses = null) {
+    const backup = {
+      version: '1.1',
+      fecha: nowIso(),
+      alcance: { rol: ses && ses.rol || null, institucion_id: ses && ses.institucion_id || null },
+      colecciones: {}
+    };
+    const fallos = [];
+    for (const c of COLECCIONES) {
+      try { backup.colecciones[c] = await this.lista(c); }
+      catch (e) { backup.colecciones[c] = []; fallos.push({ coleccion: c, motivo: (e && e.message) || 'error' }); }
+    }
     const json = JSON.stringify(backup, null, 2);
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -279,7 +291,7 @@ export const db = {
     a.href = url; a.download = `idea_backup_${new Date().toISOString().slice(0,10)}.json`;
     document.body.appendChild(a); a.click(); a.remove();
     URL.revokeObjectURL(url);
-    return backup;
+    return { ...backup, fallos };
   },
 
   async analizarBackup(backupJson) {

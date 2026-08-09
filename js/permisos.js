@@ -72,8 +72,12 @@ export async function otorgarPermisoReintento(estudianteId, cuadernilloId, otorg
   if (!estudianteId || !cuadernilloId || !otorgadoPorId) {
     throw new Error('Datos incompletos para otorgar permiso');
   }
-  // Si ya hay un permiso vigente para esta combinación, no crear duplicado
-  const todos = await db.lista(COL_PERMISOS);
+  // Si ya hay un permiso vigente para esta combinación, no crear duplicado.
+  // Lectura DIRIGIDA por estudiante_id: la regla de idea_permisos_reintento permite leer
+  // un permiso propio o, al personal, cualquiera; pero un listado sin filtro es la clase
+  // de consulta que hay que evitar por principio, y aquí sobra: solo interesan los de
+  // este estudiante.
+  const todos = await db.consultarPorCampo(COL_PERMISOS, 'estudiante_id', estudianteId);
   const yaVigente = todos.find(p =>
     p.estudiante_id === estudianteId &&
     p.cuadernillo_id === cuadernilloId &&
@@ -114,7 +118,16 @@ export async function consumirPermiso(permisoId, aplicacionResultanteId) {
  * Lista los permisos según un filtro opcional.
  */
 export async function listarPermisosVigentes(filtro = {}) {
-  const todos = await db.lista(COL_PERMISOS);
+  // Si el filtro nombra un estudiante, la consulta baja al servidor y NO se lista la
+  // colección entera. El panel de permisos del docente sí necesita ver todos los
+  // permisos de los que él otorga, y para eso las reglas le habilitan la lectura como
+  // personal (`esPersonal()`), así que ese caso sigue siendo un listado — pero acotado
+  // por `otorgado_por_id` cuando se pide así.
+  const todos = filtro.estudiante_id
+    ? await db.consultarPorCampo(COL_PERMISOS, 'estudiante_id', filtro.estudiante_id)
+    : filtro.otorgado_por_id
+      ? await db.consultarPorCampo(COL_PERMISOS, 'otorgado_por_id', filtro.otorgado_por_id)
+      : await db.lista(COL_PERMISOS);
   return todos.filter(p => {
     if (filtro.solo_vigentes && (!p.vigente || p.consumido)) return false;
     if (filtro.estudiante_id && p.estudiante_id !== filtro.estudiante_id) return false;
@@ -138,7 +151,11 @@ export async function revocarPermiso(permisoId) {
  * Devuelve la aplicación 'en_curso' actual del estudiante para un cuadernillo, si existe.
  */
 export async function aplicacionVigenteEnCurso(estudianteId, cuadernilloId) {
-  const todas = await db.lista(COL_APS);
+  // Lectura DIRIGIDA: solo las pruebas de ESTE estudiante. Un listado sin filtro de
+  // idea_aplicaciones está denegado para todos los roles (las reglas evalúan documento a
+  // documento y la colección incluye pruebas de otras instituciones), así que esto no era
+  // solo ineficiente: fallaba.
+  const todas = await db.consultarPorCampo(COL_APS, 'estudiante_id', estudianteId);
   return todas.find(a =>
     a.estudiante_id === estudianteId &&
     a.cuadernillo_id === cuadernilloId &&
@@ -151,7 +168,7 @@ export async function aplicacionVigenteEnCurso(estudianteId, cuadernilloId) {
  * o en su defecto la enviada más reciente.
  */
 export async function aplicacionOficial(estudianteId, cuadernilloId) {
-  const todas = await db.lista(COL_APS);
+  const todas = await db.consultarPorCampo(COL_APS, 'estudiante_id', estudianteId);
   const enviadas = todas
     .filter(a => a.estudiante_id === estudianteId && a.cuadernillo_id === cuadernilloId && a.estado === 'enviada')
     .sort((a, b) => new Date(b.fecha_envio || b.fecha_fin) - new Date(a.fecha_envio || a.fecha_fin));
@@ -166,7 +183,11 @@ export async function aplicacionOficial(estudianteId, cuadernilloId) {
 export async function marcarAplicacionOficial(aplicacionId) {
   const ap = await db.obtener(COL_APS, aplicacionId);
   if (!ap) return null;
-  const todas = await db.filtrar(COL_APS, a =>
+  // db.filtrar() llamaba por dentro a db.lista(), es decir un listado SIN filtro de
+  // idea_aplicaciones, y esto corre en el camino del ENVÍO de la prueba: con las reglas
+  // nuevas habría fallado justo al entregar. Consulta dirigida por estudiante.
+  const suyas = await db.consultarPorCampo(COL_APS, 'estudiante_id', ap.estudiante_id);
+  const todas = suyas.filter(a =>
     a.estudiante_id === ap.estudiante_id && a.cuadernillo_id === ap.cuadernillo_id
   );
   // Escrituras rápidas (1 viaje c/u). La recién enviada normalmente ya viene marcada

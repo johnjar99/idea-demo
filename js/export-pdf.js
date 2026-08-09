@@ -76,6 +76,70 @@ async function loadLogoBase64() {
   });
 }
 
+// ---------------------------------------------------------------------------
+// IMÁGENES DEL PDF: escala acotada + JPEG aplanado + alias reutilizable.
+//
+// Un canvas de html2canvas a scale 2.5 sale a ~2152x4546 px para UNA página A4.
+// Incrustado con `doc.addImage(canvas.toDataURL('image/png'), 'PNG', ...)` jsPDF
+// guarda el mapa de bits prácticamente CRUDO y, como todo PNG de canvas lleva canal
+// alfa, además genera un SEGUNDO objeto del mismo tamaño (la máscara suave). Por eso
+// en el consolidado cada imagen aparecía dos veces y el archivo pesaba 115 MB.
+//
+// Aquí se hace lo contrario: se reescala al tamaño que la imagen ocupa DE VERDAD en la
+// página a una resolución razonable, se aplana sobre blanco (JPEG no tiene alfa: sin
+// ese relleno lo transparente saldría negro) y se pasa un alias estable para que jsPDF
+// reutilice la imagen si vuelve a pedirse la misma.
+const PDF_IMG = { dpi: 180, calidadJpeg: 0.86 };
+const PX_POR_MM = PDF_IMG.dpi / 25.4;
+
+// alias por documento: dataUrl -> alias. WeakMap para no retener documentos ya guardados.
+const _aliasPorDoc = new WeakMap();
+function _aliasDe(doc, data) {
+  let mapa = _aliasPorDoc.get(doc);
+  if (!mapa) { mapa = new Map(); _aliasPorDoc.set(doc, mapa); }
+  let alias = mapa.get(data);
+  if (!alias) { alias = 'idea-img-' + (mapa.size + 1); mapa.set(data, alias); }
+  return alias;
+}
+
+// Reescala un canvas a lo que ocupa en la página y lo devuelve listo para addImage.
+function _canvasAImagen(canvas, anchoMm, altoMm, opciones = {}) {
+  const formato = opciones.formato || 'JPEG';
+  const maxW = Math.max(1, Math.round((anchoMm || 190) * PX_POR_MM));
+  const maxH = Math.max(1, Math.round((altoMm || 280) * PX_POR_MM));
+  const escala = Math.min(1, maxW / canvas.width, maxH / canvas.height);
+  let fuente = canvas;
+  if (escala < 1 || formato === 'JPEG') {
+    const cv = document.createElement('canvas');
+    cv.width = Math.max(1, Math.round(canvas.width * escala));
+    cv.height = Math.max(1, Math.round(canvas.height * escala));
+    const ctx = cv.getContext('2d');
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.imageSmoothingEnabled = true;
+    try { ctx.imageSmoothingQuality = 'high'; } catch (_) {}
+    ctx.drawImage(canvas, 0, 0, cv.width, cv.height);
+    fuente = cv;
+  }
+  if (formato === 'JPEG') {
+    const q = (opciones.calidad == null) ? PDF_IMG.calidadJpeg : opciones.calidad;
+    return { data: fuente.toDataURL('image/jpeg', q), formato: 'JPEG' };
+  }
+  return { data: fuente.toDataURL('image/png'), formato: 'PNG' };
+}
+
+// Único punto por el que pasan las imágenes de CONTENIDO del PDF (capturas y gráficos).
+function _addImagenCanvas(doc, canvas, x, y, anchoMm, altoMm, opciones = {}) {
+  const img = _canvasAImagen(canvas, anchoMm, altoMm, opciones);
+  doc.addImage(img.data, img.formato, x, y, anchoMm, altoMm, _aliasDe(doc, img.data), 'FAST');
+}
+
+// Los logos son pequeños y necesitan transparencia (van sobre la banda negra del header):
+// se quedan en PNG, pero con alias para incrustarse UNA sola vez por documento.
+function _addLogo(doc, data, x, y, anchoMm, altoMm) {
+  doc.addImage(data, 'PNG', x, y, anchoMm, altoMm, _aliasDe(doc, data), 'FAST');
+}
+
 // Helpers de niveles → tuplas RGB (fg para texto/border, bg para fondo claro del chip)
 function hexFillForNivel(nivel) {
   const k = (nivel || '').toUpperCase();
@@ -102,7 +166,7 @@ function dibujarHeader(doc, titulo, pagina, total, logo) {
       const r = logo.ratio || 1;
       const w14 = Math.min(14, 14 * r);
       const h14 = w14 / r;
-      doc.addImage(src, 'PNG', 6, 3 + (14 - h14) / 2, w14, h14);
+      _addLogo(doc, src, 6, 3 + (14 - h14) / 2, w14, h14);
     } catch (e) {}
   }
   doc.setTextColor(...C.blanco);
@@ -212,7 +276,7 @@ async function agregarSeccionComoPagina(doc, el, titulo, logo, num, total) {
         const yTop = 46, availW = w - 20, availH = pageH - yTop - 22;
         let imgW = availW, imgH = (canvas.height / canvas.width) * imgW;
         if (imgH > availH) { imgH = availH; imgW = (canvas.width / canvas.height) * imgH; }
-        doc.addImage(canvas.toDataURL('image/png'), 'PNG', (w - imgW) / 2, yTop, imgW, imgH);
+        _addImagenCanvas(doc, canvas, (w - imgW) / 2, yTop, imgW, imgH);
       }
     } catch (e) { console.warn('sección PDF omitida:', e?.message || e); }
   });
@@ -227,7 +291,7 @@ async function capturarElementoEnPDF(doc, el, x, y, anchoMm) {
       const canvas = await html2canvas(el, { scale: 2.5, backgroundColor: '#ffffff', logging: false });
       if (canvas.width > 0 && canvas.height > 0) {
         h = (canvas.height / canvas.width) * anchoMm;
-        doc.addImage(canvas.toDataURL('image/png'), 'PNG', x, y, anchoMm, h);
+        _addImagenCanvas(doc, canvas, x, y, anchoMm, h, { calidad: 0.92 });
       }
     } catch (e) { console.warn('captura PDF omitida:', e?.message || e); }
     return h;
@@ -259,7 +323,7 @@ async function capturarTablaPaginadaEnPDF(doc, el, x, yIni, anchoMm, opciones = 
   if (allRows.length === 0) {
     const canvasFull = await html2canvas(el, { scale: 2.5, backgroundColor: '#ffffff', logging: false });
     const altoMm = (canvasFull.height / canvasFull.width) * anchoMm;
-    doc.addImage(canvasFull.toDataURL('image/png'), 'PNG', x, yIni, anchoMm, altoMm);
+    _addImagenCanvas(doc, canvasFull, x, yIni, anchoMm, altoMm, { calidad: 0.92 });
     return { paginasExtras: 0, yFinal: yIni + altoMm };
   }
 
@@ -270,7 +334,7 @@ async function capturarTablaPaginadaEnPDF(doc, el, x, yIni, anchoMm, opciones = 
   if (altoTotalMm <= altoDisponiblePrimera) {
     const canvasFull = await html2canvas(el, { scale: 2.5, backgroundColor: '#ffffff', logging: false });
     const altoMm = (canvasFull.height / canvasFull.width) * anchoMm;
-    doc.addImage(canvasFull.toDataURL('image/png'), 'PNG', x, yIni, anchoMm, altoMm);
+    _addImagenCanvas(doc, canvasFull, x, yIni, anchoMm, altoMm, { calidad: 0.92 });
     return { paginasExtras: 0, yFinal: yIni + altoMm };
   }
 
@@ -332,7 +396,7 @@ async function capturarTablaPaginadaEnPDF(doc, el, x, yIni, anchoMm, opciones = 
     try {
       const pageCanvas = await html2canvas(tablaClone, { scale: 2.5, backgroundColor: '#ffffff', logging: false });
       const pageHmm = (pageCanvas.height / pageCanvas.width) * anchoMm;
-      doc.addImage(pageCanvas.toDataURL('image/png'), 'PNG', x, yDestino, anchoMm, pageHmm);
+      _addImagenCanvas(doc, pageCanvas, x, yDestino, anchoMm, pageHmm, { calidad: 0.92 });
     } finally {
       document.body.removeChild(cont);
     }
@@ -344,9 +408,10 @@ async function capturarTablaPaginadaEnPDF(doc, el, x, yIni, anchoMm, opciones = 
 async function capturarCanvasEnPDF(doc, canvasEl, x, y, anchoMm) {
   if (!canvasEl) return 0;
   try {
-    const dataUrl = canvasEl.toDataURL('image/png');
     const h = (canvasEl.height / canvasEl.width) * anchoMm;
-    doc.addImage(dataUrl, 'PNG', x, y, anchoMm, h);
+    // Los canvas de Chart.js suelen venir transparentes: _addImagenCanvas los aplana
+    // sobre blanco antes de pasar a JPEG, así no salen con fondo negro.
+    _addImagenCanvas(doc, canvasEl, x, y, anchoMm, h);
     return h;
   } catch (e) { return 0; }
 }
@@ -390,7 +455,7 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
     try {
       const targetH = 32;
       const targetW = targetH * (logo.ratio || 1.22);
-      doc.addImage(logo.dataUrl, 'PNG', w/2 - targetW/2, 40, targetW, targetH);
+      _addLogo(doc, logo.dataUrl, w/2 - targetW/2, 40, targetW, targetH);
     } catch (e) {}
   }
 
@@ -940,6 +1005,9 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
       const c = compDeAfirPDF(k);
       return {
         codigo: `${ET_PDF.afirmacion_codigo} ${codigoAfirmacion(cuadernillo, k)}`,
+        // codigoCorto: lo que va en la columna CÓD de la tabla mini. El `codigo` largo
+        // ("Afirmación 1") se recortaba a 8 caracteres y las 7 filas decían "Afirmaci".
+        codigoCorto: String(codigoAfirmacion(cuadernillo, k)),
         titulo: cuadernillo.afirmaciones[k],
         valor: logAfirA[k] || 0,
         color: _colAfirPDF(k)
@@ -1027,13 +1095,26 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
       // Tabla mini debajo del chart - usar alto REAL del chart (no el max estimado)
       const tablaY = yB + 4 + (chartAltoReal || chartAltoMax) + 3;
       const altoMaxTabla = hB - (tablaY - yB) - 2;
+      // Columnas medidas, no adivinadas: la columna CÓD se ajusta al código más ancho
+      // de esta dimensión y el título se queda con TODO el resto. Antes el título
+      // arrancaba en un x fijo (xB + 22) y se cortaba a 34 caracteres, lo que en los
+      // bloques del grid 2x2 dejaba títulos mutilados con "…" sin necesidad.
+      const codDe = (it) => String(it.codigoCorto != null ? it.codigoCorto : it.codigo);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(7);
+      const anchoCodMax = dim.items.reduce((m, it) => Math.max(m, doc.getTextWidth(codDe(it))), 0);
+      const xCod = xB + 6;
+      const xTitulo = Math.min(xCod + Math.max(8, anchoCodMax + 2.5), xB + wB * 0.45);
+      const anchoColPct = 11;
+      const anchoTitulo = Math.max(12, xB + wB - anchoColPct - xTitulo);
+
       doc.setFillColor(...C.grafito);
       doc.rect(xB, tablaY, wB, 6, 'F');
       doc.setTextColor(...C.blanco);
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(7);
       doc.text('CÓD', xB + 2, tablaY + 4.3);
-      doc.text('TÍTULO', xB + 22, tablaY + 4.3);
+      doc.text('TÍTULO', xTitulo, tablaY + 4.3);
       doc.text('%', xB + wB - 3, tablaY + 4.3, { align: 'right' });
 
       let yL = tablaY + 6;
@@ -1054,13 +1135,21 @@ export async function exportarReporteGrupoPDF(aplicaciones, cuadernillo, context
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(7);
         doc.setTextColor(...it.color);
-        doc.text(String(it.codigo).slice(0, 8), xB + 6, yL + altoFila/2 + 1);
-        // Título compacto
+        doc.text(codDe(it), xCod, yL + altoFila/2 + 1);
+        // Título: se parte en hasta 2 líneas contra el ancho REAL de la columna y solo
+        // se abrevia si de verdad no cabe (y cortando en palabra, no a mitad).
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(6.5);
         doc.setTextColor(...C.negro);
-        const tituloCorto = String(it.titulo).length > 36 ? String(it.titulo).slice(0, 34) + '…' : String(it.titulo);
-        doc.text(tituloCorto, xB + 22, yL + altoFila/2 + 1);
+        let lineasTit = doc.splitTextToSize(String(it.titulo || ''), anchoTitulo);
+        const maxLineas = altoFila >= 5.5 ? 2 : 1;
+        if (lineasTit.length > maxLineas) {
+          lineasTit = lineasTit.slice(0, maxLineas);
+          const ult = String(lineasTit[maxLineas - 1]).replace(/\s*\S*$/, '');
+          lineasTit[maxLineas - 1] = (ult || String(lineasTit[maxLineas - 1])) + '…';
+        }
+        const yTit = lineasTit.length > 1 ? yL + altoFila/2 - 0.7 : yL + altoFila/2 + 1;
+        doc.text(lineasTit, xTitulo, yTit, { lineHeightFactor: 1.05 });
         // %
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(8);
@@ -1254,7 +1343,7 @@ export async function exportarConsolidadoPDF(aplicaciones, instituciones, cuader
   dibujarHeader(doc, 'Reporte institucional consolidado', 1, totalP, logo);
   doc.setFillColor(...C.marfil);
   doc.rect(0, 20, w, doc.internal.pageSize.getHeight() - 20, 'F');
-  if (logo) { try { const src = logo.dataUrl || logo; const r = logo.ratio || 1.22; const h = 38; const wL = h*r; doc.addImage(src, 'PNG', w/2 - wL/2, 36, wL, h); } catch (e) {} }
+  if (logo) { try { const src = logo.dataUrl || logo; const r = logo.ratio || 1.22; const h = 38; const wL = h*r; _addLogo(doc, src, w/2 - wL/2, 36, wL, h); } catch (e) {} }
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(22);
   doc.setTextColor(...C.negro);
@@ -1317,7 +1406,7 @@ export async function exportarPlanMejoraPDF(plan, cuadernillo) {
       const r = logo.ratio || 1.22;
       const lh = 30;
       const lw = lh * r;
-      doc.addImage(src, 'PNG', w/2 - lw/2, 36, lw, lh);
+      _addLogo(doc, src, w/2 - lw/2, 36, lw, lh);
     } catch (e) {}
   }
 
