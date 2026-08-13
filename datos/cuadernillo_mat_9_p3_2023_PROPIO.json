@@ -66,20 +66,22 @@
       "dificultad": "MEDIA",
       "estandar": "Identifico diferentes métodos para solucionar sistemas de ecuaciones lineales.",
       "que_evalua": "La habilidad para decidir cuál de dos métodos de cálculo resuelve un sistema de dos ecuaciones lineales y cuál se apoya en un supuesto que la situación no da.",
-      "enunciado": "<p>Don Efrén atiende una miscelánea en el mercado de Ipiales y en época escolar vende cuadernos y lapiceros de una sola referencia, con el mismo precio para todo el mundo. El lunes una profesora se llevó <b>3 cuadernos y 2 lapiceros</b> y pagó <b>23.000 pesos</b>. El miércoles el personero del colegio se llevó <b>5 cuadernos y 4 lapiceros</b> y pagó <b>41.000 pesos</b>. Don Efrén anotó los totales, pero nunca escribió el precio de cada artículo por separado, y ahora una madre de familia llega a comprar un solo cuaderno y un solo lapicero.</p><p>En el mostrador <b>se proponen dos métodos de cálculo</b>.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Método 1.</b> Se restan las dos compras: la del miércoles tiene dos cuadernos y dos lapiceros más que la del lunes, de modo que un cuaderno y un lapicero juntos valen la mitad de esa diferencia. Como el cuaderno es lo más caro de los dos, se le asigna la parte mayor de esa suma y al lapicero, la menor.<br><br><b>Método 2.</b> Se multiplica toda la compra del lunes por \\(2\\), de manera que quede con los mismos cuatro lapiceros de la del miércoles, y a ese resultado se le resta la compra del miércoles; de la igualdad que queda se despeja el precio del cuaderno y con él se vuelve a cualquiera de las dos compras.</div><p>¿Cuál de los dos métodos lleva a los precios que cobra don Efrén?</p>",
+      "enunciado": "<p>Don Efrén atiende una miscelánea en el mercado de Ipiales y en época escolar vende cuadernos y lapiceros de una sola referencia, con el mismo precio para todo el mundo. El lunes una profesora se llevó <b>3 cuadernos y 2 lapiceros</b> y pagó <b>23.000 pesos</b>. El miércoles el personero del colegio se llevó <b>5 cuadernos y 4 lapiceros</b> y pagó <b>41.000 pesos</b>. Don Efrén anotó los totales, pero nunca escribió el precio de cada artículo por separado, y ahora una madre de familia llega a comprar un solo cuaderno y un solo lapicero.</p>[[IMG]]<p>En el mostrador <b>se proponen dos métodos de cálculo</b>.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 1.</b> Se restan las dos compras: la del miércoles tiene dos cuadernos y dos lapiceros más que la del lunes, de modo que un cuaderno y un lapicero juntos valen la mitad de esa diferencia. Como el cuaderno es lo más caro de los dos, se le asigna la parte mayor de esa suma y al lapicero, la menor.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 2.</b> Se multiplica toda la compra del lunes por \\(2\\), de manera que quede con los mismos cuatro lapiceros de la del miércoles, y a ese resultado se le resta la compra del miércoles; de la igualdad que queda se despeja el precio del cuaderno y con él se vuelve a cualquiera de las dos compras.</div></div><p>¿Cuál de los dos métodos lleva a los precios que cobra don Efrén?</p>",
       "opciones": {
-        "A": "El método 2, porque al igualar los lapiceros queda despejado el cuaderno: 5.000 y 4.000 pesos.",
+        "A": "Los dos, porque llegan a los mismos precios por caminos distintos: 5.000 y 4.000 pesos.",
         "B": "El método 1, porque el par cuesta 9.000 pesos y el cuaderno vale más: 5.500 y 3.500 pesos.",
-        "C": "Los dos, porque llegan a los mismos precios por caminos distintos: 5.000 y 4.000 pesos.",
+        "C": "El método 2, porque al igualar los lapiceros queda despejado el cuaderno: 5.000 y 4.000 pesos.",
         "D": "El método 1, porque el par cuesta 9.000 pesos y los dos artículos valen igual: 4.500 cada uno."
       },
-      "clave": "A",
+      "clave": "C",
       "justificacion_correcta": "La opción «El método 2, porque al igualar los lapiceros queda despejado el cuaderno» es correcta porque las dos compras se escriben como el sistema \\(3c+2l=23000\\) y \\(5c+4l=41000\\). Al multiplicar la primera igualdad por \\(2\\) queda \\(6c+4l=46000\\), y al restarle la segunda se obtiene \\(c=5000\\). Reemplazando ese valor, \\(2l=23000-15000\\), de donde \\(l=4000\\). El método 1 acierta en que el par vale 9.000 pesos, pero de ahí en adelante reparte esos 9.000 a ojo, y ese reparto la situación no lo da.",
       "opciones_incorrectas": {
         "B": "El primer método llega bien a los 9.000 pesos del par, pero después reparte esa suma por tanteo: esos dos precios aplicados a la compra del miércoles dan 42.000 pesos y no los 41.000 que se pagaron.",
-        "C": "Los dos métodos no coinciden: el primero termina en 5.500 y 3.500 pesos, de modo que basta comprobarlo en la compra del miércoles para ver que solo uno de los dos cierra.",
-        "D": "Repartir los 9.000 pesos en partes iguales supone que el cuaderno y el lapicero cuestan lo mismo, y con esos precios la compra del lunes daría 22.500 pesos en vez de 23.000."
-      }
+        "D": "Repartir los 9.000 pesos en partes iguales supone que el cuaderno y el lapicero cuestan lo mismo, y con esos precios la compra del lunes daría 22.500 pesos en vez de 23.000.",
+        "A": "Los dos métodos no coinciden: el primero termina en 5.500 y 3.500 pesos, de modo que basta comprobarlo en la compra del miércoles para ver que solo uno de los dos cierra."
+      },
+      "imagen_figura": "assets/banco-mat-9-p3/q01.png",
+      "imagen_alt": "Las dos compras anotadas en el cuaderno de cuentas de la miscelánea, con los cuadernos y los lapiceros de cada una y lo que se pagó, y una tercera tarjeta con la compra de un cuaderno y un lapicero que queda por cobrar."
     },
     {
       "id": "P3-mat-9-02",
@@ -91,20 +93,23 @@
       "dificultad": "ALTA",
       "estandar": "Identifico diferentes métodos para solucionar sistemas de ecuaciones lineales.",
       "que_evalua": "La habilidad para revisar un procedimiento ajeno y localizar el paso en que se manejó mal la diferencia entre un faltante y un sobrante.",
-      "enunciado": "<p>Marleny preside la junta de acción comunal de un barrio de Pasto y está reuniendo el dinero para arreglar el parque infantil. En la asamblea puso a consideración dos maneras de cobrar la cuota. Si cada familia aporta <b>12.000 pesos</b>, al final <b>faltarían 96.000 pesos</b> para pagarle al contratista; si cada familia aporta <b>15.000 pesos</b>, <b>sobrarían 60.000 pesos</b>. En el barrio todas las familias aportan y el valor de la obra ya quedó fijado en el contrato.</p><p>El tesorero dejó escritos <b>estos pasos</b> para averiguar cuántas familias hay y cuánto cuesta la obra.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Entre una cuota y la otra hay una diferencia de 3.000 pesos por familia.<br><b>Paso 2.</b> Entre el faltante y el sobrante hay una diferencia de 36.000 pesos.<br><b>Paso 3.</b> Se reparte esa diferencia entre los 3.000 pesos y sale el número de familias; con ese número y la cuota baja se obtiene el costo de la obra.</div><p>¿En cuál paso está el error y cuáles son los dos datos correctos?</p>",
+      "enunciado": "<p>Marleny preside la junta de acción comunal de un barrio de Pasto y está reuniendo el dinero para arreglar el parque infantil. En la asamblea puso a consideración dos maneras de cobrar la cuota. Si cada familia aporta <b>12.000 pesos</b>, al final <b>faltarían 96.000 pesos</b> para pagarle al contratista; si cada familia aporta <b>15.000 pesos</b>, <b>sobrarían 60.000 pesos</b>. En el barrio todas las familias aportan y el valor de la obra ya quedó fijado en el contrato.</p>[[IMG]]<p>El tesorero dejó escritos <b>estos pasos</b> para averiguar cuántas familias hay y cuánto cuesta la obra.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 1.</b> Entre una cuota y la otra hay una diferencia de 3.000 pesos por familia.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 2.</b> Entre el faltante y el sobrante hay una diferencia de 36.000 pesos.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 3.</b> Se reparte esa diferencia entre los 3.000 pesos y sale el número de familias; con ese número y la cuota baja se obtiene el costo de la obra.</div></div><p>¿En cuál paso está el error y cuáles son los dos datos correctos?</p>",
       "opciones": {
-        "A": "En el paso 3, porque el costo sale de la cuota alta: son 12 familias y 180.000 pesos.",
+        "A": "En el paso 2, porque el faltante y el sobrante se suman: son 52 familias y 720.000 pesos.",
         "B": "En ninguno, porque los tres pasos están bien encadenados: son 12 familias y 240.000 pesos.",
-        "C": "En el paso 2, porque el faltante y el sobrante se suman: son 52 familias y 720.000 pesos.",
+        "C": "En el paso 3, porque el costo sale de la cuota alta: son 12 familias y 180.000 pesos.",
         "D": "En el paso 2, porque esos 156.000 pesos se reparten entre las dos cuotas: son 52 familias y 780.000 pesos."
       },
-      "clave": "C",
+      "clave": "A",
       "justificacion_correcta": "La opción «En el paso 2, porque el faltante y el sobrante se suman» es correcta porque subir la cuota de 12.000 a 15.000 pesos no solo cubre los 96.000 que faltaban: además deja 60.000 de sobra, de modo que ese aumento aportó \\(96000+60000=156000\\) pesos en total. Con la diferencia de \\(3000\\) pesos por familia del primer paso, que sí está bien, queda \\(156000 \\div 3000 = 52\\) familias, y el costo de la obra es \\(12000 \\times 52 + 96000 = 720000\\) pesos.",
       "opciones_incorrectas": {
-        "A": "El costo se puede calcular con cualquiera de las dos cuotas y las dos dan el mismo valor, así que el defecto del procedimiento no está en el último paso sino antes, en el manejo del faltante y del sobrante.",
         "B": "El encadenamiento parece limpio, pero restar el sobrante del faltante deja por fuera la mitad del dinero que aporta el aumento de la cuota, y con 12 familias la obra costaría 240.000 pesos, cifra que no cuadra con la cuota alta.",
-        "D": "El número de familias quedó bien hallado, aunque el costo corresponde a lo que se recoge con la cuota de 15.000 pesos sin descontarle los 60.000 que sobran."
-      }
+        "D": "El número de familias quedó bien hallado, aunque el costo corresponde a lo que se recoge con la cuota de 15.000 pesos sin descontarle los 60.000 que sobran.",
+        "C": "El costo se puede calcular con cualquiera de las dos cuotas y las dos dan el mismo valor, así que el defecto del procedimiento no está en el último paso sino antes, en el manejo del faltante y del sobrante."
+      },
+      "imagen_figura": "assets/banco-mat-9-p3/q02.png",
+      "imagen_alt": "La asamblea de la junta de acción comunal en el salón del barrio: la presidenta dirige la palabra a los vecinos y por la ventana se ve el parque infantil que se va a arreglar.",
+      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio y luz calida de final de tarde. Escena: la asamblea de una junta de accion comunal en el salon comunal de un barrio popular de Pasto, Narino, en la fria meseta andina. Una mujer adulta de unos cuarenta y cinco anos, la presidenta de la junta, esta de pie al frente dirigiendo la palabra; frente a ella, vecinos y vecinas de edades mezcladas, sentados en sillas plasticas, escuchan y algunos levantan la mano. Al fondo, por la ventana, se ve el parque infantil del barrio con un rodadero y unos columpios que necesitan arreglo. Ruanas y chaquetas, piso de baldosa, paredes pintadas de claro. Composicion horizontal, formato apaisado aproximadamente tres a dos, vista a media distancia y a la altura de los ojos. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: no escribir ninguna cifra, ningun numero ni ninguna operacion en ninguna parte, ni en un tablero, ni en un acta, ni en un cartel, ni en una pantalla, ni en un papel legible; no mostrar dinero, billetes, monedas, recibos ni alcancias; no mostrar graficas ni tablas de ningun tipo; no disponer a los asistentes de manera que se puedan contar con facilidad ni sugerir cuantas familias hay en el barrio; nada de calculadoras ni de cuentas hechas. La escena es el momento de la deliberacion, antes de cualquier calculo."
     },
     {
       "id": "P3-mat-9-03",
@@ -118,17 +123,17 @@
       "que_evalua": "La habilidad para plantear y resolver la ecuación cuadrática que recoge a la vez las dos condiciones que impone el encargo.",
       "enunciado": "<p>Don Nabor tiene un taller de carpintería en Sandoná y le encargaron el tablero rectangular del salón comunal. El pliego del encargo trae dos condiciones que deben cumplirse <b>al mismo tiempo</b>: el tablero tiene que ser <b>3 metros más largo que ancho</b> y su superficie debe ser de <b>40 metros cuadrados</b> exactos, porque esa es el área libre de la pared donde va instalado.</p>[[IMG]]<p>¿Cuánto miden el ancho y el largo del tablero que cumple las dos condiciones del pliego?</p>",
       "opciones": {
-        "A": "Mide 4 metros de ancho y 10 de largo, medidas cuyo producto da la superficie pedida.",
-        "B": "Mide 5 metros de ancho y 8 de largo, las únicas medidas que cumplen las dos condiciones.",
+        "A": "Mide 5 metros de ancho y 8 de largo, las únicas medidas que cumplen las dos condiciones.",
+        "B": "Mide 4 metros de ancho y 10 de largo, medidas cuyo producto da la superficie pedida.",
         "C": "Mide 8 metros de ancho y 11 de largo, que son las dos raíces de la ecuación planteada.",
         "D": "Mide 18,5 metros de ancho y 21,5 de largo, medidas que suman los 40 metros del pliego."
       },
-      "clave": "B",
+      "clave": "A",
       "justificacion_correcta": "La opción «Mide 5 metros de ancho y 8 de largo» es correcta porque las dos condiciones tienen que cumplirse a la vez. Si el ancho se llama \\(x\\), el largo es \\(x+3\\) y la condición sobre la superficie lleva a \\(x(x+3)=40\\), es decir \\(x^2+3x-40=0\\). Al factorizar queda \\((x+8)(x-5)=0\\) y la única raíz que sirve como medida es \\(x=5\\), con lo cual el largo resulta \\(5+3=8\\) metros.",
       "opciones_incorrectas": {
-        "A": "Cumplir la condición de la superficie no basta: hay muchas parejas de lados cuyo producto es 40 y el pliego pide además que se diferencien en 3 metros, cosa que esas dos medidas no hacen.",
         "C": "La raíz negativa de la ecuación no sirve como medida de un lado, y con esas dos medidas la superficie del tablero llegaría a 88 metros cuadrados.",
-        "D": "Leer los 40 metros como la suma de los dos lados cambia el problema: eso lleva a resolver \\(2x+3=40\\) y no la ecuación cuadrática que impone la superficie."
+        "D": "Leer los 40 metros como la suma de los dos lados cambia el problema: eso lleva a resolver \\(2x+3=40\\) y no la ecuación cuadrática que impone la superficie.",
+        "B": "Cumplir la condición de la superficie no basta: hay muchas parejas de lados cuyo producto es 40 y el pliego pide además que se diferencien en 3 metros, cosa que esas dos medidas no hacen."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q03.png",
       "imagen_alt": "Croquis sin escala del tablero rectangular: la superficie es de cuarenta metros cuadrados y el largo tiene tres metros más que el ancho."
@@ -143,7 +148,7 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
       "que_evalua": "La habilidad para valorar un conteo ajeno que distingue el orden en una situación donde el orden no cambia el resultado.",
-      "enunciado": "<p>En un colegio de Tumaco el comité de convivencia escolar se renueva cada año. Para el próximo periodo se postularon <b>7 estudiantes</b> de grado noveno y el reglamento dice que el comité lo integran <b>3 de ellos</b>, sin cargos ni jerarquías: los tres tienen exactamente las mismas funciones, de modo que nombrar a Sara, Iván y Keila deja el mismo comité que nombrar a Keila, Sara e Iván.</p><p>La coordinadora <b>anticipa que</b> pueden salir 210 comités distintos, porque para el primero de los tres puestos hay siete candidatos, para el segundo quedan seis y para el tercero, cinco, y \\(7 \\times 6 \\times 5 = 210\\).</p><p>¿Qué valoración de esa anticipación es acertada?</p>",
+      "enunciado": "<p>En un colegio de Tumaco el comité de convivencia escolar se renueva cada año. Para el próximo periodo se postularon <b>7 estudiantes</b> de grado noveno y el reglamento dice que el comité lo integran <b>3 de ellos</b>, sin cargos ni jerarquías: los tres tienen exactamente las mismas funciones, de modo que nombrar a Sara, Iván y Keila deja el mismo comité que nombrar a Keila, Sara e Iván.</p>[[IMG]]<p>La coordinadora <b>anticipa que</b> pueden salir 210 comités distintos, porque para el primero de los tres puestos hay siete candidatos, para el segundo quedan seis y para el tercero, cinco, y \\(7 \\times 6 \\times 5 = 210\\).</p><p>¿Qué valoración de esa anticipación es acertada?</p>",
       "opciones": {
         "A": "Es acertada, porque cada uno de los tres puestos lo ocupa un postulado distinto de la lista.",
         "B": "No es acertada, porque cada estudiante forma pareja con los demás: son 21 comités.",
@@ -156,7 +161,9 @@
         "A": "Los tres puestos no se distinguen entre sí, de modo que multiplicar como si fueran cargos diferentes cuenta seis veces cada comité.",
         "B": "Ese resultado sale de escoger de a dos entre los siete postulados, y el reglamento pide comités de tres integrantes.",
         "C": "Multiplicar siete por sí mismo tres veces permitiría que un mismo estudiante ocupara más de un puesto del comité, cosa que la situación no admite."
-      }
+      },
+      "imagen_figura": "assets/banco-mat-9-p3/q04.png",
+      "imagen_alt": "Esquema con los siete estudiantes postulados a un lado y, al otro, los tres lugares del comité dibujados iguales entre sí, sin cargos ni jerarquías."
     },
     {
       "id": "P3-mat-9-05",
@@ -168,7 +175,7 @@
       "dificultad": "ALTA",
       "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
       "que_evalua": "La habilidad para decidir cuál de dos métodos de conteo trata correctamente la condición de que dos elementos deban quedar juntos.",
-      "enunciado": "<p>Una comparsa del Carnaval de Negros y Blancos cierra su presentación con <b>5 bailarines</b> puestos en una sola fila, y el orden en que quedan cambia por completo la coreografía. Dos de ellos, <b>Yeison y Camilo</b>, cargan entre los dos un mismo estandarte, así que la directora exige que queden uno al lado del otro, en cualquiera de los dos órdenes.</p><p>En el ensayo <b>se proponen dos métodos de cálculo</b> para saber cuántas filas distintas cumplen esa exigencia.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Método 1.</b> Como Yeison y Camilo tienen que ir pegados, se los cuenta como una sola pieza: quedan cuatro piezas que se ordenan de \\(4 \\times 3 \\times 2 \\times 1 = 24\\) maneras, y dentro de la pieza la pareja puede ir en dos órdenes.<br><br><b>Método 2.</b> Los cinco bailarines se ordenan de \\(5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\) maneras y, como la pareja queda junta en la mitad de esos órdenes, se toma la mitad de 120.</div><p>¿Cuál de los dos métodos lleva al conteo correcto?</p>",
+      "enunciado": "<p>Una comparsa del Carnaval de Negros y Blancos cierra su presentación con <b>5 bailarines</b> puestos en una sola fila, y el orden en que quedan cambia por completo la coreografía. Dos de ellos, <b>Yeison y Camilo</b>, cargan entre los dos un mismo estandarte, así que la directora exige que queden uno al lado del otro, en cualquiera de los dos órdenes.</p>[[IMG]]<p>En el ensayo <b>se proponen dos métodos de cálculo</b> para saber cuántas filas distintas cumplen esa exigencia.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 1.</b> Como Yeison y Camilo tienen que ir pegados, se los cuenta como una sola pieza: quedan cuatro piezas que se ordenan de \\(4 \\times 3 \\times 2 \\times 1 = 24\\) maneras, y dentro de la pieza la pareja puede ir en dos órdenes.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 2.</b> Los cinco bailarines se ordenan de \\(5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\) maneras y, como la pareja queda junta en la mitad de esos órdenes, se toma la mitad de 120.</div></div><p>¿Cuál de los dos métodos lleva al conteo correcto?</p>",
       "opciones": {
         "A": "El método 1, porque la pieza se ordena por dentro y por fuera: son 48 filas.",
         "B": "El método 1, pero sin contar el orden dentro de la pieza: son 24 filas.",
@@ -181,7 +188,10 @@
         "B": "Contar las 24 filas de las cuatro piezas deja por fuera que Yeison y Camilo pueden intercambiarse sin separarse, y esa permuta interna duplica el conteo.",
         "C": "En una fila de cinco puestos la pareja tiene cuatro posiciones vecinas de las diez posibles parejas de puestos, así que quedar juntos no ocurre en la mitad de los órdenes.",
         "D": "Multiplicar el número de bailarines por las dos posiciones de la pareja no ordena a los otros tres, que también cambian de sitio en cada fila."
-      }
+      },
+      "imagen_figura": "assets/banco-mat-9-p3/q05.png",
+      "imagen_alt": "La comparsa en el cierre de su presentación: cinco bailarines en una sola fila y, en el centro, la pareja que carga entre los dos el mismo estandarte.",
+      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio, colores saturados y luz de mediodia. Escena: el cierre de la presentacion de una comparsa del Carnaval de Negros y Blancos de Pasto, Narino. CINCO bailarines jovenes, en UNA SOLA FILA de frente al publico, con vestuario de carnaval en colores vivos, plumas y maquillaje festivo. Dos de ellos, ubicados uno al lado del otro, cargan entre los dos un mismo estandarte de tela sostenido por dos varas, una en la mano de cada uno; los otros tres bailan sueltos. Al fondo, la calle del desfile con espectadores, papel picado en el aire y fachadas coloniales. Composicion horizontal, formato apaisado aproximadamente tres a dos, los cinco de cuerpo entero y a media distancia. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: mostrar una sola fila y nada mas, sin una segunda fila, sin filas alternativas, sin la misma comparsa repetida en otro orden y sin viñetas ni recuadros que comparen ordenamientos; no dibujar flechas de intercambio, esquemas de posiciones, casillas, diagramas de arbol ni ninguna clase de grafico; no escribir ninguna cifra ni ningun numero en ninguna parte, ni en el estandarte, ni en los trajes, ni en carteles del fondo; no numerar a los bailarines ni ponerles dorsales. La escena es la fila puesta en su sitio, antes de cualquier conteo."
     },
     {
       "id": "P3-mat-9-06",
@@ -196,16 +206,16 @@
       "enunciado": "<p>Don Aldemar entrena el equipo de microfútbol de una escuela de Quibdó y anota, partido por partido, los goles que anota su equipo. Al terminar la primera vuelta pasó los nueve registros de su planilla a la gráfica de barras que aparece abajo, <b>en el mismo orden en que se jugaron los partidos</b>.</p>[[IMG]]<p>Para el informe del año le piden el valor que <b>deja cuatro partidos por debajo y cuatro por encima</b>. Don Aldemar <b>afirma que</b> ese valor es 8 goles, porque es el que quedó justo en la mitad de la gráfica.</p><p>¿Es acertada esa afirmación y cuál es el valor que le piden?</p>",
       "opciones": {
         "A": "No es acertada, porque el valor pedido es el que más veces se repite: son 3 goles.",
-        "B": "Sí es acertada, porque 8 goles ocupa el quinto lugar entre los nueve de la gráfica.",
-        "C": "No es acertada, porque primero hay que ordenar los nueve datos: son 4 goles.",
+        "B": "No es acertada, porque primero hay que ordenar los nueve datos: son 4 goles.",
+        "C": "Sí es acertada, porque 8 goles ocupa el quinto lugar entre los nueve de la gráfica.",
         "D": "No es acertada, porque el valor pedido reparte los 48 goles entre nueve: son 5,3 goles."
       },
-      "clave": "C",
+      "clave": "B",
       "justificacion_correcta": "La opción «No es acertada, porque primero hay que ordenar los nueve datos» es correcta porque el valor que deja la misma cantidad de partidos a cada lado exige ordenar antes las cantidades, y la gráfica va en el orden en que se jugaron los partidos. Ordenados quedan \\(2, 3, 3, 3, 4, 6, 8, 9, 10\\); con nueve partidos, el que ocupa el quinto lugar de esa lista es \\(4\\), y deja cuatro por debajo y cuatro por encima.",
       "opciones_incorrectas": {
         "A": "Tres goles es la cantidad que más veces se repite, y esa es otra medida distinta de la que pide el informe.",
-        "B": "Ocupar el lugar del centro solo sirve cuando los datos están ordenados; en la gráfica el orden es el de la fecha de cada partido y por eso ese quinto lugar no parte el grupo en dos mitades.",
-        "D": "Repartir los 48 goles entre los nueve partidos da el promedio del equipo, que no es el valor que deja la misma cantidad de partidos a cada lado."
+        "D": "Repartir los 48 goles entre los nueve partidos da el promedio del equipo, que no es el valor que deja la misma cantidad de partidos a cada lado.",
+        "C": "Ocupar el lugar del centro solo sirve cuando los datos están ordenados; en la gráfica el orden es el de la fecha de cada partido y por eso ese quinto lugar no parte el grupo en dos mitades."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q06.png",
       "imagen_alt": "Gráfica de barras con los goles anotados por el equipo en cada uno de los nueve partidos de la primera vuelta, en el orden en que se jugaron."
@@ -250,16 +260,16 @@
       "enunciado": "<p>Doña Aura tiene una panadería en Túquerres y estrenó un horno de leña. Para saber cuánto debe esperar antes de meter el pan, midió con un termómetro la temperatura del horno cada diez minutos desde que lo prendió y llevó los datos a una gráfica.</p>[[IMG]]<p>Su hijo, que estudia panadería, quiere saber en cuál tramo de diez minutos <b>el horno ganó más grados</b>. Doña Aura <b>sostiene que</b> ese tramo va de los 30 a los 40 minutos, porque es donde la gráfica llega más arriba.</p><p>¿Es acertada esa afirmación y en cuál tramo ganó más grados el horno?</p>",
       "opciones": {
         "A": "Sí es acertada, porque en ese tramo el horno alcanza la mayor temperatura de toda la medición.",
-        "B": "No es acertada, porque el tramo de mayor ganancia es el primero: de 0 a 10 minutos, de 20 a 60 grados.",
+        "B": "No es acertada, porque el tramo de mayor ganancia va de 10 a 20 minutos, de 60 a 120 grados.",
         "C": "No es acertada, porque el tramo de mayor ganancia va de 20 a 30 minutos, de 120 a 150 grados.",
-        "D": "No es acertada, porque el tramo de mayor ganancia va de 10 a 20 minutos, de 60 a 120 grados."
+        "D": "No es acertada, porque el tramo de mayor ganancia es el primero: de 0 a 10 minutos, de 20 a 60 grados."
       },
-      "clave": "D",
+      "clave": "B",
       "justificacion_correcta": "La opción «No es acertada, porque el tramo de mayor ganancia va de 10 a 20 minutos» es correcta porque lo que se pide no es dónde queda más alta la gráfica sino dónde sube más de un punto al siguiente. Los aumentos por tramo son \\(40\\), \\(60\\), \\(30\\) y \\(0\\) grados, de modo que el mayor es el del segundo tramo, cuando la temperatura pasa de 60 a 120 grados. Entre los 30 y los 40 minutos la gráfica está en su punto más alto, pero se mantiene plana y el horno no gana un solo grado.",
       "opciones_incorrectas": {
         "A": "Entre los 30 y los 40 minutos la temperatura se sostiene en 150 grados: la gráfica va alta pero horizontal, así que la ganancia en ese tramo es de cero grados.",
-        "B": "En el primer tramo el horno pasa de 20 a 60 grados, con una ganancia de 40 grados, que es menor que la de otro tramo de la misma duración.",
-        "C": "De los 20 a los 30 minutos la temperatura sube 30 grados, y ese es el segundo aumento más pequeño de toda la medición."
+        "C": "De los 20 a los 30 minutos la temperatura sube 30 grados, y ese es el segundo aumento más pequeño de toda la medición.",
+        "D": "En el primer tramo el horno pasa de 20 a 60 grados, con una ganancia de 40 grados, que es menor que la de otro tramo de la misma duración."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q08.png",
       "imagen_alt": "Gráfica de la temperatura del horno de leña medida cada diez minutos desde que se prendió, con la temperatura anotada en cada punto."
@@ -274,19 +284,19 @@
       "dificultad": "MEDIA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
       "que_evalua": "La habilidad para decidir cuál de dos métodos de cálculo aplica correctamente la fórmula del área del círculo a una región que rodea a otra.",
-      "enunciado": "<p>En el parque principal de La Unión, Nariño, la alcaldía va a enchapar el andén que rodea la fuente. La fuente es un círculo de <b>3 metros de radio</b> y el andén es la franja que la bordea por todos lados, de manera que el borde exterior del andén queda a <b>5 metros</b> del mismo centro. La fuente no se enchapa.</p>[[IMG]]<div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">El pliego de la obra recuerda la fórmula del área del círculo: \\[ A = \\pi \\times r^2 \\]</div><p>En la oficina de planeación <b>se proponen dos métodos de cálculo</b>.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Método 1.</b> El andén tiene \\(5-3=2\\) metros de ancho, así que a esos 2 metros se les aplica la fórmula: \\(\\pi \\times 2^2\\).<br><br><b>Método 2.</b> Se calcula el área del círculo de 5 metros, \\(\\pi \\times 5^2 = 25\\pi\\), y se le descuenta la de la fuente, \\(\\pi \\times 3^2 = 9\\pi\\).</div><p>¿Cuál de los dos métodos da la superficie que se va a enchapar?</p>",
+      "enunciado": "<p>En el parque principal de La Unión, Nariño, la alcaldía va a enchapar el andén que rodea la fuente. La fuente es un círculo de <b>3 metros de radio</b> y el andén es la franja que la bordea por todos lados, de manera que el borde exterior del andén queda a <b>5 metros</b> del mismo centro. La fuente no se enchapa.</p>[[IMG]]<div style=\"text-align:center;font-weight:700;color:#A8132F;margin:14px 0 0 0\">El pliego de la obra recuerda la fórmula del área del círculo</div><div style=\"text-align:center;margin:14px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\[ A = \\pi \\times r^2 \\]</div><div style=\"font-size:14px;color:#5B534C;margin-top:6px\">donde \\(r\\) es el radio del círculo</div></div><p>En la oficina de planeación <b>se proponen dos métodos de cálculo</b>.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 1.</b> El andén tiene \\(5-3=2\\) metros de ancho, así que a esos 2 metros se les aplica la fórmula: \\(\\pi \\times 2^2\\).</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 2.</b> Se calcula el área del círculo de 5 metros, \\(\\pi \\times 5^2 = 25\\pi\\), y se le descuenta la de la fuente, \\(\\pi \\times 3^2 = 9\\pi\\).</div></div><p>¿Cuál de los dos métodos da la superficie que se va a enchapar?</p>",
       "opciones": {
-        "A": "El método 2, porque al disco completo se le descuenta la fuente: son \\(16\\,\\pi\\) metros cuadrados.",
+        "A": "Ninguno, porque las dos áreas del método 2 se suman: son \\(34\\,\\pi\\) metros cuadrados.",
         "B": "El método 1, porque lo que se enchapa es el ancho de la franja: son \\(4\\,\\pi\\) metros cuadrados.",
         "C": "El método 2, pero sin descontar la fuente, que también se enchapa: son \\(25\\,\\pi\\) metros cuadrados.",
-        "D": "Ninguno, porque las dos áreas del método 2 se suman: son \\(34\\,\\pi\\) metros cuadrados."
+        "D": "El método 2, porque al disco completo se le descuenta la fuente: son \\(16\\,\\pi\\) metros cuadrados."
       },
-      "clave": "A",
+      "clave": "D",
       "justificacion_correcta": "La opción «El método 2, porque al disco completo se le descuenta la fuente» es correcta porque el andén es lo que queda del disco de 5 metros de radio después de quitarle la fuente: \\(\\pi \\times 5^2 - \\pi \\times 3^2 = 25\\pi - 9\\pi = 16\\pi\\) metros cuadrados. El primer método le aplica la fórmula del área a los 2 metros de ancho de la franja, y el ancho de una franja no es el radio de ningún círculo de la figura.",
       "opciones_incorrectas": {
         "B": "Los 2 metros son el ancho de la franja y no el radio de un círculo, de modo que \\(\\pi \\times 2^2\\) no corresponde a ninguna región del plano de la obra.",
         "C": "El pliego dice que la fuente no se enchapa, así que quedarse con el disco completo cobraría también los nueve pi metros cuadrados del agua.",
-        "D": "Sumar las dos áreas contaría dos veces la zona de la fuente en lugar de excluirla, y el resultado sería mayor que el propio disco exterior."
+        "A": "Sumar las dos áreas contaría dos veces la zona de la fuente en lugar de excluirla, y el resultado sería mayor que el propio disco exterior."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q09.png",
       "imagen_alt": "Esquema del andén circular que rodea la fuente: dos circunferencias con el mismo centro, la interior de tres metros de radio y la exterior de cinco."
@@ -303,17 +313,17 @@
       "que_evalua": "La habilidad para valorar una conclusión sobre la posición relativa de dos rectas a partir de los ángulos que forman con una transversal.",
       "enunciado": "<p>Un maestro de obra está armando la estructura metálica del techo de un salón en Buenaventura. Ya soldó dos vigas largas y entre ellas puso un tirante en diagonal que las cruza a las dos. Antes de soldar el resto de la estructura midió con el transportador el ángulo que el tirante forma con cada viga, apoyándose siempre en el mismo lado del tirante, y en los dos cruces le dio <b>65 grados</b>.</p>[[IMG]]<p>El maestro de obra <b>concluye que</b> las dos vigas son perpendiculares al tirante, porque el transportador marcó lo mismo en los dos cruces.</p><p>¿Es acertada esa conclusión y qué se puede afirmar de las dos vigas?</p>",
       "opciones": {
-        "A": "Sí es acertada, porque los dos ángulos medidos con el transportador resultaron iguales.",
+        "A": "No es acertada, porque las vigas son paralelas: forman con el tirante ángulos correspondientes iguales.",
         "B": "No es acertada, porque las vigas se cortan más adelante: el tirante las cruza en puntos distintos.",
-        "C": "No es acertada, porque las vigas son paralelas: forman con el tirante ángulos correspondientes iguales.",
+        "C": "Sí es acertada, porque los dos ángulos medidos con el transportador resultaron iguales.",
         "D": "No es acertada, porque las tres piezas son paralelas entre sí al estar en un mismo plano."
       },
-      "clave": "C",
+      "clave": "A",
       "justificacion_correcta": "La opción «No es acertada, porque las vigas son paralelas» es correcta porque perpendicular significa formar un ángulo de \\(90\\) grados, y el transportador marcó \\(65\\). Lo que sí se deduce de esas dos medidas iguales es otra cosa: el tirante es una transversal que corta a las dos vigas y los ángulos medidos del mismo lado, en la misma posición respecto de cada viga, son correspondientes; cuando dos rectas cortadas por una transversal forman ángulos correspondientes iguales, esas rectas son paralelas.",
       "opciones_incorrectas": {
-        "A": "Que los dos ángulos sean iguales no los vuelve rectos: perpendicular exige que midan 90 grados y la medición dio 65.",
         "B": "Dos rectas que forman ángulos correspondientes iguales con una misma transversal no se cortan por más que se prolonguen, así que las vigas no se encuentran más adelante.",
-        "D": "El tirante corta a las dos vigas, y una recta que corta a otra no puede ser paralela a ella aunque las tres piezas queden en un mismo plano."
+        "D": "El tirante corta a las dos vigas, y una recta que corta a otra no puede ser paralela a ella aunque las tres piezas queden en un mismo plano.",
+        "C": "Que los dos ángulos sean iguales no los vuelve rectos: perpendicular exige que midan 90 grados y la medición dio 65."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q10.png",
       "imagen_alt": "Esquema de las dos vigas cruzadas por el tirante diagonal, con el ángulo de sesenta y cinco grados marcado en los dos cruces."
@@ -328,20 +338,22 @@
       "dificultad": "BAJA",
       "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
       "que_evalua": "La habilidad para ordenar cifras escritas en registros distintos llevándolas antes a una misma representación.",
-      "enunciado": "<p>En un depósito de materiales de Palmira, cuatro ayudantes terminaron la jornada y cada uno anotó qué parte del bulto de cemento le quedó sin usar. Cada uno lo escribió a su manera: Marta anotó \\(\\dfrac{4}{5}\\) del bulto, Nelson anotó \\(0{,}7\\), Ruby anotó \\(\\dfrac{3}{4}\\) y Éver anotó \\(72\\,\\%\\).</p><p>El jefe de bodega necesita saber a cuál de los cuatro ayudantes le quedó el bulto más entero.</p><p>¿De quién es el bulto al que le queda la mayor parte sin usar?</p>",
+      "enunciado": "<p>En un depósito de materiales de Palmira, cuatro ayudantes terminaron la jornada y cada uno anotó qué parte del bulto de cemento le quedó sin usar. Cada uno lo escribió a su manera: Marta anotó \\(\\dfrac{4}{5}\\) del bulto, Nelson anotó \\(0{,}7\\), Ruby anotó \\(\\dfrac{3}{4}\\) y Éver anotó \\(72\\,\\%\\).</p>[[IMG]]<p>El jefe de bodega necesita saber a cuál de los cuatro ayudantes le quedó el bulto más entero.</p><p>¿De quién es el bulto al que le queda la mayor parte sin usar?</p>",
       "opciones": {
         "A": "El de Éver, cuya anotación lleva el número más grande de los cuatro de la planilla.",
-        "B": "El de Marta, cuya anotación equivale a ocho décimas partes del bulto de cemento.",
-        "C": "El de Ruby, cuya anotación es la única de las cuatro escrita como fracción propia mayor.",
+        "B": "El de Ruby, cuya anotación es la única de las cuatro escrita como fracción propia mayor.",
+        "C": "El de Marta, cuya anotación equivale a ocho décimas partes del bulto de cemento.",
         "D": "El de Nelson, cuya anotación es la única de las cuatro que ya viene escrita en decimales."
       },
-      "clave": "B",
+      "clave": "C",
       "justificacion_correcta": "La opción «El de Marta, cuya anotación equivale a ocho décimas partes del bulto» es correcta porque las cuatro anotaciones están en registros distintos y no se pueden comparar por el tamaño del número escrito. Llevadas todas a decimales quedan \\(\\dfrac{4}{5}=0{,}8\\), \\(0{,}7\\), \\(\\dfrac{3}{4}=0{,}75\\) y \\(72\\,\\%=0{,}72\\); la mayor de las cuatro es \\(0{,}8\\), que es la de Marta.",
       "opciones_incorrectas": {
         "A": "El 72 está escrito como porcentaje y equivale a 0,72 del bulto, de modo que compararlo con una fracción o con un decimal por el tamaño de la cifra no dice nada.",
-        "C": "La anotación de Ruby equivale a \\(0{,}75\\) del bulto, que queda por debajo de otra de las cuatro cifras de la planilla.",
-        "D": "El decimal de Nelson es \\(0{,}7\\), el menor de los cuatro una vez que todas las anotaciones se escriben de la misma manera."
-      }
+        "D": "El decimal de Nelson es \\(0{,}7\\), el menor de los cuatro una vez que todas las anotaciones se escriben de la misma manera.",
+        "B": "La anotación de Ruby equivale a \\(0{,}75\\) del bulto, que queda por debajo de otra de las cuatro cifras de la planilla."
+      },
+      "imagen_figura": "assets/banco-mat-9-p3/q11.png",
+      "imagen_alt": "Las cuatro anotaciones de la planilla del depósito, cada una en el registro en que su ayudante la escribió: una fracción, un decimal, otra fracción y un porcentaje, en el orden de la planilla."
     },
     {
       "id": "P3-mat-9-12",
@@ -380,19 +392,19 @@
       "dificultad": "MEDIA",
       "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
       "que_evalua": "La habilidad para revisar un procedimiento de conversión a escala y localizar el paso en que se cambió mal de unidad.",
-      "enunciado": "<p>El rector de un colegio de Girardot le pidió al profesor de dibujo el plano de la cancha múltiple para tramitar la reparación del piso. El profesor entregó el plano con la anotación <b>escala 1:200</b>, que significa que cada centímetro del papel representa 200 centímetros de la cancha real.</p>[[IMG]]<p>Para el trámite hay que decir cuánto mide la cancha construida. El profesor dejó escritos <b>estos pasos</b>.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Sobre el papel el largo mide 20 centímetros y el ancho, 12 centímetros.<br><b>Paso 2.</b> Como cada centímetro del papel vale 200 de la cancha, se multiplican por 200 las dos medidas del papel y quedan las dos medidas reales en centímetros.<br><b>Paso 3.</b> Como un metro tiene 1.000 centímetros, se dividen entre 1.000 esas dos medidas y quedan expresadas en metros.</div><p>¿En cuál paso está el error y cuánto mide la cancha construida?</p>",
+      "enunciado": "<p>El rector de un colegio de Girardot le pidió al profesor de dibujo el plano de la cancha múltiple para tramitar la reparación del piso. El profesor entregó el plano con la anotación <b>escala 1:200</b>, que significa que cada centímetro del papel representa 200 centímetros de la cancha real.</p>[[IMG]]<p>Para el trámite hay que decir cuánto mide la cancha construida. El profesor dejó escritos <b>estos pasos</b>.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 1.</b> Sobre el papel el largo mide 20 centímetros y el ancho, 12 centímetros.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 2.</b> Como cada centímetro del papel vale 200 de la cancha, se multiplican por 200 las dos medidas del papel y quedan las dos medidas reales en centímetros.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 3.</b> Como un metro tiene 1.000 centímetros, se dividen entre 1.000 esas dos medidas y quedan expresadas en metros.</div></div><p>¿En cuál paso está el error y cuánto mide la cancha construida?</p>",
       "opciones": {
-        "A": "En el paso 3, porque un metro tiene 100 centímetros: el largo es 40 metros y el ancho, 24.",
+        "A": "En el paso 2, porque la escala se aplica a la mitad: el largo es 20 metros y el ancho, 12.",
         "B": "En ninguno, porque los tres pasos están bien: el largo es 4 metros y el ancho, 2,4 metros.",
         "C": "En el paso 2, porque la escala se aplica dos veces: el largo es 400 metros y el ancho, 240.",
-        "D": "En el paso 2, porque la escala se aplica a la mitad: el largo es 20 metros y el ancho, 12."
+        "D": "En el paso 3, porque un metro tiene 100 centímetros: el largo es 40 metros y el ancho, 24."
       },
-      "clave": "A",
+      "clave": "D",
       "justificacion_correcta": "La opción «En el paso 3, porque un metro tiene 100 centímetros» es correcta porque los dos primeros pasos están bien: la escala convierte los 20 y los 12 centímetros del papel en \\(4000\\) y \\(2400\\) centímetros reales. El error aparece al pasar a metros, porque un metro tiene \\(100\\) centímetros y no mil: \\(4000 \\div 100 = 40\\) metros de largo y \\(2400 \\div 100 = 24\\) metros de ancho, medidas razonables para una cancha múltiple.",
       "opciones_incorrectas": {
         "B": "Una cancha múltiple de 4 metros de largo por 2,4 de ancho no cabría ni para un arco, y esa cifra sale de dividir entre mil en lugar de dividir entre cien.",
         "C": "La escala 1:200 se aplica una sola vez a cada medida del papel: repetirla multiplicaría por cuarenta mil y el resultado excedería la manzana entera del colegio.",
-        "D": "Aplicar la mitad de la escala equivale a leer el plano como 1:100, cosa que la anotación del plano no dice."
+        "A": "Aplicar la mitad de la escala equivale a leer el plano como 1:100, cosa que la anotación del plano no dice."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q13.png",
       "imagen_alt": "Plano de la cancha múltiple dibujado sobre la hoja, acotado en veinte por doce centímetros de papel y con la anotación de escala uno a doscientos."
@@ -434,20 +446,22 @@
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y formulo problemas usando modelos geométricos.",
       "que_evalua": "La habilidad para revisar un procedimiento que reparte un total sin descontar antes la parte fija de una relación lineal.",
-      "enunciado": "<p>Rosalba maneja un taxi en Neiva y su taxímetro está programado con dos valores fijos: apenas el pasajero se sube marca un <b>banderazo de 4.400 pesos</b> y, a partir de ahí, va agregando <b>1.100 pesos por cada kilómetro</b> recorrido, sin ningún otro cobro ni recargo. Un martes llevó a un pasajero desde el terminal hasta un barrio del norte y el taxímetro marcó <b>20.900 pesos</b> al llegar.</p><p>Un compañero de la empresa dejó escritos <b>estos pasos</b> para saber cuántos kilómetros hizo ese recorrido.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Paso 1.</b> Lo que marcó el taxímetro al terminar es todo lo que hay que repartir.<br><b>Paso 2.</b> Se reparte ese total entre los 1.100 pesos que cuesta cada kilómetro.<br><b>Paso 3.</b> El cociente de ese reparto es el número de kilómetros del recorrido.</div><p>¿En cuál paso está el error y cuántos kilómetros recorrió el taxi?</p>",
+      "enunciado": "<p>Rosalba maneja un taxi en Neiva y su taxímetro está programado con dos valores fijos: apenas el pasajero se sube marca un <b>banderazo de 4.400 pesos</b> y, a partir de ahí, va agregando <b>1.100 pesos por cada kilómetro</b> recorrido, sin ningún otro cobro ni recargo. Un martes llevó a un pasajero desde el terminal hasta un barrio del norte y el taxímetro marcó <b>20.900 pesos</b> al llegar.</p>[[IMG]]<p>Un compañero de la empresa dejó escritos <b>estos pasos</b> para saber cuántos kilómetros hizo ese recorrido.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 1.</b> Lo que marcó el taxímetro al terminar es todo lo que hay que repartir.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 2.</b> Se reparte ese total entre los 1.100 pesos que cuesta cada kilómetro.</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Paso 3.</b> El cociente de ese reparto es el número de kilómetros del recorrido.</div></div><p>¿En cuál paso está el error y cuántos kilómetros recorrió el taxi?</p>",
       "opciones": {
         "A": "En ninguno, porque el total se reparte entre el valor del kilómetro: fueron 19 kilómetros.",
-        "B": "En el paso 2, porque antes hay que descontar el banderazo: fueron 15 kilómetros.",
+        "B": "En el paso 2, porque el banderazo se descuenta dos veces del total: fueron 11 kilómetros.",
         "C": "En el paso 2, porque el banderazo se suma al total antes de repartirlo: fueron 23 kilómetros.",
-        "D": "En el paso 2, porque el banderazo se descuenta dos veces del total: fueron 11 kilómetros."
+        "D": "En el paso 2, porque antes hay que descontar el banderazo: fueron 15 kilómetros."
       },
-      "clave": "B",
+      "clave": "D",
       "justificacion_correcta": "La opción «En el paso 2, porque antes hay que descontar el banderazo» es correcta porque de los 20.900 pesos hay 4.400 que se cobran por subirse y no por avanzar. Solo lo que queda después de descontarlos se repartió a razón de 1.100 pesos por kilómetro: \\(20900-4400=16500\\), y \\(16500 \\div 1100 = 15\\) kilómetros. La comprobación cierra, porque \\(4400+1100 \\times 15 = 20900\\) pesos.",
       "opciones_incorrectas": {
         "A": "Repartir el total completo entre el valor del kilómetro le cobra al recorrido también el banderazo, y con 19 kilómetros el taxímetro habría marcado 25.300 pesos.",
         "C": "Sumarle el banderazo al total lo cobra dos veces, una vez en lo que ya marcó el taxímetro y otra vez en el reparto.",
-        "D": "Descontar dos veces los 4.400 pesos le quita al recorrido un banderazo que nunca se cobró, y deja por fuera cuatro kilómetros de viaje."
-      }
+        "B": "Descontar dos veces los 4.400 pesos le quita al recorrido un banderazo que nunca se cobró, y deja por fuera cuatro kilómetros de viaje."
+      },
+      "imagen_figura": "assets/banco-mat-9-p3/q15.png",
+      "imagen_alt": "Ficha del taxímetro con el banderazo, el valor del kilómetro y lo que marcó al llegar, y el número de kilómetros del recorrido todavía sin llenar."
     },
     {
       "id": "P3-mat-9-16",
@@ -459,19 +473,19 @@
       "dificultad": "MEDIA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
       "que_evalua": "La habilidad para decidir cuál de dos métodos de cálculo respeta la fórmula propia de cada sólido al hallar el volumen de un cuerpo compuesto.",
-      "enunciado": "<p>Una vereda de Santa Rosa de Cabal recibió un tanque para almacenar el agua del acueducto comunal. El tanque está formado por un <b>cuerpo cilíndrico</b> rematado arriba por un <b>cono</b>, y las dos piezas comparten la misma base circular, de <b>2 metros de radio</b>. El cilindro tiene <b>5 metros</b> de altura y el cono, <b>3 metros</b>.</p>[[IMG]]<div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\">La ficha técnica del tanque trae las dos fórmulas de referencia:\\[ V_{\\text{cilindro}} = \\pi \\times r^2 \\times h \\]\\[ V_{\\text{cono}} = \\tfrac{1}{3} \\times \\pi \\times r^2 \\times h \\]</div><p>En la junta del acueducto <b>se proponen dos métodos de cálculo</b> para la capacidad del tanque.</p><div style=\"border:1px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:10px 16px;margin:10px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.55\"><b>Método 1.</b> Como las dos piezas comparten la base, se suman las alturas, \\(5+3=8\\) metros, y se aplica una sola vez la fórmula del cilindro: \\(\\pi \\times 2^2 \\times 8\\).<br><br><b>Método 2.</b> Se calcula aparte el cilindro, \\(\\pi \\times 2^2 \\times 5\\), y aparte el cono, \\(\\tfrac{1}{3} \\times \\pi \\times 2^2 \\times 3\\), y después se suman los dos resultados.</div><p>¿Cuál de los dos métodos da la capacidad del tanque?</p>",
+      "enunciado": "<p>Una vereda de Santa Rosa de Cabal recibió un tanque para almacenar el agua del acueducto comunal. El tanque está formado por un <b>cuerpo cilíndrico</b> rematado arriba por un <b>cono</b>, y las dos piezas comparten la misma base circular, de <b>2 metros de radio</b>. El cilindro tiene <b>5 metros</b> de altura y el cono, <b>3 metros</b>.</p>[[IMG]]<div style=\"text-align:center;font-weight:700;color:#A8132F;margin:14px 0 0 0\">La ficha técnica del tanque trae las dos fórmulas de referencia</div><div style=\"text-align:center;margin:14px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\[ V_{\\text{cilindro}} = \\pi \\times r^2 \\times h \\]</div></div><div style=\"text-align:center;margin:14px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\[ V_{\\text{cono}} = \\tfrac{1}{3} \\times \\pi \\times r^2 \\times h \\]</div><div style=\"font-size:14px;color:#5B534C;margin-top:6px\">donde \\(r\\) es el radio de la base y \\(h\\), la altura de la pieza</div></div><p>En la junta del acueducto <b>se proponen dos métodos de cálculo</b> para la capacidad del tanque.</p><div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:12px 18px;margin:14px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 1.</b> Como las dos piezas comparten la base, se suman las alturas, \\(5+3=8\\) metros, y se aplica una sola vez la fórmula del cilindro: \\(\\pi \\times 2^2 \\times 8\\).</div><div style=\"margin:8px 0;line-height:1.55\"><b style=\"color:#A8132F\">Método 2.</b> Se calcula aparte el cilindro, \\(\\pi \\times 2^2 \\times 5\\), y aparte el cono, \\(\\tfrac{1}{3} \\times \\pi \\times 2^2 \\times 3\\), y después se suman los dos resultados.</div></div><p>¿Cuál de los dos métodos da la capacidad del tanque?</p>",
       "opciones": {
         "A": "El método 1, porque las dos piezas comparten la base: son \\(32\\,\\pi\\) metros cúbicos.",
-        "B": "El método 2, pero contando solo el cuerpo cilíndrico: son \\(20\\,\\pi\\) metros cúbicos.",
+        "B": "El método 2, porque el remate cónico aporta un tercio: son \\(24\\,\\pi\\) metros cúbicos.",
         "C": "Ninguno, porque en las dos fórmulas va el diámetro: son \\(96\\,\\pi\\) metros cúbicos.",
-        "D": "El método 2, porque el remate cónico aporta un tercio: son \\(24\\,\\pi\\) metros cúbicos."
+        "D": "El método 2, pero contando solo el cuerpo cilíndrico: son \\(20\\,\\pi\\) metros cúbicos."
       },
-      "clave": "D",
+      "clave": "B",
       "justificacion_correcta": "La opción «El método 2, porque el remate cónico aporta un tercio» es correcta porque cada pieza tiene su propia fórmula: el cilindro da \\(\\pi \\times 2^2 \\times 5 = 20\\pi\\) metros cúbicos y el cono, \\(\\tfrac{1}{3} \\times \\pi \\times 2^2 \\times 3 = 4\\pi\\); al sumarlos quedan \\(24\\pi\\) metros cúbicos. El primer método trata el cono como si fuera cilindro, y un cono de la misma base y la misma altura cabe tres veces dentro de un cilindro.",
       "opciones_incorrectas": {
         "A": "Estirar el cilindro hasta los 8 metros llena también el espacio que el cono deja vacío por fuera de sus paredes inclinadas, y por eso sobreestima la capacidad en \\(8\\,\\pi\\) metros cúbicos.",
-        "B": "El cuerpo cilíndrico es solo una de las dos piezas del tanque, así que quedarse con él deja por fuera el agua que cabe en el remate.",
-        "C": "En las dos fórmulas la letra \\(r\\) es el radio, que ya viene dado como 2 metros; usar el diámetro cuadruplica los dos volúmenes."
+        "C": "En las dos fórmulas la letra \\(r\\) es el radio, que ya viene dado como 2 metros; usar el diámetro cuadruplica los dos volúmenes.",
+        "D": "El cuerpo cilíndrico es solo una de las dos piezas del tanque, así que quedarse con él deja por fuera el agua que cabe en el remate."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q16.png",
       "imagen_alt": "Esquema del tanque del acueducto: un cuerpo cilíndrico de cinco metros de altura rematado por un cono de tres metros, ambos sobre una base circular de dos metros de radio."
@@ -488,17 +502,17 @@
       "que_evalua": "La habilidad para calcular el área de una planta en forma de ele, sin que se ofrezca la fórmula, y convertirla en cantidad de cajas de baldosa.",
       "enunciado": "<p>El salón comunal de un barrio de Villavicencio tiene la planta en forma de ele que aparece en el plano: el lote completo es un rectángulo de <b>12 metros por 8 metros</b>, pero la esquina de arriba a la derecha, de <b>5 metros por 3 metros</b>, quedó destinada a patio descubierto y no se enchapa.</p>[[IMG]]<p>La junta va a comprar cajas de baldosa y cada caja alcanza para <b>1,5 metros cuadrados</b> de piso.</p><p>¿Cuántas cajas de baldosa hacen falta para enchapar el piso del salón?</p>",
       "opciones": {
-        "A": "Alcanzan 54 cajas, que son las que cubren la ele una vez descontado el patio descubierto.",
+        "A": "Bastan 40 cajas, las que cubren únicamente la franja más ancha de la planta del salón.",
         "B": "Hacen falta 64 cajas, las que cubren el lote completo de doce metros por ocho.",
-        "C": "Bastan 40 cajas, las que cubren únicamente la franja más ancha de la planta del salón.",
+        "C": "Alcanzan 54 cajas, que son las que cubren la ele una vez descontado el patio descubierto.",
         "D": "Se necesitan 50 cajas, las que quedan al descontar un patio de siete metros por tres."
       },
-      "clave": "A",
+      "clave": "C",
       "justificacion_correcta": "La opción «Alcanzan 54 cajas, que son las que cubren la ele una vez descontado el patio» es correcta porque la región por cubrir es la ele y no el rectángulo entero. El lote completo mide \\(12 \\times 8 = 96\\) metros cuadrados y el patio ocupa \\(5 \\times 3 = 15\\), de modo que se enchapan \\(96-15=81\\) metros cuadrados. Como cada caja alcanza para \\(1{,}5\\) metros cuadrados, hacen falta \\(81 \\div 1{,}5 = 54\\) cajas.",
       "opciones_incorrectas": {
         "B": "Comprar para el lote completo paga los quince metros cuadrados del patio, que quedan descubiertos, y eso son diez cajas de más que nadie va a instalar.",
-        "C": "Quedarse con la franja más ancha del plano deja sin enchapar el resto de la ele, que también es piso del salón.",
-        "D": "El plano rotula el patio en 5 metros por 3 y no en 7 por 3: los 7 metros son el lado de arriba de la ele, no un lado del patio."
+        "D": "El plano rotula el patio en 5 metros por 3 y no en 7 por 3: los 7 metros son el lado de arriba de la ele, no un lado del patio.",
+        "A": "Quedarse con la franja más ancha del plano deja sin enchapar el resto de la ele, que también es piso del salón."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q17.png",
       "imagen_alt": "Plano de la planta del salón comunal en forma de ele, acotada en doce por ocho metros, con el patio descubierto de cinco por tres metros en la esquina superior derecha."
@@ -513,7 +527,7 @@
       "dificultad": "ALTA",
       "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
       "que_evalua": "La habilidad para valorar una decisión tomada sobre conteos absolutos cuando las dos series comparadas provienen de totales muy distintos.",
-      "enunciado": "<p>La rectora de un colegio de Ipiales tiene que renovar el contrato de la ruta escolar y le llegaron dos propuestas, la de la empresa <b>Andina</b> y la de la empresa <b>Galeras</b>. La secretaría le entregó dos cosas: una gráfica con el número de buses que llegaron tarde al colegio en cada uno de los cuatro últimos meses y una tabla con los buses que despacha cada empresa al mes.</p>[[IMG]]<table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Empresa</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Buses despachados por mes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Andina</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">Galeras</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">10</td></tr></table><p>La secretaria <b>concluye que</b> conviene contratar a Galeras, porque en la gráfica sus barras de retraso nunca superan a las de Andina.</p><p>¿Es acertada esa conclusión y cuál empresa conviene contratar?</p>",
+      "enunciado": "<p>La rectora de un colegio de Ipiales tiene que renovar el contrato de la ruta escolar y le llegaron dos propuestas, la de la empresa <b>Andina</b> y la de la empresa <b>Galeras</b>. La secretaría le entregó dos cosas: una gráfica con el número de buses que llegaron tarde al colegio en cada uno de los cuatro últimos meses y una tabla con los buses que despacha cada empresa al mes.</p>[[IMG]]<div style=\"text-align:center\"><div style=\"display:inline-block;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden;margin:14px 0\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Empresa</th><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Buses despachados por mes</th></tr><tr><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Andina</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">30</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Galeras</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">10</td></tr></table></div></div><p>La secretaria <b>concluye que</b> conviene contratar a Galeras, porque en la gráfica sus barras de retraso nunca superan a las de Andina.</p><p>¿Es acertada esa conclusión y cuál empresa conviene contratar?</p>",
       "opciones": {
         "A": "Sí es acertada, porque en la gráfica las barras de Galeras siempre quedan por debajo.",
         "B": "Sí es acertada, porque Galeras acumuló cinco buses retrasados y Andina llegó a ocho.",
@@ -540,19 +554,19 @@
       "dificultad": "ALTA",
       "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
       "que_evalua": "La habilidad para valorar una comparación de posibilidades hecha sobre el número de premios sin ponerlo en relación con las boletas vendidas.",
-      "enunciado": "<p>En un colegio de Sogamoso, cuatro cursos organizaron rifas para financiar la salida pedagógica y las cuatro se sortean el mismo viernes. Cada curso vendió una cantidad distinta de boletas y repartió una cantidad distinta de premios, tal como quedó consignado en el acta de la coordinación.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Curso</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Boletas vendidas</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Boletas premiadas</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">601</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">80</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">4</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">602</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">75</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">6</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">603</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">100</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">7</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">604</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">3</td></tr></table><p>Un estudiante alcanza a comprar una sola boleta y quiere la rifa en la que tenga la mayor posibilidad de ganarse un premio.</p><p>¿Cuál de las cuatro rifas le conviene y por qué?</p>",
+      "enunciado": "<p>En un colegio de Sogamoso, cuatro cursos organizaron rifas para financiar la salida pedagógica y las cuatro se sortean el mismo viernes. Cada curso vendió una cantidad distinta de boletas y repartió una cantidad distinta de premios, tal como quedó consignado en el acta de la coordinación.</p><div style=\"text-align:center\"><div style=\"display:inline-block;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden;margin:14px 0\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Curso</th><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Boletas vendidas</th><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Boletas premiadas</th></tr><tr><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">601</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">80</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">4</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">602</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">75</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">6</td></tr><tr><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">603</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">100</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">7</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">604</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">50</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">3</td></tr></table></div></div><p>Un estudiante alcanza a comprar una sola boleta y quiere la rifa en la que tenga la mayor posibilidad de ganarse un premio.</p><p>¿Cuál de las cuatro rifas le conviene y por qué?</p>",
       "opciones": {
-        "A": "La del curso 603, porque repartió más premios que cualquiera de los otros tres cursos.",
-        "B": "La del curso 602, porque premió 6 de sus 75 boletas y esa es la mayor parte premiada.",
+        "A": "La del curso 602, porque premió 6 de sus 75 boletas y esa es la mayor parte premiada.",
+        "B": "La del curso 603, porque repartió más premios que cualquiera de los otros tres cursos.",
         "C": "La del curso 604, porque es la que menos boletas vendió de las cuatro que se sortean.",
         "D": "La del curso 601, porque repartió sus 4 premios entre solo 80 boletas vendidas."
       },
-      "clave": "B",
+      "clave": "A",
       "justificacion_correcta": "La opción «La del curso 602, porque premió 6 de sus 75 boletas» es correcta porque la posibilidad de ganar con una sola boleta no depende de cuántos premios haya sino de qué parte del total está premiada. Al dividir en cada curso las boletas premiadas entre las vendidas quedan \\(4 \\div 80 = 0{,}05\\), \\(6 \\div 75 = 0{,}08\\), \\(7 \\div 100 = 0{,}07\\) y \\(3 \\div 50 = 0{,}06\\); el mayor de esos cocientes es el del curso 602.",
       "opciones_incorrectas": {
-        "A": "Los siete premios del curso 603 se reparten entre cien boletas, y ese curso vendió más que todos los demás: siete de cien no es la mejor parte premiada de las cuatro.",
         "C": "Vender pocas boletas no basta: ese curso premió tres de cincuenta, que es una parte menor que la de otra de las rifas.",
-        "D": "Cuatro premios entre ochenta boletas es la menor parte premiada de las cuatro rifas del acta."
+        "D": "Cuatro premios entre ochenta boletas es la menor parte premiada de las cuatro rifas del acta.",
+        "B": "Los siete premios del curso 603 se reparten entre cien boletas, y ese curso vendió más que todos los demás: siete de cien no es la mejor parte premiada de las cuatro."
       }
     },
     {
@@ -565,25 +579,25 @@
       "dificultad": "ALTA",
       "estandar": "Interpreto, produzco y comparo representaciones gráficas adecuadas para presentar diversos tipos de datos (diagramas de barras, diagramas circulares.)",
       "que_evalua": "La habilidad para valorar cuatro representaciones circulares de un mismo conjunto de datos y reconocer la que reparte los grados en proporción a las frecuencias.",
-      "enunciado": "<p>El personero de un colegio de Barrancabermeja les preguntó a <b>200 estudiantes</b> cómo llegan cada mañana y organizó las respuestas en la siguiente tabla de frecuencias.</p><table style=\"border-collapse:collapse;margin:10px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Medio de transporte</th><th style=\"border:1px solid #C7163C;background:#F1ECE3;font-weight:700;color:#A8132F;padding:7px 14px;text-align:center\">Estudiantes</th></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">A pie</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">80</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">En bus</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">50</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">En bicicleta</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">40</td></tr><tr><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">En moto</td><td style=\"border:1px solid #C7163C;padding:7px 14px;text-align:center\">30</td></tr></table><p>Ahora tiene que llevar esos mismos datos a un <b>diagrama circular</b> para la cartelera y dibujó cuatro repartos posibles de los 360 grados de la circunferencia entre los cuatro medios de transporte.</p><p>¿Cuál de esos cuatro diagramas representa correctamente los datos de la tabla?</p>",
+      "enunciado": "<p>El personero de un colegio de Barrancabermeja les preguntó a <b>200 estudiantes</b> cómo llegan cada mañana y organizó las respuestas en la siguiente tabla de frecuencias.</p><div style=\"text-align:center\"><div style=\"display:inline-block;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden;margin:14px 0\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Medio de transporte</th><th style=\"background:#C7163C;color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Estudiantes</th></tr><tr><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">A pie</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">80</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">En bus</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">50</td></tr><tr><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">En bicicleta</td><td style=\"background:#FBF7F3;padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">40</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">En moto</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">30</td></tr></table></div></div><p>Ahora tiene que llevar esos mismos datos a un <b>diagrama circular</b> para la cartelera y dibujó cuatro repartos posibles de los 360 grados de la circunferencia entre los cuatro medios de transporte.</p><p>¿Cuál de esos cuatro diagramas representa correctamente los datos de la tabla?</p>",
       "opciones": {
         "A": "",
         "B": "",
         "C": "",
         "D": ""
       },
-      "clave": "D",
+      "clave": "B",
       "justificacion_correcta": "La opción con los sectores de 144, 90, 72 y 54 grados es correcta porque los 360 grados de la circunferencia se reparten entre los 200 encuestados, lo que da \\(360 \\div 200 = 1{,}8\\) grados por estudiante. Multiplicando cada frecuencia por \\(1{,}8\\) quedan \\(80 \\times 1{,}8 = 144\\) grados para quienes llegan a pie, \\(50 \\times 1{,}8 = 90\\) para el bus, \\(40 \\times 1{,}8 = 72\\) para la bicicleta y \\(30 \\times 1{,}8 = 54\\) para la moto, y los cuatro suman los 360 grados.",
       "opciones_incorrectas": {
         "A": "Ese diagrama parte la circunferencia en cuatro sectores iguales de 90 grados, cosa que solo valdría si los cuatro medios de transporte tuvieran la misma cantidad de estudiantes.",
-        "B": "Las cuatro medidas de ese diagrama son las correctas, pero quedaron asignadas al revés: el sector más grande le corresponde al medio con menos estudiantes.",
-        "C": "En ese diagrama el sector del bus y el de la bicicleta están intercambiados, de modo que a 50 estudiantes les toca menos superficie que a 40."
+        "C": "En ese diagrama el sector del bus y el de la bicicleta están intercambiados, de modo que a 50 estudiantes les toca menos superficie que a 40.",
+        "D": "Las cuatro medidas de ese diagrama son las correctas, pero quedaron asignadas al revés: el sector más grande le corresponde al medio con menos estudiantes."
       },
       "opciones_imagenes": {
         "A": "assets/banco-mat-9-p3/o20a.png",
-        "B": "assets/banco-mat-9-p3/o20b.png",
+        "B": "assets/banco-mat-9-p3/o20d.png",
         "C": "assets/banco-mat-9-p3/o20c.png",
-        "D": "assets/banco-mat-9-p3/o20d.png"
+        "D": "assets/banco-mat-9-p3/o20b.png"
       }
     }
   ]
