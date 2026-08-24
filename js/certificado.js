@@ -123,6 +123,40 @@ function _fechaLarga(d) {
   try { return `${d.getDate()} de ${MESES[d.getMonth()]} de ${d.getFullYear()}`; } catch (_) { return ''; }
 }
 
+// Ajusta el nombre del estudiante al ancho disponible del certificado sin depender de un
+// tamaño fijo: primero reduce la fuente hasta que quepa en una línea, y si el nombre sigue
+// sin caber (varios apellidos), lo parte en dos líneas balanceadas por el espacio más cercano
+// al centro y vuelve a reducir la fuente hasta que ambas líneas encajen. Así el diseño se
+// mantiene elegante y centrado sin importar cuántas palabras tenga el nombre.
+function _ajustarNombre(doc, texto, maxWidth) {
+  const FONT_MAX = 30, FONT_MIN_1L = 16, FONT_MIN_2L = 14;
+  doc.setFont('times', 'bolditalic');
+  let size = FONT_MAX;
+  doc.setFontSize(size);
+  while (size > FONT_MIN_1L && doc.getTextWidth(texto) > maxWidth) {
+    size -= 0.5;
+    doc.setFontSize(size);
+  }
+  if (doc.getTextWidth(texto) <= maxWidth) return { lineas: [texto], size };
+
+  const palabras = texto.split(' ').filter(Boolean);
+  let corte = Math.ceil(palabras.length / 2), mejorDif = Infinity;
+  for (let i = 1; i < palabras.length; i++) {
+    const dif = Math.abs(palabras.slice(0, i).join(' ').length - palabras.slice(i).join(' ').length);
+    if (dif < mejorDif) { mejorDif = dif; corte = i; }
+  }
+  const linea1 = palabras.slice(0, corte).join(' ') || texto;
+  const linea2 = palabras.slice(corte).join(' ');
+
+  size = FONT_MAX * 0.8;
+  doc.setFontSize(size);
+  while (size > FONT_MIN_2L && (doc.getTextWidth(linea1) > maxWidth || doc.getTextWidth(linea2) > maxWidth)) {
+    size -= 0.5;
+    doc.setFontSize(size);
+  }
+  return { lineas: linea2 ? [linea1, linea2] : [linea1], size };
+}
+
 /**
  * Genera y descarga el certificado de reconocimiento en PDF (A4 VERTICAL), identidad IDEA.
  * @param {object} p
@@ -208,13 +242,20 @@ export async function generarCertificadoExcelenciaPDF({ estudiante, institucion,
   doc.text('Es otorgado a', cx, y, { align: 'center' });
   y += 16;
 
-  // Nombre del estudiante (cursiva elegante, como en el modelo).
-  doc.setFont('times', 'bolditalic'); doc.setFontSize(30); doc.setTextColor(...INK);
-  doc.text(String(estudiante?.nombre || 'N/D'), cx, y, { align: 'center' });
-  y += 4;
-  doc.setDrawColor(...ORO); doc.setLineWidth(0.6); doc.line(cx - 58, y + 1, cx + 58, y + 1);
+  // Nombre del estudiante (cursiva elegante, como en el modelo). El tamaño de fuente y el
+  // número de líneas se calculan automáticamente según el ancho real del nombre, así que se
+  // mantiene centrado y dentro del margen sin importar cuántos apellidos tenga la persona.
+  const nombreMaxWidth = 150; // mm, igual al ancho de envoltura del cuerpo del certificado
+  const { lineas: lineasNombre, size: sizeNombre } = _ajustarNombre(doc, String(estudiante?.nombre || 'N/D'), nombreMaxWidth);
+  doc.setFont('times', 'bolditalic'); doc.setFontSize(sizeNombre); doc.setTextColor(...INK);
+  const lineHeightNombre = sizeNombre * 0.42;
+  lineasNombre.forEach((linea, i) => doc.text(linea, cx, y + i * lineHeightNombre, { align: 'center' }));
+  const anchoNombre = Math.max(...lineasNombre.map(l => doc.getTextWidth(l)));
+  y += (lineasNombre.length - 1) * lineHeightNombre + 4;
+  const mediaLinea = Math.min(58, Math.max(40, anchoNombre / 2 + 6));
+  doc.setDrawColor(...ORO); doc.setLineWidth(0.6); doc.line(cx - mediaLinea, y + 1, cx + mediaLinea, y + 1);
   doc.setFillColor(...ORO);
-  [-62, 62].forEach(dx => { const xx = cx + dx; doc.triangle(xx, y - 0.4, xx + 2, y + 1, xx, y + 2.4, 'F'); doc.triangle(xx, y - 0.4, xx - 2, y + 1, xx, y + 2.4, 'F'); });
+  [-(mediaLinea + 4), (mediaLinea + 4)].forEach(dx => { const xx = cx + dx; doc.triangle(xx, y - 0.4, xx + 2, y + 1, xx, y + 2.4, 'F'); doc.triangle(xx, y - 0.4, xx - 2, y + 1, xx, y + 2.4, 'F'); });
   y += 8;
 
   // El número de documento NO se imprime: el certificado es un papel que se entrega en mano y se
