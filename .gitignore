@@ -3,3 +3,9 @@ node_modules/
 Thumbs.db
 *.log
 scratchpad/
+
+# graphify — costo local y hook con ruta absoluta de esta maquina, nunca se versionan
+graphify-out/cost.json
+graphify-out/.graphify_python
+graphify-out/.graph.html.stale
+.claude/settings.json
