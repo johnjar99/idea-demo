@@ -247,8 +247,8 @@ export async function exportarCuadernilloOriginalPDF(cuadernillo) {
     'y de practica, sin modificacion del contenido original.',
     '',
     'La portada, contraportada, diseno editorial y herramientas de analisis son',
-    'propiedad de la Plataforma IDEA - Instrumento de Interpretacion de Datos para',
-    'la Evaluacion del Aprendizaje. Autor: Alvaro Raul Cordoba Belalcazar.'
+    'propiedad de la Plataforma IDEA - Instrumento de Interpretacion de Datos de',
+    'Evaluacion para el Aprendizaje. Autor: Alvaro Raul Cordoba Belalcazar.'
   ];
   const credBoxX = 60;
   const credBoxW = pW - 120;

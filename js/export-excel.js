@@ -117,7 +117,7 @@ export async function exportarResultadoEstudianteExcel(aplicacion, cuadernillo) 
   wsP.mergeCells('A1:F1'); wsP.getCell('A1').value = 'INSTRUMENTO IDEA · RESULTADO INDIVIDUAL';
   wsP.getCell('A1').font = fontBold(18, COLOR.rojo); wsP.getCell('A1').alignment = alignCenter;
   wsP.getRow(1).height = 32;
-  wsP.mergeCells('A2:F2'); wsP.getCell('A2').value = 'Instrumento de Interpretación de Datos para la Evaluación del Aprendizaje';
+  wsP.mergeCells('A2:F2'); wsP.getCell('A2').value = 'Instrumento de Interpretación de Datos de Evaluación para el Aprendizaje';
   wsP.getCell('A2').font = fontNormal(11); wsP.getCell('A2').alignment = alignCenter;
 
   const datosP = [

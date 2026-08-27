@@ -310,7 +310,7 @@ export async function generarCertificadoExcelenciaPDF({ estudiante, institucion,
 
   // Pie IDEA.
   doc.setFont('helvetica', 'italic'); doc.setFontSize(8); doc.setTextColor(...GRIS);
-  doc.text('Instrumento de Interpretación de Datos para la Evaluación del Aprendizaje', cx, H - 16, { align: 'center' });
+  doc.text('Instrumento de Interpretación de Datos de Evaluación para el Aprendizaje', cx, H - 16, { align: 'center' });
 
   const slug = String(estudiante?.nombre || 'estudiante').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   doc.save(`certificado-reconocimiento-${slug}.pdf`);

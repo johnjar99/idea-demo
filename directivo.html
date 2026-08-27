@@ -82,7 +82,8 @@
     </nav>
 
     <div class="doc-acciones-grid animate-fade-in" style="animation-delay:120ms;margin-bottom:20px">
-      <button id="btn-ir-plan-mejora" class="doc-accion doc-accion--destacada"><span class="doc-accion__ic">📋</span><span>Planes de Mejora · Fase III</span></button>
+      <!-- «Planes de Mejora · Fase III» RETIRADO el 27-ago-2026, igual que en producción.
+           Se quitó junto con su listener: sin él, getElementById daba null y rompía el script. -->
       <button id="btn-exportar-consolidado-pdf" class="doc-accion"><span class="doc-accion__ic">📕</span><span>Reporte institucional PDF</span></button>
       <a href="docente.html" class="doc-accion"><span class="doc-accion__ic">🔎</span><span>Vista por grupo</span></a>
       <a href="manager.html" class="doc-accion"><span class="doc-accion__ic">⚙️</span><span>Gestionar mi institución</span></a>
@@ -592,8 +593,6 @@
         }
       }
     }
-
-    document.getElementById('btn-ir-plan-mejora').addEventListener('click', () => { location.href = 'plan-mejora.html'; });
 
     document.getElementById('btn-exportar-consolidado-pdf').addEventListener('click', async () => {
       if (!apps.length) { toast('Aún no hay aplicaciones para incluir en el reporte.', 'info'); return; }
