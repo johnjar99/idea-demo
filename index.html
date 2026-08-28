@@ -131,6 +131,26 @@
     .idx-cta-final h3{position:relative;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,3vw,30px);letter-spacing:-.015em;margin:0 0 6px}
     .idx-cta-final p{position:relative;color:rgba(255,255,255,.8);font-size:14.5px;margin:0 0 18px}
     .idx-cta-final .b-prim{position:relative;background:#fff;color:#C7163C}
+    /* ---- Ventana emergente de contacto (vista inicial) ---- */
+    .ct-ov{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:22px;
+      background:rgba(27,23,38,.55);backdrop-filter:blur(3px)}
+    .ct-ov.abierto{display:flex}
+    .ct-card{position:relative;width:min(560px,100%);background:#fff;border-radius:22px;padding:34px 32px 26px;
+      box-shadow:0 40px 90px -30px rgba(27,23,38,.55);animation:ctIn .22s ease-out}
+    @keyframes ctIn{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+    .ct-x{position:absolute;top:14px;right:16px;width:34px;height:34px;border:none;border-radius:10px;
+      background:#F5F2F8;color:#6B6478;font-size:19px;line-height:1;cursor:pointer}
+    .ct-x:hover{background:#EEEAF2;color:#241B33}
+    .ct-card h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:29px;letter-spacing:-.02em;
+      color:var(--navy);margin:0 0 6px}
+    .ct-sub{color:var(--muted);font-size:14.5px;margin:0 0 22px;line-height:1.5}
+    .ct-item{display:flex;align-items:center;gap:14px;padding:13px 15px;border:1.5px solid var(--line);
+      border-radius:13px;margin-bottom:10px;text-decoration:none;transition:border-color .16s,box-shadow .16s}
+    .ct-item:hover{border-color:#E0D9E8;box-shadow:0 10px 24px -16px rgba(27,23,38,.34)}
+    .ct-ic{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;font-size:19px;background:#FDECEF}
+    .ct-k{font-size:11.5px;font-weight:700;letter-spacing:.09em;color:#9C95A6;text-transform:uppercase}
+    .ct-v{font-size:16px;font-weight:700;color:var(--navy);word-break:break-word}
+    .ct-pie{margin:16px 0 0;font-size:12.5px;color:#9C95A6;text-align:center}
     .idx-foot{text-align:center;padding:18px;color:#9C95A6;font-size:12px}.idx-foot a{color:var(--red2);text-decoration:none}
 
     /* ===== ACCESO: tarjeta limpia + nube de puntos sutil + acento holográfico ===== */
@@ -199,6 +219,7 @@
         <div class="idx-nav-inner">
           <div class="brand"><img src="assets/logo-idea.png" alt="Logo IDEA"><b>Instrumento IDEA</b></div>
           <nav class="idx-nav-links">
+            <a class="b-ghost" href="#contacto" data-contacto>Contacto</a>
             <a class="b-prim" data-goto="login" href="#acceso">Iniciar sesión</a>
           </nav>
         </div>
@@ -239,7 +260,7 @@
         <a class="b-prim" data-goto="login" href="#acceso">Iniciar sesión →</a>
       </div>
     </div>
-    <footer class="idx-foot">© Instrumento IDEA · Álvaro Raúl Córdoba Belalcázar · <a href="mailto:raulcordmath@gmail.com">raulcordmath@gmail.com</a></footer>
+    <footer class="idx-foot">© Instrumento IDEA · <a href="#contacto" data-contacto>Contáctanos</a></footer>
   </div>
 
   <!-- =================== VISTA 2: ACCESO (tarjeta limpia + puntos) =================== -->
@@ -278,7 +299,7 @@
         </div>
       </div>
       </div>
-      <footer class="idx-foot">© Instrumento IDEA · Álvaro Raúl Córdoba Belalcázar · <a href="mailto:raulcordmath@gmail.com">raulcordmath@gmail.com</a></footer>
+      <footer class="idx-foot">© Instrumento IDEA · <a href="#contacto" data-contacto>Contáctanos</a></footer>
     </div>
   </div>
 
@@ -394,6 +415,54 @@
         document.getElementById('login-sabio').innerHTML=sabioSVG('celebrando',86); toast(`¡Bienvenido, ${s.nombre_completo.split(' ')[0]}!`,'exito');
         setTimeout(()=>window.location.href=REDIRECT_POR_ROL[s.rol],850);
       }catch(err){ document.getElementById('err-login').textContent=err.message; document.getElementById('login-sabio').innerHTML=sabioSVG('pensativo',86);} });
+  </script>
+  <!-- =================== Ventana emergente de CONTACTO =================== -->
+  <div class="ct-ov" id="ct-ov" role="dialog" aria-modal="true" aria-labelledby="ct-tit">
+    <div class="ct-card">
+      <button class="ct-x" id="ct-x" aria-label="Cerrar">&times;</button>
+      <h3 id="ct-tit">Hablemos de tu institución</h3>
+      <p class="ct-sub">Instrumento de Interpretación de Datos de Evaluación para el Aprendizaje. Escríbenos y te mostramos la plataforma funcionando con los datos de tu institución.</p>
+
+      <a class="ct-item" href="https://wa.me/573143527039" target="_blank" rel="noopener">
+        <span class="ct-ic">📱</span>
+        <span><span class="ct-k">Celular · WhatsApp</span><br><span class="ct-v">314 352 7039</span></span>
+      </a>
+      <a class="ct-item" href="mailto:contacto@instrumentoidea.com">
+        <span class="ct-ic">✉️</span>
+        <span><span class="ct-k">Correo</span><br><span class="ct-v">contacto@instrumentoidea.com</span></span>
+      </a>
+      <a class="ct-item" href="https://instrumentoidea.com" target="_blank" rel="noopener">
+        <span class="ct-ic">🌐</span>
+        <span><span class="ct-k">Plataforma</span><br><span class="ct-v">instrumentoidea.com</span></span>
+      </a>
+
+      <p class="ct-pie">Evaluación diagnóstica formativa · Pasto, Nariño · Colombia</p>
+    </div>
+  </div>
+
+  <script>
+    // Ventana de contacto. Se abre desde cualquier enlace con [data-contacto]; se cierra con la
+    // X, con Escape o pulsando fuera de la tarjeta. Va aparte de la logica de vistas del index
+    // para que no dependa de ella.
+    (function () {
+      const ov = document.getElementById('ct-ov');
+      if (!ov) return;
+      const abrir = (e) => { if (e) e.preventDefault(); ov.classList.add('abierto'); };
+      const cerrar = () => ov.classList.remove('abierto');
+      document.querySelectorAll('[data-contacto]').forEach(el => el.addEventListener('click', abrir));
+      document.getElementById('ct-x').addEventListener('click', cerrar);
+      ov.addEventListener('click', (e) => { if (e.target === ov) cerrar(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && ov.classList.contains('abierto')) cerrar(); });
+      // Si alguna vez se quiere que salga sola la PRIMERA vez de cada visitante, basta con
+      // llamar a esto; no se activa por defecto para no molestar a quien entra a diario.
+      window.abrirContactoUnaVez = function () {
+        try {
+          if (localStorage.getItem('idea_contacto_visto')) return;
+          localStorage.setItem('idea_contacto_visto', '1');
+        } catch (_) { }
+        setTimeout(abrir, 1200);
+      };
+    })();
   </script>
 </body>
 </html>
