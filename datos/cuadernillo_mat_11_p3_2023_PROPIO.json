@@ -315,20 +315,20 @@
       "cmc": "Geometría",
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
-      "que_evalua": "La habilidad para resolver un problema de área compuesta detectando que un cálculo ajeno trató como rectángulos dos regiones que no lo son.",
-      "enunciado": "<p>La alcaldía le notificó al propietario de un lote que debe ceder una franja de terreno para ampliar la vía, y él quiere saber con cuánta superficie queda.</p><p>La figura muestra el lote con forma de trapecio y la franja que hay que ceder al municipio. El propietario hizo esta cuenta para saber <b>con cuánta superficie queda</b>.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">La cuenta del propietario</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Área del lote: \\(12 \\times 6 = 72\\ \\text{m}^{2}\\).</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Área de la franja: \\(12 \\times 2 = 24\\ \\text{m}^{2}\\).</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Restar: \\(72 - 24 = 48\\ \\text{m}^{2}\\).</div></div><p>¿Es correcta esa cuenta y con cuánta superficie queda el lote?</p>",
+      "que_evalua": "La habilidad para resolver un problema de área compuesta reconociendo que las dos regiones son trapecios y no rectángulos.",
+      "enunciado": "<p>La alcaldía le notificó al propietario de un lote que debe ceder una franja de terreno para ampliar la vía, y él quiere saber con cuánta superficie queda.</p><p>La figura muestra el lote con forma de trapecio y la franja que hay que ceder al municipio.</p>[[IMG]]<p>La superficie con que queda el lote después de ceder la franja es</p>",
       "opciones": {
-        "A": "No, porque también la franja es un trapecio, así que al lote le quedan \\(49\\ \\text{m}^{2}\\).",
-        "B": "Sí, porque los lados de \\(12\\) y de \\(6\\) metros bastan para hallar las dos áreas y quedan \\(48\\ \\text{m}^{2}\\).",
-        "C": "No, porque las dos áreas hay que sumarlas en vez de restarlas, así que quedan \\(96\\ \\text{m}^{2}\\).",
-        "D": "No, porque el lote y la franja son trapecios y no rectángulos, así que quedan \\(40\\ \\text{m}^{2}\\)."
+        "A": "\\(49\\ \\text{m}^{2}\\).",
+        "B": "\\(48\\ \\text{m}^{2}\\).",
+        "C": "\\(96\\ \\text{m}^{2}\\).",
+        "D": "\\(40\\ \\text{m}^{2}\\)."
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «No, porque el lote y la franja son trapecios y no rectángulos» es correcta porque el lote tiene bases \\(12\\) y \\(9\\) y altura \\(6\\), con área \\(\\frac{(12+9)}{2}\\times 6 = 63\\ \\text{m}^{2}\\), y la franja tiene bases \\(12\\) y \\(11\\) y altura \\(2\\), con área \\(\\frac{(12+11)}{2}\\times 2 = 23\\ \\text{m}^{2}\\). La diferencia es \\(63-23=40\\ \\text{m}^{2}\\).",
+      "justificacion_correcta": "La opción «\\(40\\ \\text{m}^{2}\\)» es correcta porque el lote tiene bases \\(12\\) y \\(9\\) y altura \\(6\\), con área \\(\\frac{(12+9)}{2}\\times 6 = 63\\ \\text{m}^{2}\\), y la franja tiene bases \\(12\\) y \\(11\\) y altura \\(2\\), con área \\(\\frac{(12+11)}{2}\\times 2 = 23\\ \\text{m}^{2}\\). La diferencia es \\(63-23=40\\ \\text{m}^{2}\\).",
       "opciones_incorrectas": {
-        "A": "Corregir solo la franja deja el lote calculado como rectángulo de \\(12\\) por \\(6\\), y ese lado superior mide \\(9\\) y no \\(12\\).",
-        "B": "El lado superior del lote mide \\(9\\) metros, de modo que la figura no es un rectángulo y su área no es el producto de esos dos lados.",
-        "C": "Ceder una franja quita superficie, así que la operación que corresponde es restar y no sumar."
+        "A": "Ese resultado corrige solo la franja y deja el lote calculado como rectángulo de \\(12\\) por \\(6\\), cuando su lado superior mide \\(9\\) y no \\(12\\).",
+        "B": "Ese resultado trata las dos regiones como rectángulos, \\(12\\times 6\\) menos \\(12\\times 2\\), y el lado superior del lote mide \\(9\\) metros, de modo que la figura no es un rectángulo.",
+        "C": "Ese resultado suma las dos áreas en vez de restarlas, y ceder una franja quita superficie."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q11.png",
       "imagen_alt": "Lote con forma de trapecio de bases doce y nueve metros y altura seis, con una franja inferior sombreada de dos metros de altura que se cede para la vía."
@@ -503,19 +503,19 @@
       "dificultad": "ALTA",
       "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
       "que_evalua": "La habilidad para ejecutar un plan que involucra el volumen de un cuerpo y reconocer que el área de la base se simplifica al comparar dos volúmenes.",
-      "enunciado": "<p>El operario de un acueducto veredal debe reportar cada mañana qué tanto queda del agua almacenada en el tanque principal que surte a las viviendas.</p><p>La figura muestra el tanque cilíndrico de <b>\\(4\\)</b> metros de diámetro y <b>\\(6\\)</b> metros de altura. El agua alcanza esta mañana <b>\\(3{,}6\\)</b> metros. El operario escribió estos pasos para reportar <b>qué parte de la capacidad está ocupada</b>.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Los pasos del operario</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Volumen total del tanque: \\(\\pi \\times 2^{2} \\times 6\\).</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Volumen ocupado por el agua: \\(\\pi \\times 2^{2} \\times 3{,}6\\).</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Dividir el segundo entre el primero y expresar el resultado como porcentaje.</div></div><p>¿Es correcto ese procedimiento y qué resultado se obtiene?</p>",
+      "enunciado": "<p>El operario de un acueducto veredal debe reportar cada mañana qué tanto queda del agua almacenada en el tanque principal que surte a las viviendas.</p><p>La figura muestra el tanque cilíndrico de <b>\\(4\\)</b> metros de diámetro y <b>\\(6\\)</b> metros de altura. El agua alcanza esta mañana <b>\\(3{,}6\\)</b> metros. El operario escribió estos pasos para reportar <b>qué parte de la capacidad está ocupada</b>.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Los pasos del operario</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Volumen total del tanque: \\(\\pi \\times 2^{2} \\times 6\\).</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Volumen ocupado por el agua: \\(\\pi \\times 2^{2} \\times 3{,}6\\).</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Dividir el segundo entre el primero y expresar el resultado como porcentaje.</div></div><p>Siguiendo esos pasos, la parte de la capacidad que está ocupada es</p>",
       "opciones": {
-        "A": "Sí, y se obtiene el \\(60\\,\\%\\), porque el área de la base se simplifica y basta con dividir \\(3{,}6\\) entre \\(6\\).",
-        "B": "No, porque al dividir los dos volúmenes hay que dividir también los radios, y se obtiene el \\(36\\,\\%\\).",
-        "C": "No, porque el nivel del agua debe compararse con los \\(4\\) metros del diámetro, y se obtiene el \\(90\\,\\%\\).",
-        "D": "Sí, y se obtiene el \\(40\\,\\%\\), porque lo que se reporta es la parte del tanque que todavía está vacía."
+        "A": "el \\(60\\,\\%\\).",
+        "B": "el \\(36\\,\\%\\).",
+        "C": "el \\(90\\,\\%\\).",
+        "D": "el \\(40\\,\\%\\)."
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «Sí, y se obtiene el \\(60\\,\\%\\), porque el área de la base se simplifica» es correcta porque al dividir \\(\\pi \\times 2^{2} \\times 3{,}6\\) entre \\(\\pi \\times 2^{2} \\times 6\\) el factor \\(\\pi \\times 2^{2}\\) desaparece y queda \\(3{,}6\\) entre \\(6\\), que es \\(0{,}6\\). En un cilindro la proporción de volumen coincide con la de altura.",
+      "justificacion_correcta": "La opción «el \\(60\\,\\%\\)» es correcta porque al dividir \\(\\pi \\times 2^{2} \\times 3{,}6\\) entre \\(\\pi \\times 2^{2} \\times 6\\) el factor \\(\\pi \\times 2^{2}\\) desaparece y queda \\(3{,}6\\) entre \\(6\\), que es \\(0{,}6\\). En un cilindro la proporción de volumen coincide con la de altura.",
       "opciones_incorrectas": {
-        "B": "Los radios no se dividen aparte: aparecen como factor en los dos volúmenes y por eso se cancelan al hacer el cociente.",
-        "C": "El diámetro mide el ancho del tanque y no su altura, de modo que el nivel del agua hay que compararlo con los \\(6\\) metros.",
-        "D": "El procedimiento del operario compara el agua con la capacidad total, así que entrega la parte ocupada y no la vacía."
+        "B": "Ese resultado sale de dividir también los radios, y los radios no se dividen aparte: aparecen como factor en los dos volúmenes y por eso se cancelan al hacer el cociente.",
+        "C": "Ese resultado compara el nivel del agua con los \\(4\\) metros del diámetro, y el diámetro mide el ancho del tanque y no su altura, así que hay que compararlo con los \\(6\\) metros.",
+        "D": "Ese resultado es la parte del tanque que todavía está vacía, y el procedimiento compara el agua con la capacidad total, así que entrega la parte ocupada."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q18.png",
       "imagen_alt": "Tanque cilíndrico de cuatro metros de diámetro y seis de altura, con el nivel del agua marcado a tres coma seis metros."

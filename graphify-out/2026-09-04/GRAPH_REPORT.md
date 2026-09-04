@@ -1,16 +1,16 @@
-# Graph Report - idea-demo  (2026-09-04)
+# Graph Report - idea-demo  (2026-08-25)
 
 ## Corpus Check
-- 232 files · ~9,765,915 words
+- 232 files · ~9,863,234 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 542 nodes · 1159 edges · 32 communities (29 shown, 3 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 40 edges (avg confidence: 0.85)
+- 507 nodes · 1125 edges · 31 communities (28 shown, 3 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 40 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `daaf2428`
+- Built from commit: `bf5f4ae2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,40 +42,39 @@
 - generar_webp.py
 - export-pdf.js
 - CLAUDE.md
-- Inventario de material de terceros en los cuadernillos
 
 ## God Nodes (most connected - your core abstractions)
-1. `Inventario de material de terceros en los cuadernillos` - 34 edges
-2. `exportarReporteGrupoExcel()` - 32 edges
-3. `exportarReporteGrupoPDF()` - 31 edges
-4. `conclusionesProfundas()` - 23 edges
-5. `exportarResultadoEstudianteExcel()` - 22 edges
-6. `configArea()` - 19 edges
-7. `generarPlanAccionIA()` - 19 edges
-8. `aciertosDe()` - 16 edges
-9. `logroPorCompetencia()` - 16 edges
+1. `exportarReporteGrupoExcel()` - 32 edges
+2. `exportarReporteGrupoPDF()` - 31 edges
+3. `conclusionesProfundas()` - 23 edges
+4. `exportarResultadoEstudianteExcel()` - 22 edges
+5. `configArea()` - 19 edges
+6. `generarPlanAccionIA()` - 19 edges
+7. `aciertosDe()` - 16 edges
+8. `logroPorCompetencia()` - 16 edges
+9. `nowIso()` - 16 edges
 10. `uuid()` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `exportarReporteGrupoPDF()` --indirect_call--> `logroPorCompetencia()`  [INFERRED]
-  js/export-pdf.js → js/calculo.js
-- `exportarReporteGrupoPDF()` --indirect_call--> `logroPorAfirmacion()`  [INFERRED]
-  js/export-pdf.js → js/calculo.js
-- `exportarReporteGrupoPDF()` --indirect_call--> `logroPorEvidencia()`  [INFERRED]
-  js/export-pdf.js → js/calculo.js
-- `exportarReporteGrupoPDF()` --indirect_call--> `logroPorDimensionSecundaria()`  [INFERRED]
-  js/export-pdf.js → js/calculo.js
-- `exportarReporteGrupoPDF()` --indirect_call--> `logroPorCMC()`  [INFERRED]
-  js/export-pdf.js → js/calculo.js
+- `comparativoIndividual()` --indirect_call--> `logroPorCompetencia()`  [INFERRED]
+  js/analisis.js → js/calculo.js
+- `comparativoIndividual()` --indirect_call--> `logroPorDimensionSecundaria()`  [INFERRED]
+  js/analisis.js → js/calculo.js
+- `datosRadar()` --indirect_call--> `logroPorCompetencia()`  [INFERRED]
+  js/analisis.js → js/calculo.js
+- `matrizHeatmap()` --calls--> `aciertosDe()`  [EXTRACTED]
+  js/analisis.js → js/calculo.js
+- `tasaPorDificultad()` --calls--> `aciertosDe()`  [EXTRACTED]
+  js/analisis.js → js/calculo.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (32 total, 3 thin omitted)
+## Communities (31 total, 3 thin omitted)
 
 ### Community 0 - "analisis.js"
 Cohesion: 0.07
-Nodes (89): _ALIAS_AREA, _areaSlug(), asimetria(), coefVariacion(), comparativoIndividual(), conclusionesProfundas(), correlacionPuntoBiserial(), cuartiles() (+81 more)
+Nodes (91): _ALIAS_AREA, _areaSlug(), asimetria(), coefVariacion(), comparativoIndividual(), conclusionesProfundas(), correlacionPuntoBiserial(), cuartiles() (+83 more)
 
 ### Community 1 - "pedagogia-grado.js"
 Cohesion: 0.27
@@ -87,7 +86,7 @@ Nodes (23): _banda_negra_flowable(), construir_pdf(), contexto_flowables(), cont
 
 ### Community 3 - "sabio-pedagogia.js"
 Cohesion: 0.10
-Nodes (31): abrirAsistenteSabioIA(), autoIniciarGuia(), getDriverFactory(), GUIA_CONTENIDOS, iconoSabio(), iniciarGuiaSabio(), montarBotonGuia(), resaltarElemento() (+23 more)
+Nodes (30): abrirAsistenteSabioIA(), autoIniciarGuia(), getDriverFactory(), GUIA_CONTENIDOS, iconoSabio(), iniciarGuiaSabio(), montarBotonGuia(), resaltarElemento() (+22 more)
 
 ### Community 4 - "generar_pdf_p1.py"
 Cohesion: 0.09
@@ -127,7 +126,7 @@ Nodes (13): buscarPerfil(), cerrarSesion(), _guardarPerfilSesion(), hashPassword
 
 ### Community 13 - "sembrar-demos.js"
 Cohesion: 0.25
-Nodes (11): db, borrarDemos(), cargarDemosTodas(), _clamp(), COLS_DEMO, _completos, _cuadernilloCompleto(), _esDeDemo() (+3 more)
+Nodes (11): INSTITUCION_DEMO, borrarDemos(), cargarDemosTodas(), _clamp(), COLS_DEMO, _completos, _cuadernilloCompleto(), _esDeDemo() (+3 more)
 
 ### Community 14 - "mensajes.js"
 Cohesion: 0.29
@@ -151,7 +150,7 @@ Nodes (5): guardar(), leer(), quitar_rango(), Quita el rango de preguntas y deja
 
 ### Community 19 - "perfiles-fijos.js"
 Cohesion: 0.38
-Nodes (6): cargarUsuariosDemo(), asegurarPerfilesFijos(), construirPerfiles(), hashPassword(), INSTITUCION_DEMO, PASSWORD_DEMO
+Nodes (6): cargarUsuariosDemo(), db, asegurarPerfilesFijos(), construirPerfiles(), hashPassword(), PASSWORD_DEMO
 
 ### Community 20 - "tour.js"
 Cohesion: 0.38
@@ -166,15 +165,11 @@ Cohesion: 0.60
 Nodes (3): cuadernillosLocales(), cuadernillosOcultos(), esEntornoLocal()
 
 ### Community 29 - "export-pdf.js"
-Cohesion: 0.17
-Nodes (26): analisisDistractores(), histogramaPuntajes(), COLOR_NIVEL, _addImagenCanvas(), _addLogo(), agregarSeccionComoPagina(), _aliasDe(), _aliasPorDoc (+18 more)
-
-### Community 31 - "Inventario de material de terceros en los cuadernillos"
-Cohesion: 0.06
-Nodes (34): cien-6-p2-2023  (Ciencias Naturales 6° P2), Inventario de material de terceros en los cuadernillos, lc-11-p1-2023  (Lectura Crítica 11° P1), lect-10-p1-2023  (Lectura Crítica 10° P1), lect-10-p2-2023  (Lectura Crítica 10° P2), lect-11-p2-2023  (Lectura Crítica 11° P2), lect-3-p1-2023  (Lectura Crítica 3° P1), lect-3-p2-2023  (Lectura Crítica 3° P2) (+26 more)
+Cohesion: 0.15
+Nodes (25): analisisDistractores(), histogramaPuntajes(), proyeccionSaber11Parcial(), _addImagenCanvas(), _addLogo(), agregarSeccionComoPagina(), _aliasDe(), _aliasPorDoc (+17 more)
 
 ## Knowledge Gaps
-- **102 isolated node(s):** `ESTRATEGIAS_POR_AREA`, `_ALIAS_AREA`, `NARRATIVA_POR_AREA`, `ALIAS_AREA_BASICA`, `ETIQUETAS_DCE_DEFAULT` (+97 more)
+- **69 isolated node(s):** `graphify`, `ALIAS_AREA_BASICA`, `AREAS`, `ETIQUETAS_DCE_DEFAULT`, `SEMAFORO_CORTES` (+64 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -182,16 +177,16 @@ Nodes (34): cien-6-p2-2023  (Ciencias Naturales 6° P2), Inventario de material 
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `romanoPeriodo()` connect `cuadernillo-pdf-original.js` to `export-pdf.js`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Why does `db` connect `sembrar-demos.js` to `resumenes.js`, `db.js`, `auth.js`, `mensajes.js`, `nowIso`, `seed.js`, `perfiles-fijos.js`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `db` connect `perfiles-fijos.js` to `resumenes.js`, `db.js`, `auth.js`, `sembrar-demos.js`, `mensajes.js`, `nowIso`, `seed.js`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Why does `nowIso()` connect `nowIso` to `db.js`, `utils.js`, `auth.js`, `sembrar-demos.js`, `mensajes.js`, `seed.js`, `perfiles-fijos.js`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `exportarReporteGrupoExcel()` (e.g. with `logroPorAfirmacion()` and `logroPorCompetencia()`) actually correct?**
   _`exportarReporteGrupoExcel()` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `exportarReporteGrupoPDF()` (e.g. with `logroPorAfirmacion()` and `logroPorCMC()`) actually correct?**
   _`exportarReporteGrupoPDF()` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `conclusionesProfundas()` (e.g. with `logroPorAfirmacion()` and `logroPorCompetencia()`) actually correct?**
   _`conclusionesProfundas()` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `ESTRATEGIAS_POR_AREA`, `_ALIAS_AREA`, `NARRATIVA_POR_AREA` to the rest of the system?**
-  _102 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `graphify`, `ALIAS_AREA_BASICA`, `AREAS` to the rest of the system?**
+  _69 weakly-connected nodes found - possible documentation gaps or missing edges._

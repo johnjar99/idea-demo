@@ -77,8 +77,8 @@
       "justificacion_correcta": "La opción «El método 2, porque al igualar los lapiceros queda despejado el cuaderno» es correcta porque las dos compras se escriben como el sistema \\(3c+2l=23000\\) y \\(5c+4l=41000\\). Al multiplicar la primera igualdad por \\(2\\) queda \\(6c+4l=46000\\), y al restarle la segunda se obtiene \\(c=5000\\). Reemplazando ese valor, \\(2l=23000-15000\\), de donde \\(l=4000\\). El método 1 acierta en que el par vale 9.000 pesos, pero de ahí en adelante reparte esos 9.000 a ojo, y ese reparto la situación no lo da.",
       "opciones_incorrectas": {
         "B": "El primer método llega bien a los 9.000 pesos del par, pero después reparte esa suma por tanteo: esos dos precios aplicados a la compra del miércoles dan 42.000 pesos y no los 41.000 que se pagaron.",
-        "D": "Repartir los 9.000 pesos en partes iguales supone que el cuaderno y el lapicero cuestan lo mismo, y con esos precios la compra del lunes daría 22.500 pesos en vez de 23.000.",
-        "A": "Los dos métodos no coinciden: el primero termina en 5.500 y 3.500 pesos, de modo que basta comprobarlo en la compra del miércoles para ver que solo uno de los dos cierra."
+        "A": "Los dos métodos no coinciden: el primero termina en 5.500 y 3.500 pesos, de modo que basta comprobarlo en la compra del miércoles para ver que solo uno de los dos cierra.",
+        "D": "Repartir los 9.000 pesos en partes iguales supone que el cuaderno y el lapicero cuestan lo mismo, y con esos precios la compra del lunes daría 22.500 pesos en vez de 23.000."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q01.png",
       "imagen_alt": "Las dos compras anotadas en el cuaderno de cuentas de la miscelánea, con los cuadernos y los lapiceros de cada una y lo que se pagó, y una tercera tarjeta con la compra de un cuaderno y un lapicero que queda por cobrar."
@@ -103,9 +103,9 @@
       "clave": "A",
       "justificacion_correcta": "La opción «En el paso 2, porque el faltante y el sobrante se suman» es correcta porque subir la cuota de 12.000 a 15.000 pesos no solo cubre los 96.000 que faltaban: además deja 60.000 de sobra, de modo que ese aumento aportó \\(96000+60000=156000\\) pesos en total. Con la diferencia de \\(3000\\) pesos por familia del primer paso, que sí está bien, queda \\(156000 \\div 3000 = 52\\) familias, y el costo de la obra es \\(12000 \\times 52 + 96000 = 720000\\) pesos.",
       "opciones_incorrectas": {
+        "C": "El costo se puede calcular con cualquiera de las dos cuotas y las dos dan el mismo valor, así que el defecto del procedimiento no está en el último paso sino antes, en el manejo del faltante y del sobrante.",
         "B": "El encadenamiento parece limpio, pero restar el sobrante del faltante deja por fuera la mitad del dinero que aporta el aumento de la cuota, y con 12 familias la obra costaría 240.000 pesos, cifra que no cuadra con la cuota alta.",
-        "D": "El número de familias quedó bien hallado, aunque el costo corresponde a lo que se recoge con la cuota de 15.000 pesos sin descontarle los 60.000 que sobran.",
-        "C": "El costo se puede calcular con cualquiera de las dos cuotas y las dos dan el mismo valor, así que el defecto del procedimiento no está en el último paso sino antes, en el manejo del faltante y del sobrante."
+        "D": "El número de familias quedó bien hallado, aunque el costo corresponde a lo que se recoge con la cuota de 15.000 pesos sin descontarle los 60.000 que sobran."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q02.png",
       "imagen_alt": "La asamblea de la junta de acción comunal en el salón del barrio: la presidenta dirige la palabra a los vecinos y por la ventana se ve el parque infantil que se va a arreglar.",
@@ -131,9 +131,9 @@
       "clave": "A",
       "justificacion_correcta": "La opción «Mide 5 metros de ancho y 8 de largo» es correcta porque las dos condiciones tienen que cumplirse a la vez. Si el ancho se llama \\(x\\), el largo es \\(x+3\\) y la condición sobre la superficie lleva a \\(x(x+3)=40\\), es decir \\(x^2+3x-40=0\\). Al factorizar queda \\((x+8)(x-5)=0\\) y la única raíz que sirve como medida es \\(x=5\\), con lo cual el largo resulta \\(5+3=8\\) metros.",
       "opciones_incorrectas": {
+        "B": "Cumplir la condición de la superficie no basta: hay muchas parejas de lados cuyo producto es 40 y el pliego pide además que se diferencien en 3 metros, cosa que esas dos medidas no hacen.",
         "C": "La raíz negativa de la ecuación no sirve como medida de un lado, y con esas dos medidas la superficie del tablero llegaría a 88 metros cuadrados.",
-        "D": "Leer los 40 metros como la suma de los dos lados cambia el problema: eso lleva a resolver \\(2x+3=40\\) y no la ecuación cuadrática que impone la superficie.",
-        "B": "Cumplir la condición de la superficie no basta: hay muchas parejas de lados cuyo producto es 40 y el pliego pide además que se diferencien en 3 metros, cosa que esas dos medidas no hacen."
+        "D": "Leer los 40 metros como la suma de los dos lados cambia el problema: eso lleva a resolver \\(2x+3=40\\) y no la ecuación cuadrática que impone la superficie."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q03.png",
       "imagen_alt": "Croquis sin escala del tablero rectangular: la superficie es de cuarenta metros cuadrados y el largo tiene tres metros más que el ancho."
@@ -147,20 +147,20 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
-      "que_evalua": "La habilidad para valorar un conteo ajeno que distingue el orden en una situación donde el orden no cambia el resultado.",
-      "enunciado": "<p>En un colegio de Tumaco el comité de convivencia escolar se renueva cada año. Para el próximo periodo se postularon <b>7 estudiantes</b> de grado noveno y el reglamento dice que el comité lo integran <b>3 de ellos</b>, sin cargos ni jerarquías: los tres tienen exactamente las mismas funciones, de modo que nombrar a Sara, Iván y Keila deja el mismo comité que nombrar a Keila, Sara e Iván.</p>[[IMG]]<p>La coordinadora <b>anticipa que</b> pueden salir 210 comités distintos, porque para el primero de los tres puestos hay siete candidatos, para el segundo quedan seis y para el tercero, cinco, y \\(7 \\times 6 \\times 5 = 210\\).</p><p>¿Qué valoración de esa anticipación es acertada?</p>",
+      "que_evalua": "La habilidad para contar agrupaciones en una situación donde el orden no cambia el resultado.",
+      "enunciado": "<p>En un colegio de Tumaco el comité de convivencia escolar se renueva cada año. Para el próximo periodo se postularon <b>7 estudiantes</b> de grado noveno y el reglamento dice que el comité lo integran <b>3 de ellos</b>, sin cargos ni jerarquías: los tres tienen exactamente las mismas funciones, de modo que nombrar a Sara, Iván y Keila deja el mismo comité que nombrar a Keila, Sara e Iván.</p>[[IMG]]<p>La cantidad de comités distintos que se pueden formar es</p>",
       "opciones": {
-        "A": "Es acertada, porque cada uno de los tres puestos lo ocupa un postulado distinto de la lista.",
-        "B": "No es acertada, porque cada estudiante forma pareja con los demás: son 21 comités.",
-        "C": "No es acertada, porque cada puesto lo puede ocupar cualquiera de los siete: son 343 comités.",
-        "D": "No es acertada, porque los tres cargos son iguales y el orden no cuenta: son 35 comités."
+        "A": "210 comités.",
+        "B": "21 comités.",
+        "C": "343 comités.",
+        "D": "35 comités."
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «No es acertada, porque los tres cargos son iguales y el orden no cuenta» es correcta porque el conteo de la coordinadora cuenta cada comité varias veces: los mismos tres estudiantes se pueden nombrar en \\(3 \\times 2 \\times 1 = 6\\) órdenes distintos y el reglamento los deja siempre con las mismas funciones. Hay que dividir entre esos seis órdenes, y \\(210 \\div 6 = 35\\); es la combinación de siete elementos tomados de a tres.",
+      "justificacion_correcta": "La opción «35 comités» es correcta porque los mismos tres estudiantes se pueden nombrar en \\(3 \\times 2 \\times 1 = 6\\) órdenes distintos y el reglamento los deja siempre con las mismas funciones, así que hay que dividir entre esos seis órdenes: \\(210 \\div 6 = 35\\), la combinación de siete elementos tomados de a tres.",
       "opciones_incorrectas": {
-        "A": "Los tres puestos no se distinguen entre sí, de modo que multiplicar como si fueran cargos diferentes cuenta seis veces cada comité.",
+        "A": "Ese número sale de multiplicar \\(7 \\times 6 \\times 5\\), como si los tres puestos se distinguieran entre sí; al no distinguirse, esa cuenta cuenta seis veces cada comité.",
         "B": "Ese resultado sale de escoger de a dos entre los siete postulados, y el reglamento pide comités de tres integrantes.",
-        "C": "Multiplicar siete por sí mismo tres veces permitiría que un mismo estudiante ocupara más de un puesto del comité, cosa que la situación no admite."
+        "C": "Ese número sale de multiplicar siete por sí mismo tres veces, lo que permitiría que un mismo estudiante ocupara más de un puesto del comité, cosa que la situación no admite."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q04.png",
       "imagen_alt": "Esquema con los siete estudiantes postulados a un lado y, al otro, los tres lugares del comité dibujados iguales entre sí, sin cargos ni jerarquías."
@@ -202,20 +202,20 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
-      "que_evalua": "La habilidad para valorar una afirmación que toma el valor central de una lista sin ordenar y hallar el dato que parte el grupo en dos mitades.",
-      "enunciado": "<p>Don Aldemar entrena el equipo de microfútbol de una escuela de Quibdó y anota, partido por partido, los goles que anota su equipo. Al terminar la primera vuelta pasó los nueve registros de su planilla a la gráfica de barras que aparece abajo, <b>en el mismo orden en que se jugaron los partidos</b>.</p>[[IMG]]<p>Para el informe del año le piden el valor que <b>deja cuatro partidos por debajo y cuatro por encima</b>. Don Aldemar <b>afirma que</b> ese valor es 8 goles, porque es el que quedó justo en la mitad de la gráfica.</p><p>¿Es acertada esa afirmación y cuál es el valor que le piden?</p>",
+      "que_evalua": "La habilidad para hallar el dato que parte un grupo en dos mitades, reconociendo que exige ordenar antes la lista.",
+      "enunciado": "<p>Don Aldemar entrena el equipo de microfútbol de una escuela de Quibdó y anota, partido por partido, los goles que anota su equipo. Al terminar la primera vuelta pasó los nueve registros de su planilla a la gráfica de barras que aparece abajo, <b>en el mismo orden en que se jugaron los partidos</b>.</p>[[IMG]]<p>Para el informe del año le piden el valor que <b>deja cuatro partidos por debajo y cuatro por encima</b>. Ese valor es</p>",
       "opciones": {
-        "A": "No es acertada, porque el valor pedido es el que más veces se repite: son 3 goles.",
-        "B": "No es acertada, porque primero hay que ordenar los nueve datos: son 4 goles.",
-        "C": "Sí es acertada, porque 8 goles ocupa el quinto lugar entre los nueve de la gráfica.",
-        "D": "No es acertada, porque el valor pedido reparte los 48 goles entre nueve: son 5,3 goles."
+        "A": "3 goles.",
+        "B": "4 goles.",
+        "C": "8 goles.",
+        "D": "5,3 goles."
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «No es acertada, porque primero hay que ordenar los nueve datos» es correcta porque el valor que deja la misma cantidad de partidos a cada lado exige ordenar antes las cantidades, y la gráfica va en el orden en que se jugaron los partidos. Ordenados quedan \\(2, 3, 3, 3, 4, 6, 8, 9, 10\\); con nueve partidos, el que ocupa el quinto lugar de esa lista es \\(4\\), y deja cuatro por debajo y cuatro por encima.",
+      "justificacion_correcta": "La opción «4 goles» es correcta porque el valor que deja la misma cantidad de partidos a cada lado exige ordenar antes las cantidades, y la gráfica va en el orden en que se jugaron los partidos. Ordenados quedan \\(2, 3, 3, 3, 4, 6, 8, 9, 10\\); con nueve partidos, el que ocupa el quinto lugar de esa lista es \\(4\\).",
       "opciones_incorrectas": {
         "A": "Tres goles es la cantidad que más veces se repite, y esa es otra medida distinta de la que pide el informe.",
-        "D": "Repartir los 48 goles entre los nueve partidos da el promedio del equipo, que no es el valor que deja la misma cantidad de partidos a cada lado.",
-        "C": "Ocupar el lugar del centro solo sirve cuando los datos están ordenados; en la gráfica el orden es el de la fecha de cada partido y por eso ese quinto lugar no parte el grupo en dos mitades."
+        "C": "Ocupar el lugar del centro solo sirve cuando los datos están ordenados; en la gráfica el orden es el de la fecha de cada partido y por eso ese quinto lugar no parte el grupo en dos mitades.",
+        "D": "Repartir los 48 goles entre los nueve partidos da el promedio del equipo, que no es el valor que deja la misma cantidad de partidos a cada lado."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q06.png",
       "imagen_alt": "Gráfica de barras con los goles anotados por el equipo en cada uno de los nueve partidos de la primera vuelta, en el orden en que se jugaron."
@@ -256,20 +256,20 @@
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
-      "que_evalua": "La habilidad para valorar una afirmación que confunde el punto más alto de una gráfica con el tramo en que la variable crece más rápido.",
-      "enunciado": "<p>Doña Aura tiene una panadería en Túquerres y estrenó un horno de leña. Para saber cuánto debe esperar antes de meter el pan, midió con un termómetro la temperatura del horno cada diez minutos desde que lo prendió y llevó los datos a una gráfica.</p>[[IMG]]<p>Su hijo, que estudia panadería, quiere saber en cuál tramo de diez minutos <b>el horno ganó más grados</b>. Doña Aura <b>sostiene que</b> ese tramo va de los 30 a los 40 minutos, porque es donde la gráfica llega más arriba.</p><p>¿Es acertada esa afirmación y en cuál tramo ganó más grados el horno?</p>",
+      "que_evalua": "La habilidad para hallar en una gráfica el tramo en que la variable crece más rápido, distinguiéndolo del punto más alto.",
+      "enunciado": "<p>Doña Aura tiene una panadería en Túquerres y estrenó un horno de leña. Para saber cuánto debe esperar antes de meter el pan, midió con un termómetro la temperatura del horno cada diez minutos desde que lo prendió y llevó los datos a una gráfica.</p>[[IMG]]<p>Su hijo, que estudia panadería, quiere saber en cuál tramo de diez minutos <b>el horno ganó más grados</b>. Ese tramo va de los</p>",
       "opciones": {
-        "A": "Sí es acertada, porque en ese tramo el horno alcanza la mayor temperatura de toda la medición.",
-        "B": "No es acertada, porque el tramo de mayor ganancia va de 10 a 20 minutos, de 60 a 120 grados.",
-        "C": "No es acertada, porque el tramo de mayor ganancia va de 20 a 30 minutos, de 120 a 150 grados.",
-        "D": "No es acertada, porque el tramo de mayor ganancia es el primero: de 0 a 10 minutos, de 20 a 60 grados."
+        "A": "30 a los 40 minutos.",
+        "B": "10 a los 20 minutos.",
+        "C": "20 a los 30 minutos.",
+        "D": "0 a los 10 minutos."
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «No es acertada, porque el tramo de mayor ganancia va de 10 a 20 minutos» es correcta porque lo que se pide no es dónde queda más alta la gráfica sino dónde sube más de un punto al siguiente. Los aumentos por tramo son \\(40\\), \\(60\\), \\(30\\) y \\(0\\) grados, de modo que el mayor es el del segundo tramo, cuando la temperatura pasa de 60 a 120 grados. Entre los 30 y los 40 minutos la gráfica está en su punto más alto, pero se mantiene plana y el horno no gana un solo grado.",
+      "justificacion_correcta": "La opción «10 a los 20 minutos» es correcta porque lo que se pide no es dónde queda más alta la gráfica sino dónde sube más de un punto al siguiente. Los aumentos por tramo son \\(40\\), \\(60\\), \\(30\\) y \\(0\\) grados, de modo que el mayor es el del segundo tramo, cuando la temperatura pasa de 60 a 120 grados.",
       "opciones_incorrectas": {
-        "A": "Entre los 30 y los 40 minutos la temperatura se sostiene en 150 grados: la gráfica va alta pero horizontal, así que la ganancia en ese tramo es de cero grados.",
-        "C": "De los 20 a los 30 minutos la temperatura sube 30 grados, y ese es el segundo aumento más pequeño de toda la medición.",
-        "D": "En el primer tramo el horno pasa de 20 a 60 grados, con una ganancia de 40 grados, que es menor que la de otro tramo de la misma duración."
+        "A": "Entre los 30 y los 40 minutos la temperatura se sostiene en 150 grados: la gráfica llega a su punto más alto pero se mantiene horizontal, así que la ganancia en ese tramo es de cero grados.",
+        "D": "En el primer tramo el horno pasa de 20 a 60 grados, con una ganancia de 40 grados, que es menor que la de otro tramo de la misma duración.",
+        "C": "De los 20 a los 30 minutos la temperatura sube 30 grados, y ese es el segundo aumento más pequeño de toda la medición."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q08.png",
       "imagen_alt": "Gráfica de la temperatura del horno de leña medida cada diez minutos desde que se prendió, con la temperatura anotada en cada punto."
@@ -321,9 +321,9 @@
       "clave": "A",
       "justificacion_correcta": "La opción «No es acertada, porque las vigas son paralelas» es correcta porque perpendicular significa formar un ángulo de \\(90\\) grados, y el transportador marcó \\(65\\). Lo que sí se deduce de esas dos medidas iguales es otra cosa: el tirante es una transversal que corta a las dos vigas y los ángulos medidos del mismo lado, en la misma posición respecto de cada viga, son correspondientes; cuando dos rectas cortadas por una transversal forman ángulos correspondientes iguales, esas rectas son paralelas.",
       "opciones_incorrectas": {
+        "C": "Que los dos ángulos sean iguales no los vuelve rectos: perpendicular exige que midan 90 grados y la medición dio 65.",
         "B": "Dos rectas que forman ángulos correspondientes iguales con una misma transversal no se cortan por más que se prolonguen, así que las vigas no se encuentran más adelante.",
-        "D": "El tirante corta a las dos vigas, y una recta que corta a otra no puede ser paralela a ella aunque las tres piezas queden en un mismo plano.",
-        "C": "Que los dos ángulos sean iguales no los vuelve rectos: perpendicular exige que midan 90 grados y la medición dio 65."
+        "D": "El tirante corta a las dos vigas, y una recta que corta a otra no puede ser paralela a ella aunque las tres piezas queden en un mismo plano."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q10.png",
       "imagen_alt": "Esquema de las dos vigas cruzadas por el tirante diagonal, con el ángulo de sesenta y cinco grados marcado en los dos cruces."
@@ -349,8 +349,8 @@
       "justificacion_correcta": "La opción «El de Marta, cuya anotación equivale a ocho décimas partes del bulto» es correcta porque las cuatro anotaciones están en registros distintos y no se pueden comparar por el tamaño del número escrito. Llevadas todas a decimales quedan \\(\\dfrac{4}{5}=0{,}8\\), \\(0{,}7\\), \\(\\dfrac{3}{4}=0{,}75\\) y \\(72\\,\\%=0{,}72\\); la mayor de las cuatro es \\(0{,}8\\), que es la de Marta.",
       "opciones_incorrectas": {
         "A": "El 72 está escrito como porcentaje y equivale a 0,72 del bulto, de modo que compararlo con una fracción o con un decimal por el tamaño de la cifra no dice nada.",
-        "D": "El decimal de Nelson es \\(0{,}7\\), el menor de los cuatro una vez que todas las anotaciones se escriben de la misma manera.",
-        "B": "La anotación de Ruby equivale a \\(0{,}75\\) del bulto, que queda por debajo de otra de las cuatro cifras de la planilla."
+        "B": "La anotación de Ruby equivale a \\(0{,}75\\) del bulto, que queda por debajo de otra de las cuatro cifras de la planilla.",
+        "D": "El decimal de Nelson es \\(0{,}7\\), el menor de los cuatro una vez que todas las anotaciones se escriben de la misma manera."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q11.png",
       "imagen_alt": "Las cuatro anotaciones de la planilla del depósito, cada una en el registro en que su ayudante la escribió: una fracción, un decimal, otra fracción y un porcentaje, en el orden de la planilla."
@@ -484,8 +484,8 @@
       "justificacion_correcta": "La opción «El método 2, porque el remate cónico aporta un tercio» es correcta porque cada pieza tiene su propia fórmula: el cilindro da \\(\\pi \\times 2^2 \\times 5 = 20\\pi\\) metros cúbicos y el cono, \\(\\tfrac{1}{3} \\times \\pi \\times 2^2 \\times 3 = 4\\pi\\); al sumarlos quedan \\(24\\pi\\) metros cúbicos. El primer método trata el cono como si fuera cilindro, y un cono de la misma base y la misma altura cabe tres veces dentro de un cilindro.",
       "opciones_incorrectas": {
         "A": "Estirar el cilindro hasta los 8 metros llena también el espacio que el cono deja vacío por fuera de sus paredes inclinadas, y por eso sobreestima la capacidad en \\(8\\,\\pi\\) metros cúbicos.",
-        "C": "En las dos fórmulas la letra \\(r\\) es el radio, que ya viene dado como 2 metros; usar el diámetro cuadruplica los dos volúmenes.",
-        "D": "El cuerpo cilíndrico es solo una de las dos piezas del tanque, así que quedarse con él deja por fuera el agua que cabe en el remate."
+        "D": "El cuerpo cilíndrico es solo una de las dos piezas del tanque, así que quedarse con él deja por fuera el agua que cabe en el remate.",
+        "C": "En las dos fórmulas la letra \\(r\\) es el radio, que ya viene dado como 2 metros; usar el diámetro cuadruplica los dos volúmenes."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q16.png",
       "imagen_alt": "Esquema del tanque del acueducto: un cuerpo cilíndrico de cinco metros de altura rematado por un cono de tres metros, ambos sobre una base circular de dos metros de radio."
@@ -511,8 +511,8 @@
       "justificacion_correcta": "La opción «Alcanzan 54 cajas, que son las que cubren la ele una vez descontado el patio» es correcta porque la región por cubrir es la ele y no el rectángulo entero. El lote completo mide \\(12 \\times 8 = 96\\) metros cuadrados y el patio ocupa \\(5 \\times 3 = 15\\), de modo que se enchapan \\(96-15=81\\) metros cuadrados. Como cada caja alcanza para \\(1{,}5\\) metros cuadrados, hacen falta \\(81 \\div 1{,}5 = 54\\) cajas.",
       "opciones_incorrectas": {
         "B": "Comprar para el lote completo paga los quince metros cuadrados del patio, que quedan descubiertos, y eso son diez cajas de más que nadie va a instalar.",
-        "D": "El plano rotula el patio en 5 metros por 3 y no en 7 por 3: los 7 metros son el lado de arriba de la ele, no un lado del patio.",
-        "A": "Quedarse con la franja más ancha del plano deja sin enchapar el resto de la ele, que también es piso del salón."
+        "A": "Quedarse con la franja más ancha del plano deja sin enchapar el resto de la ele, que también es piso del salón.",
+        "D": "El plano rotula el patio en 5 metros por 3 y no en 7 por 3: los 7 metros son el lado de arriba de la ele, no un lado del patio."
       },
       "imagen_figura": "assets/banco-mat-9-p3/q17.png",
       "imagen_alt": "Plano de la planta del salón comunal en forma de ele, acotada en doce por ocho metros, con el patio descubierto de cinco por tres metros en la esquina superior derecha."
@@ -564,9 +564,9 @@
       "clave": "A",
       "justificacion_correcta": "La opción «La del curso 602, porque premió 6 de sus 75 boletas» es correcta porque la posibilidad de ganar con una sola boleta no depende de cuántos premios haya sino de qué parte del total está premiada. Al dividir en cada curso las boletas premiadas entre las vendidas quedan \\(4 \\div 80 = 0{,}05\\), \\(6 \\div 75 = 0{,}08\\), \\(7 \\div 100 = 0{,}07\\) y \\(3 \\div 50 = 0{,}06\\); el mayor de esos cocientes es el del curso 602.",
       "opciones_incorrectas": {
+        "B": "Los siete premios del curso 603 se reparten entre cien boletas, y ese curso vendió más que todos los demás: siete de cien no es la mejor parte premiada de las cuatro.",
         "C": "Vender pocas boletas no basta: ese curso premió tres de cincuenta, que es una parte menor que la de otra de las rifas.",
-        "D": "Cuatro premios entre ochenta boletas es la menor parte premiada de las cuatro rifas del acta.",
-        "B": "Los siete premios del curso 603 se reparten entre cien boletas, y ese curso vendió más que todos los demás: siete de cien no es la mejor parte premiada de las cuatro."
+        "D": "Cuatro premios entre ochenta boletas es la menor parte premiada de las cuatro rifas del acta."
       }
     },
     {
@@ -590,8 +590,8 @@
       "justificacion_correcta": "La opción con los sectores de 144, 90, 72 y 54 grados es correcta porque los 360 grados de la circunferencia se reparten entre los 200 encuestados, lo que da \\(360 \\div 200 = 1{,}8\\) grados por estudiante. Multiplicando cada frecuencia por \\(1{,}8\\) quedan \\(80 \\times 1{,}8 = 144\\) grados para quienes llegan a pie, \\(50 \\times 1{,}8 = 90\\) para el bus, \\(40 \\times 1{,}8 = 72\\) para la bicicleta y \\(30 \\times 1{,}8 = 54\\) para la moto, y los cuatro suman los 360 grados.",
       "opciones_incorrectas": {
         "A": "Ese diagrama parte la circunferencia en cuatro sectores iguales de 90 grados, cosa que solo valdría si los cuatro medios de transporte tuvieran la misma cantidad de estudiantes.",
-        "C": "En ese diagrama el sector del bus y el de la bicicleta están intercambiados, de modo que a 50 estudiantes les toca menos superficie que a 40.",
-        "D": "Las cuatro medidas de ese diagrama son las correctas, pero quedaron asignadas al revés: el sector más grande le corresponde al medio con menos estudiantes."
+        "D": "Las cuatro medidas de ese diagrama son las correctas, pero quedaron asignadas al revés: el sector más grande le corresponde al medio con menos estudiantes.",
+        "C": "En ese diagrama el sector del bus y el de la bicicleta están intercambiados, de modo que a 50 estudiantes les toca menos superficie que a 40."
       },
       "opciones_imagenes": {
         "A": "assets/banco-mat-9-p3/o20a.png",

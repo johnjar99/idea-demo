@@ -50,11 +50,11 @@
         ]
       },
       "estrategias_por_afirmacion": {
-        "_descripcion": "Estrategias por numero de afirmacion (\"1\", \"2\"...). Reemplaza ESTRATEGIAS_POR_AREA[area].afirmacion[n] para la clave presente; ausente => fallback.",
         "1": [
           "string",
           "..."
-        ]
+        ],
+        "_descripcion": "Estrategias por numero de afirmacion (\"1\", \"2\"...). Reemplaza ESTRATEGIAS_POR_AREA[area].afirmacion[n] para la clave presente; ausente => fallback."
       },
       "estrategias_por_cmc": {
         "_descripcion": "Estrategias por categoria de dimension secundaria (CMC en MAT, componente en CN, nivel MCER en Ingles). Reemplaza ESTRATEGIAS_POR_AREA[area].cmc[cat]; ausente => fallback.",
@@ -1372,17 +1372,17 @@
         "proyeccion_extra": "<p>Consolidar en 3.o el sentido literal, la fluidez y la inferencia basica es el cimiento de toda la lectura de secundaria. Un rezago de fluidez no atendido aqui se arrastra durante anos y termina leyendose como falta de comprension cuando en realidad es falta de automaticidad.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Vocabulario por contexto: ante palabras como derramaba o rodajas, ensenar a sustituirlas por un sinonimo y comprobar que la oracion conserva el sentido. Muro de palabras del aula que crece cada semana.",
           "Caza de datos explicitos: subrayar en el texto quien, que, cuando y donde con colores fijos, y senalar en la infografia el recuadro exacto donde esta la respuesta.",
           "Fluidez diaria dosificada: lectura repetida de un mismo parrafo corto tres veces, cronometrada, con meta personal visible; el docente marca solo la palabra fallada y la modela al instante."
         ],
-        "2": [
+        "b": [
           "Modelado metacognitivo de la inferencia: el docente piensa en voz alta como deduce a quien se refiere un sus o para que sirve una parte del texto (un inicio, un paso de la receta).",
           "Relacionar imagen y texto: pedir que expliquen que aporta un dibujo (si ejemplifica, repite o completa lo escrito), conectando lenguaje verbal y no verbal.",
           "Idea principal explicita: senalar con el dedo la oracion que dice de que trata todo el texto y ponerle un titulo propio de tres palabras."
         ],
-        "3": [
+        "c": [
           "Rutina mi opinion es porque: tras leer una fabula, cada nino dice si esta de acuerdo con lo que hizo el personaje y respalda con un porque tomado del texto.",
           "Valorar la forma: preguntar por que el autor puso una imagen aqui o repitio una palabra, para que empiecen a notar decisiones del que escribe.",
           "Final alternativo justificado: reescribir el desenlace y explicar por que cambiaria lo que sigue, primer paso de la evaluacion critica."
@@ -1454,17 +1454,17 @@
         "proyeccion_extra": "<p>Afianzar en 4.o la lectura literal completa, la secuencia y la parafrasis oral prepara el salto de 5.o hacia la inferencia autonoma y la comprension de la estructura del texto.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Barrido completo de datos: buscar todos los lugares donde aparece un dato, no solo el primero, y contrastarlos.",
           "Vocabulario por contexto con familia de palabras: de correr a corredor, carrera, corriendo, para deducir significado por parentesco.",
           "Fluidez de sostenimiento para los rezagados: lectura por parejas de textos algo mas largos con correccion inmediata."
         ],
-        "2": [
+        "b": [
           "Linea de tiempo del texto: ordenar los hechos en tarjetas y detectar el que paso primero y el que despues.",
           "Recuento con palabras propias: contar el texto sin leerlo, primer paso de la parafrasis.",
           "Inferencia autonoma guiada: preguntas de que sintio o por que hizo, respondidas con una pista del texto elegida por el nino."
         ],
-        "3": [
+        "c": [
           "Comparar dos finales o dos personajes y decir cual convence mas y por que.",
           "Opinar sobre la utilidad de un instructivo o afiche: sirve para lo que promete, con evidencia.",
           "Detectar la intencion simple del texto: informar, entretener o convencer, y justificarlo."
@@ -1536,17 +1536,17 @@
         "proyeccion_extra": "<p>Dominar en 5.o la inferencia sencilla, la estructura y la parafrasis abre la puerta a los textos discontinuos, la intencion del autor y el punto de vista que exige el ciclo de 7.o y 8.o.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Vocabulario por contexto de nivel medio: deducir tecnicismos de divulgacion por las pistas de la oracion y el parrafo.",
           "Localizacion precisa: distinguir el dato pedido de datos vecinos parecidos que distraen.",
           "Funcion del vocabulario: por que el autor eligio esa palabra y no otra parecida."
         ],
-        "2": [
+        "b": [
           "Mapa de la estructura: identificar inicio, desarrollo y cierre, o partes de un articulo, y decir que hace cada una.",
           "Parafrasis fiel: reescribir una idea con otras palabras sin cambiar el sentido ni agregar opinion.",
           "Inferencia con pista visible: subrayar la pista y escribir la conclusion; comparar pistas entre companeros."
         ],
-        "3": [
+        "c": [
           "Distinguir hecho de opinion dentro del mismo texto y justificar cual es cual.",
           "Evaluar si un titulo o una imagen corresponden al contenido y por que.",
           "Tomar postura sobre el tema del articulo con al menos dos evidencias del texto."
@@ -1618,17 +1618,17 @@
         "proyeccion_extra": "<p>Jerarquizar informacion y relacionar partes distantes en 6.o prepara la lectura de textos discontinuos y la deteccion de la intencion del autor que domina el trabajo de 7.o y 8.o.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Localizacion en textos largos: seguir un dato que reaparece en varios parrafos.",
           "Vocabulario por contexto con connotacion: distinguir sentido literal de sentido figurado en la palabra.",
           "Precision terminologica: por que el autor usa un termino tecnico y no uno coloquial."
         ],
-        "2": [
+        "b": [
           "Subrayado jerarquico: idea principal frente a detalles de apoyo, un color por nivel.",
           "Relacion entre partes distantes: conectar una afirmacion del inicio con su desarrollo o su contradiccion posterior.",
           "Resumen por parrafos que respeta la jerarquia de ideas."
         ],
-        "3": [
+        "c": [
           "Evaluar la coherencia interna: hay partes que se contradicen o que sobran.",
           "Tomar postura sobre la tesis del texto con dos o tres evidencias.",
           "Comparar el tratamiento de un mismo tema en dos textos breves."
@@ -1700,17 +1700,17 @@
         "proyeccion_extra": "<p>Reconocer intencion, punto de vista y textos discontinuos en 7.o es la antesala de la comparacion de tesis y argumentos de 9.o y de la evaluacion critica plena del ciclo de 10.o y 11.o.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Lectura de textos discontinuos: extraer un dato exacto de una grafica, tabla o infografia.",
           "Vocabulario tecnico y de medios: deducir por contexto terminos de prensa y publicidad.",
           "Identificar emisor y destinatario explicitos del texto."
         ],
-        "2": [
+        "b": [
           "Relacion texto-imagen: explicar como la imagen refuerza, matiza o contradice el texto verbal.",
           "Reconstruir el punto de vista: desde donde y para quien se dice lo que se dice.",
           "Integrar informacion de varias fuentes de un mismo texto multimodal."
         ],
-        "3": [
+        "c": [
           "Detectar la intencion del autor: informar, persuadir, criticar, vender, y sostenerlo con marcas del texto.",
           "Analizar recursos persuasivos de la publicidad (exageracion, testimonio, autoridad).",
           "Evaluar si el texto es apropiado para su destinatario y proposito."
@@ -1782,17 +1782,17 @@
         "proyeccion_extra": "<p>Evaluar forma, contenido y punto de vista en 8.o es el paso previo directo a comparar tesis y argumentos de varios textos en 9.o y a la lectura critica plena de 10.o y 11.o.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Localizacion en textos densos: extraer datos precisos de columnas, cronicas y ensayos breves.",
           "Vocabulario de registro: distinguir formal, coloquial e ironico segun el contexto.",
           "Precision del dato frente a distractores sofisticados."
         ],
-        "2": [
+        "b": [
           "Detectar tono e ironia: cuando el texto dice una cosa y da a entender la contraria.",
           "Reconstruir el punto de vista y sus supuestos: que da por sentado el autor.",
           "Inferencia sobre textos densos apoyada en marcas linguisticas."
         ],
-        "3": [
+        "c": [
           "Evaluar coherencia y suficiencia: las ideas se sostienen entre si, falta informacion.",
           "Separar validez del argumento del acuerdo con la conclusion.",
           "Sostener una postura organizada: afirmacion, evidencia del texto y razon."
@@ -1864,17 +1864,17 @@
         "proyeccion_extra": "<p>Comparar tesis y evaluar argumentos en 9.o es el nucleo que la lectura critica de 10.o y 11.o llevara al maximo: validez, falacias, ideologia y postura fundamentada frente a Saber 11.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Localizacion de la tesis y de datos de apoyo en textos argumentativos.",
           "Vocabulario abstracto y conectores logicos: por tanto, sin embargo, aunque, deducir su funcion.",
           "Precision entre dato, ejemplo y afirmacion general."
         ],
-        "2": [
+        "b": [
           "Mapa argumentativo: tesis, argumentos, evidencias, conclusion, y como se enlazan.",
           "Relacion entre argumentos: cuales se suman, cuales se oponen, cual es el mas fuerte.",
           "Comparacion de la estructura de dos textos sobre el mismo tema."
         ],
-        "3": [
+        "c": [
           "Evaluar si los argumentos sostienen la tesis o solo la ilustran.",
           "Comparar dos posturas enfrentadas y valorar cual argumenta mejor y por que.",
           "Detectar sesgos y omisiones en un texto argumentativo."
@@ -1946,17 +1946,17 @@
         "proyeccion_extra": "<p>Consolidar en 10.o la evaluacion de validez, la deteccion de falacias y la lectura de la ideologia es exactamente lo que Saber 11 exige en 11.o; el ano siguiente afina tipologias textuales y velocidad, pero el criterio critico se instala aqui.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Localizacion en tipologias variadas: extraer datos de textos filosoficos, cientificos y discursivos.",
           "Vocabulario abstracto y disciplinar: deducir por contexto conceptos de textos especializados.",
           "Precision entre premisa, dato y conclusion en el nivel explicito."
         ],
-        "2": [
+        "b": [
           "Reconstruir la estructura logica: identificar relaciones de causa-efecto, comparacion y proposito.",
           "Reconstruir el argumento como premisas y conclusion antes de evaluarlo.",
           "Relacionar el texto con otros textos y con el contexto de produccion."
         ],
-        "3": [
+        "c": [
           "Evaluar validez: el argumento se sigue de sus premisas o comete una falacia.",
           "Identificar ideologia y supuestos: desde donde y para que se dice.",
           "Sostener una postura fundamentada que dialoga con el texto y con saberes propios."
@@ -2028,17 +2028,17 @@
         "proyeccion_extra": "<p>La lectura critica de 11.o es la sintesis de todo el proceso y la puerta a la educacion superior, donde leer para evaluar, contrastar fuentes y construir postura es la competencia central de cualquier carrera.</p>"
       },
       "estrategias_por_competencia": {
-        "1": [
+        "a": [
           "Localizacion rapida y precisa en textos exigentes bajo tiempo, sin releer todo.",
           "Vocabulario culto, tecnico y literario deducido por contexto y morfologia.",
           "Distincion fina entre lo que el texto afirma y lo que el lector supone."
         ],
-        "2": [
+        "b": [
           "Reconocer la tipologia y la superestructura del texto (argumentativo, expositivo, literario) para orientar la lectura.",
           "Relacionar partes, integrar continuo y discontinuo y reconstruir la logica global.",
           "Interpretar sentido figurado, ironia y recursos retoricos en textos literarios y de opinion."
         ],
-        "3": [
+        "c": [
           "Evaluar validez y detectar falacias bajo presion de tiempo.",
           "Leer la ideologia, el proposito y las fuentes: quien habla, con que interes, con que respaldo.",
           "Sostener una postura fundamentada y matizada frente a textos en tension."
