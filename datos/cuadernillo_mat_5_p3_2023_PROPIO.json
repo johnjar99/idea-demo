@@ -146,10 +146,10 @@
       "que_evalua": "La habilidad para recubrir una superficie con un patrón no estandarizado y determinar cuántas unidades se necesitan.",
       "enunciado": "<p>En la escuela de la vereda El Placer están enchapando el piso del quiosco. Don Aurelio, el maestro de obra, dibujó en el tablero el piso completo dividido en cuadritos del mismo tamaño y, al lado, la baldosa cuadrada que va a pegar. Todas las baldosas son iguales entre sí, se pueden girar antes de pegarlas y no se pueden partir ni montar una encima de otra.</p>[[IMG]]<p>¿Cuántas baldosas necesita don Aurelio para cubrir todo el piso del quiosco?</p>",
       "opciones": {
-        "A": "Necesita 24 baldosas, porque el piso tiene 24 cuadritos en total.",
-        "B": "Necesita 12 baldosas, porque cada baldosa cubre dos cuadritos del piso.",
-        "C": "Necesita 8 baldosas, porque los 24 cuadritos se reparten de tres en tres.",
-        "D": "Necesita 6 baldosas, porque cada baldosa cubre cuatro cuadritos del piso."
+        "A": "24 baldosas.",
+        "B": "12 baldosas.",
+        "C": "8 baldosas.",
+        "D": "6 baldosas."
       },
       "clave": "D",
       "justificacion_correcta": "La opción «Necesita 6 baldosas, porque cada baldosa cubre cuatro cuadritos del piso» es correcta porque el piso está formado por \\(6\\times 4=24\\) cuadritos y cada baldosa cubre \\(2\\times 2=4\\) de esos cuadritos a la vez. Al repartir los 24 cuadritos entre las baldosas resultan \\(24\\div 4=6\\) baldosas, que alcanzan justo para poner tres a lo largo y dos a lo ancho.",
@@ -393,23 +393,23 @@
       "cmc": "Aleatorio",
       "dificultad": "ALTA",
       "estandar": "Comparo diferentes representaciones del mismo conjunto de datos.",
-      "que_evalua": "La habilidad para confrontar dos representaciones del mismo conjunto de datos, corregir el valor que no coincide y recalcular el total real.",
-      "enunciado": "<p>Doña Amparo lleva el registro de los préstamos de libros en un pictograma y en una tabla.</p>[[IMG]]<p>¿Cuál es el total real de libros prestados en los cuatro meses (marzo, abril, mayo y junio), después de corregir el error de la tabla utilizando la información del pictograma?</p>",
+      "que_evalua": "La habilidad para confrontar dos representaciones del mismo conjunto de datos y calcular el total, leyendo con cuidado las filas del pictograma que no están completas.",
+      "enunciado": "<p>Doña Amparo lleva el registro de los préstamos de libros en un pictograma y en una tabla.</p>[[IMG]]<p>¿Cuál es el total de libros prestados en los cuatro meses (marzo, abril, mayo y junio), según el pictograma?</p>",
       "opciones": {
         "A": "95",
         "B": "100",
         "C": "105",
         "D": "120"
       },
-      "clave": "B",
-      "justificacion_correcta": "La opción «100» es correcta porque cada libro dibujado vale 5 préstamos: marzo tiene \\(6\\times 5=30\\), abril \\(4\\times 5=20\\) y junio \\(3\\times 5=15\\), los mismos valores que anota la tabla. En mayo, en cambio, el pictograma muestra siete libros, que equivalen a \\(7\\times 5=35\\) préstamos y no a los 30 que anota la tabla. Con ese dato corregido, el total real es \\(30+20+35+15=100\\).",
+      "clave": "A",
+      "justificacion_correcta": "La opción «95» es correcta porque cada libro dibujado vale 5 préstamos: marzo tiene 6 libros (\\(6\\times 5=30\\)), abril 4 libros (\\(4\\times 5=20\\)), mayo 6 libros (\\(6\\times 5=30\\)) y junio 3 libros (\\(3\\times 5=15\\)), los mismos cuatro valores que anota la tabla. La suma de los cuatro meses es \\(30+20+30+15=95\\).",
       "opciones_incorrectas": {
-        "A": "Ese total corresponde a sumar los cuatro valores que trae la tabla sin corregir el error de mayo, que según el pictograma debe ser 35 y no 30.",
-        "C": "Ese total no corresponde a sumar los cuatro meses con el valor de mayo ya corregido por el pictograma.",
-        "D": "Ese total es mayor al real porque no corresponde a la cantidad de libros que muestra el pictograma en ninguno de los cuatro meses."
+        "B": "Ese número sale de contar como libro completo el espacio vacío que queda al final de la fila de abril: con 5 libros en vez de 4 ese mes daría \\(5\\times 5=25\\) y el total subiría a 100.",
+        "C": "Ese número sale de contar como libro completo el espacio vacío que queda al final de la fila de junio: con 5 libros en vez de 3 ese mes daría \\(5\\times 5=25\\) y el total subiría a 105.",
+        "D": "Ese número sale de contar llenas las filas de abril y de junio, como si los cuatro meses tuvieran los mismos 6 libros de marzo y mayo: \\(6\\times 5=30\\) en cada uno de los cuatro meses da \\(30\\times 4=120\\)."
       },
       "imagen_figura": "assets/banco-mat-5-p3/q13.png",
-      "imagen_alt": "Pictograma de préstamos por mes con seis libros en marzo, cuatro en abril, siete en mayo y tres en junio, junto a la tabla de registro con 30, 20, 30 y 15 préstamos; cada libro dibujado representa cinco préstamos."
+      "imagen_alt": "Pictograma de préstamos por mes con seis libros en marzo, cuatro en abril, seis en mayo y tres en junio (las filas de abril y junio traen espacios vacíos marcados con línea punteada hasta completar seis), junto a la tabla de registro con 30, 20, 30 y 15 préstamos; cada libro dibujado representa cinco préstamos."
     },
     {
       "id": "P3-mat-5-14",
