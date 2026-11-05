@@ -393,23 +393,23 @@
       "cmc": "Aleatorio",
       "dificultad": "ALTA",
       "estandar": "Comparo diferentes representaciones del mismo conjunto de datos.",
-      "que_evalua": "La habilidad para confrontar dos representaciones del mismo conjunto de datos y calcular el total, leyendo con cuidado las filas del pictograma que no están completas.",
-      "enunciado": "<p>Doña Amparo lleva el registro de los préstamos de libros en un pictograma y en una tabla.</p>[[IMG]]<p>¿Cuál es el total de libros prestados en los cuatro meses (marzo, abril, mayo y junio), según el pictograma?</p>",
+      "que_evalua": "La habilidad para leer un pictograma, calcular el total que representa y compararlo con una meta.",
+      "enunciado": "<p>Doña Amparo lleva el registro de los préstamos de libros utilizando el siguiente pictograma. La meta de la biblioteca escolar era lograr 120 préstamos en total durante esos cuatro meses.</p>[[IMG]]<p>Según la información del pictograma, ¿cuántos préstamos le faltaron a la biblioteca para cumplir la meta?</p>",
       "opciones": {
-        "A": "95",
-        "B": "100",
-        "C": "105",
-        "D": "120"
+        "A": "25",
+        "B": "95",
+        "C": "5",
+        "D": "19"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «95» es correcta porque cada libro dibujado vale 5 préstamos: marzo tiene 6 libros (\\(6\\times 5=30\\)), abril 4 libros (\\(4\\times 5=20\\)), mayo 6 libros (\\(6\\times 5=30\\)) y junio 3 libros (\\(3\\times 5=15\\)), los mismos cuatro valores que anota la tabla. La suma de los cuatro meses es \\(30+20+30+15=95\\).",
+      "justificacion_correcta": "La opción «25» es correcta porque cada libro dibujado vale 5 préstamos: marzo tiene 6 libros (\\(6\\times 5=30\\)), abril 4 (\\(4\\times 5=20\\)), mayo 6 (\\(6\\times 5=30\\)) y junio 3 (\\(3\\times 5=15\\)), para un total de \\(30+20+30+15=95\\) préstamos. A la meta de 120 le faltaron \\(120-95=25\\).",
       "opciones_incorrectas": {
-        "B": "Ese número sale de contar como libro completo el espacio vacío que queda al final de la fila de abril: con 5 libros en vez de 4 ese mes daría \\(5\\times 5=25\\) y el total subiría a 100.",
-        "C": "Ese número sale de contar como libro completo el espacio vacío que queda al final de la fila de junio: con 5 libros en vez de 3 ese mes daría \\(5\\times 5=25\\) y el total subiría a 105.",
-        "D": "Ese número sale de contar llenas las filas de abril y de junio, como si los cuatro meses tuvieran los mismos 6 libros de marzo y mayo: \\(6\\times 5=30\\) en cada uno de los cuatro meses da \\(30\\times 4=120\\)."
+        "B": "Los 95 son los préstamos que sí se hicieron en los cuatro meses; la pregunta pide cuántos faltaron para llegar a 120, que son \\(120-95=25\\).",
+        "C": "El 5 es lo que vale un solo libro dibujado, no lo que le faltó a la biblioteca para cumplir la meta.",
+        "D": "Los 19 son los libros dibujados en el pictograma; cada uno vale 5 préstamos, así que representan 95 préstamos, y faltaron 25 para la meta."
       },
       "imagen_figura": "assets/banco-mat-5-p3/q13.png",
-      "imagen_alt": "Pictograma de préstamos por mes con seis libros en marzo, cuatro en abril, seis en mayo y tres en junio (las filas de abril y junio traen espacios vacíos marcados con línea punteada hasta completar seis), junto a la tabla de registro con 30, 20, 30 y 15 préstamos; cada libro dibujado representa cinco préstamos."
+      "imagen_alt": "Pictograma de préstamo de libros con seis libros en marzo, cuatro en abril, seis en mayo y tres en junio; cada libro dibujado representa cinco préstamos."
     },
     {
       "id": "P3-mat-5-14",
