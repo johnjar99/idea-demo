@@ -64,24 +64,23 @@
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
-      "que_evalua": "La habilidad para decidir si una regla de tres describe un cobro que tiene cargo fijo, y para hallar con la relación lineal correcta el valor que falta.",
-      "enunciado": "<p>El acueducto veredal de Guaitarilla le cobra a cada casa un mismo cargo fijo por el servicio y, además, un valor por cada metro cúbico de agua que gaste. Doña Carmen, que es la fontanera y también lleva las cuentas, tiene copia de tres recibos del mes pasado y con ellos la junta quiere anticiparle a la escuela cuánto le llegará, porque gastó <b>22 metros cúbicos</b>.</p><div style=\"display:block;width:fit-content;margin:14px auto;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Casa</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Agua gastada (metros cúbicos)</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Valor del recibo</th></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Casa de don Aurelio</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">6</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">13.400 pesos</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Casa de la señora Delia</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">10</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">17.000 pesos</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Casa del puesto de salud</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">15</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">21.500 pesos</td></tr></table></div>[[IMG]]<p>El presidente de la junta propone resolverlo con una regla de tres: si por <b>10 metros cúbicos</b> se pagaron <b>17.000 pesos</b>, por <b>22 metros cúbicos</b> se pagarían 37.400. Doña Carmen sostiene que ese camino no sirve para este cobro.</p><p>¿Quién tiene la razón y cuánto le llegará de recibo a la escuela?</p>",
+      "que_evalua": "La habilidad para hallar el valor de un cobro que tiene cargo fijo usando la relación lineal que muestran los datos, y no una regla de tres.",
+      "enunciado": "<p>En el acueducto veredal de Guaitarilla se cobra un cargo fijo más un valor adicional por cada metro cúbico de agua gastado. A partir de los datos de los recibos del mes pasado que se muestran en <b>la siguiente tabla</b>, doña Carmen quiere calcular cuánto le llegará de cobro a la escuela, que gastó <b>22 metros cúbicos</b>.</p>[[IMG]]<p>¿Cuánto le llegará de recibo a la escuela?</p>",
       "opciones": {
-        "A": "Doña Carmen, porque el cargo fijo se cobra una sola vez: llegarán 27.800 pesos.",
-        "B": "El presidente, porque el valor sube al mismo ritmo del gasto: llegarán 37.400 pesos.",
-        "C": "Doña Carmen, porque cada metro cúbico se cobra aparte: llegarán 19.800 pesos.",
-        "D": "El presidente, porque el metro cúbico se redondea a 1.000 pesos: llegarán 30.000 pesos."
+        "A": "27.800 pesos.",
+        "B": "37.400 pesos.",
+        "C": "19.800 pesos.",
+        "D": "30.000 pesos."
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «Doña Carmen, porque el cargo fijo se cobra una sola vez» es correcta porque al comparar los dos primeros recibos se ve que \\(4\\) metros cúbicos de más cuestan \\(17000-13400=3600\\) pesos, es decir \\(900\\) pesos cada metro cúbico. Con ese valor el cargo fijo resulta \\(13400-6\\times 900=8000\\) pesos, una cantidad que no crece con el gasto, y el recibo de la escuela queda en \\(8000+22\\times 900=27800\\) pesos.",
+      "justificacion_correcta": "La opción «27.800 pesos» es correcta porque al comparar los dos primeros recibos se ve que \\(4\\) metros cúbicos de más cuestan \\(17000-13400=3600\\) pesos, es decir \\(900\\) pesos cada metro cúbico. Con ese valor el cargo fijo resulta \\(13400-6\\times 900=8000\\) pesos, y el recibo de la escuela queda en \\(8000+22\\times 900=27800\\) pesos.",
       "opciones_incorrectas": {
-        "B": "La regla de tres del presidente da 37.400 pesos y solo valdría si una casa que no gastara nada no pagara nada; aquí el cargo fijo se cobra igual, de modo que el valor no crece al mismo ritmo que el gasto.",
-        "C": "El valor de 19.800 pesos corresponde únicamente a los \\(22\\) metros cúbicos a \\(900\\) pesos cada uno, de manera que deja por fuera el cargo fijo que ya está sumado en los tres recibos de la tabla.",
-        "D": "El resultado de 30.000 pesos aparece al redondear a \\(1000\\) pesos el precio del metro cúbico; con ese redondeo el recibo de \\(10\\) metros cúbicos habría sido de 18.000 pesos y no de los 17.000 que quedaron registrados."
+        "B": "El valor de 37.400 pesos sale de una regla de tres con el recibo de \\(10\\) metros cúbicos, \\(17000\\times\\dfrac{22}{10}\\); esa cuenta solo valdría si una casa que no gastara agua no pagara nada, y aquí el cargo fijo se cobra igual.",
+        "C": "El valor de 19.800 pesos corresponde únicamente a los \\(22\\) metros cúbicos a \\(900\\) pesos cada uno, de manera que deja por fuera el cargo fijo de \\(8000\\) pesos que ya está sumado en los tres recibos de la tabla.",
+        "D": "El valor de 30.000 pesos aparece al redondear a \\(1000\\) pesos el precio del metro cúbico; con ese redondeo el recibo de \\(10\\) metros cúbicos habría sido de 18.000 pesos y no de los 17.000 que muestra la tabla."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q01.png",
-      "imagen_alt": "La fontanera del acueducto veredal leyendo el contador de agua de una de las casas, con la manguera que baja del cerro y la escuela de la vereda al fondo.",
-      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio y luz calida de manana. Escena: una vereda de montana del sur de Narino. La fontanera del acueducto veredal, una mujer campesina de unos cincuenta anos con botas y sombrero, esta agachada junto a la caja del contador de agua de una casa, con la tapa levantada y una libreta en la mano. Detras se ven la casita de techo de zinc, la manguera negra del acueducto que baja del cerro y, al fondo, la escuela de la vereda con su bandera. Composicion horizontal, formato apaisado aproximadamente tres a dos, la fontanera de cuerpo entero y a media distancia. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: no mostrar ningun recibo, factura, talonario, lista de tarifas ni aviso de precios; no escribir ninguna cifra de dinero ni ningun numero legible en ninguna parte, tampoco en la caratula del contador ni en la libreta; nada de calculadoras, celulares o pantallas con cuentas a la vista. La escena es el momento de la lectura del contador, antes de cualquier cobro."
+      "imagen_alt": "Tabla con los recibos del mes pasado: la casa de don Aurelio gastó 6 metros cúbicos y pagó 13.400 pesos; la de la señora Delia, 10 metros cúbicos y 17.000 pesos; y la del puesto de salud, 15 metros cúbicos y 21.500 pesos."
     },
     {
       "id": "P3-mat-8-02",
@@ -92,23 +91,21 @@
       "cmc": "Numérico - variacional",
       "dificultad": "ALTA",
       "estandar": "Formulo y resuelvo problemas en situaciones aditivas y multiplicativas, en diferentes contextos y dominios numéricos.",
-      "que_evalua": "La habilidad para decidir cuál de dos métodos de cálculo respeta la proporcionalidad inversa entre el número de máquinas y el tiempo de trabajo.",
-      "enunciado": "<p>Rosalba dirige un taller de confección en Bello y le adjudicaron el pedido de los uniformes de un colegio. Con las <b>6 máquinas</b> que tiene en el taller, todas del mismo rendimiento y atendidas el mismo número de horas al día, el pedido completo saldría en <b>15 días</b>. Antes de firmar, un vecino le presta <b>4 máquinas más</b>, iguales a las suyas, de modo que trabajarían diez al tiempo y con el mismo horario. El colegio le exige un plazo por escrito, así que en el taller se proponen dos métodos de cálculo.</p>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">Los dos métodos que se proponen en el taller</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Método 1.</b> Entraron cuatro máquinas más, así que al plazo se le restan cuatro días: el pedido saldría en 11 días.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Método 2.</b> Seis máquinas durante quince días son \\(6\\times 15=90\\) días de máquina de trabajo, y ese trabajo se reparte ahora entre las diez máquinas.</div></div><p>¿Cuál de los dos métodos lleva al plazo correcto y de cuántos días es ese plazo?</p>",
+      "que_evalua": "La habilidad para resolver una situación de proporcionalidad inversa entre el número de máquinas y el tiempo de trabajo.",
+      "enunciado": "<p>Rosalba confecciona uniformes en su taller de Bello. Con <b>6 máquinas</b>, el pedido completo sale en <b>15 días</b>. Si un vecino le presta <b>4 máquinas</b> iguales (trabajando 10 máquinas en total al mismo ritmo y horario), ¿en cuántos días saldrá el pedido?</p>",
       "opciones": {
-        "A": "El método 1, porque cada máquina que entra al taller ahorra un día de trabajo: son 11 días.",
-        "B": "Ninguno de los dos, porque con más máquinas el plazo se alarga: serían 25 días.",
-        "C": "El método 2, porque el trabajo total no cambia y se reparte entre diez: son 9 días.",
-        "D": "El método 2, porque su resultado son los 90 días que dura el pedido completo."
+        "A": "11 días",
+        "B": "25 días",
+        "C": "9 días",
+        "D": "90 días"
       },
       "clave": "C",
-      "justificacion_correcta": "La opción «El método 2, porque el trabajo total no cambia y se reparte entre diez» es correcta porque el pedido exige la misma cantidad de trabajo con seis máquinas o con diez: \\(6\\times 15=90\\) días de máquina. Como las diez rinden lo mismo y cumplen el mismo horario, esos \\(90\\) días de máquina se reparten entre las diez, de donde \\(90\\div 10=9\\) días.",
+      "justificacion_correcta": "La opción «9 días» es correcta porque el pedido exige la misma cantidad de trabajo con seis máquinas o con diez: \\(6\\times 15=90\\) días de máquina. Como las diez rinden lo mismo y cumplen el mismo horario, esos \\(90\\) días de máquina se reparten entre las diez, de donde \\(90\\div 10=9\\) días.",
       "opciones_incorrectas": {
-        "A": "El método 1 descuenta un día por cada máquina nueva, pero el ahorro de tiempo no funciona así: con esa regla quince máquinas prestadas dejarían el pedido listo antes de empezarlo, y lo que manda es el trabajo total repartido entre las máquinas que hay.",
-        "B": "El plazo de \\(25\\) días trata el número de máquinas y el tiempo como magnitudes directamente proporcionales, y por eso alarga la entrega justo cuando entran más máquinas a trabajar.",
-        "D": "El total de \\(90\\) días es el trabajo del pedido medido en días de máquina, cantidad que el propio método 2 todavía manda repartir entre las diez máquinas disponibles."
-      },
-      "imagen_figura": "assets/banco-mat-8-p3/q02.png",
-      "imagen_alt": "Las seis máquinas de coser del taller a un lado y, al otro, las diez que quedan cuando se suman las cuatro máquinas prestadas."
+        "A": "El valor de \\(11\\) días resta un día por cada máquina que llega, \\(15-4\\); el ahorro de tiempo no funciona así, porque lo que manda es el trabajo total repartido entre las máquinas que hay.",
+        "B": "El valor de \\(25\\) días trata el número de máquinas y el tiempo como magnitudes directamente proporcionales, \\(15\\times\\dfrac{10}{6}\\), y por eso alarga la entrega justo cuando entran más máquinas a trabajar.",
+        "D": "El valor de \\(90\\) es el trabajo del pedido medido en días de máquina, \\(6\\times 15\\); todavía falta repartirlo entre las diez máquinas disponibles."
+      }
     },
     {
       "id": "P3-mat-8-03",
@@ -119,24 +116,23 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
-      "que_evalua": "La habilidad para revisar un procedimiento ajeno de cálculo del promedio y hallar el dato que falta cuando se conoce el promedio del grupo completo.",
-      "enunciado": "<p>Una estación piscícola de Puerto Asís cosechó la tilapia de sus cinco estanques y anotó los kilogramos que salieron de cada uno. El operario alcanzó a registrar cuatro estanques, pero la hoja del quinto se mojó y quedó ilegible. Lo único que quedó claro en el informe que ya se envió a la asociación es que, <b>en promedio</b>, cada estanque produjo <b>47 kilogramos</b>.</p><div style=\"display:block;width:fit-content;margin:14px auto;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Estanque</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Cosecha (kilogramos)</th></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Estanque 1</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">52</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Estanque 2</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">44</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Estanque 3</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">39</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Estanque 4</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">57</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Estanque 5</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">dato ilegible</td></tr></table></div>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">Los pasos que dejó escritos el auxiliar de la estación</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> Sumar los cuatro estanques legibles: \\(52+44+39+57=192\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Dividir esa suma entre cuatro: \\(192\\div 4=48\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Al quinto estanque le corresponden \\(48\\) kilogramos.</div></div><p>¿En cuál paso está el error y cuántos kilogramos salieron del quinto estanque?</p>",
+      "que_evalua": "La habilidad para hallar el dato que falta en un conjunto cuando se conoce el promedio del grupo completo.",
+      "enunciado": "<p>Una estación piscícola en Puerto Asís cosechó tilapia en sus 5 estanques. El promedio de producción por estanque fue de 47 kg. Los registros de los cuatro estanques se muestran en la tabla, pero el quinto registro se borró.</p>[[IMG]]<p>¿Cuántos kilogramos salieron de ese quinto estanque?</p>",
       "opciones": {
-        "A": "En el paso 1, porque hay que sumar los cinco estanques: salieron 47 kilogramos.",
-        "B": "En ninguno, porque el promedio de los legibles reemplaza al dato perdido: 48 kilogramos.",
-        "C": "En el paso 2, porque el promedio se multiplica por cinco: salieron 235 kilogramos.",
-        "D": "En el paso 2, porque al total de 235 hay que restarle 192: salieron 43 kilogramos."
+        "A": "47 kg",
+        "B": "48 kg",
+        "C": "235 kg",
+        "D": "43 kg"
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «En el paso 2, porque al total de 235 hay que restarle 192» es correcta porque el promedio de cinco estanques es la cosecha total dividida entre cinco: para que ese promedio sea de \\(47\\) kilogramos, el total tiene que ser \\(47\\times 5=235\\). Los cuatro estanques legibles suman \\(192\\), así que al quinto le corresponden \\(235-192=43\\) kilogramos.",
+      "justificacion_correcta": "La opción «43 kg» es correcta porque el promedio de cinco estanques es la cosecha total dividida entre cinco: para que ese promedio sea de \\(47\\) kg, el total tiene que ser \\(47\\times 5=235\\) kg. Los cuatro estanques registrados suman \\(52+44+39+57=192\\) kg, así que al quinto le corresponden \\(235-192=43\\) kg.",
       "opciones_incorrectas": {
-        "A": "El paso 1 suma bien los cuatro estanques legibles, que es todo lo que la planilla deja leer. El valor de \\(47\\) kilogramos es el promedio del grupo y solo coincidiría con el dato faltante si los otros cuatro se compensaran entre sí, cosa que aquí no ocurre porque suman \\(192\\) y no \\(188\\).",
-        "B": "La cifra de \\(48\\) kilogramos es el promedio de los cuatro estanques ya registrados; si el quinto hubiera producido \\(48\\), el promedio de los cinco también sería \\(48\\) y el informe no habría reportado \\(47\\).",
-        "C": "El total de \\(235\\) kilogramos corresponde a la cosecha de los cinco estanques juntos, de modo que todavía hay que descontarle lo que produjeron los cuatro que sí quedaron registrados."
+        "A": "El valor de \\(47\\) kg es el promedio del grupo y solo coincidiría con el dato que falta si los otros cuatro estanques sumaran \\(4\\times 47=188\\) kg; suman \\(192\\).",
+        "B": "El valor de \\(48\\) kg es el promedio de los cuatro estanques registrados, \\(192\\div 4\\); si el quinto hubiera producido \\(48\\) kg, el promedio de los cinco también sería \\(48\\) y no \\(47\\).",
+        "C": "El valor de \\(235\\) kg es la cosecha de los cinco estanques juntos, \\(47\\times 5\\); todavía hay que descontarle lo que produjeron los cuatro que sí quedaron registrados."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q03.png",
-      "imagen_alt": "La cosecha en la estación piscícola del Putumayo: los cinco estanques de tilapia, los operarios recogiendo con la red y la ficha del último estanque mojada por la lluvia.",
-      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio y luz humeda de selva. Escena: una estacion piscicola del Putumayo con cinco estanques rectangulares de tilapia excavados en el suelo, vistos en perspectiva desde una orilla alta. Dos operarios con botas de caucho recogen con una red uno de los estanques; junto al borde hay canastillas plasticas y una carretilla. Sobre una estaca, la ficha de cartulina del ultimo estanque quedo mojada y borrada por la lluvia. Vegetacion tupida al fondo. Composicion horizontal, formato apaisado aproximadamente tres a dos, a media distancia. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: no mostrar ninguna bascula, balanza o pesa con lectura visible, ni ninguna planilla, cuaderno o tablero con cifras legibles; no escribir ningun numero en ninguna parte; no dibujar montones de pescado de tamanos que se puedan comparar entre estanques ni canastillas contadas en grupos distintos. La escena es la cosecha, antes de pesar y antes de cualquier cuenta."
+      "imagen_alt": "Tabla con la cosecha de cada estanque: estanque 1, 52 kilogramos; estanque 2, 44; estanque 3, 39; estanque 4, 57; y el estanque 5 con el registro borrado."
     },
     {
       "id": "P3-mat-8-04",
@@ -148,23 +144,22 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto y utilizo conceptos de media, mediana y moda y explicito sus diferencias en distribuciones de distinta dispersión y asimetría.",
       "que_evalua": "La habilidad para hallar el dato central de un conjunto de cantidades, reconociendo que la mediana exige ordenarlas antes.",
-      "enunciado": "<p>El consejo estudiantil de un colegio de Villavicencio organizó una campaña de reciclaje de tapas plásticas y pesó, día por día, lo que se recogió durante una semana. La planilla quedó escrita en el orden en que se hicieron los pesajes, sin ordenar las cantidades. En la reunión de cierre, la rectora pidió el dato que <b>deja tres días por debajo y tres días por encima</b>, para saber cómo fue una jornada corriente de la campaña.</p><div style=\"display:block;width:fit-content;margin:14px auto;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Día</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Tapas recogidas (kilos)</th></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Lunes</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">12</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Martes</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">9</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Miércoles</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">15</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Jueves</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">20</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Viernes</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">9</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Sábado</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">14</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Domingo</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">11</td></tr></table></div>[[IMG]]<p>El dato que pidió la rectora es</p>",
+      "enunciado": "<p>El consejo estudiantil de Villavicencio pesó las tapas recicladas durante una semana y registró las cantidades en la siguiente tabla.</p>[[IMG]]<p>¿Cuál es el valor que divide este conjunto de datos ordenados exactamente en dos partes iguales?</p>",
       "opciones": {
-        "A": "20 kilos.",
-        "B": "12 kilos.",
-        "C": "9 kilos.",
-        "D": "12,9 kilos."
+        "A": "20 kg",
+        "B": "12 kg",
+        "C": "9 kg",
+        "D": "12,9 kg"
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «12 kilos» es correcta porque el valor que deja tres días por debajo y tres por encima exige ordenar antes las cantidades: \\(9, 9, 11, 12, 14, 15, 20\\). Con siete días, el cuarto valor de esa lista es \\(12\\).",
+      "justificacion_correcta": "La opción «12 kg» es correcta porque el valor que parte el conjunto en dos mitades iguales es la mediana, y para hallarla hay que ordenar antes las cantidades: \\(9, 9, 11, 12, 14, 15, 20\\). Con siete datos, el cuarto valor de la lista ordenada es \\(12\\), que deja tres datos por debajo y tres por encima.",
       "opciones_incorrectas": {
-        "A": "El dato \\(20\\) ocupa el cuarto lugar en la planilla tal como fue escrita, que es el orden de los pesajes y no el de las cantidades; de hecho \\(20\\) es el peso más alto de la semana y deja seis días por debajo.",
-        "C": "El valor de \\(9\\) kilos es el que más veces se repite, es decir la moda, pero deja cinco días por encima y solo uno por debajo, de modo que no parte el grupo en dos mitades iguales.",
-        "D": "El valor de \\(12{,}9\\) kilos reparte los \\(90\\) kilos entre los siete días, de manera que es el promedio y no el dato que ocupa el centro de la lista ordenada."
+        "A": "El valor de \\(20\\) kg ocupa el cuarto lugar en la tabla tal como fue escrita, que es el orden de los días y no el de las cantidades; de hecho \\(20\\) es el peso más alto de la semana y deja seis datos por debajo.",
+        "C": "El valor de \\(9\\) kg es el que más veces se repite, es decir la moda, pero deja cinco datos por encima y solo uno por debajo, de modo que no parte el conjunto en dos partes iguales.",
+        "D": "El valor de \\(12{,}9\\) kg reparte los \\(90\\) kg entre los siete días, de manera que es el promedio y no el dato que ocupa el centro de la lista ordenada."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q04.png",
-      "imagen_alt": "La jornada de cierre de la campaña de reciclaje en el patio del colegio: los estudiantes vaciando tapas sobre la mesa, los costales iguales a un lado y la balanza de gancho.",
-      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio y luz calida de tarde llanera. Escena: el patio de un colegio de Villavicencio en la jornada de cierre de una campana de reciclaje de tapas plasticas. Seis o siete estudiantes de trece a quince anos, con uniforme, rodean una mesa donde vacian tapas de colores; a un lado hay varios costales de fique cerrados, TODOS DEL MISMO TAMANO, y una balanza de gancho colgada de una viga. Una profesora anota en una tabla de apoyo. Composicion horizontal, formato apaisado aproximadamente tres a dos, a media distancia. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: los costales tienen que verse todos del mismo tamano y con el mismo volumen, sin ninguno visiblemente mas grande ni mas pequeno; la balanza no puede mostrar ninguna lectura, su caratula va vacia; no escribir ningun numero, peso ni fecha legible en ninguna parte, tampoco en la planilla de la profesora; no ordenar los costales de menor a mayor ni formarlos en escalera. La escena es la recogida, antes de comparar los pesos de los dias."
+      "imagen_alt": "Tabla con los kilos de tapas recogidos cada día: lunes 12, martes 9, miércoles 15, jueves 20, viernes 9, sábado 14 y domingo 11."
     },
     {
       "id": "P3-mat-8-05",
@@ -176,19 +171,19 @@
       "dificultad": "MEDIA",
       "estandar": "Conjeturo y verifico propiedades de congruencias y semejanzas entre figuras bidimensionales y entre objetos tridimensionales en la solución de problemas.",
       "que_evalua": "La habilidad para hallar el lado que falta en una ampliación semejante, reconociendo que la semejanza conserva la razón entre los lados y no su diferencia.",
-      "enunciado": "<p>Una imprenta de Popayán recibió el afiche de la feria del libro y debe reimprimirlo en un tamaño mayor para pegarlo en las carteleras del parque. El afiche original es un rectángulo de <b>30 centímetros de ancho y 45 centímetros de alto</b>. El cliente pidió que la ampliación tenga <b>50 centímetros de ancho</b> y advirtió que el diseño <b>no se puede deformar</b>: las letras y las fotos deben conservar su forma, de modo que la ampliación tiene que ser semejante al original.</p>[[IMG]]<p>El alto que debe tener la ampliación es</p>",
+      "enunciado": "<p>Una imprenta de Popayán debe ampliar un afiche rectangular que originalmente mide 30 cm de ancho por 45 cm de alto.</p>[[IMG]]<p>Si el cliente pide que la ampliación tenga 50 cm de ancho y que el diseño sea exactamente semejante al original para no deformarlo, ¿cuánto debe medir el alto?</p>",
       "opciones": {
-        "A": "65 centímetros.",
-        "B": "27 centímetros.",
-        "C": "75 centímetros.",
-        "D": "90 centímetros."
+        "A": "65 cm",
+        "B": "27 cm",
+        "C": "75 cm",
+        "D": "90 cm"
       },
       "clave": "C",
-      "justificacion_correcta": "La opción «75 centímetros» es correcta porque en dos figuras semejantes los lados correspondientes guardan la misma razón y no la misma diferencia. El ancho pasó de \\(30\\) a \\(50\\) centímetros, es decir se multiplicó por \\(\\dfrac{50}{30}=\\dfrac{5}{3}\\), así que el alto debe multiplicarse por ese mismo número: \\(45\\times\\dfrac{5}{3}=75\\) centímetros.",
+      "justificacion_correcta": "La opción «75 cm» es correcta porque en dos figuras semejantes los lados correspondientes guardan la misma razón y no la misma diferencia. El ancho pasó de \\(30\\) a \\(50\\) cm, es decir se multiplicó por \\(\\dfrac{50}{30}=\\dfrac{5}{3}\\), así que el alto debe multiplicarse por ese mismo número: \\(45\\times\\dfrac{5}{3}=75\\) cm.",
       "opciones_incorrectas": {
-        "A": "Esa medida sale de sumarle al alto los mismos \\(20\\) centímetros que creció el ancho, y sumarle la misma cantidad a los dos lados cambia la forma: el original guarda una razón de \\(30\\) a \\(45\\), es decir de \\(2\\) a \\(3\\), y un rectángulo de \\(50\\) por \\(65\\) ya no la guarda.",
-        "B": "La medida de \\(27\\) centímetros usa la razón al revés, \\(45\\times\\dfrac{30}{50}\\), con lo cual el afiche quedaría más pequeño que el original a pesar de que el ancho aumentó.",
-        "D": "La medida de \\(90\\) centímetros duplica el alto, y el ancho no llegó a duplicarse: pasó de \\(30\\) a \\(50\\) centímetros, que es menos del doble de \\(30\\)."
+        "A": "El valor de \\(65\\) cm sale de sumarle al alto los mismos \\(20\\) cm que creció el ancho, y sumarle la misma cantidad a los dos lados cambia la forma: el original guarda una razón de \\(2\\) a \\(3\\) y un rectángulo de \\(50\\) por \\(65\\) ya no la guarda.",
+        "B": "El valor de \\(27\\) cm usa la razón al revés, \\(45\\times\\dfrac{30}{50}\\), con lo cual el afiche quedaría más bajo que el original a pesar de que el ancho aumentó.",
+        "D": "El valor de \\(90\\) cm duplica el alto, y el ancho no llegó a duplicarse: pasó de \\(30\\) a \\(50\\) cm, que es menos del doble de \\(30\\)."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q05.png",
       "imagen_alt": "Dos rectángulos: el afiche original de 30 centímetros de ancho por 45 de alto y la ampliación, de 50 centímetros de ancho y alto desconocido."
@@ -202,20 +197,20 @@
       "cmc": "Espacial - métrico",
       "dificultad": "ALTA",
       "estandar": "Aplico y justifico criterios de congruencias y semejanza entre triángulos en la resolución y formulación de problemas.",
-      "que_evalua": "La habilidad para decidir cuál de dos métodos usa correctamente la semejanza entre los triángulos que forman dos objetos con sus sombras.",
-      "enunciado": "<p>Un grupo de estudiantes de Barichara quiere saber cuánto mide el campanario de la iglesia sin subirse a él. A las diez de la mañana clavan en el piso, bien derecha, una vara de <b>1,5 metros</b> y miden la sombra que proyecta: <b>0,9 metros</b>. En ese mismo momento miden la sombra del campanario sobre la plaza y les da <b>12 metros</b>. La profesora les recuerda que a esa hora los rayos del sol llegan con la misma inclinación sobre la vara y sobre el campanario.</p>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">Los dos métodos que se proponen para rematar el cálculo</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Método 1.</b> La vara le saca \\(0{,}6\\) metros a su sombra, así que el campanario le saca esos mismos \\(0{,}6\\) metros a la suya y mide \\(12{,}6\\) metros.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Método 2.</b> En los dos, la altura y la sombra guardan la misma razón, de modo que \\(\\dfrac{h}{12}=\\dfrac{1{,}5}{0{,}9}\\).</div></div><p>¿Cuál de los dos métodos sirve y cuánto mide el campanario?</p>",
+      "que_evalua": "La habilidad para usar la semejanza entre los triángulos que forman dos objetos con sus sombras y hallar una altura que no se puede medir directamente.",
+      "enunciado": "<p>En Barichara, a las 10:00 a.m., una vara de 1,5 metros proyecta una sombra de 0,9 metros. A esa misma hora, la sombra del campanario de la iglesia mide 12 metros.</p>[[IMG]]<p>¿Cuánto mide la altura del campanario?</p>",
       "opciones": {
-        "A": "El método 2, porque en figuras semejantes los lados guardan la razón: 20 metros.",
-        "B": "El método 1, porque la diferencia entre el alto y la sombra se conserva: 12,6 metros.",
-        "C": "El método 2, porque la razón se toma como 0,9 sobre 1,5: mide 7,2 metros.",
-        "D": "El método 2, porque basta multiplicar la sombra por 1,5: mide 18 metros."
+        "A": "20 m",
+        "B": "12,6 m",
+        "C": "7,2 m",
+        "D": "18 m"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «El método 2, porque en figuras semejantes los lados guardan la razón» es correcta porque la vara con su sombra y el campanario con la suya forman dos triángulos rectángulos semejantes: comparten el ángulo con que llegan los rayos del sol y los dos se levantan en ángulo recto sobre el piso. De \\(\\dfrac{h}{12}=\\dfrac{1{,}5}{0{,}9}\\) sale \\(h=\\dfrac{1{,}5\\times 12}{0{,}9}=20\\) metros.",
+      "justificacion_correcta": "La opción «20 m» es correcta porque la vara con su sombra y el campanario con la suya forman dos triángulos rectángulos semejantes: a la misma hora los rayos del sol llegan con la misma inclinación y los dos se levantan en ángulo recto sobre el piso. Por eso la altura y la sombra guardan la misma razón, \\(\\dfrac{h}{12}=\\dfrac{1{,}5}{0{,}9}\\), de donde \\(h=\\dfrac{1{,}5\\times 12}{0{,}9}=20\\) m.",
       "opciones_incorrectas": {
-        "B": "El método 1 conserva la diferencia y no la razón. Con esa idea, una vara que le saque medio metro a su sombra obligaría a que cualquier torre, por alta que sea, le sacara también medio metro a la suya, y las sombras de la plaza muestran que no es así.",
-        "C": "La medida de \\(7{,}2\\) metros invierte la razón, \\(\\dfrac{0{,}9\\times 12}{1{,}5}\\), y con ella el campanario quedaría más bajo que su propia sombra, mientras que la vara sí es más alta que la suya.",
-        "D": "La medida de \\(18\\) metros multiplica los \\(12\\) metros de sombra por \\(1{,}5\\) y se salta la división entre \\(0{,}9\\), es decir usa solo la mitad de la proporción."
+        "B": "El valor de \\(12{,}6\\) m conserva la diferencia entre la altura y la sombra de la vara, \\(0{,}6\\) m, y no la razón; con esa idea cualquier torre, por alta que fuera, le sacaría apenas \\(0{,}6\\) m a su sombra.",
+        "C": "El valor de \\(7{,}2\\) m invierte la razón, \\(\\dfrac{0{,}9\\times 12}{1{,}5}\\), y con ella el campanario quedaría más bajo que su propia sombra, mientras que la vara sí es más alta que la suya.",
+        "D": "El valor de \\(18\\) m multiplica los \\(12\\) m de sombra por \\(1{,}5\\) y se salta la división entre \\(0{,}9\\), es decir usa solo una parte de la proporción."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q06.png",
       "imagen_alt": "Una vara de 1,5 metros con su sombra de 0,9 metros y el campanario con su sombra de 12 metros, a la misma hora del día."
@@ -229,20 +224,20 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
-      "que_evalua": "La habilidad para hallar el lugar que ocupaba una figura antes de una traslación, deshaciendo el movimiento en los dos sentidos y justificando por qué.",
-      "enunciado": "<p>En el taller de serigrafía de doña Rubiela, en Neiva, se estampan las camisetas de los colegios con una plantilla de acrílico que se va corriendo sobre una mesa cuadriculada. Para estampar la segunda camiseta del pedido, el ayudante corrió la plantilla triangular <b>4 cuadros hacia la derecha y 3 cuadros hacia abajo</b>, y en esa posición quedó, tal como la muestra el dibujo con los tres vértices marcados. Doña Rubiela llegó más tarde y necesita saber en qué lugar de la mesa estaba la plantilla <b>antes</b> de ese movimiento, porque ahí quedó el estampado de la primera camiseta y tiene que revisarlo.</p>[[IMG]]<p>¿En qué lugar de la cuadrícula estaba la plantilla antes de que la corrieran, y por qué?</p>",
+      "que_evalua": "La habilidad para hallar el lugar que ocupaba un punto antes de una traslación, deshaciendo el movimiento en los dos sentidos.",
+      "enunciado": "<p>En Neiva, doña Rubiela usa una plantilla triangular en una mesa cuadriculada. El ayudante la corrió 4 cuadros a la derecha y 3 hacia abajo, dejando uno de los vértices en la coordenada \\((7, 4)\\).</p>[[IMG]]<p>¿En qué coordenada estaba ese vértice originalmente antes del movimiento?</p>",
       "opciones": {
-        "A": "En (11, 1), (13, 1) y (13, 4), porque hay que volver a aplicar el mismo movimiento.",
-        "B": "En (3, 4), (5, 4) y (5, 7), porque basta devolver los cuatro cuadros de la derecha.",
-        "C": "En (7, 7), (9, 7) y (9, 10), porque basta subir los tres cuadros que la plantilla bajó.",
-        "D": "En (3, 7), (5, 7) y (5, 10), porque se deshacen los dos corrimientos a la vez."
+        "A": "(11, 1)",
+        "B": "(3, 4)",
+        "C": "(7, 7)",
+        "D": "(3, 7)"
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «En (3, 7), (5, 7) y (5, 10), porque se deshacen los dos corrimientos a la vez» es correcta porque para volver al lugar de partida hay que deshacer el movimiento en los dos sentidos: si la plantilla se corrió cuatro cuadros hacia la derecha, antes estaba cuatro cuadros más a la izquierda, y si bajó tres, antes estaba tres cuadros más arriba. Al vértice \\((7, 4)\\) le corresponde entonces \\((3, 7)\\); al \\((9, 4)\\), el punto \\((5, 7)\\); y al \\((9, 7)\\), el punto \\((5, 10)\\).",
+      "justificacion_correcta": "La opción «(3, 7)» es correcta porque para volver al lugar de partida hay que deshacer el movimiento en los dos sentidos: si la plantilla se corrió cuatro cuadros a la derecha, antes estaba cuatro cuadros más a la izquierda, \\(7-4=3\\); y si bajó tres, antes estaba tres cuadros más arriba, \\(4+3=7\\).",
       "opciones_incorrectas": {
-        "A": "Repetir el movimiento corre la plantilla otros cuatro cuadros hacia la derecha y otros tres hacia abajo, con lo cual queda todavía más lejos del sitio que doña Rubiela busca; deshacer un movimiento es hacerlo en sentido contrario.",
-        "B": "Devolver solo el corrimiento hacia la derecha deja la plantilla a la misma altura en que está ahora, como si el ayudante nunca la hubiera bajado los tres cuadros.",
-        "C": "Subir los tres cuadros corrige la altura, pero deja la plantilla en las mismas columnas en que quedó, sin devolverle los cuatro cuadros que se corrió hacia la derecha."
+        "A": "El punto \\((11, 1)\\) vuelve a aplicar el mismo movimiento, cuatro a la derecha y tres hacia abajo, con lo cual el vértice queda todavía más lejos del sitio de partida; deshacer un movimiento es hacerlo en sentido contrario.",
+        "B": "El punto \\((3, 4)\\) devuelve solo los cuatro cuadros hacia la derecha y deja el vértice a la misma altura en que está ahora, como si nunca lo hubieran bajado.",
+        "C": "El punto \\((7, 7)\\) sube los tres cuadros que bajó, pero deja el vértice en la misma columna en que quedó, sin devolverle los cuatro cuadros que se corrió hacia la derecha."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q07.png",
       "imagen_alt": "Cuadrícula de la mesa del taller con la plantilla triangular en la posición en que quedó, con sus vértices en los puntos siete y cuatro, nueve y cuatro, y nueve y siete."
@@ -256,24 +251,21 @@
       "cmc": "Aleatorio",
       "dificultad": "ALTA",
       "estandar": "Calculo probabilidad de eventos simples usando métodos diversos (listados, diagramas de árbol, técnicas de conteo).",
-      "que_evalua": "La habilidad para revisar un conteo ajeno de casos favorables y decidir cuál de varias condiciones tiene la mayor posibilidad sobre un mismo conjunto.",
-      "enunciado": "<p>El mercado campesino de Silvia rifa un mercado completo entre quienes compran boleta. El talonario tiene <b>200 boletas numeradas del 1 al 200</b>, todas iguales, y el día del sorteo se saca <b>una sola boleta al azar</b>. Como quedaron boletas sin vender, la organización decidió premiar no un número exacto sino una condición, y cada uno de los cuatro socios propuso la suya: Aleida propuso premiar los <b>múltiplos de cinco</b>; Bernardo, los números <b>terminados en siete</b>; Cielo, los <b>mayores que ciento sesenta</b>; y Dagoberto, los <b>múltiplos de tres</b>. Ganaría el socio cuya condición cumpla la boleta que salga.</p>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">Los pasos que Aleida escribió en el acta para defender su propuesta</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> Las boletas que cumplen mi condición van de cinco en cinco, desde el \\(5\\) hasta el \\(200\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Por eso son \\(200\\div 5=40\\) boletas a mi favor.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Los múltiplos de tres van de tres en tres y \\(200\\div 3\\) no da un número entero, así que son menos de \\(40\\).</div></div><p>¿En cuál paso se equivoca Aleida y cuál de los cuatro socios tiene la mayor posibilidad de ganar?</p>",
+      "que_evalua": "La habilidad para contar los casos favorables de varias condiciones sobre un mismo conjunto y decidir cuál tiene la mayor posibilidad.",
+      "enunciado": "<p>La distribuidora de Silvia rifará un mercado usando 200 boletas numeradas del 1 al 200. Cuatro socios propusieron una condición ganadora:</p><p>Aleida: múltiplos de 5<br>Bernardo: números terminados en 7<br>Cielo: mayores que 160<br>Dagoberto: múltiplos de 3</p><p>¿Qué socio tiene la mayor cantidad de boletas a su favor y, por tanto, más posibilidad de ganar?</p>",
       "opciones": {
-        "A": "En ninguno, porque cuarenta es el conteo más alto: gana Aleida con los múltiplos de cinco.",
-        "B": "En el paso 3, porque los múltiplos de tres son 66: gana Dagoberto con esa condición.",
-        "C": "En el paso 2, porque los múltiplos de cinco son 20: gana Cielo con los mayores que 160.",
-        "D": "En el paso 1, porque los terminados en siete son 40: gana Bernardo con esa condición."
+        "A": "Aleida",
+        "B": "Dagoberto",
+        "C": "Cielo",
+        "D": "Bernardo"
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «En el paso 3, porque los múltiplos de tres son 66» es correcta porque que \\(200\\div 3\\) no dé un número entero no significa que haya menos múltiplos: el mayor múltiplo de tres del talonario es \\(198=3\\times 66\\), de manera que son \\(66\\) boletas a favor de Dagoberto. Sobre el mismo total, las demás condiciones reúnen menos casos: \\(40\\) múltiplos de cinco, \\(40\\) boletas del \\(161\\) al \\(200\\) y \\(20\\) terminadas en siete.",
+      "justificacion_correcta": "La opción «Dagoberto» es correcta porque entre \\(1\\) y \\(200\\) el mayor múltiplo de tres es \\(198=3\\times 66\\), de manera que hay \\(66\\) boletas a su favor. Las demás condiciones reúnen menos casos: \\(40\\) múltiplos de cinco, \\(40\\) boletas del \\(161\\) al \\(200\\) y \\(20\\) terminadas en siete. Como todas las boletas tienen la misma posibilidad de salir, gana en posibilidad la condición con más boletas.",
       "opciones_incorrectas": {
-        "A": "Los dos primeros pasos de Aleida están bien hechos y su conteo de \\(40\\) boletas es exacto, pero ese no es el conteo más alto de los cuatro: los múltiplos de tres reúnen \\(66\\) boletas del mismo talonario.",
-        "C": "El paso 2 cuenta correctamente: entre \\(1\\) y \\(200\\) hay \\(40\\) múltiplos de cinco y no \\(20\\). Las boletas mayores que ciento sesenta también son \\(40\\), de modo que la condición de Cielo empata con la de Aleida y ninguna de las dos alcanza a la de los múltiplos de tres.",
-        "D": "El paso 1 describe bien los múltiplos de cinco. Las boletas terminadas en siete son \\(20\\), dos por cada centena del talonario, y esa es la condición que menos casos favorables reúne de las cuatro."
-      },
-      "imagen_figura": "assets/banco-mat-8-p3/q08.png",
-      "imagen_alt": "La mesa de la organización en el mercado campesino de Silvia, con la tómbola cerrada, el talonario y los cuatro socios discutiendo de pie.",
-      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio y luz clara de montana. Escena: el mercado campesino de Silvia, en el Cauca, con puestos de verduras, ruanas y sombreros, y campesinas guambianas de falda azul. En primer plano, una mesa de la organizacion con una tombola de madera cerrada y un talonario de boletas; cuatro socios adultos, dos hombres y dos mujeres, discuten de pie alrededor de la mesa. Composicion horizontal, formato apaisado aproximadamente tres a dos, a media distancia. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: no mostrar ninguna boleta con numero legible, ni boletas marcadas, subrayadas o separadas en monton aparte; no dibujar ningun tablero, cartel o acta donde se lean las condiciones propuestas ni ningun conteo; ninguno de los cuatro socios puede aparecer senalado, celebrando ni destacado sobre los otros tres. La escena es la discusion, antes del sorteo y antes de contar una sola boleta."
+        "A": "Los múltiplos de cinco entre \\(1\\) y \\(200\\) son \\(200\\div 5=40\\) boletas, una cantidad menor que las \\(66\\) que reúnen los múltiplos de tres.",
+        "C": "Las boletas mayores que \\(160\\) van del \\(161\\) al \\(200\\), es decir \\(40\\) boletas, las mismas que los múltiplos de cinco y menos que los \\(66\\) múltiplos de tres.",
+        "D": "Las boletas terminadas en siete son apenas \\(20\\), dos por cada veintena de números, y esa es la condición que menos casos favorables reúne de las cuatro."
+      }
     },
     {
       "id": "P3-mat-8-09",
@@ -284,20 +276,20 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Uso conceptos básicos de probabilidad (espacio muestral, evento, independencia, etc.).",
-      "que_evalua": "La habilidad para decidir cuál evento conviene escoger comparando la cantidad de casos favorables de cada uno y sosteniendo la razón de esa elección.",
-      "enunciado": "<p>Una tienda de barrio de Aguachica hizo una promoción para la fiesta del pueblo. En una caja de cartón puso <b>30 fichas del mismo tamaño y el mismo material</b>, que no se distinguen al tacto: <b>6 son rojas, 9 son azules y 15 son verdes</b>. Cada cliente que compre el mercado del mes dice en voz alta un color, mete la mano sin mirar y saca una sola ficha; si la ficha que saca es del color que dijo, se gana el mercado de la semana siguiente. Aníbal va a jugar y quiere escoger el color que le dé la mayor posibilidad de ganar.</p>[[IMG]]<p>¿Qué le conviene decir a Aníbal y por qué?</p>",
+      "que_evalua": "La habilidad para calcular la probabilidad de un evento simple contando los casos favorables, incluido el caso en que el evento es el contrario de otro.",
+      "enunciado": "<p>Una tienda en Aguachica puso 30 fichas en una caja opaca: 6 rojas, 9 azules y 15 verdes. Para ganar un premio, Aníbal sacará una ficha al azar, sin mirar.</p>[[IMG]]<p>¿Cuál es la probabilidad matemática de que la ficha que saque Aníbal <b>NO</b> sea azul?</p>",
       "opciones": {
-        "A": "Escoger el azul, porque su cantidad queda entre la de los otros dos colores.",
-        "B": "Escoger cualquiera de los tres, porque al sacar al azar los colores valen lo mismo.",
-        "C": "Escoger el verde, porque la mitad de las fichas de la caja son de ese color.",
-        "D": "Escoger el rojo, porque mientras menos fichas haya de un color más fácil es que salga."
+        "A": "\\(\\dfrac{7}{10}\\)",
+        "B": "\\(\\dfrac{3}{10}\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "\\(\\dfrac{4}{5}\\)"
       },
-      "clave": "C",
-      "justificacion_correcta": "La opción «Escoger el verde, porque la mitad de las fichas de la caja son de ese color» es correcta porque de las \\(30\\) fichas hay \\(15\\) verdes, es decir \\(\\dfrac{15}{30}=\\dfrac{1}{2}\\) del total, mientras que las azules son \\(\\dfrac{9}{30}\\) y las rojas \\(\\dfrac{6}{30}\\). Como todas las fichas se sienten iguales, gana en posibilidad el color que tenga más fichas en la caja.",
+      "clave": "A",
+      "justificacion_correcta": "La opción \\(\\dfrac{7}{10}\\) es correcta porque las fichas que no son azules son las \\(6\\) rojas y las \\(15\\) verdes, es decir \\(21\\) de las \\(30\\) fichas de la caja. La probabilidad es \\(\\dfrac{21}{30}=\\dfrac{7}{10}\\); se llega a lo mismo restándole a \\(1\\) la probabilidad de sacar azul, \\(1-\\dfrac{9}{30}=\\dfrac{21}{30}\\).",
       "opciones_incorrectas": {
-        "A": "El azul queda en el medio por cantidad, con \\(9\\) fichas, pero estar en el medio no es tener la mayor posibilidad: el verde lo supera con \\(15\\).",
-        "B": "Sacar al azar significa que cada ficha tiene la misma posibilidad de salir, y eso no vuelve iguales a los colores, porque hay muchas más fichas de un color que de otro.",
-        "D": "El rojo es el color más escaso, con \\(6\\) fichas de \\(30\\); tener pocas fichas hace más difícil, y no más fácil, que salga una de ese color."
+        "B": "El valor \\(\\dfrac{3}{10}=\\dfrac{9}{30}\\) es la probabilidad de que la ficha SÍ sea azul, que es justamente el caso contrario al que se pregunta.",
+        "C": "El valor \\(\\dfrac{1}{2}=\\dfrac{15}{30}\\) corresponde solo a las fichas verdes y deja por fuera las \\(6\\) rojas, que tampoco son azules.",
+        "D": "El valor \\(\\dfrac{4}{5}=\\dfrac{24}{30}\\) cuenta \\(24\\) fichas no azules, y en la caja son \\(6+15=21\\)."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q09.png",
       "imagen_alt": "La caja abierta con las treinta fichas revueltas: seis rojas, nueve azules y quince verdes, todas del mismo tamaño."
@@ -311,24 +303,23 @@
       "cmc": "Numérico - variacional",
       "dificultad": "BAJA",
       "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
-      "que_evalua": "La habilidad para valorar una afirmación sobre el orden de unos registros y ordenar de menor a mayor números escritos como fracción, decimal y porcentaje.",
-      "enunciado": "<p>La Cruz Roja de un municipio del Huila cerró la campaña de recolección de alimentos y cada vereda reportó qué parte de su meta alcanzó, cada una en la forma que acostumbra escribirlo. La coordinadora tiene que leer el reporte en la asamblea general empezando por la vereda que menos alcanzó y terminando por la que más, para que quede claro dónde hay que reforzar el trabajo el año entrante.</p><div style=\"display:block;width:fit-content;margin:14px auto;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Vereda</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Parte de la meta que alcanzó</th></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">La Palma</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">\\(\\dfrac{3}{4}\\)</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">El Mirador</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">\\(0{,}78\\)</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">San Isidro</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">\\(76\\,\\%\\)</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Buenavista</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">\\(\\dfrac{7}{10}\\)</td></tr></table></div>[[IMG]]<p>Un delegado sostiene que dos de las cuatro veredas quedaron muy cerca una de la otra, con menos de dos centésimas de diferencia, y que por eso hay que mirar con cuidado cuál va primero.</p><p>¿En qué orden debe leer la coordinadora los cuatro registros?</p>",
+      "que_evalua": "La habilidad para ordenar de menor a mayor números escritos como fracción, decimal y porcentaje, llevándolos a una misma forma.",
+      "enunciado": "<p>La Cruz Roja del Huila anotó en la siguiente tabla qué parte de la meta de recolección de alimentos alcanzó cada vereda.</p>[[IMG]]<p>¿Cuál es el orden correcto de estos registros, de menor a mayor?</p>",
       "opciones": {
-        "A": "Buenavista, La Palma, San Isidro y El Mirador, porque van de \\(0{,}70\\) hasta \\(0{,}78\\).",
-        "B": "El Mirador, San Isidro, La Palma y Buenavista, porque van de \\(0{,}78\\) hasta \\(0{,}70\\).",
-        "C": "La Palma, El Mirador, San Isidro y Buenavista, porque ese es el orden de la tabla.",
-        "D": "San Isidro, Buenavista, La Palma y El Mirador, porque un porcentaje vale menos que una fracción."
+        "A": "Buenavista, La Palma, San Isidro, El Mirador",
+        "B": "El Mirador, San Isidro, La Palma, Buenavista",
+        "C": "La Palma, El Mirador, San Isidro, Buenavista",
+        "D": "San Isidro, Buenavista, La Palma, El Mirador"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «Buenavista, La Palma, San Isidro y El Mirador» es correcta porque al llevar los cuatro reportes a una misma forma quedan \\(\\dfrac{7}{10}=0{,}70\\), \\(\\dfrac{3}{4}=0{,}75\\), \\(76\\,\\%=0{,}76\\) y \\(0{,}78\\). Ordenados de menor a mayor van \\(0{,}70\\), \\(0{,}75\\), \\(0{,}76\\) y \\(0{,}78\\), que corresponden en ese mismo orden a Buenavista, La Palma, San Isidro y El Mirador. El delegado tiene razón en lo que advierte: entre La Palma y San Isidro hay una sola centésima de diferencia.",
+      "justificacion_correcta": "La opción «Buenavista, La Palma, San Isidro, El Mirador» es correcta porque al llevar los cuatro registros a una misma forma quedan \\(\\dfrac{7}{10}=0{,}70\\), \\(\\dfrac{3}{4}=0{,}75\\), \\(76\\,\\%=0{,}76\\) y \\(0{,}78\\). Ordenados de menor a mayor van \\(0{,}70\\), \\(0{,}75\\), \\(0{,}76\\) y \\(0{,}78\\), que corresponden en ese mismo orden a Buenavista, La Palma, San Isidro y El Mirador.",
       "opciones_incorrectas": {
-        "B": "Ese orden va de mayor a menor: arranca con \\(0{,}78\\), que es el reporte más alto, y termina con \\(0{,}70\\), que es el más bajo, justo al revés de lo que pidió la coordinadora.",
-        "C": "Ese es el orden en que las veredas entregaron el reporte y no el de las partes que alcanzaron: La Palma llegó a \\(0{,}75\\) y Buenavista, que quedaría de última, apenas a \\(0{,}70\\).",
-        "D": "La forma en que está escrito un registro no dice nada sobre su tamaño: el \\(76\\,\\%\\) de San Isidro equivale a \\(0{,}76\\) y supera a la fracción \\(\\dfrac{3}{4}\\) de La Palma, que equivale a \\(0{,}75\\)."
+        "B": "Ese orden va de mayor a menor: arranca con \\(0{,}78\\), que es el registro más alto, y termina con \\(0{,}70\\), que es el más bajo, justo al revés de lo que se pide.",
+        "C": "Ese es el orden en que aparecen las veredas en la tabla y no el de las partes que alcanzaron: La Palma llegó a \\(0{,}75\\) y Buenavista, que quedaría de última, apenas a \\(0{,}70\\).",
+        "D": "Ese orden pone primero el porcentaje como si valiera menos que una fracción; el \\(76\\,\\%\\) de San Isidro equivale a \\(0{,}76\\) y supera tanto a \\(\\dfrac{7}{10}\\) como a \\(\\dfrac{3}{4}\\)."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q10.png",
-      "imagen_alt": "La asamblea de cierre de la campaña en el salón comunal: el pendón de la Cruz Roja, los bultos de alimentos apilados y la coordinadora de pie frente al atril.",
-      "imagen_prompt": "Ilustracion editorial a color, estilo libro escolar colombiano contemporaneo, trazo limpio y luz calida de manana. Escena: el salon comunal de un municipio del Huila durante la asamblea de cierre de una campana de recoleccion de alimentos de la Cruz Roja. Al fondo, un pendon de tela con el nombre de la campana y la cruz roja; contra la pared, bultos y cajas de alimentos apilados; en el centro, la coordinadora de pie frente a un atril con una carpeta abierta, y veinte personas sentadas en sillas plasticas escuchandola. Composicion horizontal, formato apaisado aproximadamente tres a dos, vista a media distancia desde el fondo del salon. PROHIBIDO ESTRICTAMENTE, porque delataria la respuesta de la pregunta: no mostrar ninguna cartelera, tablero, pantalla ni afiche con fracciones, decimales, porcentajes, barras, termometros de meta o cualquier grafico; no escribir ningun numero ni ningun nombre de vereda en ningun letrero; no ordenar ni numerar a las veredas ni a los bultos de ninguna manera; la carpeta del atril va con las hojas de canto, sin texto legible. La escena es el momento anterior a leer los reportes."
+      "imagen_alt": "Tabla con la parte de la meta que alcanzó cada vereda: La Palma, tres cuartos; El Mirador, cero coma setenta y ocho; San Isidro, setenta y seis por ciento; y Buenavista, siete décimos."
     },
     {
       "id": "P3-mat-8-11",
@@ -339,20 +330,20 @@
       "cmc": "Numérico - variacional",
       "dificultad": "ALTA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales y de las relaciones y operaciones entre ellos.",
-      "que_evalua": "La habilidad para revisar un cálculo ajeno que usa una relación lineal entre dos magnitudes y estimar el valor de una de ellas donde no se midió.",
-      "enunciado": "<p>Los guías que suben al páramo del Galeras, en Nariño, se apoyan en una regla sencilla para avisarle al grupo cómo abrigarse: <b>por cada 100 metros que se sube, la temperatura del aire baja 0,6 grados</b>. La regla les sirve porque a lo largo de todo el ascenso la temperatura va cambiando de manera pareja. Esta mañana, en el refugio que está a <b>2.600 metros</b> sobre el nivel del mar, el termómetro marcó <b>12 grados</b>. El grupo va a seguir hasta el mirador de la cima, a <b>3.500 metros</b>.</p>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">La cuenta que hizo un guía novato antes de anunciarle al grupo lo que se va a encontrar</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> Del refugio a la cima se suben \\(3500-2600=900\\) metros.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Eso equivale a \\(900\\div 100=9\\) tramos de cien metros.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> La temperatura baja entonces \\(0{,}6\\) grados, así que en la cima habrá \\(12-0{,}6=11{,}4\\) grados.</div></div><p>¿En cuál paso está el error y qué temperatura se espera en el mirador de la cima?</p>",
+      "que_evalua": "La habilidad para usar una relación lineal entre dos magnitudes y estimar el valor de una de ellas donde no se midió.",
+      "enunciado": "<p>Subiendo al páramo del Galeras, la temperatura baja 0,6 grados por cada 100 metros de ascenso.</p>[[IMG]]<p>Si en el refugio a 2.600 metros de altura la temperatura es de 12 grados, ¿qué temperatura se espera en la cima a 3.500 metros?</p>",
       "opciones": {
-        "A": "En ninguno, porque la regla anuncia una sola rebaja de 0,6 grados: 11,4 grados.",
-        "B": "En el paso 3, porque al ganar altura la temperatura sube: serán 17,4 grados.",
-        "C": "En el paso 2, porque los tramos de cien metros son ocho: serán 7,2 grados.",
-        "D": "En el paso 3, porque la rebaja se aplica en los nueve tramos: serán 6,6 grados."
+        "A": "11,4 grados",
+        "B": "17,4 grados",
+        "C": "7,2 grados",
+        "D": "6,6 grados"
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «En el paso 3, porque la rebaja se aplica en los nueve tramos» es correcta porque los dos primeros pasos están bien: del refugio a la cima hay \\(900\\) metros, que son \\(9\\) tramos de cien. Lo que falla es aplicar la rebaja una sola vez, cuando en cada tramo la temperatura baja \\(0{,}6\\) grados: el descenso total es \\(9\\times 0{,}6=5{,}4\\) grados y en la cima quedan \\(12-5{,}4=6{,}6\\) grados.",
+      "justificacion_correcta": "La opción «6,6 grados» es correcta porque del refugio a la cima se suben \\(3500-2600=900\\) metros, que son \\(9\\) tramos de cien metros. En cada tramo la temperatura baja \\(0{,}6\\) grados, así que el descenso total es \\(9\\times 0{,}6=5{,}4\\) grados y en la cima quedan \\(12-5{,}4=6{,}6\\) grados.",
       "opciones_incorrectas": {
-        "A": "El valor de \\(11{,}4\\) grados aplica la rebaja una sola vez, como si entre el refugio y la cima hubiera un único tramo de cien metros y no los nueve que separan las dos alturas.",
-        "B": "El valor de \\(17{,}4\\) grados suma los \\(5{,}4\\) grados en lugar de restarlos, y la regla de los guías dice que al subir la temperatura baja, no que suba.",
-        "C": "El paso 2 está bien hecho: \\(900\\div 100\\) da exactamente \\(9\\) tramos y no \\(8\\). Con ocho tramos quedarían sin descontar los últimos cien metros del ascenso."
+        "A": "El valor de \\(11{,}4\\) grados aplica la rebaja de \\(0{,}6\\) una sola vez, como si entre el refugio y la cima hubiera un único tramo de cien metros y no los nueve que separan las dos alturas.",
+        "B": "El valor de \\(17{,}4\\) grados suma los \\(5{,}4\\) grados en lugar de restarlos, y al subir la temperatura baja, no sube.",
+        "C": "El valor de \\(7{,}2\\) grados descuenta solo ocho tramos, \\(12-8\\times 0{,}6\\); \\(900\\div 100\\) da nueve tramos, de modo que quedan sin descontar los últimos cien metros del ascenso."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q11.png",
       "imagen_alt": "Perfil del ascenso al páramo, con el refugio a 2.600 metros marcando 12 grados y el mirador de la cima a 3.500 metros con la temperatura por establecer."
@@ -366,8 +357,8 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Selecciono y uso algunos métodos estadísticos adecuados al tipo de problema, de información y al nivel de la escala en la que esta se representa.",
-      "que_evalua": "La habilidad para valorar una anticipación sobre el tamaño de un sector y reconocer el diagrama circular cuyos sectores son proporcionales a las frecuencias de la tabla.",
-      "enunciado": "<p>El comité de bienestar de un colegio de Sincelejo le preguntó a los <b>60 estudiantes</b> de grado octavo cuál actividad prefieren para la semana cultural. Cada estudiante escogió una sola. Para la cartelera del corredor, el comité quiere presentar el resultado en un <b>diagrama circular</b>, de manera que el círculo completo, es decir los <b>360 grados</b>, represente a los sesenta encuestados y cada actividad ocupe un sector proporcional a la cantidad de votos que recibió.</p><div style=\"display:block;width:fit-content;margin:14px auto;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Actividad preferida</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Estudiantes</th></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Danza</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">24</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Música</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">18</td></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Teatro</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">12</td></tr><tr><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Ajedrez</td><td style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">6</td></tr></table></div><p>El monitor del comité anticipa que a la danza le corresponde medio círculo, porque fue la actividad más votada de las cuatro.</p><p>¿Cuál de los siguientes diagramas representa lo que respondieron los sesenta estudiantes?</p>",
+      "que_evalua": "La habilidad para reconocer el diagrama circular cuyos sectores son proporcionales a las frecuencias de una tabla.",
+      "enunciado": "<p>El comité de bienestar de un colegio de Sincelejo le preguntó a los <b>60 estudiantes</b> de grado octavo cuál actividad prefieren para la semana cultural, los resultados se registran en la tabla siguiente.</p>[[IMG]]<p>¿Cuál diagrama circular representa correctamente esta información?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -375,12 +366,14 @@
         "D": ""
       },
       "clave": "B",
-      "justificacion_correcta": "El diagrama correcto le da a danza \\(144\\) grados, a música \\(108\\), a teatro \\(72\\) y a ajedrez \\(36\\), porque a cada estudiante le corresponden \\(360\\div 60=6\\) grados del círculo: danza reúne \\(24\\times 6=144\\), música \\(18\\times 6=108\\), teatro \\(12\\times 6=72\\) y ajedrez \\(6\\times 6=36\\). Ser la más votada no le da a la danza medio círculo: para eso habría necesitado treinta votos y obtuvo veinticuatro.",
+      "justificacion_correcta": "El diagrama correcto le da a danza \\(144\\) grados, a música \\(108\\), a teatro \\(72\\) y a ajedrez \\(36\\), porque a cada estudiante le corresponden \\(360\\div 60=6\\) grados del círculo: danza reúne \\(24\\times 6=144\\), música \\(18\\times 6=108\\), teatro \\(12\\times 6=72\\) y ajedrez \\(6\\times 6=36\\).",
       "opciones_incorrectas": {
         "A": "El diagrama que parte el círculo en cuatro sectores iguales le daría a cada actividad un cuarto de los votos, es decir quince estudiantes, y la tabla muestra que las preferencias fueron muy distintas entre sí.",
         "C": "El diagrama que le da el sector más grande al ajedrez y el más pequeño a la danza invierte el orden de la tabla: el ajedrez recibió seis votos y la danza veinticuatro, cuatro veces más.",
-        "D": "El diagrama que le da a la danza medio círculo es justamente el que anticipó el monitor, y exagera su parte: la mitad del círculo representaría treinta estudiantes y a la danza la escogieron veinticuatro."
+        "D": "El diagrama que le da a la danza medio círculo exagera su parte: la mitad del círculo representaría treinta estudiantes y a la danza la escogieron veinticuatro."
       },
+      "imagen_figura": "assets/banco-mat-8-p3/q12.png",
+      "imagen_alt": "Tabla con la actividad preferida por los 60 estudiantes: danza 24, música 18, teatro 12 y ajedrez 6.",
       "opciones_imagenes": {
         "A": "assets/banco-mat-8-p3/q12_opA.png",
         "B": "assets/banco-mat-8-p3/q12_opB.png",
@@ -397,19 +390,19 @@
       "cmc": "Aleatorio",
       "dificultad": "MEDIA",
       "estandar": "Interpreto analítica y críticamente información estadística proveniente de diversas fuentes (prensa, revistas, televisión, experimentos, consultas, entrevistas).",
-      "que_evalua": "La habilidad para comparar dos conjuntos de datos representados en una misma gráfica y hallar la mayor diferencia entre ellos.",
-      "enunciado": "<p>Una cooperativa de moreros de Silvania vende su cosecha de dos maneras: en el puesto de la plaza de mercado y por domicilio, con pedidos que le llegan por teléfono. La junta llevó a la asamblea la gráfica con los kilos vendidos por cada canal durante los cinco primeros meses del año, porque un socio quiere contratar un mensajero fijo para los domicilios.</p>[[IMG]]<p>El mes en que el domicilio le sacó la mayor ventaja a la plaza es</p>",
+      "que_evalua": "La habilidad para comparar dos conjuntos de datos representados en una misma gráfica de barras dobles y hallar la mayor diferencia entre ellos.",
+      "enunciado": "<p>Una cooperativa de agricultores de Silvania vende su cosecha de dos maneras: en el puesto de la plaza de mercado y por domicilio, la cantidad de kilos de mora vendidos en los primeros cinco meses del año se muestran en el siguiente gráfico.</p>[[IMG]]<p>¿En qué mes la venta a domicilio superó a la venta en plaza por la mayor diferencia de kilos?</p>",
       "opciones": {
-        "A": "abril, con 150 kilos contra 90.",
-        "B": "marzo, con 140 kilos contra 130.",
-        "C": "mayo, con una diferencia de 50 kilos.",
-        "D": "febrero, con una diferencia de 70 kilos."
+        "A": "Abril",
+        "B": "Marzo",
+        "C": "Mayo",
+        "D": "Febrero"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «abril, con 150 kilos contra 90» es correcta porque la ventaja del domicilio en abril es de \\(150-90=60\\) kilos, la mayor de los cinco meses.",
+      "justificacion_correcta": "La opción «Abril» es correcta porque en ese mes el domicilio vendió \\(150\\) kilos y la plaza \\(90\\): una ventaja de \\(150-90=60\\) kilos a favor del domicilio, la mayor de los cinco meses.",
       "opciones_incorrectas": {
-        "B": "En marzo el domicilio sí superó a la plaza, con \\(140\\) kilos contra \\(130\\), y fue el primer mes en que lo hizo, pero esa ventaja de \\(10\\) kilos es seis veces menor que la de abril.",
-        "C": "En mayo la diferencia de \\(50\\) kilos existe, aunque a favor de la plaza, que vendió \\(160\\) kilos frente a los \\(110\\) del domicilio.",
+        "B": "En marzo el domicilio sí superó a la plaza, con \\(140\\) kilos contra \\(130\\), pero esa ventaja de \\(10\\) kilos es seis veces menor que la de abril.",
+        "C": "En mayo la diferencia de \\(50\\) kilos favorece a la plaza, que vendió \\(160\\) kilos frente a los \\(110\\) del domicilio; ese mes el domicilio no superó a la plaza.",
         "D": "En febrero la diferencia de \\(70\\) kilos también favorece a la plaza, que vendió \\(150\\) kilos mientras el domicilio llegó a \\(80\\)."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q13.png",
@@ -424,19 +417,19 @@
       "cmc": "Espacial - métrico",
       "dificultad": "ALTA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
-      "que_evalua": "La habilidad para revisar un procedimiento ajeno que descompone una región compuesta y cuenta las piezas que la cubren.",
-      "enunciado": "<p>La junta de acción comunal de una vereda de Sabanalarga va a enchapar el piso del salón comunal, que tiene la forma en ele que muestra el plano, con las medidas tomadas por el maestro de obra. Las baldosas que consiguieron son cuadradas, de <b>50 centímetros por lado</b>, y el proveedor las vende por unidad. El tesorero necesita saber cuántas baldosas pedir para cubrir todo el piso, sin contar por ahora las que se rompen al cortar.</p>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">Los pasos que el maestro de obra dejó anotados en la libreta</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> El piso cabe dentro de un rectángulo de \\(9\\) por \\(6\\) metros, es decir \\(54\\) metros cuadrados.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> A ese rectángulo hay que quitarle el pedazo de \\(3\\) por \\(2\\) metros que el salón no tiene, o sea \\(6\\) metros cuadrados: quedan \\(48\\).</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 3.</b> Como la baldosa mide \\(0{,}5\\) metros de lado, se necesitan \\(48\\div 0{,}5=96\\) baldosas.</div></div><p>¿En cuál paso está el error y cuántas baldosas debe pedir el tesorero?</p>",
+      "que_evalua": "La habilidad para hallar el área de una región compuesta y calcular cuántas piezas cuadradas la cubren, dividiendo entre el área de cada pieza.",
+      "enunciado": "<p>El salón comunal de Sabanalarga tiene forma de \"L\" (un rectángulo de \\(9\\times 6\\) m menos un cuarto de \\(3\\times 2\\) m que no se enchapa). Se cubrirá con baldosas cuadradas de 0,5 metros de lado.</p>[[IMG]]<p>¿Cuántas baldosas se necesitan para cubrir todo el piso?</p>",
       "opciones": {
-        "A": "En el paso 2, porque el pedazo que falta también se enchapa: son 216 baldosas.",
-        "B": "En ninguno, porque la baldosa se cuenta por su lado de medio metro: son 96.",
-        "C": "En el paso 3, porque hay que dividir entre el área de la baldosa: son 192.",
-        "D": "En el paso 3, porque el piso ya viene medido en baldosas enteras: son 48."
+        "A": "216 baldosas",
+        "B": "96 baldosas",
+        "C": "192 baldosas",
+        "D": "48 baldosas"
       },
       "clave": "C",
-      "justificacion_correcta": "La opción «En el paso 3, porque hay que dividir entre el área de la baldosa» es correcta porque los dos primeros pasos son válidos: el piso mide \\(54-6=48\\) metros cuadrados. Lo que falla es dividir entre el lado de la baldosa, cuando cada baldosa cubre \\(0{,}5\\times 0{,}5=0{,}25\\) metros cuadrados; de ahí que se requieran \\(48\\div 0{,}25=192\\) baldosas, es decir cuatro por cada metro cuadrado de piso.",
+      "justificacion_correcta": "La opción «192 baldosas» es correcta porque el piso mide \\(9\\times 6-3\\times 2=54-6=48\\) metros cuadrados y cada baldosa cubre \\(0{,}5\\times 0{,}5=0{,}25\\) metros cuadrados; por eso se necesitan \\(48\\div 0{,}25=192\\) baldosas, es decir cuatro por cada metro cuadrado de piso.",
       "opciones_incorrectas": {
-        "A": "El paso 2 está bien: el pedazo de \\(3\\) por \\(2\\) metros no hace parte del salón, y contarlo llevaría a comprar baldosa para \\(54\\) metros cuadrados, seis de los cuales son piso que no existe.",
-        "B": "La cifra de \\(96\\) baldosas divide los \\(48\\) metros cuadrados entre \\(0{,}5\\), que es el lado y no el área; con \\(96\\) baldosas se cubrirían apenas \\(24\\) metros cuadrados, la mitad del salón.",
+        "A": "El valor de \\(216\\) baldosas cubre el rectángulo completo de \\(54\\) metros cuadrados, \\(54\\div 0{,}25\\), incluido el cuarto de \\(3\\times 2\\) m que no se enchapa.",
+        "B": "El valor de \\(96\\) baldosas divide los \\(48\\) metros cuadrados entre \\(0{,}5\\), que es el lado y no el área de la baldosa; con \\(96\\) baldosas se cubrirían apenas \\(24\\) metros cuadrados, la mitad del salón.",
         "D": "El número \\(48\\) es la medida del piso en metros cuadrados, y todavía falta averiguar cuántas baldosas caben en cada metro cuadrado, que son cuatro."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q14.png",
@@ -451,18 +444,18 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
-      "que_evalua": "La habilidad para valorar un reemplazo ajeno en la fórmula del volumen del cilindro y calcularlo correctamente con las medidas de la situación.",
-      "enunciado": "<p>Una finca lechera de Ubaté va a instalar un tanque con forma de cilindro para guardar el agua de los bebederos. El tanque que le ofrecen mide <b>1,2 metros de radio</b> en la base y <b>2 metros de altura</b>. En la finca acostumbran tomar \\(\\pi\\) como \\(3{,}14\\). El vendedor le entregó al mayordomo la fórmula que aparece en el catálogo.</p><div style=\"text-align:center;margin:12px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\(V=\\pi r^{2} h\\)</div><div style=\"font-size:14px;color:#5B534C;margin-top:5px\">donde \\(r\\) es el radio de la base y \\(h\\) es la altura del cilindro</div></div>[[IMG]]<p>El mayordomo anticipa que el tanque guarda \\(7{,}54\\) metros cúbicos, y llega a esa cifra reemplazando así:</p><div style=\"text-align:center;margin:12px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\(3{,}14\\times 1{,}2\\times 2\\)</div></div><p>¿Qué valoración de esa cuenta es acertada y cuánta agua guarda el tanque?</p>",
+      "que_evalua": "La habilidad para calcular el volumen de un cilindro reemplazando correctamente las medidas en la fórmula que ofrece la situación.",
+      "enunciado": "<p>Una finca lechera de Ubaté va a instalar un tanque con forma de cilindro para guardar el agua de los bebederos. El tanque que le ofrecen mide <b>1,2 metros de radio</b> en la base y <b>2 metros de altura</b>. En la finca acostumbran tomar \\(\\pi\\) como \\(3{,}14\\). El vendedor le entregó al mayordomo la fórmula que aparece en el catálogo.</p><div style=\"text-align:center;margin:12px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\(V=\\pi r^{2} h\\)</div><div style=\"font-size:14px;color:#5B534C;margin-top:5px\">donde \\(r\\) es el radio de la base y \\(h\\) es la altura del cilindro</div></div>[[IMG]]<p>Aplicando la fórmula, ¿cuántos metros cúbicos de agua guarda el tanque en total?</p>",
       "opciones": {
-        "A": "Es acertada, porque la fórmula multiplica el radio por la altura: 7,54 metros cúbicos.",
-        "B": "No lo es, porque falta elevar el radio al cuadrado: son 9,04 metros cúbicos.",
-        "C": "No lo es, porque falta multiplicar por la altura: son 4,52 metros cúbicos.",
-        "D": "No lo es, porque en la fórmula va el diámetro: son 36,17 metros cúbicos."
+        "A": "7,54 m³",
+        "B": "9,04 m³",
+        "C": "4,52 m³",
+        "D": "36,17 m³"
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «No lo es, porque falta elevar el radio al cuadrado» es correcta porque la fórmula del catálogo dice \\(V=\\pi r^{2} h\\) y el mayordomo usó el radio sin elevarlo. Al reemplazar bien queda \\((1{,}2)^{2}=1{,}44\\), luego \\(3{,}14\\times 1{,}44=4{,}5216\\) y, al multiplicar por los \\(2\\) metros de altura, \\(9{,}0432\\), es decir \\(9{,}04\\) metros cúbicos.",
+      "justificacion_correcta": "La opción «9,04 m³» es correcta porque al reemplazar en \\(V=\\pi r^{2} h\\) queda \\((1{,}2)^{2}=1{,}44\\), luego \\(3{,}14\\times 1{,}44=4{,}5216\\) y, al multiplicar por los \\(2\\) metros de altura, \\(9{,}0432\\), es decir \\(9{,}04\\) metros cúbicos.",
       "opciones_incorrectas": {
-        "A": "La cuenta del mayordomo deja por fuera una de las dos dimensiones de la base: el radio aparece elevado al cuadrado en la fórmula porque el área del círculo lo usa dos veces, y sin ese cuadrado el resultado ya no mide un volumen.",
+        "A": "El valor \\(7{,}54\\) sale de \\(3{,}14\\times 1{,}2\\times 2\\): usa el radio sin elevarlo al cuadrado, y la fórmula del catálogo lo pide al cuadrado.",
         "C": "El valor \\(4{,}52\\) corresponde a \\(3{,}14\\times 1{,}44\\), que es el área de la base del tanque; falta multiplicarla por los \\(2\\) metros de altura para llegar al volumen.",
         "D": "El valor \\(36{,}17\\) usa \\(2{,}4\\) como radio, es decir toma el diámetro del tanque, y por eso el resultado queda cuatro veces más grande de lo que en realidad cabe."
       },
@@ -478,20 +471,20 @@
       "cmc": "Numérico - variacional",
       "dificultad": "MEDIA",
       "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
-      "que_evalua": "La habilidad para valorar una lectura ajena de la gráfica de un recorrido y decir qué significa un tramo horizontal.",
-      "enunciado": "<p>Una chiva rural sale del casco urbano de Ituango con pasajeros y encomiendas para una vereda. El conductor lleva un aparato que registra la distancia recorrida desde la salida, y con esos datos la empresa dibujó la gráfica del viaje. En la oficina están revisando el recorrido porque una pasajera reclamó que el viaje demoró más de lo prometido, y el supervisor se detiene en lo que pasó <b>entre el minuto 20 y el minuto 35</b>.</p>[[IMG]]<p>El supervisor sostiene que en ese intervalo la chiva se devolvió, porque la línea de la gráfica deja de subir.</p><p>¿Es acertado lo que sostiene el supervisor y qué ocurrió con la chiva en ese intervalo?</p>",
+      "que_evalua": "La habilidad para interpretar un tramo de la gráfica de un recorrido y decir qué significa que la línea se mantenga horizontal.",
+      "enunciado": "<p>La gráfica muestra el recorrido de una chiva en Ituango.</p>[[IMG]]<p>¿Qué ocurrió con el vehículo entre el minuto 20 y el minuto 35?</p>",
       "opciones": {
-        "A": "Sí, porque la línea deja de subir: la chiva retrocedió hasta el punto de partida.",
-        "B": "No, porque la línea sube con poca inclinación: avanzó más despacio que al comienzo.",
-        "C": "No, porque la línea sube con mucha inclinación: avanzó más rápido que al final.",
-        "D": "No, porque la línea se mantiene a la misma altura: la chiva estuvo detenida."
+        "A": "Retrocedió al punto de partida.",
+        "B": "Avanzó más despacio que al comienzo.",
+        "C": "Avanzó más rápido que al final.",
+        "D": "Estuvo detenido."
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «No, porque la línea se mantiene a la misma altura» es correcta porque en ese tramo el tiempo sigue corriendo del minuto \\(20\\) al \\(35\\) mientras la distancia recorrida se queda en los mismos \\(10\\) kilómetros. Que la distancia no cambie mientras el tiempo avanza es justamente lo que se ve cuando el vehículo está quieto.",
+      "justificacion_correcta": "La opción «Estuvo detenido» es correcta porque en ese tramo el tiempo sigue corriendo del minuto \\(20\\) al \\(35\\) mientras la distancia recorrida se queda en los mismos \\(10\\) kilómetros. Que la distancia no cambie mientras el tiempo avanza es lo que se ve cuando el vehículo está quieto.",
       "opciones_incorrectas": {
-        "A": "Que la línea deje de subir significa que la distancia recorrida no aumenta, no que disminuya. Un retroceso haría bajar la línea, porque la chiva quedaría más cerca del punto de partida, y en el tramo revisado la línea se queda en los \\(10\\) kilómetros.",
+        "A": "Un retroceso haría bajar la línea, porque la chiva quedaría cada vez más cerca del punto de partida; en el tramo revisado la línea se queda en los \\(10\\) kilómetros.",
         "B": "Avanzar despacio se vería como un tramo que sube con poca inclinación, y aquí el tramo no sube nada: la distancia recorrida es la misma al principio y al final del intervalo.",
-        "C": "En los últimos veinticinco minutos la chiva pasó de \\(10\\) a \\(28\\) kilómetros, de modo que en ese tramo sí avanzó, mientras que en el intervalo revisado no recorrió ni un kilómetro."
+        "C": "En el intervalo revisado la chiva no recorrió ni un kilómetro, mientras que en los últimos minutos del viaje pasó de \\(10\\) a \\(28\\) kilómetros; no pudo avanzar más rápido que al final."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q16.png",
       "imagen_alt": "Gráfica de la distancia recorrida por una chiva frente al tiempo, con un tramo horizontal entre los minutos 20 y 35."
@@ -505,8 +498,8 @@
       "cmc": "Numérico - variacional",
       "dificultad": "BAJA",
       "estandar": "Utilizo números reales en sus diferentes representaciones y en diversos contextos.",
-      "que_evalua": "La habilidad para valorar una afirmación sobre el orden de dos números negativos y ubicar en la recta numérica registros escritos como entero, fracción y decimal.",
-      "enunciado": "<p>En el puente sobre el río Mira, en Tumaco, hay pintada una escala en la que el <b>cero</b> marca el nivel normal del agua: lo que el río sube por encima de esa marca se anota con números positivos y lo que baja por debajo, con negativos. Durante cuatro días el celador anotó el nivel en su cuaderno, cada día en la forma que le quedó más cómoda de escribir: \\(-2\\) metros, \\(-\\dfrac{1}{2}\\) de metro, \\(\\dfrac{3}{4}\\) de metro y \\(1{,}5\\) metros.</p><p>El celador sostiene que su registro de \\(-2\\) metros es el mayor de los cuatro, porque dos es la mayor cantidad de unidades que anotó en la semana. El comité de gestión del riesgo le pidió pasar las cuatro anotaciones a una misma recta numérica para verlas todas de un vistazo en la reunión.</p><p>¿Cuál de las siguientes rectas ubica correctamente los cuatro registros del celador?</p>",
+      "que_evalua": "La habilidad para ubicar en la recta numérica registros escritos como entero, fracción y decimal, respetando su orden y su distancia al cero.",
+      "enunciado": "<p>En el puente sobre el río Mira, en Tumaco, hay pintada una escala en la que el <b>cero</b> marca el nivel normal del agua: lo que el río sube por encima de esa marca se anota con números positivos y lo que baja por debajo, con negativos. Durante cuatro días el celador anotó el nivel en su cuaderno, cada día en la forma que le quedó más cómoda de escribir: \\(-2\\) metros, \\(-\\dfrac{1}{2}\\) de metro, \\(\\dfrac{3}{4}\\) de metro y \\(1{,}5\\) metros.</p><p>¿Cuál de las rectas numéricas ubica estos cuatro registros en la posición correcta?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -514,10 +507,10 @@
         "D": ""
       },
       "clave": "A",
-      "justificacion_correcta": "La recta correcta deja el \\(-2\\) a dos unidades a la izquierda del cero, el \\(-\\dfrac{1}{2}\\) a media unidad de ese mismo lado, el \\(\\dfrac{3}{4}\\) entre el cero y el uno, y el \\(1{,}5\\) justo en la mitad entre el uno y el dos. Ese es el orden que aparece al escribir los cuatro registros como decimales, \\(-2\\), \\(-0{,}5\\), \\(0{,}75\\) y \\(1{,}5\\), y además respeta la distancia de cada uno al cero. Ubicado ahí se ve que el \\(-2\\) es el menor y no el mayor.",
+      "justificacion_correcta": "La recta correcta deja el \\(-2\\) a dos unidades a la izquierda del cero, el \\(-\\dfrac{1}{2}\\) a media unidad de ese mismo lado, el \\(\\dfrac{3}{4}\\) entre el cero y el uno, y el \\(1{,}5\\) justo en la mitad entre el uno y el dos. Ese es el orden que aparece al escribir los cuatro registros como decimales, \\(-2\\), \\(-0{,}5\\), \\(0{,}75\\) y \\(1{,}5\\), y además respeta la distancia de cada uno al cero.",
       "opciones_incorrectas": {
-        "B": "La recta que lleva los dos registros negativos al lado derecho del cero se olvida del signo. Un número negativo indica que el río bajó del nivel normal, de manera que siempre queda a la izquierda del cero por más unidades que traiga.",
-        "C": "La recta que intercambia los dos registros negativos es la que le daría la razón al celador, porque ordena como si el que tiene más unidades fuera el mayor. Entre números negativos ocurre al revés: el \\(-2\\) está más lejos del cero y por eso es el menor de los cuatro.",
+        "B": "La recta que lleva los dos registros negativos al lado derecho del cero se olvida del signo. Un número negativo indica que el río bajó del nivel normal, de manera que siempre queda a la izquierda del cero.",
+        "C": "La recta que intercambia los dos registros negativos ordena como si el que tiene más unidades fuera el mayor. Entre números negativos ocurre al revés: el \\(-2\\) está más lejos del cero y por eso es el menor de los cuatro.",
         "D": "La recta que reparte los cuatro registros a la misma distancia uno de otro conserva el orden pero no las distancias; entre \\(-2\\) y \\(-\\dfrac{1}{2}\\) hay una unidad y media, mientras que entre \\(\\dfrac{3}{4}\\) y \\(1{,}5\\) hay apenas tres cuartos."
       },
       "opciones_imagenes": {
@@ -536,8 +529,8 @@
       "cmc": "Numérico - variacional",
       "dificultad": "ALTA",
       "estandar": "Analizo en representaciones gráficas cartesianas los comportamientos de cambio de funciones específicas pertenecientes a familias de funciones polinómicas, racionales, exponenciales y logarítmicas.",
-      "que_evalua": "La habilidad para valorar una anticipación sobre la forma de una gráfica y reconocer la que corresponde a un crecimiento que se duplica.",
-      "enunciado": "<p>La corporación ambiental de Sopó vigila una laguna que se está cubriendo de lenteja de agua, una planta que crece muy rápido y le quita oxígeno al agua. Un biólogo mide cada semana, siempre el mismo día, la superficie de la laguna que ya está cubierta por la planta y anota los resultados en su bitácora.</p><div style=\"display:block;width:fit-content;margin:14px auto;border:1px solid #E9E1D6;border-radius:10px;overflow:hidden\"><table style=\"border-collapse:collapse;border-spacing:0;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><tr><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">Semana</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">1</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">2</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">3</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">4</th><th bgcolor=\"#C7163C\" style=\"color:#FFFFFF;font-weight:700;padding:10px 20px;text-align:center\">5</th></tr><tr><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">Superficie cubierta (metros cuadrados)</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">3</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">6</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">12</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">24</td><td bgcolor=\"#FBF7F3\" style=\"padding:9px 20px;text-align:center;border-top:1px solid #EFE7DC\">48</td></tr></table></div><p>Antes de llevar los datos al consejo, el biólogo anticipa que la gráfica será una recta, porque la superficie cubierta aumenta todas las semanas.</p><p>¿Cuál de las siguientes gráficas corresponde a lo que anotó el biólogo en su bitácora?</p>",
+      "que_evalua": "La habilidad para reconocer la gráfica que corresponde a un crecimiento que se duplica, distinguiéndola de un crecimiento constante.",
+      "enunciado": "<p>La corporación ambiental de Sopó midió, durante cinco semanas, el área de una laguna cubierta por una planta invasora. Los resultados se registraron en la siguiente tabla:</p>[[IMG]]<p>Un biólogo debe llevar la información ante el consejo, ¿cuál gráfica corresponde correctamente a este crecimiento?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -545,12 +538,14 @@
         "D": ""
       },
       "clave": "C",
-      "justificacion_correcta": "La gráfica que se va empinando semana tras semana es la que corresponde a la bitácora, porque los aumentos de una semana a la siguiente son \\(3\\), \\(6\\), \\(12\\) y \\(24\\) metros cuadrados: cada uno es el doble del anterior. Que la superficie aumente todas las semanas no basta para que la gráfica sea una recta; para eso el aumento tendría que ser siempre el mismo, y aquí crece.",
+      "justificacion_correcta": "La gráfica que se va empinando semana tras semana es la que corresponde a la tabla, porque los aumentos de una semana a la siguiente son \\(3\\), \\(6\\), \\(12\\) y \\(24\\) metros cuadrados: cada uno es el doble del anterior. Que la superficie aumente todas las semanas no basta para que la gráfica sea una recta; para eso el aumento tendría que ser siempre el mismo, y aquí crece.",
       "opciones_incorrectas": {
-        "A": "La recta que sube tres metros cuadrados por semana daría la serie \\(3\\), \\(6\\), \\(9\\), \\(12\\) y \\(15\\), y la bitácora registra \\(48\\) metros cuadrados en la quinta semana, más del triple.",
-        "B": "La recta que llega a los \\(48\\) metros cuadrados acierta en el punto final, pero reparte el crecimiento en partes iguales: entre la primera y la segunda semana subiría más de once metros cuadrados y la bitácora registra apenas tres.",
+        "A": "La recta que sube tres metros cuadrados por semana daría la serie \\(3\\), \\(6\\), \\(9\\), \\(12\\) y \\(15\\), y la tabla registra \\(48\\) metros cuadrados en la quinta semana, más del triple.",
+        "B": "La recta que llega a los \\(48\\) metros cuadrados acierta en el punto final, pero reparte el crecimiento en partes iguales: entre la primera y la segunda semana subiría más de once metros cuadrados y la tabla registra apenas tres.",
         "D": "La curva que se va aplanando corresponde a aumentos cada vez menores, y aquí ocurre lo contrario: el aumento pasa de \\(3\\) a \\(24\\) metros cuadrados de una semana a otra."
       },
+      "imagen_figura": "assets/banco-mat-8-p3/q18.png",
+      "imagen_alt": "Tabla con la superficie cubierta cada semana: 3, 6, 12, 24 y 48 metros cuadrados en las semanas 1 a 5.",
       "opciones_imagenes": {
         "A": "assets/banco-mat-8-p3/q18_opA.png",
         "B": "assets/banco-mat-8-p3/q18_opB.png",
@@ -567,18 +562,18 @@
       "cmc": "Espacial - métrico",
       "dificultad": "MEDIA",
       "estandar": "Uso representaciones geométricas para resolver y formular problemas en las matemáticas y en otras disciplinas.",
-      "que_evalua": "La habilidad para valorar una anticipación sobre una reflexión y distinguirla de una traslación al hallar la imagen de un punto.",
-      "enunciado": "<p>El letrero de una emisora comunitaria de Quibdó tiene forma de banderín triangular y está dibujado sobre una cuadrícula, con la punta señalada en rojo. Para la remodelación de la fachada, el diseñador debe <b>reflejar el banderín respecto de la recta punteada</b>, que es vertical y pasa por el número \\(6\\) del eje horizontal, de modo que el letrero quede mirando hacia el otro lado. En la reflexión, cada punto del banderín pasa al lado contrario de esa recta y queda a la misma distancia de ella.</p>[[IMG]]<p>El diseñador anticipa que la punta quedará en el punto \\((11, 2)\\), porque el espejo pasa por el \\(6\\) y hay que correr toda la figura seis unidades hacia la derecha.</p><p>¿Qué valoración de esa anticipación es acertada?</p>",
+      "que_evalua": "La habilidad para hallar la imagen de un punto en una reflexión respecto de una recta vertical, distinguiéndola de una traslación.",
+      "enunciado": "<p>El letrero de una emisora comunitaria de Quibdó tiene forma de banderín triangular y una punta (vértice) en la coordenada \\((5, 2)\\).</p>[[IMG]]<p>Si se refleja toda la figura como en un espejo usando una recta vertical que pasa por el número \\(6\\) del eje horizontal, ¿en qué coordenada quedará la punta?</p>",
       "opciones": {
-        "A": "Es acertada, porque la reflexión corre cada punto tantas unidades como marque el espejo.",
-        "B": "No lo es, porque la punta queda en (7, 2): a una unidad al otro lado del espejo.",
-        "C": "No lo es, porque la punta queda en (6, 2): la reflexión la lleva hasta el espejo.",
-        "D": "No lo es, porque la punta queda en (7, 4): el espejo también le cambia la altura."
+        "A": "(11, 2)",
+        "B": "(7, 2)",
+        "C": "(6, 2)",
+        "D": "(7, 4)"
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «No lo es, porque la punta queda en (7, 2)» es correcta porque la punta está en \\((5, 2)\\), es decir a una unidad a la izquierda de la recta que pasa por el \\(6\\). Al reflejar, ese vértice queda a una unidad de la recta pero al otro lado, o sea en el \\(7\\), y como el espejo es vertical la altura no se altera y se conserva en \\(2\\).",
+      "justificacion_correcta": "La opción «(7, 2)» es correcta porque la punta está en \\((5, 2)\\), es decir a una unidad a la izquierda de la recta que pasa por el \\(6\\). Al reflejar, ese vértice queda a una unidad de la recta pero al otro lado, o sea en el \\(7\\), y como el espejo es vertical la altura no cambia y se conserva en \\(2\\).",
       "opciones_incorrectas": {
-        "A": "En una reflexión el desplazamiento de cada punto depende de qué tan lejos esté del espejo y no de dónde esté el espejo. Correr toda la figura seis unidades es una traslación, y con ella los dos vértices que están sobre la columna \\(2\\) se irían a la \\(8\\) en vez de quedar a la misma distancia del espejo.",
+        "A": "El punto \\((11, 2)\\) corre la punta seis unidades a la derecha, como si el espejo indicara cuánto mover la figura; eso es una traslación, y en una reflexión cada punto queda a la misma distancia del espejo, al otro lado.",
         "C": "El punto \\((6, 2)\\) deja la punta encima de la recta del espejo, como si la reflexión llevara los puntos hasta ella; la reflexión los pasa al otro lado, a la misma distancia a la que estaban.",
         "D": "El punto \\((7, 4)\\) acierta con el desplazamiento horizontal pero además cambia la altura de \\(2\\) a \\(4\\); con un espejo vertical la altura de cada punto se conserva."
       },
@@ -594,23 +589,23 @@
       "cmc": "Espacial - métrico",
       "dificultad": "ALTA",
       "estandar": "Generalizo procedimientos de cálculo válidos para encontrar el área de regiones planas y el volumen de sólidos.",
-      "que_evalua": "La habilidad para revisar un procedimiento ajeno que calcula el área de un trapecio con la fórmula ofrecida, incluso cuando su resultado final coincide con el correcto.",
-      "enunciado": "<p>En una herrería de Pereira le encargaron a don Fabio <b>dos láminas iguales</b> de acero para tapar dos claraboyas que el maestro de obra dejó del mismo tamaño. Cada lámina tiene forma de trapecio, es maciza y no lleva ningún calado, y las dos ya están cortadas con las medidas que aparecen en el dibujo. Antes de instalarlas hay que darles anticorrosivo <b>por las dos caras</b>, la de adentro y la de afuera. En el catálogo del proveedor viene la fórmula del área del trapecio.</p><div style=\"text-align:center;margin:12px 0;font-family:Georgia,'Times New Roman',serif;color:#1A1613\"><div style=\"font-size:18px\">\\(A=\\dfrac{(B+b)\\times h}{2}\\)</div><div style=\"font-size:14px;color:#5B534C;margin-top:5px\">donde \\(B\\) es la base mayor, \\(b\\) la base menor y \\(h\\) la altura</div></div>[[IMG]]<div style=\"border:1px solid #C7163C;background:#FBF7F3;border-radius:9px;padding:11px 16px;margin:12px auto;max-width:660px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613\"><div style=\"font-weight:700;color:#A8132F;margin:0 0 6px 0\">Los pasos que anotó don Fabio para saber cuánta pintura comprar</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 1.</b> \\(A=(2{,}4+1{,}6)\\times 1{,}5=6\\) metros cuadrados por lámina.</div><div style=\"margin:5px 0\"><b style=\"color:#A8132F\">Paso 2.</b> Son dos láminas, así que \\(6\\times 2=12\\) metros cuadrados en total.</div></div><p>¿Es acertado el procedimiento de don Fabio y cuántos metros cuadrados debe cubrir?</p>",
+      "que_evalua": "La habilidad para calcular el área de un trapecio con la fórmula ofrecida y aplicarla a todas las superficies que pide la situación.",
+      "enunciado": "<p>En una herrería de Pereira, le encargaron a don Fabio pintar por <b>ambas caras</b> (adentro y afuera) <b>dos</b> láminas de acero. Cada lámina tiene forma de trapecio, con las dimensiones que se muestran en la figura.</p>[[IMG]]<p>De acuerdo con la información y la fórmula, ¿cuántos metros cuadrados se deben pintar en total?</p>",
       "opciones": {
-        "A": "Sí es acertado, porque la cuenta llega a los 12 metros cuadrados que hay que cubrir.",
-        "B": "No, porque falta contar las dos caras de cada lámina: son 24 metros cuadrados.",
-        "C": "No, porque falta dividir entre dos en el paso 1: son 6 metros cuadrados.",
-        "D": "No, porque tiene dos errores que se compensan: los 12 metros cuadrados sí quedan."
+        "A": "12 m²",
+        "B": "24 m²",
+        "C": "6 m²",
+        "D": "3 m²"
       },
-      "clave": "D",
-      "justificacion_correcta": "La opción «No, porque tiene dos errores que se compensan» es correcta porque el paso 1 olvida dividir entre dos y deja cada cara en \\(6\\) metros cuadrados cuando en realidad mide \\(\\dfrac{(2{,}4+1{,}6)\\times 1{,}5}{2}=3\\); y el paso 2 cuenta una sola cara por lámina cuando el anticorrosivo va por las dos. Como el primer error multiplica por dos lo que el segundo divide por dos, el total de \\(3\\times 4=12\\) metros cuadrados coincide con el correcto, pero el camino no describe lo que hay que pintar.",
+      "clave": "A",
+      "justificacion_correcta": "La opción «12 m²» es correcta porque cada cara de una lámina mide \\(\\dfrac{(2{,}4+1{,}6)\\times 1{,}5}{2}=\\dfrac{4\\times 1{,}5}{2}=3\\) metros cuadrados. Se pintan las dos caras de las dos láminas, es decir cuatro caras, así que en total son \\(3\\times 4=12\\) metros cuadrados.",
       "opciones_incorrectas": {
-        "A": "Llegar al número correcto no vuelve correcto el procedimiento: si a don Fabio le encargaran pintar las láminas por una sola cara, ese mismo camino daría \\(12\\) metros cuadrados cuando lo que hay que cubrir son \\(6\\), y el error ya no se compensaría con nada.",
-        "B": "Contar las dos caras corrige solo la mitad del problema: si se mantiene el área de \\(6\\) metros cuadrados por cara, que viene de no dividir entre dos, el total sube a \\(24\\) y queda al doble de lo que en realidad hay que pintar.",
-        "C": "Dividir entre dos corrige el área de cada cara, que pasa a \\(3\\) metros cuadrados, pero deja el conteo en una cara por lámina; sumando las dos caras de las dos láminas son cuatro y el total llega otra vez a \\(12\\)."
+        "B": "El valor de \\(24\\) m² cuenta las cuatro caras pero sin dividir entre dos en la fórmula, con lo que cada cara queda en \\(6\\) metros cuadrados, el doble de lo que mide.",
+        "C": "El valor de \\(6\\) m² cuenta solo una cara de cada lámina, \\(3\\times 2\\), y el encargo pide pintar por ambas caras, adentro y afuera.",
+        "D": "El valor de \\(3\\) m² es el área de una sola cara de una lámina; todavía faltan la otra cara y la segunda lámina."
       },
       "imagen_figura": "assets/banco-mat-8-p3/q20.png",
-      "imagen_alt": "Una de las dos láminas macizas en forma de trapecio, con base mayor de 2,4 metros, base menor de 1,6 metros y altura de 1,5 metros."
+      "imagen_alt": "Una de las dos láminas en forma de trapecio, con base mayor de 2,4 metros, base menor de 1,6 metros y altura de 1,5 metros. Debajo, en una caja, la fórmula del área del trapecio: A es igual a la base mayor B más la base menor b, multiplicado por la altura h y dividido entre dos."
     }
   ]
 }
