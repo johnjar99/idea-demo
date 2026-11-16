@@ -1,1 +1,20 @@
 graphify-out/graph.json merge=graphify
+
+# Archivos binarios: git nunca les cambia los saltos de línea (core.autocrlf=true en este equipo).
+# Sin esto, un PDF recuperado desde git podía salir dañado. Agregado el 10-nov-2026.
+*.pdf   binary
+*.png   binary
+*.webp  binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
+*.zip   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.pyc   binary
