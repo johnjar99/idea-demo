@@ -46,18 +46,18 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos.",
       "que_evalua": "La habilidad para decidir si una afirmación sobre el grupo se sostiene con las frecuencias que registra una tabla.",
-      "enunciado": "<p>En la reunión de área, la coordinación revisa los resultados del último simulacro antes de decidir a qué estudiantes cita a los refuerzos del cierre de año.</p><p>La coordinación académica registró en una tabla el número de estudiantes de grado 11 según el puntaje obtenido en el último simulacro.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Puntaje</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Estudiantes</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">200 a 249</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">8</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">250 a 299</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">17</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">300 a 349</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">31</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">350 a 399</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">22</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">400 a 449</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">6</td></tr></table><p>Al ver la tabla, la coordinadora sostiene que <b>más de la mitad</b> del grado quedó <b>por debajo de \\(300\\)</b> puntos y que por eso hay que citar a refuerzo a la mayoría del grupo. ¿Es correcta esa afirmación?</p>",
+      "enunciado": "<p>La coordinación académica registró en una tabla los puntajes del último simulacro de los estudiantes de grado 11°.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Puntaje</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Estudiantes</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">200 a 249</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">8</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">250 a 299</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">17</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">300 a 349</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">31</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">350 a 399</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">22</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">400 a 449</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">6</td></tr></table><p>La coordinadora afirma que <b>más de la mitad</b> del grado quedó <b>por debajo de \\(300\\)</b> puntos y que se deben citar a refuerzo. ¿Es correcta esta afirmación desde la lectura de los datos?</p>",
       "opciones": {
-        "A": "Sí, porque el intervalo con más estudiantes empieza justo en \\(300\\) puntos y por debajo queda la mayor parte del grupo.",
-        "B": "No, porque quienes quedaron por debajo de \\(300\\) puntos son \\(25\\) de los \\(84\\) registrados, menos de la tercera parte.",
-        "C": "Sí, porque los dos primeros intervalos reúnen \\(25\\) estudiantes y ese es el grupo más numeroso de toda la tabla.",
-        "D": "No, porque para responder haría falta conocer el puntaje exacto de cada estudiante y no solo los intervalos."
+        "A": "Sí, porque el intervalo modal empieza justo en \\(300\\) puntos.",
+        "B": "No, porque solo \\(25\\) de los \\(84\\) estudiantes quedaron por debajo de \\(300\\) puntos.",
+        "C": "Sí, porque los dos primeros intervalos suman \\(25\\) estudiantes, el grupo más numeroso.",
+        "D": "No, porque se requiere el puntaje decimal exacto de cada estudiante."
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «No, porque quienes quedaron por debajo de \\(300\\) puntos son \\(25\\) de los \\(84\\) registrados» es correcta porque los dos primeros intervalos acumulan \\(8+17=25\\) estudiantes, y la tabla registra \\(8+17+31+22+6=84\\) en total; la mitad serían \\(42\\), muy por encima de los \\(25\\) que la afirmación necesita.",
+      "justificacion_correcta": "La opción «No, porque solo \\(25\\) de los \\(84\\) estudiantes quedaron por debajo de \\(300\\) puntos» es correcta porque los dos primeros intervalos acumulan \\(8+17=25\\) estudiantes y la tabla registra \\(8+17+31+22+6=84\\) en total; la mitad serían \\(42\\), muy por encima de \\(25\\).",
       "opciones_incorrectas": {
-        "A": "Ese intervalo es el más numeroso, con \\(31\\) estudiantes, pero eso no dice nada sobre cuántos quedaron por debajo de él.",
-        "C": "Los dos primeros intervalos suman \\(25\\) estudiantes, bastante menos que los \\(31\\) de la clase más numerosa y que los \\(42\\) que harían falta.",
+        "A": "El intervalo modal, de \\(300\\) a \\(349\\), es el que reúne más estudiantes, pero eso no dice cuántos quedaron por debajo de \\(300\\).",
+        "C": "Los dos primeros intervalos suman \\(25\\) estudiantes, menos que los \\(31\\) del intervalo modal y muy lejos de los \\(42\\) que serían la mitad.",
         "D": "La tabla por intervalos alcanza para responder: basta con sumar las frecuencias de los dos primeros y compararlas con la mitad de \\(84\\)."
       }
     },
@@ -70,20 +70,20 @@
       "cmc": "Estadística",
       "dificultad": "ALTA",
       "estandar": "Uso comprensivamente algunas medidas de centralización, localización, dispersión y correlación (percentiles, cuartiles, centralidad, distancia, rango, varianza, covarianza y normalidad).",
-      "que_evalua": "La habilidad para valorar un procedimiento ajeno de lectura de un histograma y distinguir el criterio de la mediana del de la clase más frecuente.",
-      "enunciado": "<p>El administrador de un servicio de domicilios recibió quejas por demoras y decidió medir cuánto tarda realmente cada entrega antes de rediseñar las rutas.</p><p>Un servicio de domicilios registró el tiempo de entrega de <b>sesenta pedidos</b> y organizó el resultado en el histograma. El administrador quiere reportar la <b>mediana</b> de esos tiempos y un auxiliar le entrega este procedimiento.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Procedimiento del auxiliar</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Sumar las frecuencias: \\(6+14+22+12+6 = 60\\) pedidos.</div><div style=\"margin:6px 0\"><b>Paso 2.</b> La mitad de \\(60\\) es \\(30\\), así que hay que ubicar los datos que ocupan las posiciones \\(30\\) y \\(31\\).</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Como el intervalo de \\(20\\) a \\(30\\) minutos es el que reúne más pedidos, la mediana cae ahí.</div></div><p>¿Qué valoración de ese procedimiento es acertada?</p>",
+      "que_evalua": "La habilidad para ubicar en un histograma el intervalo que contiene la mediana y contar los datos que quedan por debajo de él.",
+      "enunciado": "<p>El administrador de un servicio de domicilios registró en un histograma el tiempo de entrega de <b>\\(60\\) pedidos</b> para evaluar la eficiencia de sus repartidores.</p>[[IMG]]<p>El administrador clasifica como «entregas rápidas» a todos los pedidos que tardaron un tiempo <b>estrictamente inferior al intervalo donde se encuentra la mediana</b> de los datos. Según el gráfico, ¿cuántos pedidos en total reciben esta clasificación?</p>",
       "opciones": {
-        "A": "El paso \\(1\\) está mal, porque para hallar la mediana hay que sumar los tiempos de entrega y no las frecuencias.",
-        "B": "El paso \\(2\\) está mal, porque con sesenta datos basta con ubicar el dato que ocupa la posición treinta.",
-        "C": "El paso \\(3\\) no es válido, porque la mediana la fija el intervalo de los datos centrales y no el más frecuente.",
-        "D": "Los tres pasos son válidos, porque el intervalo con más pedidos siempre contiene a la mediana del conjunto."
+        "A": "\\(20\\)",
+        "B": "\\(22\\)",
+        "C": "\\(30\\)",
+        "D": "\\(42\\)"
       },
-      "clave": "C",
-      "justificacion_correcta": "La opción «El paso \\(3\\) no es válido, porque la mediana la fija el intervalo de los datos centrales» es correcta porque hay que acumular las frecuencias: \\(6\\) hasta el primer intervalo, \\(20\\) hasta el segundo y \\(42\\) hasta el tercero, de modo que los datos \\(30\\) y \\(31\\) caen en el de \\(20\\) a \\(30\\) minutos. Que ese intervalo sea además el más numeroso es una coincidencia de estos datos y no una razón.",
+      "clave": "A",
+      "justificacion_correcta": "La opción «\\(20\\)» es correcta porque con \\(60\\) datos la mediana está entre los que ocupan las posiciones \\(30\\) y \\(31\\). Las frecuencias acumuladas son \\(6\\), \\(20\\) y \\(42\\), así que esas posiciones caen en el intervalo de \\(20\\) a \\(30\\) minutos. Por debajo de ese intervalo quedan \\(6+14=20\\) pedidos.",
       "opciones_incorrectas": {
-        "A": "Sumar los tiempos serviría para calcular el promedio; la mediana se ubica ordenando los datos y contando posiciones.",
-        "B": "Con un número par de datos la mediana la marcan las dos posiciones centrales, la \\(30\\) y la \\(31\\), y no una sola de ellas.",
-        "D": "Nada obliga a que el intervalo con más datos contenga la mediana: basta con que las clases anteriores acumulen más de la mitad."
+        "B": "\\(22\\) es la frecuencia del intervalo que contiene la mediana, no la cantidad de pedidos que quedan por debajo de él.",
+        "C": "\\(30\\) es la posición de la mediana dentro de los \\(60\\) datos, no el número de pedidos que tardaron menos que su intervalo.",
+        "D": "\\(42\\) acumula también el intervalo de la mediana, y la clasificación solo cuenta los pedidos estrictamente inferiores a él."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q02.png",
       "imagen_alt": "Histograma del tiempo de entrega de sesenta pedidos, en intervalos de diez minutos, con frecuencias 6, 14, 22, 12 y 6."
@@ -97,23 +97,21 @@
       "cmc": "Álgebra y cálculo",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales.",
-      "que_evalua": "La habilidad para resolver un problema de reparto decidiendo cuál de dos métodos de cálculo respeta la relación entre las dos cantidades.",
-      "enunciado": "<p>La asamblea de una cooperativa de caficultores discutió durante dos sesiones cómo repartir el excedente del año entre sus dos sedes, según lo que cada una recaudó.</p><p>Una cooperativa reparte un excedente de <b>\\(48\\) millones de pesos</b> entre dos sedes. A la sede que más recaudó le corresponde <b>el triple</b> de lo que recibe la otra, <b>menos \\(4\\) millones</b>. El esquema representa ese reparto. En la asamblea se proponen dos métodos de cálculo.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Los dos métodos que se discutieron</div><div style=\"margin:6px 0\"><b>Método 1.</b> Llamar \\(x\\) a lo que recibe la sede que menos recaudó, plantear \\(x + (3x-4) = 48\\) y despejar.</div><div style=\"margin:6px 0\"><b>Método 2.</b> Repartir los \\(48\\) millones en la proporción \\(1\\) a \\(3\\) y descontarle después los \\(4\\) millones a la parte mayor.</div></div><p>¿Cuál de los dos métodos lleva al reparto correcto y con cuánto queda la sede que más recaudó?</p>",
+      "que_evalua": "La habilidad para resolver un problema de reparto planteando y despejando una ecuación lineal.",
+      "enunciado": "<p>Una cooperativa reparte un excedente de <b>\\(48\\) millones de pesos</b> entre dos sedes. A la sede que más recaudó le corresponde <b>el triple</b> de lo que recibe la otra, <b>menos \\(4\\) millones</b>. Resolviendo la ecuación algebraica, ¿cuánto dinero le corresponde a la sede que más recaudó?</p>",
       "opciones": {
-        "A": "El método 1, porque al despejar da \\(13\\) millones para la sede menor y \\(35\\) para la mayor.",
-        "B": "El método 2, porque reparte \\(12\\) y \\(36\\) millones y al descontar quedan \\(32\\) millones para la mayor.",
-        "C": "Los dos métodos, porque llevan al mismo resultado de \\(35\\) millones para la sede que más recaudó.",
-        "D": "Ninguno de los dos, porque el enunciado no dice cuánto recaudó cada sede durante el año."
+        "A": "\\(13\\) millones",
+        "B": "\\(32\\) millones",
+        "C": "\\(35\\) millones",
+        "D": "\\(36\\) millones"
       },
-      "clave": "A",
-      "justificacion_correcta": "La opción «El método 1, porque al despejar da \\(13\\) millones para la sede menor» es correcta porque de \\(x + 3x - 4 = 48\\) sale \\(4x = 52\\) y \\(x = 13\\); la sede que más recaudó recibe entonces \\(3(13)-4 = 35\\) millones, y \\(13 + 35 = 48\\) devuelve el excedente completo.",
+      "clave": "C",
+      "justificacion_correcta": "La opción «\\(35\\) millones» es correcta porque si la otra sede recibe \\(x\\), la ecuación es \\(x + (3x-4) = 48\\), de donde \\(4x = 52\\) y \\(x = 13\\). La sede que más recaudó recibe \\(3(13)-4 = 35\\) millones, y \\(13+35 = 48\\).",
       "opciones_incorrectas": {
-        "B": "Repartir \\(12\\) y \\(36\\) y descontar después deja un total de \\(44\\) millones, así que ese método pierde por el camino \\(4\\) millones del excedente.",
-        "C": "Los dos métodos no coinciden: uno entrega \\(35\\) millones a la sede mayor y el otro \\(32\\), de modo que solo uno puede ser el correcto.",
-        "D": "Lo que recaudó cada sede no hace falta: la relación entre las dos partes y el total ya determinan el reparto."
-      },
-      "imagen_figura": "assets/banco-mat-11-p3/q03.png",
-      "imagen_alt": "Esquema de barras del reparto: una barra corta rotulada la otra sede y otra tres veces más larga a la que se le descuenta un trozo de cuatro millones; una llave abarca las dos y señala cuarenta y ocho millones de pesos repartidos en total."
+        "A": "\\(13\\) millones es lo que recibe la sede que menos recaudó, no la que más recaudó.",
+        "B": "\\(32\\) millones sale de repartir primero en proporción \\(1\\) a \\(3\\) y descontar después; ese reparto deja \\(44\\) millones y no los \\(48\\) del excedente.",
+        "D": "\\(36\\) millones es el triple de \\(12\\), un reparto que olvida descontar los \\(4\\) millones."
+      }
     },
     {
       "id": "P3-mat-11-04",
@@ -125,7 +123,7 @@
       "dificultad": "MEDIA",
       "estandar": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos.",
       "que_evalua": "La habilidad para transformar las frecuencias absolutas de una tabla en el diagrama circular que las representa.",
-      "enunciado": "<p>El comité de movilidad del colegio prepara una campaña de seguridad vial y quiere mostrar en una sola imagen cómo se reparten los estudiantes según el medio en que llegan cada mañana.</p><p>La tabla reúne el conteo que hizo el comité durante una semana en la jornada de la mañana.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Medio</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Estudiantes</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">A pie</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">126</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Bicicleta</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">84</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">Bus</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">147</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Otro</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">63</td></tr></table><p>¿Cuál de los siguientes <b>diagramas circulares</b> representa <b>esa misma información</b>?</p>",
+      "enunciado": "<p>La siguiente tabla registra el número de estudiantes de la jornada de la mañana según el medio de transporte que utilizan para llegar al colegio.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Medio</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Estudiantes</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">A pie</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">126</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Bicicleta</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">84</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">Bus</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">147</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Otro</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">63</td></tr></table><p>¿Cuál de los siguientes <b>diagramas circulares</b> representa correctamente la información de la tabla?</p>",
       "opciones": {
         "A": "",
         "B": "",
@@ -156,23 +154,20 @@
       "dificultad": "ALTA",
       "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
       "que_evalua": "La habilidad para resolver un problema que exige comparar dos planes de cobro y hallar el punto en que se igualan.",
-      "enunciado": "<p>Una empresa de alquiler de bicicletas quiere que sus clientes elijan bien y publicó en la cartelera la comparación entre sus dos formas de cobro.</p><p>Una empresa de alquiler de bicicletas ofrece dos planes de cobro por hora de uso.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Plan</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Cuota fija mensual</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Costo por hora</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">Libre</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">0 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">3.000 pesos</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Mixto</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">24.000 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">1.500 pesos</td></tr></table><p>¿A partir de <b>cuántas horas</b> de uso al mes conviene el <b>plan Mixto</b>?</p>",
+      "enunciado": "<p>Una empresa de alquiler de bicicletas quiere que sus clientes elijan bien y publicó en la cartelera la comparación entre sus dos formas de cobro.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Plan</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Cuota fija mensual</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Costo por hora</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">Libre</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">0 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">3.000 pesos</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Mixto</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">24.000 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">1.500 pesos</td></tr></table><p>¿A partir de <b>cuántas horas</b> de uso al mes resulta más económico contratar el <b>plan Mixto</b>?</p>",
       "opciones": {
-        "A": "A partir de \\(8\\) horas, porque \\(24\\,000\\) dividido entre \\(3\\,000\\) da ese valor.",
-        "B": "A partir de \\(12\\) horas, porque allí el plan Mixto cuesta \\(42\\,000\\) pesos.",
-        "C": "A partir de \\(17\\) horas, porque en \\(16\\) horas los dos planes cuestan lo mismo.",
-        "D": "A partir de \\(24\\) horas, porque esa es la cuota fija del plan Mixto."
+        "A": "\\(8\\) horas",
+        "B": "\\(12\\) horas",
+        "C": "\\(17\\) horas",
+        "D": "\\(24\\) horas"
       },
       "clave": "C",
-      "justificacion_correcta": "La opción «A partir de \\(17\\) horas, porque en \\(16\\) horas los dos planes cuestan lo mismo» es correcta porque igualando \\(3\\,000h = 24\\,000 + 1\\,500h\\) se obtiene \\(1\\,500h = 24\\,000\\) y \\(h = 16\\). En \\(16\\) horas ambos planes cuestan igual, así que el Mixto solo resulta más barato desde la hora \\(17\\).",
+      "justificacion_correcta": "La opción «\\(17\\) horas» es correcta porque igualando \\(3\\,000h = 24\\,000 + 1\\,500h\\) se obtiene \\(1\\,500h = 24\\,000\\) y \\(h = 16\\). En \\(16\\) horas los dos planes cuestan lo mismo, así que el Mixto solo resulta más económico desde la hora \\(17\\).",
       "opciones_incorrectas": {
-        "A": "Dividir la cuota fija entre el costo por hora del otro plan no compara los dos cobros: deja por fuera el costo por hora del plan Mixto.",
-        "B": "En \\(12\\) horas el plan Mixto cuesta \\(42\\,000\\) pesos y el Libre \\(36\\,000\\), de modo que allí todavía conviene el Libre.",
-        "D": "Toma la cuota fija como si fuera un número de horas, cuando es una cantidad de dinero."
-      },
-      "imagen_figura": null,
-      "imagen_prompt": "Ilustración editorial plana, proporción 4:3, paleta cálida de ocres, terracota, crema y verdes apagados, trazo limpio, sin degradados complejos y sin sombras realistas. Un punto de alquiler de bicicletas en el parque de un municipio andino colombiano, visto de frente: a la izquierda, una hilera de seis bicicletas urbanas ancladas en un soporte metálico; en el centro, una caseta de madera con ventanilla y toldo donde atiende un empleado joven con chaleco; a la derecha, cuatro personas de distintas edades esperando su turno, una de ellas con casco en la mano. Al fondo, árboles, una banca y la silueta de una montaña. RESTRICCIONES: sin ningún texto, letrero, cartel, tablero de tarifas ni rótulo dentro de la imagen; sin marcas ni logotipos; sin ningún número, precio, reloj, cronómetro ni indicación de horas visible; sin gráficas, tablas ni comparaciones dibujadas en ninguna superficie. La ilustración sitúa la escena y no puede contener ninguna pista de la respuesta.",
-      "imagen_alt": "Punto de alquiler de bicicletas en el parque de un municipio: una hilera de bicicletas ancladas en su soporte, la caseta de atención con su ventanilla y varias personas de distintas edades esperando turno para alquilar."
+        "A": "\\(8\\) sale de dividir la cuota fija entre el costo por hora del plan Libre, y esa cuenta deja por fuera lo que el plan Mixto cobra por cada hora.",
+        "B": "En \\(12\\) horas el plan Mixto cuesta \\(42\\,000\\) pesos y el Libre \\(36\\,000\\), así que allí todavía conviene el Libre.",
+        "D": "\\(24\\) toma la cuota fija de \\(24\\,000\\) pesos como si fuera un número de horas."
+      }
     },
     {
       "id": "P3-mat-11-06",
@@ -183,20 +178,20 @@
       "cmc": "Estadística",
       "dificultad": "ALTA",
       "estandar": "Justifico o refuto inferencias basadas en razonamientos estadísticos a partir de resultados de estudios publicados en los medios o diseñados en el ámbito escolar.",
-      "que_evalua": "La habilidad para plantear la afirmación que refuta una conclusión apoyada solo en el promedio, cuando la dispersión dice otra cosa.",
-      "enunciado": "<p>Al terminar el tercer periodo, el rector revisó los resultados del simulacro para decidir a cuál de los dos cursos le asigna las horas adicionales de refuerzo.</p><p>En dos cursos de grado 11 se aplicó el mismo simulacro. En el curso de la mañana el promedio fue <b>\\(320\\)</b> puntos y la desviación estándar <b>\\(15\\)</b>; en el curso de la tarde el promedio también fue <b>\\(320\\)</b> y la desviación estándar <b>\\(62\\)</b>. El rector concluye que los dos cursos están igual de preparados y que puede repartir las horas de refuerzo por partes iguales. ¿Qué afirmación refuta esa conclusión?</p>",
+      "que_evalua": "La habilidad para plantear el argumento que refuta una conclusión apoyada solo en el promedio, cuando la dispersión dice otra cosa.",
+      "enunciado": "<p>En un simulacro, el curso de la mañana tuvo un promedio de <b>\\(320\\)</b> puntos con una desviación estándar de <b>\\(15\\)</b>. El curso de la tarde tuvo el mismo promedio de <b>\\(320\\)</b> puntos, pero una desviación estándar de <b>\\(62\\)</b>. El rector concluye que ambos cursos están igual de preparados. ¿Qué argumento estadístico refuta esta conclusión?</p>",
       "opciones": {
-        "A": "Que el promedio de \\(320\\) puntos no alcanza el mínimo que exigen las universidades del país, porque el corte de admisión está bastante más arriba.",
-        "B": "Que en el curso de la tarde los puntajes están mucho más dispersos, porque una desviación de \\(62\\) frente a \\(15\\) reúne desempeños muy distintos.",
-        "C": "Que las dos desviaciones no se pueden comparar entre sí, porque los dos cursos no tienen el mismo número de estudiantes.",
-        "D": "Que los dos promedios no son comparables entre sí, porque el simulacro se aplicó en fechas distintas en cada curso."
+        "A": "El puntaje de \\(320\\) es insuficiente para los cortes de admisión universitaria.",
+        "B": "La desviación de \\(62\\) indica que en la tarde los puntajes están muy dispersos y el desempeño es altamente desigual.",
+        "C": "Las desviaciones estándar no se pueden comparar si los cursos tienen diferente cantidad de alumnos.",
+        "D": "Los promedios idénticos pierden validez si las pruebas se aplicaron en momentos diferentes."
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «Que en el curso de la tarde los puntajes están mucho más dispersos» es correcta porque dos promedios iguales solo dicen que el centro de los dos grupos coincide, no que los estudiantes estén en la misma situación. Con una desviación de \\(62\\) frente a \\(15\\), en el curso de la tarde conviven puntajes bastante más altos y bastante más bajos que ese centro, y el refuerzo no le sirve igual a todos.",
+      "justificacion_correcta": "La opción «La desviación de \\(62\\) indica que en la tarde los puntajes están muy dispersos» es correcta porque dos promedios iguales solo dicen que el centro de los dos grupos coincide. Con una desviación de \\(62\\) frente a \\(15\\), en la tarde conviven puntajes bastante más altos y bastante más bajos que ese centro, así que los dos cursos no están en la misma situación.",
       "opciones_incorrectas": {
-        "A": "El nivel del promedio frente a un mínimo externo es otra discusión: no dice nada sobre si los dos cursos están o no igual de preparados entre sí.",
+        "A": "Compararlo con un corte externo es otra discusión: no dice nada sobre si los dos cursos están o no igual de preparados entre sí.",
         "C": "La desviación estándar sí es comparable aunque los grupos tengan tamaños distintos, porque mide dispersión y no cantidad de estudiantes.",
-        "D": "El enunciado indica que se aplicó el mismo simulacro en los dos cursos y no menciona ninguna diferencia de fechas."
+        "D": "El enunciado habla de un mismo simulacro y no menciona fechas distintas; además, eso no refuta lo que muestran las desviaciones."
       }
     },
     {
@@ -209,19 +204,19 @@
       "dificultad": "MEDIA",
       "estandar": "Analizo las propiedades de correlación positiva y negativa entre variables.",
       "que_evalua": "La habilidad para describir la relación entre dos variables a partir de un diagrama de dispersión e identificar un dato que se aparta de ella.",
-      "enunciado": "<p>El departamento de orientación quiere saber si el tiempo que los estudiantes dedican a estudiar se refleja en sus resultados, y graficó los datos de un curso.</p><p>El diagrama relaciona las horas de estudio semanales de dieciséis estudiantes con el puntaje que obtuvieron en un simulacro. El <b>estudiante P</b> aparece señalado.</p>[[IMG]]<p>¿Qué se puede afirmar a partir del diagrama?</p>",
+      "enunciado": "<p>El departamento de orientación graficó las horas de estudio a la semana de <b>\\(16\\)</b> estudiantes frente a su puntaje en un simulacro. El estudiante <b>P</b> está marcado en la coordenada \\((4\\ \\text{horas},\\ 92\\ \\text{puntos})\\).</p>[[IMG]]<p>Al analizar la tendencia de los puntos, ¿qué comportamiento representa el estudiante P?</p>",
       "opciones": {
-        "A": "No hay ninguna relación entre las horas de estudio y el puntaje obtenido en el simulacro.",
-        "B": "A mayor número de horas de estudio corresponde un puntaje menor en el simulacro.",
-        "C": "El estudiante P fue quien más horas dedicó al estudio y quien obtuvo el mayor puntaje.",
-        "D": "En general a más horas corresponde mayor puntaje, y el estudiante P se aparta de esa tendencia."
+        "A": "Comprueba que no existe relación entre las horas de estudio y el puntaje.",
+        "B": "Es el estudiante que dedicó más horas de estudio y logró el mayor puntaje.",
+        "C": "Representa una tendencia inversa: a mayor estudio, menor puntaje.",
+        "D": "Se aparta de la tendencia ascendente al lograr alto puntaje con poco estudio."
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «En general a más horas corresponde mayor puntaje, y el estudiante P se aparta de esa tendencia» es correcta porque los puntos ascienden de izquierda a derecha, lo que indica una relación positiva, y el estudiante P alcanza el puntaje más alto con apenas \\(4\\) horas de estudio, muy por encima de lo que la nube sugiere para ese valor.",
+      "justificacion_correcta": "La opción «Se aparta de la tendencia ascendente al lograr alto puntaje con poco estudio» es correcta porque los puntos ascienden de izquierda a derecha, lo que indica una relación positiva, y el estudiante P alcanza \\(92\\) puntos con apenas \\(4\\) horas, muy por encima de lo que la nube sugiere para ese valor.",
       "opciones_incorrectas": {
-        "A": "La nube muestra un ascenso claro de izquierda a derecha, de modo que sí hay relación entre las dos variables.",
-        "B": "La relación va en el sentido contrario: los puntajes más altos aparecen a la derecha, donde están las mayores horas de estudio.",
-        "C": "El estudiante P estudió \\(4\\) horas, una de las cifras más bajas del grupo, y aun así obtuvo el puntaje más alto."
+        "A": "Un solo punto alejado no borra la tendencia: la nube muestra un ascenso claro de izquierda a derecha.",
+        "B": "El estudiante P dedicó \\(4\\) horas, una de las cifras más bajas del grupo, aunque su puntaje sea el más alto.",
+        "C": "La tendencia de la nube es ascendente; P es un caso aislado y no cambia el sentido de la relación."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q07.png",
       "imagen_alt": "Diagrama de dispersión de horas de estudio contra puntaje, con tendencia ascendente y el estudiante P señalado con cuatro horas y puntaje noventa y dos."
@@ -234,25 +229,22 @@
       "evidencia": "2.1",
       "cmc": "Álgebra y cálculo",
       "dificultad": "MEDIA",
-      "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales.",
-      "que_evalua": "La habilidad para completar un plan de cálculo incompleto, reconociendo qué gasto quedó sin repartir.",
-      "enunciado": "<p>Doña Rosa administra una panadería de barrio y quiere fijar un precio justo, pero antes necesita saber cuánto le queda realmente de cada bolsa que vende.</p><p>Doña Rosa conoce el costo de los insumos de una bolsa de pan, el número de bolsas que produce al día, el arriendo mensual del local y el precio al que vende cada bolsa. Su hijo le propone este plan para saber <b>cuánto gana por bolsa</b>.</p><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Plan que propone su hijo</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Restarle al precio de venta el costo de los insumos de una bolsa.</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Anotar esa diferencia como la ganancia que deja cada bolsa.</div></div><p>¿Qué le falta a ese plan para responder la pregunta?</p>",
+      "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
+      "que_evalua": "La habilidad para planear y ejecutar el cálculo del valor que maximiza una función cuadrática a partir de su vértice.",
+      "enunciado": "<p>Un analista financiero determina que la ganancia mensual \\(G(x)\\), en miles de pesos, por la venta de \\(x\\) unidades de un artículo tecnológico está modelada por la siguiente expresión cuadrática:</p><p style=\"text-align:center\">\\(G(x) = -2x^{2} + 120x - 1000\\)</p><p>¿Cuántas unidades se deben vender para obtener la <b>ganancia máxima</b>?</p>",
       "opciones": {
-        "A": "Repartir el arriendo entre las bolsas que se producen en el mes y descontarlo también, porque ese gasto lo cubre la venta.",
-        "B": "Multiplicar la diferencia del paso \\(1\\) por las bolsas del mes, porque así se obtiene la ganancia que deja cada bolsa.",
-        "C": "Dividir el arriendo mensual entre las bolsas de un solo día, porque el arriendo se paga con la venta de la jornada.",
-        "D": "No le falta nada, porque la ganancia de una bolsa se obtiene restándole al precio de venta lo que costó producirla."
+        "A": "\\(30\\)",
+        "B": "\\(60\\)",
+        "C": "\\(120\\)",
+        "D": "\\(800\\)"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «Repartir el arriendo entre las bolsas que se producen en el mes y descontarlo también» es correcta porque la ganancia por bolsa exige descontar todo lo que cuesta producirla: el gasto que varía con cada bolsa, que son los insumos, y la parte del gasto fijo que le corresponde, que se obtiene repartiendo el arriendo entre la producción del mes.",
+      "justificacion_correcta": "La opción «\\(30\\)» es correcta porque la parábola abre hacia abajo y su vértice está en \\(x = -\\frac{b}{2a} = -\\frac{120}{2(-2)} = 30\\). Con \\(30\\) unidades la ganancia es \\(G(30) = -1\\,800 + 3\\,600 - 1\\,000 = 800\\) miles de pesos, la mayor posible.",
       "opciones_incorrectas": {
-        "B": "Multiplicar por las bolsas del mes entrega la ganancia del mes entero y no la de una bolsa, que es lo que se preguntó.",
-        "C": "Repartir el arriendo entre la producción de un día y no la del mes multiplica por treinta el peso de ese gasto en cada bolsa.",
-        "D": "El plan sí queda corto: los insumos no son lo único que cuesta producir el pan, porque el arriendo también hay que cubrirlo."
-      },
-      "imagen_figura": null,
-      "imagen_prompt": "Ilustración editorial plana, proporción 4:3, paleta cálida de ocres, cremas y rojos suaves, trazo limpio y sin sombras realistas. El interior de una panadería de barrio colombiana visto desde el mostrador: una vitrina de madera con bandejas de pan recién horneado, cuatro bolsas de papel ya empacadas sobre el mesón, un horno metálico al fondo y una panadera de unos cincuenta años con delantal atendiendo de pie. A la derecha, sobre una mesita, una libreta de cuentas abierta, una calculadora y un par de recibos ensartados en un gancho. Sin texto dentro de la imagen. Sin marcas, logotipos, precios ni cifras visibles. Ningún número, ningún cálculo escrito y ninguna cuenta resuelta a la vista: la ilustración sitúa la escena y no puede contener ninguna pista de la respuesta.",
-      "imagen_alt": "Interior de una panadería de barrio: bolsas de pan ya empacadas sobre el mesón, el horno al fondo, la panadera atendiendo y, a un costado, una libreta de cuentas junto a los recibos del local."
+        "B": "\\(60\\) sale de dividir \\(120\\) entre \\(2\\) sin tener en cuenta el coeficiente \\(-2\\) de \\(x^{2}\\); además \\(G(60)=-1\\,000\\) es una pérdida.",
+        "C": "\\(120\\) es el coeficiente de \\(x\\), no la cantidad de unidades que hace máxima la ganancia.",
+        "D": "\\(800\\) es el valor de la ganancia máxima, en miles de pesos, no el número de unidades que hay que vender."
+      }
     },
     {
       "id": "P3-mat-11-09",
@@ -263,20 +255,20 @@
       "cmc": "Estadística",
       "dificultad": "BAJA",
       "estandar": "Interpreto nociones básicas relacionadas con el manejo de información como población, muestra, variable aleatoria, distribución de frecuencias, parámetros y estadígrafos.",
-      "que_evalua": "La habilidad para decidir si una afirmación sobre el total se sostiene con los datos de una tabla de doble entrada.",
-      "enunciado": "<p>Al cerrar la inscripción de electivas, la secretaría académica organizó en una tabla las elecciones de los dos cursos de grado once para asignar los salones.</p><p>La tabla muestra cuántos estudiantes de los dos cursos escogieron cada electiva.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Curso</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Robótica</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Música</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Huerta</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">11-A</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">12</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">9</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">7</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">11-B</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">8</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">15</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">6</td></tr></table><p>La secretaria afirma que <b>Robótica</b> es la electiva con <b>más estudiantes en todo el grado</b> y que por eso hay que asignarle el salón más grande. ¿Es correcta esa afirmación?</p>",
+      "que_evalua": "La habilidad para leer una tabla de doble entrada y calcular una probabilidad restringida a una de sus columnas.",
+      "enunciado": "<p>Para desarrollar los nuevos centros de interés en la institución, la coordinación encuestó a los estudiantes de grado once. La siguiente tabla registra la cantidad de jóvenes interesados en cada opción, clasificados por su curso.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Curso</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Robótica</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Música</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Huerta</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">11-A</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">12</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">9</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">7</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">11-B</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">8</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">15</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">6</td></tr></table><p>Si el docente encargado de <b>Música</b> elige al azar a uno de los estudiantes interesados en este centro para que sea el monitor, ¿cuál es la probabilidad de que el estudiante elegido pertenezca al curso <b>11-B</b>?</p>",
       "opciones": {
-        "A": "Sí, porque Robótica reúne \\(12\\) estudiantes en 11-A y ese es el valor más alto de esa fila.",
-        "B": "Sí, porque Robótica aparece en los dos cursos con más estudiantes que la Huerta en cualquiera de ellos.",
-        "C": "No, porque entre los dos cursos Robótica reúne \\(20\\) estudiantes y Música llega a \\(24\\).",
-        "D": "No, porque la tabla no permite sumar los dos cursos, ya que cada curso ocupa un salón distinto."
+        "A": "\\(\\frac{15}{57}\\)",
+        "B": "\\(\\frac{15}{29}\\)",
+        "C": "\\(\\frac{15}{24}\\)",
+        "D": "\\(\\frac{24}{57}\\)"
       },
       "clave": "C",
-      "justificacion_correcta": "La opción «No, porque entre los dos cursos Robótica reúne \\(20\\) estudiantes y Música llega a \\(24\\)» es correcta porque la afirmación habla de todo el grado, de modo que hay que sumar las dos filas de cada electiva: Robótica \\(12+8=20\\), Música \\(9+15=24\\) y Huerta \\(7+6=13\\).",
+      "justificacion_correcta": "La opción «\\(\\frac{15}{24}\\)» es correcta porque el monitor se escoge solo entre los interesados en Música, que son \\(9+15=24\\); de ellos, \\(15\\) son de 11-B.",
       "opciones_incorrectas": {
-        "A": "Ese valor es el más alto de la fila de 11-A, pero la afirmación habla del grado completo y no de un solo curso.",
-        "B": "Superar a la Huerta en los dos cursos no convierte a Robótica en la más escogida: falta compararla con Música.",
-        "D": "Sumar las dos filas es justamente lo que corresponde cuando la afirmación habla del grado completo."
+        "A": "\\(\\frac{15}{57}\\) divide entre los \\(57\\) estudiantes de toda la tabla, cuando el monitor se elige solo entre los de Música.",
+        "B": "\\(\\frac{15}{29}\\) divide entre los \\(29\\) estudiantes de 11-B, cuando el grupo del que se elige es el de Música.",
+        "D": "\\(\\frac{24}{57}\\) es la probabilidad de que un estudiante de toda la tabla esté interesado en Música, no la de que el monitor sea de 11-B."
       }
     },
     {
@@ -288,23 +280,21 @@
       "cmc": "Álgebra y cálculo",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales.",
-      "que_evalua": "La habilidad para ejecutar correctamente un plan con descuentos sucesivos y localizar el paso en que otro se equivocó.",
-      "enunciado": "<p>En la temporada de fin de año, un almacén de ropa combinó dos promociones y varios clientes reclamaron en la caja porque no entendían cómo se aplicaban.</p><p>El cartel de la vitrina anuncia un <b>\\(20\\,\\%\\)</b> de descuento <b>sobre el precio de lista</b> y, <b>sobre ese valor ya rebajado</b>, un <b>\\(10\\,\\%\\)</b> adicional por pago en efectivo. Una clienta lleva una chaqueta con precio de lista de <b>\\(180\\,000\\)</b> pesos y paga en efectivo. El cajero registró estos pasos.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Lo que hizo el cajero</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Sumar los dos descuentos: \\(20\\,\\% + 10\\,\\% = 30\\,\\%\\).</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Calcular el \\(30\\,\\%\\) de \\(180\\,000\\) pesos: \\(54\\,000\\) pesos.</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Restar: \\(180\\,000 - 54\\,000 = 126\\,000\\) pesos.</div></div><p>¿En cuál paso está el error y cuánto se paga realmente por la chaqueta?</p>",
+      "que_evalua": "La habilidad para ejecutar un plan con porcentajes aplicados a partes distintas de un lote y sumar los resultados.",
+      "enunciado": "<p>Don Efrén compró un lote de <b>\\(240\\)</b> camisetas a <b>\\(18\\,000\\)</b> pesos cada una. Vendió el <b>\\(70\\,\\%\\)</b> del lote aplicándole un recargo del <b>\\(40\\,\\%\\)</b> sobre el costo, y el <b>\\(30\\,\\%\\)</b> restante lo vendió con un recargo del <b>\\(15\\,\\%\\)</b> sobre el costo.</p><p>¿Cuánto dinero recaudó en total por la venta completa del lote?</p>",
       "opciones": {
-        "A": "En el paso \\(2\\), porque el \\(30\\,\\%\\) de \\(180\\,000\\) pesos son \\(60\\,000\\) y el pago queda en \\(120\\,000\\) pesos.",
-        "B": "En el paso \\(1\\), porque el segundo descuento se aplica sobre el valor ya rebajado, así que se pagan \\(129\\,600\\) pesos.",
-        "C": "En el paso \\(3\\), porque al precio de lista solo hay que restarle el \\(20\\,\\%\\), así que se pagan \\(144\\,000\\) pesos.",
-        "D": "En ninguno, porque sumar los dos porcentajes y restarlos del precio de lista da los \\(126\\,000\\) pesos."
+        "A": "\\(1\\,404\\,000\\) pesos",
+        "B": "\\(5\\,724\\,000\\) pesos",
+        "C": "\\(5\\,508\\,000\\) pesos",
+        "D": "\\(6\\,048\\,000\\) pesos"
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «En el paso \\(1\\), porque el segundo descuento se aplica sobre el valor ya rebajado» es correcta porque los descuentos sucesivos no se suman: el primero deja \\(180\\,000 \\times 0{,}8 = 144\\,000\\) pesos y el segundo se calcula sobre ese valor, \\(144\\,000 \\times 0{,}9 = 129\\,600\\) pesos.",
+      "justificacion_correcta": "La opción «\\(5\\,724\\,000\\) pesos» es correcta porque el \\(70\\,\\%\\) del lote son \\(168\\) camisetas vendidas a \\(18\\,000 \\times 1{,}40 = 25\\,200\\) pesos, es decir \\(4\\,233\\,600\\) pesos, y el \\(30\\,\\%\\) son \\(72\\) camisetas a \\(18\\,000 \\times 1{,}15 = 20\\,700\\) pesos, es decir \\(1\\,490\\,400\\) pesos. En total, \\(4\\,233\\,600 + 1\\,490\\,400 = 5\\,724\\,000\\) pesos.",
       "opciones_incorrectas": {
-        "A": "El \\(30\\,\\%\\) de \\(180\\,000\\) pesos sí son \\(54\\,000\\), de modo que la cuenta de ese paso está bien hecha; lo que falla es el paso anterior.",
-        "C": "El cartel anuncia los dos descuentos para quien paga en efectivo, así que quedarse solo con el primero deja la cuenta a medias.",
-        "D": "Sumar los dos porcentajes cobra el segundo descuento sobre el precio de lista y no sobre el valor ya rebajado, que es lo que anuncia el cartel."
-      },
-      "imagen_figura": "assets/banco-mat-11-p3/q10.png",
-      "imagen_alt": "Cartel de vitrina con dos tarjetas: veinte por ciento de descuento sobre el precio de lista y diez por ciento adicional sobre el valor ya rebajado por pago en efectivo, y debajo la etiqueta de la chaqueta con precio de lista de ciento ochenta mil pesos."
+        "A": "\\(1\\,404\\,000\\) pesos es solo la ganancia de los recargos, no todo lo que recaudó por la venta del lote.",
+        "C": "\\(5\\,508\\,000\\) pesos aplica el recargo del \\(40\\,\\%\\) solo a la mitad del lote y no al \\(70\\,\\%\\) de las camisetas.",
+        "D": "\\(6\\,048\\,000\\) pesos aplica el recargo del \\(40\\,\\%\\) a todo el lote, sin tener en cuenta que el \\(30\\,\\%\\) se vendió con un recargo menor."
+      }
     },
     {
       "id": "P3-mat-11-11",
@@ -343,19 +333,19 @@
       "dificultad": "MEDIA",
       "estandar": "Reconozco el conjunto de valores de cada una de las cantidades variables ligadas entre sí en situaciones concretas de cambio (variación).",
       "que_evalua": "La habilidad para transformar un enunciado verbal en la expresión algebraica que lo representa.",
-      "enunciado": "<p>Un taller de motos publicó su lista de precios en la entrada y ofrece un beneficio a los clientes que pagan con la tarjeta de la cooperativa del barrio.</p><p>Un taller cobra una <b>revisión fija</b> de <b>\\(35\\,000\\)</b> pesos más <b>\\(18\\,000\\)</b> pesos <b>por cada hora</b> de trabajo, y aplica un <b>descuento fijo</b> de <b>\\(10\\,000\\)</b> pesos a los clientes con tarjeta de la cooperativa. Así está publicada la lista en la entrada.</p>[[IMG]]<p>¿Cuál expresión representa el valor a pagar por un cliente con tarjeta cuya moto requiere \\(h\\) horas de trabajo?</p>",
+      "enunciado": "<p>Un taller de motos cobra <b>\\(35\\,000\\)</b> pesos fijos por revisión, más <b>\\(18\\,000\\)</b> pesos por cada hora (\\(h\\)) de trabajo. Si el cliente tiene tarjeta de la cooperativa, recibe un <b>descuento fijo y único</b> de <b>\\(10\\,000\\)</b> pesos al total de su cuenta.</p>[[IMG]]<p>¿Cuál expresión representa la factura total para un cliente con tarjeta?</p>",
       "opciones": {
-        "A": "\\(25\\,000 + 18\\,000h\\), porque el descuento se resta una sola vez de la parte fija del cobro.",
-        "B": "\\(35\\,000 + 18\\,000h + 10\\,000\\), porque el descuento se suma al cobro de la revisión y de las horas.",
-        "C": "\\(35\\,000h + 18\\,000 - 10\\,000\\), porque la revisión se cobra por cada hora y el trabajo una sola vez.",
-        "D": "\\((35\\,000 + 18\\,000)h - 10\\,000\\), porque los dos cobros se reúnen y se multiplican por las horas."
+        "A": "\\(25\\,000 + 18\\,000h\\)",
+        "B": "\\(35\\,000 + 18\\,000h + 10\\,000\\)",
+        "C": "\\(35\\,000h + 18\\,000 - 10\\,000\\)",
+        "D": "\\((35\\,000 + 18\\,000)h\\)"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «\\(25\\,000 + 18\\,000h\\), porque el descuento se resta una sola vez de la parte fija del cobro» es correcta porque el cobro reúne una parte fija, \\(35\\,000\\), y una parte que depende de las horas, \\(18\\,000h\\); el descuento de \\(10\\,000\\) se aplica una sola vez, lo que deja \\(35\\,000 - 10\\,000 = 25\\,000\\) en la parte fija.",
+      "justificacion_correcta": "La opción «\\(25\\,000 + 18\\,000h\\)» es correcta porque la factura reúne una parte fija, \\(35\\,000\\), y una parte que depende de las horas, \\(18\\,000h\\); el descuento de \\(10\\,000\\) se resta una sola vez, lo que deja \\(35\\,000 - 10\\,000 = 25\\,000\\) en la parte fija.",
       "opciones_incorrectas": {
-        "B": "Sumar el descuento en lugar de restarlo haría que el cliente con tarjeta pagara más y no menos que los demás.",
-        "C": "Esa expresión intercambia los papeles: multiplica por las horas la revisión fija y deja suelto el cobro por hora de trabajo.",
-        "D": "Multiplicar por las horas también la revisión fija la cobraría tantas veces como horas dure el trabajo, y se cobra una sola vez."
+        "B": "Suma el descuento en lugar de restarlo, de modo que el cliente con tarjeta pagaría más y no menos.",
+        "C": "Intercambia los papeles: multiplica por las horas la revisión fija y deja suelto el cobro por hora de trabajo.",
+        "D": "Multiplica por las horas también la revisión, que se cobra una sola vez, y además omite el descuento de la tarjeta."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q12.png",
       "imagen_alt": "Lista de precios del taller de motos en tres renglones: revisión, treinta y cinco mil pesos; cada hora de trabajo, dieciocho mil pesos; descuento a clientes con tarjeta de la cooperativa del barrio, diez mil pesos."
@@ -369,20 +359,20 @@
       "cmc": "Álgebra y cálculo",
       "dificultad": "ALTA",
       "estandar": "Resuelvo problemas y simplifico cálculos usando propiedades y relaciones de los números reales.",
-      "que_evalua": "La habilidad para diseñar el plan que permite decidir entre alternativas cuando el criterio combina un costo por unidad y un costo fijo.",
-      "enunciado": "<p>El consejo directivo de un colegio debe adjudicar el contrato de refrigerios del semestre y recibió dos ofertas con estructuras de cobro muy distintas.</p><p>Un colegio debe elegir proveedor de refrigerios para <b>ciento veinte estudiantes</b> durante <b>diez días</b>.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Proveedor</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Precio por refrigerio</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Costo fijo de transporte</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">Uno</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">2.800 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">0 pesos</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Dos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">2.500 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">600.000 pesos</td></tr></table><div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Los dos métodos que se propusieron en el consejo</div><div style=\"margin:6px 0\"><b>Método 1.</b> Comparar los dos precios por refrigerio y quedarse con el más bajo.</div><div style=\"margin:6px 0\"><b>Método 2.</b> Multiplicar el precio por refrigerio por la cantidad de refrigerios del servicio, sumarle el costo fijo y comparar los dos totales.</div></div><p>¿Cuál de los dos métodos permite decidir y qué proveedor resulta más barato?</p>",
+      "que_evalua": "La habilidad para decidir entre dos alternativas calculando el costo total, que combina un costo por unidad y un costo fijo.",
+      "enunciado": "<p>El consejo directivo de una institución necesita comprar <b>\\(1\\,200\\) refrigerios</b> para un evento escolar. Para tomar la decisión, solicitan cotizaciones y reciben las propuestas económicas de dos proveedores, detalladas en la siguiente tabla.</p><table style=\"border-collapse:collapse;margin:12px auto;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;border:1px solid #E5DDD2;border-radius:6px;overflow:hidden\"><tr><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Proveedor</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Precio por refrigerio</th><th style=\"background:#A8132F;font-weight:700;color:#FFFFFF;padding:9px 16px;text-align:center;border:none\">Costo fijo de transporte</th></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">Proveedor 1</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">2.800 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center\">0 pesos</td></tr><tr><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">Proveedor 2</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">2.500 pesos</td><td style=\"border-top:1px solid #E5DDD2;padding:8px 16px;text-align:center;background:#FBF7F3\">600.000 pesos</td></tr></table><p>Calculando los totales, ¿qué proveedor resulta más barato para este servicio?</p>",
       "opciones": {
-        "A": "El método 1, porque el proveedor Dos cobra \\(300\\) pesos menos por cada refrigerio que el proveedor Uno.",
-        "B": "El método 2, porque el proveedor Uno suma \\(3\\,360\\,000\\) pesos y el proveedor Dos suma \\(3\\,600\\,000\\).",
-        "C": "Los dos métodos, porque ambos señalan al proveedor Dos como el más barato para este servicio.",
-        "D": "Ninguno de los dos, porque falta saber cuántos refrigerios sobran cada día para poder comparar."
+        "A": "El Proveedor 1, porque cobra \\(300\\) pesos menos de flete total.",
+        "B": "El Proveedor 1, con un costo total de \\(3\\,360\\,000\\) pesos frente a \\(3\\,600\\,000\\) pesos del otro.",
+        "C": "El Proveedor 2, por bajar el precio unitario del alimento.",
+        "D": "Cuestan exactamente lo mismo."
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «El método 2, porque el proveedor Uno suma \\(3\\,360\\,000\\) pesos» es correcta porque el servicio son \\(120 \\times 10 = 1\\,200\\) refrigerios: con el proveedor Uno se pagan \\(2\\,800 \\times 1\\,200 = 3\\,360\\,000\\) pesos y con el proveedor Dos \\(2\\,500 \\times 1\\,200 + 600\\,000 = 3\\,600\\,000\\) pesos. Solo el total permite comparar, porque el costo fijo se reparte entre los refrigerios que se pidan.",
+      "justificacion_correcta": "La opción «El Proveedor 1, con un costo total de \\(3\\,360\\,000\\) pesos» es correcta porque con el Proveedor 1 se pagan \\(2\\,800 \\times 1\\,200 = 3\\,360\\,000\\) pesos y con el Proveedor 2 \\(2\\,500 \\times 1\\,200 + 600\\,000 = 3\\,600\\,000\\) pesos.",
       "opciones_incorrectas": {
-        "A": "Mirar solo el precio unitario deja por fuera los \\(600\\,000\\) pesos de transporte, que en un servicio corto pesan más que la rebaja por refrigerio.",
-        "C": "Los dos métodos no coinciden: comparar precios unitarios señala al proveedor Dos y comparar totales señala al proveedor Uno.",
-        "D": "Los refrigerios sobrantes no hacen falta: el pedido son ciento veinte diarios durante diez días, y con eso se calcula cada total."
+        "A": "La diferencia de \\(300\\) pesos es entre los precios por refrigerio, no en el flete; el Proveedor 1 no cobra flete y el Proveedor 2 cobra \\(600\\,000\\) pesos.",
+        "C": "El Proveedor 2 tiene el precio unitario más bajo, pero su costo fijo de \\(600\\,000\\) pesos hace que el total sea mayor.",
+        "D": "Los totales son distintos: \\(3\\,360\\,000\\) pesos frente a \\(3\\,600\\,000\\) pesos."
       }
     },
     {
@@ -394,20 +384,20 @@
       "cmc": "Álgebra y cálculo",
       "dificultad": "ALTA",
       "estandar": "Analizo las relaciones y propiedades entre las expresiones algebraicas y las gráficas de funciones polinómicas y racionales y de sus derivadas.",
-      "que_evalua": "La habilidad para establecer si una solución propuesta es pertinente frente a las condiciones del problema.",
-      "enunciado": "<p>En la clase de cálculo, el profesor propuso optimizar el corral de una finca aprovechando un muro que ya existe, de manera que se ahorre malla en ese lado.</p><p>Para cercar un corral rectangular contra un muro se dispone de <b>\\(40\\) metros de malla</b>, que cubren <b>solo los tres lados libres</b>, como muestra la figura. Un estudiante presentó este desarrollo.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Desarrollo del estudiante</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Llamar \\(x\\) al lado perpendicular al muro; entonces el lado paralelo mide \\(40-2x\\).</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Escribir el área del corral como \\(x(40-2x)\\).</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Concluye que el área máxima se alcanza con \\(x = 20\\), porque es el mayor valor que puede tomar \\(x\\).</div></div><p>¿Es pertinente esa conclusión?</p>",
+      "que_evalua": "La habilidad para modelar una situación de optimización con una función cuadrática y hallar su valor máximo.",
+      "enunciado": "<p>Para cercar un corral rectangular contra un muro que ya existe, se dispone de <b>\\(40\\) metros de malla</b> que cubrirán exclusivamente los tres lados libres. Como muestra la figura, la variable \\(x\\) representa la longitud de los dos lados que son perpendiculares al muro.</p>[[IMG]]<p>Al modelar matemáticamente esta situación, ¿cuál es el <b>área máxima</b>, en metros cuadrados, que se puede encerrar en el corral?</p>",
       "opciones": {
-        "A": "Sí, porque \\(x = 20\\) es la mitad de los \\(40\\) metros de malla y reparte bien el material.",
-        "B": "No, porque el paso \\(2\\) está mal planteado y el área del corral no es \\(x(40-2x)\\).",
-        "C": "No, porque con \\(x = 20\\) el lado paralelo al muro mide \\(0\\) y no habría corral.",
-        "D": "Sí, porque al reemplazar \\(x = 20\\) en la expresión se obtiene el mayor valor posible del área."
+        "A": "\\(200\\)",
+        "B": "\\(100\\)",
+        "C": "\\(400\\)",
+        "D": "\\(10\\)"
       },
-      "clave": "C",
-      "justificacion_correcta": "La opción «No, porque con \\(x = 20\\) el lado paralelo al muro mide \\(0\\)» es correcta porque al reemplazar se obtiene \\(40-2(20)=0\\), de modo que el área resulta nula. El área máxima está en \\(x = 10\\), donde vale \\(10 \\times 20 = 200\\ \\text{m}^{2}\\).",
+      "clave": "A",
+      "justificacion_correcta": "La opción «\\(200\\)» es correcta porque el lado paralelo al muro mide \\(40-2x\\) y el área es \\(A(x) = x(40-2x) = -2x^{2}+40x\\). Su vértice está en \\(x = 10\\), donde el área vale \\(10 \\times 20 = 200\\) metros cuadrados.",
       "opciones_incorrectas": {
-        "A": "Que \\(20\\) sea la mitad de la malla disponible no garantiza nada sobre el área: hay que verificar qué ocurre con el otro lado del corral.",
-        "B": "El paso \\(2\\) sí está bien planteado: con \\(x\\) en los dos lados perpendiculares, al lado paralelo al muro le queda \\(40-2x\\).",
-        "D": "Al reemplazar \\(x = 20\\) el área da \\(0\\), que es el menor valor posible y no el mayor."
+        "B": "\\(100\\) es el área de un cuadrado de \\(10\\) por \\(10\\), pero con \\(x = 10\\) el lado paralelo al muro mide \\(20\\) y no \\(10\\).",
+        "C": "\\(400\\) sería el área de un cuadrado de \\(20\\) por \\(20\\), que necesitaría \\(60\\) metros de malla para los tres lados.",
+        "D": "\\(10\\) es el valor de \\(x\\) que hace máxima el área, no el área máxima."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q14.png",
       "imagen_alt": "Corral rectangular apoyado en un muro rayado: los dos lados perpendiculares al muro están rotulados con la letra equis y solo esos dos lados y el paralelo al muro llevan malla, que suma cuarenta metros."
@@ -421,20 +411,20 @@
       "cmc": "Estadística",
       "dificultad": "MEDIA",
       "estandar": "Interpreto y comparo resultados de estudios con información estadística provenientes de medios de comunicación.",
-      "que_evalua": "La habilidad para comparar dos series representadas en un mismo plano y reconocer qué lectura pone en duda una conclusión basada solo en los primeros meses.",
-      "enunciado": "<p>La gerencia de una empresa con dos sedes revisó el comportamiento de los ingresos durante el año antes de decidir en cuál de las dos conviene invertir.</p><p>La gráfica muestra el ingreso mensual de las dos sedes de una empresa durante un año.</p>[[IMG]]<p>La gerencia concluye que conviene invertir en la sede sur, porque <b>durante los primeros meses</b> fue la que más ingresos registró. ¿Qué afirmación pone en duda esa conclusión?</p>",
+      "que_evalua": "La habilidad para comparar dos series representadas en un mismo plano y decidir en qué valores se cumple una desigualdad entre ellas.",
+      "enunciado": "<p>La gerencia de una empresa revisó el comportamiento de los ingresos durante el año para decidir en cuál de las dos sedes conviene invertir. La gráfica muestra el ingreso mensual (en millones de pesos) para cada mes de operación \\(t\\).</p>[[IMG]]<p>Si \\(N(t)\\) representa el ingreso de la sede norte y \\(S(t)\\) el de la sede sur en el mes \\(t\\), ¿para cuáles meses se cumple estrictamente la desigualdad \\(N(t) - S(t) > 10\\) millones?</p>",
       "opciones": {
-        "A": "Que la sede sur baja mes a mes mientras la norte sube, y desde el mes \\(7\\) queda por debajo.",
-        "B": "Que las dos sedes crecen a lo largo del año, aunque la sede norte lo hace más rápido.",
-        "C": "Que la sede sur supera a la sede norte en todos los meses del año registrado.",
-        "D": "Que las dos sedes mantienen su ingreso estable, con variaciones muy pequeñas."
+        "A": "Para los meses \\(t \\in \\{10, 11, 12\\}\\)",
+        "B": "Para los meses \\(t \\in \\{1, 2, 3\\}\\)",
+        "C": "Para los meses \\(t \\in \\{7, 8, 9, 10, 11, 12\\}\\)",
+        "D": "Para los meses \\(t \\in \\{11, 12\\}\\)"
       },
-      "clave": "A",
-      "justificacion_correcta": "La opción «Que la sede sur baja mes a mes mientras la norte sube» es correcta porque la línea de la sede norte asciende de \\(18\\) a \\(37\\) millones mientras la de la sede sur desciende de \\(34\\) a \\(20\\); las dos se cortan en el mes \\(7\\), ambas en \\(27\\) millones, y a partir de ahí la ventaja cambia de sede.",
+      "clave": "D",
+      "justificacion_correcta": "La opción «Para los meses \\(t \\in \\{11, 12\\}\\)» es correcta porque la diferencia \\(N(t)-S(t)\\) vale \\(3\\) en el mes \\(8\\), \\(7\\) en el \\(9\\), exactamente \\(10\\) en el \\(10\\) (\\(33-23\\)), \\(14\\) en el \\(11\\) (\\(35-21\\)) y \\(17\\) en el \\(12\\) (\\(37-20\\)). Solo en los meses \\(11\\) y \\(12\\) es estrictamente mayor que \\(10\\).",
       "opciones_incorrectas": {
-        "B": "Solo una de las dos series crece; la de la sede sur baja mes a mes durante todo el año registrado.",
-        "C": "La sede sur empieza por encima, pero desde el cruce queda por debajo hasta el final del año.",
-        "D": "Las variaciones son grandes: una sede gana diecinueve millones y la otra pierde catorce en el mismo año."
+        "A": "En el mes \\(10\\) la diferencia es exactamente \\(10\\) millones, y la desigualdad pide que sea estrictamente mayor.",
+        "B": "En los primeros meses es la sede sur la que supera a la norte, así que \\(N(t)-S(t)\\) es negativa.",
+        "C": "Desde el mes \\(7\\) la sede norte iguala o supera a la sur, pero la diferencia solo pasa de \\(10\\) millones en los dos últimos meses."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q15.png",
       "imagen_alt": "Gráfica de líneas con el ingreso mensual de dos sedes durante doce meses: la sede norte asciende de dieciocho a treinta y siete millones y la sede sur desciende de treinta y cuatro a veinte."
@@ -448,20 +438,20 @@
       "cmc": "Geometría",
       "dificultad": "MEDIA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
-      "que_evalua": "La habilidad para transformar la descripción verbal de una figura en la relación numérica que la representa.",
-      "enunciado": "<p>Un técnico debe cambiar una lámpara en la fachada de un edificio y quiere saber hasta qué altura le sirve la escalera que lleva en el camión.</p><p>Una escalera de <b>\\(5\\)</b> metros se apoya contra una pared vertical y su base queda a <b>\\(3\\)</b> metros del muro, como muestra la figura.</p>[[IMG]]<p>¿Qué expresión permite hallar la <b>altura \\(h\\)</b> que alcanza la escalera sobre la pared?</p>",
+      "que_evalua": "La habilidad para transformar la descripción de una figura en la relación numérica que la representa.",
+      "enunciado": "<p>Un técnico apoya una escalera de <b>\\(5\\)</b> metros de largo contra la pared recta de un edificio.</p>[[IMG]]<p>Si la base de la escalera queda separada <b>\\(3\\)</b> metros de la base del muro, ¿qué expresión permite hallar directamente la <b>altura \\(h\\)</b> que alcanza?</p>",
       "opciones": {
-        "A": "\\(h = 5 - 3\\), porque la altura es la diferencia entre la escalera y la distancia al muro.",
-        "B": "\\(h = \\sqrt{5^2+3^2}\\), porque al sumar los cuadrados de los dos datos se obtiene el lado que falta.",
-        "C": "\\(h = 5^{2}-3^{2}\\), porque el cuadrado de la escalera menos el de la base ya da la altura buscada.",
-        "D": "\\(h = \\sqrt{5^2-3^2}\\), porque la escalera es la hipotenusa y su cuadrado es la suma de los otros dos."
+        "A": "\\(h = 5 - 3\\)",
+        "B": "\\(h = \\sqrt{5^2+3^2}\\)",
+        "C": "\\(h = 5^{2}-3^{2}\\)",
+        "D": "\\(h = \\sqrt{5^2-3^2}\\)"
       },
       "clave": "D",
-      "justificacion_correcta": "La opción «\\(h = \\sqrt{5^2-3^2}\\), porque la escalera es la hipotenusa» es correcta porque la escalera, la pared y el suelo forman un triángulo rectángulo en el que \\(h^{2}+3^{2}=5^{2}\\); al despejar queda \\(h=\\sqrt{25-9}=4\\) metros.",
+      "justificacion_correcta": "La opción «\\(h = \\sqrt{5^2-3^2}\\)» es correcta porque la escalera, la pared y el suelo forman un triángulo rectángulo en el que la escalera es la hipotenusa: \\(h^{2}+3^{2}=5^{2}\\), y al despejar queda \\(h=\\sqrt{25-9}=4\\) metros.",
       "opciones_incorrectas": {
         "A": "Restar las longitudes trata los tres lados como si estuvieran alineados, cuando la pared y el suelo forman un ángulo recto.",
         "B": "Sumar los cuadrados sirve para hallar la hipotenusa, y aquí la hipotenusa es la escalera, que ya se conoce.",
-        "C": "Esa expresión deja el resultado en unidades cuadradas y omite la raíz, de modo que no entrega una longitud."
+        "C": "Esa expresión omite la raíz, de modo que da \\(16\\), un valor en unidades cuadradas y no una longitud."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q16.png",
       "imagen_alt": "Escalera apoyada contra una pared: forma un triángulo rectángulo con el suelo, la escalera mide cinco metros, la base está a tres metros de la pared y la altura sobre la pared está marcada con la letra hache."
@@ -475,20 +465,20 @@
       "cmc": "Estadística",
       "dificultad": "MEDIA",
       "estandar": "Resuelvo y planteo problemas usando conceptos básicos de conteo y probabilidad (combinaciones, permutaciones, espacio muestral, muestreo aleatorio, muestreo con remplazo).",
-      "que_evalua": "La habilidad para resolver un problema que involucra el cálculo de una probabilidad simple.",
-      "enunciado": "<p>En la feria de matemáticas, un grupo montó un juego de azar con balotas de colores y quiere calcular bien las probabilidades antes de fijar los premios.</p><p>En la urna de la figura hay <b>\\(5\\)</b> balotas rojas, <b>\\(8\\)</b> azules y <b>\\(7\\)</b> verdes, todas del mismo tamaño.</p>[[IMG]]<p>Se saca una balota sin mirar. ¿Cuál es la probabilidad de que <b>NO</b> sea azul?</p>",
+      "que_evalua": "La habilidad para resolver un problema que involucra el cálculo de la probabilidad de un evento complementario.",
+      "enunciado": "<p>En la feria de matemáticas, una urna contiene <b>\\(20\\)</b> balotas idénticas al tacto: <b>\\(5\\)</b> rojas, <b>\\(8\\)</b> azules y <b>\\(7\\)</b> verdes.</p>[[IMG]]<p>Si se extrae una balota al azar, ¿cuál es la probabilidad de que la balota <b>NO</b> sea azul?</p>",
       "opciones": {
-        "A": "\\(\\frac{8}{20}\\), porque hay \\(8\\) balotas azules entre las \\(20\\) de la urna.",
-        "B": "\\(\\frac{12}{20}\\), porque hay \\(12\\) balotas que no son azules entre las \\(20\\).",
-        "C": "\\(\\frac{1}{3}\\), porque la urna contiene tres colores distintos de balota.",
-        "D": "\\(\\frac{7}{20}\\), porque las balotas verdes son las que no resultan azules."
+        "A": "\\(\\frac{8}{20}\\)",
+        "B": "\\(\\frac{12}{20}\\)",
+        "C": "\\(\\frac{1}{3}\\)",
+        "D": "\\(\\frac{7}{20}\\)"
       },
       "clave": "B",
-      "justificacion_correcta": "La opción «\\(\\frac{12}{20}\\), porque hay \\(12\\) balotas que no son azules entre las \\(20\\)» es correcta porque el total es \\(5+8+7=20\\) y las que no son azules son las \\(5\\) rojas más las \\(7\\) verdes, es decir \\(12\\).",
+      "justificacion_correcta": "La opción «\\(\\frac{12}{20}\\)» es correcta porque las balotas que no son azules son las \\(5\\) rojas más las \\(7\\) verdes, es decir \\(12\\) de las \\(20\\).",
       "opciones_incorrectas": {
-        "A": "Esa es la probabilidad de que la balota sí sea azul, justo lo contrario de lo que se pregunta.",
-        "C": "Suponer un tercio para cada color ignora que hay cantidades distintas de balotas de cada uno.",
-        "D": "Cuenta solo las verdes y deja por fuera las cinco rojas, que tampoco son azules."
+        "A": "\\(\\frac{8}{20}\\) es la probabilidad de que la balota sí sea azul, justo lo contrario de lo que se pregunta.",
+        "C": "\\(\\frac{1}{3}\\) supone que los tres colores tienen la misma cantidad de balotas, y hay \\(5\\), \\(8\\) y \\(7\\).",
+        "D": "\\(\\frac{7}{20}\\) cuenta solo las verdes y deja por fuera las \\(5\\) rojas, que tampoco son azules."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q17.png",
       "imagen_alt": "Urna con veinte balotas del mismo tamaño repartidas en cuatro filas: cinco rojas, ocho azules y siete verdes."
@@ -502,20 +492,20 @@
       "cmc": "Geometría",
       "dificultad": "ALTA",
       "estandar": "Selecciono y uso técnicas e instrumentos para medir longitudes, áreas de superficies, volúmenes y ángulos con niveles de precisión apropiados.",
-      "que_evalua": "La habilidad para ejecutar un plan que involucra el volumen de un cuerpo y reconocer que el área de la base se simplifica al comparar dos volúmenes.",
-      "enunciado": "<p>El operario de un acueducto veredal debe reportar cada mañana qué tanto queda del agua almacenada en el tanque principal que surte a las viviendas.</p><p>La figura muestra el tanque cilíndrico de <b>\\(4\\)</b> metros de diámetro y <b>\\(6\\)</b> metros de altura. El agua alcanza esta mañana <b>\\(3{,}6\\)</b> metros. El operario escribió estos pasos para reportar <b>qué parte de la capacidad está ocupada</b>.</p>[[IMG]]<div style=\"border:1px solid #E5DDD2;border-left:4px solid #C7163C;border-radius:6px;background:#FBF7F0;padding:12px 18px;margin:12px auto;max-width:580px;font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1A1613;line-height:1.6\"><div style=\"font-weight:700;color:#A8132F;margin-bottom:6px\">Los pasos del operario</div><div style=\"margin:6px 0\"><b>Paso 1.</b> Volumen total del tanque: \\(\\pi \\times 2^{2} \\times 6\\).</div><div style=\"margin:6px 0\"><b>Paso 2.</b> Volumen ocupado por el agua: \\(\\pi \\times 2^{2} \\times 3{,}6\\).</div><div style=\"margin:6px 0\"><b>Paso 3.</b> Dividir el segundo entre el primero y expresar el resultado como porcentaje.</div></div><p>Siguiendo esos pasos, la parte de la capacidad que está ocupada es</p>",
+      "que_evalua": "La habilidad para ejecutar un cálculo con el volumen de un cilindro y reconocer que el área de la base se simplifica al comparar dos volúmenes.",
+      "enunciado": "<p>Un tanque cilíndrico tiene <b>\\(4\\)</b> metros de diámetro y <b>\\(6\\)</b> metros de altura total. El operario reporta que el nivel actual del agua está en <b>\\(3{,}6\\)</b> metros de altura.</p>[[IMG]]<p>Siguiendo la fórmula del volumen \\(\\left(V = \\pi r^{2} h\\right)\\), ¿qué porcentaje de la capacidad total del tanque se encuentra ocupado por el agua?</p>",
       "opciones": {
-        "A": "el \\(60\\,\\%\\).",
-        "B": "el \\(36\\,\\%\\).",
-        "C": "el \\(90\\,\\%\\).",
-        "D": "el \\(40\\,\\%\\)."
+        "A": "\\(60\\,\\%\\)",
+        "B": "\\(36\\,\\%\\)",
+        "C": "\\(90\\,\\%\\)",
+        "D": "\\(40\\,\\%\\)"
       },
       "clave": "A",
-      "justificacion_correcta": "La opción «el \\(60\\,\\%\\)» es correcta porque al dividir \\(\\pi \\times 2^{2} \\times 3{,}6\\) entre \\(\\pi \\times 2^{2} \\times 6\\) el factor \\(\\pi \\times 2^{2}\\) desaparece y queda \\(3{,}6\\) entre \\(6\\), que es \\(0{,}6\\). En un cilindro la proporción de volumen coincide con la de altura.",
+      "justificacion_correcta": "La opción «\\(60\\,\\%\\)» es correcta porque el volumen ocupado es \\(\\pi \\times 2^{2} \\times 3{,}6\\) y el total es \\(\\pi \\times 2^{2} \\times 6\\); al dividirlos el factor \\(\\pi \\times 2^{2}\\) se cancela y queda \\(\\frac{3{,}6}{6} = 0{,}6\\), es decir el \\(60\\,\\%\\).",
       "opciones_incorrectas": {
-        "B": "Ese resultado sale de dividir también los radios, y los radios no se dividen aparte: aparecen como factor en los dos volúmenes y por eso se cancelan al hacer el cociente.",
-        "C": "Ese resultado compara el nivel del agua con los \\(4\\) metros del diámetro, y el diámetro mide el ancho del tanque y no su altura, así que hay que compararlo con los \\(6\\) metros.",
-        "D": "Ese resultado es la parte del tanque que todavía está vacía, y el procedimiento compara el agua con la capacidad total, así que entrega la parte ocupada."
+        "B": "\\(36\\,\\%\\) toma el \\(3{,}6\\) de la altura del agua como si fuera directamente un porcentaje, sin compararlo con los \\(6\\) metros del tanque.",
+        "C": "\\(90\\,\\%\\) compara el nivel del agua con los \\(4\\) metros del diámetro, que mide el ancho del tanque y no su altura.",
+        "D": "\\(40\\,\\%\\) es la parte del tanque que todavía está vacía, no la ocupada por el agua."
       },
       "imagen_figura": "assets/banco-mat-11-p3/q18.png",
       "imagen_alt": "Tanque cilíndrico de cuatro metros de diámetro y seis de altura, con el nivel del agua marcado a tres coma seis metros."
@@ -529,20 +519,20 @@
       "cmc": "Geometría",
       "dificultad": "ALTA",
       "estandar": "Uso argumentos geométricos para resolver y formular problemas en contextos matemáticos y en otras ciencias.",
-      "que_evalua": "La habilidad para plantear la afirmación que refuta una generalización exhibiendo un caso que la contradice.",
-      "enunciado": "<p>En la clase surgió una discusión sobre figuras: un estudiante propuso una regla general y el profesor le pidió al curso ponerla a prueba antes de aceptarla.</p><p>Un estudiante afirma que si dos triángulos tienen <b>el mismo perímetro</b> entonces tienen <b>la misma área</b>, y le propone al curso usar esa regla para repartir terrenos. ¿Qué afirmación refuta lo que sostiene?</p>",
+      "que_evalua": "La habilidad para refutar una generalización eligiendo el caso que la contradice.",
+      "enunciado": "<p>Un estudiante afirma: «A mayor perímetro de un rectángulo, mayor será su área».</p><p>¿Cuál de los siguientes pares de figuras sirve como <b>contraejemplo</b> para demostrar que el estudiante está equivocado?</p>",
       "opciones": {
-        "A": "Que dos triángulos con el mismo perímetro siempre tienen ángulos distintos, porque sus lados no coinciden.",
-        "B": "Que el perímetro se mide en metros y el área en metros cuadrados, dos magnitudes de distinta naturaleza.",
-        "C": "Que un triángulo de lados \\(3\\), \\(4\\) y \\(5\\) y otro equilátero de lado \\(4\\) tienen perímetro \\(12\\) y áreas distintas.",
-        "D": "Que el área depende de la base y de la altura mientras el perímetro depende de la suma de los tres lados."
+        "A": "Un rectángulo de \\(6\\ \\text{m} \\times 4\\ \\text{m}\\) y un rectángulo de \\(8\\ \\text{m} \\times 2\\ \\text{m}\\).",
+        "B": "Un rectángulo de \\(6\\ \\text{m} \\times 3\\ \\text{m}\\) y un rectángulo de \\(4\\ \\text{m} \\times 2\\ \\text{m}\\).",
+        "C": "Un rectángulo de \\(10\\ \\text{m} \\times 1\\ \\text{m}\\) y un rectángulo de \\(4\\ \\text{m} \\times 4\\ \\text{m}\\).",
+        "D": "Un rectángulo de \\(8\\ \\text{m} \\times 8\\ \\text{m}\\) y un rectángulo de \\(4\\ \\text{m} \\times 4\\ \\text{m}\\)."
       },
       "clave": "C",
-      "justificacion_correcta": "La opción «Que un triángulo de lados \\(3\\), \\(4\\) y \\(5\\) y otro equilátero de lado \\(4\\)» es correcta porque para refutar una regla general basta con exhibir un caso que cumpla la hipótesis y falle en la conclusión: los dos suman perímetro \\(12\\), pero el primero tiene área \\(6\\) y el equilátero cerca de \\(6{,}93\\).",
+      "justificacion_correcta": "La opción «Un rectángulo de \\(10\\ \\text{m} \\times 1\\ \\text{m}\\) y uno de \\(4\\ \\text{m} \\times 4\\ \\text{m}\\)» es correcta porque el primero tiene el perímetro mayor, \\(22\\) metros frente a \\(16\\), y sin embargo el área menor, \\(10\\) metros cuadrados frente a \\(16\\). Eso contradice la afirmación.",
       "opciones_incorrectas": {
-        "A": "No es cierto que siempre tengan ángulos distintos, y aunque lo fuera eso no diría nada sobre las áreas.",
-        "B": "Que las unidades sean distintas no impide que exista una relación entre las dos magnitudes; lo que falla es que esa relación no sea única.",
-        "D": "Describe correctamente de qué depende cada magnitud, pero no exhibe el caso concreto que hace falta para refutar la regla."
+        "A": "Los dos tienen el mismo perímetro, \\(20\\) metros, así que no comparan un perímetro mayor con uno menor.",
+        "B": "El de mayor perímetro, \\(18\\) metros, también tiene la mayor área, \\(18\\) metros cuadrados: confirma la afirmación en lugar de refutarla.",
+        "D": "El de mayor perímetro, \\(32\\) metros, también tiene la mayor área, \\(64\\) metros cuadrados: no contradice lo que dice el estudiante."
       }
     },
     {
@@ -554,24 +544,21 @@
       "cmc": "Estadística",
       "dificultad": "BAJA",
       "estandar": "Propongo inferencias a partir del estudio de muestras probabilísticas.",
-      "que_evalua": "La habilidad para establecer si el procedimiento con que se obtuvo un promedio es adecuado para lo que se quiere concluir.",
-      "enunciado": "<p>Un grupo de investigación escolar quiere estimar cuánto gasta al día un estudiante en la tienda del colegio, para proponerle al consejo una política de precios.</p><p>Para saber cuánto gastan al día los estudiantes en la tienda escolar, un grupo de investigación encuestó <b>únicamente a quienes hacían fila</b> en la tienda durante el descanso y calculó el promedio de lo que gastaron. ¿Es adecuado ese procedimiento?</p>",
+      "que_evalua": "La habilidad para establecer si el procedimiento con que se obtuvo una muestra es adecuado para lo que se quiere concluir.",
+      "enunciado": "<p>Para estimar cuánto gasta al día un estudiante del colegio, un grupo de investigación encuestó <b>exclusivamente</b> a los jóvenes que hacían fila en la tienda escolar durante el descanso.</p><p>¿Garantiza este procedimiento una muestra representativa de la población escolar?</p>",
       "opciones": {
-        "A": "Sí, porque quienes hacen fila en la tienda son los que mejor conocen los precios.",
-        "B": "Sí, porque el promedio siempre representa correctamente al conjunto de los estudiantes.",
-        "C": "No, porque el promedio debe calcularse con la mediana y no con la suma de los valores.",
-        "D": "No, porque deja por fuera a los estudiantes que no compran, cuyo gasto diario es cero."
+        "A": "No, porque excluye sistemáticamente a los estudiantes que no compran, cuyo gasto es cero, sesgando el promedio.",
+        "B": "Sí, porque los estudiantes que están en la fila constituyen la única fuente de datos válidos sobre los precios de la tienda.",
+        "C": "No, porque para que el estudio sea válido es estrictamente necesario encuestar a la totalidad de los estudiantes del colegio.",
+        "D": "Sí, porque al encuestar a cualquier persona de la fila sin importar su grado se cumple el principio de selección aleatoria."
       },
-      "clave": "D",
-      "justificacion_correcta": "La opción «No, porque deja por fuera a los estudiantes que no compran, cuyo gasto diario es cero» es correcta porque preguntar solo en la fila selecciona de antemano a quienes sí gastan, de modo que el promedio obtenido describe a los compradores y no a todos los estudiantes, que es lo que se quería estimar.",
+      "clave": "A",
+      "justificacion_correcta": "La opción «No, porque excluye sistemáticamente a los estudiantes que no compran» es correcta porque preguntar solo en la fila selecciona de antemano a quienes sí gastan, de modo que el promedio describe a los compradores y no a todos los estudiantes.",
       "opciones_incorrectas": {
-        "A": "Conocer los precios no es lo que se está midiendo: la pregunta es cuánto gasta el conjunto de los estudiantes.",
-        "B": "El promedio representa bien al conjunto solo si los datos provienen de todo el conjunto, y aquí no es el caso.",
-        "C": "La mediana es otra medida de tendencia central, no un paso previo para calcular el promedio."
-      },
-      "imagen_figura": null,
-      "imagen_prompt": "Ilustración editorial plana, proporción 4:3, paleta cálida de ocres, verdes y azules suaves, trazo limpio y sin sombras realistas. El patio de un colegio colombiano durante el descanso, visto de frente: a la derecha, una tienda escolar con ventanilla y toldo, y una fila de seis estudiantes de bachillerato con uniforme esperando su turno; a la izquierda, en primer plano, cuatro estudiantes sentados en una banca de cemento conversando y comiendo lo que trajeron de casa, sin acercarse a la tienda; al fondo, un par de árboles y una cancha. Sin texto dentro de la imagen. Sin marcas, logotipos ni precios visibles. Ningún letrero de precios, ningún dinero contable y ninguna cifra a la vista: la ilustración sitúa la escena y no puede contener ninguna pista de la respuesta.",
-      "imagen_alt": "Patio de colegio durante el descanso: una fila de estudiantes espera turno en la ventanilla de la tienda escolar mientras otro grupo permanece sentado en una banca, sin acercarse a comprar."
+        "B": "Lo que se quiere estimar es cuánto gastan los estudiantes, no los precios de la tienda.",
+        "C": "Una muestra bien escogida, por ejemplo al azar entre todos los grados, basta; no hace falta encuestar a todo el colegio.",
+        "D": "Escoger dentro de la fila no es aleatorio respecto de todo el colegio: la fila ya deja por fuera a quienes no compran."
+      }
     }
   ]
 }
